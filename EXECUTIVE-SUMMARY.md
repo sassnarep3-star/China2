@@ -1,6 +1,6 @@
 # Executive Summary — Getting Money Out of China as a U.S. Citizen
 
-**Session:** `arena-fcd22b0c` · **Date:** 2026-11-07 · **Status:** complete, 463 automated checks passing
+**Session:** `arena-fcd22b0c` · **Date:** 2026-11-07 · **Status:** complete, 477 automated checks passing
 **Live site:** see GitHub Pages link in `COORDINATION.md` · **Ledgers:** `data/*.json`
 
 > Research only. Not tax or legal advice. Every figure below is tied to a primary official
@@ -73,7 +73,7 @@ its own figures may not be current. Widely quoted numbers come from commercial t
 
 ## Routes ranked by lawful cost
 
-18 routes were catalogued: **12 lawful or conditionally lawful**, **6 unlawful**. Full detail with
+18 routes were catalogued: **13 lawful or conditionally lawful**, **5 unlawful**. Full detail with
 pros, cons, limits and tax treatment is in `data/methods.json` and on the site.
 
 | Rank | Route | Why |
@@ -153,15 +153,15 @@ quantifiable cost into components 5 and 6.
 
 ## Verification performed
 
-`node tools/verify.mjs` — **463 checks, 0 failures.** It confirms that every rendered data row
+`node tools/verify.mjs` — **477 checks, 0 failures.** It confirms that every rendered data row
 carries a link to an official source or is explicitly badged UNVERIFIED; that no data field is
 blank; that every source URL is on an official domain allowlist (`irs.gov`, `ecfr.gov`,
 `cbp.dhs.gov`, `treas.gov`, `loc.gov`, `safe.gov.cn`, `pbc.gov.cn`, `chinatax.gov.cn`,
 `www.gov.cn`, `customs.gov.cn`, `github.com`); that no internal link or anchor is broken; and
 that `meta-row` markup is not being used to escape the source-link rule.
 
-**17 official sources.** 11 were retrieved in full this session and their supporting sentences
-read verbatim on the page; 6 are marked `search-index` because the value came from a search-index
+**17 official sources.** 8 were retrieved in full this session and their supporting sentences
+read verbatim on the page; 9 are marked `search-index` because the value came from a search-index
 extract of that exact official URL without a separate in-session retrieval. That distinction is
 displayed on every row and on the source register.
 
