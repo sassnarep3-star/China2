@@ -1,0 +1,25 @@
+name: Verify CNY-to-USD portal (arena-85f37d08 scope)
+
+on:
+  push:
+    branches: ["main", "arena/85f37d08-china2"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  verify-portal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Verify deterministic portal build, official .gov/.gov.cn sources, blank unverified cells, and local links
+        run: |
+          python3 portal/generate_portal.py
+          git diff --exit-code -- portal
+          python3 verify_85f37d08.py
+          node --check portal/app.js

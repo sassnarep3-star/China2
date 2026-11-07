@@ -200,6 +200,22 @@
       "url": "https://www.irs.gov/pub/fatca/int_practice_units/fcu_cu_c_18_2_1_04.pdf",
       "secondary_url": "https://www.fincen.gov/resources/statutes-regulations/administrative-rulings/fincen-form-105-currency-and-other-monetary",
       "language": "EN"
+    },
+    {
+      "id": "SRC-25",
+      "jurisdiction": "PRC",
+      "authority": "PBOC / NDRC / MIIT / MPS / SAMR / NFRA / CSRC / SAFE",
+      "citation": "Notice Yinfa [2026] No. 42 (2026-02-06) — Further Preventing and Disposing of Risks Related to Virtual Currencies and Tokenization (prohibiting fiat↔crypto exchange, unauthorized RMB stablecoins, and bank/payment settlement)",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "language": "ZH"
+    },
+    {
+      "id": "SRC-26",
+      "jurisdiction": "US",
+      "authority": "United States Code (Office of the Law Revision Counsel / GovInfo)",
+      "citation": "26 U.S.C. § 988 (2024 ed.) — Treatment of Certain Foreign Currency Transactions (§988(a) ordinary gain/loss; §988(e)(1)–(3) individual personal-transaction exclusion & $200 personal FX gain de minimis exclusion)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "language": "EN"
     }
   ],
   "methods": [
@@ -463,7 +479,7 @@
       "statutory_cap": "Zero lawful allowance",
       "prc_tax_at_conversion": "Statutory Illegal FX Trading Fine: confiscation of illegal gains + ≤ 30% of amount (30%–100% if serious) + criminal liability (State Council Decree No. 532 Art. 45)",
       "commercial_spread_wire_fee": "",
-      "pros": "None lawful — even 'two-shore matching' where RMB never crosses the border is explicitly prosecuted by SAFE/MPS as 변相买卖外汇 (disguised FX trading).",
+      "pros": "None lawful — even 'two-shore matching' where RMB never crosses the border is explicitly prosecuted by SAFE/MPS as 变相买卖外汇 (disguised FX trading).",
       "cons": "30%–100% SAFE fine on gross swap amount, PRC account freeze by public security (anti-telecom-fraud / AML freezes), tainted third-party USD triggering US bank SARs/account freezes, and zero fraud recourse.",
       "source_id": "SRC-14",
       "source_url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm",
@@ -473,15 +489,15 @@
       "id": "M20",
       "category": "Prohibited / High-Penalty Non-Compliant Channels (DO NOT USE)",
       "name": "PROHIBITED: Cryptocurrency / Stablecoin OTC Bridge to Evade PRC FX Controls",
-      "us_citizen_eligibility": "ILLEGAL in Mainland China as FX bridge",
+      "us_citizen_eligibility": "ILLEGAL in Mainland China as fiat-crypto / FX bridge",
       "statutory_cap": "Zero lawful allowance",
-      "prc_tax_at_conversion": "Treated as disguised FX trading under State Council Decree No. 532 Art. 45 (≤ 30%, or 30%–100% fine if serious) + US digital-asset gain reporting",
+      "prc_tax_at_conversion": "Prohibited illegal financial activity under PBOC/SAFE Yinfa [2026] No. 42 + disguised FX trading fine under State Council Decree No. 532 Art. 45 (≤ 30%, or 30%–100% if serious)",
       "commercial_spread_wire_fee": "",
       "pros": "None lawful.",
-      "cons": "PRC judicial/PBOC/SAFE crackdowns freeze domestic bank cards receiving/sending OTC crypto payments; high counterparty scam risk; US exchanges require full KYC/source-of-funds and report Form 1099-DA / taxable dispositions to IRS.",
-      "source_id": "SRC-14",
-      "source_url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm",
-      "extra_source_url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements"
+      "cons": "PBOC/SAFE Yinfa [2026] No. 42 (2026-02-06) strictly bans fiat↔virtual-currency exchange, RMB stablecoin issuance without approval, and bank/payment settlement; OTC crypto frequently triggers PRC bank card freezes + US IRS gain/AML scrutiny.",
+      "source_id": "SRC-25",
+      "source_url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "extra_source_url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm"
     },
     {
       "id": "M21",
@@ -596,10 +612,10 @@
     {
       "id": "CP-11",
       "layer": "3. FX Gain / Loss Rules",
-      "component": "US IRC §988 Foreign Currency Gain/Loss vs IRC §988(e) Individual Personal Exception",
-      "verified_rate_or_rule": "Business/investment nonfunctional currency disposition = ordinary gain/loss (§988); individual PERSONAL transaction = exempt from §988 under IRC §988(e) / Treas. Reg. §1.988-1(a)(9)",
-      "mitigation": "Separate personal living accounts from business/investment QBUs; track USD basis dates for non-personal CNY holdings.",
-      "source_url": "https://www.irs.gov/pub/fatca/int_practice_units/fcu_cu_c_18_2_1_04.pdf"
+      "component": "US 26 USC §988 Foreign Currency Gain/Loss vs §988(e) Individual Personal Exception ($200 Gain Rule)",
+      "verified_rate_or_rule": "Business/§212 investment currency disposition = ordinary gain/loss (§988); individual PERSONAL transaction = excluded from §988, and FX gain ≤ $200 per personal transaction is tax-free under 26 USC §988(e)(2)",
+      "mitigation": "Distinguish non-interest personal living accounts from §212 interest-bearing investment deposits or business QBUs; track USD spot-rate basis.",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm"
     },
     {
       "id": "CP-12",
@@ -846,8 +862,17 @@
       "item": "Initial repo state at d9f3976 had only an 8-byte README.md ('# China2') with no dataset to audit",
       "blank_field": "N/A",
       "status": "Flagged for Review",
-      "explanation": "Logged for full audit transparency: initial commit d9f3976 contained no data; line-by-line repo review therefore audited both initial state and PR #1/#3 content merged to main.",
+      "explanation": "Logged for full audit transparency: initial commit d9f3976 contained no data; line-by-line repo review therefore audited both initial state and PR #1/#3/PR #4/#6 content merged to main.",
       "source_url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements"
+    },
+    {
+      "id": "FLG-13",
+      "type": "Repo Audit Irregularity (Commercial vs Official Gov Source)",
+      "item": "research/sources.json (S04–S07) cites commercial provider pages (hsbc.com.cn and wise.com) as table row sources",
+      "blank_field": "commercial_spread_wire_fee = \"\" (strictly blank in portal/)",
+      "status": "Flagged for Review",
+      "explanation": "Commercial bank and fintech marketing/help pages are private corporate pages rather than official government regulators (.gov / .gov.cn). Across portal/, 100% of table rows link exclusively to .gov and .gov.cn primary authorities while leaving commercial fee/spread cells blank.",
+      "source_url": "https://www.pbc.gov.cn/en/3688253/3689009/3788474/2025092319420747571/index.html"
     }
   ]
 }
