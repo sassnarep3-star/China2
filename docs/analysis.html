@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Penalty Analysis &middot; China Money</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+
+<aside class="sidebar">
+  <div class="logo">China Money<span>CNY &rarr; USD repatriation research</span></div>
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="methods.html">Conversion Methods</a>
+    <a href="china-rules.html">China FX Rules</a>
+    <a href="tax-costs.html">Tax Costs &amp; Treaty</a>
+    <a href="us-obligations.html">US Obligations</a>
+    <a href="analysis.html" class="active">Penalty Analysis</a>
+    <a href="flagged.html">Flagged for Review</a>
+    <a href="sources.html">Source Registry</a>
+  </nav>
+  <div class="side-note">The conversion penalty broken into five separable layers.</div>
+</aside>
+
+<main class="main">
+
+<div class="page-head">
+  <div class="crumb">Penalty Analysis</div>
+  <h1>Breaking down the conversion penalty</h1>
+  <p>The premise that converting CNY to USD necessarily costs a lot is true for some money and false for others. This page decomposes the penalty into five separable layers, because the cheapest solution depends on which layer you are actually paying.</p>
+</div>
+
+<div class="panel">
+  <h2>Layer 1 &mdash; Was the money already taxed in China?</h2>
+  <p class="lede">This is the single most important question, and it determines almost everything else.</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Origin of the CNY</th><th>Already taxed in China?</th><th>Additional China tax to convert</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Salary / wages</td><td><b>Yes</b> &mdash; IIT withheld at source by the employer</td><td class="num">None</td><td class="src"><a href="https://guangdong.chinatax.gov.cn/gdsw/yhyshjzt2024_zcwj_tgfgzlE/2024-07/19/content_01346c4ecaee40b2af8aa3f94a4ee107.shtml">IIT Law</a></td></tr>
+        <tr><td>Bank interest</td><td><b>Yes</b> &mdash; 20% withheld</td><td class="num">None on the principal</td><td class="src"><a href="https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245843/content.html">Ann. 61/2018</a></td></tr>
+        <tr><td>Sale of personal assets</td><td>Partially &mdash; depends on the asset</td><td>Depends</td><td class="src"><a href="flagged.html">Flagged</a></td></tr>
+        <tr><td><b>WFOE / company profit</b></td><td><b>No</b> &mdash; not yet at the shareholder level</td><td class="num"><b>25% EIT + 10% WHT = 32.5%</b></td><td class="src"><a href="https://zhejiang.chinatax.gov.cn/art/2024-10-30/art_26318_626886.html">EIT Law</a> &middot; <a href="https://www.irs.gov/pub/irs-trty/china.pdf">Treaty 9(2)</a></td></tr>
+        <tr><td>Dividend from a Chinese company</td><td>Yes at the company level</td><td class="num">10% WHT at your level</td><td class="src"><a href="https://www.irs.gov/pub/irs-trty/china.pdf">Treaty Art. 9(2)</a></td></tr>
+        <tr><td>Unproven / undocumented origin</td><td>Unknown</td><td>Bank will refuse</td><td class="src"><a href="https://www.safe.gov.cn/en/2015/1111/1175.html">SAFE</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout good">
+    <b>Key finding</b>
+    <p>If the balance is personal, lawfully-earned, already-taxed money in a personal account, <b>there is no Chinese tax on converting it at all.</b> The only Chinese-side cost is the bank's FX spread. The "considerable amount of taxes" is almost certainly either company-level EIT and WHT that have not yet been paid, or the US-side currency gain under &sect; 988(e), or a professional's estimate that assumed the money is untaxed corporate profit.</p>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Layer 2 &mdash; Chinese withholding on the payment itself</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Channel</th><th>Domestic statutory</th><th>Treaty-capped</th><th>Effective</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Dividend</td><td class="num">20%</td><td class="num"><b>10%</b></td><td class="num">10%</td><td class="src"><a href="https://www.irs.gov/pub/irs-trty/china.pdf">Art. 9(2)</a></td></tr>
+        <tr><td>Interest</td><td class="num">20%</td><td class="num"><b>10%</b></td><td class="num">10%</td><td class="src"><a href="https://www.irs.gov/pub/irs-trty/china.pdf">Art. 10(2)</a></td></tr>
+        <tr><td>Royalties</td><td class="num">20%</td><td class="num"><b>10%</b></td><td class="num">10%</td><td class="src"><a href="https://www.irs.gov/pub/irs-trty/china.pdf">Art. 11(2)</a></td></tr>
+        <tr><td>Equipment rental royalties</td><td class="num">20%</td><td class="num"><b>10% on 70% of gross</b></td><td class="num"><b>7%</b></td><td class="src"><a href="https://www.irs.gov/pub/irs-trty/china.pdf">Protocol 1 &para;6</a></td></tr>
+        <tr><td>Services</td><td class="num">VAT + surcharges</td><td class="num">&mdash;</td><td class="num"><span class="blank">not verified</span></td><td class="src"><a href="https://www.irs.gov/pub/irs-trty/china.pdf">Art. 7</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">The US&ndash;China treaty halves the withholding rate on every passive income stream and cuts equipment rental to an effective 7%. Not claiming treaty benefits &mdash; which banks will not always do automatically &mdash; costs 10 percentage points. This is the largest easily-avoidable leakage in the whole exercise.</p>
+</div>
+
+<div class="panel">
+  <h2>Layer 3 &mdash; Chinese corporate income tax before distribution</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Item</th><th>Rate</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>EIT on China-source profit</td><td class="num">25%</td><td class="src"><a href="https://zhejiang.chinatax.gov.cn/art/2024-10-30/art_26318_626886.html">EIT Law Art. 4</a></td></tr>
+        <tr><td>Statutory surplus reserve appropriated from after-tax profit before distribution</td><td class="num">10% (cap 50% of registered capital)</td><td class="src"><a href="flagged.html">Secondary &mdash; flagged</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Layer 4 &mdash; The US currency gain, &sect; 988(e)</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Rule</th><th>Effect</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>&sect; 988(e)(1)</td><td>The section does not apply to an individual's personal transactions</td><td class="src"><a href="https://www.law.cornell.edu/uscode/text/26/988">&sect; 988</a></td></tr>
+        <tr><td>&sect; 988(e)(2)</td><td>No gain recognised on exchange-rate movement in a personal transaction <b>unless the gain exceeds USD 200</b> &mdash; then the <i>entire</i> gain is taxable ordinary income</td><td class="src"><a href="https://www.law.cornell.edu/uscode/text/26/988">&sect; 988</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout bad">
+    <b>This is the hidden penalty</b>
+    <p>Two points matter. <b>One:</b> the USD 200 threshold is a <i>cliff</i>, not a de minimis allowance &mdash; cross it by one dollar and the whole gain is in income. <b>Two:</b> there is <b>no Chinese tax credit</b> available against it, because China does not tax a currency gain. For someone who acquired CNY years ago at a strong rate and converts today, this can be a double-digit percentage of the balance, with no offsetting credit. It is invisible unless you specifically check &sect; 988(e) &mdash; and it is often the real reason a large conversion "costs a lot".</p>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Layer 5 &mdash; Compliance and penalty exposure</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Exposure</th><th>Amount</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>FBAR, non-willful, per report (effective 17 Jan 2025)</td><td class="num">USD 16,536</td><td class="src"><a href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821">eCFR 31 CFR 1010.821</a></td></tr>
+        <tr><td>FBAR, willful, per account per year</td><td class="num">Greater of USD 165,353 or 50% of the balance</td><td class="src"><a href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821">eCFR 31 CFR 1010.821</a></td></tr>
+        <tr><td>Form 8938 failure to disclose</td><td class="num">USD 10,000 + USD 10,000 per 30 days after notice, max USD 60,000</td><td class="src"><a href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements">IRS</a></td></tr>
+        <tr><td>China: illegal carrying of FX</td><td class="num">Warning + fine up to 20%</td><td class="src"><a href="https://www.pbc.gov.cn/english/130721/2025080815063231112/index.html">FX Regs art. 42</a></td></tr>
+        <tr><td>China: FX evasion</td><td class="num">Repatriation + fine up to 30% (30&ndash;100% if serious)</td><td class="src"><a href="https://www.pbc.gov.cn/english/130721/2025080815063231112/index.html">FX Regs art. 39</a></td></tr>
+        <tr><td>China: disguised FX trading</td><td class="num">Repatriation + fine up to 30% (30&ndash;100% if serious)</td><td class="src"><a href="https://www.pbc.gov.cn/english/130721/2025080815063231112/index.html">FX Regs art. 45</a></td></tr>
+        <tr><td>China: underground banking</td><td class="num">RMB 5m threshold; fine 1&ndash;5&times; illegal gains; up to 5 years' imprisonment</td><td class="src"><a href="https://www.court.gov.cn/zixun/xiangqing/141562.html">SPC Fa Shi [2019] No. 1</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout bad">
+    <b>Layer 5 dwarfs layers 1&ndash;4</b>
+    <p>The downside of doing this wrong is an order of magnitude larger than the upside of doing it cheaply. A willful FBAR penalty alone &mdash; the greater of USD 165,353 or 50% of the balance &mdash; exceeds any tax saving available from any method in this catalogue. Optimising tax while risking a penalty is the wrong trade.</p>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Worked scenario A &mdash; USD 500,000 of already-taxed personal salary</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Route</th><th>China tax</th><th>US tax</th><th>Total leakage</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>A1 &mdash; bank remittance with documents</td><td class="num">0%</td><td>&sect; 988(e) gain only</td><td class="num">Bank spread only</td><td><span class="pill good">Cheapest lawful route</span></td></tr>
+        <tr><td>A3 &mdash; restructure as a WFOE dividend</td><td class="num">32.5%</td><td>Offset by FTC</td><td class="num">32.5% + spread</td><td>Only if the money really is company profit</td></tr>
+        <tr><td>A8 &mdash; pay overseas expenses directly</td><td class="num">0%</td><td class="num">0%</td><td class="num">0%</td><td><span class="pill good">Best of all &mdash; but limited to genuine obligations</span></td></tr>
+        <tr><td>B &mdash; underground banking</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td><span class="pill bad">Criminal exposure &mdash; never</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Worked scenario B &mdash; USD 500,000 of untaxed WFOE profit</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Route</th><th>China tax</th><th>US tax</th><th>Total leakage</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>A3 &mdash; dividend with the treaty benefit</td><td class="num">32.5%</td><td>Offset by FTC (Form 1116)</td><td class="num">32.5%</td><td><span class="pill good">Standard, lawful</span></td></tr>
+        <tr><td>A3 &mdash; dividend <b>without</b> the treaty benefit</td><td class="num">40.0%</td><td>Offset by FTC</td><td class="num">40.0%</td><td><span class="pill bad">7.5 points worse &mdash; always claim the treaty</span></td></tr>
+        <tr><td>A7 &mdash; capital reduction / liquidation</td><td>EIT on gain only</td><td>FTC on the EIT</td><td class="num">Lower than 32.5% on the capital element</td><td>Worth considering if closing the entity</td></tr>
+        <tr><td>A6 &mdash; equipment rental</td><td class="num">7% effective</td><td>Offset by FTC</td><td class="num">7% + VAT</td><td>Lowest rate available, but needs a genuine lease</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>What actually drives the answer</h2>
+  <ol class="tight">
+    <li><b>Is the money already taxed in China?</b> If yes, the conversion itself is essentially tax-free in China and the only leakage is the US &sect; 988(e) gain and the bank spread.</li>
+    <li><b>Is the money company profit?</b> If yes, the leakage is 32.5% &mdash; but claim the treaty (10%, not 20%) and the foreign tax credit, and the net US cost is usually zero.</li>
+    <li><b>Do you have genuine overseas obligations?</b> Paying them directly from the CNY account is the only route that is tax-free on <i>both</i> sides.</li>
+    <li><b>Are you still employed in China and qualifying for the FEIE?</b> If yes, salary remittance is tax-free on both sides up to USD 130,000 (2025).</li>
+    <li><b>Are you emigrating or leaving China?</b> The personal-property-transfer channel exists for exactly this &mdash; get it verified before using it.</li>
+    <li><b>Never</b> use underground banking, crypto, splitting, or borrowed quotas. The criminal and penalty exposure dwarfs any tax saving.</li>
+  </ol>
+</div>
+
+<div class="foot">Research date 2026-11-07 &middot; Arithmetic shown is a calculation from the cited rates, not a claim sourced from any single document &middot; Not tax advice</div>
+
+</main>
+</div>
+</body>
+</html>
