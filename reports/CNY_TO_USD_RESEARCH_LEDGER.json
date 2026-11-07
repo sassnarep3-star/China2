@@ -1,0 +1,878 @@
+{
+  "metadata": {
+    "project": "China2 — CNY to USD Repatriation & Tax-Penalty Verification Ledger (US Citizen)",
+    "session": "arena/85f37d08-china2",
+    "updated_utc": "2026-11-07",
+    "verification_policy": "Every table row links directly to an official PRC (.gov.cn) or US (.gov) primary authority. Values not published on an official government source (such as commercial bank FX spreads, SWIFT fees, ATM operator fees, or account-holder personal facts) are left strictly blank (\"\") and logged in flagged_items."
+  },
+  "sources": [
+    {
+      "id": "SRC-01",
+      "jurisdiction": "PRC",
+      "authority": "People's Bank of China (PBOC)",
+      "citation": "PBOC Decree [2006] No. 3 — Administrative Rules on Individual's Foreign Exchange (Arts. 2, 3, 7, 9, 10–16, 22, 26–32, 34, 35, 37, 39)",
+      "url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-02",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE Hui Fa [2007] No. 1 (amended by Hui Fa [2016] No. 13 & Hui Fa [2023] No. 8) — Implementation Rules of the Measures for the Administration of Individual Foreign Exchange (Arts. 2, 9–22, 28, 30, 31, 38)",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html",
+      "language": "ZH"
+    },
+    {
+      "id": "SRC-03",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE Spokesman Press Q&A on Detailed Rules on Measures for the Administration of Individual Foreign Exchange (USD 50,000 quota scope: domestic+foreign FX sales vs domestic-only FX purchases)",
+      "url": "https://www.safe.gov.cn/en/2007/0105/819.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-04",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE Tianjin Service Trade FX Q&A (2021 No. 4) — Foreign Individual FX Purchase & Outward Remittance under Current Account (ID + transaction amount proof + tax proof)",
+      "url": "https://www.safe.gov.cn/tianjin/2021/1102/1777.html",
+      "language": "ZH"
+    },
+    {
+      "id": "SRC-05",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE Tianjin Service Trade FX Q&A (2019 No. 2) — Foreign Individual Salary Outward Remittance > USD 50,000 (bank verification of lawful PRC tax-payment proof)",
+      "url": "https://www.safe.gov.cn/tianjin/2019/1205/1307.html",
+      "language": "ZH"
+    },
+    {
+      "id": "SRC-06",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE Q&A citing Guidelines on Current Account FX Business (Hui Fa [2020] No. 14 Art. 60) — Foreign Individual Unspent RMB Re-conversion (24-month memo; ≤USD 500/day; ≤USD 1,000 pre-departure port)",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0917/3134.html",
+      "language": "ZH"
+    },
+    {
+      "id": "SRC-07",
+      "jurisdiction": "PRC",
+      "authority": "State Taxation Administration (STA) & SAFE",
+      "citation": "STA & SAFE Announcement [2013] No. 40 (amended by [2018] No. 31 & [2021] No. 19) — Tax Record Filing for Outbound Payments > USD 50,000",
+      "url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103016/c5250711/content.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-08",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE Circular Hui Fa [2017] No. 29 — Regulating Large-sum Overseas Cash Withdrawals with Bank Cards (RMB 10,000/day per card; RMB 100,000/yr per person; 2-year suspension)",
+      "url": "https://www.safe.gov.cn/en/2017/1230/1397.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-09",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE Official Media Q&A on Circular Hui Fa [2017] No. 29 (Overseas card consumption vs ATM cash withdrawal rules)",
+      "url": "https://www.safe.gov.cn/en/2017/1230/1391.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-10",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE 2015 Q3 Press Conference Transcript (Circular Hui Fa [2009] No. 56 anti-splitting rules, 2-year watchlist, USD 50,000 payment-institution online shopping cap, underground bank crackdown)",
+      "url": "https://www.safe.gov.cn/en/2015/1111/1175.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-11",
+      "jurisdiction": "PRC",
+      "authority": "People's Bank of China (PBOC)",
+      "citation": "Provisional Administrative Rules on Sales and Payment of Foreign Exchange for Personal Asset Outbound Transfer (PBOC Public Notice [2004] No. 16 — Emigrant & Foreign Citizen Inheritance Transfers)",
+      "url": "https://nanjing.pbc.gov.cn/en/3688110/3688172/4048353/2025080817545423092/index.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-12",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE Shanghai Q&A (No. 85) on SAFE & Ministry of Construction Circular Hui Fa [2006] No. 47 — Real Estate FX Administration & Outward Remittance of Property Sale Proceeds",
+      "url": "https://www.safe.gov.cn/shanghai/2017/0224/465.html",
+      "language": "ZH"
+    },
+    {
+      "id": "SRC-13",
+      "jurisdiction": "PRC",
+      "authority": "General Administration of Customs of the PRC (GACC)",
+      "citation": "Customs Clearance Guide for International Passengers (RMB 20,000 cash cap; > USD 5,000 FX cash declaration & bank/SAFE carry certificate)",
+      "url": "http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-14",
+      "jurisdiction": "PRC",
+      "authority": "State Council of the PRC",
+      "citation": "State Council Decree No. 532 — Regulations of the PRC on Foreign Exchange Administration (Arts. 22, 39, 40, 42, 45, 48, 52: WFOE liquidation remittance & 30% / 30%–100% statutory fines)",
+      "url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm",
+      "language": "ZH"
+    },
+    {
+      "id": "SRC-15",
+      "jurisdiction": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "citation": "SAFE Enforcement Case Release (2018-06-27) — Administrative Fines under Arts. 39 & 45 for Individual Quota Splitting & Underground Bank Swaps",
+      "url": "https://www.safe.gov.cn/en/2018/0627/1442.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-16",
+      "jurisdiction": "PRC",
+      "authority": "National People's Congress / State Taxation Administration (STA)",
+      "citation": "Individual Income Tax Law of the PRC (Arts. 1, 3, 6, 10: 183-day residency; 3%–45% comprehensive; 5%–35% business; 20% flat dividends/interest/leasing/asset transfer)",
+      "url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-17",
+      "jurisdiction": "PRC",
+      "authority": "State Taxation Administration (STA)",
+      "citation": "Enterprise Income Tax Law of the PRC (Arts. 3, 4, 19: 25% standard EIT; non-resident passive/property-transfer taxable income rules)",
+      "url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103003/c5245840/content.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-18",
+      "jurisdiction": "PRC",
+      "authority": "State Taxation Administration (STA)",
+      "citation": "Value-Added Tax Law / Regulations (6% VAT on services & intangible assets; 0% / exemption rules on eligible cross-border services; domestic withholding)",
+      "url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103000/c5245856/content.html",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-19",
+      "jurisdiction": "US / PRC",
+      "authority": "Internal Revenue Service (IRS) / US Treasury",
+      "citation": "US–China Income Tax Convention & 1984/1986 Protocols (Arts. 9, 10, 11: 10% cap on dividends/interest/royalties; Art. 12 gains; Arts. 13/14 183-day services; Art. 22 FTC; Protocol 1 Para. 2 Saving Clause)",
+      "url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-20",
+      "jurisdiction": "US",
+      "authority": "Internal Revenue Service (IRS)",
+      "citation": "US Citizens and Residents Abroad — Filing Requirements (Worldwide income, USD translation, FBAR >$10,000, Form 8938, Form 3520 >$100,000 foreign gifts/bequests & 35% foreign trust penalty)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-21",
+      "jurisdiction": "US",
+      "authority": "Internal Revenue Service (IRS) / FinCEN",
+      "citation": "Report of Foreign Bank and Financial Accounts (FBAR, FinCEN Form 114: >$10,000 aggregate anytime, due April 15, automatic extension October 15, 5-year recordkeeping)",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-22",
+      "jurisdiction": "US",
+      "authority": "Internal Revenue Service (IRS)",
+      "citation": "FATCA Information for Individuals & Form 8938 Filing Thresholds ($50k/$75k US single; $100k/$150k US MFJ; $200k/$300k abroad single; $400k/$600k abroad MFJ; $10k/$50k/40% penalties)",
+      "url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets",
+      "secondary_url": "https://www.irs.gov/businesses/corporations/fatca-information-for-individuals",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-23",
+      "jurisdiction": "US",
+      "authority": "Internal Revenue Service (IRS)",
+      "citation": "Foreign Tax Credit (Form 1116; 10-year refund window; treaty-rate cap on creditable tax) & Figuring Foreign Earned Income Exclusion (Form 2555: $130,000 in 2025; $132,900 in 2026)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+      "secondary_url": "https://www.irs.gov/individuals/international-taxpayers/figuring-the-foreign-earned-income-exclusion",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-24",
+      "jurisdiction": "US",
+      "authority": "Internal Revenue Service (IRS) & US CBP / FinCEN",
+      "citation": "IRS LB&I Concept Unit FCU/CU/C-18.2.1_04 (IRC §988 ordinary FX character & IRC §988(e) personal-transaction exception for individuals) + FinCEN Form 105 (> $10,000 physical currency report)",
+      "url": "https://www.irs.gov/pub/fatca/int_practice_units/fcu_cu_c_18_2_1_04.pdf",
+      "secondary_url": "https://www.fincen.gov/resources/statutes-regulations/administrative-rulings/fincen-form-105-currency-and-other-monetary",
+      "language": "EN"
+    },
+    {
+      "id": "SRC-25",
+      "jurisdiction": "PRC",
+      "authority": "PBOC / NDRC / MIIT / MPS / SAMR / NFRA / CSRC / SAFE",
+      "citation": "Notice Yinfa [2026] No. 42 (2026-02-06) — Further Preventing and Disposing of Risks Related to Virtual Currencies and Tokenization (prohibiting fiat↔crypto exchange, unauthorized RMB stablecoins, and bank/payment settlement)",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "language": "ZH"
+    },
+    {
+      "id": "SRC-26",
+      "jurisdiction": "US",
+      "authority": "United States Code (Office of the Law Revision Counsel / GovInfo)",
+      "citation": "26 U.S.C. § 988 (2024 ed.) — Treatment of Certain Foreign Currency Transactions (§988(a) ordinary gain/loss; §988(e)(1)–(3) individual personal-transaction exclusion & $200 personal FX gain de minimis exclusion)",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "language": "EN"
+    }
+  ],
+  "methods": [
+    {
+      "id": "M01",
+      "category": "Personal Current-Account (US Citizen Eligible)",
+      "name": "Documented After-Tax Current-Account Income Conversion & SWIFT Wire (Salary, Consulting, Rent, Royalties, Dividends)",
+      "us_citizen_eligibility": "Eligible (Foreign / Non-Domestic Individual 境外个人)",
+      "statutory_cap": "Uncapped up to documented lawful after-tax RMB income",
+      "prc_tax_at_conversion": "0% extra conversion tax; requires proof underlying PRC tax was paid (3%–45% comprehensive IIT, 5%–35% business IIT, or 20% / 10% treaty passive rate)",
+      "commercial_spread_wire_fee": "",
+      "pros": "Best overall lawful channel for US citizens; no USD 50,000 ceiling; clean audit trail for both SAFE and US bank AML; creditable PRC income taxes offset US tax via Form 1116.",
+      "cons": "Requires matching passport, work permit/contract, and official STA tax-payment certificates (完税证明); counter review required at bank branch.",
+      "source_id": "SRC-01",
+      "source_url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
+      "extra_source_url": "https://www.safe.gov.cn/tianjin/2021/1102/1777.html"
+    },
+    {
+      "id": "M02",
+      "category": "Personal Current-Account (US Citizen Eligible)",
+      "name": "Re-conversion of Unspent RMB Previously Converted from Foreign Currency (With Original Exchange Slip)",
+      "us_citizen_eligibility": "Eligible (Foreign Individual 境外个人)",
+      "statutory_cap": "Up to original FX-to-RMB conversion amount within 24 months of exchange date",
+      "prc_tax_at_conversion": "0% (return of previously settled principal)",
+      "commercial_spread_wire_fee": "",
+      "pros": "Zero PRC income tax proof needed because funds originated as foreign currency; straightforward bank verification.",
+      "cons": "Strictly limited to original exchange memo (原兑换水单) valid for 24 months from initial FX settlement date; incurs round-trip FX spread.",
+      "source_id": "SRC-06",
+      "source_url": "https://www.safe.gov.cn/tianjin/2026/0917/3134.html",
+      "extra_source_url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html"
+    },
+    {
+      "id": "M03",
+      "category": "Personal Current-Account (US Citizen Eligible)",
+      "name": "Walk-In Small-Amount RMB→USD Re-conversion (Passport Only, No Tax/Exchange Slip)",
+      "us_citizen_eligibility": "Eligible (Foreign Individual 境外个人)",
+      "statutory_cap": "≤ USD 500 equivalent/day onshore; ≤ USD 1,000 equivalent/day at airside pre-departure port",
+      "prc_tax_at_conversion": "0% standalone fee/tax at tax bureau",
+      "commercial_spread_wire_fee": "",
+      "pros": "Valid passport only; immediate USD cash or conversion without contracts or tax vouchers.",
+      "cons": "Tiny daily ceiling (USD 500 onshore / USD 1,000 airside); banknotes spread is typically wider than telegraphic transfer rate; repeated daily structuring triggers SAFE anti-splitting controls.",
+      "source_id": "SRC-02",
+      "source_url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html",
+      "extra_source_url": "https://www.safe.gov.cn/tianjin/2026/0917/3134.html"
+    },
+    {
+      "id": "M04",
+      "category": "Personal Current-Account (US Citizen Eligible)",
+      "name": "Outbound Return / Wire of Unused Foreign Currency Held in PRC FX Savings Account",
+      "us_citizen_eligibility": "Eligible (Foreign Individual 境外个人)",
+      "statutory_cap": "Account FX balance: ID only; FX cash > USD 10,000/day requires customs entry declaration or bank withdrawal slip",
+      "prc_tax_at_conversion": "0% (already denominated in foreign currency)",
+      "commercial_spread_wire_fee": "",
+      "pros": "Under PBOC Decree [2006] No. 3 Art. 14 & Hui Fa [2007] No. 1 Art. 15(1), foreign individuals remit FX savings balances abroad with valid ID.",
+      "cons": "Only works for funds ALREADY in USD/FX inside the PRC account — does not convert RMB balances.",
+      "source_id": "SRC-01",
+      "source_url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
+      "extra_source_url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html"
+    },
+    {
+      "id": "M05",
+      "category": "Personal Current-Account (US Citizen Eligible)",
+      "name": "Overseas ATM Cash Withdrawal Using PRC Domestic Bank Card (UnionPay / Foreign Currency Card)",
+      "us_citizen_eligibility": "Eligible if holding active cross-border-enabled PRC debit card",
+      "statutory_cap": "≤ RMB 10,000 equivalent/day per card AND ≤ RMB 100,000 equivalent/calendar year per person across ALL PRC bank cards",
+      "prc_tax_at_conversion": "0% standalone tax at ATM (does not extinguish any unpaid PRC/US income tax liability)",
+      "commercial_spread_wire_fee": "",
+      "pros": "No bank-counter paperwork per withdrawal; converts RMB to USD directly at US ATMs supporting UnionPay/card network.",
+      "cons": "Hard RMB 100,000/calendar-year cap across all cards in your name; exceeding suspends ALL overseas card cash withdrawals for the current AND next calendar year; borrowing/lending cards is illegal; per-withdrawal ATM fees add up.",
+      "source_id": "SRC-08",
+      "source_url": "https://www.safe.gov.cn/en/2017/1230/1397.html",
+      "extra_source_url": "https://www.safe.gov.cn/en/2017/1230/1391.html"
+    },
+    {
+      "id": "M06",
+      "category": "Personal Current-Account (US Citizen Eligible)",
+      "name": "Direct Overseas Merchant / POS Consumption with PRC Bank Card (Travel, Tuition, Hotels, Retail)",
+      "us_citizen_eligibility": "Eligible for genuine personal current-account consumption",
+      "statutory_cap": "Not counted toward RMB 100,000 ATM cash cap or USD 50,000 domestic quota (subject to bank card limits & prohibited merchant categories)",
+      "prc_tax_at_conversion": "0% standalone tax",
+      "commercial_spread_wire_fee": "",
+      "pros": "Legally defrays real USD living, travel, hotel, airline, and tuition expenses directly from RMB balance without wire fees.",
+      "cons": "Produces goods/services rather than liquid USD bank deposits; fake POS cash-outs (套现) or prohibited capital-account MCCs (real estate, securities, investment insurance) trigger heavy SAFE Art. 45 fines.",
+      "source_id": "SRC-09",
+      "source_url": "https://www.safe.gov.cn/en/2017/1230/1391.html",
+      "extra_source_url": "https://www.safe.gov.cn/en/2018/0829/1452.html"
+    },
+    {
+      "id": "M07",
+      "category": "Personal Current-Account (US Citizen Eligible)",
+      "name": "Physical Cross-Border Cash Carry (Within PRC Customs & US CBP/FinCEN Rules)",
+      "us_citizen_eligibility": "Eligible for international passengers",
+      "statutory_cap": "PRC exit: ≤ RMB 20,000 cash hard limit (excess prohibited); FX cash > USD 5,000 requires prior entry declaration or bank/SAFE FX carry certificate. US entry: > USD 10,000 aggregate requires FinCEN Form 105",
+      "prc_tax_at_conversion": "0% border tax if lawfully converted/declared",
+      "commercial_spread_wire_fee": "",
+      "pros": "Immediate physical possession for small travel amounts.",
+      "cons": "Impractical for large balances; offshore CNY cash conversion rates in the US are poor; undeclared excess risks PRC confiscation/≤20% fine (Decree 532 Art. 42) and US CBP seizure (31 USC 5316 / FinCEN 105).",
+      "source_id": "SRC-13",
+      "source_url": "http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html",
+      "extra_source_url": "https://www.fincen.gov/resources/statutes-regulations/administrative-rulings/fincen-form-105-currency-and-other-monetary"
+    },
+    {
+      "id": "M08",
+      "category": "Capital-Account & Asset-Event Personal Channels",
+      "name": "Sale of Self-Use PRC Commercial Real Estate & Outward Wire of After-Tax RMB Proceeds",
+      "us_citizen_eligibility": "Eligible for foreign individuals selling lawfully purchased self-use PRC housing",
+      "statutory_cap": "Capped at net property transfer price minus transaction taxes/fees (and co-ownership share)",
+      "prc_tax_at_conversion": "Requires full property transfer tax clearance (20% IIT on net property transfer gain under IIT Law Art. 3(3), plus applicable deed/VAT/stamp taxes unless exempt)",
+      "commercial_spread_wire_fee": "",
+      "pros": "Moves large lump-sum property sale proceeds out of China in a single lawful capital-account channel without a $50k cap; original FX purchase memo not required under SAFE Q&A.",
+      "cons": "Lengthy property deregistration, STA tax clearance, and bank/SAFE authenticity review; US capital-gain & IRC §988 mortgage payoff FX rules must be checked.",
+      "source_id": "SRC-01",
+      "source_url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
+      "extra_source_url": "https://www.safe.gov.cn/shanghai/2017/0224/465.html"
+    },
+    {
+      "id": "M09",
+      "category": "Capital-Account & Asset-Event Personal Channels",
+      "name": "Foreign Citizen Inheritance Outbound Transfer (继承财产转移)",
+      "us_citizen_eligibility": "Eligible for US citizens inheriting a lawful Mainland China estate",
+      "statutory_cap": "Full lawfully inherited net estate (one application per decedent; remitted in lump sum or installments)",
+      "prc_tax_at_conversion": "No standalone PRC inheritance tax; requires tax proof/clearance on underlying estate assets",
+      "commercial_spread_wire_fee": "",
+      "pros": "Dedicated capital-account channel under PBOC Public Notice [2004] No. 16 allowing foreign citizens to liquidate, convert, and wire large PRC inheritances directly to their US account.",
+      "cons": "Requires notarized inheritance certificate, decedent hukou-jurisdiction SAFE filing, and tax clearance; US citizen must file IRS Form 3520 if foreign bequest/gifts exceed USD 100,000 in a tax year.",
+      "source_id": "SRC-11",
+      "source_url": "https://nanjing.pbc.gov.cn/en/3688110/3688172/4048353/2025080817545423092/index.html",
+      "extra_source_url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements"
+    },
+    {
+      "id": "M10",
+      "category": "Capital-Account & Asset-Event Personal Channels",
+      "name": "Mainland Emigrant Personal Asset Outbound Transfer (移民财产转移 — Former PRC Residents Only)",
+      "us_citizen_eligibility": "ONLY naturalized US citizens / permanent residents who emigrated FROM Mainland China and cancel Mainland hukou (NOT native US citizens without former PRC hukou)",
+      "statutory_cap": "One-time application for all pre-emigration lawful PRC assets (transfers ≥ RMB 200,000 remitted in installments within 2 years under 2004 Provisional Rules; ≥ RMB 500,000 escalated per rule)",
+      "prc_tax_at_conversion": "Requires tax clearance certificates on asset sources AND pre-hukou-cancellation IIT reconciliation under PRC IIT Law Art. 10(5)",
+      "commercial_spread_wire_fee": "",
+      "pros": "Only lawful one-time channel to move entire pre-immigration Mainland life savings/assets exceeding current-account quotas.",
+      "cons": "Requires Public Security Bureau Mainland hukou cancellation certificate (户籍注销证明) + Chinese embassy/consulate foreign settlement certification + full asset-source & tax-clearance audit.",
+      "source_id": "SRC-11",
+      "source_url": "https://nanjing.pbc.gov.cn/en/3688110/3688172/4048353/2025080817545423092/index.html",
+      "extra_source_url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html"
+    },
+    {
+      "id": "M11",
+      "category": "Domestic-Citizen (境内个人) & Household Channels",
+      "name": "PRC Citizen USD 50,000/Year Facilitated FX Purchase Quota (PRC ID Holders ONLY — Not US Passport Holders)",
+      "us_citizen_eligibility": "NOT available to US passport holders (境外个人); ONLY applies if funds genuinely belong to a PRC-citizen spouse/parent/child (境内个人)",
+      "statutory_cap": "USD 50,000 equivalent / person / calendar year (current-account purposes; > USD 50,000 allowed with true current-account documents)",
+      "prc_tax_at_conversion": "0% conversion tax on PRC citizen's own lawful after-tax RMB",
+      "commercial_spread_wire_fee": "",
+      "pros": "Fast e-banking or counter conversion for a PRC-citizen family member's OWN legitimate funds (e.g., genuine family maintenance 赡家款 or bona fide gift within rules).",
+      "cons": "CRITICAL TRAP: A US citizen CANNOT use this quota on a US passport, and transferring YOUR RMB to PRC citizens so they buy USD for you is illegal quota-splitting (Hui Fa [2009] No. 56 / Decree 532 Art. 39); also prohibited for overseas real estate, securities, or investment insurance.",
+      "source_id": "SRC-03",
+      "source_url": "https://www.safe.gov.cn/en/2007/0105/819.html",
+      "extra_source_url": "https://www.safe.gov.cn/en/2017/0427/1262.html"
+    },
+    {
+      "id": "M12",
+      "category": "Domestic-Citizen (境内个人) & Household Channels",
+      "name": "Domestic FX Savings Account Transfer Between Immediate Relatives (直系亲属: Spouse, Parents, Children)",
+      "us_citizen_eligibility": "Conditional — subject to strict cross-border classification between 境内个人 and 境外个人",
+      "statutory_cap": "Subject to underlying quota/current-account rules",
+      "prc_tax_at_conversion": "0% PRC gift tax; US recipient of > USD 100,000/yr gifts from nonresident alien spouse/relative must file IRS Form 3520",
+      "commercial_spread_wire_fee": "",
+      "pros": "Hui Fa [2007] No. 1 Art. 28(2) permits FX transfers between immediate relatives (parents, children, spouse) with IDs and kinship proof.",
+      "cons": "Under PBOC Decree [2006] No. 3 Art. 28 & Hui Fa [2007] No. 1 Art. 28(3), transfers between a domestic individual (PRC citizen) and a non-domestic individual (US citizen) FX account are managed as CROSS-BORDER transactions! Cannot be used to split quotas (5+ relatives triggers Circular 56 red flag).",
+      "source_id": "SRC-02",
+      "source_url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html",
+      "extra_source_url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html"
+    },
+    {
+      "id": "M13",
+      "category": "Corporate, Employment, Commercial & Investment Channels",
+      "name": "Direct Outbound / Split Payroll Wire Paid by PRC Employer to US Employee Account",
+      "us_citizen_eligibility": "Eligible for US citizens employed by a PRC entity under valid contract",
+      "statutory_cap": "Uncapped up to contractual after-tax remuneration (single payment > USD 50,000 requires employer STA tax record-filing)",
+      "prc_tax_at_conversion": "Regular PRC wage IIT withheld by employer (3%–45% progressive after RMB 5,000/mo deduction)",
+      "commercial_spread_wire_fee": "",
+      "pros": "Shifts conversion and STA tax record-filing (税务备案表 > USD 50,000) workload onto the PRC employer; USD lands directly in US account.",
+      "cons": "Only applies to prospective unpaid salary/bonuses (does not move RMB already sitting in your personal PRC account unless employer structure applies); requires employer cooperation.",
+      "source_id": "SRC-07",
+      "source_url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103016/c5250711/content.html",
+      "extra_source_url": "https://www.safe.gov.cn/hebei/2019/0923/1482.html"
+    },
+    {
+      "id": "M14",
+      "category": "Corporate, Employment, Commercial & Investment Channels",
+      "name": "Dividend / Profit Repatriation from PRC Company / WFOE Owned by US Citizen or US Entity",
+      "us_citizen_eligibility": "Eligible for foreign shareholders of PRC Foreign-Invested Enterprises (FIEs)",
+      "statutory_cap": "Uncapped up to audited distributable after-tax profits (after statutory reserve contribution)",
+      "prc_tax_at_conversion": "25% corporate EIT on company profit + 10% dividend WHT cap under US–China Treaty Art. 9 (vs 20% statutory IIT/EIT rate); > USD 50,000 requires STA tax record-filing",
+      "commercial_spread_wire_fee": "",
+      "pros": "Cleanest way to extract large business cash piles; 10% PRC dividend withholding tax is generally creditable on US Form 1116 (and US Corp owners should evaluate Form 5471 / GILTI / §245A rules with CPA).",
+      "cons": "Two-layer tax if profits not yet taxed at corporate level (25% EIT + 10% dividend WHT = 32.5% combined PRC effective burden before US FTC); requires annual CPA audit and prior-loss offset.",
+      "source_id": "SRC-19",
+      "source_url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+      "extra_source_url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103003/c5245840/content.html"
+    },
+    {
+      "id": "M15",
+      "category": "Corporate, Employment, Commercial & Investment Channels",
+      "name": "Equity Transfer / WFOE Liquidation & Capital Reduction Outbound Remittance",
+      "us_citizen_eligibility": "Eligible for foreign investors exiting PRC enterprise equity",
+      "statutory_cap": "Uncapped up to verified equity sale price or net liquidation proceeds belonging to foreign investor",
+      "prc_tax_at_conversion": "20% statutory IIT (individual) or 10% EIT (non-resident corp) on net capital gain; check US–China Treaty Art. 12 (China retains taxing rights on real-property-rich or ≥25% participation shares); paid-in capital return is tax-free principal",
+      "commercial_spread_wire_fee": "",
+      "pros": "Explicitly protected by State Council Decree No. 532 Art. 22: after lawful liquidation and tax payment, RMB belonging to foreign investors may be converted and remitted abroad, returning original capital tax-free.",
+      "cons": "Multi-month tax deregistration, creditor notice, SAFE FDI deregistration, and valuation scrutiny by STA.",
+      "source_id": "SRC-14",
+      "source_url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm",
+      "extra_source_url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103016/c5250711/content.html"
+    },
+    {
+      "id": "M16",
+      "category": "Corporate, Employment, Commercial & Investment Channels",
+      "name": "Bona Fide Cross-Border Service Fees, Royalties, or IP Licensing Payments",
+      "us_citizen_eligibility": "Eligible for genuine arm's-length services/IP provided by US person/company to PRC payer",
+      "statutory_cap": "Uncapped for authentic contracts (> USD 50,000 requires STA tax record-filing)",
+      "prc_tax_at_conversion": "6% PRC VAT withheld on China-purchased services/royalties + 10% US–China Treaty Art. 11 WHT on royalties; pure offshore services with NO China Permanent Establishment (Art. 5/7/13/14) may qualify for 0% PRC income tax upon treaty filing!",
+      "commercial_spread_wire_fee": "",
+      "pros": "Deductible business expense for PRC payer (reduces 25% corporate EIT!), unlike dividends; genuine offshore services with no PRC PE can reduce PRC income tax to 0% under Treaty Art. 7 (though 6% VAT still applies).",
+      "cons": "6% PRC VAT is generally NOT an income tax and is NOT creditable on US Form 1116! Transfer pricing & PE scrutiny (Art. 8 / Art. 5) is strict; fabricating invoices is a serious crime.",
+      "source_id": "SRC-18",
+      "source_url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103000/c5245856/content.html",
+      "extra_source_url": "https://www.irs.gov/pub/irs-trty/china.pdf"
+    },
+    {
+      "id": "M17",
+      "category": "Corporate, Employment, Commercial & Investment Channels",
+      "name": "Individual Foreign Trade Settlement Account (个人外汇结算账户) & Licensed Cross-Border Payment Institutions",
+      "us_citizen_eligibility": "Settlement account requires registered PRC individual business/trade filing; licensed payment apps limited to approved e-commerce/tuition/travel scopes",
+      "statutory_cap": "Individual trade settlement account: uncapped with genuine import/export contracts & logistics docs; licensed payment institution online shopping pilot: USD 50,000 single-transaction limit",
+      "prc_tax_at_conversion": "Business operation IIT 5%–35% + applicable VAT/customs on trade; 0% standalone fee-tax on genuine tuition/e-commerce payment",
+      "commercial_spread_wire_fee": "",
+      "pros": "Settlement accounts bypass personal USD 50,000 quota for registered sole proprietors conducting real cross-border trade; payment platforms streamline tuition/travel payments.",
+      "cons": "Cannot be used to move passive personal bank savings to your own US checking account.",
+      "source_id": "SRC-02",
+      "source_url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html",
+      "extra_source_url": "https://www.safe.gov.cn/en/2015/1111/1175.html"
+    },
+    {
+      "id": "M18",
+      "category": "Prohibited / High-Penalty Non-Compliant Channels (DO NOT USE)",
+      "name": "PROHIBITED: Quota Splitting / 'Smurfing' (分拆结售汇 — Using Friends'/Relatives' $50k Quotas)",
+      "us_citizen_eligibility": "ILLEGAL — Expressly Prohibited",
+      "statutory_cap": "Red-flag triggers in SAFE Circular 56: ≥5 individuals wiring to same overseas recipient, or transferring to >5 relatives",
+      "prc_tax_at_conversion": "Statutory FX Evasion Fine: ≤ 30% of amount (30%–100% if serious) + forced repatriation (State Council Decree No. 532 Art. 39)",
+      "commercial_spread_wire_fee": "",
+      "pros": "None lawful.",
+      "cons": "Published SAFE enforcement cases show hundreds of thousands to millions of RMB in Art. 39 fines on individuals splitting via relatives/friends, 2-year SAFE watchlist ban, and US bank AML account closure / structuring inquiries.",
+      "source_id": "SRC-10",
+      "source_url": "https://www.safe.gov.cn/en/2015/1111/1175.html",
+      "extra_source_url": "https://www.safe.gov.cn/en/2018/0627/1442.html"
+    },
+    {
+      "id": "M19",
+      "category": "Prohibited / High-Penalty Non-Compliant Channels (DO NOT USE)",
+      "name": "PROHIBITED: Underground Banks & Informal Peer-to-Peer FX Swaps (对敲 / 地下钱庄 — Domestic RMB for Offshore USD)",
+      "us_citizen_eligibility": "ILLEGAL — Expressly Prohibited",
+      "statutory_cap": "Zero lawful allowance",
+      "prc_tax_at_conversion": "Statutory Illegal FX Trading Fine: confiscation of illegal gains + ≤ 30% of amount (30%–100% if serious) + criminal liability (State Council Decree No. 532 Art. 45)",
+      "commercial_spread_wire_fee": "",
+      "pros": "None lawful — even 'two-shore matching' where RMB never crosses the border is explicitly prosecuted by SAFE/MPS as 变相买卖外汇 (disguised FX trading).",
+      "cons": "30%–100% SAFE fine on gross swap amount, PRC account freeze by public security (anti-telecom-fraud / AML freezes), tainted third-party USD triggering US bank SARs/account freezes, and zero fraud recourse.",
+      "source_id": "SRC-14",
+      "source_url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm",
+      "extra_source_url": "https://www.safe.gov.cn/en/2017/1201/1383.html"
+    },
+    {
+      "id": "M20",
+      "category": "Prohibited / High-Penalty Non-Compliant Channels (DO NOT USE)",
+      "name": "PROHIBITED: Cryptocurrency / Stablecoin OTC Bridge to Evade PRC FX Controls",
+      "us_citizen_eligibility": "ILLEGAL in Mainland China as fiat-crypto / FX bridge",
+      "statutory_cap": "Zero lawful allowance",
+      "prc_tax_at_conversion": "Prohibited illegal financial activity under PBOC/SAFE Yinfa [2026] No. 42 + disguised FX trading fine under State Council Decree No. 532 Art. 45 (≤ 30%, or 30%–100% if serious)",
+      "commercial_spread_wire_fee": "",
+      "pros": "None lawful.",
+      "cons": "PBOC/SAFE Yinfa [2026] No. 42 (2026-02-06) strictly bans fiat↔virtual-currency exchange, RMB stablecoin issuance without approval, and bank/payment settlement; OTC crypto frequently triggers PRC bank card freezes + US IRS gain/AML scrutiny.",
+      "source_id": "SRC-25",
+      "source_url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "extra_source_url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm"
+    },
+    {
+      "id": "M21",
+      "category": "Prohibited / High-Penalty Non-Compliant Channels (DO NOT USE)",
+      "name": "PROHIBITED: Fabricated or Over-Invoiced Trade / Consulting Contracts (虚假贸易/合同骗购外汇)",
+      "us_citizen_eligibility": "ILLEGAL — Expressly Prohibited",
+      "statutory_cap": "Zero lawful allowance",
+      "prc_tax_at_conversion": "Forced re-conversion/repatriation + ≤ 30% fine (30%–100% if serious) + criminal prosecution (Decree No. 532 Arts. 39 & 40)",
+      "commercial_spread_wire_fee": "",
+      "pros": "None lawful.",
+      "cons": "You not only pay fake PRC VAT/withholding AND manufacture phantom US taxable income on fake invoices, you ALSO face 30%–100% SAFE fines and criminal fraud exposure.",
+      "source_id": "SRC-14",
+      "source_url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm",
+      "extra_source_url": "https://www.safe.gov.cn/en/2018/0627/1442.html"
+    },
+    {
+      "id": "M22",
+      "category": "Prohibited / High-Penalty Non-Compliant Channels (DO NOT USE)",
+      "name": "PROHIBITED: Overseas POS Merchant Cash-Out (境外刷卡套现) or Borrowing Multi-Person Bank Cards",
+      "us_citizen_eligibility": "ILLEGAL — Expressly Prohibited",
+      "statutory_cap": "Zero lawful allowance",
+      "prc_tax_at_conversion": "State Council Decree No. 532 Art. 45 fine (≤ 30%, or 30%–100% if serious) + 2-year overseas ATM ban",
+      "commercial_spread_wire_fee": "",
+      "pros": "None lawful.",
+      "cons": "SAFE publicly fined individuals > RMB 1,000,000 for swiping RMB bank cards on overseas POS machines to obtain HKD/foreign cash, plus high illicit merchant commission.",
+      "source_id": "SRC-08",
+      "source_url": "https://www.safe.gov.cn/en/2017/1230/1397.html",
+      "extra_source_url": "https://www.safe.gov.cn/en/2018/0829/1452.html"
+    }
+  ],
+  "conversion_penalty_layers": [
+    {
+      "id": "CP-01",
+      "layer": "1. PRC Tax Gatekeeper",
+      "component": "Standalone PRC Currency Conversion / Wire Exit Tax",
+      "verified_rate_or_rule": "0% (No standalone PRC FX conversion or wire tax exists; tax applies only to underlying income/transactions)",
+      "mitigation": "If income was already taxed, retrieve STA 完税证明 and pay 0% extra tax at conversion.",
+      "source_url": "https://www.safe.gov.cn/tianjin/2021/1102/1777.html"
+    },
+    {
+      "id": "CP-02",
+      "layer": "1. PRC Tax Gatekeeper",
+      "component": "PRC Individual Income Tax — Comprehensive Income (Wages, Personal Services, Author's Remuneration, Royalties)",
+      "verified_rate_or_rule": "3%–45% progressive (after RMB 60,000/yr resident deduction or RMB 5,000/mo non-resident wage deduction)",
+      "mitigation": "Use statutory deductions; claim US Form 1116 Foreign Tax Credit to offset US tax on non-excluded wages.",
+      "source_url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html"
+    },
+    {
+      "id": "CP-03",
+      "layer": "1. PRC Tax Gatekeeper",
+      "component": "PRC Individual Income Tax — Business Operation Income",
+      "verified_rate_or_rule": "5%–35% progressive on net annual taxable business income (after costs, expenses, losses)",
+      "mitigation": "Substantiate all deductible business costs/expenses; claim US Form 1116 FTC for creditable income tax.",
+      "source_url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html"
+    },
+    {
+      "id": "CP-04",
+      "layer": "1. PRC Tax Gatekeeper",
+      "component": "PRC Statutory IIT on Dividends, Interest, Asset Leasing, Property/Equity Transfer, Incidental Income",
+      "verified_rate_or_rule": "20% flat statutory rate (reduced to 10% cap on dividends, interest, and royalties under US–China Treaty)",
+      "mitigation": "Always file treaty claim for 10% cap on dividends/interest/royalties — IRS will NOT credit excess tax above the 10% treaty rate!",
+      "source_url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html"
+    },
+    {
+      "id": "CP-05",
+      "layer": "1. PRC Tax Gatekeeper",
+      "component": "US–China Tax Treaty Withholding Cap (Dividends Art. 9, Interest Art. 10, Royalties Art. 11)",
+      "verified_rate_or_rule": "10% maximum of gross amount for beneficial owners resident in the US",
+      "mitigation": "Submit treaty entitlement filing to withholding agent per STA rules before payment.",
+      "source_url": "https://www.irs.gov/pub/irs-trty/china.pdf"
+    },
+    {
+      "id": "CP-06",
+      "layer": "1. PRC Tax Gatekeeper",
+      "component": "PRC Corporate Enterprise Income Tax (Prior to WFOE Dividend Distribution)",
+      "verified_rate_or_rule": "25% standard corporate EIT rate on taxable corporate profits",
+      "mitigation": "Evaluate bona fide arm's-length salary/royalty/service deductions vs post-EIT dividends with cross-border CPA.",
+      "source_url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103003/c5245840/content.html"
+    },
+    {
+      "id": "CP-07",
+      "layer": "1. PRC Tax Gatekeeper",
+      "component": "PRC Value-Added Tax (VAT) on Cross-Border Services / Royalties",
+      "verified_rate_or_rule": "6% VAT on taxable services & intangible assets (0% / exempt only for qualifying exported services)",
+      "mitigation": "CRITICAL: PRC VAT is an indirect turnover tax, NOT an income tax — it is NOT creditable on US Form 1116! Price contracts VAT-exclusive or check exemption rules.",
+      "source_url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103000/c5245856/content.html"
+    },
+    {
+      "id": "CP-08",
+      "layer": "1. PRC Tax Gatekeeper",
+      "component": "STA & SAFE Outbound Payment Tax Record Filing (服务贸易等项目对外支付税务备案表)",
+      "verified_rate_or_rule": "Mandatory filing before outbound payments > USD 50,000 by domestic institutions/individuals (procedural gate, 0% filing fee)",
+      "mitigation": "Can be completed electronically via China Electronic Tax Bureau (电子税务局) or tax hall.",
+      "source_url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103016/c5250711/content.html"
+    },
+    {
+      "id": "CP-09",
+      "layer": "2. US Tax & Treaty Relief",
+      "component": "US Federal Income Tax on Wire Transfer Itself",
+      "verified_rate_or_rule": "0% standalone wire tax (US taxes worldwide income when earned, NOT when transferred between own accounts)",
+      "mitigation": "Keep bank statements and tax returns proving prior inclusion of income.",
+      "source_url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements"
+    },
+    {
+      "id": "CP-10",
+      "layer": "2. US Tax & Treaty Relief",
+      "component": "US Foreign Tax Credit (Form 1116) & Foreign Earned Income Exclusion (Form 2555)",
+      "verified_rate_or_rule": "Form 1116 dollar-for-dollar credit for creditable PRC income taxes (10-yr refund claim window); Form 2555 FEIE max $130,000 (2025) / $132,900 (2026)",
+      "mitigation": "When PRC IIT rate exceeds effective US rate, Form 1116 FTC often eliminates US residual tax AND builds FTC carryovers (cannot claim FTC on FEIE-excluded wages).",
+      "source_url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit"
+    },
+    {
+      "id": "CP-11",
+      "layer": "3. FX Gain / Loss Rules",
+      "component": "US 26 USC §988 Foreign Currency Gain/Loss vs §988(e) Individual Personal Exception ($200 Gain Rule)",
+      "verified_rate_or_rule": "Business/§212 investment currency disposition = ordinary gain/loss (§988); individual PERSONAL transaction = excluded from §988, and FX gain ≤ $200 per personal transaction is tax-free under 26 USC §988(e)(2)",
+      "mitigation": "Distinguish non-interest personal living accounts from §212 interest-bearing investment deposits or business QBUs; track USD spot-rate basis.",
+      "source_url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm"
+    },
+    {
+      "id": "CP-12",
+      "layer": "4. Commercial Banking Friction",
+      "component": "PRC Bank CNY→USD FX Selling Spread (Telegraphic Transfer Ask vs Mid-Market)",
+      "verified_rate_or_rule": "",
+      "mitigation": "UNVERIFIED on official gov sites (commercial bank pricing). Always convert via Telegraphic Transfer (现汇卖出价) rather than physical banknotes (现钞卖出价), and request institutional FX desk pricing on large wires.",
+      "source_url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html"
+    },
+    {
+      "id": "CP-13",
+      "layer": "4. Commercial Banking Friction",
+      "component": "Outgoing PRC Bank Wire Commission, SWIFT Cable Fee, Intermediary Lifting Fee & US Incoming Wire Fee",
+      "verified_rate_or_rule": "",
+      "mitigation": "UNVERIFIED on official gov sites (commercial fee schedules). Consolidate documented conversions into fewer, larger SWIFT wires to pay fixed cable/intermediary fees once.",
+      "source_url": "https://www.pbc.gov.cn/en/3688253/3689009/3788474/2025092319420747571/index.html"
+    },
+    {
+      "id": "CP-14",
+      "layer": "4. Commercial Banking Friction",
+      "component": "UnionPay / Overseas ATM Operator Surcharges & Commercial Remittance Platform Fees",
+      "verified_rate_or_rule": "",
+      "mitigation": "UNVERIFIED on official gov sites (commercial fee schedules). Confirm card-issuer + US ATM surcharge before using RMB 100,000/yr ATM channel.",
+      "source_url": "https://www.safe.gov.cn/en/2017/1230/1397.html"
+    },
+    {
+      "id": "CP-15",
+      "layer": "5. Non-Compliance Penalties",
+      "component": "PRC SAFE FX Evasion, Quota-Splitting, Fake Invoices, Underground Bank & Disguised FX Trading Fines",
+      "verified_rate_or_rule": "≤ 30% fine on violation amount; 30%–100% fine if serious + confiscation of illegal gains + forced repatriation + criminal liability (State Council Decree No. 532 Arts. 39, 40, 45); ≤ 20% fine on unlawful cash carry (Art. 42)",
+      "mitigation": "Strictly avoid smurfing, underground swaps, OTC crypto FX bridges, and fake invoices.",
+      "source_url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm"
+    },
+    {
+      "id": "CP-16",
+      "layer": "5. Non-Compliance Penalties",
+      "component": "US Offshore Non-Reporting Penalties (Form 8938, Form 3520, FinCEN 114 FBAR, FinCEN 105 CMIR)",
+      "verified_rate_or_rule": "Form 8938: $10,000 base + up to $50,000 continued failure + 40% tax understatement penalty; Form 3520: greater of $10,000 or 35% (trusts); FinCEN 105: seizure of all unreported >$10,000 currency + civil/criminal penalties",
+      "mitigation": "Verify FBAR & Form 8938 compliance (or IRS delinquent/streamlined procedures with CPA) before repatriating large legacy balances.",
+      "source_url": "https://www.irs.gov/businesses/corporations/fatca-information-for-individuals"
+    }
+  ],
+  "us_prc_compliance": [
+    {
+      "id": "TC-01",
+      "jurisdiction": "US",
+      "item": "Worldwide Income & USD Translation (Form 1040)",
+      "threshold_or_trigger": "Standard Form 1040 filing threshold by status/age",
+      "verified_rule": "US citizens must report worldwide gross income in USD regardless of whether funds remain stuck in China or are remitted.",
+      "source_url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements"
+    },
+    {
+      "id": "TC-02",
+      "jurisdiction": "US",
+      "item": "FinCEN Form 114 (FBAR)",
+      "threshold_or_trigger": "> $10,000 aggregate across all foreign accounts at ANY time in calendar year",
+      "verified_rule": "E-file via FinCEN BSA E-Filing System (not with Form 1040); due April 15 with automatic extension to October 15; keep records 5 years.",
+      "source_url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar"
+    },
+    {
+      "id": "TC-03",
+      "jurisdiction": "US",
+      "item": "IRS Form 8938 (FATCA — US-Resident Single / MFS)",
+      "threshold_or_trigger": "> $50,000 on last day of tax year OR > $75,000 at any time in tax year",
+      "verified_rule": "Attach to Form 1040 (not required if not required to file Form 1040); $10,000 penalty, up to $50,000 continued failure, 40% understatement penalty.",
+      "source_url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets"
+    },
+    {
+      "id": "TC-04",
+      "jurisdiction": "US",
+      "item": "IRS Form 8938 (FATCA — US-Resident Married Filing Jointly)",
+      "threshold_or_trigger": "> $100,000 on last day of tax year OR > $150,000 at any time in tax year",
+      "verified_rule": "Separate from FBAR — meeting both thresholds requires filing BOTH FinCEN 114 and Form 8938.",
+      "source_url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets"
+    },
+    {
+      "id": "TC-05",
+      "jurisdiction": "US",
+      "item": "IRS Form 8938 (FATCA — Qualified Taxpayer Living Abroad)",
+      "threshold_or_trigger": "Single/MFS: > $200,000 year-end / > $300,000 anytime; MFJ: > $400,000 year-end / > $600,000 anytime",
+      "verified_rule": "Requires foreign tax home plus bona fide residence for entire tax year OR 330 days physical presence in 12 consecutive months.",
+      "source_url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets"
+    },
+    {
+      "id": "TC-06",
+      "jurisdiction": "US",
+      "item": "IRS Form 1116 — Foreign Tax Credit (FTC)",
+      "threshold_or_trigger": "Paid or accrued qualifying foreign income taxes on income also subject to US tax",
+      "verified_rule": "Dollar-for-dollar credit for PRC income taxes (not VAT, and capped at treaty-reduced rate if eligible); 10-year refund window via Form 1040-X.",
+      "source_url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit"
+    },
+    {
+      "id": "TC-07",
+      "jurisdiction": "US",
+      "item": "IRS Form 2555 — Foreign Earned Income Exclusion (FEIE)",
+      "threshold_or_trigger": "Foreign tax home + bona fide residence or 330-day physical presence test",
+      "verified_rule": "Max exclusion $130,000 (2025) / $132,900 (2026); standard housing cap $39,000 (2025) / $39,870 (2026). Cannot claim FTC on excluded income.",
+      "source_url": "https://www.irs.gov/individuals/international-taxpayers/figuring-the-foreign-earned-income-exclusion"
+    },
+    {
+      "id": "TC-08",
+      "jurisdiction": "US",
+      "item": "IRS Form 3520 — Foreign Gifts, Bequests & Foreign Trusts",
+      "threshold_or_trigger": "> $100,000 aggregate gifts/bequests from nonresident alien individual or foreign estate in a tax year",
+      "verified_rule": "Mail-filed information return due with tax return; foreign trust failures incur greater of $10,000 or 35% gross transfer/distribution penalty.",
+      "source_url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements"
+    },
+    {
+      "id": "TC-09",
+      "jurisdiction": "US",
+      "item": "FinCEN Form 105 (CMIR) — Physical Border Currency Report",
+      "threshold_or_trigger": "> $10,000 aggregate physical currency or monetary instruments entering or leaving the US",
+      "verified_rule": "No cap on legal transport, but mandatory filing with CBP (online or paper); failure risks seizure of entire amount plus penalties.",
+      "source_url": "https://www.cbp.gov/sites/default/files/2024-07/cbp_form_6059b_english.pdf"
+    },
+    {
+      "id": "TC-10",
+      "jurisdiction": "US / PRC",
+      "item": "US–China Income Tax Convention — Saving Clause & Art. 22 FTC",
+      "threshold_or_trigger": "US citizens claiming treaty benefits",
+      "verified_rule": "Under Protocol 1 Para. 2 (Saving Clause), the US retains the right to tax its citizens worldwide, while China grants US residents 10% WHT caps (Arts. 9–11) and the US grants FTC under Art. 22.",
+      "source_url": "https://www.irs.gov/pub/irs-trty/china.pdf"
+    },
+    {
+      "id": "TC-11",
+      "jurisdiction": "PRC",
+      "item": "PRC Individual Tax Residency (183-Day Rule)",
+      "threshold_or_trigger": "Domiciled in China OR ≥ 183 days in China in a calendar tax year",
+      "verified_rule": "≥ 183 days = PRC resident individual (annual comprehensive reconciliation Mar 1–Jun 30); < 183 days and non-domiciled = non-resident taxed only on China-source income monthly/per-transaction.",
+      "source_url": "https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html"
+    },
+    {
+      "id": "TC-12",
+      "jurisdiction": "PRC",
+      "item": "PBOC / SAFE Individual FX Entity Classification",
+      "threshold_or_trigger": "Passport / ID type at bank account opening & conversion",
+      "verified_rule": "PRC ID = 境内个人 (USD 50,000/yr FX purchase & sale quotas); Foreign/US passport = 境外个人 (USD 50,000/yr FX settlement quota ONLY; FX purchase requires Art. 13 income + tax proof).",
+      "source_url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html"
+    }
+  ],
+  "flagged_items": [
+    {
+      "id": "FLG-01",
+      "type": "Premise & Regulatory Clarification",
+      "item": "User premise: 'no way to convert CNY into USD without paying a considerable amount of taxes'",
+      "blank_field": "Account-holder's specific tax-paid vs untaxed RMB balance (unknown — left blank)",
+      "status": "Needs User Fact Check",
+      "explanation": "Neither PRC nor US law imposes a standalone currency-conversion tax. However, for a US citizen (境外个人), SAFE Hui Fa [2007] No. 1 Art. 13(1) requires PRC tax vouchers (税务凭证) to convert >USD 500/day. If PRC tax was already paid, conversion tax = 0%. If the RMB was never taxed in China, settling statutory PRC tax unlocks SAFE conversion AND is generally creditable against US federal tax via Form 1116.",
+      "source_url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html"
+    },
+    {
+      "id": "FLG-02",
+      "type": "Repo Audit Irregularity (Critical)",
+      "item": "Existing docs/index.html & docs/methods.html list '$50,000/person/year facilitation quota' as 'Simplest small route' for a US citizen",
+      "blank_field": "N/A (Corrected in portal/)",
+      "status": "Flagged for Review",
+      "explanation": "Under PBOC Decree [2006] No. 3 Arts. 9 & 37 and SAFE Hui Fa [2007] No. 1 Art. 2, the USD 50,000 annual FX PURCHASE (购汇) quota applies ONLY to PRC citizens (境内个人), NOT US passport holders (境外个人).",
+      "source_url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html"
+    },
+    {
+      "id": "FLG-03",
+      "type": "Unverified Commercial Value (Left Blank)",
+      "item": "Chinese commercial bank CNY→USD FX spread (telegraphic transfer selling rate vs midpoint)",
+      "blank_field": "commercial_spread_wire_fee = \"\"",
+      "status": "Unverified (No Official Gov Tariff)",
+      "explanation": "PBOC sets the daily central parity and floating band, while individual commercial banks quote live retail FX spreads that change intraday. Left blank per strict no-inference rule.",
+      "source_url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html"
+    },
+    {
+      "id": "FLG-04",
+      "type": "Unverified Commercial Value (Left Blank)",
+      "item": "PRC bank outgoing wire commission, SWIFT cable charge, correspondent bank lifting fees & US receiving wire fees",
+      "blank_field": "commercial_spread_wire_fee = \"\"",
+      "status": "Unverified (No Official Gov Tariff)",
+      "explanation": "PBOC Yinfa [2008] No. 125 Art. 14 notes settling banks charge fees per commercial agreement; no uniform statutory dollar/RMB fee exists across BOC, ICBC, CCB, CMB, HSBC, etc. Left blank.",
+      "source_url": "https://www.pbc.gov.cn/en/3688253/3689009/3788474/2025092319420747571/index.html"
+    },
+    {
+      "id": "FLG-05",
+      "type": "Unverified Commercial Value (Left Blank)",
+      "item": "UnionPay / PRC issuer overseas ATM withdrawal fees, US ATM operator surcharges & commercial remittance platform fees (Wise, PayPal, etc.)",
+      "blank_field": "commercial_spread_wire_fee = \"\"",
+      "status": "Unverified (No Official Gov Tariff)",
+      "explanation": "Statutory ATM caps (RMB 10,000/day, RMB 100,000/yr) are SAFE-verified, but per-withdrawal issuer fees and commercial fintech eligibility/pricing for foreign passport holders in China vary commercially and are left blank.",
+      "source_url": "https://www.safe.gov.cn/en/2017/1230/1397.html"
+    },
+    {
+      "id": "FLG-06",
+      "type": "Repo Audit Irregularity (Citation Mismatch)",
+      "item": "Existing docs/methods.html cites SAFE S1 (2019 70-year history speech) for 11 distinct rows (property sales, equity exits, intercompany loans, HK wires, platforms)",
+      "blank_field": "N/A (Replaced with specific statutes in portal/)",
+      "status": "Flagged for Review",
+      "explanation": "S1 (safe.gov.cn/en/2019/0930/1574.html) is a high-level historical review and does not contain operational rules for real estate sales, equity exits, or intercompany loans. Specific primary statutes are linked in portal/methods.html.",
+      "source_url": "https://www.safe.gov.cn/en/2019/0930/1574.html"
+    },
+    {
+      "id": "FLG-07",
+      "type": "Repo Audit Irregularity (Citation Mismatch)",
+      "item": "Existing docs/taxes.html cites IRS S3 for 'Schedule B' and FBAR 'Apr 15, auto-ext. Oct 15', and IRS S4 for '$75k / $200k / $300k' thresholds",
+      "blank_field": "N/A (Corrected primary IRS URLs linked in portal/)",
+      "status": "Flagged for Review",
+      "explanation": "S3 omits April 15 / October 15 and Schedule B; S4 links out to the separate IRS Form 8938 threshold page for $75k/$200k/$300k figures. Exact IRS pages are verified and linked in portal/tax-compliance.html.",
+      "source_url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar"
+    },
+    {
+      "id": "FLG-08",
+      "type": "Repo Audit Irregularity (Omitted Statutory Exception)",
+      "item": "Existing docs/costs.html & docs/taxes.html state IRC §988 FX gain/loss is ordinary without noting IRC §988(e) individual personal-transaction exception",
+      "blank_field": "Personal vs business/investment nature of user's CNY account (unknown — left blank)",
+      "status": "Flagged for Review",
+      "explanation": "IRS LB&I Concept Unit FCU/CU/C-18.2.1_04 explicitly confirms IRC §988 does NOT apply when an individual disposes of nonfunctional currency in a personal transaction (IRC §988(e) / Treas. Reg. §1.988-1(a)(9)).",
+      "source_url": "https://www.irs.gov/pub/fatca/int_practice_units/fcu_cu_c_18_2_1_04.pdf"
+    },
+    {
+      "id": "FLG-09",
+      "type": "Regulatory Repeal & Branch-Practice Nuance",
+      "item": "Repeal of SAFE Hui Fa [2007] No. 1 Art. 39 minor penalty & local branch variance on >USD 50,000 foreign salary 税务备案表",
+      "blank_field": "Account-holding bank branch document checklist (left blank)",
+      "status": "Flagged for Review",
+      "explanation": "SAFE Hui Fa [2023] No. 8 repealed Art. 39 of Hui Fa [2007] No. 1 (penalties now follow State Council Decree No. 532 directly). Also, SAFE Tianjin Q&A (2019) notes some local tax bureaus no longer issue 税务备案表 when a foreign individual wires their own taxed salary >USD 50,000, instructing banks to verify lawful IIT tax proof (完税证明) instead.",
+      "source_url": "https://www.safe.gov.cn/tianjin/2019/1205/1307.html"
+    },
+    {
+      "id": "FLG-10",
+      "type": "Statutory Definition Divergence",
+      "item": "Difference between State Council Decree No. 532 Art. 52(2) ('1-year resident foreigner') and PBOC Decree [2006] No. 3 Art. 37 ('passport/ID rule')",
+      "blank_field": "N/A",
+      "status": "Flagged for Review",
+      "explanation": "While State Council Decree No. 532 Art. 52(2) defines 境内个人 broadly to include foreigners residing continuously in China ≥1 year for general BOP/FX purposes, PBOC Decree [2006] No. 3 Art. 37(1)–(2) specifically restricts individual FX quota eligibility (境内个人) to PRC ID/military/police ID holders and classifies all foreign passport holders as 境外个人.",
+      "source_url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm"
+    },
+    {
+      "id": "FLG-11",
+      "type": "Resolved Earlier Unverified Flag (F5 & F6)",
+      "item": "Previously unverified English sources for PRC cash-carry limits (RMB 20,000 / USD 5,000) and Emigration/Inheritance Transfer Rules",
+      "blank_field": "N/A (Now Verified on Official EN .gov.cn)",
+      "status": "Verified & Linked",
+      "explanation": "Confirmed on official English GACC Passenger Guide (english.customs.gov.cn) and official English PBOC Public Notice [2004] No. 16 release (nanjing.pbc.gov.cn / pbc.gov.cn).",
+      "source_url": "http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html"
+    },
+    {
+      "id": "FLG-12",
+      "type": "Initial Repository Irregularity",
+      "item": "Initial repo state at d9f3976 had only an 8-byte README.md ('# China2') with no dataset to audit",
+      "blank_field": "N/A",
+      "status": "Flagged for Review",
+      "explanation": "Logged for full audit transparency: initial commit d9f3976 contained no data; line-by-line repo review therefore audited both initial state and PR #1/#3/PR #4/#6 content merged to main.",
+      "source_url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements"
+    },
+    {
+      "id": "FLG-13",
+      "type": "Repo Audit Irregularity (Commercial vs Official Gov Source)",
+      "item": "research/sources.json (S04–S07) cites commercial provider pages (hsbc.com.cn and wise.com) as table row sources",
+      "blank_field": "commercial_spread_wire_fee = \"\" (strictly blank in portal/)",
+      "status": "Flagged for Review",
+      "explanation": "Commercial bank and fintech marketing/help pages are private corporate pages rather than official government regulators (.gov / .gov.cn). Across portal/, 100% of table rows link exclusively to .gov and .gov.cn primary authorities while leaving commercial fee/spread cells blank.",
+      "source_url": "https://www.pbc.gov.cn/en/3688253/3689009/3788474/2025092319420747571/index.html"
+    }
+  ]
+}

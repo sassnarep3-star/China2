@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Repository Line-by-Line Audit — China CNY → USD Verified Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-row">
+        <div>
+          <h1 class="brand-title">China CNY → USD Repatriation &amp; Tax-Penalty Verification Portal</h1>
+          <p class="brand-sub">US Citizen Edition · 100% Official PRC (.gov.cn) &amp; US (.gov) Primary Sources · Unverified Values Strictly Blank · Updated 2026-11-07</p>
+        </div>
+        <div>
+          <a class="meta-pill" href="../docs/index.html">↔ Main Repo Dashboard</a>
+        </div>
+      </div>
+      <nav class="nav-tabs" aria-label="Primary sections">
+        <a href="index.html">Executive Summary</a>
+        <a href="methods.html">All 22 Methods</a>
+        <a href="conversion-penalties.html">Penalty Breakdown</a>
+        <a href="tax-compliance.html">US &amp; PRC Taxes</a>
+        <a href="repo-audit.html" aria-current="page">Repo Line-by-Line Audit</a>
+        <a href="flagged-for-review.html" class="flag-tab">⚠ Flagged for Review</a>
+        <a href="sources.html">Official Sources</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="panel">
+      <h2>Repository Line-by-Line Verification Audit</h2>
+      <p>Every file in the repository was reviewed line by line against official <code>.gov.cn</code> and <code>.gov</code> primary texts. Full markdown report: <a href="../reports/REPO_LINE_BY_LINE_AUDIT.md"><code>reports/REPO_LINE_BY_LINE_AUDIT.md</code></a>.</p>
+      <div class="toolbar">
+        <div class="toolbar-controls">
+          <input type="search" id="table-search" placeholder="Search audited files, citations, irregularities...">
+        </div>
+        <div class="toolbar-controls" style="justify-content:flex-end;flex:0 0 auto;">
+          <span class="count-label" id="row-count"></span>
+          <button type="button" class="btn" id="export-csv">Export CSV</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table data-filterable="true">
+          <thead>
+            <tr>
+              <th>Audit ID</th>
+              <th>Audited Repo File / Scope</th>
+              <th>Verdict</th>
+              <th>Existing Repo Claim / Issue</th>
+              <th>Line-by-Line Verification Finding</th>
+              <th>Official Reference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="R-01" data-category="Flagged Irregularity" data-elig="ALL"><td><strong>R-01</strong></td><td>EXECUTIVE_SUMMARY.md (L5) &amp; docs/ (PR #1/#3)</td><td><span class="badge badge-warn">Flagged Irregularity</span></td><td>Listed &#x27;$50,000/person/year facilitation quota&#x27; as &#x27;Simplest small route&#x27; for a US citizen.</td><td>Misapplied to US citizens: PBOC Decree [2006] No. 3 Arts. 9 &amp; 37 and SAFE Hui Fa [2007] No. 1 Art. 2 restrict the USD 50,000 FX PURCHASE (购汇) quota to PRC citizens (境内个人). US passport holders (境外个人) use Art. 13 income+tax proof or ≤$500/day walk-in re-conversion.</td><td><a class="src-link" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener">pbc.gov.cn</a></td></tr><tr id="R-02" data-category="Citation Mismatch" data-elig="ALL"><td><strong>R-02</strong></td><td>docs/methods.html (11 rows, PR #1/#3)</td><td><span class="badge badge-warn">Citation Mismatch</span></td><td>Cited generic 2019 SAFE 70-year history speech (S1) for property sales, equity exits, intercompany loans, HK transfers, and payment institutions.</td><td>S1 (safe.gov.cn/en/2019/0930/1574.html) omits operational rules for those channels. Replaced in portal/ with PBOC Decree [2006] No. 3, SAFE Hui Fa [2006] No. 47, State Council Decree No. 532 Art. 22, and STA/SAFE Announcement [2013] No. 40.</td><td><a class="src-link" href="https://www.safe.gov.cn/en/2019/0930/1574.html" target="_blank" rel="noopener">safe.gov.cn</a></td></tr><tr id="R-03" data-category="Citation Mismatch" data-elig="ALL"><td><strong>R-03</strong></td><td>docs/taxes.html (L4–5, PR #1/#3)</td><td><span class="badge badge-warn">Citation Mismatch</span></td><td>Cited IRS S3 (abroad filing overview) for &#x27;Schedule B&#x27; and FBAR &#x27;Apr 15, auto-ext. Oct 15&#x27;.</td><td>Full-text verification showed S3 omits Schedule B and Apr 15 / Oct 15. Linked directly to the official IRS FBAR page verifying April 15 and automatic October 15 extension.</td><td><a class="src-link" href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="R-04" data-category="Citation Incomplete" data-elig="ALL"><td><strong>R-04</strong></td><td>docs/index.html (L15) &amp; docs/taxes.html (L6, PR #1/#3)</td><td><span class="badge badge-ok">Citation Incomplete</span></td><td>Cited IRS S4 (FATCA overview) for &#x27;$75k / $200k / $300k&#x27; Form 8938 filing thresholds.</td><td>S4 states only &#x27;exceed $50,000&#x27; and links out to the dedicated Form 8938 threshold page. Linked directly to the exact IRS threshold page confirming all 4 filing tiers ($50k/$75k, $100k/$150k, $200k/$300k, $400k/$600k).</td><td><a class="src-link" href="https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="R-05" data-category="Citation Incomplete" data-elig="ALL"><td><strong>R-05</strong></td><td>docs/taxes.html (L10) &amp; docs/costs.html (L4, PR #1/#3)</td><td><span class="badge badge-ok">Citation Incomplete</span></td><td>Cited STA S7 HTML page for &#x27;3%–45%&#x27; progressive salary withholding.</td><td>S7 puts rate tables in an external .docx annex. Linked directly to official English PRC Individual Income Tax Law Art. 3 on chinatax.gov.cn confirming 3%–45% (comprehensive), 5%–35% (business), and 20% (flat passive/transfer).</td><td><a class="src-link" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener">chinatax.gov.cn</a></td></tr><tr id="R-06" data-category="Omitted Statutory Exception" data-elig="ALL"><td><strong>R-06</strong></td><td>docs/taxes.html (L11) &amp; docs/costs.html (L7, PR #1/#3)</td><td><span class="badge badge-warn">Omitted Statutory Exception</span></td><td>Stated IRC §988 FX gain/loss is ordinary without noting the statutory individual personal-transaction exclusion.</td><td>Under 26 U.S.C. §988(e)(1)–(3) and IRS LB&amp;I Concept Unit FCU/CU/C-18.2.1_04, §988 does NOT apply to an individual&#x27;s personal transactions, and personal FX gains ≤ $200 per transaction are tax-exempt.</td><td><a class="src-link" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener">govinfo.gov</a></td></tr><tr id="R-07" data-category="Resolved Unverified" data-elig="ALL"><td><strong>R-07</strong></td><td>docs/flagged.html F5 &amp; F6 (PR #1/#3)</td><td><span class="badge badge-ok">Resolved Unverified</span></td><td>Marked PRC cash-carry limits (RMB 20,000 / USD 5,000) and Emigration/Inheritance Transfer Rules as unverified on English official sites.</td><td>Verified directly on official English GACC Passenger Guide (english.customs.gov.cn) and official English PBOC Public Notice [2004] No. 16 release (nanjing.pbc.gov.cn / pbc.gov.cn).</td><td><a class="src-link" href="http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html" target="_blank" rel="noopener">english.customs.gov.cn</a></td></tr><tr id="R-08" data-category="Protocol Hygiene" data-elig="ALL"><td><strong>R-08</strong></td><td>docs/sources.html S2 (PR #1/#3)</td><td><span class="badge badge-ok">Protocol Hygiene</span></td><td>Used insecure http:// URL for SAFE 2015 Q3 Press Transcript (S2).</td><td>Upgraded to https://www.safe.gov.cn/en/2015/1111/1175.html (note: english.customs.gov.cn only serves HTTP on its official GACC host).</td><td><a class="src-link" href="https://www.safe.gov.cn/en/2015/1111/1175.html" target="_blank" rel="noopener">safe.gov.cn</a></td></tr><tr id="R-09" data-category="Baseline Note" data-elig="ALL"><td><strong>R-09</strong></td><td>Initial Repository Commit d9f3976 (README.md L1)</td><td><span class="badge badge-ok">Baseline Note</span></td><td>Initial commit contained only an 8-byte README.md (&#x27;# China2&#x27;) with no dataset.</td><td>Logged for full audit trail; subsequent repository commits from concurrent Arena sessions were preserved intact per COORDINATION.md protocol and audited row by row.</td><td><a class="src-link" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="R-10" data-category="Gatekeeper Nuance" data-elig="ALL"><td><strong>R-10</strong></td><td>EXECUTIVE_SUMMARY.md (L3)</td><td><span class="badge badge-ok">Gatekeeper Nuance</span></td><td>Noted conversion is not a standalone tax event without explaining why banks block untaxed RMB.</td><td>Clarified that SAFE Hui Fa [2007] No. 1 Art. 13(1) makes STA tax vouchers (完税证明) a mandatory gatekeeper for foreign passport holders converting &gt;$500 RMB to USD.</td><td><a class="src-link" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener">safe.gov.cn</a></td></tr><tr id="R-11" data-category="Completeness Gap" data-elig="ALL"><td><strong>R-11</strong></td><td>docs/methods.html (PR #1/#3)</td><td><span class="badge badge-ok">Completeness Gap</span></td><td>Omitted the SAFE-regulated overseas bank-card ATM withdrawal &amp; merchant POS spending channel.</td><td>Added M05 &amp; M06 verified against SAFE Circular Hui Fa [2017] No. 29 (RMB 10,000/day per card; RMB 100,000/calendar year per person across all PRC cards; 2-year suspension if exceeded).</td><td><a class="src-link" href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener">safe.gov.cn</a></td></tr><tr id="R-12" data-category="Flagged Irregularity" data-elig="ALL"><td><strong>R-12</strong></td><td>research/sources.json S04–S07 (PR #4/#6)</td><td><span class="badge badge-warn">Flagged Irregularity</span></td><td>Included commercial corporate domains (hsbc.com.cn and wise.com) in the source allowlist and table citations.</td><td>Commercial bank/fintech marketing and help pages are private corporate materials, not official government regulators. Every table row in portal/ links exclusively to official .gov and .gov.cn authorities, leaving commercial tariffs blank.</td><td><a class="src-link" href="https://www.pbc.gov.cn/en/3688253/3689009/3788474/2025092319420747571/index.html" target="_blank" rel="noopener">pbc.gov.cn</a></td></tr><tr id="R-13" data-category="Completeness Enhancement" data-elig="ALL"><td><strong>R-13</strong></td><td>research/sources.json S13 &amp; S24 (PR #4/#6)</td><td><span class="badge badge-ok">Completeness Enhancement</span></td><td>Left current IRS FEIE dollar caps and substantive US–China Income Tax Treaty articles (10% WHT caps, Art. 22 FTC, Saving Clause) unextracted.</td><td>Verified directly from official IRS sources: FEIE caps ($130,000 for 2025; $132,900 for 2026) on IRS Figuring FEIE page, and 10% dividend/interest/royalty caps (Arts. 9–11) + Art. 22 FTC + Protocol 1 Para. 2 Saving Clause in IRS Treaty PDF.</td><td><a class="src-link" href="https://www.irs.gov/individuals/international-taxpayers/figuring-the-foreign-earned-income-exclusion" target="_blank" rel="noopener">irs.gov</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div>Every table row links directly to an official PRC (<code>.gov.cn</code>) or US (<code>.gov</code>) primary authority. Unverified commercial fees/spreads are left blank (<code>""</code>) and listed on <a href="flagged-for-review.html">Flagged for Review</a>.</div>
+    <div>General regulatory research only · Not individualized legal or tax advice.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

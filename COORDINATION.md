@@ -145,3 +145,23 @@ and record the outcome in the log below rather than force-overwriting.
 - **PR #8** (this documentation follow-up): https://github.com/sassnarep3-star/China2/pull/8 — **MERGED** 2026-11-07 20:49:24 UTC via `gh pr merge 8 --merge`; merge commit `aaaf9a92480b2d66f2935410f8b080eec8bd516d`. Both `verify` and `validate` checks passed before merge. Pages rebuilt at commit `aaaf9a9` with `status: built` and `error.message: null`.
 - **Record-completeness note:** the PR #7 record above was itself carried by PR #8, so PR #8's own merge result could not have been in it. That gap is closed by this entry, added from a third follow-up PR. No prior entry was edited.
 - **Post-merge re-verification against merged `main` (commit `aaaf9a9`):** `node tools/verify.mjs` → 477 checks, 0 failures. arena-996dc508's chain re-run on the same tree: `scripts/build.py` OK, `scripts/validate.py` PASS (9 pages, 67 findings, 24 sources, every table row officially linked, all local links/anchors resolve), `git diff --exit-code` clean, `node scripts/test_ui.js` PASS. Both sessions' checks green on the merged tree.
+
+---
+
+## Session `arena/85f37d08-china2` — Non-Overlapping Audit, Statutory Verification & Portal Scope
+
+> **Environment note:** Arena pins this session to branch `arena/85f37d08-china2` and prohibits creating or switching branches; `arena/85f37d08-china2` therefore serves as the session branch. Existing files owned by prior/parallel sessions (`EXECUTIVE_SUMMARY.md`, `EXECUTIVE-SUMMARY.md`, `README.md`, `docs/*`, `assets/*`, `research/*`, `data/*`, `site/*`, `tools/*`, `scripts/*`, `.github/workflows/validate.yml`, `.github/workflows/verify-site-data.yml`) are **preserved intact**; this session works strictly in its disjoint scope (`reports/**`, `portal/**`, `verify_85f37d08.py`, `.github/workflows/verify-portal-85f37d08.yml`) and links cleanly at integration.
+
+| # | Task | Status | Owner | Files |
+|---|------|--------|-------|-------|
+| A1 | Line-by-line audit & live URL verification of existing repo content | done | `arena/85f37d08-china2` | `reports/REPO_LINE_BY_LINE_AUDIT.md` |
+| A2 | Primary-source statutory/regulatory verification ledger (PRC SAFE, PBOC, STA, GACC, State Council, US IRS, FinCEN, CBP, US–China Tax Treaty) | done | `arena/85f37d08-china2` | `reports/CNY_TO_USD_RESEARCH_LEDGER.json` |
+| A3 | Comprehensive Executive Summary & 5-layer conversion-penalty / FTC / §988(e) breakdown | done | `arena/85f37d08-china2` | `reports/EXECUTIVE_SUMMARY_85f37d08.md` |
+| A4 | Self-contained multi-page dashboard portal (landing + category subpages + Repo Audit + Flagged for Review + automated verifier) | done | `arena/85f37d08-china2` | `portal/**`, `verify_85f37d08.py`, `.github/workflows/verify-portal-85f37d08.yml` |
+| A5 | Final integration, combined verification, PR to `main`, merge, and GitHub Pages live confirmation | in progress | `arena/85f37d08-china2` | `COORDINATION.md` (append-only) |
+
+### Rebase Conflict Resolution & Cross-Session Log (`arena/85f37d08-china2`)
+- **2026-11-07 UTC (Rebase #1 onto `06e6610`):** Resolved `COORDINATION.md` append conflict after `arena-996dc508` merged PRs #4 and #6, preserving 100% of `arena-996dc508`'s board and logs (`research/previous-dashboard/` also retaining `arena/43586205`).
+- **2026-11-07 UTC (Rebase #2 onto `3eecb4f`):** Resolved `COORDINATION.md` append conflict after `arena-fcd22b0c` merged PRs #7, #8, and #9, preserving 100% of both `arena-996dc508` and `arena-fcd22b0c` sections word-for-word above this divider. Zero file overlap in project deliverables (`reports/**`, `portal/**`, `verify_85f37d08.py`, `.github/workflows/verify-portal-85f37d08.yml`).
+- **Pending cross-scope link request (logged, not unilaterally edited per protocol):** Requesting a link to `portal/index.html` be added to `README.md` / `index.html` (owned by `arena-996dc508`). In the meantime, native GitHub Pages (`main:/`) serves `https://sassnarep3-star.github.io/China2/portal/` directly alongside `/docs/` and `/site/`.
+- **Verification completed before PR:** `python3 portal/generate_portal.py`, `python3 verify_85f37d08.py` (7 portal pages, 109 table rows, 100% `.gov`/`.gov.cn` row source links, blank `""` commercial values enforced, 0 broken local links), plus full green runs of BOTH prior sessions' suites (`python3 scripts/build.py`, `python3 scripts/validate.py`, `node scripts/test_ui.js`, and `node tools/verify.mjs`).
