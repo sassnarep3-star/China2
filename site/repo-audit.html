@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repository audit · China Money Repatriation</title>
+<meta name="description" content="Repository audit — CNY to USD repatriation research, verified against official sources.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><span class="brand">China → USD Repatriation</span><nav>
+<a href="index.html">Dashboard</a>
+<a href="executive-summary.html">Executive summary</a>
+<a href="conversion-routes.html">Conversion routes</a>
+<a href="cost-breakdown.html">Cost breakdown</a>
+<a href="us-tax-rules.html">US rules</a>
+<a href="china-rules.html">China rules</a>
+<a href="unlawful-routes.html">Unlawful routes</a>
+<a href="sources.html">Sources</a>
+<a href="flagged-for-review.html">Flagged for review</a>
+<a href="methodology.html">Methodology</a>
+<a href="repo-audit.html" class="here">Repo audit</a>
+</nav></header>
+<main>
+<h1>Repository audit</h1>
+<p class="sub">What the repository actually contained when this work started, and what that means for the audit.</p>
+<div class="callout warn"><p>The brief asked for a line-by-line review of the existing
+repository verified against official sources. <strong>There was no existing content to
+review.</strong> This is recorded as flag F03 rather than quietly skipped.</p></div>
+<div class="panel"><table>
+<thead><tr><th>Check</th><th>Result</th><th>Evidence</th></tr></thead><tbody>
+<tr class="data-row"><td>Commits on <code>main</code> at session start</td><td>1</td>
+<td><a href="https://github.com/sassnarep3-star/China2/commit/d9f397649f6601d0907184e7f16c9e03e5ca6d74" rel="noopener noreferrer" target="_blank">d9f3976 — "Initial commit"</a></td></tr>
+<tr class="data-row"><td>Files in the working tree of <code>main</code></td><td>1 — <code>README.md</code></td>
+<td><code>git ls-tree -r --name-only main</code> — <a href="https://github.com/sassnarep3-star/China2/tree/main" rel="noopener noreferrer" target="_blank">repository tree at main</a></td></tr>
+<tr class="data-row"><td>Size and contents of <code>README.md</code></td><td>8 bytes, the text <code># China2</code>, no trailing newline</td><td><code>cat README.md</code> — <a href="https://github.com/sassnarep3-star/China2/blob/main/README.md" rel="noopener noreferrer" target="_blank">README.md at main</a></td></tr>
+<tr class="data-row"><td>Pre-existing data files</td><td>None</td><td><a href="https://github.com/sassnarep3-star/China2/tree/main" rel="noopener noreferrer" target="_blank">repository tree at main</a></td></tr>
+<tr class="data-row"><td>Pre-existing code, tests or build configuration</td><td>None</td><td><a href="https://github.com/sassnarep3-star/China2/tree/main" rel="noopener noreferrer" target="_blank">repository tree at main</a></td></tr>
+<tr class="data-row"><td>Pre-existing site or GitHub Pages configuration</td><td>None; no <code>.github/</code> directory</td><td><a href="https://github.com/sassnarep3-star/China2/tree/main" rel="noopener noreferrer" target="_blank">repository tree at main</a></td></tr>
+<tr class="data-row"><td>Pre-existing <code>COORDINATION.md</code></td><td>None on <code>main</code></td><td><a href="https://github.com/sassnarep3-star/China2/tree/main" rel="noopener noreferrer" target="_blank">repository tree at main</a></td></tr>
+<tr class="data-row"><td>Pre-existing <code>LICENSE</code></td><td>None</td><td><a href="https://github.com/sassnarep3-star/China2/tree/main" rel="noopener noreferrer" target="_blank">repository tree at main</a></td></tr>
+<tr class="data-row"><td>Remote branches at session start</td><td><code>main</code>, <code>arena/4c576a01-china2</code>, <code>arena/996dc508-china2</code></td><td><code>git ls-remote --heads origin</code> — <a href="https://github.com/sassnarep3-star/China2/branches" rel="noopener noreferrer" target="_blank">branch list</a></td></tr>
+<tr class="data-row"><td>Content on the two parallel-session branches</td><td>A <code>COORDINATION.md</code> claim commit each; no project files</td><td><code>git ls-tree -r --name-only</code> on each branch — <a href="https://github.com/sassnarep3-star/China2/branches" rel="noopener noreferrer" target="_blank">branch list</a></td></tr>
+</tbody></table></div>
+<h2>Irregularities flagged</h2>
+<div class="panel"><table>
+<thead><tr><th>ID</th><th>Irregularity</th><th>Detail</th></tr></thead><tbody>
+<tr class="data-row"><td class="id">F03</td><td>No pre-existing data to audit</td>
+<td>Every finding in this project is newly produced from primary sources. No prior data was verified, because none existed. <a href="flagged-for-review.html#F03">F03</a> · <a href="https://github.com/sassnarep3-star/China2/commit/d9f397649f6601d0907184e7f16c9e03e5ca6d74" rel="noopener noreferrer" target="_blank">initial commit on main</a></td></tr>
+<tr class="data-row"><td class="id">F16</td><td>Three parallel sessions claimed overlapping scopes</td>
+<td>At session start three sessions held claims over the same deliverable, with two of them overlapping each other on <code>README.md</code>, <code>.github/</code> and <code>COORDINATION.md</code>. This session took a disjoint file scope and left the other sessions' claimed files untouched. <a href="flagged-for-review.html#F16">F16</a> · <a href="https://github.com/sassnarep3-star/China2/blob/arena/fcd22b0c-china2/COORDINATION.md" rel="noopener noreferrer" target="_blank">COORDINATION.md</a> · <a href="https://github.com/sassnarep3-star/China2/branches" rel="noopener noreferrer" target="_blank">branch list</a></td></tr>
+</tbody></table></div>
+</main>
+<footer>
+Built 2026-11-07 by session <code>arena-fcd22b0c</code>. Research only — not tax or legal advice.
+Every table row carries a source link to a primary official document, or is explicitly marked UNVERIFIED.
+Machine-readable ledgers: <code>data/*.json</code>. Verification report: <code>node tools/verify.mjs</code>.
+</footer>
+</body></html>

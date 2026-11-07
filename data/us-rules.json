@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "title": "United States tax and reporting rules that apply to a U.S. citizen holding a Chinese bank account",
+    "generated": "2026-11-07",
+    "generatedBy": "arena-fcd22b0c",
+    "columnPolicy": "Values appear only where the linked official source states them. Anything not confirmed is the literal string \"unverified\" and is repeated on the Flagged for Review page."
+  },
+  "rules": [
+    {
+      "id": "U01",
+      "topic": "Is converting CNY to USD itself a taxable event?",
+      "finding": "No separate conversion tax exists. U.S. tax attaches to income, not to the act of changing currency. All income tax determinations must be made in the functional currency, and the U.S. dollar is the functional currency for all taxpayers except some qualified business units.",
+      "value": "No conversion tax. Only exchange-rate gain or loss on the currency position is in scope.",
+      "form": "Not applicable",
+      "sourceId": "S04",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U02",
+      "topic": "Personal foreign-currency gain",
+      "finding": "If you have a gain on a personal foreign currency transaction because of changes in exchange rates, you do not have to include that gain in income unless it is more than $200. If the gain is more than $200, report it as a capital gain.",
+      "value": "$200 exclusion threshold per transaction",
+      "form": "Schedule D if above the threshold",
+      "sourceId": "S03",
+      "verifiedByFetch": false,
+      "flag": "F01"
+    },
+    {
+      "id": "U03",
+      "topic": "FBAR filing trigger",
+      "finding": "A U.S. person, including a citizen, resident, corporation, partnership, LLC, trust and estate, must file an FBAR where the aggregate value of foreign financial accounts exceeded $10,000 at any time during the calendar year. Whether the account produced taxable income is irrelevant.",
+      "value": "Aggregate value over $10,000 at any time during the calendar year",
+      "form": "FinCEN Form 114, filed with FinCEN via BSA E-Filing",
+      "sourceId": "S01",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U04",
+      "topic": "FBAR deadline",
+      "finding": "The FBAR is an annual report due April 15 following the calendar year reported, with an automatic extension to October 15 that requires no request.",
+      "value": "April 15, automatic extension to October 15",
+      "form": "FinCEN Form 114",
+      "sourceId": "S01",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U05",
+      "topic": "FBAR recordkeeping",
+      "finding": "For each reported account you must keep the name on the account, the account number, the name and address of the foreign bank, the type of account and the maximum value during the year, generally for five years from the FBAR due date.",
+      "value": "Five years from the due date of the FBAR",
+      "form": "Not applicable",
+      "sourceId": "S01",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U06",
+      "topic": "FBAR civil penalty amount",
+      "finding": "Civil FBAR penalty maximums in Title 31 of the United States Code are adjusted annually for inflation under 31 CFR 1010.821. The current adjusted dollar figures were NOT retrieved from the official eCFR text in this session and are therefore left unverified rather than quoted.",
+      "value": "unverified",
+      "form": "Not applicable",
+      "sourceId": "S01",
+      "verifiedByFetch": true,
+      "flag": "F02"
+    },
+    {
+      "id": "U07",
+      "topic": "Delinquent FBARs",
+      "finding": "Filing late or not at all is a violation. If the IRS has not contacted you and you are not under civil or criminal investigation, the IRS directs you to file late FBARs as soon as possible to keep potential penalties to a minimum, and to explain the reason for filing late.",
+      "value": "File as soon as possible with a reason-for-late-filing explanation",
+      "form": "FinCEN Form 114",
+      "sourceId": "S01",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U08",
+      "topic": "Form 8938 filing trigger — living in the United States",
+      "finding": "An unmarried filer living in the United States must file Form 8938 if the total value of specified foreign financial assets is more than $50,000 on the last day of the tax year or more than $75,000 at any time during the year. For married filing jointly the figures are more than $100,000 and more than $150,000. Married filing separately uses $50,000 and $75,000.",
+      "value": "$50,000 / $75,000 single; $100,000 / $150,000 married filing jointly",
+      "form": "Form 8938, attached to the income tax return",
+      "sourceId": "S02",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U09",
+      "topic": "Form 8938 filing trigger — living abroad",
+      "finding": "A filer who is not married filing jointly and lives abroad must file if the total value is more than $200,000 on the last day of the tax year or more than $300,000 at any time. Married filing jointly abroad: more than $400,000 and more than $600,000. Living abroad means a U.S. citizen whose tax home is in a foreign country and who has been present in a foreign country at least 330 days out of a consecutive 12-month period.",
+      "value": "$200,000 / $300,000 not MFJ; $400,000 / $600,000 MFJ",
+      "form": "Form 8938",
+      "sourceId": "S02",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U10",
+      "topic": "Form 8938 when no return is otherwise required",
+      "finding": "If you do not have to file a U.S. income tax return for the year, you do not have to file Form 8938 regardless of the value of your specified foreign financial assets. The FBAR obligation is unaffected.",
+      "value": "No Form 8938 obligation without an income tax return filing requirement",
+      "form": "Form 8938",
+      "sourceId": "S02",
+      "additionalSources": ["S17"],
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U11",
+      "topic": "FBAR and Form 8938 are cumulative",
+      "finding": "Form 8938 does not relieve filers of FBAR filing requirements; the two obligations are separate and both may apply to the same accounts.",
+      "value": "Both filings can be required for the same account",
+      "form": "FinCEN Form 114 and Form 8938",
+      "sourceId": "S02",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U12",
+      "topic": "Currency or monetary instruments physically carried into or out of the United States",
+      "finding": "FinCEN Form 105, the Report of International Transportation of Currency or Monetary Instruments (CMIR), must be filed by any person who transports, mails, ships, or has someone else transport, mail or ship currency or monetary instruments in excess of $10,000 into or out of the country, or who receives such items into the United States from abroad.",
+      "value": "More than $10,000 aggregate",
+      "form": "FinCEN Form 105",
+      "sourceId": "S15",
+      "additionalSources": ["S16"],
+      "verifiedByFetch": false,
+      "flag": null
+    },
+    {
+      "id": "U13",
+      "topic": "Treaty cap on Chinese withholding on dividends",
+      "finding": "Article 9(2) of the U.S.–China Income Tax Convention: where the recipient is the beneficial owner of the dividends, the tax charged by the source state shall not exceed 10 percent of the gross amount of the dividends.",
+      "value": "10% of gross",
+      "form": "Treaty position; foreign tax credit on the U.S. return",
+      "sourceId": "S11",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U14",
+      "topic": "Treaty cap on Chinese withholding on interest",
+      "finding": "Article 10(2): where the recipient is the beneficial owner of the interest, the tax charged by the source state shall not exceed 10 percent of the gross amount of the interest. Interest derived by a government, political subdivision, local authority or central bank of the other state is exempt from source-state tax.",
+      "value": "10% of gross",
+      "form": "Treaty position; foreign tax credit on the U.S. return",
+      "sourceId": "S11",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U15",
+      "topic": "Treaty cap on Chinese withholding on royalties",
+      "finding": "Article 11(2): where the recipient is the beneficial owner of the royalties, the tax charged by the source state shall not exceed 10 percent of the gross amount of the royalties.",
+      "value": "10% of gross",
+      "form": "Treaty position; foreign tax credit on the U.S. return",
+      "sourceId": "S11",
+      "verifiedByFetch": true,
+      "flag": null
+    },
+    {
+      "id": "U16",
+      "topic": "Relief from double taxation",
+      "finding": "The treaty provides that the country of residence will give a foreign tax credit for income tax paid to the other country, and Article 22 addresses the elimination of double taxation.",
+      "value": "Foreign tax credit in the country of residence",
+      "form": "Form 1116 (foreign tax credit)",
+      "sourceId": "S11",
+      "verifiedByFetch": true,
+      "flag": "F13"
+    },
+    {
+      "id": "U17",
+      "topic": "Treaty entry into force",
+      "finding": "The Agreement was signed at Beijing on April 30, 1984; the Second Protocol was signed at Beijing on May 10, 1986; ratification was advised by the Senate on July 24, 1986; instruments of ratification were exchanged on October 22, 1986; and it entered into force on January 1, 1987, with a general effective date of 1 January 1987.",
+      "value": "Signed 30 April 1984; in force 1 January 1987",
+      "form": "Not applicable",
+      "sourceId": "S11",
+      "verifiedByFetch": true,
+      "flag": null
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methodology and verification · China Money Repatriation</title>
+<meta name="description" content="Methodology and verification — CNY to USD repatriation research, verified against official sources.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><span class="brand">China → USD Repatriation</span><nav>
+<a href="index.html">Dashboard</a>
+<a href="executive-summary.html">Executive summary</a>
+<a href="conversion-routes.html">Conversion routes</a>
+<a href="cost-breakdown.html">Cost breakdown</a>
+<a href="us-tax-rules.html">US rules</a>
+<a href="china-rules.html">China rules</a>
+<a href="unlawful-routes.html">Unlawful routes</a>
+<a href="sources.html">Sources</a>
+<a href="flagged-for-review.html">Flagged for review</a>
+<a href="methodology.html" class="here">Methodology</a>
+<a href="repo-audit.html">Repo audit</a>
+</nav></header>
+<main>
+<h1>Methodology and verification</h1>
+<p class="sub">How the "verify everything, never infer" rule was enforced by code rather than by assertion.</p>
+<div class="callout"><p>The rules this project was built under, and how each was enforced
+mechanically rather than by assertion.</p></div>
+<h2>Rules applied</h2>
+<div class="panel"><table>
+<thead><tr><th>Rule</th><th>How it was enforced</th></tr></thead><tbody class="meta-table">
+<tr class="meta-row"><td>Every table row must have a source link to an official site</td>
+<td>All content is rendered from <code>data/*.json</code> by <code>tools/build.mjs</code>. The renderer has exactly two possible outputs for a source cell: a real link to an official document, or the literal badge "UNVERIFIED — no official source". There is no code path that emits an empty source cell.</td></tr>
+<tr class="meta-row"><td>If a value cannot be confirmed from an official source, leave it blank and flag it</td>
+<td>Unconfirmed fields hold the literal string <code>unverified</code> in the JSON. The renderer converts that string into a visible red UNVERIFIED badge rather than printing a number. <code>tools/verify.mjs</code> fails the build if a field is empty or whitespace-only instead.</td></tr>
+<tr class="meta-row"><td>Never infer or fill in values</td>
+<td>No figure on this site is derived from a commercial or advisory source. The only sources in <code>data/sources.json</code> are irs.gov, fincen/cbp.dhs.gov, loc.gov, safe.gov.cn, pbc.gov.cn, chinatax.gov.cn and english.www.gov.cn.</td></tr>
+<tr class="meta-row"><td>Verify line by line from primary sources</td>
+<td>Each source carries <code>verifiedByFetch</code>. A true value means the page was retrieved during this session and the supporting sentences were read on it. A false value is downgraded to "search-index" everywhere it appears and is repeated on the Flagged for Review page.</td></tr>
+<tr class="meta-row"><td>Flag irregularities for review</td>
+<td>16 flags are recorded in <code>data/flags.json</code> and published on the Flagged for Review page, including three that record gaps in this project's own evidence base.</td></tr>
+</tbody></table></div>
+
+<h2>The verification command</h2>
+<div class="callout ok"><p><code>node tools/verify.mjs</code> runs after every build and fails
+non-zero if any check breaks. It checks:</p>
+<p>1. Every JSON data row carries a resolvable source id whose URL is present and starts with
+<code>https://</code> or <code>http://</code>, or the row is explicitly marked unverified.<br>
+2. Every rendered <code>tr.data-row</code> in the built HTML contains at least one anchor to an
+external official source, or contains the UNVERIFIED badge.<br>
+3. No internal <code>href</code> points at a file that does not exist in <code>site/</code>.<br>
+4. No anchor fragment points at an <code>id</code> that does not exist in the target page.<br>
+5. No data field is empty or whitespace-only — a blank cell is a build failure, because a blank
+cell and an unverified cell are different claims.<br>
+6. Every source URL is on an official allowlist domain.</p></div>
+
+<h2>What was not verified, and why</h2>
+<div class="callout warn"><p>Outbound HTTP from this build sandbox is restricted to a small
+allowlist that does not include irs.gov or safe.gov.cn, so external links cannot be
+re-requested at build time. External URL verification was therefore performed during research,
+in-session, page by page, and the result is recorded per source in the
+<a href="sources.html">source register</a>. Internal links and fragments <em>are</em> checked
+mechanically on every build, because those are the links this project controls.</p></div>
+</main>
+<footer>
+Built 2026-11-07 by session <code>arena-fcd22b0c</code>. Research only — not tax or legal advice.
+Every table row carries a source link to a primary official document, or is explicitly marked UNVERIFIED.
+Machine-readable ledgers: <code>data/*.json</code>. Verification report: <code>node tools/verify.mjs</code>.
+</footer>
+</body></html>
