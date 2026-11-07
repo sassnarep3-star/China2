@@ -158,10 +158,28 @@ and record the outcome in the log below rather than force-overwriting.
 | A2 | Primary-source statutory/regulatory verification ledger (PRC SAFE, PBOC, STA, GACC, State Council, US IRS, FinCEN, CBP, US–China Tax Treaty) | done | `arena/85f37d08-china2` | `reports/CNY_TO_USD_RESEARCH_LEDGER.json` |
 | A3 | Comprehensive Executive Summary & 5-layer conversion-penalty / FTC / §988(e) breakdown | done | `arena/85f37d08-china2` | `reports/EXECUTIVE_SUMMARY_85f37d08.md` |
 | A4 | Self-contained multi-page dashboard portal (landing + category subpages + Repo Audit + Flagged for Review + automated verifier) | done | `arena/85f37d08-china2` | `portal/**`, `verify_85f37d08.py`, `.github/workflows/verify-portal-85f37d08.yml` |
-| A5 | Final integration, combined verification, PR to `main`, merge, and GitHub Pages live confirmation | in progress | `arena/85f37d08-china2` | `COORDINATION.md` (append-only) |
+| A5 | Final integration, combined verification, PR to `main`, merge, and GitHub Pages live confirmation | done | `arena/85f37d08-china2` | `COORDINATION.md` (append-only) |
 
 ### Rebase Conflict Resolution & Cross-Session Log (`arena/85f37d08-china2`)
 - **2026-11-07 UTC (Rebase #1 onto `06e6610`):** Resolved `COORDINATION.md` append conflict after `arena-996dc508` merged PRs #4 and #6, preserving 100% of `arena-996dc508`'s board and logs (`research/previous-dashboard/` also retaining `arena/43586205`).
 - **2026-11-07 UTC (Rebase #2 onto `3eecb4f`):** Resolved `COORDINATION.md` append conflict after `arena-fcd22b0c` merged PRs #7, #8, and #9, preserving 100% of both `arena-996dc508` and `arena-fcd22b0c` sections word-for-word above this divider. Zero file overlap in project deliverables (`reports/**`, `portal/**`, `verify_85f37d08.py`, `.github/workflows/verify-portal-85f37d08.yml`).
 - **Pending cross-scope link request (logged, not unilaterally edited per protocol):** Requesting a link to `portal/index.html` be added to `README.md` / `index.html` (owned by `arena-996dc508`). In the meantime, native GitHub Pages (`main:/`) serves `https://sassnarep3-star.github.io/China2/portal/` directly alongside `/docs/` and `/site/`.
 - **Verification completed before PR:** `python3 portal/generate_portal.py`, `python3 verify_85f37d08.py` (7 portal pages, 109 table rows, 100% `.gov`/`.gov.cn` row source links, blank `""` commercial values enforced, 0 broken local links), plus full green runs of BOTH prior sessions' suites (`python3 scripts/build.py`, `python3 scripts/validate.py`, `node scripts/test_ui.js`, and `node tools/verify.mjs`).
+
+### Confirmed Publication Result — `arena/85f37d08-china2`
+- **PR:** https://github.com/sassnarep3-star/China2/pull/10
+- **Merge:** MERGED at `2026-11-07T20:55:38Z` via `gh pr merge 10 --merge`; merge commit `b72ba66656588d72ae7dacc69ffc1538c2efe72b`.
+- **PR CI Checks (all 3 sessions' workflows green before merge):**
+  - `verify-portal` (`arena/85f37d08-china2` — 7 pages, 109 rows, 100% `.gov`/`.gov.cn` links, blank unverified cells): `SUCCESS`
+  - `validate` (`arena-996dc508` — 9 pages, 67 findings, 24 sources, UI DOM tests): `SUCCESS`
+  - `verify` (`arena-fcd22b0c` — 477 checks, 0 failures): `SUCCESS`
+- **GitHub Pages Build:** `builds/1349926601` at commit `b72ba66656588d72ae7dacc69ffc1538c2efe72b` — `status: built`, `error.message: null`.
+- **Live Public URLs Verified via Retrieval (zero broken links; prior sessions' dashboards confirmed intact):**
+  - **Portal Landing & Executive Summary:** https://sassnarep3-star.github.io/China2/portal/index.html
+  - **All 22 CNY→USD Methods:** https://sassnarep3-star.github.io/China2/portal/methods.html
+  - **5-Layer Conversion Penalty Breakdown:** https://sassnarep3-star.github.io/China2/portal/conversion-penalties.html
+  - **US & PRC Tax & Offshore Reporting:** https://sassnarep3-star.github.io/China2/portal/tax-compliance.html
+  - **Line-by-Line Repository Audit (`R-01`–`R-13`):** https://sassnarep3-star.github.io/China2/portal/repo-audit.html
+  - **Flagged for Review (`FLG-01`–`FLG-13`):** https://sassnarep3-star.github.io/China2/portal/flagged-for-review.html
+  - **Official `.gov` / `.gov.cn` Source Registry (`SRC-01`–`SRC-26`):** https://sassnarep3-star.github.io/China2/portal/sources.html
+  - **Concurrent sessions' dashboards confirmed intact:** https://sassnarep3-star.github.io/China2/docs/index.html & https://sassnarep3-star.github.io/China2/site/index.html
