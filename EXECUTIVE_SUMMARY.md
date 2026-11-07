@@ -1,13 +1,43 @@
-# Executive Summary — Getting CNY out of China as a US Citizen (least lawful tax cost)
+# China Money — Executive Summary
 
-**Bottom line:** The conversion itself is generally not the tax event. China tax was due when income was earned; the US taxes worldwide income with a Foreign Tax Credit for creditable China tax. The cheapest lawful route is a documented bank wire of after-tax current-account income (Method 1, site), not quota-staging and never a bypass scheme.
+Research reviewed: 7 November 2026. Not individualized legal, tax or investment advice.
 
-**Best routes by situation:** Salary/foreign employee → Method 1 (tax proof, no $50k cap on genuine taxed income). Small personal savings → $50k/yr quota (SAFE-verified). Business profits → dividends after audit at 10% treaty-capped withholding. Large savings over years → combine Method 1 + annual quota staging.
+## Best first investigation
 
-**Cost stack:** China IIT 3–45% (STA) / dividend WHT 10% (treaty) → US residual after Form 1116 FTC → §988 ordinary FX gain/loss → bank spread + SWIFT fees (unverified — blank on site, get written quotes).
+Documented bank remittance for lawful current-account RMB income. This is a conditional process recommendation, not a finding that this private balance qualifies.
 
-**US compliance (non-optional):** FBAR if >$10,000 aggregate anytime (FinCEN 114); Form 8938 above $50k/$75k (US-resident single); Schedule B disclosure.
+[S03: SAFE Tianjin](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), [S01: PBOC](https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html)
 
-**Never use:** splitting/smurfing, underground banks, crypto evasion, fake invoices — prohibited by SAFE, with US AML exposure.
+## The $50,000 misconception
 
-Full tables, pros/cons for 16 methods, and official source per row: `docs/` site. Unverified values are blank and listed on Flagged for Review. Not personal tax advice.
+Do not use USD50,000 as a universal foreign-salary ceiling or assume an ID-only allowance. The SAFE wording and HSBC guide differ; see F02.
+
+[S02: SAFE Tianjin](https://www.safe.gov.cn/tianjin/2024/0430/2464.html), [S03: SAFE Tianjin](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), [S04: HSBC China (bank primary source)](https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf)
+
+## Minimize tax lawfully
+
+Check source taxes already paid and U.S. foreign tax credit / earned-income-exclusion eligibility. These can address income tax, but cannot automatically waive bank fees or documentation.
+
+[S10: Guangzhou Finance Bureau (official government republication)](https://czj.gz.gov.cn/zwgk/zfxxgkml/czyjs/jsjfxx/content/post_4466375.html), [S12: IRS](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit), [S13: IRS](https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion)
+
+## Do not manufacture a route
+
+No friends’ quotas, fake contracts, underground swaps or crypto bridges are recommended. PBOC prohibits evasion by splitting/false vouchers; current crypto-business restrictions are explicit.
+
+[S01: PBOC](https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html), [S23: PBOC and seven other authorities](https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html)
+
+## U.S. reporting remains separate
+
+Worldwide taxable income, FBAR and possibly Form 8938 still matter even if funds stay in China. A small transfer or closed account does not erase an earlier balance trigger.
+
+[S11: IRS](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad), [S14: IRS](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar), [S15: IRS](https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements)
+
+## What cannot be concluded
+
+No verified personal balance, source dossier, charge explanation or executable quote exists here. Exact tax, net USD and cheapest provider remain blank; private compliance and state/third-country exposure remain unresolved.
+
+[S03: SAFE Tianjin](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), [S07: HSBC China (bank primary source)](https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf), [S11: IRS](https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad), [S24: IRS](https://www.irs.gov/businesses/international-businesses/china-tax-treaty-documents)
+
+## Execution boundary
+
+No transfer or tax filing has been made. The bank/adviser must establish ownership, source, years, paid taxes, approval requirements, personal compliance history and live quotes privately. No passports or account numbers belong in this public repository.

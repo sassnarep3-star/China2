@@ -1,0 +1,11 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cost Breakdown</title><link rel="stylesheet" href="style.css">
+<header><h1>Conversion Penalty / Cost Breakdown</h1><nav><a href="index.html">Dashboard</a> <a href="methods.html">All Methods</a> <a href="taxes.html">Taxes & Reporting</a> <a href="costs.html">Cost Breakdown</a> <a href="flagged.html">⚠ Flagged for Review</a> <a href="sources.html">Sources</a></nav></header><main>
+<table><tr><th>Cost layer</th><th>Verified value</th><th>Official source</th></tr>
+<tr><td>China tax on underlying salary (non-resident)</td><td>3%–45% progressive withholding</td><td><a href="https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245843/content.html">STA S7</a></td></tr>
+<tr><td>China dividend withholding</td><td>10% (treaty cap; domestic EIT withholding)</td><td><a href="https://www.irs.gov/pub/irs-trty/china.pdf">Treaty S6</a></td></tr>
+<tr><td>US residual tax after FTC</td><td>Fact-specific (Form 1116 calculation)</td><td><a href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit">IRS S5</a></td></tr>
+<tr><td>§988 FX gain/loss character</td><td>Ordinary income/loss</td><td><a href="https://www.irs.gov/pub/fatca/int_practice_units/fcu_cu_c_18_2_1_03.pdf">IRS S8</a></td></tr>
+<tr><td>Bank FX spread (CNY→USD)</td><td></td><td>⚠ Unverified — bank-quoted, no official source</td></tr>
+<tr><td>SWIFT wire / intermediary fees</td><td></td><td>⚠ Unverified — bank-quoted, no official source</td></tr>
+<tr><td>Platform (Wise etc.) fees</td><td></td><td>⚠ Unverified — commercial, changes; get live quote</td></tr>
+</table><p><b>Worked logic (no invented numbers):</b> Total penalty = China tax already due on income + any US residual after FTC + bank spread + wire fees. To minimise: use Method 1 (no quota delay), ask bank for spread vs mid-market in writing, wire in USD in one larger genuine transfer rather than many small ones (fewer fixed fees — verify fee schedule at your bank), and claim every creditable China tax.</p></main>
