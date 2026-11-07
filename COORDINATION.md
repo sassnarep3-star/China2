@@ -32,3 +32,7 @@ Date: 2026-11-07
 ## Update 2026-11-07 (integration fix)
 - PR #1 merged: https://github.com/sassnarep3-star/China2/pull/1
 - Custom Actions Pages workflow failed (Pages is legacy build_type main:/, token cannot switch to workflow - 403). Removed workflow, added root index.html redirect to docs/, relying on legacy Pages deploy which reported status=built. Live: https://sassnarep3-star.github.io/China2/
+## Final record
+- PR #1 merged, PR #3 (Pages fix) merged. Pages build run 42411264444 success, status=built.
+- Live site: https://sassnarep3-star.github.io/China2/ → docs/
+- Parallel session PR #2 (arena/4c576a01-china2) OPEN at time of writing — not merged by this session; its pages.yml workflow failed (same legacy-Pages cause). Integration of that branch requires removing/fixing that workflow. Logged, not edited (non-overlap rule).
