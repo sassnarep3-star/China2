@@ -229,7 +229,6 @@ if (!existsSync(SITE)) {
   else ok('site/style.css present');
 
   console.log('\n[8] meta-row is not used to escape the source-link rule');
-  // The only page allowed to hold rows without an official source is the methodology page,
   // which documents process rather than evidence. Anything else must use data-row.
   for (const p of pages) {
     const html = readFileSync(join(SITE, p), 'utf8');
@@ -239,6 +238,32 @@ if (!existsSync(SITE)) {
     if (p !== 'methodology.html')
       fail(`${p} uses meta-row (${n} rows); only methodology.html may hold sourceless process rows`);
     else ok(`methodology.html holds ${n} process rows (process documentation, not evidence)`);
+  }
+}
+
+/* ------------------------------------ check 9: prose counts match the ledgers */
+console.log('\n[9] Counts stated in EXECUTIVE-SUMMARY.md match the ledgers');
+const SUMMARY = join(ROOT, 'EXECUTIVE-SUMMARY.md');
+if (!existsSync(SUMMARY)) {
+  fail('EXECUTIVE-SUMMARY.md is missing');
+} else {
+  const md = readFileSync(SUMMARY, 'utf8');
+  const nLawful = methods.routes.filter((r) => r.legalStatus !== 'unlawful').length;
+  const nUnlawful = methods.routes.filter((r) => r.legalStatus === 'unlawful').length;
+  const nFetched = sources.sources.filter((s) => s.verifiedByFetch).length;
+  const expectations = [
+    [`${methods.routes.length} routes were catalogued`, 'route count'],
+    [`${nLawful} lawful or conditionally lawful`, 'lawful/conditional count'],
+    [`${nUnlawful} unlawful`, 'unlawful count'],
+    [`${sources.sources.length} official sources`, 'source count'],
+    [`${nFetched} were retrieved in full this session`, 'fetch-verified count'],
+    [`${sources.sources.length - nFetched} are marked \`search-index\``, 'search-index count'],
+    [`${flags.flags.length} flags are published`, 'flag count'],
+  ];
+  for (const [needle, label] of expectations) {
+    checks++;
+    if (md.includes(needle)) ok(`${label}: "${needle}"`);
+    else fail(`EXECUTIVE-SUMMARY.md does not state ${label} as "${needle}" — prose has drifted from the ledgers`);
   }
 }
 
