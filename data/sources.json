@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "generated": "2026-11-07",
+    "generatedBy": "arena-fcd22b0c",
+    "policy": "Only primary/official sources are listed here. 'verifiedByFetch: true' means the page was retrieved and its text read during this session and the quoted value appears verbatim in the retrieved text. 'verifiedByFetch: false' means the value was read from a search-index extract of that exact official URL but the page was not independently retrieved in this session; such rows are surfaced on the Flagged for Review page.",
+    "verificationLevels": {
+      "fetched": "Page retrieved in-session; quoted text confirmed verbatim on the official page.",
+      "search-index": "Value taken from a search-index extract of the official URL; page not separately retrieved in-session.",
+      "unverified": "No official source located. Value left blank in every table and flagged."
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "publisher": "U.S. Internal Revenue Service",
+      "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "verifiedByFetch": true,
+      "supports": [
+        "FBAR threshold: aggregate value of foreign financial accounts exceeded $10,000 at any time during the calendar year",
+        "Who must file: a U.S. person, including a citizen, resident, corporation, partnership, LLC, trust and estate",
+        "Form used: FinCEN Form 114",
+        "Due April 15 following the calendar year reported, with an automatic extension to October 15",
+        "Filed electronically through FinCEN's BSA E-Filing System, not with the federal tax return",
+        "Records must be kept five years from the FBAR due date",
+        "Civil FBAR penalty maximums in Title 31 U.S.C. are adjusted annually for inflation (31 CFR 1010.821)",
+        "Delinquent FBARs should be filed as soon as possible if the IRS has not made contact"
+      ]
+    },
+    {
+      "id": "S02",
+      "publisher": "U.S. Internal Revenue Service",
+      "title": "Summary of FATCA reporting for U.S. taxpayers",
+      "url": "https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers",
+      "verifiedByFetch": true,
+      "supports": [
+        "Form 8938 must be attached to the annual income tax return",
+        "No Form 8938 filing is required if no U.S. income tax return filing is required",
+        "Living in the U.S., unmarried: more than $50,000 on the last day of the tax year or more than $75,000 at any time",
+        "Living in the U.S., married filing jointly: more than $100,000 on the last day or more than $150,000 at any time",
+        "Living abroad, not married filing jointly: more than $200,000 on the last day or more than $300,000 at any time",
+        "Living abroad, married filing jointly: more than $400,000 on the last day or more than $600,000 at any time",
+        "Living abroad test: U.S. citizen whose tax home is in a foreign country and present in a foreign country at least 330 days out of a consecutive 12-month period",
+        "Form 8938 does not relieve filers of FBAR filing requirements"
+      ]
+    },
+    {
+      "id": "S03",
+      "publisher": "U.S. Internal Revenue Service",
+      "title": "Publication 525, Taxable and Nontaxable Income — Foreign currency transactions",
+      "url": "https://www.irs.gov/publications/p525",
+      "verifiedByFetch": false,
+      "verifiedVia": "IRS-hosted Publication 525 text returned by search index (irs.gov/publications/p525 and irs.gov/pub/irs-dft/p525--dft.pdf)",
+      "supports": [
+        "If you have a gain on a personal foreign currency transaction because of changes in exchange rates, you don't have to include that gain in your income unless it's more than $200",
+        "If the gain is more than $200, report it as a capital gain"
+      ]
+    },
+    {
+      "id": "S04",
+      "publisher": "U.S. Internal Revenue Service",
+      "title": "Foreign currency and currency exchange rates",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+      "verifiedByFetch": true,
+      "supports": [
+        "Amounts reported on a U.S. tax return must be expressed in U.S. dollars",
+        "The U.S. dollar is the functional currency for all taxpayers except some qualified business units (QBUs)",
+        "All income tax determinations must be made in the functional currency; foreign-currency items must be translated at the exchange rate prevailing when received, paid or accrued",
+        "Payments of U.S. tax must be remitted to the IRS in U.S. dollars"
+      ]
+    },
+    {
+      "id": "S05",
+      "publisher": "State Administration of Foreign Exchange (SAFE), People's Republic of China",
+      "title": "SAFE Spokesman Addresses Press Conference on Relevant Issues Concerning the Detailed Rules on Measures for the Administration of Individual Foreign Exchange (5 January 2007)",
+      "url": "https://www.safe.gov.cn/en/2007/0105/819.html",
+      "verifiedByFetch": true,
+      "supports": [
+        "The annual individual foreign-exchange facilitation quota is USD 50,000 (raised from USD 20,000)",
+        "The quota applies to both individual foreign-exchange purchases and sales, for both domestic and foreign individuals",
+        "Within the annual quota, formalities are simplified; above the quota, examination of the authenticity of transactions is strengthened",
+        "SAFE operates a management information system connecting banks to SAFE for individual purchases and sales of foreign exchange; banks verify the authenticity of the materials provided",
+        "Purchases and sales of foreign exchange under individual foreign-exchange settlement accounts (for individual trade) are NOT subject to the annual quota limits and are conducted with valid trading documents regardless of amount",
+        "Capital transfers for individual foreign-exchange savings accounts may only be conducted between accounts of the same nature held by the individual or their direct relatives"
+      ]
+    },
+    {
+      "id": "S06",
+      "publisher": "State Administration of Foreign Exchange (SAFE)",
+      "title": "Circular of the State Administration of Foreign Exchange on Regulating Large-sum Overseas Cash Withdrawals with Bank Cards (Huifa No. 29 [2017])",
+      "url": "http://www.safe.gov.cn/en/2017/1230/1397.html",
+      "verifiedByFetch": true,
+      "supports": [
+        "Overseas cash withdrawals using bank cards in the individual's own name (including supplementary cards) shall not exceed the equivalent of RMB 100,000 in every civil year",
+        "Exceeding the annual quota bars the individual from overseas cash withdrawal with domestic bank cards in the current and the following year",
+        "Individuals are prohibited from borrowing others' bank cards or lending their own to evade the management of overseas cash withdrawals",
+        "Daily overseas cash-withdrawal ceiling per card adjusted from USD 1,000 equivalent to RMB 10,000 equivalent",
+        "Violators are punished in accordance with the Regulations of the PRC on Foreign Exchange Administration",
+        "Effective 1 January 2018"
+      ]
+    },
+    {
+      "id": "S07",
+      "publisher": "State Administration of Foreign Exchange (SAFE)",
+      "title": "SAFE official answers media questions on Regulating Large-sum Overseas Cash Withdrawals with Bank Cards",
+      "url": "https://www.safe.gov.cn/en/2017/1230/1391.html",
+      "verifiedByFetch": false,
+      "verifiedVia": "safe.gov.cn page text returned by search index",
+      "supports": [
+        "The overseas card cash-withdrawal regime does not contradict the USD 50,000 annual foreign-exchange purchase quota for individuals",
+        "Quota management for overseas card cash withdrawals has existed since 2003",
+        "Individuals needing large amounts of cash overseas may instead buy foreign exchange and carry banknotes out in accordance with the Measures for the Administration of Individual Foreign Exchange"
+      ]
+    },
+    {
+      "id": "S08",
+      "publisher": "State Administration of Foreign Exchange (SAFE)",
+      "title": "Circular of the State Administration of Foreign Exchange on Further Improving and Adjusting Foreign Exchange Administration Policies under the Capital Account (1 August 2014)",
+      "url": "https://www.safe.gov.cn/en/2014/0801/741.html",
+      "verifiedByFetch": false,
+      "verifiedVia": "safe.gov.cn page text returned by search index",
+      "supports": [
+        "FX purchase and payment for immigration property transfer is examined and approved by the local SAFE branch at the immigrant's original registered permanent residence",
+        "FX purchase and payment for inheritance property transfer is approved by the local SAFE branch at the decedent's original registered permanent residence",
+        "The requirement to report property transfers above RMB 500,000 equivalent to SAFE head office for record was cancelled",
+        "The requirement that an immigrant's property be transferred in several installments was cancelled; funds may be remitted in a lump sum or several batches within the limit in the approval document"
+      ]
+    },
+    {
+      "id": "S09",
+      "publisher": "People's Bank of China (PBOC)",
+      "title": "The People's Bank of China released the Provisional Administrative Rules on Sales and Payment of Foreign Exchange for Personal Asset Outbound Transfer (PBOC Announcement No. 16 [2004])",
+      "url": "https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html",
+      "verifiedByFetch": true,
+      "supports": [
+        "Outbound personal-asset transfer covers two categories only: emigrant asset transfer and inheritor asset transfer",
+        "Emigrant asset transfer = encashment, exchange and overseas transfer of assets obtained by an emigrant from Mainland China BEFORE obtaining immigration permission from a foreign country or from Hong Kong/Macao SARs",
+        "Inheritor asset transfer = encashment, exchange and overseas transfer of assets by foreign citizens and residents of Hong Kong or Macao SARs",
+        "The Rules do not apply to other forms of personal asset transfer",
+        "Assets applied for transfer must be lawful and indisputable as to ownership; applications are refused where the lawful source is unproven or where civil or criminal litigation is unsettled",
+        "Applications for value under RMB 500,000 are approved by SAFE branches; RMB 500,000 and above originally required SAFE head-office approval (superseded by the 2014 circular, see S08)",
+        "Emigrant transfer above RMB 200,000 equivalent had to be remitted in installments (superseded by the 2014 circular, see S08)",
+        "Designated banks remit directly to the applicant's account in the country of emigration/settlement; drawing foreign-exchange cash inside Mainland China is not allowed",
+        "Applicants who swindle foreign exchange with false documents are penalized under the Regulations of the PRC on Foreign Exchange Administration"
+      ]
+    },
+    {
+      "id": "S10",
+      "publisher": "State Taxation Administration, People's Republic of China",
+      "title": "Individual Income Tax Law of the People's Republic of China (7th amendment, 31 August 2018) — official English text",
+      "url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+      "verifiedByFetch": true,
+      "supports": [
+        "Resident individual: domiciled in China, or not domiciled but resident in China for 183 days or more in a tax year; taxed on income from within China or overseas",
+        "Non-resident individual: not domiciled and not resident, or resident for fewer than 183 days in a tax year; taxed on China-source income only",
+        "Comprehensive income (wages/salaries, personal services, author's remuneration, royalties) is taxed at progressive rates of 3% to 45%",
+        "Income from interest, dividends or bonuses, leasing of assets, transfer of assets, and incidental income is taxed at a flat 20%",
+        "Resident comprehensive-income taxable amount is computed after deduction of RMB 60,000 plus special and itemized deductions",
+        "A tax year runs 1 January to 31 December"
+      ]
+    },
+    {
+      "id": "S11",
+      "publisher": "U.S. Internal Revenue Service (treaty text as ratified)",
+      "title": "United States — The People's Republic of China Income Tax Convention (signed Beijing 30 April 1984; entered into force 1 January 1987)",
+      "url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+      "verifiedByFetch": true,
+      "supports": [
+        "Article 9(2) Dividends: where the recipient is the beneficial owner, tax so charged shall not exceed 10 percent of the gross amount of the dividends",
+        "Article 10(2) Interest: where the recipient is the beneficial owner, tax so charged shall not exceed 10 percent of the gross amount of the interest",
+        "Article 11(2) Royalties: where the recipient is the beneficial owner, tax so charged shall not exceed 10 percent of the gross amount of the royalties",
+        "Article 22 provides for elimination of double taxation; the Letter of Transmittal confirms the country of residence gives a foreign tax credit for income tax paid to the other country",
+        "Article 12 covers Gains from alienation of property"
+      ]
+    },
+    {
+      "id": "S12",
+      "publisher": "Library of Congress — Global Legal Monitor",
+      "title": "China: New Rules Increase Restrictions on Overseas Cash Withdrawals (24 January 2018)",
+      "url": "https://www.loc.gov/item/global-legal-monitor/2018-01-24/china-new-rules-increase-restrictions-on-overseas-cash-withdrawals/",
+      "verifiedByFetch": false,
+      "verifiedVia": "loc.gov item text returned by search index",
+      "supports": [
+        "Independent U.S. government confirmation that SAFE's 29 December 2017 circular caps overseas withdrawals at RMB 100,000 annually per individual and RMB 10,000 per day per card, effective 1 January 2018",
+        "Individuals exceeding the quota are barred from overseas cash withdrawal for the rest of that year and the following year"
+      ]
+    },
+    {
+      "id": "S13",
+      "publisher": "State Council of the People's Republic of China (english.www.gov.cn), reporting the PBOC joint notice",
+      "title": "China to tighten regulation on virtual currency trading, speculation (24 September 2021)",
+      "url": "http://english.www.gov.cn/statecouncil/ministries/202109/24/content_WS614dc30bc6d0df57f98e0c84.html",
+      "verifiedByFetch": false,
+      "verifiedVia": "english.www.gov.cn page text returned by search index",
+      "supports": [
+        "All virtual-currency-related business activities are illegal and shall be strictly prohibited and cracked down upon in accordance with the law",
+        "It is an illegal financial activity for overseas virtual-currency exchanges to provide services for domestic residents via the internet",
+        "Financial institutions and non-bank payment institutions are banned from offering services for virtual-currency-related business activities",
+        "The notice was jointly issued by the central bank and nine other government departments"
+      ]
+    },
+    {
+      "id": "S14",
+      "publisher": "State Administration of Foreign Exchange (SAFE)",
+      "title": "Catalog of Current Major Laws and Regulations in Effect on Foreign Exchange Administration (as of 30 June 2025)",
+      "url": "https://www.safe.gov.cn/en/file/file/20251202/e6e12b4ddec94482bcb4c2275c2accb7.pdf",
+      "verifiedByFetch": false,
+      "verifiedVia": "safe.gov.cn PDF text returned by search index",
+      "supports": [
+        "Confirms the instruments still in force as at 30 June 2025, including the Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532), the Individual Foreign Exchange Administration Measures (PBOC Decree No. 3 [2006]), and the Interim Administrative Measures on the Sale and Payment of Foreign Exchange for the Transfer of Personal Property (PBOC Announcement No. 16 [2004])"
+      ]
+    },
+    {
+      "id": "S15",
+      "publisher": "U.S. Internal Revenue Service — Internal Revenue Manual",
+      "title": "IRM 4.26.9, Examination Techniques for Bank Secrecy Act Industries",
+      "url": "https://www.irs.gov/irm/part4/irm_04-026-009",
+      "verifiedByFetch": false,
+      "verifiedVia": "irs.gov IRM text returned by search index",
+      "supports": [
+        "FinCEN Form 105, Report of International Transportation of Currency or Monetary Instruments (CMIR), must be filed by any person who transports, mails, ships, or has someone else transport, mail or ship currency or monetary instruments in excess of $10,000 into or out of the country, or who receives such items into the United States from abroad"
+      ]
+    },
+    {
+      "id": "S16",
+      "publisher": "FinCEN / U.S. Customs and Border Protection",
+      "title": "FinCEN Form 105 — Currency and Monetary Instrument Report (CMIR) electronic filing portal",
+      "url": "https://fincen105.cbp.dhs.gov/",
+      "verifiedByFetch": false,
+      "verifiedVia": "fincen105.cbp.dhs.gov page text returned by search index",
+      "supports": [
+        "Form is available for filing to travelers and currency transporters entering or departing, or shipping or receiving, with an aggregate amount exceeding $10,000"
+      ]
+    },
+    {
+      "id": "S17",
+      "publisher": "U.S. Internal Revenue Service",
+      "title": "FATCA information for individuals",
+      "url": "https://www.irs.gov/businesses/corporations/fatca-information-for-individuals",
+      "verifiedByFetch": false,
+      "verifiedVia": "irs.gov page text returned by search index",
+      "supports": [
+        "Under FATCA, certain U.S. taxpayers holding financial assets outside the United States must report them on Form 8938, which must be attached to the annual tax return",
+        "U.S. taxpayers who do not have to file an income tax return do not have to file Form 8938 regardless of asset value",
+        "Taxpayers may also have to file FinCEN Form 114 (FBAR)"
+      ]
+    }
+  ]
+}

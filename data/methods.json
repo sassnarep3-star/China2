@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "title": "CNY to USD conversion routes — every lawful and unlawful mechanism located",
+    "generated": "2026-11-07",
+    "generatedBy": "arena-fcd22b0c",
+    "columnPolicy": "A value is written only when an official source states it. Where no official source was located the cell is the literal string \"unverified\" and the row is repeated on the Flagged for Review page. No value in this file was inferred, estimated or rounded from a third-party figure.",
+    "legalStatusValues": [
+      "lawful",
+      "lawful-conditional",
+      "unlawful"
+    ]
+  },
+  "routes": [
+    {
+      "id": "R01",
+      "category": "Bank transfer",
+      "name": "Bank wire inside the USD 50,000 annual individual FX facilitation quota",
+      "mechanism": "The individual applies to a Chinese bank to purchase foreign exchange and remit it abroad. Within the annual facilitation quota the bank deals with the business on presentation of a valid identity document; SAFE's system records the transaction.",
+      "legalStatus": "lawful",
+      "annualLimit": "USD 50,000 equivalent per individual per calendar year",
+      "chinaTaxOnConversion": "No foreign-exchange purchase tax is imposed by the quota rule itself",
+      "usTaxOnConversion": "Personal foreign-currency gain of $200 or less is excluded; above $200 report as capital gain",
+      "pros": [
+        "Simplest lawful route: valid ID only, no supporting transaction documents required inside the quota",
+        "Available to foreign individuals as well as domestic individuals",
+        "Fully documented, so it is defensible to both SAFE and the IRS",
+        "Leaves a clean audit trail for FBAR and Form 8938 reporting"
+      ],
+      "cons": [
+        "USD 50,000 per person per year is a hard ceiling — a balance above that takes multiple calendar years",
+        "The quota is per natural person, so the balance must either wait or be moved through a different lawful route",
+        "Banks still verify authenticity of the materials provided through the SAFE-linked system"
+      ],
+      "costComponentsUnverified": "Bank FX spread, correspondent-bank fees and Chinese bank charges could not be confirmed from any official source and are therefore left unverified.",
+      "sourceId": "S05",
+      "flag": null
+    },
+    {
+      "id": "R02",
+      "category": "Bank transfer",
+      "name": "Above-quota bank wire supported by authenticity documents",
+      "mechanism": "Amounts above the annual facilitation quota are processed by the bank against supporting documents demonstrating the authenticity of the underlying transaction; SAFE states that examination of authenticity above the quota is strengthened.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "Not fixed by the quota rule; conditioned on documentary support for the specific transaction",
+      "chinaTaxOnConversion": "Not addressed by the quota rule; the underlying income is taxed under the Individual Income Tax Law",
+      "usTaxOnConversion": "Same Section 988 treatment as R01",
+      "pros": [
+        "The only lawful way to move more than USD 50,000 in a single year as an individual",
+        "Uses the existing current-account convertibility principle rather than any exception"
+      ],
+      "cons": [
+        "Requires genuine supporting documents; there is no documentary shortcut",
+        "SAFE states that authenticity examination above the quota is strengthened, so processing is slower and refusal is possible",
+        "The exact documents accepted vary by bank; SAFE's English text does not publish a definitive list, so no list is stated here"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": "S05",
+      "flag": "F06"
+    },
+    {
+      "id": "R03",
+      "category": "Asset transfer approval",
+      "name": "Emigrant asset transfer (property transferred abroad on emigration)",
+      "mechanism": "A natural person who emigrates from Mainland China and has obtained permanent residence or citizenship abroad may apply to SAFE to encash, purchase foreign exchange against, and remit abroad lawful assets obtained in China BEFORE obtaining that immigration status. Applications are filed at the SAFE branch for the emigrant's original registered permanent residence.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "Governed by the SAFE approval document rather than the annual quota; since the 2014 circular the funds may be remitted in a lump sum or in several batches within the approved limit",
+      "chinaTaxOnConversion": "Tax certificates or tax payment vouchers for the assets are a required application document",
+      "usTaxOnConversion": "Same Section 988 treatment as R01",
+      "pros": [
+        "The only SAFE route that can lawfully move an arbitrarily large personal balance out of China in one process",
+        "Not limited by the USD 50,000 annual quota",
+        "Since 2014, the installment requirement and the RMB 500,000 head-office reporting requirement were removed, and a lump-sum remittance is permitted within the approved limit"
+      ],
+      "cons": [
+        "Eligibility is narrow: the applicant must already hold foreign permanent residence or citizenship",
+        "Requires proof of cancellation of permanent residence in China issued by the public security authorities, plus a residence certificate authenticated by a Chinese embassy or consulate",
+        "Only assets obtained BEFORE the immigration status was obtained qualify",
+        "Assets must be lawful and indisputable as to ownership; applications are refused where lawful source is unproven or litigation is unsettled",
+        "Designated banks remit directly to the applicant's overseas account — drawing foreign-exchange cash inside Mainland China is not allowed under these rules",
+        "A one-time status change is required; it cannot be used by someone who intends to remain a Chinese tax resident"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": "S09",
+      "additionalSources": ["S08", "S14"],
+      "flag": null
+    },
+    {
+      "id": "R04",
+      "category": "Asset transfer approval",
+      "name": "Inheritor asset transfer (inherited China assets transferred abroad)",
+      "mechanism": "A foreign citizen, or a permanent resident of Hong Kong or Macao SAR, who realises property inherited inside Mainland China may apply to SAFE to encash it, purchase foreign exchange and remit it abroad. Applications are filed at the SAFE branch for the decedent's original registered permanent residence.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "Governed by the SAFE approval document; one application per decedent, proceeds remitted in a lump sum or in batches",
+      "chinaTaxOnConversion": "Tax certificates or tax payment vouchers are a required application document",
+      "usTaxOnConversion": "Same Section 988 treatment as R01",
+      "pros": [
+        "Available without any immigration-status change by the applicant, provided the applicant is already a foreign citizen or HK/Macao permanent resident",
+        "Since 2014, property inherited from different decedents may be applied for in a single combined application"
+      ],
+      "cons": [
+        "Only open to foreign citizens and Hong Kong/Macao permanent residents — not to a Chinese national who remains one",
+        "Requires documentary proof of inheritance and of the decedent's ownership of the assets",
+        "The PBOC rules state expressly that they do not apply to other forms of personal asset transfer"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": "S09",
+      "additionalSources": ["S08"],
+      "flag": null
+    },
+    {
+      "id": "R05",
+      "category": "Cash",
+      "name": "Overseas cash withdrawal with a Chinese-issued bank card",
+      "mechanism": "The individual uses a domestic (Mainland-issued) RMB or foreign-currency bank card to withdraw cash at ATMs outside Mainland China. Aggregate withdrawals across all cards in the individual's own name, including supplementary cards, are capped per civil year.",
+      "legalStatus": "lawful",
+      "annualLimit": "RMB 100,000 equivalent per individual per civil year across all cards; RMB 10,000 equivalent per card per day",
+      "chinaTaxOnConversion": "No foreign-exchange tax is imposed by the circular",
+      "usTaxOnConversion": "Same Section 988 treatment as R01",
+      "pros": [
+        "No application or approval needed",
+        "Independent of the USD 50,000 purchase quota — SAFE states the two regimes do not contradict each other",
+        "Produces USD cash directly without a wire"
+      ],
+      "cons": [
+        "RMB 100,000 per year is far below most stuck balances",
+        "Exceeding the quota bars overseas cash withdrawal in the current AND the following year",
+        "Borrowing another person's card or lending your own is expressly prohibited",
+        "SAFE operates delayed rather than real-time control, so the individual is responsible for staying under the cap",
+        "Physical cash then faces U.S. CMIR reporting above $10,000 (FinCEN Form 105)"
+      ],
+      "costComponentsUnverified": "ATM operator and issuer fees could not be confirmed from an official source and are left unverified.",
+      "sourceId": "S06",
+      "additionalSources": ["S07", "S12"],
+      "flag": null
+    },
+    {
+      "id": "R06",
+      "category": "Cash",
+      "name": "Purchase foreign exchange and carry banknotes out of China",
+      "mechanism": "The individual purchases foreign exchange lawfully (inside the annual quota) and carries the banknotes out of the country. SAFE's own guidance identifies this as the compliant alternative when more cash is needed than the overseas ATM quota allows.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "Bounded by the USD 50,000 purchase quota; export-cash declaration thresholds are not published in an official English source located in this session and are therefore left unverified",
+      "chinaTaxOnConversion": "No foreign-exchange tax is imposed by the quota rule",
+      "usTaxOnConversion": "Same Section 988 treatment as R01",
+      "pros": [
+        "Expressly endorsed by SAFE as the compliant route for large overseas cash needs",
+        "No separate approval process beyond the lawful FX purchase"
+      ],
+      "cons": [
+        "Carrying large sums is a security risk and attracts customs scrutiny in both directions",
+        "Entering or leaving the United States with more than $10,000 in currency or monetary instruments requires FinCEN Form 105",
+        "The commonly repeated Chinese export-cash declaration thresholds were NOT confirmed against an official Chinese customs source in this session and are deliberately left unverified rather than stated"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": "S07",
+      "additionalSources": ["S15", "S16"],
+      "flag": "F07"
+    },
+    {
+      "id": "R07",
+      "category": "Trade and business",
+      "name": "Individual foreign-exchange settlement account for genuine trade (not subject to the annual quota)",
+      "mechanism": "An individual engaged in foreign trade may open a foreign-exchange settlement account, which is administered as an institutional account. Purchases and sales of foreign exchange through that account are expressly NOT subject to the annual quota limits and are conducted against valid trading documents regardless of amount.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "None under the quota rule; bounded only by genuine trading documents",
+      "chinaTaxOnConversion": "Not addressed by the rule; business income is taxed under the Individual Income Tax Law",
+      "usTaxOnConversion": "Where the currency is used in a trade or business rather than a personal transaction, the Section 988 personal-transaction exclusion does not apply and FX gain or loss is ordinary",
+      "pros": [
+        "The only individual route with no annual quota at all",
+        "Capital transfers may be made with the individual's entrusted agent enterprises, not only with the account opener"
+      ],
+      "cons": [
+        "Requires genuine, documentable import/export trade activity — it is not a personal-savings vehicle",
+        "Every transaction must be supported by valid trading documents",
+        "Using fabricated invoices to access this channel is unlawful (see R16)",
+        "Business use removes the $200 personal-transaction exclusion on the U.S. side"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": "S05",
+      "flag": null
+    },
+    {
+      "id": "R08",
+      "category": "Trade and business",
+      "name": "Corporate profit repatriation from a Chinese company",
+      "mechanism": "Where the balance belongs to a Chinese company rather than an individual, profits are distributed as dividends to the foreign shareholder after Chinese corporate income tax, and the treaty caps Chinese withholding on the dividend at 10% of the gross amount where the recipient is the beneficial owner.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "Not governed by the individual quota",
+      "chinaTaxOnConversion": "Treaty cap of 10% of the gross dividend (Article 9(2)); Chinese corporate income tax applies to the underlying profits before distribution",
+      "usTaxOnConversion": "Dividends are included in U.S. gross income; the treaty provides that the country of residence gives a foreign tax credit for income tax paid to the other country",
+      "pros": [
+        "Treaty-limited 10% withholding is materially below many statutory rates",
+        "Foreign tax credit relief is expressly contemplated by the treaty",
+        "Not constrained by the individual quota"
+      ],
+      "cons": [
+        "Only available where the money is corporate, not personal",
+        "The Chinese corporate income tax rate on the underlying profits was not confirmed against an official source in this session and is left unverified",
+        "The Chinese domestic withholding rate that applies without a treaty claim was not confirmed against an official source and is left unverified",
+        "The U.S. 'saving clause' practice means treaty relief generally does not reduce U.S. tax for a U.S. citizen; the relief comes through the foreign tax credit"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": "S11",
+      "flag": "F08"
+    },
+    {
+      "id": "R09",
+      "category": "Trade and business",
+      "name": "Remittance of a foreign individual's after-tax current-account income (salary, service fees)",
+      "mechanism": "Foreign individuals remit lawful current-account RMB income earned in China abroad. The underlying income is subject to Chinese individual income tax, and the income is aggregated on an annual basis for resident individuals.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "Current-account receipts and payments for genuine income are processed against supporting documents",
+      "chinaTaxOnConversion": "Comprehensive income taxed progressively at 3% to 45%; resident individuals deduct RMB 60,000 plus special and itemized deductions",
+      "usTaxOnConversion": "U.S. citizens report worldwide income; Chinese tax paid is creditable, and the treaty provides for a foreign tax credit",
+      "pros": [
+        "Straightforward and fully documented",
+        "Chinese tax already withheld by the employer reduces the incremental cost"
+      ],
+      "cons": [
+        "Only applies to income, not to pre-existing savings",
+        "Requires the payer to have withheld and remitted Chinese individual income tax"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": "S10",
+      "additionalSources": ["S11"],
+      "flag": null
+    },
+    {
+      "id": "R10",
+      "category": "Bank transfer",
+      "name": "Remit foreign exchange already held in a Chinese FX account without converting",
+      "mechanism": "Where the balance is already held in foreign exchange rather than RMB, no purchase of foreign exchange is needed; the constraint being avoided is the quota on purchasing foreign exchange, not on remitting foreign exchange already held.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "The USD 50,000 quota is expressly a quota on individual foreign-exchange purchases and sales",
+      "chinaTaxOnConversion": "No conversion takes place, so no conversion-related tax arises",
+      "usTaxOnConversion": "No disposition of nonfunctional currency occurs on a like-currency transfer",
+      "pros": [
+        "Avoids the FX purchase step entirely and therefore avoids the spread",
+        "No Section 988 event on the U.S. side because no currency is disposed of"
+      ],
+      "cons": [
+        "Only helps if the funds are already in foreign currency; the stated problem is a CNY balance",
+        "The English SAFE text retrieved in this session does not set out a separate above-quota documentary regime for remitting already-held FX, so the applicable documentation is left unverified"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": "S05",
+      "flag": "F09"
+    },
+    {
+      "id": "R11",
+      "category": "Bank transfer",
+      "name": "Transfer between an individual's own foreign-exchange savings accounts or to direct relatives",
+      "mechanism": "Capital transfers for individual foreign-exchange savings accounts may be conducted only between accounts of the same nature held by the individual or their direct relatives.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "Bounded by the recipient's own quota position",
+      "chinaTaxOnConversion": "Not addressed by the rule",
+      "usTaxOnConversion": "A U.S. person receiving more than the applicable threshold in gifts from a foreign person has a U.S. reporting obligation; the threshold was not confirmed from an official source in this session",
+      "pros": [
+        "A lawful way to use a relative's unused annual quota for their own remittance"
+      ],
+      "cons": [
+        "Restricted to accounts of the same nature and to the individual or direct relatives",
+        "Pooling multiple relatives' quotas to fund one person's transfer is the practice SAFE targets; see R14",
+        "U.S. gift-reporting consequences for a U.S. recipient were not confirmed from an official source and are left unverified"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": "S05",
+      "flag": "F10"
+    },
+    {
+      "id": "R12",
+      "category": "Bank transfer",
+      "name": "Leave the balance in CNY and spend it abroad by card consumption rather than cash",
+      "mechanism": "SAFE's overseas card circular regulates overseas CASH withdrawals; it states that it does not affect individuals' normal card consumption, and the regime was designed without changing the USD 50,000 purchase quota.",
+      "legalStatus": "lawful",
+      "annualLimit": "The RMB 100,000 annual cap in the circular applies to overseas cash withdrawals",
+      "chinaTaxOnConversion": "Not addressed by the circular",
+      "usTaxOnConversion": "No disposition of currency occurs at the point of card payment for a personal purchase",
+      "pros": [
+        "Zero paperwork",
+        "Does not consume the USD 50,000 purchase quota",
+        "SAFE states the circular does not affect normal overseas card consumption"
+      ],
+      "cons": [
+        "Does not actually produce USD; it only spends CNY abroad",
+        "Does not solve the stated objective of holding USD"
+      ],
+      "costComponentsUnverified": "Card network and issuer foreign-transaction fees could not be confirmed from an official source and are left unverified.",
+      "sourceId": "S06",
+      "additionalSources": ["S07"],
+      "flag": null
+    },
+    {
+      "id": "R13",
+      "category": "Unlawful",
+      "name": "Virtual currency / cryptocurrency transfer out of China",
+      "mechanism": "Purchasing cryptocurrency with CNY and selling it abroad for USD.",
+      "legalStatus": "unlawful",
+      "annualLimit": "Not applicable — prohibited",
+      "chinaTaxOnConversion": "Not applicable; the activity itself is prohibited",
+      "usTaxOnConversion": "Virtual currency is property for U.S. federal tax purposes, so gains are reportable; the personal foreign-currency exclusion does not apply to it",
+      "pros": ["None — this route is documented here only so it can be rejected"],
+      "cons": [
+        "All virtual-currency-related business activities are illegal in China and shall be strictly prohibited and cracked down upon in accordance with the law",
+        "It is an illegal financial activity for overseas virtual-currency exchanges to provide services to mainland residents over the internet",
+        "Financial institutions and non-bank payment institutions are banned from providing any services for such activity",
+        "Destroys the documentary trail that every lawful remittance route depends on",
+        "Creates U.S. reporting exposure on top of Chinese criminal exposure"
+      ],
+      "costComponentsUnverified": "Not assessed — route is unlawful",
+      "sourceId": "S13",
+      "flag": null
+    },
+    {
+      "id": "R14",
+      "category": "Unlawful",
+      "name": "Splitting / pooling quotas (using multiple relatives' quotas for one beneficiary)",
+      "mechanism": "Several individuals each use their own USD 50,000 quota and remit to the same overseas beneficiary.",
+      "legalStatus": "unlawful",
+      "annualLimit": "Not applicable — evasion of the quota",
+      "chinaTaxOnConversion": "Not applicable",
+      "usTaxOnConversion": "Does not change the U.S. reporting or tax position",
+      "pros": ["None — documented for rejection"],
+      "cons": [
+        "SAFE's own English text states the annual-quota system exists in part to prevent avoiding administration, including repeated purchases and sales in installments",
+        "SAFE's card circular separately prohibits borrowing another person's card or lending one's own to evade control",
+        "SAFE operates a management information system connecting banks to SAFE specifically to detect and verify individual FX purchases and sales",
+        "The specific sanctions applied to detected splitting were not confirmed against an official SAFE English source in this session and are left unverified"
+      ],
+      "costComponentsUnverified": "Not assessed — route is unlawful",
+      "sourceId": "S05",
+      "additionalSources": ["S06"],
+      "flag": "F06"
+    },
+    {
+      "id": "R15",
+      "category": "Unlawful",
+      "name": "Underground banking / matching domestic and offshore transfers with no cross-border movement",
+      "mechanism": "CNY is paid to a domestic account while an associate deposits foreign currency offshore.",
+      "legalStatus": "unlawful",
+      "annualLimit": "Not applicable",
+      "chinaTaxOnConversion": "Not applicable",
+      "usTaxOnConversion": "Does not change the U.S. position; adds U.S. money-laundering exposure",
+      "pros": ["None — documented for rejection"],
+      "cons": [
+        "No official authorisation exists for this channel",
+        "The PBOC rules require that assets transferred abroad be lawful and indisputable as to ownership, with proof of lawful source",
+        "Applicants who swindle foreign exchange with false documents are penalized under the Regulations of the PRC on Foreign Exchange Administration",
+        "The specific administrative and criminal penalties under those Regulations were not confirmed against an official English text in this session and are left unverified"
+      ],
+      "costComponentsUnverified": "Not assessed — route is unlawful",
+      "sourceId": "S09",
+      "flag": "F11"
+    },
+    {
+      "id": "R16",
+      "category": "Unlawful",
+      "name": "Fabricated or inflated trade invoicing to access the current account",
+      "mechanism": "Remittances for trade in goods are processed against trading documents; fabricating or inflating invoices abuses that channel.",
+      "legalStatus": "unlawful",
+      "annualLimit": "Not applicable",
+      "chinaTaxOnConversion": "Not applicable",
+      "usTaxOnConversion": "Not applicable",
+      "pros": ["None — documented for rejection"],
+      "cons": [
+        "SAFE requires that business under an individual FX settlement account be conducted with VALID trading documents regardless of amount",
+        "SAFE verifies the authenticity of the materials provided by individuals through its bank-linked system",
+        "Banks are directed to examine authenticity above the quota"
+      ],
+      "costComponentsUnverified": "Not assessed — route is unlawful",
+      "sourceId": "S05",
+      "flag": null
+    },
+    {
+      "id": "R17",
+      "category": "Unlawful",
+      "name": "Applying for emigrant or inheritor asset transfer on false documents",
+      "mechanism": "Filing the personal-asset outbound transfer application with false documents, or filing twice on the same assets.",
+      "legalStatus": "unlawful",
+      "annualLimit": "Not applicable",
+      "chinaTaxOnConversion": "Not applicable",
+      "usTaxOnConversion": "Not applicable",
+      "pros": ["None — documented for rejection"],
+      "cons": [
+        "The PBOC rules state that an applicant found swindling foreign exchange with false documents, or filing applications on the same assets twice, is penalized under the Regulations of the PRC on Foreign Exchange Administration",
+        "SAFE will not accept applications for assets prohibited from transfer by judicial or supervisory authorities"
+      ],
+      "costComponentsUnverified": "Not assessed — route is unlawful",
+      "sourceId": "S09",
+      "flag": null
+    },
+    {
+      "id": "R18",
+      "category": "Institutional",
+      "name": "Qualified institutional outbound investment channels (QDII / QDLP)",
+      "mechanism": "Licensed institutions invest outbound under an approved quota; individuals participate through licensed products rather than directly.",
+      "legalStatus": "lawful-conditional",
+      "annualLimit": "unverified",
+      "chinaTaxOnConversion": "unverified",
+      "usTaxOnConversion": "Distributions would be reportable U.S. income; the applicable character was not confirmed",
+      "pros": [
+        "A recognised institutional route where an individual cannot move funds personally"
+      ],
+      "cons": [
+        "No direct individual access",
+        "Not a mechanism for repatriating an existing personal CNY deposit",
+        "Quota terms could not be confirmed from an official source in this session"
+      ],
+      "costComponentsUnverified": "unverified",
+      "sourceId": null,
+      "flag": "F12"
+    }
+  ]
+}

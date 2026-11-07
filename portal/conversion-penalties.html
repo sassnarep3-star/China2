@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversion Penalty Breakdown — China CNY → USD Verified Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-row">
+        <div>
+          <h1 class="brand-title">China CNY → USD Repatriation &amp; Tax-Penalty Verification Portal</h1>
+          <p class="brand-sub">US Citizen Edition · 100% Official PRC (.gov.cn) &amp; US (.gov) Primary Sources · Unverified Values Strictly Blank · Updated 2026-11-07</p>
+        </div>
+        <div>
+          <a class="meta-pill" href="../docs/index.html">↔ Main Repo Dashboard</a>
+        </div>
+      </div>
+      <nav class="nav-tabs" aria-label="Primary sections">
+        <a href="index.html">Executive Summary</a>
+        <a href="methods.html">All 22 Methods</a>
+        <a href="conversion-penalties.html" aria-current="page">Penalty Breakdown</a>
+        <a href="tax-compliance.html">US &amp; PRC Taxes</a>
+        <a href="repo-audit.html">Repo Line-by-Line Audit</a>
+        <a href="flagged-for-review.html" class="flag-tab">⚠ Flagged for Review</a>
+        <a href="sources.html">Official Sources</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="panel">
+      <h2>Deep Breakdown of the "Conversion Penalty" Stack (5 Distinct Layers)</h2>
+      <div class="callout warn">
+        <strong>Why Decomposition Matters:</strong> Treating "conversion cost" as one number leads to costly mistakes. In reality, Total Friction = <strong>(1) Unpaid PRC Source-Income Tax</strong> + <strong>(2) Net US Tax After Form 1116 FTC</strong> + <strong>(3) Non-Personal §988 FX Gain</strong> + <strong>(4) Commercial FX Spread &amp; SWIFT Fees</strong> (left blank below — request written bank quotes) + <strong>(5) Non-Compliance Penalties if Lawful Channels Are Bypassed</strong>.
+      </div>
+      <div class="toolbar">
+        <div class="toolbar-controls">
+          <input type="search" id="table-search" placeholder="Filter layers (e.g., VAT, 10%, 988, 30%, SWIFT)...">
+          <select id="category-filter" aria-label="Filter by cost layer">
+            <option value="ALL">All 5 Cost &amp; Penalty Layers</option><option value="1. PRC Tax Gatekeeper">1. PRC Tax Gatekeeper</option><option value="2. US Tax &amp; Treaty Relief">2. US Tax &amp; Treaty Relief</option><option value="3. FX Gain / Loss Rules">3. FX Gain / Loss Rules</option><option value="4. Commercial Banking Friction">4. Commercial Banking Friction</option><option value="5. Non-Compliance Penalties">5. Non-Compliance Penalties</option>
+          </select>
+        </div>
+        <div class="toolbar-controls" style="justify-content:flex-end;flex:0 0 auto;">
+          <span class="count-label" id="row-count"></span>
+          <button type="button" class="btn" id="export-csv">Export CSV</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table data-filterable="true">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cost Layer</th>
+              <th>Penalty / Cost Component</th>
+              <th>Verified Official Rate / Rule (Blank = Unverified)</th>
+              <th>Lawful Minimization Strategy &amp; Notes</th>
+              <th>Official Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="CP-01" data-category="1. PRC Tax Gatekeeper" data-elig="ALL"><td><strong>CP-01</strong></td><td><span class="badge badge-info">1. PRC Tax Gatekeeper</span></td><td><strong>Standalone PRC Currency Conversion / Wire Exit Tax</strong></td><td>0% (No standalone PRC FX conversion or wire tax exists; tax applies only to underlying income/transactions)</td><td>If income was already taxed, retrieve STA 完税证明 and pay 0% extra tax at conversion.</td><td><a class="src-link" href="https://www.safe.gov.cn/tianjin/2021/1102/1777.html" target="_blank" rel="noopener">safe.gov.cn</a></td></tr><tr id="CP-02" data-category="1. PRC Tax Gatekeeper" data-elig="ALL"><td><strong>CP-02</strong></td><td><span class="badge badge-info">1. PRC Tax Gatekeeper</span></td><td><strong>PRC Individual Income Tax — Comprehensive Income (Wages, Personal Services, Author&#x27;s Remuneration, Royalties)</strong></td><td>3%–45% progressive (after RMB 60,000/yr resident deduction or RMB 5,000/mo non-resident wage deduction)</td><td>Use statutory deductions; claim US Form 1116 Foreign Tax Credit to offset US tax on non-excluded wages.</td><td><a class="src-link" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener">chinatax.gov.cn</a></td></tr><tr id="CP-03" data-category="1. PRC Tax Gatekeeper" data-elig="ALL"><td><strong>CP-03</strong></td><td><span class="badge badge-info">1. PRC Tax Gatekeeper</span></td><td><strong>PRC Individual Income Tax — Business Operation Income</strong></td><td>5%–35% progressive on net annual taxable business income (after costs, expenses, losses)</td><td>Substantiate all deductible business costs/expenses; claim US Form 1116 FTC for creditable income tax.</td><td><a class="src-link" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener">chinatax.gov.cn</a></td></tr><tr id="CP-04" data-category="1. PRC Tax Gatekeeper" data-elig="ALL"><td><strong>CP-04</strong></td><td><span class="badge badge-info">1. PRC Tax Gatekeeper</span></td><td><strong>PRC Statutory IIT on Dividends, Interest, Asset Leasing, Property/Equity Transfer, Incidental Income</strong></td><td>20% flat statutory rate (reduced to 10% cap on dividends, interest, and royalties under US–China Treaty)</td><td>Always file treaty claim for 10% cap on dividends/interest/royalties — IRS will NOT credit excess tax above the 10% treaty rate!</td><td><a class="src-link" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener">chinatax.gov.cn</a></td></tr><tr id="CP-05" data-category="1. PRC Tax Gatekeeper" data-elig="ALL"><td><strong>CP-05</strong></td><td><span class="badge badge-info">1. PRC Tax Gatekeeper</span></td><td><strong>US–China Tax Treaty Withholding Cap (Dividends Art. 9, Interest Art. 10, Royalties Art. 11)</strong></td><td>10% maximum of gross amount for beneficial owners resident in the US</td><td>Submit treaty entitlement filing to withholding agent per STA rules before payment.</td><td><a class="src-link" href="https://www.irs.gov/pub/irs-trty/china.pdf" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="CP-06" data-category="1. PRC Tax Gatekeeper" data-elig="ALL"><td><strong>CP-06</strong></td><td><span class="badge badge-info">1. PRC Tax Gatekeeper</span></td><td><strong>PRC Corporate Enterprise Income Tax (Prior to WFOE Dividend Distribution)</strong></td><td>25% standard corporate EIT rate on taxable corporate profits</td><td>Evaluate bona fide arm&#x27;s-length salary/royalty/service deductions vs post-EIT dividends with cross-border CPA.</td><td><a class="src-link" href="https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103003/c5245840/content.html" target="_blank" rel="noopener">fgk.chinatax.gov.cn</a></td></tr><tr id="CP-07" data-category="1. PRC Tax Gatekeeper" data-elig="ALL"><td><strong>CP-07</strong></td><td><span class="badge badge-info">1. PRC Tax Gatekeeper</span></td><td><strong>PRC Value-Added Tax (VAT) on Cross-Border Services / Royalties</strong></td><td>6% VAT on taxable services &amp; intangible assets (0% / exempt only for qualifying exported services)</td><td>CRITICAL: PRC VAT is an indirect turnover tax, NOT an income tax — it is NOT creditable on US Form 1116! Price contracts VAT-exclusive or check exemption rules.</td><td><a class="src-link" href="https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103000/c5245856/content.html" target="_blank" rel="noopener">fgk.chinatax.gov.cn</a></td></tr><tr id="CP-08" data-category="1. PRC Tax Gatekeeper" data-elig="ALL"><td><strong>CP-08</strong></td><td><span class="badge badge-info">1. PRC Tax Gatekeeper</span></td><td><strong>STA &amp; SAFE Outbound Payment Tax Record Filing (服务贸易等项目对外支付税务备案表)</strong></td><td>Mandatory filing before outbound payments &gt; USD 50,000 by domestic institutions/individuals (procedural gate, 0% filing fee)</td><td>Can be completed electronically via China Electronic Tax Bureau (电子税务局) or tax hall.</td><td><a class="src-link" href="https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103016/c5250711/content.html" target="_blank" rel="noopener">fgk.chinatax.gov.cn</a></td></tr><tr id="CP-09" data-category="2. US Tax &amp; Treaty Relief" data-elig="ALL"><td><strong>CP-09</strong></td><td><span class="badge badge-info">2. US Tax &amp; Treaty Relief</span></td><td><strong>US Federal Income Tax on Wire Transfer Itself</strong></td><td>0% standalone wire tax (US taxes worldwide income when earned, NOT when transferred between own accounts)</td><td>Keep bank statements and tax returns proving prior inclusion of income.</td><td><a class="src-link" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="CP-10" data-category="2. US Tax &amp; Treaty Relief" data-elig="ALL"><td><strong>CP-10</strong></td><td><span class="badge badge-info">2. US Tax &amp; Treaty Relief</span></td><td><strong>US Foreign Tax Credit (Form 1116) &amp; Foreign Earned Income Exclusion (Form 2555)</strong></td><td>Form 1116 dollar-for-dollar credit for creditable PRC income taxes (10-yr refund claim window); Form 2555 FEIE max $130,000 (2025) / $132,900 (2026)</td><td>When PRC IIT rate exceeds effective US rate, Form 1116 FTC often eliminates US residual tax AND builds FTC carryovers (cannot claim FTC on FEIE-excluded wages).</td><td><a class="src-link" href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="CP-11" data-category="3. FX Gain / Loss Rules" data-elig="ALL"><td><strong>CP-11</strong></td><td><span class="badge badge-info">3. FX Gain / Loss Rules</span></td><td><strong>US 26 USC §988 Foreign Currency Gain/Loss vs §988(e) Individual Personal Exception ($200 Gain Rule)</strong></td><td>Business/§212 investment currency disposition = ordinary gain/loss (§988); individual PERSONAL transaction = excluded from §988, and FX gain ≤ $200 per personal transaction is tax-free under 26 USC §988(e)(2)</td><td>Distinguish non-interest personal living accounts from §212 interest-bearing investment deposits or business QBUs; track USD spot-rate basis.</td><td><a class="src-link" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener">govinfo.gov</a></td></tr><tr id="CP-12" data-category="4. Commercial Banking Friction" data-elig="ALL"><td><strong>CP-12</strong></td><td><span class="badge badge-info">4. Commercial Banking Friction</span></td><td><strong>PRC Bank CNY→USD FX Selling Spread (Telegraphic Transfer Ask vs Mid-Market)</strong></td><td></td><td>UNVERIFIED on official gov sites (commercial bank pricing). Always convert via Telegraphic Transfer (现汇卖出价) rather than physical banknotes (现钞卖出价), and request institutional FX desk pricing on large wires.</td><td><a class="src-link" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener">pbc.gov.cn</a></td></tr><tr id="CP-13" data-category="4. Commercial Banking Friction" data-elig="ALL"><td><strong>CP-13</strong></td><td><span class="badge badge-info">4. Commercial Banking Friction</span></td><td><strong>Outgoing PRC Bank Wire Commission, SWIFT Cable Fee, Intermediary Lifting Fee &amp; US Incoming Wire Fee</strong></td><td></td><td>UNVERIFIED on official gov sites (commercial fee schedules). Consolidate documented conversions into fewer, larger SWIFT wires to pay fixed cable/intermediary fees once.</td><td><a class="src-link" href="https://www.pbc.gov.cn/en/3688253/3689009/3788474/2025092319420747571/index.html" target="_blank" rel="noopener">pbc.gov.cn</a></td></tr><tr id="CP-14" data-category="4. Commercial Banking Friction" data-elig="ALL"><td><strong>CP-14</strong></td><td><span class="badge badge-info">4. Commercial Banking Friction</span></td><td><strong>UnionPay / Overseas ATM Operator Surcharges &amp; Commercial Remittance Platform Fees</strong></td><td></td><td>UNVERIFIED on official gov sites (commercial fee schedules). Confirm card-issuer + US ATM surcharge before using RMB 100,000/yr ATM channel.</td><td><a class="src-link" href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener">safe.gov.cn</a></td></tr><tr id="CP-15" class="row-prohibited" data-category="5. Non-Compliance Penalties" data-elig="ALL"><td><strong>CP-15</strong></td><td><span class="badge badge-info">5. Non-Compliance Penalties</span></td><td><strong>PRC SAFE FX Evasion, Quota-Splitting, Fake Invoices, Underground Bank &amp; Disguised FX Trading Fines</strong></td><td>≤ 30% fine on violation amount; 30%–100% fine if serious + confiscation of illegal gains + forced repatriation + criminal liability (State Council Decree No. 532 Arts. 39, 40, 45); ≤ 20% fine on unlawful cash carry (Art. 42)</td><td>Strictly avoid smurfing, underground swaps, OTC crypto FX bridges, and fake invoices.</td><td><a class="src-link" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" target="_blank" rel="noopener">gov.cn</a></td></tr><tr id="CP-16" class="row-prohibited" data-category="5. Non-Compliance Penalties" data-elig="ALL"><td><strong>CP-16</strong></td><td><span class="badge badge-info">5. Non-Compliance Penalties</span></td><td><strong>US Offshore Non-Reporting Penalties (Form 8938, Form 3520, FinCEN 114 FBAR, FinCEN 105 CMIR)</strong></td><td>Form 8938: $10,000 base + up to $50,000 continued failure + 40% tax understatement penalty; Form 3520: greater of $10,000 or 35% (trusts); FinCEN 105: seizure of all unreported &gt;$10,000 currency + civil/criminal penalties</td><td>Verify FBAR &amp; Form 8938 compliance (or IRS delinquent/streamlined procedures with CPA) before repatriating large legacy balances.</td><td><a class="src-link" href="https://www.irs.gov/businesses/corporations/fatca-information-for-individuals" target="_blank" rel="noopener">irs.gov</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div>Every table row links directly to an official PRC (<code>.gov.cn</code>) or US (<code>.gov</code>) primary authority. Unverified commercial fees/spreads are left blank (<code>""</code>) and listed on <a href="flagged-for-review.html">Flagged for Review</a>.</div>
+    <div>General regulatory research only · Not individualized legal or tax advice.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

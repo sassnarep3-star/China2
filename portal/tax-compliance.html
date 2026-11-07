@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>US &amp; PRC Taxes &amp; Reporting — China CNY → USD Verified Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-row">
+        <div>
+          <h1 class="brand-title">China CNY → USD Repatriation &amp; Tax-Penalty Verification Portal</h1>
+          <p class="brand-sub">US Citizen Edition · 100% Official PRC (.gov.cn) &amp; US (.gov) Primary Sources · Unverified Values Strictly Blank · Updated 2026-11-07</p>
+        </div>
+        <div>
+          <a class="meta-pill" href="../docs/index.html">↔ Main Repo Dashboard</a>
+        </div>
+      </div>
+      <nav class="nav-tabs" aria-label="Primary sections">
+        <a href="index.html">Executive Summary</a>
+        <a href="methods.html">All 22 Methods</a>
+        <a href="conversion-penalties.html">Penalty Breakdown</a>
+        <a href="tax-compliance.html" aria-current="page">US &amp; PRC Taxes</a>
+        <a href="repo-audit.html">Repo Line-by-Line Audit</a>
+        <a href="flagged-for-review.html" class="flag-tab">⚠ Flagged for Review</a>
+        <a href="sources.html">Official Sources</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="panel">
+      <h2>US &amp; PRC Tax, Treaty &amp; Offshore Reporting Obligations</h2>
+      <p>Line-by-line verified filing thresholds, deadlines, treaty provisions, and statutory penalties governing a US citizen holding or repatriating funds from Mainland China.</p>
+      <div class="toolbar">
+        <div class="toolbar-controls">
+          <input type="search" id="table-search" placeholder="Search FBAR, 8938, 1116, 2555, 3520, 183 days...">
+          <select id="category-filter" aria-label="Filter by jurisdiction">
+            <option value="ALL">All Jurisdictions</option>
+            <option value="US">United States (IRS / FinCEN / CBP)</option>
+            <option value="PRC">Mainland China (STA / PBOC / SAFE)</option>
+            <option value="US / PRC">Bilateral US–China Tax Treaty</option>
+          </select>
+        </div>
+        <div class="toolbar-controls" style="justify-content:flex-end;flex:0 0 auto;">
+          <span class="count-label" id="row-count"></span>
+          <button type="button" class="btn" id="export-csv">Export CSV</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table data-filterable="true">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Jurisdiction</th>
+              <th>Form / Statutory Rule</th>
+              <th>Verified Threshold / Trigger</th>
+              <th>Verified Rule, Deadlines &amp; Penalties</th>
+              <th>Official Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="TC-01" data-category="US" data-elig="ALL"><td><strong>TC-01</strong></td><td><span class="badge badge-info">US</span></td><td><strong>Worldwide Income &amp; USD Translation (Form 1040)</strong></td><td>Standard Form 1040 filing threshold by status/age</td><td>US citizens must report worldwide gross income in USD regardless of whether funds remain stuck in China or are remitted.</td><td><a class="src-link" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="TC-02" data-category="US" data-elig="ALL"><td><strong>TC-02</strong></td><td><span class="badge badge-info">US</span></td><td><strong>FinCEN Form 114 (FBAR)</strong></td><td>&gt; $10,000 aggregate across all foreign accounts at ANY time in calendar year</td><td>E-file via FinCEN BSA E-Filing System (not with Form 1040); due April 15 with automatic extension to October 15; keep records 5 years.</td><td><a class="src-link" href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="TC-03" data-category="US" data-elig="ALL"><td><strong>TC-03</strong></td><td><span class="badge badge-info">US</span></td><td><strong>IRS Form 8938 (FATCA — US-Resident Single / MFS)</strong></td><td>&gt; $50,000 on last day of tax year OR &gt; $75,000 at any time in tax year</td><td>Attach to Form 1040 (not required if not required to file Form 1040); $10,000 penalty, up to $50,000 continued failure, 40% understatement penalty.</td><td><a class="src-link" href="https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="TC-04" data-category="US" data-elig="ALL"><td><strong>TC-04</strong></td><td><span class="badge badge-info">US</span></td><td><strong>IRS Form 8938 (FATCA — US-Resident Married Filing Jointly)</strong></td><td>&gt; $100,000 on last day of tax year OR &gt; $150,000 at any time in tax year</td><td>Separate from FBAR — meeting both thresholds requires filing BOTH FinCEN 114 and Form 8938.</td><td><a class="src-link" href="https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="TC-05" data-category="US" data-elig="ALL"><td><strong>TC-05</strong></td><td><span class="badge badge-info">US</span></td><td><strong>IRS Form 8938 (FATCA — Qualified Taxpayer Living Abroad)</strong></td><td>Single/MFS: &gt; $200,000 year-end / &gt; $300,000 anytime; MFJ: &gt; $400,000 year-end / &gt; $600,000 anytime</td><td>Requires foreign tax home plus bona fide residence for entire tax year OR 330 days physical presence in 12 consecutive months.</td><td><a class="src-link" href="https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="TC-06" data-category="US" data-elig="ALL"><td><strong>TC-06</strong></td><td><span class="badge badge-info">US</span></td><td><strong>IRS Form 1116 — Foreign Tax Credit (FTC)</strong></td><td>Paid or accrued qualifying foreign income taxes on income also subject to US tax</td><td>Dollar-for-dollar credit for PRC income taxes (not VAT, and capped at treaty-reduced rate if eligible); 10-year refund window via Form 1040-X.</td><td><a class="src-link" href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="TC-07" data-category="US" data-elig="ALL"><td><strong>TC-07</strong></td><td><span class="badge badge-info">US</span></td><td><strong>IRS Form 2555 — Foreign Earned Income Exclusion (FEIE)</strong></td><td>Foreign tax home + bona fide residence or 330-day physical presence test</td><td>Max exclusion $130,000 (2025) / $132,900 (2026); standard housing cap $39,000 (2025) / $39,870 (2026). Cannot claim FTC on excluded income.</td><td><a class="src-link" href="https://www.irs.gov/individuals/international-taxpayers/figuring-the-foreign-earned-income-exclusion" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="TC-08" data-category="US" data-elig="ALL"><td><strong>TC-08</strong></td><td><span class="badge badge-info">US</span></td><td><strong>IRS Form 3520 — Foreign Gifts, Bequests &amp; Foreign Trusts</strong></td><td>&gt; $100,000 aggregate gifts/bequests from nonresident alien individual or foreign estate in a tax year</td><td>Mail-filed information return due with tax return; foreign trust failures incur greater of $10,000 or 35% gross transfer/distribution penalty.</td><td><a class="src-link" href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="TC-09" data-category="US" data-elig="ALL"><td><strong>TC-09</strong></td><td><span class="badge badge-info">US</span></td><td><strong>FinCEN Form 105 (CMIR) — Physical Border Currency Report</strong></td><td>&gt; $10,000 aggregate physical currency or monetary instruments entering or leaving the US</td><td>No cap on legal transport, but mandatory filing with CBP (online or paper); failure risks seizure of entire amount plus penalties.</td><td><a class="src-link" href="https://www.cbp.gov/sites/default/files/2024-07/cbp_form_6059b_english.pdf" target="_blank" rel="noopener">cbp.gov</a></td></tr><tr id="TC-10" data-category="US / PRC" data-elig="ALL"><td><strong>TC-10</strong></td><td><span class="badge badge-info">US / PRC</span></td><td><strong>US–China Income Tax Convention — Saving Clause &amp; Art. 22 FTC</strong></td><td>US citizens claiming treaty benefits</td><td>Under Protocol 1 Para. 2 (Saving Clause), the US retains the right to tax its citizens worldwide, while China grants US residents 10% WHT caps (Arts. 9–11) and the US grants FTC under Art. 22.</td><td><a class="src-link" href="https://www.irs.gov/pub/irs-trty/china.pdf" target="_blank" rel="noopener">irs.gov</a></td></tr><tr id="TC-11" data-category="PRC" data-elig="ALL"><td><strong>TC-11</strong></td><td><span class="badge badge-info">PRC</span></td><td><strong>PRC Individual Tax Residency (183-Day Rule)</strong></td><td>Domiciled in China OR ≥ 183 days in China in a calendar tax year</td><td>≥ 183 days = PRC resident individual (annual comprehensive reconciliation Mar 1–Jun 30); &lt; 183 days and non-domiciled = non-resident taxed only on China-source income monthly/per-transaction.</td><td><a class="src-link" href="https://www.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener">chinatax.gov.cn</a></td></tr><tr id="TC-12" data-category="PRC" data-elig="ALL"><td><strong>TC-12</strong></td><td><span class="badge badge-info">PRC</span></td><td><strong>PBOC / SAFE Individual FX Entity Classification</strong></td><td>Passport / ID type at bank account opening &amp; conversion</td><td>PRC ID = 境内个人 (USD 50,000/yr FX purchase &amp; sale quotas); Foreign/US passport = 境外个人 (USD 50,000/yr FX settlement quota ONLY; FX purchase requires Art. 13 income + tax proof).</td><td><a class="src-link" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener">pbc.gov.cn</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div>Every table row links directly to an official PRC (<code>.gov.cn</code>) or US (<code>.gov</code>) primary authority. Unverified commercial fees/spreads are left blank (<code>""</code>) and listed on <a href="flagged-for-review.html">Flagged for Review</a>.</div>
+    <div>General regulatory research only · Not individualized legal or tax advice.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

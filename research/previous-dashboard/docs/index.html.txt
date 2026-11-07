@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>China → USD — Dashboard</title><link rel="stylesheet" href="style.css">
+<header><h1>🇨🇳→🇺🇸 Getting Money Out of China (US Citizen)</h1><p>Verified from official sources only · Updated 2026-11-07 · Not tax/legal advice — consult a CPA & China FX lawyer for your facts.</p>
+<nav><a href="index.html">Dashboard</a> <a href="methods.html">All Methods</a> <a href="taxes.html">Taxes & Reporting</a> <a href="costs.html">Cost Breakdown</a> <a href="flagged.html">⚠ Flagged for Review</a> <a href="sources.html">Sources</a></nav></header>
+<main>
+<section class="cards"><div class="card"><b>Best lawful route (most US citizens)</b><p>Bank wire of documented after-tax income (salary/rent/royalties/dividends) with China tax-payment proof — no $50k cap on genuine current-account income for foreigners.</p></div>
+<div class="card"><b>Simplest small route</b><p>$50,000/person/year facilitation quota at a Chinese bank.</p></div>
+<div class="card"><b>Biggest misconception</b><p>Conversion CNY→USD itself is generally not taxed. Tax was on earning the income. See Flagged F1.</p></div></section>
+<h2>Executive Summary</h2>
+<p>China controls capital-account outflows via SAFE; current-account income (salary, trade, dividends after tax) is convertible with documentation. A US citizen must also satisfy US worldwide-income, FBAR and FATCA reporting regardless of where money sits. The cheapest lawful path is almost always: (1) prove China tax was paid on the income, (2) convert at your Chinese bank at its quoted rate, (3) SWIFT-wire to your own US account, (4) report correctly in the US and claim Foreign Tax Credit where eligible. Avoid any scheme promising to bypass SAFE — splitting quotas, underground banks and fake invoices are illegal in China and can create US AML/structuring liability.</p>
+<table><tr><th>Key fact</th><th>Verified value</th><th>Official source</th></tr>
+<tr><td>Individual FX purchase facilitation quota</td><td>USD 50,000 / person / year; above that allowed with true-background documents</td><td><a href="https://www.safe.gov.cn/en/2019/0930/1574.html">SAFE [S1]</a></td></tr>
+<tr><td>Splitting to evade quota</td><td>Prohibited</td><td><a href="http://www.safe.gov.cn/en/2015/1111/1175.html">SAFE [S2]</a></td></tr>
+<tr><td>FBAR (FinCEN 114)</td><td>File if foreign accounts &gt; $10,000 aggregate at any time in year</td><td><a href="https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-residents-abroad-filing-requirements">IRS [S3]</a></td></tr>
+<tr><td>Form 8938 (FATCA)</td><td>&gt;$50,000 year-end / $75,000 any time (single, US-resident); higher abroad</td><td><a href="https://www.irs.gov/businesses/corporations/fatca-information-for-individuals">IRS [S4]</a></td></tr>
+<tr><td>US–China treaty cap: dividends / interest / royalties</td><td>10% each</td><td><a href="https://www.irs.gov/pub/irs-trty/china.pdf">IRS Treaty [S6]</a></td></tr>
+<tr><td>Foreign Tax Credit</td><td>Form 1116 for creditable foreign income taxes</td><td><a href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit">IRS [S5]</a></td></tr>
+<tr><td>Bank wire fee / FX spread</td><td></td><td>⚠ Unverified — no official source; see Flagged</td></tr>
+</table></main><footer>Every row links to an official source. Blank = unverified, never inferred.</footer>
