@@ -8,7 +8,7 @@ This checkout is required by the execution environment to remain on `arena/996dc
 |---|---|---|---|
 | Official-source research, evidence ledger, executive summary | done | arena-996dc508 | research/*, scripts/seed_research.py |
 | Dashboard implementation and validation | done | arena-996dc508 | docs/*, scripts/*, README.md, .github/* |
-| Final integration, PR, merge, Pages deployment | in progress | arena-996dc508 | COORDINATION.md; final integration of above scopes |
+| Final integration, PR, merge, Pages deployment | done | arena-996dc508 | COORDINATION.md; final integration of above scopes |
 
 ## Log
 - 2026-11-07: Repository inspected: README only; no existing claims or content to audit. Claimed above scopes before substantive work. Unknown personal facts will not be inferred. Official sources will be linked per data row; unavailable facts will remain blank and be flagged.
@@ -34,3 +34,17 @@ This checkout is required by the execution environment to remain on `arena/996dc
 - 2026-11-07: Combined-source review and compatibility integration revalidated: nine HTML files (seven canonical categories plus two redirects); every active table row has an official link; CSV/JSON/Markdown parity; no local broken paths/fragments; real Chromium desktop/mobile and filtering tests passed again after conflict resolution. Earlier-session archive remains distinct from current findings. Final integration is ready for PR CI and merge.
 - Integration-history note: a plain `git pull --rebase` after the local merge tried to flatten/replay the other session's already-merged commits, recreating add/add conflicts. Stopped, aborted that rebase to restore the intact reconciled merge, then used `git pull --rebase=merges` successfully. The original merge hash `dbcb199` and prior main history were preserved; no force push and no files discarded. Subsequent pushes use merge-preserving rebase.
 - PR #4 integration head was confirmed mergeable by GitHub API; local generation/citation/link/UI tests passed on the combined tree. Repository publication remains main root → docs redirect (supersedes the initial PR description's proposed direct /docs setting).
+
+## Confirmed publication result
+
+- **PR:** https://github.com/sassnarep3-star/China2/pull/4
+- **Merge:** MERGED at 2026-11-07 20:37:37 UTC using `gh pr merge 4 --merge`; merge commit `0fdbde7fdaf6730c398145e65315901c8140c9c9`.
+- **PR validation:** passed; latest PR check run https://github.com/sassnarep3-star/China2/actions/runs/42411940710 .
+- **Main validation:** completed SUCCESS: https://github.com/sassnarep3-star/China2/actions/runs/42411965083 .
+- **Pages deployment:** completed SUCCESS (build, deploy, report all successful): https://github.com/sassnarep3-star/China2/actions/runs/42411964570 . Pages API `builds/latest` confirmed `status: built`, exact merge commit above, and no error message.
+- **Live landing URL:** https://sassnarep3-star.github.io/China2/ (existing root redirect into docs).
+- **Direct dashboard:** https://sassnarep3-star.github.io/China2/docs/index.html . Public page retrieval confirmed the current title, executive summary, 22-route/24-source/9-flag counts and current source links after deployment.
+- **Live flags:** https://sassnarep3-star.github.io/China2/docs/review.html . Public page retrieval confirmed current F01–F09 content including concurrency/treaty limitations in F06 and blank unverified fields.
+- **Post-merge local checks:** generator, nine-page local link/anchor/citation/export validation and JS harness passed against the merged tree. Prior real Chromium desktop/mobile tests passed. Source review records and tests are explicitly limited as described in research/METHODOLOGY.md; no assertion of personalized tax verification is made.
+- GitHub-managed native Pages workflow emitted non-failing Node-runtime deprecation / ubuntu runner migration notices. The managed build/deploy succeeded. No broken application check remains. Research uncertainties retain **needs review**, not failed-build status.
+- This publication result is preserved via a documentation-only follow-up PR from the same fixed session branch so the completed merge/deployment evidence is also present on main. No direct main push or branch switch.
