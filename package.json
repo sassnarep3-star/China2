@@ -1,0 +1,12 @@
+{
+  "name": "china2-cny-usd-repatriation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Verified research on converting CNY to USD as a U.S. citizen, built from primary official sources only.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "verify": "node tools/verify.mjs",
+    "check": "node tools/build.mjs && node tools/verify.mjs",
+    "preview": "node tools/serve.mjs"
+  }
+}

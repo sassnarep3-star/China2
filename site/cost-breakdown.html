@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cost breakdown · China Money Repatriation</title>
+<meta name="description" content="Cost breakdown — CNY to USD repatriation research, verified against official sources.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><span class="brand">China → USD Repatriation</span><nav>
+<a href="index.html">Dashboard</a>
+<a href="executive-summary.html">Executive summary</a>
+<a href="conversion-routes.html">Conversion routes</a>
+<a href="cost-breakdown.html" class="here">Cost breakdown</a>
+<a href="us-tax-rules.html">US rules</a>
+<a href="china-rules.html">China rules</a>
+<a href="unlawful-routes.html">Unlawful routes</a>
+<a href="sources.html">Sources</a>
+<a href="flagged-for-review.html">Flagged for review</a>
+<a href="methodology.html">Methodology</a>
+<a href="repo-audit.html">Repo audit</a>
+</nav></header>
+<main>
+<h1>Cost breakdown</h1>
+<p class="sub">The conversion penalty decomposed into its actual components, each tied to an official source or explicitly marked unverified.</p>
+
+<div class="callout"><p>This is the breakdown the brief asked for. It separates the four things
+that are routinely conflated as "the cost of getting money out of China." Only one of them is a
+tax on conversion, and that one is usually zero.</p></div>
+
+<h2>Component by component</h2>
+<div class="panel"><table>
+<thead><tr><th>Component</th><th>What it is</th><th>Verified amount</th><th>Who charges it</th><th>Source</th></tr></thead><tbody>
+<tr class="data-row"><td><strong>1. Tax on the conversion itself</strong></td>
+<td>U.S.: exchange-rate gain on the currency position. China: none — the SAFE regime imposes a quota and an authenticity review, not a tax.</td>
+<td>U.S.: $0 where the personal gain is $200 or less per transaction; above that, tax on the gain as a capital gain. China: $0.</td>
+<td>IRS</td><td><a href="https://www.irs.gov/publications/p525" rel="noopener noreferrer" target="_blank">S03 · U.S. Internal Revenue Service</a> <span class="badge badge-warn">search-index</span><br><a href="https://www.safe.gov.cn/en/2007/0105/819.html" rel="noopener noreferrer" target="_blank">S05 · State Administration of Foreign Exchange (SAFE), People's Republic of China</a> <span class="badge badge-ok">fetched</span> <a href="flagged-for-review.html#F01">F01</a></td></tr>
+<tr class="data-row"><td><strong>2. Tax on the income that created the balance</strong></td>
+<td>Chinese individual income tax on the earnings, which arises when the income arises — not when it is remitted.</td>
+<td>3% to 45% progressive on comprehensive income after the RMB 60,000 deduction; flat 20% on interest, dividends and property transfers.</td>
+<td>State Taxation Administration</td><td><a href="https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" target="_blank">S10 · State Taxation Administration, People's Republic of China</a> <span class="badge badge-ok">fetched</span></td></tr>
+<tr class="data-row"><td><strong>3. Bank spread and transfer fees</strong></td>
+<td>The difference between the interbank rate and the rate the bank gives you, plus wire, correspondent and card fees. For most balances this is the single largest real cost.</td>
+<td><span class="cell-unverified">UNVERIFIED — no official source</span></td><td>Commercial banks and card issuers</td><td><a href="https://www.safe.gov.cn/en/2007/0105/819.html" rel="noopener noreferrer" target="_blank">S05 · State Administration of Foreign Exchange (SAFE), People's Republic of China</a> <span class="badge badge-ok">fetched</span> <a href="flagged-for-review.html#F05">F05</a></td></tr>
+<tr class="data-row"><td><strong>4. Time cost of the quota</strong></td>
+<td>The balance divided by the annual quota is the number of calendar years a straightforward wire takes. Not a tax, but a real cost.</td>
+<td>USD 50,000 equivalent per individual per calendar year</td>
+<td>SAFE</td><td><a href="https://www.safe.gov.cn/en/2007/0105/819.html" rel="noopener noreferrer" target="_blank">S05 · State Administration of Foreign Exchange (SAFE), People's Republic of China</a> <span class="badge badge-ok">fetched</span></td></tr>
+<tr class="data-row"><td><strong>5. U.S. non-compliance exposure</strong></td>
+<td>The financial consequence of accounts that were never declared. This can dwarf every other component.</td>
+<td>Penalty amounts are inflation-adjusted annually and were not retrieved from the official eCFR text this session, so none is stated.</td>
+<td>IRS / FinCEN</td><td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" target="_blank">S01 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span> <a href="flagged-for-review.html#F02">F02</a></td></tr>
+<tr class="data-row"><td><strong>6. Chinese non-compliance exposure</strong></td>
+<td>The consequence of evading the quota or using false documents.</td>
+<td>Penalty under the Regulations of the PRC on Foreign Exchange Administration; the specific schedule was not confirmed from an official English text this session.</td>
+<td>SAFE</td><td><a href="https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html" rel="noopener noreferrer" target="_blank">S09 · People's Bank of China (PBOC)</a> <span class="badge badge-ok">fetched</span> <a href="flagged-for-review.html#F11">F11</a></td></tr>
+<tr class="data-row"><td><strong>7. Treaty withholding on dividends, interest, royalties</strong></td>
+<td>Relevant only where the balance comes from passive income or a corporate distribution.</td>
+<td>Capped at 10% of gross where the recipient is the beneficial owner.</td>
+<td>Source state</td><td><a href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" target="_blank">S11 · U.S. Internal Revenue Service (treaty text as ratified)</a> <span class="badge badge-ok">fetched</span></td></tr>
+<tr class="data-row"><td><strong>8. Relief available against component 2 and 7</strong></td>
+<td>Foreign tax credit in the country of residence.</td>
+<td>Provided for by the treaty; U.S. mechanics and limits were not verified this session.</td>
+<td>IRS</td><td><a href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" target="_blank">S11 · U.S. Internal Revenue Service (treaty text as ratified)</a> <span class="badge badge-ok">fetched</span> <a href="flagged-for-review.html#F13">F13</a></td></tr>
+</tbody></table></div>
+
+<h2>What this means in practice</h2>
+<div class="callout ok"><p>If the Chinese tax on the income has already been paid, the lawful cost
+of converting the balance is <strong>component 3 plus component 4</strong>: the bank's spread and
+the number of years the quota forces you to spread the transfer over. That is why the cheapest
+lawful strategy is not to hunt for a tax shelter — it is to (a) make sure component 2 is
+actually settled, so the authenticity review passes; (b) claim component 8 so it is not paid
+twice; (c) minimise component 3 by getting competing written quotes; and (d) shorten component 4
+by qualifying for the emigrant asset transfer or a genuine trade settlement account, both of
+which sit outside the quota.</p></div>
+<div class="callout bad"><p>Every "cheap" alternative advertised online attacks component 4 by
+breaking the law, and in doing so converts a modest, quantifiable cost into component 6 — an
+unquantified penalty exposure plus, on the U.S. side, component 5. That trade is not worth
+making, and the site does not recommend it.</p></div>
+</main>
+<footer>
+Built 2026-11-07 by session <code>arena-fcd22b0c</code>. Research only — not tax or legal advice.
+Every table row carries a source link to a primary official document, or is explicitly marked UNVERIFIED.
+Machine-readable ledgers: <code>data/*.json</code>. Verification report: <code>node tools/verify.mjs</code>.
+</footer>
+</body></html>

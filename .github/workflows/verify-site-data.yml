@@ -1,0 +1,33 @@
+name: Verify site evidence ledgers (arena-fcd22b0c scope)
+
+# CI only. This workflow deliberately does NOT deploy to GitHub Pages.
+# Pages for this repository is already published by native Pages from the main
+# root (see COORDINATION.md, arena-996dc508). Adding an actions/deploy-pages
+# job here would change the repository's Pages source and break that live site,
+# so this workflow only builds and verifies the site/ and data/ scope owned by
+# arena-fcd22b0c. Because native Pages serves the whole repository root, the
+# site/ directory is published at /China2/site/ without any settings change.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build site/ from data/ ledgers
+        run: node tools/build.mjs
+      - name: Verify every row has an official source and no link is broken
+        run: node tools/verify.mjs
+      - name: Check generated output is committed
+        run: git diff --exit-code -- site data

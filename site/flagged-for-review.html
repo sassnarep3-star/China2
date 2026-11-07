@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flagged for Review · China Money Repatriation</title>
+<meta name="description" content="Flagged for Review — CNY to USD repatriation research, verified against official sources.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><span class="brand">China → USD Repatriation</span><nav>
+<a href="index.html">Dashboard</a>
+<a href="executive-summary.html">Executive summary</a>
+<a href="conversion-routes.html">Conversion routes</a>
+<a href="cost-breakdown.html">Cost breakdown</a>
+<a href="us-tax-rules.html">US rules</a>
+<a href="china-rules.html">China rules</a>
+<a href="unlawful-routes.html">Unlawful routes</a>
+<a href="sources.html">Sources</a>
+<a href="flagged-for-review.html" class="here">Flagged for review</a>
+<a href="methodology.html">Methodology</a>
+<a href="repo-audit.html">Repo audit</a>
+</nav></header>
+<main>
+<h1>Flagged for Review</h1>
+<p class="sub">Unverified values, blank cells and repository irregularities, with an action for each.</p>
+<div class="callout bad"><p>Nothing on this page is a conclusion. Each item is something this
+research could <strong>not</strong> confirm from an official source. Per the project rule, those
+values were left <strong>blank</strong> in every table rather than estimated, inferred or
+rounded from a secondary figure. Each row states what to check and where.</p></div>
+<div class="panel"><table>
+<thead><tr><th>ID</th><th>Severity</th><th>Item</th><th>Action</th><th>Affects</th><th>Where to check</th></tr></thead>
+<tbody>
+<tr class="data-row" id="F01">
+<td class="id">F01</td>
+<td><span class="st-cond">MEDIUM</span></td>
+<td><strong>The $200 personal foreign-currency exclusion was not read from the live Publication 525 page body in this session</strong><div>This is the single most important U.S. rule for the question asked. The sentence 'If you have a gain on a personal foreign currency transaction because of changes in exchange rates, you don't have to include that gain in your income unless it's more than $200' was read from IRS-hosted Publication 525 text (irs.gov/publications/p525 and irs.gov/pub/irs-dft/p525--dft.pdf) returned through the search index, and from prior IRS editions of the same publication. The live page was retrieved and confirmed to be the 2025 edition of Publication 525, but the specific paragraph sits deep in a very long page and was not re-read in-session. It is therefore marked search-index verified rather than fetch verified.</div></td>
+<td>Open https://www.irs.gov/publications/p525 and confirm the sentence under 'Other Income — Foreign currency transactions'.</td>
+<td><code>U02</code> <code>R01</code> <code>R02</code> <code>R03</code> <code>R04</code> <code>R05</code> <code>R06</code> <code>R09</code> <code>R12</code></td>
+<td><a href="https://www.irs.gov/publications/p525" rel="noopener noreferrer" target="_blank">www.irs.gov</a></td>
+</tr>
+<tr class="data-row" id="F02">
+<td class="id">F02</td>
+<td><span class="st-unlawful">HIGH</span></td>
+<td><strong>FBAR civil penalty dollar amounts are left blank</strong><div>The official IRS FBAR page states only that civil FBAR penalty maximums in Title 31 of the U.S. Code are adjusted annually for inflation under 31 CFR 1010.821, and warns that penalty amounts in its own reference materials may not be current. Widely quoted current-year figures come from commercial tax-preparation sites, not from the government. No inflation-adjusted dollar figure is therefore published in any table on this site.</div></td>
+<td>Read the current figure directly from 31 CFR 1010.821 in the eCFR before relying on any penalty amount.</td>
+<td><code>U06</code></td>
+<td><a href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" rel="noopener noreferrer" target="_blank">www.ecfr.gov</a></td>
+</tr>
+<tr class="data-row" id="F03">
+<td class="id">F03</td>
+<td><span class="st-unlawful">HIGH</span></td>
+<td><strong>The repository contained no existing China-money data to review</strong><div>The task asked for a line-by-line review of the existing repository verified against official sources. At the start of this session main contained exactly one commit (d9f3976, 'Initial commit') and exactly one file, README.md, 8 bytes, containing only the text '# China2' with no trailing newline. There was no data, code, tests, site, licence or configuration to audit. Every finding in this project is newly produced from primary sources rather than verified from pre-existing repo content.</div></td>
+<td>None — recorded so that the absence of a prior data audit is not mistaken for one having been performed.</td>
+<td><span class="muted">site-wide</span></td>
+<td><a href="https://github.com/sassnarep3-star/China2/commit/d9f397649f6601d0907184e7f16c9e03e5ca6d74" rel="noopener noreferrer" target="_blank">github.com</a></td>
+</tr>
+<tr class="data-row" id="F04">
+<td class="id">F04</td>
+<td><span class="st-unlawful">HIGH</span></td>
+<td><strong>No personal facts were supplied, so every recommendation on this site is conditional</strong><div>The correct route depends on facts that were not provided and that this project does not infer: the size of the balance; whether the money is held personally or by a company; how the money arose (salary, business profit, property sale, gift, inheritance); whether Chinese individual income tax was withheld and paid on it; whether the holder is a China tax resident under the 183-day test; and whether the holder holds or intends to obtain foreign permanent residence or citizenship. Each of those facts changes which route is available. No assumption has been made about any of them.</div></td>
+<td>Supply these facts to narrow the recommendation to one route.</td>
+<td><span class="muted">site-wide</span></td>
+<td><a href="https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" target="_blank">fgk.chinatax.gov.cn</a></td>
+</tr>
+<tr class="data-row" id="F05">
+<td class="id">F05</td>
+<td><span class="st-unlawful">HIGH</span></td>
+<td><strong>Bank FX spread, wire fees and correspondent-bank charges are unverified and left blank</strong><div>For most people the real cost of moving money out of China is the bank's exchange-rate spread plus fees, not tax. Those numbers are set by individual commercial banks and by card issuers and are not published by any regulator, so no official source exists. Every cost field in the route tables therefore reads 'unverified' instead of a number.</div></td>
+<td>Obtain written quotes from the remitting bank and the receiving bank for the specific amount and currency pair.</td>
+<td><code>R01</code> <code>R02</code> <code>R03</code> <code>R04</code> <code>R05</code> <code>R06</code> <code>R07</code> <code>R08</code> <code>R09</code> <code>R10</code> <code>R11</code> <code>R12</code></td>
+<td><a href="https://www.safe.gov.cn/en/2007/0105/819.html" rel="noopener noreferrer" target="_blank">www.safe.gov.cn</a></td>
+</tr>
+<tr class="data-row" id="F06">
+<td class="id">F06</td>
+<td><span class="st-cond">MEDIUM</span></td>
+<td><strong>The specific Chinese sanctions for quota splitting were not confirmed from an official English source</strong><div>SAFE's own English text confirms that the annual-quota system exists partly to prevent avoiding administration through repeated purchases and sales in installments, and that a bank-to-SAFE system verifies authenticity. The additional sanctions widely described in commercial commentary — an attention list and a multi-year bar on FX transactions — were not located in an official SAFE English publication during this session and are therefore not stated.</div></td>
+<td>Search SAFE's Chinese-language rules for the individual FX violation and attention-list provisions before relying on any stated sanction.</td>
+<td><code>R02</code> <code>R14</code></td>
+<td><a href="https://www.safe.gov.cn/en/2007/0105/819.html" rel="noopener noreferrer" target="_blank">www.safe.gov.cn</a></td>
+</tr>
+<tr class="data-row" id="F07">
+<td class="id">F07</td>
+<td><span class="st-unlawful">HIGH</span></td>
+<td><strong>Chinese customs cash-carrying thresholds are unverified and left blank</strong><div>The figures commonly repeated for RMB cash and foreign-currency cash carried across the Chinese border are sourced from travel blogs and commercial guides, not from an official Chinese customs publication. No official English customs source was located in this session, so no threshold is stated anywhere on this site. The only cash figure stated is the RMB 100,000 annual / RMB 10,000 daily overseas bank-card withdrawal cap, which is confirmed directly from the SAFE circular.</div></td>
+<td>Confirm against the General Administration of Customs of China before travelling with cash.</td>
+<td><code>R06</code> <code>C23</code></td>
+<td><a href="http://www.customs.gov.cn/" rel="noopener noreferrer" target="_blank">www.customs.gov.cn</a></td>
+</tr>
+<tr class="data-row" id="F08">
+<td class="id">F08</td>
+<td><span class="st-cond">MEDIUM</span></td>
+<td><strong>Chinese corporate income tax rate and the domestic withholding rate absent a treaty claim are unverified</strong><div>The 10% treaty caps on dividends, interest and royalties are confirmed verbatim from Articles 9(2), 10(2) and 11(2) of the IRS-hosted treaty text. The Chinese corporate income tax rate applied to profits before distribution, and the domestic Chinese withholding rate that would apply without a treaty claim, were not confirmed against an official source and are left blank.</div></td>
+<td>Confirm against the State Taxation Administration before modelling a corporate distribution.</td>
+<td><code>R08</code> <code>C24</code> <code>C25</code></td>
+<td><a href="https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" rel="noopener noreferrer" target="_blank">fgk.chinatax.gov.cn</a></td>
+</tr>
+<tr class="data-row" id="F09">
+<td class="id">F09</td>
+<td><span class="st-lawful">LOW</span></td>
+<td><strong>Documentation for remitting already-held foreign exchange above the quota is not set out in the English SAFE text retrieved</strong><div>The SAFE English text retrieved confirms that the annual quota governs individual foreign-exchange purchases and sales. It does not set out a separate documentary regime for remitting foreign exchange that is already held rather than newly purchased. Route R10 is therefore described as conditional.</div></td>
+<td>Confirm the applicable documentation with the remitting bank and the local SAFE branch.</td>
+<td><code>R10</code></td>
+<td><a href="https://www.safe.gov.cn/en/2007/0105/819.html" rel="noopener noreferrer" target="_blank">www.safe.gov.cn</a></td>
+</tr>
+<tr class="data-row" id="F10">
+<td class="id">F10</td>
+<td><span class="st-cond">MEDIUM</span></td>
+<td><strong>U.S. reporting threshold for gifts received from a foreign person is unverified</strong><div>Where a Chinese relative uses their own quota and remits to a U.S. person, the U.S. recipient may have a reporting obligation for large foreign gifts. The applicable form and dollar threshold were not confirmed against an official IRS source in this session and are left blank.</div></td>
+<td>Confirm against the IRS instructions for reporting gifts from foreign persons.</td>
+<td><code>R11</code></td>
+<td><a href="https://www.irs.gov/" rel="noopener noreferrer" target="_blank">www.irs.gov</a></td>
+</tr>
+<tr class="data-row" id="F11">
+<td class="id">F11</td>
+<td><span class="st-cond">MEDIUM</span></td>
+<td><strong>The specific penalties under the PRC Regulations on Foreign Exchange Administration are unverified</strong><div>Both the PBOC personal-asset rules and SAFE's card circular state that violations are punished under the Regulations of the People's Republic of China on Foreign Exchange Administration (State Council Decree No. 532), which SAFE's 2025 catalogue confirms is in force. The individual penalty amounts in those Regulations were not retrieved from an official English text in this session, so none is stated.</div></td>
+<td>Read the Regulations of the PRC on Foreign Exchange Administration for the specific penalty schedule.</td>
+<td><code>R15</code> <code>C17</code></td>
+<td><a href="https://www.safe.gov.cn/en/file/file/20251202/e6e12b4ddec94482bcb4c2275c2accb7.pdf" rel="noopener noreferrer" target="_blank">www.safe.gov.cn</a></td>
+</tr>
+<tr class="data-row" id="F12">
+<td class="id">F12</td>
+<td><span class="st-lawful">LOW</span></td>
+<td><strong>QDII and QDLP quota terms are unverified</strong><div>Route R18 is included for completeness. No official source was retrieved in this session establishing current quota terms or individual access, so the annual limit and tax fields for that route are unverified. It is also not a mechanism for repatriating an existing personal CNY deposit.</div></td>
+<td>Confirm with SAFE and with a licensed product manager; treat this route as informational only.</td>
+<td><code>R18</code></td>
+<td><a href="https://www.safe.gov.cn/en/index.html" rel="noopener noreferrer" target="_blank">www.safe.gov.cn</a></td>
+</tr>
+<tr class="data-row" id="F13">
+<td class="id">F13</td>
+<td><span class="st-lawful">LOW</span></td>
+<td><strong>The mechanics and limits of the U.S. foreign tax credit were not verified in this session</strong><div>That the treaty provides for a foreign tax credit in the country of residence is confirmed from the treaty's own Letter of Transmittal and Article 22. The mechanics, limitation calculation and category rules of the U.S. foreign tax credit form were not retrieved from an official IRS source in this session, so no limitation figures are stated.</div></td>
+<td>Read the official IRS instructions for the foreign tax credit form.</td>
+<td><code>U16</code></td>
+<td><a href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" target="_blank">www.irs.gov</a></td>
+</tr>
+<tr class="data-row" id="F14">
+<td class="id">F14</td>
+<td><span class="st-lawful">LOW</span></td>
+<td><strong>No USD/CNY exchange rate is published on this site</strong><div>A live exchange rate changes continuously and no rate was retrieved from an official source during this session, so no rate is stated. The IRS directs taxpayers to the Treasury Department's currency exchange rate tables and to the IRS yearly average currency exchange rates page for translation purposes.</div></td>
+<td>Use the Treasury reporting rates of exchange, or the IRS yearly average currency exchange rates page, for the relevant date.</td>
+<td><span class="muted">site-wide</span></td>
+<td><a href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" rel="noopener noreferrer" target="_blank">www.irs.gov</a></td>
+</tr>
+<tr class="data-row" id="F15">
+<td class="id">F15</td>
+<td><span class="badge">INFORMATIONAL</span></td>
+<td><strong>SAFE English translations are not authoritative</strong><div>SAFE's own English pages carry the notice: 'The English translation may only be used as a reference. In case a different interpretation of the translated information contained in this website arises, the original Chinese shall prevail.' The PBOC English text of the personal-asset rules is likewise marked an unofficial translation, and the State Taxation Administration's English Individual Income Tax Law states that all information is authentic in Chinese and English is provided for reference only.</div></td>
+<td>Have a qualified Chinese lawyer confirm the operative Chinese text before acting on any SAFE, PBOC or STA rule.</td>
+<td><span class="muted">site-wide</span></td>
+<td><a href="http://www.safe.gov.cn/en/2017/1230/1397.html" rel="noopener noreferrer" target="_blank">www.safe.gov.cn</a></td>
+</tr>
+<tr class="data-row" id="F16">
+<td class="id">F16</td>
+<td><span class="badge">INFORMATIONAL</span></td>
+<td><strong>This project is research, not tax or legal advice</strong><div>Nothing on this site is advice. Every route depends on the unstated facts listed in F04, and the Chinese rules governing capital outflow are administered by SAFE branch offices and individual banks with discretion that is not fully published in English.</div></td>
+<td>Engage a cross-border tax adviser and a PRC-licensed lawyer before moving funds.</td>
+<td><span class="muted">site-wide</span></td>
+<td><a href="https://www.irs.gov/individuals/international-taxpayers" rel="noopener noreferrer" target="_blank">www.irs.gov</a></td>
+</tr></tbody></table></div>
+</main>
+<footer>
+Built 2026-11-07 by session <code>arena-fcd22b0c</code>. Research only — not tax or legal advice.
+Every table row carries a source link to a primary official document, or is explicitly marked UNVERIFIED.
+Machine-readable ledgers: <code>data/*.json</code>. Verification report: <code>node tools/verify.mjs</code>.
+</footer>
+</body></html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>United States rules · China Money Repatriation</title>
+<meta name="description" content="United States rules — CNY to USD repatriation research, verified against official sources.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><span class="brand">China → USD Repatriation</span><nav>
+<a href="index.html">Dashboard</a>
+<a href="executive-summary.html">Executive summary</a>
+<a href="conversion-routes.html">Conversion routes</a>
+<a href="cost-breakdown.html">Cost breakdown</a>
+<a href="us-tax-rules.html" class="here">US rules</a>
+<a href="china-rules.html">China rules</a>
+<a href="unlawful-routes.html">Unlawful routes</a>
+<a href="sources.html">Sources</a>
+<a href="flagged-for-review.html">Flagged for review</a>
+<a href="methodology.html">Methodology</a>
+<a href="repo-audit.html">Repo audit</a>
+</nav></header>
+<main>
+<h1>United States rules</h1>
+<p class="sub">What a U.S. citizen with a Chinese bank account owes, files and must not do — from IRS and FinCEN sources.</p>
+<div class="panel"><table>
+<thead><tr><th>ID</th><th>Topic</th><th>Verified finding</th><th>Value</th><th>Form</th>
+<th>Verification</th><th>Source</th><th>Flag</th></tr></thead>
+<tbody>
+<tr class="data-row" id="U01">
+<td class="id">U01</td><td><strong>Is converting CNY to USD itself a taxable event?</strong></td><td>No separate conversion tax exists. U.S. tax attaches to income, not to the act of changing currency. All income tax determinations must be made in the functional currency, and the U.S. dollar is the functional currency for all taxpayers except some qualified business units.</td>
+<td>No conversion tax. Only exchange-rate gain or loss on the currency position is in scope.</td>
+<td><span class="muted">—</span></td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates" rel="noopener noreferrer" target="_blank">S04 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U02">
+<td class="id">U02</td><td><strong>Personal foreign-currency gain</strong></td><td>If you have a gain on a personal foreign currency transaction because of changes in exchange rates, you do not have to include that gain in income unless it is more than $200. If the gain is more than $200, report it as a capital gain.</td>
+<td>$200 exclusion threshold per transaction</td>
+<td>Schedule D if above the threshold</td>
+<td><span class="badge badge-warn">search-index</span></td>
+<td><a href="https://www.irs.gov/publications/p525" rel="noopener noreferrer" target="_blank">S03 · U.S. Internal Revenue Service</a> <span class="badge badge-warn">search-index</span></td><td><a href="flagged-for-review.html#F01">F01</a></td>
+</tr>
+<tr class="data-row" id="U03">
+<td class="id">U03</td><td><strong>FBAR filing trigger</strong></td><td>A U.S. person, including a citizen, resident, corporation, partnership, LLC, trust and estate, must file an FBAR where the aggregate value of foreign financial accounts exceeded $10,000 at any time during the calendar year. Whether the account produced taxable income is irrelevant.</td>
+<td>Aggregate value over $10,000 at any time during the calendar year</td>
+<td>FinCEN Form 114, filed with FinCEN via BSA E-Filing</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" target="_blank">S01 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U04">
+<td class="id">U04</td><td><strong>FBAR deadline</strong></td><td>The FBAR is an annual report due April 15 following the calendar year reported, with an automatic extension to October 15 that requires no request.</td>
+<td>April 15, automatic extension to October 15</td>
+<td>FinCEN Form 114</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" target="_blank">S01 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U05">
+<td class="id">U05</td><td><strong>FBAR recordkeeping</strong></td><td>For each reported account you must keep the name on the account, the account number, the name and address of the foreign bank, the type of account and the maximum value during the year, generally for five years from the FBAR due date.</td>
+<td>Five years from the due date of the FBAR</td>
+<td><span class="muted">—</span></td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" target="_blank">S01 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U06">
+<td class="id">U06</td><td><strong>FBAR civil penalty amount</strong></td><td>Civil FBAR penalty maximums in Title 31 of the United States Code are adjusted annually for inflation under 31 CFR 1010.821. The current adjusted dollar figures were NOT retrieved from the official eCFR text in this session and are therefore left unverified rather than quoted.</td>
+<td><span class="cell-unverified">UNVERIFIED — no official source</span></td>
+<td><span class="muted">—</span></td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" target="_blank">S01 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span></td><td><a href="flagged-for-review.html#F02">F02</a></td>
+</tr>
+<tr class="data-row" id="U07">
+<td class="id">U07</td><td><strong>Delinquent FBARs</strong></td><td>Filing late or not at all is a violation. If the IRS has not contacted you and you are not under civil or criminal investigation, the IRS directs you to file late FBARs as soon as possible to keep potential penalties to a minimum, and to explain the reason for filing late.</td>
+<td>File as soon as possible with a reason-for-late-filing explanation</td>
+<td>FinCEN Form 114</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" rel="noopener noreferrer" target="_blank">S01 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U08">
+<td class="id">U08</td><td><strong>Form 8938 filing trigger — living in the United States</strong></td><td>An unmarried filer living in the United States must file Form 8938 if the total value of specified foreign financial assets is more than $50,000 on the last day of the tax year or more than $75,000 at any time during the year. For married filing jointly the figures are more than $100,000 and more than $150,000. Married filing separately uses $50,000 and $75,000.</td>
+<td>$50,000 / $75,000 single; $100,000 / $150,000 married filing jointly</td>
+<td>Form 8938, attached to the income tax return</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers" rel="noopener noreferrer" target="_blank">S02 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U09">
+<td class="id">U09</td><td><strong>Form 8938 filing trigger — living abroad</strong></td><td>A filer who is not married filing jointly and lives abroad must file if the total value is more than $200,000 on the last day of the tax year or more than $300,000 at any time. Married filing jointly abroad: more than $400,000 and more than $600,000. Living abroad means a U.S. citizen whose tax home is in a foreign country and who has been present in a foreign country at least 330 days out of a consecutive 12-month period.</td>
+<td>$200,000 / $300,000 not MFJ; $400,000 / $600,000 MFJ</td>
+<td>Form 8938</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers" rel="noopener noreferrer" target="_blank">S02 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U10">
+<td class="id">U10</td><td><strong>Form 8938 when no return is otherwise required</strong></td><td>If you do not have to file a U.S. income tax return for the year, you do not have to file Form 8938 regardless of the value of your specified foreign financial assets. The FBAR obligation is unaffected.</td>
+<td>No Form 8938 obligation without an income tax return filing requirement</td>
+<td>Form 8938</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers" rel="noopener noreferrer" target="_blank">S02 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span><br><a href="https://www.irs.gov/businesses/corporations/fatca-information-for-individuals" rel="noopener noreferrer" target="_blank">S17 · U.S. Internal Revenue Service</a> <span class="badge badge-warn">search-index</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U11">
+<td class="id">U11</td><td><strong>FBAR and Form 8938 are cumulative</strong></td><td>Form 8938 does not relieve filers of FBAR filing requirements; the two obligations are separate and both may apply to the same accounts.</td>
+<td>Both filings can be required for the same account</td>
+<td>FinCEN Form 114 and Form 8938</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers" rel="noopener noreferrer" target="_blank">S02 · U.S. Internal Revenue Service</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U12">
+<td class="id">U12</td><td><strong>Currency or monetary instruments physically carried into or out of the United States</strong></td><td>FinCEN Form 105, the Report of International Transportation of Currency or Monetary Instruments (CMIR), must be filed by any person who transports, mails, ships, or has someone else transport, mail or ship currency or monetary instruments in excess of $10,000 into or out of the country, or who receives such items into the United States from abroad.</td>
+<td>More than $10,000 aggregate</td>
+<td>FinCEN Form 105</td>
+<td><span class="badge badge-warn">search-index</span></td>
+<td><a href="https://www.irs.gov/irm/part4/irm_04-026-009" rel="noopener noreferrer" target="_blank">S15 · U.S. Internal Revenue Service — Internal Revenue Manual</a> <span class="badge badge-warn">search-index</span><br><a href="https://fincen105.cbp.dhs.gov/" rel="noopener noreferrer" target="_blank">S16 · FinCEN / U.S. Customs and Border Protection</a> <span class="badge badge-warn">search-index</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U13">
+<td class="id">U13</td><td><strong>Treaty cap on Chinese withholding on dividends</strong></td><td>Article 9(2) of the U.S.–China Income Tax Convention: where the recipient is the beneficial owner of the dividends, the tax charged by the source state shall not exceed 10 percent of the gross amount of the dividends.</td>
+<td>10% of gross</td>
+<td>Treaty position; foreign tax credit on the U.S. return</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" target="_blank">S11 · U.S. Internal Revenue Service (treaty text as ratified)</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U14">
+<td class="id">U14</td><td><strong>Treaty cap on Chinese withholding on interest</strong></td><td>Article 10(2): where the recipient is the beneficial owner of the interest, the tax charged by the source state shall not exceed 10 percent of the gross amount of the interest. Interest derived by a government, political subdivision, local authority or central bank of the other state is exempt from source-state tax.</td>
+<td>10% of gross</td>
+<td>Treaty position; foreign tax credit on the U.S. return</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" target="_blank">S11 · U.S. Internal Revenue Service (treaty text as ratified)</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U15">
+<td class="id">U15</td><td><strong>Treaty cap on Chinese withholding on royalties</strong></td><td>Article 11(2): where the recipient is the beneficial owner of the royalties, the tax charged by the source state shall not exceed 10 percent of the gross amount of the royalties.</td>
+<td>10% of gross</td>
+<td>Treaty position; foreign tax credit on the U.S. return</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" target="_blank">S11 · U.S. Internal Revenue Service (treaty text as ratified)</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr>
+<tr class="data-row" id="U16">
+<td class="id">U16</td><td><strong>Relief from double taxation</strong></td><td>The treaty provides that the country of residence will give a foreign tax credit for income tax paid to the other country, and Article 22 addresses the elimination of double taxation.</td>
+<td>Foreign tax credit in the country of residence</td>
+<td>Form 1116 (foreign tax credit)</td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" target="_blank">S11 · U.S. Internal Revenue Service (treaty text as ratified)</a> <span class="badge badge-ok">fetched</span></td><td><a href="flagged-for-review.html#F13">F13</a></td>
+</tr>
+<tr class="data-row" id="U17">
+<td class="id">U17</td><td><strong>Treaty entry into force</strong></td><td>The Agreement was signed at Beijing on April 30, 1984; the Second Protocol was signed at Beijing on May 10, 1986; ratification was advised by the Senate on July 24, 1986; instruments of ratification were exchanged on October 22, 1986; and it entered into force on January 1, 1987, with a general effective date of 1 January 1987.</td>
+<td>Signed 30 April 1984; in force 1 January 1987</td>
+<td><span class="muted">—</span></td>
+<td><span class="badge badge-ok">fetched</span></td>
+<td><a href="https://www.irs.gov/pub/irs-trty/china.pdf" rel="noopener noreferrer" target="_blank">S11 · U.S. Internal Revenue Service (treaty text as ratified)</a> <span class="badge badge-ok">fetched</span></td><td><span class="muted">—</span></td>
+</tr></tbody></table></div>
+</main>
+<footer>
+Built 2026-11-07 by session <code>arena-fcd22b0c</code>. Research only — not tax or legal advice.
+Every table row carries a source link to a primary official document, or is explicitly marked UNVERIFIED.
+Machine-readable ledgers: <code>data/*.json</code>. Verification report: <code>node tools/verify.mjs</code>.
+</footer>
+</body></html>
