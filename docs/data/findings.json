@@ -1,0 +1,1003 @@
+[
+  {
+    "id": "R01",
+    "category": "routes",
+    "topic": "Documented salary → bank USD wire",
+    "finding": "Primary route to investigate for a foreign individual’s lawful China employment income. Present identity and amount-specific income-source/tax records; convert through an authorized bank, then remit. The regulator does not state a universal numeric salary cap in this FAQ.",
+    "sources": [
+      "S03",
+      "S01",
+      "S04"
+    ],
+    "locator": "SAFE 2026 answer; PBOC Art.13; HSBC employment income",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Direct official documentary route; avoids inventing a new sale or gift.",
+    "cons": "Acceptance depends on source trail, tax records and the bank’s classification. Fees/spread remain."
+  },
+  {
+    "id": "R02",
+    "category": "routes",
+    "topic": "Other lawful current-account income → bank",
+    "finding": "Use the lawful-income documentary route where the money is not salary. HSBC requires proof of source and supporting tax-payment certificates for other lawful current-account income. Do not relabel capital proceeds as salary.",
+    "sources": [
+      "S01",
+      "S04"
+    ],
+    "locator": "PBOC Art.13; HSBC FX purchases",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "May address lawful income other than wages.",
+    "cons": "Category and tax treatment must be established; not an unrestricted route for every deposit."
+  },
+  {
+    "id": "R03",
+    "category": "routes",
+    "topic": "Pension, severance or compensation → bank",
+    "finding": "HSBC’s guide lists source documents from the disbursing organization for pensions, severance, retirement benefits and compensation. This is a documented category, not confirmation that this account contains qualifying funds.",
+    "sources": [
+      "S04"
+    ],
+    "locator": "FX purchases: lawfully earned RMB",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Specific bank documentary category.",
+    "cons": "Chinese and U.S. taxation and any pension/trust reporting require separate review."
+  },
+  {
+    "id": "R04",
+    "category": "routes",
+    "topic": "Wise: bank-app-funded CNY → own USD account",
+    "finding": "Provider route for eligible non-mainland individuals who work/worked in China and have accepted tax records showing taxes paid within the last 3 years. Transfers must go to another account they own; overall limit generally tied to after-tax salary.",
+    "sources": [
+      "S05"
+    ],
+    "locator": "Sending from CNY: eligibility, recipients, limits",
+    "status": "Source-backed",
+    "value": "300,000 CNY per transfer via bank app",
+    "pros": "Digital channel; own overseas bank or Wise-account destination.",
+    "cons": "Provider verification and salary-based limit; not established for arbitrary savings, gifts or property proceeds. Exact fee unverified."
+  },
+  {
+    "id": "R05",
+    "category": "routes",
+    "topic": "Wise: Alipay-funded CNY → own account",
+    "finding": "Alternative funding channel within the same Wise from-CNY service, not a second independent allowance. Same own-account and tax-record eligibility requirements.",
+    "sources": [
+      "S05"
+    ],
+    "locator": "Sending from CNY: Alipay; total sending limits",
+    "status": "Source-backed",
+    "value": "50,000 CNY per transfer via Alipay",
+    "pros": "Alternative app funding method.",
+    "cons": "Lower per-transfer ceiling; do not confuse with Wise’s inbound-to-China Alipay product."
+  },
+  {
+    "id": "R06",
+    "category": "routes",
+    "topic": "HSBC Global Transfer after lawful FX purchase",
+    "finding": "Delivery channel for eligible customers with overseas HSBC accounts. The service transfers foreign currency, including USD; RMB conversion/document review must still be satisfied first.",
+    "sources": [
+      "S06",
+      "S03"
+    ],
+    "locator": "Global Transfer to Self; SAFE documentary route",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Advertised free Global Transfer for eligible Premier/Elite/Private Banking customers.",
+    "cons": "Not a capital-control exemption. FX spread, account eligibility and any other costs are not established as free."
+  },
+  {
+    "id": "R07",
+    "category": "routes",
+    "topic": "Remit an existing foreign-currency balance",
+    "finding": "If the funds are already USD or another foreign currency in an overseas individual’s Chinese FX savings account, the implementing rules allow outward current-account remittance with valid identity. This differs from converting a CNY balance.",
+    "sources": [
+      "S02",
+      "S04"
+    ],
+    "locator": "SAFE Art.15(1); HSBC outbound remittances",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Can avoid an unnecessary CNY→USD conversion if already USD.",
+    "cons": "Does not help a wholly CNY balance; bank due diligence and source classification remain."
+  },
+  {
+    "id": "R08",
+    "category": "routes",
+    "topic": "Return unused imported foreign exchange",
+    "finding": "PBOC Article 14 allows a non-domestic individual to return unused foreign exchange remitted from abroad through the original route with identity documents.",
+    "sources": [
+      "S01"
+    ],
+    "locator": "Article 14",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Original-route return specifically recognized.",
+    "cons": "Only unused imported FX; do not assume it covers domestic RMB earnings or every RMB conversion of imported capital."
+  },
+  {
+    "id": "R09",
+    "category": "routes",
+    "topic": "Reconvert leftover RMB from prior travel exchange",
+    "finding": "Unused RMB from a qualifying earlier exchange can be reconverted with identity and original exchange slip. Small-amount exceptions exist; the exchange-slip rule is not a general undocumented salary quota.",
+    "sources": [
+      "S02",
+      "S04"
+    ],
+    "locator": "SAFE Art.13(2); HSBC unused-RMB reconversion",
+    "status": "Source-backed",
+    "value": "Slip valid 24 months; ID-only ≤USD500/day, or ≤USD1,000/day at specified departure locations",
+    "pros": "Recognized return route for qualifying leftover exchanged money.",
+    "cons": "Original-source and amount restrictions; not a scalable shortcut for unexplained savings."
+  },
+  {
+    "id": "R10",
+    "category": "routes",
+    "topic": "Foreign-owner property-sale net proceeds",
+    "finding": "HSBC lists identity, transfer contract, ownership registration and relevant tax evidence/filing. Ownership transfer must be registered; remittance limited to net sale proceeds after taxes/fees and the owner’s share.",
+    "sources": [
+      "S04",
+      "S02"
+    ],
+    "locator": "HSBC property-sale proceeds; SAFE Art.21",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Capital-specific route rather than misusing a travel quota.",
+    "cons": "Property-sale tax obligations remain. Pre-immigration/inherited assets may need a different route; no local effective tax rate confirmed."
+  },
+  {
+    "id": "R11",
+    "category": "routes",
+    "topic": "Refund from unsuccessful property purchase",
+    "finding": "HSBC lists original FX settlement receipt, contract termination, housing-authority cancellation and identity; a representative requires notarized power of attorney.",
+    "sources": [
+      "S04"
+    ],
+    "locator": "Property transactions: refunded payments",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Recognized refund category.",
+    "cons": "Only genuine failed purchases; not a reason to create a sham purchase or cancellation."
+  },
+  {
+    "id": "R12",
+    "category": "routes",
+    "topic": "Inherited mainland property → approved transfer",
+    "finding": "Implementing rules place foreign citizens’ lawful mainland inheritance transfers under the personal-property-transfer regime. HSBC requires a SAFE approval document from the deceased’s former-domicile jurisdiction.",
+    "sources": [
+      "S02",
+      "S04"
+    ],
+    "locator": "SAFE Art.20; HSBC inherited property transfers",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Dedicated inheritance framework.",
+    "cons": "Approval and inheritance evidence required; USD100,000 U.S. gift/bequest reporting test is separate from Chinese transfer permission."
+  },
+  {
+    "id": "R13",
+    "category": "routes",
+    "topic": "Pre-immigration property → approved transfer",
+    "finding": "The implementing rules cover domestic individuals’ lawful property acquired before legal immigration status. HSBC lists identity and SAFE approval from the former domicile. This is not automatic merely because the owner is now a U.S. citizen.",
+    "sources": [
+      "S02",
+      "S04"
+    ],
+    "locator": "SAFE Art.20; HSBC immigration-related transfers",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Potentially relevant for assets predating emigration.",
+    "cons": "Former status, acquisition dates and approvals unverified; not a general expat-savings entitlement."
+  },
+  {
+    "id": "R14",
+    "category": "routes",
+    "topic": "Authorized representative at bank",
+    "finding": "An execution arrangement, not a separate tax or quota route. SAFE permits agency handling with required identity, authorization and transaction evidence; HSBC specifies notarized power of attorney for property transactions.",
+    "sources": [
+      "S02",
+      "S04"
+    ],
+    "locator": "SAFE Arts.4, 38; HSBC property sections",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "May reduce need to travel personally for supported transactions.",
+    "cons": "Remote acceptance and exact notarization/legalization rules for this bank are unverified. Required client authorization cannot be automated away."
+  },
+  {
+    "id": "R15",
+    "category": "routes",
+    "topic": "Overseas ATM withdrawals",
+    "finding": "Domestic-card overseas withdrawals have aggregate yearly and per-card daily controls. Borrowing/lending cards to evade them is prohibited. USD availability and actual bank/ATM costs not verified.",
+    "sources": [
+      "S08"
+    ],
+    "locator": "Answers 2–3",
+    "status": "Source-backed",
+    "value": "RMB100,000 per person/year; RMB10,000 per card/day",
+    "pros": "Limited access to cash for genuine needs.",
+    "cons": "Cash handling, issuer/ATM limits and unquoted costs; not the default for large savings or control avoidance."
+  },
+  {
+    "id": "R16",
+    "category": "routes",
+    "topic": "Genuine overseas card spending",
+    "finding": "Alternative to repatriation: SAFE describes normal overseas catering, accommodation, transport and shopping consumption; it does not offset the annual FX-purchase quota. This does not deposit USD into a U.S. bank account.",
+    "sources": [
+      "S08"
+    ],
+    "locator": "Answer 3",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Can meet real expenses without first wiring USD.",
+    "cons": "Not cash extraction or permission for fake merchant transactions; merchant acceptance and FX costs unverified."
+  },
+  {
+    "id": "R17",
+    "category": "routes",
+    "topic": "Lawfully purchased USD cash carried abroad",
+    "finding": "Physical transport only after lawful conversion/withdrawal. Ordinary outbound rules distinguish ≤USD5,000, bank-permitted >USD5,000 to USD10,000, and exceptional SAFE-permitted larger amounts. U.S. reporting independently applies.",
+    "sources": [
+      "S09",
+      "S22",
+      "S03"
+    ],
+    "locator": "SAFE cover notice para.2; CBP who must file",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Recognized small-cash option.",
+    "cons": "Theft, travel and declaration/permit risks; prior-declaration/repeated-crossing exceptions require review. No tax saving established."
+  },
+  {
+    "id": "R18",
+    "category": "routes",
+    "topic": "Domestic-individual current-account quota",
+    "finding": "Conditional comparator, not an assumed route for this U.S. citizen. SAFE Article 2 states USD50,000 annual management for individual settlement and domestic-individual purchase; above-quota genuine current-account purchase has documentation rules.",
+    "sources": [
+      "S02"
+    ],
+    "locator": "Arts.2, 12, 14",
+    "status": "Source-backed",
+    "value": "USD50,000 equivalent annual amount in Art.2",
+    "pros": "Simplified handling where the legal classification actually applies.",
+    "cons": "Does not authorize unrestricted capital export; account classification cannot be inferred from citizenship alone or changed using another person’s identity."
+  },
+  {
+    "id": "R19",
+    "category": "routes",
+    "topic": "Hong Kong / offshore RMB then USD",
+    "finding": "A possible destination structure to assess, not a verified independent extraction route. No account-specific permission to send this mainland CNY offshore or cheaper two-leg quote was established.",
+    "sources": [
+      "S01",
+      "S02"
+    ],
+    "locator": "Current/capital distinctions; approved channels",
+    "status": "Unverified",
+    "value": "",
+    "pros": "Potential offshore conversion comparison only after a lawful outbound route is confirmed.",
+    "cons": "Opening a Hong Kong account does not itself prove mainland transfer permission. Two conversion/transfer legs may add cost."
+  },
+  {
+    "id": "R20",
+    "category": "routes",
+    "topic": "Corporate dividend, equity exit or genuine loan repayment",
+    "finding": "Not verified as a route for the described personal balance. Ownership, registered investment/debt, transaction documents and tax category are unknown; personal and business money must not be conflated.",
+    "sources": [
+      "S01",
+      "S10"
+    ],
+    "locator": "PBOC current/capital classification; IIT Arts.2–3",
+    "status": "Unverified",
+    "value": "",
+    "pros": "Could require a separate corporate/capital-account study if source actually qualifies.",
+    "cons": "No eligibility, corporate withholding rate, repayment exemption or exact paperwork confirmed. Not a manufactured workaround."
+  },
+  {
+    "id": "R21",
+    "category": "routes",
+    "topic": "Crypto / stablecoin bridge",
+    "finding": "Not recommended as a workaround. The 2026 multi-agency notice strictly prohibits domestic fiat/virtual-currency exchange business and bars financial/payment services for virtual-currency business.",
+    "sources": [
+      "S23"
+    ],
+    "locator": "I(1), III(6), final paragraph",
+    "status": "Do not use",
+    "value": "",
+    "pros": "",
+    "cons": "Regulatory and asset-loss risk; crypto does not erase tax/reporting obligations. Use current 2026 notice, not repealed 2021 notice."
+  },
+  {
+    "id": "R22",
+    "category": "routes",
+    "topic": "Friends’ quotas, underground swaps or fake invoices",
+    "finding": "Do not split transactions to evade controls or use fabricated transaction documents. PBOC explicitly prohibits quota evasion through splitting and false vouchers; no lawful underground-swap route was verified.",
+    "sources": [
+      "S01",
+      "S02"
+    ],
+    "locator": "PBOC Arts.5, 7; SAFE authenticity review",
+    "status": "Do not use",
+    "value": "",
+    "pros": "",
+    "cons": "Cannot compare an unverified evasion scheme as a legitimate tax-saving option. No evasion instructions provided."
+  },
+  {
+    "id": "C01",
+    "category": "costs",
+    "topic": "Chinese tax on the source of funds",
+    "finding": "The IIT law taxes specified income categories, not a named universal CNY→USD conversion percentage. Analysis: identify whether the quoted “tax” is unpaid source-income tax, asset-sale tax, fee or spread before evaluating it. This is not an individualized zero-tax determination.",
+    "sources": [
+      "S10",
+      "S03"
+    ],
+    "locator": "IIT Arts.2–6; SAFE documentary requirements",
+    "status": "Analysis",
+    "value": "",
+    "pros": "Separate already-paid taxes from new liabilities.",
+    "cons": "Exact personal tax amount unverified; payment proof may still be required."
+  },
+  {
+    "id": "C02",
+    "category": "costs",
+    "topic": "Bank FX spread",
+    "finding": "Compare the executable USD selling quote for buying USD with a same-time reference rate, in the same units. No executable rate or spread was confirmed for this account.",
+    "sources": [
+      "S06",
+      "S17"
+    ],
+    "locator": "HSBC exchange-rate link; IRS currency guidance",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": "Headline mid-market or historic reporting rates are not a guaranteed customer quote."
+  },
+  {
+    "id": "C03",
+    "category": "costs",
+    "topic": "HSBC Premier wire issuance example",
+    "finding": "Published tariff example only: issuance fee is 0.1% of remittance amount, min CNY100, max CNY500, plus cable charge. Do not apply the Premier column to an unidentified bank/account.",
+    "sources": [
+      "S07"
+    ],
+    "locator": "Item 2.2.4.1 Premier column",
+    "status": "Source-backed",
+    "value": "0.1%; CNY100 minimum; CNY500 maximum; plus cable",
+    "pros": "",
+    "cons": "This is not the all-in transfer cost. Tier eligibility and other components remain unverified."
+  },
+  {
+    "id": "C04",
+    "category": "costs",
+    "topic": "Cable / SWIFT message fee",
+    "finding": "The HSBC example explicitly adds a cable charge, but this study did not establish the applicable numeric cable amount for this account.",
+    "sources": [
+      "S07"
+    ],
+    "locator": "Item 2.2.4.1",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": "Leave quote blank; do not silently fold into an estimated percentage."
+  },
+  {
+    "id": "C05",
+    "category": "costs",
+    "topic": "Intermediary and receiving-bank deductions",
+    "finding": "HSBC tariff notes exclude other institutions’ charges. Receiver and correspondent deductions for the user’s path have not been established.",
+    "sources": [
+      "S07"
+    ],
+    "locator": "Important note 7",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": "A bank’s fee waiver is not proof that the beneficiary receives the full gross amount."
+  },
+  {
+    "id": "C06",
+    "category": "costs",
+    "topic": "Wise fee / executable USD proceeds",
+    "finding": "Eligibility and limits are source-backed, but no personalized live CNY→USD quote was obtained. Website marketing examples are not used as a universal fee schedule.",
+    "sources": [
+      "S05"
+    ],
+    "locator": "Sending from CNY; provider pricing link",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": "Compare final USD credited for the same total CNY debited; do not assume Wise is cheapest."
+  },
+  {
+    "id": "C07",
+    "category": "costs",
+    "topic": "U.S. tax on FX gain",
+    "finding": "Section 988 distinguishes foreign-currency gain from transferred principal. Deposits are included in the statute’s nonfunctional-currency definition. Basis, acquisition dates and personal/investment classification must be established.",
+    "sources": [
+      "S18",
+      "S17"
+    ],
+    "locator": "988(a), (c)(1)(C), (e); IRS functional currency",
+    "status": "Needs review",
+    "value": "",
+    "pros": "",
+    "cons": "2024 statutory edition; later-amendment status and personal treatment not independently verified. No personal gain/tax estimate supplied."
+  },
+  {
+    "id": "C08",
+    "category": "costs",
+    "topic": "Compliance penalties / interest",
+    "finding": "These are consequences of prior filing/payment failures, not automatically a conversion surcharge. FBAR maxima change with inflation; exact current maximum was not verified.",
+    "sources": [
+      "S14",
+      "S19"
+    ],
+    "locator": "FBAR penalties; streamlined eligibility",
+    "status": "Needs review",
+    "value": "",
+    "pros": "",
+    "cons": "No safe-transfer size cures prior noncompliance. Avoid treating reporting thresholds as tax-free allowances."
+  },
+  {
+    "id": "C09",
+    "category": "costs",
+    "topic": "Documents, representation and travel",
+    "finding": "Source documents and authorization may be required. No official case-specific translation, notarization, adviser or travel prices were established.",
+    "sources": [
+      "S04",
+      "S02"
+    ],
+    "locator": "HSBC property representation; SAFE Art.38",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": "Compare process costs as well as bank fees; do not assume remote processing is available."
+  },
+  {
+    "id": "C10",
+    "category": "costs",
+    "topic": "Effective execution drag: analytical formula",
+    "finding": "Let A be total CNY debited, q the simultaneous reference CNY per USD, and N final USD credited. Benchmark USD = A/q. Execution drag = A/q − N; drag % = 100 × (1 − Nq/A). Derived comparison formula, not an official fee or tax rule.",
+    "sources": [
+      "S06",
+      "S07"
+    ],
+    "locator": "Bank FX/rate and tariff inputs",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": "Requires confirmed A, q and N. Source taxes and later U.S. taxes are separate; avoid double-counting fees already included in A or N."
+  },
+  {
+    "id": "C11",
+    "category": "costs",
+    "topic": "Net USD formula for a single conversion",
+    "finding": "If B CNY is the starting balance, T actual unpaid Chinese tax, Fc CNY costs deducted before conversion, r executable CNY per USD, and Fu USD costs deducted afterward: net USD = (B − T − Fc)/r − Fu. Derived accounting identity for this sequence only.",
+    "sources": [
+      "S03",
+      "S07",
+      "S10"
+    ],
+    "locator": "Tax evidence; tariff; source tax framework",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": "No placeholder numbers, no assumed tax rate. Adjust timing for fees debited separately; reserve any U.S. liability separately."
+  },
+  {
+    "id": "C12",
+    "category": "costs",
+    "topic": "Best-price conclusion",
+    "finding": "No route can be certified cheapest without verified source category and same-time, all-in executable quotes. Recommendation: assess documented bank remittance first; compare Wise for eligible salary funds and HSBC Global Transfer for eligible existing customers.",
+    "sources": [
+      "S03",
+      "S05",
+      "S06",
+      "S07"
+    ],
+    "locator": "Route eligibility and pricing limitations",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": "This ranking is a process recommendation, not a personalized eligibility finding or tax opinion."
+  },
+  {
+    "id": "T01",
+    "category": "taxes",
+    "topic": "China comprehensive income",
+    "finding": "Statutory progressive range on taxable comprehensive income; it is not a flat percentage of the bank balance. Residency, deductions, source year and prior payments affect actual liability.",
+    "sources": [
+      "S10"
+    ],
+    "locator": "Arts.1–3, 6; rate schedule",
+    "status": "Source-backed",
+    "value": "3%–45% marginal rates",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T02",
+    "category": "taxes",
+    "topic": "China business income",
+    "finding": "Statutory progressive range applies to taxable business income, not automatically to moving personal savings.",
+    "sources": [
+      "S10"
+    ],
+    "locator": "Arts.3, 6; second rate schedule",
+    "status": "Source-backed",
+    "value": "5%–35% marginal rates",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T03",
+    "category": "taxes",
+    "topic": "China asset transfers and other listed categories",
+    "finding": "Law lists a 20% statutory rate for interest/dividends, rent, asset transfers and incidental income; exemptions/specific rules must be checked. Asset-transfer taxable base deducts original asset value and reasonable expenses; do not tax gross sale proceeds mechanically.",
+    "sources": [
+      "S10"
+    ],
+    "locator": "Arts.3, 4, 6(5), 18",
+    "status": "Source-backed",
+    "value": "20% statutory rate; personal effective rate unverified",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T04",
+    "category": "taxes",
+    "topic": "U.S. worldwide income",
+    "finding": "U.S. citizens generally report taxable income worldwide whether retained in China or remitted. Analysis: moving already-owned principal should not be confused with earning new income; source income, interest and currency gain must still be analyzed.",
+    "sources": [
+      "S11",
+      "S18"
+    ],
+    "locator": "IRS opening paragraphs; 988",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T05",
+    "category": "taxes",
+    "topic": "Foreign tax credit",
+    "finding": "Eligible foreign income taxes may reduce U.S. income tax subject to rules and limits; Form 1116 is generally used for individuals. No credit for taxes on FEIE-excluded income. Bank charges are not automatically eligible income taxes.",
+    "sources": [
+      "S12"
+    ],
+    "locator": "Qualifying taxes; how to claim; compliance issues",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Lawful way to address potential double taxation.",
+    "cons": "Not an automatic full offset; categories, timing, source and treaty entitlement matter."
+  },
+  {
+    "id": "T06",
+    "category": "taxes",
+    "topic": "Foreign earned income exclusion",
+    "finding": "Requires qualifying foreign earned income, tax home and residence/presence test. Cannot assume eligibility based on U.S. citizenship, money held in China or current browser location. No current-year dollar cap applied.",
+    "sources": [
+      "S13"
+    ],
+    "locator": "Qualification and other rules",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Potential relief for qualifying earnings.",
+    "cons": "Not a conversion exemption; coordinate with FTC; does not simply shelter interest, asset gains or arbitrary savings."
+  },
+  {
+    "id": "T07",
+    "category": "taxes",
+    "topic": "FBAR",
+    "finding": "Report qualifying foreign accounts when aggregate value exceeds USD10,000 at any time in calendar year, even if no income. File separately with FinCEN; April 15 with automatic extension to October 15. Emptying the account later does not erase an earlier balance trigger.",
+    "sources": [
+      "S14"
+    ],
+    "locator": "Who must file; when to file",
+    "status": "Source-backed",
+    "value": ">USD10,000 aggregate at any time",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T08",
+    "category": "taxes",
+    "topic": "Form 8938 — U.S.-living unmarried / separate",
+    "finding": "Specified foreign financial assets threshold; amounts must exceed either test. Filing conditions and exceptions remain governed by form instructions.",
+    "sources": [
+      "S15"
+    ],
+    "locator": "Reporting threshold row",
+    "status": "Source-backed",
+    "value": ">USD50,000 year-end OR >USD75,000 any time",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T09",
+    "category": "taxes",
+    "topic": "Form 8938 — U.S.-living joint",
+    "finding": "Separate from FBAR.",
+    "sources": [
+      "S15"
+    ],
+    "locator": "Reporting threshold row",
+    "status": "Source-backed",
+    "value": ">USD100,000 year-end OR >USD150,000 any time",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T10",
+    "category": "taxes",
+    "topic": "Form 8938 — abroad unmarried / separate",
+    "finding": "Use only if the applicable living-abroad test is met; current location alone is insufficient.",
+    "sources": [
+      "S15"
+    ],
+    "locator": "Reporting threshold row",
+    "status": "Source-backed",
+    "value": ">USD200,000 year-end OR >USD300,000 any time",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T11",
+    "category": "taxes",
+    "topic": "Form 8938 — abroad joint",
+    "finding": "Use only if applicable abroad requirements are met. Form 8938 is attached to the income-tax return; it does not replace FBAR.",
+    "sources": [
+      "S15"
+    ],
+    "locator": "Reporting threshold; when to file",
+    "status": "Source-backed",
+    "value": ">USD400,000 year-end OR >USD600,000 any time",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T12",
+    "category": "taxes",
+    "topic": "Genuine foreign gift / inheritance",
+    "finding": "Form 3520 reporting for gifts/bequests over USD100,000 from nonresident alien individuals/foreign estates, aggregating related parties. Corporate gifts, trusts and covered expatriates differ. Do not relabel existing personal savings as a gift.",
+    "sources": [
+      "S16"
+    ],
+    "locator": "Reporting requirements; covered expatriates",
+    "status": "Source-backed",
+    "value": ">USD100,000 for specified individual/estate gifts",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T13",
+    "category": "taxes",
+    "topic": "U.S. physical currency reporting",
+    "finding": "FinCEN 105 requirement applies to more than USD10,000 currency/monetary instruments crossing U.S. border at one time, including family/group aggregation. Not a universal bank-wire tax threshold.",
+    "sources": [
+      "S22"
+    ],
+    "locator": "Who must file",
+    "status": "Source-backed",
+    "value": ">USD10,000 total physical currency/instruments",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "T14",
+    "category": "taxes",
+    "topic": "Streamlined foreign offshore relief",
+    "finding": "Only qualifying non-willful taxpayers meeting special nonresidency and other eligibility rules. Three covered return years and six FBAR years; pay tax/interest; specified penalties not imposed if requirements satisfied.",
+    "sources": [
+      "S19",
+      "S20"
+    ],
+    "locator": "Eligibility; scope and effect",
+    "status": "Source-backed",
+    "value": "",
+    "pros": "Possible lawful penalty relief for qualifying past failures.",
+    "cons": "Not blanket amnesty; prior penalties not automatically abated; willfulness needs legal review."
+  },
+  {
+    "id": "T15",
+    "category": "taxes",
+    "topic": "Streamlined domestic offshore procedure",
+    "finding": "For qualifying non-willful filers meeting prior-return and other criteria: three amended-return years, six FBAR years, tax/interest and defined 5% miscellaneous offshore penalty.",
+    "sources": [
+      "S19",
+      "S21"
+    ],
+    "locator": "Eligibility; scope and effect",
+    "status": "Source-backed",
+    "value": "5% of defined highest aggregate covered asset balance/value",
+    "pros": "",
+    "cons": "Not 5% of a wire, not automatic for all U.S. residents, and not a conversion charge."
+  },
+  {
+    "id": "T16",
+    "category": "taxes",
+    "topic": "Currency gain personal exception — limited reference",
+    "finding": "The 2024 statutory text includes an exception for a personal disposition of nonfunctional currency if exchange-rate gain does not exceed USD200. It is not USD200 of every gain exempted, not an annual allowance and not a general exclusion for investment transactions.",
+    "sources": [
+      "S18"
+    ],
+    "locator": "988(e)",
+    "status": "Needs review",
+    "value": "USD200 per qualifying personal transaction in cited edition",
+    "pros": "",
+    "cons": "Later-amendment status and personal applicability unverified; do not plan splitting to manufacture exemption."
+  },
+  {
+    "id": "T17",
+    "category": "taxes",
+    "topic": "Treaty, state tax and third-country exposure",
+    "finding": "IRS treaty index is available for manual review; no treaty rate or exemption applied. User domicile/residence history and state/third-country tax exposure are unknown, so amounts and personalized conclusions remain blank.",
+    "sources": [
+      "S24",
+      "S11"
+    ],
+    "locator": "Treaty index; worldwide-income rule",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": "A U.S. passport does not establish every applicable tax jurisdiction; full treaty and local analysis is outside the verified findings."
+  },
+  {
+    "id": "A01",
+    "category": "checklist",
+    "topic": "1 · Establish ownership and origin",
+    "finding": "Execution dossier should reconcile legal account owner, bank classification, acquisition dates and fund category against statements and source records. Citizenship alone does not resolve current/capital classification. No personal evidence was supplied; those fields remain blank.",
+    "sources": [
+      "S01",
+      "S02",
+      "S03"
+    ],
+    "locator": "Classification / authenticity rules",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "A02",
+    "category": "checklist",
+    "topic": "2 · Reconcile taxes already paid",
+    "finding": "For employment funds, reconcile employer statement/contract, salary deposits and Chinese tax certificates, then check U.S. reporting. Distinguish a documentary tax certificate from a demand for a new tax payment.",
+    "sources": [
+      "S03",
+      "S04",
+      "S11"
+    ],
+    "locator": "Employment documents; worldwide-income rule",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "A03",
+    "category": "checklist",
+    "topic": "3 · Obtain a written reason for any bank refusal",
+    "finding": "Recommended bank/adviser follow-up: identify missing source evidence, account-identity mismatch, capital-account approval, unpaid tax or compliance freeze. No reason for this user’s bank restriction has been confirmed.",
+    "sources": [
+      "S01",
+      "S02",
+      "S04"
+    ],
+    "locator": "Bank authenticity review and classification",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "A04",
+    "category": "checklist",
+    "topic": "4 · Compare only eligible, executable quotes",
+    "finding": "Use the same total CNY debit, destination, quote time and final USD-credit basis for a bank wire, eligible Wise route and eligible HSBC route. Record rate direction and every deduction; no quote is assumed here.",
+    "sources": [
+      "S05",
+      "S06",
+      "S07"
+    ],
+    "locator": "Provider terms; bank rates and tariff",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "A05",
+    "category": "checklist",
+    "topic": "5 · Resolve historical U.S. compliance separately",
+    "finding": "Review account maximums and prior returns/FBARs before selecting any remedial procedure; suspected willfulness requires tax counsel. Moving the balance or choosing a smaller payment is not a filing cure.",
+    "sources": [
+      "S14",
+      "S19",
+      "S20",
+      "S21"
+    ],
+    "locator": "FBAR and streamlined criteria",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "A06",
+    "category": "checklist",
+    "topic": "6 · Execute through authorized institutions",
+    "finding": "Bank identity checks, signed authorization, accepted documents and private account access are still necessary. This project is public research only: it cannot authorize or perform transfers or file returns for the user.",
+    "sources": [
+      "S01",
+      "S02",
+      "S04"
+    ],
+    "locator": "Bank review; representative requirements",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "A07",
+    "category": "checklist",
+    "topic": "7 · Keep the audit trail",
+    "finding": "Keep source documents, conversion and wire confirmations, tax receipts and USD-basis records. FBAR records generally retained five years from due date. Do not upload passports, bank numbers or tax records to this public repository.",
+    "sources": [
+      "S14",
+      "S17"
+    ],
+    "locator": "Keeping records; USD reporting",
+    "status": "Analysis",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "F01",
+    "category": "review",
+    "topic": "Personal facts and actual “tax penalty”",
+    "finding": "Balance, legal owner, bank, account status, origin/year, taxes already paid, historic USD basis and written bank refusal/charge breakdown are unknown. Public sources cannot confirm private facts; relevant source links explain the governing requirements only.",
+    "sources": [
+      "S03",
+      "S04",
+      "S10",
+      "S11"
+    ],
+    "locator": "Context only",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": "No individualized cheapest route, tax amount, total fee or amount recoverable can be certified."
+  },
+  {
+    "id": "F02",
+    "category": "review",
+    "topic": "Conflicting $50,000 descriptions",
+    "finding": "HSBC guide says foreign settlement and purchase by non-mainland individuals are subject to a USD50,000 facilitation quota. SAFE Art.2 specifies individual settlement and domestic-individual purchase, while Art.13 and the 2026 FAQ specify documentary foreign-individual lawful-income purchase. Do not promise ID-only conversion for this user or treat USD50,000 as a universal salary ceiling.",
+    "sources": [
+      "S04",
+      "S02",
+      "S03"
+    ],
+    "locator": "HSBC opening quota paragraph; SAFE Arts.2,13; 2026 answer",
+    "status": "Needs review",
+    "value": "",
+    "pros": "",
+    "cons": "Official-text discrepancy flagged. Bank implementation/legal interpretation must be resolved for execution."
+  },
+  {
+    "id": "F03",
+    "category": "review",
+    "topic": "Live FX, fees, timing and provider acceptance",
+    "finding": "No account-specific executable rate, spread, final credited USD, intermediary fees, remote-processing approval or arrival guarantee was obtained. Numeric unknowns are intentionally empty, not zero.",
+    "sources": [
+      "S05",
+      "S06",
+      "S07"
+    ],
+    "locator": "Provider eligibility; bank tariffs",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "F04",
+    "category": "review",
+    "topic": "Foreign-account filing history and penalty exposure",
+    "finding": "Past filing, aggregate account maxima, tax home, U.S. abode and willfulness are unknown. FBAR inflation-adjusted current maximum was not checked. IRS comparison page’s historic FBAR figures are not current maximums.",
+    "sources": [
+      "S14",
+      "S15",
+      "S19"
+    ],
+    "locator": "Penalties and eligibility",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "F05",
+    "category": "review",
+    "topic": "Property, inheritance, migration and business applicability",
+    "finding": "No title, inheritance instrument, SAFE approval, immigration dates or corporate/debt registration has been supplied. Published category descriptions do not establish personal eligibility.",
+    "sources": [
+      "S02",
+      "S04"
+    ],
+    "locator": "Arts.20–21; bank property sections",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "F06",
+    "category": "review",
+    "topic": "Statutory edition and treaty limitations",
+    "finding": "Section 988 reference is the official 2024 edition, not an independently verified 2026 consolidation. Treaty index checked but treaty articles not applied. State and third-country rules not verified.",
+    "sources": [
+      "S18",
+      "S24",
+      "S11"
+    ],
+    "locator": "Edition heading; treaty index",
+    "status": "Needs review",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "F07",
+    "category": "review",
+    "topic": "Repealed provisions and stale guidance excluded",
+    "finding": "SAFE’s amended republication explicitly repeals Art.39; its old fine amounts are excluded. PBOC’s February 2026 virtual-currency notice repeals the 2021 notice. Older IRS exclusion caps and historical FBAR penalties are not applied as 2026 figures.",
+    "sources": [
+      "S02",
+      "S23",
+      "S13",
+      "S15"
+    ],
+    "locator": "Amendment notes; final paragraph; historic figures",
+    "status": "Needs review",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "F08",
+    "category": "review",
+    "topic": "Unconfirmed alternatives not ranked as lawful solutions",
+    "finding": "Hong Kong/offshore RMB structures, corporate distributions/loan repayments, and unnamed remittance providers have no verified account-specific route or price here. No finding of universal impossibility is made; eligibility and numeric fields remain unconfirmed.",
+    "sources": [
+      "S01",
+      "S02",
+      "S05"
+    ],
+    "locator": "Regulated classification; provider-specific limits",
+    "status": "Unverified",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  },
+  {
+    "id": "F09",
+    "category": "review",
+    "topic": "No-input research is not no-input execution",
+    "finding": "Research, site generation, review flags and publishing are automated in this session. Banks still require identity, evidence and authorizations; advisers need private facts to calculate taxes. No financial transaction or filing was made.",
+    "sources": [
+      "S01",
+      "S02",
+      "S04"
+    ],
+    "locator": "Bank documentary and agency requirements",
+    "status": "Needs review",
+    "value": "",
+    "pros": "",
+    "cons": ""
+  }
+]

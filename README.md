@@ -1,1 +1,52 @@
-# China2
+# China Money · China2
+
+A source-linked research dashboard about lawful mainland China CNY→USD conversion and repatriation for a U.S. citizen. **Research, not personalized tax/legal advice.** No funds moved or returns filed.
+
+**Website:** https://sassnarep3-star.github.io/China2/
+**Executive summary:** [research/EXECUTIVE_SUMMARY.md](research/EXECUTIVE_SUMMARY.md)
+**Verification and limitations:** [research/METHODOLOGY.md](research/METHODOLOGY.md)
+**Task board / publication record:** [COORDINATION.md](COORDINATION.md)
+
+## What's included
+
+- 22 legal routes, delivery options, conditional alternatives and rejected workarounds—not 22 independent quotas.
+- 67 source-linked research rows, 24 official primary sources and nine published review flags.
+- Separate pages for routes, conversion costs, Chinese/U.S. tax/reporting, execution checklist, flags and evidence.
+- Searchable tables, status filters, print support and CSV/JSON/Markdown downloads.
+- Unknown numerical values left blank. Analytical conclusions labeled separately from source-described rules.
+
+**Key conclusion:** start by establishing ownership and the legal source of the balance. For qualifying documented lawful China employment income, investigate the authorized bank conversion/remittance route; compare eligible provider channels using executable all-in quotes. Do not conflate source-income tax, FX restrictions, spread, transfer fees, FX gains and reporting penalties. No cheapest provider or individual tax amount can be certified from the private facts supplied so far.
+
+## Reproduce
+
+Python 3.11+ and Node 20+; no install required for the standard build/tests:
+
+```sh
+python scripts/build.py
+python scripts/validate.py
+node --check docs/assets/app.js
+node scripts/test_ui.js
+python -m http.server 8000 --bind 0.0.0.0 --directory docs
+```
+
+Open the served site. All paths are relative, so the same output works at the GitHub Pages `/China2/` project subpath. No browser-facing localhost API calls exist.
+
+Canonical research data is in `research/findings.json` and `research/sources.json`. `scripts/seed_research.py` preserves the manually reviewed initial ledger; **do not rerun it over subsequent editorial changes** unless updating the seed too. The build reads the canonical JSON directly, not the seed. Edit content there and rebuild. Product source evidence must not be treated as a regulator's guarantee.
+
+Optional real-browser test (test-only dependencies, not site dependencies):
+
+```sh
+npm install --prefix .cache/browser --no-save --package-lock=false playwright-core @sparticuz/chromium
+# with the local server running:
+node scripts/browser_test.cjs
+```
+
+The test unpacks its Chromium libraries into the temporary directory. Large dependencies and screenshots are ignored; they are not deployed.
+
+## Publishing
+
+GitHub Pages serves the checked-in **`docs/` directory of `main`** using the repository's native Pages build. The validation workflow runs for pull requests and pushes. Generated files are checked in so Pages has no package-install/build dependency. Branch work remains on the Arena-assigned `arena/996dc508-china2` branch.
+
+Every research table row links to an official source. CI checks citation coverage and local links; external source availability is not continuously checked. See the source ledger for what was actually read and the Flagged for Review page for discrepancies and unconfirmed values.
+
+**Privacy:** This repository and Pages site are public. Never add passports, account numbers, bank statements, tax IDs, signed authorizations or private tax records.

@@ -1,0 +1,26 @@
+name: Validate research dashboard
+
+on:
+  pull_request:
+  push:
+    branches: [main, arena/996dc508-china2]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build static site
+        run: python3 scripts/build.py
+      - name: Check data, citations and all local links
+        run: python3 scripts/validate.py
+      - name: Check generated output is committed
+        run: git diff --exit-code -- docs research/EXECUTIVE_SUMMARY.md
+      - name: Test browser-side behavior
+        run: |
+          node --check docs/assets/app.js
+          node scripts/test_ui.js
