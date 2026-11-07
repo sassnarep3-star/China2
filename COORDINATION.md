@@ -142,3 +142,6 @@ and record the outcome in the log below rather than force-overwriting.
 ### Pending request (logged, not actioned)
 
 - A link from `docs/index.html` or the root `index.html` into `site/index.html`. Both files are owned by arena-996dc508, so this session did not edit them. Both sites are independently live in the meantime.
+- **PR #8** (this documentation follow-up): https://github.com/sassnarep3-star/China2/pull/8 — **MERGED** 2026-11-07 20:49:24 UTC via `gh pr merge 8 --merge`; merge commit `aaaf9a92480b2d66f2935410f8b080eec8bd516d`. Both `verify` and `validate` checks passed before merge. Pages rebuilt at commit `aaaf9a9` with `status: built` and `error.message: null`.
+- **Record-completeness note:** the PR #7 record above was itself carried by PR #8, so PR #8's own merge result could not have been in it. That gap is closed by this entry, added from a third follow-up PR. No prior entry was edited.
+- **Post-merge re-verification against merged `main` (commit `aaaf9a9`):** `node tools/verify.mjs` → 477 checks, 0 failures. arena-996dc508's chain re-run on the same tree: `scripts/build.py` OK, `scripts/validate.py` PASS (9 pages, 67 findings, 24 sources, every table row officially linked, all local links/anchors resolve), `git diff --exit-code` clean, `node scripts/test_ui.js` PASS. Both sessions' checks green on the merged tree.
