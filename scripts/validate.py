@@ -29,6 +29,7 @@ for r in R:
 for name in ['sources','findings']:
     assert (ROOT/f'research/{name}.json').read_bytes()==(OUT/f'data/{name}.json').read_bytes()
 assert (ROOT/'research/EXECUTIVE_SUMMARY.md').read_bytes()==(OUT/'executive-summary.md').read_bytes()
+assert (ROOT/'EXECUTIVE_SUMMARY.md').read_bytes()==(OUT/'executive-summary.md').read_bytes()
 assert len(list(csv.DictReader(io.StringIO((OUT/'findings.csv').read_text()))))==len(R)
 
 class Page(HTMLParser):
@@ -71,6 +72,6 @@ for r in R:
     assert r['id'] in pages[(OUT/f'{r["category"]}.html').resolve()].ids
 assert len([r for r in R if r['category']=='review'])==9
 assert len([r for r in R if r['category']=='routes'])==22
-assert len(pages)==7
+assert len(pages)==9  # seven canonical pages and two compatibility redirects
 print(f'PASS: {len(pages)} pages; {len(R)} findings; {len(S)} sources; every table body row has an official link; all local links/anchors resolve; downloads match canonical data.')
 print('External source bodies were reviewed during research; external URL availability and current law are not continuously tested by this script.')

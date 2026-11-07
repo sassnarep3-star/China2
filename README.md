@@ -45,7 +45,7 @@ The test unpacks its Chromium libraries into the temporary directory. Large depe
 
 ## Publishing
 
-GitHub Pages serves the checked-in **`docs/` directory of `main`** using the repository's native Pages build. The validation workflow runs for pull requests and pushes. Generated files are checked in so Pages has no package-install/build dependency. Branch work remains on the Arena-assigned `arena/996dc508-china2` branch.
+GitHub Pages uses the repository's existing native **`main` root** build. Root `index.html` redirects to the checked-in **`docs/` dashboard**; no settings change is needed. The validation workflow runs for pull requests and pushes. Legacy `docs/methods.html` and `docs/flagged.html` remain as compatibility redirects. Prior-session material is preserved, not endorsed as current advice, in `research/previous-dashboard/`. Generated files are checked in so Pages has no package-install/build dependency. Branch work remains on the Arena-assigned `arena/996dc508-china2` branch.
 
 Every research table row links to an official source. CI checks citation coverage and local links; external source availability is not continuously checked. See the source ledger for what was actually read and the Flagged for Review page for discrepancies and unconfirmed values.
 

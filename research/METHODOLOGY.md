@@ -49,3 +49,7 @@ External pages may subsequently move or change. A successful research retrieval 
 - Desktop screenshot inspected visually. Mobile rendering tested for page-level overflow; wide research tables intentionally scroll within their labeled containers rather than collapsing evidence columns.
 
 These technical tests do not replace qualified Chinese/U.S. legal or tax review. Open substantive limitations are intentionally published on `docs/review.html` and do not block release.
+
+## Concurrent-session reconciliation
+
+During final publication main advanced to `6849db3` through other-session PRs #1/#3. All of its dashboard sources, original executive summary, redirect and coordination log were preserved in `research/previous-dashboard/`; original HTML is archived as text to avoid presenting obsolete claims as a parallel active dashboard. The root summary now matches the canonical summary. Old methods/flagged URLs redirect to current categories. Native main-root Pages configuration is retained with its existing docs redirect. Add/add conflicts were resolved through an explicit merge without dropping prior history. Assumptions from the earlier summary about cheapest execution, quota staging and blanket treaty rates were not adopted; F06 explicitly calls out that boundary. Final local checks include nine HTML files (seven canonical pages plus two compatibility redirects).

@@ -19,7 +19,7 @@ jobs:
       - name: Check data, citations and all local links
         run: python3 scripts/validate.py
       - name: Check generated output is committed
-        run: git diff --exit-code -- docs research/EXECUTIVE_SUMMARY.md
+        run: git diff --exit-code -- docs research/EXECUTIVE_SUMMARY.md EXECUTIVE_SUMMARY.md
       - name: Test browser-side behavior
         run: |
           node --check docs/assets/app.js

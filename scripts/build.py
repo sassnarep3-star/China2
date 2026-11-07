@@ -82,6 +82,13 @@ for page,title,num in PAGES[1:]:
         if page=='review': content+='<p class="review-banner">Open review items are intentionally published. Values that cannot be confirmed remain empty. The research can be complete while your personal eligibility remains unverified.</p>'
         content+=toolbar()+table([r for r in ROWS if r['category']==page],page=='routes',title+' · source-linked findings')
     (OUT/f'{page}.html').write_text(shell(page,title,desc,content))
+# Retain published URLs from the earlier session without serving superseded claims.
+for old,new in [('methods','routes'),('flagged','review')]:
+    title=intro[new][0]
+    alias=shell(new,title,'This page has moved to the integrated research dashboard.',
+        f'<section class="panel methodology"><h2>Continue to the current research</h2><p><a href="{new}.html">Open {title} →</a></p><p>Earlier session material is preserved in the repository audit archive, not treated as current verified findings.</p></section>')
+    alias=alias.replace('<meta charset="utf-8">', f'<meta charset="utf-8"><meta http-equiv="refresh" content="0; url={new}.html"><link rel="canonical" href="{new}.html">',1)
+    (OUT/f'{old}.html').write_text(alias)
 # Portable artifacts are generated from the same evidence used on the site.
 summary_md='# China Money — Executive Summary\n\nResearch reviewed: 7 November 2026. Not individualized legal, tax or investment advice.\n\n'
 for title,body,ids in summary_points:
@@ -89,6 +96,7 @@ for title,body,ids in summary_points:
 summary_md+='## Execution boundary\n\nNo transfer or tax filing has been made. The bank/adviser must establish ownership, source, years, paid taxes, approval requirements, personal compliance history and live quotes privately. No passports or account numbers belong in this public repository.\n'
 (OUT/'executive-summary.md').write_text(summary_md)
 (ROOT/'research/EXECUTIVE_SUMMARY.md').write_text(summary_md)
+(ROOT/'EXECUTIVE_SUMMARY.md').write_text(summary_md)
 buf=io.StringIO(newline='')
 fields=['id','category','topic','finding','status','value','pros','cons','locator','official_sources']
 w=csv.DictWriter(buf,fieldnames=fields,lineterminator="\n");w.writeheader()
