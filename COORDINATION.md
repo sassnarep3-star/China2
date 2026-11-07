@@ -28,3 +28,7 @@ Date: 2026-11-07
 
 ## PR / merge
 (to be filled after merge)
+
+## Update 2026-11-07 (integration fix)
+- PR #1 merged: https://github.com/sassnarep3-star/China2/pull/1
+- Custom Actions Pages workflow failed (Pages is legacy build_type main:/, token cannot switch to workflow - 403). Removed workflow, added root index.html redirect to docs/, relying on legacy Pages deploy which reported status=built. Live: https://sassnarep3-star.github.io/China2/
