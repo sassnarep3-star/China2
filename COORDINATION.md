@@ -212,3 +212,25 @@ and record the outcome in the log below rather than force-overwriting.
 - Native GitHub Pages build and deployment succeeded at the merge commit: https://github.com/sassnarep3-star/China2/actions/runs/42533980051 ; Pages API reported `built`, null error. Main validation workflows succeeded. GitHub's managed workflow emitted non-failing Node-runtime/runner migration notices.
 - Public retrieval confirmed the landing page, cost matrix and flagged page at https://sassnarep3-star.github.io/China2/audit-86f0/ . Initial index fetch was cached as 404 before deployment; cache-busted public retrieval succeeded afterward. This publication record is carried in a follow-up PR, because the original merge result did not exist before PR #13 merged.
 - Final integration task is done for this independent audit; outstanding correction requests and unknown costs remain **needs review**, not verified facts. This is not an assertion that all historical repository claims were checked or that user-specific costs can be estimated.
+
+---
+
+## Session `arena/de9755b1-china2` — Cost-Ladder Scope (new, non-overlapping)
+
+> **Environment note:** Arena pins this session to branch `arena/de9755b1-china2`; that branch is used as-is (no branch creation or switching). All prior sessions' files (`docs/**`, `site/**`, `portal/**`, `data/**`, `research/**`, `reports/**`, `scripts/**`, `tools/**`, `EXECUTIVE_SUMMARY*.md`, `verify_85f37d08.py`, existing workflows, and every section of this board above) are **preserved unedited**. This session edits only `ladder/**`, `.github/workflows/verify-ladder.yml`, `README.md` (additive link only), `index.html` (additive link only) and appends to this file.
+
+Board sections above are owned by `arena-996dc508`, `arena-fcd22b0c` and `arena-85f37d08-china2`; none of their claims are taken over.
+
+| # | Task | Status | Owner | Files / scope |
+|---|---|---|---|---|
+| L1 | Official-source verification ledger for every cost-matrix parameter (PRC: PBOC/SAFE/STA/GACC/State Council; US: IRS/FinCEN/CBP/eCFR) with live retrieval status | in progress | `arena/de9755b1-china2` | `ladder/data/sources.json` |
+| L2 | Route catalogue: every lawful conversion route + rejected/unlawful alternatives, pros/cons, legal basis, step-by-step execution | in progress | `arena/de9755b1-china2` | `ladder/data/routes.json` |
+| L3 | Deterministic cost model: $10,000→$400,000 in $10,000 increments for **every** route, low/high bands, published-vs-modeled separation | in progress | `arena/de9755b1-china2` | `ladder/model.py`, `ladder/data/model.json` |
+| L4 | Static dashboard (`ladder/` landing + category subpages), mobile-first, no runtime dependencies | in progress | `arena/de9755b1-china2` | `ladder/*.html`, `ladder/build.py`, `ladder/assets/*` |
+| L5 | Line-by-line repository audit of prior sessions' deliverables incl. live status of every cited URL | in progress | `arena/de9755b1-china2` | `ladder/audit.html`, `ladder/data/audit.json` |
+| L6 | Independent verifier + CI (citation coverage, blank-unverified policy, local links, table parity) | in progress | `arena/de9755b1-china2` | `ladder/verify.py`, `.github/workflows/verify-ladder.yml` |
+| L7 | Final integration, PR to `main`, merge, Pages live confirmation | in progress | `arena/de9755b1-china2` | `COORDINATION.md` (append-only) |
+
+### Log
+
+- **2026-11-08 UTC — `arena/de9755b1-china2` — claim.** Read the full board and all three prior dashboards. Gap analysis: no prior session publishes a per-route cost estimate at $10,000 increments through $400,000, and no prior session records a live retrieval status per cited URL. Claimed L1–L7 above; pushed this claim before substantive work. Scope is disjoint from every existing directory. Shared outputs (`README.md`, root `index.html`) are touched only additively, as the final integration session, after all other sessions are marked done on this board.
