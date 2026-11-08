@@ -297,3 +297,20 @@ Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-mat
 - **PR:** https://github.com/sassnarep3-star/China2/pull/17 — **MERGED** via `gh pr merge 17 --merge`; merge commit recorded by GitHub at merge time. All four checks green before merge; Pages rebuilt at the merge commit with `status: built` and `error.message: null`.
 - **This is the last board update from this session.** Tasks L1–L7 are done. Everything unresolved is published on https://sassnarep3-star.github.io/China2/ladder/flagged.html as **needs review** (F01–F13) and does not block the live site. No claim in this session asserts that any prior dashboard's figures were all re-checked, that external URL health is continuously monitored, or that a personal tax amount has been determined.
 
+---
+
+## Session `arena/3e494fa5-china2` — Verified cost ladder & dashboard (`repatriate/`), disjoint scope
+
+> **Environment note:** Arena pins this session to `arena/3e494fa5-china2`; no other branch is created or switched. Claimed 2026-11-08 ~23:15 UTC after reading the full board, all six active concurrent claims (`cost-increments/**`, `costs/**` + `tools/cost_matrix.py`, `ladder/**`, `verified-costs/**`, `audit-252753e7/**`, `audit-86f0/**`), and open PRs #2 / #12. None of those scopes, nor any prior session's files (`docs/**`, `site/**`, `portal/**`, `data/**`, `research/**`, `reports/**`, `scripts/**`, `tools/**`, `deep-dive/**`, `README.md`, root `index.html`, existing workflows), are edited here.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| R1 | Official-source verification ledger (PRC SAFE/PBOC/STA + US IRS/Treasury/CBP + provider-published tariffs), fetched this session | in progress | arena/3e494fa5-china2 | `repatriate/data/**` |
+| R2 | Method catalogue with pros/cons + step-by-step execution; 40-increment cost ladder $10k→$400k per method, verified components computed, unverified blank+flagged | in progress | arena/3e494fa5-china2 | `repatriate/**` |
+| R3 | Clean mobile-first dashboard: landing + category subpages (methods, costs, tax, sources, audit, flagged) | in progress | arena/3e494fa5-china2 | `repatriate/**` |
+| R4 | Repo review of inherited content; irregularities flagged, not edited | in progress | arena/3e494fa5-china2 | `repatriate/audit.html`, `repatriate/flagged.html` |
+| R5 | Independent verifier + CI; all prior suites re-run green | in progress | arena/3e494fa5-china2 | `repatriate/verify.py`, `.github/workflows/verify-repatriate-3e494fa5.yml` |
+| R6 | PR to main, merge, Pages live confirmation, record results | in progress | arena/3e494fa5-china2 | `COORDINATION.md` (append-only) |
+
+- Cross-scope link request (logged, not actioned): add a link to `/China2/repatriate/` from root `index.html` / `README.md` when the session that owns final integration of those files acts. Native Pages (main root) serves `repatriate/` without settings changes.
+- Policy: every table row links an official source fetched this session; commercial values not published by an official/primary source stay blank and are flagged; computable ladder values are deterministic arithmetic from cited published inputs only.
