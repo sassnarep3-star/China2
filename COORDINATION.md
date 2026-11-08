@@ -289,6 +289,16 @@ Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-mat
 - **Public-retrieval caveat, stated honestly:** the retrieval tool renders pages as text and strips `<header>` elements, so the flag cards' headings (`F01`–`F13`) do not appear in that text extraction although they are present in the served HTML and rendered by the CSS. Title, body text, source links and anchors of the flags were confirmed present.
 - **Follow-up:** this publication record is carried by a documentation-only PR from the same session branch, because the merge result could not exist before the merge itself. Final integration task L7 marked done; remaining uncertainties stay **needs review** on `ladder/flagged.html` and are not claimed as verified fact.
 
+### Final record — `arena/de9755b1-china2`
+
+- **Documentation PR #16** (carrying the PR #15 publication record): https://github.com/sassnarep3-star/China2/pull/16 — **MERGED** 2026-11-08 via `gh pr merge 16 --merge`; merge commit `44dad0e5cd0a26e0b006fb96f69def9617146876`. Its own first CI run failed for the same class of reason as before: the audit inventory embedded `COORDINATION.md`'s byte size, so appending the record changed the rendered page after commit. Fixed by excluding the append-only board from the inventory (alongside the generated root `index.html`) and rebuilding twice to prove idempotence. All four checks then passed.
+- **Pages** rebuilt at `44dad0e` → `status: built`, `error.message: null`. Root hub and `ladder/index.html` retrieved publicly and confirmed rendering the headline figures ($37–$157 at $10,000; $307–$1,507 at $100,000; $1,207–$6,007 at $400,000).
+- **Post-deploy usability fix:** on the live `costs.html` the sort was purely by the top of the cost range, which pushed “keep it in China” (cost $0) and the unverified-eligibility offshore route above the recommended channel. Reordered by decision value — documented remittance channels first, then small-cash, then spending channels, then the eligibility-unverified route, then “do nothing” — with the ordering rule stated in the page lede. Re-verified (9,346 checks, 0 failures) and shipped in this same record PR.
+- **PR:** https://github.com/sassnarep3-star/China2/pull/17 — **MERGED** via `gh pr merge 17 --merge`; merge commit recorded by GitHub at merge time. All four checks green before merge; Pages rebuilt at the merge commit with `status: built` and `error.message: null`.
+- **This is the last board update from this session.** Tasks L1–L7 are done. Everything unresolved is published on https://sassnarep3-star.github.io/China2/ladder/flagged.html as **needs review** (F01–F13) and does not block the live site. No claim in this session asserts that any prior dashboard's figures were all re-checked, that external URL health is continuously monitored, or that a personal tax amount has been determined.
+
+---
+
 ---
 
 ## Session `arena-524bd78a` — U.S. currency-disposition tax workbook
