@@ -297,3 +297,16 @@ Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-mat
 - **PR:** https://github.com/sassnarep3-star/China2/pull/17 — **MERGED** via `gh pr merge 17 --merge`; merge commit recorded by GitHub at merge time. All four checks green before merge; Pages rebuilt at the merge commit with `status: built` and `error.message: null`.
 - **This is the last board update from this session.** Tasks L1–L7 are done. Everything unresolved is published on https://sassnarep3-star.github.io/China2/ladder/flagged.html as **needs review** (F01–F13) and does not block the live site. No claim in this session asserts that any prior dashboard's figures were all re-checked, that external URL health is continuously monitored, or that a personal tax amount has been determined.
 
+## Session `arena-e3508dc2` — independently verified cost workbook and consolidated dashboard
+
+Claimed 2026-11-08 UTC. Arena requires the fixed branch `arena/e3508dc2-china2`; no additional branch is created. Baseline `bb7796b` equals `origin/main`. Read the complete prior board and inspected open PRs before claiming. PR #12 (`arena/5cdc93ae-china2`, last updated 2026-11-08 23:08:54 UTC) owns `deep-dive/**`, new `research/0*.md`, `research/README.md`, `research/EXECUTIVE_SUMMARY_arena-5cdc93ae.md`, `README.md`, and its board section. PR #2 (`arena/4c576a01-china2`) owns root-site files and its board section. Neither is taken over. Earlier completed scopes remain preserved.
+
+| Task | Status | Owner | Non-overlapping files / scope |
+|---|---|---|---|
+| E1: Re-read current official legal/tax evidence and audit inherited claims; record gaps without changing prior owners' files | in progress | arena-e3508dc2 | `verified-costs/data/**`, `verified-costs/research/**` |
+| E2: Forty-increment cost workbook, route-by-route procedures and explicit unknown-price handling | in progress | arena-e3508dc2 | `verified-costs/data/**`, `verified-costs/research/**` |
+| E3: Mobile-first static dashboard, executive summary, source registry, audit and Flagged for Review | in progress | arena-e3508dc2 | `verified-costs/site/**`, `verified-costs/build.py`, `verified-costs/serve.py` |
+| E4: Independent arithmetic, citation, deterministic build, local-link and browser tests | in progress | arena-e3508dc2 | `verified-costs/tests/**`, `.github/workflows/verify-costs-e3508dc2.yml` |
+| E5: Final integration and publication; preserve all prior sites and reconcile only after active shared-file claims finish | unclaimed | arena-e3508dc2 | `COORDINATION.md`; shared landing/navigation only when integration eligibility is established |
+
+Cross-scope request, not actioned: when shared-file ownership permits final integration, link the new canonical cost dashboard from root `index.html` and the existing landing pages. Do not overwrite active PR #12 or PR #2 files before their claims finish. No other session's research is claimed or silently replaced. Research, implementation, testing and integration run sequentially in this session; only this session's scope is edited before integration.
