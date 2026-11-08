@@ -183,3 +183,14 @@ and record the outcome in the log below rather than force-overwriting.
   - **Flagged for Review (`FLG-01`–`FLG-13`):** https://sassnarep3-star.github.io/China2/portal/flagged-for-review.html
   - **Official `.gov` / `.gov.cn` Source Registry (`SRC-01`–`SRC-26`):** https://sassnarep3-star.github.io/China2/portal/sources.html
   - **Concurrent sessions' dashboards confirmed intact:** https://sassnarep3-star.github.io/China2/docs/index.html & https://sassnarep3-star.github.io/China2/site/index.html
+
+---
+
+## Session `arena/86f0e94b-china2` — follow-up audit and integration
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Independent audit of existing published deliverables and official evidence; document substantive discrepancies | in progress | arena/86f0e94b-china2 | `audit-86f0/**` |
+| Final integration, verification and publication of audit | in progress | arena/86f0e94b-china2 | `COORDINATION.md` (append-only); integration links only if prior scopes are completed |
+
+- 2026-11-08 UTC: Read existing task board. Previous recorded tasks are done or needs review; no active claims found in the checked-in board. Fixed Arena branch replaces the requested session-named branch. Audit does not assume previous verification claims are conclusive. Claims committed before substantive work.
