@@ -183,3 +183,43 @@ and record the outcome in the log below rather than force-overwriting.
   - **Flagged for Review (`FLG-01`–`FLG-13`):** https://sassnarep3-star.github.io/China2/portal/flagged-for-review.html
   - **Official `.gov` / `.gov.cn` Source Registry (`SRC-01`–`SRC-26`):** https://sassnarep3-star.github.io/China2/portal/sources.html
   - **Concurrent sessions' dashboards confirmed intact:** https://sassnarep3-star.github.io/China2/docs/index.html & https://sassnarep3-star.github.io/China2/site/index.html
+
+---
+
+# Session `arena-b9a30a06` — Cost-Matrix / Unified Dashboard / Final Integration
+
+> **Environment note:** this sandbox pins the session to branch `arena/b9a30a06-china2` and forbids
+> creating or switching branches, so that branch substitutes for `session-<id>/<task>`.
+> All prior sessions' files are preserved untouched. This session writes only inside its claimed
+> scope (`costs/**`, `tools/cost_matrix.py`, `.github/workflows/verify-costs-b9a30a06.yml`) plus the
+> shared integration outputs it is explicitly allowed to change as the **final integration session**
+> (`index.html` landing, `README.md` link, `COORDINATION.md` append-only).
+
+Session started 2026-11-08. Read the full board above first: three prior sessions (`arena-996dc508`,
+`arena-fcd22b0c`, `arena/85f37d08-china2`) are **done and merged**. PR #12 (`arena/5cdc93ae`) and
+PR #2 (`arena/4c576a01`) remain open from other sessions; this session does not touch their scopes.
+
+## Gap analysis performed before claiming (what is actually missing)
+
+| Brief requirement | Status on `main` before this session | Action |
+|---|---|---|
+| Executive summary | Covered three times (README, EXECUTIVE-SUMMARY.md, reports/) | Reuse; do not duplicate |
+| Full method list + pros/cons | 22 routes (`data/methods.json`), 18 (site), 17 (portal) — inconsistent counts | Reconcile counts, publish one canonical matrix |
+| Conversion-penalty breakdown | Covered (`site/cost-breakdown.html`, `portal/conversion-penalties.html`) | Reuse as inputs |
+| **Costs in $10,000 increments to $400,000, mobile-friendly table, per method, step-by-step** | **Not present anywhere in the repo** | **This session's primary deliverable** |
+| One clean landing page + category subpages | Three parallel dashboards (`/docs/`, `/site/`, `/portal/`) and no single entry point | Build one unified dashboard, keep the others linked as archives |
+| Repo review, line by line | Two prior audits exist | Re-audit the *current* tree; add new flags |
+| Official-source link on every row | Enforced by prior harnesses | Enforced again in this session's harness |
+
+| # | Task | Status | Owner | Files in scope |
+|---|------|--------|-------|----------------|
+| B1 | Claim board + gap analysis | done | `arena-b9a30a06` | `COORDINATION.md` (append-only) |
+| B2 | Cost model $10k→$400k per method, official rate inputs only | in progress | `arena-b9a30a06` | `costs/data/cost-model.json` |
+| B3 | Unified dashboard (landing + category subpages) | in progress | `arena-b9a30a06` | `costs/**` |
+| B4 | Harness: row-level official links, arithmetic recomputation, link check | in progress | `arena-b9a30a06` | `tools/cost_matrix.py`, `.github/workflows/verify-costs-b9a30a06.yml` |
+| B5 | Current-tree line-by-line repo audit + new flags | in progress | `arena-b9a30a06` | `costs/audit.html`, `costs/flagged.html` |
+| B6 | Final integration, PR, merge, Pages confirmation | in progress | `arena-b9a30a06` | `index.html`, `README.md`, `COORDINATION.md` |
+
+**Scope note:** no file in `docs/**`, `site/**`, `portal/**`, `data/**`, `research/**`, `reports/**`,
+`scripts/**`, `tools/verify.mjs` or `.github/workflows/{validate,verify-site-data,verify-portal-85f37d08}.yml`
+is modified by this session. Discrepancies found in those files are **flagged, not edited**.
