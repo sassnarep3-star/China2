@@ -1,1 +1,93 @@
-<!doctype html><meta charset="utf-8"><title>China → USD Dashboard</title><meta http-equiv="refresh" content="0; url=docs/"><p><a href="docs/">Open China → USD Dashboard</a></p>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>China Money — CNY → USD repatriation dashboard for a US citizen</title>
+<meta name="description" content="Verified, source-linked research on converting CNY to USD as a US citizen, with costs computed from $10,000 to $400,000.">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="topbar-in">
+<a class="brand" href="index.html"><span class="mark">¥$</span><span>China Money<small>CNY → USD · US citizen</small></span></a>
+<nav class="main" aria-label="Sections"><a href="index.html" aria-current="page">Overview</a><a href="costs.html">Costs</a><a href="matrix.html">Method × amount</a><a href="methods.html">Methods</a><a href="steps.html">Steps</a><a href="penalty.html">Penalty</a><a href="taxes.html">Tax &amp; reporting</a><a href="flagged.html">Flagged</a><a href="sources.html">Sources</a><a href="audit.html">Repo audit</a></nav>
+</div></header>
+<main id="main" class="wrap">
+
+<p class="eyebrow">Verified research · 8 November 2026 · session arena/21827432-china2</p>
+<h1>Getting money out of China as a US citizen</h1>
+<p class="lead">A working dashboard for one question: what does it actually cost to turn RMB in a mainland bank account into USD in a US account, from $10,000 to $400,000? Every figure below is either computed from an official statute or left blank and flagged. Nothing is guessed.</p>
+
+<div class="grid g2" style="margin:18px 0">
+  <section class="card verdict">
+    <span class="pill">Headline finding</span>
+    <div class="big">0%</div>
+    <h2>There is no Chinese tax on converting your own money</h2>
+    <p>The PRC Individual Income Tax Law taxes nine categories of income. "Converting RMB to USD" is not one of them. What people experience as a conversion penalty is almost always one of three different things: income tax already owed on the money's source, a bank refusing to process without a tax certificate, or the commercial spread and wire fees. Each of those is a separate problem with a separate fix.</p>
+    <p><a href="penalty.html">See the six layers →</a></p>
+  </section>
+  <section class="card">
+    <h3>The US side is usually zero too</h3>
+    <p>Wiring your own funds to your own account is not a realisation event. For currency, §988(e)(1) excludes an individual's personal transactions from §988, and §988(e)(2) recognises no gain on a personal transaction unless the gain would exceed $200.</p>
+    <p>If the money is untaxed income, the US tax is usually neutralised by the foreign tax credit: the PRC rate is normally higher, so the credit absorbs the US liability. At $400,000 the credit leaves $23,134 of US tax in the 20% scenario, in the model used here.</p>
+    <p><a href="taxes.html">Reporting thresholds →</a></p>
+  </section>
+</div>
+
+<h2>What it costs, by amount</h2>
+<p>Four scenarios, all computed in the open. <strong>A</strong> is your own already-taxed money: the statutory cost is $$0 at every amount, because no statute taxes the conversion. <strong>B</strong> and <strong>C</strong> are the two ways the real tax appears. <strong>D</strong> is the cost of the prohibited shortcuts.</p>
+
+<div class="toolbar">
+  <label class="field">Jump to an amount
+    <select id="amount-jump" data-target="costs.html">
+      <option value="">Choose…</option>
+      <option value="10000">10000</option><option value="20000">20000</option><option value="30000">30000</option><option value="40000">40000</option><option value="50000">50000</option><option value="60000">60000</option><option value="70000">70000</option><option value="80000">80000</option><option value="90000">90000</option><option value="100000">100000</option><option value="110000">110000</option><option value="120000">120000</option><option value="130000">130000</option><option value="140000">140000</option><option value="150000">150000</option><option value="160000">160000</option><option value="170000">170000</option><option value="180000">180000</option><option value="190000">190000</option><option value="200000">200000</option><option value="210000">210000</option><option value="220000">220000</option><option value="230000">230000</option><option value="240000">240000</option><option value="250000">250000</option><option value="260000">260000</option><option value="270000">270000</option><option value="280000">280000</option><option value="290000">290000</option><option value="300000">300000</option><option value="310000">310000</option><option value="320000">320000</option><option value="330000">330000</option><option value="340000">340000</option><option value="350000">350000</option><option value="360000">360000</option><option value="370000">370000</option><option value="380000">380000</option><option value="390000">390000</option><option value="400000">400000</option>
+    </select>
+  </label>
+  <p class="small muted" id="jump-out" aria-live="polite">…or open the full 40-row table.</p>
+  <a class="btn sec" href="costs.html">Full cost table</a>
+  <a class="btn sec" href="matrix.html">Method × amount matrix</a>
+</div>
+
+<div class="tw"><table class="cards-on-mobile compact"><caption>Costs at five reference amounts (full 40-row table on the cost page)</caption><thead><tr><th scope="col" class="">Amount</th><th scope="col" class="">A. Statutory cost<br><span class='small'>own, already-taxed money</span></th><th scope="col" class="num">B. PRC IIT<br><span class='small'>untaxed labour income</span></th><th scope="col" class="num">C. PRC tax<br><span class='small'>asset gain / dividend, 20%</span></th><th scope="col" class="num">US residual<br><span class='small'>after credit, case C</span></th><th scope="col" class="num">Years<br><span class='small'>at $50k quota</span></th><th scope="col" class="num">Years<br><span class='small'>at ATM cap</span></th><th scope="col" class="">D. Fine if prohibited</th></tr></thead><tbody><tr><td><strong>$10,000</strong></td><td>$0 <span class="badge b-ok">verified</span></td><td class="num">$32</td><td class="num">$2,000</td><td class="num">$0</td><td class="num">1 yr</td><td class="num">1 yr</td><td>$3,000 / $10,000</td></tr><tr><td><strong>$50,000</strong></td><td>$0 <span class="badge b-ok">verified</span></td><td class="num">$5,694</td><td class="num">$10,000</td><td class="num">$0</td><td class="num">1 yr</td><td class="num">4 yr</td><td>$15,000 / $50,000</td></tr><tr><td><strong>$100,000</strong></td><td>$0 <span class="badge b-ok">verified</span></td><td class="num">$19,441</td><td class="num">$20,000</td><td class="num">$0</td><td class="num">2 yr</td><td class="num">7 yr</td><td>$30,000 / $100,000</td></tr><tr><td><strong>$200,000</strong></td><td>$0 <span class="badge b-ok">verified</span></td><td class="num">$58,896</td><td class="num">$40,000</td><td class="num">$0</td><td class="num">4 yr</td><td class="num">14 yr</td><td>$60,000 / $200,000</td></tr><tr><td><strong>$400,000</strong></td><td>$0 <span class="badge b-ok">verified</span></td><td class="num">$148,896</td><td class="num">$80,000</td><td class="num">$23,134</td><td class="num">8 yr</td><td class="num">27 yr</td><td>$120,000 / $400,000</td></tr></tbody></table></div><p class="small muted">A is the verified statutory cost of converting documented, already-taxed funds. B and C are model arithmetic on official statutory rates, not advice. D is the statutory fine range under Decree 532 Arts. 39-45 (up to 30%, or 30%-100% if serious). Blank commercial costs are omitted here because they are unverified at every amount.</p>
+
+<div class="notice blue"><strong>Read the blank column literally.</strong> The commercial column is empty because no PRC or US regulator publishes a bank's spread, cable fee or intermediary charge. Those are the only costs that need a quote from your own bank, and the calculator on the cost page stays empty until you enter one.</div>
+
+<h2>Which route, in one table</h2>
+<div class="tw"><table class="cards-on-mobile compact"><caption>Route selection by fact pattern</caption><thead><tr><th scope="col" class="">Your situation</th><th scope="col" class="">Route to investigate</th><th scope="col" class="">Verified cost</th><th scope="col" class="">Why</th><th scope="col" class="">Sources</th></tr></thead><tbody><tr><td><strong>The income was already taxed and you can prove it</strong></td><td>M01 documented conversion + wire</td><td>0% PRC · 0% US</td><td>The only open number is the bank's spread and wire fee.</td><td>S02, S04, S06</td></tr><tr><td><strong>The money is leftover from an earlier FX conversion</strong></td><td>M02 re-conversion against the original memo</td><td>0% PRC · 0% US</td><td>Needs the <span lang="zh-Hans">原兑换水单</span> <span class="gloss">(original exchange memo)</span> and must be within 24 months.</td><td>S02</td></tr><tr><td><strong>The balance is already in USD inside China</strong></td><td>M04 remit from the FX savings account</td><td>0% PRC · 0% US</td><td>Cheapest of all: no conversion, so no spread.</td><td>S02</td></tr><tr><td><strong>The money is untaxed income</strong></td><td>Settle PRC IIT first, then M01</td><td>3%–45% or 20%</td><td>This is the real cost, and it is owed whether or not you leave.</td><td>S04, S05</td></tr><tr><td><strong>You are a PRC citizen or long-term resident</strong></td><td>M11 quota (USD 50,000/yr) or M01</td><td>0% PRC at conversion</td><td>Quota caps the speed, not the tax. Eligibility for a US passport holder is contested — F02.</td><td>S01, S02, S11</td></tr><tr><td><strong>You sold PRC property or equity</strong></td><td>M08 / M15</td><td>20% of the gain</td><td>The 'penalty' is the transfer tax on the gain; the conversion adds nothing.</td><td>S04</td></tr><tr><td><strong>Someone wants to use friends, an underground bank or crypto</strong></td><td>Stop — M18 to M22</td><td>30%–100% fine</td><td>Priced as a percentage of the whole amount, plus confiscation.</td><td>S11</td></tr></tbody></table></div>
+
+<h2>How this was verified</h2>
+<div class="grid g3">
+  <div class="card kpi"><span class="n">22</span><span class="l">official sources in the registry</span><span class="s">15 re-read this session · 7 cited from a prior session</span></div>
+  <div class="card kpi"><span class="n">40</span><span class="l">cost rows, $10,000 to $400,000</span><span class="s">recomputed by an independent verifier on every commit</span></div>
+  <div class="card kpi"><span class="n">16</span><span class="l">items flagged for review</span><span class="s">including three irregularities found in earlier work</span></div>
+</div>
+
+<h2>Executive summary</h2>
+<div class="card">
+<p><strong>The short version.</strong> Establish ownership and the lawful source of the balance first, then choose the document set. If the income was already taxed in China, the authorised-bank conversion route (M01) costs 0% in PRC tax and 0% in US tax on the act of moving it; the only unknown is the bank's commercial price. The USD 50,000 annual quota is <em>not</em> the controlling rule for a US citizen converting documented lawful income — Article 13 of the implementing rules sets documents, not a dollar cap — but the eligibility boundary is genuinely unclear and is flagged (F02).</p>
+<p><strong>The expensive mistake to avoid.</strong> Every prohibited channel (smurfing, underground swaps, fake invoices, crypto bridges, card cash-out) is priced as a percentage of the amount: up to 30%, or 30%–100% if serious, plus confiscation. At $400,000 that is up to $120,000 on the low scale and $400,000 on the high scale. No legitimate fee comes close.</p>
+<p><strong>What cannot be certified.</strong> No provider can be named cheapest, no personal tax amount can be stated, and no commercial fee can be filled in, because none of those facts is available from an official source or from the information supplied. Those items are blank and listed on <a href="flagged.html">Flagged for review</a>.</p>
+<p><a class="btn" href="summary.html">Read the full executive summary</a></p>
+</div>
+
+<h2>Earlier research in this repository</h2>
+<p>Three earlier sessions published their own dashboards, each with a different scope and standard. They are preserved unchanged and linked here so nothing is lost, but they disagree with each other in places — see the <a href="audit.html">repo audit</a>.</p>
+<div class="grid g3">
+  <div class="card"><h3><a href="docs/index.html">docs/ dossier</a></h3><p class="small muted">Seven pages, 67 findings, 24 sources. Cites some commercial bank and fintech pages next to official ones.</p></div>
+  <div class="card"><h3><a href="site/index.html">site/ dossier</a></h3><p class="small muted">Eight pages built from its own ledgers, 22 routes split 13 lawful / 5 unlawful.</p></div>
+  <div class="card"><h3><a href="portal/index.html">portal/ dossier</a></h3><p class="small muted">Seven pages, 109 rows, official-domain links only, blank commercial cells.</p></div>
+</div>
+
+</main>
+
+<footer class="bot"><div class="in">
+<p><strong>Research, not a tax opinion.</strong> No personalised eligibility, lowest-cost provider or individual tax amount is certified. No funds were moved and no returns were filed. Blank cells are unverified or not stated by any official source — they are not zero.</p>
+<p>Sources are official PRC (<span class="mono">.gov.cn</span>) or US (<span class="mono">.gov</span>) publications; the source registry marks which were re-read in this session. Repository: <a href="https://github.com/sassnarep3-star/China2">sassnarep3-star/China2</a> · Build data: <a href="data/cost-model.json">cost-model.json</a> · <a href="data/cost-tiers.csv">cost-tiers.csv</a> · <a href="data/repatriation-methods.csv">methods.csv</a></p>
+</div></footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>

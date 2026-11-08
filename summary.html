@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Executive summary — China Money</title>
+<meta name="description" content="Executive summary of the CNY-to-USD repatriation research for a US citizen.">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="topbar-in">
+<a class="brand" href="index.html"><span class="mark">¥$</span><span>China Money<small>CNY → USD · US citizen</small></span></a>
+<nav class="main" aria-label="Sections"><a href="index.html">Overview</a><a href="costs.html">Costs</a><a href="matrix.html">Method × amount</a><a href="methods.html">Methods</a><a href="steps.html">Steps</a><a href="penalty.html">Penalty</a><a href="taxes.html">Tax &amp; reporting</a><a href="flagged.html">Flagged</a><a href="sources.html">Sources</a><a href="audit.html">Repo audit</a></nav>
+</div></header>
+<main id="main" class="wrap">
+
+<p class="eyebrow">Executive summary · 8 November 2026</p>
+<h1>The answer, and its limits</h1>
+<p class="lead">For a US citizen with RMB in a mainland bank account, the cheapest lawful way out is almost never a clever structure. It is the documented route: prove the source, prove the tax was paid, convert at an authorised bank, and wire. That costs 0% in Chinese tax on the conversion and 0% in US tax on the movement. Everything else in this dossier is detail around that sentence.</p>
+
+<h2>1. The premise needs correcting</h2>
+<p>The starting assumption was that converting CNY to USD triggers a considerable tax. The statutes do not support that. Article 2 of the PRC Individual Income Tax Law taxes nine categories of income; a currency conversion is not one of them. On the US side, moving your own funds is not a realisation event, and §988(e)(1)-(2) excludes an individual's personal currency transactions from §988, with no gain recognised unless it would exceed $200. At $400,000 the verified statutory cost of converting already-taxed money is $0.</p>
+
+<h2>2. Where the money actually goes</h2>
+<ul class="tight">
+<li><strong>Income tax on the source (3%–45% or a flat 20%)</strong> — owed whether or not the money leaves China. This is the real "penalty" in most cases.</li>
+<li><strong>The documentary gate</strong> — Article 13(1) of the implementing rules requires identity plus source documents including tax vouchers. A missing certificate is a refusal, not a charge.</li>
+<li><strong>The commercial spread and wire fees</strong> — real, unavoidable, and unpublished by any regulator. The only figure that requires your own bank's quote.</li>
+<li><strong>Reporting duties</strong> — FBAR over $10,000, Form 8938 from $50,000/$75,000, Form 3520 from $100,000 of gifts, FinCEN Form 105 over $10,000 in cash. Zero cost if filed.</li>
+<li><strong>Fines on prohibited channels</strong> — up to 30%, or 30%–100% if serious, plus confiscation. This is the only layer that can exceed the balance.</li>
+</ul>
+
+<h2>3. The route, in order</h2>
+<ol class="tight">
+<li>Establish ownership and the lawful source of the balance, and locate the tax evidence.</li>
+<li>If the money came from an earlier FX conversion, use the original exchange memo (M02) — the only route needing no tax documents, valid 24 months.</li>
+<li>If the balance is already in foreign currency, remit it from the FX savings account (M04) — no conversion means no spread.</li>
+<li>Otherwise use M01: documented conversion plus wire, with the full document set.</li>
+<li>Ask the bank, in writing, for the all-in price and for which category it will record you under.</li>
+<li>File the US information returns for the years concerned.</li>
+</ol>
+
+<h2>4. The numbers</h2>
+<table class="compact"><caption>Verified cost at $400,000</caption><thead><tr><th>At $400,000</th><th class="num">Amount</th></tr></thead><tbody>
+<tr><td>Verified statutory cost, already-taxed money (A)</td><td class="num">$0</td></tr>
+<tr><td>PRC IIT if the whole balance were untaxed labour income (B)</td><td class="num">$148,896</td></tr>
+<tr><td>PRC tax if the whole balance were an asset gain at 20% (C)</td><td class="num">$80,000</td></tr>
+<tr><td>US residual after the credit in case C</td><td class="num">$23,134</td></tr>
+<tr><td>Years needed at the USD 50,000 quota, if it applies</td><td class="num">8</td></tr>
+<tr><td>Years needed through the ATM channel at RMB 100,000/year</td><td class="num">27</td></tr>
+<tr><td>Fine if a prohibited channel were used (low / serious)</td><td class="num">$120,000 / $400,000</td></tr>
+</tbody></table>
+
+<h2>5. What cannot be certified</h2>
+<p>No provider is named cheapest, because no official source publishes spreads. No personal tax amount is stated, because the personal facts are unknown. No commercial fee is filled in. No individual eligibility conclusion is drawn, and the question of whether a long-term US resident of China may use the USD 50,000 quota is flagged rather than resolved. Sixteen items are published on the flagged page, each with the source that limits it.</p>
+
+<h2>6. The one thing to do first</h2>
+<p>Before any bank visit: establish whether the PRC tax on the income was paid and obtain the certificate. That single document decides whether this is a 0% transaction or a 3%–45% one.</p>
+
+<p class="small muted">Research only, not legal, tax or investment advice. Prepared 8 November 2026. Model arithmetic uses the PBOC central parity of 2026-11-06 (6.7168 CNY/USD), 2026 US single-filer brackets and standard deduction, and the PRC schedule for comprehensive income. Assumptions and limits are itemised on the <a href="flagged.html">flagged</a> page.</p>
+
+</main>
+
+<footer class="bot"><div class="in">
+<p><strong>Research, not a tax opinion.</strong> No personalised eligibility, lowest-cost provider or individual tax amount is certified. No funds were moved and no returns were filed. Blank cells are unverified or not stated by any official source — they are not zero.</p>
+<p>Sources are official PRC (<span class="mono">.gov.cn</span>) or US (<span class="mono">.gov</span>) publications; the source registry marks which were re-read in this session. Repository: <a href="https://github.com/sassnarep3-star/China2">sassnarep3-star/China2</a> · Build data: <a href="data/cost-model.json">cost-model.json</a> · <a href="data/cost-tiers.csv">cost-tiers.csv</a> · <a href="data/repatriation-methods.csv">methods.csv</a></p>
+</div></footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>

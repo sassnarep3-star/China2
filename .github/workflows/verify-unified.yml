@@ -1,0 +1,30 @@
+name: Verify unified dashboard (arena/21827432-china2 scope)
+
+on:
+  pull_request:
+  push:
+    branches: [main, arena/21827432-china2]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-unified:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the dashboard from source data
+        run: python3 scripts/build_site.py
+      - name: Verify every figure, link and count independently
+        run: python3 scripts/verify_site.py
+      - name: Check generated output is committed
+        run: |
+          git diff --exit-code -- index.html costs.html matrix.html methods.html steps.html \
+            penalty.html taxes.html flagged.html sources.html audit.html summary.html \
+            assets data/cost-model.json data/cost-tiers.csv data/repatriation-methods.csv
+      - name: Check browser-side script parses
+        run: node --check assets/site.js

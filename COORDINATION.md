@@ -183,3 +183,47 @@ and record the outcome in the log below rather than force-overwriting.
   - **Flagged for Review (`FLG-01`–`FLG-13`):** https://sassnarep3-star.github.io/China2/portal/flagged-for-review.html
   - **Official `.gov` / `.gov.cn` Source Registry (`SRC-01`–`SRC-26`):** https://sassnarep3-star.github.io/China2/portal/sources.html
   - **Concurrent sessions' dashboards confirmed intact:** https://sassnarep3-star.github.io/China2/docs/index.html & https://sassnarep3-star.github.io/China2/site/index.html
+
+---
+
+# Session `arena/21827432-china2` — unified dashboard, tiered cost model, integration
+
+**Board opened:** 2026-11-08 UTC · **Branch:** `arena/21827432-china2` (fixed by the execution environment; no other branch was created or pushed) · **Scope owner:** `arena/21827432-china2`
+
+## Claim recorded before substantive work
+
+State of the board at claim time: every task in the three earlier sections was already marked **done**, and PRs #4, #6, #7, #8, #9, #10 and #11 were merged. No item was left `in progress` or `unclaimed`, and no session had an open claim. This session therefore claimed the **final integration** role described in the brief (shared outputs: landing page, navigation, table data, site build, PR, merge, Pages), plus one new deliverable that no earlier session had produced.
+
+| # | Task | Status | Owner | Files / scope (non-overlapping) |
+|---|------|--------|-------|--------------------------------|
+| B1 | Tiered cost model: every method, $10,000 → $400,000 in $10,000 steps | done | `arena/21827432-china2` | `scripts/site_data.py`, `scripts/steps_data.py`, `scripts/build_site.py`, `data/cost-model.json`, `data/cost-tiers.csv`, `data/repatriation-methods.csv` |
+| B2 | Unified dashboard: landing page + category subpages + tables + analysis | done | `arena/21827432-china2` | `index.html`, `costs.html`, `matrix.html`, `methods.html`, `steps.html`, `penalty.html`, `taxes.html`, `flagged.html`, `sources.html`, `audit.html`, `summary.html`, `assets/**`, `.nojekyll` |
+| B3 | Independent verifier + CI for this scope | done | `arena/21827432-china2` | `scripts/verify_site.py`, `.github/workflows/verify-unified.yml` |
+| B4 | Line-by-line audit of the three earlier dashboards | done | `arena/21827432-china2` | `audit.html` (findings A01–A14), `flagged.html` (F15, F16) |
+| B5 | Executive summary, README, publication records | done | `arena/21827432-china2` | `EXECUTIVE-SUMMARY-2026-11-08.md`, `README.md`, `COORDINATION.md` (append-only) |
+
+**Non-overlap statement.** Earlier deliverables (`docs/**`, `site/**`, `portal/**`, `research/**`, `reports/**`, `verify_85f37d08.py`, `EXECUTIVE_SUMMARY.md`, `EXECUTIVE-SUMMARY.md`, the three existing workflows) were read but **not modified, moved or deleted**. The only earlier-session files changed are the two shared outputs the brief reserves for the integration session: root `index.html` and `README.md`. Everything else in this session's scope is new and additive.
+
+## Log
+
+- **2026-11-08 — repo review first, then claim.** Read `COORDINATION.md`, all three earlier boards, and the three dashboards line by line against the official texts they cite. Findings recorded as A01–A14 on `audit.html` and F15/F16 on `flagged.html`; nothing was quietly corrected, and no earlier file was overwritten.
+- **2026-11-08 — official verification performed in this session** (page body fetched and read; all links in `sources.html`, status column "re-read this session"): PBOC Decree [2006] No.3 (English); SAFE 汇发[2007]1号 (2024 republication); SAFE 汇发[2017]29号 (ATM caps); IIT Law (STA English) plus the official comprehensive-income rate schedule; 26 U.S.C. §988; Rev. Proc. 2025-32 (2026 brackets, standard deduction, FEIE, gift exclusion, §6039F threshold); IRS FBAR page; IRS Form 8938 thresholds; IRS "Gifts from foreign person"; IRS Foreign Tax Credit page; IRS Form 3520 instructions; CBP/FinCEN Form 105 page; State Council Decree 532; PBOC central parity for 2026-11-06 (USD 1 = CNY 6.7168).
+- **2026-11-08 — six prior-session sources were NOT re-fetched** and are labelled `(prior)` in the UI and "prior session" in the registry: US–China treaty PDF, PBOC Notice [2004] No.16, SAFE 2026 FAQ, outbound-payment tax filing form, 2015 SAFE press transcript, PBOC virtual-currency notice. No computed cell depends on them.
+- **2026-11-08 — arithmetic defect caught before publication.** The first build used the "plus" column of Rev. Proc. 2025-32 Table 3 as if it were a quick-deduction coefficient, overstating US tax at $400,000 by $27,217. Corrected, and the verifier now re-derives US tax by two independent methods (band walk and quick-deduction) and fails on any disagreement.
+- **2026-11-08 — eight files initially contained a structural defect** (`[hidden]` rows still displayed on mobile because a class rule overrode the user-agent rule), a search filter that did not match thousands separators, and a cross-page amount jump that pointed at non-existent anchors. All three fixed and covered by real-browser tests.
+- **2026-11-08 — CJK rendering.** A real-browser screenshot showed Chinese terms as tofu boxes where no CJK font is installed. Every Chinese term now carries an English gloss in-line and a `lang="zh-Hans"` span, so the meaning survives on any device.
+
+## Verification performed
+
+- `python3 scripts/build_site.py` → 11 pages, 40 tiers, 22 methods, 22 sources, 16 flags, 3 machine-readable exports.
+- `python3 scripts/verify_site.py` → **2,539 checks, 0 failures.** It does not import the builder: it re-derives PRC and US tax from bracket tables transcribed as the publications print them, checks every rendered figure, the JSON and the CSV, verifies that every external link resolves to an official `.gov`/`.gov.cn` domain, that every local link and fragment resolves, that every table has a caption, that every method and every flag carries at least one source, and that prose counts match the data.
+- Real Chromium (playwright-core + @sparticuz/chromium), 11 pages × 2 viewports → **143 checks, 0 failures**: HTTP 200, zero console/page errors, no horizontal document overflow, stylesheet applied, 10 nav links, 40-row table, working search, working calculator arithmetic ($3,795.00 for $250,000 at 1.5% + $45), working cross-page amount jump to `costs.html#tier-400000`. Desktop and 390px screenshots inspected visually.
+- Earlier sessions' suites re-run on this tree and all still green: `scripts/build.py` + `scripts/validate.py` (9 pages, 67 findings, 24 sources), `node scripts/test_ui.js`, `node tools/build.mjs` + `node tools/verify.mjs` (477 checks), `portal/generate_portal.py` + `verify_85f37d08.py` (109 rows, 0 broken links). `git diff` clean for `docs/`, `site/`, `portal/`, `research/`.
+
+## Irregularities published, not silently fixed
+
+A03 (§988 gain called capital), A04 (§6677 trust penalty attributed to foreign gifts), A05 (commercial bank/fintech pages used as sources in `docs/`), A07 (absolute claim that the USD 50,000 quota is unavailable to US passport holders, against Decree 532 Art. 52(2)), A14 (PBOC English translation repeats the "current account" heading on the capital-account chapter). Unverified or unknown items F01–F16 are published with source links on `flagged.html`. None of these blocks publication; all are reviewable on the live site.
+
+## Publication result
+
+Recorded below once the pull request is merged and the deployment is confirmed.
