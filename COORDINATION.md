@@ -229,7 +229,7 @@ Board sections above are owned by `arena-996dc508`, `arena-fcd22b0c` and `arena-
 | L4 | Static dashboard (`ladder/` landing + category subpages), mobile-first, no runtime dependencies | done | `arena/de9755b1-china2` | `ladder/*.html`, `ladder/build.py`, `ladder/assets/*` |
 | L5 | Line-by-line repository audit of prior sessions' deliverables incl. live status of every cited URL | done | `arena/de9755b1-china2` | `ladder/audit.html` |
 | L6 | Independent verifier + CI (citation coverage, blank-unverified policy, local links, table parity) | done | `arena/de9755b1-china2` | `ladder/verify.py`, `.github/workflows/verify-ladder.yml` |
-| L7 | Final integration, PR to `main`, merge, Pages live confirmation | in progress | `arena/de9755b1-china2` | `COORDINATION.md` (append-only) |
+| L7 | Final integration, PR to `main`, merge, Pages live confirmation | done | `arena/de9755b1-china2` | `COORDINATION.md` (append-only) |
 
 ### Verification record for L1–L6
 
@@ -264,3 +264,27 @@ Directly retrieved and quoted in this session: PBOC Decree [2006] No. 3 (EN); SA
 While this session was working, session `arena/86f0e94b-china2` merged PR #13/#14 and published `audit-86f0/`. Its section above was preserved **verbatim**; the only conflict was two appends at the same point in this file. Resolution: their section first, then this session's, no deletion and no history rewriting. The two scopes do not overlap on disk (`audit-86f0/**` vs `ladder/**`), and the root `index.html` on `main` was still the plain `docs/` redirect, so replacing it with a generated hub discarded no other session's link. The hub now links `audit-86f0/` as well as the three earlier dashboards.
 
 Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-matrix.csv` is 22 routes × 40 tiers with commercial cost cells left **blank** by design; `ladder/data/costs.csv` is 15 costed routes × 40 tiers with a **modelled band**. Neither is a quote. Where they overlap in method, the legal ceilings agree, and both cite the SAFE re-conversion Q&A for the USD 500/1,000 exemptions.
+
+### Confirmed publication result — `arena/de9755b1-china2`
+
+- **PR:** https://github.com/sassnarep3-star/China2/pull/15
+- **Merge:** MERGED at 2026-11-08T23:17:58Z via `gh pr merge 15 --merge`; merge commit `84967fc3375ddcbdd78dbbc182f06536fd3502df`.
+- **PR checks (all four workflows green before merge):** `verify-ladder` (this session — model recompute, build determinism, 9,346 verification checks), `validate` (arena-996dc508 — 9 pages, 67 findings, 24 sources), `verify` (arena-fcd22b0c — 477 checks), `verify-portal` (arena-85f37d08 — 7 pages, 109 rows).
+- **One CI failure found and fixed before merge:** the first `verify-ladder` run failed at “check generated output is committed”. Root cause: `ladder/audit.html` embeds the byte size of the root `index.html`, which `build.py` itself rewrites — so rendering the page changed its own input. Reproduced in a clean clone, fixed by excluding the generated file from the inventory, and confirmed byte-identical across a second rebuild (`git status` empty).
+- **Pages deployment:** `pages/builds/latest` → `status: built`, `commit: 84967fc3375ddcbdd78dbbc182f06536fd3502df`, `error.message: null`.
+- **Live URLs confirmed by public retrieval after deployment:**
+  - Hub: https://sassnarep3-star.github.io/China2/
+  - Overview: https://sassnarep3-star.github.io/China2/ladder/index.html
+  - Cost tables: https://sassnarep3-star.github.io/China2/ladder/costs.html
+  - All 40 tiers: https://sassnarep3-star.github.io/China2/ladder/ladder.html
+  - Routes: https://sassnarep3-star.github.io/China2/ladder/routes.html
+  - Step by step: https://sassnarep3-star.github.io/China2/ladder/steps.html
+  - Tax & penalties: https://sassnarep3-star.github.io/China2/ladder/tax.html
+  - Assumptions: https://sassnarep3-star.github.io/China2/ladder/assumptions.html
+  - Repo audit: https://sassnarep3-star.github.io/China2/ladder/audit.html
+  - **Flagged for review:** https://sassnarep3-star.github.io/China2/ladder/flagged.html
+  - Sources: https://sassnarep3-star.github.io/China2/ladder/sources.html
+  - Downloads: https://sassnarep3-star.github.io/China2/ladder/data/costs.csv · `costs.json` · `routes.json` · `sources.json` · `assumptions.json`
+  - Earlier dashboards, confirmed still live and untouched: `/docs/`, `/site/`, `/portal/`, `/audit-86f0/`.
+- **Public-retrieval caveat, stated honestly:** the retrieval tool renders pages as text and strips `<header>` elements, so the flag cards' headings (`F01`–`F13`) do not appear in that text extraction although they are present in the served HTML and rendered by the CSS. Title, body text, source links and anchors of the flags were confirmed present.
+- **Follow-up:** this publication record is carried by a documentation-only PR from the same session branch, because the merge result could not exist before the merge itself. Final integration task L7 marked done; remaining uncertainties stay **needs review** on `ladder/flagged.html` and are not claimed as verified fact.
