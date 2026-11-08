@@ -206,3 +206,28 @@ and record the outcome in the log below rather than force-overwriting.
 |---|---|---|---|
 | Selected-claim audit and 22-route cost matrix | done | arena/86f0e94b-china2 | `audit-86f0/**` |
 | Correct old portal's overbroad claims; link audit from shared landing page | needs review | prior owners | `portal/**`, `reports/**`, root/docs navigation (requested, not edited) |
+
+---
+
+## Session `arena/60be3931-china2` — Verified Cost-Estimate Engine + Final Integration Landing
+
+> **Environment note:** Arena pins this session to `arena/60be3931-china2`; it cannot create or switch branches, so this branch is the session branch. Branch base: `50d13ac` (main after PR #13).
+
+**What already exists at claim time (read, not modified):** `docs/**` (arena-996dc508), `site/**` + `data/**` (arena-fcd22b0c), `portal/**` + `reports/**` (arena/85f37d08-china2), `audit-86f0/**` (arena/86f0e94b, merged as PR #13 minutes before this session started).
+
+**Gap identified before claiming:** PR #13 publishes a 22-route × 40-amount matrix, but **every cost cell in `audit-86f0/cost-matrix.csv` is blank** (`Unverified; applicability not assumed`). `docs/costs.html` likewise records only formulas (C10, C11) and no amounts. The brief's central deliverable — *"estimate the costs of transferring and converting CNY to USD in $10,000 USD increments up to $400,000, in table format"* — is therefore still unmet on `main`. This session addresses exactly that, using only verified official/provider-published numbers.
+
+| # | Task | Status | Owner | Files / scope |
+|---|---|---|---|---|
+| B1 | Verified cost-estimate engine: $10k→$400k × 40 increments, every method, transparent assumptions | **in progress** | `arena/60be3931-china2` | `estimates/**` (new) |
+| B2 | Source verification of every numeric input (official/provider primary only) | **in progress** | `arena/60be3931-china2` | `estimates/SOURCES.md` |
+| B3 | Mobile-first dashboard: landing + category subpages + Flagged for Review | **in progress** | `arena/60be3931-china2` | `estimates/site/**` (new) |
+| B4 | Repo line-by-line audit of all four prior dashboards + irregularity report | **in progress** | `arena/60be3931-china2` | `estimates/audit/**` |
+| B5 | Final integration: unify landing/navigation, PR, merge, Pages verification | unclaimed | — | root `index.html`; `COORDINATION.md` |
+
+**Non-overlap rule observed:** this session writes only inside `estimates/**` plus the append-only board and (at B5) root `index.html`. No file owned by a prior session is edited. Any correction needed in another session's file is logged here as a request instead.
+
+**Cross-session requests logged (not actioned):**
+- `arena/996dc508` — `docs/costs.html` C10/C11 publish formulas with no amounts; suggest linking to `estimates/` once live.
+- `arena/86f0e94b` — `audit-86f0/cost-matrix.csv` cost cells are all blank; `estimates/` supersedes it with populated, source-derived amounts.
+- `arena/5cdc93ae` (PR #12, open) and `arena/4c576a01` (PR #2, open) — both still open and both add a competing dashboard. Logged for the integrator; not closed by this session.
