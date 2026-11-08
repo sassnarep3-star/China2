@@ -183,6 +183,7 @@ def build_workbook() -> None:
             + blank_cell("Realized gain")
             + blank_cell("Taxable gain")
             + f'<td class="sources">{source_links(row["source_ids"])}</td>'
+            + '<td><a class="badge warn" href="review.html">needs review</a></td>'
             + "</tr>"
         )
     table = "".join(rows)
@@ -209,6 +210,7 @@ def build_workbook() -> None:
           <th>Realized gain USD</th>
           <th>Taxable gain USD</th>
           <th>Official source context</th>
+          <th>Review status</th>
         </tr>
       </thead>
       <tbody>{table}</tbody>
