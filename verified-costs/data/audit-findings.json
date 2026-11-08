@@ -1,0 +1,373 @@
+[
+  {
+    "id": "VC-A01",
+    "file": "reports/EXECUTIVE_SUMMARY_85f37d08.md",
+    "needle": "China Has ZERO Standalone",
+    "verdict": "Overbroad",
+    "severity": "high",
+    "issue": "A categorical zero-tax headline is not established for every source of funds or U.S. FX gain.",
+    "correction": "Say no universal conversion-principal tax was identified; analyze underlying income, personal FX gain, fees and reporting separately.",
+    "source_ids": [
+      "VC-S14",
+      "VC-S18",
+      "VC-S37",
+      "VC-S38"
+    ]
+  },
+  {
+    "id": "VC-A02",
+    "file": "reports/EXECUTIVE_SUMMARY_85f37d08.md",
+    "needle": "the additional PRC tax to convert and wire 100% of that after-tax income is ZERO",
+    "verdict": "Overbroad",
+    "severity": "high",
+    "issue": "Already-taxed salary may support documentary remittance, but this does not prove every after-tax balance or U.S. tax result is zero.",
+    "correction": "Limit to documented lawful current income accepted by the bank; leave personalized tax blank.",
+    "source_ids": [
+      "VC-S02",
+      "VC-S46",
+      "VC-S14",
+      "VC-S17"
+    ]
+  },
+  {
+    "id": "VC-A03",
+    "file": "reports/CNY_TO_USD_RESEARCH_LEDGER.json",
+    "needle": "Form 1116 dollar-for-dollar credit",
+    "verdict": "Needs limitation",
+    "severity": "high",
+    "issue": "FTC is not an unlimited dollar-for-dollar refund; category and U.S.-tax limitation apply.",
+    "correction": "Use min(creditable foreign tax, applicable limitation) and require income/filing facts.",
+    "source_ids": [
+      "VC-S16",
+      "VC-S17"
+    ]
+  },
+  {
+    "id": "VC-A04",
+    "file": "reports/CNY_TO_USD_RESEARCH_LEDGER.json",
+    "needle": "Dollar-for-dollar credit for PRC income taxes",
+    "verdict": "Needs limitation",
+    "severity": "high",
+    "issue": "Same FTC overstatement in TC-06; treaty-rate and creditability conditions are not a complete calculation.",
+    "correction": "Link the IRS figuring page and leave the credit amount blank.",
+    "source_ids": [
+      "VC-S17"
+    ]
+  },
+  {
+    "id": "VC-A05",
+    "file": "portal/index.html",
+    "needle": "generally credits PRC income taxes dollar-for-dollar against US federal tax",
+    "verdict": "Needs limitation",
+    "severity": "high",
+    "issue": "Landing-page wording omits the FTC limitation and saving-clause/residence analysis.",
+    "correction": "Qualify with Form 1116 limitation, category, excluded-income and treaty rules.",
+    "source_ids": [
+      "VC-S17",
+      "VC-S27"
+    ]
+  },
+  {
+    "id": "VC-A06",
+    "file": "portal/conversion-penalties.html",
+    "needle": "0% (No standalone PRC FX conversion or wire tax exists",
+    "verdict": "Overbroad",
+    "severity": "high",
+    "issue": "A zero cell can be read as a verified personal tax amount; the cited FAQ is documentary guidance, not a zero-tax assessment.",
+    "correction": "Replace with blank personalized amount and a scoped explanation.",
+    "source_ids": [
+      "VC-S02",
+      "VC-S14",
+      "VC-S37"
+    ]
+  },
+  {
+    "id": "VC-A07",
+    "file": "data/us-rules.json",
+    "needle": "No separate conversion tax exists.",
+    "verdict": "Needs scope",
+    "severity": "medium",
+    "issue": "U.S. functional-currency rule does not eliminate tax on underlying income or qualifying FX gain.",
+    "correction": "State that principal transfer is not automatically new income, but §988/Pub.525 and worldwide-income rules still require analysis.",
+    "source_ids": [
+      "VC-S14",
+      "VC-S15",
+      "VC-S18",
+      "VC-S23"
+    ]
+  },
+  {
+    "id": "VC-A08",
+    "file": "reports/CNY_TO_USD_RESEARCH_LEDGER.json",
+    "needle": "FX gain ≤ $200 per personal transaction is tax-free",
+    "verdict": "Imprecise wording",
+    "severity": "medium",
+    "issue": "Statute uses nonrecognition for qualifying personal transactions; Pub.525 says gain above $200 is capital gain. It is not a principal allowance.",
+    "correction": "Use the exact Pub.525 wording and statutory conditions; flag investment/business currency separately.",
+    "source_ids": [
+      "VC-S14",
+      "VC-S15"
+    ]
+  },
+  {
+    "id": "VC-A09",
+    "file": "data/flags.json",
+    "needle": "The $200 personal foreign-currency exclusion was not read from the live Publication 525 page body in this session",
+    "verdict": "Resolved by new retrieval",
+    "severity": "info",
+    "issue": "Earlier session left the live-body check open.",
+    "correction": "Publication 525 (2025), Miscellaneous Income → Foreign currency transactions, body chunk 39 was retrieved and transcribed.",
+    "source_ids": [
+      "VC-S14"
+    ]
+  },
+  {
+    "id": "VC-A10",
+    "file": "portal/index.html",
+    "needle": "10% US–China Treaty caps",
+    "verdict": "Needs conditions",
+    "severity": "medium",
+    "issue": "Treaty ceilings require residence, beneficial ownership and article exceptions; U.S. saving clause applies.",
+    "correction": "Do not present 10% as automatic for a U.S. citizen or as an all-in rate.",
+    "source_ids": [
+      "VC-S27"
+    ]
+  },
+  {
+    "id": "VC-A11",
+    "file": "ladder/routes.html",
+    "needle": "Treaty caps the dividend tax at 10%.",
+    "verdict": "Needs conditions",
+    "severity": "medium",
+    "issue": "Dividend route also requires distributable profits, losses/reserve/EIT and treaty eligibility.",
+    "correction": "Add Company Law Art.210 and saving-clause/beneficial-owner conditions; keep actual tax blank.",
+    "source_ids": [
+      "VC-S27",
+      "VC-S45",
+      "VC-S38"
+    ]
+  },
+  {
+    "id": "VC-A12",
+    "file": "ladder/routes.html",
+    "needle": "Anyone holding a PRC-issued bank card.",
+    "verdict": "Overbroad eligibility",
+    "severity": "medium",
+    "issue": "ATM access depends on issuer/network, limits, destination and compliance; card possession alone is not enough.",
+    "correction": "State conditional cardholder eligibility and cite SAFE plus current issuer tariff.",
+    "source_ids": [
+      "VC-S31",
+      "VC-S44"
+    ]
+  },
+  {
+    "id": "VC-A13",
+    "file": "ladder/routes.html",
+    "needle": "No application and no tax certificate.",
+    "verdict": "Needs context",
+    "severity": "medium",
+    "issue": "ATM withdrawal may not require the salary tax-filing form, but it does not discharge underlying tax and is limit-bound.",
+    "correction": "Keep as a narrow operational note, not a tax clearance or scalable repatriation route.",
+    "source_ids": [
+      "VC-S31",
+      "VC-S40",
+      "VC-S46"
+    ]
+  },
+  {
+    "id": "VC-A14",
+    "file": "ladder/data/costs.json",
+    "needle": "29 calendar years",
+    "verdict": "Model, not execution advice",
+    "severity": "medium",
+    "issue": "Multi-decade ATM staging is a mathematical consequence of a limit, not a recommended or verified executable plan.",
+    "correction": "Label as infeasible/limited; do not rank as a practical USD400,000 solution.",
+    "source_ids": [
+      "VC-S31",
+      "VC-S13"
+    ]
+  },
+  {
+    "id": "VC-A15",
+    "file": "ladder/routes.html",
+    "needle": "No quota and no application.",
+    "verdict": "Needs context",
+    "severity": "medium",
+    "issue": "Genuine card consumption is distinguished from ATM limits, but issuer controls and authenticity rules remain.",
+    "correction": "Say not the ATM cash quota; not a cash-out or savings repatriation method.",
+    "source_ids": [
+      "VC-S31",
+      "VC-S32"
+    ]
+  },
+  {
+    "id": "VC-A16",
+    "file": "ladder/assumptions.html",
+    "needle": "same as the HSBC China published tariff",
+    "verdict": "Properly labelled but not verified",
+    "severity": "medium",
+    "issue": "Applying one bank’s tariff to other banks is an assumption, even when labelled.",
+    "correction": "This verified workbook uses BOC’s own tariff and leaves other banks blank.",
+    "source_ids": [
+      "VC-S08",
+      "VC-S11"
+    ]
+  },
+  {
+    "id": "VC-A17",
+    "file": "ladder/assumptions.html",
+    "needle": "0.30%-1.50% of principal",
+    "verdict": "Properly labelled assumption",
+    "severity": "info",
+    "issue": "Spread band is explicitly modelled, not an official quote.",
+    "correction": "Exclude from official-confirmed grid; require same-time executable quote.",
+    "source_ids": [
+      "VC-S13",
+      "VC-S12"
+    ]
+  },
+  {
+    "id": "VC-A18",
+    "file": "data/china-rules.json",
+    "needle": "The requirement that an immigrant's property be transferred several times was cancelled",
+    "verdict": "Corroborated",
+    "severity": "info",
+    "issue": "Current 2014 circular supports removal of the old installment requirement.",
+    "correction": "Retain with current circular citation; do not revive 2004 staged schedule.",
+    "source_ids": [
+      "VC-S33",
+      "VC-S34"
+    ]
+  },
+  {
+    "id": "VC-A19",
+    "file": "data/china-rules.json",
+    "needle": "Chinese customs thresholds for carrying cash out of the country",
+    "verdict": "Partially resolved",
+    "severity": "medium",
+    "issue": "SAFE foreign-currency carry bands and U.S. reporting are now retrieved; RMB cash customs threshold remains separately unverified.",
+    "correction": "Use SAFE USD5,000/10,000 bands and CBP >USD10,000; leave RMB customs amount blank unless official customs text is retrieved.",
+    "source_ids": [
+      "VC-S30",
+      "VC-S29"
+    ]
+  },
+  {
+    "id": "VC-A20",
+    "file": "data/china-rules.json",
+    "needle": "The rate applicable to a Chinese company's profits before a dividend distribution was not confirmed",
+    "verdict": "Resolved by new retrieval",
+    "severity": "info",
+    "issue": "EIT law Art.4 standard 25% was retrieved.",
+    "correction": "Use 25% statutory standard with actual-base/preferences caveat; add reserve rules.",
+    "source_ids": [
+      "VC-S38",
+      "VC-S45"
+    ]
+  },
+  {
+    "id": "VC-A21",
+    "file": "data/china-rules.json",
+    "needle": "The domestic Chinese withholding rate that would apply to dividends, interest or royalties without a treaty claim was not confirmed",
+    "verdict": "Partially resolved",
+    "severity": "medium",
+    "issue": "IIT 20% and EIT rules are retrieved, but exact withholding depends on recipient/income character.",
+    "correction": "Do not use one domestic withholding number for all recipients; treaty 10% remains conditional.",
+    "source_ids": [
+      "VC-S37",
+      "VC-S38",
+      "VC-S27"
+    ]
+  },
+  {
+    "id": "VC-A22",
+    "file": "data/flags.json",
+    "needle": "Bank FX spread, wire fees and correspondent-bank charges are unverified and left blank",
+    "verdict": "Partially resolved",
+    "severity": "info",
+    "issue": "Current BOC/HSBC published issuance/cable components are now retrieved; spread and ordinary correspondent charges remain unknown.",
+    "correction": "Populate only published components; keep spread/receiver/all-in blank.",
+    "source_ids": [
+      "VC-S10",
+      "VC-S11",
+      "VC-S07",
+      "VC-S08"
+    ]
+  },
+  {
+    "id": "VC-A23",
+    "file": "data/flags.json",
+    "needle": "The specific penalties under the PRC Regulations on Foreign Exchange Administration are unverified",
+    "verdict": "Resolved by new retrieval",
+    "severity": "info",
+    "issue": "State Council Decree 532 targeted penalty articles were retrieved.",
+    "correction": "Use statutory ranges as exposure, not predicted assessments.",
+    "source_ids": [
+      "VC-S36"
+    ]
+  },
+  {
+    "id": "VC-A24",
+    "file": "data/flags.json",
+    "needle": "The mechanics and limits of the U.S. foreign tax credit were not verified in this session",
+    "verdict": "Resolved by new retrieval",
+    "severity": "info",
+    "issue": "IRS FTC figuring page was retrieved.",
+    "correction": "Use limitation formula and leave personal credit blank.",
+    "source_ids": [
+      "VC-S17"
+    ]
+  },
+  {
+    "id": "VC-A25",
+    "file": "research/findings.json",
+    "needle": "this study did not establish the applicable numeric cable amount for this account",
+    "verdict": "Partially resolved",
+    "severity": "info",
+    "issue": "Current published HSBC Premier/Advance cable CNY120 and BOC international cable CNY150 are retrieved.",
+    "correction": "Show published components by bank/tier; actual account eligibility remains unconfirmed.",
+    "source_ids": [
+      "VC-S08",
+      "VC-S11"
+    ]
+  },
+  {
+    "id": "VC-A26",
+    "file": "research/findings.json",
+    "needle": "exact current maximum was not verified",
+    "verdict": "Resolved for cited assessment period",
+    "severity": "info",
+    "issue": "eCFR 2025 adjustment table gives FBAR maxima USD16,536/165,353 for assessments on/after 2025-01-17.",
+    "correction": "Label assessment period and greater-of/willfulness caveats; do not call it an automatic bill.",
+    "source_ids": [
+      "VC-S28"
+    ]
+  },
+  {
+    "id": "VC-A27",
+    "file": "reports/CNY_TO_USD_RESEARCH_LEDGER.json",
+    "needle": "10-year refund window",
+    "verdict": "Needs review",
+    "severity": "medium",
+    "issue": "The targeted FTC pages retrieved do not by themselves establish a universal ten-year refund window for every taxpayer.",
+    "correction": "Leave refund-window claim flagged pending official IRS refund-limitation source and facts.",
+    "source_ids": [
+      "VC-S16",
+      "VC-S17"
+    ]
+  },
+  {
+    "id": "VC-A28",
+    "file": "ladder/tax.html",
+    "needle": "no separate tax identified",
+    "verdict": "Acceptable scoped wording",
+    "severity": "info",
+    "issue": "This is narrower than a categorical zero-tax promise, but still needs personal FX gain and underlying-income context.",
+    "correction": "Keep scoped; link Pub.525 and worldwide-income guidance.",
+    "source_ids": [
+      "VC-S14",
+      "VC-S18",
+      "VC-S37"
+    ]
+  }
+]

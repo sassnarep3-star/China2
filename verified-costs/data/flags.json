@@ -1,0 +1,262 @@
+[
+  {
+    "id": "VC-F01",
+    "title": "Holder classification and residence",
+    "status": "Flagged for Review",
+    "why": "U.S. citizenship alone does not decide PRC domestic/overseas individual treatment, permanent-resident-ID facilitation or treaty residence.",
+    "needed": "Bank classification, PRC ID/permanent-residence status, residence days and treaty residence analysis.",
+    "source_ids": [
+      "VC-S01",
+      "VC-S03",
+      "VC-S27",
+      "VC-S36"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F02",
+    "title": "Source of funds and PRC tax trail",
+    "status": "Flagged for Review",
+    "why": "Salary, savings, property, inheritance and company proceeds have different permissions and tax categories.",
+    "needed": "Account statements, contracts, tax records, ownership/inheritance/company documents.",
+    "source_ids": [
+      "VC-S02",
+      "VC-S06",
+      "VC-S37",
+      "VC-S42"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F03",
+    "title": "Executable FX rate and spread",
+    "status": "Flagged for Review",
+    "why": "No same-time customer CNY→USD quote was obtained; CFETS parity is not retail pricing.",
+    "needed": "Bank/provider quote showing rate, amount, fees and recipient proceeds.",
+    "source_ids": [
+      "VC-S13",
+      "VC-S12"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F04",
+    "title": "Receiving and intermediary charges",
+    "status": "Flagged for Review",
+    "why": "Ordinary correspondent/receiver deductions are path-specific; BOC full-arrival and HSBC Pay Exact are conditional services.",
+    "needed": "Chosen bank’s fee option and receiving-bank schedule.",
+    "source_ids": [
+      "VC-S11",
+      "VC-S08"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F05",
+    "title": "Wise eligibility and live quote",
+    "status": "Flagged for Review",
+    "why": "Provider rules are published, but acceptance and fee/rate for this account are not.",
+    "needed": "Wise eligibility check and executable quote.",
+    "source_ids": [
+      "VC-S12"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F06",
+    "title": "HSBC tier and channel eligibility",
+    "status": "Flagged for Review",
+    "why": "Premier/Advance/Private/Global Transfer pricing depends on customer status and destination.",
+    "needed": "HSBC relationship status, fee conditions and destination eligibility.",
+    "source_ids": [
+      "VC-S07",
+      "VC-S08",
+      "VC-S09"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F07",
+    "title": "BOC card-network ATM execution",
+    "status": "Flagged for Review",
+    "why": "Issuer fees are published by network from 2026-11-11; ATM surcharge and FX settlement remain unknown.",
+    "needed": "Card network, issuer confirmation and ATM screen quote.",
+    "source_ids": [
+      "VC-S44",
+      "VC-S31"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F08",
+    "title": "Documented salary above USD50,000",
+    "status": "Flagged for Review",
+    "why": "SAFE supports tax-evidence handling, but local bank checklist and this account’s source trail are unconfirmed.",
+    "needed": "Written bank checklist and matching payroll/tax records.",
+    "source_ids": [
+      "VC-S02",
+      "VC-S46",
+      "VC-S06"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F09",
+    "title": "Property, migration and inheritance approval",
+    "status": "Flagged for Review",
+    "why": "These are real conditional routes, not automatic permissions for a U.S. passport holder.",
+    "needed": "Current SAFE/bank checklist, ownership/status evidence and approval.",
+    "source_ids": [
+      "VC-S33",
+      "VC-S34",
+      "VC-S42",
+      "VC-S06"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F10",
+    "title": "Corporate dividend / liquidation route",
+    "status": "Flagged for Review",
+    "why": "Company profits, losses, reserve, EIT, withholding and U.S. treatment are entity-specific.",
+    "needed": "Audited accounts, resolutions, tax filings and beneficial-owner/treaty evidence.",
+    "source_ids": [
+      "VC-S45",
+      "VC-S38",
+      "VC-S27",
+      "VC-S40"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F11",
+    "title": "U.S. FX basis and personal/investment character",
+    "status": "Flagged for Review",
+    "why": "The $200 rule is for gain on qualifying personal transactions; interest-bearing/investment/business activity may differ.",
+    "needed": "Acquisition/disposal dates, USD basis, account purpose and adviser characterization.",
+    "source_ids": [
+      "VC-S14",
+      "VC-S15",
+      "VC-S23"
+    ],
+    "owner": "Qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F12",
+    "title": "FTC, FEIE and state tax",
+    "status": "Flagged for Review",
+    "why": "No taxable-income, filing-status or creditable-tax facts were supplied; state rules vary.",
+    "needed": "U.S. returns, foreign tax receipts, income categories and state residence.",
+    "source_ids": [
+      "VC-S17",
+      "VC-S22",
+      "VC-S18"
+    ],
+    "owner": "Qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F13",
+    "title": "Treaty residence and saving clause",
+    "status": "Flagged for Review",
+    "why": "10% ceilings are conditional; U.S. citizens remain subject to the saving clause except as provided.",
+    "needed": "Residence certification, beneficial ownership and article-by-article analysis.",
+    "source_ids": [
+      "VC-S27"
+    ],
+    "owner": "Qualified U.S./PRC tax adviser"
+  },
+  {
+    "id": "VC-F14",
+    "title": "FBAR / 8938 / 3520 history",
+    "status": "Flagged for Review",
+    "why": "Thresholds are published, but prior maximum values, filings and gift/inheritance facts are unknown.",
+    "needed": "Annual account maximums, asset values, filed forms and gift/bequest records.",
+    "source_ids": [
+      "VC-S19",
+      "VC-S20",
+      "VC-S21"
+    ],
+    "owner": "User / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F15",
+    "title": "Penalty exposure and streamlined eligibility",
+    "status": "Flagged for Review",
+    "why": "Maxima are not assessments; non-willful certification and residence tests are fact-specific.",
+    "needed": "Prior compliance history and professional eligibility review.",
+    "source_ids": [
+      "VC-S24",
+      "VC-S25",
+      "VC-S26",
+      "VC-S28"
+    ],
+    "owner": "Qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F16",
+    "title": "Cash carriage and customs",
+    "status": "Flagged for Review",
+    "why": "SAFE carry bands and U.S. reporting are verified; RMB cash customs amount and special approvals are not established for this case.",
+    "needed": "Current customs/SAFE confirmation, permits and FinCEN105 facts.",
+    "source_ids": [
+      "VC-S30",
+      "VC-S29"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F17",
+    "title": "SAFE / HSBC quota wording conflict",
+    "status": "Flagged for Review",
+    "why": "HSBC guide opens with broad USD50,000 wording; SAFE salary/permanent-resident answers are narrower and more specific.",
+    "needed": "Bank’s written classification and current procedure; do not silently choose one wording.",
+    "source_ids": [
+      "VC-S01",
+      "VC-S02",
+      "VC-S03",
+      "VC-S06",
+      "VC-S43"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F18",
+    "title": "Current law and tariff editions",
+    "status": "Flagged for Review",
+    "why": "2024 U.S. Code edition, historical SAFE/PBOC pages and bank tariff updates require date-aware use.",
+    "needed": "Current official text at execution and transaction-time tariff.",
+    "source_ids": [
+      "VC-S15",
+      "VC-S33",
+      "VC-S39",
+      "VC-S10",
+      "VC-S07"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  },
+  {
+    "id": "VC-F19",
+    "title": "Repository verification scope",
+    "status": "Flagged for Review",
+    "why": "Every line is inventoried/hashed, but substantive legal verification is targeted to cited claims and source excerpts; generated duplicates are not independent proof.",
+    "needed": "Owner corrections and future source-by-source re-review; see audit inventory.",
+    "source_ids": [
+      "VC-S14",
+      "VC-S17",
+      "VC-S39"
+    ],
+    "owner": "Repository owners"
+  },
+  {
+    "id": "VC-F20",
+    "title": "External link health and professional prices",
+    "status": "Flagged for Review",
+    "why": "Official URLs were retrieved during research; continuous availability and case-specific adviser/notary/travel prices are not guaranteed.",
+    "needed": "Manual review links and actual quotes when executing.",
+    "source_ids": [
+      "VC-S06",
+      "VC-S01"
+    ],
+    "owner": "User / bank / qualified U.S. tax adviser"
+  }
+]
