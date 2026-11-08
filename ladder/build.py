@@ -631,6 +631,10 @@ def repo_inventory():
         rel = p.relative_to(REPO)
         if str(rel).startswith("ladder/"):
             continue
+        # index.html at the repo root is written by this generator, so recording
+        # its own byte size would make the page depend on its own output order.
+        if str(rel) == "index.html":
+            continue
         out.append((str(rel), p.stat().st_size, exts.get(p.suffix, p.suffix.lstrip("."))))
     return out
 
@@ -710,6 +714,8 @@ edited.</p>
 </section>
 <section class="panel">
   <h2>File inventory (prior sessions, untouched)</h2>
+  <p class="note">The generated root <code>index.html</code> is excluded: it is written by this
+  generator, so listing its own size would make the page depend on its own output order.</p>
   <div class="table-wrap"><table class="grid compact">
   <thead><tr><th>Path</th><th>Bytes</th><th>Kind</th></tr></thead><tbody>{inv_rows}</tbody></table></div>
 </section>
