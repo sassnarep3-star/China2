@@ -635,6 +635,10 @@ def repo_inventory():
         # its own byte size would make the page depend on its own output order.
         if str(rel) == "index.html":
             continue
+        # The task board is append-only and changes with every session; recording
+        # its size would make this page stale as soon as another session logs.
+        if str(rel) == "COORDINATION.md":
+            continue
         out.append((str(rel), p.stat().st_size, exts.get(p.suffix, p.suffix.lstrip("."))))
     return out
 
@@ -714,8 +718,9 @@ edited.</p>
 </section>
 <section class="panel">
   <h2>File inventory (prior sessions, untouched)</h2>
-  <p class="note">The generated root <code>index.html</code> is excluded: it is written by this
-  generator, so listing its own size would make the page depend on its own output order.</p>
+  <p class="note">Two files are excluded by design: the generated root <code>index.html</code>,
+  because this generator writes it, and <code>COORDINATION.md</code>, because it is the append-only
+  task board whose size changes with every session. Listing either would make this page stale.</p>
   <div class="table-wrap"><table class="grid compact">
   <thead><tr><th>Path</th><th>Bytes</th><th>Kind</th></tr></thead><tbody>{inv_rows}</tbody></table></div>
 </section>
