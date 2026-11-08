@@ -1,0 +1,102 @@
+[
+  {
+    "id": "VC-L01",
+    "layer": "Underlying PRC income/asset tax",
+    "published_component": "Statutory categories/rates are cited.",
+    "unknown_component": "Actual taxable base, residence, deductions, tax already paid and treaty relief.",
+    "formula": "",
+    "source_ids": [
+      "VC-S37",
+      "VC-S38",
+      "VC-S39",
+      "VC-S27"
+    ]
+  },
+  {
+    "id": "VC-L02",
+    "layer": "Corporate distributable-profit constraints",
+    "published_component": "EIT 25%; reserve 10% until 50% registered capital.",
+    "unknown_component": "Company accounts, losses, preferences, dividend vs liquidation character.",
+    "formula": "",
+    "source_ids": [
+      "VC-S38",
+      "VC-S45"
+    ]
+  },
+  {
+    "id": "VC-L03",
+    "layer": "Retail FX spread / executable rate",
+    "published_component": "",
+    "unknown_component": "No same-time executable CNY→USD quote for this account. CFETS parity is only a benchmark.",
+    "formula": "",
+    "source_ids": [
+      "VC-S13",
+      "VC-S12"
+    ]
+  },
+  {
+    "id": "VC-L04",
+    "layer": "Published sending-bank issuance and cable fees",
+    "published_component": "BOC and HSBC formulas are transcribed and computed.",
+    "unknown_component": "Customer tier, channel discount, fee VAT/invoice and actual transaction-time conversion of CNY fees.",
+    "formula": "BOC: (clamp(0.001×A×r,50,260)+150)/r. HSBC Premier/Advance: (clamp(0.001×A×r,100,500)+120)/r.",
+    "source_ids": [
+      "VC-S10",
+      "VC-S11",
+      "VC-S07",
+      "VC-S08"
+    ]
+  },
+  {
+    "id": "VC-L05",
+    "layer": "Intermediary / receiving-bank charges",
+    "published_component": "BOC conditional full-arrival USD15/25; HSBC Pay Exact CNY200 base plus shortfall.",
+    "unknown_component": "Ordinary correspondent/receiver deductions and whether the conditional service applies.",
+    "formula": "",
+    "source_ids": [
+      "VC-S11",
+      "VC-S08"
+    ]
+  },
+  {
+    "id": "VC-L06",
+    "layer": "U.S. income tax and FX gain",
+    "published_component": "Personal FX gain rule and FTC limitation are cited.",
+    "unknown_component": "USD basis, acquisition/disposal dates, personal vs investment character, taxable income and creditable tax.",
+    "formula": "",
+    "source_ids": [
+      "VC-S14",
+      "VC-S15",
+      "VC-S17",
+      "VC-S18",
+      "VC-S23"
+    ]
+  },
+  {
+    "id": "VC-L07",
+    "layer": "Reporting and prior-compliance penalties",
+    "published_component": "FBAR/8938/3520 thresholds and cited maxima are published.",
+    "unknown_component": "Whether prior filings were required/made, willfulness, reasonable cause and streamlined eligibility.",
+    "formula": "",
+    "source_ids": [
+      "VC-S19",
+      "VC-S20",
+      "VC-S21",
+      "VC-S24",
+      "VC-S25",
+      "VC-S26",
+      "VC-S28"
+    ]
+  },
+  {
+    "id": "VC-L08",
+    "layer": "Documents, translation, notarization, advice and travel",
+    "published_component": "",
+    "unknown_component": "No official case-specific prices established; left blank.",
+    "formula": "",
+    "source_ids": [
+      "VC-S06",
+      "VC-S01"
+    ]
+  }
+]

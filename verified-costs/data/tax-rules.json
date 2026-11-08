@@ -1,0 +1,459 @@
+[
+  {
+    "id": "VC-T01",
+    "category": "PRC tax",
+    "item": "Comprehensive individual income",
+    "value": "3–45",
+    "unit": "% progressive",
+    "rule": "IIT law Art.3",
+    "condition": "Salary/services/authorship/royalties; taxable base and residence determine actual tax.",
+    "source_ids": [
+      "VC-S37"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T02",
+    "category": "PRC tax",
+    "item": "Interest, dividends, property transfer and listed categories",
+    "value": "20",
+    "unit": "% statutory",
+    "rule": "IIT law Art.3",
+    "condition": "Not a tax on conversion principal; treaty/exemptions may alter result.",
+    "source_ids": [
+      "VC-S37",
+      "VC-S27"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T03",
+    "category": "PRC tax",
+    "item": "Enterprise income tax standard rate",
+    "value": "25",
+    "unit": "%",
+    "rule": "EIT law Art.4",
+    "condition": "Company profits before distribution; preferences and actual base unknown.",
+    "source_ids": [
+      "VC-S38"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T04",
+    "category": "PRC tax",
+    "item": "VAT service rate under current law",
+    "value": "6",
+    "unit": "% for listed services",
+    "rule": "VAT law effective 2026-01-01",
+    "condition": "Deposit interest is listed as non-taxable; fee invoice treatment must be confirmed. Stale 17%/11% provisional rates are not current.",
+    "source_ids": [
+      "VC-S39"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T05",
+    "category": "Treaty",
+    "item": "Dividend / interest / royalty source-state ceiling",
+    "value": "10",
+    "unit": "% conditional ceiling",
+    "rule": "Treaty Arts.9–11",
+    "condition": "Residence, beneficial ownership, article exceptions and U.S. saving clause apply. Not an all-in tax rate.",
+    "source_ids": [
+      "VC-S27"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T06",
+    "category": "Treaty",
+    "item": "Independent personal services",
+    "value": "183",
+    "unit": "days / fixed-base test",
+    "rule": "Treaty Art.13",
+    "condition": "Fixed base or >183 days in calendar year can permit source-state taxation.",
+    "source_ids": [
+      "VC-S27"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T07",
+    "category": "Treaty",
+    "item": "Dependent personal services",
+    "value": "183",
+    "unit": "days plus employer conditions",
+    "rule": "Treaty Art.14",
+    "condition": "≤183 days, nonresident employer and no PE/fixed-base bearing are cumulative conditions.",
+    "source_ids": [
+      "VC-S27"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T08",
+    "category": "Treaty",
+    "item": "U.S. citizen saving clause",
+    "value": "",
+    "unit": "",
+    "rule": "Protocol paragraph 2",
+    "condition": "The U.S. may tax citizens notwithstanding the treaty, subject to stated exceptions. Citizenship alone does not prove treaty relief.",
+    "source_ids": [
+      "VC-S27"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T09",
+    "category": "Treaty",
+    "item": "Tax sparing",
+    "value": "",
+    "unit": "",
+    "rule": "Exchange of notes",
+    "condition": "No general tax-sparing credit is established for China; do not credit tax that was spared/not paid.",
+    "source_ids": [
+      "VC-S27",
+      "VC-S17"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T10",
+    "category": "U.S. tax",
+    "item": "Worldwide income",
+    "value": "",
+    "unit": "",
+    "rule": "IRS citizens abroad",
+    "condition": "U.S. citizens/residents report worldwide income whether funds stay in China or move. Leaving money stuck does not defer income tax.",
+    "source_ids": [
+      "VC-S18"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T11",
+    "category": "U.S. tax",
+    "item": "Personal foreign-currency gain threshold",
+    "value": "200",
+    "unit": "USD gain per qualifying personal transaction",
+    "rule": "Pub.525; §988(e)",
+    "condition": "Gain not more than $200 is excluded; gain above $200 is reported as capital gain under Pub.525. This is not a $200 principal allowance.",
+    "source_ids": [
+      "VC-S14",
+      "VC-S15"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T12",
+    "category": "U.S. tax",
+    "item": "General §988 character",
+    "value": "",
+    "unit": "ordinary gain/loss",
+    "rule": "§988(a), (e)",
+    "condition": "Business/investment currency transactions are not automatically personal. Personal exception has statutory conditions; 2024 edition needs current confirmation.",
+    "source_ids": [
+      "VC-S15",
+      "VC-S14"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T13",
+    "category": "U.S. tax",
+    "item": "Foreign tax credit limit",
+    "value": "",
+    "unit": "min(creditable foreign tax, applicable limitation)",
+    "rule": "IRS FTC figuring",
+    "condition": "Limitation allocates U.S. tax by foreign-source taxable income / total taxable income and category. No unlimited dollar-for-dollar refund.",
+    "source_ids": [
+      "VC-S16",
+      "VC-S17"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T14",
+    "category": "U.S. tax",
+    "item": "Foreign earned income exclusion 2025",
+    "value": "130000",
+    "unit": "USD maximum",
+    "rule": "IRS FEIE figuring",
+    "condition": "Earned income and qualification only; not savings principal, interest, dividends or property gain.",
+    "source_ids": [
+      "VC-S22"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T15",
+    "category": "U.S. tax",
+    "item": "Foreign earned income exclusion 2026",
+    "value": "132900",
+    "unit": "USD maximum",
+    "rule": "IRS FEIE figuring",
+    "condition": "Earned income and qualification only; not a repatriation allowance.",
+    "source_ids": [
+      "VC-S22"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T16",
+    "category": "U.S. reporting",
+    "item": "FBAR trigger",
+    "value": "10000",
+    "unit": "USD aggregate maximum, strictly greater than",
+    "rule": "IRS FBAR",
+    "condition": "Covered U.S. person; aggregate foreign accounts at any time in year. Not amount converted.",
+    "source_ids": [
+      "VC-S19"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T17",
+    "category": "U.S. reporting",
+    "item": "Form 8938 U.S.-resident single/MFS",
+    "value": "50000 / 75000",
+    "unit": "USD year-end / anytime, strictly greater than",
+    "rule": "IRS comparison table",
+    "condition": "Specified foreign financial assets; residence and aggregation rules apply.",
+    "source_ids": [
+      "VC-S20"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T18",
+    "category": "U.S. reporting",
+    "item": "Form 8938 U.S.-resident MFJ",
+    "value": "100000 / 150000",
+    "unit": "USD year-end / anytime, strictly greater than",
+    "rule": "IRS comparison table",
+    "condition": "Specified foreign financial assets; not a conversion tax.",
+    "source_ids": [
+      "VC-S20"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T19",
+    "category": "U.S. reporting",
+    "item": "Form 8938 abroad single/MFS",
+    "value": "200000 / 300000",
+    "unit": "USD year-end / anytime, strictly greater than",
+    "rule": "IRS comparison table",
+    "condition": "Qualifying abroad residence; not merely a foreign bank account.",
+    "source_ids": [
+      "VC-S20"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T20",
+    "category": "U.S. reporting",
+    "item": "Form 8938 abroad MFJ",
+    "value": "400000 / 600000",
+    "unit": "USD year-end / anytime, strictly greater than",
+    "rule": "IRS comparison table",
+    "condition": "Qualifying abroad residence; both FBAR and 8938 may apply.",
+    "source_ids": [
+      "VC-S20",
+      "VC-S19"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T21",
+    "category": "U.S. reporting",
+    "item": "Foreign gifts/bequests Form 3520",
+    "value": "100000",
+    "unit": "USD, strictly greater than",
+    "rule": "IRS foreign gifts",
+    "condition": "Actual foreign gift/bequest reporting; own-account transfer is not automatically a gift.",
+    "source_ids": [
+      "VC-S21"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T22",
+    "category": "U.S. compliance",
+    "item": "Streamlined Domestic Offshore penalty",
+    "value": "5",
+    "unit": "% of specified offshore asset base",
+    "rule": "IRS SDOP",
+    "condition": "Only eligible non-willful U.S.-resident participants; not a 5% repatriation tax.",
+    "source_ids": [
+      "VC-S24",
+      "VC-S25"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T23",
+    "category": "U.S. compliance",
+    "item": "Streamlined Foreign Offshore penalty",
+    "value": "0",
+    "unit": "offshore penalty under procedure",
+    "rule": "IRS SFOP",
+    "condition": "Only eligible non-willful foreign-resident participants; taxes/interest may still apply.",
+    "source_ids": [
+      "VC-S24",
+      "VC-S26"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T24",
+    "category": "Penalties",
+    "item": "FBAR non-willful adjusted maximum",
+    "value": "16536",
+    "unit": "USD per cited assessment period",
+    "rule": "31 CFR 1010.821 table",
+    "condition": "Assessments on/after 2025-01-17; maximum not automatic; facts and later adjustments matter.",
+    "source_ids": [
+      "VC-S28"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T25",
+    "category": "Penalties",
+    "item": "FBAR willful adjusted maximum",
+    "value": "165353",
+    "unit": "USD per cited assessment period",
+    "rule": "31 CFR 1010.821 table",
+    "condition": "Statutory greater-of alternative and assessment-date adjustments require separate analysis.",
+    "source_ids": [
+      "VC-S28"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T26",
+    "category": "PRC penalties",
+    "item": "FX evasion / illegal arbitrage",
+    "value": "≤30; serious 30–100",
+    "unit": "% of violation amount",
+    "rule": "State Council Arts.39,40,45",
+    "condition": "Statutory exposure, confiscation and criminal liability may also apply; not a lawful transfer price.",
+    "source_ids": [
+      "VC-S36"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T27",
+    "category": "PRC penalties",
+    "item": "Illegal foreign-currency carriage",
+    "value": "≤20",
+    "unit": "% of amount",
+    "rule": "State Council Art.42",
+    "condition": "Separate from U.S. FinCEN105 reporting.",
+    "source_ids": [
+      "VC-S36",
+      "VC-S30"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T28",
+    "category": "Cash/cards",
+    "item": "Overseas ATM annual limit",
+    "value": "100000",
+    "unit": "CNY per person per year",
+    "rule": "SAFE card Q&A",
+    "condition": "Aggregate across cards; excess can suspend current and next year.",
+    "source_ids": [
+      "VC-S31"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T29",
+    "category": "Cash/cards",
+    "item": "Overseas ATM daily limit",
+    "value": "10000",
+    "unit": "CNY per card per day",
+    "rule": "SAFE card Q&A",
+    "condition": "Genuine consumption is distinguished; borrowing cards to evade is prohibited.",
+    "source_ids": [
+      "VC-S31",
+      "VC-S32"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T30",
+    "category": "Cash/cards",
+    "item": "PRC outbound foreign-currency carry permit bands",
+    "value": "5000 / 10000",
+    "unit": "USD equivalent",
+    "rule": "SAFE cash measures",
+    "condition": "≤5000 generally no permit; >5000–10000 bank permit; >10000 special SAFE approval generally required.",
+    "source_ids": [
+      "VC-S30"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T31",
+    "category": "Cash/cards",
+    "item": "U.S. currency/monetary-instrument report",
+    "value": "10000",
+    "unit": "USD, strictly greater than",
+    "rule": "CBP / FinCEN105",
+    "condition": "Collective family/group threshold; reporting is not PRC export permission.",
+    "source_ids": [
+      "VC-S29"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T32",
+    "category": "Corporate",
+    "item": "Statutory reserve allocation",
+    "value": "10",
+    "unit": "% of after-tax profit until reserve ≥50% registered capital",
+    "rule": "Company Law Art.210",
+    "condition": "Make up prior losses first; corporate route only.",
+    "source_ids": [
+      "VC-S45"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T33",
+    "category": "Corporate",
+    "item": "Outbound payment tax record filing",
+    "value": "50000",
+    "unit": "USD, strictly greater than; exceptions",
+    "rule": "STA/SAFE Announcement 40/2013 as amended",
+    "condition": "Filing threshold, not a tax rate; specified personal FX exceptions apply.",
+    "source_ids": [
+      "VC-S40",
+      "VC-S46"
+    ],
+    "status": "Official rule; personal amount unknown"
+  },
+  {
+    "id": "VC-T34",
+    "category": "Conversion",
+    "item": "No universal zero-tax conclusion",
+    "value": "",
+    "unit": "",
+    "rule": "Pub.525; IIT/EIT; FTC",
+    "condition": "Conversion principal is not automatically new income, but underlying income, FX gain, fees and reporting must be analyzed. No personalized zero-tax amount is published.",
+    "source_ids": [
+      "VC-S14",
+      "VC-S18",
+      "VC-S37",
+      "VC-S38",
+      "VC-S17"
+    ],
+    "status": "Official rule; personal amount unknown"
+  }
+]
