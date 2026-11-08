@@ -851,6 +851,9 @@ def write_root_hub():
          "Built from a separate evidence ledger with its own verification harness."),
         ("portal/index.html", "Research portal", "Statutory verification and line-by-line repo audit",
          "A third independent pass, with a .gov/.gov.cn source register and audit of the repository."),
+        ("audit-86f0/index.html", "Independent audit", "Claim corrections and a blank-cost 22 × 40 matrix",
+         "A fourth session's audit. Its matrix deliberately leaves cost cells blank; this ladder fills them "
+         "with published fees plus a labelled spread band. Read them together."),
     ]
     site_cards = "".join(
         f'<a class="site" href="{u}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
