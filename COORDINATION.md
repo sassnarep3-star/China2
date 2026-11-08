@@ -186,6 +186,35 @@ and record the outcome in the log below rather than force-overwriting.
 
 ---
 
+## Session `arena/86f0e94b-china2` — follow-up audit and integration
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Independent audit of existing published deliverables and official evidence; document substantive discrepancies | done | arena/86f0e94b-china2 | `audit-86f0/**` |
+| Final integration, verification and publication of audit | done | arena/86f0e94b-china2 | `COORDINATION.md` (append-only); integration links only if prior scopes are completed |
+
+- 2026-11-08 UTC: Read existing task board. Previous recorded tasks are done or needs review; no active claims found in the checked-in board. Fixed Arena branch replaces the requested session-named branch. Audit does not assume previous verification claims are conclusive. Claims committed before substantive work.
+- 2026-11-08 UTC: Correction to claim log: the preserved historical board contains old `in progress` rows (lines 74–83), but later completion/publication records supersede most of them; PR #2 and PR #12 remain open. PR #12 head is `arena/5cdc93ae-china2` and overlaps historical research/docs, so this session will not alter its files. Commented on PR #12 about overbroad tax/quota claims. Request to owners of `portal/**`, `reports/**`: correct unsupported categorical tax/eligibility claims and add prominent notice linking to our independent audit after publication; do not rely on domain/citation-count tests as factual verification. Request to owners of root/`docs/**`: add a link to `audit-86f0/` after integration. Scope remains disjoint.
+
+### Audit findings and evidence — `arena/86f0e94b-china2`
+- 2026-11-08: Independently read SAFE Tianjin 2026-07-13 employment-income FAQ, 2026-09-17 reconversion FAQ, 2024-06-21 quota FAQ, and the 2024-04-30 modified implementing rules: https://www.safe.gov.cn/tianjin/2026/0713/3088.html ; https://www.safe.gov.cn/tianjin/2026/0917/3134.html ; https://www.safe.gov.cn/tianjin/2024/0621/2529.html ; https://www.safe.gov.cn/tianjin/2024/0430/2464.html . The old portal's M03 generalizes a narrow unused-RMB reconversion; TC-12 overlooks permanent-resident-ID purchase facilitation. These remain **needs review** in the earlier owned files and are published on `audit-86f0/review.html`.
+- Read IRS FTC and FBAR guidance, statutory 2024 26 USC §988 text, Wise sending **from** CNY guidance, HSBC China tariff items 2.2.4.1–2.2.4.2, and SAFE overseas ATM rules: https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit ; https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar ; https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm ; https://wise.com/help/articles/2955298/guide-to-cny-transfers ; https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf ; https://www.safe.gov.cn/en/2017/1230/1397.html . The 2024 code edition is dated; current applicability remains for expert confirmation. Unavailable private facts and provider quotes are blank, not zero. HSBC publishes CNY120 Premier cable charge but it does not establish this account's actual fees.
+- Audit is targeted and is **not** an independent line-by-line verification of the full repository. Structural validators do not verify source meaning or live external link health. The independent site adds a downloadable 22 × 40 matrix; source-context links are not represented as proof of the blank cost cells. It groups methods into steps and links to the earlier 22-entry catalog. No actual funds moved or tax returns filed.
+- Local checks: `python3 audit-86f0/verify.py` passed (880 cost rows, blank costs, 4 pages, row source links and local paths/anchors); existing `scripts/build.py`, `scripts/validate.py`, `scripts/test_ui.js`, `tools/verify.mjs`, `portal/generate_portal.py`, `verify_85f37d08.py` passed. The older portal verifier checks structure, not substantive accuracy.
+
+| Follow-up outcome | Status | Owner | Files |
+|---|---|---|---|
+| Selected-claim audit and 22-route cost matrix | done | arena/86f0e94b-china2 | `audit-86f0/**` |
+| Correct old portal's overbroad claims; link audit from shared landing page | needs review | prior owners | `portal/**`, `reports/**`, root/docs navigation (requested, not edited) |
+
+### Publication result — `arena/86f0e94b-china2`
+- PR https://github.com/sassnarep3-star/China2/pull/13 merged 2026-11-08 23:11:40 UTC, merge commit `50d13ac3810af18839a5c9a5fabe8e261252670b`. All three existing PR checks passed before merge.
+- Native GitHub Pages build and deployment succeeded at the merge commit: https://github.com/sassnarep3-star/China2/actions/runs/42533980051 ; Pages API reported `built`, null error. Main validation workflows succeeded. GitHub's managed workflow emitted non-failing Node-runtime/runner migration notices.
+- Public retrieval confirmed the landing page, cost matrix and flagged page at https://sassnarep3-star.github.io/China2/audit-86f0/ . Initial index fetch was cached as 404 before deployment; cache-busted public retrieval succeeded afterward. This publication record is carried in a follow-up PR, because the original merge result did not exist before PR #13 merged.
+- Final integration task is done for this independent audit; outstanding correction requests and unknown costs remain **needs review**, not verified facts. This is not an assertion that all historical repository claims were checked or that user-specific costs can be estimated.
+
+---
+
 ## Session `arena-524bd78a` — U.S. currency-disposition tax workbook
 
 Claimed 2026-11-08 UTC on the required fixed branch `arena/524bd78a-china2` (Arena prohibits creating or switching to the requested `session-<id>/<task>` branch). Read the complete checked-in board, all currently published remote-session claims, and open PRs #2/#12 before claiming. Multiple sessions are actively building the general route catalogue, forty-increment cost matrices, dashboards and audits. This session does **not** take over those tasks or edit their scopes. The distinct claimed deliverable is a source-verified **U.S. personal foreign-currency disposition / tax-basis workbook**, including the missing acquisition-basis and exchange-rate inputs, a forty-row illustrative computation contract, and correction requests for overbroad conversion-tax claims. It will provide its own category pages and supply reviewed findings to the eventual shared integration.
