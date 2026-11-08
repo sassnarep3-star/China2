@@ -147,9 +147,28 @@ def route_table(rows, show_time=True, caption=""):
     return "".join(out)
 
 
+def rank(route: dict) -> int:
+    """Order the table the way a reader needs it, not the way arithmetic falls.
+
+    0 documented remittance channels · 1 small-cash conversion · 2 spending
+    channels · 3 eligibility unverified · 4 does not move the money at all.
+    """
+    if route["fee"] == "none":
+        return 4
+    if route["status"] == "conditional":
+        return 3
+    if route["fee"] in ("wire", "global", "cashcarry"):
+        return 0
+    if route["fee"] == "cash":
+        return 1
+    return 2
+
+
 def tier_rows(tier):
     rows = [r for r in ROWS if r["tier"] == tier]
-    rows.sort(key=lambda r: (r["total_hi"] if r["total_hi"] is not None else 9e9))
+    by_id = {r["id"]: r for r in ROUTES}
+    rows.sort(key=lambda r: (rank(by_id[r["route"]]),
+                             r["total_hi"] if r["total_hi"] is not None else 9e9))
     return rows
 
 
@@ -322,8 +341,10 @@ def page_costs():
 </details>""")
     body = f"""
 <h1>Cost tables by amount</h1>
-<p class="lede">Same question at six amounts. Within each table the routes are ordered by the top of their
-cost range, so the cheapest lawful route is first. Every row links to the authority behind its ceiling.</p>
+<p class="lede">Same question at six amounts. Rows are grouped the way a decision is made: documented
+remittance channels first, cheapest of those at the top; then small-cash channels; then spending channels;
+then the route whose eligibility is unverified; and last the option that does not move the money at all.
+Every row links to the authority behind its ceiling.</p>
 <div class="callout">
   <p><strong>How to read a number.</strong> “All-in cost” = published bank fees (only where a tariff was
   verified) + a <em>modelled</em> FX spread band. It excludes PRC tax on the source income, which is shown
