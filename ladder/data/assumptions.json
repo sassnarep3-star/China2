@@ -1,0 +1,65 @@
+[
+  {
+    "id": "A1",
+    "topic": "CNY/USD used to express CNY fee caps",
+    "value": "7.10 CNY per USD (band 6.80-7.40)",
+    "status": "model assumption",
+    "why": "Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 / 40 caps are affected; at 400,000 USD the whole cap swing is under 15 USD. No rate forecast is used anywhere."
+  },
+  {
+    "id": "A2",
+    "topic": "FX spread on a bank wire",
+    "value": "0.30%-1.50% of principal",
+    "status": "model assumption",
+    "why": "No published executable CNY/USD customer quote was obtained for any account, so a band is modelled instead of a number. This is the single largest cost component and must be replaced by the bank's own executable quote before acting."
+  },
+  {
+    "id": "A3",
+    "topic": "FX spread on cash / counter conversion",
+    "value": "0.80%-3.00%",
+    "status": "model assumption",
+    "why": "Banknote spreads are wider than telegraphic spreads; no published cash quote was obtained."
+  },
+  {
+    "id": "A4",
+    "topic": "FX spread on card / ATM settlement",
+    "value": "0.00%-3.00%",
+    "status": "model assumption",
+    "why": "Card scheme settlement rates and issuer foreign-transaction fees vary; none was verified for this account."
+  },
+  {
+    "id": "A5",
+    "topic": "FX spread offshore (CNH) before USD",
+    "value": "0.20%-1.00%",
+    "status": "model assumption",
+    "why": "Offshore spreads are narrower in normal conditions; eligibility for an individual to move RMB offshore was not verified (see F05)."
+  },
+  {
+    "id": "A6",
+    "topic": "Fixed fees at banks other than HSBC China",
+    "value": "same as the HSBC China published tariff",
+    "status": "model assumption",
+    "why": "Only one itemised personal tariff (S06) was verified. Other banks publish different tariffs; substitute your own bank's schedule."
+  },
+  {
+    "id": "A7",
+    "topic": "Number of wires per tier",
+    "value": "one wire per tranche",
+    "status": "model assumption",
+    "why": "No per-transfer ceiling for a non-domestic individual remittance was verified, so the model does not invent one. If your bank splits a large remittance, multiply the fixed fee."
+  },
+  {
+    "id": "A8",
+    "topic": "US side cost of compliance",
+    "value": "not modelled (blank)",
+    "status": "unverified - left blank",
+    "why": "Preparer fees for FBAR / Form 8938 / Form 1116 vary by provider and were not verified. Filing itself has no fee. The exposure is the penalty for not filing."
+  },
+  {
+    "id": "A9",
+    "topic": "PRC tax actually payable on the balance",
+    "value": "not modelled (blank)",
+    "status": "unverified - left blank",
+    "why": "Tax depends on the character of the underlying income and on what was already withheld. The ladder shows statutory rates and marks the resulting cell as exposure, not a bill."
+  }
+]

@@ -1,0 +1,32 @@
+name: Verify cost ladder (arena/de9755b1 scope)
+
+on:
+  pull_request:
+  push:
+    branches: ["main", "arena/de9755b1-china2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-ladder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Recompute the cost model
+        run: python3 ladder/model.py
+      - name: Regenerate the static pages and the root hub
+        run: python3 ladder/build.py
+      - name: Check generated output is committed
+        run: git diff --exit-code -- ladder index.html
+      - name: Verify citations, ladder integrity and local links
+        run: python3 ladder/verify.py
+      - name: Check browser script syntax
+        run: node --check ladder/assets/app.js
