@@ -1,0 +1,881 @@
+route_id,route_name,target_usd,fx_spread_usd,transfer_fees_usd,tax_and_penalties_usd,total_cost_usd,status,source_context_url
+R01,Documented salary → bank USD wire,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R01,Documented salary → bank USD wire,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2026/0713/3088.html
+R02,Other lawful current-account income → bank,10000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,20000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,30000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,40000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,50000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,60000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,70000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,80000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,90000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,100000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,110000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,120000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,130000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,140000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,150000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,160000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,170000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,180000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,190000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,200000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,210000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,220000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,230000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,240000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,250000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,260000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,270000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,280000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,290000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,300000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,310000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,320000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,330000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,340000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,350000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,360000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,370000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,380000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,390000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R02,Other lawful current-account income → bank,400000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R03,"Pension, severance or compensation → bank",10000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",20000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",30000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",40000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",50000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",60000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",70000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",80000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",90000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",100000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",110000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",120000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",130000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",140000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",150000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",160000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",170000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",180000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",190000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",200000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",210000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",220000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",230000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",240000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",250000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",260000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",270000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",280000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",290000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",300000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",310000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",320000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",330000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",340000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",350000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",360000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",370000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",380000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",390000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R03,"Pension, severance or compensation → bank",400000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R04,Wise: bank-app-funded CNY → own USD account,10000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,20000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,30000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,40000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,50000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,60000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,70000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,80000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,90000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,100000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,110000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,120000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,130000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,140000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,150000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,160000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,170000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,180000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,190000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,200000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,210000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,220000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,230000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,240000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,250000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,260000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,270000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,280000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,290000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,300000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,310000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,320000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,330000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,340000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,350000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,360000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,370000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,380000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,390000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R04,Wise: bank-app-funded CNY → own USD account,400000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,10000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,20000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,30000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,40000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,50000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,60000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,70000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,80000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,90000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,100000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,110000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,120000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,130000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,140000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,150000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,160000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,170000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,180000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,190000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,200000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,210000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,220000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,230000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,240000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,250000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,260000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,270000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,280000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,290000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,300000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,310000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,320000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,330000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,340000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,350000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,360000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,370000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,380000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,390000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R05,Wise: Alipay-funded CNY → own account,400000,,,,,Unverified; applicability not assumed,https://wise.com/help/articles/2955298/guide-to-cny-transfers
+R06,HSBC Global Transfer after lawful FX purchase,10000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,20000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,30000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,40000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,50000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,60000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,70000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,80000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,90000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,100000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,110000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,120000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,130000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,140000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,150000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,160000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,170000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,180000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,190000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,200000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,210000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,220000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,230000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,240000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,250000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,260000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,270000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,280000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,290000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,300000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,310000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,320000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,330000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,340000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,350000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,360000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,370000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,380000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,390000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R06,HSBC Global Transfer after lawful FX purchase,400000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/en-cn/transfer-payments/
+R07,Remit an existing foreign-currency balance,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R07,Remit an existing foreign-currency balance,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R08,Return unused imported foreign exchange,10000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,20000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,30000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,40000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,50000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,60000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,70000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,80000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,90000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,100000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,110000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,120000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,130000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,140000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,150000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,160000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,170000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,180000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,190000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,200000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,210000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,220000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,230000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,240000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,250000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,260000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,270000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,280000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,290000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,300000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,310000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,320000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,330000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,340000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,350000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,360000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,370000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,380000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,390000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R08,Return unused imported foreign exchange,400000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R09,Reconvert leftover RMB from prior travel exchange,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R09,Reconvert leftover RMB from prior travel exchange,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R10,Foreign-owner property-sale net proceeds,10000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,20000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,30000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,40000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,50000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,60000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,70000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,80000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,90000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,100000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,110000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,120000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,130000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,140000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,150000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,160000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,170000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,180000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,190000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,200000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,210000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,220000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,230000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,240000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,250000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,260000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,270000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,280000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,290000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,300000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,310000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,320000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,330000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,340000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,350000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,360000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,370000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,380000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,390000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R10,Foreign-owner property-sale net proceeds,400000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,10000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,20000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,30000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,40000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,50000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,60000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,70000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,80000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,90000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,100000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,110000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,120000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,130000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,140000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,150000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,160000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,170000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,180000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,190000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,200000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,210000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,220000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,230000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,240000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,250000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,260000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,270000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,280000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,290000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,300000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,310000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,320000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,330000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,340000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,350000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,360000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,370000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,380000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,390000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R11,Refund from unsuccessful property purchase,400000,,,,,Unverified; applicability not assumed,https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/foreign-exchange/personal-foreign-exchange-business-handling-guide-en.pdf
+R12,Inherited mainland property → approved transfer,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R12,Inherited mainland property → approved transfer,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R13,Pre-immigration property → approved transfer,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R14,Authorized representative at bank,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R15,Overseas ATM withdrawals,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R15,Overseas ATM withdrawals,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R16,Genuine overseas card spending,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/en/2017/1230/1391.html
+R17,Lawfully purchased USD cash carried abroad,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R17,Lawfully purchased USD cash carried abroad,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+R18,Domestic-individual current-account quota,10000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,20000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,30000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,40000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,50000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,60000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,70000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,80000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,90000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,100000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,110000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,120000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,130000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,140000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,150000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,160000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,170000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,180000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,190000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,200000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,210000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,220000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,230000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,240000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,250000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,260000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,270000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,280000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,290000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,300000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,310000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,320000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,330000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,340000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,350000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,360000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,370000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,380000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,390000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R18,Domestic-individual current-account quota,400000,,,,,Unverified; applicability not assumed,https://www.safe.gov.cn/tianjin/2024/0430/2464.html
+R19,Hong Kong / offshore RMB then USD,10000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,20000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,30000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,40000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,50000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,60000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,70000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,80000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,90000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,100000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,110000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,120000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,130000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,140000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,150000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,160000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,170000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,180000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,190000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,200000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,210000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,220000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,230000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,240000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,250000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,260000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,270000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,280000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,290000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,300000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,310000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,320000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,330000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,340000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,350000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,360000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,370000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,380000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,390000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R19,Hong Kong / offshore RMB then USD,400000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",10000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",20000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",30000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",40000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",50000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",60000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",70000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",80000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",90000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",100000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",110000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",120000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",130000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",140000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",150000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",160000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",170000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",180000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",190000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",200000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",210000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",220000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",230000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",240000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",250000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",260000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",270000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",280000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",290000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",300000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",310000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",320000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",330000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",340000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",350000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",360000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",370000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",380000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",390000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R20,"Corporate dividend, equity exit or genuine loan repayment",400000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R21,Crypto / stablecoin bridge,10000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,20000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,30000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,40000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,50000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,60000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,70000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,80000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,90000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,100000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,110000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,120000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,130000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,140000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,150000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,160000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,170000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,180000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,190000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,200000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,210000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,220000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,230000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,240000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,250000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,260000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,270000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,280000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,290000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,300000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,310000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,320000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,330000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,340000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,350000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,360000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,370000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,380000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,390000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R21,Crypto / stablecoin bridge,400000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",10000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",20000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",30000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",40000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",50000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",60000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",70000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",80000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",90000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",100000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",110000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",120000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",130000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",140000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",150000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",160000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",170000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",180000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",190000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",200000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",210000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",220000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",230000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",240000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",250000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",260000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",270000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",280000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",290000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",300000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",310000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",320000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",330000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",340000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",350000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",360000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",370000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",380000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",390000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
+R22,"Friends’ quotas, underground swaps or fake invoices",400000,,,,,Unverified; applicability not assumed,https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html
