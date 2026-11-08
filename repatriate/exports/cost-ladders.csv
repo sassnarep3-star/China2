@@ -1,0 +1,681 @@
+method,amount_usd,amount_cny_ref,published_fee_usd,published_fee_cny,fine_standard_max_usd,fine_serious_min_usd,fine_serious_max_usd,constraint,constraint_detail,sources
+M01,10000,71290.0,30.86,220,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,20000,142580.0,36.83,262.58,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,30000,213870.0,46.83,333.87,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,40000,285160.0,56.83,405.16,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,50000,356450.0,66.83,476.45,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,60000,427740.0,76.83,547.74,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,70000,499030.0,86.83,619.03,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,80000,570320.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,90000,641610.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,100000,712900.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,110000,784190.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,120000,855480.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,130000,926770.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,140000,998060.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,150000,1069350.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,160000,1140640.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,170000,1211930.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,180000,1283220.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,190000,1354510.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,200000,1425800.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,210000,1497090.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,220000,1568380.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,230000,1639670.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,240000,1710960.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,250000,1782250.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,260000,1853540.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,270000,1924830.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,280000,1996120.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,290000,2067410.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,300000,2138700.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,310000,2209990.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,320000,2281280.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,330000,2352570.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,340000,2423860.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,350000,2495150.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,360000,2566440.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,370000,2637730.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,380000,2709020.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,390000,2780310.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M01,400000,2851600.0,86.97,620,,,,1 wire,Single wire assumed; bank splitting practice unknown,S29;S23;S03
+M02,10000,71290.0,30.86,220.0,,,,1 calendar year,"1 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,20000,142580.0,36.83,262.58,,,,1 calendar year,"1 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,30000,213870.0,46.83,333.87,,,,1 calendar year,"1 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,40000,285160.0,56.83,405.16,,,,1 calendar year,"1 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,50000,356450.0,66.83,476.45,,,,1 calendar year,"1 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,60000,427740.0,97.69,696.45,,,,2 calendar years,"2 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,70000,499030.0,103.67,739.03,,,,2 calendar years,"2 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,80000,570320.0,113.67,810.32,,,,2 calendar years,"2 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,90000,641610.0,123.67,881.61,,,,2 calendar years,"2 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,100000,712900.0,133.67,952.9,,,,2 calendar years,"2 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,110000,784190.0,164.53,1172.9,,,,3 calendar years,"3 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,120000,855480.0,170.5,1215.48,,,,3 calendar years,"3 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,130000,926770.0,180.5,1286.77,,,,3 calendar years,"3 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,140000,998060.0,190.5,1358.06,,,,3 calendar years,"3 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,150000,1069350.0,200.5,1429.35,,,,3 calendar years,"3 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,160000,1140640.0,231.36,1649.35,,,,4 calendar years,"4 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,170000,1211930.0,237.33,1691.93,,,,4 calendar years,"4 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,180000,1283220.0,247.33,1763.22,,,,4 calendar years,"4 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,190000,1354510.0,257.33,1834.51,,,,4 calendar years,"4 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,200000,1425800.0,267.33,1905.8,,,,4 calendar years,"4 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,210000,1497090.0,298.19,2125.8,,,,5 calendar years,"5 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,220000,1568380.0,304.16,2168.38,,,,5 calendar years,"5 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,230000,1639670.0,314.16,2239.67,,,,5 calendar years,"5 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,240000,1710960.0,324.16,2310.96,,,,5 calendar years,"5 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,250000,1782250.0,334.16,2382.25,,,,5 calendar years,"5 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,260000,1853540.0,365.02,2602.25,,,,6 calendar years,"6 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,270000,1924830.0,371.0,2644.83,,,,6 calendar years,"6 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,280000,1996120.0,381.0,2716.12,,,,6 calendar years,"6 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,290000,2067410.0,391.0,2787.41,,,,6 calendar years,"6 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,300000,2138700.0,401.0,2858.7,,,,6 calendar years,"6 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,310000,2209990.0,431.86,3078.7,,,,7 calendar years,"7 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,320000,2281280.0,437.83,3121.28,,,,7 calendar years,"7 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,330000,2352570.0,447.83,3192.57,,,,7 calendar years,"7 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,340000,2423860.0,457.83,3263.86,,,,7 calendar years,"7 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,350000,2495150.0,467.83,3335.15,,,,7 calendar years,"7 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,360000,2566440.0,498.69,3555.15,,,,8 calendar years,"8 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,370000,2637730.0,504.66,3597.73,,,,8 calendar years,"8 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,380000,2709020.0,514.66,3669.02,,,,8 calendar years,"8 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,390000,2780310.0,524.66,3740.31,,,,8 calendar years,"8 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M02,400000,2851600.0,534.66,3811.6,,,,8 calendar years,"8 wire(s) of ≤$50,000 (own quota only)",S01;S29;S23
+M03,10000,71290.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,20000,142580.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,30000,213870.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,40000,285160.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,50000,356450.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,60000,427740.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,70000,499030.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,80000,570320.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,90000,641610.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,100000,712900.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,110000,784190.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,120000,855480.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,130000,926770.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,140000,998060.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,150000,1069350.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,160000,1140640.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,170000,1211930.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,180000,1283220.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,190000,1354510.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,200000,1425800.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,210000,1497090.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,220000,1568380.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,230000,1639670.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,240000,1710960.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,250000,1782250.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,260000,1853540.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,270000,1924830.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,280000,1996120.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,290000,2067410.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,300000,2138700.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,310000,2209990.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,320000,2281280.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,330000,2352570.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,340000,2423860.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,350000,2495150.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,360000,2566440.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,370000,2637730.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,380000,2709020.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,390000,2780310.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M03,400000,2851600.0,0.0,0.0,,,,Premier / Private Banking,Advance: $20/transaction; transaction count unknown → total unverified,S29;S03
+M04,10000,71290.0,,,,,,1 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,20000,142580.0,,,,,,1 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,30000,213870.0,,,,,,1 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,40000,285160.0,,,,,,1 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,50000,356450.0,,,,,,2 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,60000,427740.0,,,,,,2 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,70000,499030.0,,,,,,2 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,80000,570320.0,,,,,,2 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,90000,641610.0,,,,,,3 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,100000,712900.0,,,,,,3 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,110000,784190.0,,,,,,3 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,120000,855480.0,,,,,,3 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,130000,926770.0,,,,,,4 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,140000,998060.0,,,,,,4 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,150000,1069350.0,,,,,,4 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,160000,1140640.0,,,,,,4 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,170000,1211930.0,,,,,,5 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,180000,1283220.0,,,,,,5 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,190000,1354510.0,,,,,,5 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,200000,1425800.0,,,,,,5 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,210000,1497090.0,,,,,,5 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,220000,1568380.0,,,,,,6 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,230000,1639670.0,,,,,,6 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,240000,1710960.0,,,,,,6 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,250000,1782250.0,,,,,,6 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,260000,1853540.0,,,,,,7 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,270000,1924830.0,,,,,,7 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,280000,1996120.0,,,,,,7 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,290000,2067410.0,,,,,,7 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,300000,2138700.0,,,,,,8 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,310000,2209990.0,,,,,,8 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,320000,2281280.0,,,,,,8 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,330000,2352570.0,,,,,,8 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,340000,2423860.0,,,,,,9 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,350000,2495150.0,,,,,,9 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,360000,2566440.0,,,,,,9 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,370000,2637730.0,,,,,,9 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,380000,2709020.0,,,,,,10 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,390000,2780310.0,,,,,,10 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M04,400000,2851600.0,,,,,,10 transfer(s),"≤CNY 300,000 per bank-app transfer; overall limit = your documented after-tax salary",S30;S23
+M05,10000,71290.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,20000,142580.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,30000,213870.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,40000,285160.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,50000,356450.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,60000,427740.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,70000,499030.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,80000,570320.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,90000,641610.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,100000,712900.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,110000,784190.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,120000,855480.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,130000,926770.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,140000,998060.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,150000,1069350.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,160000,1140640.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,170000,1211930.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,180000,1283220.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,190000,1354510.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,200000,1425800.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,210000,1497090.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,220000,1568380.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,230000,1639670.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,240000,1710960.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,250000,1782250.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,260000,1853540.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,270000,1924830.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,280000,1996120.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,290000,2067410.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,300000,2138700.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,310000,2209990.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,320000,2281280.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,330000,2352570.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,340000,2423860.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,350000,2495150.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,360000,2566440.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,370000,2637730.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,380000,2709020.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,390000,2780310.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M05,400000,2851600.0,,,,,,Eligibility / quote required,No statically published fee or limit (S31). All cost cells blank + F03.,S31
+M06,10000,71290.0,,,,,,1 calendar year,"≥8 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,20000,142580.0,,,,,,2 calendar years,"≥15 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,30000,213870.0,,,,,,3 calendar years,"≥22 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,40000,285160.0,,,,,,3 calendar years,"≥29 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,50000,356450.0,,,,,,4 calendar years,"≥36 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,60000,427740.0,,,,,,5 calendar years,"≥43 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,70000,499030.0,,,,,,5 calendar years,"≥50 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,80000,570320.0,,,,,,6 calendar years,"≥58 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,90000,641610.0,,,,,,7 calendar years,"≥65 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,100000,712900.0,,,,,,8 calendar years,"≥72 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,110000,784190.0,,,,,,8 calendar years,"≥79 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,120000,855480.0,,,,,,9 calendar years,"≥86 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,130000,926770.0,,,,,,10 calendar years,"≥93 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,140000,998060.0,,,,,,10 calendar years,"≥100 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,150000,1069350.0,,,,,,11 calendar years,"≥107 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,160000,1140640.0,,,,,,12 calendar years,"≥115 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,170000,1211930.0,,,,,,13 calendar years,"≥122 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,180000,1283220.0,,,,,,13 calendar years,"≥129 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,190000,1354510.0,,,,,,14 calendar years,"≥136 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,200000,1425800.0,,,,,,15 calendar years,"≥143 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,210000,1497090.0,,,,,,15 calendar years,"≥150 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,220000,1568380.0,,,,,,16 calendar years,"≥157 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,230000,1639670.0,,,,,,17 calendar years,"≥164 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,240000,1710960.0,,,,,,18 calendar years,"≥172 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,250000,1782250.0,,,,,,18 calendar years,"≥179 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,260000,1853540.0,,,,,,19 calendar years,"≥186 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,270000,1924830.0,,,,,,20 calendar years,"≥193 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,280000,1996120.0,,,,,,20 calendar years,"≥200 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,290000,2067410.0,,,,,,21 calendar years,"≥207 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,300000,2138700.0,,,,,,22 calendar years,"≥214 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,310000,2209990.0,,,,,,23 calendar years,"≥221 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,320000,2281280.0,,,,,,23 calendar years,"≥229 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,330000,2352570.0,,,,,,24 calendar years,"≥236 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,340000,2423860.0,,,,,,25 calendar years,"≥243 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,350000,2495150.0,,,,,,25 calendar years,"≥250 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,360000,2566440.0,,,,,,26 calendar years,"≥257 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,370000,2637730.0,,,,,,27 calendar years,"≥264 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,380000,2709020.0,,,,,,28 calendar years,"≥271 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,390000,2780310.0,,,,,,28 calendar years,"≥279 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M06,400000,2851600.0,,,,,,29 calendar years,"≥286 withdrawal days (RMB 10,000/card/day); RMB 100,000/person/year across all cards",S07;S23
+M07,10000,71290.0,0.0,0.0,,,,2 trips (no permit),1 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,20000,142580.0,0.0,0.0,,,,4 trips (no permit),2 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,30000,213870.0,0.0,0.0,,,,6 trips (no permit),3 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,40000,285160.0,0.0,0.0,,,,8 trips (no permit),4 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,50000,356450.0,0.0,0.0,,,,10 trips (no permit),5 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,60000,427740.0,0.0,0.0,,,,12 trips (no permit),6 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,70000,499030.0,0.0,0.0,,,,14 trips (no permit),7 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,80000,570320.0,0.0,0.0,,,,16 trips (no permit),8 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,90000,641610.0,0.0,0.0,,,,18 trips (no permit),9 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,100000,712900.0,0.0,0.0,,,,20 trips (no permit),10 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,110000,784190.0,0.0,0.0,,,,22 trips (no permit),11 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,120000,855480.0,0.0,0.0,,,,24 trips (no permit),12 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,130000,926770.0,0.0,0.0,,,,26 trips (no permit),13 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,140000,998060.0,0.0,0.0,,,,28 trips (no permit),14 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,150000,1069350.0,0.0,0.0,,,,30 trips (no permit),15 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,160000,1140640.0,0.0,0.0,,,,32 trips (no permit),16 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,170000,1211930.0,0.0,0.0,,,,34 trips (no permit),17 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,180000,1283220.0,0.0,0.0,,,,36 trips (no permit),18 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,190000,1354510.0,0.0,0.0,,,,38 trips (no permit),19 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,200000,1425800.0,0.0,0.0,,,,40 trips (no permit),20 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,210000,1497090.0,0.0,0.0,,,,42 trips (no permit),21 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,220000,1568380.0,0.0,0.0,,,,44 trips (no permit),22 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,230000,1639670.0,0.0,0.0,,,,46 trips (no permit),23 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,240000,1710960.0,0.0,0.0,,,,48 trips (no permit),24 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,250000,1782250.0,0.0,0.0,,,,50 trips (no permit),25 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,260000,1853540.0,0.0,0.0,,,,52 trips (no permit),26 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,270000,1924830.0,0.0,0.0,,,,54 trips (no permit),27 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,280000,1996120.0,0.0,0.0,,,,56 trips (no permit),28 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,290000,2067410.0,0.0,0.0,,,,58 trips (no permit),29 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,300000,2138700.0,0.0,0.0,,,,60 trips (no permit),30 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,310000,2209990.0,0.0,0.0,,,,62 trips (no permit),31 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,320000,2281280.0,0.0,0.0,,,,64 trips (no permit),32 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,330000,2352570.0,0.0,0.0,,,,66 trips (no permit),33 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,340000,2423860.0,0.0,0.0,,,,68 trips (no permit),34 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,350000,2495150.0,0.0,0.0,,,,70 trips (no permit),35 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,360000,2566440.0,0.0,0.0,,,,72 trips (no permit),36 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,370000,2637730.0,0.0,0.0,,,,74 trips (no permit),37 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,380000,2709020.0,0.0,0.0,,,,76 trips (no permit),38 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,390000,2780310.0,0.0,0.0,,,,78 trips (no permit),39 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M07,400000,2851600.0,0.0,0.0,,,,80 trips (no permit),40 trips with bank permits ($5k–$10k/trip); published bank withdrawal fee $0; travel cost unverified; repeat-traveler limits apply,S10;S29;S28
+M08,10000,71290.0,,,,,,4 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,20000,142580.0,,,,,,8 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,30000,213870.0,,,,,,11 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,40000,285160.0,,,,,,15 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,50000,356450.0,,,,,,18 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,60000,427740.0,,,,,,22 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,70000,499030.0,,,,,,25 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,80000,570320.0,,,,,,29 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,90000,641610.0,,,,,,33 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,100000,712900.0,,,,,,36 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,110000,784190.0,,,,,,40 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,120000,855480.0,,,,,,43 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,130000,926770.0,,,,,,47 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,140000,998060.0,,,,,,50 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,150000,1069350.0,,,,,,54 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,160000,1140640.0,,,,,,58 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,170000,1211930.0,,,,,,61 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,180000,1283220.0,,,,,,65 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,190000,1354510.0,,,,,,68 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,200000,1425800.0,,,,,,72 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,210000,1497090.0,,,,,,75 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,220000,1568380.0,,,,,,79 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,230000,1639670.0,,,,,,82 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,240000,1710960.0,,,,,,86 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,250000,1782250.0,,,,,,90 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,260000,1853540.0,,,,,,93 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,270000,1924830.0,,,,,,97 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,280000,1996120.0,,,,,,100 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,290000,2067410.0,,,,,,104 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,300000,2138700.0,,,,,,107 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,310000,2209990.0,,,,,,111 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,320000,2281280.0,,,,,,115 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,330000,2352570.0,,,,,,118 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,340000,2423860.0,,,,,,122 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,350000,2495150.0,,,,,,125 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,360000,2566440.0,,,,,,129 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,370000,2637730.0,,,,,,132 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,380000,2709020.0,,,,,,136 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,390000,2780310.0,,,,,,140 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M08,400000,2851600.0,,,,,,143 trips,"≤CNY 20,000/trip; offshore conversion cost unverified",S11;S12;S23
+M09,10000,71290.0,,,,,,20 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,20000,142580.0,,,,,,40 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,30000,213870.0,,,,,,60 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,40000,285160.0,,,,,,80 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,50000,356450.0,,,,,,100 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,60000,427740.0,,,,,,120 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,70000,499030.0,,,,,,140 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,80000,570320.0,,,,,,160 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,90000,641610.0,,,,,,180 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,100000,712900.0,,,,,,200 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,110000,784190.0,,,,,,220 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,120000,855480.0,,,,,,240 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,130000,926770.0,,,,,,260 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,140000,998060.0,,,,,,280 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,150000,1069350.0,,,,,,300 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,160000,1140640.0,,,,,,320 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,170000,1211930.0,,,,,,340 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,180000,1283220.0,,,,,,360 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,190000,1354510.0,,,,,,380 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,200000,1425800.0,,,,,,400 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,210000,1497090.0,,,,,,420 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,220000,1568380.0,,,,,,440 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,230000,1639670.0,,,,,,460 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,240000,1710960.0,,,,,,480 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,250000,1782250.0,,,,,,500 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,260000,1853540.0,,,,,,520 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,270000,1924830.0,,,,,,540 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,280000,1996120.0,,,,,,560 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,290000,2067410.0,,,,,,580 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,300000,2138700.0,,,,,,600 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,310000,2209990.0,,,,,,620 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,320000,2281280.0,,,,,,640 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,330000,2352570.0,,,,,,660 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,340000,2423860.0,,,,,,680 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,350000,2495150.0,,,,,,700 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,360000,2566440.0,,,,,,720 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,370000,2637730.0,,,,,,740 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,380000,2709020.0,,,,,,760 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,390000,2780310.0,,,,,,780 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M09,400000,2851600.0,,,,,,800 bank days (ID-only),Only previously exchanged unused RMB; memo route limited to original exchange amount (24-month validity),S04;S01
+M10,10000,71290.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,20000,142580.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,30000,213870.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,40000,285160.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,50000,356450.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,60000,427740.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,70000,499030.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,80000,570320.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,90000,641610.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,100000,712900.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,110000,784190.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,120000,855480.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,130000,926770.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,140000,998060.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,150000,1069350.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,160000,1140640.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,170000,1211930.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,180000,1283220.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,190000,1354510.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,200000,1425800.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,210000,1497090.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,220000,1568380.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,230000,1639670.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,240000,1710960.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,250000,1782250.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,260000,1853540.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,270000,1924830.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,280000,1996120.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,290000,2067410.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,300000,2138700.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,310000,2209990.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,320000,2281280.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,330000,2352570.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,340000,2423860.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,350000,2495150.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,360000,2566440.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,370000,2637730.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,380000,2709020.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,390000,2780310.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M10,400000,2851600.0,,,,,,Eligibility / quote required,"Approved amount and process fees not published (S08/S09). Cost cells blank + F03. Bank wire leg would follow the bank's tariff (e.g., S29) once approved.",S09;S08;S01
+M11,10000,71290.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,20000,142580.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,30000,213870.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,40000,285160.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,50000,356450.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,60000,427740.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,70000,499030.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,80000,570320.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,90000,641610.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,100000,712900.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,110000,784190.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,120000,855480.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,130000,926770.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,140000,998060.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,150000,1069350.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,160000,1140640.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,170000,1211930.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,180000,1283220.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,190000,1354510.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,200000,1425800.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,210000,1497090.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,220000,1568380.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,230000,1639670.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,240000,1710960.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,250000,1782250.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,260000,1853540.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,270000,1924830.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,280000,1996120.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,290000,2067410.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,300000,2138700.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,310000,2209990.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,320000,2281280.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,330000,2352570.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,340000,2423860.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,350000,2495150.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,360000,2566440.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,370000,2637730.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,380000,2709020.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,390000,2780310.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M11,400000,2851600.0,,,,,,Eligibility / quote required,No published fee schedule (S08/S09). Blank + F03.,S09;S08;S01
+M12,10000,71290.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,20000,142580.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,30000,213870.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,40000,285160.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,50000,356450.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,60000,427740.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,70000,499030.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,80000,570320.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,90000,641610.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,100000,712900.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,110000,784190.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,120000,855480.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,130000,926770.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,140000,998060.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,150000,1069350.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,160000,1140640.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,170000,1211930.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,180000,1283220.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,190000,1354510.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,200000,1425800.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,210000,1497090.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,220000,1568380.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,230000,1639670.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,240000,1710960.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,250000,1782250.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,260000,1853540.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,270000,1924830.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,280000,1996120.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,290000,2067410.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,300000,2138700.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,310000,2209990.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,320000,2281280.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,330000,2352570.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,340000,2423860.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,350000,2495150.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,360000,2566440.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,370000,2637730.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,380000,2709020.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,390000,2780310.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M12,400000,2851600.0,,,,,,Eligibility / quote required,"Gain, transaction taxes and bank fees depend on private facts (F01/F03). Blank. Statutory IIT rate on gain: 20% (S15).",S06;S15;S01
+M13,10000,71290.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,20000,142580.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,30000,213870.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,40000,285160.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,50000,356450.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,60000,427740.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,70000,499030.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,80000,570320.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,90000,641610.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,100000,712900.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,110000,784190.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,120000,855480.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,130000,926770.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,140000,998060.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,150000,1069350.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,160000,1140640.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,170000,1211930.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,180000,1283220.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,190000,1354510.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,200000,1425800.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,210000,1497090.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,220000,1568380.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,230000,1639670.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,240000,1710960.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,250000,1782250.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,260000,1853540.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,270000,1924830.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,280000,1996120.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,290000,2067410.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,300000,2138700.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,310000,2209990.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,320000,2281280.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,330000,2352570.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,340000,2423860.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,350000,2495150.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,360000,2566440.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,370000,2637730.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,380000,2709020.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,390000,2780310.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M13,400000,2851600.0,,,,,,Eligibility / quote required,Not applicable to a plain savings balance; no published personal fee schedule. Blank + F03.,S01;S02;S06
+M14,10000,71290.0,,,3000.0,3000.0,10000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,20000,142580.0,,,6000.0,6000.0,20000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,30000,213870.0,,,9000.0,9000.0,30000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,40000,285160.0,,,12000.0,12000.0,40000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,50000,356450.0,,,15000.0,15000.0,50000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,60000,427740.0,,,18000.0,18000.0,60000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,70000,499030.0,,,21000.0,21000.0,70000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,80000,570320.0,,,24000.0,24000.0,80000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,90000,641610.0,,,27000.0,27000.0,90000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,100000,712900.0,,,30000.0,30000.0,100000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,110000,784190.0,,,33000.0,33000.0,110000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,120000,855480.0,,,36000.0,36000.0,120000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,130000,926770.0,,,39000.0,39000.0,130000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,140000,998060.0,,,42000.0,42000.0,140000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,150000,1069350.0,,,45000.0,45000.0,150000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,160000,1140640.0,,,48000.0,48000.0,160000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,170000,1211930.0,,,51000.0,51000.0,170000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,180000,1283220.0,,,54000.0,54000.0,180000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,190000,1354510.0,,,57000.0,57000.0,190000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,200000,1425800.0,,,60000.0,60000.0,200000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,210000,1497090.0,,,63000.0,63000.0,210000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,220000,1568380.0,,,66000.0,66000.0,220000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,230000,1639670.0,,,69000.0,69000.0,230000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,240000,1710960.0,,,72000.0,72000.0,240000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,250000,1782250.0,,,75000.0,75000.0,250000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,260000,1853540.0,,,78000.0,78000.0,260000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,270000,1924830.0,,,81000.0,81000.0,270000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,280000,1996120.0,,,84000.0,84000.0,280000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,290000,2067410.0,,,87000.0,87000.0,290000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,300000,2138700.0,,,90000.0,90000.0,300000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,310000,2209990.0,,,93000.0,93000.0,310000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,320000,2281280.0,,,96000.0,96000.0,320000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,330000,2352570.0,,,99000.0,99000.0,330000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,340000,2423860.0,,,102000.0,102000.0,340000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,350000,2495150.0,,,105000.0,105000.0,350000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,360000,2566440.0,,,108000.0,108000.0,360000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,370000,2637730.0,,,111000.0,111000.0,370000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,380000,2709020.0,,,114000.0,114000.0,380000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,390000,2780310.0,,,117000.0,117000.0,390000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M14,400000,2851600.0,,,120000.0,120000.0,400000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,10000,71290.0,,,3000.0,3000.0,10000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,20000,142580.0,,,6000.0,6000.0,20000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,30000,213870.0,,,9000.0,9000.0,30000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,40000,285160.0,,,12000.0,12000.0,40000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,50000,356450.0,,,15000.0,15000.0,50000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,60000,427740.0,,,18000.0,18000.0,60000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,70000,499030.0,,,21000.0,21000.0,70000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,80000,570320.0,,,24000.0,24000.0,80000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,90000,641610.0,,,27000.0,27000.0,90000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,100000,712900.0,,,30000.0,30000.0,100000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,110000,784190.0,,,33000.0,33000.0,110000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,120000,855480.0,,,36000.0,36000.0,120000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,130000,926770.0,,,39000.0,39000.0,130000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,140000,998060.0,,,42000.0,42000.0,140000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,150000,1069350.0,,,45000.0,45000.0,150000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,160000,1140640.0,,,48000.0,48000.0,160000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,170000,1211930.0,,,51000.0,51000.0,170000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,180000,1283220.0,,,54000.0,54000.0,180000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,190000,1354510.0,,,57000.0,57000.0,190000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,200000,1425800.0,,,60000.0,60000.0,200000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,210000,1497090.0,,,63000.0,63000.0,210000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,220000,1568380.0,,,66000.0,66000.0,220000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,230000,1639670.0,,,69000.0,69000.0,230000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,240000,1710960.0,,,72000.0,72000.0,240000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,250000,1782250.0,,,75000.0,75000.0,250000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,260000,1853540.0,,,78000.0,78000.0,260000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,270000,1924830.0,,,81000.0,81000.0,270000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,280000,1996120.0,,,84000.0,84000.0,280000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,290000,2067410.0,,,87000.0,87000.0,290000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,300000,2138700.0,,,90000.0,90000.0,300000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,310000,2209990.0,,,93000.0,93000.0,310000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,320000,2281280.0,,,96000.0,96000.0,320000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,330000,2352570.0,,,99000.0,99000.0,330000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,340000,2423860.0,,,102000.0,102000.0,340000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,350000,2495150.0,,,105000.0,105000.0,350000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,360000,2566440.0,,,108000.0,108000.0,360000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,370000,2637730.0,,,111000.0,111000.0,370000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,380000,2709020.0,,,114000.0,114000.0,380000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,390000,2780310.0,,,117000.0,117000.0,390000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M15,400000,2851600.0,,,120000.0,120000.0,400000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M16,10000,71290.0,,,3000.0,3000.0,10000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,20000,142580.0,,,6000.0,6000.0,20000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,30000,213870.0,,,9000.0,9000.0,30000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,40000,285160.0,,,12000.0,12000.0,40000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,50000,356450.0,,,15000.0,15000.0,50000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,60000,427740.0,,,18000.0,18000.0,60000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,70000,499030.0,,,21000.0,21000.0,70000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,80000,570320.0,,,24000.0,24000.0,80000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,90000,641610.0,,,27000.0,27000.0,90000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,100000,712900.0,,,30000.0,30000.0,100000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,110000,784190.0,,,33000.0,33000.0,110000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,120000,855480.0,,,36000.0,36000.0,120000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,130000,926770.0,,,39000.0,39000.0,130000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,140000,998060.0,,,42000.0,42000.0,140000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,150000,1069350.0,,,45000.0,45000.0,150000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,160000,1140640.0,,,48000.0,48000.0,160000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,170000,1211930.0,,,51000.0,51000.0,170000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,180000,1283220.0,,,54000.0,54000.0,180000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,190000,1354510.0,,,57000.0,57000.0,190000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,200000,1425800.0,,,60000.0,60000.0,200000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,210000,1497090.0,,,63000.0,63000.0,210000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,220000,1568380.0,,,66000.0,66000.0,220000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,230000,1639670.0,,,69000.0,69000.0,230000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,240000,1710960.0,,,72000.0,72000.0,240000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,250000,1782250.0,,,75000.0,75000.0,250000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,260000,1853540.0,,,78000.0,78000.0,260000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,270000,1924830.0,,,81000.0,81000.0,270000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,280000,1996120.0,,,84000.0,84000.0,280000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,290000,2067410.0,,,87000.0,87000.0,290000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,300000,2138700.0,,,90000.0,90000.0,300000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,310000,2209990.0,,,93000.0,93000.0,310000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,320000,2281280.0,,,96000.0,96000.0,320000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,330000,2352570.0,,,99000.0,99000.0,330000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,340000,2423860.0,,,102000.0,102000.0,340000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,350000,2495150.0,,,105000.0,105000.0,350000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,360000,2566440.0,,,108000.0,108000.0,360000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,370000,2637730.0,,,111000.0,111000.0,370000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,380000,2709020.0,,,114000.0,114000.0,380000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,390000,2780310.0,,,117000.0,117000.0,390000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M16,400000,2851600.0,,,120000.0,120000.0,400000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13
+M17,10000,71290.0,,,3000.0,3000.0,10000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,20000,142580.0,,,6000.0,6000.0,20000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,30000,213870.0,,,9000.0,9000.0,30000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,40000,285160.0,,,12000.0,12000.0,40000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,50000,356450.0,,,15000.0,15000.0,50000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,60000,427740.0,,,18000.0,18000.0,60000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,70000,499030.0,,,21000.0,21000.0,70000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,80000,570320.0,,,24000.0,24000.0,80000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,90000,641610.0,,,27000.0,27000.0,90000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,100000,712900.0,,,30000.0,30000.0,100000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,110000,784190.0,,,33000.0,33000.0,110000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,120000,855480.0,,,36000.0,36000.0,120000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,130000,926770.0,,,39000.0,39000.0,130000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,140000,998060.0,,,42000.0,42000.0,140000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,150000,1069350.0,,,45000.0,45000.0,150000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,160000,1140640.0,,,48000.0,48000.0,160000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,170000,1211930.0,,,51000.0,51000.0,170000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,180000,1283220.0,,,54000.0,54000.0,180000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,190000,1354510.0,,,57000.0,57000.0,190000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,200000,1425800.0,,,60000.0,60000.0,200000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,210000,1497090.0,,,63000.0,63000.0,210000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,220000,1568380.0,,,66000.0,66000.0,220000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,230000,1639670.0,,,69000.0,69000.0,230000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,240000,1710960.0,,,72000.0,72000.0,240000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,250000,1782250.0,,,75000.0,75000.0,250000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,260000,1853540.0,,,78000.0,78000.0,260000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,270000,1924830.0,,,81000.0,81000.0,270000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,280000,1996120.0,,,84000.0,84000.0,280000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,290000,2067410.0,,,87000.0,87000.0,290000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,300000,2138700.0,,,90000.0,90000.0,300000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,310000,2209990.0,,,93000.0,93000.0,310000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,320000,2281280.0,,,96000.0,96000.0,320000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,330000,2352570.0,,,99000.0,99000.0,330000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,340000,2423860.0,,,102000.0,102000.0,340000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,350000,2495150.0,,,105000.0,105000.0,350000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,360000,2566440.0,,,108000.0,108000.0,360000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,370000,2637730.0,,,111000.0,111000.0,370000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,380000,2709020.0,,,114000.0,114000.0,380000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,390000,2780310.0,,,117000.0,117000.0,390000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06
+M17,400000,2851600.0,,,120000.0,120000.0,400000.0,REJECTED — unlawful,Statutory fine exposure (not a price); confiscation/repatriation orders and criminal liability may also apply,S13;S06

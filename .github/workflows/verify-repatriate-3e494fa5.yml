@@ -1,0 +1,46 @@
+name: Verify repatriate dashboard (arena-3e494fa5-china2 scope)
+
+# CI only - no deploy step. GitHub Pages for this repository is native from the
+# main root (see COORDINATION.md); adding actions/deploy-pages here would change
+# the Pages source and break the live site. The repatriate/ directory is served
+# as static files at /China2/repatriate/ with no settings change.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-repatriate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Deterministic rebuild (byte-identical output required)
+        run: |
+          python3 repatriate/build.py
+          git diff --exit-code -- repatriate
+      - name: Independent verification (recompute, sources, blanks, links)
+        run: python3 repatriate/verify.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: JavaScript syntax check
+        run: node --check repatriate/assets/app.js
+      - name: HTML sanity (python stdlib parser on every page)
+        run: |
+          python3 - << 'EOF'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class P(HTMLParser):
+              pass
+          for f in sorted(Path('repatriate').glob('*.html')):
+              P().feed(f.read_text())
+              print('parsed', f.name)
+          EOF
