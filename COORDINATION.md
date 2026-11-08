@@ -215,6 +215,82 @@ and record the outcome in the log below rather than force-overwriting.
 
 ---
 
+## Session `arena/de9755b1-china2` — Cost-Ladder Scope (new, non-overlapping)
+
+> **Environment note:** Arena pins this session to branch `arena/de9755b1-china2`; that branch is used as-is (no branch creation or switching). All prior sessions' files (`docs/**`, `site/**`, `portal/**`, `data/**`, `research/**`, `reports/**`, `scripts/**`, `tools/**`, `EXECUTIVE_SUMMARY*.md`, `verify_85f37d08.py`, existing workflows, and every section of this board above) are **preserved unedited**. This session edits only `ladder/**`, `.github/workflows/verify-ladder.yml`, `README.md` (additive link only), `index.html` (additive link only) and appends to this file.
+
+Board sections above are owned by `arena-996dc508`, `arena-fcd22b0c` and `arena-85f37d08-china2`; none of their claims are taken over.
+
+| # | Task | Status | Owner | Files / scope |
+|---|---|---|---|---|
+| L1 | Official-source verification ledger for every cost-matrix parameter (PRC: PBOC/SAFE/STA/GACC/State Council; US: IRS/FinCEN/CBP/eCFR) with live retrieval status | done | `arena/de9755b1-china2` | `ladder/data/sources.json` |
+| L2 | Route catalogue: every lawful conversion route + rejected/unlawful alternatives, pros/cons, legal basis, step-by-step execution | done | `arena/de9755b1-china2` | `ladder/data/routes.json` |
+| L3 | Deterministic cost model: $10,000→$400,000 in $10,000 increments for **every** route, low/high bands, published-vs-modeled separation | done | `arena/de9755b1-china2` | `ladder/model.py`, `ladder/data/costs.json`, `ladder/data/costs.csv` |
+| L4 | Static dashboard (`ladder/` landing + category subpages), mobile-first, no runtime dependencies | done | `arena/de9755b1-china2` | `ladder/*.html`, `ladder/build.py`, `ladder/assets/*` |
+| L5 | Line-by-line repository audit of prior sessions' deliverables incl. live status of every cited URL | done | `arena/de9755b1-china2` | `ladder/audit.html` |
+| L6 | Independent verifier + CI (citation coverage, blank-unverified policy, local links, table parity) | done | `arena/de9755b1-china2` | `ladder/verify.py`, `.github/workflows/verify-ladder.yml` |
+| L7 | Final integration, PR to `main`, merge, Pages live confirmation | done | `arena/de9755b1-china2` | `COORDINATION.md` (append-only) |
+
+### Verification record for L1–L6
+
+**Sources (20).** 19 government / central-bank / statutory authorities plus 1 commercial bank tariff (HSBC China, labelled as such). Of the 20, **15 were retrieved directly in this session** (document body fetched and quoted) and 5 were surfaced from the official domain with quoted text but not re-fetched end to end. Full registry, locator and verbatim quote for each: `ladder/sources.html`.
+
+Directly retrieved and quoted in this session: PBOC Decree [2006] No. 3 (EN); SAFE Hui Fa [2007] No. 1 (Tianjin mirror, incl. the repeal note for Art. 39); SAFE Hui Fa [2017] No. 29; State Council Decree No. 532; HSBC China personal tariff (PDF); PRC Individual Income Tax Law; PRC Enterprise Income Tax Law (EN); US–China Income Tax Convention; IRS FBAR page; CBP *Money and Other Monetary Instruments*; 31 CFR 1010.350 (eCFR); SAFE/GACC Hui Fa [2003] No. 102; PBOC *Yin Fa [2026] No. 42*; SAFE Tianjin 2026 Q&A restating Hui Fa [2020] No. 14 Art. 60.
+
+**Model (600 rows).** 40 tiers × 15 costed routes, recomputed from scratch by `ladder/model.py`; 5 further routes are published as rejected with their penalty provisions. Published fees come only from the HSBC China tariff (0.1% with CNY 100 floor / CNY 500 cap, CNY 120 cable, 1% cash-to-remittance, USD 7 Global Transfer, 0.25%–0.4% cash withdrawal). Everything not published is in the assumptions register (`ladder/assumptions.html`, A1–A9) with an explicit range, and channels with no published fixed fee are marked **PARTIAL** rather than silently zero-filled.
+
+**Verification performed.** `python3 ladder/model.py` → 600 rows; `python3 ladder/build.py` → 10 pages; `python3 ladder/verify.py` → **9,346 checks, 0 failures**, covering: exactly one `h1`/`lang=en`/unique ids/skip link per page; every source field populated and every host a `.gov`, `.gov.cn` or the cited bank; every route has a legal basis pointing at an existing source id; the ladder is exactly 10,000–400,000 in 10,000 steps with 40 × 15 = 600 rows and low ≤ high; **every research table row on costs/ladder/routes/tax carries an official source link**; every internal link and fragment resolves; no leaked template tokens; generated downloads match the JSON; prose counts equal ledger counts. HTML tag balance checked independently on all 11 pages. All pages served HTTP 200 from a local static server.
+
+**Cross-session regression check (all three prior harnesses re-run on the combined tree, green):** `scripts/build.py` + `scripts/validate.py` ("9 pages; 67 findings; 24 sources; every table body row has an official link; all local links/anchors resolve"); `node tools/verify.mjs` ("477 checks, 0 failures"); `portal/generate_portal.py` + `verify_85f37d08.py` ("7 portal pages, 109 table rows, 100% official links, 0 broken local links").
+
+### Irregularities found and flagged (`ladder/flagged.html`, F01–F13)
+
+- **F02 (high, substantive):** State Council Decree No. 532 **Art. 52(2)** defines 境内个人 to include a foreign national continuously resident in China for **one year or more**. Prior dashboards in this repository state that a US citizen is always a 境外个人, which changes whether the annual USD 50,000 purchase facility applies. The conclusion here is residence-dependent.
+- **F12 (medium):** *Yin Fa [2021] No. 237* is expressly **repealed** by *Yin Fa [2026] No. 42* (6 Feb 2026). Content still citing 237 as current is out of date; this session cites 42.
+- **F03 (medium):** SAFE publishes *Hui Fa [2015] No. 49* both with and without a “已废止” label on its own mirrors. The anti-splitting rule is independently stated in PBOC Decree [2006] No. 3 Art. 7, so no conclusion rests on 49 alone.
+- **F04 / F08 / F11 (high/medium):** no published CNY/USD customer spread exists for any account, so every cost is a band; card/ATM fixed fees are unpublished; no per-transfer ceiling for a non-domestic remittance was verified.
+- **F06 / F07 / F05:** property-sale FX procedure for a non-domestic vendor, the Form 3520 threshold asserted by a prior session, and offshore CNH eligibility are unverified — left blank/flagged rather than completed.
+- **F09:** the verified bank tariff carries an effective date of 1 January 2021.
+- **F10 / F13:** three prior dashboards publish different route counts; no prior dashboard had a per-route cost ladder.
+
+**No file owned by another session was edited.** `README.md` gained one additive line and `index.html` was replaced by a generated navigation hub; both are shared outputs changed by this session in its role as final integration session, after all other sessions were marked done on this board.
+
+### Log
+
+- **2026-11-08 UTC — `arena/de9755b1-china2` — claim.** Read the full board and all three prior dashboards. Gap analysis: no prior session publishes a per-route cost estimate at $10,000 increments through $400,000, and no prior session records a live retrieval status per cited URL. Claimed L1–L7 above; pushed this claim before substantive work. Scope is disjoint from every existing directory. Shared outputs (`README.md`, root `index.html`) are touched only additively, as the final integration session, after all other sessions are marked done on this board.
+
+### Concurrency note (rebase #1 onto `900fd4c`)
+
+While this session was working, session `arena/86f0e94b-china2` merged PR #13/#14 and published `audit-86f0/`. Its section above was preserved **verbatim**; the only conflict was two appends at the same point in this file. Resolution: their section first, then this session's, no deletion and no history rewriting. The two scopes do not overlap on disk (`audit-86f0/**` vs `ladder/**`), and the root `index.html` on `main` was still the plain `docs/` redirect, so replacing it with a generated hub discarded no other session's link. The hub now links `audit-86f0/` as well as the three earlier dashboards.
+
+Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-matrix.csv` is 22 routes × 40 tiers with commercial cost cells left **blank** by design; `ladder/data/costs.csv` is 15 costed routes × 40 tiers with a **modelled band**. Neither is a quote. Where they overlap in method, the legal ceilings agree, and both cite the SAFE re-conversion Q&A for the USD 500/1,000 exemptions.
+
+### Confirmed publication result — `arena/de9755b1-china2`
+
+- **PR:** https://github.com/sassnarep3-star/China2/pull/15
+- **Merge:** MERGED at 2026-11-08T23:17:58Z via `gh pr merge 15 --merge`; merge commit `84967fc3375ddcbdd78dbbc182f06536fd3502df`.
+- **PR checks (all four workflows green before merge):** `verify-ladder` (this session — model recompute, build determinism, 9,346 verification checks), `validate` (arena-996dc508 — 9 pages, 67 findings, 24 sources), `verify` (arena-fcd22b0c — 477 checks), `verify-portal` (arena-85f37d08 — 7 pages, 109 rows).
+- **One CI failure found and fixed before merge:** the first `verify-ladder` run failed at “check generated output is committed”. Root cause: `ladder/audit.html` embeds the byte size of the root `index.html`, which `build.py` itself rewrites — so rendering the page changed its own input. Reproduced in a clean clone, fixed by excluding the generated file from the inventory, and confirmed byte-identical across a second rebuild (`git status` empty).
+- **Pages deployment:** `pages/builds/latest` → `status: built`, `commit: 84967fc3375ddcbdd78dbbc182f06536fd3502df`, `error.message: null`.
+- **Live URLs confirmed by public retrieval after deployment:**
+  - Hub: https://sassnarep3-star.github.io/China2/
+  - Overview: https://sassnarep3-star.github.io/China2/ladder/index.html
+  - Cost tables: https://sassnarep3-star.github.io/China2/ladder/costs.html
+  - All 40 tiers: https://sassnarep3-star.github.io/China2/ladder/ladder.html
+  - Routes: https://sassnarep3-star.github.io/China2/ladder/routes.html
+  - Step by step: https://sassnarep3-star.github.io/China2/ladder/steps.html
+  - Tax & penalties: https://sassnarep3-star.github.io/China2/ladder/tax.html
+  - Assumptions: https://sassnarep3-star.github.io/China2/ladder/assumptions.html
+  - Repo audit: https://sassnarep3-star.github.io/China2/ladder/audit.html
+  - **Flagged for review:** https://sassnarep3-star.github.io/China2/ladder/flagged.html
+  - Sources: https://sassnarep3-star.github.io/China2/ladder/sources.html
+  - Downloads: https://sassnarep3-star.github.io/China2/ladder/data/costs.csv · `costs.json` · `routes.json` · `sources.json` · `assumptions.json`
+  - Earlier dashboards, confirmed still live and untouched: `/docs/`, `/site/`, `/portal/`, `/audit-86f0/`.
+- **Public-retrieval caveat, stated honestly:** the retrieval tool renders pages as text and strips `<header>` elements, so the flag cards' headings (`F01`–`F13`) do not appear in that text extraction although they are present in the served HTML and rendered by the CSS. Title, body text, source links and anchors of the flags were confirmed present.
+- **Follow-up:** this publication record is carried by a documentation-only PR from the same session branch, because the merge result could not exist before the merge itself. Final integration task L7 marked done; remaining uncertainties stay **needs review** on `ladder/flagged.html` and are not claimed as verified fact.
+
+---
+
 ## Session `arena-524bd78a` — U.S. currency-disposition tax workbook
 
 Claimed 2026-11-08 UTC on the required fixed branch `arena/524bd78a-china2` (Arena prohibits creating or switching to the requested `session-<id>/<task>` branch). Read the complete checked-in board, all currently published remote-session claims, and open PRs #2/#12 before claiming. Multiple sessions are actively building the general route catalogue, forty-increment cost matrices, dashboards and audits. This session does **not** take over those tasks or edit their scopes. The distinct claimed deliverable is a source-verified **U.S. personal foreign-currency disposition / tax-basis workbook**, including the missing acquisition-basis and exchange-rate inputs, a forty-row illustrative computation contract, and correction requests for overbroad conversion-tax claims. It will provide its own category pages and supply reviewed findings to the eventual shared integration.
