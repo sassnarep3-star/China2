@@ -1,0 +1,33 @@
+{
+  "scenario": "U.S. personal foreign-currency disposition / tax-basis workbook",
+  "as_of_utc": "2026-11-08",
+  "target_usd_start": 10000,
+  "target_usd_end": 400000,
+  "target_usd_step": 10000,
+  "reference_rate": {
+    "value": "6.7050",
+    "unit": "CNY per USD",
+    "effective_date": "2026-09-30",
+    "kind": "Treasury official reporting rate, not an executable quote",
+    "sources": ["S12", "S13"]
+  },
+  "personal_gain_exclusion_usd": {
+    "value": "200",
+    "kind": "per qualifying personal currency disposition; gain cliff, not annual allowance",
+    "sources": ["S01", "S02"]
+  },
+  "unknown_personal_facts": [
+    "account ownership and signature authority",
+    "original source of each CNY deposit",
+    "acquisition dates and lot-level CNY amounts",
+    "USD basis / exchange rate at acquisition",
+    "disposition date and executed exchange rate",
+    "personal vs business vs investment use",
+    "functional currency",
+    "tax year and filing status",
+    "ordinary taxable income and capital-gain rate bracket",
+    "foreign taxes paid and FTC limitation/category",
+    "prior FBAR / Form 8938 / income-tax reporting",
+    "bank, provider, correspondent and receiver fees"
+  ]
+}

@@ -1,0 +1,758 @@
+{
+  "scenario": "U.S. personal foreign-currency disposition / tax-basis workbook",
+  "as_of_utc": "2026-11-08",
+  "reference_rate": {
+    "value": "6.7050",
+    "unit": "CNY per USD",
+    "effective_date": "2026-09-30",
+    "kind": "Treasury official reporting rate, not an executable quote",
+    "sources": [
+      "S12",
+      "S13"
+    ]
+  },
+  "personal_gain_exclusion_usd": {
+    "value": "200",
+    "kind": "per qualifying personal currency disposition; gain cliff, not annual allowance",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  "unknown_personal_facts": [
+    "account ownership and signature authority",
+    "original source of each CNY deposit",
+    "acquisition dates and lot-level CNY amounts",
+    "USD basis / exchange rate at acquisition",
+    "disposition date and executed exchange rate",
+    "personal vs business vs investment use",
+    "functional currency",
+    "tax year and filing status",
+    "ordinary taxable income and capital-gain rate bracket",
+    "foreign taxes paid and FTC limitation/category",
+    "prior FBAR / Form 8938 / income-tax reporting",
+    "bank, provider, correspondent and receiver fees"
+  ],
+  "rows": [
+    {
+      "row_id": "W001",
+      "target_usd": 10000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "67050.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W002",
+      "target_usd": 20000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "134100.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W003",
+      "target_usd": 30000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "201150.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W004",
+      "target_usd": 40000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "268200.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W005",
+      "target_usd": 50000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "335250.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W006",
+      "target_usd": 60000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "402300.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W007",
+      "target_usd": 70000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "469350.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W008",
+      "target_usd": 80000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "536400.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W009",
+      "target_usd": 90000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "603450.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W010",
+      "target_usd": 100000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "670500.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W011",
+      "target_usd": 110000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "737550.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W012",
+      "target_usd": 120000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "804600.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W013",
+      "target_usd": 130000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "871650.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W014",
+      "target_usd": 140000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "938700.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W015",
+      "target_usd": 150000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1005750.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W016",
+      "target_usd": 160000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1072800.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W017",
+      "target_usd": 170000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1139850.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W018",
+      "target_usd": 180000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1206900.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W019",
+      "target_usd": 190000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1273950.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W020",
+      "target_usd": 200000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1341000.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W021",
+      "target_usd": 210000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1408050.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W022",
+      "target_usd": 220000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1475100.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W023",
+      "target_usd": 230000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1542150.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W024",
+      "target_usd": 240000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1609200.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W025",
+      "target_usd": 250000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1676250.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W026",
+      "target_usd": 260000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1743300.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W027",
+      "target_usd": 270000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1810350.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W028",
+      "target_usd": 280000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1877400.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W029",
+      "target_usd": 290000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "1944450.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W030",
+      "target_usd": 300000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2011500.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W031",
+      "target_usd": 310000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2078550.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W032",
+      "target_usd": 320000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2145600.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W033",
+      "target_usd": 330000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2212650.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W034",
+      "target_usd": 340000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2279700.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W035",
+      "target_usd": 350000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2346750.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W036",
+      "target_usd": 360000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2413800.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W037",
+      "target_usd": 370000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2480850.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W038",
+      "target_usd": 380000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2547900.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W039",
+      "target_usd": 390000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2614950.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    },
+    {
+      "row_id": "W040",
+      "target_usd": 400000,
+      "total_cost_usd": "",
+      "federal_tax_usd": "",
+      "execution_fees_usd": "",
+      "cny_reference": "2682000.00",
+      "acquisition_basis_usd": "",
+      "realized_gain_usd": "",
+      "taxable_gain_usd": "",
+      "status": "unverified-costs; reference computation only",
+      "source_ids": [
+        "S02",
+        "S01",
+        "S12",
+        "S09"
+      ]
+    }
+  ]
+}

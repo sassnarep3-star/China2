@@ -1,0 +1,92 @@
+[
+  {
+    "id": "F01",
+    "kind": "missing-private-fact",
+    "title": "Acquisition basis and dates are unknown",
+    "detail": "No lot-level CNY acquisition dates, amounts or USD basis were supplied. Realized gain/loss and tax cells remain blank.",
+    "affected": "workbook.csv / workbook.html realized_gain_usd, taxable_gain_usd, federal_tax_usd",
+    "sources": ["S04", "S06", "S03"],
+    "status": "needs review"
+  },
+  {
+    "id": "F02",
+    "kind": "missing-private-fact",
+    "title": "Transaction classification is unknown",
+    "detail": "Personal, business and investment/income-producing use produce different U.S. character rules. The workbook does not assume the account is personal.",
+    "affected": "rules R02-R06; workbook classification",
+    "sources": ["S02", "S03"],
+    "status": "needs review"
+  },
+  {
+    "id": "F03",
+    "kind": "missing-private-fact",
+    "title": "Tax year, filing status and taxable income are unknown",
+    "detail": "No federal tax amount can be verified. IRS Topic 409 rate thresholds retrieved are labeled 2025; they are not applied to an unknown year.",
+    "affected": "workbook federal_tax_usd and total_cost_usd",
+    "sources": ["S05", "S06"],
+    "status": "needs review"
+  },
+  {
+    "id": "F04",
+    "kind": "missing-quote",
+    "title": "No executable FX or transfer quote",
+    "detail": "Treasury's 6.7050 CNY/USD rate is an official reporting reference, not a bank quote. Spread, sender, intermediary and receiver fees are blank.",
+    "affected": "workbook execution_fees_usd and total_cost_usd",
+    "sources": ["S12", "S13", "S09"],
+    "status": "needs review"
+  },
+  {
+    "id": "F05",
+    "kind": "reference-limit",
+    "title": "Treasury PDF excludes online amendments",
+    "detail": "The September 2026 PDF states amended rates are only online. This workbook uses the published PDF row and does not claim it is the latest amended rate.",
+    "affected": "reference_rate",
+    "sources": ["S12", "S13"],
+    "status": "needs review"
+  },
+  {
+    "id": "F06",
+    "kind": "repo-correction-request",
+    "title": "Overbroad 0% U.S. conversion-tax claim",
+    "detail": "portal/generate_portal.py line 188 displays '0% (PRC & US)' standalone conversion tax. U.S. tax can arise from currency disposition gain and underlying income; the individual amount is unverified. Requested change: replace categorical zero with a conditional statement and blank unverified amounts.",
+    "affected": "portal/generate_portal.py:188; portal/index.html",
+    "sources": ["S01", "S02", "S14"],
+    "status": "needs review"
+  },
+  {
+    "id": "F07",
+    "kind": "repo-correction-request",
+    "title": "Personal FX exclusion stated too broadly",
+    "detail": "portal/generate_portal.py line 119 says '0% income tax on principal; personal FX excluded under 26 USC §988(e) (≤$200 gain rule)'. The exclusion applies only to qualifying personal currency gain not exceeding $200; gain above $200 is not excluded by that sentence, and Pub. 525 says report as capital gain.",
+    "affected": "portal/generate_portal.py:119; portal/methods.html",
+    "sources": ["S01", "S02"],
+    "status": "needs review"
+  },
+  {
+    "id": "F08",
+    "kind": "repo-correction-request",
+    "title": "General 10-year FTC refund window is unsupported",
+    "detail": "portal/generate_portal.py lines 164 and 220 and reports/CNY_TO_USD_RESEARCH_LEDGER.json CP-10/TC-06 describe a 10-year Form 1040-X refund window for PRC FTC. Form 1116 instructions provide a 1-year carryback and 10-year carryforward subject to limitations; the IRS FTC page's 10-year refund paragraph is French CSG/CRDS-specific.",
+    "affected": "portal/generate_portal.py:164,220; reports/CNY_TO_USD_RESEARCH_LEDGER.json; reports/EXECUTIVE_SUMMARY_85f37d08.md:69",
+    "sources": ["S07", "S08"],
+    "status": "needs review"
+  },
+  {
+    "id": "F09",
+    "kind": "repo-correction-request",
+    "title": "FTC 'max(PRC tax, US tax)' simplification is unsafe",
+    "detail": "reports/EXECUTIVE_SUMMARY_85f37d08.md line 69 says combined tax equals max(PRC tax, US tax). FTC limitations, income categories, treaty-reduced rates, excluded income, state tax and other facts can prevent that result.",
+    "affected": "reports/EXECUTIVE_SUMMARY_85f37d08.md:69",
+    "sources": ["S07", "S08"],
+    "status": "needs review"
+  },
+  {
+    "id": "F10",
+    "kind": "scope-limit",
+    "title": "This is not a full route catalogue or provider price survey",
+    "detail": "Other active sessions own the general method catalogue and cost matrices. This workbook supplies the U.S. currency-basis layer and correction requests; it does not certify every route or provider.",
+    "affected": "tax-workbook scope",
+    "sources": ["S02", "S13"],
+    "status": "needs review"
+  }
+]

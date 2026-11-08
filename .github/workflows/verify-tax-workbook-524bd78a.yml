@@ -1,0 +1,27 @@
+name: Verify tax workbook (arena-524bd78a scope)
+
+on:
+  pull_request:
+  push:
+    branches: [main, arena/524bd78a-china2]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-tax-workbook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build deterministic workbook and static site
+        run: |
+          python3 tax-workbook/model.py
+          python3 tax-workbook/build.py
+      - name: Verify arithmetic, citations, blank unverified values and local links
+        run: python3 tax-workbook/verify.py
+      - name: Check generated output is committed
+        run: git diff --exit-code -- tax-workbook

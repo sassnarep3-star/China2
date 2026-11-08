@@ -1,0 +1,152 @@
+[
+  {
+    "id": "S01",
+    "title": "IRS Publication 525 (2025), Foreign currency transactions",
+    "url": "https://www.irs.gov/publications/p525#en_US_2025_publink1000229538",
+    "locator": "Other Income > Foreign currency transactions",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "If you have a gain on a personal foreign currency transaction because of changes in exchange rates, you don’t have to include that gain in your income unless it’s more than $200. If the gain is more than $200, report it as a capital gain.",
+    "limitation": "IRS publication guidance; does not establish this taxpayer's facts."
+  },
+  {
+    "id": "S02",
+    "title": "26 U.S.C. § 988 (2024 edition), Treatment of certain foreign currency transactions",
+    "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+    "locator": "§ 988(a)(1)(A), (c)(1)(C), (e)(1)-(3)",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "Covered foreign currency gain or loss is generally ordinary; disposition of nonfunctional currency is a section 988 transaction; personal transactions are excepted; personal currency gain is not recognized unless the gain on the transaction exceeds $200.",
+    "limitation": "2024 code edition; current applicability and taxpayer classification require professional confirmation."
+  },
+  {
+    "id": "S03",
+    "title": "IRS LB&I Concept Unit FCU/CU/C-18.2.1_04, Character of Exchange Gain or Loss on Currency Transactions",
+    "url": "https://www.irs.gov/pub/fatca/int_practice_units/fcu_cu_c_18_2_1_04.pdf",
+    "locator": "General Overview; Disposition of Nonfunctional Currency",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "Gain or loss from disposing of nonfunctional currency is determined by the change in exchange rates between acquisition and disposition; personal-transaction exception exists.",
+    "limitation": "IRS training material dated 2016; not legal authority."
+  },
+  {
+    "id": "S04",
+    "title": "IRS Publication 551 (12/2025), Basis of Assets",
+    "url": "https://www.irs.gov/publications/p551",
+    "locator": "Introduction; Cost Basis",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "Basis is the amount of your investment in property for tax purposes; basis of property you buy is usually its cost; keep accurate records of items affecting basis.",
+    "limitation": "General basis guidance; special acquisition rules may apply."
+  },
+  {
+    "id": "S05",
+    "title": "IRS Topic no. 409, Capital gains and losses",
+    "url": "https://www.irs.gov/taxtopics/tc409",
+    "locator": "Capital gains and losses; Short-term or long-term; Capital gains tax rates",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "Capital gain or loss is amount realized minus adjusted basis; personal-use property losses are not deductible; holding period generally more than one year for long-term; page states 2025 capital-gain rate thresholds.",
+    "limitation": "Rate thresholds on the retrieved page are labeled 2025; do not apply them to an unknown tax year without confirmation."
+  },
+  {
+    "id": "S06",
+    "title": "IRS Instructions for Schedule D (Form 1040) (2025)",
+    "url": "https://www.irs.gov/instructions/i1040sd",
+    "locator": "Basis and Recordkeeping; Short- or Long-Term Gain or Loss",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "You need to know basis to figure gain or loss; keep accurate records; short-term holding period generally one year or less, long-term generally more than one year.",
+    "limitation": "Form instructions; taxpayer-specific reporting position not determined."
+  },
+  {
+    "id": "S07",
+    "title": "IRS Instructions for Form 1116 (2025)",
+    "url": "https://www.irs.gov/instructions/i1116#en_US_2025_publink1000156780",
+    "locator": "Part III, Line 10; Line 12; categories and limitations",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "You can carry back 1 year and then forward 10 years unused foreign taxes in a separate category that exceed the limitation, subject to restrictions; taxes on excluded income are reduced; no carryovers for section 951A category income.",
+    "limitation": "Carryover rules are not a general 10-year refund window for all PRC taxes."
+  },
+  {
+    "id": "S08",
+    "title": "IRS Foreign Tax Credit",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+    "locator": "Qualifying foreign taxes; How to claim; Compliance issues",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "Credit may be available for foreign taxes imposed on you and subject to U.S. tax on the same income; generally only income, war profits and excess profits taxes qualify; no credit for taxes on excluded income; if entitled to treaty-reduced rate, only that reduced tax qualifies.",
+    "limitation": "The page's general-looking 10-year refund paragraph is under French CSG/CRDS guidance, not a general PRC FTC rule."
+  },
+  {
+    "id": "S09",
+    "title": "IRS Yearly average currency exchange rates",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+    "locator": "Translating foreign currency; Currency exchange rates; China row",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "IRS has no official exchange rate; generally accepts any posted exchange rate used consistently; generally use spot rate when receiving, paying or accruing; China yuan 2025 yearly average is 7.129.",
+    "limitation": "Yearly average is a reference, not necessarily the transaction-date spot rate."
+  },
+  {
+    "id": "S10",
+    "title": "IRS Report of Foreign Bank and Financial Accounts (FBAR)",
+    "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+    "locator": "Who must file; When to file; Keeping records",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "U.S. person must file if aggregate value of foreign financial accounts exceeded $10,000 at any time during the calendar year; due April 15 with automatic extension to October 15; records generally kept five years.",
+    "limitation": "Penalty amounts are inflation-adjusted and fact-dependent; not estimated here."
+  },
+  {
+    "id": "S11",
+    "title": "IRS Do I need to file Form 8938?",
+    "url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets",
+    "locator": "You must file Form 8938 if; thresholds",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "Thresholds depend on specified person, specified foreign financial assets, residence abroad and filing status; U.S. unmarried $50,000 last day / $75,000 any time; abroad non-joint $200,000 / $300,000; joint thresholds higher.",
+    "limitation": "Residence-abroad definition and asset aggregation require facts."
+  },
+  {
+    "id": "S12",
+    "title": "Treasury Reporting Rates of Exchange, as of September 30, 2026",
+    "url": "https://fiscaldata.treasury.gov/static-data/published-reports/exchange-rates/Rates_of_Exchange_09302026.pdf",
+    "locator": "China-Renminbi row",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "China-Renminbi 6.7050 foreign currency to $1.00, effective 9/30/2026.",
+    "limitation": "Official reporting rate, not an executable bank conversion quote; PDF excludes online amendments."
+  },
+  {
+    "id": "S13",
+    "title": "Treasury Reporting Rates of Exchange dataset",
+    "url": "https://fiscaldata.treasury.gov/datasets/treasury-reporting-rates-exchange/",
+    "locator": "Introduction; Notes & Known Limitations",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "Quarterly official reporting rates; not current rates of exchange; amendments may appear online; exceptions include foreign currencies sold for dollars.",
+    "limitation": "Do not use as a live CNY→USD transaction quote."
+  },
+  {
+    "id": "S14",
+    "title": "IRS Publication 54 (12/2025), Tax Guide for U.S. Citizens and Resident Aliens Abroad",
+    "url": "https://www.irs.gov/publications/p54",
+    "locator": "Introduction; Questions and Answers",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "U.S. citizens and resident aliens are generally subject to U.S. income tax on worldwide income regardless of where they live; foreign tax credit may be available for foreign income taxes.",
+    "limitation": "General guidance; filing requirements and elections depend on facts."
+  },
+  {
+    "id": "S15",
+    "title": "IRS Foreign currency and currency exchange rates",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+    "locator": "Functional currency; Currency exchange rates",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "Amounts on U.S. tax return must be expressed in U.S. dollars; functional currency generally U.S. dollar unless required to use foreign currency; use exchange rate prevailing when receiving, paying or accruing.",
+    "limitation": "Does not supply this account's acquisition or disposition rates."
+  }
+]

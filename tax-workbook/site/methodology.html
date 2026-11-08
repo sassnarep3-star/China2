@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology &amp; limits | China Money Tax Workbook</title>
+<meta name="description" content="Source-linked U.S. currency-basis and conversion-cost workbook for CNY to USD. Unknown values are blank, not zero.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">China Money <span>Tax Workbook</span></a>
+    <nav aria-label="Primary"><a href="index.html">Overview</a><a href="workbook.html">Cost &amp; tax workbook</a><a href="rules.html">Verified rules</a><a href="sources.html">Official sources</a><a href="review.html">Flagged for review</a><a href="methodology.html" aria-current="page">Methodology</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <p class="eyebrow">U.S. currency disposition · research update 2026-11-08</p>
+  <h1>Methodology &amp; limits</h1>
+  <p class="lede">How the workbook was built, what was verified, and what remains blank.</p>
+  
+<section class="panel">
+  <h2>Scope</h2>
+  <p>This workbook covers the U.S. personal foreign-currency disposition / tax-basis layer. It does not duplicate the general route catalogue or provider price matrices owned by other active sessions. It supplies a reproducible computation contract and correction requests for overbroad conversion-tax claims.</p>
+</section>
+<section class="panel">
+  <h2>Verification standard</h2>
+  <ul>
+    <li>Every table row links to an official U.S. government source.</li>
+    <li>Values that cannot be confirmed from an official source or supplied private fact are blank and flagged.</li>
+    <li>Arithmetic is labeled as a computed reference, not a verified transfer cost.</li>
+    <li>IRS training material and dated code editions are identified as such.</li>
+    <li>No personal account facts, bank quotes or live FX rates were inferred.</li>
+  </ul>
+</section>
+<section class="panel">
+  <h2>Reproduce</h2>
+  <pre><code>python3 tax-workbook/model.py
+python3 tax-workbook/build.py
+python3 tax-workbook/verify.py
+python3 tax-workbook/serve.py --port 8000</code></pre>
+  <p>The static site is generated into <code>tax-workbook/site/</code>. GitHub Pages serves it from the repository root at <code>/China2/tax-workbook/site/</code>.</p>
+</section>
+<section class="panel">
+  <h2>Known limits</h2>
+  <p>External links were read during research but are not continuously monitored by this workbook. The Treasury PDF rate excludes online amendments. IRS rate thresholds retrieved are labeled 2025 and are not applied to an unknown tax year. This is not a full repository audit or personalized tax advice.</p>
+  <p><a href="https://fiscaldata.treasury.gov/static-data/published-reports/exchange-rates/Rates_of_Exchange_09302026.pdf" target="_blank" rel="noopener">S12</a> · <a href="https://fiscaldata.treasury.gov/datasets/treasury-reporting-rates-exchange/" target="_blank" rel="noopener">S13</a> · <a href="https://www.irs.gov/taxtopics/tc409" target="_blank" rel="noopener">S05</a> · <a href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" target="_blank" rel="noopener">S09</a></p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>General research, not personalized legal or tax advice. No funds were moved and no return was filed. Blank cells mean unverified, not zero. Do not add private tax records to this public repository.</p>
+    <p><a href="../../docs/index.html">Main research dashboard</a> · <a href="../../audit-86f0/index.html">Independent audit</a> · <a href="https://github.com/sassnarep3-star/China2">Repository</a></p>
+  </div>
+</footer>
+</body>
+</html>
