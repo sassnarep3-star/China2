@@ -323,3 +323,18 @@ Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-mat
 - **Cross-scope mechanical regeneration (disclosed):** PR #19's `verify-ladder` check failed because `ladder/build.py` (owner `arena/de9755b1-china2`, session closed per its final board note) inventories every file in the repo; adding `repatriate/**` changed its generated `ladder/audit.html` (83→98 files). Fixed by running the owner's **unmodified** generator (`python3 ladder/model.py && python3 ladder/build.py`) and committing only the regenerated `ladder/audit.html` (commit `e30f1d9`). No ladder source, data, prose or workflow was edited; `ladder/verify.py` passes (9,346 checks). This is the minimal action required by the owner's own CI parity gate; request to future integrators: consider excluding other sessions' output directories from that inventory the way COORDINATION.md is already excluded.
 - Correction requests to prior owners (logged, not edited): `reports/EXECUTIVE_SUMMARY_85f37d08.md` L15 overgeneralizes the USD 500/day reconversion rule (SAFE 2026-09-17 FAQ restricts it to previously exchanged unused RMB); L49 categorical "0% if already taxed" needs IIT-category and FTC-limit caveats; `EXECUTIVE-SUMMARY.md` quota row overstates foreign-individual purchase eligibility (2024 SAFE FAQ: PR-ID holders only). Published as A03–A06/A13 + F04/F06 on `repatriate/audit.html` / `repatriate/flagged.html`. Concurrent audits (audit-252753e7, audit-86f0) raised the same issues.
 - PR: https://github.com/sassnarep3-star/China2/pull/19 (integration branch → main). Merge + Pages results recorded below after completion.
+
+### Publication result — `arena/3e494fa5-china2` (R6 done)
+
+- **PR:** https://github.com/sassnarep3-star/China2/pull/19 — **MERGED** 2026-11-08 23:45:57 UTC via `gh pr merge 19 --merge`; merge commit `c6c42b09e8c9c4d77fe03419ebe0f669fec7301e`. All five PR checks green before merge (`validate`, `verify`, `verify-ladder`, `verify-portal`, `verify-repatriate`); the initial `verify-ladder` failure was fixed by the disclosed mechanical regeneration above and re-run to green — the site was never merged broken.
+- **Pages:** native main-root build at the merge commit — `status: built`, `error.message: null`; `pages build and deployment` workflow `success`; all five main-branch verification workflows `success` at `c6c42b0`.
+- **Live URLs verified by public retrieval (rendering + figures confirmed):**
+  - Landing/executive summary: https://sassnarep3-star.github.io/China2/repatriate/index.html
+  - Methods & step-by-step: https://sassnarep3-star.github.io/China2/repatriate/methods.html
+  - 680-row cost tables ($10k→$400k × 17 methods, amount filter): https://sassnarep3-star.github.io/China2/repatriate/costs.html
+  - Tax & reporting: https://sassnarep3-star.github.io/China2/repatriate/taxes.html
+  - 31-source registry: https://sassnarep3-star.github.io/China2/repatriate/sources.html
+  - Repo audit A01–A13: https://sassnarep3-star.github.io/China2/repatriate/audit.html
+  - Flagged for review F01–F15: https://sassnarep3-star.github.io/China2/repatriate/flagged.html
+  - Exports: https://sassnarep3-star.github.io/China2/repatriate/exports/cost-ladders.csv (+ .json)
+- **Task board close-out:** R1 done · R2 done · R3 done · R4 done · R5 done · R6 done. Unverified items remain published as **needs review** (F01–F15) and do not block the site. This publication record is carried in a follow-up PR because the merge result did not exist before PR #19 merged (same pattern as prior sessions). No claim is made that prior dashboards' figures were all re-verified, that external links are continuously monitored, or that any personal tax amount was determined.
