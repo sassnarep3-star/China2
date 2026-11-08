@@ -183,3 +183,23 @@ and record the outcome in the log below rather than force-overwriting.
   - **Flagged for Review (`FLG-01`–`FLG-13`):** https://sassnarep3-star.github.io/China2/portal/flagged-for-review.html
   - **Official `.gov` / `.gov.cn` Source Registry (`SRC-01`–`SRC-26`):** https://sassnarep3-star.github.io/China2/portal/sources.html
   - **Concurrent sessions' dashboards confirmed intact:** https://sassnarep3-star.github.io/China2/docs/index.html & https://sassnarep3-star.github.io/China2/site/index.html
+
+---
+
+## Session `arena/8a2bd205-china2` — CNY→USD Cost-Increment Analysis ($10,000–$400,000) & Integration
+
+> **Environment note:** this session is pinned to branch `arena/8a2bd205-china2` (based on `bb7796b` = current `main` HEAD, which includes all prior sessions' merged work: PRs #1, #3, #4, #6, #7, #8, #9, #10, #11). This session does **not** touch files owned by prior sessions (`docs/**`, `site/**`, `portal/**`, `research/**`, `data/**`, `scripts/**`, `tools/**`, `README.md`, root `index.html`) and does **not** touch files claimed by the in-flight session `arena/5cdc93ae-china2` (PR #12: `research/00–06*.md`, `deep-dive/**`, `EXECUTIVE_SUMMARY_arena-5cdc93ae.md`). All new work lives in one new disjoint directory: `cost-increments/**`. Shared outputs (root redirect, `docs/` navigation) are **not** edited; a cross-link request is logged below instead.
+
+| # | Task | Status | Owner | Files |
+|---|------|--------|-------|-------|
+| B1 | Official-source verification pass for cost-increment model inputs (SAFE quota, beyond-quota docs, IIT law, treaty, FEIE, FBAR/8938 thresholds, CMIR, HSBC tariff, IRS §988(e), USD/CNY reference rate, US/PRC receiving fees where officially published) | in progress | `arena/8a2bd205-china2` | `cost-increments/data.json` (new) |
+| B2 | Cost tables for transferring/converting CNY→USD in USD 10,000 increments from $10,000 to $400,000 — verified cost components, per method, mobile-friendly, most-important-first | in progress | `arena/8a2bd205-china2` | `cost-increments/**` (new) |
+| B3 | Step-by-step execution procedure per method; cost model + assumptions + flagged/unverified items | in progress | `arena/8a2bd205-china2` | `cost-increments/**` (new) |
+| B4 | Consolidated executive summary updates + repo spot-audit of cost-relevant claims | in progress | `arena/8a2bd205-china2` | `cost-increments/**` (new) |
+| B5 | Final integration: PR from `arena/8a2bd205-china2` to `main`, merge, GitHub Pages live confirmation, record in COORDINATION.md | in progress | `arena/8a2bd205-china2` | `COORDINATION.md` (append-only) |
+
+### Pending cross-scope link request (logged, not unilaterally edited per protocol)
+- `arena/8a2bd205-china2` requests a link to `/China2/cost-increments/` be added to the `docs/` navigation and/or root redirect page in a future integration that owns those files. Until then the page is served directly at `https://sassnarep3-star.github.io/China2/cost-increments/` (native Pages, repo root, no settings change).
+
+### Concurrency note
+- 2026-11-08 UTC: PR #12 (`arena/5cdc93ae-china2`) was open and updated at 2026-11-08T23:08:54Z (minutes before this claim). This session therefore claims only the disjoint `cost-increments/**` path. If PR #12 merges before this session's PR, this session will rebase onto the new `main`, resolve any `COORDINATION.md` append conflict by keeping both boards, and re-verify before merging.
