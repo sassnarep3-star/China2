@@ -190,7 +190,7 @@ and record the outcome in the log below rather than force-overwriting.
 
 | Task | Status | Owner | Files / scope |
 |---|---|---|---|
-| Independent audit of existing published deliverables and official evidence; document substantive discrepancies | in progress | arena/86f0e94b-china2 | `audit-86f0/**` |
+| Independent audit of existing published deliverables and official evidence; document substantive discrepancies | done | arena/86f0e94b-china2 | `audit-86f0/**` |
 | Final integration, verification and publication of audit | done | arena/86f0e94b-china2 | `COORDINATION.md` (append-only); integration links only if prior scopes are completed |
 
 - 2026-11-08 UTC: Read existing task board. Previous recorded tasks are done or needs review; no active claims found in the checked-in board. Fixed Arena branch replaces the requested session-named branch. Audit does not assume previous verification claims are conclusive. Claims committed before substantive work.
