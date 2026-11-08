@@ -564,11 +564,37 @@
     "authority": "Bank of China",
     "url": "https://www.boc.cn/pbservice/bi2/202608/t20260811_25684907.html",
     "locator": "Announcement effective 2026-11-11",
-    "evidence": "Specific overseas-card ATM fees change on 2026-11-11; this is tracked separately from the November 2025 general tariff.",
-    "limitation": "Exact new card-specific amounts are not used until the announcement table is independently transcribed and tested.",
+    "evidence": "From 2026-11-11, overseas/HK-Macao-Taiwan ATM item 210108014: UnionPay CNY12 + 1%, max CNY112; Mastercard/Visa 2.5%, min USD3 equivalent/max USD40 equivalent per withdrawal.",
+    "limitation": "Card-network-specific published issuer fee only; ATM surcharge, FX rate and SAFE annual/daily limits remain separate.",
     "kind": "bank primary",
     "edition": "Effective 2026-11-11",
     "accessed": "2026-11-08",
-    "retrieval": "Official announcement retrieved in earlier research; exact table pending targeted review"
+    "retrieval": "Official announcement body and complete fee table retrieved 2026-11-08"
+  },
+  {
+    "id": "VC-S45",
+    "title": "Company Law of the PRC (2023 revision)",
+    "authority": "MOFCOM policy database / National laws database source",
+    "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=98771",
+    "locator": "Articles 210, 224, 232–236, 266",
+    "evidence": "Article 210: allocate 10% of after-tax profit to statutory reserve until reserve reaches 50% of registered capital; make up losses first. Capital reduction and liquidation require creditor/tax/debt procedures. Effective 2024-07-01.",
+    "limitation": "MOFCOM page disclaims third-party transcription; cross-check formal National Laws Database text before execution. Corporate route is not personal savings conversion.",
+    "kind": "government",
+    "edition": "Effective 2024-07-01; body chunks 3–4 reviewed",
+    "accessed": "2026-11-08",
+    "retrieval": "Official page body retrieved; targeted sections reviewed"
+  },
+  {
+    "id": "VC-S46",
+    "title": "Foreign-individual salary remittance above USD50,000 FAQ",
+    "authority": "SAFE Tianjin",
+    "url": "https://www.safe.gov.cn/tianjin/2019/1205/1307.html",
+    "locator": "2019 service-trade Q&A No. 2",
+    "evidence": "For foreign-individual domestic salary purchases, banks may review tax evidence that the salary was lawfully taxed in China when the outbound tax-filing form is not issued.",
+    "limitation": "Confirms documentary handling above USD50,000; does not waive authenticity review or prove this account is salary.",
+    "kind": "government",
+    "edition": "2019-12-05",
+    "accessed": "2026-11-08",
+    "retrieval": "Official page body retrieved; targeted sections reviewed"
   }
 ]

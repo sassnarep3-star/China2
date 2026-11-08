@@ -1,0 +1,751 @@
+[
+  {
+    "id": "VC-R01",
+    "name": "Documented employment / lawful current-account income",
+    "category": "Permission + bank channel",
+    "status": "Lawful if documented",
+    "eligibility": "Foreign individual with lawful mainland current-account RMB income and matching tax/source evidence.",
+    "steps": [
+      "Ask the holding bank for its current salary/current-income checklist and classification decision.",
+      "Collect identity, employment/service contract or certificate, employer income statement, tax payment evidence and account records.",
+      "Reconcile the requested amount to documented lawful income; do not reuse or fabricate documents.",
+      "Have the bank perform authenticity review, purchase USD and remit to the approved destination.",
+      "Retain the bank advice, exchange rate, fee invoice and tax evidence for U.S. reporting."
+    ],
+    "pros": [
+      "Directly addresses the likely salary case.",
+      "SAFE guidance does not state a universal USD50,000 salary ceiling."
+    ],
+    "cons": [
+      "Legacy savings without income/tax trail may not qualify.",
+      "Bank acceptance and local checklist remain unconfirmed."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S01",
+      "VC-S02",
+      "VC-S06",
+      "VC-S46"
+    ],
+    "known_cost_note": "Permission route has no standalone published price. Add the actual chosen bank/channel quote; blanks are not zero.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R02",
+    "name": "Pension, severance, retirement or compensation income",
+    "category": "Permission + bank channel",
+    "status": "Lawful if documented",
+    "eligibility": "Non-mainland individual with lawful payment from the disbursing organization.",
+    "steps": [
+      "Obtain the disbursing organization’s payment statement and supporting tax/source documents.",
+      "Ask the bank to classify the payment under current-account income.",
+      "Submit identity and transaction-value evidence; complete bank review.",
+      "Purchase USD and remit through an approved channel; retain all advices."
+    ],
+    "pros": [
+      "Recognized documentary category in HSBC guidance."
+    ],
+    "cons": [
+      "Not a route for undocumented principal.",
+      "Provider fees and taxes depend on facts."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S06",
+      "VC-S01"
+    ],
+    "known_cost_note": "No standalone published price; underlying payment tax and channel quote remain blank.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R03",
+    "name": "Domestic-individual annual facilitation purchase",
+    "category": "Permission + bank channel",
+    "status": "Conditional",
+    "eligibility": "Only if the bank classifies the holder as a domestic individual under applicable rules; not assumed from U.S. citizenship alone.",
+    "steps": [
+      "Obtain the bank’s written classification and available facilitation amount.",
+      "Use only the holder’s own lawful funds and truthful purpose; never borrow another person’s quota.",
+      "Purchase within the applicable annual facilitation amount or obtain documentary approval for a genuine excess current-account purpose.",
+      "Remit through the bank and retain the purpose/fee records."
+    ],
+    "pros": [
+      "Simple when the holder actually qualifies."
+    ],
+    "cons": [
+      "U.S. passport holder is not automatically domestic.",
+      "State Council definition can include foreigners resident at least one year; classification is fact-specific.",
+      "Multi-year staging is not a universal answer for a foreign individual."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S01",
+      "VC-S03",
+      "VC-S05",
+      "VC-S36"
+    ],
+    "known_cost_note": "USD50,000 is a facilitation amount, not a fee or tax. No cost is inferred from the quota.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R04",
+    "name": "Foreign permanent-residence ID facilitation",
+    "category": "Permission + bank channel",
+    "status": "Conditional",
+    "eligibility": "Holder of a PRC Foreigner’s Permanent Residence ID Card, subject to bank verification.",
+    "steps": [
+      "Present the permanent-residence ID and ask the bank to confirm purchase-facilitation treatment.",
+      "Confirm remaining annual amount and truthful purpose.",
+      "Execute only within the bank’s approved procedure and retain records."
+    ],
+    "pros": [
+      "SAFE expressly extends purchase facilitation to this ID category."
+    ],
+    "cons": [
+      "A passport alone is not this ID.",
+      "Does not prove eligibility for this user."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S03",
+      "VC-S01",
+      "VC-S06"
+    ],
+    "known_cost_note": "No standalone price; quota is not a tax.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R05",
+    "name": "Genuine current-account purpose above facilitation",
+    "category": "Permission + bank channel",
+    "status": "Lawful if documented",
+    "eligibility": "Domestic individual or other eligible holder with a genuine current-account transaction exceeding facilitation.",
+    "steps": [
+      "Identify the actual current-account purpose (for example education or medical payment).",
+      "Collect the contract/invoice/payment notice and identity documents required for that purpose.",
+      "Submit to the bank; accept direct-to-counterparty payment where required.",
+      "Do not disguise capital transfer or savings repatriation as a current-account expense."
+    ],
+    "pros": [
+      "Lawful excess can be documented rather than split."
+    ],
+    "cons": [
+      "Not a generic savings loophole.",
+      "Documents must match the transaction and cannot be reused falsely."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S01",
+      "VC-S06",
+      "VC-S40"
+    ],
+    "known_cost_note": "No universal fee; outbound tax filing may apply depending on payment type and exceptions.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R06",
+    "name": "Unused-RMB reconversion",
+    "category": "Permission + bank channel",
+    "status": "Narrow lawful route",
+    "eligibility": "RMB left from a prior foreign-currency/card/traveler-cheque conversion, with original evidence.",
+    "steps": [
+      "Locate the original physical exchange slip and confirm it is within 24 months.",
+      "Reconcile the remaining RMB to the original converted amount.",
+      "For larger amounts present the slip; ID-only handling is limited to USD500 daily or USD1,000 at specified pre-departure locations.",
+      "Have the bank reconvert and remit/carry only as permitted."
+    ],
+    "pros": [
+      "Useful for genuine leftover travel money."
+    ],
+    "cons": [
+      "Not a solution for old RMB savings with no original conversion.",
+      "Small daily thresholds do not scale to USD400,000."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S04",
+      "VC-S06"
+    ],
+    "known_cost_note": "No standalone price; original exchange rate and current bank quote remain unknown.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R07",
+    "name": "Property-sale net proceeds",
+    "category": "Permission + bank channel",
+    "status": "Conditional",
+    "eligibility": "Lawful owner selling mainland property and meeting current bank/SAFE/tax requirements.",
+    "steps": [
+      "Confirm ownership, sale registration and the applicable local checklist.",
+      "Complete required PRC tax filings and obtain tax evidence.",
+      "Reconcile sale price, taxes, fees and net proceeds; request bank authenticity review.",
+      "Remit only the approved lawful net amount through the bank."
+    ],
+    "pros": [
+      "Recognized route for actual property proceeds."
+    ],
+    "cons": [
+      "Gross sale price is not automatically remittable.",
+      "Older Q&A and local practice require current confirmation."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S06",
+      "VC-S42",
+      "VC-S37"
+    ],
+    "known_cost_note": "Property-transfer tax categories may apply; no flat conversion tax or personalized amount is assumed.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R08",
+    "name": "Emigration personal-asset transfer",
+    "category": "Capital permission",
+    "status": "Conditional",
+    "eligibility": "Person who acquired qualifying assets before immigration and meets the personal-asset-transfer rules.",
+    "steps": [
+      "Confirm eligibility and the competent SAFE office with the bank/SAFE.",
+      "Prepare identity, immigration/status evidence, lawful-source and ownership documents.",
+      "Apply for the required approval/registration for the whole amount.",
+      "After approval, transfer in a lump sum or batches as permitted by the current circular; retain approval and bank records."
+    ],
+    "pros": [
+      "Current circular removes the old mandatory installment schedule."
+    ],
+    "cons": [
+      "Not available merely because the holder is a U.S. citizen.",
+      "Approval, source proof and timing are unconfirmed."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S33",
+      "VC-S34",
+      "VC-S35",
+      "VC-S06"
+    ],
+    "known_cost_note": "No published approval fee or personalized tax amount; historical staged-remittance rules are not used.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R09",
+    "name": "Inherited personal-asset transfer",
+    "category": "Capital permission",
+    "status": "Conditional",
+    "eligibility": "Eligible foreign inheritor of lawful mainland assets.",
+    "steps": [
+      "Establish inheritance rights and the deceased’s former domicile jurisdiction.",
+      "Collect ownership, inheritance and tax/source documents.",
+      "Apply to the competent SAFE office; current rules permit combined applications as specified.",
+      "After approval, remit through the bank and retain the approval trail."
+    ],
+    "pros": [
+      "Recognized capital-account route.",
+      "Current circular permits combined inheritance applications as specified."
+    ],
+    "cons": [
+      "Not a shortcut for the holder’s own undocumented savings."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S33",
+      "VC-S34",
+      "VC-S06"
+    ],
+    "known_cost_note": "Inheritance itself is generally not U.S. income, but later income and Form3520 reporting may apply; see tax page.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R10",
+    "name": "Bank of China cross-border wire",
+    "category": "Bank channel",
+    "status": "Published tariff; execution conditional",
+    "eligibility": "Customer whose underlying purchase/remittance is approved by BOC.",
+    "steps": [
+      "Obtain BOC’s current tariff and the bank’s documentary approval for the underlying funds.",
+      "Request a firm FX quote and identify fee option (OUR/BEN/full-arrival if available).",
+      "Confirm receiving/intermediary charges and whether USD full-arrival uses the BOC New York route.",
+      "Execute and retain the advice showing rate, CNY fee, cable fee and any surcharge."
+    ],
+    "pros": [
+      "Transparent published issuance/cable formula.",
+      "Conditional USD15/25 full-arrival surcharge is separately published."
+    ],
+    "cons": [
+      "FX spread and ordinary receiving/intermediary deductions are not fixed by the tariff.",
+      "Full-arrival is not universal."
+    ],
+    "cost_model": "boc_wire",
+    "source_ids": [
+      "VC-S10",
+      "VC-S11",
+      "VC-S13"
+    ],
+    "known_cost_note": "Known component: 0.1% of benchmark CNY amount, clamped CNY50–260, plus CNY150 international cable. Conditional full-arrival USD15/25 shown separately; all-in remains blank.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R11",
+    "name": "HSBC China Premier/Advance telegraphic transfer",
+    "category": "Bank channel",
+    "status": "Published tariff; execution conditional",
+    "eligibility": "Eligible HSBC China Premier/Advance individual with approved underlying funds.",
+    "steps": [
+      "Confirm individual customer tier and current tariff edition.",
+      "Obtain documentary approval and a firm FX quote.",
+      "Confirm Pay Exact need: CNY200 base plus any overseas-charge shortfall; Elite/Passport exemptions may apply.",
+      "Execute TT and retain issuance, cable, FX and third-party charge records."
+    ],
+    "pros": [
+      "Published 0.1% min CNY100/max CNY500 plus CNY120 cable."
+    ],
+    "cons": [
+      "Tier eligibility and monthly-fee conditions are not established.",
+      "Other institutions’ charges are excluded."
+    ],
+    "cost_model": "hsbc_wire",
+    "source_ids": [
+      "VC-S07",
+      "VC-S08",
+      "VC-S09",
+      "VC-S13"
+    ],
+    "known_cost_note": "Known component is Premier/Advance individual issuance plus cable only. Private Banking entity prices are not applied to individuals.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R12",
+    "name": "HSBC Global Transfer to own overseas account",
+    "category": "Bank channel",
+    "status": "Published service; execution conditional",
+    "eligibility": "Eligible customer with own eligible overseas HSBC account and approved funds/currency.",
+    "steps": [
+      "Confirm home-country eligibility, destination country and account ownership.",
+      "Confirm transfer limits and whether the service is available for the currency.",
+      "Obtain the FX quote separately; complete the transfer and retain records."
+    ],
+    "pros": [
+      "Published service can be free for eligible tiers."
+    ],
+    "cons": [
+      "Free service does not establish zero FX spread or third-party charges.",
+      "Not a separate legal permission to move capital."
+    ],
+    "cost_model": "hsbc_global",
+    "source_ids": [
+      "VC-S08",
+      "VC-S09",
+      "VC-S06"
+    ],
+    "known_cost_note": "Published HSBC service charge may be free for eligible tiers; FX spread, eligibility and receiving charges remain blank.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R13",
+    "name": "Wise sending from CNY",
+    "category": "Provider channel",
+    "status": "Provider rules; quote required",
+    "eligibility": "Non-mainland individual with China work/tax history meeting Wise’s current eligibility.",
+    "steps": [
+      "Check Wise’s current sending-from-CNY eligibility and own-account destination rule.",
+      "Prepare identity, work and tax records requested by Wise.",
+      "Enter the actual amount and obtain an executable quote showing fee, rate and recipient amount.",
+      "Respect CNY300,000 bank-funded / CNY50,000 Alipay per-transfer limits and remaining lawful-income limit.",
+      "Execute only after the quote and compliance checks; retain records."
+    ],
+    "pros": [
+      "Provider publishes eligibility and per-transfer limits."
+    ],
+    "cons": [
+      "No live fee/rate quote obtained.",
+      "Not available to every passport holder or every source of funds."
+    ],
+    "cost_model": "wise",
+    "source_ids": [
+      "VC-S12",
+      "VC-S02"
+    ],
+    "known_cost_note": "Fee, spread and recipient amount are blank until a real quote exists.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R14",
+    "name": "Remit existing foreign currency already in the account",
+    "category": "Bank channel",
+    "status": "Conditional",
+    "eligibility": "Holder already has lawful USD/foreign currency in a mainland account; no CNY conversion needed.",
+    "steps": [
+      "Ask the bank to distinguish account FX from cash and confirm outward-remittance documents.",
+      "Confirm source/purpose and any capital-account restrictions.",
+      "Obtain the bank’s outward-remittance quote and execute to the approved account."
+    ],
+    "pros": [
+      "Avoids a new CNY→USD conversion spread."
+    ],
+    "cons": [
+      "Does not solve a CNY-only balance.",
+      "Outward transfer still requires compliance and may incur fees."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S01",
+      "VC-S05",
+      "VC-S11"
+    ],
+    "known_cost_note": "No CNY conversion component; actual outward-remittance fees remain blank unless the chosen tariff applies.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R15",
+    "name": "Overseas ATM cash withdrawal",
+    "category": "Cash channel",
+    "status": "Limited lawful use",
+    "eligibility": "Eligible cardholder within SAFE per-person annual and per-card daily limits.",
+    "steps": [
+      "Confirm card network, issuer fee and ATM surcharge before withdrawal.",
+      "Track RMB100,000/person/year and RMB10,000/card/day across cards.",
+      "Withdraw only within limits; do not use multiple cards/people to evade them.",
+      "Report currency/monetary instruments over USD10,000 on U.S. entry and comply with PRC export rules."
+    ],
+    "pros": [
+      "Can cover small living-expense cash needs."
+    ],
+    "cons": [
+      "Not scalable for USD400,000.",
+      "Excess can suspend current and next year withdrawals.",
+      "BOC fees change by card network from 2026-11-11."
+    ],
+    "cost_model": "boc_atm",
+    "source_ids": [
+      "VC-S31",
+      "VC-S44",
+      "VC-S29",
+      "VC-S13"
+    ],
+    "known_cost_note": "BOC issuer fee is published by network; ATM surcharge and FX rate remain blank. Annual limit makes large-tier execution infeasible.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R16",
+    "name": "Genuine overseas card consumption",
+    "category": "Spending, not repatriation",
+    "status": "Not a conversion shortcut",
+    "eligibility": "Cardholder making genuine personal consumption payments.",
+    "steps": [
+      "Use the card only for actual goods/services.",
+      "Keep merchant receipts and issuer statements.",
+      "Do not fabricate purchases, refund to another person, or use merchants to cash out."
+    ],
+    "pros": [
+      "SAFE distinguishes genuine consumption from ATM cash limits."
+    ],
+    "cons": [
+      "Does not move savings into a U.S. bank account.",
+      "Issuer FX rate/fees are unquoted."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S31",
+      "VC-S32"
+    ],
+    "known_cost_note": "No repatriation cost is calculated because this is not a lawful cash-out method.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R17",
+    "name": "Carry foreign-currency cash across borders",
+    "category": "Cash channel",
+    "status": "Severely limited",
+    "eligibility": "Person able to obtain required PRC bank/SAFE carry permission and meet U.S. reporting.",
+    "steps": [
+      "Confirm lawful source and obtain the required bank carry permit for above USD5,000 through USD10,000 equivalent.",
+      "Do not carry above USD10,000 without the special SAFE approval required by the rule.",
+      "Declare/report more than USD10,000 to U.S. CBP on FinCEN105; family/group threshold is collective.",
+      "Retain permits, declaration and deposit evidence."
+    ],
+    "pros": [
+      "Transparent reporting can make small lawful carriage possible."
+    ],
+    "cons": [
+      "Not a USD400,000 solution.",
+      "Security, deposit, FX cash-rate and permit costs are unquoted."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S30",
+      "VC-S29",
+      "VC-S36"
+    ],
+    "known_cost_note": "No scalable cost estimate; permit/declaration are not taxes.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R18",
+    "name": "Chinese-company dividend to foreign individual shareholder",
+    "category": "Corporate capital route",
+    "status": "Conditional",
+    "eligibility": "Actual shareholder entitled to lawful distributable profits after company-level obligations.",
+    "steps": [
+      "Verify company accounts, losses, EIT and statutory reserve allocation under Company Law Art.210.",
+      "Obtain a valid distribution resolution and shareholder/beneficial-owner evidence.",
+      "Determine PRC withholding and treaty residence/saving-clause treatment; complete required tax filing.",
+      "Use the bank’s dividend-remittance checklist and execute after tax/approval.",
+      "Report the dividend and any creditable tax on the U.S. return."
+    ],
+    "pros": [
+      "Recognized route for genuine company profits."
+    ],
+    "cons": [
+      "Not a way to relabel personal savings.",
+      "EIT, reserve, withholding and U.S. tax are separate layers."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S45",
+      "VC-S38",
+      "VC-S37",
+      "VC-S27",
+      "VC-S40"
+    ],
+    "known_cost_note": "Treaty 10% is a conditional ceiling, not an all-in rate. Company profit, reserve and U.S. tax are not collapsed into one number.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R19",
+    "name": "Lawful capital reduction / liquidation proceeds",
+    "category": "Corporate capital route",
+    "status": "Conditional",
+    "eligibility": "Foreign investor with a genuine company undergoing lawful reduction or liquidation.",
+    "steps": [
+      "Follow Company Law creditor notice, balance-sheet, tax and debt-clearance procedures.",
+      "Complete liquidation/reduction registrations and tax filings.",
+      "Obtain bank/SAFE evidence required for foreign-investor capital remittance.",
+      "Remit only the lawful residual proceeds and retain the full corporate trail."
+    ],
+    "pros": [
+      "State Council rules recognize lawful liquidation remittance."
+    ],
+    "cons": [
+      "Slow, entity-specific and unavailable for ordinary personal savings.",
+      "Professional/legal costs are unquoted."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S45",
+      "VC-S36",
+      "VC-S38",
+      "VC-S40"
+    ],
+    "known_cost_note": "No personalized liquidation tax or fee amount; do not use a dividend rate for liquidation proceeds.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R20",
+    "name": "Genuine cross-border trade/service settlement",
+    "category": "Business current-account route",
+    "status": "Conditional",
+    "eligibility": "Actual business with authentic contract, invoice, delivery/service and tax evidence.",
+    "steps": [
+      "Identify the genuine underlying transaction and responsible tax treatment.",
+      "Prepare contract/invoice/service evidence and complete any required outbound tax filing.",
+      "Submit to the bank for authenticity review; receive payment only as the actual entitled party.",
+      "Do not use fake trade or related-party circular payments to move personal savings."
+    ],
+    "pros": [
+      "Lawful for real business receipts."
+    ],
+    "cons": [
+      "Not a personal-savings conversion method.",
+      "VAT/EIT/IIT and bank charges depend on the transaction."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S01",
+      "VC-S05",
+      "VC-S39",
+      "VC-S40",
+      "VC-S32"
+    ],
+    "known_cost_note": "No universal service fee or tax rate on principal; transaction-specific tax must be calculated separately.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R21",
+    "name": "Approved capital-account investment exit / repatriation",
+    "category": "Capital permission",
+    "status": "Flagged for review",
+    "eligibility": "Only an investor whose original outbound/inbound investment and exit are registered/approved under the applicable program.",
+    "steps": [
+      "Do not assume a personal bank balance qualifies.",
+      "Identify the exact investment program and original registration.",
+      "Obtain the current SAFE/bank exit checklist and tax clearance requirements.",
+      "Execute only after the competent authority/bank confirms the route."
+    ],
+    "pros": [
+      "May exist for a genuine approved investment."
+    ],
+    "cons": [
+      "No general personal savings permission is established by this research.",
+      "Program-specific rules and prices are not verified here."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S05",
+      "VC-S33",
+      "VC-S36"
+    ],
+    "known_cost_note": "All costs blank; this is a research lead, not an executable recommendation.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R22",
+    "name": "Own-account transfer / foreign-gift reporting distinction",
+    "category": "Reporting distinction",
+    "status": "Not a conversion shortcut",
+    "eligibility": "U.S. person moving own funds or receiving an actual foreign gift/bequest.",
+    "steps": [
+      "Identify whether the recipient owns the funds or receives a true gift/bequest.",
+      "Apply FBAR/8938 account reporting to the relevant accounts.",
+      "Use Form3520 only when the foreign gift/bequest reporting rules actually apply.",
+      "Do not treat a border crossing as creating a gift or a tax-free allowance."
+    ],
+    "pros": [
+      "Prevents false gift-tax assumptions."
+    ],
+    "cons": [
+      "Does not itself authorize CNY purchase or remittance."
+    ],
+    "cost_model": "none",
+    "source_ids": [
+      "VC-S19",
+      "VC-S20",
+      "VC-S21"
+    ],
+    "known_cost_note": "No conversion price; reporting thresholds are not taxes.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R23",
+    "name": "Borrowed family/friend quotas or quota splitting",
+    "category": "Prohibited alternative",
+    "status": "Do not use",
+    "eligibility": "No lawful execution steps are provided.",
+    "steps": [
+      "Stop; do not borrow quotas or split transactions to evade controls.",
+      "Use the holder’s own documented permission route instead."
+    ],
+    "pros": [
+      "None as a lawful repatriation method."
+    ],
+    "cons": [
+      "Watchlist, documentary restrictions and statutory penalty exposure.",
+      "Undermines the holder’s future bank access."
+    ],
+    "cost_model": "prohibited",
+    "source_ids": [
+      "VC-S05",
+      "VC-S32",
+      "VC-S36"
+    ],
+    "known_cost_note": "Not priced as a lawful alternative. Statutory exposure is shown on the tax/penalty page, not as a fee quote.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R24",
+    "name": "Underground bank / private matching swap",
+    "category": "Prohibited alternative",
+    "status": "Do not use",
+    "eligibility": "No lawful execution steps are provided.",
+    "steps": [
+      "Do not send RMB to a matcher in exchange for offshore USD.",
+      "Use an authorized bank/provider and documented source-of-funds route."
+    ],
+    "pros": [
+      "None as a lawful method."
+    ],
+    "cons": [
+      "Illegal FX activity, fraud/freeze risk and enforcement exposure."
+    ],
+    "cost_model": "prohibited",
+    "source_ids": [
+      "VC-S32",
+      "VC-S36",
+      "VC-S06"
+    ],
+    "known_cost_note": "No cost comparison; unlawful exposure is not a transfer fee.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R25",
+    "name": "Fake invoices, contracts or disguised capital transfer",
+    "category": "Prohibited alternative",
+    "status": "Do not use",
+    "eligibility": "No lawful execution steps are provided.",
+    "steps": [
+      "Do not fabricate current-account documents or reuse them falsely.",
+      "Obtain the correct capital/current-account approval for the real transaction."
+    ],
+    "pros": [
+      "None as a lawful method."
+    ],
+    "cons": [
+      "False-document penalties, refusal and possible criminal exposure."
+    ],
+    "cost_model": "prohibited",
+    "source_ids": [
+      "VC-S05",
+      "VC-S06",
+      "VC-S36"
+    ],
+    "known_cost_note": "Not priced as a lawful alternative.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R26",
+    "name": "Crypto or stablecoin conversion bridge",
+    "category": "Prohibited alternative",
+    "status": "Do not use",
+    "eligibility": "No lawful execution steps are provided.",
+    "steps": [
+      "Do not use fiat↔crypto exchange or unauthorized RMB stablecoin settlement as a repatriation bridge.",
+      "Use a documented authorized financial channel."
+    ],
+    "pros": [
+      "None as a lawful mainland repatriation method."
+    ],
+    "cons": [
+      "Yinfa [2026] 42 treats related exchange activity as illegal financial activity.",
+      "Additional U.S. tax/reporting issues do not make it lawful in China."
+    ],
+    "cost_model": "prohibited",
+    "source_ids": [
+      "VC-S41",
+      "VC-S06"
+    ],
+    "known_cost_note": "Excluded from lawful cost ranking.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  },
+  {
+    "id": "VC-R27",
+    "name": "Unauthorized online FX margin / leveraged platform",
+    "category": "Prohibited alternative",
+    "status": "Do not use",
+    "eligibility": "No lawful execution steps are provided.",
+    "steps": [
+      "Do not treat an overseas-looking platform or influencer as proof of mainland authorization.",
+      "Use only legally authorized domestic financial institutions for permitted FX transactions."
+    ],
+    "pros": [
+      "None as a lawful method."
+    ],
+    "cons": [
+      "HSBC guidance identifies unauthorized online FX trading and scam risk."
+    ],
+    "cost_model": "prohibited",
+    "source_ids": [
+      "VC-S06",
+      "VC-S32"
+    ],
+    "known_cost_note": "Excluded from lawful cost ranking.",
+    "tax_note": "No personalized tax amount is calculated. Confirm the underlying income, residence, basis and treaty/credit position before execution."
+  }
+]
