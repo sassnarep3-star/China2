@@ -20,6 +20,8 @@ def load(name: str):
 SOURCES = {s["id"]: s for s in load("sources.json")}
 RULES = load("rules.json")
 FLAGS = load("flags.json")
+FORMULAS = load("formulas.json")
+DECISIONS = load("decisions.json")
 INPUTS = load("inputs.json")
 WORKBOOK = load("workbook.json")
 
@@ -99,6 +101,16 @@ def page(filename: str, title: str, body: str, lede: str = "") -> None:
 
 
 def build_index() -> None:
+    decision_rows = []
+    for d in DECISIONS:
+        decision_rows.append(
+            "<tr>"
+            f'<th scope="row">{esc(d["id"])} · {esc(d["condition"])}</th>'
+            f'<td>{esc(d["tax_question"])}</td>'
+            f'<td>{esc(d["next_action"])}</td>'
+            f'<td class="sources">{source_links(d["sources"])}</td>'
+            "</tr>"
+        )
     body = f"""
 <section class="callout">
   <strong>Most important finding.</strong>
@@ -137,6 +149,16 @@ def build_index() -> None:
 <section class="panel">
   <h2>Reference rate used in the workbook</h2>
   <p>The workbook computes a labeled CNY reference amount using Treasury’s September 30, 2026 reporting rate: <strong>6.7050 CNY per USD</strong>. This is not an executable conversion quote, not necessarily the correct tax transaction-date rate, and the PDF excludes online amendments. {source_links(['S12','S13'])}</p>
+</section>
+<section class="panel">
+  <h2>Choose the tax path before the transfer path</h2>
+  <p>The source and use of the CNY determine which U.S. tax questions must be answered. This table is a tax-basis decision aid, not a PRC transfer-eligibility determination.</p>
+  <div class="table-scroll" role="region" aria-label="Tax-basis decision paths" tabindex="0">
+    <table class="data">
+      <thead><tr><th>If the CNY is…</th><th>Tax question</th><th>Next action</th><th>Official source</th></tr></thead>
+      <tbody>{''.join(decision_rows)}</tbody>
+    </table>
+  </div>
 </section>
 <section class="panel">
   <h2>Where this fits</h2>
@@ -297,6 +319,19 @@ def build_review() -> None:
 
 
 def build_methodology() -> None:
+    formula_rows = []
+    for f in FORMULAS:
+        result = esc(f["result"]) if f["result"] else ""
+        formula_rows.append(
+            "<tr>"
+            f'<th scope="row">{esc(f["id"])} · {esc(f["name"])}</th>'
+            f'<td><code>{esc(f["formula"])}</code></td>'
+            f'<td>{result}</td>'
+            f'<td>{badge(f["status"])}</td>'
+            f'<td>{esc(f["note"])}</td>'
+            f'<td class="sources">{source_links(f["sources"])}</td>'
+            "</tr>"
+        )
     body = f"""
 <section class="panel">
   <h2>Scope</h2>
@@ -311,6 +346,17 @@ def build_methodology() -> None:
     <li>IRS training material and dated code editions are identified as such.</li>
     <li>No personal account facts, bank quotes or live FX rates were inferred.</li>
   </ul>
+</section>
+<section class="panel" id="formulas">
+  <h2>Computation contract</h2>
+  <p>These formulas define what would be computed once verified inputs exist. They are not populated with personal facts or provider quotes. Blank results remain blank.</p>
+  <div class="table-scroll" role="region" aria-label="Computation formulas" tabindex="0">
+    <table class="data">
+      <thead><tr><th>Step</th><th>Formula / rule</th><th>Result</th><th>Status</th><th>Limit / note</th><th>Official source</th></tr></thead>
+      <tbody>{''.join(formula_rows)}</tbody>
+    </table>
+  </div>
+  <p class="note"><a class="button small" href="basis-input-template.csv" download>Download blank basis-input template</a> The template contains headers only; do not commit private financial records to this public repository.</p>
 </section>
 <section class="panel">
   <h2>Reproduce</h2>
@@ -341,6 +387,7 @@ def main() -> None:
     build_methodology()
     shutil.copyfile(DATA / "workbook.csv", SITE / "workbook.csv")
     shutil.copyfile(DATA / "workbook.json", SITE / "workbook.json")
+    shutil.copyfile(DATA / "basis-input-template.csv", SITE / "basis-input-template.csv")
     print(f"Built {len(NAV)} pages into {SITE}")
 
 

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "D01",
+    "condition": "CNY is already-taxed salary, pension or other personal savings",
+    "tax_question": "Was the underlying income reported, and what is the USD basis of each CNY lot?",
+    "next_action": "Reconstruct acquisition dates/rates and basis; then test whether the conversion is a qualifying personal disposition and whether any exchange gain exceeds $200.",
+    "sources": ["S14", "S04", "S01", "S02"]
+  },
+  {
+    "id": "D02",
+    "condition": "CNY arose from income that may not have been reported or taxed",
+    "tax_question": "What income arose, in which year, and what U.S./PRC tax or credit applies?",
+    "next_action": "Do not treat conversion as the taxable event that cleans up prior income. Resolve the underlying income and reporting first; leave tax amounts blank until facts are verified.",
+    "sources": ["S14", "S07", "S08"]
+  },
+  {
+    "id": "D03",
+    "condition": "CNY is held for a trade, business or investment/income-producing activity",
+    "tax_question": "Is the personal-transaction exception unavailable, and does §988 ordinary character apply?",
+    "next_action": "Classify functional currency and use before converting. Do not assume the personal $200 capital-gain rule applies.",
+    "sources": ["S02", "S03", "S15"]
+  },
+  {
+    "id": "D04",
+    "condition": "CNY was received as a gift, inheritance or other non-purchase acquisition",
+    "tax_question": "What basis rule applies to this acquisition, and what records establish it?",
+    "next_action": "Do not use current balance or a current exchange rate as basis. Obtain acquisition-specific basis evidence before computing gain.",
+    "sources": ["S04", "S06"]
+  },
+  {
+    "id": "D05",
+    "condition": "CNY is leftover from a personal trip or other personal use",
+    "tax_question": "Is there exchange gain, and does it exceed $200 on this disposition?",
+    "next_action": "If gain is $200 or less, the personal exclusion may apply; if more than $200, IRS Publication 525 says report the gain as capital gain. Personal-use losses are not assumed deductible.",
+    "sources": ["S01", "S02", "S05", "S16"]
+  }
+]

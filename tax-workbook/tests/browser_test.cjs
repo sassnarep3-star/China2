@@ -18,7 +18,7 @@ const { chromium } = require('../../.cache/browser/node_modules/playwright-core'
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
   const base = (process.env.BASE_URL || 'http://127.0.0.1:8000/tax-workbook/site/').replace(/\/?$/, '/');
-  const counts = { index: 0, workbook: 40, rules: 18, sources: 15, review: 10, methodology: 0 };
+  const counts = { index: 5, workbook: 40, rules: 18, sources: 16, review: 10, methodology: 9 };
 
   for (const [name, count] of Object.entries(counts)) {
     const response = await page.goto(base + name + '.html');
@@ -34,7 +34,7 @@ const { chromium } = require('../../.cache/browser/node_modules/playwright-core'
   assert.equal(await page.locator('td.blank').count(), 240);
   assert.equal(await page.locator('tbody tr').first().locator('th').textContent(), '$10,000');
   assert.equal(await page.locator('tbody tr').last().locator('th').textContent(), '$400,000');
-  for (const file of ['workbook.csv', 'workbook.json']) {
+  for (const file of ['workbook.csv', 'workbook.json', 'basis-input-template.csv']) {
     const res = await page.request.get(base + file);
     assert.equal(res.status(), 200, file);
   }

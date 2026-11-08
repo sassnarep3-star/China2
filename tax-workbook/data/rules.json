@@ -5,7 +5,9 @@
     "rule": "A U.S. citizen's worldwide income is generally subject to U.S. income tax regardless of where the citizen lives. Moving money between accounts does not by itself identify the taxable item.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S14"],
+    "sources": [
+      "S14"
+    ],
     "note": "The taxable source, year, character and any exclusion/credit still require facts."
   },
   {
@@ -14,7 +16,9 @@
     "rule": "A disposition of nonfunctional currency is treated as a section 988 transaction under the cited code edition.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S02"],
+    "sources": [
+      "S02"
+    ],
     "note": "CNY is nonfunctional currency only if the taxpayer's functional currency is not CNY; many U.S. individual taxpayers have USD functional currency."
   },
   {
@@ -23,7 +27,10 @@
     "rule": "Covered section 988 foreign currency gain or loss is generally computed separately and treated as ordinary income or loss, unless an exception or election applies.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S02", "S03"],
+    "sources": [
+      "S02",
+      "S03"
+    ],
     "note": "Do not assume every personal bank conversion is ordinary; the personal-transaction exception must be tested."
   },
   {
@@ -32,7 +39,9 @@
     "rule": "Section 988's preceding provisions do not apply to an individual's personal transaction. A personal transaction excludes transactions with allocable expenses meeting section 162 or specified section 212 requirements.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S02"],
+    "sources": [
+      "S02"
+    ],
     "note": "Business, investment or income-producing use can change the result. An interest-bearing account is not automatically personal or investment; facts matter."
   },
   {
@@ -41,7 +50,10 @@
     "rule": "For an individual's personal disposition of nonfunctional currency, exchange-rate gain is not recognized if it does not exceed $200 on the transaction. If the gain exceeds $200, that exclusion does not apply.",
     "value": "200",
     "status": "verified-rule",
-    "sources": ["S02", "S01"],
+    "sources": [
+      "S02",
+      "S01"
+    ],
     "note": "This is a per-transaction gain cliff, not an annual allowance and not a tax rate. It does not make the whole transfer tax-free."
   },
   {
@@ -50,17 +62,22 @@
     "rule": "IRS Publication 525 says that if a personal foreign-currency gain is more than $200, report it as a capital gain.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S01"],
+    "sources": [
+      "S01"
+    ],
     "note": "Use with the statute and facts; do not treat a publication as a substitute for classifying the transaction."
   },
   {
     "id": "R07",
     "topic": "Personal-use losses",
-    "rule": "Losses from sale of personal-use property are not tax deductible under IRS capital-gains guidance.",
+    "rule": "Individual loss deductions are limited by 26 U.S.C. § 165(c); IRS capital-gains guidance also states that personal-use property losses are not deductible.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S05"],
-    "note": "A personal currency loss is not assumed to create a refund or offset."
+    "sources": [
+      "S05",
+      "S16"
+    ],
+    "note": "A personal currency loss is not assumed to create a refund or offset. Profit-seeking, business, casualty/theft and capital-loss rules require facts."
   },
   {
     "id": "R08",
@@ -68,7 +85,10 @@
     "rule": "Basis is the investment in property for tax purposes; purchased property's basis is usually cost. Accurate records are needed to figure gain or loss on disposition.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S04", "S06"],
+    "sources": [
+      "S04",
+      "S06"
+    ],
     "note": "For CNY acquired at different times, identify the lot(s) disposed of and their USD basis. Do not use the current balance as basis."
   },
   {
@@ -77,7 +97,10 @@
     "rule": "For capital assets, holding period generally is more than one year for long-term and one year or less for short-term, subject to exceptions.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S05", "S06"],
+    "sources": [
+      "S05",
+      "S06"
+    ],
     "note": "Holding period affects capital-gain character only if the disposition is capital rather than ordinary under section 988."
   },
   {
@@ -86,7 +109,10 @@
     "rule": "IRS has no official exchange rate and generally accepts any posted exchange rate used consistently. Generally use the spot rate prevailing when receiving, paying or accruing an item.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S09", "S15"],
+    "sources": [
+      "S09",
+      "S15"
+    ],
     "note": "A yearly average or Treasury reporting rate is not automatically the correct transaction-date rate."
   },
   {
@@ -95,7 +121,9 @@
     "rule": "The IRS yearly-average table lists China yuan at 7.129 for 2025.",
     "value": "7.129",
     "status": "verified-reference",
-    "sources": ["S09"],
+    "sources": [
+      "S09"
+    ],
     "note": "Reference only; not used as an executable conversion quote or as this account's acquisition basis."
   },
   {
@@ -104,7 +132,10 @@
     "rule": "The Treasury reporting-rate PDF lists China-Renminbi at 6.7050 foreign currency units per U.S. dollar, effective September 30, 2026.",
     "value": "6.7050",
     "status": "verified-reference",
-    "sources": ["S12", "S13"],
+    "sources": [
+      "S12",
+      "S13"
+    ],
     "note": "Used only to compute a labeled CNY reference amount. It is not a live bank quote; online amendments were not independently checked."
   },
   {
@@ -113,7 +144,10 @@
     "rule": "A foreign tax credit may be available for qualifying foreign income taxes imposed on the taxpayer where the same income is subject to U.S. tax. Taxes on excluded income do not generate a credit; treaty-reduced rates can limit creditable tax.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S08", "S07"],
+    "sources": [
+      "S08",
+      "S07"
+    ],
     "note": "A PRC tax payment is not automatically dollar-for-dollar creditable against all U.S. tax."
   },
   {
@@ -122,7 +156,9 @@
     "rule": "Unused foreign taxes in a separate category that exceed the limitation generally may be carried back 1 year and then forward 10 years, subject to restrictions. This is not a general 10-year refund window.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S07"],
+    "sources": [
+      "S07"
+    ],
     "note": "The IRS FTC page's 10-year refund paragraph is specifically French CSG/CRDS guidance."
   },
   {
@@ -131,7 +167,9 @@
     "rule": "A U.S. person with reportable foreign financial accounts must file an FBAR if the aggregate value exceeded $10,000 at any time during the calendar year.",
     "value": "10000",
     "status": "verified-rule",
-    "sources": ["S10"],
+    "sources": [
+      "S10"
+    ],
     "note": "This is a reporting trigger, not a conversion fee or income-tax rate."
   },
   {
@@ -140,7 +178,9 @@
     "rule": "Form 8938 thresholds depend on residence abroad, filing status and aggregate specified foreign financial assets. The IRS page lists U.S. unmarried $50,000 year-end / $75,000 any time and abroad non-joint $200,000 / $300,000, with higher joint thresholds.",
     "value": "",
     "status": "verified-rule",
-    "sources": ["S11"],
+    "sources": [
+      "S11"
+    ],
     "note": "The user's residence, filing status and asset aggregation are unknown."
   },
   {
@@ -149,7 +189,11 @@
     "rule": "The actual U.S. tax on this CNY balance cannot be computed from the transfer amount alone.",
     "value": "",
     "status": "unverified",
-    "sources": ["S02", "S04", "S09"],
+    "sources": [
+      "S02",
+      "S04",
+      "S09"
+    ],
     "note": "Missing: source of funds, acquisition dates/lots, USD basis, disposition rate, personal vs business/investment use, filing status, taxable income, tax year, prior reporting and credits."
   },
   {
@@ -158,7 +202,9 @@
     "rule": "No executable bank/provider quote, spread, sender fee, intermediary fee or recipient fee was supplied or verified for this account.",
     "value": "",
     "status": "unverified",
-    "sources": ["S13"],
+    "sources": [
+      "S13"
+    ],
     "note": "Official reporting-rate context does not verify commercial pricing. Cost cells remain blank."
   }
 ]

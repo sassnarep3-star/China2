@@ -148,5 +148,15 @@
     "status": "read",
     "verified_text": "Amounts on U.S. tax return must be expressed in U.S. dollars; functional currency generally U.S. dollar unless required to use foreign currency; use exchange rate prevailing when receiving, paying or accruing.",
     "limitation": "Does not supply this account's acquisition or disposition rates."
+  },
+  {
+    "id": "S16",
+    "title": "26 U.S.C. § 165 (2024 edition), Losses",
+    "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec165.htm",
+    "locator": "§ 165(c), Limitation on losses of individuals",
+    "retrieved_utc": "2026-11-08",
+    "status": "read",
+    "verified_text": "For an individual, loss deductions are limited to trade or business losses, losses incurred in a transaction entered into for profit, and specified casualty/theft losses of non-business/non-profit property.",
+    "limitation": "2024 code edition; casualty/theft and capital-loss limitations require facts. Does not establish this taxpayer's deductibility."
   }
 ]

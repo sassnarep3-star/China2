@@ -1,0 +1,83 @@
+[
+  {
+    "id": "C01",
+    "name": "CNY reference amount",
+    "formula": "target_usd × reference_rate_cny_per_usd",
+    "result": "computed reference only",
+    "status": "computed-reference",
+    "sources": ["S12", "S13", "S09"],
+    "note": "Uses Treasury's published 2026-09-30 reporting rate. Not an executable quote and not necessarily the tax transaction-date rate."
+  },
+  {
+    "id": "C02",
+    "name": "USD basis of disposed CNY lot",
+    "formula": "documented USD basis of the specific CNY lot disposed of",
+    "result": "",
+    "status": "unverified",
+    "sources": ["S04", "S06", "S03"],
+    "note": "Do not substitute the current balance or current exchange rate. Acquisition by purchase, income, gift or inheritance can require different basis evidence."
+  },
+  {
+    "id": "C03",
+    "name": "Realized currency gain or loss",
+    "formula": "USD value of CNY disposed at disposition − USD basis of the same CNY lot",
+    "result": "",
+    "status": "unverified",
+    "sources": ["S03", "S05"],
+    "note": "Compute lot by lot. Execution fees are tracked separately unless tax advice establishes a different treatment."
+  },
+  {
+    "id": "C04",
+    "name": "Personal currency gain recognition",
+    "formula": "if personal transaction and 0 ≤ gain ≤ $200: recognized gain = $0; if personal transaction and gain > $200: report the gain as capital gain",
+    "result": "",
+    "status": "unverified",
+    "sources": ["S01", "S02"],
+    "note": "The $200 test is per qualifying personal disposition. Above $200, the exclusion does not apply; do not tax only the excess over $200."
+  },
+  {
+    "id": "C05",
+    "name": "Personal currency loss",
+    "formula": "no deduction assumed for a personal-use loss; test §165(c) and capital-loss limits if facts differ",
+    "result": "",
+    "status": "unverified",
+    "sources": ["S05", "S16"],
+    "note": "A loss is not automatically a refund or offset."
+  },
+  {
+    "id": "C06",
+    "name": "Nonpersonal currency gain or loss",
+    "formula": "generally ordinary under §988 unless an exception or valid election applies",
+    "result": "",
+    "status": "unverified",
+    "sources": ["S02", "S03"],
+    "note": "Business, investment/income-producing use, functional currency and elections must be established."
+  },
+  {
+    "id": "C07",
+    "name": "U.S. federal tax",
+    "formula": "taxable gain × applicable rate, after tax year, filing status, taxable income, character and credit limitations are established",
+    "result": "",
+    "status": "unverified",
+    "sources": ["S05", "S06", "S07"],
+    "note": "No flat conversion-tax rate is applied. Foreign tax credits are limited and do not automatically equal PRC tax paid."
+  },
+  {
+    "id": "C08",
+    "name": "Execution fees",
+    "formula": "sender fee + intermediary fee + receiver fee + FX spread cost",
+    "result": "",
+    "status": "unverified",
+    "sources": ["S13", "S09"],
+    "note": "No executable provider quote was supplied. Treasury reporting rates do not verify commercial spread or fees."
+  },
+  {
+    "id": "C09",
+    "name": "Total workbook cost",
+    "formula": "U.S. federal tax + execution fees + other verified costs or penalties",
+    "result": "",
+    "status": "unverified",
+    "sources": ["S02", "S13"],
+    "note": "Remains blank while any required component is unverified. Reporting penalties are fact-dependent and not estimated here."
+  }
+]

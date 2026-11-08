@@ -15,7 +15,11 @@ Date: 2026-11-08 UTC. Scope: U.S. personal foreign-currency disposition / tax-ba
 - IRS yearly average exchange rates: IRS has no official exchange rate; generally accepts any posted rate used consistently; spot rate generally applies when receiving/paying/accruing; 2025 China yuan average 7.129. https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates
 - IRS FBAR page: aggregate foreign accounts >$10,000 at any time; April 15 / automatic October 15; records generally five years. https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar
 - IRS Form 8938 threshold page: exact U.S./abroad and filing-status thresholds. https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets
-- Treasury Reporting Rates of Exchange: official quarterly reporting rates, not current transaction rates; data moved to FiscalData. https://fiscal.treasury.gov/resources/reporting-rates-exchange
+- Treasury Reporting Rates of Exchange dataset: official quarterly reporting rates, not current transaction rates; amendments may appear online; exceptions include foreign currencies sold for dollars. https://fiscaldata.treasury.gov/datasets/treasury-reporting-rates-exchange/
+- Treasury Reporting Rates of Exchange PDF, September 30, 2026: China-Renminbi 6.7050 foreign currency units per U.S. dollar. The PDF excludes online amendments. https://fiscaldata.treasury.gov/static-data/published-reports/exchange-rates/Rates_of_Exchange_09302026.pdf
+- IRS Publication 54 (12/2025): U.S. citizens/resident aliens generally taxed on worldwide income regardless of residence. https://www.irs.gov/publications/p54
+- IRS Foreign currency and currency exchange rates: U.S. return amounts in USD; functional currency generally USD unless required otherwise; use rate prevailing when receiving/paying/accruing. https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates
+- 26 U.S.C. § 165(c) (2024 ed.), GovInfo: individual loss deductions limited to business, profit-seeking and specified casualty/theft losses. https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec165.htm
 
 ## Failed / excluded candidates
 
@@ -25,4 +29,4 @@ Date: 2026-11-08 UTC. Scope: U.S. personal foreign-currency disposition / tax-ba
 
 ## Policy
 
-No personal account facts, acquisition dates, basis, filing status, taxable income, bank quotes, or live FX rates were supplied. Those fields remain blank and are flagged. The only numeric scenario inputs are the user-requested $10,000 increments and the official IRS 2025 yearly-average CNY/USD reference rate, clearly labeled as a reference rather than an executable quote. Arithmetic derived from those inputs is labeled “computed reference,” not a verified transfer cost.
+No personal account facts, acquisition dates, basis, filing status, taxable income, bank quotes, or live FX rates were supplied. Those fields remain blank and are flagged. The only numeric scenario inputs are the user-requested $10,000 increments and Treasury's published 2026-09-30 official reporting rate 6.7050 CNY/USD, clearly labeled as a reference rather than an executable quote. The IRS 2025 yearly-average China rate 7.129 is recorded as a separate reference and is not used in the workbook arithmetic. Arithmetic derived from the Treasury reference is labeled “computed reference,” not a verified transfer cost.

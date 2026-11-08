@@ -73,6 +73,8 @@ def main() -> None:
     sources = {s["id"]: s for s in load("sources.json")}
     rules = load("rules.json")
     flags = load("flags.json")
+    formulas = load("formulas.json")
+    decisions = load("decisions.json")
     inputs = load("inputs.json")
     workbook = load("workbook.json")
 
@@ -93,6 +95,24 @@ def main() -> None:
         assert flag["sources"], flag
         for sid in flag["sources"]:
             assert sid in sources and official(sources[sid]["url"]), flag
+
+    for formula in formulas:
+        assert formula["sources"], formula
+        for sid in formula["sources"]:
+            assert sid in sources and official(sources[sid]["url"]), formula
+        if formula["status"] == "unverified":
+            assert formula["result"] == "", formula
+
+    for decision in decisions:
+        assert decision["sources"], decision
+        for sid in decision["sources"]:
+            assert sid in sources and official(sources[sid]["url"]), decision
+
+    with (DATA / "basis-input-template.csv").open(newline="", encoding="utf-8") as handle:
+        template_rows = list(csv.reader(handle))
+    assert len(template_rows) == 1 and template_rows[0], "basis template must contain headers only"
+    assert "acquisition_basis_usd" in template_rows[0]
+    assert "source_ids" in template_rows[0]
 
     rate = Decimal(inputs["reference_rate"]["value"])
     expected_targets = list(
@@ -127,6 +147,7 @@ def main() -> None:
 
     assert (SITE / "workbook.csv").read_bytes() == (DATA / "workbook.csv").read_bytes()
     assert (SITE / "workbook.json").read_bytes() == (DATA / "workbook.json").read_bytes()
+    assert (SITE / "basis-input-template.csv").read_bytes() == (DATA / "basis-input-template.csv").read_bytes()
 
     pages = {}
     for path in SITE.rglob("*.html"):
@@ -154,8 +175,8 @@ def main() -> None:
 
     print(
         f"PASS: {len(pages)} pages, {len(rows)} workbook rows, {len(sources)} official sources, "
-        f"{len(rules)} rules, {len(flags)} flags; blank unverified values, arithmetic parity, "
-        "row source links and local links/anchors."
+        f"{len(rules)} rules, {len(flags)} flags, {len(formulas)} formulas, {len(decisions)} decision paths; "
+        "blank unverified values, arithmetic parity, row source links, local links/anchors and blank input template."
     )
 
 
