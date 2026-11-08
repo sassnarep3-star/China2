@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assumptions · China → USD cost ladder</title>
+<meta name="description" content="Source-linked cost of moving CNY out of mainland China into USD for a US citizen, from $10,000 to $400,000 in $10,000 steps.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="brand"><span class="mark">¥→$</span> <span>China money <em>cost ladder</em></span></div>
+  <p class="stamp">Research · retrieved 2026-11-08 · not tax or legal advice</p>
+</header>
+<nav class="nav" aria-label="Sections"><a href="index.html">Overview</a><a href="costs.html">Cost tables</a><a href="ladder.html">All 40 tiers</a><a href="routes.html">Routes</a><a href="steps.html">Step by step</a><a href="tax.html">Tax &amp; penalties</a><a href="assumptions.html" class="on">Assumptions</a><a href="audit.html">Repo audit</a><a href="flagged.html">Flagged</a><a href="sources.html">Sources</a></nav>
+<main id="main">
+
+
+<h1>What is published, and what is modelled</h1>
+<p class="lede">This is the honesty page. Anything below is an assumption used to produce an estimate. None
+of it is a regulator's figure, a bank quote, or a fact about your account.</p>
+<div class="callout">
+  <p><strong>The rule applied throughout.</strong> If an official source states a value, it is printed with a
+  link. If no official source states it, the value is either left blank and flagged, or presented here as a
+  labelled assumption with a range. It is never presented as a verified fact.</p>
+</div>
+<div class="table-wrap"><table class="grid">
+<thead><tr><th>ID</th><th>Topic</th><th>Value used</th><th>Status</th><th>Why</th></tr></thead>
+<tbody><tr><td data-label='ID'><strong>A1</strong></td><td data-label='Topic'>CNY/USD used to express CNY fee caps</td><td data-label='Value used'><strong>7.10 CNY per USD (band 6.80-7.40)</strong></td><td data-label='Status'><span class='badge warn'>model assumption</span></td><td data-label='Why'>Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 / 40 caps are affected; at 400,000 USD the whole cap swing is under 15 USD. No rate forecast is used anywhere.</td></tr><tr><td data-label='ID'><strong>A2</strong></td><td data-label='Topic'>FX spread on a bank wire</td><td data-label='Value used'><strong>0.30%-1.50% of principal</strong></td><td data-label='Status'><span class='badge warn'>model assumption</span></td><td data-label='Why'>No published executable CNY/USD customer quote was obtained for any account, so a band is modelled instead of a number. This is the single largest cost component and must be replaced by the bank&#x27;s own executable quote before acting.</td></tr><tr><td data-label='ID'><strong>A3</strong></td><td data-label='Topic'>FX spread on cash / counter conversion</td><td data-label='Value used'><strong>0.80%-3.00%</strong></td><td data-label='Status'><span class='badge warn'>model assumption</span></td><td data-label='Why'>Banknote spreads are wider than telegraphic spreads; no published cash quote was obtained.</td></tr><tr><td data-label='ID'><strong>A4</strong></td><td data-label='Topic'>FX spread on card / ATM settlement</td><td data-label='Value used'><strong>0.00%-3.00%</strong></td><td data-label='Status'><span class='badge warn'>model assumption</span></td><td data-label='Why'>Card scheme settlement rates and issuer foreign-transaction fees vary; none was verified for this account.</td></tr><tr><td data-label='ID'><strong>A5</strong></td><td data-label='Topic'>FX spread offshore (CNH) before USD</td><td data-label='Value used'><strong>0.20%-1.00%</strong></td><td data-label='Status'><span class='badge warn'>model assumption</span></td><td data-label='Why'>Offshore spreads are narrower in normal conditions; eligibility for an individual to move RMB offshore was not verified (see F05).</td></tr><tr><td data-label='ID'><strong>A6</strong></td><td data-label='Topic'>Fixed fees at banks other than HSBC China</td><td data-label='Value used'><strong>same as the HSBC China published tariff</strong></td><td data-label='Status'><span class='badge warn'>model assumption</span></td><td data-label='Why'>Only one itemised personal tariff (S06) was verified. Other banks publish different tariffs; substitute your own bank&#x27;s schedule.</td></tr><tr><td data-label='ID'><strong>A7</strong></td><td data-label='Topic'>Number of wires per tier</td><td data-label='Value used'><strong>one wire per tranche</strong></td><td data-label='Status'><span class='badge warn'>model assumption</span></td><td data-label='Why'>No per-transfer ceiling for a non-domestic individual remittance was verified, so the model does not invent one. If your bank splits a large remittance, multiply the fixed fee.</td></tr><tr><td data-label='ID'><strong>A8</strong></td><td data-label='Topic'>US side cost of compliance</td><td data-label='Value used'><strong>not modelled (blank)</strong></td><td data-label='Status'><span class='badge warn'>unverified - left blank</span></td><td data-label='Why'>Preparer fees for FBAR / Form 8938 / Form 1116 vary by provider and were not verified. Filing itself has no fee. The exposure is the penalty for not filing.</td></tr><tr><td data-label='ID'><strong>A9</strong></td><td data-label='Topic'>PRC tax actually payable on the balance</td><td data-label='Value used'><strong>not modelled (blank)</strong></td><td data-label='Status'><span class='badge warn'>unverified - left blank</span></td><td data-label='Why'>Tax depends on the character of the underlying income and on what was already withheld. The ladder shows statutory rates and marks the resulting cell as exposure, not a bill.</td></tr></tbody></table></div>
+<section class="panel">
+  <h2>Published values that the model actually uses</h2>
+  <ul class="plain">
+    <li>Outward telegraphic transfer: 0.1%, minimum CNY 100, maximum CNY 500 per transaction, plus a CNY 120
+    cable fee. <a class="src" href="sources.html#S06" title="Account and Service Tariff, Personal Customers (effective 1 January 2021)">S06 · hsbc.com.cn</a></li>
+    <li>Currency of a cash balance converted to remittable FX: 1% (waived for Premier). <a class="src" href="sources.html#S06" title="Account and Service Tariff, Personal Customers (effective 1 January 2021)">S06 · hsbc.com.cn</a></li>
+    <li>Same-name HSBC Global Transfer: free for Premier, reference price USD 7 per transfer. <a class="src" href="sources.html#S06" title="Account and Service Tariff, Personal Customers (effective 1 January 2021)">S06 · hsbc.com.cn</a></li>
+    <li>Foreign cash withdrawal: 0.25%–0.4%, minimum CNY 40. <a class="src" href="sources.html#S06" title="Account and Service Tariff, Personal Customers (effective 1 January 2021)">S06 · hsbc.com.cn</a></li>
+    <li>CNY 100,000 per person per calendar year of overseas ATM cash; CNY 10,000 per card per day.
+    <a class="src" href="sources.html#S03" title="Notice on Regulating Large Cash Withdrawals Abroad with Bank Cards (Hui Fa [2017] No. 29)">S03 · safe.gov.cn</a></li>
+    <li>USD 500 per day onshore / USD 1,000 per day port-side conversion exemption. <a class="src" href="sources.html#S17" title="2026 FX administration Q&amp;A, individual FX (10): conversion back of unused RMB">S17 · safe.gov.cn</a></li>
+    <li>USD 5,000 / 10,000 cash carrying thresholds. <a class="src" href="sources.html#S15" title="Provisional Measures on Carrying Foreign Currency Cash Across the Border (Hui Fa [2003] No. 102)">S15 · safe.gov.cn</a></li>
+    <li>Staged emigration remittance: up to half, then half of the remainder after one year, balance after
+    two years; RMB 200,000 may go in one go. <a class="src" href="sources.html#S05" title="Provisional Measures for the Administration of Sale and Payment of Foreign Exchange for Individuals&#x27; Outward Asset Transfers (PBOC Announcement [2004] No. 16)">S05 · m.safe.gov.cn</a></li>
+  </ul>
+</section>
+
+</main>
+<footer class="foot">
+  <p><strong>What this is.</strong> A source-linked model of what it costs to convert and move RMB out of
+  mainland China into USD, tier by tier from $10,000 to $400,000. Every published figure is linked to the
+  authority that publishes it; every figure that is not published is labelled as a model assumption and
+  kept separate.</p>
+  <p><strong>What this is not.</strong> Not individualized tax, legal or investment advice, and not a quote.
+  The bank's executable rate on the day is the only real spread. No transfers were made and no returns filed.</p>
+  <p class="meta">Sources 20 · routes 20 · tiers 40 ·
+  modelled rows 600 · generated 2026-11-08 ·
+  <a href="data/costs.csv">costs.csv</a> · <a href="data/costs.json">costs.json</a> ·
+  <a href="data/routes.json">routes.json</a> · <a href="data/sources.json">sources.json</a></p>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
