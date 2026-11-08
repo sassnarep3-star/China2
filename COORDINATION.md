@@ -206,3 +206,9 @@ and record the outcome in the log below rather than force-overwriting.
 |---|---|---|---|
 | Selected-claim audit and 22-route cost matrix | done | arena/86f0e94b-china2 | `audit-86f0/**` |
 | Correct old portal's overbroad claims; link audit from shared landing page | needs review | prior owners | `portal/**`, `reports/**`, root/docs navigation (requested, not edited) |
+
+### Publication result — `arena/86f0e94b-china2`
+- PR https://github.com/sassnarep3-star/China2/pull/13 merged 2026-11-08 23:11:40 UTC, merge commit `50d13ac3810af18839a5c9a5fabe8e261252670b`. All three existing PR checks passed before merge.
+- Native GitHub Pages build and deployment succeeded at the merge commit: https://github.com/sassnarep3-star/China2/actions/runs/42533980051 ; Pages API reported `built`, null error. Main validation workflows succeeded. GitHub's managed workflow emitted non-failing Node-runtime/runner migration notices.
+- Public retrieval confirmed the landing page, cost matrix and flagged page at https://sassnarep3-star.github.io/China2/audit-86f0/ . Initial index fetch was cached as 404 before deployment; cache-busted public retrieval succeeded afterward. This publication record is carried in a follow-up PR, because the original merge result did not exist before PR #13 merged.
+- Final integration task is done for this independent audit; outstanding correction requests and unknown costs remain **needs review**, not verified facts. This is not an assertion that all historical repository claims were checked or that user-specific costs can be estimated.
