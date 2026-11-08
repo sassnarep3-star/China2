@@ -1,1 +1,65 @@
-<!doctype html><meta charset="utf-8"><title>China → USD Dashboard</title><meta http-equiv="refresh" content="0; url=docs/"><p><a href="docs/">Open China → USD Dashboard</a></p>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>China money · CNY to USD, costed</title>
+<meta name="description" content="Source-linked cost of converting CNY to USD for a US citizen, from $10,000 to $400,000 in $10,000 steps.">
+<style>
+:root{--ink:#12211d;--muted:#6b7d74;--paper:#f6f5ef;--line:#dfddd2;--accent:#0f6d5c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+header{background:var(--ink);color:#f4f2ea;padding:1.1rem clamp(1rem,4vw,2.5rem)}
+header p{margin:.2rem 0 0;font-size:.8rem;color:#a9bab1}
+main{max-width:1000px;margin:0 auto;padding:clamp(1.4rem,4vw,2.6rem) clamp(1rem,4vw,2rem) 3rem}
+h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.12;letter-spacing:-.02em;margin:.2rem 0 .6rem}
+.lede{font-size:1.06rem;color:#2c4038;max-width:70ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.8rem;margin:1.4rem 0}
+.kpi{background:#fff;border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:14px;
+ padding:1rem 1.1rem;box-shadow:0 8px 24px rgba(18,33,29,.05)}
+.kpi .l{margin:0;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.kpi .v{margin:.1rem 0;font-size:1.7rem;font-weight:680;letter-spacing:-.02em}
+.kpi .s{margin:0;font-size:.8rem;color:var(--muted)}
+.answer{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;
+ padding:1rem 1.1rem;margin:1.2rem 0}
+.sites{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.8rem;margin:1rem 0}
+.site{display:flex;flex-direction:column;gap:.25rem;background:#fff;border:1px solid var(--line);
+ border-radius:12px;padding:1rem;text-decoration:none;color:var(--ink)}
+.site:hover{border-color:var(--accent)}
+.site strong{font-size:1rem} .site span{font-size:.85rem;color:#3b5147}
+.site em{font-style:normal;font-size:.82rem;color:#54695f}
+footer{background:var(--ink);color:#c8d4ce;padding:1.6rem clamp(1rem,4vw,2.5rem);font-size:.82rem}
+footer a{color:#8fe0c8}
+</style>
+</head>
+<body>
+<header><strong>China money</strong><p>Source-linked research · retrieved 2026-11-08 · not tax or legal advice</p></header>
+<main>
+<h1>Getting CNY out of China: what it actually costs</h1>
+<p class="lede">A US citizen's RMB balance is not blocked by a tax on converting currency. It is blocked by
+documentation, and the largest real cost is the bank's FX spread. Below is the costed answer, then the
+research behind it.</p>
+<div class="kpis"><div class="kpi"><p class="l">$10,000 out</p><p class="v">$37 – $157</p><p class="s">0.37% – 1.57% of the amount</p></div><div class="kpi"><p class="l">$100,000 out</p><p class="v">$307 – $1,507</p><p class="s">0.31% – 1.51% of the amount</p></div><div class="kpi"><p class="l">$400,000 out</p><p class="v">$1,207 – $6,007</p><p class="s">0.30% – 1.50% of the amount</p></div></div>
+<p class="lede" style="font-size:.88rem;color:#54695f">Cheapest route that actually delivers USD to an overseas
+account: documented income, converted at the counter, moved by same-bank Global Transfer or SWIFT. Excludes any
+PRC tax on the source money (that is a separate question, answered inside) and excludes US preparer fees.</p>
+<div class="answer"><p><strong>Short version.</strong> If the RMB is already-taxed income, the extra PRC tax to
+convert it is zero and the all-in cost is roughly 0.3%–1.8%. If it was never taxed, the 3%–45% or flat 20%
+being called a “conversion penalty” is simply unpaid PRC tax, and the lawful fix is to pay it, get the
+certificate, convert, and claim it in the US on Form 1116. If you emigrated from China, the dedicated
+emigration transfer route has no annual quota but takes up to two years. Crypto, private swaps, borrowed
+quotas and underground banks are criminal or prohibited, with fines of 20%–100%.</p></div>
+<h2>Dashboards in this repository</h2>
+<div class="sites"><a class="site" href="ladder/index.html"><strong>Cost ladder</strong><span>The answer, the cost tables and all 40 tiers</span><em>15 routes priced at every $10,000 step to $400,000, with the fee schedule and the legal ceiling behind each one. Start here.</em></a><a class="site" href="docs/index.html"><strong>Research dashboard</strong><span>Findings, evidence ledger and review flags</span><em>The original source-linked research build: routes, costs, taxes, checklist, flags, sources.</em></a><a class="site" href="site/index.html"><strong>Evidence site</strong><span>Rules, lawful and unlawful routes, methodology</span><em>Built from a separate evidence ledger with its own verification harness.</em></a><a class="site" href="portal/index.html"><strong>Research portal</strong><span>Statutory verification and line-by-line repo audit</span><em>A third independent pass, with a .gov/.gov.cn source register and audit of the repository.</em></a><a class="site" href="audit-86f0/index.html"><strong>Independent audit</strong><span>Claim corrections and a blank-cost 22 × 40 matrix</span><em>A fourth session&#x27;s audit. Its matrix deliberately leaves cost cells blank; this ladder fills them with published fees plus a labelled spread band. Read them together.</em></a></div>
+</main>
+<footer>
+<p><strong>Research, not advice.</strong> No personal tax amount is computed, no transfers were made and no
+returns were filed. Every published figure links to the authority that publishes it; unverified values are
+blank and flagged rather than filled in.</p>
+<p><a href="ladder/flagged.html">Flagged for review</a> ·
+<a href="ladder/sources.html">Sources</a> ·
+<a href="COORDINATION.md">Task board</a></p>
+</footer>
+</body>
+</html>
