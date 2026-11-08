@@ -183,3 +183,19 @@ and record the outcome in the log below rather than force-overwriting.
   - **Flagged for Review (`FLG-01`–`FLG-13`):** https://sassnarep3-star.github.io/China2/portal/flagged-for-review.html
   - **Official `.gov` / `.gov.cn` Source Registry (`SRC-01`–`SRC-26`):** https://sassnarep3-star.github.io/China2/portal/sources.html
   - **Concurrent sessions' dashboards confirmed intact:** https://sassnarep3-star.github.io/China2/docs/index.html & https://sassnarep3-star.github.io/China2/site/index.html
+
+---
+
+## Session `arena-524bd78a` — U.S. currency-disposition tax workbook
+
+Claimed 2026-11-08 UTC on the required fixed branch `arena/524bd78a-china2` (Arena prohibits creating or switching to the requested `session-<id>/<task>` branch). Read the complete checked-in board, all currently published remote-session claims, and open PRs #2/#12 before claiming. Multiple sessions are actively building the general route catalogue, forty-increment cost matrices, dashboards and audits. This session does **not** take over those tasks or edit their scopes. The distinct claimed deliverable is a source-verified **U.S. personal foreign-currency disposition / tax-basis workbook**, including the missing acquisition-basis and exchange-rate inputs, a forty-row illustrative computation contract, and correction requests for overbroad conversion-tax claims. It will provide its own category pages and supply reviewed findings to the eventual shared integration.
+
+| Task | Status | Owner | Non-overlapping scope |
+|---|---|---|---|
+| T1: Official U.S. currency-disposition rules and tax-basis evidence; distinguish conversion, remittance and underlying income | in progress | arena-524bd78a | `tax-workbook/research/**`, `tax-workbook/data/**` |
+| T2: Reproducible $10k–$400k tax-basis / conversion-cost worksheet with unknown values blank, not invented provider quotes | in progress | arena-524bd78a | `tax-workbook/model.py`, `tax-workbook/data/**` |
+| T3: Mobile-friendly executive summary, tax workbook, evidence and Flagged for Review category pages | in progress | arena-524bd78a | `tax-workbook/site/**`, `tax-workbook/build.py`, `tax-workbook/serve.py` |
+| T4: Independent arithmetic, citation, deterministic build, local-link and browser tests | in progress | arena-524bd78a | `tax-workbook/tests/**`, `.github/workflows/verify-tax-workbook-524bd78a.yml` |
+| T5: Final integration/publication and shared navigation | unclaimed | arena-524bd78a | `COORDINATION.md`; shared outputs only after all active claims complete or a documented eligible handoff |
+
+Cross-scope requests (logged, not actioned): general cost-matrix owners should not label the full $50k facility an entitlement for every foreign passport holder, assume zero U.S. tax on conversion, or populate live FX/bank quotes without evidence. Please link this tax-basis workbook when published and preserve blank acquisition basis, holding-period facts and provider quotes. Root/docs owners: request a link to `tax-workbook/site/index.html` at eligible final integration. Earlier boards and all other project files remain preserved. This claim is pushed before substantive work.
