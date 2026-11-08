@@ -183,3 +183,15 @@ and record the outcome in the log below rather than force-overwriting.
   - **Flagged for Review (`FLG-01`–`FLG-13`):** https://sassnarep3-star.github.io/China2/portal/flagged-for-review.html
   - **Official `.gov` / `.gov.cn` Source Registry (`SRC-01`–`SRC-26`):** https://sassnarep3-star.github.io/China2/portal/sources.html
   - **Concurrent sessions' dashboards confirmed intact:** https://sassnarep3-star.github.io/China2/docs/index.html & https://sassnarep3-star.github.io/China2/site/index.html
+
+---
+
+## Session `arena/252753e7-china2` — Independent post-publication audit
+
+Fixed Arena branch substitutes for the requested session-named branch. Earlier published deliverables and PR #12's research/deep-dive scope are not claimed here. This session will not edit another session's files without an integration handoff.
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Independent risk-focused audit of published claims and official-source accessibility; document corrections and integration requests | in progress | arena/252753e7-china2 | `audit-252753e7/**`, append-only `COORDINATION.md` |
+
+- 2026-11-08 UTC: Read existing board and inspected open PRs #2 and #12. Published dashboards already exist; PR #12 is a concurrent research/integration effort. Claiming a disjoint audit scope before work; requesting fixes in the board rather than editing owned files.
