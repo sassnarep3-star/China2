@@ -1,0 +1,1693 @@
+{
+ "meta": {
+  "project": "Getting money out of China into USD as a US citizen",
+  "generated": "2026-11-09",
+  "branch": "arena/b8e50c81-china2",
+  "scope_note": "Every figure below is either (a) copied from an official or clearly-labelled commercial source recorded in sources.json, or (b) arithmetic performed on those figures and labelled 'derived'. Anything that could not be confirmed is null and carries a flag. No value is inferred.",
+  "fx_anchor": {
+   "pair": "USD/CNY",
+   "cny_per_usd": 6.7188,
+   "as_of": "2026-11-09",
+   "kind": "PBOC/CFETS central parity published by SAFE",
+   "source": "P14",
+   "semantics": "100 USD = 671.88 CNY (direct quotation). Used only to translate published CNY amounts into USD. A central parity is NOT a customer's executable retail rate.",
+   "spread_note": "The retail bid/ask spread a customer actually pays is not published by any bank reviewed here. It is therefore null everywhere in this dataset and flagged F-SPREAD. All totals below are a FLOOR, not a full cost."
+  },
+  "not_tax_advice": "Information compiled from primary sources. It is not tax, legal or immigration advice. Figures are as published on the retrieval date; Chinese FX rules change by circular.",
+  "status_legend": {
+   "available": "Lawful route, usable now by an eligible person.",
+   "conditional": "Lawful only if specific eligibility or documentary conditions are met.",
+   "prohibited": "Published as illegal or prohibited by a cited official source. Listed so the user knows what to avoid, never recommended."
+  }
+ },
+ "methods": [
+  {
+   "id": "M01",
+   "name": "Annual facilitation quota — US$50,000 per person per year",
+   "name_zh": "个人年度便利化额度（等值5万美元）",
+   "category": "Official routine route",
+   "status": "available",
+   "rank": 1,
+   "one_line": "The baseline lawful channel. Buy up to US$50,000-equivalent per calendar year at any bank with just your ID, then wire it to your own US account.",
+   "eligibility": "A 境内个人 (domestic individual) as defined in Decree 532 Art. 52(2) — a Chinese citizen, or a foreign national who has resided in China for one continuous year. A US citizen holding a Chinese residence permit for a continuous year falls in this class. A US citizen who is instead a 境外个人 (non-domestic individual) — e.g. holding a Foreign Permanent Resident ID — follows M03.",
+   "volume": {
+    "per_txn_usd": 50000,
+    "annual_usd": 50000,
+    "note": "The US$50,000 is an annual FACILITATION quota, not a hard legal ceiling on all conversion: genuine current-account needs above it are allowed with authenticity documents (see M02). It may not be split across people to exceed it.",
+    "source": [
+     "P02",
+     "P03"
+    ]
+   },
+   "steps": [
+    "Confirm your classification: are you a 境内个人 (Chinese citizen, or foreign national resident 1 continuous year) or a 境外个人? The quota structure differs. Ask the bank to state the classification in writing.",
+    "Open/enable online banking on the mainland CNY account and confirm the account is a personal settlement account (I类户) — a II/III-class account has payment caps that block large wires.",
+    "File the 个人购汇申请书 (Individual FX Purchase Application) — in-app or at the counter. Tick ONE purpose. Declared purposes must be genuine: an unopened capital item (overseas property, securities, life insurance) may not be declared (P15).",
+    "Confirm the bank will apply the transaction to your 年度便利化额度 and that the amount is ≤ US$50,000 equivalent for the calendar year. Track the used quota in the bank app — it is cumulative per person per year, per SAFE's system, not per bank.",
+    "Convert CNY→USD at the bank's prevailing rate (its own spread applies; unpublished — F-SPREAD).",
+    "Wire USD to your own US bank account from the FX/settlement account. For a remittance from the FX account ≤ US$50,000/day, ID alone suffices; above that, authenticity documents are required (P02 Art. 14).",
+    "Keep the bank's FX purchase receipt (购汇凭证) and the wire confirmation. Retain the purpose evidence that matches what you declared.",
+    "US side: the transfer itself is not US taxable income. Report the account on FinCEN 114 if the aggregate of all foreign accounts exceeded US$10,000 at any point in the year (U01), and on Form 8938 if the applicable threshold is met (U02)."
+   ],
+   "docs": [
+    "Valid ID (passport for a foreign national; Chinese ID for a citizen)",
+    "个人购汇申请书 (individual FX purchase application)",
+    "Bank card / account credentials",
+    "Receiving US account details (ABA + account number, account in your own name)"
+   ],
+   "fees": [
+    {
+     "item": "Outward telegraphic transfer commission",
+     "cny": 500,
+     "usd": 74.42,
+     "basis": "0.1% of the CNY amount, minimum CNY 100, maximum CNY 500 — tariff items 5.1.1.1. For a US$50,000 transfer the 0.1% is ~CNY 3,359 which exceeds the cap, so the cap binds: CNY 500.",
+     "source": "C01"
+    },
+    {
+     "item": "Cable / telegraphic charge",
+     "cny": 120,
+     "usd": 17.86,
+     "basis": "Fixed per wire — tariff item 5.1.1.2.",
+     "source": "C01"
+    },
+    {
+     "item": "Intermediary-bank pre-collection (full-amount arrangement)",
+     "cny": 200,
+     "usd": 29.77,
+     "basis": "Pre-collected where the customer wants the beneficiary to receive the full amount; the tariff labels it an estimate of intermediary charges — items 5.1.1.3/5.1.1.4.",
+     "source": "C01"
+    },
+    {
+     "item": "Retail FX spread (bid/ask)",
+     "cny": null,
+     "usd": null,
+     "basis": "Not published by the bank reviewed. Left blank deliberately.",
+     "source": "C01",
+     "flag": "F-SPREAD"
+    },
+    {
+     "item": "Receiving US bank incoming-wire fee",
+     "cny": null,
+     "usd": null,
+     "basis": "US-side fee is bank-specific and not published by any source reviewed in this session.",
+     "source": null,
+     "flag": "F-UNVERIFIED"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Buying foreign currency with your own already-taxed CNY is not itself a taxable event.",
+    "detail": "The PRC Individual Income Tax Law taxes nine enumerated income categories (wages; labour remuneration; author's remuneration; royalties; business income; interest/dividends/bonus; property leasing; property transfer; incidental). A pure currency conversion is not among them (P11 Art. 2). Tax attaches to the income that produced the money, already withheld at source. If the balance includes untaxed income, or income from a property transfer (20% flat on the net gain, P11 Art. 3/6), that is where the real Chinese tax sits — not in the conversion.",
+    "sources": [
+     "P11"
+    ]
+   },
+   "us_tax": {
+    "headline": "A transfer of your own money is not income, but §988 can create ordinary gain/loss on the currency itself.",
+    "detail": "A US citizen is taxed on worldwide income (U08). Moving your own funds is not income. However, under 26 USC §988 a disposition of nonfunctional currency is a §988 transaction and exchange gain/loss is ORDINARY (not capital) — with a personal-transaction exception: no gain is recognised on a personal transaction unless the gain exceeds US$200 (U05 §988(e)(2)). Retain rate records for each conversion.",
+    "sources": [
+     "U05",
+     "U08"
+    ]
+   },
+   "pros": [
+    "Cheapest lawful route: the bank's own tariff, capped (CNY 500 + CNY 120).",
+    "No lawyer, no approval, no SAFE filing.",
+    "Repeats every calendar year — a US$400,000 balance takes 8 calendar years at one person's quota (derived)."
+   ],
+   "cons": [
+    "US$50,000 per person per year is the binding constraint: US$400,000 needs 8 years (derived).",
+    "Only genuine current-account purposes may be declared; capital items are excluded (P15).",
+    "The retail spread is invisible in advance and unpublished (F-SPREAD).",
+    "Requires an in-person or app-based interaction with a mainland bank — this session cannot perform it for you."
+   ],
+   "flags": [
+    "F-SPREAD",
+    "F-STEPS-EXECUTION"
+   ],
+   "sources": [
+    "P01",
+    "P02",
+    "P03",
+    "P15",
+    "C01",
+    "P11",
+    "U01",
+    "U02",
+    "U05",
+    "U08"
+   ]
+  },
+  {
+   "id": "M02",
+   "name": "Above-quota current-account conversion with authenticity documents",
+   "name_zh": "超过年度便利化额度的经常项目购汇（凭真实性凭证）",
+   "category": "Official routine route",
+   "status": "conditional",
+   "rank": 2,
+   "one_line": "Genuine current-account needs above US$50,000/yr are NOT capped — but each conversion must be backed by documents proving the transaction, including the Chinese tax voucher.",
+   "eligibility": "A 境内个人 with a genuine current-account need (study abroad, medical treatment, tourism-related settlement, family support) exceeding the annual facilitation quota, or electing not to use it.",
+   "volume": {
+    "per_txn_usd": null,
+    "annual_usd": null,
+    "note": "No published cap for genuine current-account items — the cap is replaced by document review. The amount is bounded by the proven transaction, not by a number in the regulation. Deliberately null: no official figure exists to copy.",
+    "source": [
+     "P02",
+     "P03"
+    ]
+   },
+   "steps": [
+    "Identify the current-account purpose and collect the primary evidence BEFORE going to the bank: admission letter + tuition invoice (study), hospital estimate/invoice (medical), or the underlying contract/invoice.",
+    "Obtain the Chinese tax voucher (税务凭证) for the income that funded the conversion — SAFE's own Q&A requires source-of-funds materials 'including tax voucher' (P08, P13).",
+    "Present ID + the authenticity documents at the counter (this cannot be done in an app; above-quota conversions are counter transactions).",
+    "The bank reviews and, if satisfied, processes the conversion outside the facilitation quota. It may escalate internally; expect a slower turnaround than M01.",
+    "Wire the USD to the payee (school, hospital) or to your own account where the purpose allows. Retain every document with the wire confirmation.",
+    "US side: report the foreign account (FinCEN 114 / Form 8938 as applicable). If the money is a gift you receive, see M12 and the Form 3520 US$100,000 threshold (U08)."
+   ],
+   "docs": [
+    "Valid ID",
+    "Proof of the current-account purpose (admission letter / tuition invoice / medical estimate / contract)",
+    "Chinese tax voucher (税务凭证)",
+    "Source-of-funds evidence for the CNY",
+    "个人购汇申请书"
+   ],
+   "fees": [
+    {
+     "item": "Outward telegraphic transfer commission",
+     "cny": 500,
+     "usd": 74.42,
+     "basis": "Same tariff item 5.1.1.1; the CNY 500 cap binds for any transfer above CNY 500,000.",
+     "source": "C01"
+    },
+    {
+     "item": "Cable / telegraphic charge",
+     "cny": 120,
+     "usd": 17.86,
+     "basis": "Fixed — item 5.1.1.2.",
+     "source": "C01"
+    },
+    {
+     "item": "Retail FX spread (bid/ask)",
+     "cny": null,
+     "usd": null,
+     "basis": "Unpublished.",
+     "source": "C01",
+     "flag": "F-SPREAD"
+    },
+    {
+     "item": "Document review / notarisation / translation",
+     "cny": null,
+     "usd": null,
+     "basis": "Cost is provider-specific; no official schedule exists.",
+     "source": null,
+     "flag": "F-UNVERIFIED"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Same as M01 — the conversion is not the taxable event; the income behind it is.",
+    "detail": "The tax voucher requirement is a documentary control, not a new tax. Because the voucher must exist, this route is practically closed to funds that were never taxed in China (e.g. informal earnings), which is a real constraint on a large undeclared balance.",
+    "sources": [
+     "P08",
+     "P11",
+     "P13"
+    ]
+   },
+   "us_tax": {
+    "headline": "Unchanged from M01.",
+    "detail": "Not income; §988 personal-transaction treatment with the US$200 gain threshold applies (U05). Foreign tax already paid on the underlying income may be creditable on Form 1116 — but only to the extent the same income is taxed by the US, and only at treaty-reduced rates where the treaty applies (U06, U07).",
+    "sources": [
+     "U05",
+     "U06",
+     "U07"
+    ]
+   },
+   "pros": [
+    "Legally removes the US$50,000 annual ceiling for genuine current-account needs.",
+    "Same capped bank tariff as M01."
+   ],
+   "cons": [
+    "Document-heavy; a bank can refuse if the paper trail is weak.",
+    "Requires a Chinese tax voucher — hard if the balance is from untaxed or informal sources (P08).",
+    "Not an app transaction; needs a counter visit."
+   ],
+   "flags": [
+    "F-SPREAD",
+    "F-NO-CAP-PUBLISHED",
+    "F-STEPS-EXECUTION"
+   ],
+   "sources": [
+    "P02",
+    "P03",
+    "P08",
+    "P13",
+    "C01",
+    "P11",
+    "U05",
+    "U06"
+   ]
+  },
+  {
+   "id": "M03",
+   "name": "Non-domestic-individual route (境外个人) — settlement quota, no purchase quota unless you hold a Foreign PR ID",
+   "name_zh": "境外个人结汇/购汇",
+   "category": "Official routine route",
+   "status": "conditional",
+   "rank": 3,
+   "one_line": "If you are classified 境外个人, you get a US$50,000/yr SETTLEMENT (CNY-in) quota but generally NOT a purchase (USD-out) quota — unless you hold a Foreign Permanent Resident ID.",
+   "eligibility": "A 境外个人: a foreign national who has NOT resided in China for one continuous year, plus (per SAFE's own guidance) holders of a Foreign Permanent Resident ID, Hong Kong/Macau/Taiwan residence permits, or Chinese passport holders with foreign permanent residence.",
+   "volume": {
+    "per_txn_usd": 50000,
+    "annual_usd": 50000,
+    "note": "US$50,000/yr settlement facilitation quota. The purchase (FX-buying) facilitation quota is NOT available to 境外个人 generally, EXCEPT holders of a Foreign Permanent Resident ID. Genuine purchase needs are handled case-by-case with documents.",
+    "source": [
+     "P03",
+     "P08"
+    ]
+   },
+   "steps": [
+    "Ask the bank in writing which classification it has recorded for you — 境内个人 or 境外个人. The answer changes which quota you can use and is the single most consequential administrative fact in this whole exercise.",
+    "If 境外个人 WITHOUT a Foreign PR ID: you have no purchase facilitation quota. Prepare the full documentary package for a case-by-case purchase (M02 standard) and expect the bank to require source-of-funds plus tax voucher.",
+    "If you hold a Foreign Permanent Resident ID: you are treated as having the annual purchase quota — proceed as M01, citing P08.",
+    "For lawful RMB income earned in China (salary), purchase and remit with ID + transaction-bearing source materials including the tax voucher (P13).",
+    "Wire to your own US account; retain receipts.",
+    "US side reporting unchanged (U01, U02)."
+   ],
+   "docs": [
+    "Passport",
+    "Entry/exit records or residence permit proving length of residence",
+    "Foreign Permanent Resident ID if held",
+    "Tax voucher",
+    "Source-of-funds documents"
+   ],
+   "fees": [
+    {
+     "item": "Outward telegraphic transfer commission",
+     "cny": 500,
+     "usd": 74.42,
+     "basis": "Tariff 5.1.1.1, cap binds above CNY 500,000.",
+     "source": "C01"
+    },
+    {
+     "item": "Cable / telegraphic charge",
+     "cny": 120,
+     "usd": 17.86,
+     "basis": "Item 5.1.1.2.",
+     "source": "C01"
+    },
+    {
+     "item": "Retail FX spread",
+     "cny": null,
+     "usd": null,
+     "basis": "Unpublished.",
+     "source": "C01",
+     "flag": "F-SPREAD"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Employment income earned in China is already subject to IIT withholding; conversion adds no tax.",
+    "detail": "Salaries are taxed at progressive 3–45% as comprehensive income; the foreign-currency amount is converted at the PBOC central parity for tax purposes (P11 Arts. 3, 16). Remitting after-tax salary is not a second taxable event.",
+    "sources": [
+     "P11",
+     "P13"
+    ]
+   },
+   "us_tax": {
+    "headline": "Chinese salary is US-taxable; the FTC is the relief valve.",
+    "detail": "A US citizen reports worldwide income (U08). Chinese IIT paid on that salary may be credited on Form 1116 (U06) — or, if you qualify, the salary may be excluded under the FEIE, in which case no credit is allowed for tax on the excluded portion (U06). The treaty does not limit US taxation of US citizens (U10 saving clause).",
+    "sources": [
+     "U06",
+     "U08",
+     "U10"
+    ]
+   },
+   "pros": [
+    "Correct classification can unlock the annual quota via a Foreign PR ID (P08).",
+    "Salary remittance is an explicitly supported, documented route (P13)."
+   ],
+   "cons": [
+    "Misclassification silently removes your purchase quota — a common and costly administrative trap.",
+    "Bank discretion; a counter visit is unavoidable."
+   ],
+   "flags": [
+    "F-SPREAD",
+    "F-CLASSIFICATION"
+   ],
+   "sources": [
+    "P03",
+    "P08",
+    "P13",
+    "P04",
+    "C01",
+    "P11",
+    "U01",
+    "U02",
+    "U06",
+    "U08",
+    "U10"
+   ]
+  },
+  {
+   "id": "M04",
+   "name": "Emigration / household-registration cancellation transfer — the only bulk lawful channel",
+   "name_zh": "移民转移（注销户籍）",
+   "category": "Bulk / capital-account route",
+   "status": "conditional",
+   "rank": 4,
+   "one_line": "If you are leaving China for good and cancelling your 户籍, PBOC [2004] No.16 allows a one-off transfer of your entire personal assets, staged over up to ~2 years — with tax clearance required first.",
+   "eligibility": "A person emigrating from China who cancels Chinese household registration (注销中国户籍). IIT Law Art. 13 requires a tax settlement (税款清算) BEFORE the cancellation (P11).",
+   "volume": {
+    "per_txn_usd": null,
+    "annual_usd": null,
+    "note": "The regulation stages the transfer rather than capping it: within 1/2 of the assets at/around emigration, the remainder within 1 year, with a further extension allowable to 2 years. Amounts of RMB 500,000 and above go to SAFE head office for approval. No published per-year USD cap — deliberately null.",
+    "source": [
+     "P06",
+     "P10"
+    ]
+   },
+   "steps": [
+    "Complete the PRC tax settlement (税款清算) at the tax authority BEFORE cancelling household registration — this is a statutory precondition under IIT Law Art. 13, not a bank formality (P11).",
+    "Obtain the tax clearance certificate (完税证明/税收证明) — PBOC [2004] No.16 requires a tax certificate as part of the application package (P06).",
+    "Cancel 户籍 and obtain the cancellation certificate (户口注销证明) plus proof of the right to settle abroad (foreign visa / permanent residence).",
+    "Apply through the bank to SAFE for the emigration transfer, submitting identity, the household-registration cancellation, the tax certificate, and proof of the assets and their source.",
+    "For amounts of RMB 500,000 or more, the application goes to SAFE head office — expect a substantially longer review (P06).",
+    "Transfer in the staged pattern: an initial tranche at/around emigration, the balance within one year, extendable to two years on application (P06).",
+    "Wire each tranche to your own overseas account. Keep every approval document.",
+    "US side: the arrival of your own capital is not income and is not a gift — Form 3520 gift reporting does NOT apply to your own funds. The account still needs FinCEN 114 / Form 8938 while it is foreign (U01, U02)."
+   ],
+   "docs": [
+    "Passport + foreign settlement visa/permit",
+    "户口注销证明 (household-registration cancellation certificate)",
+    "税务证明/完税证明 (tax clearance)",
+    "Proof of asset ownership and source (bank statements, contracts, prior tax filings)",
+    "SAFE application forms via the bank"
+   ],
+   "fees": [
+    {
+     "item": "Outward telegraphic transfer commission",
+     "cny": 500,
+     "usd": 74.42,
+     "basis": "Tariff 5.1.1.1 cap; binds once the CNY amount exceeds CNY 500,000.",
+     "source": "C01"
+    },
+    {
+     "item": "Cable / telegraphic charge",
+     "cny": 120,
+     "usd": 17.86,
+     "basis": "Item 5.1.1.2.",
+     "source": "C01"
+    },
+    {
+     "item": "SAFE approval / application fee",
+     "cny": 0,
+     "usd": 0,
+     "basis": "No fee is stated in PBOC [2004] No.16 for the application itself. Zero here means 'no published fee', not 'confirmed free of all charges'.",
+     "source": "P06",
+     "flag": "F-NO-FEE-PUBLISHED"
+    },
+    {
+     "item": "Retail FX spread",
+     "cny": null,
+     "usd": null,
+     "basis": "Unpublished.",
+     "source": "C01",
+     "flag": "F-SPREAD"
+    },
+    {
+     "item": "Professional fees (tax settlement, translation, notarisation)",
+     "cny": null,
+     "usd": null,
+     "basis": "No official schedule; provider-specific.",
+     "source": null,
+     "flag": "F-UNVERIFIED"
+    }
+   ],
+   "cn_tax": {
+    "headline": "This route triggers the most Chinese tax scrutiny of any option — by design.",
+    "detail": "IIT Law Art. 13 requires settlement before household-registration cancellation, and Art. 10 makes 'emigrating and cancelling Chinese household registration' a mandatory filing trigger. Expect the tax authority to look at the whole balance: salary (3–45%), business income (5–35%), and passive items at a flat 20% (P11 Art. 3). This is the one route where an undeclared balance is most likely to surface.",
+    "sources": [
+     "P11",
+     "P06"
+    ]
+   },
+   "us_tax": {
+    "headline": "Moving your own capital is not income; the pre-departure tax settlement may be creditable.",
+    "detail": "The transfer is not US income. Foreign taxes paid in the settlement on income also taxed by the US may support a Form 1116 credit (U06), subject to the treaty-reduced-rate rule (U07). The treaty's saving clause preserves full US taxing rights over citizens (U10).",
+    "sources": [
+     "U05",
+     "U06",
+     "U07",
+     "U10",
+     "U08"
+    ]
+   },
+   "pros": [
+    "The ONLY published route that moves a large balance (hundreds of thousands) in ~1–2 years instead of 8.",
+    "Bank fees are the same capped tariff as any wire (C01)."
+   ],
+   "cons": [
+    "Requires actually giving up Chinese household registration — irreversible and consequential.",
+    "Tax clearance first: the balance must survive scrutiny (P11 Art. 13).",
+    "SAFE head-office approval at ≥ RMB 500,000; long and discretionary (P06).",
+    "Staged, so not instant."
+   ],
+   "flags": [
+    "F-SPREAD",
+    "F-IRREVERSIBLE",
+    "F-NO-FEE-PUBLISHED"
+   ],
+   "sources": [
+    "P06",
+    "P10",
+    "P11",
+    "C01",
+    "U01",
+    "U02",
+    "U05",
+    "U06",
+    "P04"
+   ]
+  },
+  {
+   "id": "M05",
+   "name": "Employment-income remittance (documented salary route)",
+   "name_zh": "境内个人工资收入购汇汇出",
+   "category": "Official routine route",
+   "status": "available",
+   "rank": 5,
+   "one_line": "If the balance is salary, this is the cleanest documented path: ID + payroll/source materials + tax voucher, converted and wired.",
+   "eligibility": "A person with lawful RMB employment income in China, whether classified 境内个人 or 境外个人 (P13 addresses the 境外个人 case explicitly; P08 the general source-of-funds requirement).",
+   "volume": {
+    "per_txn_usd": 50000,
+    "annual_usd": 50000,
+    "note": "Ordinarily processed inside the US$50,000 facilitation quota with ID alone; above that, documentary review (P02 Art. 14, P03). The figure is the quota, not a cap on genuine proven salary.",
+    "source": [
+     "P02",
+     "P03",
+     "P13"
+    ]
+   },
+   "steps": [
+    "Assemble the payroll paper trail: employment contract, monthly payslips, and the bank statement showing salary credits into the CNY account.",
+    "Obtain the annual IIT withholding record (个人所得税纳税记录) from the tax authority — the tax voucher SAFE requires (P08, P13).",
+    "Take ID + the package to the bank. Under US$50,000/yr, the conversion can usually be done in-app; above it, expect counter review.",
+    "Convert and wire to your own US account. The bank records the transaction so your cumulative quota is tracked in SAFE's system.",
+    "Repeat each calendar year. Retain everything for the US return.",
+    "US side: report the salary on your 1040; claim the FTC on Form 1116 for Chinese IIT on the same income (U06); file FinCEN 114 / Form 8938 as applicable (U01, U02)."
+   ],
+   "docs": [
+    "Passport/ID",
+    "Employment contract",
+    "Payslips",
+    "Bank statement showing salary credits",
+    "个人所得税纳税记录 (IIT payment record / tax voucher)",
+    "个人购汇申请书"
+   ],
+   "fees": [
+    {
+     "item": "Outward telegraphic transfer commission",
+     "cny": 500,
+     "usd": 74.42,
+     "basis": "Tariff 5.1.1.1, cap binds above CNY 500,000.",
+     "source": "C01"
+    },
+    {
+     "item": "Cable / telegraphic charge",
+     "cny": 120,
+     "usd": 17.86,
+     "basis": "Item 5.1.1.2.",
+     "source": "C01"
+    },
+    {
+     "item": "Retail FX spread",
+     "cny": null,
+     "usd": null,
+     "basis": "Unpublished.",
+     "source": "C01",
+     "flag": "F-SPREAD"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Salary is taxed at source at 3–45%; the later conversion is not taxed again.",
+    "detail": "Comprehensive income (wages, labour remuneration, author's remuneration, royalties) uses the 3–45% progressive schedule; the foreign-currency amount converts at the PBOC central parity (P11 Arts. 3, 16). Remitting already-taxed salary adds nothing.",
+    "sources": [
+     "P11",
+     "P13"
+    ]
+   },
+   "us_tax": {
+    "headline": "This is the route where double taxation is most avoidable — via the FTC or the FEIE.",
+    "detail": "Chinese IIT on salary is creditable on Form 1116 (U06). If you instead exclude the salary under the FEIE, no credit is allowed for tax on the excluded portion (U06) — the two are mutually exclusive on the same dollars. The treaty caps Chinese tax on the relevant items at 10% gross for dividends/interest/royalties, and only the treaty-reduced amount is creditable (U07, U06).",
+    "sources": [
+     "U06",
+     "U07",
+     "U08"
+    ]
+   },
+   "pros": [
+    "Strongest documentary footing of any route.",
+    "Routinely processed; least discretionary.",
+    "FTC/FEIE planning can reduce the combined US+China burden to roughly the higher of the two systems, not the sum."
+   ],
+   "cons": [
+    "Only works to the extent the balance is provably salary.",
+    "Still bound by US$50,000/yr for the frictionless version."
+   ],
+   "flags": [
+    "F-SPREAD"
+   ],
+   "sources": [
+    "P02",
+    "P03",
+    "P08",
+    "P13",
+    "C01",
+    "P11",
+    "U01",
+    "U02",
+    "U06",
+    "U07",
+    "U08"
+   ]
+  },
+  {
+   "id": "M06",
+   "name": "Wise (from-CNY transfer via licensed PRC payment provider)",
+   "name_zh": "Wise 人民币汇出",
+   "category": "Commercial transfer operator",
+   "status": "conditional",
+   "rank": 6,
+   "one_line": "A fintech path for the same lawful money: you must be a non-mainland-Chinese national with a Chinese tax record from the last 3 years, and the money must go to an account you own.",
+   "eligibility": "Per Wise's own page: 'You're not mainland Chinese' (HK/Macau/Taiwan residents eligible), AND you worked in China, AND you hold a valid China tax record showing taxes paid in the last 3 years. Personal accounts only.",
+   "volume": {
+    "per_txn_usd": 44652.0,
+    "annual_usd": null,
+    "note": "Single-transfer maximum CNY 300,000 from a China bank app (= US$44,652 at the 2026-11-09 parity, derived); CNY 50,000 from Alipay (= US$7,442, derived). The annual figure is a computed 'overall limit' based on your declared income minus Chinese tax paid — Wise publishes the METHOD but not a fixed number, so the annual cell is deliberately null.",
+    "source": [
+     "C02"
+    ]
+   },
+   "steps": [
+    "Confirm eligibility against Wise's three conditions before anything else — the mainland-Chinese exclusion is a hard gate for a Chinese citizen who has not naturalised abroad.",
+    "Create/verify a Wise personal account; first-time verification takes 1–2 working days and requires documents.",
+    "Upload the China tax record (个人所得税纳税记录) covering the last 3 years. Wise states the limit is computed from salary earned minus tax paid over the years evidenced.",
+    "Add your own overseas account (or Wise balance) as recipient. Wise states that, due to regulation, CNY can only be sent from China to another account you own.",
+    "Initiate the transfer from your China bank app (max CNY 300,000) or Alipay (max CNY 50,000). Pay into Wise; Wise converts and pays out.",
+    "If the transfer exceeds your computed limit, Wise prompts for additional tax records to raise it (C02).",
+    "US side: this is still your own money crossing a border — FinCEN 114 / Form 8938 thresholds still apply while any account is foreign (U01, U02). Wise's USD balance is not a foreign account once held at Wise's US entity, but do not assume — verify with the provider."
+   ],
+   "docs": [
+    "Passport",
+    "China tax record (last 3 years)",
+    "China bank account or Alipay access",
+    "Own overseas account details"
+   ],
+   "fees": [
+    {
+     "item": "Wise conversion + transfer fee",
+     "cny": null,
+     "usd": null,
+     "basis": "Wise does not publish the from-CNY fee on its guide page — it says the fee depends on the delivery method and appears at transfer set-up. Deliberately null rather than estimated.",
+     "source": "C02",
+     "flag": "F-UNVERIFIED-FEE"
+    },
+    {
+     "item": "Retail FX spread",
+     "cny": null,
+     "usd": null,
+     "basis": "Wise's mid-market-plus-markup structure is described commercially but no from-CNY rate is published on the cited page.",
+     "source": "C02",
+     "flag": "F-SPREAD"
+    }
+   ],
+   "cn_tax": {
+    "headline": "No separate Chinese tax on the conversion; the tax record itself is the eligibility gate.",
+    "detail": "Wise's limit is computed FROM your Chinese tax payments, so the route structurally only moves already-taxed money. Conversion is not among the nine IIT categories (P11 Art. 2).",
+    "sources": [
+     "P11",
+     "C02"
+    ]
+   },
+   "us_tax": {
+    "headline": "Unchanged: not income; §988 personal-transaction treatment applies.",
+    "detail": "§988 makes FX gain ordinary, with the US$200 personal-transaction exclusion (U05). Keep rate records — a fintech's rate differs from the central parity, which is exactly what makes a §988 computation differ from a bank wire.",
+    "sources": [
+     "U05",
+     "U08"
+    ]
+   },
+   "pros": [
+    "Can be faster and app-only, no branch visit.",
+    "Transparent mid-market pricing at the point of transfer (per the provider's model).",
+    "Handles the conversion and the international leg in one step."
+   ],
+   "cons": [
+    "Excludes mainland Chinese nationals — a hard gate that may exclude a Chinese citizen who holds a US passport only if they can show non-mainland status.",
+    "Only to your OWN account.",
+    "Annual limit is computed from tax paid, not fixed.",
+    "Fee for the from-CNY direction is not published on the cited page (F-UNVERIFIED-FEE)."
+   ],
+   "flags": [
+    "F-UNVERIFIED-FEE",
+    "F-SPREAD",
+    "F-COMMERCIAL"
+   ],
+   "sources": [
+    "C02",
+    "P11",
+    "U05",
+    "U01",
+    "U02"
+   ]
+  },
+  {
+   "id": "M07",
+   "name": "Alipay / UnionPay wallet international transfer",
+   "name_zh": "支付宝/银联 跨境汇款",
+   "category": "Commercial transfer operator",
+   "status": "conditional",
+   "rank": 7,
+   "one_line": "Wallet-based outbound transfer with a low per-transaction cap; suitable for topping up, not for moving a large balance.",
+   "eligibility": "Holder of a mainland Alipay/UnionPay wallet tied to a verified identity; same regulatory purpose and tax-record constraints as any outbound transfer.",
+   "volume": {
+    "per_txn_usd": 7441.9,
+    "annual_usd": null,
+    "note": "CNY 50,000 per Alipay transfer = US$7,441.90 at the 2026-11-09 parity (derived). Annual cap depends on the receiving channel and the provider's computed limit; not fixed in the source, so null.",
+    "source": [
+     "C02"
+    ]
+   },
+   "steps": [
+    "Verify the wallet identity to the highest tier and link the mainland bank card/account that holds the CNY.",
+    "Check the provider's outbound-remittance entry point for the current per-transfer cap and purpose list.",
+    "Enter the recipient — an account you own — and the purpose, truthfully.",
+    "Complete the transfer; the wallet's partner bank performs the conversion and the international leg.",
+    "Repeat across months/transactions. Track cumulative amounts: staying under a per-transaction cap while aggregating a large total is exactly the pattern regulators treat as evasion, so the total must still be lawful.",
+    "US side reporting unchanged (U01, U02)."
+   ],
+   "docs": [
+    "Wallet identity verification",
+    "Linked mainland bank account",
+    "Own overseas account"
+   ],
+   "fees": [
+    {
+     "item": "Wallet outbound remittance fee",
+     "cny": null,
+     "usd": null,
+     "basis": "Not published on the cited page for the from-CNY direction; provider-specific and time-varying.",
+     "source": "C02",
+     "flag": "F-UNVERIFIED-FEE"
+    },
+    {
+     "item": "Retail FX spread",
+     "cny": null,
+     "usd": null,
+     "basis": "Unpublished.",
+     "source": "C02",
+     "flag": "F-SPREAD"
+    }
+   ],
+   "cn_tax": {
+    "headline": "No conversion tax; the same income-tax facts apply to the money itself.",
+    "detail": "Same analysis as M01/M05 (P11).",
+    "sources": [
+     "P11"
+    ]
+   },
+   "us_tax": {
+    "headline": "Unchanged.",
+    "detail": "§988 ordinary treatment with the US$200 personal exclusion (U05).",
+    "sources": [
+     "U05"
+    ]
+   },
+   "pros": [
+    "App-only, fast, low friction per transfer.",
+    "Useful for spending-level amounts."
+   ],
+   "cons": [
+    "CNY 50,000 (≈US$7.4k) per transfer — moving US$400,000 needs ~54 transfers (derived).",
+    "Aggregation risk: many small transfers can look like structuring even when each is lawful.",
+    "Fees unpublished (F-UNVERIFIED-FEE)."
+   ],
+   "flags": [
+    "F-UNVERIFIED-FEE",
+    "F-AGGREGATION"
+   ],
+   "sources": [
+    "C02",
+    "P11",
+    "U05"
+   ]
+  },
+  {
+   "id": "M08",
+   "name": "Spend the CNY abroad on a UnionPay / bank card (conversion by consumption)",
+   "name_zh": "银联卡境外消费",
+   "category": "Spend, not transfer",
+   "status": "available",
+   "rank": 8,
+   "one_line": "The cheapest way to 'convert' CNY is often not to convert it at all: spend it abroad on a mainland-issued card and the settlement happens at the card network's rate with no quota and no wire fee.",
+   "eligibility": "Holder of a mainland-issued UnionPay or dual-currency card with an available CNY balance.",
+   "volume": {
+    "per_txn_usd": null,
+    "annual_usd": null,
+    "note": "The card network's own limits and the bank's card limits govern; no SAFE annual USD figure is published for card consumption. Null by design.",
+    "source": [
+     "P15",
+     "P03"
+    ]
+   },
+   "steps": [
+    "Confirm the card is enabled for overseas/contactless use and raise the per-transaction limit in the bank app if needed.",
+    "Use the card directly for legitimate purchases (travel, goods, services) — this is spending, and spending abroad is not a capital-account transfer.",
+    "Check whether the card settles in USD directly or converts CNY→USD at settlement; the latter embeds the network's spread.",
+    "Never use the card to buy an unopened capital item — overseas property, securities, life insurance are explicitly excluded for domestic individuals (P15).",
+    "Keep statements: if the IRS asks how funds left China, card settlement records answer it cleanly."
+   ],
+   "docs": [
+    "Mainland-issued card",
+    "Bank app access"
+   ],
+   "fees": [
+    {
+     "item": "Card FX conversion markup",
+     "cny": null,
+     "usd": null,
+     "basis": "The network/bank markup is not published in any source reviewed. Left null rather than guessed.",
+     "source": null,
+     "flag": "F-SPREAD"
+    },
+    {
+     "item": "Wire commission",
+     "cny": 0,
+     "usd": 0,
+     "basis": "No wire occurs on a card purchase — this is the structural advantage.",
+     "source": null
+    }
+   ],
+   "cn_tax": {
+    "headline": "No Chinese tax on consumption. Duty/tax at the destination may apply to goods.",
+    "detail": "Purchases are not income events (P11); destination-country duties are outside the IIT scope.",
+    "sources": [
+     "P11"
+    ]
+   },
+   "us_tax": {
+    "headline": "No US tax on spending your own money. Sales/use tax at the destination may apply.",
+    "detail": "No §988 disposition of currency occurs in the customer's hands at the POS; the card network handles settlement (U05 discusses currency dispositions generally).",
+    "sources": [
+     "U05"
+    ]
+   },
+   "pros": [
+    "No US$50,000 quota consumed in the same way as a purchase; no wire fee; immediate.",
+    "Effectively converts CNY into value at the network rate."
+   ],
+   "cons": [
+    "Only works for things you were going to buy — it does not deliver USD cash to a US account.",
+    "Cannot be used for capital items (P15).",
+    "Network markup unpublished (F-SPREAD)."
+   ],
+   "flags": [
+    "F-SPREAD",
+    "F-NOT-A-TRANSFER"
+   ],
+   "sources": [
+    "P15",
+    "P03",
+    "P11",
+    "U05"
+   ]
+  },
+  {
+   "id": "M09",
+   "name": "ATM cash withdrawal abroad on a mainland card",
+   "name_zh": "境内银行卡境外提取现金",
+   "category": "Cash route",
+   "status": "available",
+   "rank": 9,
+   "one_line": "Capped at RMB 100,000 per person per year and RMB 10,000 per card per day — a slow, narrow valve, useful only for small amounts.",
+   "eligibility": "Holder of a mainland-issued bank card with the overseas cash function enabled.",
+   "volume": {
+    "per_txn_usd": 1488.4,
+    "annual_usd": 14883.9,
+    "note": "RMB 10,000 per card per day = US$1,488.40; RMB 100,000 per person per year = US$14,883.90 (both derived at the 2026-11-09 parity). Source: SAFE notice on overseas ATM withdrawals.",
+    "source": [
+     "P05"
+    ]
+   },
+   "steps": [
+    "Enable overseas cash withdrawal on the card in the bank app.",
+    "Withdraw abroad; the foreign ATM dispenses local currency and the bank debits CNY with its conversion markup plus any ATM operator fee.",
+    "Stay within RMB 10,000/card/day and RMB 100,000/person/year (P05).",
+    "Deposit the cash into your US account (a cash deposit — the bank will ask questions above reporting thresholds).",
+    "US side: physically bringing >US$10,000 into the US requires FinCEN Form 105 (U03); structuring to stay under it is itself a violation (U09 (a)(4))."
+   ],
+   "docs": [
+    "Mainland bank card",
+    "Passport when depositing cash"
+   ],
+   "fees": [
+    {
+     "item": "FX cash withdrawal charge",
+     "cny": null,
+     "usd": null,
+     "basis": "HSBC's tariff shows 0.25%–0.4%, minimum CNY 40, for FX cash withdrawal (item 3.1.1) — but that is a cash-counter/ATM charge at HSBC's own machines and its applicability abroad is not established here. Left null and flagged rather than applied to a foreign ATM.",
+     "source": "C01",
+     "flag": "F-UNVERIFIED"
+    },
+    {
+     "item": "Foreign ATM operator fee",
+     "cny": null,
+     "usd": null,
+     "basis": "Set by the foreign ATM owner; no official schedule.",
+     "source": null,
+     "flag": "F-UNVERIFIED"
+    }
+   ],
+   "cn_tax": {
+    "headline": "No Chinese tax on withdrawing your own money.",
+    "detail": "Not an income event (P11).",
+    "sources": [
+     "P11"
+    ]
+   },
+   "us_tax": {
+    "headline": "No tax, but a hard reporting line at US$10,000 of physical currency.",
+    "detail": "More than US$10,000 in currency entering or leaving the US must be reported on FinCEN Form 105; failure can mean seizure and civil/criminal exposure (U03). A civil penalty for a structured transaction may not exceed the amount involved (U09 (a)(4)(B)).",
+    "sources": [
+     "U03",
+     "U09"
+    ]
+   },
+   "pros": [
+    "No SAFE approval, no bank counter, no wire.",
+    "Works anywhere with an ATM."
+   ],
+   "cons": [
+    "US$14,884/yr is the absolute ceiling — a 27-year job for US$400,000 (derived).",
+    "Cash handling is the most scrutinised and least convenient form of money.",
+    "Crossing US$10,000 triggers Form 105 (U03)."
+   ],
+   "flags": [
+    "F-UNVERIFIED",
+    "F-SLOW"
+   ],
+   "sources": [
+    "P05",
+    "C01",
+    "P11",
+    "U03",
+    "U09"
+   ]
+  },
+  {
+   "id": "M10",
+   "name": "Carry cash out by hand",
+   "name_zh": "携带外币现钞出境",
+   "category": "Cash route",
+   "status": "conditional",
+   "rank": 10,
+   "one_line": "Under US$5,000 needs nothing; US$5,000–10,000 needs a permit from the bank/SAFE; above US$10,000 is prohibited on the China side.",
+   "eligibility": "Any traveller. Above US$10,000 the China-side rule prohibits it outright — the limit is on the way OUT of China.",
+   "volume": {
+    "per_txn_usd": 10000,
+    "annual_usd": null,
+    "note": "US$5,000 free; US$5,000–10,000 requires the 携带外汇出境许可证; more than US$10,000 prohibited. No annual figure is published, deliberately null.",
+    "source": [
+     "P07"
+    ]
+   },
+   "steps": [
+    "Buy the foreign-currency cash inside China under the normal FX purchase rules (M01) and keep the purchase receipt.",
+    "If the amount is ≤ US$5,000: carry it; declare at the Chinese border if asked.",
+    "If the amount is US$5,000–10,000: obtain the 携带外汇出境许可证 (foreign-currency carry permit) from the designated bank/SAFE before travelling (P07).",
+    "Do NOT attempt more than US$10,000 — it is prohibited, and the whole amount is exposed to confiscation and administrative penalty (P04, P07).",
+    "On the US side, more than US$10,000 must be declared on FinCEN Form 105 (U03).",
+    "Deposit into your US account; keep the Chinese purchase receipt and permit to explain the source."
+   ],
+   "docs": [
+    "Passport",
+    "FX purchase receipt",
+    "携带外汇出境许可证 (for US$5,000–10,000)"
+   ],
+   "fees": [
+    {
+     "item": "Carry permit",
+     "cny": null,
+     "usd": null,
+     "basis": "No fee is stated in the cited SAFE notice. Null rather than zero: absence of a published fee is not proof of no charge.",
+     "source": "P07",
+     "flag": "F-NO-FEE-PUBLISHED"
+    },
+    {
+     "item": "Physical transport / insurance",
+     "cny": null,
+     "usd": null,
+     "basis": "Not a regulated figure.",
+     "source": null,
+     "flag": "F-UNVERIFIED"
+    }
+   ],
+   "cn_tax": {
+    "headline": "No tax on carrying your own cash; the risk is administrative, not fiscal.",
+    "detail": "Cash carry is an FX-control matter. Penalties for violating the FX rules can reach 30% of the amount (P04 Art. 39–45); carrying more than US$10,000 is expressly prohibited (P07).",
+    "sources": [
+     "P07",
+     "P04",
+     "P11"
+    ]
+   },
+   "us_tax": {
+    "headline": "No tax; report above US$10,000 on FinCEN Form 105.",
+    "detail": "Failure to report can result in seizure/forfeiture plus civil and criminal exposure; the civil penalty for a structured transaction may not exceed the amount involved (U03, U09).",
+    "sources": [
+     "U03",
+     "U09"
+    ]
+   },
+   "pros": [
+    "No wire, no bank, no SAFE approval under US$5,000.",
+    "Immediate."
+   ],
+   "cons": [
+    "US$10,000 hard prohibition — the smallest ceiling of any lawful route.",
+    "Physical risk of loss/theft.",
+    "Two reporting regimes (China permit; US Form 105)."
+   ],
+   "flags": [
+    "F-PROHIBITION",
+    "F-NO-FEE-PUBLISHED"
+   ],
+   "sources": [
+    "P07",
+    "P04",
+    "U03",
+    "U09",
+    "P11"
+   ]
+  },
+  {
+   "id": "M11",
+   "name": "Leave it offshore in USD (convert, then hold)",
+   "name_zh": "购汇后留存境外",
+   "category": "Sequencing tactic",
+   "status": "available",
+   "rank": 11,
+   "one_line": "You do not have to bring the money to the US at all: convert inside China under M01 and wire it to a non-US offshore account, deferring the US situs question.",
+   "eligibility": "Anyone eligible for M01/M02. Requires a lawful offshore account (e.g. Hong Kong) opened under that jurisdiction's rules.",
+   "volume": {
+    "per_txn_usd": 50000,
+    "annual_usd": 50000,
+    "note": "Bound by the M01 quota for the China-side conversion step.",
+    "source": [
+     "P02"
+    ]
+   },
+   "steps": [
+    "Follow M01 to convert CNY→USD inside China.",
+    "Wire the USD to a bank account in a third jurisdiction (for example Hong Kong) held in your own name.",
+    "That account is a foreign financial account for US purposes from day one: FinCEN 114 above US$10,000 aggregate (U01), Form 8938 above the applicable threshold (U02).",
+    "Later, move USD from that account to the US — a domestic USD transfer with no China-side control and no new conversion event.",
+    "Keep a rate ledger across both legs: §988 gain/loss follows the currency, and the personal-transaction US$200 threshold applies (U05)."
+   ],
+   "docs": [
+    "Offshore account documentation",
+    "M01 paperwork",
+    "Ongoing FBAR/8938 records"
+   ],
+   "fees": [
+    {
+     "item": "China-side wire commission",
+     "cny": 500,
+     "usd": 74.42,
+     "basis": "Tariff 5.1.1.1 cap.",
+     "source": "C01"
+    },
+    {
+     "item": "Cable charge",
+     "cny": 120,
+     "usd": 17.86,
+     "basis": "Item 5.1.1.2.",
+     "source": "C01"
+    },
+    {
+     "item": "Offshore account maintenance + incoming wire",
+     "cny": null,
+     "usd": null,
+     "basis": "Jurisdiction-specific; no official schedule reviewed.",
+     "source": null,
+     "flag": "F-UNVERIFIED"
+    },
+    {
+     "item": "Retail FX spread",
+     "cny": null,
+     "usd": null,
+     "basis": "Unpublished.",
+     "source": "C01",
+     "flag": "F-SPREAD"
+    }
+   ],
+   "cn_tax": {
+    "headline": "No extra Chinese tax versus M01 — it is the same conversion.",
+    "detail": "Sending to a third country rather than the US does not change the Chinese tax analysis (P11). It does change the destination-country and US-reporting analysis.",
+    "sources": [
+     "P11"
+    ]
+   },
+   "us_tax": {
+    "headline": "The reporting surface expands, not the tax.",
+    "detail": "The offshore account is reportable: FinCEN 114 if aggregate foreign accounts exceed US$10,000 (U01); Form 8938 above US$50,000/$75,000 single or US$200,000/$300,000 for a US resident filing abroad (U02). Non-willful FBAR penalties are inflation-adjusted to US$16,536 per violation and willful to US$165,353, with a willful statutory floor of the greater of US$100,000 or 50% of the account balance (U04, U09).",
+    "sources": [
+     "U01",
+     "U02",
+     "U04",
+     "U09",
+     "U05"
+    ]
+   },
+   "pros": [
+    "Decouples the China-side quota problem from the US-side timing problem.",
+    "Once the money is in USD offshore, moving it to the US is a plain wire."
+   ],
+   "cons": [
+    "You now own a reportable foreign account — the penalty regime for forgetting it is severe (U04, U09).",
+    "Offshore account opening is its own compliance exercise and may not be available to a US person at every bank."
+   ],
+   "flags": [
+    "F-SPREAD",
+    "F-REPORTING-LOAD"
+   ],
+   "sources": [
+    "P02",
+    "C01",
+    "P11",
+    "U01",
+    "U02",
+    "U04",
+    "U09",
+    "U05"
+   ]
+  },
+  {
+   "id": "M12",
+   "name": "Receive it as a gift from a foreign person (Form 3520 line at US$100,000)",
+   "name_zh": "境外个人赠与",
+   "category": "Third-party route",
+   "status": "conditional",
+   "rank": 12,
+   "one_line": "A genuine gift from a nonresident individual is not US income, but receiving more than US$100,000 in a year from a nonresident individual/estate must be reported on Form 3520.",
+   "eligibility": "A genuine, gratuitous transfer from a nonresident alien individual or foreign estate. NOT available for moving your own money: a transfer of your own funds is not a gift, and recharacterising it as one is a misrepresentation.",
+   "volume": {
+    "per_txn_usd": null,
+    "annual_usd": null,
+    "note": "US$100,000 is a REPORTING threshold for gifts from a nonresident individual, not a permission or a cap. Null volume is deliberate.",
+    "source": [
+     "U08"
+    ]
+   },
+   "steps": [
+    "Confirm — honestly — that the money is a genuine gift from a nonresident individual or foreign estate, not your own funds routed through a relative.",
+    "Have the donor move the money under a lawful Chinese route (M01/M04 etc.); a gift does not create an exemption from China's FX controls.",
+    "Track the annual total received from nonresident individuals and foreign estates.",
+    "If it exceeds US$100,000 in the year, file Form 3520 (due with your return) — an information return, not a tax payment (U08).",
+    "Do not treat Form 3520 as optional: the penalty regime for failure to file is separate and severe.",
+    "Keep donor identity and transfer records."
+   ],
+   "docs": [
+    "Donor identity documents",
+    "Transfer records",
+    "Form 3520 if over the threshold"
+   ],
+   "fees": [
+    {
+     "item": "China-side movement cost",
+     "cny": null,
+     "usd": null,
+     "basis": "Whatever lawful route the donor uses — see M01/M04. Not additive here.",
+     "source": null
+    },
+    {
+     "item": "US tax preparer (Form 3520)",
+     "cny": null,
+     "usd": null,
+     "basis": "Provider-specific.",
+     "source": null,
+     "flag": "F-UNVERIFIED"
+    }
+   ],
+   "cn_tax": {
+    "headline": "China does not tax the gift receipt as such for the recipient; the donor's FX controls still bind.",
+    "detail": "IIT's nine categories do not include gifts received (P11 Art. 2). But the donor cannot escape the FX rules by calling a transfer a gift, and splitting across donors is prohibited (P01 Art. 7, P15).",
+    "sources": [
+     "P11",
+     "P01",
+     "P15"
+    ]
+   },
+   "us_tax": {
+    "headline": "Not income, but reportable above US$100,000.",
+    "detail": "IRS: report 'receipt of more than $100,000 in gifts or bequests from a nonresident alien individual or foreign estate' on Form 3520 (U08). Below that, no US tax and generally no return for the gift itself.",
+    "sources": [
+     "U08"
+    ]
+   },
+   "pros": [
+    "Not US taxable income.",
+    "A legitimate way for family wealth to cross if it genuinely is a gift."
+   ],
+   "cons": [
+    "Cannot lawfully be used to move YOUR OWN money.",
+    "Form 3520 above US$100,000 with its own penalty exposure.",
+    "Does not bypass China's FX controls."
+   ],
+   "flags": [
+    "F-ABUSE-RISK"
+   ],
+   "sources": [
+    "U08",
+    "P11",
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "M13",
+   "name": "Sell Chinese property and remit the proceeds",
+   "name_zh": "出售境内房产并汇出",
+   "category": "Capital-account route",
+   "status": "conditional",
+   "rank": 13,
+   "one_line": "The single biggest Chinese tax in this whole problem can sit here: property transfer gains are taxed at a flat 20% on the net gain, and remitting the proceeds is a capital-account matter needing approval.",
+   "eligibility": "Owner of Chinese real property. Remitting sale proceeds abroad is a capital-account transaction: an individual cannot simply use the US$50,000 facilitation quota for it, and buying overseas property with converted CNY is expressly prohibited (P15). Emigration (M04) is the usual lawful vehicle for getting sale proceeds out.",
+   "volume": {
+    "per_txn_usd": null,
+    "annual_usd": null,
+    "note": "No published individual cap for approved capital-account remittance; it is approval-based. Null deliberately.",
+    "source": [
+     "P06",
+     "P15"
+    ]
+   },
+   "steps": [
+    "Sell the property through the normal Chinese process and pay the transaction taxes (deed tax, VAT where applicable, and IIT on the gain — 20% flat on the net gain under IIT Law Art. 3, computed on proceeds minus original value and reasonable expenses per Art. 6(5)) (P11).",
+    "Obtain the tax payment certificates for the sale.",
+    "Decide the remittance vehicle: ordinarily this is the emigration transfer under PBOC [2004] No.16 (M04), which contemplates transferring the emigrant's assets including property proceeds and requires the tax certificate.",
+    "Submit the SAFE application with the sale contract, tax certificates, household-registration cancellation where M04 applies, and proof of the original acquisition cost.",
+    "Expect head-office review at RMB 500,000+ (P06).",
+    "US side: the sale is a capital transaction for US purposes too — report it and claim a foreign tax credit for the Chinese tax on the same gain (U06), subject to the treaty (U07) and the saving clause (U10)."
+   ],
+   "docs": [
+    "Property title and sale contract",
+    "Chinese tax payment certificates (deed tax, IIT on gain)",
+    "Original acquisition cost evidence",
+    "SAFE application + M04 documents if emigrating"
+   ],
+   "fees": [
+    {
+     "item": "Outward telegraphic transfer commission",
+     "cny": 500,
+     "usd": 74.42,
+     "basis": "Tariff 5.1.1.1 cap.",
+     "source": "C01"
+    },
+    {
+     "item": "Cable charge",
+     "cny": 120,
+     "usd": 17.86,
+     "basis": "Item 5.1.1.2.",
+     "source": "C01"
+    },
+    {
+     "item": "Chinese property transaction taxes",
+     "cny": null,
+     "usd": null,
+     "basis": "Rate depends on the property, the holding period and local rules; no single official figure applies and none is inferred here.",
+     "source": "P11",
+     "flag": "F-VARIABLE"
+    },
+    {
+     "item": "Retail FX spread",
+     "cny": null,
+     "usd": null,
+     "basis": "Unpublished.",
+     "source": "C01",
+     "flag": "F-SPREAD"
+    }
+   ],
+   "cn_tax": {
+    "headline": "20% flat on the net gain — the largest Chinese tax most people will actually face.",
+    "detail": "IIT Law Art. 3 sets a 20% proportional rate for property-transfer income; Art. 6(5) defines the base as proceeds minus original value and reasonable expenses. Foreign-currency amounts convert at the PBOC central parity (Art. 16). Deed tax and VAT (where applicable) sit on top under separate rules not reviewed here.",
+    "sources": [
+     "P11"
+    ]
+   },
+   "us_tax": {
+    "headline": "Also a US capital gain; the FTC prevents double tax on the same gain.",
+    "detail": "US citizens report the gain (U08); Chinese tax on that gain is creditable on Form 1116 (U06). Note the character mismatch — China taxes at a flat 20%, the US at preferential capital-gain rates — so the credit may be limited by the US tax on that basket; excess may carry forward under the FTC rules (U06). The treaty does not limit US taxation of citizens (U10).",
+    "sources": [
+     "U06",
+     "U07",
+     "U08",
+     "U10"
+    ]
+   },
+   "pros": [
+    "If you were going to sell anyway, it converts a large balance into remittable proceeds in one move.",
+    "Chinese tax on the gain can be credited against US tax on the same gain."
+   ],
+   "cons": [
+    "20% flat Chinese tax on the net gain — the biggest single tax in the picture (P11).",
+    "Capital-account remittance needs approval; the facilitation quota is not the vehicle (P15).",
+    "Slow, document-heavy, and dependent on SAFE."
+   ],
+   "flags": [
+    "F-VARIABLE",
+    "F-SPREAD",
+    "F-APPROVAL"
+   ],
+   "sources": [
+    "P11",
+    "P06",
+    "P15",
+    "C01",
+    "U06",
+    "U07",
+    "U10",
+    "U08"
+   ]
+  },
+  {
+   "id": "M14",
+   "name": "Virtual currency / offshore CNY stablecoin — REJECTED",
+   "name_zh": "虚拟货币（禁止）",
+   "category": "Prohibited route",
+   "status": "prohibited",
+   "rank": 90,
+   "one_line": "Expressly banned. PBOC and seven other departments' 2026 notice declares virtual-currency business illegal financial activity in China and bars offshore entities from serving mainland residents.",
+   "eligibility": "None. Prohibited.",
+   "volume": {
+    "per_txn_usd": 0,
+    "annual_usd": 0,
+    "note": "Zero lawful volume. Stated as zero to make the prohibition machine-readable, not as a permission.",
+    "source": [
+     "P12"
+    ]
+   },
+   "steps": [
+    "Do not do this. Read the cited notice instead: Yin Fa [2026] No. 42 declares RMB↔virtual-currency exchange, virtual-currency-to-virtual-currency exchange, acting as central counterparty, information intermediation and pricing services, token issuance and related financial products to be illegal financial activities in China, bans them outright, and bars offshore entities from providing such services to mainland subjects (P12).",
+    "Note it repeals Yin Fa [2021] No. 237 and took effect on publication (2026-02-06) — this is the current rule (P12).",
+    "US side: virtual-currency transactions are taxable as property transactions and must be reported (U08)."
+   ],
+   "docs": [],
+   "fees": [
+    {
+     "item": "Not applicable",
+     "cny": null,
+     "usd": null,
+     "basis": "Prohibited route — no lawful fee exists.",
+     "source": "P12"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Criminal and administrative exposure, not a tax rate.",
+    "detail": "The notice states that violations are dealt with including referral for criminal liability, and that civil acts violating public order are void with losses borne by the parties (P12). FX-control penalties of up to 30% of the amount also apply to illicit conversion (P04).",
+    "sources": [
+     "P12",
+     "P04"
+    ]
+   },
+   "us_tax": {
+    "headline": "Taxable as property, with full reporting.",
+    "detail": "IRS: 'Taxpayers must also report virtual currency transactions to the IRS on their tax returns; these transactions are taxable by law just like any other property transaction' (U08).",
+    "sources": [
+     "U08"
+    ]
+   },
+   "pros": [],
+   "cons": [
+    "Illegal in China as of 2026-02-06 (P12).",
+    "Exposes the counterparty and any mainland financial institution to penalties.",
+    "US tax reporting still applies — the illegality removes none of it (U08)."
+   ],
+   "flags": [
+    "F-PROHIBITED"
+   ],
+   "sources": [
+    "P12",
+    "P04",
+    "U08"
+   ]
+  },
+  {
+   "id": "M15",
+   "name": "Underground banking / 地下钱庄 — REJECTED",
+   "name_zh": "地下钱庄（禁止）",
+   "category": "Prohibited route",
+   "status": "prohibited",
+   "rank": 91,
+   "one_line": "SAFE's own 'six don'ts' forbid participating in underground-banking transactions and money laundering; the penalties run to 30% of the amount and criminal referral.",
+   "eligibility": "None. Prohibited.",
+   "volume": {
+    "per_txn_usd": 0,
+    "annual_usd": 0,
+    "note": "Zero lawful volume.",
+    "source": [
+     "P15",
+     "P04"
+    ]
+   },
+   "steps": [
+    "Do not do this. SAFE states that domestic individuals must not 'participate in money laundering, tax evasion, underground-banking transactions or other illegal activities' (P15).",
+    "Understand the penalty: Decree 532 Arts. 39–45 provide fines up to 30% of the amount involved for serious illicit FX activity, escalating to equivalence with the amount and criminal liability (P04).",
+    "Understand the US side: sourcing funds through an unlicensed money transmitter can create money-transmission and reporting exposure; the obligation to report the account does not disappear (U01, U03)."
+   ],
+   "docs": [],
+   "fees": [
+    {
+     "item": "Not applicable",
+     "cny": null,
+     "usd": null,
+     "basis": "Prohibited route.",
+     "source": "P15"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Administrative penalty up to 30% of the amount, then criminal exposure.",
+    "detail": "Decree 532 Art. 39–45 (P04).",
+    "sources": [
+     "P04",
+     "P15"
+    ]
+   },
+   "us_tax": {
+    "headline": "No relief; reporting duties remain.",
+    "detail": "FBAR/CBP duties are independent of how funds moved (U01, U03).",
+    "sources": [
+     "U01",
+     "U03"
+    ]
+   },
+   "pros": [],
+   "cons": [
+    "Illegal in China (P15).",
+    "Penalty up to 30% of the amount plus criminal referral (P04).",
+    "No recourse if the operator disappears."
+   ],
+   "flags": [
+    "F-PROHIBITED"
+   ],
+   "sources": [
+    "P15",
+    "P04",
+    "U01",
+    "U03"
+   ]
+  },
+  {
+   "id": "M16",
+   "name": "Borrow or lend quotas / split purchases across people — REJECTED",
+   "name_zh": "分拆购汇、出借额度（禁止）",
+   "category": "Prohibited route",
+   "status": "prohibited",
+   "rank": 92,
+   "one_line": "Splitting a purchase across relatives to beat the US$50,000 line is the exact conduct the rules name: prohibited since 2006, independently of any repealed penalty clause.",
+   "eligibility": "None. Prohibited.",
+   "volume": {
+    "per_txn_usd": 0,
+    "annual_usd": 0,
+    "note": "Zero lawful volume.",
+    "source": [
+     "P01",
+     "P15"
+    ]
+   },
+   "steps": [
+    "Do not do this. Decree [2006] No. 3 Art. 7 prohibits individuals from circumventing limits by dividing or splitting (拆分) transactions (P01).",
+    "SAFE's 'six don'ts' state: 'must not lend their own facilitation quota to assist others' and 'must not borrow others' quotas to conduct split purchases' (P15).",
+    "Note the trap: the old Hui Fa [2007] No. 1 Art. 39 penalty clause was repealed by Hui Fa [2023] No. 8, but the prohibition itself stands in Decree 3 Art. 7 — repeal of a penalty clause does not legalise the conduct (P01, P02).",
+    "Penalties continue to arise under Decree 532 (up to 30% of the amount; individual administrative fines up to RMB 50,000) (P04)."
+   ],
+   "docs": [],
+   "fees": [
+    {
+     "item": "Not applicable",
+     "cny": null,
+     "usd": null,
+     "basis": "Prohibited route.",
+     "source": "P01"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Penalty, not tax: up to 30% of the amount involved.",
+    "detail": "Decree 532 Arts. 39–45 and Art. 48 (individuals up to RMB 50,000) (P04).",
+    "sources": [
+     "P04",
+     "P01",
+     "P02"
+    ]
+   },
+   "us_tax": {
+    "headline": "If the gifts are real, Form 3520 may still apply.",
+    "detail": "Money moved through relatives may look like a gift on paper; if it exceeds US$100,000 from a nonresident individual, Form 3520 is due (U08) — and a false characterisation is a separate problem.",
+    "sources": [
+     "U08"
+    ]
+   },
+   "pros": [],
+   "cons": [
+    "Prohibited by Decree 3 Art. 7 (P01) and named in SAFE's six don'ts (P15).",
+    "Exposes relatives' quotas and records.",
+    "Penalty up to 30% of the amount (P04)."
+   ],
+   "flags": [
+    "F-PROHIBITED"
+   ],
+   "sources": [
+    "P01",
+    "P02",
+    "P15",
+    "P04",
+    "U08"
+   ]
+  },
+  {
+   "id": "M17",
+   "name": "Buy overseas property, securities or life insurance with converted CNY — REJECTED",
+   "name_zh": "购汇用于境外买房/证券投资/人寿保险（禁止）",
+   "category": "Prohibited route",
+   "status": "prohibited",
+   "rank": 93,
+   "one_line": "Commonly marketed as 'wealth planning', but SAFE names these exact uses as unopened capital items that domestic individuals may not declare or fund with purchased FX.",
+   "eligibility": "None for a domestic individual declaring such a purpose.",
+   "volume": {
+    "per_txn_usd": 0,
+    "annual_usd": 0,
+    "note": "Zero lawful volume via the individual purchase channel.",
+    "source": [
+     "P15"
+    ]
+   },
+   "steps": [
+    "Do not declare a false purpose. SAFE: individuals 'must not use the FX for overseas real-estate purchase, securities investment, life insurance and investment-linked dividend insurance or other unopened capital items' (P15).",
+    "The individual FX purchase application itself lists these as prohibited purposes, and false declaration is separately prohibited (P15).",
+    "If the goal is genuinely to hold foreign assets, the lawful sequencing is: get the money out lawfully first (M04/M01), then invest from the offshore account — not to misdeclare the conversion purpose.",
+    "Penalties for false declaration/illicit conversion run to 30% of the amount (P04)."
+   ],
+   "docs": [],
+   "fees": [
+    {
+     "item": "Not applicable",
+     "cny": null,
+     "usd": null,
+     "basis": "Prohibited purpose.",
+     "source": "P15"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Administrative penalty up to 30%, not a tax.",
+    "detail": "Decree 532 (P04).",
+    "sources": [
+     "P04",
+     "P15"
+    ]
+   },
+   "us_tax": {
+    "headline": "The REAL US cost of the offshore-investment idea is reporting, not tax.",
+    "detail": "Owning foreign mutual funds/ETFs can trigger PFIC treatment; a foreign life-insurance policy is a reportable specified foreign financial asset on Form 8938 and can be a passive foreign investment company matter. Reporting thresholds and FBAR apply (U01, U02). No PFIC figures are asserted here — that analysis was not in scope of the sources reviewed.",
+    "sources": [
+     "U01",
+     "U02"
+    ]
+   },
+   "pros": [],
+   "cons": [
+    "Expressly prohibited as a declared purchase purpose (P15).",
+    "Penalty up to 30% of the amount (P04).",
+    "Even done lawfully offshore, it adds PFIC/8938 reporting complexity."
+   ],
+   "flags": [
+    "F-PROHIBITED",
+    "F-PFIC-NOT-RESEARCHED"
+   ],
+   "sources": [
+    "P15",
+    "P04",
+    "U01",
+    "U02"
+   ]
+  },
+  {
+   "id": "M18",
+   "name": "Structure transfers to stay under the US$10,000 reporting lines — REJECTED",
+   "name_zh": "为规避申报而分拆（禁止）",
+   "category": "Prohibited route",
+   "status": "prohibited",
+   "rank": 94,
+   "one_line": "Breaking a transfer into pieces specifically to keep it under a reporting threshold is itself a violation, on both sides of the Pacific.",
+   "eligibility": "None. Prohibited.",
+   "volume": {
+    "per_txn_usd": 0,
+    "annual_usd": 0,
+    "note": "Zero lawful volume.",
+    "source": [
+     "U09",
+     "P01"
+    ]
+   },
+   "steps": [
+    "Do not do this. 31 USC §5321(a)(4) provides a civil penalty for violating the structuring prohibition in §5324, capped at the amount of currency involved in the transaction (U09).",
+    "China prohibits the mirror-image conduct: splitting purchases to circumvent the quota (P01 Art. 7, P15).",
+    "Lawful alternative: make ONE honest transfer at whatever size is required, and file the report — FinCEN Form 105 above US$10,000 (U03), FBAR and 8938 as applicable (U01, U02).",
+    "A filed report is not an accusation. An unfiled one is a violation."
+   ],
+   "docs": [],
+   "fees": [
+    {
+     "item": "Not applicable",
+     "cny": null,
+     "usd": null,
+     "basis": "Prohibited conduct.",
+     "source": "U09"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Penalty exposure up to 30% on the Chinese side.",
+    "detail": "Decree 532 (P04) and Decree 3 Art. 7 (P01).",
+    "sources": [
+     "P04",
+     "P01"
+    ]
+   },
+   "us_tax": {
+    "headline": "Civil penalty up to the full amount involved, plus forfeiture.",
+    "detail": "§5321(a)(4)(B)-(C): the penalty may not exceed the amount involved and is reduced by any forfeiture; willful FBAR violations carry the greater of US$100,000 or 50% of the balance, inflation-adjusted to US$165,353 (U09, U04).",
+    "sources": [
+     "U09",
+     "U04",
+     "U03"
+    ]
+   },
+   "pros": [],
+   "cons": [
+    "Illegal on both sides (U09, P01).",
+    "Penalty can equal the amount moved.",
+    "Destroys the clean paper trail that the lawful routes depend on."
+   ],
+   "flags": [
+    "F-PROHIBITED"
+   ],
+   "sources": [
+    "U09",
+    "U04",
+    "U03",
+    "P01",
+    "P04",
+    "U01",
+    "U02"
+   ]
+  },
+  {
+   "id": "M19",
+   "name": "Reconversion of foreign currency you previously converted (limited)",
+   "name_zh": "结汇后购汇还原（有限）",
+   "category": "Official routine route",
+   "status": "conditional",
+   "rank": 14,
+   "one_line": "If you previously converted USD into CNY and now want it back, a narrow rule allows re-purchase with just an ID — but only up to US$500/day (US$1,000 if departing) and only with proof of the original conversion.",
+   "eligibility": "A person holding CNY that came from converting foreign currency, able to prove the origin (e.g. water/electricity bills for a 24-month residence record as SAFE's Tianjin guidance describes). Narrow by design.",
+   "volume": {
+    "per_txn_usd": 500,
+    "annual_usd": null,
+    "note": "US$500 per day with ID only; up to US$1,000 in the pre-departure case. No annual cap is published — null deliberately. Source: SAFE Tianjin 2026-09-17 reconversion FAQ, citing Current Account FX Business Guidelines 2020 Art. 60.",
+    "source": [
+     "P09"
+    ]
+   },
+   "steps": [
+    "Establish that the CNY in the account came from a prior conversion of foreign currency (keep the original conversion receipts).",
+    "Assemble the residency evidence SAFE's guidance describes — utility bills covering the relevant 24-month period.",
+    "Present ID + the origin evidence at the bank for re-purchase of foreign currency.",
+    "Stay within US$500/day (US$1,000 in the departure case).",
+    "Wire out under normal remittance rules, or carry it per M10.",
+    "US side reporting unchanged (U01, U02)."
+   ],
+   "docs": [
+    "Valid ID",
+    "Original conversion receipts",
+    "Utility bills / residence evidence"
+   ],
+   "fees": [
+    {
+     "item": "Outward telegraphic transfer commission",
+     "cny": 500,
+     "usd": 74.42,
+     "basis": "Tariff 5.1.1.1; cap binds above CNY 500,000 — a US$500 daily slice will fall under the CNY 100 minimum in practice, so the minimum, not the cap, governs.",
+     "source": "C01"
+    },
+    {
+     "item": "Retail FX spread",
+     "cny": null,
+     "usd": null,
+     "basis": "Unpublished.",
+     "source": "C01",
+     "flag": "F-SPREAD"
+    }
+   ],
+   "cn_tax": {
+    "headline": "No tax on reconversion of your own funds.",
+    "detail": "Not an income category (P11 Art. 2).",
+    "sources": [
+     "P11"
+    ]
+   },
+   "us_tax": {
+    "headline": "§988 applies to the round trip; the personal-transaction US$200 threshold decides whether you must compute a gain.",
+    "detail": "Converting USD→CNY→USD is two §988 dispositions; personal-transaction treatment means no gain is recognised unless it exceeds US$200 (U05).",
+    "sources": [
+     "U05"
+    ]
+   },
+   "pros": [
+    "ID-only, no authenticity document set.",
+    "Clean for reversing an earlier conversion."
+   ],
+   "cons": [
+    "US$500/day ceiling makes it useless for a large balance.",
+    "Requires proof of the original conversion and residence evidence."
+   ],
+   "flags": [
+    "F-SPREAD",
+    "F-NARROW"
+   ],
+   "sources": [
+    "P09",
+    "C01",
+    "P11",
+    "U05",
+    "U01",
+    "U02"
+   ]
+  }
+ ]
+}
