@@ -66,14 +66,14 @@
   {
    "id": "P06",
    "authority": "People's Bank of China (announced via SAFE)",
-   "title": "Provisional Measures for the Administration of Sale and Payment of Foreign Exchange for Individuals' Outward Asset Transfers (PBOC Announcement [2004] No. 16, full text)",
-   "url": "http://m.safe.gov.cn/safe/2004/1116/4133.html",
+   "title": "PBOC Interim Measures for the Administration of Sale and Payment of Foreign Exchange for the Outward Transfer of Personal Property (个人财产对外转移售付汇管理暂行办法) — full text with the SAFE news release",
+   "url": "https://www.safe.gov.cn/safe/2004/1116/4133.html",
    "lang": "ZH",
    "type": "government",
    "retrieved": "2026-11-09",
-   "locator": "Arts. 2, 6, 8, 10, 11, 13, 16",
-   "quote": "Art. 2: '移民转移是指从中国内地移居外国，或者赴香港、澳门特别行政区定居的自然人……将其在取得移民身份之前在境内拥有的合法财产变现，通过外汇指定银行购汇和汇出境外的行为。' (Emigration transfer: a natural person emigrating from mainland China to a foreign country or settling in HK/Macau converts lawful domestic property owned BEFORE obtaining immigration status into FX through a designated bank and remits it abroad.) Art. 6: '移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满一年后，可汇出不超过剩余财产的一半；自首次汇出满两年后，可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万元）的，经批准后可一次性汇出。' (Emigration transfer: apply once for the full amount; first remittance may not exceed one-half; after one year, up to one-half of the remainder; after two years, the entire remainder. At or under RMB 200,000: single remittance after approval.) Art. 8 materials include: '（四）移居外国的，应当提供公安机关出具的中国户籍注销证明和中国驻外使领馆出具或认证的申请人在国外定居证明……（六）申请转移财产所在地或收入来源地主管税务机关开具的税收证明或完税凭证。' (Household-registration cancellation certificate + proof of settlement abroad; tax certificate or tax-payment voucher from the competent tax authority.) Art. 10: '申请财产对外转移总金额在等值人民币50万元以下（含50万元）的，由所在地外汇局审批。……超过上述金额的，由所在地外汇局初审后，报国家外汇管理局审批。' (At or under RMB 500,000: local SAFE branch approves; above: branch preliminary review then SAFE head-office approval.) Art. 11: '外汇指定银行办理售汇后，应直接将外汇汇往……申请人本人的账户，不得在境内提取外币现钞。' Art. 13: fraud → '外汇局按照《中华人民共和国外汇管理条例》第四十条的规定给予处罚。' Art. 16: '本办法自2004年12月1日起施行。'",
-   "notes": "The lawful bulk-emigration route. Requires household-registration cancellation, so it is unavailable to someone who still lives in China. Approval is per-case; amounts and staging are fixed by the measure."
+   "locator": "Arts. 2, 6, 8(4)-(6), 10, 11, 12, 13",
+   "quote": "Art. 2: '个人财产对外转移包括移民财产转移……和继承财产转移' — two categories: emigration transfer and inheritance transfer. Art. 6: '移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满一年后，可汇出不超过剩余财产的一半；自首次汇出满两年后，可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万元）的，经批准后可一次性汇出。' Art. 8(4): '移居外国的，应当提供公安机关出具的中国户籍注销证明和中国驻外使领馆出具或认证的申请人在国外定居证明。' Art. 8(5): property title documents such as '房屋产权证复印件、房地产买卖契约'. Art. 8(6): '申请转移财产所在地或收入来源地主管税务机关开具的税收证明或完税凭证。' Art. 10: '申请财产对外转移总金额在等值人民币50万元以下（含50万元）的，由所在地外汇局审批……超过上述金额的，由所在地外汇局初审后，报国家外汇管理局审批。' Art. 11: '外汇指定银行办理售汇后，应直接将外汇汇往移民或继承人居住国或地区申请人本人的账户，不得在境内提取外币现钞。' Art. 12: applications refused where the property cannot prove lawful source or is subject to unresolved criminal/civil proceedings. Art. 13: false materials or repeat applications for the same property are penalised under Article 40 of the FX Regulations.",
+   "notes": "Effective 2004-12-01. Full regulatory text with the staging formula now extracted (first remittance ≤ half; after one year ≤ half of the remainder; after two years the balance), plus the ≤ RMB 200,000 one-off exception, the ≤ RMB 500,000 local-branch approval threshold, the requirement to remit only to the applicant's own overseas account, and the express refusal ground for property that cannot prove a lawful source."
   },
   {
    "id": "P07",
@@ -115,13 +115,13 @@
    "id": "P10",
    "authority": "SAFE and GACC (via SAFE news release with full text)",
    "title": "PBOC Announcement [2004] No. 16 — see P06 for the same measure; here recorded as the SAFE news publication confirming issuance",
-   "url": "http://m.safe.gov.cn/safe/2004/1116/4133.html",
+   "url": "https://www.safe.gov.cn/safe/2004/1116/4133.html",
    "lang": "ZH",
    "type": "government",
    "retrieved": "2026-11-09",
    "locator": "release paragraphs",
    "quote": "'《暂行办法》规定，对超过20万元（含20万元）人民币的移民财产转移采取一次申请、分步汇出……自2004年12月1日起正式实施。' (For emigration property transfers of RMB 200,000 or more: one application, staged remittance; measure effective 1 December 2004.)",
-   "notes": "Same document as P06; retained as a separate retrieval record of the SAFE news publication page. Redundant to P06 — used only as corroboration of the issuance date."
+   "notes": "Duplicate of P06 — same instrument and same URL; retained only as a corroborating record, never double-counted."
   },
   {
    "id": "C01",

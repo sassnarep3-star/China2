@@ -125,37 +125,37 @@ M04,30000,660.0,98.23,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,40000,660.0,98.23,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,50000,695.94,103.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,60000,763.14,113.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,70000,1050.31,156.32,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,70000,830.31,123.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,80000,897.51,133.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,90000,964.68,143.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,100000,1031.88,153.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,110000,1319.08,196.33,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,110000,1099.08,163.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,120000,1166.25,173.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,130000,1233.45,183.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,140000,1520.62,226.32,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,140000,1300.62,193.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,150000,1367.82,203.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,160000,1435.02,213.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,170000,1722.19,256.32,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,170000,1502.19,223.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,180000,1569.39,233.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,190000,1636.56,243.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,200000,1703.76,253.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,210000,1770.96,263.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,220000,2058.13,306.32,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,220000,1838.13,273.58,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,230000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,240000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,250000,2080.0,309.58,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,250000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,260000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,270000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,280000,2080.0,309.58,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,280000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,290000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,300000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,310000,2080.0,309.58,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,310000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,320000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,330000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,340000,2080.0,309.58,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,340000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,350000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,360000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
-M04,370000,2080.0,309.58,4,2,,,0,SAFE approval; staged up to ~2 years (P06)
+M04,370000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,380000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,390000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
 M04,400000,1860.0,276.84,3,2,,,0,SAFE approval; staged up to ~2 years (P06)
@@ -279,46 +279,46 @@ M07,370000,,,50,,,0,0,"CNY 50,000 per transfer -> many transfers"
 M07,380000,,,52,,,0,0,"CNY 50,000 per transfer -> many transfers"
 M07,390000,,,53,,,0,0,"CNY 50,000 per transfer -> many transfers"
 M07,400000,,,54,,,0,0,"CNY 50,000 per transfer -> many transfers"
-M08,10000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,20000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,30000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,40000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,50000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,60000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,70000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,80000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,90000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,100000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,110000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,120000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,130000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,140000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,150000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,160000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,170000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,180000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,190000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,200000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,210000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,220000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,230000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,240000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,250000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,260000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,270000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,280000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,290000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,300000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,310000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,320000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,330000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,340000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,350000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,360000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,370000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,380000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,390000,0.0,0.0,0,,,0,0,"spending, not transferring"
-M08,400000,0.0,0.0,0,,,0,0,"spending, not transferring"
+M08,10000,,,0,,,0,0,"spending, not transferring"
+M08,20000,,,0,,,0,0,"spending, not transferring"
+M08,30000,,,0,,,0,0,"spending, not transferring"
+M08,40000,,,0,,,0,0,"spending, not transferring"
+M08,50000,,,0,,,0,0,"spending, not transferring"
+M08,60000,,,0,,,0,0,"spending, not transferring"
+M08,70000,,,0,,,0,0,"spending, not transferring"
+M08,80000,,,0,,,0,0,"spending, not transferring"
+M08,90000,,,0,,,0,0,"spending, not transferring"
+M08,100000,,,0,,,0,0,"spending, not transferring"
+M08,110000,,,0,,,0,0,"spending, not transferring"
+M08,120000,,,0,,,0,0,"spending, not transferring"
+M08,130000,,,0,,,0,0,"spending, not transferring"
+M08,140000,,,0,,,0,0,"spending, not transferring"
+M08,150000,,,0,,,0,0,"spending, not transferring"
+M08,160000,,,0,,,0,0,"spending, not transferring"
+M08,170000,,,0,,,0,0,"spending, not transferring"
+M08,180000,,,0,,,0,0,"spending, not transferring"
+M08,190000,,,0,,,0,0,"spending, not transferring"
+M08,200000,,,0,,,0,0,"spending, not transferring"
+M08,210000,,,0,,,0,0,"spending, not transferring"
+M08,220000,,,0,,,0,0,"spending, not transferring"
+M08,230000,,,0,,,0,0,"spending, not transferring"
+M08,240000,,,0,,,0,0,"spending, not transferring"
+M08,250000,,,0,,,0,0,"spending, not transferring"
+M08,260000,,,0,,,0,0,"spending, not transferring"
+M08,270000,,,0,,,0,0,"spending, not transferring"
+M08,280000,,,0,,,0,0,"spending, not transferring"
+M08,290000,,,0,,,0,0,"spending, not transferring"
+M08,300000,,,0,,,0,0,"spending, not transferring"
+M08,310000,,,0,,,0,0,"spending, not transferring"
+M08,320000,,,0,,,0,0,"spending, not transferring"
+M08,330000,,,0,,,0,0,"spending, not transferring"
+M08,340000,,,0,,,0,0,"spending, not transferring"
+M08,350000,,,0,,,0,0,"spending, not transferring"
+M08,360000,,,0,,,0,0,"spending, not transferring"
+M08,370000,,,0,,,0,0,"spending, not transferring"
+M08,380000,,,0,,,0,0,"spending, not transferring"
+M08,390000,,,0,,,0,0,"spending, not transferring"
+M08,400000,,,0,,,0,0,"spending, not transferring"
 M09,10000,,,1,1,,0,0,"RMB 100,000/yr (~US$14,884) -> 1 year(s)"
 M09,20000,,,2,2,,0,0,"RMB 100,000/yr (~US$14,884) -> 2 year(s)"
 M09,30000,,,3,3,,0,0,"RMB 100,000/yr (~US$14,884) -> 3 year(s)"
@@ -359,46 +359,46 @@ M09,370000,,,25,25,,0,0,"RMB 100,000/yr (~US$14,884) -> 25 year(s)"
 M09,380000,,,26,26,,0,0,"RMB 100,000/yr (~US$14,884) -> 26 year(s)"
 M09,390000,,,27,27,,0,0,"RMB 100,000/yr (~US$14,884) -> 27 year(s)"
 M09,400000,,,27,27,,0,0,"RMB 100,000/yr (~US$14,884) -> 27 year(s)"
-M10,10000,0.0,0.0,1,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 1 trip(s)"
-M10,20000,0.0,0.0,2,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 2 trip(s)"
-M10,30000,0.0,0.0,3,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 3 trip(s)"
-M10,40000,0.0,0.0,4,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 4 trip(s)"
-M10,50000,0.0,0.0,5,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 5 trip(s)"
-M10,60000,0.0,0.0,6,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 6 trip(s)"
-M10,70000,0.0,0.0,7,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 7 trip(s)"
-M10,80000,0.0,0.0,8,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 8 trip(s)"
-M10,90000,0.0,0.0,9,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 9 trip(s)"
-M10,100000,0.0,0.0,10,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 10 trip(s)"
-M10,110000,0.0,0.0,11,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 11 trip(s)"
-M10,120000,0.0,0.0,12,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 12 trip(s)"
-M10,130000,0.0,0.0,13,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 13 trip(s)"
-M10,140000,0.0,0.0,14,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 14 trip(s)"
-M10,150000,0.0,0.0,15,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 15 trip(s)"
-M10,160000,0.0,0.0,16,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 16 trip(s)"
-M10,170000,0.0,0.0,17,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 17 trip(s)"
-M10,180000,0.0,0.0,18,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 18 trip(s)"
-M10,190000,0.0,0.0,19,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 19 trip(s)"
-M10,200000,0.0,0.0,20,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 20 trip(s)"
-M10,210000,0.0,0.0,21,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 21 trip(s)"
-M10,220000,0.0,0.0,22,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 22 trip(s)"
-M10,230000,0.0,0.0,23,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 23 trip(s)"
-M10,240000,0.0,0.0,24,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 24 trip(s)"
-M10,250000,0.0,0.0,25,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 25 trip(s)"
-M10,260000,0.0,0.0,26,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 26 trip(s)"
-M10,270000,0.0,0.0,27,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 27 trip(s)"
-M10,280000,0.0,0.0,28,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 28 trip(s)"
-M10,290000,0.0,0.0,29,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 29 trip(s)"
-M10,300000,0.0,0.0,30,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 30 trip(s)"
-M10,310000,0.0,0.0,31,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 31 trip(s)"
-M10,320000,0.0,0.0,32,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 32 trip(s)"
-M10,330000,0.0,0.0,33,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 33 trip(s)"
-M10,340000,0.0,0.0,34,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 34 trip(s)"
-M10,350000,0.0,0.0,35,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 35 trip(s)"
-M10,360000,0.0,0.0,36,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 36 trip(s)"
-M10,370000,0.0,0.0,37,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 37 trip(s)"
-M10,380000,0.0,0.0,38,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 38 trip(s)"
-M10,390000,0.0,0.0,39,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 39 trip(s)"
-M10,400000,0.0,0.0,40,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 40 trip(s)"
+M10,10000,,,1,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 1 trip(s)"
+M10,20000,,,2,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 2 trip(s)"
+M10,30000,,,3,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 3 trip(s)"
+M10,40000,,,4,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 4 trip(s)"
+M10,50000,,,5,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 5 trip(s)"
+M10,60000,,,6,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 6 trip(s)"
+M10,70000,,,7,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 7 trip(s)"
+M10,80000,,,8,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 8 trip(s)"
+M10,90000,,,9,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 9 trip(s)"
+M10,100000,,,10,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 10 trip(s)"
+M10,110000,,,11,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 11 trip(s)"
+M10,120000,,,12,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 12 trip(s)"
+M10,130000,,,13,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 13 trip(s)"
+M10,140000,,,14,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 14 trip(s)"
+M10,150000,,,15,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 15 trip(s)"
+M10,160000,,,16,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 16 trip(s)"
+M10,170000,,,17,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 17 trip(s)"
+M10,180000,,,18,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 18 trip(s)"
+M10,190000,,,19,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 19 trip(s)"
+M10,200000,,,20,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 20 trip(s)"
+M10,210000,,,21,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 21 trip(s)"
+M10,220000,,,22,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 22 trip(s)"
+M10,230000,,,23,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 23 trip(s)"
+M10,240000,,,24,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 24 trip(s)"
+M10,250000,,,25,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 25 trip(s)"
+M10,260000,,,26,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 26 trip(s)"
+M10,270000,,,27,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 27 trip(s)"
+M10,280000,,,28,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 28 trip(s)"
+M10,290000,,,29,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 29 trip(s)"
+M10,300000,,,30,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 30 trip(s)"
+M10,310000,,,31,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 31 trip(s)"
+M10,320000,,,32,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 32 trip(s)"
+M10,330000,,,33,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 33 trip(s)"
+M10,340000,,,34,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 34 trip(s)"
+M10,350000,,,35,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 35 trip(s)"
+M10,360000,,,36,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 36 trip(s)"
+M10,370000,,,37,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 37 trip(s)"
+M10,380000,,,38,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 38 trip(s)"
+M10,390000,,,39,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 39 trip(s)"
+M10,400000,,,40,,,0,0,"US$10,000 per trip; >US$10,000 prohibited (P07) -> 40 trip(s)"
 M11,10000,220.0,32.74,1,1,,0,0,"US$50,000/yr facilitation quota -> 1 calendar year(s)"
 M11,20000,254.38,37.86,1,1,,0,0,"US$50,000/yr facilitation quota -> 1 calendar year(s)"
 M11,30000,321.56,47.86,1,1,,0,0,"US$50,000/yr facilitation quota -> 1 calendar year(s)"
@@ -485,37 +485,37 @@ M13,30000,660.0,98.23,3,2,,,0,capital-account approval; 20% flat tax on the prop
 M13,40000,660.0,98.23,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,50000,695.94,103.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,60000,763.14,113.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,70000,1050.31,156.32,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,70000,830.31,123.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,80000,897.51,133.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,90000,964.68,143.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,100000,1031.88,153.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,110000,1319.08,196.33,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,110000,1099.08,163.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,120000,1166.25,173.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,130000,1233.45,183.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,140000,1520.62,226.32,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,140000,1300.62,193.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,150000,1367.82,203.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,160000,1435.02,213.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,170000,1722.19,256.32,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,170000,1502.19,223.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,180000,1569.39,233.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,190000,1636.56,243.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,200000,1703.76,253.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,210000,1770.96,263.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,220000,2058.13,306.32,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,220000,1838.13,273.58,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,230000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,240000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,250000,2080.0,309.58,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,250000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,260000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,270000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,280000,2080.0,309.58,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,280000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,290000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,300000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,310000,2080.0,309.58,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,310000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,320000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,330000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,340000,2080.0,309.58,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,340000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,350000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,360000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
-M13,370000,2080.0,309.58,4,2,,,0,capital-account approval; 20% flat tax on the property gain first
+M13,370000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,380000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,390000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
 M13,400000,1860.0,276.84,3,2,,,0,capital-account approval; 20% flat tax on the property gain first
@@ -759,3 +759,43 @@ M19,370000,162800.0,24230.52,740,2.0,,0,0,US$500/day -> 740 day(s) = 2.0 year(s)
 M19,380000,167200.0,24885.4,760,2.1,,0,0,US$500/day -> 760 day(s) = 2.1 year(s)
 M19,390000,171600.0,25540.28,780,2.1,,0,0,US$500/day -> 780 day(s) = 2.1 year(s)
 M19,400000,176000.0,26195.15,800,2.2,,0,0,US$500/day -> 800 day(s) = 2.2 year(s)
+M20,10000,440.0,65.49,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,20000,440.0,65.49,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,30000,441.56,65.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,40000,508.76,75.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,50000,575.94,85.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,60000,643.12,95.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,70000,710.32,105.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,80000,777.5,115.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,90000,844.7,125.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,100000,911.88,135.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,110000,979.06,145.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,120000,1046.26,155.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,130000,1113.44,165.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,140000,1180.64,175.72,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,150000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,160000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,170000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,180000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,190000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,200000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,210000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,220000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,230000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,240000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,250000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,260000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,270000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,280000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,290000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,300000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,310000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,320000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,330000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,340000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,350000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,360000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,370000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,380000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,390000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)
+M20,400000,1240.0,184.56,2,,,,0,SAFE approval at the decedent's household-registration location (Art.5)

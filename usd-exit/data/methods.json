@@ -353,14 +353,13 @@
    "status": "conditional",
    "rank": 4,
    "one_line": "If you are leaving China for good and cancelling your 户籍, PBOC [2004] No.16 allows a one-off transfer of your entire personal assets, staged over up to ~2 years — with tax clearance required first.",
-   "eligibility": "A person emigrating from China who cancels Chinese household registration (注销中国户籍). IIT Law Art. 13 requires a tax settlement (税款清算) BEFORE the cancellation (P11).",
+   "eligibility": "A person who has emigrated from mainland China (or settled in Hong Kong/Macau) and who transfers lawful property they owned BEFORE acquiring emigrant status. Art. 8(4) requires a PUBLIC SECURITY household-registration cancellation certificate (户口注销证明) AND a certificate of overseas settlement issued or authenticated by a Chinese embassy/consulate. IIT Law Art. 13 separately requires a PRC tax settlement before the household registration is cancelled (P11). Art. 12 bars property that cannot prove a lawful source.",
    "volume": {
     "per_txn_usd": null,
     "annual_usd": null,
-    "note": "The regulation stages the transfer rather than capping it: within 1/2 of the assets at/around emigration, the remainder within 1 year, with a further extension allowable to 2 years. Amounts of RMB 500,000 and above go to SAFE head office for approval. No published per-year USD cap — deliberately null.",
+    "note": "The regulation stages by TIME, not by an annual dollar ceiling: first remittance <= half of the total, then <= half of the remainder after one year, then the balance after two years. Totals of RMB 200,000 or less may be remitted in one go after approval. Local SAFE decides below RMB 500,000; at or above it, SAFE head office approves. NO annual USD figure is published - the per-year cell is blank by design, not omission.",
     "source": [
-     "P06",
-     "P10"
+     "P06"
     ]
    },
    "steps": [
@@ -368,17 +367,19 @@
     "Obtain the tax clearance certificate (完税证明/税收证明) — PBOC [2004] No.16 requires a tax certificate as part of the application package (P06).",
     "Cancel 户籍 and obtain the cancellation certificate (户口注销证明) plus proof of the right to settle abroad (foreign visa / permanent residence).",
     "Apply through the bank to SAFE for the emigration transfer, submitting identity, the household-registration cancellation, the tax certificate, and proof of the assets and their source.",
-    "For amounts of RMB 500,000 or more, the application goes to SAFE head office — expect a substantially longer review (P06).",
-    "Transfer in the staged pattern: an initial tranche at/around emigration, the balance within one year, extendable to two years on application (P06).",
+    "For totals of RMB 500,000 or more, your local SAFE branch reviews first and then submits to SAFE head office for approval; below that, the local branch decides (P06 Art. 10).",
+    "Transfer in the statutory pattern (PBOC [2004] No.16 Art. 6): the FIRST remittance may not exceed half of the total approved property; after one full year from the first remittance, up to half of what remains; after two full years, the whole balance. Where the total approved property is RMB 200,000 or less it may be remitted in one go after approval (P06).",
     "Wire each tranche to your own overseas account. Keep every approval document.",
     "US side: the arrival of your own capital is not income and is not a gift — Form 3520 gift reporting does NOT apply to your own funds. The account still needs FinCEN 114 / Form 8938 while it is foreign (U01, U02)."
    ],
    "docs": [
-    "Passport + foreign settlement visa/permit",
-    "户口注销证明 (household-registration cancellation certificate)",
-    "税务证明/完税证明 (tax clearance)",
-    "Proof of asset ownership and source (bank statements, contracts, prior tax filings)",
-    "SAFE application forms via the bank"
+    "申请报告 (written application stating the reason, the source of the property and how it was realised)",
+    "《移民财产对外转移申请人情况表》 signed by the applicant",
+    "《个人财产对外转移外汇业务申请表》",
+    "Passport + 中国户籍注销证明 (public security household-registration cancellation certificate) + 国外定居证明 issued/authenticated by a Chinese embassy or consulate",
+    "Property title documents (e.g. 房屋产权证, 房地产买卖契约, 拆迁补偿安置协议书)",
+    "税务证明/完税凭证 issued by the competent tax authority (Art. 8(6))",
+    "Notarised power of attorney if an agent acts"
    ],
    "fees": [
     {
@@ -440,10 +441,12 @@
     ]
    },
    "pros": [
+    "The only published route that can move an entire balance in about two years, and it is a written regulation, not a discretionary favour (P06).",
     "The ONLY published route that moves a large balance (hundreds of thousands) in ~1–2 years instead of 8.",
     "Bank fees are the same capped tariff as any wire (C01)."
    ],
    "cons": [
+    "Art. 12 grounds for refusal: property that cannot prove a lawful source, or that is caught by unresolved criminal/civil proceedings, is refused outright (P06).",
     "Requires actually giving up Chinese household registration — irreversible and consequential.",
     "Tax clearance first: the balance must survive scrutiny (P11 Art. 13).",
     "SAFE head-office approval at ≥ RMB 500,000; long and discretionary (P06).",
@@ -1687,6 +1690,125 @@
     "U05",
     "U01",
     "U02"
+   ]
+  },
+  {
+   "id": "M20",
+   "name": "Inheritance transfer of inherited Chinese property",
+   "name_zh": "继承财产转移",
+   "category": "Bulk / capital-account route",
+   "status": "conditional",
+   "rank": 5,
+   "one_line": "The other half of PBOC [2004] No.16: a foreign citizen or HK/Macau resident who lawfully inherits mainland property can realise it and remit the proceeds - one application, paid in one go or in instalments.",
+   "eligibility": "A foreign national, or a Hong Kong/Macau resident, who has lawfully inherited property situated in mainland China. Taiwan residents are covered by Art. 14 by analogy. This is NOT available for transferring your own property - that is the emigration limb (M04).",
+   "volume": {
+    "per_txn_usd": null,
+    "annual_usd": null,
+    "note": "Art. 9 requires ONE application for all property inherited from the same decedent, which may then be remitted in one lump or in instalments (Art. 6 second paragraph) - so there is no annual ceiling and no USD figure to copy. Local SAFE approves below RMB 500,000; at or above it, SAFE head office (Art. 10). Blank by design.",
+    "source": [
+     "P06"
+    ]
+   },
+   "steps": [
+    "Confirm you are a foreign citizen or HK/Macau resident and that the property is a genuine lawful inheritance - Art. 12 refuses property that cannot prove a lawful source or is subject to unresolved proceedings (P06).",
+    "Obtain the inheritance documents: the will/intestacy succession evidence and proof of your relationship to the decedent (Art. 9(4)). Notarisation is required where the documents are not already notarised (Art. 9 closing paragraph).",
+    "Obtain the certificate of overseas settlement: for a foreign citizen, issued or authenticated by a Chinese embassy/consulate (Art. 9(3)).",
+    "Obtain the decedent's property title documents AND the tax certificate or tax-payment voucher issued by the competent tax authority where the property is situated (Art. 9(5)).",
+    "Realise the property (sell it) and pay the Chinese transaction taxes on the sale; keep the tax vouchers.",
+    "Apply to the SAFE branch where the DECEDENT's household registration was located (Art. 5) - not where you live. One application covers everything inherited from that decedent (Art. 9).",
+    "SAFE issues an approval letter and a capital-account approval document (核准件); take it to the designated bank to buy FX and remit (Art. 10).",
+    "The bank must remit directly to your own account in your country of residence - withdrawing the foreign cash inside China is expressly forbidden (Art. 11).",
+    "US side: an inheritance is generally not US taxable income, but a distribution from a foreign estate above US$100,000 is within Form 3520's scope - check the instructions before filing. Report the account while it remains foreign (U01, U02, U08)."
+   ],
+   "docs": [
+    "Passport + 国外定居证明 (embassy-issued or authenticated)",
+    "Inheritance evidence + proof of relationship to the decedent (notarised if required)",
+    "Decedent's property title documents",
+    "Tax certificate / 完税凭证 from the competent tax authority at the property's location",
+    "《个人财产对外转移外汇业务申请表》",
+    "SAFE approval letter + 核准件 for the bank"
+   ],
+   "fees": [
+    {
+     "item": "Outward telegraphic transfer commission",
+     "cny": 500,
+     "usd": 74.42,
+     "basis": "Tariff 5.1.1.1; the CNY 500 cap binds for any transfer above CNY 500,000.",
+     "source": "C01"
+    },
+    {
+     "item": "Cable / telegraphic charge",
+     "cny": 120,
+     "usd": 17.86,
+     "basis": "Fixed per wire - item 5.1.1.2.",
+     "source": "C01"
+    },
+    {
+     "item": "SAFE application fee",
+     "cny": null,
+     "usd": null,
+     "basis": "No fee is stated in PBOC [2004] No.16. Blank rather than zero: absence of a published fee is not proof of no charge.",
+     "source": "P06",
+     "flag": "F-NO-FEE-PUBLISHED"
+    },
+    {
+     "item": "Retail FX spread",
+     "cny": null,
+     "usd": null,
+     "basis": "Unpublished.",
+     "source": "C01",
+     "flag": "F-SPREAD"
+    },
+    {
+     "item": "Chinese inheritance/property transaction taxes",
+     "cny": null,
+     "usd": null,
+     "basis": "Depends on the property, the holding period and local rules. No single official figure applies and none is inferred.",
+     "source": "P11",
+     "flag": "F-VARIABLE"
+    }
+   ],
+   "cn_tax": {
+    "headline": "Chinese tax falls on realising the property - most importantly 20% flat on the net gain - not on the remittance.",
+    "detail": "Property-transfer income is taxed at a flat 20% on proceeds minus original value and reasonable expenses (P11 Arts. 3, 6(5)). Art. 9(5) of PBOC [2004] No.16 makes the resulting tax certificate a mandatory part of the application, so the tax is paid before the money can move (P06). Deed tax and VAT (where applicable) sit on top under separate rules not reviewed here.",
+    "sources": [
+     "P11",
+     "P06"
+    ]
+   },
+   "us_tax": {
+    "headline": "An inheritance is generally not US income, but a foreign estate may be a reporting matter.",
+    "detail": "IRS guidance lists receipt of more than $100,000 in gifts or bequests from a nonresident alien individual or foreign estate as Form 3520 reportable (U08) - note that a foreign estate is expressly included, so an inheritance is in scope above that threshold. Foreign taxes paid on the realisation may be creditable on Form 1116 to the extent the same gain is taxed by the US (U06), and the treaty's saving clause preserves full US taxing rights over citizens (U10).",
+    "sources": [
+     "U08",
+     "U06",
+     "U10"
+    ]
+   },
+   "pros": [
+    "A written regulation, not a discretionary exception - Art. 6 allows one-off or instalment remittance (P06).",
+    "One application covers all property inherited from the same decedent."
+   ],
+   "cons": [
+    "Only for inherited property, not your own - this is not an alternative to M04 for your own balance.",
+    "Requires a Chinese tax certificate at the property's location before SAFE will act (Art. 9(5)).",
+    "SAFE head-office approval at RMB 500,000+; discretionary processing time.",
+    "Must remit to your own overseas account; no cash withdrawal in China (Art. 11)."
+   ],
+   "flags": [
+    "F-SPREAD",
+    "F-NO-FEE-PUBLISHED",
+    "F-APPROVAL"
+   ],
+   "sources": [
+    "P06",
+    "P11",
+    "C01",
+    "U01",
+    "U02",
+    "U06",
+    "U08",
+    "U10"
    ]
   }
  ]

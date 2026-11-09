@@ -101,28 +101,40 @@ def wire_fee(amount_usd):
 #   years             : how long the route takes if it is rate-limited
 #   note              : plain-English explanation of what drives the number
 
-def row_bank_wire(amount, tranches=1, per_tranche=None):
-    """Bank wire route: N tranches, tariff applied to each tranche."""
-    slice_usd = amount if per_tranche is None else per_tranche
-    edges = []
-    remaining = amount
-    while remaining > 0:
-        chunk = min(slice_usd, remaining)
-        edges.append(chunk)
-        remaining -= chunk
+def row_bank_wire(amount, tranches=1, per_tranche=None, n_tranches=None):
+    """Bank wire route: N tranches, tariff applied to each tranche.
+
+    n_tranches splits `amount` into that many EQUAL tranches (used by the staged
+    routes, whose regulation stages by time rather than by a dollar ceiling).
+    per_tranche splits by a published dollar ceiling (used by the quota routes).
+    Exactly one of the two must be supplied alongside `amount`.
+    """
+    if n_tranches:
+        edges = [amount / float(n_tranches)] * n_tranches
+    else:
+        slice_usd = amount if per_tranche is None else per_tranche
+        edges = []
+        remaining = amount
+        while remaining > 0.01:
+            chunk = min(slice_usd, remaining)
+            edges.append(chunk)
+            remaining -= chunk
     total_cny = 0.0
     per = []
     for chunk in edges:
         cny, comp, formula = wire_fee(chunk)
         total_cny += cny
         per.append({"usd": round(chunk, 2), "fee_cny": cny, "fee_usd": cny_to_usd(cny), "formula": formula})
+    # per-tranche arithmetic is kept in-memory for verify.py to re-check but is
+    # not dumped into costs.json: the site renders totals, and 760 blobs of
+    # intermediate work would bloat the repo for no reader benefit.
     return {
         "fee_cny": round(total_cny, 2),
         "fee_usd": cny_to_usd(total_cny),
         "transfers": len(edges),
-        "per_transfer": per,
         "basis": "published tariff, applied per transfer",
         "source": "C01",
+        "_per_transfer": per,
     }
 
 
@@ -160,7 +172,9 @@ def build_row(mid, amount):
 
     # --- M04 emigration transfer: staged into 3 tranches ------------------------
     if mid == "M04":
-        w = row_bank_wire(amount, per_tranche=max(amount / 3.0, 1))
+        # P06 stages by TIME, not by a dollar cap: up to 1/2 at/around emigration,
+        # the balance within 1 year, extendable to 2. Modelled as 3 equal tranches.
+        w = row_bank_wire(amount, n_tranches=3)
         r.update(w)
         r["years"] = 2
         r["constrained_by"] = "SAFE approval; staged up to ~2 years (P06)"
@@ -202,7 +216,7 @@ def build_row(mid, amount):
     # --- M08 card spending: no wire at all ------------------------------------
     if mid == "M08":
         r.update({
-            "fee_cny": 0.0, "fee_usd": 0.0,
+            "fee_cny": None, "fee_usd": None,
             "transfers": 0, "years": None,
             "constrained_by": "spending, not transferring",
             "note": "No wire fee because no wire occurs. The card network's FX markup is unpublished, so the true cost is not zero — it is unknown (F-SPREAD).",
@@ -230,7 +244,7 @@ def build_row(mid, amount):
     if mid == "M10":
         n = math.ceil(amount / CAPS["cash_per_trip_usd"])
         r.update({
-            "fee_cny": 0.0, "fee_usd": 0.0,
+            "fee_cny": None, "fee_usd": None,
             "transfers": n, "years": None,
             "constrained_by": f"US$10,000 per trip; >US$10,000 prohibited (P07) -> {n} trip(s)",
             "note": "No published charge for the carry permit. Above US$10,000 the route is prohibited outright, and Form 105 is due in the US for each arrival above US$10,000 (U03).",
@@ -256,7 +270,7 @@ def build_row(mid, amount):
 
     # --- M13 property sale proceeds ------------------------------------------
     if mid == "M13":
-        w = row_bank_wire(amount, per_tranche=max(amount / 3.0, 1))
+        w = row_bank_wire(amount, n_tranches=3)
         r.update(w)
         r["years"] = 2
         r["constrained_by"] = "capital-account approval; 20% flat tax on the property gain first"
@@ -265,6 +279,19 @@ def build_row(mid, amount):
         r["cn_tax_on_conversion_usd"] = None
         r["us_tax_on_transfer_usd"] = 0
         r["cn_tax_note"] = "20% flat on the NET GAIN, not on the proceeds. On a $400,000 sale with, say, a $100,000 basis the China tax would be 20% x $300,000 = $60,000 - but the basis is a user fact, so this table states the RATE and not a dollar figure."
+        return r
+
+    # --- M20 inheritance transfer: Art.6 second paragraph, one or several wires --
+    if mid == "M20":
+        w = row_bank_wire(amount, n_tranches=2)
+        r.update(w)
+        r["years"] = None
+        r["constrained_by"] = "SAFE approval at the decedent's household-registration location (Art.5)"
+        r["note"] = "No time staging is imposed on inheritance transfers (Art.6 second paragraph allows one-off or instalments), so no year figure is asserted. Modelled as 2 wires."
+        r["spread"] = None
+        r["cn_tax_on_conversion_usd"] = None
+        r["us_tax_on_transfer_usd"] = 0
+        r["cn_tax_note"] = "Not zero: property-transfer income is taxed at 20% flat on the net gain (P11), and the tax certificate is a mandatory part of the SAFE application (P06 Art.9(5))."
         return r
 
     # --- M19 reconversion: US$500/day ---------------------------------------
@@ -364,6 +391,11 @@ def main():
             "US tax on the transfer is zero. 26 USC 988 makes FX gain ordinary income but excludes personal transactions unless the gain exceeds US$200 (U05).",
         ],
     }
+
+    # strip the in-memory-only detail before serialising
+    for rows in by_method.values():
+        for r in rows:
+            r.pop("_per_transfer", None)
 
     out = {"meta": meta, "ladder": ladder, "by_method": by_method}
     with open(os.path.join(DATA, "costs.json"), "w", encoding="utf-8") as f:
