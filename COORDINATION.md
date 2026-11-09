@@ -338,3 +338,24 @@ Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-mat
   - Flagged for review F01–F15: https://sassnarep3-star.github.io/China2/repatriate/flagged.html
   - Exports: https://sassnarep3-star.github.io/China2/repatriate/exports/cost-ladders.csv (+ .json)
 - **Task board close-out:** R1 done · R2 done · R3 done · R4 done · R5 done · R6 done. Unverified items remain published as **needs review** (F01–F15) and do not block the site. This publication record is carried in a follow-up PR because the merge result did not exist before PR #19 merged (same pattern as prior sessions). No claim is made that prior dashboards' figures were all re-verified, that external links are continuously monitored, or that any personal tax amount was determined.
+
+---
+
+## Session `arena/b8e50c81-china2` — US-citizen exit planner (`usd-exit/`), disjoint scope
+
+> **Environment note:** Arena pins this session to `arena/b8e50c81-china2`; the fixed branch is used as-is (no branch creation or switching). Read the full board plus all remote session claims (incl. active claims `dashboard/**` (86752e79), `estimates/**` (60be3931), `costs/**` (b9a30a06), `audit-0f0f59fe/**` (0f0f59fe), `tax-workbook/**` (524bd78a), `verified-costs/**` (e3508dc2), `cost-increments/**` (8a2bd205, PR #17), `deep-dive/**` + new `research/0*.md` (5cdc93ae, PR #12), root-site files (4c576a01, PR #2)) before claiming. This session edits **only** `usd-exit/**`, `.github/workflows/verify-usd-exit-b8e50c81.yml`, and appends to this file. Root `index.html`, `README.md`, and every other session's directories are **not** edited (link request logged below instead).
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| X1 | Official-source verification ledger fetched this session (PRC: SAFE/PBOC/State Council/STA; US: IRS/FinCEN/CBP/eCFR; US–China treaty; provider-published tariffs labelled as such) | in progress | arena/b8e50c81-china2 | `usd-exit/data/sources.json` |
+| X2 | Method catalogue: every lawful route out with pros/cons + step-by-step execution; conversion-penalty breakdown (spread, fees, tax, reporting) | in progress | arena/b8e50c81-china2 | `usd-exit/data/methods.json`, `usd-exit/data/penalties.json`, `usd-exit/methods.html`, `usd-exit/penalty.html` |
+| X3 | Deterministic cost ladder $10,000→$400,000 in $10,000 steps for every method; verified vs modeled components separated; unverified values blank + flagged | in progress | arena/b8e50c81-china2 | `usd-exit/model.py`, `usd-exit/data/costs.json`, `usd-exit/data/costs.csv`, `usd-exit/costs.html` |
+| X4 | Mobile-first dashboard: landing (executive summary) + category subpages + Flagged-for-Review, most important info first | in progress | arena/b8e50c81-china2 | `usd-exit/*.html`, `usd-exit/build.py`, `usd-exit/assets/*` |
+| X5 | Line-by-line review of inherited repo content; irregularities flagged read-only | in progress | arena/b8e50c81-china2 | `usd-exit/audit.html`, `usd-exit/flagged.html` |
+| X6 | Independent verifier + CI (citation coverage, blank-unverified policy, ladder arithmetic, local links, deterministic build) | in progress | arena/b8e50c81-china2 | `usd-exit/verify.py`, `.github/workflows/verify-usd-exit-b8e50c81.yml` |
+| X7 | Final integration: PR to main, merge, Pages live confirmation, record | in progress | arena/b8e50c81-china2 | `COORDINATION.md` (append-only) |
+
+- **Claim pushed before substantive work** (protocol). Scope name `usd-exit/` verified unclaimed across every remote branch's board and tree.
+- **Cross-scope link request (logged, not actioned):** root `index.html` / `README.md` are claimed by active sessions (0f0f59fe, b9a30a06); requesting an additive link to `/China2/usd-exit/` when their owners act. Native Pages (main root) serves `usd-exit/` with no settings change.
+- **Disclosed cross-scope risk:** `ladder/build.py` (owner arena/de9755b1-china2, closed) inventories every repo file; adding `usd-exit/**` changes generated `ladder/audit.html`, which its CI gate (`git diff --exit-code -- ladder index.html`) checks. If `verify-ladder` fails for that mechanical reason only, this session will run the owner's **unmodified** generator (`python3 ladder/model.py && python3 ladder/build.py`) and commit only the regenerated `ladder/audit.html`, exactly as arena/3e494fa5 did — no ladder source, data, prose or workflow edited.
+- **Policy:** every table row links an official/primary source fetched this session; commercial values not published by an official/primary source stay blank and are flagged; computable values are deterministic arithmetic from cited published inputs only. Unknown private facts (balances, income history, filing status) are never inferred.
