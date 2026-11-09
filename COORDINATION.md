@@ -338,3 +338,27 @@ Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-mat
   - Flagged for review F01–F15: https://sassnarep3-star.github.io/China2/repatriate/flagged.html
   - Exports: https://sassnarep3-star.github.io/China2/repatriate/exports/cost-ladders.csv (+ .json)
 - **Task board close-out:** R1 done · R2 done · R3 done · R4 done · R5 done · R6 done. Unverified items remain published as **needs review** (F01–F15) and do not block the site. This publication record is carried in a follow-up PR because the merge result did not exist before PR #19 merged (same pattern as prior sessions). No claim is made that prior dashboards' figures were all re-verified, that external links are continuously monitored, or that any personal tax amount was determined.
+
+---
+
+## Session `arena/86752e79-china2` — consolidated verified dashboard (final integration session)
+
+> **Environment note:** Arena pins this session to branch `arena/86752e79-china2`; no other branch is created or switched. The brief's `session-<id>/<task>` branch is therefore substituted by this fixed branch, as every earlier session recorded.
+>
+> **Board read before claiming (2026-11-09 UTC).** All prior sections read in full. Prior tasks are `done` or `needs review`; no prior claim is active. Six independent dashboards are already published (`docs/`, `site/`, `portal/`, `audit-86f0/`, `ladder/`, `repatriate/`). Open PRs #2, #12 and #17 are stale from closed sessions and are **not** reused or reset here.
+>
+> **Gap this session fills:** no prior deliverable is simultaneously (a) sourced *only* from pages fetched in this session, (b) organised as one clean landing page plus category subpages, and (c) presenting a single mobile-first table that states, per $10,000 increment, the all-in cost of *every* method with a source link on every row. Prior ladders publish ranges inherited from earlier sessions' assumptions. This session re-derives its figures from sources it fetched itself and publishes its own per-row evidence.
+
+| # | Task | Status | Owner (session ID) | Files in scope (disjoint) |
+|---|------|--------|--------------------|---------------------------|
+| V1 | Fetch and quote official sources line by line (PRC: PBOC/SAFE/STA/State Council/GACC; US: IRS/FinCEN/eCFR/CBP/USCIS) — this session only | in progress | arena/86752e79-china2 | `dashboard/data/sources.json` |
+| V2 | Method catalogue: every conversion route, pros/cons, legal basis, step-by-step execution | in progress | arena/86752e79-china2 | `dashboard/data/methods.json` |
+| V3 | Deterministic cost ladder: $10,000→$400,000 in $10,000 increments for every method, verified vs. modeled components separated | in progress | arena/86752e79-china2 | `dashboard/model.py`, `dashboard/data/costs.*` |
+| V4 | Executive summary (plain-language answer, penalty decomposition) | in progress | arena/86752e79-china2 | `dashboard/EXECUTIVE-SUMMARY.md` |
+| V5 | Mobile-first dashboard: landing + category subpages + Flagged-for-Review page | in progress | arena/86752e79-china2 | `dashboard/*.html`, `dashboard/build.py`, `dashboard/assets/*` |
+| V6 | Line-by-line review of inherited content; irregularities flagged read-only | in progress | arena/86752e79-china2 | `dashboard/audit.html`, `dashboard/flagged.html` |
+| V7 | Independent verifier + CI; PR, merge, Pages confirmation, close-out | in progress | arena/86752e79-china2 | `dashboard/verify.py`, `.github/workflows/verify-dashboard-86752e79.yml`, `COORDINATION.md` (append-only) |
+
+**Shared outputs.** As the final integration session, after every other session is `done`/`needs review`, this session takes ownership of root `index.html` only: it becomes the consolidated landing page and keeps a clearly-labelled archive section linking all six prior dashboards. `README.md` gains additive lines only. No file inside any other session's directory (`docs/**`, `site/**`, `portal/**`, `audit-86f0/**`, `ladder/**`, `repatriate/**`, `research/**`, `reports/**`, `scripts/**`, `tools/**`, `data/**`) is edited by this session.
+
+**Evidence policy.** A row value is published only if this session fetched the page and the quoted text supports it. A value that is a *model* of an unpublished figure is labelled `modeled`, never `verified`, and appears on the Flagged page with the reason no official figure exists. Unknown values are blank and flagged. Commercial bank fees are cited to the bank's own published tariff and that source is classed `bank`, not `regulator`.
