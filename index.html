@@ -3,63 +3,58 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>China money · CNY to USD, costed</title>
-<meta name="description" content="Source-linked cost of converting CNY to USD for a US citizen, from $10,000 to $400,000 in $10,000 steps.">
+<title>China money · CNY to USD research</title>
+<meta name="description" content="Source-linked research on lawful CNY-to-USD conversion, route eligibility, tax and costs. Unknown account-specific values remain blank or flagged.">
 <style>
-:root{--ink:#12211d;--muted:#6b7d74;--paper:#f6f5ef;--line:#dfddd2;--accent:#0f6d5c}
+:root{--ink:#142722;--muted:#5c7167;--paper:#f5f5ef;--line:#dce2dc;--accent:#0b705e;--warn:#744600;--warn-bg:#fff3d8}
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);
- font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-header{background:var(--ink);color:#f4f2ea;padding:1.1rem clamp(1rem,4vw,2.5rem)}
-header p{margin:.2rem 0 0;font-size:.8rem;color:#a9bab1}
-main{max-width:1000px;margin:0 auto;padding:clamp(1.4rem,4vw,2.6rem) clamp(1rem,4vw,2rem) 3rem}
-h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.12;letter-spacing:-.02em;margin:.2rem 0 .6rem}
-.lede{font-size:1.06rem;color:#2c4038;max-width:70ch}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.8rem;margin:1.4rem 0}
-.kpi{background:#fff;border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:14px;
- padding:1rem 1.1rem;box-shadow:0 8px 24px rgba(18,33,29,.05)}
-.kpi .l{margin:0;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
-.kpi .v{margin:.1rem 0;font-size:1.7rem;font-weight:680;letter-spacing:-.02em}
-.kpi .s{margin:0;font-size:.8rem;color:var(--muted)}
-.answer{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;
- padding:1rem 1.1rem;margin:1.2rem 0}
-.sites{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.8rem;margin:1rem 0}
-.site{display:flex;flex-direction:column;gap:.25rem;background:#fff;border:1px solid var(--line);
- border-radius:12px;padding:1rem;text-decoration:none;color:var(--ink)}
-.site:hover{border-color:var(--accent)}
-.site strong{font-size:1rem} .site span{font-size:.85rem;color:#3b5147}
-.site em{font-style:normal;font-size:.82rem;color:#54695f}
-footer{background:var(--ink);color:#c8d4ce;padding:1.6rem clamp(1rem,4vw,2.5rem);font-size:.82rem}
-footer a{color:#8fe0c8}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.58 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{background:var(--ink);color:#f6f5ef;padding:1.1rem clamp(1rem,4vw,2.5rem)}
+header p{margin:.2rem 0 0;color:#cbd9d1;font-size:.84rem}
+main{max-width:1080px;margin:0 auto;padding:clamp(1.2rem,4vw,2.6rem) clamp(1rem,4vw,2rem) 3rem}
+h1{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.1;letter-spacing:-.03em;margin:.25rem 0 .7rem}
+.lede{font-size:1.08rem;color:#32483d;max-width:74ch}
+.summary{background:#fff;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:14px;padding:1rem 1.1rem;margin:1rem 0}
+.notice{background:var(--warn-bg);border:1px solid #e7d2a3;border-left:5px solid #a36a10;border-radius:12px;padding:.95rem 1.1rem;margin:1rem 0}
+.status{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin:1.1rem 0}
+.status-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}
+.status-card .label{font-size:.77rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin:0}
+.status-card .value{font-size:1.35rem;font-weight:750;margin:.2rem 0}
+.status-card .small{font-size:.83rem;color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.8rem;margin:1rem 0}
+.card{display:flex;flex-direction:column;gap:.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card strong{font-size:1rem;color:#075b49}
+.card span{font-size:.82rem;color:#263b33;font-weight:650}
+.card em{font-style:normal;font-size:.84rem;color:var(--muted)}
+footer{background:var(--ink);color:#e1e9e4;padding:1.5rem clamp(1rem,4vw,2.5rem);font-size:.86rem}
+footer a{color:#a4e5cf}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}
+@media print{header,footer{print-color-adjust:exact}.card{break-inside:avoid}}
 </style>
 </head>
 <body>
-<header><strong>China money</strong><p>Source-linked research · retrieved 2026-11-08 · not tax or legal advice</p></header>
+<header><strong>China money</strong><p>Official-source research · summary re-reviewed 9 November 2026 · not tax or legal advice</p></header>
 <main>
-<h1>Getting CNY out of China: what it actually costs</h1>
-<p class="lede">A US citizen's RMB balance is not blocked by a tax on converting currency. It is blocked by
-documentation, and the largest real cost is the bank's FX spread. Below is the costed answer, then the
-research behind it.</p>
-<div class="kpis"><div class="kpi"><p class="l">$10,000 out</p><p class="v">$37 – $157</p><p class="s">0.37% – 1.57% of the amount</p></div><div class="kpi"><p class="l">$100,000 out</p><p class="v">$307 – $1,507</p><p class="s">0.31% – 1.51% of the amount</p></div><div class="kpi"><p class="l">$400,000 out</p><p class="v">$1,207 – $6,007</p><p class="s">0.30% – 1.50% of the amount</p></div></div>
-<p class="lede" style="font-size:.88rem;color:#54695f">Cheapest route that actually delivers USD to an overseas
-account: documented income, converted at the counter, moved by same-bank Global Transfer or SWIFT. Excludes any
-PRC tax on the source money (that is a separate question, answered inside) and excludes US preparer fees.</p>
-<div class="answer"><p><strong>Short version.</strong> If the RMB is already-taxed income, the extra PRC tax to
-convert it is zero and the all-in cost is roughly 0.3%–1.8%. If it was never taxed, the 3%–45% or flat 20%
-being called a “conversion penalty” is simply unpaid PRC tax, and the lawful fix is to pay it, get the
-certificate, convert, and claim it in the US on Form 1116. If you emigrated from China, the dedicated
-emigration transfer route has no annual quota but takes up to two years. Crypto, private swaps, borrowed
-quotas and underground banks are criminal or prohibited, with fines of 20%–100%.</p></div>
-<h2>Dashboards in this repository</h2>
-<div class="sites"><a class="site" href="ladder/index.html"><strong>Cost ladder</strong><span>The answer, the cost tables and all 40 tiers</span><em>15 routes priced at every $10,000 step to $400,000, with the fee schedule and the legal ceiling behind each one. Start here.</em></a><a class="site" href="docs/index.html"><strong>Research dashboard</strong><span>Findings, evidence ledger and review flags</span><em>The original source-linked research build: routes, costs, taxes, checklist, flags, sources.</em></a><a class="site" href="site/index.html"><strong>Evidence site</strong><span>Rules, lawful and unlawful routes, methodology</span><em>Built from a separate evidence ledger with its own verification harness.</em></a><a class="site" href="portal/index.html"><strong>Research portal</strong><span>Statutory verification and line-by-line repo audit</span><em>A third independent pass, with a .gov/.gov.cn source register and audit of the repository.</em></a><a class="site" href="audit-86f0/index.html"><strong>Independent audit</strong><span>Claim corrections and a blank-cost 22 × 40 matrix</span><em>A fourth session&#x27;s audit. Its matrix deliberately leaves cost cells blank; this ladder fills them with published fees plus a labelled spread band. Read them together.</em></a></div>
+<h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
+<p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>
+<div class="summary"><p><strong>What the source review supports:</strong> PRC FX rules reviewed set transaction-document requirements. No separate tax solely for exchanging currency was located in those instruments, but the source and tax history of the balance are unknown. For lawful current-account income, SAFE guidance requires identity and transaction/source evidence including tax documents; the correct category is individual-specific. <a href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer">SAFE 2026 guidance</a> · <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer">State Council FX rules</a></p></div>
+<div class="notice"><strong>Most important limitation:</strong> the exact tax due, best eligible route and all-in USD cost cannot be determined from the facts provided. Current FX rate/spread and all intermediary/receiver fees are not available as an account-specific executable quote. Do not treat modeled ranges in the scenario ladder as verified prices. <strong>HSBC fee alert:</strong> some detailed route pages still show Global Transfer at USD 0–7 using a 2021 tariff; the current tariff's USD 7 reference is for International Education Payment, not a general same-name remittance. See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and the <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">current tariff</a>.</div>
+<div class="status">
+  <div class="status-card"><p class="label">PRC tax on this balance</p><p class="value">— / undetermined</p><p class="small">Source, category, dates and prior tax records are unknown.</p></div>
+  <div class="status-card"><p class="label">Route eligibility</p><p class="value">— / undetermined</p><p class="small">Residence category, account type and transaction origin matter.</p></div>
+  <div class="status-card"><p class="label">Current all-in cost</p><p class="value">— / unverified</p><p class="small">Request current, executable rate and itemized fees.</p></div>
+</div>
+<h2>Choose a category</h2>
+<div class="grid"><a class="site" href="ladder/index.html"><strong>Cost ladder · scenario model</strong><span>15 routes · 40 tiers · $10k–$400k</span><em>Shows modelled bands using explicit assumptions. Not an account quote or an officially verified all-in cost.</em></a><a class="site" href="audit-86f0/costs.html"><strong>Source-only blank matrix</strong><span>22 methods · 40 tiers</span><em>Leaves unverified FX spreads, transfer totals and tax amounts blank. Blank means unverified, not zero.</em></a><a class="site" href="ladder/routes.html"><strong>Methods &amp; execution</strong><span>Eligibility · pros/cons · step by step</span><em>Routes are conditional; the bank must confirm documents, status, service availability and limits.</em></a><a class="site" href="ladder/tax.html"><strong>Tax &amp; reporting</strong><span>PRC income tax · U.S. FTC · FBAR/FATCA</span><em>A transfer is not a personalized tax calculation. U.S. credits and reporting have separate tests.</em></a><a class="site" href="audit-0f0f59fe/index.html"><strong>Independent claim review</strong><span>Official text · corrections · unresolved facts</span><em>Re-checks the landing-page claims and exposes cost assumptions and eligibility uncertainty.</em></a><a class="site" href="ladder/flagged.html"><strong>Flagged for review</strong><span>Unverified values · eligibility · outdated claims</span><em>Open issues are published here rather than filled in by inference.</em></a><a class="site" href="ladder/sources.html"><strong>Primary source register</strong><span>SAFE · PBOC · tax authorities · IRS · bank tariff</span><em>Direct source text and locators for manual review.</em></a><a class="site" href="docs/index.html"><strong>Research dashboard</strong><span>Findings · evidence ledger · checklist</span><em>A separate source-linked research build from earlier project work.</em></a><a class="site" href="portal/index.html"><strong>Research portal</strong><span>Statutory verification · repository audit</span><em>A separate official-source portal; compare scope and caveats before relying on a claim.</em></a><a class="site" href="repatriate/index.html"><strong>Repatriation study</strong><span>Methods · costs · tax · audit</span><em>Another independent route/cost review. Its data and caveats are documented on that site.</em></a></div>
+<section class="summary">
+<h2>What to ask the bank first</h2>
+<p>Request the refusal in writing. Ask it to identify the tax type (if any), taxpayer, period, tax base, amount and legal basis; distinguish a tax payment from a tax certificate or a bank fee; list acceptable source-of-funds evidence; confirm which FX category applies; and provide a current all-in quote showing the applied CNY/USD rate, sender fee, cable, correspondent/intermediary and recipient charges. The current HSBC schedule, for example, is specific to customer segments and excludes charges of other institutions. <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">HSBC China tariff effective 31 October 2026</a></p>
+</section>
 </main>
 <footer>
-<p><strong>Research, not advice.</strong> No personal tax amount is computed, no transfers were made and no
-returns were filed. Every published figure links to the authority that publishes it; unverified values are
-blank and flagged rather than filled in.</p>
-<p><a href="ladder/flagged.html">Flagged for review</a> ·
-<a href="ladder/sources.html">Sources</a> ·
-<a href="COORDINATION.md">Task board</a></p>
+<p><strong>Research, not advice.</strong> No private account facts were entered, no bank was contacted, no funds moved and no tax return filed. Every unresolved personal value is left blank or flagged.</p>
+<p><a href="audit-0f0f59fe/index.html">Independent claim review</a> · <a href="ladder/flagged.html">Flagged for review</a> · <a href="ladder/sources.html">Sources</a> · <a href="COORDINATION.md">Task board</a></p>
 </footer>
 </body>
 </html>

@@ -194,133 +194,97 @@ def best_at(tier):
 # Page: overview
 # ---------------------------------------------------------------------------
 def page_index():
-    picks = [10_000, 100_000, 400_000]
-    cards = "".join(
-        f"""<div class="card kpi"><p class="kpi-l">${t:,} out</p>
-        <p class="kpi-v">{money(best_at(t)['total_lo'])} – {money(best_at(t)['total_hi'])}</p>
-        <p class="kpi-s">{pct(best_at(t)['pct_lo'])} – {pct(best_at(t)['pct_hi'])} of the amount ·
-        {esc(best_at(t)['name'])}</p></div>""" for t in picks)
+    def external(url: str, label: str) -> str:
+        return (f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer">'
+                f'{esc(label)}</a>')
+
+    faq_income = "https://www.safe.gov.cn/tianjin/2026/0713/3088.html"
+    faq_quota = "https://www.safe.gov.cn/tianjin/2024/0621/2529.html"
+    state_reg = "https://www.safe.gov.cn/safe/2008/0806/5321.html"
+    current_hsbc = "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf"
+    irs_credit = "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit"
 
     facts = [
-        ("Is there a PRC tax on converting RMB to USD?", "No such tax appears in any instrument reviewed "
-         "here. PRC tax attaches to the <em>income</em>; conversion is a documentary and pricing event.",
-         ["S01", "S02", "S07"]),
-        ("Then why does the bank refuse or quote a “tax”?", "Because the bank must see either a tax "
-         "certificate for lawful current-account income, or an original exchange memo to reverse a "
-         "conversion. Without one of those, the counter has no lawful basis to convert a large balance.",
-         ["S02", "S20"]),
-        ("What does USD 50,000 a year actually cover?", "The annual aggregate applies to individuals' FX "
-         "<em>sales</em> and to <em>domestic</em> individuals' purchases. It is not a universal ceiling on "
-         "moving your own documented money out.", ["S02"]),
-        ("What can I do with a passport only?", "Convert back at most the equivalent of USD 500 in a day "
-         "(USD 1,000 at a port-side counter before departure). That is a documentary exemption for "
-         "re-conversion, not a quota for earned income.", ["S17", "S02"]),
-        ("Can I carry cash instead?", "Up to USD 5,000 out of China without a permit, USD 5,000–10,000 with "
-         "a bank certificate; above USD 10,000 only in listed special cases. Entering the US with more than "
-         "USD 10,000 requires a FinCEN Form 105 report.", ["S15", "S13"]),
-        ("What are the real penalties?", "For unlawful FX conduct: up to 30% of the amount, or 30%–100% if "
-         "serious; 20% for illegal cash carriage. For US reporting failures the exposure is separate and "
-         "can exceed the tax.", ["S04", "S10"]),
-        ("Can I use crypto or a friend's quota?", "No. Exchanging RMB for virtual currency is an illegal "
-         "financial activity, and borrowing a quota puts both parties on a watch list.",
-         ["S16", "S01", "S18"]),
+        ("Does exchanging CNY into USD itself establish a PRC tax bill?",
+         "No separate tax levied solely for the exchange was identified in the instruments reviewed. This does <strong>not</strong> establish that the balance is tax-paid or tax-free; PRC tax depends on the underlying income or asset category and taxpayer facts.",
+         [src_link("S01"), src_link("S02"), src_link("S07")]),
+        ("Which FX category applies to a U.S. citizen?",
+         "Citizenship alone does not settle it. State Council Decree 532 includes a foreign national continuously resident in China for one year or more in the domestic-individual definition. SAFE also treats foreign permanent-residence-ID status as relevant to its annual purchase facility. Confirm classification with the bank.",
+         [src_link("S04"), external(faq_quota, "SAFE 2024 FAQ")]),
+        ("Does a documented foreign person's employment income need evidence?",
+         "SAFE's 2026 guidance says lawful current-account RMB income earned in China by a foreign individual is handled with valid identity documents and transaction/source evidence, including tax documents. Whether this route covers this balance is unknown.",
+         [external(faq_income, "SAFE 2026 FAQ"), src_link("S02")]),
+        ("Is USD 50,000 a universal outward wire cap?",
+         "Do not treat the annual convenience facility as a universal limit on sending your own money abroad. The rules distinguish FX sales, domestic-person purchases, foreign-person income conversion and the underlying transaction. The applicable category and evidence need bank confirmation.",
+         [src_link("S01"), src_link("S02"), external(faq_quota, "SAFE 2024 FAQ")]),
+        ("Can I use the USD 500 / USD 1,000 exception for earned RMB?",
+         "No. The 2026 SAFE FAQ describes these identity-only exceptions for reconverting originally exchanged, unused RMB; an exchange memo is normally valid for 24 months. It is not a general wage-income allowance.",
+         [src_link("S17"), external("https://www.safe.gov.cn/tianjin/2026/0917/3134.html", "SAFE 2026 reconversion FAQ")]),
+        ("Is Form 1116 an automatic dollar-for-dollar offset?",
+         "No. A U.S. foreign-tax credit may be available for qualifying taxes imposed on you, but is subject to legal-liability, income-category and limitation rules. No personal credit is calculated here.",
+         [src_link("S12"), external(irs_credit, "IRS Foreign Tax Credit")]),
+        ("What is the exact transfer cost?",
+         "Not verified for this account. The current HSBC tariff has fee tiers and excludes other institutions' charges; the bank sets the rate used when a non-CNY charge is paid. The user's bank, service eligibility, applied rate and intermediary/receiver fees are unknown.",
+         [external(current_hsbc, "HSBC China tariff, effective 31 Oct 2026"), src_link("S06")]),
+        ("Should I split transfers or use a crypto / quota workaround?",
+         "Do not evade FX limits by splitting transactions or using false documents. The current PBOC virtual-currency notice addresses specified exchange and related business activity; this review found no official basis for saying every quota borrower is automatically put on a 'watch list'.",
+         [src_link("S01"), src_link("S16")]),
+        ("Does a U.S. foreign-account report depend on whether the money was taxable?",
+         "FBAR is a separate test: IRS guidance says a U.S. person generally files when reportable foreign accounts exceed USD 10,000 in aggregate at any time during the year, regardless of whether the account produced taxable income. Form 8938 has separate rules.",
+         [src_link("S10"), src_link("S11")]),
     ]
     fact_rows = "".join(
-        f"<tr><th scope='row'>{q}</th><td>{a} <span class='srcs'>{' '.join(src_link(s) for s in ss)}</span></td></tr>"
+        f"<tr><th scope='row'>{q}</th><td>{a} <span class='srcs'>{' '.join(ss)}</span></td></tr>"
         for q, a, ss in facts)
-
-    route_cards = [
-        ("If the RMB is already-taxed salary or fees", "R01", "Documented income at the counter, then a "
-         "SWIFT wire. Zero extra PRC tax; you pay commission, cable and spread."),
-        ("If you bank with HSBC on both sides", "R02", "Same paperwork, but move the USD with Global "
-         "Transfer: free for Premier, otherwise about $7."),
-        ("If you bought the RMB with USD inside China", "R03", "Reverse it against the original exchange "
-         "memo within 24 months. No tax certificate needed."),
-        ("If you emigrated from China", "R07", "The emigration transfer has no annual quota; it is staged "
-         "over two years and needs tax clearance."),
-        ("If the RMB came from selling a flat", "R09", "20% PRC tax on the gain, then a capital-account "
-         "remittance."),
-        ("If the money was never taxed", "R01", "Settle the PRC tax first and claim it in the US on Form "
-         "1116. There is no lawful conversion trick that avoids this."),
-    ]
-    rc = "".join(
-        f"<a class='pick' href='routes.html#{rid}'><strong>{esc(t)}</strong><span>{esc(d)}</span>"
-        f"<em>{esc(next(r['short'] for r in ROUTES if r['id'] == rid))} →</em></a>"
-        for t, rid, d in route_cards)
 
     body = f"""
 <section class="hero">
-  <h1>What it actually costs to get CNY out of China</h1>
-  <p class="lede">{len([r for r in ROUTES if r["status"] != "unlawful"])} lawful or conditional routes,
-priced at every $10,000 step from $10,000 to
-  $400,000, with the fee schedule and the legal ceiling behind each one. The short answer: on money that has
-  already borne PRC tax, conversion is cheap and the “tax penalty” people describe is almost always
-  something else.</p>
-  <div class="kpis">{cards}</div>
-  <p class="note">Cost of the cheapest route that actually delivers USD to an overseas account, at each tier:
-  published bank fees plus a modelled spread band. It excludes any PRC tax on the source money (shown
-  separately on <a href="tax.html">Tax &amp; penalties</a>) and excludes US preparer fees. The spread is the
-  dominant cost and it is <em>not</em> published — see <a href="assumptions.html">assumptions</a>.</p>
+  <h1>Getting CNY out of China: start with the bank's reason</h1>
+  <p class="lede">A U.S. passport alone cannot tell us whether a bank's request is a tax payment, a required tax document, a fee, or an FX eligibility issue. The lawful route depends on who owns the account, the source of the balance, residence/category, and the bank's documentary review.</p>
+  <div class="callout">
+    <p><strong>What can be said safely:</strong> the PRC FX rules reviewed describe transaction and documentation requirements; no separate tax imposed solely for converting CNY was found in those instruments. That is <em>not</em> a determination that this balance is tax-paid, tax-free, or eligible to move. Ask the bank to distinguish any assessed tax from a requested certificate and from its own fees, and state the legal basis in writing. {external(faq_income, "SAFE's 2026 income-conversion guidance")} · {external("https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html", "PRC Individual Income Tax Law")}</p>
+  </div>
+  <div class="callout">
+    <p><strong>Current-fee correction:</strong> some route, step-by-step and assumptions pages still use HSBC's 2021 tariff and show a same-name Global Transfer fee of USD 0–7. The USD 7 reference in the current tariff is listed for International Education Payment; it does not establish a general same-name transfer price or this account's eligibility. The 31 October 2026 tariff lists Premier/Advance wire issuance at 0.1% (CNY 100 minimum/CNY 500 maximum) plus CNY 120 per cable, but excludes other institutions' charges and is not an all-in quote. Do not rely on the older Global Transfer fee or route ranking without a bank quote. {external(current_hsbc, "HSBC tariff effective 31 Oct 2026")} · <a href="../audit-0f0f59fe/index.html">review finding C04</a></p>
+  </div>
+  <div class="kpis">
+    <div class="card kpi"><p class="kpi-l">$10,000 principal</p><p class="kpi-v">All-in cost: —</p><p class="kpi-s">Not source-confirmed for this account</p></div>
+    <div class="card kpi"><p class="kpi-l">$100,000 principal</p><p class="kpi-v">All-in cost: —</p><p class="kpi-s">Not source-confirmed for this account</p></div>
+    <div class="card kpi"><p class="kpi-l">$400,000 principal</p><p class="kpi-v">All-in cost: —</p><p class="kpi-s">Not source-confirmed for this account</p></div>
+  </div>
+  <p class="note">The cost pages retain scenario-model totals for transparency; they include unverified rate/fee assumptions and are <strong>not quotes or official values</strong>. For a strict source-only view, use the blank matrix linked below. The only actual all-in amount is the bank's executable quote for your specific account and route.</p>
 </section>
 
 <section class="panel">
-  <h2>The answer in one paragraph</h2>
-  <p>There is no PRC tax on converting RMB into USD. What exists is a <strong>documentary gate</strong>: the
-  bank may convert a non-domestic individual's lawful current-account income only against identity plus
-  proof of the transaction <em>including the tax voucher</em>. If the underlying income was already taxed
-  and withheld, the extra PRC tax on conversion is <strong>zero</strong> and the true cost is the bank's
-  commission (0.1%, CNY 100–500, plus CNY 120 cable on the verified tariff), plus the FX spread — roughly
-  <strong>0.3%–1.8% all-in</strong>. If the income was never taxed, the 3%–45% or flat 20% that people call a
-  “conversion penalty” is simply the unpaid PRC tax on the source, and no route avoids it lawfully. The
-  cheapest legal sequence in that case is to pay it, collect the certificate, convert, and claim the PRC tax
-  against US tax on Form 1116.</p>
-</section>
-
-<section class="panel">
-  <h2>Pick the row that matches your money</h2>
-  <div class="picks">{rc}</div>
-</section>
-
-<section class="panel">
-  <h2>Seven questions, answered from the primary text</h2>
-  <div class="table-wrap"><table class="grid facts"><tbody>{fact_rows}</tbody></table></div>
-</section>
-
-<section class="panel">
-  <h2>Where the cost actually goes</h2>
-  <p>Five things are routinely added together and called “the tax”. Only one of them is a tax on
-  conversion, and it is zero.</p>
+  <h2>Best next step: separate the four cost layers</h2>
   <ol class="layers">
-    <li><strong>PRC tax on the source income.</strong> 3%–45% comprehensive, 5%–35% business, 20% flat on
-    dividends/interest/rent/property gain, or 10% treaty rate on dividends and royalties.
-    {src_link('S07')} {src_link('S09')}</li>
-    <li><strong>The bank's FX spread.</strong> Bank revenue, not a tax. Not published in advance; the only
-    honest number is the executable quote on the day. <span class="flag-inline">model assumption A2</span></li>
-    <li><strong>Commission and cable fees.</strong> Published: 0.1% with a CNY 100 floor and CNY 500 cap,
-    plus CNY 120 cable per transfer, plus 1% to turn cash into remittable FX. {src_link('S06')}</li>
-    <li><strong>PRC penalties for doing it the wrong way.</strong> Up to 30% of the amount, 30%–100% if
-    serious, 20% for illegal cash carriage. {src_link('S04')}</li>
-    <li><strong>US tax and reporting.</strong> Worldwide income is taxable, but PRC tax paid is creditable
-    ({src_link('S12')}); the FBAR and Form 8938 duties attach to holding the account, not to converting.
-    {src_link('S10')} {src_link('S11')}</li>
+    <li><strong>Source-income tax.</strong> Identify what created the balance and whether any tax was assessed/withheld. PRC income tax varies by category and tax base; do not use a single percentage on the total balance. {src_link('S07')}</li>
+    <li><strong>FX documentation and eligibility.</strong> Ask the bank which individual category and current-account/capital-account procedure it is applying, and what proof it needs. SAFE's current guidance for foreign individuals refers to identity plus transaction-source materials, including tax documents. {external(faq_income, 'SAFE 2026 guidance')}</li>
+    <li><strong>Bank pricing.</strong> Obtain the current rate and itemized fees: FX rate/spread, conversion commission, cable, intermediary/beneficiary fees and any service-specific charge. A published tariff does not establish the rate or every fee for this transaction. {external(current_hsbc, 'HSBC tariff effective 31 Oct 2026')}</li>
+    <li><strong>U.S. tax and account reporting.</strong> Evaluate income reporting, a possible but limited foreign tax credit, FBAR and Form 8938 separately from the act of transfer. {src_link('S10')} {src_link('S11')} {src_link('S12')}</li>
   </ol>
 </section>
 
 <section class="panel">
-  <h2>Read next</h2>
+  <h2>Questions answered from official text</h2>
+  <div class="table-wrap"><table class="grid facts"><tbody>{fact_rows}</tbody></table></div>
+</section>
+
+<section class="panel">
+  <h2>Choose a research page</h2>
   <div class="picks">
-    <a class="pick" href="costs.html"><strong>Cost tables</strong><span>Six milestone amounts, all fifteen
-    priced routes, most important column first.</span><em>Open →</em></a>
-    <a class="pick" href="ladder.html"><strong>All 40 tiers</strong><span>Every $10,000 step from $10,000 to
-    $400,000, with transaction counts and elapsed time.</span><em>Open →</em></a>
-    <a class="pick" href="steps.html"><strong>Step by step</strong><span>What to bring, what to say at the
-    counter, and what to keep.</span><em>Open →</em></a>
-    <a class="pick" href="flagged.html"><strong>Flagged for review</strong><span>What could not be verified,
-    and where prior work in this repository disagrees.</span><em>Open →</em></a>
+    <a class="pick" href="costs.html"><strong>Cost scenarios</strong><span>All 15 costed routes at selected amounts; totals are modeled, not verified quotes.</span><em>Read with the assumptions →</em></a>
+    <a class="pick" href="ladder.html"><strong>All 40 increments</strong><span>$10,000 through $400,000; shows the full scenario model, not official account prices.</span><em>Open the ladder →</em></a>
+    <a class="pick" href="../audit-86f0/costs.html"><strong>Source-only blank cost matrix</strong><span>22 method entries × 40 increments; unknown cost cells remain blank.</span><em>Use the no-inference view →</em></a>
+    <a class="pick" href="routes.html"><strong>Methods &amp; steps</strong><span>Conditional routes, documents, pros/cons and execution steps.</span><em>Open methods →</em></a>
+    <a class="pick" href="tax.html"><strong>Tax &amp; reporting</strong><span>PRC source-income tax and U.S. reporting are separate analyses.</span><em>Review tax →</em></a>
+    <a class="pick" href="../audit-0f0f59fe/index.html"><strong>Independent claim review</strong><span>Findings against the executive summary, costs and route recommendations.</span><em>Open review →</em></a>
+    <a class="pick" href="flagged.html"><strong>Flagged for review</strong><span>Unverified amounts, eligibility gaps, fee assumptions and repo discrepancies.</span><em>Open flags →</em></a>
+    <a class="pick" href="sources.html"><strong>Source register</strong><span>Manual-review links and locations for the source text.</span><em>Open sources →</em></a>
   </div>
 </section>
 """
-    return shell("index.html", "What it actually costs", body)
+    return shell("index.html", "Start with the source", body)
 
 
 # ---------------------------------------------------------------------------
@@ -866,97 +830,98 @@ from memory.</p>
 
 
 def write_root_hub():
-    """Root landing page. Generated so its headline numbers cannot drift."""
-    picks = [10_000, 100_000, 400_000]
-    cards = "".join(
-        f'<div class="kpi"><p class="l">${t:,} out</p>'
-        f'<p class="v">{money(best_at(t)["total_lo"])} – {money(best_at(t)["total_hi"])}</p>'
-        f'<p class="s">{pct(best_at(t)["pct_lo"])} – {pct(best_at(t)["pct_hi"])} of the amount</p></div>'
-        for t in picks)
-    sites = [
-        ("ladder/index.html", "Cost ladder", "The answer, the cost tables and all 40 tiers",
-         "15 routes priced at every $10,000 step to $400,000, with the fee schedule and the legal ceiling "
-         "behind each one. Start here."),
-        ("docs/index.html", "Research dashboard", "Findings, evidence ledger and review flags",
-         "The original source-linked research build: routes, costs, taxes, checklist, flags, sources."),
-        ("site/index.html", "Evidence site", "Rules, lawful and unlawful routes, methodology",
-         "Built from a separate evidence ledger with its own verification harness."),
-        ("portal/index.html", "Research portal", "Statutory verification and line-by-line repo audit",
-         "A third independent pass, with a .gov/.gov.cn source register and audit of the repository."),
-        ("audit-86f0/index.html", "Independent audit", "Claim corrections and a blank-cost 22 × 40 matrix",
-         "A fourth session's audit. Its matrix deliberately leaves cost cells blank; this ladder fills them "
-         "with published fees plus a labelled spread band. Read them together."),
+    """Root landing page; source-first and explicit about unknown personal costs."""
+    def ext(url: str, label: str) -> str:
+        return (f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer">'
+                f'{esc(label)}</a>')
+
+    cards = [
+        ("ladder/index.html", "Cost ladder · scenario model", "15 routes · 40 tiers · $10k–$400k",
+         "Shows modelled bands using explicit assumptions. Not an account quote or an officially verified all-in cost."),
+        ("audit-86f0/costs.html", "Source-only blank matrix", "22 methods · 40 tiers",
+         "Leaves unverified FX spreads, transfer totals and tax amounts blank. Blank means unverified, not zero."),
+        ("ladder/routes.html", "Methods & execution", "Eligibility · pros/cons · step by step",
+         "Routes are conditional; the bank must confirm documents, status, service availability and limits."),
+        ("ladder/tax.html", "Tax & reporting", "PRC income tax · U.S. FTC · FBAR/FATCA",
+         "A transfer is not a personalized tax calculation. U.S. credits and reporting have separate tests."),
+        ("audit-0f0f59fe/index.html", "Independent claim review", "Official text · corrections · unresolved facts",
+         "Re-checks the landing-page claims and exposes cost assumptions and eligibility uncertainty."),
+        ("ladder/flagged.html", "Flagged for review", "Unverified values · eligibility · outdated claims",
+         "Open issues are published here rather than filled in by inference."),
+        ("ladder/sources.html", "Primary source register", "SAFE · PBOC · tax authorities · IRS · bank tariff",
+         "Direct source text and locators for manual review."),
+        ("docs/index.html", "Research dashboard", "Findings · evidence ledger · checklist",
+         "A separate source-linked research build from earlier project work."),
+        ("portal/index.html", "Research portal", "Statutory verification · repository audit",
+         "A separate official-source portal; compare scope and caveats before relying on a claim."),
+        ("repatriate/index.html", "Repatriation study", "Methods · costs · tax · audit",
+         "Another independent route/cost review. Its data and caveats are documented on that site."),
     ]
     site_cards = "".join(
-        f'<a class="site" href="{u}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
-        f'<em>{esc(d)}</em></a>' for u, t, sub, d in sites)
+        f'<a class="site" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
+        f'<em>{esc(d)}</em></a>' for u, t, sub, d in cards)
     page = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>China money · CNY to USD, costed</title>
-<meta name="description" content="Source-linked cost of converting CNY to USD for a US citizen, from $10,000 to $400,000 in $10,000 steps.">
+<title>China money · CNY to USD research</title>
+<meta name="description" content="Source-linked research on lawful CNY-to-USD conversion, route eligibility, tax and costs. Unknown account-specific values remain blank or flagged.">
 <style>
-:root{{--ink:#12211d;--muted:#6b7d74;--paper:#f6f5ef;--line:#dfddd2;--accent:#0f6d5c}}
+:root{{--ink:#142722;--muted:#5c7167;--paper:#f5f5ef;--line:#dce2dc;--accent:#0b705e;--warn:#744600;--warn-bg:#fff3d8}}
 *{{box-sizing:border-box}}
-body{{margin:0;background:var(--paper);color:var(--ink);
- font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}}
-header{{background:var(--ink);color:#f4f2ea;padding:1.1rem clamp(1rem,4vw,2.5rem)}}
-header p{{margin:.2rem 0 0;font-size:.8rem;color:#a9bab1}}
-main{{max-width:1000px;margin:0 auto;padding:clamp(1.4rem,4vw,2.6rem) clamp(1rem,4vw,2rem) 3rem}}
-h1{{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.12;letter-spacing:-.02em;margin:.2rem 0 .6rem}}
-.lede{{font-size:1.06rem;color:#2c4038;max-width:70ch}}
-.kpis{{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.8rem;margin:1.4rem 0}}
-.kpi{{background:#fff;border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:14px;
- padding:1rem 1.1rem;box-shadow:0 8px 24px rgba(18,33,29,.05)}}
-.kpi .l{{margin:0;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}}
-.kpi .v{{margin:.1rem 0;font-size:1.7rem;font-weight:680;letter-spacing:-.02em}}
-.kpi .s{{margin:0;font-size:.8rem;color:var(--muted)}}
-.answer{{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;
- padding:1rem 1.1rem;margin:1.2rem 0}}
-.sites{{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.8rem;margin:1rem 0}}
-.site{{display:flex;flex-direction:column;gap:.25rem;background:#fff;border:1px solid var(--line);
- border-radius:12px;padding:1rem;text-decoration:none;color:var(--ink)}}
-.site:hover{{border-color:var(--accent)}}
-.site strong{{font-size:1rem}} .site span{{font-size:.85rem;color:#3b5147}}
-.site em{{font-style:normal;font-size:.82rem;color:#54695f}}
-footer{{background:var(--ink);color:#c8d4ce;padding:1.6rem clamp(1rem,4vw,2.5rem);font-size:.82rem}}
-footer a{{color:#8fe0c8}}
+body{{margin:0;background:var(--paper);color:var(--ink);font:16px/1.58 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}}
+header{{background:var(--ink);color:#f6f5ef;padding:1.1rem clamp(1rem,4vw,2.5rem)}}
+header p{{margin:.2rem 0 0;color:#cbd9d1;font-size:.84rem}}
+main{{max-width:1080px;margin:0 auto;padding:clamp(1.2rem,4vw,2.6rem) clamp(1rem,4vw,2rem) 3rem}}
+h1{{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.1;letter-spacing:-.03em;margin:.25rem 0 .7rem}}
+.lede{{font-size:1.08rem;color:#32483d;max-width:74ch}}
+.summary{{background:#fff;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:14px;padding:1rem 1.1rem;margin:1rem 0}}
+.notice{{background:var(--warn-bg);border:1px solid #e7d2a3;border-left:5px solid #a36a10;border-radius:12px;padding:.95rem 1.1rem;margin:1rem 0}}
+.status{{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin:1.1rem 0}}
+.status-card{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}}
+.status-card .label{{font-size:.77rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin:0}}
+.status-card .value{{font-size:1.35rem;font-weight:750;margin:.2rem 0}}
+.status-card .small{{font-size:.83rem;color:var(--muted);margin:0}}
+.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.8rem;margin:1rem 0}}
+.card{{display:flex;flex-direction:column;gap:.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}}
+.card:hover{{border-color:var(--accent);transform:translateY(-1px)}}
+.card strong{{font-size:1rem;color:#075b49}}
+.card span{{font-size:.82rem;color:#263b33;font-weight:650}}
+.card em{{font-style:normal;font-size:.84rem;color:var(--muted)}}
+footer{{background:var(--ink);color:#e1e9e4;padding:1.5rem clamp(1rem,4vw,2.5rem);font-size:.86rem}}
+footer a{{color:#a4e5cf}}
+@media(max-width:520px){{.grid{{grid-template-columns:1fr}}}}
+@media print{{header,footer{{print-color-adjust:exact}}.card{{break-inside:avoid}}}}
 </style>
 </head>
 <body>
-<header><strong>China money</strong><p>Source-linked research · retrieved {META['retrieved']} · not tax or legal advice</p></header>
+<header><strong>China money</strong><p>Official-source research · summary re-reviewed 9 November 2026 · not tax or legal advice</p></header>
 <main>
-<h1>Getting CNY out of China: what it actually costs</h1>
-<p class="lede">A US citizen's RMB balance is not blocked by a tax on converting currency. It is blocked by
-documentation, and the largest real cost is the bank's FX spread. Below is the costed answer, then the
-research behind it.</p>
-<div class="kpis">{cards}</div>
-<p class="lede" style="font-size:.88rem;color:#54695f">Cheapest route that actually delivers USD to an overseas
-account: documented income, converted at the counter, moved by same-bank Global Transfer or SWIFT. Excludes any
-PRC tax on the source money (that is a separate question, answered inside) and excludes US preparer fees.</p>
-<div class="answer"><p><strong>Short version.</strong> If the RMB is already-taxed income, the extra PRC tax to
-convert it is zero and the all-in cost is roughly 0.3%–1.8%. If it was never taxed, the 3%–45% or flat 20%
-being called a “conversion penalty” is simply unpaid PRC tax, and the lawful fix is to pay it, get the
-certificate, convert, and claim it in the US on Form 1116. If you emigrated from China, the dedicated
-emigration transfer route has no annual quota but takes up to two years. Crypto, private swaps, borrowed
-quotas and underground banks are criminal or prohibited, with fines of 20%–100%.</p></div>
-<h2>Dashboards in this repository</h2>
-<div class="sites">{site_cards}</div>
+<h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
+<p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>
+<div class="summary"><p><strong>What the source review supports:</strong> PRC FX rules reviewed set transaction-document requirements. No separate tax solely for exchanging currency was located in those instruments, but the source and tax history of the balance are unknown. For lawful current-account income, SAFE guidance requires identity and transaction/source evidence including tax documents; the correct category is individual-specific. {ext("https://www.safe.gov.cn/tianjin/2026/0713/3088.html", "SAFE 2026 guidance")} · {ext("https://www.safe.gov.cn/safe/2008/0806/5321.html", "State Council FX rules")}</p></div>
+<div class="notice"><strong>Most important limitation:</strong> the exact tax due, best eligible route and all-in USD cost cannot be determined from the facts provided. Current FX rate/spread and all intermediary/receiver fees are not available as an account-specific executable quote. Do not treat modeled ranges in the scenario ladder as verified prices. <strong>HSBC fee alert:</strong> some detailed route pages still show Global Transfer at USD 0–7 using a 2021 tariff; the current tariff's USD 7 reference is for International Education Payment, not a general same-name remittance. See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and the <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">current tariff</a>.</div>
+<div class="status">
+  <div class="status-card"><p class="label">PRC tax on this balance</p><p class="value">— / undetermined</p><p class="small">Source, category, dates and prior tax records are unknown.</p></div>
+  <div class="status-card"><p class="label">Route eligibility</p><p class="value">— / undetermined</p><p class="small">Residence category, account type and transaction origin matter.</p></div>
+  <div class="status-card"><p class="label">Current all-in cost</p><p class="value">— / unverified</p><p class="small">Request current, executable rate and itemized fees.</p></div>
+</div>
+<h2>Choose a category</h2>
+<div class="grid">{site_cards}</div>
+<section class="summary">
+<h2>What to ask the bank first</h2>
+<p>Request the refusal in writing. Ask it to identify the tax type (if any), taxpayer, period, tax base, amount and legal basis; distinguish a tax payment from a tax certificate or a bank fee; list acceptable source-of-funds evidence; confirm which FX category applies; and provide a current all-in quote showing the applied CNY/USD rate, sender fee, cable, correspondent/intermediary and recipient charges. The current HSBC schedule, for example, is specific to customer segments and excludes charges of other institutions. {ext("https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf", "HSBC China tariff effective 31 October 2026")}</p>
+</section>
 </main>
 <footer>
-<p><strong>Research, not advice.</strong> No personal tax amount is computed, no transfers were made and no
-returns were filed. Every published figure links to the authority that publishes it; unverified values are
-blank and flagged rather than filled in.</p>
-<p><a href="ladder/flagged.html">Flagged for review</a> ·
-<a href="ladder/sources.html">Sources</a> ·
-<a href="COORDINATION.md">Task board</a></p>
+<p><strong>Research, not advice.</strong> No private account facts were entered, no bank was contacted, no funds moved and no tax return filed. Every unresolved personal value is left blank or flagged.</p>
+<p><a href="audit-0f0f59fe/index.html">Independent claim review</a> · <a href="ladder/flagged.html">Flagged for review</a> · <a href="ladder/sources.html">Sources</a> · <a href="COORDINATION.md">Task board</a></p>
 </footer>
 </body>
 </html>
 """
-    (REPO / "index.html").write_text(page)
+    (REPO / "index.html").write_text(page, encoding="utf-8")
 
 
 # ---------------------------------------------------------------------------
