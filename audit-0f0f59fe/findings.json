@@ -1,0 +1,112 @@
+[
+  {
+    "id": "C01",
+    "severity": "high",
+    "status": "needs review for the individual",
+    "topic": "Nationality alone does not settle the PRC foreign-exchange category",
+    "claim": "The existing summary speaks of a U.S. citizen using a 'non-domestic individual' route without first establishing the person's China residence history or the identification documents relevant to SAFE classification.",
+    "evidence": "State Council Decree 532 defines a domestic individual to include a foreign national continuously resident in China for one year or more. SAFE's 2024 FAQ separately says a foreign individual holding a Foreigner Permanent Residence ID Card uses the annual convenient purchase quota; lawful current-account RMB income still requires identity and transaction-source evidence, including tax documents.",
+    "action": "Do not infer a route or quota from U.S. citizenship. Ask the account bank to confirm the recorded category and applicable documents using the actual residence and ID history. Those private facts were not supplied, so eligibility remains undetermined.",
+    "sources": ["P02", "P03", "P04"]
+  },
+  {
+    "id": "C02",
+    "severity": "high",
+    "status": "source-limited conclusion; personal liability unknown",
+    "topic": "Do not turn 'no conversion tax found' into a finding that this balance is tax-free",
+    "claim": "The existing landing page states categorically that there is no PRC tax on converting RMB to USD and describes an unpaid 3–45% or 20% amount as the likely 'conversion penalty.'",
+    "evidence": "The reviewed FX provisions set documentation and transaction-basis requirements; the reviewed PRC Individual Income Tax Law taxes specified income categories and gives different rates and tax bases. The sources reviewed did not identify a separate tax levied solely for a currency exchange, but this limited review cannot establish that a particular balance was properly taxed or is exempt.",
+    "action": "Use the narrow statement: no separate conversion levy was located in the cited instruments; tax on the underlying money cannot be calculated from the balance alone. Identify the income/asset category, taxpayer status, dates, deductions, exemptions and tax already paid before stating a rate or liability.",
+    "sources": ["P01", "P02", "P04", "P05"]
+  },
+  {
+    "id": "C03",
+    "severity": "high",
+    "status": "needs review; not an official quote",
+    "topic": "The displayed dollar totals are model outputs, not source-confirmed account costs",
+    "claim": "The landing page foregrounds dollar ranges such as $37–$157, $307–$1,507 and $1,207–$6,007 as what the transfer 'actually costs.'",
+    "evidence": "The linked model's own assumptions register says its FX-spread bands are model assumptions because no executable account quote was obtained. The model's linked HSBC tariff is dated 1 January 2021; a later HSBC schedule effective 31 October 2026 is now available and has different service descriptions. Neither tariff publishes this account's executable CNY/USD rate or the user's complete sender/correspondent/recipient charges.",
+    "action": "Treat the existing bands only as a clearly labelled scenario, not verified values or advice. Under the requested source-only rule, the current all-in cost for this account remains blank/unverified until the bank provides an executable rate and itemized charges. A separate blank-cost matrix is linked from the project hub.",
+    "sources": ["P07", "P13"]
+  },
+  {
+    "id": "C04",
+    "severity": "high",
+    "status": "currentness and eligibility need review",
+    "topic": "The current HSBC tariff verifies a tiered wire fee, not a complete quote or a general same-name Global Transfer price",
+    "claim": "Some existing route, step-by-step and assumptions pages use the 2021 HSBC tariff and show a USD0–7 same-name Global Transfer fee, which may be read as a current general fee.",
+    "evidence": "The tariff effective 31 October 2026 lists Premier/Advance telegraphic-transfer issuance at 0.1%, CNY100 minimum/CNY500 maximum, plus CNY120 per cable. It separately lists Global Transfer to Family and International Education Payment; the USD7 reference belongs to the education-payment item, not a general same-name transfer. The 2026 tariff excludes other institutions' charges, and neither tariff supplies this account's executable CNY/USD rate or establishes corridor/service eligibility.",
+    "action": "The root and ladder landing pages now warn that USD7 is an education-payment reference and link the current tariff. The detailed route, step and assumptions pages and their model still need the old USD0–7 same-name claim corrected; this cross-scope request is logged in COORDINATION.md. Do not call Global Transfer the cheapest route or apply the education-payment USD7 amount to a same-name remittance. Obtain service-eligibility confirmation and an executable quote itemizing the FX rate/spread and sender, intermediary and recipient charges before ranking routes.",
+    "sources": ["P07", "P13"]
+  },
+  {
+    "id": "C05",
+    "severity": "high",
+    "status": "needs review for the individual",
+    "topic": "A U.S. foreign tax credit is not automatic or necessarily dollar-for-dollar",
+    "claim": "The existing short answer says to pay any PRC tax and claim it in the U.S. on Form 1116, which can read as an automatic offset.",
+    "evidence": "The IRS says a taxpayer may be able to claim a credit for qualifying foreign taxes imposed on that taxpayer. Publication 514 further requires legal and actual foreign-tax liability that was paid or accrued and applies category-specific limitations. The IRS also warns the amount qualifying is not necessarily the amount withheld.",
+    "action": "Say a Form 1116 credit may be available if the tax and income qualify, subject to U.S. sourcing, category, timing and limitation rules. Do not promise a full offset or compute a credit without the U.S. return facts.",
+    "sources": ["P08", "P09"]
+  },
+  {
+    "id": "C06",
+    "severity": "medium",
+    "status": "eligibility needs review",
+    "topic": "The emigration-asset procedure is a special approved route, not a general U.S.-citizen route",
+    "claim": "The existing summary says an emigrant transfer has no annual quota and is staged over two years, which may sound available to anyone who formerly lived in China.",
+    "evidence": "The SAFE-published measure covers specific emigration and inheritance asset transfers. It requires lawful ownership/source evidence, a tax certificate and SAFE approval; the staged schedule applies to qualifying emigration transfers above RMB 200,000. The publication calls for an application tied to the original household-registration locality, among other documents.",
+    "action": "Present this only as a conditional special procedure. Do not infer that a U.S. citizen who formerly lived in China qualifies; the applicable identity, household-registration, emigration and asset facts were not supplied.",
+    "sources": ["P04", "P06"]
+  },
+  {
+    "id": "C07",
+    "severity": "medium",
+    "status": "unsupported phrase removed; legal scope retained",
+    "topic": "The claimed automatic 'watch list' consequence was not found in the cited official text",
+    "claim": "The existing summary says borrowing a friend's quota puts both parties on a watch list.",
+    "evidence": "PBOC Decree No. 3 Article 7 prohibits splitting transactions to evade limit administration and using fabricated vouchers. The 2026 PBOC notice prohibits specified virtual-currency business activities and financial-institution support. The retrieved official texts do not state that every person who borrows a quota is automatically placed on a 'watch list.'",
+    "action": "Remove the unsupported watch-list claim. State only the sourced rule: do not evade FX controls by splitting transactions, using false documents, or relying on unauthorized FX/virtual-currency services. The exact legal characterization depends on the conduct and facts.",
+    "sources": ["P01", "P04", "P10"]
+  },
+  {
+    "id": "C08",
+    "severity": "medium",
+    "status": "verified only for the stated reconversion case",
+    "topic": "The USD 500 / USD 1,000 exception is not a general allowance for salary or other income",
+    "claim": "The small-amount rule can be misread as a passport-only way to convert earned RMB in repeated amounts.",
+    "evidence": "SAFE's 2026 Q&A applies the 24-month original exchange memo and the daily USD 500 / departure-area USD 1,000 identity-only exceptions to reconversion of originally exchanged, unused RMB.",
+    "action": "Keep the rule explicitly limited to eligible unused-RMB reconversion. Do not describe it as a cap or exemption for wages, service income, sale proceeds or a way to stage a large transfer.",
+    "sources": ["P11", "P02"]
+  },
+  {
+    "id": "C09",
+    "severity": "medium",
+    "status": "rate verified; application and remittance route need review",
+    "topic": "The 20% property rate is not 20% of sale proceeds and does not settle remittance eligibility",
+    "claim": "The route summary says a property sale carries 20% PRC tax on the gain, then a capital-account remittance.",
+    "evidence": "The PRC Individual Income Tax Law lists a 20% proportional rate for specified property-transfer income and computes taxable transfer income as sale proceeds less original value and reasonable expenses. The reviewed law does not by itself verify the specific FX remittance procedure or any case-specific exemption for a foreign individual selling a home.",
+    "action": "Retain the 20% rate only with its statutory category and tax-base caveat. Do not apply it to gross proceeds or claim an outbound route/exemption without the relevant property and SAFE/bank documents.",
+    "sources": ["P05", "P01", "P04"]
+  },
+  {
+    "id": "C10",
+    "severity": "medium",
+    "status": "legal penalty applies only to specified violations",
+    "topic": "Foreign-exchange penalties are not a generic conversion fee or universal percentage",
+    "claim": "A headline summary groups serious FX penalties, illegal cash-carrying penalties and crypto/private-swap conduct together as a general 20–100% penalty range.",
+    "evidence": "State Council Decree No. 532 sets different consequences for enumerated conduct in Arts. 39–45, with distinct thresholds and seriousness conditions. The provisions do not create a single penalty range that applies to an ordinary, documented conversion.",
+    "action": "Keep enforcement amounts attached to the specific statutory violation and conditions. Never present a penalty percentage as the expected tax or cost of a lawful bank conversion.",
+    "sources": ["P04", "P01", "P10"]
+  },
+  {
+    "id": "C11",
+    "severity": "high",
+    "status": "needs review; private facts absent",
+    "topic": "No personal route, PRC tax amount or U.S. credit amount can be calculated from this request alone",
+    "claim": "A reader could take the dashboard's recommended route and cost range as individualized advice for the money in the user's actual account.",
+    "evidence": "The record contains no origin/category of the RMB, account holder and bank details, conversion history, China residence timeline, tax certificates, actual bank refusal notice, U.S. tax facts, or current executable quote. The official rules above make these facts material to eligibility, documentation and tax analysis.",
+    "action": "Prominently mark individual eligibility, tax and total cost as undetermined. The safe first step is to request the bank's written reason, exact tax/fee name and statutory basis, required supporting documents and an itemized current quote; then have a qualified PRC/U.S. tax professional assess the source transaction.",
+    "sources": ["P02", "P03", "P04", "P05", "P07", "P08", "P12", "P14"]
+  }
+]
