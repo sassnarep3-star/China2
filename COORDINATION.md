@@ -338,3 +338,28 @@ Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-mat
   - Flagged for review F01–F15: https://sassnarep3-star.github.io/China2/repatriate/flagged.html
   - Exports: https://sassnarep3-star.github.io/China2/repatriate/exports/cost-ladders.csv (+ .json)
 - **Task board close-out:** R1 done · R2 done · R3 done · R4 done · R5 done · R6 done. Unverified items remain published as **needs review** (F01–F15) and do not block the site. This publication record is carried in a follow-up PR because the merge result did not exist before PR #19 merged (same pattern as prior sessions). No claim is made that prior dashboards' figures were all re-verified, that external links are continuously monitored, or that any personal tax amount was determined.
+
+---
+
+## Session `arena/30d86580-china2` — Independent verification, reconciliation & unified dashboard (`session-30d86580/**`)
+
+> **Environment note:** Arena pins this session to branch `arena/30d86580-china2`; no other branch is created or switched. All prior sessions' files are preserved unedited. This session creates a **new, disjoint directory** `session-30d86580/**` and appends to this board only.
+
+**Why this session exists.** The repository already contains six independent dashboards (`docs/`, `site/`, `portal/`, `audit-86f0/`, `ladder/`, `repatriate/`) that publish **overlapping but mutually inconsistent** route counts, cost figures and source citers. A reader cannot tell which one to trust. This session does three things the prior work did not:
+
+1. **Re-verifies the load-bearing claims against primary official sources itself** (not against prior sessions' prose), and records the verbatim quote and locator for each.
+2. **Reconciles the discrepancies** into one authoritative dataset, and publishes every disagreement as a numbered flag rather than silently picking a winner.
+3. **Publishes one clean, mobile-first dashboard** that a non-specialist can read, with the cost table first.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| V1 | Independent primary-source verification ledger (verbatim quotes + locators, retrieved this session) | in progress | `arena/30d86580-china2` | `session-30d86580/data/sources.json` |
+| V2 | Reconciliation of conflicting route/cost/tax claims across the six prior dashboards → numbered flags | in progress | `arena/30d86580-china2` | `session-30d86580/data/flags.json` |
+| V3 | Cost model: $10,000→$400,000 in $10,000 steps × every route, published fees only, unverified left blank | in progress | `arena/30d86580-china2` | `session-30d86580/model.py`, `data/costs.json` |
+| V4 | Unified mobile-first dashboard (landing + category subpages + Flagged for Review) | in progress | `arena/30d86580-china2` | `session-30d86580/*.html`, `build.py` |
+| V5 | Independent verifier + CI (citation coverage, blank-unverified policy, arithmetic, local links) | in progress | `arena/30d86580-china2` | `session-30d86580/verify.py`, `.github/workflows/verify-session-30d86580.yml` |
+| V6 | Integration: PR to `main`, merge, Pages deploy confirmation, record results | in progress | `arena/30d86580-china2` | this file (append-only) |
+
+**Scope exclusions:** this session does **not** edit `docs/**`, `site/**`, `portal/**`, `audit-86f0/**`, `ladder/**`, `repatriate/**`, `data/**`, `research/**`, `reports/**`, `scripts/**`, `tools/**`, root `index.html`, or any existing workflow. Findings *about* those directories are published on `session-30d86580/flagged.html` as read-only observations, with the owning path named, rather than edited in place. Open PRs #2, #12 and #17 are left untouched.
+
+- 2026-11-09: Claimed V1–V6 before substantive work. Board read in full first; no unclaimed active scope overlapped.
