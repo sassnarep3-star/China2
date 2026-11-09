@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repository audit · USD exit</title>
+<meta name="description" content="A line-by-line review of this repository, with the command output behind every finding — twelve items, none of them edited outside this session&#x27;s scope.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><a href="index.html">USD exit</a> <span class="sub">CNY → USD for a US citizen</span></div>
+    <nav class="nav"><a href="index.html">Start</a><a href="summary.html">Summary</a><a href="costs.html">Costs</a><a href="methods.html">Methods</a><a href="taxes.html">Taxes</a><a href="penalties.html">Penalties</a><a href="sources.html">Sources</a><a href="flagged.html">Flagged</a><a href="audit.html" class="on">Repo audit</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <h1>Repository audit</h1>
+  <p class="lede">A line-by-line review of this repository, with the command output behind every finding — twelve items, none of them edited outside this session's scope.</p>
+
+<section class="hero">
+  <p class="kicker">Repository audit</p>
+  <blockquote>A line-by-line review of this repository as it stood at the start of this session.
+  Twelve findings, each with the command output that establishes it. Nothing here is an opinion
+  about how someone else's code is written — every finding is about whether a reader could be
+  <em>misled</em> by what is published.</blockquote>
+</section>
+
+<h2>Method</h2>
+<ol class="steps">
+<li>Enumerated the tracked tree: <code>git ls-files</code> → 57 HTML pages, 25 JSON ledgers,
+15 Python files, 14 markdown documents, 5 CI workflows.</li>
+<li>Ran every harness the repo ships, to see which claims are actually machine-checked:
+scripts/build.py, scripts/validate.py, node scripts/test_ui.js, node tools/verify.mjs,
+ladder/model.py, ladder/verify.py, portal/generate_portal.py, repatriate/verify.py, audit-86f0/verify.py —
+all nine passed before this session added anything.</li>
+<li>Range-checked every numeric claim that could be checked against a primary source: the US$50,000 quota,
+the US$10,000 reporting lines, the FBAR penalty maxima, the cash-carry tiers, the bank tariff items and the
+exchange rate. Where a page asserted a number with no operative text behind it, that is finding R-10.</li>
+<li>Re-fetched each official source cited by the previous sessions and compared it to the quotation in this
+session's ledger. All 27 sources in <a href="sources.html">sources.json</a> resolve on an official host.</li>
+<li>Checked every internal link and anchor across all six existing dashboards: <strong>0 broken</strong>.</li>
+</ol>
+
+<h2>What is healthy</h2>
+<div class="cards">
+<div class="card"><h3>No broken links anywhere</h3>
+<p>Every relative link and in-page anchor in docs/, site/, portal/, ladder/, repatriate/ and audit-86f0/
+resolves. Whatever else is true, the repository does not ship dead navigation.</p></div>
+<div class="card"><h3>Nine harnesses, all green</h3>
+<p>Every generator is deterministic on the day it is run and every checker passes. The machinery is real,
+not decorative.</p></div>
+<div class="card"><h3>Sources are genuinely primary</h3>
+<p>SAFE, PBOC, STA, IRS, CBP, eCFR and govinfo dominate. Very little of this repo rests on secondary
+commentary, which is unusual for this subject.</p></div>
+<div class="card"><h3>Blanks are respected</h3>
+<p>Earlier sessions did leave values blank rather than invent them. The problem is that several of those
+blanks are no longer necessary (R-09), not that they were wrong.</p></div>
+</div>
+
+<h2>The twelve findings</h2>
+<table class="t audit">
+<thead><tr><th>ID / area</th><th>Observation</th><th>Evidence</th><th>Why it matters</th><th>Action taken here</th><th>Flag</th></tr></thead>
+<tbody><tr>
+        <td><strong>R-01</strong><div class="tiny">Scale of duplication</div></td>
+        <td>Six independent dashboards answer the same question in the same repository.</td>
+        <td class="ev"><code>docs/ (9 pages), site/ (11), portal/ (7), ladder/ (12), repatriate/ (7), audit-86f0/ (4) — plus the root index.html hub.</code></td>
+        <td>Six overlapping implementations of one research question. They disagree with each other on the number of routes, so a reader has no way to know which is authoritative.</td>
+        <td>This session ships a seventh, self-contained scope (usd-exit/). The integration decision about which dashboard is canonical belongs to the repo owner; consolidating other sessions' directories is out of this session's scope.</td>
+        <td><span class="flag">F-DUPLICATION</span></td>
+        </tr><tr>
+        <td><strong>R-02</strong><div class="tiny">Contradictory published claim</div></td>
+        <td>Three different descriptions of the US$50,000 annual figure are published across the repo, and one is wrong.</td>
+        <td class="ev"><code>site/conversion-routes.html: 'USD 50,000 per person per year is a hard ceiling'. usd-exit and ladder/ correctly describe it as an annual FACILITATION quota, above which genuine current-account transactions are permitted with authenticity documents (SAFE Q&A, P03).</code></td>
+        <td>A 'hard ceiling' reading is a substantive error: it would lead a reader to believe a lawful above-quota transaction is impossible, and it is the fact most likely to make someone reach for a prohibited route instead.</td>
+        <td>Corrected in this session's own scope and flagged; the other session's page is recorded here and logged in COORDINATION.md, not edited.</td>
+        <td><span class="flag">F-CONTRADICTION</span></td>
+        </tr><tr>
+        <td><strong>R-03</strong><div class="tiny">CI workflow does not run on its own branch</div></td>
+        <td>validate.yml triggers on main and arena/996dc508-china2 only. Four of the five other workflows likewise name a single session branch.</td>
+        <td class="ev"><code>validate.yml: branches: [main, arena/996dc508-china2]. verify-ladder.yml: [main, arena/de9755b1-china2]. verify-portal-85f37d08.yml and verify-repatriate-3e494fa5.yml and verify-site-data.yml: main only.</code></td>
+        <td>Parallel sessions get no CI feedback on their own branches. A branch can be broken for its entire life and only fail after merge to main — which is exactly the failure mode the task instructions say must not happen ('do not merge a broken site').</td>
+        <td>This session adds .github/workflows/verify-usd-exit-b8e50c81.yml which triggers on pull_request and push to main, so the gate fires for this branch and for the merge. The other workflows are not modified.</td>
+        <td><span class="flag">F-CI-SCOPE</span></td>
+        </tr><tr>
+        <td><strong>R-04</strong><div class="tiny">Paths referenced by CI</div></td>
+        <td>validate.yml invokes scripts/build.py, scripts/validate.py, node scripts/test_ui.js; package.json invokes tools/build.mjs and tools/verify.mjs. All six files exist and all six run clean.</td>
+        <td class="ev"><code>Verified by execution: scripts/build.py 'Built 7 pages, 67 research rows and 24 sources.'; scripts/validate.py PASS; node scripts/test_ui.js PASS; node tools/verify.mjs '477 checks run, 0 failure(s)'.</code></td>
+        <td>No broken CI path. Recorded because a referenced-but-missing script is the most common way a repo's checks silently stop protecting anything.</td>
+        <td>None required.</td>
+        <td>—</td>
+        </tr><tr>
+        <td><strong>R-05</strong><div class="tiny">Build determinism hazard</div></td>
+        <td>Several generators stamp today's date into committed output, so running a build on a different day dirties the tree even when nothing substantive changed.</td>
+        <td class="ev"><code>Running python3 ladder/model.py on 2026-11-09 changed ladder/data/meta.json and ladder/data/costs.json — the only diff being '"generated": "2026-11-08"' -> '"generated": "2026-11-09"'.</code></td>
+        <td>verify-ladder.yml runs the model and then asserts 'git diff --exit-code -- ladder index.html'. On any day other than the commit day this fails on a date stamp, not on a real regression. That makes a real regression indistinguishable from date drift, which is how CI checks lose their authority.</td>
+        <td>Reverted (git checkout -- ladder/) so no other session's generated files are modified by this session. Recorded here because it will keep biting every session until the date is generated at publish time rather than committed.</td>
+        <td><span class="flag">F-DETERMINISM</span></td>
+        </tr><tr>
+        <td><strong>R-06</strong><div class="tiny">Root document duplication</div></td>
+        <td>Two root-level executive summaries coexist with overlapping content.</td>
+        <td class="ev"><code>EXECUTIVE-SUMMARY.md (13,169 bytes) and EXECUTIVE_SUMMARY.md (3,450 bytes); diff shows they are not identical.</code></td>
+        <td>Two files, one name transposed by a hyphen, is a drift trap: a reader cannot tell which is current and any correction may land in only one.</td>
+        <td>Owned by other sessions; logged for the integration decision, not edited here.</td>
+        <td><span class="flag">F-DUPLICATION</span></td>
+        </tr><tr>
+        <td><strong>R-07</strong><div class="tiny">Citeable-but-repealed instrument</div></td>
+        <td>Hui Fa [2007] No. 1 Art. 39 (the quota-splitting penalty) was repealed by Hui Fa [2023] No. 8, and a repeal is easy to misread as legalisation.</td>
+        <td class="ev"><code>SAFE publishes the 2007 measure with the Art. 39 repeal noted (P02). The prohibition on splitting survives independently in PBOC Decree [2006] No. 3 Art. 7 (P01) and in SAFE's own 'six don'ts' (P15).</code></td>
+        <td>The conclusion (splitting is prohibited) is correct, but a citation-audit that only checks 'does the penalty clause exist' would wrongly conclude the conduct is now permitted.</td>
+        <td>Recorded as a flagged irregularity on the Flagged for Review page (I-03), with the surviving citation given so the conclusion rests on text that is still in force.</td>
+        <td><span class="flag">F-REPEAL-TRAP</span></td>
+        </tr><tr>
+        <td><strong>R-08</strong><div class="tiny">Inconsistent source quality across dashboards</div></td>
+        <td>The evidence ledger duplicates itself four times with different contents and different source standards.</td>
+        <td class="ev"><code>Four separate source files: data/sources.json (17 records), ladder/data/sources.json (20), docs/data/sources.json (24), usd-exit/data/sources.json (27). Two records in data/sources.json are plain http:// (not https): safe.gov.cn/en/2017/1230/1397.html and english.www.gov.cn/.../content_WS614dc30bc6d0df57f98e0c84.html.</code></td>
+        <td>Four ledgers means four chances for a quote to drift from the source it claims to reproduce, and no single place where a user can audit the evidence.</td>
+        <td>This session's ledger enforces https plus an allow-list of official/commercial hosts in verify.py (V5), and records a verbatim quote plus a locator for every record (V6). The other ledgers are untouched.</td>
+        <td><span class="flag">F-LEDGER-DRIFT</span></td>
+        </tr><tr>
+        <td><strong>R-09</strong><div class="tiny">Stale unverified items</div></td>
+        <td>Earlier sessions left high-severity items blank that are answerable from primary sources now.</td>
+        <td class="ev"><code>data/flags.json F02 'FBAR civil penalty dollar amounts are left blank' (severity high) and F10 'U.S. reporting threshold for gifts received from a foreign person is unverified' (medium); F07 'Chinese customs cash-carrying thresholds are unverified' (high).</code></td>
+        <td>All three are published plainly: 31 CFR 1010.821 gives US$16,536 non-willful and US$165,353 willful (U04); IRS states the US$100,000 Form 3520 threshold (U08); SAFE states US$5,000 free / US$5,000–10,000 permit / above US$10,000 prohibited (P07).</td>
+        <td>Filled in this session's own pages with citations, and the closure recorded here so the integration session can retire the stale flags rather than carry them forward.</td>
+        <td><span class="flag">F-STALE-FLAG</span></td>
+        </tr><tr>
+        <td><strong>R-10</strong><div class="tiny">Unsubstantiated specific claim</div></td>
+        <td>portal/methods.html states a route is 'Not counted toward RMB 100,000 ATM cash cap or USD 50,000 domestic quota', and site/conversion-routes.html that a route is 'Not limited by the USD 50,000 annual quota'.</td>
+        <td class="ev"><code>Neither page in this repo carries a quotation from an official source establishing that carve-out; the SAFE texts reviewed in this session (P02, P03, P05) do not state it.</code></td>
+        <td>A specific exemption from two quota regimes is a strong claim that needs the operative text. If it is true it is valuable; as published it is unsupported, and a reader could rely on it and breach a quota.</td>
+        <td>Flagged for review with the exact URLs to re-check. Not edited (other sessions' scope). This session's own pages assert no such carve-out.</td>
+        <td><span class="flag">F-UNSUPPORTED-CLAIM</span></td>
+        </tr><tr>
+        <td><strong>R-11</strong><div class="tiny">Broken PR state on the shared board</div></td>
+        <td>COORDINATION.md records PR #17 as merged; GitHub reports it OPEN and CONFLICTING with no CI checks.</td>
+        <td class="ev"><code>gh pr view 17 -> 'CONFLICTING', 'DIRTY'; no status checks reported.</code></td>
+        <td>The task board's own description of the repository state is wrong, which means a session relying on it would believe merged work is live when it is not.</td>
+        <td>Recorded on the Flagged for Review page (I-05). Not edited: COORDINATION.md is append-only and shared, so this session logs rather than rewrites.</td>
+        <td><span class="flag">F-BOARD-DRIFT</span></td>
+        </tr><tr>
+        <td><strong>R-12</strong><div class="tiny">Time-stamped FX assumption</div></td>
+        <td>No dashboard publishes the exchange rate it uses to turn Chinese fee caps into dollars.</td>
+        <td class="ev"><code>ladder/ and audit-86f0/ publish CNY figures; docs/ and repatriate/ publish USD figures; none states a rate and date.</code></td>
+        <td>Without a published rate and date, a USD figure cannot be re-derived or checked, and it silently becomes stale as the rate moves.</td>
+        <td>This session publishes its anchor explicitly — 1 USD = 6.7188 CNY, SAFE central parity for 2026-11-09 (P14) — in the data, on the page, and in verify.py's arithmetic check.</td>
+        <td><span class="flag">F-RATE-OPAQUE</span></td>
+        </tr></tbody>
+</table>
+
+<h2>What this session changed, and what it deliberately did not</h2>
+<table class="t">
+<thead><tr><th>Did</th><th>Did not</th></tr></thead>
+<tbody>
+<tr><td>Added a self-contained <code>usd-exit/</code> scope with its own data, generator and verifier.</td>
+<td>Edit any other session's page, even where a claim is wrong (R-02, R-10) — those are logged for the
+integration decision instead.</td></tr>
+<tr><td>Added a CI workflow that runs this scope's verifier on pull requests and on main.</td>
+<td>Modify the five existing workflows to broaden their branch triggers, which would change other
+sessions' gate behaviour mid-flight.</td></tr>
+<tr><td>Re-fetched and re-quoted every source used, with a locator per record.</td>
+<td>Claim that any other dashboard's quotation is fabricated — only that this session did not rely on it.</td></tr>
+<tr><td>Reverted <code>ladder/</code> after a probe run dirtied its date stamps (R-05).</td>
+<td>Commit another session's regenerated files.</td></tr>
+</tbody>
+</table>
+
+<h2>Flag index</h2>
+<p>Each of these appears with its detail on the <a href="flagged.html">Flagged for Review</a> page.</p>
+<table class="t">
+<thead><tr><th>Finding</th><th>Flag</th></tr></thead>
+<tbody><tr><td><span class="flag">R-01</span></td><td>F-DUPLICATION</td></tr><tr><td><span class="flag">R-02</span></td><td>F-CONTRADICTION</td></tr><tr><td><span class="flag">R-03</span></td><td>F-CI-SCOPE</td></tr><tr><td><span class="flag">R-05</span></td><td>F-DETERMINISM</td></tr><tr><td><span class="flag">R-06</span></td><td>F-DUPLICATION</td></tr><tr><td><span class="flag">R-07</span></td><td>F-REPEAL-TRAP</td></tr><tr><td><span class="flag">R-08</span></td><td>F-LEDGER-DRIFT</td></tr><tr><td><span class="flag">R-09</span></td><td>F-STALE-FLAG</td></tr><tr><td><span class="flag">R-10</span></td><td>F-UNSUPPORTED-CLAIM</td></tr><tr><td><span class="flag">R-11</span></td><td>F-BOARD-DRIFT</td></tr><tr><td><span class="flag">R-12</span></td><td>F-RATE-OPAQUE</td></tr></tbody>
+</table>
+
+<h2>Reproduction</h2>
+<p class="mono">git ls-files | wc -l · python3 scripts/validate.py · node tools/verify.mjs ·
+python3 ladder/model.py && git diff --stat ladder/ · git ls-files '*.json' · gh pr view 17</p>
+<p class="note">Every command above is read-only except <code>ladder/model.py</code>, which rewrites its
+own date stamps; if you run it, <code>git checkout -- ladder/</code> afterwards.</p>
+
+</main>
+<footer class="wrap foot">
+  <p><strong>Not tax, legal or immigration advice.</strong> Compiled from primary sources, each linked. Figures are as published on 2026-11-09; Chinese FX rules change by circular. Where a number is not published it is shown blank and listed on the <a href="flagged.html">Flagged for Review</a> page.</p>
+  <p class="mono">branch arena/b8e50c81-china2 · 27 sources · 20 routes · generated 2026-11-09</p>
+</footer>
+</body>
+</html>

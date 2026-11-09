@@ -784,8 +784,8 @@
      "item": "Wire commission",
      "cny": 0,
      "usd": 0,
-     "basis": "No wire occurs on a card purchase — this is the structural advantage.",
-     "source": null
+     "basis": "No wire occurs on a card purchase — this is the structural advantage of the route. Not a published tariff; an absence of any wire to charge for (see C01 for the tariff that would otherwise apply).",
+     "source": "C01"
     }
    ],
    "cn_tax": {

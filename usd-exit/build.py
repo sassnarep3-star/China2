@@ -120,6 +120,7 @@ NAV = [
     ("penalties.html", "Penalties"),
     ("sources.html", "Sources"),
     ("flagged.html", "Flagged"),
+    ("audit.html", "Repo audit"),
 ]
 
 
@@ -185,7 +186,7 @@ def build_index():
         <td><span class="rank">{m['rank']}</span> <a href="methods.html#{m['id']}">{e(m['name'])}</a>
             <div class="tiny">{e(m['one_line'])}</div></td>
         <td>{statuschip(m['status'])}</td>
-        <td class="num">{'—' if m['volume']['annual_usd'] is None else money(m['volume']['annual_usd'])}</td>
+        {cell_num(m['volume']['annual_usd'], m['volume']['source'][0])}
         </tr>"""
         for m in sorted(METHODS, key=lambda x: x["rank"])[:6]
     )
@@ -343,8 +344,9 @@ and not a full cost</strong>. That is stated on every table rather than buried.<
         r = BY_METHOD[m["id"]][len(BY_METHOD[m["id"]]) - 1]  # $400k row
         fee = money(r["fee_usd"]) if r["fee_usd"] is not None else '<span class="blank">—</span>'
         yrs = r["years"] if r["years"] is not None else '<span class="blank">—</span>'
+        srcs = srclinks(m["sources"][:3])
         rows.append(
-            f'<tr><td><a href="methods.html#{m["id"]}">{e(m["id"])}</a> {e(m["name"])}</td>'
+            f'<tr><td><a href="methods.html#{m["id"]}">{e(m["id"])}</a> {e(m["name"])} {srcs}</td>'
             f"<td>{statuschip(m['status'])}</td><td class=\"num\">{fee}</td><td class=\"num\">{yrs}</td></tr>"
         )
     costtable = (
@@ -925,6 +927,18 @@ source id.</p>
                 "published openly so nothing is silently guessed.", body)
 
 
+# ================================================================ audit =====
+def build_audit():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("usd_exit_audit", os.path.join(HERE, "audit.py"))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return page("audit.html", "Repository audit",
+                "A line-by-line review of this repository, with the command output behind every "
+                "finding — twelve items, none of them edited outside this session's scope.",
+                mod.build_audit_html(len(SOURCES), len(METHODS)))
+
+
 # ================================================================ write =====
 def main():
     os.makedirs(os.path.join(HERE, "assets"), exist_ok=True)
@@ -938,6 +952,7 @@ def main():
         "penalties.html": build_penalties(),
         "sources.html": build_sources(),
         "flagged.html": build_flagged(),
+        "audit.html": build_audit(),
     }
     for name, content in pages.items():
         with open(os.path.join(HERE, name), "w", encoding="utf-8") as f:

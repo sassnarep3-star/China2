@@ -1,0 +1,86 @@
+name: Verify usd-exit (session b8e50c81)
+
+# This workflow deliberately does not scope itself to one branch, because the
+# other five workflows in this repository do exactly that and therefore give a
+# parallel session no feedback until after merge (see usd-exit/audit.html R-03).
+# It runs on every pull request and on pushes to main.
+
+on:
+  pull_request:
+  push:
+    branches: [main, "arena/b8e50c81-china2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-usd-exit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Rebuild the cost model from the source ledger
+        run: python3 usd-exit/model.py
+
+      - name: Regenerate the site
+        run: python3 usd-exit/build.py
+
+      - name: Fail if committed output is stale
+        run: git diff --exit-code -- usd-exit
+
+      - name: Verify every row is sourced, blanks are marked, links resolve
+        run: python3 usd-exit/verify.py
+
+      - name: Verify the published data still parses as JSON
+        run: |
+          python3 - <<'PY'
+          import json, glob
+          for f in sorted(glob.glob("usd-exit/data/*.json")):
+              json.load(open(f, encoding="utf-8"))
+              print("ok", f)
+          PY
+
+      - name: Sanity-check the HTML with the stdlib parser
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          import glob, sys
+
+          class P(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.stack = []
+                  self.bad = []
+              def handle_starttag(self, tag, attrs):
+                  if tag not in ("br", "img", "meta", "link", "input", "hr"):
+                      self.stack.append(tag)
+              def handle_endtag(self, tag):
+                  if self.stack and self.stack[-1] == tag:
+                      self.stack.pop()
+                  elif tag in self.stack:
+                      self.bad.append(("misnested", tag))
+
+          fails = 0
+          for f in sorted(glob.glob("usd-exit/*.html")):
+              p = P()
+              p.feed(open(f, encoding="utf-8").read())
+              if p.stack:
+                  print(f"{f}: unclosed {p.stack[:5]}"); fails += 1
+              if p.bad:
+                  print(f"{f}: {p.bad[:5]}"); fails += 1
+          sys.exit(1 if fails else 0)
+          PY
+
+      - name: Confirm the required pages and the flagged page are present
+        run: |
+          set -e
+          for p in index summary costs methods taxes penalties sources flagged audit; do
+            test -s "usd-exit/$p.html" || { echo "missing usd-exit/$p.html"; exit 1; }
+          done
+          grep -q "Flagged for Review" usd-exit/flagged.html
+          echo "all pages present"

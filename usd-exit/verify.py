@@ -221,15 +221,30 @@ def main():
         rows = list(csv.DictReader(f))
     check("V10 CSV row count matches model", len(rows) == len(METHODS) * 40,
           f"{len(rows)} rows vs {len(METHODS)*40}")
+    # Re-derive two ladder cells completely independently of model.py's helpers,
+    # using only the published tariff parameters and the published parity.
     cny_per_usd = COSTS["meta"]["fx"]["cny_per_usd"]
     arith_bad = []
+
+    def wire_cny(usd):
+        """0.1% clamped to [100, 500] CNY, plus 120 CNY cable — HSBC tariff C01."""
+        return min(max(0.001 * usd * cny_per_usd, 100.0), 500.0) + 120.0
+
     for r in rows:
-        if r["method"] == "M01" and r["amount_usd"] == "400000":
-            # 8 x (500 + 120) = 4960 CNY -> USD
-            expected = round(4960 / cny_per_usd, 2)
+        if r["method"] == "M01" and r["amount_usd"] in ("400000", "10000"):
+            amt = float(r["amount_usd"])
+            # one wire per calendar year, each wire at most the US$50,000 quota
+            n = -(-int(amt) // 50000)
+            expected = round(n * wire_cny(min(50000.0, amt) if n == 1 else amt / n) / cny_per_usd, 2)
             if abs(float(r["fee_usd"]) - expected) > 0.01:
-                arith_bad.append((r["fee_usd"], expected))
-    check("V10 M01 $400k fee equals 8 x (500+120) CNY at the parity", not arith_bad, str(arith_bad))
+                arith_bad.append(("M01", r["amount_usd"], r["fee_usd"], expected))
+        if r["method"] == "M04" and r["amount_usd"] == "400000":
+            # three equal staged tranches under PBOC [2004] No.16 Art. 6
+            expected = round(sum(wire_cny(400000 / 3.0) for _ in range(3)) / cny_per_usd, 2)
+            if abs(float(r["fee_usd"]) - expected) > 0.01:
+                arith_bad.append(("M04", r["amount_usd"], r["fee_usd"], expected))
+    check("V10 ladder arithmetic re-derived independently from the tariff and the parity",
+          not arith_bad, str(arith_bad))
 
     # ------------------------------------------------------------- report ----
     print("\nusd-exit verification")
