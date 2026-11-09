@@ -52,8 +52,9 @@ h4{font-size:15px;margin:.6em 0 .3em;color:var(--dim)}
 .hero blockquote{margin:0;font-size:17px;line-height:1.55}
 
 /* ---------- tables ---------- */
-.t{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px;display:block;overflow-x:auto;
-   -webkit-overflow-scrolling:touch}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;
+         border:1px solid var(--line);border-radius:8px;background:rgba(0,0,0,.12)}
+.t{width:100%;border-collapse:collapse;margin:0;font-size:14.5px;min-width:520px}
 .t thead th{
   text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--dim);
   border-bottom:1px solid var(--line);padding:8px 10px;white-space:nowrap;background:var(--panel2);
@@ -66,6 +67,7 @@ h4{font-size:15px;margin:.6em 0 .3em;color:var(--dim)}
 tbody tr:last-child td{border-bottom:none}
 th.num,td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 table.ladder td.num{font-size:14px}
+table.ladder{min-width:600px}
 
 /* blank / unverified cell */
 td.blank{color:var(--dim2);text-align:right}

@@ -28,8 +28,8 @@
 
 <h2>Method</h2>
 <ol class="steps">
-<li>Enumerated the tracked tree: <code>git ls-files</code> → 57 HTML pages, 25 JSON ledgers,
-15 Python files, 14 markdown documents, 5 CI workflows.</li>
+<li>Enumerated the tracked tree: <code>git ls-files</code> → 58 HTML pages, 25 JSON ledgers,
+16 Python files, 14 markdown documents, 6 CI workflows.</li>
 <li>Ran every harness the repo ships, to see which claims are actually machine-checked:
 scripts/build.py, scripts/validate.py, node scripts/test_ui.js, node tools/verify.mjs,
 ladder/model.py, ladder/verify.py, portal/generate_portal.py, repatriate/verify.py, audit-86f0/verify.py —
@@ -59,7 +59,7 @@ blanks are no longer necessary (R-09), not that they were wrong.</p></div>
 </div>
 
 <h2>The twelve findings</h2>
-<table class="t audit">
+<div class="tscroll"><table class="t audit">
 <thead><tr><th>ID / area</th><th>Observation</th><th>Evidence</th><th>Why it matters</th><th>Action taken here</th><th>Flag</th></tr></thead>
 <tbody><tr>
         <td><strong>R-01</strong><div class="tiny">Scale of duplication</div></td>
@@ -146,10 +146,10 @@ blanks are no longer necessary (R-09), not that they were wrong.</p></div>
         <td>This session publishes its anchor explicitly — 1 USD = 6.7188 CNY, SAFE central parity for 2026-11-09 (P14) — in the data, on the page, and in verify.py's arithmetic check.</td>
         <td><span class="flag">F-RATE-OPAQUE</span></td>
         </tr></tbody>
-</table>
+</table></div>
 
 <h2>What this session changed, and what it deliberately did not</h2>
-<table class="t">
+<div class="tscroll"><table class="t">
 <thead><tr><th>Did</th><th>Did not</th></tr></thead>
 <tbody>
 <tr><td>Added a self-contained <code>usd-exit/</code> scope with its own data, generator and verifier.</td>
@@ -163,14 +163,14 @@ sessions' gate behaviour mid-flight.</td></tr>
 <tr><td>Reverted <code>ladder/</code> after a probe run dirtied its date stamps (R-05).</td>
 <td>Commit another session's regenerated files.</td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Flag index</h2>
 <p>Each of these appears with its detail on the <a href="flagged.html">Flagged for Review</a> page.</p>
-<table class="t">
+<div class="tscroll"><table class="t">
 <thead><tr><th>Finding</th><th>Flag</th></tr></thead>
 <tbody><tr><td><span class="flag">R-01</span></td><td>F-DUPLICATION</td></tr><tr><td><span class="flag">R-02</span></td><td>F-CONTRADICTION</td></tr><tr><td><span class="flag">R-03</span></td><td>F-CI-SCOPE</td></tr><tr><td><span class="flag">R-05</span></td><td>F-DETERMINISM</td></tr><tr><td><span class="flag">R-06</span></td><td>F-DUPLICATION</td></tr><tr><td><span class="flag">R-07</span></td><td>F-REPEAL-TRAP</td></tr><tr><td><span class="flag">R-08</span></td><td>F-LEDGER-DRIFT</td></tr><tr><td><span class="flag">R-09</span></td><td>F-STALE-FLAG</td></tr><tr><td><span class="flag">R-10</span></td><td>F-UNSUPPORTED-CLAIM</td></tr><tr><td><span class="flag">R-11</span></td><td>F-BOARD-DRIFT</td></tr><tr><td><span class="flag">R-12</span></td><td>F-RATE-OPAQUE</td></tr></tbody>
-</table>
+</table></div>
 
 <h2>Reproduction</h2>
 <p class="mono">git ls-files | wc -l · python3 scripts/validate.py · node tools/verify.mjs ·

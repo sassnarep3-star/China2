@@ -124,12 +124,22 @@ NAV = [
 ]
 
 
+TABLE_WRAP = re.compile(r'(<table class="t[^"]*">.*?</table>)', re.S)
+
+
+def wrap_tables(body):
+    """A <table> with display:block is unreliable across browsers; a scroll
+    container around a normal table is not. Every wide table gets one."""
+    return TABLE_WRAP.sub(lambda m: f'<div class="tscroll">{m.group(1)}</div>', body)
+
+
 def page(slug, title, subtitle, body, desc=""):
     parts = []
     for h, t in NAV:
         cls = ' class="on"' if h == slug else ""
         parts.append(f'<a href="{h}"{cls}>{e(t)}</a>')
     nav = "".join(parts)
+    body = wrap_tables(body)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
