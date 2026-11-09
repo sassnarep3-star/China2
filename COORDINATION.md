@@ -338,3 +338,23 @@ Relationship between the two cost matrices, stated plainly: `audit-86f0/cost-mat
   - Flagged for review F01–F15: https://sassnarep3-star.github.io/China2/repatriate/flagged.html
   - Exports: https://sassnarep3-star.github.io/China2/repatriate/exports/cost-ladders.csv (+ .json)
 - **Task board close-out:** R1 done · R2 done · R3 done · R4 done · R5 done · R6 done. Unverified items remain published as **needs review** (F01–F15) and do not block the site. This publication record is carried in a follow-up PR because the merge result did not exist before PR #19 merged (same pattern as prior sessions). No claim is made that prior dashboards' figures were all re-verified, that external links are continuously monitored, or that any personal tax amount was determined.
+
+---
+
+## Session `arena/e5c3fa35-china2` — Final integration, cost verification & unified dashboard (`convert/`)
+
+> **Environment note:** Arena pins this session to `arena/e5c3fa35-china2`; no other branch is created or switched. Claimed 2026-11-09 ~01:30 UTC after reading the full board (sessions `arena-996dc508`, `arena-fcd22b0c`, `arena/85f37d08`, `arena/86f0e94b`, `arena/de9755b1`, `arena/3e494fa5` — all closed and published) and inspecting all six dashboard trees (`docs/`, `site/`, `portal/`, `ladder/`, `audit-86f0/`, `repatriate/`) plus open PRs #12 and #17.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| C1 | Independent re-verification of every load-bearing claim against the live official source, this session | in progress | arena-e5c3fa35 | `convert/data/**` |
+| C2 | Extended method catalogue (all routes, pros/cons, step-by-step) + full cost decomposition per method | in progress | arena-e5c3fa35 | `convert/**` |
+| C3 | 40-increment cost tables ($10k→$400k) with per-component costs; unverifiable components blank + flagged | in progress | arena-e5c3fa35 | `convert/**` |
+| C4 | Unified mobile-first dashboard + executive summary; single entry point | in progress | arena-e5c3fa35 | `convert/**`, root `index.html`, `README.md` |
+| C5 | Repo review: publish the defects found in prior dashboards (read-only) | in progress | arena-e5c3fa35 | `convert/audit.html`, `convert/flagged.html` |
+| C6 | Independent verifier + CI workflow; all prior suites re-run green | in progress | arena-e5c3fa35 | `convert/verify.py`, `.github/workflows/verify-convert-e5c3fa35.yml` |
+| C7 | PR to main, merge, Pages live confirmation, record results | in progress | arena-e5c3fa35 | `COORDINATION.md` (append-only) |
+
+- Scope discipline: no prior session's research, data or prose is edited. `ladder/**`, `repatriate/**`, `docs/**`, `site/**`, `portal/**`, `audit-86f0/**`, `research/**`, `reports/**`, `scripts/**`, `tools/**` remain untouched except the disclosed mechanical regeneration required by `ladder/build.py`'s own CI parity gate (recorded below if it occurs).
+- Final-integration duty accepted per the brief: this session owns shared outputs — root `index.html` navigation and `README.md` — and will point them at the new unified dashboard while leaving every prior dashboard reachable.
+- Verification standard: every table row carries a link to the official or provider-primary source it came from; any component that cannot be confirmed from such a source stays blank and is published on `convert/flagged.html`; no value is inferred, interpolated or filled in.
