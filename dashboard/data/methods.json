@@ -1,0 +1,548 @@
+[
+ {
+  "id": "M01",
+  "group": "lawful",
+  "name": "Documented lawful income: bank conversion + SWIFT wire (the baseline lawful route)",
+  "short": "Documented income, bank FX + SWIFT",
+  "who": "A US citizen who can prove the RMB in the account came from lawful current-account income earned in China (salary, service income, pension, rent within the rules) on which PRC individual income tax has been paid or withheld.",
+  "basis": ["S01","S03","S12"],
+  "fee_model": "wire",
+  "spread_model": "retail",
+  "prc_tax_model": "none_on_conversion",
+  "quota": "No USD 50,000 cap where the purchase rests on documented current-account income. The caption that matters is DOMESTIC individual, which under S02 Art. 52(2) includes a foreign national continuously resident in China for 1 year or more; a non-domestic individual uses the documented route under S12 Q5. The USD 50,000 aggregate governs undocumented purchases and RMB sale.",
+  "steps": [
+   "Obtain the PRC individual income tax payment record for the years the balance was earned: download it from the individual income tax app, or request a 完税证明 (tax payment certificate) at the tax service hall.",
+   "Assemble the income file: employment contract or service invoices, payslips, and bank statements showing the credits. The amounts must reconcile to the balance you want to move.",
+   "Book a counter appointment at the branch holding the account. Documented individual FX is a counter product in practice; do not rely on an ATM or a blind app transfer for the first large transaction.",
+   "Ask for an executable all-in quote in writing: the USD selling rate applied, the 0.1% commission with its CNY 100 floor and CNY 500 cap, and the CNY 120 cable fee (S14). Compare that quote against the day's central parity (S24) and the state-bank boards (S26, S27).",
+   "Execute the purchase. Keep the 结汇/购汇 memo (exchange memo / 水单): it is the proof the conversion was authorised and is required for any later reconversion (S11).",
+   "Instruct the wire to your own US account. Keep the SWIFT MT103 and the remittance advice.",
+   "File FinCEN Form 114 (FBAR) by 15 April with automatic extension to 15 October if the aggregate of foreign accounts exceeded USD 10,000 at any time (S15), Form 8938 with the return if the threshold is met (S16, S28), and claim the PRC tax on Form 1116 (S17). Report any single movement over USD 10,000 into or out of the US on FinCEN Form 105 (S20)."
+  ],
+  "pros": [
+   "The only route that scales to any balance without an annual ceiling, because the ceiling is the size of the documented income (S01, S03, S12).",
+   "Zero incremental PRC tax on the conversion itself: converting money that already bore tax does not create a new PRC tax event. PRC tax already paid is creditable in the US, subject to the limitation (S17, S23).",
+   "Verified, published cost components: the bank tariff is itemised and the retail spread can be checked against the same-day state-bank boards.",
+   "Clean audit trail for both SAFE and the receiving US bank."
+  ],
+  "cons": [
+   "Fails if the documents do not tie to the balance. Counter review is discretionary and a thin file is refused.",
+   "Requires tax paperwork many people have never collected.",
+   "You bear the bank's own spread, which S07 confirms is unregulated and unpublished in advance.",
+   "US reporting is mandatory and separately penalised if missed (S15, S21, S28)."
+  ],
+  "cost_note": "All-in cost is the bank's commission plus cable plus the FX spread. Tax on the conversion itself: zero if the income already bore PRC tax. Tax on the income: not a conversion cost and not modelled here.",
+  "time": "1-10 business days"
+ },
+ {
+  "id": "M02",
+  "group": "lawful",
+  "name": "Same-bank global transfer (HSBC Global Transfer to your own overseas HSBC account)",
+  "short": "Same-bank global transfer",
+  "who": "Someone who holds an HSBC China relationship and can open or already holds an HSBC account in the US.",
+  "basis": ["S01","S03","S14"],
+  "fee_model": "global_same_name",
+  "spread_model": "retail",
+  "prc_tax_model": "none_on_conversion",
+  "quota": "Same documentary position as M01. The channel does not change the legal test; it changes the fee.",
+  "steps": [
+   "Complete the documentary file exactly as for M01 (tax record plus income file). A global transfer is a payment channel, not a substitute for the authorisation.",
+   "Confirm with the bank that the same-name overseas destination is enabled and that the specific remittance purpose is accepted.",
+   "Request the all-in quote and confirm the published tariff item that applies (HSBC lists same-name Global Transfer as free for 卓越理财 and CNY 50 / USD 7 for 运筹理财, S14).",
+   "Execute the conversion at HSBC China, then send by Global Transfer to your own HSBC US account.",
+   "Keep the exchange memo, the transfer confirmation and the receiving statement.",
+   "File FBAR, Form 8938 and Form 1116 as in M01."
+  ],
+  "pros": [
+   "The cheapest published fixed-fee channel: HSBC's own tariff lists same-name Global Transfer as free on its Premier tier and about USD 7 on the next tier, versus 0.1% + CNY 120 for a SWIFT wire (S14).",
+   "Same-group routing usually means fewer intermediary-bank deductions, so the amount that arrives is closer to the amount sent.",
+   "One institution on both ends simplifies the source-of-funds conversation."
+  ],
+  "cons": [
+   "Requires accounts at the same banking group in both countries. If you are not an HSBC customer, this route is not available and the fee comparison is irrelevant.",
+   "Tier-dependent: the free treatment depends on holding the qualifying tier, which has a minimum balance requirement (S14 notes).",
+   "The spread still applies and is still unpublishable in advance (S07).",
+   "One bank's published schedule is not a market rate; other banks publish different numbers."
+  ],
+  "cost_note": "Fixed fee is published and small. The dominant cost remains the FX spread, exactly as in M01.",
+  "time": "1-5 business days"
+ },
+ {
+  "id": "M03",
+  "group": "lawful",
+  "name": "Emigration asset transfer under PBOC Announcement [2004] No. 16 (no USD 50,000 cap, staged over up to 2 years)",
+  "short": "Emigration asset transfer",
+  "who": "A Chinese national who has emigrated (or is emigrating) from mainland China, or a foreign citizen inheriting a PRC estate, and who will cancel PRC household registration.",
+  "basis": ["S04","S05"],
+  "fee_model": "wire",
+  "spread_model": "retail",
+  "prc_tax_model": "settlement_required",
+  "quota": "No USD 50,000 annual cap. One application for the entire amount, released in up to three stages: at most half first, then at most half of the remainder after 12 months, and the balance after 24 months. Amounts up to RMB 200,000 may be released in one go after approval. Approval is local SAFE below RMB 500,000 and SAFE head office at or above it (S04 Art. 6 and 10).",
+  "steps": [
+   "Settle PRC tax first. Cancelling PRC household registration to emigrate requires a tax return and a tax settlement BEFORE deregistration (S05 Art. 10(5) and Art. 13).",
+   "Obtain the police-issued certificate of cancelled PRC household registration and the Chinese embassy/consulate certificate or authentication of your residence abroad (S04 Art. 8(4)).",
+   "Obtain the PRC tax certificate or tax payment vouchers from the competent tax authority where the assets or income arose (S04 Art. 8(6)).",
+   "Assemble the property-rights evidence and the written application describing the source of the assets and how they were realised (S04 Art. 8).",
+   "File one application for the whole amount with the SAFE branch at your original household registration location.",
+   "Receive the approval letter and the 核准件, then take it to a designated bank to buy FX and remit. Proceeds must go directly to your own account in the country of residence; cash withdrawal inside China is expressly prohibited (S04 Art. 11).",
+   "Repeat at 12 and 24 months for the staged releases, reusing the approval and the previous 核准件.",
+   "File FBAR, Form 8938, and where relevant Form 3520 (if any part is a gift from a foreign person above USD 100,000, S18)."
+  ],
+  "pros": [
+   "The only lawful route with no annual quota at all and a statutory timetable to move the entire balance (S04).",
+   "Amounts under RMB 200,000 can be released at once; under RMB 500,000 approval stays at local SAFE level.",
+   "Because the tax certificate is a mandatory exhibit, the route forces you to regularise the tax position, which removes the largest penalty exposure."
+  ],
+  "cons": [
+   "Requires you to be an emigrating Chinese national or a foreign heir. A US citizen who never held PRC household registration cannot use it.",
+   "Requires cancelling PRC household registration: a serious, effectively irreversible personal decision outside the scope of a cost table.",
+   "Up to two years to receive the whole amount; the release schedule is in the regulation, not negotiable.",
+   "SAFE head-office approval is needed at or above RMB 500,000 equivalent.",
+   "The tax settlement before deregistration can itself be the largest single amount in the whole exercise (S05, S29)."
+  ],
+  "cost_note": "Fees are the same bank charges as M01; the difference is the authority process, the staged releases and the mandatory tax settlement, which is a tax liability and not a fee.",
+  "time": "up to 24 months"
+ },
+ {
+  "id": "M04",
+  "group": "lawful",
+  "name": "Retain the RMB in China and convert only on actual need",
+  "short": "Keep RMB in China",
+  "who": "Anyone whose real need is not an immediate full exit, and who can keep the account compliant in China and in the US.",
+  "basis": ["S15","S16"],
+  "fee_model": "none",
+  "spread_model": "none",
+  "prc_tax_model": "none_on_conversion",
+  "quota": "No conversion, so no quota applies. US reporting still applies to the account itself.",
+  "steps": [
+   "Confirm the account remains properly documented and accessible, and that you can still operate it remotely.",
+   "File FBAR every year the aggregate exceeds USD 10,000 at any time (S15) and Form 8938 with the return if the threshold is met (S16).",
+   "Keep evidence of the source of the balance while you hold it; do not let the paper trail go stale.",
+   "Convert in tranches later if and when you actually need USD, using M01."
+  ],
+  "pros": [
+   "Zero conversion cost and zero PRC tax on conversion, because nothing is converted.",
+   "Avoids a forced sale at an unfavourable rate and keeps optionality.",
+   "Removes the timing risk of the spread and the intermediary fees."
+  ],
+  "cons": [
+   "The money is not in the US and cannot be spent there; this does not answer the question of getting it out.",
+   "You carry CNY/USD currency risk while you wait.",
+   "The compliance obligation continues every year, and a missed FBAR is penalised separately (S21, S28).",
+   "It is not a tax-avoidance strategy: the underlying PRC tax position on the income does not improve by waiting, and the lookback period keeps running (S29)."
+  ],
+  "cost_note": "Cost in fees is zero. The cost is currency exposure and continued reporting compliance.",
+  "time": "n/a"
+ },
+ {
+  "id": "M05",
+  "group": "lawful",
+  "name": "Receiving USD from abroad while in China and remitting it back out (original-route return)",
+  "short": "Original-route return of foreign FX",
+  "who": "Someone whose balance is actually foreign currency that was remitted into China, rather than RMB earned in China.",
+  "basis": ["S01","S03"],
+  "fee_model": "wire",
+  "spread_model": "none",
+  "prc_tax_model": "none_on_conversion",
+  "quota": "Return of unused foreign exchange by the original route on ID. Reconversion of exchanged RMB is limited to 24 months and needs the original memo (S11).",
+  "steps": [
+   "Establish whether the balance is really foreign currency, or RMB that was purchased earlier. The document trail differs.",
+   "If it is foreign currency remitted from abroad: present ID and ask to return the unused foreign exchange by the original route (S01 Art. 14).",
+   "If it is RMB bought earlier and unused: present ID and the original exchange memo, within 24 months of the exchange date (S11, S03 Art. 13(2)).",
+   "Remit to your own account and keep the SWIFT confirmation.",
+   "File FBAR and Form 8938 as applicable."
+  ],
+  "pros": [
+   "No conversion is needed if the balance is already USD, so there is no FX spread at all.",
+   "No PRC tax arises: this is a return of your own money, not new income.",
+   "The documentary burden is lighter than M01 when the original inbound remittance is documented."
+  ],
+  "cons": [
+   "Only works for money that came from abroad or for unused RMB bought earlier. It cannot be stretched to cover RMB earned in China.",
+   "The RMB reconversion window is 24 months and the memo is mandatory (S11).",
+   "The USD 500/day ID-only allowance is a reconversion allowance, not a general channel for large balances."
+  ],
+  "cost_note": "No FX cost if the balance is already USD. Wire fees as published.",
+  "time": "1-10 business days"
+ },
+ {
+  "id": "M06",
+  "group": "lawful",
+  "name": "Genuine gifts or family support from relatives in China (with Form 3520 where required)",
+  "short": "Genuine family gift",
+  "who": "Someone whose balance is genuinely money belonging to a PRC-resident relative, transferred as a real gift or support payment, not as a device to move your own money.",
+  "basis": ["S01","S03","S18"],
+  "fee_model": "wire",
+  "spread_model": "retail",
+  "prc_tax_model": "none_on_conversion",
+  "quota": "A domestic individual purchasing FX offshore for family support above the aggregate must present relationship and support evidence (S03 Art. 10(2)). Receiving above USD 100,000 from a nonresident individual in a year triggers Form 3520 (S18).",
+  "steps": [
+   "The relative establishes the documentary basis for the purchase: relationship evidence and the payer's income evidence, as S03 Art. 10(2) requires for family-support remittances above the aggregate.",
+   "The relative buys FX and remits to your US account, keeping the exchange memo and the remittance advice.",
+   "You report the receipt: Form 3520 Part IV if the aggregated gifts from that foreign person exceed USD 100,000 in the year (S18). Gifts are not taxable income in the US for the recipient.",
+   "File FBAR if you hold the account; the gift itself is not a foreign account."
+  ],
+  "pros": [
+   "Genuine gifts are not taxable income to a US recipient, so there is no US income tax on the receipt.",
+   "Can use the relative's own annual aggregate for small amounts, which is cheap and simple.",
+   "Suited to genuine support and inheritance-like transfers."
+  ],
+  "cons": [
+   "This is only lawful if the money is genuinely the relative's. Using relatives to move your own money is quota evasion, which S02 Art. 39 and 45 penalise at up to 30% of the amount or more.",
+   "Above USD 100,000 a year it creates a separate Form 3520 filing obligation with its own penalties (S18).",
+   "Scales only in line with the relative's own documented income, so it cannot clear a large balance.",
+   "Structuring a gift to disguise a sale or your own funds is exactly the pattern Chinese and US authorities look for."
+  ],
+  "cost_note": "Same bank charges as M01, paid on the sending side. No PRC tax on a genuine gift; the risk is characterisation, not rate.",
+  "time": "1-10 business days"
+ },
+ {
+  "id": "M07",
+  "group": "lawful",
+  "name": "Foreign-currency cash carriage (up to the statutory limits) plus conversion in the US",
+  "short": "Carry cash",
+  "who": "Someone moving a small amount personally and prepared to declare it.",
+  "basis": ["S08","S03","S20"],
+  "fee_model": "cash_carry",
+  "spread_model": "cash_cn",
+  "prc_tax_model": "none_on_conversion",
+  "quota": "China: up to USD 5,000 no permit; USD 5,000-10,000 needs a bank carrying certificate; above USD 10,000 is in principle not permitted (S08). Withdrawing FX cash in China above USD 10,000 equivalent in a day requires prior SAFE filing (S03 Art. 30). US: any amount over USD 10,000 brought in must be reported on FinCEN Form 105 (S20).",
+  "steps": [
+   "Buy the foreign currency inside China first, through the documented route: the cash limit is on carrying, not a separate allocation.",
+   "Withdraw the cash. Above USD 10,000 equivalent per day this needs prior SAFE filing (S03 Art. 30); expect to show the purpose.",
+   "For USD 5,000-10,000, obtain the bank-issued carrying certificate for customs (S08).",
+   "Declare on entry to the US on FinCEN Form 105 for anything over USD 10,000 (S20).",
+   "Deposit and, if needed, convert in the US."
+  ],
+  "pros": [
+   "No Chinese wire fee and no intermediary-bank deduction.",
+   "Immediate and final: once the cash is in the US the FX risk is over.",
+   "The declared route is lawful at every step."
+  ],
+  "cons": [
+   "Capped so low that it is irrelevant to a USD 100,000 or USD 400,000 balance: at USD 10,000 maximum per trip it would take 10 to 40 trips.",
+   "Cash conversion spreads are the worst in the market: HSBC's own schedule prices cash handling at 0.25%-0.4% on top and treats cash-to-remittance conversion at 1% (S14), and the banknote rate is worse than the telegraphic rate.",
+   "Physical loss, theft and seizure risk; a failure to file FinCEN Form 105 risks forfeiture (S20).",
+   "Carrying above USD 10,000 out of China is in principle not permitted (S08), so the lawful ceiling is low."
+  ],
+  "cost_note": "Fee per trip rather than a percentage, plus a wider cash spread. Computed below with the published cash handling charges only; the cash FX spread is not published.",
+  "time": "1-2 days per trip"
+ },
+ {
+  "id": "M08",
+  "group": "lawful",
+  "name": "Overseas card and ATM spending plus overseas ATM withdrawal",
+  "short": "Card and ATM abroad",
+  "who": "Someone who wants to consume rather than repatriate, or who needs a small amount of cash abroad.",
+  "basis": ["S09","S14"],
+  "fee_model": "card_atm",
+  "spread_model": "card",
+  "prc_tax_model": "none_on_conversion",
+  "quota": "Hard cap: RMB 100,000 equivalent per person per natural year across all cards, and RMB 10,000 equivalent per card per day for overseas cash withdrawal. Exceeding it suspends overseas cash withdrawal for the rest of this year and all of next year (S09).",
+  "steps": [
+   "Confirm with the issuing bank that overseas use is enabled and what its own foreign-transaction fee is.",
+   "Spend or withdraw within the RMB 100,000 annual aggregate and the RMB 10,000 per-card daily withdrawal limit (S09).",
+   "Keep every statement: the card channel is reported and large or repetitive use attracts review.",
+   "Reconcile at year end against the annual cap before it blocks you."
+  ],
+  "pros": [
+   "No application, no tax certificate and no quota paperwork on the Chinese side.",
+   "Useful for genuine travel and consumption, where the spend would happen anyway.",
+   "Spreads on card settlement are usually narrower than cash."
+  ],
+  "cons": [
+   "RMB 100,000 a year is about USD 14,900 at the 2026-11-09 parity, so it cannot move a USD 100,000 or USD 400,000 balance in a year.",
+   "It produces spending, not USD in your bank account.",
+   "Using it as a disguised transfer (cash out abroad, deposit) collides with the anti-splitting rule (S01 Art. 7).",
+   "Fixed fees per withdrawal add up quickly on small withdrawals."
+  ],
+  "cost_note": "Published per-withdrawal fees from the HSBC schedule (CNY 20 plus 1% overseas ATM) plus a card settlement spread that is not published.",
+  "time": "ongoing"
+ },
+ {
+  "id": "M09",
+  "group": "lawful",
+  "name": "Qualified institutional channels: QDII funds and cross-border wealth management schemes",
+  "short": "QDII / cross-border scheme",
+  "who": "Someone investing, not repatriating, whose money can go into an approved product rather than out as cash.",
+  "basis": ["S03"],
+  "fee_model": "unverified",
+  "spread_model": "unverified",
+  "prc_tax_model": "unverified",
+  "quota": "Product-dependent. The law recognises qualified institutional investment channels, but the eligibility of a specific person and product was not verified in this session.",
+  "steps": [
+   "Identify an approved product and issuer.",
+   "Confirm whether your residency category is eligible.",
+   "Obtain the product's own fee schedule and the settlement route.",
+   "Not modelled here: no official fee or eligibility determination was verified in this session."
+  ],
+  "pros": [
+   "A recognised lawful capital-account channel, as opposed to an improvised one.",
+   "Can be appropriate for investment objectives rather than a pure exit."
+  ],
+  "cons": [
+   "It invests your money; it does not put USD in your pocket.",
+   "Eligibility, product fees and lock-ups were not verified in this session, so no cost is published.",
+   "Subject to its own quotas, which are separate from the individual current-account route."
+  ],
+  "cost_note": "Left blank. No official fee or eligibility figure was verified, so none is invented.",
+  "time": "n/a"
+ },
+ {
+  "id": "M10",
+  "group": "foundation",
+  "name": "Pay the PRC tax that is actually due, obtain the tax certificate, then convert (the prerequisite, not an alternative)",
+  "short": "Pay the PRC tax first",
+  "who": "Anyone whose RMB balance has not already borne PRC tax. This is the step that converts an unlawful position into a lawful one.",
+  "basis": ["S05","S06","S29"],
+  "fee_model": "tax_settlement",
+  "spread_model": "none",
+  "prc_tax_model": "statutory_rates",
+  "quota": "No quota issue: paying tax is the precondition for the documented routes. For a non-domiciled individual the China-source income is taxed regardless; worldwide income only enters after six continuous years of domicile-free residence (S06 Art. 4).",
+  "steps": [
+   "Characterise the income: salary and other comprehensive income is 3%-45% progressive after the annual CNY 60,000 allowance; interest, dividends, rent, property transfer and incidental income is a flat 20% (S05 Art. 3 and 6).",
+   "Gather the cost basis for any property transfer: original value and reasonable expenses are deductible (S06 Art. 16).",
+   "File the return and pay. If the tax is late, expect a late fee of 0.05% per day from the due date (S29 Art. 32).",
+   "Obtain the tax payment certificate (完税证明), which is the exhibit the bank requires for a non-domestic individual's purchase (S03 Art. 13, S12 Q5).",
+   "Convert through M01 or M02.",
+   "Claim the PRC tax as a foreign tax credit on Form 1116, subject to the limitation (S17, S23)."
+  ],
+  "pros": [
+   "Removes the entire evasion exposure: up to 30% of the amount or more (S02 Art. 39, 45), plus 0.05% per day late fees (S29 Art. 32).",
+   "Produces the tax certificate that unlocks the documented conversion routes.",
+   "The PRC tax is then creditable in the US, so the net combined burden is usually the higher of the two rates, not the sum (S17, S23).",
+   "Ends the departure-block risk for anyone who still travels to China (S29 Art. 44)."
+  ],
+  "cons": [
+   "It is a real cash cost and can dwarf every fee in this project.",
+   "The 3%-45% band means the amount depends entirely on facts this project does not have.",
+   "Voluntary disclosure after years of non-filing needs care; the lookback is 3-5 years and unlimited for evasion (S29 Art. 52)."
+  ],
+  "cost_note": "Shown separately as an exposure band at statutory rates, never merged into the fee estimate, because it is a tax on income and not a cost of converting.",
+  "time": "1-3 months"
+ },
+ {
+  "id": "M11",
+  "group": "lawful",
+  "name": "Sell the China-side asset in RMB to a buyer who will handle their own FX (property, equity)",
+  "short": "Sell the asset locally",
+  "who": "Someone whose balance is the proceeds of a PRC property or equity holding rather than accumulated salary.",
+  "basis": ["S05","S06","S04"],
+  "fee_model": "wire",
+  "spread_model": "retail",
+  "prc_tax_model": "property_20",
+  "quota": "The sale itself is taxed at 20% of the gain. Moving the proceeds abroad then follows the ordinary documented route (M01) or, if you are emigrating, the asset-transfer route (M03).",
+  "steps": [
+   "Establish the cost basis: original purchase price, related taxes and reasonable expenses (S06 Art. 16).",
+   "Complete the transfer. The property registration authority verifies the individual income tax on the transfer and checks the tax payment certificate before registering it (S05 Art. 15).",
+   "Pay the 20% tax on the gain and obtain the certificate.",
+   "Move the net proceeds by M01, or by M03 if you are emigrating and cancelling household registration.",
+   "Report the disposition in the US and claim the PRC tax on Form 1116 (S17, S23)."
+  ],
+  "pros": [
+   "The tax is on the gain, not the gross price, so the effective rate on the whole balance is usually far below 20%.",
+   "The registration process itself forces the tax certificate to be produced, which then supports the FX purchase.",
+   "No USD 50,000 ceiling applies to the documented purchase."
+  ],
+  "cons": [
+   "Requires actually selling an asset, which may be the last thing you want to do.",
+   "20% of the gain is a real cost and cannot be converted into a fee.",
+   "US treatment of the same sale must be reconciled to avoid double counting the credit."
+  ],
+  "cost_note": "Fee side identical to M01; the tax on the gain is shown separately as an exposure.",
+  "time": "1-6 months"
+ },
+ {
+  "id": "M12",
+  "group": "lawful",
+  "name": "US-side reconciliation: FBAR, Form 8938, Form 1116 and Form 105 (mandatory, not optional)",
+  "short": "US reporting (mandatory)",
+  "who": "Every US citizen holding the Chinese account or receiving the money. This is not a way to move money; it is the compliance layer every route above inherits.",
+  "basis": ["S15","S16","S17","S20","S21","S28"],
+  "fee_model": "reporting",
+  "spread_model": "none",
+  "prc_tax_model": "none_on_conversion",
+  "quota": "FBAR above USD 10,000 aggregate at any time (S15). Form 8938 above USD 50,000 year-end or USD 75,000 at any time for a single US resident, higher if living abroad (S16). FinCEN Form 105 for any movement over USD 10,000 in or out of the US (S20).",
+  "steps": [
+   "File FinCEN Form 114 electronically by 15 April, with an automatic extension to 15 October (S15).",
+   "Attach Form 8938 to the return if the threshold is met (S16, S28).",
+   "File FinCEN Form 105 for any physical movement of more than USD 10,000 into or out of the US (S20).",
+   "Claim the PRC tax on Form 1116, checking the limitation before assuming a full credit (S17).",
+   "If returns were missed, consider the IRS compliance procedures rather than filing silently."
+  ],
+  "pros": [
+   "Filing costs nothing in government fees.",
+   "Removes the penalty exposure entirely: up to USD 16,536 non-willful and USD 165,353 willful per FBAR violation (S21), and USD 10,000 rising to USD 60,000 for Form 8938 (S28).",
+   "The foreign tax credit usually recovers much or all of the US tax on income already taxed in China (S17, S23)."
+  ],
+  "cons": [
+   "There is no way to opt out: it applies to every route, including doing nothing.",
+   "Penalties are per violation and can exceed the balance for small accounts.",
+   "The credit is limited; the excess carries forward rather than refunding."
+  ],
+  "cost_note": "No government fee. Professional preparation cost was not verified and is left blank.",
+  "time": "annual"
+ },
+ {
+  "id": "M13",
+  "group": "unlawful",
+  "name": "Structuring: splitting the balance into sub-limit transfers or using relatives' quotas",
+  "short": "Structuring / borrowed quotas",
+  "who": "Anyone considering it. Listed so it can be rejected explicitly.",
+  "basis": ["S01","S02"],
+  "fee_model": "rejected",
+  "spread_model": "rejected",
+  "prc_tax_model": "rejected",
+  "quota": "Prohibited. Splitting to evade the limit is expressly forbidden.",
+  "steps": [
+   "Not applicable: this is not a lawful procedure and no step-by-step is provided.",
+   "The lawful alternative is M01 for documented income, or M03 if you are emigrating.",
+   "Article 7 of PBOC Decree [2006] No. 3 forbids evading the limit by splitting a large amount into small batches; Article 39 and Article 45 of State Council Decree No. 532 penalise evasion and unlawful FX trading at up to 30% of the amount, and above 30% if serious."
+  ],
+  "pros": [
+   "None that survive review. It appears to work until it is detected."
+  ],
+  "cons": [
+   "Unlawful on its face: S01 Art. 7 and S02 Art. 39 and 45.",
+   "Penalty up to 30% of the amount, rising above 30% for serious cases, plus confiscation of the gains.",
+   "I can be criminal under S02 Art. 39, 45 and 46 for organising or introducing it.",
+   "It contaminates the paper trail that the lawful routes depend on, converting a fixable documentation problem into an enforcement problem."
+  ],
+  "cost_note": "Not costed as a price. The exposure is stated as statute: up to 30% of the amount or more, which at USD 400,000 is up to USD 120,000 or more.",
+  "time": "n/a"
+ },
+ {
+  "id": "M14",
+  "group": "unlawful",
+  "name": "Underground banks, private swaps and offshore 'mirror' settlement",
+  "short": "Underground bank / private swap",
+  "who": "Anyone considering it. Listed so it can be rejected explicitly.",
+  "basis": ["S02"],
+  "fee_model": "rejected",
+  "spread_model": "rejected",
+  "prc_tax_model": "rejected",
+  "quota": "Prohibited. Unlawful private FX trading and illegal introduction of FX trading are sanctioned directly.",
+  "steps": [
+   "Not applicable: no lawful procedure exists.",
+   "Article 45 of State Council Decree No. 532 covers private FX trading, disguised FX trading, buying and selling FX for profit, and unlawfully introducing FX trades: warning, confiscation of illegal gains, and a fine of up to 30% of the amount, above 30% if serious, plus criminal liability."
+  ],
+  "pros": [
+   "None that survive review. The quoted rate is attractive precisely because it prices the legal risk."
+  ],
+  "cons": [
+   "Directly penalised by S02 Art. 45, with criminal exposure.",
+   "The counterparty risk is unsecured: there is no legal remedy if the other side does not pay.",
+   "It creates an unexplained offshore deposit, which is a US reporting and source-of-funds problem as well.",
+   "Banks must report suspicious activity, so the receiving account becomes the weak point."
+  ],
+  "cost_note": "Not costed as a price. Minimum statutory exposure 30% of the amount under S02 Art. 45.",
+  "time": "n/a"
+ },
+ {
+  "id": "M15",
+  "group": "unlawful",
+  "name": "Crypto, stablecoin or RWA-token route",
+  "short": "Crypto / stablecoin",
+  "who": "Anyone considering it. Listed so it can be rejected explicitly.",
+  "basis": ["S10"],
+  "fee_model": "rejected",
+  "spread_model": "rejected",
+  "prc_tax_model": "rejected",
+  "quota": "Prohibited in China. Currency-to-virtual-currency conversion is an illegal financial activity.",
+  "steps": [
+   "Not applicable: no lawful procedure exists inside China.",
+   "Yin Fa [2026] No. 42 states that virtual-currency business activity is an illegal financial activity, that RMB-to-crypto conversion inside China is strictly prohibited and must be suppressed, and that financial institutions and payment institutions may not open accounts, move funds or clear for it. It also repeals the 2021 notice (Yin Fa [2021] No. 237)."
+  ],
+  "pros": [
+   "None inside China. The efficiency that makes crypto attractive is exactly what the prohibition targets."
+  ],
+  "cons": [
+   "Explicitly illegal in China: S10 Art. 1(1) and Art. 6.",
+   "Payment institutions and banks are barred from servicing it, so the on-ramp and off-ramp are the enforcement points.",
+   "Civil acts in breach are void and the loss falls on the investor (S10 Art. 19).",
+   "The US treats crypto as property with its own reporting, so it does not remove a reporting layer; it adds one."
+  ],
+  "cost_note": "Not costed. There is no lawful price to quote.",
+  "time": "n/a"
+ },
+ {
+  "id": "M16",
+  "group": "unlawful",
+  "name": "Domestic offshore-property purchase with purchased FX (buying foreign real estate)",
+  "short": "Buy foreign property with FX",
+  "who": "Anyone considering it. Listed because it is a commonly suggested 'solution'.",
+  "basis": ["S12"],
+  "fee_model": "rejected",
+  "spread_model": "rejected",
+  "prc_tax_model": "rejected",
+  "quota": "Prohibited: purchased FX may not be used for overseas property, securities investment or life insurance and investment-return insurance, per SAFE's FAQ citing Hui Fa [2016] No. 36.",
+  "steps": [
+   "Not applicable: the use of the purchased FX is prohibited, so the transaction cannot be structured lawfully this way.",
+   "If the goal is genuinely to hold foreign property, the lawful question is an immigration and asset-transfer question, not an FX workaround."
+  ],
+  "pros": [
+   "None as a conversion method; it converts a currency problem into a capital-account violation."
+  ],
+  "cons": [
+   "Prohibited use of purchased FX (S12 Q3).",
+   "Misdeclaring the purpose on the FX purchase form is a false declaration, which is separately sanctioned.",
+   "It does not produce liquid USD."
+  ],
+  "cost_note": "Not costed as a price.",
+  "time": "n/a"
+ },
+ {
+  "id": "M17",
+  "group": "unlawful",
+  "name": "Deliberately classifying the income wrongly to keep it outside PRC tax",
+  "short": "Misclassify the income",
+  "who": "Anyone considering it. Listed so it can be rejected explicitly.",
+  "basis": ["S05","S29"],
+  "fee_model": "rejected",
+  "spread_model": "rejected",
+  "prc_tax_model": "rejected",
+  "quota": "Not a route: it is under-reporting, and the tax authority may adjust the classification.",
+  "steps": [
+   "Not applicable: no lawful procedure exists.",
+   "The tax authority may make a reasonable adjustment where an arrangement lacks a reasonable commercial purpose and produces an improper tax benefit (S05 Art. 8).",
+   "Under-collection through the taxpayer's own error can be pursued for 3 years, 5 in special cases, and without limit for evasion (S29 Art. 52)."
+  ],
+  "pros": [
+   "None. It looks like a saving only until the assessment arrives."
+  ],
+  "cons": [
+   "Adjustment plus back tax plus 0.05% per day late fees (S29 Art. 32).",
+   "For evasion, no limitation period at all (S29 Art. 52).",
+   "The tax certificate the bank needs cannot be issued for tax that was never paid, so the conversion route still fails."
+  ],
+  "cost_note": "Not costed as a price.",
+  "time": "n/a"
+ },
+ {
+  "id": "M18",
+  "group": "unlawful",
+  "name": "Carry or move more than USD 10,000 in cash without a permit or declaration",
+  "short": "Undisclosed cash",
+  "who": "Anyone considering it. Listed so it can be rejected explicitly.",
+  "basis": ["S08","S02","S20","S21"],
+  "fee_model": "rejected",
+  "spread_model": "rejected",
+  "prc_tax_model": "rejected",
+  "quota": "Prohibited above the statutory ceilings on both sides.",
+  "steps": [
+   "Not applicable: the lawful version is M07, within USD 5,000 / USD 10,000 out of China and declared above USD 10,000 into the US.",
+   "China: carrying above USD 10,000 out is in principle not permitted (S08); unlawful carriage is penalised at up to 20% of the amount (S02 Art. 42).",
+   "US: failing to report more than USD 10,000 risks forfeiture and seizure and civil or criminal penalties (S20)."
+  ],
+  "pros": [
+   "None that survive review."
+  ],
+  "cons": [
+   "Up to 20% of the amount under S02 Art. 42 on the Chinese side.",
+   "Seizure and forfeiture on the US side (S20).",
+   "Structurally impossible for a large balance: the lawful ceiling is USD 10,000 per trip."
+  ],
+  "cost_note": "Not costed as a price. Exposure up to 20% of the amount under S02 Art. 42.",
+  "time": "n/a"
+ }
+]

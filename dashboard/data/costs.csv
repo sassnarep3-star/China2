@@ -1,0 +1,441 @@
+tier,method,fee_low,fee_high,spread_low,spread_high,total_low,total_high,pct_low,pct_high,status,note
+10000,M01,32.74,32.74,21.04,21.74,53.78,54.48,0.5378,0.5448,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+10000,M02,0.0,7.0,21.04,21.74,21.04,28.74,0.2104,0.2874,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+10000,M03,32.74,32.74,21.04,21.74,53.78,54.48,0.5378,0.5448,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+10000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+10000,M05,32.74,32.74,0.0,0.0,32.74,32.74,0.3274,0.3274,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+10000,M06,32.74,32.74,21.04,21.74,53.78,54.48,0.5378,0.5448,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+10000,M07,,,,,,,,,partial,"Requires 1 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+10000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+10000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+10000,M11,32.74,32.74,21.04,21.74,53.78,54.48,0.5378,0.5448,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+10000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+20000,M01,37.86,37.86,42.08,43.48,79.94,81.34,0.3997,0.4067,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+20000,M02,0.0,7.0,42.08,43.48,42.08,50.48,0.2104,0.2524,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+20000,M03,37.86,37.86,42.08,43.48,79.94,81.34,0.3997,0.4067,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+20000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+20000,M05,37.86,37.86,0.0,0.0,37.86,37.86,0.1893,0.1893,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+20000,M06,37.86,37.86,42.08,43.48,79.94,81.34,0.3997,0.4067,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+20000,M07,,,,,,,,,partial,"Requires 2 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+20000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+20000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+20000,M11,37.86,37.86,42.08,43.48,79.94,81.34,0.3997,0.4067,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+20000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+30000,M01,47.86,47.86,63.12,65.22,110.98,113.08,0.3699,0.3769,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+30000,M02,0.0,7.0,63.12,65.22,63.12,72.22,0.2104,0.2407,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+30000,M03,47.86,47.86,63.12,65.22,110.98,113.08,0.3699,0.3769,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+30000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+30000,M05,47.86,47.86,0.0,0.0,47.86,47.86,0.1595,0.1595,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+30000,M06,47.86,47.86,63.12,65.22,110.98,113.08,0.3699,0.3769,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+30000,M07,,,,,,,,,partial,"Requires 3 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+30000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+30000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+30000,M11,47.86,47.86,63.12,65.22,110.98,113.08,0.3699,0.3769,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+30000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+40000,M01,57.86,57.86,84.16,86.96,142.02,144.82,0.3551,0.3621,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+40000,M02,0.0,7.0,84.16,86.96,84.16,93.96,0.2104,0.2349,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+40000,M03,57.86,57.86,84.16,86.96,142.02,144.82,0.3551,0.3621,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+40000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+40000,M05,57.86,57.86,0.0,0.0,57.86,57.86,0.1447,0.1447,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+40000,M06,57.86,57.86,84.16,86.96,142.02,144.82,0.3551,0.3621,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+40000,M07,,,,,,,,,partial,"Requires 4 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+40000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+40000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+40000,M11,57.86,57.86,84.16,86.96,142.02,144.82,0.3551,0.3621,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+40000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+50000,M01,67.86,67.86,105.2,108.7,173.06,176.56,0.3461,0.3531,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+50000,M02,0.0,7.0,105.2,108.7,105.2,115.7,0.2104,0.2314,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+50000,M03,67.86,67.86,105.2,108.7,173.06,176.56,0.3461,0.3531,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+50000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+50000,M05,67.86,67.86,0.0,0.0,67.86,67.86,0.1357,0.1357,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+50000,M06,67.86,67.86,105.2,108.7,173.06,176.56,0.3461,0.3531,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+50000,M07,,,,,,,,,partial,"Requires 5 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+50000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+50000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+50000,M11,67.86,67.86,105.2,108.7,173.06,176.56,0.3461,0.3531,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+50000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+60000,M01,77.86,77.86,126.24,130.44,204.1,208.3,0.3402,0.3472,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+60000,M02,0.0,7.0,126.24,130.44,126.24,137.44,0.2104,0.2291,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+60000,M03,77.86,77.86,126.24,130.44,204.1,208.3,0.3402,0.3472,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+60000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+60000,M05,77.86,77.86,0.0,0.0,77.86,77.86,0.1298,0.1298,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+60000,M06,77.86,77.86,126.24,130.44,204.1,208.3,0.3402,0.3472,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+60000,M07,,,,,,,,,partial,"Requires 6 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+60000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+60000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+60000,M11,77.86,77.86,126.24,130.44,204.1,208.3,0.3402,0.3472,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+60000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+70000,M01,87.86,87.86,147.28,152.18,235.14,240.04,0.3359,0.3429,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+70000,M02,0.0,7.0,147.28,152.18,147.28,159.18,0.2104,0.2274,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+70000,M03,87.86,87.86,147.28,152.18,235.14,240.04,0.3359,0.3429,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+70000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+70000,M05,87.86,87.86,0.0,0.0,87.86,87.86,0.1255,0.1255,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+70000,M06,87.86,87.86,147.28,152.18,235.14,240.04,0.3359,0.3429,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+70000,M07,,,,,,,,,partial,"Requires 7 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+70000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+70000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+70000,M11,87.86,87.86,147.28,152.18,235.14,240.04,0.3359,0.3429,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+70000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+80000,M01,92.28,92.28,168.32,173.92,260.6,266.2,0.3257,0.3327,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+80000,M02,0.0,7.0,168.32,173.92,168.32,180.92,0.2104,0.2262,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+80000,M03,92.28,92.28,168.32,173.92,260.6,266.2,0.3257,0.3327,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+80000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+80000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.1153,0.1153,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+80000,M06,92.28,92.28,168.32,173.92,260.6,266.2,0.3257,0.3327,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+80000,M07,,,,,,,,,partial,"Requires 8 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+80000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+80000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+80000,M11,92.28,92.28,168.32,173.92,260.6,266.2,0.3257,0.3327,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+80000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+90000,M01,92.28,92.28,189.36,195.66,281.64,287.94,0.3129,0.3199,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+90000,M02,0.0,7.0,189.36,195.66,189.36,202.66,0.2104,0.2252,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+90000,M03,92.28,92.28,189.36,195.66,281.64,287.94,0.3129,0.3199,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+90000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+90000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.1025,0.1025,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+90000,M06,92.28,92.28,189.36,195.66,281.64,287.94,0.3129,0.3199,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+90000,M07,,,,,,,,,partial,"Requires 9 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+90000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+90000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+90000,M11,92.28,92.28,189.36,195.66,281.64,287.94,0.3129,0.3199,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+90000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+100000,M01,92.28,92.28,210.4,217.4,302.68,309.68,0.3027,0.3097,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+100000,M02,0.0,7.0,210.4,217.4,210.4,224.4,0.2104,0.2244,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+100000,M03,92.28,92.28,210.4,217.4,302.68,309.68,0.3027,0.3097,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+100000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+100000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0923,0.0923,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+100000,M06,92.28,92.28,210.4,217.4,302.68,309.68,0.3027,0.3097,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+100000,M07,,,,,,,,,partial,"Requires 10 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+100000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+100000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+100000,M11,92.28,92.28,210.4,217.4,302.68,309.68,0.3027,0.3097,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+100000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+110000,M01,92.28,92.28,231.44,239.14,323.72,331.42,0.2943,0.3013,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+110000,M02,0.0,7.0,231.44,239.14,231.44,246.14,0.2104,0.2238,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+110000,M03,92.28,92.28,231.44,239.14,323.72,331.42,0.2943,0.3013,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+110000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+110000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0839,0.0839,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+110000,M06,92.28,92.28,231.44,239.14,323.72,331.42,0.2943,0.3013,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+110000,M07,,,,,,,,,partial,"Requires 11 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+110000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+110000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+110000,M11,92.28,92.28,231.44,239.14,323.72,331.42,0.2943,0.3013,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+110000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+120000,M01,92.28,92.28,252.48,260.88,344.76,353.16,0.2873,0.2943,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+120000,M02,0.0,7.0,252.48,260.88,252.48,267.88,0.2104,0.2232,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+120000,M03,92.28,92.28,252.48,260.88,344.76,353.16,0.2873,0.2943,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+120000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+120000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0769,0.0769,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+120000,M06,92.28,92.28,252.48,260.88,344.76,353.16,0.2873,0.2943,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+120000,M07,,,,,,,,,partial,"Requires 12 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+120000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+120000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+120000,M11,92.28,92.28,252.48,260.88,344.76,353.16,0.2873,0.2943,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+120000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+130000,M01,92.28,92.28,273.52,282.62,365.8,374.9,0.2814,0.2884,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+130000,M02,0.0,7.0,273.52,282.62,273.52,289.62,0.2104,0.2228,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+130000,M03,92.28,92.28,273.52,282.62,365.8,374.9,0.2814,0.2884,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+130000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+130000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.071,0.071,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+130000,M06,92.28,92.28,273.52,282.62,365.8,374.9,0.2814,0.2884,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+130000,M07,,,,,,,,,partial,"Requires 13 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+130000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+130000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+130000,M11,92.28,92.28,273.52,282.62,365.8,374.9,0.2814,0.2884,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+130000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+140000,M01,92.28,92.28,294.56,304.36,386.84,396.64,0.2763,0.2833,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+140000,M02,0.0,7.0,294.56,304.36,294.56,311.36,0.2104,0.2224,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+140000,M03,92.28,92.28,294.56,304.36,386.84,396.64,0.2763,0.2833,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+140000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+140000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0659,0.0659,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+140000,M06,92.28,92.28,294.56,304.36,386.84,396.64,0.2763,0.2833,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+140000,M07,,,,,,,,,partial,"Requires 14 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+140000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+140000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+140000,M11,92.28,92.28,294.56,304.36,386.84,396.64,0.2763,0.2833,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+140000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+150000,M01,92.28,92.28,315.6,326.1,407.88,418.38,0.2719,0.2789,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+150000,M02,0.0,7.0,315.6,326.1,315.6,333.1,0.2104,0.2221,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+150000,M03,92.28,92.28,315.6,326.1,407.88,418.38,0.2719,0.2789,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+150000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+150000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0615,0.0615,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+150000,M06,92.28,92.28,315.6,326.1,407.88,418.38,0.2719,0.2789,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+150000,M07,,,,,,,,,partial,"Requires 15 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+150000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+150000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+150000,M11,92.28,92.28,315.6,326.1,407.88,418.38,0.2719,0.2789,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+150000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+160000,M01,92.28,92.28,336.64,347.84,428.92,440.12,0.2681,0.2751,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+160000,M02,0.0,7.0,336.64,347.84,336.64,354.84,0.2104,0.2218,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+160000,M03,92.28,92.28,336.64,347.84,428.92,440.12,0.2681,0.2751,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+160000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+160000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0577,0.0577,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+160000,M06,92.28,92.28,336.64,347.84,428.92,440.12,0.2681,0.2751,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+160000,M07,,,,,,,,,partial,"Requires 16 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+160000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+160000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+160000,M11,92.28,92.28,336.64,347.84,428.92,440.12,0.2681,0.2751,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+160000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+170000,M01,92.28,92.28,357.68,369.58,449.96,461.86,0.2647,0.2717,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+170000,M02,0.0,7.0,357.68,369.58,357.68,376.58,0.2104,0.2215,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+170000,M03,92.28,92.28,357.68,369.58,449.96,461.86,0.2647,0.2717,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+170000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+170000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0543,0.0543,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+170000,M06,92.28,92.28,357.68,369.58,449.96,461.86,0.2647,0.2717,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+170000,M07,,,,,,,,,partial,"Requires 17 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+170000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+170000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+170000,M11,92.28,92.28,357.68,369.58,449.96,461.86,0.2647,0.2717,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+170000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+180000,M01,92.28,92.28,378.72,391.32,471.0,483.6,0.2617,0.2687,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+180000,M02,0.0,7.0,378.72,391.32,378.72,398.32,0.2104,0.2213,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+180000,M03,92.28,92.28,378.72,391.32,471.0,483.6,0.2617,0.2687,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+180000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+180000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0513,0.0513,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+180000,M06,92.28,92.28,378.72,391.32,471.0,483.6,0.2617,0.2687,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+180000,M07,,,,,,,,,partial,"Requires 18 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+180000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+180000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+180000,M11,92.28,92.28,378.72,391.32,471.0,483.6,0.2617,0.2687,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+180000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+190000,M01,92.28,92.28,399.76,413.06,492.04,505.34,0.259,0.266,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+190000,M02,0.0,7.0,399.76,413.06,399.76,420.06,0.2104,0.2211,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+190000,M03,92.28,92.28,399.76,413.06,492.04,505.34,0.259,0.266,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+190000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+190000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0486,0.0486,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+190000,M06,92.28,92.28,399.76,413.06,492.04,505.34,0.259,0.266,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+190000,M07,,,,,,,,,partial,"Requires 19 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+190000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+190000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+190000,M11,92.28,92.28,399.76,413.06,492.04,505.34,0.259,0.266,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+190000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+200000,M01,92.28,92.28,420.8,434.8,513.08,527.08,0.2565,0.2635,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+200000,M02,0.0,7.0,420.8,434.8,420.8,441.8,0.2104,0.2209,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+200000,M03,92.28,92.28,420.8,434.8,513.08,527.08,0.2565,0.2635,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+200000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+200000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0461,0.0461,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+200000,M06,92.28,92.28,420.8,434.8,513.08,527.08,0.2565,0.2635,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+200000,M07,,,,,,,,,partial,"Requires 20 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+200000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+200000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+200000,M11,92.28,92.28,420.8,434.8,513.08,527.08,0.2565,0.2635,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+200000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+210000,M01,92.28,92.28,441.84,456.54,534.12,548.82,0.2543,0.2613,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+210000,M02,0.0,7.0,441.84,456.54,441.84,463.54,0.2104,0.2207,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+210000,M03,92.28,92.28,441.84,456.54,534.12,548.82,0.2543,0.2613,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+210000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+210000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0439,0.0439,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+210000,M06,92.28,92.28,441.84,456.54,534.12,548.82,0.2543,0.2613,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+210000,M07,,,,,,,,,partial,"Requires 21 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+210000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+210000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+210000,M11,92.28,92.28,441.84,456.54,534.12,548.82,0.2543,0.2613,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+210000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+220000,M01,92.28,92.28,462.88,478.28,555.16,570.56,0.2523,0.2593,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+220000,M02,0.0,7.0,462.88,478.28,462.88,485.28,0.2104,0.2206,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+220000,M03,92.28,92.28,462.88,478.28,555.16,570.56,0.2523,0.2593,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+220000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+220000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0419,0.0419,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+220000,M06,92.28,92.28,462.88,478.28,555.16,570.56,0.2523,0.2593,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+220000,M07,,,,,,,,,partial,"Requires 22 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+220000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+220000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+220000,M11,92.28,92.28,462.88,478.28,555.16,570.56,0.2523,0.2593,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+220000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+230000,M01,92.28,92.28,483.92,500.02,576.2,592.3,0.2505,0.2575,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+230000,M02,0.0,7.0,483.92,500.02,483.92,507.02,0.2104,0.2204,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+230000,M03,92.28,92.28,483.92,500.02,576.2,592.3,0.2505,0.2575,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+230000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+230000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0401,0.0401,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+230000,M06,92.28,92.28,483.92,500.02,576.2,592.3,0.2505,0.2575,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+230000,M07,,,,,,,,,partial,"Requires 23 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+230000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+230000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+230000,M11,92.28,92.28,483.92,500.02,576.2,592.3,0.2505,0.2575,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+230000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+240000,M01,92.28,92.28,504.96,521.76,597.24,614.04,0.2488,0.2558,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+240000,M02,0.0,7.0,504.96,521.76,504.96,528.76,0.2104,0.2203,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+240000,M03,92.28,92.28,504.96,521.76,597.24,614.04,0.2488,0.2558,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+240000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+240000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0384,0.0384,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+240000,M06,92.28,92.28,504.96,521.76,597.24,614.04,0.2488,0.2558,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+240000,M07,,,,,,,,,partial,"Requires 24 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+240000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+240000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+240000,M11,92.28,92.28,504.96,521.76,597.24,614.04,0.2488,0.2558,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+240000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+250000,M01,92.28,92.28,526.0,543.5,618.28,635.78,0.2473,0.2543,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+250000,M02,0.0,7.0,526.0,543.5,526.0,550.5,0.2104,0.2202,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+250000,M03,92.28,92.28,526.0,543.5,618.28,635.78,0.2473,0.2543,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+250000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+250000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0369,0.0369,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+250000,M06,92.28,92.28,526.0,543.5,618.28,635.78,0.2473,0.2543,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+250000,M07,,,,,,,,,partial,"Requires 25 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+250000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+250000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+250000,M11,92.28,92.28,526.0,543.5,618.28,635.78,0.2473,0.2543,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+250000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+260000,M01,92.28,92.28,547.04,565.24,639.32,657.52,0.2459,0.2529,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+260000,M02,0.0,7.0,547.04,565.24,547.04,572.24,0.2104,0.2201,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+260000,M03,92.28,92.28,547.04,565.24,639.32,657.52,0.2459,0.2529,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+260000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+260000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0355,0.0355,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+260000,M06,92.28,92.28,547.04,565.24,639.32,657.52,0.2459,0.2529,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+260000,M07,,,,,,,,,partial,"Requires 26 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+260000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+260000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+260000,M11,92.28,92.28,547.04,565.24,639.32,657.52,0.2459,0.2529,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+260000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+270000,M01,92.28,92.28,568.08,586.98,660.36,679.26,0.2446,0.2516,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+270000,M02,0.0,7.0,568.08,586.98,568.08,593.98,0.2104,0.22,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+270000,M03,92.28,92.28,568.08,586.98,660.36,679.26,0.2446,0.2516,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+270000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+270000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0342,0.0342,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+270000,M06,92.28,92.28,568.08,586.98,660.36,679.26,0.2446,0.2516,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+270000,M07,,,,,,,,,partial,"Requires 27 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+270000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+270000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+270000,M11,92.28,92.28,568.08,586.98,660.36,679.26,0.2446,0.2516,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+270000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+280000,M01,92.28,92.28,589.12,608.72,681.4,701.0,0.2434,0.2504,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+280000,M02,0.0,7.0,589.12,608.72,589.12,615.72,0.2104,0.2199,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+280000,M03,92.28,92.28,589.12,608.72,681.4,701.0,0.2434,0.2504,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+280000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+280000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.033,0.033,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+280000,M06,92.28,92.28,589.12,608.72,681.4,701.0,0.2434,0.2504,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+280000,M07,,,,,,,,,partial,"Requires 28 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+280000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+280000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+280000,M11,92.28,92.28,589.12,608.72,681.4,701.0,0.2434,0.2504,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+280000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+290000,M01,92.28,92.28,610.16,630.46,702.44,722.74,0.2422,0.2492,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+290000,M02,0.0,7.0,610.16,630.46,610.16,637.46,0.2104,0.2198,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+290000,M03,92.28,92.28,610.16,630.46,702.44,722.74,0.2422,0.2492,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+290000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+290000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0318,0.0318,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+290000,M06,92.28,92.28,610.16,630.46,702.44,722.74,0.2422,0.2492,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+290000,M07,,,,,,,,,partial,"Requires 29 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+290000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+290000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+290000,M11,92.28,92.28,610.16,630.46,702.44,722.74,0.2422,0.2492,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+290000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+300000,M01,92.28,92.28,631.2,652.2,723.48,744.48,0.2412,0.2482,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+300000,M02,0.0,7.0,631.2,652.2,631.2,659.2,0.2104,0.2197,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+300000,M03,92.28,92.28,631.2,652.2,723.48,744.48,0.2412,0.2482,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+300000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+300000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0308,0.0308,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+300000,M06,92.28,92.28,631.2,652.2,723.48,744.48,0.2412,0.2482,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+300000,M07,,,,,,,,,partial,"Requires 30 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+300000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+300000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+300000,M11,92.28,92.28,631.2,652.2,723.48,744.48,0.2412,0.2482,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+300000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+310000,M01,92.28,92.28,652.24,673.94,744.52,766.22,0.2402,0.2472,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+310000,M02,0.0,7.0,652.24,673.94,652.24,680.94,0.2104,0.2197,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+310000,M03,92.28,92.28,652.24,673.94,744.52,766.22,0.2402,0.2472,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+310000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+310000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0298,0.0298,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+310000,M06,92.28,92.28,652.24,673.94,744.52,766.22,0.2402,0.2472,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+310000,M07,,,,,,,,,partial,"Requires 31 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+310000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+310000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+310000,M11,92.28,92.28,652.24,673.94,744.52,766.22,0.2402,0.2472,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+310000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+320000,M01,92.28,92.28,673.28,695.68,765.56,787.96,0.2392,0.2462,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+320000,M02,0.0,7.0,673.28,695.68,673.28,702.68,0.2104,0.2196,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+320000,M03,92.28,92.28,673.28,695.68,765.56,787.96,0.2392,0.2462,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+320000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+320000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0288,0.0288,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+320000,M06,92.28,92.28,673.28,695.68,765.56,787.96,0.2392,0.2462,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+320000,M07,,,,,,,,,partial,"Requires 32 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+320000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+320000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+320000,M11,92.28,92.28,673.28,695.68,765.56,787.96,0.2392,0.2462,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+320000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+330000,M01,92.28,92.28,694.32,717.42,786.6,809.7,0.2384,0.2454,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+330000,M02,0.0,7.0,694.32,717.42,694.32,724.42,0.2104,0.2195,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+330000,M03,92.28,92.28,694.32,717.42,786.6,809.7,0.2384,0.2454,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+330000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+330000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.028,0.028,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+330000,M06,92.28,92.28,694.32,717.42,786.6,809.7,0.2384,0.2454,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+330000,M07,,,,,,,,,partial,"Requires 33 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+330000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+330000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+330000,M11,92.28,92.28,694.32,717.42,786.6,809.7,0.2384,0.2454,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+330000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+340000,M01,92.28,92.28,715.36,739.16,807.64,831.44,0.2375,0.2445,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+340000,M02,0.0,7.0,715.36,739.16,715.36,746.16,0.2104,0.2195,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+340000,M03,92.28,92.28,715.36,739.16,807.64,831.44,0.2375,0.2445,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+340000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+340000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0271,0.0271,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+340000,M06,92.28,92.28,715.36,739.16,807.64,831.44,0.2375,0.2445,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+340000,M07,,,,,,,,,partial,"Requires 34 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+340000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+340000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+340000,M11,92.28,92.28,715.36,739.16,807.64,831.44,0.2375,0.2445,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+340000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+350000,M01,92.28,92.28,736.4,760.9,828.68,853.18,0.2368,0.2438,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+350000,M02,0.0,7.0,736.4,760.9,736.4,767.9,0.2104,0.2194,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+350000,M03,92.28,92.28,736.4,760.9,828.68,853.18,0.2368,0.2438,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+350000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+350000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0264,0.0264,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+350000,M06,92.28,92.28,736.4,760.9,828.68,853.18,0.2368,0.2438,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+350000,M07,,,,,,,,,partial,"Requires 35 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+350000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+350000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+350000,M11,92.28,92.28,736.4,760.9,828.68,853.18,0.2368,0.2438,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+350000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+360000,M01,92.28,92.28,757.44,782.64,849.72,874.92,0.236,0.243,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+360000,M02,0.0,7.0,757.44,782.64,757.44,789.64,0.2104,0.2193,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+360000,M03,92.28,92.28,757.44,782.64,849.72,874.92,0.236,0.243,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+360000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+360000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0256,0.0256,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+360000,M06,92.28,92.28,757.44,782.64,849.72,874.92,0.236,0.243,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+360000,M07,,,,,,,,,partial,"Requires 36 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+360000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+360000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+360000,M11,92.28,92.28,757.44,782.64,849.72,874.92,0.236,0.243,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+360000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+370000,M01,92.28,92.28,778.48,804.38,870.76,896.66,0.2353,0.2423,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+370000,M02,0.0,7.0,778.48,804.38,778.48,811.38,0.2104,0.2193,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+370000,M03,92.28,92.28,778.48,804.38,870.76,896.66,0.2353,0.2423,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+370000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+370000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0249,0.0249,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+370000,M06,92.28,92.28,778.48,804.38,870.76,896.66,0.2353,0.2423,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+370000,M07,,,,,,,,,partial,"Requires 37 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+370000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+370000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+370000,M11,92.28,92.28,778.48,804.38,870.76,896.66,0.2353,0.2423,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+370000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+380000,M01,92.28,92.28,799.52,826.12,891.8,918.4,0.2347,0.2417,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+380000,M02,0.0,7.0,799.52,826.12,799.52,833.12,0.2104,0.2192,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+380000,M03,92.28,92.28,799.52,826.12,891.8,918.4,0.2347,0.2417,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+380000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+380000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0243,0.0243,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+380000,M06,92.28,92.28,799.52,826.12,891.8,918.4,0.2347,0.2417,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+380000,M07,,,,,,,,,partial,"Requires 38 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+380000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+380000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+380000,M11,92.28,92.28,799.52,826.12,891.8,918.4,0.2347,0.2417,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+380000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+390000,M01,92.28,92.28,820.56,847.86,912.84,940.14,0.2341,0.2411,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+390000,M02,0.0,7.0,820.56,847.86,820.56,854.86,0.2104,0.2192,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+390000,M03,92.28,92.28,820.56,847.86,912.84,940.14,0.2341,0.2411,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+390000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+390000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0237,0.0237,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+390000,M06,92.28,92.28,820.56,847.86,912.84,940.14,0.2341,0.2411,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+390000,M07,,,,,,,,,partial,"Requires 39 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+390000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+390000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+390000,M11,92.28,92.28,820.56,847.86,912.84,940.14,0.2341,0.2411,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+390000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
+400000,M01,92.28,92.28,841.6,869.6,933.88,961.88,0.2335,0.2405,verified,"0.1% commission clamped to CNY 100-500 plus CNY 120 cable, plus the verified bank spread."
+400000,M02,0.0,7.0,841.6,869.6,841.6,876.6,0.2104,0.2191,verified,HSBC lists same-name Global Transfer free on the top tier and CNY 50 (reference price USD 7) on the next.
+400000,M03,92.28,92.28,841.6,869.6,933.88,961.88,0.2335,0.2405,verified_fees,"Bank fees identical to M01. Adds a mandatory PRC tax settlement before deregistration, shown separately as tax exposure, not as a fee."
+400000,M04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no_conversion,"Nothing is converted, so there is no conversion cost. The money does not reach the US and the annual US reporting duty continues."
+400000,M05,92.28,92.28,0.0,0.0,92.28,92.28,0.0231,0.0231,verified,No FX spread because the balance is already USD. Only applies to money that originally came from abroad or to unused RMB within the 24-month reconversion window.
+400000,M06,92.28,92.28,841.6,869.6,933.88,961.88,0.2335,0.2405,verified,"Same bank mechanics as M01, incurred by the sending relative. Lawful only if the money is genuinely theirs. Form 3520 above USD 100,000 a year."
+400000,M07,,,,,,,,,partial,"Requires 40 trips at the USD 10,000 statutory ceiling. Cash withdrawal charge 0.25%-0.4% (min CNY 40) per trip, published. The cash exchange rate itself is not published, so the spread is blank."
+400000,M08,,,,,,,,,partial,"CNY 20 + 1% per overseas withdrawal, published, at an assumed USD 1,000 withdrawal. Settlement spread not published. Hard ceiling of about USD 14,884/year (RMB 100,000) makes this unusable for large balances in one year."
+400000,M09,,,,,,,,,unverified,"No official fee or eligibility figure was verified this session, so the cost is left blank rather than estimated."
+400000,M11,92.28,92.28,841.6,869.6,933.88,961.88,0.2335,0.2405,verified_fees,Bank fees identical to M01. The 20% PRC tax on the gain is a tax exposure shown separately.
+400000,M12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,mandatory_no_fee,No government filing fee. Professional preparation cost was not verified and is left blank.
