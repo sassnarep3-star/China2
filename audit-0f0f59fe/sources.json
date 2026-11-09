@@ -1,0 +1,142 @@
+[
+  {
+    "id": "P01",
+    "authority": "People's Bank of China",
+    "title": "Administrative Rules on Individuals' Foreign Exchange (PBOC Decree [2006] No. 3)",
+    "url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
+    "locator": "Arts. 7, 9, 13–15; English translation on the PBOC site",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "Article 7 prohibits evading limit administration by splitting large amounts or using fabricated vouchers. Article 9 defines the annual limit as applying to individual FX sales and domestic-individual FX purchases. Article 13 describes a non-domestic individual's conversion of legitimate current-account RMB income using identity and relevant documents."
+  },
+  {
+    "id": "P02",
+    "authority": "State Administration of Foreign Exchange, Tianjin Branch",
+    "title": "2026 FX administration Q&A: how a foreign individual converts employment income",
+    "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+    "locator": "Question: how to purchase and remit foreign exchange for remuneration earned while working in China; cites Hui Fa [2020] No. 14, Art. 59",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The answer says lawful current-account RMB income earned in China by a foreign individual is handled at a bank with valid identity documents and transaction-amount/source materials, including tax documents."
+  },
+  {
+    "id": "P03",
+    "authority": "State Administration of Foreign Exchange, Tianjin Branch",
+    "title": "2024 current-account FX Q&A: annual convenient purchase quota for foreign individuals",
+    "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
+    "locator": "Question: whether a foreign individual receives the annual convenient quota for FX purchases",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The answer says a foreign individual with lawful current-account RMB income uses identity and transaction-source documents including tax documents; foreign individuals holding a Foreigner Permanent Residence ID Card apply the annual convenient purchase quota."
+  },
+  {
+    "id": "P04",
+    "authority": "State Council of the People's Republic of China, published by SAFE",
+    "title": "Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)",
+    "url": "https://www.safe.gov.cn/safe/2008/0806/5321.html",
+    "locator": "Arts. 5, 12, 39–45, and 52(2)",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "Article 12 requires a genuine, lawful transaction basis and reasonable review of documents for current-account FX. Article 52(2) defines a domestic individual to include a foreign national continuously resident in China for one year or more. Articles 39–45 set sanctions for specified FX violations."
+  },
+  {
+    "id": "P05",
+    "authority": "State Taxation Administration of the People's Republic of China",
+    "title": "Individual Income Tax Law of the PRC (2018 revision)",
+    "url": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html",
+    "locator": "Arts. 1–7, especially Arts. 2, 3, and 6",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The law defines separate income categories; Art. 3 gives different rates for comprehensive income, business income, and specified other income. Art. 6 computes property-transfer taxable income as proceeds less original value and reasonable expenses."
+  },
+  {
+    "id": "P06",
+    "authority": "People's Bank of China / State Administration of Foreign Exchange, published by SAFE",
+    "title": "Interim Measures for the Administration of Sale and Payment of Foreign Exchange for Individuals' Outward Asset Transfers (official SAFE publication)",
+    "url": "https://www.safe.gov.cn/safe/2004/1116/4133.html",
+    "locator": "Arts. 2–3, 6, 8–11; SAFE page reproduces the measure and its application procedure",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The page describes a special emigration/inheritance transfer procedure. Applications concern legal assets owned by the applicant without a rights dispute; emigration transfers require a tax certificate and are subject to SAFE approval. Amounts above RMB 200,000 use staged remittances under Art. 6."
+  },
+  {
+    "id": "P07",
+    "authority": "HSBC Bank (China) Company Limited",
+    "title": "Tariff of Accounts and Services for Wealth and Personal Banking Business",
+    "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+    "locator": "Effective 31 October 2026; notes 2, 7, and 10; items 2.2.4.1–2.2.4.2, 2.2.6.1–2.2.6.2, and 2.2.7",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved; tariff remains subject to later notice",
+    "evidence": "The current schedule lists Premier/Advance telegraphic-transfer issuance at 0.1% with CNY100 minimum and CNY500 maximum plus CNY120 per cable. It says other-institution/intermediary charges are excluded and non-CNY charges are converted at an exchange rate set by the bank at payment time. Its Global Transfer-to-Family item is distinct from the International Education Payment item (USD7 reference for the latter); it does not establish a general same-name transfer fee/eligibility for this case."
+  },
+  {
+    "id": "P13",
+    "authority": "HSBC Bank (China) Company Limited",
+    "title": "Account and Service Tariff for Personal Customers (effective 1 January 2021; used by the existing ladder source ledger)",
+    "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/account-service-rates-cn.pdf",
+    "locator": "Cover and notes 2 and 9; items 5.1.1.1–5.1.1.2 and 5.3.1–5.3.3",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved; historical schedule, not used as a current quote",
+    "evidence": "This earlier schedule is expressly effective from 1 January 2021 and permits fee changes by notice. It lists a USD7 reference amount for its overseas education payment item, not a general current same-name USD transfer."
+  },
+  {
+    "id": "P08",
+    "authority": "Internal Revenue Service",
+    "title": "Foreign Tax Credit",
+    "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+    "locator": "Qualifying foreign taxes; How to claim the Foreign Tax Credit",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The IRS says a taxpayer who paid or accrued foreign taxes on income also subject to U.S. tax may be able to take a credit or deduction; only qualifying foreign taxes imposed on the taxpayer qualify, and individuals generally claim a credit on Form 1116."
+  },
+  {
+    "id": "P09",
+    "authority": "Internal Revenue Service",
+    "title": "Publication 514 (2025), Foreign Tax Credit for Individuals",
+    "url": "https://www.irs.gov/publications/p514",
+    "locator": "Tax Must Be the Legal and Actual Foreign Tax Liability; Limit on the Credit; Separate Limit Income",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The publication says only the legal and actual foreign tax liability paid or accrued qualifies, and explains that the credit is limited by separate income categories and the U.S. tax attributable to those categories."
+  },
+  {
+    "id": "P10",
+    "authority": "People's Bank of China and other issuing authorities",
+    "title": "Notice on Further Preventing and Handling Risks Related to Virtual Currency (Yin Fa [2026] No. 42)",
+    "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+    "locator": "Sections I(1), I(6), and VI(18)–(19)",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The notice classifies specified virtual-currency business activities, including fiat/virtual-currency exchange in China, as illegal financial activities and bars financial institutions from providing accounts, transfers, clearing, or settlement for such activities. It does not state that every individual is automatically placed on a 'watch list' for borrowing a quota."
+  },
+  {
+    "id": "P11",
+    "authority": "State Administration of Foreign Exchange, Tianjin Branch",
+    "title": "2026 FX administration Q&A: reconversion of unused RMB",
+    "url": "https://www.safe.gov.cn/tianjin/2026/0917/3134.html",
+    "locator": "Question on reconverting originally exchanged, unused RMB; cites Hui Fa [2020] No. 14, Art. 60",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The answer limits the original exchange memo's 24-month validity and the USD 500 daily / USD 1,000 departure-area identity-only exceptions to reconverting unused RMB that was originally exchanged."
+  },
+  {
+    "id": "P12",
+    "authority": "Internal Revenue Service",
+    "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+    "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+    "locator": "Who must file; When to file; How to file",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The IRS says a U.S. person, including a citizen, must file an FBAR when the aggregate value of reportable foreign financial accounts exceeds $10,000 at any time during the calendar year; whether an account produced taxable income does not affect FBAR status."
+  },
+  {
+    "id": "P14",
+    "authority": "Internal Revenue Service",
+    "title": "Do I need to file Form 8938, Statement of Specified Foreign Financial Assets?",
+    "url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets",
+    "locator": "Specified individual; specified foreign financial assets; reporting thresholds by filing status and residence",
+    "retrieved": "2026-11-09",
+    "status": "body retrieved",
+    "evidence": "The IRS says Form 8938 applicability depends on specified-person status, having a reportable specified foreign financial asset, and aggregate-value thresholds that vary with filing status and residence; a taxpayer who is not required to file an income-tax return does not need Form 8938."
+  }
+]
