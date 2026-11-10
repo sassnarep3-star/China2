@@ -817,7 +817,7 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 | S2 | Executive summary & deep conversion-penalty / tax-interaction breakdown (PRC income/capital-gains/withholding vs. SAFE tax-voucher gate vs. STA/SAFE >$50k free Tax Recordal vs. U.S. FTC/FEIE/§988(e) vs. bank spread & intermediary fees vs. offshore reporting penalties) | done | `arena/8f529c94-china2` | `study-8f529c94/EXECUTIVE_SUMMARY.md`, `study-8f529c94/index.html`, `study-8f529c94/penalties.html`, `study-8f529c94/taxes.html` |
 | S3 | Exhaustive 23-method CNY→USD catalog (pros, cons, exact step-by-step execution incl. remote proxy `M05`) + mobile-friendly $10,000-increment cost tables ($10k→$400k, 920 rows) for every method; published fee components computed deterministically, unconfirmed values strictly blank + flagged | done | `arena/8f529c94-china2` | `study-8f529c94/methods.html`, `study-8f529c94/costs.html`, `study-8f529c94/exports/**` |
 | S4 | Line-by-line repository review of inherited files & dashboards (`RA-01`–`RA-14`), source-linked findings, and Flagged for Review page (`FL-01`–`FL-18`) | done | `arena/8f529c94-china2` | `study-8f529c94/audit.html`, `study-8f529c94/flagged.html`, `study-8f529c94/data/audit_and_flags.json` |
-| S5 | Deterministic builder, independent line-by-line verifier (19,686 checks), CI workflow, full repo CI suite check, mechanical `ladder/audit.html` inventory refresh, PR → `main`, merge, GitHub Pages live deploy confirmation, and board close-out | in progress | `arena/8f529c94-china2` | `study-8f529c94/build.py`, `study-8f529c94/verify.py`, `.github/workflows/verify-study-8f529c94.yml`, `ladder/audit.html` (generated inventory only), `COORDINATION.md` (append-only) |
+| S5 | Deterministic builder, independent line-by-line verifier (19,686 checks), CI workflow, full repo CI suite check, mechanical `ladder/audit.html` inventory refresh, PR → `main`, merge, GitHub Pages live deploy confirmation, and board close-out | done | `arena/8f529c94-china2` | `study-8f529c94/build.py`, `study-8f529c94/verify.py`, `.github/workflows/verify-study-8f529c94.yml`, `ladder/audit.html` (generated inventory only), `COORDINATION.md` (append-only) |
 
 ### Verification, Sources & Irregularities Log — `arena/8f529c94-china2` (2026-11-10 UTC)
 
@@ -829,3 +829,22 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 - **Verification performed:** `PYTHONDONTWRITEBYTECODE=1 python3 study-8f529c94/build.py` + `study-8f529c94/verify.py` → **19,686 independent checks, 0 failures** (8 pages, 920 cost rows across $10k–$400k × 23 methods, 100% direct HTTPS official links on every `<tr>` with `<td>`, strict blank enforcement on unconfirmed FX spreads and third-party wire deductions, all local links/fragments resolved, `node --check study-8f529c94/assets/app.js` green).
 - **Irregularities flagged (`study-8f529c94/audit.html` RA-01–RA-14 & `flagged.html` FL-01–FL-18, non-blocking `needs review`):** includes `briefing/EXECUTIVE_SUMMARY.md` L34 `"8+ years for $400k"` ATM math error (actual: **29 calendar years** at RMB 100k/yr), `ladder/audit.html` hardcoded `"15 of 20"` source count (21 sources in ledger), `EXECUTIVE-SUMMARY.md` ranking R01 ($50k quota) #1 without PR-ID condition and citing repealed 2021 crypto notice over `http://`, and `reports/EXECUTIVE_SUMMARY_85f37d08.md` overgeneralizing $500/$1,000 reconversion and omitting the $200 personal FX capital-gain cap.
 - **Cross-scope link request (logged, not edited):** root hub `index.html` / `ladder/build.py` and `README.md` owners may add a card/link to `study-8f529c94/index.html` once concurrent hub claims settle; meanwhile native Pages (`main:/`) serves `/China2/study-8f529c94/` directly.
+
+### Confirmed Publication Result — `arena/8f529c94-china2` (S1–S5 all done)
+
+- **Pull Request:** https://github.com/sassnarep3-star/China2/pull/57 (`arena/8f529c94-china2` → `main`)
+- **Merge Result:** **MERGED** at `2026-11-10T10:34:09Z` via `gh pr merge 57 --merge`; merge commit `c631bc656432d02b954240acc2538da4953ab4af`.
+- **CI Checks (10/10 passed on PR #57 before merge and 10/10 passed on `main` at `c631bc6`):** `verify-study` (19,686 checks, 0 failures — run `42800167278` / `42800258078`), `validate`, `verify` (site ledgers), `verify-ladder` (9,345 checks), `verify-portal` (109 rows), `verify-repatriate` (11,197 checks), `verify-briefing`, `verify` (targeted review), `verify` (live-source `d5d1f860`), and `verify-final-f6327e23`.
+- **GitHub Pages Deployment:** Actions `pages-build-deployment` run https://github.com/sassnarep3-star/China2/actions/runs/42800256549 completed **success** at commit `c631bc656432d02b954240acc2538da4953ab4af`; Pages API `pages/builds/latest` confirmed `status: built`, `error.message: null`.
+- **Live Deployed URLs Verified via Public Retrieval:**
+  - **Executive Summary & Decision Dashboard:** https://sassnarep3-star.github.io/China2/study-8f529c94/index.html
+  - **$10,000 → $400,000 Cost Estimator (920 Rows):** https://sassnarep3-star.github.io/China2/study-8f529c94/costs.html
+  - **All 23 Methods & Step-by-Step Playbooks:** https://sassnarep3-star.github.io/China2/study-8f529c94/methods.html
+  - **7-Layer Conversion Penalty Breakdown:** https://sassnarep3-star.github.io/China2/study-8f529c94/penalties.html
+  - **U.S. & PRC Tax & Offshore Reporting Matrix:** https://sassnarep3-star.github.io/China2/study-8f529c94/taxes.html
+  - **Line-by-Line Repository Review (`RA-01`–`RA-14`):** https://sassnarep3-star.github.io/China2/study-8f529c94/audit.html
+  - **Flagged for Review (`FL-01`–`FL-18`):** https://sassnarep3-star.github.io/China2/study-8f529c94/flagged.html
+  - **40 Official Primary Sources (`SRC-01`–`SRC-40`):** https://sassnarep3-star.github.io/China2/study-8f529c94/sources.html
+  - **Exports:** https://sassnarep3-star.github.io/China2/study-8f529c94/exports/cost-ladder-920.csv & `cost-ladder-920.json`
+- This publication record is carried in a documentation-only follow-up PR from `arena/8f529c94-china2` because the merge SHA and Pages build result did not exist before PR #57 merged. All tasks S1–S5 are **done**; flagged items `FL-01`–`FL-18` and `RA-01`–`RA-14` remain published as `needs review` and do not block publication.
+
