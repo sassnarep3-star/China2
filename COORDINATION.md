@@ -506,3 +506,14 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - 2026-11-10: Structural review test: `audit-456e7542/verify.py` passed (8 source-linked rows and local links; no factual/live-link claim). Existing suites passed: docs builder/validator/UI, site builder/verifier (477), ladder (9,329), repatriate (11,197), portal (109 rows), audit-ad300459 (624), audit-0f0f59fe (413). `ladder/audit.html` regenerated solely because its repository inventory changed; no generator or route data changed. HSBC is a primary commercial tariff source, not a government authority. First claim push found no remote session branch; pulled/rebased against main before creating it, then pushed normally.
 
 - 2026-11-10: Main advanced during review through PRs #30–#31. Stopped on append-only board conflict during rebase; retained both sessions’ entries. Regenerated the inventory using the updated ladder generator, preserving the other session’s landing changes. Merged the old remote session history back into this fixed branch to avoid force push; resolved identical board and inventory conflicts by retaining both sections and deterministic regeneration. No other session work discarded. Open PR #32 is a separate concurrent acceptance audit; its scope was not edited.
+## Session `arena/a64bd476-china2` — independent acceptance audit (disjoint scope)
+
+> Arena pins this session to `arena/a64bd476-china2`; that fixed branch substitutes for a `session-<id>/<task>` branch. Full board read before claiming. Active concurrent claim respected: `arena/e62a2cd8-china2` E1–E3 (PR #30: `ladder/build.py` root template, generated `index.html`, `README.md`, `ladder/audit.html`) — none of those files are edited here. Open PRs #2/#12/#17 are not touched. All prior research scopes (`docs/`, `ladder/`, `repatriate/`, `briefing/`, `portal/`, `site/`, `audit-*`) are read-only inputs.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| A1 | Independent acceptance audit: local link/fragment crawl, cost-table row counts + arithmetic, table-row source-link presence, mobile/viewport checks across published pages | in progress | `acceptance-a64bd476/**` |
+| A2 | Fresh official-source spot re-verification of brief-critical claims (SAFE, IRS, HSBC tariff, eCFR) fetched this session; blanks + flags where unverifiable | in progress | `acceptance-a64bd476/**` |
+| A3 | Publish acceptance pages + verifier + CI, own PR → `main`, merge without waiting, confirm Pages deploy, record results here | in progress | `acceptance-a64bd476/**`, `.github/workflows/verify-acceptance-a64bd476.yml`, `COORDINATION.md` (append-only) |
+
+- 2026-11-10 UTC: Claim recorded before substantive research or edits. Policy: unknown private facts never inferred; no personal tax bill computed; unverified values stay blank and flagged; structural checks labelled structure-only, not factual verification. Cross-scope requests will be logged here, not edited.
