@@ -393,11 +393,21 @@ No other session's file scope will be edited. Existing cost matrices and route c
 - Open pull requests not actioned by this session (other sessions' branches, out of scope): #2 `arena/4c576a01-china2`, #12 `arena/5cdc93ae-china2`, #17 `arena/8a2bd205-china2` (the last reports `CONFLICTING` against `main`). The cost-increment request underlying #17 ($10,000 steps to $400,000) is already published and verified on `main` at `repatriate/costs.html` (17 methods × 40 increments = 680 rows) and `ladder/costs.html` (20 routes × 40 tiers = 600 rows).
 - No session may edit another session's files; cross-scope corrections are logged here, not applied unilaterally.
 
-### Integration plan (I3)
+### Integration plan (I3) — completed
 
-1. Commit this claim + verification record on `arena/11c20135-china2` and push.
-2. Open PR `arena/11c20135-china2` → `main`; merge without waiting; CI must be green and Pages `status: built` with `error.message: null`.
-3. Follow-up commit records the PR number, merge commit, and Pages result below, then a second PR merges that record.
+1. Claim + verification record committed on `arena/11c20135-china2` and pushed (commit `7827949`, then merge of `origin/main` `75f6467`).
+2. PR #23 opened `arena/11c20135-china2` → `main`; all five CI checks green (validate, verify-portal, verify-ladder, verify-repatriate, verify); merged without waiting.
+3. Follow-up record below (this commit), carried by PR #24 per established precedent (the merge result cannot exist before the merge).
+
+### I3 publication record
+
+- **PR:** https://github.com/sassnarep3-star/China2/pull/23 (`arena/11c20135-china2` → `main`)
+- **Merge:** MERGED via `gh pr merge 23 --merge`; merge commit `0951b84ffcac543ac897b4e0364815a59f7158da`
+- **PR checks:** all 5 SUCCESS — validate, verify-portal, verify-ladder, verify-repatriate, verify (runs 42733643416 / 42733643451 / 42733643404 / 42733643420 / 42733643162)
+- **GitHub Pages:** deployment run https://github.com/sassnarep3-star/China2/actions/runs/42733719864 → **success** at merge commit `0951b84`; native Pages source `main` /, HTTPS enforced; live landing https://sassnarep3-star.github.io/China2/ confirmed serving current content (executive summary, cost tables $10k–$400k, acceptance page at /China2/acceptance-373b54a3/index.html)
+- **Live category sites:** /docs/ (research dashboard), /site/ (evidence site), /portal/ (statutory portal), /repatriate/ (repatriation study: methods, 680 cost rows $10k–$400k, taxes, sources, audit, flagged), /ladder/ (cost ladder: 600 rows, 20 routes, steps, flagged, sources)
+
+Session `arena/11c20135-china2` tasks I1–I3 all done. Open irregularities remain published as needs review (see sections above) and do not block the live site.
 
 
 
