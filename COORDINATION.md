@@ -638,3 +638,19 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Local checks: guide validator PASS (17 routes, 680 sourced rows/40 tiers, 31 HTTPS sources, internal links/fragments); JS syntax PASS; repository docs validator PASS (9 pages, 67 findings, every table body row has official link); ladder verifier PASS (9,345 checks); repatriate verifier PASS (11,197 checks); briefing verifier PASS; portal verifier PASS (109 sourced rows). Structural checks do not certify law or personal eligibility.
 - Flags retained/published, including personal tax and eligibility unknown; provider fees/spreads unpublished; HSBC PDF has mixed headers (current cover and cited line items were checked); stale IRS FEIE page amounts; 2024 statutory edition for 26 USC 988; WU bank-account payout temporarily unavailable at retrieval; parallel dashboards differ; no personalized route/net USD/tax total can be computed. See guide Flagged for Review plus existing audit flags.
 - No funds moved, no bank contacted, no account-specific quote obtained, and no tax return filed. No manually supplied facts were required or presumed.
+
+---
+
+## Session `arena/6068a908-china2` — independent targeted review
+
+Arena fixes this session to its existing branch. Historical claims remain respected; this session does not claim other sessions' substantive files. This is a targeted review, not a certification of the entire inherited repository.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Review published core findings and cost limitations against accessible official sources; publish any material irregularities | done | `arena/6068a908-china2` | `audit-6068a908/**`, append-only `COORDINATION.md` |
+| Validate and publish the review; regenerate inventory only if required | done | `arena/6068a908-china2` | `ladder/audit.html` (generated inventory only), append-only `COORDINATION.md` |
+
+### Targeted review completion — 2026-11-10
+- Both tasks above: **done**. Freshly read SAFE Tianjin's [current-account conversion FAQ](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), IRS [currency guidance](https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates) and [FBAR guidance](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar), and the 2024 [26 USC 988(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm). Limited findings and three **needs review** flags are published in `audit-6068a908/index.html`; no personal all-in cost, eligibility or tax estimated without evidence. HSBC tariff and annual averages linked for manual follow-up, not freshly reverified by this session. No claim of full repository factual certification.
+- Local validation: docs build and validation (9 pages, 67 findings), UI harness, `npm run check` (477 checks), briefing verifier, repatriate verifier (11,197 checks), acceptance verifier (7,989 structural checks), ladder verifier (9,345 checks). Structural tests do not certify legal accuracy. `ladder/audit.html` regenerated only to refresh inventory; acceptance verifier's incidental output restored, as outside this scope. Cross-scope request: hub owner may link the independent review, but existing hub already links briefing and flags.
+- Publication: [PR #43](https://github.com/sassnarep3-star/China2/pull/43) merged 2026-11-10 at 09:50:26 UTC, merge commit `00d441b3268d74e6fa33f46e221dd020451e2a77`. Seven PR checks passed. [Pages build and deployment](https://github.com/sassnarep3-star/China2/actions/runs/42794070737) succeeded, and the [live review](https://sassnarep3-star.github.io/China2/audit-6068a908/) was retrieved successfully after deploy. This publication record is a follow-up because the result was not available before merging.
