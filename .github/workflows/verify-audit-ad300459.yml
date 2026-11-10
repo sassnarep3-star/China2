@@ -23,3 +23,10 @@ jobs:
           python-version: '3.12'
       - name: Independent verification (ledger schema, source allowlist, ladder structure, page integrity)
         run: python audit-ad300459/verify.py
+      - name: TEMP debug — surface ladder gate diff as annotations
+        run: |
+          python3 ladder/model.py
+          python3 ladder/build.py
+          git diff -- ladder index.html | head -40 | sed -e 's/%/%25/g' -e 's/\r/%0D/g' -e 's/^/::error title=ladder-gate::/' || true
+          git checkout -- ladder index.html || true
+          git status --short
