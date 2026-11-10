@@ -845,6 +845,8 @@ def write_root_hub():
                 f'{esc(label)}</a>')
 
     cards = [
+        ("guide-29c5e201/index.html", "CNY → USD decision guide · executive summary", "17 routes · 680 source-linked cost scenarios · 2026 verification ledger",
+         "Standalone evidence-based guide; unknown costs and personal tax remain blank, with flags disclosed."),
         ("briefing/index.html", "Executive briefing · start here", "Summary · 17 methods · 680 cost rows",
          "Consolidated comparison with steps and caveats. Published fees are not all-in quotes; read the review notes below."),
         ("audit-ad300459/index.html", "Latest evidence audit", "27 findings · official-source review · ladder checks",

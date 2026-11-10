@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "scope": "arena/3e494fa5-china2",
+    "retrieved": "2026-11-08",
+    "policy": "Every source below was fetched and read this session with the research retrieval tool. Regulator/statute sources are primary law; provider sources (HSBC, Wise, Western Union) are primary only for that provider's own published terms and fees, not regulator guarantees. English translations of PRC rules are reference translations; the Chinese text prevails.",
+    "reference_rate_note": "CNY amounts are converted to USD only at the IRS-published 2025 yearly average rate (7.129 CNY per USD, source S23). This is a labeled reference conversion for comparing published CNY fees, not an executable exchange quote."
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "title": "SAFE Detailed Rules on Measures for the Administration of Individual Foreign Exchange (Huifa [2007] No. 1, amended republication 2024-04-30)",
+      "publisher": "SAFE Tianjin (safe.gov.cn)",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Arts. 2, 10-15, 20, 28, 30-31, 35, 38; amendment notes (Huifa [2016] 13, [2023] 8)",
+      "facts": "Art. 2: annual facilitation quota USD 50,000 equivalent per person for settlement and domestic-individual purchases; within quota ID-only at bank. Art. 13(1): foreign individuals purchase FX for lawful current-account RMB income earned in China with ID + transaction-amount materials including tax vouchers. Art. 13(2): reconversion of unused previously exchanged RMB with ID + original exchange memo (valid 24 months); <=USD 500/day (<=USD 1,000 airside before departure) ID-only. Art. 14: domestic individual outward remittance from FX savings account <=USD 50,000/day ID-only, above with authenticity documents. Art. 15: foreign individual outward remittance from FX savings account with ID. Art. 20: emigrant/inheritor property transfer per separate rules. Art. 30: foreign-cash withdrawal >USD 10,000/day requires advance SAFE filing. Art. 39 penalty clause repealed by Huifa [2023] 8."
+    },
+    {
+      "id": "S02",
+      "title": "SAFE Spokesman press conference on the Individual FX Detailed Rules (2007-01-05, English)",
+      "publisher": "SAFE (safe.gov.cn)",
+      "url": "https://www.safe.gov.cn/en/2007/0105/819.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Q&A on USD 50,000 quota, trade settlement accounts, cash administration",
+      "facts": "Annual quota USD 50,000 for individual FX sales and domestic purchases; formalities within quota drastically simplified; authenticity examination above quota strengthened; bank-SAFE information system verifies materials and prevents repeated installment purchases; individual foreign-trade settlement accounts not subject to annual quota with valid trading documents regardless of amount; foreign-cash deposit >USD 5,000/day with documents; withdrawal >USD 10,000/day advance SAFE filing; carrying out >USD 10,000 with customs/bank forms."
+    },
+    {
+      "id": "S03",
+      "title": "2026 personal FX FAQ (08): How does a foreign individual purchase and remit labor remuneration earned in China? (2026-07-13)",
+      "publisher": "SAFE Tianjin (safe.gov.cn)",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Full Q&A; cites Current-Account FX Business Guidelines (2020) Huifa [2020] 14 Art. 59",
+      "facts": "Foreign individuals' lawful current-account RMB income earned in China is purchased into FX at a bank with valid ID and source-of-funds materials showing the transaction amount, including tax vouchers. No annual cap is stated for this documented-income route."
+    },
+    {
+      "id": "S04",
+      "title": "2026 personal FX FAQ (10): May a foreign individual reconvert unused RMB? (2026-09-17)",
+      "publisher": "SAFE Tianjin (safe.gov.cn)",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0917/3134.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Full Q&A; cites Guidelines (2020) Art. 60",
+      "facts": "Reconversion of unused RMB previously converted from FX: ID + original exchange memo, memo valid 24 months from exchange date; same-day cumulative <=USD 500 (or <=USD 1,000 at domestic customs-external venues before departure) with ID only. This is a reconversion rule, not a general daily conversion allowance for any RMB."
+    },
+    {
+      "id": "S05",
+      "title": "2024 current-account FX policy Q&A case (9): Do foreign individuals enjoy the annual facilitation quota? (2024-06-21)",
+      "publisher": "SAFE Tianjin (safe.gov.cn)",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Full Q&A; cites Guidelines (2020) Art. 59",
+      "facts": "Foreign individuals purchase FX for lawful current-account RMB income with ID + source materials including tax vouchers; only holders of the PRC Foreign Permanent Resident ID Card enjoy the annual facilitation purchase quota."
+    },
+    {
+      "id": "S06",
+      "title": "Administrative Rules on Individual's Foreign Exchange, PBOC Decree [2006] No. 3 (English)",
+      "publisher": "People's Bank of China (pbc.gov.cn)",
+      "url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Arts. 7, 9, 12-15, 22, 26, 33-35, 37",
+      "facts": "Art. 7: no evasion of limit administration by splitting large amounts into small batches; no fabricated commercial bills/vouchers. Art. 9: annual limit; above it, current-account business with ID + transaction-amount materials. Art. 13: non-domestic individual may convert legitimate current-account RMB income and remit abroad with ID + documents. Art. 22: non-domestic individual may convert and remit RMB proceeds of sale of domestic commercial housing. Art. 26: legitimate property transfer abroad per personal-asset-transfer rules. Art. 37: domestic individual = PRC citizen (plus PRC-ID servicemen/police); non-domestic = foreign passport holder etc."
+    },
+    {
+      "id": "S07",
+      "title": "SAFE Circular on Regulating Large-sum Overseas Cash Withdrawals with Bank Cards (Huifa [2017], effective 2018-01-01, English)",
+      "publisher": "SAFE (safe.gov.cn)",
+      "url": "https://www.safe.gov.cn/en/2017/1230/1397.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Sections I, II, IV, VII",
+      "facts": "Overseas cash withdrawals with domestic bank cards: all cards under one person's name (incl. supplementary) combined <=RMB 100,000 per calendar year; exceeding suspends overseas withdrawals for the current and following year; per-card daily ceiling RMB 10,000 equivalent; borrowing/lending cards to evade is prohibited."
+    },
+    {
+      "id": "S08",
+      "title": "SAFE Circular on Further Improving and Adjusting Foreign Exchange Administration Policies under the Capital Account (Huifa No. 2 [2014], English)",
+      "publisher": "SAFE (safe.gov.cn)",
+      "url": "https://www.safe.gov.cn/en/2014/0801/741.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Section VI (personal property transfers); Section V (profit remittances)",
+      "facts": "Emigrant property transfer FX purchase/payment approved by SAFE at original registered residence; inheritance transfer at decedent's original registered residence; RMB 500,000 reporting requirement cancelled; installment requirement cancelled - bank may remit lump sum or in batches within the approved limit. Corporate profit remittance >USD 50,000: bank checks board profit-distribution resolution + tax filing form."
+    },
+    {
+      "id": "S09",
+      "title": "PBOC Provisional Administrative Rules on Sales and Payment of Foreign Exchange for Personal Asset Outbound Transfer (2004, English)",
+      "publisher": "People's Bank of China (pbc.gov.cn)",
+      "url": "https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Arts. 2-8 and release summary",
+      "facts": "Covers emigrant asset transfer (assets obtained before immigration permission, by emigrants from Mainland China) and inheritor asset transfer (by foreign citizens / HK / Macau residents). Assets must be lawful, owned and undisputed; applications to SAFE at original registered residence; written application, ID, immigration/hukou-cancellation proofs. Original 2004 installment schedule was later relaxed by S08."
+    },
+    {
+      "id": "S10",
+      "title": "Interim Measures on Administration of Carrying Foreign Currency Cash In and Out of China (Huifa [2003] 102, State Council Gazette)",
+      "publisher": "gov.cn (State Council Gazette)",
+      "url": "https://www.gov.cn/gongbao/content/2004/content_63085.htm",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Notice item 2; Arts. 4-7, 9-11",
+      "facts": "Exit with foreign cash <=USD 5,000 equivalent: no permit. USD 5,000-10,000: carrying permit issued by bank; multiple bank permits totaling >USD 10,000 not released. >USD 10,000: in principle not allowed; special cases need SAFE-issued permit. Same-day repeat exits: 2nd+ exit <=USD 500; within-15-days repeat exits: 2nd+ exit <=USD 1,000. Permit valid 30 days, single use."
+    },
+    {
+      "id": "S11",
+      "title": "PBOC Official on the Adjustment in the Limit Set for Cross-Border Transportation of National Currency (2004-12-10, English)",
+      "publisher": "People's Bank of China (pbc.gov.cn)",
+      "url": "https://www.pbc.gov.cn/english/130721/2025080815064111752/index.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Q&A on rationale for the 2004 adjustment",
+      "facts": "RMB cash cross-border limit reset to 20,000 yuan per person per trip (PBOC Announcement [2004] No. 18 context); prior limit 6,000 yuan; foreign-cash declaration-free carry USD 5,000 since 2003-09-01."
+    },
+    {
+      "id": "S12",
+      "title": "Cash-carrying rules summary incl. PBOC Announcement [2004] No. 18 (RMB 20,000 per person per trip) and US entry declaration",
+      "publisher": "Overseas Chinese Affairs Office, State Council (gqb.gov.cn), republishing China News Service",
+      "url": "https://www.gqb.gov.cn/news/2024/0320/58569.shtml",
+      "kind": "government-republication",
+      "status": "fetched",
+      "locator": "China and US sections",
+      "facts": "Confirms RMB 20,000 per person per trip limit under PBOC Announcement [2004] No. 18; excess declared and returned by customs; penalties under customs penalty rules. US: >USD 10,000 (individual or joint family/group) must be declared. Secondary government summary; used only to corroborate S10/S11/S28."
+    },
+    {
+      "id": "S13",
+      "title": "Regulations of the PRC on Foreign Exchange Administration (State Council Decree 532, 2008 revision)",
+      "publisher": "SAFE Beijing (safe.gov.cn)",
+      "url": "https://www.safe.gov.cn/beijing/2018/1221/1010.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Arts. 5, 12, 39, 40, 42, 45, 46, 52",
+      "facts": "Art. 5: no restriction on current international payments and transfers. Art. 12: current-account FX must have a genuine, lawful transaction basis. Art. 39 (evasion - moving domestic FX abroad in violation or by deception): repatriation order + fine up to 30% of amount; serious cases 30%-100%; criminal liability if crime. Art. 40 (fraudulent purchase with false documents): same bands. Art. 42 (unlawful carrying): warning + up to 20%. Art. 45 (private/indirect FX trading, large amounts): warning, confiscation of illegal gains, fine up to 30%; serious 30%-100%; criminal liability. Art. 52: domestic individual includes foreigners continuously resident in China for 1 full year (definition context)."
+    },
+    {
+      "id": "S14",
+      "title": "Notice on Further Preventing and Disposing of Virtual Currency and Related Risks (Yinfa [2026] No. 42, 2026-02-06)",
+      "publisher": "PBOC + 7 authorities (pbc.gov.cn)",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Items (1), (6), (18), (19); repeals Yinfa [2021] 237",
+      "facts": "Virtual-currency-related business is illegal financial activity; fiat-to-crypto exchange business in China strictly prohibited and banned; overseas entities/individuals may not illegally provide virtual-currency services to domestic subjects; financial institutions may not provide accounts/transfer/settlement for such activity; violations punished, criminal liability if crime; investment losses from such activity borne by the investor where civil acts are void. Replaces the 2021 notice."
+    },
+    {
+      "id": "S15",
+      "title": "Individual Income Tax Law of the PRC (7th amendment 2018-08-31, official English)",
+      "publisher": "State Taxation Administration法规库 (fgk.chinatax.gov.cn)",
+      "url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+      "kind": "statute",
+      "status": "fetched",
+      "locator": "Arts. 1-3, 6-11",
+      "facts": "Resident individual: domiciled in China or >=183 days in tax year; residents taxed on China and overseas income; non-residents on China-source income. Comprehensive income progressive 3%-45%; business income 5%-35%; interest/dividends/property lease/property transfer/incidental flat 20%. Resident comprehensive taxable income after RMB 60,000 + special/itemized deductions; non-resident wages after RMB 5,000/month. Asset-transfer taxable income = proceeds minus original value and reasonable expenses. Emigration with hukou cancellation triggers a tax return (Art. 10(5))."
+    },
+    {
+      "id": "S16",
+      "title": "U.S. citizens and resident aliens abroad",
+      "publisher": "IRS (irs.gov)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Opening paragraphs; FBAR/Form 3520 reminders",
+      "facts": "US citizens/resident aliens are subject to tax on worldwide income and must report all taxable income; special benefits (FEIE, FTC) only by filing; foreign accounts above threshold must be reported (FBAR) even if no taxable income; Form 3520 for foreign gifts >USD 100,000 from nonresident aliens/foreign estates."
+    },
+    {
+      "id": "S17",
+      "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "publisher": "IRS (irs.gov)",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Who must file; When to file; Penalties; Filing delinquent FBARs",
+      "facts": "US persons (incl. citizens) must file FBAR if aggregate value of foreign financial accounts exceeded USD 10,000 at any time in the calendar year; whether the account produced taxable income is irrelevant; due April 15 with automatic extension to October 15; e-file via FinCEN BSA; records kept 5 years; civil penalty maximums adjusted annually for inflation (31 CFR 1010.821); file late FBARs ASAP if not under IRS contact/investigation."
+    },
+    {
+      "id": "S18",
+      "title": "Comparison of Form 8938 and FBAR requirements",
+      "publisher": "IRS (irs.gov)",
+      "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Comparison table (thresholds, penalties)",
+      "facts": "Form 8938 thresholds - living in US: unmarried >USD 50,000 last day or >USD 75,000 any time (MFJ 100,000/150,000); living outside US: unmarried >USD 200,000 last day or >USD 300,000 any time (MFJ 400,000/600,000). FBAR threshold aggregate >USD 10,000 any time. 8938 penalty up to USD 10,000, +USD 10,000 per 30 days after IRS notice, max USD 60,000; FBAR civil penalties inflation-adjusted (pre-2016 statute: non-willful up to 10,000; willful greater of 100,000 or 50% of balance)."
+    },
+    {
+      "id": "S19",
+      "title": "31 CFR 1010.821 - Penaly adjustment and table (penalties assessed on/after 2025-01-17)",
+      "publisher": "eCFR / FinCEN (ecfr.gov)",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "kind": "regulation",
+      "status": "fetched",
+      "locator": "Table 1 rows 31 USC 5321(a)(5)(B)(i) and (C)(i)(I); current through 2026-11-05",
+      "facts": "FBAR-related foreign financial agency transaction penalties adjusted: non-willful maximum USD 16,536; willful statutory USD 100,000 adjusted to USD 165,353 (statute also allows 50% of account balance for willful cases per S18). Amounts apply to penalties assessed on/after 2025-01-17; adjusted annually."
+    },
+    {
+      "id": "S20",
+      "title": "Foreign Tax Credit - How to figure the credit",
+      "publisher": "IRS (irs.gov)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit-how-to-figure-the-credit",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Figuring the credit; FTC limit; exemption election",
+      "facts": "Credit = foreign income taxes paid/accrued or, if smaller, the limit (US tax x foreign-source taxable income / total taxable income); Form 1116; unused credit carryback 1 year / forward 10; de minimis election (<=USD 300 single / USD 600 joint, passive income on payee statements) exempts from the limit only."
+    },
+    {
+      "id": "S21",
+      "title": "Foreign earned income exclusion",
+      "publisher": "IRS (irs.gov)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Eligibility; Other rules",
+      "facts": "FEIE requires foreign earned income + foreign tax home + bona fide residence for an uninterrupted period including a full tax year, or physical presence >=330 full days in 12 consecutive months; wages/salaries/professional fees qualify; pensions, annuities and US-government pay do not; exclusion does not reduce self-employment tax. Current-year amount from S22."
+    },
+    {
+      "id": "S22",
+      "title": "Rev. Proc. 2025-32 (2026 inflation adjustments), section 4.39",
+      "publisher": "IRS (irs.gov)",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Section 4.39 Foreign Earned Income Exclusion",
+      "facts": "For taxable years beginning in 2026 the foreign earned income exclusion amount under section 911(b)(2)(D)(i) is USD 132,900."
+    },
+    {
+      "id": "S23",
+      "title": "Yearly average currency exchange rates",
+      "publisher": "IRS (irs.gov)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "China (Yuan) row; 'no official exchange rate' note",
+      "facts": "IRS has no official exchange rate and accepts any posted rate used consistently; yearly average China Yuan: 2025 = 7.129, 2024 = 7.189, 2023 = 7.075 per USD. Used here only as a labeled reference conversion for published CNY fees."
+    },
+    {
+      "id": "S24",
+      "title": "26 USC 988 - Treatment of certain foreign currency transactions (2024 edition)",
+      "publisher": "US GPO govinfo.gov",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "kind": "statute",
+      "status": "fetched",
+      "locator": "(a)(1)(A), (c)(1)(C), (e)(1)-(3)",
+      "facts": "Section 988 transactions generally produce ordinary income/loss; disposition of nonfunctional currency (incl. bank deposits) is a 988 transaction; BUT for individuals' personal transactions, no gain is recognized from exchange-rate changes unless the gain exceeds USD 200; personal transaction = any individual transaction other than business/investment-expense transactions. 2024 code edition; current applicability to be confirmed by a professional (flag F11)."
+    },
+    {
+      "id": "S25",
+      "title": "US-PRC Income Tax Convention (1984) + Protocol (saving clause)",
+      "publisher": "IRS (irs.gov) treaty PDF",
+      "url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+      "kind": "treaty",
+      "status": "fetched",
+      "locator": "Protocol para. 2; Arts. 9-11, 22; treaty index page https://www.irs.gov/businesses/international-businesses/china-tax-treaty-documents",
+      "facts": "Protocol para. 2: notwithstanding the agreement the US may tax its citizens (saving clause; limited exceptions incl. Art. 22 relief). Art. 22: US allows credit for income tax paid to China per US law. Arts. 9-11: source-state tax capped at 10% of gross dividends/interest/royalties for beneficial owners resident in the other state. Treaty does not create a remittance exemption."
+    },
+    {
+      "id": "S26",
+      "title": "Streamlined filing compliance procedures",
+      "publisher": "IRS (irs.gov)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Purpose; eligibility; certification of non-willfulness",
+      "facts": "For taxpayers certifying non-willful failure to report foreign financial assets/pay tax; requires valid TIN; ineligible if IRS civil exam initiated or under criminal investigation; willful cases directed to CI Voluntary Disclosure Practice."
+    },
+    {
+      "id": "S27",
+      "title": "Streamlined Foreign Offshore Procedures (U.S. taxpayers residing outside the United States)",
+      "publisher": "IRS (irs.gov)",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/us-taxpayers-residing-outside-the-united-states",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Eligibility; scope and effect",
+      "facts": "Non-residency requirement: in any of the last 3 filed-due years, no US abode and physically outside the US >=330 full days (US citizens/LPRs). File 3 years of delinquent/amended returns + 6 years of FBARs, pay tax + interest; compliant participants not subject to failure-to-file/pay, accuracy-related, information-return or FBAR penalties (unless exam finds fraud/willfulness)."
+    },
+    {
+      "id": "S28",
+      "title": "Money and Other Monetary Instruments (FinCEN Form 105 reporting)",
+      "publisher": "US Customs and Border Protection (cbp.gov)",
+      "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
+      "kind": "regulator",
+      "status": "fetched",
+      "locator": "Federal mandate; who must file; what if I don't file",
+      "facts": "More than USD 10,000 in currency/monetary instruments transported, mailed, shipped or sent into or out of the US must be reported to CBP on FinCEN Form 105; family/group threshold is collective, not per person; failure risks seizure/forfeiture and civil/criminal penalties. No duty or tax on the currency itself is stated; the requirement is reporting."
+    },
+    {
+      "id": "S29",
+      "title": "HSBC Bank (China) Tariff of Accounts and Services for Wealth and Personal Banking (effective 2026-10-31)",
+      "publisher": "HSBC China (hsbc.com.cn) - provider primary source",
+      "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+      "kind": "provider",
+      "status": "fetched",
+      "locator": "Items 2.2.4.1-2.2.4.4 (TT), 2.2.6.1-2.2.6.2 (Global Transfer), 2.2.2.1 (foreign notes withdrawal), Important Note 7; Premier criteria Note 3",
+      "facts": "TT issuance (2.2.4.1): Premier/Advance 0.1% of remittance amount, min CNY 100, max CNY 500 per transaction; Private Banking individual customers Free. Cable charge (2.2.4.2): Premier/Advance CNY 120 per cable; PB individual Free. Pay Exact (USD full-value delivery): CNY 200 collected to cover overseas bank charge, shortfall billed. Global Transfer to self-name overseas HSBC (2.2.6.1): PB Free, Premier Free, Advance USD 20 (indicative CNY 145). Foreign notes withdrawal over counter (2.2.2.1): Free all segments; USD/HKD >=USD 5,000 equivalent needs >=3 working days notice; notes buy/sell board rates apply for cross-currency. Note 7: tariff excludes other institutions' charges and government taxes/levies. Premier preferential tariff conditional (e.g., Total Relationship Balance >=CNY 500,000). Provider terms only; not a regulator guarantee; subject to change."
+    },
+    {
+      "id": "S30",
+      "title": "Wise Help Centre - Guide to CNY transfers (sending from CNY)",
+      "publisher": "Wise (wise.com) - provider primary source",
+      "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+      "kind": "provider",
+      "status": "fetched",
+      "locator": "Sending from CNY: who can send; limits; how to pay",
+      "facts": "From-CNY sending only for non-mainland-Chinese individuals who work/worked in China with a China tax record showing taxes paid within the last 3 years; personal accounts only; funds must come from your own Chinese account; recipient must be another account you own; overall limit generally after-China-tax salary evidenced by tax records (does not expire); single transfer max CNY 300,000 via China bank app, CNY 50,000 via Alipay; pay-in to PBOC-regulated partner ACS account (拉卡拉); fees shown only when setting up a transfer (not statically published). Provider terms only."
+    },
+    {
+      "id": "S31",
+      "title": "Western Union - Send money from China",
+      "publisher": "Western Union (westernunion.com) - provider primary source",
+      "url": "https://www.westernunion.com/cn/en/send-money.html",
+      "kind": "provider",
+      "status": "fetched",
+      "locator": "How do I send money from China; partner banks; ID; availability banner",
+      "facts": "Residents of China send via partner-bank online/mobile banking (CEB, SPDB, PSBC, BOC mobile-only) after registering a profile, or in person at partner-bank locations; passport accepted as ID; a bank account may be required for cash sends; agents are banks subject to local regulation and risk controls; PSBC limited to 84 countries (US included); at retrieval a banner said transfers to recipient bank accounts temporarily unavailable - choose another delivery method (cash pickup). Fees and per-transfer limits are not statically published on this page. Provider terms only."
+    }
+  ]
+}

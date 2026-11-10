@@ -1,0 +1,30 @@
+name: Verify CNY to USD guide (arena/29c5e201)
+
+on:
+  pull_request:
+  push:
+    branches: ["main", "arena/29c5e201-china2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-guide:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build standalone guide
+        run: python3 guide-29c5e201/build.py
+      - name: Verify route tiers, source mapping, and local links
+        run: python3 guide-29c5e201/verify.py
+      - name: Verify generated guide is committed
+        run: git diff --exit-code -- guide-29c5e201 index.html
+      - name: Check browser-side filtering script syntax
+        run: node --check guide-29c5e201/assets/app.js

@@ -621,3 +621,20 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 
 - 2026-11-10 UTC: Claim recorded before substantive research. Policy: no hallucination; every table row links to official source; unverified values blank + flagged; no personal tax bill inferred; no funds moved.
 - 2026-11-10 UTC scope extension: this session is acting as final integration for its standalone guide because no active claims remain in this checkout. Additive request to root-hub owner accepted into this session: add one landing-card link to `guide-29c5e201/` in `ladder/build.py` (generator) and regenerate only outputs required to publish/discover this standalone guide. Do not alter underlying ladder data or other session-owned content.
+
+### Session `arena/29c5e201-china2` research and validation completion — 2026-11-10 UTC
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| S1 — Executive summary, source classification, safest first steps | done | arena/29c5e201-china2 | `guide-29c5e201/index.html`, generator |
+| S2 — Method catalog, pros/cons and conditional execution steps | done | arena/29c5e201-china2 | `guide-29c5e201/methods.html`, `data/methods.json` |
+| S3 — 17×40 cost ladder and penalty/tax/reporting analysis | done | arena/29c5e201-china2 | `guide-29c5e201/costs.html`, `penalties.html`, `taxes.html`, JSON data |
+| S4 — Source register, line-level verification, flags and structural checks | done | arena/29c5e201-china2 | `guide-29c5e201/{sources,verification,flagged}.html`, verifier, workflow |
+| S5 — Final hub integration, PR/merge and Pages confirmation | in progress | arena/29c5e201-china2 | root hub generator/output, append-only board, generated inventory |
+
+- Freshly fetched and checked **24 official/provider-primary sources** on 2026-11-10: S01, S03–S11, S13–S18, S20–S21, S23–S24, S28–S31, as itemized with locators and exact supported claim scope in `guide-29c5e201/verification.html` and `data/verification.json`. Other source-register links S02, S12, S19, S22, S25–S27 are explicitly labelled not freshly re-fetched this session; no blanket verification claim is made.
+- Material distinctions published: SAFE documented-income conversion (ID + transaction-source evidence including tax vouchers) is separate from the USD 500/1,000 unused-RMB reconversion threshold (original memo, 24 months); the latter is not a general small-amount allowance for savings. Personal route eligibility is unknown and must be confirmed by the bank.
+- HSBC schedule read from current PDF: Premier/Advance outward TT 0.1%, min CNY100/max CNY500 + CNY120 cable; published charge floors only. IRS annual-average 7.129 CNY/USD is not an executable quote. Example fee basis $10,000→CNY220/about $30.86; $400,000→CNY620/about $86.97. FX spread, other-bank charges, quote-only provider fees, tax, and net USD remain blank. Each of 680 tier rows links to source(s).
+- Local checks: guide validator PASS (17 routes, 680 sourced rows/40 tiers, 31 HTTPS sources, internal links/fragments); JS syntax PASS; repository docs validator PASS (9 pages, 67 findings, every table body row has official link); ladder verifier PASS (9,345 checks); repatriate verifier PASS (11,197 checks); briefing verifier PASS; portal verifier PASS (109 sourced rows). Structural checks do not certify law or personal eligibility.
+- Flags retained/published, including personal tax and eligibility unknown; provider fees/spreads unpublished; HSBC PDF has mixed headers (current cover and cited line items were checked); stale IRS FEIE page amounts; 2024 statutory edition for 26 USC 988; WU bank-account payout temporarily unavailable at retrieval; parallel dashboards differ; no personalized route/net USD/tax total can be computed. See guide Flagged for Review plus existing audit flags.
+- No funds moved, no bank contacted, no account-specific quote obtained, and no tax return filed. No manually supplied facts were required or presumed.
