@@ -605,6 +605,19 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Cross-scope request (logged, not edited): future root-hub owner may add a link to `acceptance-a64bd476/index.html` in `ladder/build.py` if desired.
 - Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
 
+## Session `arena/6068a908-china2` — independent targeted review
+
+Arena fixes this session to its existing branch. Historical claims remain respected; this session does not claim other sessions' substantive files. This is a targeted review, not a certification of the entire inherited repository.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Review published core findings and cost limitations against accessible official sources; publish any material irregularities | in progress | `arena/6068a908-china2` | `audit-6068a908/**`, append-only `COORDINATION.md` |
+| Validate and publish the review; regenerate inventory only if required | in progress | `arena/6068a908-china2` | `ladder/audit.html` (generated inventory only), append-only `COORDINATION.md` |
+
+### Targeted review completion — 2026-11-10
+- Both tasks above: **done**. Freshly read SAFE Tianjin's [current-account conversion FAQ](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), IRS [currency guidance](https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates) and [FBAR guidance](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar), and the 2024 [26 USC 988(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm). Limited findings and three **needs review** flags are published in `audit-6068a908/index.html`; no personal all-in cost, eligibility or tax estimated without evidence. HSBC tariff and annual averages linked for manual follow-up, not freshly reverified by this session. No claim of full repository factual certification.
+- Local validation: docs build and validation (9 pages, 67 findings), UI harness, `npm run check` (477 checks), briefing verifier, repatriate verifier (11,197 checks), acceptance verifier (7,989 structural checks), ladder verifier (9,345 checks). Structural tests do not certify legal accuracy. `ladder/audit.html` regenerated only to refresh inventory; acceptance verifier's incidental output restored, as outside this scope. Cross-scope request: hub owner may link the independent review, but existing hub already links briefing and flags.
+
 ---
 
 ## Session `arena/d5d1f860-china2` — live source re-verification, canonical cost reconciliation, consolidated dashboard
