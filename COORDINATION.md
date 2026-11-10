@@ -604,3 +604,18 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Merge conflict log (2026-11-10 UTC): concurrent PRs #34, #35, #36, #37, #38, #40 advanced `main` while PR #32 was open. Merged `origin/main` (`e1448b1` then `0cd0317`) into `arena/a64bd476-china2`; stopped on append-only conflict in `COORDINATION.md` and generated-inventory conflict in `ladder/audit.html`; preserved all concurrent sessions' board records verbatim without discarding any work, re-ran `acceptance-a64bd476/verify.py` + `build.py`, and deterministically regenerated `ladder/audit.html` via `ladder/model.py` + `ladder/build.py`.
 - Cross-scope request (logged, not edited): future root-hub owner may add a link to `acceptance-a64bd476/index.html` in `ladder/build.py` if desired.
 - Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
+
+## Session `arena/8cdb25b4-china2` — final integration of the consolidated guide (2026-11-10 UTC)
+
+> Arena pins this session to `arena/8cdb25b4-china2`; that fixed branch substitutes for a `session-<id>/<task>` branch. Full board read before claiming. All existing directories (`docs/`, `ladder/`, `briefing/`, `portal/`, `repatriate/`, `site/`, `audit-*`, `acceptance-*`, `verify-*`) are read-only inputs except the two shared outputs named below.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| G1 | Consolidated guide: executive summary, method inventory, cost ladder ($10k–$400k × methods), step-by-step execution, tax/penalty analysis, flags, sources | in progress | `guide/**` |
+| G2 | Independent verifier + CI for the guide (citation coverage per table row, arithmetic, local links, mobile/no-JS parity) | unclaimed | `guide/verify.py`, `.github/workflows/verify-guide.yml` |
+| G3 | Shared outputs: root hub card for the guide + deterministic `ladder/audit.html` inventory refresh | in progress | `ladder/build.py` (write_root_hub only), `index.html` (generated), `ladder/audit.html` (generated) |
+| G4 | PR → `main`, merge, confirm GitHub Pages deploy, record URLs here | in progress | `COORDINATION.md` (append-only) |
+
+- 2026-11-10 UTC: Claim recorded **before** substantive research or edits. Policy: every table row carries a link to a primary official source; values that cannot be confirmed from one stay blank and are listed on the guide's Flagged for Review page; modelled spreads are labelled as assumptions, never as prices; no personal tax bill is computed.
+- Scope-conflict check: open PRs #39 (`arena/c9cc56a6-china2`) and #41 (`arena/dc9b9512-china2`) are both `CONFLICTING`/stale and touch `ladder/build.py`, `COORDINATION.md` and `index.html`. This session does **not** merge or rebase them and does not discard them; it supersedes only the *publication* attempt by making the consolidated guide and the final merge itself. Their content is reviewed as read-only input. No `needs review` item is closed without an official-source check.
+- Prior-session `needs review` items (F01–F09, E01–E02, G01–G05) remain published and untouched; the guide links to them rather than restating them.
