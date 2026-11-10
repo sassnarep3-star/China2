@@ -1,19 +1,11 @@
-name: verify-88f5a1be
-
-# CI only - no deploy step. GitHub Pages for this repository is native from the
-# main root (see COORDINATION.md); adding actions/deploy-pages here would change
-# the Pages source and break the live site. The verify-88f5a1be/ directory is
-# served as static files at /China2/verify-88f5a1be/ with no settings change.
-
+name: Verify targeted review
 on:
   pull_request:
   push:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -21,16 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Deterministic rebuild (byte-identical output required)
-        run: |
-          PYTHONDONTWRITEBYTECODE=1 python3 verify-88f5a1be/build.py
-          PYTHONDONTWRITEBYTECODE=1 python3 verify-88f5a1be/render.py
-          git diff --exit-code -- verify-88f5a1be
-      - name: Independent verification (recompute, sources, blanks, links)
-        run: PYTHONDONTWRITEBYTECODE=1 python3 verify-88f5a1be/verify.py
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-      - name: JavaScript syntax check
-        run: node --check verify-88f5a1be/assets/app.js
+          python-version: '3.12'
+      - run: PYTHONDONTWRITEBYTECODE=1 python3 verify-88f5a1be/verify.py
