@@ -1,0 +1,239 @@
+{
+ "findings": [
+  {
+   "id": "RR01",
+   "area": "Exchange rate used to restate renminbi fees",
+   "finding": "The repository restates renminbi fees in dollars at 7.129 (the IRS 2025 yearly average) or 7.10. The six bank boards read today sell dollars at 6.684-6.702. Dollar equivalents of renminbi fees are therefore understated by about 6-7%: HSBC's ¥620 cap is shown as USD 86.97 and is USD 92.95 at today's reference mid; the ¥220 minimum is shown as USD 30.86 and is USD 32.98.",
+   "verdict": "irregularity",
+   "scan": [
+    "rate_7129",
+    "rate_710",
+    "usd_8697",
+    "usd_3086"
+   ],
+   "sources": [
+    "B01",
+    "U02",
+    "T07"
+   ]
+  },
+  {
+   "id": "RR02",
+   "area": "'No published spread' and modelled spread bands",
+   "finding": "Earlier work either leaves the exchange-rate margin blank ('no bank publishes one') or models a band of 0.3%-1.5%. Five mainland banks and HSBC China publish buying and selling rates; the margin over the mid-point works out at 0.21%-0.26% for the five mainland banks and 0.50% for HSBC. The modelled band starts above what the mainland boards show.",
+   "verdict": "irregularity",
+   "scan": [
+    "spread_band",
+    "boards"
+   ],
+   "sources": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06"
+   ]
+  },
+  {
+   "id": "RR03",
+   "area": "Fee tables rest on one bank",
+   "finding": "Every fee in the earlier cost tables comes from HSBC China's tariff. Bank of China, Agricultural Bank and China Merchants Bank publish personal wire fees on their own sites; Agricultural Bank's cap (¥200 + ¥80) is less than half HSBC's (¥500 + ¥120). No earlier ledger cites a mainland bank's own site.",
+   "verdict": "gap",
+   "scan": [
+    "boards"
+   ],
+   "sources": [
+    "T01",
+    "T02",
+    "T03",
+    "T07"
+   ]
+  },
+  {
+   "id": "RR04",
+   "area": "HSBC tariff figures",
+   "finding": "Re-read against the tariff effective 31 October 2026: issuance 0.1% (min ¥100, max ¥500) plus ¥120 cable for Premier and Advance; free for Private Banking individuals; Global Transfer free for Private Banking and Premier, USD 20 for Advance. The repository's figures agree.",
+   "verdict": "consistent",
+   "scan": [],
+   "sources": [
+    "T07"
+   ]
+  },
+  {
+   "id": "RR05",
+   "area": "Chinese limits",
+   "finding": "Re-read: ATM cap ¥100,000 a year and ¥10,000 per card per day; cash carrying USD 5,000 / 10,000; renminbi notes ¥20,000; annual quota USD 50,000; reconversion memo valid 24 months, USD 500 a day on ID alone; fine bands 30% and 30%-100%. The repository's figures agree.",
+   "verdict": "consistent",
+   "scan": [],
+   "sources": [
+    "R07",
+    "R08",
+    "R09",
+    "R03",
+    "R06",
+    "R01"
+   ]
+  },
+  {
+   "id": "RR06",
+   "area": "US figures",
+   "finding": "Re-read: section 988(e) USD 200 threshold; IRS yearly averages (2025: 7.129); FBAR penalty table USD 16,536 and USD 165,353; Form 3520 USD 100,000; exclusion USD 132,900 for 2026. The repository's figures agree.",
+   "verdict": "consistent",
+   "scan": [
+    "s988"
+   ],
+   "sources": [
+    "U01",
+    "U02",
+    "U04",
+    "U07",
+    "U10"
+   ]
+  },
+  {
+   "id": "RR07",
+   "area": "US exchange gain is described but never sized",
+   "finding": "Section 988 is mentioned throughout the repository, but no page shows what the gain is at today's rate. With the yuan at about 6.685 against yearly averages of 7.075-7.189 for 2023-2025, roughly 5.5%-7.0% of every dollar received would be exchange gain on renminbi acquired in those years — far more than any bank charge.",
+   "verdict": "gap",
+   "scan": [
+    "s988"
+   ],
+   "sources": [
+    "U01",
+    "U02",
+    "B01"
+   ]
+  },
+  {
+   "id": "RR08",
+   "area": "Outbound tax-filing rule",
+   "finding": "The USD 50,000-per-payment filing rule appears in a few files only. Its Article 4 — foreign individuals' payments follow the personal foreign-exchange rules — is not quoted anywhere else in the repository.",
+   "verdict": "gap",
+   "scan": [
+    "ann40"
+   ],
+   "sources": [
+    "R10",
+    "R11"
+   ]
+  },
+  {
+   "id": "RR09",
+   "area": "Who counts as a 'domestic individual'",
+   "finding": "The State Council Regulations and the PBOC rules define the term differently for a foreigner who has lived in China for a year. Earlier pages note the conflict; it is still unresolved and still decides who may use the annual quota.",
+   "verdict": "needs review",
+   "scan": [],
+   "sources": [
+    "R01",
+    "R02",
+    "R05"
+   ]
+  },
+  {
+   "id": "RR10",
+   "area": "Number of methods differs from page to page",
+   "finding": "Earlier sub-sites list 13, 15, 17, 18, 20, 22 or 24 methods; this section lists 23 because each bank with a published rate is priced separately. The lists differ in how they split the same routes, not in which routes exist.",
+   "verdict": "needs review",
+   "scan": [],
+   "sources": [
+    "R04"
+   ]
+  },
+  {
+   "id": "RR11",
+   "area": "Two executive summaries at the repository root",
+   "finding": "EXECUTIVE_SUMMARY.md and EXECUTIVE-SUMMARY.md both exist and differ. Neither is edited here.",
+   "verdict": "needs review",
+   "scan": [],
+   "sources": [
+    "R04"
+   ]
+  },
+  {
+   "id": "RR12",
+   "area": "Typos on official pages",
+   "finding": "The IRS yearly-average table shows '0,924' for the euro in 2024 and '.73.686' for the rouble in 2021. The PBOC's English text of Decree No. 3 heads its capital-account chapter 'Under the Current Account'. Neither affects a figure used here.",
+   "verdict": "note",
+   "scan": [],
+   "sources": [
+    "U02",
+    "R02"
+   ]
+  }
+ ],
+ "housekeeping": [
+  {
+   "id": "RH01",
+   "area": "Acceptance audit counters are out of step",
+   "finding": "Regenerating acceptance-a64bd476 on main at commit 06ce485 changes its three generated files: its crawl counts no longer match the pages now in the repository. Its CI job runs only when its own folder changes, so nothing shows red. Not edited here; logged for its owner.",
+   "verdict": "irregularity",
+   "links": [
+    [
+     "acceptance-a64bd476/checks.json",
+     "https://github.com/sassnarep3-star/China2/blob/main/acceptance-a64bd476/checks.json"
+    ],
+    [
+     "workflow",
+     "https://github.com/sassnarep3-star/China2/blob/main/.github/workflows/verify-acceptance-a64bd476.yml"
+    ]
+   ]
+  },
+  {
+   "id": "RH02",
+   "area": "Source-link audit snapshot no longer reproduces",
+   "finding": "audit-92d12752/verify.py stops on its own assertion ('snapshot differs') on main at commit 06ce485, because pages were added after its snapshot. It has no CI job. Its published counts are a point-in-time figure. Not edited here.",
+   "verdict": "irregularity",
+   "links": [
+    [
+     "audit-92d12752/verify.py",
+     "https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/verify.py"
+    ],
+    [
+     "audit-92d12752/results.json",
+     "https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/results.json"
+    ]
+   ]
+  },
+  {
+   "id": "RH03",
+   "area": "Pull request 41, open and conflicting since 06:06 UTC",
+   "finding": "Rewrites 37 files across the hub, the ladder, the briefing, the portal and the reports (+1,906 / -1,807 lines) — all other sessions' scopes — and has been overtaken by later merges. Recommendation to its owner: close it, or rebase and cut it down to its own files. Not merged or closed by this session.",
+   "verdict": "needs review",
+   "links": [
+    [
+     "PR #41",
+     "https://github.com/sassnarep3-star/China2/pull/41"
+    ]
+   ]
+  },
+  {
+   "id": "RH04",
+   "area": "Pull request 39, open and conflicting since 06:06 UTC",
+   "finding": "Adds a self-contained guide (14 files under guide-c9cc56a6) plus a regenerated ladder inventory. The guide is additive and could be published after its owner rebases and regenerates the inventory. Not merged or closed by this session.",
+   "verdict": "needs review",
+   "links": [
+    [
+     "PR #39",
+     "https://github.com/sassnarep3-star/China2/pull/39"
+    ]
+   ]
+  },
+  {
+   "id": "RH05",
+   "area": "Many sessions publishing at once",
+   "finding": "Between 09:50 and 10:18 UTC on 10 November 2026 eight pull requests were merged and six more were open. Every merge changes the shared task board and the generated file inventory, so each session must merge main and regenerate before it can publish. The board keeps every session's record; nothing was discarded by this session.",
+   "verdict": "note",
+   "links": [
+    [
+     "COORDINATION.md",
+     "https://github.com/sassnarep3-star/China2/blob/main/COORDINATION.md"
+    ],
+    [
+     "Pull requests",
+     "https://github.com/sassnarep3-star/China2/pulls?q=is%3Apr"
+    ]
+   ]
+  }
+ ]
+}

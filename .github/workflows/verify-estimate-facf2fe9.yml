@@ -1,0 +1,44 @@
+name: Verify published-rate estimates (facf2fe9)
+
+on:
+  pull_request:
+    paths:
+      - 'estimate-facf2fe9/**'
+      - '.github/workflows/verify-estimate-facf2fe9.yml'
+  push:
+    branches: ["main", "arena/facf2fe9-china2"]
+    paths:
+      - 'estimate-facf2fe9/**'
+      - '.github/workflows/verify-estimate-facf2fe9.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recompute the cost model
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 estimate-facf2fe9/model.py
+      - name: Regenerate the pages
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 estimate-facf2fe9/build.py
+      - name: Check generated output is committed
+        run: git diff --exit-code -- estimate-facf2fe9
+      - name: Independent checks (ledger, arithmetic, blank rule, row links, local links)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 estimate-facf2fe9/verify.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Check browser script syntax
+        run: node --check estimate-facf2fe9/assets/app.js
