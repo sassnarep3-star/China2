@@ -2,7 +2,8 @@
 """Generate acceptance pages from findings.json / sources.json / checks.json.
 Deterministic: same inputs -> same bytes. Run verify.py first for checks.json.
 """
-import html, json
+import html, json, sys
+sys.dont_write_bytecode = True
 from pathlib import Path
 
 ACC = Path(__file__).resolve().parent

@@ -39,46 +39,46 @@ R01,Documented income → SWIFT,Lawful · primary,lawful,370000,1,87.32394366197
 R01,Documented income → SWIFT,Lawful · primary,lawful,380000,1,87.32394366197184,published,False,1140.0,5700.0,1227.32,5787.32,0.323,1.523,0.0,0.0,1-10 business days
 R01,Documented income → SWIFT,Lawful · primary,lawful,390000,1,87.32394366197184,published,False,1170.0,5850.0,1257.32,5937.32,0.322,1.522,0.0,0.0,1-10 business days
 R01,Documented income → SWIFT,Lawful · primary,lawful,400000,1,87.32394366197184,published,False,1200.0,6000.0,1287.32,6087.32,0.322,1.522,0.0,0.0,1-10 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,10000,1,7.0,published,False,30.0,150.0,37.0,157.0,0.37,1.57,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,20000,1,7.0,published,False,60.0,300.0,67.0,307.0,0.335,1.535,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,30000,1,7.0,published,False,90.0,450.0,97.0,457.0,0.323,1.523,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,40000,1,7.0,published,False,120.0,600.0,127.0,607.0,0.318,1.518,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,50000,1,7.0,published,False,150.0,750.0,157.0,757.0,0.314,1.514,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,60000,1,7.0,published,False,180.0,900.0,187.0,907.0,0.312,1.512,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,70000,1,7.0,published,False,210.0,1050.0,217.0,1057.0,0.31,1.51,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,80000,1,7.0,published,False,240.0,1200.0,247.0,1207.0,0.309,1.509,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,90000,1,7.0,published,False,270.0,1350.0,277.0,1357.0,0.308,1.508,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,100000,1,7.0,published,False,300.0,1500.0,307.0,1507.0,0.307,1.507,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,110000,1,7.0,published,False,330.0,1650.0,337.0,1657.0,0.306,1.506,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,120000,1,7.0,published,False,360.0,1800.0,367.0,1807.0,0.306,1.506,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,130000,1,7.0,published,False,390.0,1950.0,397.0,1957.0,0.305,1.505,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,140000,1,7.0,published,False,420.0,2100.0,427.0,2107.0,0.305,1.505,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,150000,1,7.0,published,False,450.0,2250.0,457.0,2257.0,0.305,1.505,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,160000,1,7.0,published,False,480.0,2400.0,487.0,2407.0,0.304,1.504,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,170000,1,7.0,published,False,510.0,2550.0,517.0,2557.0,0.304,1.504,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,180000,1,7.0,published,False,540.0,2700.0,547.0,2707.0,0.304,1.504,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,190000,1,7.0,published,False,570.0,2850.0,577.0,2857.0,0.304,1.504,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,200000,1,7.0,published,False,600.0,3000.0,607.0,3007.0,0.303,1.504,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,210000,1,7.0,published,False,630.0,3150.0,637.0,3157.0,0.303,1.503,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,220000,1,7.0,published,False,660.0,3300.0,667.0,3307.0,0.303,1.503,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,230000,1,7.0,published,False,690.0,3450.0,697.0,3457.0,0.303,1.503,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,240000,1,7.0,published,False,720.0,3600.0,727.0,3607.0,0.303,1.503,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,250000,1,7.0,published,False,750.0,3750.0,757.0,3757.0,0.303,1.503,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,260000,1,7.0,published,False,780.0,3900.0,787.0,3907.0,0.303,1.503,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,270000,1,7.0,published,False,810.0,4050.0,817.0,4057.0,0.303,1.503,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,280000,1,7.0,published,False,840.0,4200.0,847.0,4207.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,290000,1,7.0,published,False,870.0,4350.0,877.0,4357.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,300000,1,7.0,published,False,900.0,4500.0,907.0,4507.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,310000,1,7.0,published,False,930.0,4650.0,937.0,4657.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,320000,1,7.0,published,False,960.0,4800.0,967.0,4807.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,330000,1,7.0,published,False,990.0,4950.0,997.0,4957.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,340000,1,7.0,published,False,1020.0,5100.0,1027.0,5107.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,350000,1,7.0,published,False,1050.0,5250.0,1057.0,5257.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,360000,1,7.0,published,False,1080.0,5400.0,1087.0,5407.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,370000,1,7.0,published,False,1110.0,5550.0,1117.0,5557.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,380000,1,7.0,published,False,1140.0,5700.0,1147.0,5707.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,390000,1,7.0,published,False,1170.0,5850.0,1177.0,5857.0,0.302,1.502,0.0,0.0,1-5 business days
-R02,Documented income → Global Transfer,Lawful · primary,lawful,400000,1,7.0,published,False,1200.0,6000.0,1207.0,6007.0,0.302,1.502,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,10000,1,0.0,published,False,30.0,150.0,30.0,150.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,20000,1,0.0,published,False,60.0,300.0,60.0,300.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,30000,1,0.0,published,False,90.0,450.0,90.0,450.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,40000,1,0.0,published,False,120.0,600.0,120.0,600.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,50000,1,0.0,published,False,150.0,750.0,150.0,750.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,60000,1,0.0,published,False,180.0,900.0,180.0,900.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,70000,1,0.0,published,False,210.0,1050.0,210.0,1050.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,80000,1,0.0,published,False,240.0,1200.0,240.0,1200.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,90000,1,0.0,published,False,270.0,1350.0,270.0,1350.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,100000,1,0.0,published,False,300.0,1500.0,300.0,1500.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,110000,1,0.0,published,False,330.0,1650.0,330.0,1650.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,120000,1,0.0,published,False,360.0,1800.0,360.0,1800.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,130000,1,0.0,published,False,390.0,1950.0,390.0,1950.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,140000,1,0.0,published,False,420.0,2100.0,420.0,2100.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,150000,1,0.0,published,False,450.0,2250.0,450.0,2250.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,160000,1,0.0,published,False,480.0,2400.0,480.0,2400.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,170000,1,0.0,published,False,510.0,2550.0,510.0,2550.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,180000,1,0.0,published,False,540.0,2700.0,540.0,2700.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,190000,1,0.0,published,False,570.0,2850.0,570.0,2850.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,200000,1,0.0,published,False,600.0,3000.0,600.0,3000.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,210000,1,0.0,published,False,630.0,3150.0,630.0,3150.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,220000,1,0.0,published,False,660.0,3300.0,660.0,3300.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,230000,1,0.0,published,False,690.0,3450.0,690.0,3450.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,240000,1,0.0,published,False,720.0,3600.0,720.0,3600.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,250000,1,0.0,published,False,750.0,3750.0,750.0,3750.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,260000,1,0.0,published,False,780.0,3900.0,780.0,3900.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,270000,1,0.0,published,False,810.0,4050.0,810.0,4050.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,280000,1,0.0,published,False,840.0,4200.0,840.0,4200.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,290000,1,0.0,published,False,870.0,4350.0,870.0,4350.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,300000,1,0.0,published,False,900.0,4500.0,900.0,4500.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,310000,1,0.0,published,False,930.0,4650.0,930.0,4650.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,320000,1,0.0,published,False,960.0,4800.0,960.0,4800.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,330000,1,0.0,published,False,990.0,4950.0,990.0,4950.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,340000,1,0.0,published,False,1020.0,5100.0,1020.0,5100.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,350000,1,0.0,published,False,1050.0,5250.0,1050.0,5250.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,360000,1,0.0,published,False,1080.0,5400.0,1080.0,5400.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,370000,1,0.0,published,False,1110.0,5550.0,1110.0,5550.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,380000,1,0.0,published,False,1140.0,5700.0,1140.0,5700.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,390000,1,0.0,published,False,1170.0,5850.0,1170.0,5850.0,0.3,1.5,0.0,0.0,1-5 business days
+R02,Documented income → Global Transfer,Lawful · primary,lawful,400000,1,0.0,published,False,1200.0,6000.0,1200.0,6000.0,0.3,1.5,0.0,0.0,1-5 business days
 R03,Re-conversion with exchange memo,Lawful · conditional,lawful,10000,1,30.98591549295775,published,False,30.0,150.0,60.99,180.99,0.61,1.81,0.0,0.0,1-10 business days
 R03,Re-conversion with exchange memo,Lawful · conditional,lawful,20000,1,36.901408450704224,published,False,60.0,300.0,96.9,336.9,0.485,1.685,0.0,0.0,1-10 business days
 R03,Re-conversion with exchange memo,Lawful · conditional,lawful,30000,1,46.901408450704224,published,False,90.0,450.0,136.9,496.9,0.456,1.656,0.0,0.0,1-10 business days
@@ -199,46 +199,46 @@ R05,"Airport-side conversion (USD 1,000/day)",Lawful · small balance only,lawfu
 R05,"Airport-side conversion (USD 1,000/day)",Lawful · small balance only,lawful,380000,380,,unpublished,True,3040.0,11400.0,3040.0,11400.0,0.8,3.0,0.0,0.0,380 banking days
 R05,"Airport-side conversion (USD 1,000/day)",Lawful · small balance only,lawful,390000,390,,unpublished,True,3120.0,11700.0,3120.0,11700.0,0.8,3.0,0.0,0.0,390 banking days
 R05,"Airport-side conversion (USD 1,000/day)",Lawful · small balance only,lawful,400000,400,,unpublished,True,3200.0,12000.0,3200.0,12000.0,0.8,3.0,0.0,0.0,400 banking days
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,10000,2,"(25.0, 40.0)",published-band,False,80.0,300.0,105.0,340.0,1.05,3.4,0.0,0.0,2 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,20000,4,"(50.0, 80.0)",published-band,False,160.0,600.0,210.0,680.0,1.05,3.4,0.0,0.0,4 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,30000,6,"(75.0, 120.0)",published-band,False,240.0,900.0,315.0,1020.0,1.05,3.4,0.0,0.0,6 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,40000,8,"(100.0, 160.0)",published-band,False,320.0,1200.0,420.0,1360.0,1.05,3.4,0.0,0.0,8 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,50000,10,"(125.0, 200.0)",published-band,False,400.0,1500.0,525.0,1700.0,1.05,3.4,0.0,0.0,10 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,60000,12,"(150.0, 240.0)",published-band,False,480.0,1800.0,630.0,2040.0,1.05,3.4,0.0,0.0,12 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,70000,14,"(175.0, 280.0)",published-band,False,560.0,2100.0,735.0,2380.0,1.05,3.4,0.0,0.0,14 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,80000,16,"(200.0, 320.0)",published-band,False,640.0,2400.0,840.0,2720.0,1.05,3.4,0.0,0.0,16 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,90000,18,"(225.0, 360.0)",published-band,False,720.0,2700.0,945.0,3060.0,1.05,3.4,0.0,0.0,18 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,100000,20,"(250.0, 400.0)",published-band,False,800.0,3000.0,1050.0,3400.0,1.05,3.4,0.0,0.0,20 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,110000,22,"(275.0, 440.0)",published-band,False,880.0,3300.0,1155.0,3740.0,1.05,3.4,0.0,0.0,22 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,120000,24,"(300.0, 480.0)",published-band,False,960.0,3600.0,1260.0,4080.0,1.05,3.4,0.0,0.0,24 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,130000,26,"(325.0, 520.0)",published-band,False,1040.0,3900.0,1365.0,4420.0,1.05,3.4,0.0,0.0,26 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,140000,28,"(350.0, 560.0)",published-band,False,1120.0,4200.0,1470.0,4760.0,1.05,3.4,0.0,0.0,28 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,150000,30,"(375.0, 600.0)",published-band,False,1200.0,4500.0,1575.0,5100.0,1.05,3.4,0.0,0.0,30 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,160000,32,"(400.0, 640.0)",published-band,False,1280.0,4800.0,1680.0,5440.0,1.05,3.4,0.0,0.0,32 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,170000,34,"(425.0, 680.0)",published-band,False,1360.0,5100.0,1785.0,5780.0,1.05,3.4,0.0,0.0,34 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,180000,36,"(450.0, 720.0)",published-band,False,1440.0,5400.0,1890.0,6120.0,1.05,3.4,0.0,0.0,36 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,190000,38,"(475.0, 760.0)",published-band,False,1520.0,5700.0,1995.0,6460.0,1.05,3.4,0.0,0.0,38 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,200000,40,"(500.0, 800.0)",published-band,False,1600.0,6000.0,2100.0,6800.0,1.05,3.4,0.0,0.0,40 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,210000,42,"(525.0, 840.0)",published-band,False,1680.0,6300.0,2205.0,7140.0,1.05,3.4,0.0,0.0,42 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,220000,44,"(550.0, 880.0)",published-band,False,1760.0,6600.0,2310.0,7480.0,1.05,3.4,0.0,0.0,44 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,230000,46,"(575.0, 920.0)",published-band,False,1840.0,6900.0,2415.0,7820.0,1.05,3.4,0.0,0.0,46 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,240000,48,"(600.0, 960.0)",published-band,False,1920.0,7200.0,2520.0,8160.0,1.05,3.4,0.0,0.0,48 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,250000,50,"(625.0, 1000.0)",published-band,False,2000.0,7500.0,2625.0,8500.0,1.05,3.4,0.0,0.0,50 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,260000,52,"(650.0, 1040.0)",published-band,False,2080.0,7800.0,2730.0,8840.0,1.05,3.4,0.0,0.0,52 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,270000,54,"(675.0, 1080.0)",published-band,False,2160.0,8100.0,2835.0,9180.0,1.05,3.4,0.0,0.0,54 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,280000,56,"(700.0, 1120.0)",published-band,False,2240.0,8400.0,2940.0,9520.0,1.05,3.4,0.0,0.0,56 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,290000,58,"(725.0, 1160.0)",published-band,False,2320.0,8700.0,3045.0,9860.0,1.05,3.4,0.0,0.0,58 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,300000,60,"(750.0, 1200.0)",published-band,False,2400.0,9000.0,3150.0,10200.0,1.05,3.4,0.0,0.0,60 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,310000,62,"(775.0, 1240.0)",published-band,False,2480.0,9300.0,3255.0,10540.0,1.05,3.4,0.0,0.0,62 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,320000,64,"(800.0, 1280.0)",published-band,False,2560.0,9600.0,3360.0,10880.0,1.05,3.4,0.0,0.0,64 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,330000,66,"(825.0, 1320.0)",published-band,False,2640.0,9900.0,3465.0,11220.0,1.05,3.4,0.0,0.0,66 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,340000,68,"(850.0, 1360.0)",published-band,False,2720.0,10200.0,3570.0,11560.0,1.05,3.4,0.0,0.0,68 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,350000,70,"(875.0, 1400.0)",published-band,False,2800.0,10500.0,3675.0,11900.0,1.05,3.4,0.0,0.0,70 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,360000,72,"(900.0, 1440.0)",published-band,False,2880.0,10800.0,3780.0,12240.0,1.05,3.4,0.0,0.0,72 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,370000,74,"(925.0, 1480.0)",published-band,False,2960.0,11100.0,3885.0,12580.0,1.05,3.4,0.0,0.0,74 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,380000,76,"(950.0, 1520.0)",published-band,False,3040.0,11400.0,3990.0,12920.0,1.05,3.4,0.0,0.0,76 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,390000,78,"(975.0, 1560.0)",published-band,False,3120.0,11700.0,4095.0,13260.0,1.05,3.4,0.0,0.0,78 trips
-R06,Carry USD cash out,"Lawful · capped, impractical",lawful,400000,80,"(1000.0, 1600.0)",published-band,False,3200.0,12000.0,4200.0,13600.0,1.05,3.4,0.0,0.0,80 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,10000,2,0.0,published,False,80.0,300.0,80.0,300.0,0.8,3.0,0.0,0.0,2 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,20000,4,0.0,published,False,160.0,600.0,160.0,600.0,0.8,3.0,0.0,0.0,4 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,30000,6,0.0,published,False,240.0,900.0,240.0,900.0,0.8,3.0,0.0,0.0,6 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,40000,8,0.0,published,False,320.0,1200.0,320.0,1200.0,0.8,3.0,0.0,0.0,8 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,50000,10,0.0,published,False,400.0,1500.0,400.0,1500.0,0.8,3.0,0.0,0.0,10 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,60000,12,0.0,published,False,480.0,1800.0,480.0,1800.0,0.8,3.0,0.0,0.0,12 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,70000,14,0.0,published,False,560.0,2100.0,560.0,2100.0,0.8,3.0,0.0,0.0,14 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,80000,16,0.0,published,False,640.0,2400.0,640.0,2400.0,0.8,3.0,0.0,0.0,16 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,90000,18,0.0,published,False,720.0,2700.0,720.0,2700.0,0.8,3.0,0.0,0.0,18 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,100000,20,0.0,published,False,800.0,3000.0,800.0,3000.0,0.8,3.0,0.0,0.0,20 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,110000,22,0.0,published,False,880.0,3300.0,880.0,3300.0,0.8,3.0,0.0,0.0,22 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,120000,24,0.0,published,False,960.0,3600.0,960.0,3600.0,0.8,3.0,0.0,0.0,24 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,130000,26,0.0,published,False,1040.0,3900.0,1040.0,3900.0,0.8,3.0,0.0,0.0,26 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,140000,28,0.0,published,False,1120.0,4200.0,1120.0,4200.0,0.8,3.0,0.0,0.0,28 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,150000,30,0.0,published,False,1200.0,4500.0,1200.0,4500.0,0.8,3.0,0.0,0.0,30 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,160000,32,0.0,published,False,1280.0,4800.0,1280.0,4800.0,0.8,3.0,0.0,0.0,32 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,170000,34,0.0,published,False,1360.0,5100.0,1360.0,5100.0,0.8,3.0,0.0,0.0,34 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,180000,36,0.0,published,False,1440.0,5400.0,1440.0,5400.0,0.8,3.0,0.0,0.0,36 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,190000,38,0.0,published,False,1520.0,5700.0,1520.0,5700.0,0.8,3.0,0.0,0.0,38 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,200000,40,0.0,published,False,1600.0,6000.0,1600.0,6000.0,0.8,3.0,0.0,0.0,40 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,210000,42,0.0,published,False,1680.0,6300.0,1680.0,6300.0,0.8,3.0,0.0,0.0,42 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,220000,44,0.0,published,False,1760.0,6600.0,1760.0,6600.0,0.8,3.0,0.0,0.0,44 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,230000,46,0.0,published,False,1840.0,6900.0,1840.0,6900.0,0.8,3.0,0.0,0.0,46 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,240000,48,0.0,published,False,1920.0,7200.0,1920.0,7200.0,0.8,3.0,0.0,0.0,48 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,250000,50,0.0,published,False,2000.0,7500.0,2000.0,7500.0,0.8,3.0,0.0,0.0,50 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,260000,52,0.0,published,False,2080.0,7800.0,2080.0,7800.0,0.8,3.0,0.0,0.0,52 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,270000,54,0.0,published,False,2160.0,8100.0,2160.0,8100.0,0.8,3.0,0.0,0.0,54 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,280000,56,0.0,published,False,2240.0,8400.0,2240.0,8400.0,0.8,3.0,0.0,0.0,56 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,290000,58,0.0,published,False,2320.0,8700.0,2320.0,8700.0,0.8,3.0,0.0,0.0,58 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,300000,60,0.0,published,False,2400.0,9000.0,2400.0,9000.0,0.8,3.0,0.0,0.0,60 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,310000,62,0.0,published,False,2480.0,9300.0,2480.0,9300.0,0.8,3.0,0.0,0.0,62 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,320000,64,0.0,published,False,2560.0,9600.0,2560.0,9600.0,0.8,3.0,0.0,0.0,64 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,330000,66,0.0,published,False,2640.0,9900.0,2640.0,9900.0,0.8,3.0,0.0,0.0,66 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,340000,68,0.0,published,False,2720.0,10200.0,2720.0,10200.0,0.8,3.0,0.0,0.0,68 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,350000,70,0.0,published,False,2800.0,10500.0,2800.0,10500.0,0.8,3.0,0.0,0.0,70 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,360000,72,0.0,published,False,2880.0,10800.0,2880.0,10800.0,0.8,3.0,0.0,0.0,72 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,370000,74,0.0,published,False,2960.0,11100.0,2960.0,11100.0,0.8,3.0,0.0,0.0,74 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,380000,76,0.0,published,False,3040.0,11400.0,3040.0,11400.0,0.8,3.0,0.0,0.0,76 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,390000,78,0.0,published,False,3120.0,11700.0,3120.0,11700.0,0.8,3.0,0.0,0.0,78 trips
+R06,Carry USD cash out,"Lawful · capped, impractical",lawful,400000,80,0.0,published,False,3200.0,12000.0,3200.0,12000.0,0.8,3.0,0.0,0.0,80 trips
 R07,Emigration transfer,Lawful · capital account,lawful,10000,1,30.98591549295775,published,False,30.0,150.0,60.99,180.99,0.61,1.81,0.0,0.0,up to 2 years of staged remittances
 R07,Emigration transfer,Lawful · capital account,lawful,20000,1,36.901408450704224,published,False,60.0,300.0,96.9,336.9,0.485,1.685,0.0,0.0,up to 2 years of staged remittances
 R07,Emigration transfer,Lawful · capital account,lawful,30000,3,92.95774647887325,published,False,90.0,450.0,182.96,542.96,0.61,1.81,0.0,0.0,up to 2 years of staged remittances

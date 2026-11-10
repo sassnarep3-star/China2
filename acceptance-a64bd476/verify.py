@@ -16,6 +16,7 @@ Checks:
 Writes checks.json. Exit 1 on any failure.
 """
 import csv, json, re, sys
+sys.dont_write_bytecode = True
 from html.parser import HTMLParser
 from pathlib import Path
 
