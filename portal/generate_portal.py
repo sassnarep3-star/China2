@@ -106,8 +106,8 @@ def build_index(data: dict) -> str:
         (
             "Taxed PRC Employment Wages, Consulting, Rent, or Royalties",
             "M01 — Bank Counter Conversion & SWIFT Wire (PBOC Decree [2006] No. 3 Art. 13)",
-            "0% extra conversion tax (requires STA 完税证明 proving IIT already paid)",
-            "Creditable dollar-for-dollar on IRS Form 1116 (unless excluded under Form 2555 FEIE: $130,000 in 2025 / $132,900 in 2026)",
+            "0% standalone conversion tax (requires STA 完税证明 proving underlying IIT paid)",
+            "Qualifying PRC tax creditable on IRS Form 1116 subject to sourcing/limitation rules (if not excluded under Form 2555 FEIE: $132,900 in 2026 / $137,300 in 2027)",
             "Uncapped up to documented after-tax income",
             "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
             "PBOC Decree [2006] No. 3 Art. 13",

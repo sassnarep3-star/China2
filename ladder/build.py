@@ -484,8 +484,9 @@ def page_tax():
          "30%–100% if serious; criminal liability possible", "S04", "Art. 45"),
         ("Failure to make the required balance-of-payments declaration", "warning; up to CNY 50,000 for an "
          "individual", "S04", "Art. 48"),
-        ("Splitting to evade limits / lending your quota", "watch list for the current year plus two years; "
-         "counter service then requires full documentation", "S18", "Art. 2"),
+        ("Splitting to evade limits / lending your quota", "prohibited by PBOC Decree [2006] No. 3 Art. 7 "
+         "and penalized under Decree 532 Arts. 39–40; older Hui Fa [2015] No. 49 watch-list text carries "
+         "conflicting active/repealed mirror labels (see F03)", "S18", "Art. 2 (disputed)"),
     ]
     pen_rows = "".join(
         f"<tr><td data-label='Conduct'>{esc(a)}</td><td data-label='Exposure'>{esc(b)}</td>"
@@ -553,8 +554,9 @@ a US reporting duty that has nothing to do with conversion.</p>
   <p>Then the amount people quote as a “conversion penalty” is the unpaid PRC tax plus, potentially, the
   Art. 39 or Art. 40 fine. The lawful sequence is: establish the income character, settle with the tax
   authority, obtain the certificate, convert under R01, then claim the PRC tax in the US on Form 1116. In
-  most cases where the PRC rate is at or above the US rate, the US tax on the same income is reduced to
-  near zero — the credit is doing the work, not a trick.</p>
+  most cases where the PRC income tax rate is at or above the U.S. rate on the same foreign-source "
+  "income, a qualifying Form 1116 credit can substantially offset U.S. tax on that income, subject to "
+  "sourcing, income-category, legal-liability and limitation rules (S12; see C05).</p>
 </section>
 """
     return shell("tax.html", "Tax & penalties", body)
@@ -598,10 +600,9 @@ of it is a regulator's figure, a bank quote, or a fact about your account.</p>
     listed only to prevent the earlier confusion with a general same-name Global Transfer fee. {src_link('S21')}</li>
     <li>CNY 100,000 per person per calendar year of overseas ATM cash; CNY 10,000 per card per day.
     {src_link('S03')}</li>
-    <li>USD 500 per day onshore / USD 1,000 per day port-side conversion exemption. {src_link('S17')}</li>
+    <li>USD 500 per day onshore / USD 1,000 per day port-side unused-RMB reconversion exemption (24-month original memo rule for larger amounts). {src_link('S17')}</li>
     <li>USD 5,000 / 10,000 cash carrying thresholds. {src_link('S15')}</li>
-    <li>Staged emigration remittance: up to half, then half of the remainder after one year, balance after
-    two years; RMB 200,000 may go in one go. {src_link('S05')}</li>
+    <li>Emigration and inheritance transfers: local SAFE branch approves; SAFE Circular Huifa [2014] No. 2 §VI cancelled the >RMB 500,000 head-office filing and cancelled mandatory multi-stage installments so banks may remit in a lump sum or in batches within the approved limit. {src_link('S05')}</li>
   </ul>
 </section>
 """
@@ -617,7 +618,8 @@ def repo_inventory():
             ".svg": "asset", ".txt": "archived page", ".cjs": "test", ".mjs": "tool"}
     out = []
     for p in sorted(REPO.rglob("*")):
-        if not p.is_file() or ".git/" in str(p) or "/data/" in str(p):
+        s = str(p)
+        if not p.is_file() or ".git/" in s or "/data/" in s or "__pycache__/" in s or ".cache/" in s or "node_modules/" in s or p.suffix == ".pyc":
             continue
         rel = p.relative_to(REPO)
         if str(rel).startswith("ladder/"):
@@ -677,9 +679,11 @@ def page_audit():
         ("AUD-09", "No source in this repository is a live quote for CNY/USD.",
          "Every published cost here is a tariff; the spread is modelled.",
          "Separated into the assumptions register.", "F04"),
-        ("AUD-10", "Prior work asserts a USD 100,000 Form 3520 threshold for foreign gifts/bequests.",
-         "Not re-verified in this session; the IRS page was not retrieved here.",
-         "Left out of the model and flagged rather than repeated.", "F07"),
+        ("AUD-10", "Form 3520 gift/bequest thresholds verified across IRS primary pages.",
+         "Confirmed from IRS Gifts from Foreign Person and Rev. Proc. 2026-35 §3.51: >USD 100,000 for "
+         "nonresident-alien / foreign-estate gifts and bequests; >USD 20,573 (2026) / >USD 21,240 "
+         "(2027) for foreign corporations/partnerships.",
+         "Updated F07 with IRS thresholds; excluded from transfer-fee arithmetic (not a bank fee).", "F07"),
     ]
     find_rows = "".join(audit_row(i, o, a, x, f) for i, o, a, x, f in findings)
 
@@ -750,9 +754,12 @@ FLAG_ITEMS = [
      "registration (S07 Art. 15), but the specific SAFE/bank documentary path for repatriating a foreign "
      "vendor's proceeds was not verified here. The 20% figure is published; the procedure is flagged.",
      ["S07", "S01"]),
-    ("F07", "Form 3520 threshold not verified in this session", "low",
-     "Prior work in this repository asserts a USD 100,000 threshold for foreign gifts and bequests. It was "
-     "not re-retrieved here, so it is excluded from the model and flagged rather than repeated.", []),
+    ("F07", "Form 3520 foreign gift thresholds verified; trust facts still required", "low",
+     "Verified against IRS 'Gifts from a Foreign Person' (irs.gov/businesses/gifts-from-foreign-person) "
+     "and Rev. Proc. 2026-35 §3.51: Part IV applies above USD 100,000 aggregate for gifts/bequests from "
+     "nonresident aliens or foreign estates, and above USD 20,573 (2026) / USD 21,240 (2027) from foreign "
+     "corporations/partnerships. Foreign-trust reporting depends on personal facts and is not modelled in "
+     "transfer-cost arithmetic.", []),
     ("F08", "Card and ATM fixed fees are unpublished", "medium",
      "ATM operator fees, issuer foreign-transaction markups and card scheme settlement rates were not "
      "obtained. Routes R11 and R12 are marked PARTIAL: their estimates include the spread only.",
@@ -764,9 +771,9 @@ FLAG_ITEMS = [
      "between the two editions (Private Banking individuals are now exempt). Residual risk: the bank may "
      "adjust the schedule again — confirm at the branch. The spread-band caveat (F04) is unchanged.",
      ["S21", "S06"]),
-    ("F10", "Three prior dashboards publish different counts", "low",
-     "docs/, site/ and portal/ present overlapping material with different totals. None was edited; the "
-     "inconsistency is recorded rather than resolved by deletion.", []),
+    ("F10", "Parallel dashboards publish different route counts", "low",
+     "docs/, site/, portal/, repatriate/, briefing/ and this ladder use different method taxonomies (17–22). "
+     "All deliverables are now cross-linked from root index.html; review scope and caveats per sub-site.", []),
     ("F11", "No per-transfer ceiling was verified for a non-domestic remittance", "medium",
      "The model assumes one wire per tranche (A7). If a bank splits a large remittance, fixed fees multiply. "
      "This is where a $400,000 transfer could cost more than the table shows.", ["S02"]),
@@ -858,22 +865,24 @@ def write_root_hub():
          "Shows modelled bands using explicit assumptions. Not an account quote or an officially verified all-in cost."),
         ("audit-86f0/costs.html", "Source-only blank matrix", "22 methods · 40 tiers",
          "Leaves unverified FX spreads, transfer totals and tax amounts blank. Blank means unverified, not zero."),
+        ("audit-0f0f59fe/index.html", "Landing-page claim review", "Official text · corrections · unresolved facts",
+         "Independent check of root claims, legacy-tariff warnings and unresolved account facts."),
         ("ladder/routes.html", "Methods & execution", "Eligibility · pros/cons · step by step",
          "Routes are conditional; the bank must confirm documents, status, service availability and limits."),
         ("ladder/tax.html", "Tax & reporting", "PRC income tax · U.S. FTC · FBAR/FATCA",
          "A transfer is not a personalized tax calculation. U.S. credits and reporting have separate tests."),
-        ("audit-0f0f59fe/index.html", "Independent claim review", "Official text · corrections · unresolved facts",
-         "Re-checks the landing-page claims and exposes cost assumptions and eligibility uncertainty."),
-        ("ladder/flagged.html", "Flagged for review", "Unverified values · eligibility · outdated claims",
+        ("ladder/flagged.html", "Flagged for review", "Unverified values · eligibility · open caveats",
          "Open issues are published here rather than filled in by inference."),
         ("ladder/sources.html", "Primary source register", "SAFE · PBOC · tax authorities · IRS · bank tariff",
          "Direct source text and locators for manual review."),
-        ("docs/index.html", "Research dashboard", "Findings · evidence ledger · checklist",
-         "A separate source-linked research build from earlier project work."),
-        ("portal/index.html", "Research portal", "Statutory verification · repository audit",
-         "A separate official-source portal; compare scope and caveats before relying on a claim."),
-        ("repatriate/index.html", "Repatriation study", "Methods · costs · tax · audit",
-         "Another independent route/cost review. Its data and caveats are documented on that site."),
+        ("docs/index.html", "Research dashboard", "22 routes · 67 findings · 24 official sources",
+         "Searchable source-linked decision dashboard with execution checklist and CSV/JSON exports."),
+        ("site/index.html", "Evidence ledger site", "18 routes · 16 flags · strict allowlist",
+         "Source-only evidence site built strictly from government and registry domain ledgers."),
+        ("portal/index.html", "Government-source portal", "22 methods · .gov / .gov.cn only",
+         "Independent statutory verification portal linking exclusively to government domains."),
+        ("acceptance-373b54a3/index.html", "Acceptance summary & checks", "Cross-repo deliverable check",
+         "Independent completeness verification across the published 600-row and 680-row ladders."),
     ]
     site_cards = "".join(
         f'<a class="card" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
@@ -914,7 +923,7 @@ footer a{{color:#a4e5cf}}
 </style>
 </head>
 <body>
-<header><strong>China money</strong><p>Official-source research · summary re-reviewed 9 November 2026 · navigation integrated 10 November 2026 · not tax or legal advice</p></header>
+    <header><strong>China money</strong><p>Official-source research · summary re-reviewed 10 November 2026 · navigation integrated 10 November 2026 · not tax or legal advice</p></header>
 <main>
 <h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
 <p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>
@@ -940,7 +949,7 @@ footer a{{color:#a4e5cf}}
 </main>
 <footer>
 <p><strong>Research, not advice.</strong> No private account facts were entered, no bank was contacted, no funds moved and no tax return filed. Every unresolved personal value is left blank or flagged.</p>
-<p><a href="audit-0f0f59fe/index.html">Independent claim review</a> · <a href="ladder/flagged.html">Flagged for review</a> · <a href="ladder/sources.html">Sources</a> · <a href="COORDINATION.md">Task board</a></p>
+<p><a href="briefing/index.html">Executive briefing</a> · <a href="audit-ad300459/index.html">Official-source audit</a> · <a href="audit-0f0f59fe/index.html">Claim review</a> · <a href="ladder/flagged.html">Flagged for review</a> · <a href="ladder/sources.html">Sources</a> · <a href="README.md">README</a> · <a href="COORDINATION.md">Task board</a></p>
 </footer>
 </body>
 </html>
