@@ -854,6 +854,8 @@ def write_root_hub():
     cards = [
         ("verify-d5d1f860/index.html", "Live-verified dashboard · newest pass", "24 sources re-fetched · 680 rows · 16 flags",
          "Quote-level re-verification dated 10 November 2026: each load-bearing document was re-fetched and the exact sentence is shown with its link. Fees recomputed independently; blanks where nothing is published."),
+        ("estimate-facf2fe9/index.html", "Published-rate estimates · bank boards read 10 Nov 2026", "6 bank boards · 4 tariffs · 23 methods × 40 tiers",
+         "All-in cost worked out from the rates and fees the banks themselves publish, with the tax rules and an exchange-gain illustration. Blank where a rate or fee could not be read. Indicative, not a quote."),
         ("briefing/index.html", "Executive briefing · start here", "Summary · 17 methods · 680 cost rows",
          "Consolidated comparison with steps and caveats. Published fees are not all-in quotes; read the review notes below."),
         ("audit-ad300459/index.html", "Latest evidence audit", "27 findings · official-source review · ladder checks",
