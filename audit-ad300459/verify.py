@@ -25,6 +25,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
+sys.dont_write_bytecode = True  # keep __pycache__ out of the ladder file inventory
 
 import checks  # noqa: E402
 
@@ -232,7 +233,8 @@ def main() -> int:
     tracked = pages + ["exports/findings.csv"]
     before = {p: hashlib.sha256(open(os.path.join(HERE, p), "rb").read()).hexdigest() for p in tracked}
     proc = subprocess.run([sys.executable, os.path.join(HERE, "build.py")],
-                          capture_output=True, text=True)
+                          capture_output=True, text=True,
+                          env={**os.environ, "PYTHONDONTWRITEBYTECODE": "1"})
     check("rebuild exits 0", proc.returncode == 0, proc.stderr[-300:])
     after = {p: hashlib.sha256(open(os.path.join(HERE, p), "rb").read()).hexdigest() for p in tracked}
     for p in tracked:
