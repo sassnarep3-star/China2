@@ -1,0 +1,441 @@
+route,amount,fx_fee_usd,spread_usd,receive_usd,all_in_usd,pct,capability,note
+R01,10000,32.91,20.99,16,69.90,0.70,,at the CNY 100 minimum
+R02,10000,32.91,0.00,16,48.91,0.49,,requires an existing foreign-currency balance
+R03,10000,20.00,20.99,16,56.99,0.57,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,10000,32.91,20.99,16,69.90,0.70,,same bank mechanics as R01; eligibility and staging differ
+R07,10000,32.91,20.99,16,69.90,0.70,,same bank mechanics as R01; eligibility and staging differ
+R08,10000,32.91,20.99,16,69.90,0.70,,same bank mechanics as R01; eligibility and staging differ
+R09,10000,32.91,20.99,16,69.90,0.70,,same bank mechanics as R01; eligibility and staging differ
+R04,10000,,,,,,capable,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,10000,0.00,20.99,0.00,20.99,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,10000,,,,3000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,10000,,,,3000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,20000,37.95,41.97,16,95.92,0.48,,0.1% of the CNY remitted
+R02,20000,37.95,0.00,16,53.95,0.27,,requires an existing foreign-currency balance
+R03,20000,20.00,41.97,16,77.97,0.39,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,20000,37.95,41.97,16,95.92,0.48,,same bank mechanics as R01; eligibility and staging differ
+R07,20000,37.95,41.97,16,95.92,0.48,,same bank mechanics as R01; eligibility and staging differ
+R08,20000,37.95,41.97,16,95.92,0.48,,same bank mechanics as R01; eligibility and staging differ
+R09,20000,37.95,41.97,16,95.92,0.48,,same bank mechanics as R01; eligibility and staging differ
+R04,20000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,20000,0.00,41.97,0.00,41.97,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,20000,,,,6000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,20000,,,,6000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,30000,47.95,62.96,16,126.91,0.42,,0.1% of the CNY remitted
+R02,30000,47.95,0.00,16,63.95,0.21,,requires an existing foreign-currency balance
+R03,30000,20.00,62.96,16,98.96,0.33,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,30000,47.95,62.96,16,126.91,0.42,,same bank mechanics as R01; eligibility and staging differ
+R07,30000,47.95,62.96,16,126.91,0.42,,same bank mechanics as R01; eligibility and staging differ
+R08,30000,47.95,62.96,16,126.91,0.42,,same bank mechanics as R01; eligibility and staging differ
+R09,30000,47.95,62.96,16,126.91,0.42,,same bank mechanics as R01; eligibility and staging differ
+R04,30000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,30000,0.00,62.96,0.00,62.96,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,30000,,,,9000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,30000,,,,9000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,40000,57.95,83.94,16,157.89,0.39,,0.1% of the CNY remitted
+R02,40000,57.95,0.00,16,73.95,0.18,,requires an existing foreign-currency balance
+R03,40000,20.00,83.94,16,119.94,0.30,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,40000,57.95,83.94,16,157.89,0.39,,same bank mechanics as R01; eligibility and staging differ
+R07,40000,57.95,83.94,16,157.89,0.39,,same bank mechanics as R01; eligibility and staging differ
+R08,40000,57.95,83.94,16,157.89,0.39,,same bank mechanics as R01; eligibility and staging differ
+R09,40000,57.95,83.94,16,157.89,0.39,,same bank mechanics as R01; eligibility and staging differ
+R04,40000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,40000,0.00,83.94,0.00,83.94,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,40000,,,,12000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,40000,,,,12000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,50000,67.95,104.93,16,188.88,0.38,,0.1% of the CNY remitted
+R02,50000,67.95,0.00,16,83.95,0.17,,requires an existing foreign-currency balance
+R03,50000,20.00,104.93,16,140.93,0.28,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,50000,67.95,104.93,16,188.88,0.38,,same bank mechanics as R01; eligibility and staging differ
+R07,50000,67.95,104.93,16,188.88,0.38,,same bank mechanics as R01; eligibility and staging differ
+R08,50000,67.95,104.93,16,188.88,0.38,,same bank mechanics as R01; eligibility and staging differ
+R09,50000,67.95,104.93,16,188.88,0.38,,same bank mechanics as R01; eligibility and staging differ
+R04,50000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,50000,0.00,104.93,0.00,104.93,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,50000,,,,15000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,50000,,,,15000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,60000,77.95,125.92,16,219.87,0.37,,0.1% of the CNY remitted
+R02,60000,77.95,0.00,16,93.95,0.16,,requires an existing foreign-currency balance
+R03,60000,20.00,125.92,16,161.92,0.27,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,60000,77.95,125.92,16,219.87,0.37,,same bank mechanics as R01; eligibility and staging differ
+R07,60000,77.95,125.92,16,219.87,0.37,,same bank mechanics as R01; eligibility and staging differ
+R08,60000,77.95,125.92,16,219.87,0.37,,same bank mechanics as R01; eligibility and staging differ
+R09,60000,77.95,125.92,16,219.87,0.37,,same bank mechanics as R01; eligibility and staging differ
+R04,60000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,60000,0.00,125.92,0.00,125.92,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,60000,,,,18000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,60000,,,,18000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,70000,87.95,146.90,16,250.85,0.36,,0.1% of the CNY remitted
+R02,70000,87.95,0.00,16,103.95,0.15,,requires an existing foreign-currency balance
+R03,70000,20.00,146.90,16,182.90,0.26,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,70000,87.95,146.90,16,250.85,0.36,,same bank mechanics as R01; eligibility and staging differ
+R07,70000,87.95,146.90,16,250.85,0.36,,same bank mechanics as R01; eligibility and staging differ
+R08,70000,87.95,146.90,16,250.85,0.36,,same bank mechanics as R01; eligibility and staging differ
+R09,70000,87.95,146.90,16,250.85,0.36,,same bank mechanics as R01; eligibility and staging differ
+R04,70000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,70000,0.00,146.90,0.00,146.90,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,70000,,,,21000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,70000,,,,21000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,80000,92.74,167.89,16,276.63,0.35,,at the CNY 500 maximum
+R02,80000,92.74,0.00,16,108.74,0.14,,requires an existing foreign-currency balance
+R03,80000,20.00,167.89,16,203.89,0.25,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,80000,92.74,167.89,16,276.63,0.35,,same bank mechanics as R01; eligibility and staging differ
+R07,80000,92.74,167.89,16,276.63,0.35,,same bank mechanics as R01; eligibility and staging differ
+R08,80000,92.74,167.89,16,276.63,0.35,,same bank mechanics as R01; eligibility and staging differ
+R09,80000,92.74,167.89,16,276.63,0.35,,same bank mechanics as R01; eligibility and staging differ
+R04,80000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,80000,0.00,167.89,0.00,167.89,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,80000,,,,24000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,80000,,,,24000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,90000,92.74,188.87,16,297.61,0.33,,at the CNY 500 maximum
+R02,90000,92.74,0.00,16,108.74,0.12,,requires an existing foreign-currency balance
+R03,90000,20.00,188.87,16,224.87,0.25,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,90000,92.74,188.87,16,297.61,0.33,,same bank mechanics as R01; eligibility and staging differ
+R07,90000,92.74,188.87,16,297.61,0.33,,same bank mechanics as R01; eligibility and staging differ
+R08,90000,92.74,188.87,16,297.61,0.33,,same bank mechanics as R01; eligibility and staging differ
+R09,90000,92.74,188.87,16,297.61,0.33,,same bank mechanics as R01; eligibility and staging differ
+R04,90000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,90000,0.00,188.87,0.00,188.87,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,90000,,,,27000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,90000,,,,27000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,100000,92.74,209.86,16,318.60,0.32,,at the CNY 500 maximum
+R02,100000,92.74,0.00,16,108.74,0.11,,requires an existing foreign-currency balance
+R03,100000,20.00,209.86,16,245.86,0.25,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,100000,92.74,209.86,16,318.60,0.32,,same bank mechanics as R01; eligibility and staging differ
+R07,100000,92.74,209.86,16,318.60,0.32,,same bank mechanics as R01; eligibility and staging differ
+R08,100000,92.74,209.86,16,318.60,0.32,,same bank mechanics as R01; eligibility and staging differ
+R09,100000,92.74,209.86,16,318.60,0.32,,same bank mechanics as R01; eligibility and staging differ
+R04,100000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,100000,0.00,209.86,0.00,209.86,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,100000,,,,30000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,100000,,,,30000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,110000,92.74,230.85,16,339.59,0.31,,at the CNY 500 maximum
+R02,110000,92.74,0.00,16,108.74,0.10,,requires an existing foreign-currency balance
+R03,110000,20.00,230.85,16,266.85,0.24,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,110000,92.74,230.85,16,339.59,0.31,,same bank mechanics as R01; eligibility and staging differ
+R07,110000,92.74,230.85,16,339.59,0.31,,same bank mechanics as R01; eligibility and staging differ
+R08,110000,92.74,230.85,16,339.59,0.31,,same bank mechanics as R01; eligibility and staging differ
+R09,110000,92.74,230.85,16,339.59,0.31,,same bank mechanics as R01; eligibility and staging differ
+R04,110000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,110000,0.00,230.85,0.00,230.85,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,110000,,,,33000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,110000,,,,33000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,120000,92.74,251.83,16,360.57,0.30,,at the CNY 500 maximum
+R02,120000,92.74,0.00,16,108.74,0.09,,requires an existing foreign-currency balance
+R03,120000,20.00,251.83,16,287.83,0.24,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,120000,92.74,251.83,16,360.57,0.30,,same bank mechanics as R01; eligibility and staging differ
+R07,120000,92.74,251.83,16,360.57,0.30,,same bank mechanics as R01; eligibility and staging differ
+R08,120000,92.74,251.83,16,360.57,0.30,,same bank mechanics as R01; eligibility and staging differ
+R09,120000,92.74,251.83,16,360.57,0.30,,same bank mechanics as R01; eligibility and staging differ
+R04,120000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,120000,0.00,251.83,0.00,251.83,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,120000,,,,36000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,120000,,,,36000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,130000,92.74,272.82,16,381.56,0.29,,at the CNY 500 maximum
+R02,130000,92.74,0.00,16,108.74,0.08,,requires an existing foreign-currency balance
+R03,130000,20.00,272.82,16,308.82,0.24,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,130000,92.74,272.82,16,381.56,0.29,,same bank mechanics as R01; eligibility and staging differ
+R07,130000,92.74,272.82,16,381.56,0.29,,same bank mechanics as R01; eligibility and staging differ
+R08,130000,92.74,272.82,16,381.56,0.29,,same bank mechanics as R01; eligibility and staging differ
+R09,130000,92.74,272.82,16,381.56,0.29,,same bank mechanics as R01; eligibility and staging differ
+R04,130000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,130000,0.00,272.82,0.00,272.82,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,130000,,,,39000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,130000,,,,39000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,140000,92.74,293.80,16,402.54,0.29,,at the CNY 500 maximum
+R02,140000,92.74,0.00,16,108.74,0.08,,requires an existing foreign-currency balance
+R03,140000,20.00,293.80,16,329.80,0.24,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,140000,92.74,293.80,16,402.54,0.29,,same bank mechanics as R01; eligibility and staging differ
+R07,140000,92.74,293.80,16,402.54,0.29,,same bank mechanics as R01; eligibility and staging differ
+R08,140000,92.74,293.80,16,402.54,0.29,,same bank mechanics as R01; eligibility and staging differ
+R09,140000,92.74,293.80,16,402.54,0.29,,same bank mechanics as R01; eligibility and staging differ
+R04,140000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,140000,0.00,293.80,0.00,293.80,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,140000,,,,42000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,140000,,,,42000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,150000,92.74,314.79,16,423.53,0.28,,at the CNY 500 maximum
+R02,150000,92.74,0.00,16,108.74,0.07,,requires an existing foreign-currency balance
+R03,150000,20.00,314.79,16,350.79,0.23,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,150000,92.74,314.79,16,423.53,0.28,,same bank mechanics as R01; eligibility and staging differ
+R07,150000,92.74,314.79,16,423.53,0.28,,same bank mechanics as R01; eligibility and staging differ
+R08,150000,92.74,314.79,16,423.53,0.28,,same bank mechanics as R01; eligibility and staging differ
+R09,150000,92.74,314.79,16,423.53,0.28,,same bank mechanics as R01; eligibility and staging differ
+R04,150000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,150000,0.00,314.79,0.00,314.79,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,150000,,,,45000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,150000,,,,45000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,160000,92.74,335.78,16,444.52,0.28,,at the CNY 500 maximum
+R02,160000,92.74,0.00,16,108.74,0.07,,requires an existing foreign-currency balance
+R03,160000,20.00,335.78,16,371.78,0.23,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,160000,92.74,335.78,16,444.52,0.28,,same bank mechanics as R01; eligibility and staging differ
+R07,160000,92.74,335.78,16,444.52,0.28,,same bank mechanics as R01; eligibility and staging differ
+R08,160000,92.74,335.78,16,444.52,0.28,,same bank mechanics as R01; eligibility and staging differ
+R09,160000,92.74,335.78,16,444.52,0.28,,same bank mechanics as R01; eligibility and staging differ
+R04,160000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,160000,0.00,335.78,0.00,335.78,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,160000,,,,48000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,160000,,,,48000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,170000,92.74,356.76,16,465.50,0.27,,at the CNY 500 maximum
+R02,170000,92.74,0.00,16,108.74,0.06,,requires an existing foreign-currency balance
+R03,170000,20.00,356.76,16,392.76,0.23,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,170000,92.74,356.76,16,465.50,0.27,,same bank mechanics as R01; eligibility and staging differ
+R07,170000,92.74,356.76,16,465.50,0.27,,same bank mechanics as R01; eligibility and staging differ
+R08,170000,92.74,356.76,16,465.50,0.27,,same bank mechanics as R01; eligibility and staging differ
+R09,170000,92.74,356.76,16,465.50,0.27,,same bank mechanics as R01; eligibility and staging differ
+R04,170000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,170000,0.00,356.76,0.00,356.76,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,170000,,,,51000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,170000,,,,51000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,180000,92.74,377.75,16,486.49,0.27,,at the CNY 500 maximum
+R02,180000,92.74,0.00,16,108.74,0.06,,requires an existing foreign-currency balance
+R03,180000,20.00,377.75,16,413.75,0.23,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,180000,92.74,377.75,16,486.49,0.27,,same bank mechanics as R01; eligibility and staging differ
+R07,180000,92.74,377.75,16,486.49,0.27,,same bank mechanics as R01; eligibility and staging differ
+R08,180000,92.74,377.75,16,486.49,0.27,,same bank mechanics as R01; eligibility and staging differ
+R09,180000,92.74,377.75,16,486.49,0.27,,same bank mechanics as R01; eligibility and staging differ
+R04,180000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,180000,0.00,377.75,0.00,377.75,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,180000,,,,54000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,180000,,,,54000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,190000,92.74,398.73,16,507.47,0.27,,at the CNY 500 maximum
+R02,190000,92.74,0.00,16,108.74,0.06,,requires an existing foreign-currency balance
+R03,190000,20.00,398.73,16,434.73,0.23,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,190000,92.74,398.73,16,507.47,0.27,,same bank mechanics as R01; eligibility and staging differ
+R07,190000,92.74,398.73,16,507.47,0.27,,same bank mechanics as R01; eligibility and staging differ
+R08,190000,92.74,398.73,16,507.47,0.27,,same bank mechanics as R01; eligibility and staging differ
+R09,190000,92.74,398.73,16,507.47,0.27,,same bank mechanics as R01; eligibility and staging differ
+R04,190000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,190000,0.00,398.73,0.00,398.73,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,190000,,,,57000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,190000,,,,57000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,200000,92.74,419.72,16,528.46,0.26,,at the CNY 500 maximum
+R02,200000,92.74,0.00,16,108.74,0.05,,requires an existing foreign-currency balance
+R03,200000,20.00,419.72,16,455.72,0.23,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,200000,92.74,419.72,16,528.46,0.26,,same bank mechanics as R01; eligibility and staging differ
+R07,200000,92.74,419.72,16,528.46,0.26,,same bank mechanics as R01; eligibility and staging differ
+R08,200000,92.74,419.72,16,528.46,0.26,,same bank mechanics as R01; eligibility and staging differ
+R09,200000,92.74,419.72,16,528.46,0.26,,same bank mechanics as R01; eligibility and staging differ
+R04,200000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,200000,0.00,419.72,0.00,419.72,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,200000,,,,60000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,200000,,,,60000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,210000,92.74,440.71,16,549.45,0.26,,at the CNY 500 maximum
+R02,210000,92.74,0.00,16,108.74,0.05,,requires an existing foreign-currency balance
+R03,210000,20.00,440.71,16,476.71,0.23,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,210000,92.74,440.71,16,549.45,0.26,,same bank mechanics as R01; eligibility and staging differ
+R07,210000,92.74,440.71,16,549.45,0.26,,same bank mechanics as R01; eligibility and staging differ
+R08,210000,92.74,440.71,16,549.45,0.26,,same bank mechanics as R01; eligibility and staging differ
+R09,210000,92.74,440.71,16,549.45,0.26,,same bank mechanics as R01; eligibility and staging differ
+R04,210000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,210000,0.00,440.71,0.00,440.71,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,210000,,,,63000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,210000,,,,63000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,220000,92.74,461.69,16,570.43,0.26,,at the CNY 500 maximum
+R02,220000,92.74,0.00,16,108.74,0.05,,requires an existing foreign-currency balance
+R03,220000,20.00,461.69,16,497.69,0.23,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,220000,92.74,461.69,16,570.43,0.26,,same bank mechanics as R01; eligibility and staging differ
+R07,220000,92.74,461.69,16,570.43,0.26,,same bank mechanics as R01; eligibility and staging differ
+R08,220000,92.74,461.69,16,570.43,0.26,,same bank mechanics as R01; eligibility and staging differ
+R09,220000,92.74,461.69,16,570.43,0.26,,same bank mechanics as R01; eligibility and staging differ
+R04,220000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,220000,0.00,461.69,0.00,461.69,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,220000,,,,66000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,220000,,,,66000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,230000,92.74,482.68,16,591.42,0.26,,at the CNY 500 maximum
+R02,230000,92.74,0.00,16,108.74,0.05,,requires an existing foreign-currency balance
+R03,230000,20.00,482.68,16,518.68,0.23,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,230000,92.74,482.68,16,591.42,0.26,,same bank mechanics as R01; eligibility and staging differ
+R07,230000,92.74,482.68,16,591.42,0.26,,same bank mechanics as R01; eligibility and staging differ
+R08,230000,92.74,482.68,16,591.42,0.26,,same bank mechanics as R01; eligibility and staging differ
+R09,230000,92.74,482.68,16,591.42,0.26,,same bank mechanics as R01; eligibility and staging differ
+R04,230000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,230000,0.00,482.68,0.00,482.68,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,230000,,,,69000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,230000,,,,69000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,240000,92.74,503.67,16,612.41,0.26,,at the CNY 500 maximum
+R02,240000,92.74,0.00,16,108.74,0.05,,requires an existing foreign-currency balance
+R03,240000,20.00,503.67,16,539.67,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,240000,92.74,503.67,16,612.41,0.26,,same bank mechanics as R01; eligibility and staging differ
+R07,240000,92.74,503.67,16,612.41,0.26,,same bank mechanics as R01; eligibility and staging differ
+R08,240000,92.74,503.67,16,612.41,0.26,,same bank mechanics as R01; eligibility and staging differ
+R09,240000,92.74,503.67,16,612.41,0.26,,same bank mechanics as R01; eligibility and staging differ
+R04,240000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,240000,0.00,503.67,0.00,503.67,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,240000,,,,72000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,240000,,,,72000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,250000,92.74,524.65,16,633.39,0.25,,at the CNY 500 maximum
+R02,250000,92.74,0.00,16,108.74,0.04,,requires an existing foreign-currency balance
+R03,250000,20.00,524.65,16,560.65,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,250000,92.74,524.65,16,633.39,0.25,,same bank mechanics as R01; eligibility and staging differ
+R07,250000,92.74,524.65,16,633.39,0.25,,same bank mechanics as R01; eligibility and staging differ
+R08,250000,92.74,524.65,16,633.39,0.25,,same bank mechanics as R01; eligibility and staging differ
+R09,250000,92.74,524.65,16,633.39,0.25,,same bank mechanics as R01; eligibility and staging differ
+R04,250000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,250000,0.00,524.65,0.00,524.65,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,250000,,,,75000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,250000,,,,75000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,260000,92.74,545.64,16,654.38,0.25,,at the CNY 500 maximum
+R02,260000,92.74,0.00,16,108.74,0.04,,requires an existing foreign-currency balance
+R03,260000,20.00,545.64,16,581.64,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,260000,92.74,545.64,16,654.38,0.25,,same bank mechanics as R01; eligibility and staging differ
+R07,260000,92.74,545.64,16,654.38,0.25,,same bank mechanics as R01; eligibility and staging differ
+R08,260000,92.74,545.64,16,654.38,0.25,,same bank mechanics as R01; eligibility and staging differ
+R09,260000,92.74,545.64,16,654.38,0.25,,same bank mechanics as R01; eligibility and staging differ
+R04,260000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,260000,0.00,545.64,0.00,545.64,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,260000,,,,78000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,260000,,,,78000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,270000,92.74,566.62,16,675.36,0.25,,at the CNY 500 maximum
+R02,270000,92.74,0.00,16,108.74,0.04,,requires an existing foreign-currency balance
+R03,270000,20.00,566.62,16,602.62,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,270000,92.74,566.62,16,675.36,0.25,,same bank mechanics as R01; eligibility and staging differ
+R07,270000,92.74,566.62,16,675.36,0.25,,same bank mechanics as R01; eligibility and staging differ
+R08,270000,92.74,566.62,16,675.36,0.25,,same bank mechanics as R01; eligibility and staging differ
+R09,270000,92.74,566.62,16,675.36,0.25,,same bank mechanics as R01; eligibility and staging differ
+R04,270000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,270000,0.00,566.62,0.00,566.62,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,270000,,,,81000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,270000,,,,81000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,280000,92.74,587.61,16,696.35,0.25,,at the CNY 500 maximum
+R02,280000,92.74,0.00,16,108.74,0.04,,requires an existing foreign-currency balance
+R03,280000,20.00,587.61,16,623.61,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,280000,92.74,587.61,16,696.35,0.25,,same bank mechanics as R01; eligibility and staging differ
+R07,280000,92.74,587.61,16,696.35,0.25,,same bank mechanics as R01; eligibility and staging differ
+R08,280000,92.74,587.61,16,696.35,0.25,,same bank mechanics as R01; eligibility and staging differ
+R09,280000,92.74,587.61,16,696.35,0.25,,same bank mechanics as R01; eligibility and staging differ
+R04,280000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,280000,0.00,587.61,0.00,587.61,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,280000,,,,84000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,280000,,,,84000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,290000,92.74,608.60,16,717.34,0.25,,at the CNY 500 maximum
+R02,290000,92.74,0.00,16,108.74,0.04,,requires an existing foreign-currency balance
+R03,290000,20.00,608.60,16,644.60,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,290000,92.74,608.60,16,717.34,0.25,,same bank mechanics as R01; eligibility and staging differ
+R07,290000,92.74,608.60,16,717.34,0.25,,same bank mechanics as R01; eligibility and staging differ
+R08,290000,92.74,608.60,16,717.34,0.25,,same bank mechanics as R01; eligibility and staging differ
+R09,290000,92.74,608.60,16,717.34,0.25,,same bank mechanics as R01; eligibility and staging differ
+R04,290000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,290000,0.00,608.60,0.00,608.60,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,290000,,,,87000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,290000,,,,87000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,300000,92.74,629.58,16,738.32,0.25,,at the CNY 500 maximum
+R02,300000,92.74,0.00,16,108.74,0.04,,requires an existing foreign-currency balance
+R03,300000,20.00,629.58,16,665.58,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,300000,92.74,629.58,16,738.32,0.25,,same bank mechanics as R01; eligibility and staging differ
+R07,300000,92.74,629.58,16,738.32,0.25,,same bank mechanics as R01; eligibility and staging differ
+R08,300000,92.74,629.58,16,738.32,0.25,,same bank mechanics as R01; eligibility and staging differ
+R09,300000,92.74,629.58,16,738.32,0.25,,same bank mechanics as R01; eligibility and staging differ
+R04,300000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,300000,0.00,629.58,0.00,629.58,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,300000,,,,90000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,300000,,,,90000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,310000,92.74,650.57,16,759.31,0.24,,at the CNY 500 maximum
+R02,310000,92.74,0.00,16,108.74,0.04,,requires an existing foreign-currency balance
+R03,310000,20.00,650.57,16,686.57,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,310000,92.74,650.57,16,759.31,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,310000,92.74,650.57,16,759.31,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,310000,92.74,650.57,16,759.31,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,310000,92.74,650.57,16,759.31,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,310000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,310000,0.00,650.57,0.00,650.57,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,310000,,,,93000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,310000,,,,93000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,320000,92.74,671.55,16,780.29,0.24,,at the CNY 500 maximum
+R02,320000,92.74,0.00,16,108.74,0.03,,requires an existing foreign-currency balance
+R03,320000,20.00,671.55,16,707.55,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,320000,92.74,671.55,16,780.29,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,320000,92.74,671.55,16,780.29,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,320000,92.74,671.55,16,780.29,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,320000,92.74,671.55,16,780.29,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,320000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,320000,0.00,671.55,0.00,671.55,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,320000,,,,96000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,320000,,,,96000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,330000,92.74,692.54,16,801.28,0.24,,at the CNY 500 maximum
+R02,330000,92.74,0.00,16,108.74,0.03,,requires an existing foreign-currency balance
+R03,330000,20.00,692.54,16,728.54,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,330000,92.74,692.54,16,801.28,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,330000,92.74,692.54,16,801.28,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,330000,92.74,692.54,16,801.28,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,330000,92.74,692.54,16,801.28,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,330000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,330000,0.00,692.54,0.00,692.54,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,330000,,,,99000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,330000,,,,99000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,340000,92.74,713.53,16,822.27,0.24,,at the CNY 500 maximum
+R02,340000,92.74,0.00,16,108.74,0.03,,requires an existing foreign-currency balance
+R03,340000,20.00,713.53,16,749.53,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,340000,92.74,713.53,16,822.27,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,340000,92.74,713.53,16,822.27,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,340000,92.74,713.53,16,822.27,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,340000,92.74,713.53,16,822.27,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,340000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,340000,0.00,713.53,0.00,713.53,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,340000,,,,102000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,340000,,,,102000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,350000,92.74,734.51,16,843.25,0.24,,at the CNY 500 maximum
+R02,350000,92.74,0.00,16,108.74,0.03,,requires an existing foreign-currency balance
+R03,350000,20.00,734.51,16,770.51,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,350000,92.74,734.51,16,843.25,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,350000,92.74,734.51,16,843.25,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,350000,92.74,734.51,16,843.25,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,350000,92.74,734.51,16,843.25,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,350000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,350000,0.00,734.51,0.00,734.51,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,350000,,,,105000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,350000,,,,105000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,360000,92.74,755.50,16,864.24,0.24,,at the CNY 500 maximum
+R02,360000,92.74,0.00,16,108.74,0.03,,requires an existing foreign-currency balance
+R03,360000,20.00,755.50,16,791.50,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,360000,92.74,755.50,16,864.24,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,360000,92.74,755.50,16,864.24,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,360000,92.74,755.50,16,864.24,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,360000,92.74,755.50,16,864.24,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,360000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,360000,0.00,755.50,0.00,755.50,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,360000,,,,108000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,360000,,,,108000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,370000,92.74,776.48,16,885.22,0.24,,at the CNY 500 maximum
+R02,370000,92.74,0.00,16,108.74,0.03,,requires an existing foreign-currency balance
+R03,370000,20.00,776.48,16,812.48,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,370000,92.74,776.48,16,885.22,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,370000,92.74,776.48,16,885.22,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,370000,92.74,776.48,16,885.22,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,370000,92.74,776.48,16,885.22,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,370000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,370000,0.00,776.48,0.00,776.48,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,370000,,,,111000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,370000,,,,111000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,380000,92.74,797.47,16,906.21,0.24,,at the CNY 500 maximum
+R02,380000,92.74,0.00,16,108.74,0.03,,requires an existing foreign-currency balance
+R03,380000,20.00,797.47,16,833.47,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,380000,92.74,797.47,16,906.21,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,380000,92.74,797.47,16,906.21,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,380000,92.74,797.47,16,906.21,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,380000,92.74,797.47,16,906.21,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,380000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,380000,0.00,797.47,0.00,797.47,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,380000,,,,114000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,380000,,,,114000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,390000,92.74,818.46,16,927.20,0.24,,at the CNY 500 maximum
+R02,390000,92.74,0.00,16,108.74,0.03,,requires an existing foreign-currency balance
+R03,390000,20.00,818.46,16,854.46,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,390000,92.74,818.46,16,927.20,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,390000,92.74,818.46,16,927.20,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,390000,92.74,818.46,16,927.20,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,390000,92.74,818.46,16,927.20,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,390000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,390000,0.00,818.46,0.00,818.46,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,390000,,,,117000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,390000,,,,117000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost
+R01,400000,92.74,839.44,16,948.18,0.24,,at the CNY 500 maximum
+R02,400000,92.74,0.00,16,108.74,0.03,,requires an existing foreign-currency balance
+R03,400000,20.00,839.44,16,875.44,0.22,,HSBC Advance tier; Premier tier is free (S14 2.2.6.1)
+R06,400000,92.74,839.44,16,948.18,0.24,,same bank mechanics as R01; eligibility and staging differ
+R07,400000,92.74,839.44,16,948.18,0.24,,same bank mechanics as R01; eligibility and staging differ
+R08,400000,92.74,839.44,16,948.18,0.24,,same bank mechanics as R01; eligibility and staging differ
+R09,400000,92.74,839.44,16,948.18,0.24,,same bank mechanics as R01; eligibility and staging differ
+R04,400000,,,,,,cap exceeded,"annual cap CNY 100,000 = USD 14958.64; ATM/card fees unpublished (flagged)"
+R12,400000,0.00,839.44,0.00,839.44,0.21,,"legal only up to USD 10,000 per trip (S05); travel/insurance excluded"
+R10,400000,,,,120000.00,30.00,,"statutory maximum fine under 条例 Art. 39, plus watchlist; not an expected cost"
+R11,400000,,,,120000.00,30.00,,statutory maximum fine under 条例 Art. 45 plus confiscation; not an expected cost

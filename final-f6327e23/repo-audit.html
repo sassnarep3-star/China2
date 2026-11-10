@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repository audit · China money</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">China money<span>· CNY→USD, verified</span></a>
+    <nav aria-label="Sections"><a href="index.html">Overview</a><a href="methods.html">Methods</a><a href="costs.html">Costs $10k–$400k</a><a href="taxes.html">Tax &amp; penalties</a><a href="steps.html">Step by step</a><a href="sources.html">Sources</a><a href="review.html">Flagged for review</a><a href="repo-audit.html" class="on">Repo audit</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Repository audit</h1>
+<p class="lede">What is in this repository, what I checked mechanically, and what disagrees. Line references are to the committed files at the commit shown below.</p>
+
+<h2>What I checked</h2>
+<div class="table-wrap"><table class="stack">
+<thead><tr><th>Check</th><th>Method</th><th>Result</th><th>Evidence</th></tr></thead>
+<tbody>
+<tr><td data-label="Check">Internal links and fragments</td><td data-label="Method">Crawled all 69 HTML files in the repository for href/src targets and resolved them on disk</td><td data-label="Result"><strong>0 broken internal references</strong></td><td data-label="Evidence"><a href="../index.html">root hub</a>, <a href="../ladder/index.html">ladder</a>, <a href="../docs/index.html">docs</a></td></tr>
+<tr><td data-label="Check">Route-count claims</td><td data-label="Method">Regex scan of rendered text for "N routes / methods"</td><td data-label="Result">Six different counts published: 15, 17, 18, 20, 22, 26</td><td data-label="Evidence"><a href="../briefing/methods.html">briefing/methods.html</a>, <a href="../ladder/routes.html">ladder/routes.html</a>, <a href="../repatriate/methods.html">repatriate/methods.html</a></td></tr>
+<tr><td data-label="Check">Cost datasets</td><td data-label="Method">Row counts and first-row comparison of ladder, repatriate and audit-86f0 CSVs</td><td data-label="Result">600 / 680 / 880 rows, same fee expressed at three different USD values</td><td data-label="Evidence"><a href="../ladder/data/costs.csv">ladder/data/costs.csv</a>, <a href="../repatriate/exports/cost-ladders.csv">repatriate/exports/cost-ladders.csv</a>, <a href="../audit-86f0/cost-matrix.csv">audit-86f0/cost-matrix.csv</a></td></tr>
+<tr><td data-label="Check">Non-official sources</td><td data-label="Method">Domain extraction from every external link</td><td data-label="Result">24 domains; commercial pages (wise.com, westernunion.com) cited in an "Official sources" column</td><td data-label="Evidence"><a href="../briefing/costs.html">briefing/costs.html</a>, <a href="review.html#f05">flag F05</a></td></tr>
+<tr><td data-label="Check">Quote fidelity</td idioma="x" data-label="Method">Re-fetched 16 sources and compared to the passages quoted here</td><td data-label="Result">All 16 quoted passages appear in the fetched documents</td><td data-label="Evidence"><a href="sources.html">sources.html</a></td></tr>
+<tr><td data-label="Check">Arithmetic</td><td data-label="Method">Independent recomputation of the HSBC fee tiers and the cost ladder</td><td data-label="Result">Prior sessions' CNY 220 arithmetic reproduces at their stated rates (7.129 → $30.86); this site uses 6.6851 → $32.91</td><td data-label="Evidence"><a href="costs.html">costs.html</a>, <a href="review.html#f03">flag F03</a></td></tr>
+</tbody></table></div>
+
+<h2>Duplicate dashboards</h2>
+<p>This repository contains 69 published HTML pages across 14 directories, produced
+by at least ten sessions working the same brief independently. Several publish overlapping cost tables
+with different numbers. That is not a merge bug — it is what happens when ten sessions answer the same
+question without a single source of truth. The honest fix is not to delete the others but to state
+plainly which figures this site uses, on what rate, and why.</p>
+<ul>
+  <li><a href="../docs/index.html"><strong>docs/</strong></a> — 9 pages, 67 findings / 24 sources (per its README)</li>
+  <li><a href="../ladder/index.html"><strong>ladder/</strong></a> — 10 pages, 600 cost rows, rate basis 7.1</li>
+  <li><a href="../repatriate/index.html"><strong>repatriate/</strong></a> — 17 methods, 680 cost rows, rate basis 7.129</li>
+  <li><a href="../briefing/index.html"><strong>briefing/</strong></a> — 7 pages, consolidated briefing with commercial-provider citations</li>
+  <li><strong>audit-86f0/, audit-0f0f59fe/, audit-ad300459/, audit-456e7542/</strong> — audit lenses</li>
+  <li><strong>acceptance-*/, verify-*/, portal/, site/</strong> — acceptance and portal layers</li>
+</ul>
+
+<h2>Commit and scope</h2>
+<p>This site is additive: <code>final-f6327e23/</code> plus one CI workflow plus an append to
+<code>COORDINATION.md</code>. No other session's file was edited. The task board records the claim,
+the scope and this result.</p>
+
+<h2>What this audit is not</h2>
+<p>It is not a certification of the other directories' factual claims, and it is not a legal review.
+It is a mechanical check of links, counts and arithmetic, plus a fresh read of the 16 sources this site
+cites. Where another page asserts something I could not verify, it is listed as a flag rather than
+silently adopted or silently "corrected".</p>
+</main>
+<footer class="foot"><div class="wrap">
+<p><strong>Research, not tax or legal advice.</strong> Every figure on this site is either
+quoted from a linked official source or explicitly labelled as a model assumption.
+Values that could not be confirmed are blank, and listed on the
+<a href="review.html">Flagged for review</a> page. No account-specific facts were assumed.</p>
+<p class="small">Built 2026-11-10 · 15 methods ·
+40 cost tiers (440 model rows) ·
+16 primary sources, all re-fetched in this session ·
+rate basis 6.6851 CNY/USD (S16, 2026-11-10 17:39:58).</p>
+</div></footer>
+<script src="assets/app.js"></script>
+</body></html>
