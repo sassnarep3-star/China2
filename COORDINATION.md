@@ -605,6 +605,42 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Cross-scope request (logged, not edited): future root-hub owner may add a link to `acceptance-a64bd476/index.html` in `ladder/build.py` if desired.
 - Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
 
+---
+
+## Session `arena/29c5e201-china2` — comprehensive executive summary, penalty breakdown, $10k-$400k cost ladder, line-by-line verification & dashboard
+
+> Arena pins this session to `arena/29c5e201-china2`. All prior boards preserved verbatim. This session performed full read of COORDINATION.md and repo before claiming. No other session's active claim is touched. Claims are disjoint.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| S1 | in progress | arena/29c5e201-china2 | `guide-29c5e201/**`, `EXECUTIVE_SUMMARY.md` (if additive) |
+| S2 | unclaimed | arena/29c5e201-china2 | `guide-29c5e201/**` |
+| S3 | unclaimed | arena/29c5e201-china2 | `guide-29c5e201/**` |
+| S4 | unclaimed | arena/29c5e201-china2 | `guide-29c5e201/**`, `.github/workflows/verify-guide-29c5e201.yml` |
+| S5 | unclaimed | arena/29c5e201-china2 | `COORDINATION.md` append-only, `ladder/audit.html` generated inventory only |
+
+- 2026-11-10 UTC: Claim recorded before substantive research. Policy: no hallucination; every table row links to official source; unverified values blank + flagged; no personal tax bill inferred; no funds moved.
+- 2026-11-10 UTC scope extension: this session is acting as final integration for its standalone guide because no active claims remain in this checkout. Additive request to root-hub owner accepted into this session: add one landing-card link to `guide-29c5e201/` in `ladder/build.py` (generator) and regenerate only outputs required to publish/discover this standalone guide. Do not alter underlying ladder data or other session-owned content.
+
+### Session `arena/29c5e201-china2` research and validation completion — 2026-11-10 UTC
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| S1 — Executive summary, source classification, safest first steps | done | arena/29c5e201-china2 | `guide-29c5e201/index.html`, generator |
+| S2 — Method catalog, pros/cons and conditional execution steps | done | arena/29c5e201-china2 | `guide-29c5e201/methods.html`, `data/methods.json` |
+| S3 — 17×40 cost ladder and penalty/tax/reporting analysis | done | arena/29c5e201-china2 | `guide-29c5e201/costs.html`, `penalties.html`, `taxes.html`, JSON data |
+| S4 — Source register, line-level verification, flags and structural checks | done | arena/29c5e201-china2 | `guide-29c5e201/{sources,verification,flagged}.html`, verifier, workflow |
+| S5 — Final hub integration, PR/merge and Pages confirmation | in progress | arena/29c5e201-china2 | root hub generator/output, append-only board, generated inventory |
+
+- Freshly fetched and checked **24 official/provider-primary sources** on 2026-11-10: S01, S03–S11, S13–S18, S20–S21, S23–S24, S28–S31, as itemized with locators and exact supported claim scope in `guide-29c5e201/verification.html` and `data/verification.json`. Other source-register links S02, S12, S19, S22, S25–S27 are explicitly labelled not freshly re-fetched this session; no blanket verification claim is made.
+- Material distinctions published: SAFE documented-income conversion (ID + transaction-source evidence including tax vouchers) is separate from the USD 500/1,000 unused-RMB reconversion threshold (original memo, 24 months); the latter is not a general small-amount allowance for savings. Personal route eligibility is unknown and must be confirmed by the bank.
+- HSBC schedule read from current PDF: Premier/Advance outward TT 0.1%, min CNY100/max CNY500 + CNY120 cable; published charge floors only. IRS annual-average 7.129 CNY/USD is not an executable quote. Example fee basis $10,000→CNY220/about $30.86; $400,000→CNY620/about $86.97. FX spread, other-bank charges, quote-only provider fees, tax, and net USD remain blank. Each of 680 tier rows links to source(s).
+- Local checks: guide validator PASS (17 routes, 680 sourced rows/40 tiers, 31 HTTPS sources, internal links/fragments); JS syntax PASS; repository docs validator PASS (9 pages, 67 findings, every table body row has official link); ladder verifier PASS (9,345 checks); repatriate verifier PASS (11,197 checks); briefing verifier PASS; portal verifier PASS (109 sourced rows). Structural checks do not certify law or personal eligibility.
+- Flags retained/published, including personal tax and eligibility unknown; provider fees/spreads unpublished; HSBC PDF has mixed headers (current cover and cited line items were checked); stale IRS FEIE page amounts; 2024 statutory edition for 26 USC 988; WU bank-account payout temporarily unavailable at retrieval; parallel dashboards differ; no personalized route/net USD/tax total can be computed. See guide Flagged for Review plus existing audit flags.
+- No funds moved, no bank contacted, no account-specific quote obtained, and no tax return filed. No manually supplied facts were required or presumed.
+
+---
+
 ## Session `arena/6068a908-china2` — independent targeted review
 
 Arena fixes this session to its existing branch. Historical claims remain respected; this session does not claim other sessions' substantive files. This is a targeted review, not a certification of the entire inherited repository.
@@ -701,3 +737,5 @@ This is a structural audit, not line-by-line legal verification. Account-specifi
 
 **Irregularities/none of the above block publication.** Outstanding `needs review` items from earlier sessions remain published on their own pages; this session's unverified values stay blank and are listed as F01–F16.
 - Main advanced through [PR #44](https://github.com/sassnarep3-star/China2/pull/44) while PR #47 was open. Merged `origin/main` into this branch, resolved append-only board conflict by keeping both sessions' records, and deterministically regenerated `ladder/audit.html` with the updated generator; no concurrent content discarded. Refreshed this session's dated snapshot after integration: **77 HTML pages, 4,681 data rows, 1,078 candidate rows across 25 pages**. This supersedes the earlier point-in-time counts above. Local snapshot parity, ladder (9,345 checks) and `verify-d5d1f860/verify.py` (5,406 checks) passed; structural checks are not factual certification.
+- 2026-11-10 UTC integration update: main advanced after PR #49 was opened (PR #47 plus concurrent source-link audit commits). Merged the newest `origin/main` into this branch; preserved all concurrent `COORDINATION.md` entries and pages. Resolved overlaps by retaining both the guide card and the concurrent live-verification card in `ladder/build.py`/root `index.html`; regenerated `ladder/audit.html` from its generator. No source-data changes from concurrent audit scopes. The source-link audit's concern about other repository model pages is disclosed in its own scope; this guide's 680 scenarios use blank unverified fee cells and direct external source URLs, without editing that other scope.
+- Original PR #49 head became outdated during integration; its branch is being refreshed with this merge and checks will be re-run before merging.
