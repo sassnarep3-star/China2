@@ -245,7 +245,7 @@ def page_index():
     <p><strong>What can be said safely:</strong> the PRC FX rules reviewed describe transaction and documentation requirements; no separate tax imposed solely for converting CNY was found in those instruments. That is <em>not</em> a determination that this balance is tax-paid, tax-free, or eligible to move. Ask the bank to distinguish any assessed tax from a requested certificate and from its own fees, and state the legal basis in writing. {external(faq_income, "SAFE's 2026 income-conversion guidance")} · {external("https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html", "PRC Individual Income Tax Law")}</p>
   </div>
   <div class="callout">
-    <p><strong>Current-fee correction:</strong> some route, step-by-step and assumptions pages still use HSBC's 2021 tariff and show a same-name Global Transfer fee of USD 0–7. The USD 7 reference in the current tariff is listed for International Education Payment; it does not establish a general same-name transfer price or this account's eligibility. The 31 October 2026 tariff lists Premier/Advance wire issuance at 0.1% (CNY 100 minimum/CNY 500 maximum) plus CNY 120 per cable, but excludes other institutions' charges and is not an all-in quote. Do not rely on the older Global Transfer fee or route ranking without a bank quote. {external(current_hsbc, "HSBC tariff effective 31 Oct 2026")} · <a href="../audit-0f0f59fe/index.html">review finding C04</a></p>
+    <p><strong>HSBC tariff updated (31 October 2026):</strong> routes R02 and R06, assumptions and source S06 now use HSBC China's tariff effective 31 October 2026: Private Banking/Premier Global Transfer is Free and Advance is USD 20 (item 2.2.6.1; the USD 7 item 2.2.7 is International Education Payment, not a general remittance), foreign banknote withdrawal is Free (item 2.2.2.1), and Premier/Advance outward telegraphic transfer issuance is 0.1% (CNY 100 minimum/CNY 500 maximum) plus CNY 120 per cable (items 2.2.4.1–2.2.4.2; Private Banking Free). Important Note 7 excludes third-party charges and the tariff is not an executable all-in quote. {external(current_hsbc, "HSBC tariff effective 31 Oct 2026")} · <a href="../audit-0f0f59fe/index.html">review finding C04</a></p>
   </div>
   <div class="kpis">
     <div class="card kpi"><p class="kpi-l">$10,000 principal</p><p class="kpi-v">All-in cost: —</p><p class="kpi-s">Not source-confirmed for this account</p></div>
@@ -484,8 +484,9 @@ def page_tax():
          "30%–100% if serious; criminal liability possible", "S04", "Art. 45"),
         ("Failure to make the required balance-of-payments declaration", "warning; up to CNY 50,000 for an "
          "individual", "S04", "Art. 48"),
-        ("Splitting to evade limits / lending your quota", "watch list for the current year plus two years; "
-         "counter service then requires full documentation", "S18", "Art. 2"),
+        ("Splitting to evade limits / lending your quota", "prohibited by PBOC Decree [2006] No. 3 Art. 7 "
+         "and penalized under Decree 532 Arts. 39–40; older Hui Fa [2015] No. 49 watch-list text carries "
+         "conflicting active/repealed mirror labels (see F03)", "S18", "Art. 2 (disputed)"),
     ]
     pen_rows = "".join(
         f"<tr><td data-label='Conduct'>{esc(a)}</td><td data-label='Exposure'>{esc(b)}</td>"
@@ -553,8 +554,9 @@ a US reporting duty that has nothing to do with conversion.</p>
   <p>Then the amount people quote as a “conversion penalty” is the unpaid PRC tax plus, potentially, the
   Art. 39 or Art. 40 fine. The lawful sequence is: establish the income character, settle with the tax
   authority, obtain the certificate, convert under R01, then claim the PRC tax in the US on Form 1116. In
-  most cases where the PRC rate is at or above the US rate, the US tax on the same income is reduced to
-  near zero — the credit is doing the work, not a trick.</p>
+  most cases where the PRC income tax rate is at or above the U.S. rate on the same foreign-source "
+  "income, a qualifying Form 1116 credit can substantially offset U.S. tax on that income, subject to "
+  "sourcing, income-category, legal-liability and limitation rules (S12; see C05).</p>
 </section>
 """
     return shell("tax.html", "Tax & penalties", body)
@@ -585,17 +587,14 @@ of it is a regulator's figure, a bank quote, or a fact about your account.</p>
 <section class="panel">
   <h2>Published values that the model actually uses</h2>
   <ul class="plain">
-    <li>Outward telegraphic transfer: 0.1%, minimum CNY 100, maximum CNY 500 per transaction, plus a CNY 120
-    cable fee. {src_link('S06')}</li>
-    <li>Currency of a cash balance converted to remittable FX: 1% (waived for Premier). {src_link('S06')}</li>
-    <li>Same-name HSBC Global Transfer: free for Premier, reference price USD 7 per transfer. {src_link('S06')}</li>
-    <li>Foreign cash withdrawal: 0.25%–0.4%, minimum CNY 40. {src_link('S06')}</li>
+    <li>Outward telegraphic transfer (item 2.2.4.1–2.2.4.2): Private Banking individual Free; Premier/Advance 0.1%, minimum CNY 100, maximum CNY 500 per transaction, plus CNY 120 cable fee (Pay Exact CNY 200 plus overseas shortfall). {src_link('S06')}</li>
+    <li>Same-name HSBC Global Transfer (item 2.2.6.1): Free for Private Banking and Premier (TRB ≥ CNY 500,000 per Note 3), USD 20 (indicative CNY 145) for Advance. Note: USD 7 under item 2.2.7 is International Education Payment. {src_link('S06')}</li>
+    <li>Foreign currency banknote withdrawal over the counter (item 2.2.2.1): Free across Personal segments (≥USD/HKD 5,000 requires ≥3 working days notice). {src_link('S06')}</li>
     <li>CNY 100,000 per person per calendar year of overseas ATM cash; CNY 10,000 per card per day.
     {src_link('S03')}</li>
-    <li>USD 500 per day onshore / USD 1,000 per day port-side conversion exemption. {src_link('S17')}</li>
+    <li>USD 500 per day onshore / USD 1,000 per day port-side unused-RMB reconversion exemption (24-month original memo rule for larger amounts). {src_link('S17')}</li>
     <li>USD 5,000 / 10,000 cash carrying thresholds. {src_link('S15')}</li>
-    <li>Staged emigration remittance: up to half, then half of the remainder after one year, balance after
-    two years; RMB 200,000 may go in one go. {src_link('S05')}</li>
+    <li>Emigration and inheritance transfers: local SAFE branch approves; SAFE Circular Huifa [2014] No. 2 §VI cancelled the >RMB 500,000 head-office filing and cancelled mandatory multi-stage installments so banks may remit in a lump sum or in batches within the approved limit. {src_link('S05')}</li>
   </ul>
 </section>
 """
@@ -611,7 +610,8 @@ def repo_inventory():
             ".svg": "asset", ".txt": "archived page", ".cjs": "test", ".mjs": "tool"}
     out = []
     for p in sorted(REPO.rglob("*")):
-        if not p.is_file() or ".git/" in str(p) or "/data/" in str(p):
+        s = str(p)
+        if not p.is_file() or ".git/" in s or "/data/" in s or "__pycache__/" in s or ".cache/" in s or "node_modules/" in s or p.suffix == ".pyc":
             continue
         rel = p.relative_to(REPO)
         if str(rel).startswith("ladder/"):
@@ -671,9 +671,11 @@ def page_audit():
         ("AUD-09", "No source in this repository is a live quote for CNY/USD.",
          "Every published cost here is a tariff; the spread is modelled.",
          "Separated into the assumptions register.", "F04"),
-        ("AUD-10", "Prior work asserts a USD 100,000 Form 3520 threshold for foreign gifts/bequests.",
-         "Not re-verified in this session; the IRS page was not retrieved here.",
-         "Left out of the model and flagged rather than repeated.", "F07"),
+        ("AUD-10", "Form 3520 gift/bequest thresholds verified across IRS primary pages.",
+         "Confirmed from IRS Gifts from Foreign Person and Rev. Proc. 2026-35 §3.51: >USD 100,000 for "
+         "nonresident-alien / foreign-estate gifts and bequests; >USD 20,573 (2026) / >USD 21,240 "
+         "(2027) for foreign corporations/partnerships.",
+         "Updated F07 with IRS thresholds; excluded from transfer-fee arithmetic (not a bank fee).", "F07"),
     ]
     find_rows = "".join(audit_row(i, o, a, x, f) for i, o, a, x, f in findings)
 
@@ -744,20 +746,25 @@ FLAG_ITEMS = [
      "registration (S07 Art. 15), but the specific SAFE/bank documentary path for repatriating a foreign "
      "vendor's proceeds was not verified here. The 20% figure is published; the procedure is flagged.",
      ["S07", "S01"]),
-    ("F07", "Form 3520 threshold not verified in this session", "low",
-     "Prior work in this repository asserts a USD 100,000 threshold for foreign gifts and bequests. It was "
-     "not re-retrieved here, so it is excluded from the model and flagged rather than repeated.", []),
+    ("F07", "Form 3520 foreign gift thresholds verified; trust facts still required", "low",
+     "Verified against IRS 'Gifts from a Foreign Person' (irs.gov/businesses/gifts-from-foreign-person) "
+     "and Rev. Proc. 2026-35 §3.51: Part IV applies above USD 100,000 aggregate for gifts/bequests from "
+     "nonresident aliens or foreign estates, and above USD 20,573 (2026) / USD 21,240 (2027) from foreign "
+     "corporations/partnerships. Foreign-trust reporting depends on personal facts and is not modelled in "
+     "transfer-cost arithmetic.", []),
     ("F08", "Card and ATM fixed fees are unpublished", "medium",
      "ATM operator fees, issuer foreign-transaction markups and card scheme settlement rates were not "
      "obtained. Routes R11 and R12 are marked PARTIAL: their estimates include the spread only.",
      ["S03"]),
-    ("F09", "The verified bank tariff is dated 1 January 2021", "medium",
-     "The HSBC China personal tariff retrieved is the current document reachable on the bank's site, but its "
-     "effective date is 2021. Confirm the current schedule at the branch; a change in the CNY 500 cap or the "
-     "CNY 120 cable fee would move every fixed-fee row.", ["S06"]),
-    ("F10", "Three prior dashboards publish different counts", "low",
-     "docs/, site/ and portal/ present overlapping material with different totals. None was edited; the "
-     "inconsistency is recorded rather than resolved by deletion.", []),
+    ("F09", "HSBC China tariff updated to 31 October 2026 (internal Chinese-section header note)", "medium",
+     "Updated S06, R02 and R06 from the obsolete Jan 2021 tariff to HSBC China's Wealth & Personal Banking "
+     "tariff effective 31 Oct 2026 (items 2.2.6.1 Global Transfer Free for PB/Premier, USD 20 for Advance; "
+     "2.2.7 Education Payment USD 7; 2.2.2.1 banknote withdrawal Free). Note: the PDF's internal Chinese "
+     "section carries a 12 Sep 2024 header; confirm live segment eligibility and current fees at the branch.",
+     ["S06"]),
+    ("F10", "Parallel dashboards publish different route counts", "low",
+     "docs/, site/, portal/, repatriate/, briefing/ and this ladder use different method taxonomies (17–22). "
+     "All deliverables are now cross-linked from root index.html; review scope and caveats per sub-site.", []),
     ("F11", "No per-transfer ceiling was verified for a non-domestic remittance", "medium",
      "The model assumes one wire per tranche (A7). If a bank splits a large remittance, fixed fees multiply. "
      "This is where a $400,000 transfer could cost more than the table shows.", ["S02"]),
@@ -836,29 +843,37 @@ def write_root_hub():
                 f'{esc(label)}</a>')
 
     cards = [
-        ("ladder/index.html", "Cost ladder · scenario model", "15 routes · 40 tiers · $10k–$400k",
-         "Shows modelled bands using explicit assumptions. Not an account quote or an officially verified all-in cost."),
+        ("briefing/index.html", "Executive briefing · start here", "17 methods · 680 cost rows · repo audit",
+         "Consolidated least-tax answer, step-by-step execution, $10k–$400k cost tables and updated 2026–2027 thresholds."),
+        ("ladder/index.html", "Cost ladder · scenario model", "15 costed routes · 40 tiers · $10k–$400k",
+         "Shows modelled bands using explicit assumptions and Oct 2026 HSBC fees. Not an executable quote."),
+        ("repatriate/index.html", "Repatriation study · fee floors", "17 methods · 680 rows · 31 fetched sources",
+         "Published tariff fee floors at 7.129 CNY/USD; unverified spreads and provider quotes kept strictly blank."),
+        ("audit-ad300459/index.html", "Fresh official-source audit", "27 verified/flagged claims · ladder checks",
+         "Line-by-line legal check against primary sources plus independent arithmetic check of 600-row & 680-row ladders."),
         ("audit-86f0/costs.html", "Source-only blank matrix", "22 methods · 40 tiers",
          "Leaves unverified FX spreads, transfer totals and tax amounts blank. Blank means unverified, not zero."),
+        ("audit-0f0f59fe/index.html", "Landing-page claim review", "Official text · corrections · unresolved facts",
+         "Independent check of root claims, legacy-tariff warnings and unresolved account facts."),
         ("ladder/routes.html", "Methods & execution", "Eligibility · pros/cons · step by step",
          "Routes are conditional; the bank must confirm documents, status, service availability and limits."),
         ("ladder/tax.html", "Tax & reporting", "PRC income tax · U.S. FTC · FBAR/FATCA",
          "A transfer is not a personalized tax calculation. U.S. credits and reporting have separate tests."),
-        ("audit-0f0f59fe/index.html", "Independent claim review", "Official text · corrections · unresolved facts",
-         "Re-checks the landing-page claims and exposes cost assumptions and eligibility uncertainty."),
-        ("ladder/flagged.html", "Flagged for review", "Unverified values · eligibility · outdated claims",
+        ("ladder/flagged.html", "Flagged for review", "Unverified values · eligibility · open caveats",
          "Open issues are published here rather than filled in by inference."),
         ("ladder/sources.html", "Primary source register", "SAFE · PBOC · tax authorities · IRS · bank tariff",
          "Direct source text and locators for manual review."),
-        ("docs/index.html", "Research dashboard", "Findings · evidence ledger · checklist",
-         "A separate source-linked research build from earlier project work."),
-        ("portal/index.html", "Research portal", "Statutory verification · repository audit",
-         "A separate official-source portal; compare scope and caveats before relying on a claim."),
-        ("repatriate/index.html", "Repatriation study", "Methods · costs · tax · audit",
-         "Another independent route/cost review. Its data and caveats are documented on that site."),
+        ("docs/index.html", "Research dashboard", "22 routes · 67 findings · 24 official sources",
+         "Searchable source-linked decision dashboard with execution checklist and CSV/JSON exports."),
+        ("site/index.html", "Evidence ledger site", "18 routes · 16 flags · strict allowlist",
+         "Source-only evidence site built strictly from government and registry domain ledgers."),
+        ("portal/index.html", "Government-source portal", "22 methods · .gov / .gov.cn only",
+         "Independent statutory verification portal linking exclusively to government domains."),
+        ("acceptance-373b54a3/index.html", "Acceptance summary & checks", "Cross-repo deliverable check",
+         "Independent completeness verification across the published 600-row and 680-row ladders."),
     ]
     site_cards = "".join(
-        f'<a class="site" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
+        f'<a class="card" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
         f'<em>{esc(d)}</em></a>' for u, t, sub, d in cards)
     page = f"""<!doctype html>
 <html lang="en">
@@ -896,12 +911,12 @@ footer a{{color:#a4e5cf}}
 </style>
 </head>
 <body>
-<header><strong>China money</strong><p>Official-source research · summary re-reviewed 9 November 2026 · not tax or legal advice</p></header>
+<header><strong>China money</strong><p>Official-source research · summary re-reviewed 10 November 2026 · not tax or legal advice</p></header>
 <main>
 <h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
 <p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>
 <div class="summary"><p><strong>What the source review supports:</strong> PRC FX rules reviewed set transaction-document requirements. No separate tax solely for exchanging currency was located in those instruments, but the source and tax history of the balance are unknown. For lawful current-account income, SAFE guidance requires identity and transaction/source evidence including tax documents; the correct category is individual-specific. {ext("https://www.safe.gov.cn/tianjin/2026/0713/3088.html", "SAFE 2026 guidance")} · {ext("https://www.safe.gov.cn/safe/2008/0806/5321.html", "State Council FX rules")}</p></div>
-<div class="notice"><strong>Most important limitation:</strong> the exact tax due, best eligible route and all-in USD cost cannot be determined from the facts provided. Current FX rate/spread and all intermediary/receiver fees are not available as an account-specific executable quote. Do not treat modeled ranges in the scenario ladder as verified prices. <strong>HSBC fee alert:</strong> some detailed route pages still show Global Transfer at USD 0–7 using a 2021 tariff; the current tariff's USD 7 reference is for International Education Payment, not a general same-name remittance. See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and the <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">current tariff</a>.</div>
+<div class="notice"><strong>Most important limitation:</strong> the exact tax due, best eligible route and all-in USD cost cannot be determined from the facts provided. Current FX rate/spread and all intermediary/receiver fees are not available as an account-specific executable quote. Do not treat modeled ranges in the scenario ladder as verified prices. <strong>HSBC fee update:</strong> earlier versions of the ladder route pages listed Global Transfer at USD 0–7 from a 2021 tariff; those pages have now been updated to the 31 October 2026 tariff (PB/Premier Free, Advance USD 20; the current tariff's USD 7 reference is for International Education Payment, not a general same-name remittance). See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and the <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">current tariff</a>.</div>
 <div class="status">
   <div class="status-card"><p class="label">PRC tax on this balance</p><p class="value">— / undetermined</p><p class="small">Source, category, dates and prior tax records are unknown.</p></div>
   <div class="status-card"><p class="label">Route eligibility</p><p class="value">— / undetermined</p><p class="small">Residence category, account type and transaction origin matter.</p></div>
@@ -916,7 +931,7 @@ footer a{{color:#a4e5cf}}
 </main>
 <footer>
 <p><strong>Research, not advice.</strong> No private account facts were entered, no bank was contacted, no funds moved and no tax return filed. Every unresolved personal value is left blank or flagged.</p>
-<p><a href="audit-0f0f59fe/index.html">Independent claim review</a> · <a href="ladder/flagged.html">Flagged for review</a> · <a href="ladder/sources.html">Sources</a> · <a href="COORDINATION.md">Task board</a></p>
+<p><a href="briefing/index.html">Executive briefing</a> · <a href="audit-ad300459/index.html">Official-source audit</a> · <a href="audit-0f0f59fe/index.html">Claim review</a> · <a href="ladder/flagged.html">Flagged for review</a> · <a href="ladder/sources.html">Sources</a> · <a href="README.md">README</a> · <a href="COORDINATION.md">Task board</a></p>
 </footer>
 </body>
 </html>

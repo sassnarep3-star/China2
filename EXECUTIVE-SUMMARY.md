@@ -1,8 +1,10 @@
 # Executive Summary — Getting Money Out of China as a U.S. Citizen
 
-**Session:** `arena-fcd22b0c` · **Date:** 2026-11-07 · **Status:** complete, 477 automated checks passing
-**Live site:** see GitHub Pages link in `COORDINATION.md` · **Ledgers:** `data/*.json`
+**Session:** `arena-fcd22b0c` (historical snapshot `site/`, updated in `2026-11-10` integration) · **Status:** complete, 477 automated checks passing
+**Live hub:** `index.html` · **Consolidated briefing:** [`briefing/index.html`](briefing/index.html) · **Ledgers:** `data/*.json` · **Audit:** [`audit-ad300459/index.html`](audit-ad300459/index.html)
 
+> **2026-11-10 Integration Note:** For consolidated post-integration guidance across the full repository (including the 31 Oct 2026 HSBC China tariff, current Nov 2026 Fed H.10 `6.6760` CNY/USD reference, 2026/2027 FEIE `$132,900`/`$137,300`, `31 CFR 1010.821` FBAR maxima `$16,536`/`$165,353`, PBOC `Yinfa [2026] No. 42` repealing `237`, and `Huifa [2007] No. 1` domestic-vs-foreign purchase quota distinctions), start at [`briefing/index.html`](briefing/index.html) and [`README.md`](README.md).
+>
 > Research only. Not tax or legal advice. Every figure below is tied to a primary official
 > document. Anything that could not be confirmed from an official source is **left blank and
 > flagged**, never estimated.
@@ -44,7 +46,7 @@ things, none of which is a conversion tax:
 
 | Constraint | Verified value | Source |
 |---|---|---|
-| Individual FX facilitation quota | **USD 50,000 equivalent per individual per year**, covering purchases *and* sales, for domestic *and* foreign individuals | [SAFE, 2007](https://www.safe.gov.cn/en/2007/0105/819.html) |
+| Individual FX facilitation quota | **USD 50,000 equivalent per individual per year** for FX *sales* (FX→RMB) and for **domestic individuals' (`境内个人`)** FX *purchases* (RMB→USD); SAFE 2024 guidance specifies that among foreign individuals, Foreign Permanent Resident ID holders use this purchase facility while non-domestic current-account income conversion relies on documented tax/source proof (Art. 13) rather than a $50k purchase quota (State Council Decree 532 Art. 52(2) also defines ≥1-year continuous foreign residents as domestic individuals — confirm bank classification) | [SAFE, 2007](https://www.safe.gov.cn/en/2007/0105/819.html) · [SAFE Tianjin, 2024](https://www.safe.gov.cn/tianjin/2024/0621/2529.html) |
 | Above the quota | Formalities inside the quota are "drastically simplified"; above it, "examination of the authenticity of transactions ... shall be strengthened" | [SAFE, 2007](https://www.safe.gov.cn/en/2007/0105/819.html) |
 | Detection | SAFE runs a bank-to-SAFE management information system through which banks verify the authenticity of materials individuals provide | [SAFE, 2007](https://www.safe.gov.cn/en/2007/0105/819.html) |
 | Escape valve 1 — genuine individual trade | Purchases and sales under an individual **foreign-exchange settlement account** are *not* subject to the annual quota, "regardless of the amount," against valid trading documents | [SAFE, 2007](https://www.safe.gov.cn/en/2007/0105/819.html) |
@@ -65,9 +67,7 @@ single yuan is converted.
 | Both can apply | "Form 8938 does not relieve filers of FBAR filing requirements." | [IRS](https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers) |
 | **FinCEN Form 105 (CMIR)** | More than **$10,000** in currency or monetary instruments transported into or out of the United States | [IRS IRM 4.26.9](https://www.irs.gov/irm/part4/irm_04-026-009) · [FinCEN portal](https://fincen105.cbp.dhs.gov/) |
 
-**FBAR penalty amounts are deliberately not stated.** The official IRS page says only that civil
-maximums in Title 31 U.S.C. are adjusted annually for inflation under 31 CFR 1010.821 and warns
-its own figures may not be current. Widely quoted numbers come from commercial tax sites. Flag **F02**.
+**FBAR penalty amounts were deliberately omitted in the original Nov 7 snapshot** (`site/flagged-for-review.html` Flag **F02**), because the IRS summary page defers to annual inflation adjustments under `31 CFR 1010.821`. Subsequent repo passes verified `31 CFR 1010.821` directly on `ecfr.gov` for penalties assessed on or after `2025-01-17`: **$16,536** non-willful maximum (per report per *Bittner*, 2023) and the greater of **$165,353** or **50%** of account balance for willful violations (see [`briefing/index.html`](briefing/index.html)).
 
 ---
 
@@ -90,7 +90,7 @@ pros, cons, limits and tax treatment is in `data/methods.json` and on the site.
 
 | Route | Official basis for rejection |
 |---|---|
-| **R13** Cryptocurrency | All virtual-currency-related business activities are illegal in China; offshore exchanges serving mainland residents are illegal financial activity. [gov.cn](http://english.www.gov.cn/statecouncil/ministries/202109/24/content_WS614dc30bc6d0df57f98e0c84.html) |
+| **R13** Cryptocurrency | Exchanging legal tender for virtual currency is an illegal financial activity in China; financial institutions may not provide accounts/settlement (`Yinfa [2026] No. 42`, repealing `Yinfa [2021] No. 237`). [PBOC 2026](https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html) · [gov.cn (2021 archive)](http://english.www.gov.cn/statecouncil/ministries/202109/24/content_WS614dc30bc6d0df57f98e0c84.html) |
 | **R14** Splitting / pooling relatives' quotas | SAFE states the quota system exists partly to prevent avoiding administration, including repeated purchases and sales in installments; banks verify authenticity via the SAFE-linked system. [SAFE](https://www.safe.gov.cn/en/2007/0105/819.html) |
 | **R15** Underground banking | PBOC requires assets transferred abroad to be lawful, owned, undisputed and documented; false documents are penalized under the PRC Foreign Exchange Administration Regulations. [PBOC](https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html) |
 | **R16** Fabricated trade invoicing | Business under a settlement account must be conducted with **valid** trading documents regardless of amount. [SAFE](https://www.safe.gov.cn/en/2007/0105/819.html) |

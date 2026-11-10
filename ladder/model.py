@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-RETRIEVED = "2026-11-08"
+RETRIEVED = "2026-11-10"
 
 # ---------------------------------------------------------------------------
 # FX handling. All tables are in USD. CNY amounts appear only in bank tariffs,
@@ -27,8 +27,9 @@ RETRIEVED = "2026-11-08"
 # ---------------------------------------------------------------------------
 FX = {"rate": 7.10, "low": 6.80, "high": 7.40,
       "note": "Illustrative CNY per USD, used only to express CNY-denominated "
-              "fee caps in USD. Not a quote. Ladder tiers are USD-denominated, "
-              "so no exchange-rate forecast is embedded in the model."}
+              "fee caps in USD. Not a quote (IRS 2025 avg is 7.129; Fed H.10 "
+              "noon buying rate on 2026-11-06 was 6.6760). Ladder tiers are "
+              "USD-denominated, so no exchange-rate forecast is embedded."}
 
 TIERS = list(range(10_000, 400_001, 10_000))
 
@@ -86,30 +87,31 @@ SOURCES = [
                "30%, or 30% to 100% if serious. Art. 52(2): “domestic individual” includes a foreign "
                "national who has resided continuously in China for one year or more.",
          used_for="Penalty exposure for unlawful routes; residence-based definition of 境内个人."),
-    dict(id="S05", jur="PRC", authority="PBOC",
-         title="Provisional Measures for the Administration of Sale and Payment of Foreign Exchange for Individuals' Outward Asset Transfers (PBOC Announcement [2004] No. 16)",
-         url="http://m.safe.gov.cn/safe/2004/1116/4133.html",
-         lang="ZH", retrieval="search", status="verified",
-         locator="Arts. 2, 6, 8, 9, 10, 11",
-         quote="Art. 6: an emigration transfer must be applied for once for the whole amount, then "
-               "remitted in stages — no more than half first, no more than half of the remainder after "
-               "one year, the balance after two years; amounts up to RMB 200,000 may be remitted in one "
-               "go after approval. Art. 11: the bank must remit directly to the applicant's own overseas "
-               "account and may not pay out cash domestically.",
-         used_for="Emigration and inheritance transfer routes and their staging limits."),
+    dict(id="S05", jur="PRC", authority="PBOC / SAFE",
+         title="Provisional Rules for Personal Asset Outbound Transfers (PBOC [2004] No. 16) as simplified by SAFE Huifa [2014] No. 2",
+         url="https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html",
+         lang="EN", retrieval="direct", status="verified",
+         locator="PBOC [2004] Arts. 2, 6, 8–11; simplified by SAFE Huifa [2014] No. 2 §VI (safe.gov.cn/en/2014/0801/741.html)",
+         quote="PBOC [2004] Arts. 2–11 cover pre-emigration and inherited assets with local SAFE "
+               "approval and direct bank remittance to the applicant's overseas account. SAFE Huifa "
+               "[2014] No. 2 §VI cancelled the >RMB 500,000 SAFE head-office filing and cancelled the "
+               "multi-installment requirement so banks may remit in a lump sum or in batches within the "
+               "approved limit.",
+         used_for="Emigration and inheritance transfer routes, lump-sum remittance and local SAFE approval."),
     dict(id="S06", jur="PRC (commercial)", authority="HSBC Bank (China) Company Limited",
-         title="Account and Service Tariff, Personal Customers (effective 1 January 2021)",
-         url="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/account-service-rates-cn.pdf",
-         lang="ZH", retrieval="direct", status="verified",
-         locator="Items 5.1.1.1, 5.1.1.2, 5.1.1.3, 5.1.1.4, 5.3.1, 3.1.1",
-         quote="5.1.1.1 outward telegraphic transfer: 0.1% of the remittance amount, minimum CNY 100, "
-               "maximum CNY 500 per transaction, plus cable fee. 5.1.1.2 cable fee: CNY 120 per "
-               "transaction. 5.1.1.4 cash-to-remittance conversion: 1% of the foreign-currency amount "
-               "(waived for Premier). 5.3.1 same-name HSBC Global Transfer: free for Premier; reference "
-               "CNY 50, actual USD 7 per transaction. 3.1.1 foreign cash withdrawal: 0.25%-0.4%, "
-               "minimum CNY 40.",
-         used_for="The only published, itemised bank tariff used in this ladder. A commercial tariff, "
-                 "not a regulator's figure, and not a quote for any specific account."),
+         title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 October 2026)",
+         url="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+         lang="EN/ZH", retrieval="direct", status="verified",
+         locator="Items 2.2.2.1, 2.2.4.1–2.2.4.4, 2.2.6.1, 2.2.7; Important Notes 3 & 7",
+         quote="2.2.4.1 outward TT: Private Banking individual Free; Premier/Advance 0.1% min CNY 100, "
+               "max CNY 500 per transaction, plus 2.2.4.2 cable CNY 120 (PB individual Free). Pay Exact "
+               "CNY 200 plus overseas shortfall. 2.2.6.1 Global Transfer to own overseas HSBC account: "
+               "Private Banking/Premier Free, Advance USD 20 (indicative CNY 145). 2.2.7 International "
+               "Education Payment: USD 7 (indicative CNY 50). 2.2.2.1 foreign banknote withdrawal over "
+               "counter: Free (USD/HKD >=USD 5,000 requires >=3 working days notice). Note 7 excludes "
+               "third-party bank charges.",
+         used_for="Published bank tariff used in this ladder (commercial schedule, not a regulator's "
+                 "figure or account-specific quote; internal Chinese header carries 2024-09-12 date)."),
     dict(id="S07", jur="PRC", authority="National People's Congress / State Taxation Administration",
          title="Individual Income Tax Law of the PRC (2018 revision)",
          url="https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html",
@@ -224,11 +226,12 @@ SOURCES = [
     dict(id="S19", jur="PRC", authority="SAFE",
          title="Catalogue of Currently Effective Major Foreign Exchange Regulations (as at 30 June 2026)",
          url="https://www.safe.gov.cn/safe/file/file/20260805/d2d0d6ce1441436eadc8bc600eb79c43.pdf",
-         lang="ZH", retrieval="search", status="verified",
-         locator="Items 1-3, 18-19",
-         quote="Lists State Council Decree No. 532, PBOC Decree [2006] No. 3 and Hui Fa [2007] No. 1 as "
-               "currently effective, and Hui Fa [2003] No. 102 on carrying cash across the border.",
-         used_for="Confirms the core instruments are still in force as at mid-2026."),
+         lang="ZH", retrieval="direct", status="verified",
+         locator="Items 1-3, 18-19, 30, 38, 97",
+         quote="Lists State Council Decree No. 532, PBOC Decree [2006] No. 3, Hui Fa [2007] No. 1, "
+               "Hui Fa [2003] No. 102, Hui Fa [2020] No. 14, Hui Fa [2014] No. 2, and PBOC Announcement "
+               "[2004] No. 16 as currently effective.",
+         used_for="Confirms the core FX instruments and capital-account simplifications remain in force as at mid-2026."),
     dict(id="S20", jur="PRC", authority="SAFE Beijing branch",
          title="Current-account FAQ: how a non-domestic individual purchases FX",
          url="https://www.safe.gov.cn/beijing/file/file/20191127/b29df7fa63504266b9ccb23429185d40.pdf",
@@ -248,8 +251,9 @@ SOURCES = [
 ASSUMPTIONS = [
     dict(id="A1", topic="CNY/USD used to express CNY fee caps",
          value="7.10 CNY per USD (band 6.80-7.40)", status="model assumption",
-         why="Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 / 40 caps are affected; "
-             "at 400,000 USD the whole cap swing is under 15 USD. No rate forecast is used anywhere."),
+         why="Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 caps are affected; "
+             "at 400,000 USD the whole cap swing is under 15 USD (IRS 2025 avg = 7.129; Fed H.10 "
+             "noon buying rate 2026-11-06 = 6.6760). No rate forecast is used anywhere."),
     dict(id="A2", topic="FX spread on a bank wire", value="0.30%-1.50% of principal",
          status="model assumption",
          why="No published executable CNY/USD customer quote was obtained for any account, so a band is "
@@ -285,16 +289,14 @@ ASSUMPTIONS = [
 ]
 
 # ---------------------------------------------------------------------------
-# USEFUL CHANNEL PRIMITIVES, all traceable to S06 (HSBC China tariff).
+# USEFUL CHANNEL PRIMITIVES, all traceable to S06 (HSBC China tariff eff. 31 Oct 2026).
 # ---------------------------------------------------------------------------
-WIRE_PCT = 0.001          # 5.1.1.1
-WIRE_MIN = cny(100)       # 5.1.1.1
-WIRE_MAX = cny(500)       # 5.1.1.1
-CABLE = cny(120)          # 5.1.1.2
-GLOBAL_XFER = 7.00        # 5.3.1 (actual reference price, USD)
-CASH_CONV_PCT = 0.01      # 5.1.1.4
-CASH_WD_PCT = (0.0025, 0.0040)  # 3.1.1
-CASH_WD_MIN = cny(40)
+WIRE_PCT = 0.001               # 2.2.4.1 (Premier/Advance; Private Banking individual Free)
+WIRE_MIN = cny(100)            # 2.2.4.1
+WIRE_MAX = cny(500)            # 2.2.4.1
+CABLE = cny(120)               # 2.2.4.2 (Premier/Advance; Private Banking individual Free)
+GLOBAL_XFER_BAND = (0.0, 20.0) # 2.2.6.1 (PB/Premier Free; Advance USD 20; USD 7 is 2.2.7 Education Payment)
+CASH_WD_FEE = 0.0              # 2.2.2.1 (foreign banknote withdrawal over counter: Free)
 
 ATM_YEAR_CAP = cny(100_000)   # S03 Art. 1  (RMB 100k/person/year)
 ATM_DAY_CAP = cny(10_000)     # S03 Art. 4  (RMB 10k/card/day)
@@ -356,28 +358,32 @@ ROUTES = [
         short="Documented income → Global Transfer",
         group="Lawful · primary",
         status="lawful",
-        who="As R01, but you already hold, or can open, an HSBC account in the US and an HSBC China "
-            "Premier relationship.",
+        who="As R01, but you already hold, or qualify for, own-name HSBC accounts in both China and "
+            "the US (Private Banking / Premier TRB ≥ CNY 500,000, or Advance).",
         basis=["S01", "S02", "S06"], fee="global", cap=None,
         spread="wire", tax=(0.0, 0.0),
         tax_note="Same tax analysis as R01: conversion of already-taxed income adds no PRC tax.",
         time="1-5 business days", time_days=(1, 5),
-        docs=["Everything in R01", "HSBC US account in the same name", "Premier status confirmed on "
-              "both sides"],
+        docs=["Everything in R01", "HSBC US account in the same name", "Eligible HSBC China tier "
+              "(Private Banking / Premier / Advance) confirmed on both sides"],
         steps=[
             "Confirm both accounts are in exactly the same name and that Global Transfer is enabled "
             "for the China-US corridor.",
             "Complete the R01 documentation and FX conversion inside HSBC China.",
-            "Use Global Transfer to move the USD to your own HSBC US account: free for Premier, "
-            "reference price USD 7 per transfer otherwise (S06 item 5.3.1).",
+            "Use Global Transfer to move the USD to your own overseas HSBC account: Free for Private "
+            "Banking and Premier, USD 20 per transfer for Advance (S06 item 2.2.6.1; note USD 7 under "
+            "item 2.2.7 is for International Education Payment, not a general remittance).",
             "Keep the transfer confirmation as the audit trail; the receiving bank still needs a "
             "source-of-funds note.",
             "File FBAR / Form 8938 / Form 1116 as in R01.",
         ],
-        pros=["Cheapest published fixed fee of any fully documented route (0 to USD 7).",
-              "Same-bank transfer reduces correspondent-bank deductions and intermediary questions."],
-        cons=["Requires an eligible HSBC relationship on both sides; Premier has balance conditions.",
-              "The spread on the CNY→USD leg is unchanged and remains the dominant cost.",
+        pros=["Lowest published fixed fee among documented wire channels ($0 for Private Banking / "
+              "Premier; $20 for Advance under the Oct 2026 tariff).",
+              "Same-bank transfer may reduce correspondent-bank deductions (third-party charges remain "
+              "excluded under Important Note 7)."],
+        cons=["Requires an eligible HSBC relationship on both sides; Premier preferential tariff "
+              "requires TRB ≥ CNY 500,000 (Important Note 3).",
+              "The spread on the CNY→USD leg is unchanged and remains the dominant, unverified cost.",
               "Account opening for a US person at a Chinese bank is subject to enhanced due diligence."],
     ),
     dict(
@@ -408,49 +414,54 @@ ROUTES = [
               "You pay a round-trip spread, so this is a recovery route, not a way to move earned income."],
     ),
     dict(
-        id="R04", name="Passport-only small-amount conversion at a bank counter",
-        short="Small-amount counter conversion (USD 500/day)",
+        id="R04", name="Passport-only small-amount unused-RMB reconversion at a bank counter",
+        short="Small-amount unused-RMB reconversion (USD 500/day)",
         group="Lawful · small balance only",
         status="lawful",
-        who="Any non-domestic individual; documentary exemption is in the re-conversion rule.",
+        who="A non-domestic individual reconverting unused RMB that was previously exchanged from "
+            "foreign currency (Guidelines Art. 60 / Hui Fa [2007] Art. 13(2) — NOT a general allowance "
+            "for salary or savings).",
         basis=["S02", "S17"], fee="cash", cap=SPLIT_DAILY_CAP,
         spread="cash", tax=(0.0, 0.0),
-        tax_note="No tax at the counter, but the exemption is documentary only: it does not convert "
-        "untaxed income into lawful money.",
+        tax_note="No tax at the counter, but the exemption is strictly for reconverting unused RMB "
+        "previously converted from FX; it does not make untaxed earned income eligible.",
         time="one banking day per USD 500", time_days=None,
         docs=["Passport"],
         steps=[
+            "Confirm the RMB represents unused funds from an earlier FX-to-RMB conversion.",
             "Attend a branch counter with your passport.",
-            "Request conversion of no more than the equivalent of USD 500 in one day.",
-            "Take USD cash or instruct a wire from the resulting FX balance.",
-            "Do not repeat this pattern to move a large balance: that is the conduct S01 Art. 7 and "
-            "S18 prohibit, and it is the classic trigger for a watch-list referral.",
+            "Request reconversion of no more than the equivalent of USD 500 in one day (or present "
+            "the original exchange memo within 24 months under R03 for larger unused amounts).",
+            "Do not repeat small daily conversions to evade documentation or limits on earned RMB: "
+            "S01 Art. 7 and S04 prohibit splitting transactions to evade control.",
         ],
-        pros=["No paperwork beyond a passport.", "Immediate settlement."],
-        cons=["USD 500 per day: 20 banking days for USD 10,000 and 800 for USD 400,000.",
-              "Cash spreads are the widest in this study.",
-              "Using it as a staging device for a large balance is unlawful, not merely slow."],
+        pros=["No exchange memo required up to USD 500/day when reconverting unused RMB.",
+              "Immediate settlement."],
+        cons=["Applies only to previously exchanged unused RMB, NOT earned RMB wages or savings.",
+              "USD 500 per day: 20 banking days for USD 10,000 and 800 for USD 400,000; cash spreads "
+              "are wide, and repeated splitting to evade controls violates S01 Art. 7."],
     ),
     dict(
-        id="R05", name="Airside pre-departure conversion at a port-side counter",
-        short="Airport-side conversion (USD 1,000/day)",
+        id="R05", name="Airside pre-departure unused-RMB reconversion at a port-side counter",
+        short="Airport-side unused-RMB reconversion (USD 1,000/day)",
         group="Lawful · small balance only",
         status="lawful",
-        who="A departing non-domestic individual, at a port-side counter before departure (境内关外).",
+        who="A departing non-domestic individual reconverting unused previously exchanged RMB at a "
+            "port-side counter before departure (境内关外).",
         basis=["S17"], fee="cash", cap=AIRPORT_DAILY_CAP,
         spread="cash", tax=(0.0, 0.0),
-        tax_note="Same documentary-only exemption as R04.",
+        tax_note="Same unused-RMB reconversion rule as R04.",
         time="one departure per USD 1,000", time_days=None,
         docs=["Passport", "boarding pass"],
         steps=[
-            "Convert no more than the equivalent of USD 1,000 in a single day at a port-side counter "
-            "before departure.",
+            "Reconvert no more than the equivalent of USD 1,000 of unused RMB in a single day at a "
+            "port-side counter before departure.",
             "Declare the cash to US CBP on FinCEN Form 105 if you arrive with more than USD 10,000 in "
             "total (S13).",
             "Do not treat repeated trips as a transfer mechanism.",
         ],
-        pros=["Higher daily exemption than an onshore counter."],
-        cons=["USD 1,000 per day of travel; 400 trips for USD 400,000.",
+        pros=["Higher daily reconversion limit than an onshore counter."],
+        cons=["Applies only to unused previously exchanged RMB; USD 1,000 per departure trip.",
               "Requires physically moving cash, with CBP reporting and seizure risk for errors."],
     ),
     dict(
@@ -467,19 +478,21 @@ ROUTES = [
         docs=["Passport", "Bank withdrawal slip", "Carrying certificate for USD 5,000-10,000",
               "FinCEN Form 105 on arrival above USD 10,000"],
         steps=[
-            "Convert or withdraw USD cash at the counter. On the verified tariff a foreign-cash "
-            "withdrawal costs 0.25%-0.4% with a CNY 40 minimum on non-Premier accounts and is waived for "
-            "Premier (S06 item 3.1.1).",
+            "Convert or withdraw USD banknotes at the counter. Under the 31 Oct 2026 HSBC China tariff "
+            "(S06 item 2.2.2.1), foreign banknote withdrawal over the counter is Free across Personal "
+            "segments, with >=3 working days notice required for USD/HKD >=USD 5,000 equivalent.",
             "Above USD 5,000 and up to USD 10,000, obtain a bank carrying certificate before departure.",
             "Above USD 10,000 a SAFE-issued certificate is required and is granted only in listed "
             "special cases.",
             "Declare to CBP on arrival above USD 10,000 in aggregate.",
             "Deposit in the US and keep the withdrawal and declaration records.",
         ],
-        pros=["No tax certificate for the cash itself.", "Works today, with no application."],
-        cons=["USD 5,000 per trip without a certificate: 80 trips for USD 400,000.",
-              "Physical risk plus forfeiture exposure for a reporting failure (S13).",
-              "Widest spread of any channel."],
+        pros=["$0 published counter withdrawal fee (S06 item 2.2.2.1) and no tax certificate for "
+              "already-held FX cash.", "Works within USD 5,000/trip without an outbound permit."],
+        cons=["USD 5,000 per trip without a certificate: 80 trips for USD 400,000 (repeat exits face "
+              "stricter Huifa [2003] No. 102 limits).",
+              "Physical risk plus US forfeiture exposure for failing to file FinCEN 105 (S13).",
+              "Widest spread of any channel (notes buy/sell board rate applies for cross-currency)."],
     ),
     dict(
         id="R07", name="Emigration asset transfer (移民财产转移)",
@@ -487,36 +500,35 @@ ROUTES = [
         group="Lawful · capital account",
         status="lawful",
         who="A natural person who emigrated from mainland China (or moved to Hong Kong/Macao) and is "
-            "transferring lawful pre-emigration assets, including a US citizen who formerly resided "
-            "in China.",
-        basis=["S05", "S02"], fee="wire", cap=None, staged=True,
+            "transferring lawful pre-emigration assets (requires household-registration cancellation; "
+            "most US-born individuals without former PRC hukou do not qualify).",
+        basis=["S05", "S02"], fee="wire", cap=None, staged=False,
         spread="wire", tax=(0.0, 0.0),
         tax_note="The transfer itself is not a tax; the tax authority's clearance on the realised "
         "assets is required and the applicable rate depends on the asset (for property, 20% of the gain "
         "under S07 Art. 3(3)).",
-        time="up to 2 years of staged remittances", time_days=(365, 730),
+        time="1-6 months (lump sum or batches after local SAFE approval)", time_days=(30, 180),
         docs=["Written application stating the reason and a full account of source and realisation",
-              "Approval/record of emigration status", "Proof of ownership and realisation of the assets",
-              "PRC tax clearance certificate for the assets", "Notarised documents where required"],
+              "Proof of emigration status and PRC household-registration (hukou) cancellation",
+              "Proof of ownership and realisation of the assets",
+              "PRC tax clearance certificate for the assets"],
         steps=[
-            "Apply once, to the SAFE branch where your pre-emigration household registration was, for "
-            "the whole amount you intend to move.",
+            "Apply once, to the local SAFE branch where your pre-emigration household registration was, "
+            "for the whole amount you intend to move.",
             "Settle the PRC tax position on the realised assets and obtain the tax certificate.",
-            "Obtain approval: up to RMB 500,000 equivalent is decided by the local SAFE branch; above "
-            "that it goes to SAFE head office.",
-            "Remit in the staged pattern: up to half first, up to half of the remainder after one year, "
-            "the balance after two years. Amounts up to RMB 200,000 may go in one remittance once "
-            "approved.",
-            "The bank must pay directly to your own overseas account; cash payment inside China is not "
-            "permitted for this category.",
+            "Obtain local SAFE branch approval: SAFE Circular Huifa [2014] No. 2 §VI cancelled the "
+            "prior requirement to escalate amounts above RMB 500,000 to SAFE head office.",
+            "Remit via the designated bank directly to your own overseas account: Huifa [2014] No. 2 "
+            "§VI also cancelled the 2004 multi-stage installment rule, so the bank may remit in a lump "
+            "sum or in batches within the approved limit (no domestic cash payout allowed).",
             "Keep every approval and remittance advice for the US side.",
         ],
-        pros=["The only route designed to move a whole lifetime balance, with no annual quota.",
-              "Explicit statutory staging, so the plan is predictable.",
-              "Highest-value route for a former PRC resident with a large balance."],
-        cons=["Requires emigration status and asset realisation, not just an RMB balance.",
-              "Two years to complete for anything material.",
-              "SAFE head-office approval above RMB 500,000; documentary burden is heavy."],
+        pros=["The only route designed to move a whole pre-emigration balance outside the annual quota.",
+              "Lump-sum remittance permitted within the local SAFE branch's approved limit (Huifa [2014] "
+              "No. 2 §VI)."],
+        cons=["Requires actual emigration from Mainland China with hukou cancellation and asset "
+              "realisation — generally inapplicable to US-born individuals who never held PRC hukou.",
+              "Documentary and tax-clearance burden is heavy."],
     ),
     dict(
         id="R08", name="Inheritance asset transfer (继承财产转移)",
@@ -532,22 +544,20 @@ ROUTES = [
         docs=["Written application describing the relationship and the estate",
               "Application form signed by you or your agent", "Passport plus a certificate of overseas "
               "residence issued or authenticated by a Chinese embassy/consulate",
-              "Notarised proof of inheritance", "Notarised proof of the deceased's title to the assets",
-              "Tax certificate or payment proof issued by the tax authority where the assets are",
-              "Notarised power of attorney if an agent acts"],
+              "Proof of inheritance", "Proof of the deceased's title to the assets",
+              "Tax certificate or payment proof issued by the tax authority where the assets are"],
         steps=[
-            "Obtain and notarise the inheritance documents and the deceased's title documents.",
+            "Obtain the inheritance and title documents (Huifa [2014] No. 2 §VI(IV) simplified prior "
+            "notarization rules for certain property-right/agency documents; confirm branch checklist).",
             "Obtain the tax certificate from the tax authority where the assets are located.",
-            "File one application at the SAFE branch where the deceased was registered; one application "
-            "covers the whole estate from that decedent.",
-            "Remit in one go or in instalments once approved.",
-            "Report the bequest in the US on Form 3520 if the threshold is met (not verified in this "
-            "study - see F07).",
+            "File at the local SAFE branch where the decedent's household registration was (combined "
+            "filing allowed for multiple decedents under Huifa [2014] No. 2 §VI(III)).",
+            "Remit in one go or in batches once approved.",
+            "Report the bequest in the US on Form 3520 if >$100,000 from a foreign estate/NRA (F07).",
         ],
-        pros=["No annual quota; one application per decedent.", "Can be remitted in one transfer."],
-        cons=["Notarisation and consular authentication are slow.",
-              "Requires a tax certificate for the estate.",
-              "Requires a foreign-citizen residence certificate from a Chinese mission."],
+        pros=["No annual quota; lump sum permitted; combined filing available across decedents."],
+        cons=["Consular residence verification and estate tax clearance take time.",
+              "Requires local SAFE approval and source/title documentation."],
     ),
     dict(
         id="R09", name="Sale proceeds of PRC residential property",
@@ -751,12 +761,14 @@ ROUTES = [
         basis=["S01", "S18", "S04"], fee="rejected", cap=None, spread=None, tax=(0.0, 0.0),
         tax_note="Not a tax question.",
         time="n/a", time_days=None, docs=[],
-        steps=["Do not do this. S01 Art. 7 prohibits splitting to evade limits; S18 puts borrowers and "
-               "lenders on a watch list for the current year plus two years; S04 supplies the fine."],
+        steps=["Do not do this. S01 Art. 7 prohibits splitting to evade limits and S04 Arts. 39–40 "
+               "supply statutory fines up to 30% (30%–100% if serious) plus criminal liability. Note: "
+               "the older 'watch list' notice S18 has conflicting active/repealed mirror labels (F03), "
+               "so S01 Art. 7 and S04 are the operative authorities."],
         pros=["None."],
-        cons=["Watch list and refusal of counter service for years.",
+        cons=["Statutory fines up to the amount involved and refusal of bank counter service.",
               "Both sides exposed, including your relative.",
-              "The quota may not even apply to you (see F02)."],
+              "The annual purchase quota may not even apply to you (see F02)."],
     ),
     dict(
         id="R19", name="Present fabricated contracts or invoices to the bank",
@@ -812,19 +824,13 @@ def fixed_and_cap(route: dict, tier: float):
     """Return (transactions, fixed_cost, fixed_status, per_txn_cap)."""
     kind, cap = route["fee"], route["cap"]
     n = math.ceil(tier / cap) if cap else 1
-    if route.get("staged"):
-        # PBOC [2004] No.16 Art. 6: up to RMB 200,000 in one remittance, above that in up to
-        # three staged remittances. Staging is documented; the wire count it implies is modelled.
-        n = 1 if tier <= cny(200_000) else 3
     per = tier / n
     if kind == "wire":
         return n, n * wire_fee(per), "published", cap
     if kind == "global":
-        return n, n * GLOBAL_XFER, "published", cap
+        return n, (n * GLOBAL_XFER_BAND[0], n * GLOBAL_XFER_BAND[1]), "published-band", cap
     if kind == "cashcarry":
-        lo = min(max(CASH_WD_PCT[0] * per, CASH_WD_MIN), CASH_WD_PCT[1] * per)
-        hi = max(CASH_WD_PCT[1] * per, CASH_WD_MIN)
-        return n, (n * lo, n * hi), "published-band", cap
+        return n, CASH_WD_FEE, "published", cap
     if kind in ("cash", "atm", "card"):
         return n, None, "unpublished", cap
     return 1, 0.0, "none", cap

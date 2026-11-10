@@ -1,0 +1,33 @@
+name: Verify briefing and audit suites
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-briefing-and-audits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify briefing deterministic build, math, links and JS
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 briefing/build.py
+          git diff --exit-code -- briefing
+          PYTHONDONTWRITEBYTECODE=1 python3 briefing/verify.py
+          node --check briefing/assets/app.js
+      - name: Verify audit-86f0, audit-0f0f59fe and acceptance-373b54a3
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 audit-86f0/verify.py
+          PYTHONDONTWRITEBYTECODE=1 python3 audit-0f0f59fe/verify.py
+          PYTHONDONTWRITEBYTECODE=1 python3 acceptance-373b54a3/verify.py
