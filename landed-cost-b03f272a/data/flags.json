@@ -13,7 +13,7 @@
   {
    "id": "F02",
    "item": "HSBC China's exchange rate and margin",
-   "why": "The address tried for HSBC China's rate board returned 'Page not found', so no HSBC rate was read. HSBC's margin is blank; where an HSBC charge in RMB is shown in USD, Bank of China's published selling rate is used for the conversion.",
+   "why": "The address tried for HSBC China's rate board returned 'Page not found', so no HSBC rate was read. HSBC's margin is blank; where an HSBC charge in yuan is shown in dollars, Bank of China's published selling rate is used for the conversion.",
    "resolve": "Read HSBC China's board rate for USD on the day, or ask for a written quote.",
    "sources": [
     "S53",
@@ -24,7 +24,7 @@
   {
    "id": "F03",
    "item": "Bank of China rate is a dated snapshot",
-   "why": "The rate board is a live page (published 2026/11/10 17:39:58). The snapshot cannot be re-read at the same address later and rates move daily, so every margin and RMB amount is a snapshot, not a quote.",
+   "why": "The rate board is a live page (published 2026/11/10 17:39:58). The snapshot cannot be re-read at the same address later and rates move daily, so every margin and yuan amount is a snapshot, not a quote.",
    "resolve": "Re-read the board on the day you convert and re-run the arithmetic.",
    "sources": [
     "S16"
@@ -53,7 +53,7 @@
   },
   {
    "id": "F06",
-   "item": "Personal cross-border RMB remittance (route A6)",
+   "item": "Sending yuan across the border as yuan (route A6)",
    "why": "Only a government-portal republication of a news report about PBOC notice Yin Fa [2018] No. 3 was read; the notice text was not, and the PBOC Beijing page found by search returned 404. Eligibility, documents, limits and price are blank.",
    "resolve": "Read the PBOC notice and obtain the bank's written terms.",
    "sources": [
@@ -77,7 +77,7 @@
   {
    "id": "F08",
    "item": "Price of overseas ATM withdrawals",
-   "why": "The card scheme's exchange rate and the issuer's and ATM owner's fees were not read; the price is blank. Years needed are counted with Bank of China's selling rate as the RMB equivalent.",
+   "why": "The card scheme's exchange rate and the issuer's and ATM owner's fees were not read; the price is blank. Years needed are counted with Bank of China's selling rate as the yuan equivalent.",
    "resolve": "Get the card issuer's overseas withdrawal fee schedule and rate rule.",
    "sources": [
     "S07"
@@ -86,7 +86,7 @@
   },
   {
    "id": "F09",
-   "item": "RMB 20,000 cash limit",
+   "item": "¥20,000 cash limit",
    "why": "Taken from the PBC's 2004 official Q&A explaining the adjustment, not from the announcement itself; current validity was not re-confirmed.",
    "resolve": "Read PBC Announcement [2004] No. 18 or current customs guidance.",
    "sources": [
@@ -127,9 +127,9 @@
   },
   {
    "id": "F13",
-   "item": "PRC tax on the income itself",
-   "why": "Only the statutory rates are shown (3% to 45%; 20%). Whether and how much PRC tax was due or paid on this money is personal and not computed; treatment of bank-deposit interest was not verified.",
-   "resolve": "Obtain your PRC tax payment records for the years concerned.",
+   "item": "Chinese tax on the income itself",
+   "why": "Only the statutory rates are shown (3% to 45%; 20%). Whether and how much Chinese tax was due or paid on this money is personal and not computed; treatment of bank-deposit interest was not verified.",
+   "resolve": "Obtain your Chinese tax payment records for the years concerned.",
    "sources": [
     "S15"
    ],
@@ -139,7 +139,7 @@
    "id": "F14",
    "item": "When the yuan was acquired",
    "why": "Unknown, so the exchange gain is shown for every year from 2001 to 2025. The yearly average stands in for the actual rate on the day the money was received; 2026 has no annual average yet and is blank.",
-   "resolve": "Use the posted rate for the actual dates the RMB was received.",
+   "resolve": "Use the posted rate for the actual dates the yuan was received.",
    "sources": [
     "S22",
     "S23"
@@ -296,7 +296,7 @@
   {
    "id": "F29",
    "item": "'Conversion itself is not taxed in China'",
-   "why": "The FX rules read describe documents and limits, not a levy on converting. No official statement that conversion is tax-free was read, so no blanket zero is asserted; that cell is blank.",
+   "why": "The foreign-exchange rules read describe documents and limits, not a levy on converting. No official statement that conversion is tax-free was read, so no blanket zero is asserted; that cell is blank.",
    "resolve": "Ask the bank or tax bureau whether any charge other than the bank's fee applies.",
    "sources": [
     "S01",
@@ -306,7 +306,7 @@
   },
   {
    "id": "F30",
-   "item": "Price of exchanging RMB banknotes abroad",
+   "item": "Price of exchanging yuan banknotes abroad",
    "why": "No published price was read; blank.",
    "resolve": "Get the exchange counter's posted rate.",
    "sources": [
@@ -372,6 +372,18 @@
    "resolve": "Use Treasury's Reporting Rates of Exchange for each year.",
    "sources": [
     "S42"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F37",
+   "item": "U.S. tax on the income itself",
+   "why": "Whether the income behind the balance was reported in the year it was earned, and whether a foreign tax credit or the foreign earned income exclusion applied, is personal and unknown. No personal tax amount is computed; that cell is blank.",
+   "resolve": "Compare your filed U.S. returns for the years the money was earned.",
+   "sources": [
+    "S35",
+    "S36",
+    "S37"
    ],
    "status": "needs review"
   }

@@ -12,12 +12,12 @@
    "group": "A",
    "name": "Bank of China: buy USD with documented income, then one wire to your own US account",
    "status": "lawful",
-   "fits": "RMB that is lawful current-account income earned in China (salary, fees and similar) for which you hold proof of source and PRC tax certificates.",
+   "fits": "Yuan you earned in China from work or services (salary, fees and similar: what the rules call current-account income), for which you hold proof of source and Chinese tax certificates.",
    "limit": "No yearly quota is stated for a non-domestic individual; the bank converts the amount your documents support.",
    "cost_basis": "Bank of China's published USD selling and buying rates (10 Nov 2026) and its published wire fee.",
    "model": "boc",
    "pros": [
-    "Lowest published all-in cost for larger amounts: the wire fee is capped at RMB 410 per wire whatever the size.",
+    "Lowest published all-in cost for larger amounts: the wire fee is capped at ¥410 per wire whatever the size.",
     "No quota: the ceiling is your paperwork, not USD 50,000.",
     "Leaves a clean bank trail that matches what U.S. reporting needs."
    ],
@@ -28,7 +28,7 @@
    ],
    "steps": [
     [
-     "Collect proof for the amount you want to convert: employment contract, pay records and the PRC tax payment record that covers that income.",
+     "Collect proof for the amount you want to convert: employment contract, pay records and the Chinese tax payment record that covers that income.",
      "Contract, payslips or bank salary entries, tax payment record",
      [
       "S01",
@@ -36,7 +36,7 @@
      ]
     ],
     [
-     "Go to the bank with the passport the account was opened with. Say that you are a non-domestic individual buying foreign exchange with lawful current-account RMB income earned in China.",
+     "Go to the bank with the passport the account was opened with. Say that you are a non-domestic individual buying foreign exchange with lawful income earned in China (current-account yuan income).",
      "Passport; the documents from step 1",
      [
       "S01",
@@ -60,7 +60,7 @@
      ]
     ],
     [
-     "Pay the wire fee: 0.1% of the amount (minimum RMB 50, maximum RMB 260) plus RMB 150 cable fee.",
+     "Pay the wire fee: 0.1% of the amount (minimum ¥50, maximum ¥260) plus ¥150 cable fee.",
      "Fee receipt",
      [
       "S19"
@@ -97,11 +97,11 @@
    "status": "lawful",
    "fits": "Same legal basis as A1, for HSBC China Premier or Advance customers.",
    "limit": "No yearly quota stated for a non-domestic individual; documents decide.",
-   "cost_basis": "HSBC China tariff effective 31 Oct 2026: 0.1% (min RMB 100, max RMB 500) plus RMB 120 cable. HSBC's exchange-rate margin is not published where it could be read.",
+   "cost_basis": "HSBC China tariff effective 31 Oct 2026: 0.1% (min ¥100, max ¥500) plus ¥120 cable. HSBC's exchange-rate margin is not published where it could be read.",
    "model": "hsbc_tt",
    "pros": [
-    "Published, capped fee: RMB 220 to RMB 620 per wire.",
-    "Optional 'Pay Exact' (RMB 200) so the full USD amount arrives.",
+    "Published, capped fee: ¥220 to ¥620 per wire.",
+    "Optional 'Pay Exact' (¥200) so the full USD amount arrives.",
     "Same documents as any bank route."
    ],
    "cons": [
@@ -111,7 +111,7 @@
    ],
    "steps": [
     [
-     "Collect proof of source and PRC tax certificates for the amount (as A1 step 1).",
+     "Collect proof of source and Chinese tax certificates for the amount (as A1 step 1).",
      "Contract, pay records, tax payment record",
      [
       "S01",
@@ -119,21 +119,21 @@
      ]
     ],
     [
-     "At an HSBC China branch, buy USD with the RMB as a non-domestic individual with lawful current-account income; USD is credited to your HSBC foreign-currency account.",
+     "At an HSBC China branch, buy USD with the yuan, as a non-domestic individual with lawful income earned in China; USD is credited to your HSBC foreign-currency account.",
      "Passport; documents",
      [
       "S01"
      ]
     ],
     [
-     "Order a telegraphic transfer in USD to your own U.S. account. Decide whether to add 'Pay Exact' (RMB 200) so that overseas bank charges are not taken from the amount.",
+     "Order a telegraphic transfer in USD to your own U.S. account. Decide whether to add 'Pay Exact' (¥200) so that overseas bank charges are not taken from the amount.",
      "Wire application",
      [
       "S20"
      ]
     ],
     [
-     "Pay 0.1% of the amount (minimum RMB 100, maximum RMB 500) plus RMB 120 per cable.",
+     "Pay 0.1% of the amount (minimum ¥100, maximum ¥500) plus ¥120 per cable.",
      "Fee advice",
      [
       "S20"
@@ -238,7 +238,7 @@
    ],
    "steps": [
     [
-     "Collect proof of source and PRC tax certificates (as A1 step 1).",
+     "Collect proof of source and Chinese tax certificates (as A1 step 1).",
      "Contract, pay records, tax payment record",
      [
       "S01",
@@ -246,7 +246,7 @@
      ]
     ],
     [
-     "Buy USD through your Private Banking relationship as a non-domestic individual with lawful current-account income.",
+     "Buy USD through your Private Banking relationship as a non-domestic individual with lawful income earned in China.",
      "Passport; documents",
      [
       "S01"
@@ -284,17 +284,17 @@
    "name": "Wise: send from your Chinese bank account to your own account abroad",
    "status": "conditional",
    "fits": "People who are not mainland Chinese, work or worked in China, and hold a China tax record showing tax paid within the last 3 years.",
-   "limit": "RMB 300,000 per transfer from a bank app (RMB 50,000 from Alipay); total limit equals the after-tax salary your tax records prove; only to an account you own.",
+   "limit": "¥300,000 per transfer from a bank app (¥50,000 from Alipay); total limit equals the after-tax salary your tax records prove; only to an account you own.",
    "cost_basis": "Limits published by Wise. Wise's fee and exchange rate are shown only when a transfer is set up, so they are blank here.",
    "model": "wise",
    "pros": [
-    "No branch visit: pay in by local RMB transfer from your own Chinese bank app.",
+    "No branch visit: pay in by local yuan transfer from your own Chinese bank app.",
     "Uses tax records you may already have.",
     "Pays out to your own bank account abroad."
    ],
    "cons": [
     "Only salary-type income covered by tax records from the last 3 years.",
-    "RMB 300,000 per transfer: about 9 transfers for USD 400,000.",
+    "¥300,000 per transfer: about 9 transfers for USD 400,000.",
     "Fee and exchange rate are not published in advance."
    ],
    "steps": [
@@ -320,7 +320,7 @@
      ]
     ],
     [
-     "Pay Wise by a local RMB bank transfer from a Chinese account in your own name to the account details Wise shows (maximum RMB 300,000 per transfer).",
+     "Pay Wise by a local yuan bank transfer from a Chinese account in your own name to the account details Wise shows (maximum ¥300,000 per transfer).",
      "Bank app transfer",
      [
       "S21"
@@ -353,9 +353,9 @@
   {
    "id": "A6",
    "group": "A",
-   "name": "Cross-border RMB remittance to your own RMB account outside the mainland, convert there",
+   "name": "Send the yuan itself to your own yuan account outside the mainland and convert there",
    "status": "needs review",
-   "fits": "Non-domestic individuals with lawful RMB income in China whose mainland bank offers personal cross-border RMB settlement.",
+   "fits": "Non-domestic individuals with lawful yuan income in China whose mainland bank offers personal cross-border yuan remittance.",
    "limit": "Not established from an official text this session.",
    "cost_basis": "No published price was read.",
    "model": "blank",
@@ -364,12 +364,12 @@
    ],
    "cons": [
     "Only a government-portal republication of a news report was read; the PBOC notice itself was not.",
-    "Needs an RMB account outside the mainland; that account is another foreign account for U.S. reporting.",
+    "Needs a yuan account outside the mainland; that account is another foreign account for U.S. reporting.",
     "No price, limit or document list could be confirmed."
    ],
    "steps": [
     [
-     "Ask your mainland bank whether it handles individuals' 'other current-account' cross-border RMB settlement (PBOC notice Yin Fa [2018] No. 3) and what documents it requires.",
+     "Ask your mainland bank whether it handles cross-border yuan remittances for individuals ('other current-account' settlement, PBOC notice Yin Fa [2018] No. 3) and what documents it requires.",
      "Bank's written answer",
      [
       "S14"
@@ -459,7 +459,7 @@
    "name": "Withdraw cash at ATMs abroad with a mainland bank card",
    "status": "capped",
    "fits": "Small amounts, for holders of a mainland card that works at overseas ATMs.",
-   "limit": "RMB 100,000 equivalent per person per calendar year across all cards; RMB 10,000 equivalent per card per day.",
+   "limit": "¥100,000 equivalent per person per calendar year across all cards; ¥10,000 equivalent per card per day.",
    "cost_basis": "Limits from SAFE. Card-scheme rate and ATM/issuer fees were not read, so the price is blank.",
    "model": "atm",
    "pros": [
@@ -467,7 +467,7 @@
     "Works from outside China."
    ],
    "cons": [
-    "Hard yearly cap of RMB 100,000: about USD 15,000 a year, 27 years for USD 400,000.",
+    "Hard yearly cap of ¥100,000: about USD 15,000 a year, 27 years for USD 400,000.",
     "Going over the cap suspends overseas withdrawals for that year and the next.",
     "Rate and fees are not published in the sources read."
    ],
@@ -480,14 +480,14 @@
      ]
     ],
     [
-     "Withdraw at ATMs abroad: at most RMB 10,000 equivalent per card per day.",
+     "Withdraw at ATMs abroad: at most ¥10,000 equivalent per card per day.",
      "ATM receipts",
      [
       "S07"
      ]
     ],
     [
-     "Stop before RMB 100,000 equivalent in a calendar year across all your cards.",
+     "Stop before ¥100,000 equivalent in a calendar year across all your cards.",
      "Running total",
      [
       "S07"
@@ -582,23 +582,23 @@
   {
    "id": "B4",
    "group": "B",
-   "name": "Carry RMB banknotes out and exchange them abroad",
+   "name": "Carry yuan banknotes out and exchange them abroad",
    "status": "capped",
    "fits": "Very small amounts.",
-   "limit": "RMB 20,000 per person per trip.",
-   "cost_basis": "Limit from the PBC's explanation of the adjustment. The price of exchanging RMB notes abroad was not read.",
+   "limit": "¥20,000 per person per trip.",
+   "cost_basis": "Limit from the PBC's explanation of the adjustment. The price of exchanging yuan notes abroad was not read.",
    "model": "cash_rmb",
    "pros": [
     "No bank step in China."
    ],
    "cons": [
-    "RMB 20,000 per trip is about USD 3,000: 134 trips for USD 400,000.",
+    "¥20,000 per trip is about USD 3,000: 134 trips for USD 400,000.",
     "Exchange price abroad is unknown and blank.",
     "The limit comes from a 2004 official Q&A, not the announcement text."
    ],
    "steps": [
     [
-     "Withdraw RMB cash and carry at most RMB 20,000 per person per trip.",
+     "Withdraw yuan cash and carry at most ¥20,000 per person per trip.",
      "Cash withdrawal record",
      [
       "S09"
@@ -632,9 +632,9 @@
   {
    "id": "B5",
    "group": "B",
-   "name": "Change back unused RMB that you originally exchanged from foreign currency",
+   "name": "Change back unused yuan that you originally exchanged from foreign currency",
    "status": "capped",
-   "fits": "RMB that you obtained by exchanging foreign currency and did not spend.",
+   "fits": "Yuan that you obtained by exchanging foreign currency and did not spend.",
    "limit": "With the original exchange memo: within 24 months of the exchange. With ID only: USD 500 equivalent per day (USD 1,000 airside before departure).",
    "cost_basis": "Bank of China published selling rate.",
    "model": "reconv",
@@ -643,20 +643,20 @@
     "With the original memo the unused amount can be changed back."
    ],
    "cons": [
-    "Only for RMB that came from foreign currency you exchanged; not for salary or other RMB income.",
+    "Only for yuan that came from foreign currency you exchanged; not for salary or other yuan income.",
     "USD 500 per day is 800 days for USD 400,000.",
     "The memo expires 24 months after the original exchange."
    ],
    "steps": [
     [
-     "Find the original exchange memos (兑换水单) for the foreign currency you converted into RMB; check they are less than 24 months old.",
+     "Find the original exchange memos (兑换水单) for the foreign currency you converted into yuan; check they are less than 24 months old.",
      "Original exchange memo",
      [
       "S03"
      ]
     ],
     [
-     "At the bank, present your passport and the memo and change the unused RMB back into USD.",
+     "At the bank, present your passport and the memo and change the unused yuan back into dollars.",
      "Passport; memo",
      [
       "S03"
@@ -737,7 +737,7 @@
    "status": "conditional",
    "fits": "A non-domestic individual who sold a home bought in mainland China.",
    "limit": "The sale proceeds supported by the contract and the tax-paid certificate.",
-   "cost_basis": "After approval the bank step costs the same as A1 (Bank of China prices). PRC tax on the sale is separate (statutory 20% on income from transfer of assets).",
+   "cost_basis": "After approval the bank step costs the same as A1 (Bank of China prices). Chinese tax on the sale is separate (statutory 20% on income from transfer of assets).",
    "model": "boc",
    "pros": [
     "A defined route for a large one-off amount.",
@@ -745,12 +745,12 @@
    ],
    "cons": [
     "Needs the SAFE office where the property is located to review the documents.",
-    "PRC tax on the sale must be paid and evidenced first.",
+    "Chinese tax on the sale must be paid and evidenced first.",
     "The source is a 2011 SAFE Q&A; the current handling step was not re-checked."
    ],
    "steps": [
     [
-     "Complete the sale and pay the PRC taxes on the transfer; obtain the tax-paid certificate.",
+     "Complete the sale and pay the Chinese taxes on the transfer; obtain the tax-paid certificate.",
      "Sale contract; tax-paid certificate",
      [
       "S12",
@@ -758,14 +758,14 @@
      ]
     ],
     [
-     "Submit to the SAFE branch where the property is located: the FX purchase application, the sale contract and the tax-paid certificate for the transfer.",
+     "Submit to the SAFE branch where the property is located: the foreign-exchange purchase application, the sale contract and the tax-paid certificate for the transfer.",
      "Application; contract; tax certificate",
      [
       "S12"
      ]
     ],
     [
-     "After review, buy USD at the bank with the RMB proceeds and wire it to your own U.S. account (one wire).",
+     "After review, buy USD at the bank with the yuan proceeds and wire it to your own U.S. account (one wire).",
      "Purchase slip; wire receipt",
      [
       "S12",
@@ -773,7 +773,7 @@
      ]
     ],
     [
-     "Report the sale on your U.S. return; PRC tax paid on the gain may be creditable.",
+     "Report the sale on your U.S. return; Chinese tax paid on the gain may be creditable.",
      "U.S. return; Form 1116",
      [
       "S35",
@@ -870,7 +870,7 @@
    "model": "boc",
    "pros": [
     "Since 10 Feb 2014 the money can go in one lump sum after approval; the old two-year staging is cancelled.",
-    "Notarisation and head-office filing above RMB 500,000 are cancelled."
+    "Notarisation and head-office filing above ¥500,000 are cancelled."
    ],
    "cons": [
     "SAFE approval at the place of your original registered residence.",
@@ -927,7 +927,7 @@
    "group": "D",
    "name": "Leave the money in China and spend it there",
    "status": "lawful",
-   "fits": "Anyone who has future RMB costs in China (trips, family support, a property).",
+   "fits": "Anyone who has future yuan costs in China (trips, family support, a property).",
    "limit": "None.",
    "cost_basis": "No conversion takes place, so there is no conversion cost.",
    "model": "zero",
@@ -936,13 +936,13 @@
     "No documents needed."
    ],
    "cons": [
-    "The money stays exposed to the RMB exchange rate.",
+    "The money stays exposed to the yuan exchange rate.",
     "The account stays reportable to the U.S. every year it is over the thresholds.",
     "Does not get you dollars."
    ],
    "steps": [
     [
-     "Keep the account open and use it for RMB spending in China.",
+     "Keep the account open and use it for yuan spending in China.",
      "None",
      [
       "S38"
@@ -1017,7 +1017,7 @@
    "status": "do not use",
    "fits": "No one.",
    "limit": "Prohibited.",
-   "cost_basis": "PRC penalty exposure under the Foreign Exchange Regulations.",
+   "cost_basis": "Chinese penalty exposure under the Foreign Exchange Regulations.",
    "model": "fine30",
    "pros": [],
    "cons": [
@@ -1040,16 +1040,16 @@
     "S06"
    ],
    "flags": [],
-   "headline": "PRC fine exposure"
+   "headline": "Chinese fine exposure"
   },
   {
    "id": "E2",
    "group": "E",
-   "name": "Underground bank or private swap (pay RMB in China, receive USD abroad)",
+   "name": "Underground bank or private swap (pay yuan in China, receive dollars abroad)",
    "status": "do not use",
    "fits": "No one.",
    "limit": "Prohibited.",
-   "cost_basis": "PRC penalty exposure under the Foreign Exchange Regulations.",
+   "cost_basis": "Chinese penalty exposure under the Foreign Exchange Regulations.",
    "model": "fine30",
    "pros": [],
    "cons": [
@@ -1070,12 +1070,12 @@
     "S06"
    ],
    "flags": [],
-   "headline": "PRC fine exposure"
+   "headline": "Chinese fine exposure"
   },
   {
    "id": "E3",
    "group": "E",
-   "name": "Buying crypto or stablecoins with RMB and selling them for USD",
+   "name": "Buying crypto or stablecoins with yuan and selling them for dollars",
    "status": "do not use",
    "fits": "No one.",
    "limit": "Prohibited in mainland China.",
@@ -1102,7 +1102,7 @@
    "flags": [
     "F34"
    ],
-   "headline": "PRC fine (blank: no scale in the notice)"
+   "headline": "Chinese fine (blank: no scale in the notice)"
   },
   {
    "id": "E4",
@@ -1111,12 +1111,12 @@
    "status": "do not use",
    "fits": "No one.",
    "limit": "Prohibited.",
-   "cost_basis": "PRC penalty exposure under the Foreign Exchange Regulations.",
+   "cost_basis": "Chinese penalty exposure under the Foreign Exchange Regulations.",
    "model": "fine30",
    "pros": [],
    "cons": [
     "Obtaining foreign exchange with false or invalid documents: fine up to 30% of the amount; 30% up to the full amount in serious cases; criminal liability.",
-    "An individual who submits untrue documents can also be fined up to RMB 50,000."
+    "An individual who submits untrue documents can also be fined up to ¥50,000."
    ],
    "steps": [
     [
@@ -1133,7 +1133,7 @@
     "S06"
    ],
    "flags": [],
-   "headline": "PRC fine exposure"
+   "headline": "Chinese fine exposure"
   },
   {
    "id": "E5",
@@ -1142,7 +1142,7 @@
    "status": "do not use",
    "fits": "No one.",
    "limit": "Prohibited.",
-   "cost_basis": "PRC penalty exposure under the Foreign Exchange Regulations; U.S. seizure risk.",
+   "cost_basis": "Chinese penalty exposure under the Foreign Exchange Regulations; U.S. seizure risk.",
    "model": "fine20",
    "pros": [],
    "cons": [
@@ -1166,7 +1166,7 @@
     "S50"
    ],
    "flags": [],
-   "headline": "PRC fine exposure"
+   "headline": "Chinese fine exposure"
   },
   {
    "id": "E6",
@@ -1197,7 +1197,7 @@
    "flags": [
     "F34"
    ],
-   "headline": "PRC fine (blank: no scale in the circular)"
+   "headline": "Chinese fine (blank: no scale in the circular)"
   }
  ]
 }

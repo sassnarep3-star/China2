@@ -1,0 +1,41 @@
+balance_usd,if_filed_usd,streamlined_foreign_penalty_usd,streamlined_domestic_5pct_usd,fbar_nonwillful_max_per_year_usd,fbar_willful_ceiling_per_year_usd,form_8938_required_for,form_3520_max_25pct_usd
+10000,0,0,500,,,,
+20000,0,0,1000,16536,165353,,
+30000,0,0,1500,16536,165353,,
+40000,0,0,2000,16536,165353,,
+50000,0,0,2500,16536,165353,,
+60000,0,0,3000,16536,165353,"U.S., not joint",
+70000,0,0,3500,16536,165353,"U.S., not joint",
+80000,0,0,4000,16536,165353,"U.S., not joint",
+90000,0,0,4500,16536,165353,"U.S., not joint",
+100000,0,0,5000,16536,165353,"U.S., not joint",
+110000,0,0,5500,16536,165353,"U.S., not joint; U.S., joint",27500
+120000,0,0,6000,16536,165353,"U.S., not joint; U.S., joint",30000
+130000,0,0,6500,16536,165353,"U.S., not joint; U.S., joint",32500
+140000,0,0,7000,16536,165353,"U.S., not joint; U.S., joint",35000
+150000,0,0,7500,16536,165353,"U.S., not joint; U.S., joint",37500
+160000,0,0,8000,16536,165353,"U.S., not joint; U.S., joint",40000
+170000,0,0,8500,16536,165353,"U.S., not joint; U.S., joint",42500
+180000,0,0,9000,16536,165353,"U.S., not joint; U.S., joint",45000
+190000,0,0,9500,16536,165353,"U.S., not joint; U.S., joint",47500
+200000,0,0,10000,16536,165353,"U.S., not joint; U.S., joint",50000
+210000,0,0,10500,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",52500
+220000,0,0,11000,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",55000
+230000,0,0,11500,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",57500
+240000,0,0,12000,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",60000
+250000,0,0,12500,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",62500
+260000,0,0,13000,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",65000
+270000,0,0,13500,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",67500
+280000,0,0,14000,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",70000
+290000,0,0,14500,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",72500
+300000,0,0,15000,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",75000
+310000,0,0,15500,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",77500
+320000,0,0,16000,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",80000
+330000,0,0,16500,16536,165353,"U.S., not joint; U.S., joint; abroad, not joint",82500
+340000,0,0,17000,16536,170000,"U.S., not joint; U.S., joint; abroad, not joint",85000
+350000,0,0,17500,16536,175000,"U.S., not joint; U.S., joint; abroad, not joint",87500
+360000,0,0,18000,16536,180000,"U.S., not joint; U.S., joint; abroad, not joint",90000
+370000,0,0,18500,16536,185000,"U.S., not joint; U.S., joint; abroad, not joint",92500
+380000,0,0,19000,16536,190000,"U.S., not joint; U.S., joint; abroad, not joint",95000
+390000,0,0,19500,16536,195000,"U.S., not joint; U.S., joint; abroad, not joint",97500
+400000,0,0,20000,16536,200000,"U.S., not joint; U.S., joint; abroad, not joint",100000

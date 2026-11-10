@@ -72,9 +72,9 @@
      "briefing/AUDIT.md:14"
     ]
    },
-   "repo_says": "Briefing, repatriate and acceptance pages convert RMB fees to USD at 7.129, the IRS 2025 yearly average.",
+   "repo_says": "Briefing, repatriate and acceptance pages convert yuan fees to dollars at 7.129, the IRS 2025 yearly average.",
    "official_says": "IRS table: 7.129 for 2025 (correctly quoted). Federal Reserve G.5A 2025 average: 7.1875. Bank of China selling rate on 10 Nov 2026: 6.6851.",
-   "assessment": "Correctly quoted from the IRS, but it is a 2025 average, not a November 2026 price. At the bank's published rate an RMB 620 fee is USD 92.74, not USD 86.97, and the IRS and Federal Reserve 2025 figures differ by 0.8%.",
+   "assessment": "Correctly quoted from the IRS, but it is a 2025 average, not a November 2026 price. At the bank's published rate a ¥620 fee is $92.74, not $86.97, and the IRS and Federal Reserve 2025 figures differ by 0.8%.",
    "verdict": "needs review",
    "sources": [
     "S22",
@@ -157,7 +157,7 @@
      "research/METHODOLOGY.md:31"
     ]
    },
-   "repo_says": "Briefing and repatriate pages list Wise from-CNY: own accounts only, tax records within 3 years, at most RMB 300,000 per transfer, fee shown only in the app.",
+   "repo_says": "Briefing and repatriate pages list Wise from-CNY: own accounts only, tax records within 3 years, at most ¥300,000 per transfer, fee shown only in the app.",
    "official_says": "Wise Help Centre: 'the maximum you can send in one transfer is 300,000 CNY'; a China tax record 'within the last 3 years'; 'only ... to another account you own'.",
    "assessment": "Matches the provider's page read today.",
    "verdict": "consistent",
@@ -190,9 +190,12 @@
    "id": "R10",
    "title": "Willful FBAR penalty formula",
    "where": {
-    "hits": 0,
-    "files": 0,
-    "examples": []
+    "hits": 10,
+    "files": 8,
+    "examples": [
+     "briefing/EXECUTIVE_SUMMARY.md:19",
+     "repatriate/build.py:285"
+    ]
    },
    "repo_says": "Briefing pages state the willful penalty as the greater of $165,353 or 50% of the balance.",
    "official_says": "31 U.S.C. 5321(a)(5)(C)-(D): the greater of $100,000 (before inflation adjustment) or 50 percent of 'the balance in the account at the time of the violation'.",

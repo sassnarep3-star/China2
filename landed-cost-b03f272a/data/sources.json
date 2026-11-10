@@ -12,7 +12,7 @@
    "quotes": [
     "境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇"
    ],
-   "supports": "A non-domestic individual converts lawful current-account RMB income at a bank with ID plus source-of-funds documents showing the amount, including tax certificates.",
+   "supports": "A non-domestic individual converts lawful income earned in China (current-account yuan income) at a bank with ID plus source-of-funds documents showing the amount, including tax certificates.",
    "status": "verified",
    "note": ""
   },
@@ -27,7 +27,7 @@
    "quotes": [
     "持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。"
    ],
-   "supports": "The annual FX-purchase facilitation quota applies to non-domestic individuals who hold a Foreign Permanent Resident ID Card.",
+   "supports": "The annual foreign-exchange purchase quota applies to non-domestic individuals who hold a Foreign Permanent Resident ID Card.",
    "status": "verified",
    "note": ""
   },
@@ -43,7 +43,7 @@
     "原兑换水单的兑回有效期为自兑换日起24个月",
     "对于当日累计兑换不超过等值500美元（含）以及离境前在境内关外场所当日累计不超过等值1000美元（含）的兑换，可凭本人有效身份证件办理"
    ],
-   "supports": "Unused RMB that was originally exchanged from foreign currency can be changed back with ID and the original exchange memo within 24 months; up to USD 500 per day (USD 1,000 airside before departure) with ID only.",
+   "supports": "Unused yuan that was originally exchanged from foreign currency can be changed back with ID and the original exchange memo within 24 months; up to USD 500 per day (USD 1,000 airside before departure) with ID only.",
    "status": "verified",
    "note": ""
   },
@@ -62,7 +62,7 @@
     "个人提取外币现钞当日累计等值1万美元以下（含）的，可以在银行直接办理",
     "移居境外的境内个人将其取得合法移民身份前境内财产对外转移以及外国公民依法继承境内遗产的对外转移，按《个人财产对外转移售付汇管理暂行办法》等有关规定办理。"
    ],
-   "supports": "USD 50,000 annual total covers FX sale by individuals and FX purchase by domestic individuals; non-domestic individuals buy FX against documented lawful income (incl. tax certificate); FX in own FX savings account can be remitted abroad with ID; USD cash withdrawal up to USD 10,000 per day at the bank.",
+   "supports": "USD 50,000 annual total covers foreign-exchange sale by individuals and purchase by domestic individuals; non-domestic individuals buy foreign exchange against documented lawful income (incl. tax certificate); foreign currency in your own foreign-currency savings account can be remitted abroad with ID; USD cash withdrawal up to USD 10,000 per day at the bank.",
    "status": "verified",
    "note": ""
   },
@@ -78,7 +78,7 @@
     "splitting large amount into small batches",
     "into foreign exchange and remit abroad at a bank"
    ],
-   "supports": "Art. 7: banks and individuals must not evade limits by splitting or use fabricated documents. Art. 13: a non-domestic individual can convert legitimate RMB income earned in China and remit it abroad at a bank.",
+   "supports": "Art. 7: banks and individuals must not evade limits by splitting or use fabricated documents. Art. 13: a non-domestic individual can convert legitimate yuan income earned in China and remit it abroad at a bank.",
    "status": "verified",
    "note": "The English page text runs some words together; the quotes are the unbroken substrings."
   },
@@ -98,7 +98,7 @@
     "对个人可以处5万元以下的罚款",
     "境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人"
    ],
-   "supports": "PRC penalties: fine up to 30% of the amount (30% up to 100% in serious cases) and criminal liability for evading FX control, fraudulent FX purchase and private/disguised FX trading; up to 20% for unlawful carrying of FX; up to RMB 50,000 for an individual who submits untrue documents. Art. 52(2): a foreigner who has lived in China continuously for one year counts as a 'domestic individual'.",
+   "supports": "Chinese penalties: fine up to 30% of the amount (30% up to 100% in serious cases) and criminal liability for evading exchange control, fraudulent purchase of foreign exchange and private or disguised currency trading; up to 20% for unlawful carrying of foreign exchange; up to ¥50,000 for an individual who submits untrue documents. Art. 52(2): a foreigner who has lived in China continuously for one year counts as a 'domestic individual'.",
    "status": "verified",
    "note": ""
   },
@@ -116,7 +116,7 @@
     "Individuals are prohibited from borrowing others' bank cards or lending their bank cards",
     "the equivalent of RMB 10,000 per card per day"
    ],
-   "supports": "Overseas cash withdrawals with mainland cards: RMB 100,000 equivalent per person per calendar year (all cards together) and RMB 10,000 equivalent per card per day; borrowing or lending cards to get round the limit is prohibited.",
+   "supports": "Overseas cash withdrawals with mainland cards: ¥100,000 equivalent per person per calendar year (all cards together) and ¥10,000 equivalent per card per day; borrowing or lending cards to get round the limit is prohibited.",
    "status": "verified",
    "note": ""
   },
@@ -149,7 +149,7 @@
     "the limit has a good reason to be reset at 20000 Yuan per person",
     "carrying foreign exchange cash equivalent to US$5000 or below per person"
    ],
-   "supports": "RMB cash carried across the border: limit adjusted to RMB 20,000 per person per trip; foreign-currency cash up to USD 5,000 need not be declared.",
+   "supports": "Yuan cash carried across the border: limit adjusted to ¥20,000 per person per trip; foreign-currency cash up to USD 5,000 need not be declared.",
    "status": "needs review",
    "note": "This is the PBC's official Q&A explaining the adjustment, not the announcement text itself (flag F09)."
   },
@@ -184,7 +184,7 @@
     "shall be reported to the SAFE for the record shall be cancelled",
     "The notarization requirement for documents concerning property rights"
    ],
-   "supports": "From 10 Feb 2014 the staged-remittance requirement for emigrant assets, the head-office filing above RMB 500,000 and the notarisation requirement are cancelled; after local SAFE approval the bank may remit in one lump sum.",
+   "supports": "From 10 Feb 2014 the staged-remittance requirement for emigrant assets, the head-office filing above ¥500,000 and the notarisation requirement are cancelled; after local SAFE approval the bank may remit in one lump sum.",
    "status": "verified",
    "note": ""
   },
@@ -201,7 +201,7 @@
     "（三）房屋权属转让的完税证明文件。",
     "境外机构和个人出售境内房地产所得资金购汇申请时，可以不需要提交原结汇凭证。"
    ],
-   "supports": "A non-domestic individual who sells a mainland home can buy FX and remit the RMB proceeds after the local SAFE office reviews the application, the sale contract and the tax-paid certificate for the transfer.",
+   "supports": "A non-domestic individual who sells a mainland home can buy foreign exchange and remit the yuan proceeds after the local SAFE office reviews the application, the sale contract and the tax-paid certificate for the transfer.",
    "status": "needs review",
    "note": "2011 Q&A; whether the review step has since moved to banks was not checked (flag F11)."
   },
@@ -234,7 +234,7 @@
    "quotes": [
     "为便利境内个人将境外合法收入汇回境内使用，以及境外个人将境内合法人民币收入汇出境外"
    ],
-   "supports": "Banks may handle individuals' 'other current-account' cross-border RMB settlement, so a non-domestic individual's lawful RMB income can be remitted abroad in RMB.",
+   "supports": "Banks may handle individuals' 'other current-account' cross-border yuan settlement, so a non-domestic individual's lawful yuan income can be remitted abroad as yuan.",
    "status": "needs review",
    "note": "Government-portal republication of a news report. The PBOC notice text itself was not read this session (flag F06)."
   },
@@ -251,7 +251,7 @@
     "a flat tax rate of 20 percent shall apply",
     "has resided in China for an aggregate of 183 days or more within a tax year, shall be regarded as a resident individual"
    ],
-   "supports": "PRC individual income tax rates: 3%-45% on comprehensive income (wages etc.); flat 20% on interest, dividends, leasing, transfer of assets and incidental income.",
+   "supports": "Chinese individual income tax rates: 3%-45% on comprehensive income (wages etc.); flat 20% on interest, dividends, leasing, transfer of assets and incidental income.",
    "status": "verified",
    "note": ""
   },
@@ -266,7 +266,7 @@
    "quotes": [
     "USD | 665.71 | 665.71 | 668.51 | 668.51 | 671.67 | 2026/11/10 17:39:58"
    ],
-   "supports": "The bank's own published price for selling USD to a customer (668.51 RMB per USD 100) and for buying USD (665.71).",
+   "supports": "The bank's own published price for selling USD to a customer (¥668.51 per $100) and for buying USD (665.71).",
    "status": "verified",
    "note": "Live page: it shows the current rates, so this dated snapshot cannot be re-read at the same URL later (flag F03). The 'quote' is the table row as fetched."
   },
@@ -281,7 +281,7 @@
    "quotes": [
     "2026-11-10 | 671.67"
    ],
-   "supports": "Official central parity on 10 Nov 2026: RMB 671.67 per USD 100. It equals the 'Middle Rate' column on the BOC board.",
+   "supports": "Official central parity on 10 Nov 2026: ¥671.67 per USD 100. It equals the 'Middle Rate' column on the BOC board.",
    "status": "verified",
    "note": "Live page listing the latest ten business days."
   },
@@ -312,7 +312,7 @@
     "每笔汇款金额的1‰，最低收取50元/笔，最高收取260元/笔；另收电讯费,港澳台地区人民币80元/笔,非港澳台地区人民币150元/笔。",
     "另有协议约定、价格优惠、地方性收费差异的，按照协议或当地公示的内容收取相关费用。"
    ],
-   "supports": "BOC cross-border wire: 0.1% of the amount, minimum RMB 50, maximum RMB 260 per wire, plus a cable fee of RMB 150 per wire for destinations outside Hong Kong, Macao and Taiwan.",
+   "supports": "BOC cross-border wire: 0.1% of the amount, minimum ¥50, maximum ¥260 per wire, plus a cable fee of ¥150 per wire for destinations outside Hong Kong, Macao and Taiwan.",
    "status": "verified",
    "note": "The table is dated 1 Nov 2014 and allows local differences and promotions (flag F04)."
   },
@@ -332,7 +332,7 @@
     "The actual charge per transaction will be USD7 or equivalent in other foreign currency.",
     "The charges shown in this tariff do not include charges collected by other institutions"
    ],
-   "supports": "HSBC China outward telegraphic transfer: Premier and Advance pay 0.1% (min RMB 100, max RMB 500) plus RMB 120 cable; Private Banking individuals: free. Global Transfer to own HSBC account abroad: free for Private Banking and Premier, USD 20 for Advance. International Education Payment: free / USD 7 (Advance). Optional 'Pay Exact' RMB 200. Other institutions' charges are not included.",
+   "supports": "HSBC China outward telegraphic transfer: Premier and Advance pay 0.1% (min ¥100, max ¥500) plus ¥120 cable; Private Banking individuals: free. Global Transfer to own HSBC account abroad: free for Private Banking and Premier, USD 20 for Advance. International Education Payment: free / USD 7 (Advance). Optional 'Pay Exact' ¥200. Other institutions' charges are not included.",
    "status": "verified",
    "note": ""
   },
@@ -350,7 +350,7 @@
     "the maximum you can send in one transfer is 300,000 CNY",
     "In general, your overall limit is the amount of salary you've earned in China after deducting the amount of tax paid in China."
    ],
-   "supports": "Wise accepts transfers from a Chinese bank account for non-mainland people who work or worked in China and hold a China tax record from the last 3 years; only to an account in the same name; up to RMB 300,000 per transfer; total limit equals after-tax salary evidenced.",
+   "supports": "Wise accepts transfers from a Chinese bank account for non-mainland people who work or worked in China and hold a China tax record from the last 3 years; only to an account in the same name; up to ¥300,000 per transfer; total limit equals after-tax salary evidenced.",
    "status": "verified",
    "note": "The fee and the exchange rate are shown only when a transfer is set up; none is published on this page (flag F05)."
   },
@@ -586,7 +586,7 @@
     "If you paid or accrued foreign taxes to a foreign country or U.S. possession and are subject to U.S. tax on the same income, you may be able to take either a credit or an itemized deduction for those taxes.",
     "you cannot take a foreign tax credit for taxes on income you exclude"
    ],
-   "supports": "PRC income tax paid on the same income can be credited against U.S. tax (Form 1116); no credit for tax on income excluded under the foreign earned income exclusion.",
+   "supports": "Chinese income tax paid on the same income can be credited against U.S. tax (Form 1116); no credit for tax on income excluded under the foreign earned income exclusion.",
    "status": "verified",
    "note": ""
   },
@@ -861,7 +861,7 @@
    "quotes": [
     "404 Page not found"
    ],
-   "supports": "The address tried for HSBC China's published FX board returned 'Page not found' on 10 Nov 2026, so no HSBC exchange rate was read.",
+   "supports": "The address tried for HSBC China's published rate board returned 'Page not found' on 10 Nov 2026, so no HSBC exchange rate was read.",
    "status": "needs review",
    "note": "Flag F02."
   },
