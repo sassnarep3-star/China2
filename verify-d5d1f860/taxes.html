@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tax and reporting breakdown · China money dashboard</title>
+<meta name="description" content="Five-layer breakdown of the CNY to USD conversion penalty: PRC IIT, FX spread, wire fees, US FTC/FEIE and FBAR/8938/FinCEN 105 reporting.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="bar"><b>China money · CNY → USD</b><span class="meta">Independent verification pass · 2026-11-10 · research, not tax or legal advice</span></div>
+  <nav aria-label="Sections"><a href="index.html">Overview</a><a href="costs.html">Costs $10k–$400k</a><a href="methods.html">17 methods</a><a href="taxes.html" aria-current=page>Tax &amp; reporting</a><a href="sources.html">Sources verified</a><a href="audit.html">Repo audit</a><a href="flagged.html">Flagged for review</a></nav>
+</header>
+<main>
+
+<h1>Tax &amp; reporting: breaking down the "conversion penalty"</h1>
+<p class="lede">No reviewed instrument imposes a tax on the act of converting CNY to USD. What people experience as a penalty decomposes into five layers. Four of them are avoidable or reducible with documents; one (unpaid PRC income tax) is not.</p>
+
+<h2>Layer by layer</h2>
+<div class="tablewrap"><table>
+<thead><tr><th class="first">Layer</th><th>What it actually is</th><th>Verified anchor</th><th>What changes it</th></tr></thead>
+<tbody>
+<tr><td class="first"><b>1. PRC income tax</b></td><td>IIT on the income when it arose: 3–45% comprehensive, 5–35% business, 20% flat on dividends/asset transfers/incidental income.</td><td><a href="https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html" target="_blank" rel="noopener noreferrer">IIT Law Art. 3</a></td><td>Whether tax was withheld/paid when earned. Banks ask for tax records before converting documented income (<a href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer">SAFE FAQ</a>).</td></tr>
+<tr><td class="first"><b>2. Bank FX spread</b></td><td>The margin between the board rate and mid-market — the largest real cost on a large conversion.</td><td>Not published by banks in the reviewed documents; HSBC tariff Important Note 7 excludes third-party charges.</td><td>Segment, channel, currency and negotiation. Must be obtained as an executable quote — left blank here.</td></tr>
+<tr><td class="first"><b>3. Transfer fees</b></td><td>Published per-wire charges: HSBC Premier/Advance 0.1% (min ¥100, max ¥500) + ¥120 cable; Private Banking individual free.</td><td><a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">tariff 2.2.4.1–2</a></td><td>Customer segment; number of wires; optional "Pay Exact" ¥200.</td></tr>
+<tr><td class="first"><b>4. US residual tax</b></td><td>Worldwide income is taxable in the US; moving your own already-taxed money is not new income.</td><td><a href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit" target="_blank" rel="noopener noreferrer">IRS FTC</a> · <a href="https://www.irs.gov/pub/irs-pdf/i2555.pdf" target="_blank" rel="noopener noreferrer">Form 2555 instructions (FEIE 2026: $132,900)</a></td><td>Foreign tax credit (only against US tax on the same income) or FEIE (earned income only, and then no credit for excluded tax).</td></tr>
+<tr><td class="first"><b>5. Reporting penalties</b></td><td>FBAR ($10,000 aggregate), Form 8938, FinCEN 105 (&gt;$10,000 cash carried).</td><td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener noreferrer">FBAR</a> · <a href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer">8938 vs FBAR</a> · <a href="https://www.cbp.gov/travel/international-visitors/money-monetary-instruments" target="_blank" rel="noopener noreferrer">CBP</a></td><td>Filing. Civil maximums are inflation-adjusted (<a href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" target="_blank" rel="noopener noreferrer">31 CFR 1010.821</a>).</td></tr>
+</tbody></table></div>
+
+<h2>Currency gain: when a conversion can itself create US tax</h2>
+<div class="box">
+<p>For an individual's <em>personal</em> transaction, exchange-rate gain is not recognised if it is $200 or less; above that the exclusion does not apply (<a href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener noreferrer">26 USC §988(e)(2)</a>). The statute is the 2024 GPO compilation — later amendments are not reflected here, so confirm the current edition. Basis and holding history of the RMB are private facts and were not assumed.</p>
+<p>The IRS has no official exchange rate and generally accepts any consistently used posted rate (<a href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" target="_blank" rel="noopener noreferrer">IRS</a>). A "conversion penalty" calculated by multiplying the balance by a tax rate is therefore not supported by any reviewed text.</p>
+</div>
+
+<h2>US reporting thresholds (verified today)</h2>
+<div class="tablewrap"><table>
+<thead><tr><th class="first">Form</th><th>Threshold</th><th>Due</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td class="first"><b>FBAR</b> (FinCEN 114)</td><td>Aggregate foreign accounts exceed <b>$10,000</b> at any time in the calendar year</td><td>Apr 15, automatic extension to Oct 15</td><td><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener noreferrer">VS17</a></td></tr>
+<tr><td class="first"><b>Form 8938</b> (living outside US)</td><td>Unmarried: &gt;$200,000 year-end or &gt;$300,000 anytime; married joint: &gt;$400,000 / &gt;$600,000</td><td>With the return</td><td><a href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer">VS18</a></td></tr>
+<tr><td class="first"><b>FinCEN 105</b></td><td>Currency/monetary instruments over <b>$10,000</b> into or out of the US</td><td>At the border, electronically</td><td><a href="https://www.cbp.gov/travel/international-visitors/money-monetary-instruments" target="_blank" rel="noopener noreferrer">VS23</a></td></tr>
+<tr><td class="first"><b>Civil penalty maximums</b></td><td>FBAR non-willful <b>$16,536</b>; willful <b>$165,353</b> (assessed on/after 2025-01-17)</td><td>—</td><td><a href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" target="_blank" rel="noopener noreferrer">VS16</a></td></tr>
+</tbody></table></div>
+
+<h2>PRC side: the limits that actually bind</h2>
+<div class="tablewrap"><table>
+<thead><tr><th class="first">Rule</th><th>Limit</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td class="first">Annual FX facilitation total</td><td>USD 50,000 per person per year, for domestic individuals — and for foreign individuals only with a PRC Foreign Permanent Resident ID Card</td><td><a href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer">VS02</a> · <a href="https://www.safe.gov.cn/tianjin/2024/0621/2529.html" target="_blank" rel="noopener noreferrer">VS04</a></td></tr>
+<tr><td class="first">Documented current-account income</td><td>No numeric cap appears in the cited guidance; ID + source-of-funds incl. tax vouchers required, bank review decides</td><td><a href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer">VS01</a> · <a href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer">Art. 13</a></td></tr>
+<tr><td class="first">Reconversion of unused RMB</td><td>Original memo, 24 months; ID-only same-day up to USD 500 (USD 1,000 restricted-area)</td><td><a href="https://www.safe.gov.cn/tianjin/2026/0917/3134.html" target="_blank" rel="noopener noreferrer">VS03</a></td></tr>
+<tr><td class="first">Cash carried out (FX)</td><td>≤ USD 5,000 no permit; 5,000–10,000 bank permit; &gt;10,000 in principle not allowed</td><td><a href="https://www.gov.cn/gongbao/content/2004/content_63085.htm" target="_blank" rel="noopener noreferrer">VS07</a></td></tr>
+<tr><td class="first">Cash carried out (RMB)</td><td>CNY 20,000 per person per trip</td><td><a href="https://www.pbc.gov.cn/english/130721/2025080815064111752/index.html" target="_blank" rel="noopener noreferrer">VS09</a> (Q&amp;A, instrument flagged)</td></tr>
+<tr><td class="first">Overseas ATM</td><td>RMB 100,000 per person per calendar year; RMB 10,000 per card per day</td><td><a href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener noreferrer">VS05</a></td></tr>
+<tr><td class="first">Prohibited</td><td>Splitting to evade limits; fabricated documents; fiat↔virtual-currency business</td><td><a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer">Art. 7</a> · <a href="https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html" target="_blank" rel="noopener noreferrer">VS12</a></td></tr>
+</tbody></table></div>
+
+<h2>What this page does not do</h2>
+<div class="box warn">
+<p>It does not compute your tax. The PRC tax already paid, the source and date of the balance, your residence days, other foreign accounts, filing history and the property/employment character of the money are all unknown. A number presented as "your tax" would be invented. The actionable substitute is the document list in <a href="methods.html#M01">M01</a> and the bank questions on the <a href="index.html">overview</a>.</p>
+</div>
+
+</main>
+<footer><div class="in">
+<p><strong>Scope and limits.</strong> Every source on this site was fetched and quoted on 2026-11-10; the quote shown is the text relied on. Values a provider or regulator does not publish are left blank and flagged — blank means unverified, not zero. No private account facts were used, no bank was contacted, no funds moved and no return filed. The 24 sources here are a re-verification of load-bearing claims, not a legal opinion or a personalised tax computation.</p>
+<p class="small">Session arena/d5d1f860-china2 · <a href="sources.html">source ledger</a> · <a href="flagged.html">flags</a> · <a href="../COORDINATION.md">task board</a> · <a href="../index.html">repository hub</a></p>
+</div></footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
