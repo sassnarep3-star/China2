@@ -874,6 +874,8 @@ def write_root_hub():
          "A separate official-source portal; compare scope and caveats before relying on a claim."),
         ("repatriate/index.html", "Repatriation study", "Methods · costs · tax · audit",
          "Another independent route/cost review. Its data and caveats are documented on that site."),
+        ("verify-a53d707e/index.html", "Verification record · 10 Nov 2026", "12 official documents · 15 values checked · 8 blanks",
+         "Independent line-by-line check of the load-bearing claims: the source locator for each value, and every value no official source confirms left blank."),
     ]
     site_cards = "".join(
         f'<a class="card" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'

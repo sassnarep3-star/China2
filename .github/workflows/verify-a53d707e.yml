@@ -1,0 +1,23 @@
+name: verify-a53d707e
+on:
+  push:
+    branches: [main]
+    paths:
+      - "verify-a53d707e/**"
+      - ".github/workflows/verify-a53d707e.yml"
+  pull_request:
+    paths:
+      - "verify-a53d707e/**"
+      - ".github/workflows/verify-a53d707e.yml"
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify the verification record
+        run: python3 verify-a53d707e/verify.py
