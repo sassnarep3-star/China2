@@ -59,3 +59,13 @@ code{background:#ecece6;border-radius:4px;padding:.05rem .3rem;font-size:.85em}
 /* Keep repeated source links readable in mobile stacked rows. */
 .notice{max-width:1120px;margin:.8rem auto;overflow-wrap:anywhere}
 @media(max-width:720px){table.stack td[data-label="Official sources"]{display:block;text-align:left;overflow-wrap:anywhere}table.stack td[data-label="Official sources"]::before{display:block}}
+/* Mobile overflow fix (10 Nov 2026): stacked rows used a flex line whose
+   anonymous text item could not shrink below its min-content width, which
+   pushed the document 475px wider than a 390px viewport on index.html; the
+   method <select> likewise kept its max-content width. Both are layout-only
+   changes: no figure, label or source link is altered. */
+@media(max-width:720px){
+  table.stack td{display:block;text-align:left;overflow-wrap:anywhere}
+  table.stack td::before{display:block;margin-bottom:.15rem}
+  .info select,select{max-width:100%}
+}
