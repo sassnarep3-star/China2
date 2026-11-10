@@ -604,3 +604,36 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Merge conflict log (2026-11-10 UTC): concurrent PRs #34, #35, #36, #37, #38, #40 advanced `main` while PR #32 was open. Merged `origin/main` (`e1448b1` then `0cd0317`) into `arena/a64bd476-china2`; stopped on append-only conflict in `COORDINATION.md` and generated-inventory conflict in `ladder/audit.html`; preserved all concurrent sessions' board records verbatim without discarding any work, re-ran `acceptance-a64bd476/verify.py` + `build.py`, and deterministically regenerated `ladder/audit.html` via `ladder/model.py` + `ladder/build.py`.
 - Cross-scope request (logged, not edited): future root-hub owner may add a link to `acceptance-a64bd476/index.html` in `ladder/build.py` if desired.
 - Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
+
+---
+
+## Session `arena/facf2fe9-china2` — published-rate cost estimates (the "actually estimate" gap), source-of-funds tax matrix, repo re-verification
+
+> Environment note: Arena pins this session to `arena/facf2fe9-china2`; that fixed branch substitutes for a `session-<id>/<task>` branch (no branch creation or switching). The full board above was read before claiming, and every remote branch was fetched to find claims that have not reached `main` yet. Session start: 2026-11-10 09:43 UTC, branch == `origin/main` == `748b608`.
+
+**Active concurrent claims found on other branches (not yet on `main`) and respected here:**
+
+| Session | Claim pushed (UTC) | Scope it claimed |
+|---|---|---|
+| `arena/4decd480-china2` (Z1–Z5) | 09:44:11 | `dashboard/**`, root `index.html`, `ladder/build.py` + `ladder/verify.py` (root-hub ownership), `ladder/audit.html` (inventory), `.github/workflows/verify-dashboard.yml` |
+| `arena/29c5e201-china2` (S1–S5) | 09:43:20 | `guide-29c5e201/**`, `EXECUTIVE_SUMMARY.md` (additive), `.github/workflows/verify-guide-29c5e201.yml`, `ladder/audit.html` (inventory) |
+| `arena/d5d1f860-china2` (X1–X5) | 09:43:14 | `verify-d5d1f860/**`, `ladder/build.py` (hub template), generated root `index.html`, `.github/workflows/verify-d5d1f860.yml` |
+
+**Collision observed (flagged, not mine to resolve):** `arena/4decd480-china2` (Z3) and `arena/d5d1f860-china2` (X5) both claim the `ladder/build.py` hub template and the root `index.html`. Their claims were pushed 57 seconds apart on separate branches, so neither could see the other. This session edits neither file while either claim is active.
+
+**Why this scope is not a duplicate.** Checked before claiming: across every source ledger on `main` (`grep` over all `*.json`), no session cites any bank's published foreign-exchange rate board, and the only bank tariff cited is HSBC China's. That is why every existing cost table either leaves the conversion spread blank (`briefing/`, `audit-86f0/`, `repatriate/`) or uses an assumed band (`ladder/` assumption A-series, 0.3%–1.5%). The brief asks to "actually estimate the costs for every method"; this session's task is to do that using only inputs the institutions themselves publish, and to leave blank + flag anything they do not publish.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| P1 | Published-input ledger: official FX rate boards and outward-remittance tariffs of the major mainland banks, official receiving-side fees, official limits (SAFE/PBOC/Customs/CBP) — each fetched this session, quoted, dated | in progress | `arena/facf2fe9-china2` | `estimate-facf2fe9/data/**` |
+| P2 | All-in cost estimate for every method at each $10,000 step to $400,000, computed only from P1 inputs; unpublished inputs blank + flagged, never assumed | in progress | `arena/facf2fe9-china2` | `estimate-facf2fe9/model.py`, `estimate-facf2fe9/data/**` |
+| P3 | Tax layer by source of funds (PRC tax on the underlying income, outbound tax-filing rule, US exchange-gain / credit / reporting rules) — the "conversion penalty" broken into layers, every row source-linked | in progress | `arena/facf2fe9-china2` | `estimate-facf2fe9/**` |
+| P4 | Method catalogue: pros, cons, exact step-by-step, including routes that are unlawful (listed with their penalties, no instructions) | in progress | `arena/facf2fe9-china2` | `estimate-facf2fe9/**` |
+| P5 | Repo review: re-check prior dashboards' load-bearing claims against the official text; publish irregularities | in progress | `arena/facf2fe9-china2` | `estimate-facf2fe9/**` (read-only over the rest of the tree) |
+| P6 | Site section (landing + category subpages + Flagged for Review), verifier, CI | in progress | `arena/facf2fe9-china2` | `estimate-facf2fe9/**`, `.github/workflows/verify-estimate-facf2fe9.yml` |
+| P7 | Stale-PR triage: #39 (`arena/c9cc56a6-china2`) and #41 (`arena/dc9b9512-china2`) — last commits 06:06 UTC, both `CONFLICTING`, no claim on them from any active session. Inspect and log a recommendation; take over only under the 60-minute rule and only without discarding work | in progress | `arena/facf2fe9-china2` | PRs #39/#41 (comments), this board |
+| P8 | Own PR → `main`, merge, Pages confirmation, record result here | unclaimed → after P1–P7 | `arena/facf2fe9-china2` | `COORDINATION.md` (append-only), `ladder/audit.html` (deterministic inventory regeneration only, as `verify-ladder` requires) |
+
+**Shared outputs.** Root `index.html` and the `ladder/build.py` hub template are claimed by the two sessions named above; this session does not edit them. **Link request (logged, not actioned):** whichever session completes the root landing page, please add a link to `estimate-facf2fe9/index.html`. If, when this session reaches P8, both of those claims are done or have gone 60 minutes without a commit, this session will add that one link itself as the then-final integrator and will say so here.
+
+- 2026-11-10 09:50 UTC: Claim recorded and pushed before substantive research or edits. Policy: no private fact is inferred; every table row carries a link to the publishing institution's own site; a value that is not published stays blank and is flagged; an estimate is arithmetic on published inputs and is labelled as such; no personal tax bill is asserted.
