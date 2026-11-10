@@ -1,0 +1,881 @@
+{
+ "categories": {
+  "A": "Documented bank purchase and wire",
+  "B": "Special legal entitlements",
+  "C": "Small-ticket and non-bank routes",
+  "D": "No conversion",
+  "E": "Unlawful — avoid"
+ },
+ "methods": [
+  {
+   "id": "M01",
+   "name": "Bank of China — buy USD and wire it",
+   "category": "A",
+   "lawful": "yes",
+   "who": "A foreign passport holder with lawful, tax-paid renminbi income earned in China and an account at this bank.",
+   "summary": "Rate from BOC's board; commission 1‰ (min ¥50, max ¥260) plus ¥150 cable for destinations outside Hong Kong, Macau and Taiwan.",
+   "steps": [
+    "Confirm the balance is lawful renminbi income you received in China (pay, fees, rent, interest, sale proceeds) and that Chinese tax on it has been paid or withheld. The rule is: identity document plus source-of-funds papers that show the amounts, including tax vouchers.",
+    "Collect the papers: passport; the tax payment record for the income (the withholding agent must give you the figures); and whatever shows the amount and origin of the money, such as the employment contract or bank statements. Which papers a branch accepts is its own decision — ask first.",
+    "Go to (or log in to) the bank that holds the renminbi. Ask to buy US dollars (购汇) against those papers. The amount you may buy is the documented, after-tax amount.",
+    "The bank converts at its selling rate at that moment (the board rate is only indicative) and debits the renminbi.",
+    "Ask for an outward telegraphic transfer (境外电汇) to your own US account: beneficiary name, account number, bank name, SWIFT/ABA and address. Pay the commission and the cable fee.",
+    "Keep the purchase slip and the wire confirmation. If one payment is above USD 50,000 the bank may ask how the tax-filing rule applies; for foreign individuals the announcement points back to the personal foreign-exchange rules.",
+    "In the US: note the dollar amount received and the date. Work out any exchange gain against your dollar cost of the renminbi, keep the Chinese account on your FBAR and Form 8938 for the year, and claim credit for Chinese income tax where the rules allow."
+   ],
+   "pros": [
+    "The route the rules are written for: current-account income is convertible with ID and source papers",
+    "Cheapest route at size where both rate and fee are published",
+    "One transaction, bank-to-bank, with a paper trail that answers later questions from either tax authority"
+   ],
+   "cons": [
+    "Needs tax vouchers for the underlying income; money without papers cannot be bought out this way",
+    "Branch practice varies and is not published",
+    "Foreign intermediary and receiving-bank charges are extra and not published by the sending bank"
+   ],
+   "limit": "No published cap for documented current-account income; the cap is what your papers support.",
+   "cost_model": "wire:BOC:BOC",
+   "sources": [
+    "B01",
+    "T01",
+    "R04",
+    "R02",
+    "R01",
+    "R10",
+    "X01",
+    "U01",
+    "U05"
+   ],
+   "flags": [
+    "F05",
+    "F07",
+    "F08",
+    "F09",
+    "F25"
+   ]
+  },
+  {
+   "id": "M02",
+   "name": "Agricultural Bank of China — buy USD and wire it",
+   "category": "A",
+   "lawful": "yes",
+   "who": "A foreign passport holder with lawful, tax-paid renminbi income earned in China and an account at this bank.",
+   "summary": "Rate from ABC's board; commission 1‰ (min ¥20, max ¥200) plus ¥80 cable.",
+   "steps": [
+    "Confirm the balance is lawful renminbi income you received in China (pay, fees, rent, interest, sale proceeds) and that Chinese tax on it has been paid or withheld. The rule is: identity document plus source-of-funds papers that show the amounts, including tax vouchers.",
+    "Collect the papers: passport; the tax payment record for the income (the withholding agent must give you the figures); and whatever shows the amount and origin of the money, such as the employment contract or bank statements. Which papers a branch accepts is its own decision — ask first.",
+    "Go to (or log in to) the bank that holds the renminbi. Ask to buy US dollars (购汇) against those papers. The amount you may buy is the documented, after-tax amount.",
+    "The bank converts at its selling rate at that moment (the board rate is only indicative) and debits the renminbi.",
+    "Ask for an outward telegraphic transfer (境外电汇) to your own US account: beneficiary name, account number, bank name, SWIFT/ABA and address. Pay the commission and the cable fee.",
+    "Keep the purchase slip and the wire confirmation. If one payment is above USD 50,000 the bank may ask how the tax-filing rule applies; for foreign individuals the announcement points back to the personal foreign-exchange rules.",
+    "In the US: note the dollar amount received and the date. Work out any exchange gain against your dollar cost of the renminbi, keep the Chinese account on your FBAR and Form 8938 for the year, and claim credit for Chinese income tax where the rules allow."
+   ],
+   "pros": [
+    "The route the rules are written for: current-account income is convertible with ID and source papers",
+    "Cheapest route at size where both rate and fee are published",
+    "One transaction, bank-to-bank, with a paper trail that answers later questions from either tax authority"
+   ],
+   "cons": [
+    "Needs tax vouchers for the underlying income; money without papers cannot be bought out this way",
+    "Branch practice varies and is not published",
+    "Foreign intermediary and receiving-bank charges are extra and not published by the sending bank"
+   ],
+   "limit": "No published cap for documented current-account income; the cap is what your papers support.",
+   "cost_model": "wire:ABC:ABC",
+   "sources": [
+    "B04",
+    "T02",
+    "R04",
+    "R02",
+    "R01",
+    "R10",
+    "X01",
+    "U01",
+    "U05"
+   ],
+   "flags": [
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F25"
+   ]
+  },
+  {
+   "id": "M03",
+   "name": "China Merchants Bank — buy USD and wire it",
+   "category": "A",
+   "lawful": "yes",
+   "who": "A foreign passport holder with lawful, tax-paid renminbi income earned in China and an account at this bank.",
+   "summary": "Rate from CMB's board; commission 0.1% (min ¥100, max ¥1,000) plus ¥150 cable.",
+   "steps": [
+    "Confirm the balance is lawful renminbi income you received in China (pay, fees, rent, interest, sale proceeds) and that Chinese tax on it has been paid or withheld. The rule is: identity document plus source-of-funds papers that show the amounts, including tax vouchers.",
+    "Collect the papers: passport; the tax payment record for the income (the withholding agent must give you the figures); and whatever shows the amount and origin of the money, such as the employment contract or bank statements. Which papers a branch accepts is its own decision — ask first.",
+    "Go to (or log in to) the bank that holds the renminbi. Ask to buy US dollars (购汇) against those papers. The amount you may buy is the documented, after-tax amount.",
+    "The bank converts at its selling rate at that moment (the board rate is only indicative) and debits the renminbi.",
+    "Ask for an outward telegraphic transfer (境外电汇) to your own US account: beneficiary name, account number, bank name, SWIFT/ABA and address. Pay the commission and the cable fee.",
+    "Keep the purchase slip and the wire confirmation. If one payment is above USD 50,000 the bank may ask how the tax-filing rule applies; for foreign individuals the announcement points back to the personal foreign-exchange rules.",
+    "In the US: note the dollar amount received and the date. Work out any exchange gain against your dollar cost of the renminbi, keep the Chinese account on your FBAR and Form 8938 for the year, and claim credit for Chinese income tax where the rules allow."
+   ],
+   "pros": [
+    "The route the rules are written for: current-account income is convertible with ID and source papers",
+    "Cheapest route at size where both rate and fee are published",
+    "One transaction, bank-to-bank, with a paper trail that answers later questions from either tax authority"
+   ],
+   "cons": [
+    "Needs tax vouchers for the underlying income; money without papers cannot be bought out this way",
+    "Branch practice varies and is not published",
+    "Foreign intermediary and receiving-bank charges are extra and not published by the sending bank"
+   ],
+   "limit": "No published cap for documented current-account income; the cap is what your papers support.",
+   "cost_model": "wire:CMB:CMB",
+   "sources": [
+    "B05",
+    "T03",
+    "R04",
+    "R02",
+    "R01",
+    "R10",
+    "X01",
+    "U01",
+    "U05"
+   ],
+   "flags": [
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F25"
+   ]
+  },
+  {
+   "id": "M04",
+   "name": "HSBC China (Premier or Advance) — telegraphic transfer",
+   "category": "A",
+   "lawful": "yes",
+   "who": "A foreign passport holder with lawful, tax-paid renminbi income earned in China and an account at this bank.",
+   "summary": "Rate from HSBC China's feed; commission 0.1% (min ¥100, max ¥500) plus ¥120 cable. Optional ¥200 'Pay Exact' so the full USD amount arrives.",
+   "steps": [
+    "Confirm the balance is lawful renminbi income you received in China (pay, fees, rent, interest, sale proceeds) and that Chinese tax on it has been paid or withheld. The rule is: identity document plus source-of-funds papers that show the amounts, including tax vouchers.",
+    "Collect the papers: passport; the tax payment record for the income (the withholding agent must give you the figures); and whatever shows the amount and origin of the money, such as the employment contract or bank statements. Which papers a branch accepts is its own decision — ask first.",
+    "Go to (or log in to) the bank that holds the renminbi. Ask to buy US dollars (购汇) against those papers. The amount you may buy is the documented, after-tax amount.",
+    "The bank converts at its selling rate at that moment (the board rate is only indicative) and debits the renminbi.",
+    "Ask for an outward telegraphic transfer (境外电汇) to your own US account: beneficiary name, account number, bank name, SWIFT/ABA and address. Pay the commission and the cable fee.",
+    "Keep the purchase slip and the wire confirmation. If one payment is above USD 50,000 the bank may ask how the tax-filing rule applies; for foreign individuals the announcement points back to the personal foreign-exchange rules.",
+    "In the US: note the dollar amount received and the date. Work out any exchange gain against your dollar cost of the renminbi, keep the Chinese account on your FBAR and Form 8938 for the year, and claim credit for Chinese income tax where the rules allow."
+   ],
+   "pros": [
+    "The route the rules are written for: current-account income is convertible with ID and source papers",
+    "Cheapest route at size where both rate and fee are published",
+    "One transaction, bank-to-bank, with a paper trail that answers later questions from either tax authority"
+   ],
+   "cons": [
+    "Needs tax vouchers for the underlying income; money without papers cannot be bought out this way",
+    "Branch practice varies and is not published",
+    "Foreign intermediary and receiving-bank charges are extra and not published by the sending bank",
+    "HSBC's published USD selling rate was the widest of the six boards read"
+   ],
+   "limit": "No published cap for documented current-account income; the cap is what your papers support.",
+   "cost_model": "wire:HSBC:HSBC_PA",
+   "sources": [
+    "B06",
+    "T07",
+    "R04",
+    "R02",
+    "R01",
+    "R10",
+    "X01",
+    "U01",
+    "U05"
+   ],
+   "flags": [
+    "F01",
+    "F07",
+    "F08",
+    "F09",
+    "F25"
+   ]
+  },
+  {
+   "id": "M05",
+   "name": "HSBC China (Private Banking individual) — telegraphic transfer",
+   "category": "A",
+   "lawful": "yes",
+   "who": "A Private Banking individual customer of HSBC China with lawful, tax-paid renminbi income.",
+   "summary": "Rate from HSBC China's feed; the tariff lists issuance and cable as Free for Private Banking individuals.",
+   "steps": [
+    "Confirm the balance is lawful renminbi income you received in China (pay, fees, rent, interest, sale proceeds) and that Chinese tax on it has been paid or withheld. The rule is: identity document plus source-of-funds papers that show the amounts, including tax vouchers.",
+    "Collect the papers: passport; the tax payment record for the income (the withholding agent must give you the figures); and whatever shows the amount and origin of the money, such as the employment contract or bank statements. Which papers a branch accepts is its own decision — ask first.",
+    "Go to (or log in to) the bank that holds the renminbi. Ask to buy US dollars (购汇) against those papers. The amount you may buy is the documented, after-tax amount.",
+    "The bank converts at its selling rate at that moment (the board rate is only indicative) and debits the renminbi.",
+    "Ask for an outward telegraphic transfer (境外电汇) to your own US account: beneficiary name, account number, bank name, SWIFT/ABA and address. Pay the commission and the cable fee.",
+    "Keep the purchase slip and the wire confirmation. If one payment is above USD 50,000 the bank may ask how the tax-filing rule applies; for foreign individuals the announcement points back to the personal foreign-exchange rules.",
+    "In the US: note the dollar amount received and the date. Work out any exchange gain against your dollar cost of the renminbi, keep the Chinese account on your FBAR and Form 8938 for the year, and claim credit for Chinese income tax where the rules allow."
+   ],
+   "pros": [
+    "The route the rules are written for: current-account income is convertible with ID and source papers",
+    "Cheapest route at size where both rate and fee are published",
+    "One transaction, bank-to-bank, with a paper trail that answers later questions from either tax authority"
+   ],
+   "cons": [
+    "Needs tax vouchers for the underlying income; money without papers cannot be bought out this way",
+    "Branch practice varies and is not published",
+    "Foreign intermediary and receiving-bank charges are extra and not published by the sending bank",
+    "'Free' is the bank's own charge only; the rate margin still applies"
+   ],
+   "limit": "No published cap for documented current-account income; the cap is what your papers support.",
+   "cost_model": "wire:HSBC:HSBC_PB",
+   "sources": [
+    "B06",
+    "T07",
+    "R04",
+    "R02",
+    "R01",
+    "R10",
+    "X01",
+    "U01",
+    "U05"
+   ],
+   "flags": [
+    "F01",
+    "F07",
+    "F08",
+    "F09",
+    "F25"
+   ]
+  },
+  {
+   "id": "M06",
+   "name": "ICBC — buy USD and wire it",
+   "category": "A",
+   "lawful": "yes",
+   "who": "A foreign passport holder with lawful, tax-paid renminbi income earned in China and an account at this bank.",
+   "summary": "Rate from ICBC's board. The fee tables in ICBC's price list are images and could not be read: fee left blank.",
+   "steps": [
+    "Confirm the balance is lawful renminbi income you received in China (pay, fees, rent, interest, sale proceeds) and that Chinese tax on it has been paid or withheld. The rule is: identity document plus source-of-funds papers that show the amounts, including tax vouchers.",
+    "Collect the papers: passport; the tax payment record for the income (the withholding agent must give you the figures); and whatever shows the amount and origin of the money, such as the employment contract or bank statements. Which papers a branch accepts is its own decision — ask first.",
+    "Go to (or log in to) the bank that holds the renminbi. Ask to buy US dollars (购汇) against those papers. The amount you may buy is the documented, after-tax amount.",
+    "The bank converts at its selling rate at that moment (the board rate is only indicative) and debits the renminbi.",
+    "Ask for an outward telegraphic transfer (境外电汇) to your own US account: beneficiary name, account number, bank name, SWIFT/ABA and address. Pay the commission and the cable fee.",
+    "Keep the purchase slip and the wire confirmation. If one payment is above USD 50,000 the bank may ask how the tax-filing rule applies; for foreign individuals the announcement points back to the personal foreign-exchange rules.",
+    "In the US: note the dollar amount received and the date. Work out any exchange gain against your dollar cost of the renminbi, keep the Chinese account on your FBAR and Form 8938 for the year, and claim credit for Chinese income tax where the rules allow."
+   ],
+   "pros": [
+    "The route the rules are written for: current-account income is convertible with ID and source papers",
+    "Cheapest route at size where both rate and fee are published",
+    "One transaction, bank-to-bank, with a paper trail that answers later questions from either tax authority"
+   ],
+   "cons": [
+    "Needs tax vouchers for the underlying income; money without papers cannot be bought out this way",
+    "Branch practice varies and is not published",
+    "Foreign intermediary and receiving-bank charges are extra and not published by the sending bank"
+   ],
+   "limit": "No published cap for documented current-account income; the cap is what your papers support.",
+   "cost_model": "wire:ICBC:ICBC",
+   "sources": [
+    "B02",
+    "T06",
+    "R04",
+    "R02",
+    "R01",
+    "R10",
+    "X01",
+    "U01",
+    "U05"
+   ],
+   "flags": [
+    "F03",
+    "F07",
+    "F08",
+    "F09",
+    "F25"
+   ]
+  },
+  {
+   "id": "M07",
+   "name": "China Construction Bank — buy USD and wire it",
+   "category": "A",
+   "lawful": "yes",
+   "who": "A foreign passport holder with lawful, tax-paid renminbi income earned in China and an account at this bank.",
+   "summary": "Rate from CCB's board. Head office publishes no fee figure (it refers to 95533); a 2016 branch page is a lead only: fee left blank.",
+   "steps": [
+    "Confirm the balance is lawful renminbi income you received in China (pay, fees, rent, interest, sale proceeds) and that Chinese tax on it has been paid or withheld. The rule is: identity document plus source-of-funds papers that show the amounts, including tax vouchers.",
+    "Collect the papers: passport; the tax payment record for the income (the withholding agent must give you the figures); and whatever shows the amount and origin of the money, such as the employment contract or bank statements. Which papers a branch accepts is its own decision — ask first.",
+    "Go to (or log in to) the bank that holds the renminbi. Ask to buy US dollars (购汇) against those papers. The amount you may buy is the documented, after-tax amount.",
+    "The bank converts at its selling rate at that moment (the board rate is only indicative) and debits the renminbi.",
+    "Ask for an outward telegraphic transfer (境外电汇) to your own US account: beneficiary name, account number, bank name, SWIFT/ABA and address. Pay the commission and the cable fee.",
+    "Keep the purchase slip and the wire confirmation. If one payment is above USD 50,000 the bank may ask how the tax-filing rule applies; for foreign individuals the announcement points back to the personal foreign-exchange rules.",
+    "In the US: note the dollar amount received and the date. Work out any exchange gain against your dollar cost of the renminbi, keep the Chinese account on your FBAR and Form 8938 for the year, and claim credit for Chinese income tax where the rules allow."
+   ],
+   "pros": [
+    "The route the rules are written for: current-account income is convertible with ID and source papers",
+    "Cheapest route at size where both rate and fee are published",
+    "One transaction, bank-to-bank, with a paper trail that answers later questions from either tax authority"
+   ],
+   "cons": [
+    "Needs tax vouchers for the underlying income; money without papers cannot be bought out this way",
+    "Branch practice varies and is not published",
+    "Foreign intermediary and receiving-bank charges are extra and not published by the sending bank"
+   ],
+   "limit": "No published cap for documented current-account income; the cap is what your papers support.",
+   "cost_model": "wire:CCB:CCB",
+   "sources": [
+    "B03",
+    "T05",
+    "T04",
+    "R04",
+    "R02",
+    "R01",
+    "R10",
+    "X01",
+    "U01",
+    "U05"
+   ],
+   "flags": [
+    "F04",
+    "F07",
+    "F08",
+    "F09",
+    "F25"
+   ]
+  },
+  {
+   "id": "M08",
+   "name": "Bank of Communications — buy USD and wire it",
+   "category": "A",
+   "lawful": "yes",
+   "who": "A foreign passport holder with lawful, tax-paid renminbi income earned in China and an account at this bank.",
+   "summary": "Neither the rate nor the fee could be read from the bank's site: all cost fields left blank.",
+   "steps": [
+    "Confirm the balance is lawful renminbi income you received in China (pay, fees, rent, interest, sale proceeds) and that Chinese tax on it has been paid or withheld. The rule is: identity document plus source-of-funds papers that show the amounts, including tax vouchers.",
+    "Collect the papers: passport; the tax payment record for the income (the withholding agent must give you the figures); and whatever shows the amount and origin of the money, such as the employment contract or bank statements. Which papers a branch accepts is its own decision — ask first.",
+    "Go to (or log in to) the bank that holds the renminbi. Ask to buy US dollars (购汇) against those papers. The amount you may buy is the documented, after-tax amount.",
+    "The bank converts at its selling rate at that moment (the board rate is only indicative) and debits the renminbi.",
+    "Ask for an outward telegraphic transfer (境外电汇) to your own US account: beneficiary name, account number, bank name, SWIFT/ABA and address. Pay the commission and the cable fee.",
+    "Keep the purchase slip and the wire confirmation. If one payment is above USD 50,000 the bank may ask how the tax-filing rule applies; for foreign individuals the announcement points back to the personal foreign-exchange rules.",
+    "In the US: note the dollar amount received and the date. Work out any exchange gain against your dollar cost of the renminbi, keep the Chinese account on your FBAR and Form 8938 for the year, and claim credit for Chinese income tax where the rules allow."
+   ],
+   "pros": [
+    "The route the rules are written for: current-account income is convertible with ID and source papers",
+    "Cheapest route at size where both rate and fee are published",
+    "One transaction, bank-to-bank, with a paper trail that answers later questions from either tax authority"
+   ],
+   "cons": [
+    "Needs tax vouchers for the underlying income; money without papers cannot be bought out this way",
+    "Branch practice varies and is not published",
+    "Foreign intermediary and receiving-bank charges are extra and not published by the sending bank"
+   ],
+   "limit": "No published cap for documented current-account income; the cap is what your papers support.",
+   "cost_model": "wire:BOCOM:BOCOM",
+   "sources": [
+    "B07",
+    "R04",
+    "R02",
+    "R01",
+    "R10",
+    "X01",
+    "U01",
+    "U05"
+   ],
+   "flags": [
+    "F02",
+    "F08",
+    "F09"
+   ]
+  },
+  {
+   "id": "M09",
+   "name": "HSBC Global Transfer to your own HSBC account abroad",
+   "category": "A",
+   "lawful": "yes",
+   "who": "HSBC China customer who also holds an HSBC account in a country that offers Global Transfer to Self.",
+   "summary": "Tariff item 2.2.6.1: free for Private Banking and Premier, USD 20 (shown as about ¥145) for Advance. The exchange rate applied is not stated in the tariff, so the all-in cost is left blank.",
+   "steps": [
+    "Hold accounts in your own name at HSBC China and at HSBC in the destination country, linked in online banking.",
+    "Convert renminbi to US dollars at HSBC China under the same documentary rule as any purchase of foreign exchange (ID plus source-of-funds papers including tax vouchers).",
+    "Send the dollars with Global Transfer to the linked own-name account.",
+    "Move the money on from the overseas HSBC account to your usual US bank if needed, and handle the US reporting as for a wire."
+   ],
+   "pros": [
+    "No transfer fee for Private Banking and Premier",
+    "Own-name to own-name"
+   ],
+   "cons": [
+    "Needs an HSBC account on both sides",
+    "Exchange rate for this service is not published in the tariff",
+    "The documentary rule for buying foreign exchange is unchanged"
+   ],
+   "limit": "Service limits are not stated in the tariff.",
+   "cost_model": "fee_only:HSBC_GT",
+   "sources": [
+    "T07",
+    "R04",
+    "B06"
+   ],
+   "flags": [
+    "F27",
+    "F09",
+    "F01"
+   ]
+  },
+  {
+   "id": "M10",
+   "name": "Annual facilitation quota (USD 50,000 a year) — only with a Chinese Foreign Permanent Resident ID",
+   "category": "B",
+   "lawful": "conditional",
+   "who": "Foreign individuals holding a PRC Foreign Permanent Resident ID card. An ordinary work or residence permit does not qualify.",
+   "summary": "Within the quota a purchase needs ID only. Cost per wire is the same as a bank wire; the table uses Bank of China's rate and fee with one wire per calendar year.",
+   "steps": [
+    "Check that you hold a Foreign Permanent Resident ID card; SAFE states that these holders 'apply the annual facilitation quota'.",
+    "Buy up to the equivalent of USD 50,000 per calendar year at a bank with that ID.",
+    "Wire the dollars to your own US account; repeat in later years for larger amounts.",
+    "Never split one sum across other people's quotas: the rules forbid evading the limit by splitting.",
+    "US side as for a wire."
+   ],
+   "pros": [
+    "ID only, within the quota",
+    "Same low wire cost"
+   ],
+   "cons": [
+    "Not available to most foreign passport holders",
+    "USD 400,000 would take eight calendar years",
+    "Amounts above the quota fall back to the documented route anyway"
+   ],
+   "limit": "USD 50,000 per person per calendar year.",
+   "cost_model": "quota:BOC:BOC",
+   "sources": [
+    "R05",
+    "R03",
+    "R02",
+    "B01",
+    "T01"
+   ],
+   "flags": [
+    "F10",
+    "F11",
+    "F31"
+   ]
+  },
+  {
+   "id": "M11",
+   "name": "Convert unused renminbi back (money you originally brought in)",
+   "category": "B",
+   "lawful": "yes",
+   "who": "A foreign individual whose renminbi came from exchanging foreign currency in China and who still has the original exchange memo, dated within 24 months.",
+   "summary": "Reconversion needs ID and the original exchange memo. Without a memo only USD 500 a day can be exchanged on ID alone. Cost shown is Bank of China's rate and wire fee.",
+   "steps": [
+    "Find the original exchange memo (兑换水单) for the earlier conversion into renminbi; it is valid for 24 months from the exchange date.",
+    "Take passport and memo to the bank and convert the unused renminbi back, up to the amount on the memo.",
+    "Wire the dollars out or withdraw notes within the cash-carry limits.",
+    "US side: this is your own capital returning; still compute exchange gain or loss on the renminbi."
+   ],
+   "pros": [
+    "No tax voucher needed: the money was never Chinese income",
+    "Simple if the memo is recent"
+   ],
+   "cons": [
+    "Useless for renminbi earned in China",
+    "Memo older than 24 months no longer works",
+    "USD 500-a-day ID-only exchange is too small to matter at these amounts"
+   ],
+   "limit": "Amount on the original memo; ID-only exchange USD 500 per day (USD 1,000 airside before departure).",
+   "cost_model": "wire:BOC:BOC",
+   "sources": [
+    "R06",
+    "R02",
+    "B01",
+    "T01"
+   ],
+   "flags": [
+    "F09",
+    "F07"
+   ]
+  },
+  {
+   "id": "M12",
+   "name": "Proceeds of selling housing in mainland China",
+   "category": "B",
+   "lawful": "yes",
+   "who": "A foreign individual who sold housing in mainland China that was bought in his or her own name.",
+   "summary": "The rules allow the sale proceeds to be converted and remitted, capped at the sale price less the taxes on that sale, once title has passed. Cost shown is Bank of China's rate and wire fee.",
+   "steps": [
+    "Complete the sale and the title transfer at the housing authority.",
+    "Pay the taxes on the sale and obtain the tax certificate; above USD 50,000 the filing form for outbound payments is also listed among the papers.",
+    "Take passport, the registered sale contract, proof of title transfer and the tax papers to the bank.",
+    "The bank checks that the amount requested does not exceed the figure on the tax certificate, sells you the dollars and wires them abroad.",
+    "US side: report the sale itself (gain on the property) and any exchange gain; credit Chinese income tax where allowed."
+   ],
+   "pros": [
+    "Expressly permitted for foreign individuals",
+    "Large single amounts possible"
+   ],
+   "cons": [
+    "Chinese tax on the gain is 20% under the income tax law; other transfer taxes were not verified",
+    "Capped at price less taxes",
+    "Wording in force today was read only from a draft and a 2017 branch guide"
+   ],
+   "limit": "Sale price less taxes on the sale.",
+   "cost_model": "wire:BOC:BOC",
+   "sources": [
+    "R02",
+    "R13",
+    "R10",
+    "X01",
+    "B01",
+    "T01"
+   ],
+   "flags": [
+    "F12",
+    "F07",
+    "F08"
+   ]
+  },
+  {
+   "id": "M13",
+   "name": "Inherited assets in China (inheritance transfer, SAFE approval)",
+   "category": "B",
+   "lawful": "yes",
+   "who": "A foreign citizen who lawfully inherited assets located in mainland China.",
+   "summary": "A separate approval route: apply once for everything inherited from the same person to the SAFE office where the deceased was registered, then buy and remit in one or several payments. Cost shown is Bank of China's rate and wire fee.",
+   "steps": [
+    "Establish the inheritance (notarised proof of the right to inherit) and turn the assets into renminbi.",
+    "Obtain the tax certificate from the tax office where the estate is located.",
+    "Apply once to the SAFE office of the deceased's place of household registration for all assets inherited from that person.",
+    "With the approval, buy dollars at the bank; the bank must wire them straight to your own account in your country of residence — no cash withdrawal in China.",
+    "US side: a bequest from a foreign person above USD 100,000 in a year is reported on Form 3520."
+   ],
+   "pros": [
+    "A defined legal route for sums of any size",
+    "One application covers the whole estate"
+   ],
+   "cons": [
+    "Approval takes time and papers must be notarised",
+    "Approval thresholds may have changed since the 2004 text",
+    "Late or missing Form 3520 carries penalties"
+   ],
+   "limit": "The approved amount.",
+   "cost_model": "wire:BOC:BOC",
+   "sources": [
+    "R12",
+    "R14",
+    "R02",
+    "U07",
+    "B01",
+    "T01"
+   ],
+   "flags": [
+    "F13",
+    "F07",
+    "F08"
+   ]
+  },
+  {
+   "id": "M14",
+   "name": "Emigrant asset transfer (former Chinese national, assets held before emigrating)",
+   "category": "B",
+   "lawful": "yes",
+   "who": "A person who moved abroad from mainland China and took foreign nationality, for lawful assets owned in China before obtaining that status.",
+   "summary": "Apply once for the whole amount; above ¥200,000 it leaves in stages: up to half first, up to half of the rest after one year, the remainder after two years. Cost shown is three Bank of China wires (one if the total is ¥200,000 or less).",
+   "steps": [
+    "Gather proof of status (foreign passport, consular proof of settlement abroad, cancellation of household registration), proof of ownership and origin of the assets, and tax certificates.",
+    "Apply once to the SAFE office of your former place of household registration for the full amount you intend to move.",
+    "After approval buy dollars at the bank and wire the first tranche (at most half) to your own account abroad.",
+    "One year after the first payment wire up to half of what remains; two years after it wire the rest.",
+    "US side: your own assets, not income on arrival; compute exchange gain or loss and keep the accounts on FBAR and Form 8938 meanwhile."
+   ],
+   "pros": [
+    "Works for old savings and property that have no salary tax trail in your foreign name",
+    "Any amount, with approval"
+   ],
+   "cons": [
+    "Two years to finish above ¥200,000",
+    "Approval, notarisation and tax certificates required",
+    "Money stays exposed to the exchange rate while it waits"
+   ],
+   "limit": "Approved amount; staged 50% / 25% / 25% above ¥200,000.",
+   "cost_model": "emigrant:BOC:BOC",
+   "sources": [
+    "R12",
+    "R14",
+    "B01",
+    "T01"
+   ],
+   "flags": [
+    "F13",
+    "F07",
+    "F08"
+   ]
+  },
+  {
+   "id": "M15",
+   "name": "Wise — send from renminbi to your own account abroad",
+   "category": "C",
+   "lawful": "yes",
+   "who": "Non-mainland-Chinese individuals who work or worked in China and hold a Chinese tax record showing tax paid within the last three years.",
+   "summary": "Wise runs this through a PBOC-licensed payment partner. Own account only; at most ¥300,000 per transfer from a bank app; total limit equals after-tax salary shown on the tax records. The fee is quoted in the app and was not read.",
+   "steps": [
+    "Open a personal Wise account and start a transfer from CNY to your own account abroad.",
+    "Upload passport and Chinese tax records (tax paid within the last three years); verification takes one to two working days the first time.",
+    "Wise sets an overall limit equal to salary earned in China after tax; it does not expire but is used up.",
+    "Pay in renminbi by bank transfer (up to ¥300,000 a transfer) or Alipay (up to ¥50,000).",
+    "US side as for a wire."
+   ],
+   "pros": [
+    "Done from a phone",
+    "Uses the same tax-record logic as the banks"
+   ],
+   "cons": [
+    "Fee not published on the guide page",
+    "Limited to documented after-tax salary",
+    "Not for savings, property proceeds or inheritance"
+   ],
+   "limit": "¥300,000 per transfer (bank app); overall limit = after-tax salary on the tax records.",
+   "cost_model": "count_only:wise",
+   "sources": [
+    "T09",
+    "R04"
+   ],
+   "flags": [
+    "F14"
+   ]
+  },
+  {
+   "id": "M16",
+   "name": "Withdraw cash abroad from a mainland bank card (UnionPay ATM)",
+   "category": "C",
+   "lawful": "yes",
+   "who": "Anyone holding a mainland-issued bank card.",
+   "summary": "Hard caps: ¥100,000 per person per calendar year across all cards, ¥10,000 per card per day. Exceeding the yearly cap blocks overseas withdrawals for that year and the next. Only the card issuer's fee could be read (China Merchants Bank: 0.5%, minimum ¥10).",
+   "steps": [
+    "Use your own mainland card at an ATM abroad that accepts UnionPay.",
+    "Withdraw at most ¥10,000 equivalent per card per day and ¥100,000 equivalent per calendar year in total.",
+    "Deposit the dollars in your US account.",
+    "Do not borrow or lend cards to get around the cap: the circular forbids it."
+   ],
+   "pros": [
+    "No papers",
+    "Useful for small top-ups"
+   ],
+   "cons": [
+    "About USD 15,000 a year at today's rate",
+    "USD 400,000 would take 27 years",
+    "Network exchange rate and ATM-owner surcharge were not read"
+   ],
+   "limit": "¥100,000 per person per calendar year; ¥10,000 per card per day.",
+   "cost_model": "atm",
+   "sources": [
+    "R07",
+    "T08"
+   ],
+   "flags": [
+    "F16"
+   ]
+  },
+  {
+   "id": "M17",
+   "name": "Carry US-dollar notes out of China",
+   "category": "C",
+   "lawful": "yes",
+   "who": "A traveller leaving China with dollars lawfully bought or withdrawn.",
+   "summary": "Up to USD 5,000 per exit needs no permit; USD 5,000-10,000 needs a bank-issued carrying permit; more than USD 10,000 needs a SAFE permit and is refused in principle. A second exit within 15 days is limited to USD 1,000. The US requires a FinCEN 105 report above USD 10,000.",
+   "steps": [
+    "Buy dollars at the bank under the documentary rule (or withdraw dollars you already hold).",
+    "For more than USD 5,000 ask the bank for a carrying permit (携带证), valid 30 days, one use, at most USD 10,000.",
+    "Declare as required when leaving; space trips more than 15 days apart.",
+    "On arrival in the US declare if the total is above USD 10,000, then deposit."
+   ],
+   "pros": [
+    "No wire fee",
+    "Simple for a few thousand dollars"
+   ],
+   "cons": [
+    "40 trips with permits for USD 400,000, more than 15 days apart",
+    "Theft and loss risk",
+    "Cash deposits draw bank questions in the US",
+    "Fine up to 20% for breaching the carrying rules"
+   ],
+   "limit": "USD 5,000 per exit without a permit; USD 10,000 with a bank permit.",
+   "cost_model": "cash_usd",
+   "sources": [
+    "R08",
+    "R01",
+    "U08",
+    "B01",
+    "T07"
+   ],
+   "flags": [
+    "F17"
+   ]
+  },
+  {
+   "id": "M18",
+   "name": "Carry renminbi notes out of China",
+   "category": "C",
+   "lawful": "yes",
+   "who": "Any traveller.",
+   "summary": "Limit ¥20,000 per person per trip. The rate obtainable for renminbi notes in the US is not published by any official source.",
+   "steps": [
+    "Withdraw renminbi notes.",
+    "Carry at most ¥20,000 per person per trip.",
+    "Exchange the notes abroad at whatever rate a money changer offers."
+   ],
+   "pros": [
+    "No papers"
+   ],
+   "cons": [
+    "About USD 3,000 a trip",
+    "Poor, unpublished note-exchange rates abroad",
+    "134 trips for USD 400,000"
+   ],
+   "limit": "¥20,000 per person per trip.",
+   "cost_model": "cash_rmb",
+   "sources": [
+    "R09"
+   ],
+   "flags": [
+    "F18"
+   ]
+  },
+  {
+   "id": "M19",
+   "name": "Western Union from China",
+   "category": "C",
+   "lawful": "yes",
+   "who": "Not verified.",
+   "summary": "Nothing about fees, limits or eligibility was verified from an official page. Left blank.",
+   "steps": [
+    "Not verified — see the provider's page and confirm in person."
+   ],
+   "pros": [
+    "—"
+   ],
+   "cons": [
+    "Nothing verified"
+   ],
+   "limit": "",
+   "cost_model": "blank",
+   "sources": [
+    "T10"
+   ],
+   "flags": [
+    "F15"
+   ]
+  },
+  {
+   "id": "M20",
+   "name": "Send renminbi abroad without converting (to an offshore renminbi account), convert there",
+   "category": "C",
+   "lawful": "conditional",
+   "who": "Not verified for foreign individuals.",
+   "summary": "Whether and on what papers a foreign individual may send renminbi to an offshore account was not verified. Left blank.",
+   "steps": [
+    "Not verified — ask the bank whether cross-border renminbi remittance of documented income is available to you."
+   ],
+   "pros": [
+    "Would move the exchange decision offshore"
+   ],
+   "cons": [
+    "Rule not verified",
+    "Offshore rate not captured"
+   ],
+   "limit": "",
+   "cost_model": "blank",
+   "sources": [
+    "R02"
+   ],
+   "flags": [
+    "F19"
+   ]
+  },
+  {
+   "id": "M21",
+   "name": "Spend abroad on a mainland card instead of transferring",
+   "category": "C",
+   "lawful": "yes",
+   "who": "Holder of a mainland-issued card.",
+   "summary": "Paying for real purchases abroad uses renminbi without a transfer. It is spending, not repatriation; the card network's rate was not read.",
+   "steps": [
+    "Pay genuine expenses abroad with the mainland card.",
+    "Settle the card in renminbi."
+   ],
+   "pros": [
+    "No papers for ordinary purchases"
+   ],
+   "cons": [
+    "Does not put dollars in your US account",
+    "Network rate and issuer fees not read",
+    "Cash-like or sham purchases breach the rules"
+   ],
+   "limit": "Issuer and network limits (not read).",
+   "cost_model": "blank",
+   "sources": [
+    "R07"
+   ],
+   "flags": [
+    "F16"
+   ]
+  },
+  {
+   "id": "M22",
+   "name": "Leave the money in China and spend it there",
+   "category": "D",
+   "lawful": "yes",
+   "who": "Anyone.",
+   "summary": "No conversion, so no conversion cost today. The balance stays exposed to the exchange rate and stays reportable in the US every year.",
+   "steps": [
+    "Keep the account; bank deposit interest is currently exempt from Chinese individual income tax.",
+    "Report the account on FBAR above USD 10,000 aggregate and on Form 8938 above its thresholds.",
+    "Convert later, or spend in China."
+   ],
+   "pros": [
+    "Nothing to pay now",
+    "Keeps options open while papers are gathered"
+   ],
+   "cons": [
+    "Exchange-rate risk in both directions",
+    "US reporting continues; penalties for missing FBARs are large",
+    "Does not solve the problem"
+   ],
+   "limit": "No limit.",
+   "cost_model": "none",
+   "sources": [
+    "X02",
+    "U05",
+    "U06",
+    "U04"
+   ],
+   "flags": []
+  },
+  {
+   "id": "M23",
+   "name": "Unlawful channels — listed so they can be recognised and refused",
+   "category": "E",
+   "lawful": "no",
+   "who": "Nobody.",
+   "summary": "Underground banks and matched 'swap' deals, borrowing other people's quotas or splitting one sum among them, buying dollars through crypto dealers, sham trade or invoices, undeclared cash, lent or borrowed bank cards. No instructions are given. The figures in the table are the fine bands in the Regulations, not a price.",
+   "steps": [
+    "Do not use. Fines are up to 30% of the amount, and from 30% up to the whole amount in serious cases, on top of being ordered to reverse the deal; criminal liability is possible.",
+    "The counterparty risk is total: the money can simply disappear, and there is no legal claim to it."
+   ],
+   "pros": [
+    "Nothing that survives the penalties"
+   ],
+   "cons": [
+    "Fine up to 30% of the amount; 30%-100% in serious cases",
+    "Possible criminal liability",
+    "Up to ¥50,000 personal fine for untrue documents",
+    "Money with no lawful paper trail also causes US bank and tax problems"
+   ],
+   "limit": "",
+   "cost_model": "penalty",
+   "sources": [
+    "R01",
+    "R02",
+    "R15",
+    "R16",
+    "R07"
+   ],
+   "flags": []
+  }
+ ]
+}

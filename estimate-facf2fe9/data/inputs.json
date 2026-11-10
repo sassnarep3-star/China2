@@ -1,0 +1,256 @@
+{
+ "note": "Every number here was read from the linked source on 2026-11-10. Rates are CNY per 1 USD. 'derived' fields are arithmetic on the published numbers.",
+ "boards": [
+  {
+   "bank": "Bank of China",
+   "key": "BOC",
+   "buy": 6.6571,
+   "sell": 6.6851,
+   "notes_sell": 6.6851,
+   "stamp": "2026-11-10 17:39:58 Beijing",
+   "source": "B01",
+   "status": "verified"
+  },
+  {
+   "bank": "ICBC",
+   "key": "ICBC",
+   "buy": 6.6505,
+   "sell": 6.6852,
+   "notes_sell": null,
+   "stamp": "2026-11-10 17:48:59 Beijing",
+   "source": "B02",
+   "status": "verified"
+  },
+  {
+   "bank": "China Construction Bank",
+   "key": "CCB",
+   "buy": 6.6515,
+   "sell": 6.6862,
+   "notes_sell": null,
+   "stamp": "2026-11-10 17:47:59 Beijing",
+   "source": "B03",
+   "status": "verified"
+  },
+  {
+   "bank": "Agricultural Bank of China",
+   "key": "ABC",
+   "buy": 6.656,
+   "sell": 6.684,
+   "notes_sell": null,
+   "stamp": "2026-11-10 17:49:49 Beijing",
+   "source": "B04",
+   "status": "verified"
+  },
+  {
+   "bank": "China Merchants Bank",
+   "key": "CMB",
+   "buy": 6.65766,
+   "sell": 6.68668,
+   "notes_sell": 6.68668,
+   "stamp": "2026-11-10 17:49:56 Beijing",
+   "source": "B05",
+   "status": "verified"
+  },
+  {
+   "bank": "HSBC China",
+   "key": "HSBC",
+   "buy": null,
+   "sell": null,
+   "notes_sell": null,
+   "raw_usd_per_cny": {
+    "transfer_buying": 0.1507049,
+    "transfer_selling": 0.1492042,
+    "notes_buying": 0.1515392,
+    "notes_selling": 0.1492042
+   },
+   "stamp": "2026-11-10 (date only)",
+   "source": "B06",
+   "status": "verified-limited"
+  },
+  {
+   "bank": "Bank of Communications",
+   "key": "BOCOM",
+   "buy": null,
+   "sell": null,
+   "notes_sell": null,
+   "stamp": "",
+   "source": "B07",
+   "status": "unverified"
+  }
+ ],
+ "reference_banks": [
+  "BOC",
+  "ICBC",
+  "CCB",
+  "ABC",
+  "CMB"
+ ],
+ "parity": {
+  "date": "2026-11-10",
+  "cny_per_usd": 6.7167,
+  "source": "B08"
+ },
+ "tariffs": [
+  {
+   "key": "BOC",
+   "pct": 0.001,
+   "min": 50,
+   "max": 260,
+   "cable": 150,
+   "source": "T01",
+   "status": "verified",
+   "as_of": "table headed 2014-11-01"
+  },
+  {
+   "key": "ABC",
+   "pct": 0.001,
+   "min": 20,
+   "max": 200,
+   "cable": 80,
+   "source": "T02",
+   "status": "verified",
+   "as_of": "undated page"
+  },
+  {
+   "key": "CMB",
+   "pct": 0.001,
+   "min": 100,
+   "max": 1000,
+   "cable": 150,
+   "source": "T03",
+   "status": "verified",
+   "as_of": "undated page"
+  },
+  {
+   "key": "HSBC_PA",
+   "pct": 0.001,
+   "min": 100,
+   "max": 500,
+   "cable": 120,
+   "source": "T07",
+   "status": "verified",
+   "as_of": "effective 2026-10-31"
+  },
+  {
+   "key": "HSBC_PB",
+   "pct": 0.0,
+   "min": 0,
+   "max": 0,
+   "cable": 0,
+   "source": "T07",
+   "status": "verified",
+   "as_of": "effective 2026-10-31"
+  },
+  {
+   "key": "ICBC",
+   "pct": null,
+   "min": null,
+   "max": null,
+   "cable": null,
+   "source": "T06",
+   "status": "unverified",
+   "as_of": "price list effective 2026-08-08, tables are images"
+  },
+  {
+   "key": "CCB",
+   "pct": null,
+   "min": null,
+   "max": null,
+   "cable": null,
+   "source": "T05",
+   "status": "unverified",
+   "as_of": "head office gives no figure; 2016 branch page (T04) is a lead only"
+  },
+  {
+   "key": "BOCOM",
+   "pct": null,
+   "min": null,
+   "max": null,
+   "cable": null,
+   "source": "B07",
+   "status": "unverified",
+   "as_of": "not found"
+  }
+ ],
+ "limits": {
+  "annual_quota_usd": {
+   "value": 50000,
+   "source": "R03"
+  },
+  "atm_year_cny": {
+   "value": 100000,
+   "source": "R07"
+  },
+  "atm_day_card_cny": {
+   "value": 10000,
+   "source": "R07"
+  },
+  "cash_no_permit_usd": {
+   "value": 5000,
+   "source": "R08"
+  },
+  "cash_bank_permit_usd": {
+   "value": 10000,
+   "source": "R08"
+  },
+  "rmb_cash_trip_cny": {
+   "value": 20000,
+   "source": "R09"
+  },
+  "wise_transfer_cny": {
+   "value": 300000,
+   "source": "T09"
+  },
+  "emigrant_single_cny": {
+   "value": 200000,
+   "source": "R12"
+  },
+  "tax_filing_usd": {
+   "value": 50000,
+   "source": "R10"
+  },
+  "reconvert_id_only_usd_day": {
+   "value": 500,
+   "source": "R06"
+  },
+  "cmb_atm_fee_pct": {
+   "value": 0.005,
+   "source": "T08"
+  },
+  "cmb_atm_fee_min_cny": {
+   "value": 10,
+   "source": "T08"
+  },
+  "fine_band_ordinary": {
+   "value": 0.3,
+   "source": "R01"
+  },
+  "fine_band_serious": {
+   "value": 1.0,
+   "source": "R01"
+  },
+  "fine_cash_carry": {
+   "value": 0.2,
+   "source": "R01"
+  }
+ },
+ "irs_yearly_avg_cny_per_usd": {
+  "2021": 6.452,
+  "2022": 6.73,
+  "2023": 7.075,
+  "2024": 7.189,
+  "2025": 7.129,
+  "source": "U02"
+ },
+ "us": {
+  "fbar_threshold": 10000,
+  "fbar_nonwillful": 16536,
+  "fbar_willful": 165353,
+  "f8938_abroad_single": 200000,
+  "f8938_us_single": 50000,
+  "f3520_gift": 100000,
+  "fincen105": 10000,
+  "feie_2026": 132900,
+  "s988_personal_exclusion": 200
+ }
+}

@@ -1,0 +1,399 @@
+{
+ "headline": [
+  {
+   "q": "Is there a Chinese tax on converting renminbi or wiring it out?",
+   "a": "No such tax was found. The bank asks for proof that tax on the income was already paid; that tax is owed whether or not the money ever leaves.",
+   "status": "reading",
+   "sources": [
+    "R04",
+    "X01"
+   ],
+   "flag": "F20"
+  },
+  {
+   "q": "Does China restrict the payment itself?",
+   "a": "The Regulations say the State does not restrict current international payments and transfers; they must rest on a real, lawful transaction, which is why papers are checked.",
+   "status": "verified",
+   "sources": [
+    "R01"
+   ],
+   "flag": ""
+  },
+  {
+   "q": "Is there a US tax on receiving your own money?",
+   "a": "The transfer is reported, not taxed. What can be taxed is the income when it was earned and any exchange gain on the renminbi between the day you got it and the day you converted it.",
+   "status": "verified",
+   "sources": [
+    "U02",
+    "U01"
+   ],
+   "flag": "F21"
+  },
+  {
+   "q": "What is the most expensive mistake?",
+   "a": "Using an unlawful channel (fine up to 30%, or 30%-100% of the amount in serious cases) or not filing the US account reports (up to USD 16,536 per non-willful violation; USD 165,353 at the willful level in the penalty table).",
+   "status": "verified",
+   "sources": [
+    "R01",
+    "U04"
+   ],
+   "flag": ""
+  }
+ ],
+ "prc_by_source": [
+  {
+   "source": "Salary and wages, China tax resident (183 days or more in the year)",
+   "tax": "3%-45% progressive on yearly comprehensive income after ¥60,000",
+   "base": "Yearly income less ¥60,000 and deductions",
+   "to_convert": "ID plus source papers showing the amounts, including tax vouchers",
+   "status": "verified",
+   "sources": [
+    "X01",
+    "R04"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Salary and wages, non-resident (under 183 days)",
+   "tax": "3%-45% progressive, computed monthly",
+   "base": "Monthly pay less ¥5,000",
+   "to_convert": "Same",
+   "status": "verified",
+   "sources": [
+    "X01",
+    "R04"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Fees for services, royalties, author's pay",
+   "tax": "3%-45% as comprehensive income (residents); per payment for non-residents",
+   "base": "Income less 20% (author's pay counted at 70%)",
+   "to_convert": "Same",
+   "status": "verified",
+   "sources": [
+    "X01",
+    "R04"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Business operation income",
+   "tax": "5%-35% progressive",
+   "base": "Gross income less costs, expenses and losses",
+   "to_convert": "Same",
+   "status": "verified",
+   "sources": [
+    "X01",
+    "R04"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Interest on bank savings",
+   "tax": "Temporarily exempt since 9 October 2008",
+   "base": "",
+   "to_convert": "Same; interest follows the principal",
+   "status": "verified-limited",
+   "sources": [
+    "X02",
+    "X01"
+   ],
+   "flag": "F29"
+  },
+  {
+   "source": "Dividends and other interest",
+   "tax": "20% flat",
+   "base": "Full amount of each payment",
+   "to_convert": "Same",
+   "status": "verified",
+   "sources": [
+    "X01",
+    "R04"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Rent",
+   "tax": "20% flat",
+   "base": "Payment less ¥800 (up to ¥4,000) or less 20% (¥4,000 or more)",
+   "to_convert": "Same",
+   "status": "verified",
+   "sources": [
+    "X01",
+    "R04"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Sale of housing",
+   "tax": "20% flat on the gain; other transfer taxes not verified",
+   "base": "Sale price less original value and reasonable expenses",
+   "to_convert": "Registered sale contract, proof title has passed, tax certificate; at most the price less taxes",
+   "status": "verified-limited",
+   "sources": [
+    "X01",
+    "R13",
+    "R02"
+   ],
+   "flag": "F12"
+  },
+  {
+   "source": "Sale of other assets",
+   "tax": "20% flat on the gain",
+   "base": "Proceeds less original value and reasonable expenses",
+   "to_convert": "ID plus source papers including tax vouchers",
+   "status": "verified",
+   "sources": [
+    "X01",
+    "R04"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Incidental income (prizes and the like)",
+   "tax": "20% flat",
+   "base": "Full amount",
+   "to_convert": "Same",
+   "status": "verified",
+   "sources": [
+    "X01",
+    "R04"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Insurance compensation; pension or retirement pay under State rules",
+   "tax": "Exempt",
+   "base": "",
+   "to_convert": "ID plus source papers",
+   "status": "verified",
+   "sources": [
+    "X01"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Inheritance",
+   "tax": "",
+   "base": "",
+   "to_convert": "SAFE approval; notarised proof of inheritance; tax certificate from the tax office where the estate is",
+   "status": "unverified",
+   "sources": [
+    "R12"
+   ],
+   "flag": "F13"
+  },
+  {
+   "source": "Gift from family in China",
+   "tax": "",
+   "base": "",
+   "to_convert": "",
+   "status": "unverified",
+   "sources": [
+    "X01"
+   ],
+   "flag": "F13"
+  },
+  {
+   "source": "Money you brought into China and exchanged",
+   "tax": "Not Chinese income",
+   "base": "",
+   "to_convert": "ID plus the original exchange memo, within 24 months",
+   "status": "verified",
+   "sources": [
+    "R06"
+   ],
+   "flag": ""
+  },
+  {
+   "source": "Savings from before you emigrated (former Chinese national)",
+   "tax": "Tax certificates required for the assets",
+   "base": "",
+   "to_convert": "SAFE approval for emigrant transfer; staged over two years above ¥200,000",
+   "status": "verified-limited",
+   "sources": [
+    "R12",
+    "R14"
+   ],
+   "flag": "F13"
+  }
+ ],
+ "prc_procedure": [
+  {
+   "item": "Tax-filing form for outbound payments",
+   "rule": "Single payment above USD 50,000 for listed items, including a foreign individual's pay earned in China, dividends, interest, proceeds of selling real estate",
+   "number": "USD 50,000",
+   "status": "verified",
+   "sources": [
+    "R10",
+    "R11"
+   ],
+   "flag": "F30"
+  },
+  {
+   "item": "Foreign individuals under that announcement",
+   "rule": "Their payments 'shall be handled under the personal foreign-exchange rules'",
+   "number": "",
+   "status": "verified",
+   "sources": [
+    "R10"
+   ],
+   "flag": "F30"
+  },
+  {
+   "item": "If tax turns out unpaid",
+   "rule": "The tax office tells the taxpayer or withholding agent to pay, recovers the tax and applies penalties",
+   "number": "",
+   "status": "verified",
+   "sources": [
+    "R10"
+   ],
+   "flag": ""
+  },
+  {
+   "item": "Splitting to dodge limits",
+   "rule": "Forbidden for banks and individuals",
+   "number": "",
+   "status": "verified",
+   "sources": [
+    "R02",
+    "R16"
+   ],
+   "flag": ""
+  }
+ ],
+ "us_rules": [
+  {
+   "item": "Worldwide income",
+   "rule": "US citizens are taxed on income from all sources, foreign and domestic, in the year it is earned — including pay and interest earned in China",
+   "number": "",
+   "status": "verified-limited",
+   "sources": [
+    "U11"
+   ],
+   "flag": ""
+  },
+  {
+   "item": "Exchange gain when renminbi is converted",
+   "rule": "Disposing of a non-functional currency, including a bank deposit in it, is a section 988 transaction; gain or loss is ordinary",
+   "number": "",
+   "status": "verified",
+   "sources": [
+    "U01"
+   ],
+   "flag": "F21"
+  },
+  {
+   "item": "Personal transactions",
+   "rule": "Section 988 does not apply; no gain is recognised unless it exceeds the threshold, above which IRS says to report a capital gain",
+   "number": "USD 200",
+   "status": "verified",
+   "sources": [
+    "U01",
+    "U03"
+   ],
+   "flag": "F21"
+  },
+  {
+   "item": "Which exchange rate",
+   "rule": "IRS has no official rate; use the spot rate when you receive, pay or accrue an item; any posted rate used consistently is accepted",
+   "number": "",
+   "status": "verified",
+   "sources": [
+    "U02"
+   ],
+   "flag": ""
+  },
+  {
+   "item": "Chinese income tax already paid",
+   "rule": "Creditable against US tax on the same income, up to a limit figured on Form 1116",
+   "number": "",
+   "status": "verified-limited",
+   "sources": [
+    "U09"
+   ],
+   "flag": "F22"
+  },
+  {
+   "item": "Foreign earned income exclusion, 2026",
+   "rule": "Maximum exclusion for qualifying earned income; cannot exceed foreign earned income",
+   "number": "USD 132,900",
+   "status": "verified-limited",
+   "sources": [
+    "U10"
+   ],
+   "flag": ""
+  },
+  {
+   "item": "FBAR (FinCEN 114)",
+   "rule": "File if foreign accounts together exceed the threshold at any time in the year; due April 15",
+   "number": "USD 10,000",
+   "status": "verified-limited",
+   "sources": [
+    "U05"
+   ],
+   "flag": ""
+  },
+  {
+   "item": "FBAR penalty, non-willful",
+   "rule": "Maximum per violation for penalties assessed on or after 17 January 2025",
+   "number": "USD 16,536",
+   "status": "verified",
+   "sources": [
+    "U04"
+   ],
+   "flag": "F23"
+  },
+  {
+   "item": "FBAR penalty, willful (table amount)",
+   "rule": "Adjusted statutory amount in the penalty table",
+   "number": "USD 165,353",
+   "status": "verified",
+   "sources": [
+    "U04"
+   ],
+   "flag": "F23"
+  },
+  {
+   "item": "Form 8938, living abroad, single",
+   "rule": "File if specified foreign financial assets exceed the threshold at year end; doubles for joint filers",
+   "number": "USD 200,000",
+   "status": "verified-limited",
+   "sources": [
+    "U06"
+   ],
+   "flag": ""
+  },
+  {
+   "item": "Form 8938, living in the US, single",
+   "rule": "Same, lower threshold; doubles for joint filers",
+   "number": "USD 50,000",
+   "status": "verified-limited",
+   "sources": [
+    "U06"
+   ],
+   "flag": ""
+  },
+  {
+   "item": "Form 3520, gift or bequest from a foreign person",
+   "rule": "Report if the total from that person and related persons exceeds the threshold in the year",
+   "number": "USD 100,000",
+   "status": "verified",
+   "sources": [
+    "U07"
+   ],
+   "flag": ""
+  },
+  {
+   "item": "Cash carried into the US",
+   "rule": "No limit, but a FinCEN 105 report is required above the threshold",
+   "number": "USD 10,000",
+   "status": "verified-limited",
+   "sources": [
+    "U08"
+   ],
+   "flag": ""
+  }
+ ]
+}

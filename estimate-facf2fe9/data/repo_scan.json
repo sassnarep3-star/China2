@@ -1,0 +1,460 @@
+{
+ "scanned_files": 198,
+ "lines": 50827,
+ "patterns": [
+  {
+   "key": "rate_7129",
+   "label": "CNY per USD 7.129 (IRS 2025 yearly average) used as a conversion rate or cited",
+   "regex": "7\\.129",
+   "sources": [
+    "U02",
+    "B01"
+   ],
+   "files": 47,
+   "lines": 103,
+   "top": [
+    {
+     "file": "briefing/costs.html",
+     "count": 14,
+     "first_line": 15
+    },
+    {
+     "file": "verify-d5d1f860/build.py",
+     "count": 11,
+     "first_line": 25
+    },
+    {
+     "file": "COORDINATION.md",
+     "count": 6,
+     "first_line": 383
+    },
+    {
+     "file": "briefing/build.py",
+     "count": 5,
+     "first_line": 14
+    },
+    {
+     "file": "acceptance-a64bd476/findings.json",
+     "count": 3,
+     "first_line": 24
+    },
+    {
+     "file": "acceptance-a64bd476/verify.py",
+     "count": 3,
+     "first_line": 12
+    },
+    {
+     "file": "audit-ad300459/checks.py",
+     "count": 3,
+     "first_line": 141
+    },
+    {
+     "file": "audit-ad300459/findings.json",
+     "count": 3,
+     "first_line": 522
+    }
+   ]
+  },
+  {
+   "key": "rate_710",
+   "label": "CNY per USD 7.10 model assumption",
+   "regex": "7\\.10(?![0-9])",
+   "sources": [
+    "B01"
+   ],
+   "files": 5,
+   "lines": 6,
+   "top": [
+    {
+     "file": "ladder/model.py",
+     "count": 2,
+     "first_line": 28
+    },
+    {
+     "file": "audit-92d12752/index.html",
+     "count": 1,
+     "first_line": 20
+    },
+    {
+     "file": "audit-92d12752/results.json",
+     "count": 1,
+     "first_line": 215
+    },
+    {
+     "file": "ladder/assumptions.html",
+     "count": 1,
+     "first_line": 31
+    },
+    {
+     "file": "ladder/data/assumptions.json",
+     "count": 1,
+     "first_line": 5
+    }
+   ]
+  },
+  {
+   "key": "rate_69",
+   "label": "CNY per USD 6.9 convention",
+   "regex": "(?<![0-9.])6\\.9(?![0-9])",
+   "sources": [
+    "B01"
+   ],
+   "files": 3,
+   "lines": 3,
+   "top": [
+    {
+     "file": "COORDINATION.md",
+     "count": 1,
+     "first_line": 691
+    },
+    {
+     "file": "verify-d5d1f860/audit.html",
+     "count": 1,
+     "first_line": 22
+    },
+    {
+     "file": "verify-d5d1f860/build.py",
+     "count": 1,
+     "first_line": 672
+    }
+   ]
+  },
+  {
+   "key": "spread_band",
+   "label": "modelled wire spread band 0.3%-1.5%",
+   "regex": "0\\.30?\\s?%\\s?[-–]\\s?1\\.50?\\s?%",
+   "sources": [
+    "B01",
+    "B04"
+   ],
+   "files": 9,
+   "lines": 101,
+   "top": [
+    {
+     "file": "ladder/ladder.html",
+     "count": 80,
+     "first_line": 39
+    },
+    {
+     "file": "ladder/costs.html",
+     "count": 12,
+     "first_line": 36
+    },
+    {
+     "file": "audit-92d12752/index.html",
+     "count": 2,
+     "first_line": 22
+    },
+    {
+     "file": "audit-92d12752/results.json",
+     "count": 2,
+     "first_line": 227
+    },
+    {
+     "file": "COORDINATION.md",
+     "count": 1,
+     "first_line": 721
+    },
+    {
+     "file": "ladder/assumptions.html",
+     "count": 1,
+     "first_line": 31
+    },
+    {
+     "file": "ladder/data/assumptions.json",
+     "count": 1,
+     "first_line": 12
+    },
+    {
+     "file": "ladder/model.py",
+     "count": 1,
+     "first_line": 261
+    }
+   ]
+  },
+  {
+   "key": "usd_8697",
+   "label": "USD 86.97 = HSBC fee cap of CNY 620 restated at 7.129",
+   "regex": "86\\.97",
+   "sources": [
+    "T07",
+    "B06"
+   ],
+   "files": 27,
+   "lines": 137,
+   "top": [
+    {
+     "file": "repatriate/exports/cost-ladders.csv",
+     "count": 33,
+     "first_line": 9
+    },
+    {
+     "file": "repatriate/exports/cost-ladders.json",
+     "count": 33,
+     "first_line": 113
+    },
+    {
+     "file": "verify-d5d1f860/exports/costs.csv",
+     "count": 33,
+     "first_line": 9
+    },
+    {
+     "file": "briefing/build.py",
+     "count": 5,
+     "first_line": 387
+    },
+    {
+     "file": "COORDINATION.md",
+     "count": 4,
+     "first_line": 440
+    },
+    {
+     "file": "briefing/index.html",
+     "count": 3,
+     "first_line": 19
+    },
+    {
+     "file": "acceptance-a64bd476/verify.py",
+     "count": 2,
+     "first_line": 103
+    },
+    {
+     "file": "briefing/EXECUTIVE_SUMMARY.md",
+     "count": 2,
+     "first_line": 16
+    }
+   ]
+  },
+  {
+   "key": "usd_3086",
+   "label": "USD 30.86 = HSBC minimum fee of CNY 220 restated at 7.129",
+   "regex": "30\\.86",
+   "sources": [
+    "T07",
+    "B06"
+   ],
+   "files": 23,
+   "lines": 34,
+   "top": [
+    {
+     "file": "COORDINATION.md",
+     "count": 3,
+     "first_line": 597
+    },
+    {
+     "file": "briefing/costs.html",
+     "count": 3,
+     "first_line": 24
+    },
+    {
+     "file": "acceptance-a64bd476/verify.py",
+     "count": 2,
+     "first_line": 102
+    },
+    {
+     "file": "repatriate/costs.html",
+     "count": 2,
+     "first_line": 21
+    },
+    {
+     "file": "repatriate/exports/cost-ladders.csv",
+     "count": 2,
+     "first_line": 2
+    },
+    {
+     "file": "repatriate/exports/cost-ladders.json",
+     "count": 2,
+     "first_line": 15
+    },
+    {
+     "file": "verify-d5d1f860/costs.html",
+     "count": 2,
+     "first_line": 26
+    },
+    {
+     "file": "verify-d5d1f860/exports/costs.csv",
+     "count": 2,
+     "first_line": 2
+    }
+   ]
+  },
+  {
+   "key": "boards",
+   "label": "any citation of a mainland bank's own site",
+   "regex": "boc\\.cn|icbc\\.com\\.cn|abchina\\.com|cmbchina\\.com|wealth\\.ccb\\.com|bankcomm\\.com",
+   "sources": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05"
+   ],
+   "files": 1,
+   "lines": 1,
+   "top": [
+    {
+     "file": "audit-92d12752/scan.py",
+     "count": 1,
+     "first_line": 13
+    }
+   ]
+  },
+  {
+   "key": "ann40",
+   "label": "outbound tax-filing rule (SAT/SAFE 2013 No. 40)",
+   "regex": "2013年第40号|Announcement 2013 No\\. ?40|税务备案",
+   "sources": [
+    "R10"
+   ],
+   "files": 9,
+   "lines": 14,
+   "top": [
+    {
+     "file": "reports/CNY_TO_USD_RESEARCH_LEDGER.json",
+     "count": 4,
+     "first_line": 398
+    },
+    {
+     "file": "audit-ad300459/findings.json",
+     "count": 2,
+     "first_line": 60
+    },
+    {
+     "file": "reports/EXECUTIVE_SUMMARY_85f37d08.md",
+     "count": 2,
+     "first_line": 49
+    },
+    {
+     "file": "audit-ad300459/exports/findings.csv",
+     "count": 1,
+     "first_line": 10
+    },
+    {
+     "file": "audit-ad300459/findings.html",
+     "count": 1,
+     "first_line": 87
+    },
+    {
+     "file": "audit-ad300459/sources.html",
+     "count": 1,
+     "first_line": 87
+    },
+    {
+     "file": "portal/conversion-penalties.html",
+     "count": 1,
+     "first_line": 63
+    },
+    {
+     "file": "portal/flagged-for-review.html",
+     "count": 1,
+     "first_line": 60
+    }
+   ]
+  },
+  {
+   "key": "emigrant",
+   "label": "emigrant asset-transfer route",
+   "regex": "移民财产|emigrant",
+   "sources": [
+    "R12"
+   ],
+   "files": 42,
+   "lines": 66,
+   "top": [
+    {
+     "file": "briefing/methods.html",
+     "count": 5,
+     "first_line": 17
+    },
+    {
+     "file": "data/china-rules.json",
+     "count": 4,
+     "first_line": 114
+    },
+    {
+     "file": "briefing/costs.html",
+     "count": 3,
+     "first_line": 18
+    },
+    {
+     "file": "repatriate/data/methods.json",
+     "count": 3,
+     "first_line": 90
+    },
+    {
+     "file": "repatriate/methods.html",
+     "count": 3,
+     "first_line": 103
+    },
+    {
+     "file": "site/china-rules.html",
+     "count": 3,
+     "first_line": 99
+    },
+    {
+     "file": "verify-d5d1f860/methods.html",
+     "count": 3,
+     "first_line": 84
+    },
+    {
+     "file": "data/methods.json",
+     "count": 2,
+     "first_line": 64
+    }
+   ]
+  },
+  {
+   "key": "s988",
+   "label": "26 USC 988 mentions",
+   "regex": "§\\s?988|section 988|Section 988|26 U\\.?S\\.?C\\.? ?§? ?988",
+   "sources": [
+    "U01"
+   ],
+   "files": 66,
+   "lines": 121,
+   "top": [
+    {
+     "file": "COORDINATION.md",
+     "count": 7,
+     "first_line": 159
+    },
+    {
+     "file": "data/methods.json",
+     "count": 7,
+     "first_line": 46
+    },
+    {
+     "file": "reports/CNY_TO_USD_RESEARCH_LEDGER.json",
+     "count": 7,
+     "first_line": 199
+    },
+    {
+     "file": "site/conversion-routes.html",
+     "count": 7,
+     "first_line": 56
+    },
+    {
+     "file": "audit-ad300459/findings.json",
+     "count": 5,
+     "first_line": 120
+    },
+    {
+     "file": "verify-d5d1f860/build.py",
+     "count": 5,
+     "first_line": 378
+    },
+    {
+     "file": "portal/generate_portal.py",
+     "count": 4,
+     "first_line": 119
+    },
+    {
+     "file": "reports/EXECUTIVE_SUMMARY_85f37d08.md",
+     "count": 4,
+     "first_line": 26
+    }
+   ]
+  }
+ ],
+ "main_commit": "a67e544"
+}
