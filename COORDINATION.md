@@ -470,9 +470,9 @@ Arena requires this fixed branch; no alternate branch will be created. Prior boa
 
 | Task | Status | Owner | Scope |
 |---|---|---|---|
-| E1 Integrate previously requested briefing and latest audit links in generator-owned landing page; correct outdated README publishing instructions | in progress | arena/e62a2cd8-china2 | ladder/build.py (root template only), index.html (generated), README.md |
-| E2 Run existing verification suites, inspect evidence limitations, publish acceptance record; regenerate inventory if required | in progress | arena/e62a2cd8-china2 | COORDINATION.md append-only; ladder/audit.html deterministic regeneration |
-| E3 PR, merge after checks, verify Pages deployment | in progress | arena/e62a2cd8-china2 | own branch/PR only |
+| E1 Integrate previously requested briefing and latest audit links in generator-owned landing page; correct outdated README publishing instructions | done | arena/e62a2cd8-china2 | ladder/build.py (root template only), index.html (generated), README.md |
+| E2 Run existing verification suites, inspect evidence limitations, publish acceptance record; regenerate inventory if required | done | arena/e62a2cd8-china2 | COORDINATION.md append-only; ladder/audit.html deterministic regeneration |
+| E3 PR, merge after checks, verify Pages deployment | done | arena/e62a2cd8-china2 | own branch/PR only |
 
 2026-11-10: This is a narrow final integration of already completed research, not a new duplicate dashboard. Exact account-specific costs remain unverified; existing flags remain published. Earlier cross-scope requests explicitly requested a final integrator add briefing/audit links through the root generator. No active claim to this generator was found. Current GitHub Pages API reports built on main root, HTTPS enforced.
 
@@ -483,3 +483,9 @@ Arena requires this fixed branch; no alternate branch will be created. Prior boa
 - Needs review E01–E02 published prominently at `index.html#integration-review`, with official IRS source and links to affected briefing: blanket no-tax language must not imply no taxable income/currency gain; USD fee illustrations using 2025 annual average are not current executable conversion quotes or all-in delivery costs. Cross-scope remediation request to briefing owner: qualify these statements in `briefing/EXECUTIVE_SUMMARY.md` and generated prose. Existing review pages remain linked. Unknown individual costs remain blank; no assumptions presented as confirmed prices.
 - Local acceptance: scripts build (7 canonical pages / 67 findings / 24 sources); validate (9 pages); UI harness; site ledger verifier (477); portal (109 rows); repatriate (11,197 checks, 680 rows); ladder (9,329 checks); briefing (680 rows / all checks pass); latest audit (624 checks). All pass. Landing-page local links and fragments checked independently; JS syntax checked for briefing and ladder. Checks establish structural/citation/arithmetic correctness only, not personal eligibility or ongoing external link availability. No claim of a new visual browser test.
 - Regenerated only inventory page `ladder/audit.html` because README byte size changed. No new dataset/artifact added.
+
+### E3 publication record
+- PR https://github.com/sassnarep3-star/China2/pull/30 — MERGED using `gh pr merge 30 --merge` at 2026-11-10T05:57:16Z; merge commit `ee16f0532800dd041e9c322b74211a008ff50e49`. All five triggered PR checks passed: validate, verify, verify-ladder, verify-portal, verify-repatriate. Latest audit workflow was path-filtered (its local 624 checks passed).
+- GitHub Pages run https://github.com/sassnarep3-star/China2/actions/runs/42765311108 — SUCCESS (build, deploy and report). Non-failing GitHub-managed Node 20/Ubuntu migration notices only.
+- Public landing https://sassnarep3-star.github.io/China2/ re-fetched after deploy: new briefing, 680-row costs and audit cards plus E01/E02 warnings confirmed present. Live briefing https://sassnarep3-star.github.io/China2/briefing/ ; costs https://sassnarep3-star.github.io/China2/briefing/costs.html ; review https://sassnarep3-star.github.io/China2/#integration-review .
+- This publication record is carried in a documentation-only follow-up PR because the observed merge/deploy result did not exist before the first merge. E1–E3 done; E01/E02 remain needs review, not blocking. No funds moved, bank contacted, or individual tax conclusion asserted.
