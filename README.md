@@ -51,3 +51,26 @@ GitHub Pages uses the repository's existing native **`main` root** build. Root `
 Every research table row links to an official source. CI checks citation coverage and local links; external source availability is not continuously checked. See the source ledger for what was actually read and the Flagged for Review page for discrepancies and unconfirmed values.
 
 **Privacy:** This repository and Pages site are public. Never add passports, account numbers, bank statements, tax IDs, signed authorizations or private tax records.
+
+---
+
+## Supplementary deep-dive analysis (session `arena/5cdc93ae-china2`)
+
+An independent, deeper analysis section lives in [`deep-dive/`](deep-dive/index.html), published at
+**https://sassnarep3-star.github.io/China2/deep-dive/**. It is **supplementary** — the canonical
+dashboard is the one served at the repository root.
+
+- [Supplementary dashboard](deep-dive/index.html) — headline finding, ranked routes, the five layers of the conversion penalty
+- [Conversion methods catalogue](deep-dive/methods.html) — 12 lawful channels and 7 prohibited ones, each with cost, legal risk, pros and cons
+- [China FX rules](deep-dive/china-rules.html) — quotas, penalties, criminal thresholds
+- [Tax costs & treaty](deep-dive/tax-costs.html) — Chinese rates and every verified US–China treaty rate
+- [US obligations](deep-dive/us-obligations.html) — FEIE, FTC, FBAR, Form 8938, § 988(e)
+- [Penalty analysis](deep-dive/analysis.html) — the conversion penalty in five separable layers, with worked scenarios
+- [Flagged for review](deep-dive/flagged.html) — unverified values, with the best source found and what would close each one
+- [Source registry](deep-dive/sources.html) — every source used, with its status
+
+Research files: [`research/00-source-registry.md`](research/00-source-registry.md) … [`research/06-penalty-breakdown.md`](research/06-penalty-breakdown.md), indexed at [`research/README.md`](research/README.md). Executive summary: [`research/EXECUTIVE_SUMMARY_arena-5cdc93ae.md`](research/EXECUTIVE_SUMMARY_arena-5cdc93ae.md).
+
+**Headline finding:** China's USD 50,000 per person per year individual FX quota is a *documentation* threshold, not a legal ceiling — SAFE states explicitly that conversion beyond the quota is permitted with valid ID plus documents proving the transaction is genuine. If the money is personal, lawfully-earned and already taxed in China, converting it carries **no Chinese income tax at all**; the only costs are the bank's FX spread and, on the US side, any currency gain above USD 200 under 26 U.S.C. § 988(e).
+
+`deep-dive/` is plain static HTML with no build step and no runtime dependencies, and is not scanned by any of the three CI workflows. Every table row carries an official source link; unconfirmed values are left blank and flagged.

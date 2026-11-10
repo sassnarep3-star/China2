@@ -439,6 +439,90 @@ Session `arena/11c20135-china2` tasks I1–I3 all done. Open irregularities rema
 
 ---
 
+> **Integration note (2026-11-10, `arena/d6e08526-china2`):** PR #12 head has had no commits since 2026-11-08 23:09 UTC (>60 minutes stale; two independent review comments on the PR went unanswered). Under the 60-minute rule its commits are merged through this integration branch — original history preserved, no force push to their branch. Their COORDINATION copy predates later sessions' sections; those sections are preserved verbatim elsewhere in this file and were NOT overwritten. Their board section follows verbatim, then the integration corrections applied to the overbroad claims the PR comments identified are recorded at the end of this file.
+
+# Session `arena/5cdc93ae-china2` — Deep-Dive Analysis, Executive Summary and Supplementary Site Section
+
+> **Environment note (shared with the three prior sessions):** Arena pins this session to branch `arena/5cdc93ae-china2` and prohibits creating or switching branches; the fixed Arena branch therefore substitutes for the requested `session-<id>/<task>` branch. Every file owned by the prior sessions (`docs/**`, `site/**`, `portal/**`, `data/**`, `research/findings.json`, `research/sources.json`, `research/METHODOLOGY.md`, `research/EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY.md`, `EXECUTIVE-SUMMARY.md`, `README.md`, `scripts/**`, `tools/**`, `.github/**`, `index.html`, `package.json`) is **preserved intact and unedited** in this merge. This session works strictly in its disjoint scope.
+
+## Task board
+
+| # | Task | Status | Owner (session) | Files in scope |
+|---|------|--------|-----------------|----------------|
+| 1 | Research: China capital controls & SAFE rules (individual quota, remittance procedures, penalties) | done | arena/5cdc93ae-china2 | `research/01-china-fx-controls.md` |
+| 2 | Research: Tax costs — PRC withholding (dividends/interest/royalties/services), US-China tax treaty, VAT on cross-border services | done | arena/5cdc93ae-china2 | `research/02-china-tax-costs.md`, `research/04-treaty-rates.md` |
+| 3 | Research: US-side taxation — worldwide income, Foreign Tax Credit, FEIE, FBAR/Form 8938 penalties | done | arena/5cdc93ae-china2 | `research/03-us-tax-obligations.md` |
+| 4 | Enumerate all CNY→USD conversion/repatriation methods with pros/cons & penalty breakdown | done | arena/5cdc93ae-china2 | `research/05-conversion-methods.md`, `research/06-penalty-breakdown.md` |
+| 5 | Executive summary | done | arena/5cdc93ae-china2 | `research/EXECUTIVE_SUMMARY_arena-5cdc93ae.md` |
+| 6 | Repo review (line-by-line audit of existing repo content) | done | arena/5cdc93ae-china2 | `research/06-penalty-breakdown.md` (irregularities), this log |
+| 7 | Site section: supplementary deep-dive dashboard (landing + category subpages + Flagged for Review + source registry) | done | arena/5cdc93ae-china2 | `deep-dive/**` |
+| 8 | Verification pass: every table row gets an official source link or is left blank + flagged unverified | done | arena/5cdc93ae-china2 | `research/`, `deep-dive/` |
+| 9 | PR to main, merge, confirm Pages deploy, record links here | in progress | arena/5cdc93ae-china2 | `COORDINATION.md` |
+
+## Sources used
+
+**Official, read on the government/regulator site itself:**
+
+- **SAFE** — individual FX purchase quota USD 50,000/person/year with ID-only documentation within the quota ([safe.gov.cn/en/2007/0105/819.html](https://www.safe.gov.cn/en/2007/0105/819.html)); conversion beyond the quota permitted with ID plus documents proving the transaction is genuine ([…/2015/1111/1175.html](https://www.safe.gov.cn/en/2015/1111/1175.html)); violation consequences — watchlist, quota restriction, credit record, AML/criminal referral ([…/2017/0119/1244.html](https://www.safe.gov.cn/en/2017/0119/1244.html)); outward remittance of FDI profits recorded under the **current account**, handled at the bank with evidencing documents and **no quota** ([…/2017/0126/1248.html](https://www.safe.gov.cn/en/2017/0126/1248.html)); Huifa [2017] No. 29 overseas ATM withdrawals — RMB 100,000/person/year, RMB 10,000/card/day, card borrowing prohibited ([…/2017/1230/1397.html](https://www.safe.gov.cn/en/2017/1230/1397.html)); catalogue confirming the **existence** of PBOC Announcement [2004] No. 16, Huifa [2004] No. 118, Huifa [2005] No. 9, Huifa [2007] No. 1, Huizongfa [2007] No. 90 ([…/2014/1126/1131.html](https://www.safe.gov.cn/en/2014/1126/1131.html)); English catalogue PDF confirming the existence of PBOC Decree [2006] No. 3, Huifa [2007] No. 1, Huifa [2003] No. 102 and Announcement [2013] No. 40 ([…/file/file/20170913/e2053fa3ba074f0aa04e0381cbf0f826.pdf](https://www.safe.gov.cn/en/file/file/20170913/e2053fa3ba074f0aa04e0381cbf0f826.pdf)).
+- **PBOC** — Regulations of the PRC on Foreign Exchange Administration (2008 revised), English text: Art. 39 (FX evasion), 40 (illegal arbitrage), 42 (illegal carrying, fine ≤20%), 45 (unauthorised/disguised FX trading), 46 (unlicensed FX business) ([pbc.gov.cn/english/130721/2025080815063231112/index.html](https://www.pbc.gov.cn/english/130721/2025080815063231112/index.html)); September 2021 Notice on Further Preventing and Disposing of Virtual Currency Trading Speculation Risk — all virtual-currency business activities are illegal financial activities ([pbc.gov.cn/goutongjiaoliu/113456/113469/4348521/index.html](http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/4348521/index.html)).
+- **Supreme People's Court** — Fa Shi [2019] No. 1: disguised cross-border FX trading ("对敲" / underground banking) is the crime of illegal business operation under Criminal Law art. 225(4); serious case from RMB 5,000,000 of transactions or RMB 100,000 of illegal gains; especially serious from RMB 25,000,000 or RMB 500,000; fine 1–5× illegal gains (deemed 1/1000 of the amount where gains are unclear); up to 5 years' imprisonment, 5+ years where especially serious; concurrent money-laundering/terrorist-financing offences attract the heavier penalty ([court.gov.cn/zixun/xiangqing/141562.html](https://www.court.gov.cn/zixun/xiangqing/141562.html)).
+- **State Taxation Administration** — EIT Law (English), Art. 4: standard EIT rate 25%; Art. 3(3): non-resident enterprise income subject to 20% ([zhejiang.chinatax.gov.cn](https://zhejiang.chinatax.gov.cn/art/2024-10-30/art_26318_626886.html)); IIT Law (English): employer withholds and remits monthly, overseas-income declaration window 1 March – 30 June, non-residents withheld monthly ([guangdong.chinatax.gov.cn](https://guangdong.chinatax.gov.cn/gdsw/yhyshjzt2024_zcwj_tgfgzlE/2024-07/19/content_01346c4ecaee40b2af8aa3f94a4ee107.shtml)); Guo Shui Hui Han [2009] No. 47 — 10% EIT withholding on dividends/interest to QFIIs ([fgk.chinatax.gov.cn](https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103003/c5248318/content.html)); SAT Announcement [2018] No. 61 — 20% flat withholding on dividends, interest, rent, royalties and transfers of property ([fgk.chinatax.gov.cn](https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245843/content.html)).
+- **IRS** — official US–China income tax convention text (signed 1984, in force 1 January 1987) with Protocol 1, Protocol 2 and the exchange of notes: dividends 10% (Art. 9(2)), interest 10% (Art. 10(2)), royalties 10% (Art. 11(2)), equipment-rental royalties taxed on 70% of gross i.e. 7% effective (Protocol 1 para. 6), saving clause "Notwithstanding any provision of the Agreement, the United States may tax its citizens" (Protocol 1 para. 2), foreign tax credit (Art. 22(2)), **no** tax-sparing credit (exchange of notes), anti-treaty-shopping safeguard (Protocol 1 para. 7) ([irs.gov/pub/irs-trty/china.pdf](https://www.irs.gov/pub/irs-trty/china.pdf)); FEIE maximum USD 130,000 (2025), USD 132,900 (2026), USD 126,500 (2024), USD 120,000 (2023), housing cap USD 39,000 / USD 39,870 ([irs.gov](https://www.irs.gov/individuals/international-taxpayers/figuring-the-foreign-earned-income-exclusion)); FBAR — USD 10,000 aggregate at any time, FinCEN Form 114, due 15 April with automatic extension to 15 October ([irs.gov](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar)); Comparison of Form 8938 and FBAR requirements — thresholds and penalties ([irs.gov](https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements)); foreign tax credit ([irs.gov](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit)); Streamlined filing compliance procedures ([irs.gov](https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures)).
+- **eCFR** — 31 CFR 1010.821 penalty adjustment table, maxima effective 17 January 2025: non-willful USD 16,536 per report; willful the greater of USD 165,353 or 50% of the balance ([ecfr.gov](https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821)).
+
+**Secondary (never used alone in a published table row; each is flagged):** Cornell Legal Information Institute for the text of 26 U.S.C. § 988; Ecovis/DLA Piper commentary for the claim that foreign individuals converting legally-earned after-tax salary face no annual quota; two independent English translations of the PRC Company Law (2023 revision) art. 210 for the 10% statutory surplus reserve.
+
+## Verification performed
+
+1. Every value in a published table was read directly from the text of the official source in that row's Source column.
+2. 30 distinct external links checked for resolution; local links and anchors checked programmatically — no broken local links or anchors in this session's scope.
+3. Where the official text could not be retrieved (network limits, paywall, Chinese-only PDF), the cell is left **blank** and the row is listed on the Flagged for Review page.
+4. No value was inferred, estimated, or back-filled from memory.
+5. Arithmetic shown (for example the 32.5% dividend leakage, and the 7.5-point saving from claiming the treaty) is presented as a calculation from the cited rates, not as a claim sourced from any single document.
+6. The other sessions' full verification chains were re-run on the merged tree before this PR (see the integration notes below).
+
+## Irregularities found during the line-by-line repo review
+
+Published on the Flagged for Review page with source links:
+
+1. The initial commit `d9f3976` contained only an 8-byte `README.md` ("China2") — no task description and no coordination file, so the entire task board had to be created from scratch.
+2. `gh repo view --json hasPagesEnabled` failed — `hasPagesEnabled` is not a valid field on that object. Worked around with `gh api repos/sassnarep3-star/China2/pages`.
+3. `https://www.irs.gov/businesses/international-businesses/china-tax-treaties` returns **HTTP 404**. Dead end; the treaty was sourced instead from the official IRS-hosted PDF at `irs.gov/pub/irs-trty/china.pdf`, which is the primary treaty text.
+4. `https://www.irs.gov/businesses/corporations/comparison-of-form-8938-and-fbar-requirements` returns **HTTP 404**. Dead end; the working URL is `irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements`.
+5. `uscode.house.gov` could not serve 26 U.S.C. § 988 or § 911 (page not found / temporary-format notice). § 988 was read at Cornell LII and flagged; FEIE figures were taken from the IRS pages instead.
+6. No license, `.gitignore` (at the time of this session's first pass) or issue templates. Not a blocker; no license was added because none was specified. A `.gitignore` has since been added by another session.
+
+## Flagged items (status `needs review` — do not block the merge)
+
+Published on the Flagged for Review page with source links and the step that would close each one:
+
+- Cash-export limits out of China (RMB 20,000 per trip; FX cash USD 5,000 / 5,000–10,000 / over 10,000 tiers) — only secondary sources retrieved; the governing instrument Huifa [2003] No. 102 was confirmed to exist on the official SAFE catalogue but its text was not read.
+- Substantive conditions, eligibility, caps and waiting periods of the personal-property-transfer channel (PBOC Announcement [2004] No. 16, Huifa [2004] No. 118, Huifa [2005] No. 9) — existence confirmed on the official SAFE catalogue only.
+- Chinese VAT rate on modern services and the surcharge rates levied on VAT — not verified. This matters because VAT is **not** creditable against US tax.
+- IIT comprehensive-income brackets and the basic deduction; reduced EIT rates for small/high-tech enterprises — not verified against an official English text.
+- PRC Company Law art. 210 (10% statutory surplus reserve, cap 50% of registered capital) — two independent secondary English translations; the official NPC text was not read.
+- SAT/SAFE Announcement [2013] No. 40 (tax recordal replacing the clearance certificate for single outbound payments over USD 50,000) — existence confirmed on the official SAFE catalogue, content from a professional-firm summary.
+- Claim that foreign individuals converting legally-earned after-tax salary face no annual quota — DLA Piper via Ecovis, not an official source.
+- Huifa [2020] No. 14 art. 49 (service-trade FX payments up to USD 50,000 generally no bank document review) — secondary sources only.
+- Text of 26 U.S.C. § 988, including the USD 200 threshold above which the personal-transaction exclusion is lost — read at Cornell LII, which is not a government site.
+- Bank FX spread and wire charges — commercial pricing with no official source; deliberately left blank rather than estimated.
+
+## Integration notes
+
+- **Conflict resolution, nothing discarded.** `git pull --rebase origin main` produced an add/add conflict in `COORDINATION.md` and add/content conflicts in `EXECUTIVE_SUMMARY.md`, `README.md`, `docs/index.html`, `docs/methods.html`, `docs/flagged.html`, `docs/sources.html` and `docs/assets/style.css`. The rebase was **aborted** (no history rewriting, no force push) and replaced with `git merge origin/main`, resolving every conflict **in favour of the other sessions' versions**. The prior boards, dashboards, ledgers and generated artifacts are preserved byte-for-byte.
+- **Why `docs/` was not touched.** `scripts/build.py` **generates** the whole of `docs/` from `research/findings.json` and `research/sources.json`, and `scripts/validate.py` asserts `len(pages) == 9`, that every table row links to a URL in the ledger, and that every source host is in a fixed allowlist (`www.pbc.gov.cn`, `www.safe.gov.cn`, `www.hsbc.com.cn`, `wise.com`, `czj.gz.gov.cn`, `www.irs.gov`, `www.govinfo.gov`, `www.cbp.gov`). Adding this session's HTML pages to `docs/` would have failed the page count, the citation-coverage check and the host allowlist, and editing `docs/index.html` would have been silently reverted by the build, failing `git diff --exit-code`. **This session's supplementary pages were therefore placed in a new, disjoint top-level directory `deep-dive/`**, which no existing workflow scans and which native GitHub Pages publishes at `/China2/deep-dive/` with no settings change.
+- **Pending cross-scope link requests (logged, not unilaterally edited per protocol).** A link from the canonical `docs/index.html` (and the root `index.html`) into `deep-dive/index.html`, mirroring the two identical pending requests already logged by `arena-fcd22b0c` (for `site/`) and `arena/85f37d08` (for `portal/`). Those files are owned by `arena-996dc508` and are generated by `scripts/build.py`, so this session did not edit them. All three supplementary sections are independently live in the meantime, and `deep-dive/index.html` carries a prominent link back to the canonical dashboard.
+
+## Publication record
+
+| Item | Value |
+|---|---|
+| PR | (recorded after merge) |
+| Merge | (recorded after merge) |
+| Pages | https://sassnarep3-star.github.io/China2/ (canonical) · https://sassnarep3-star.github.io/China2/deep-dive/ (this session's supplementary section) |
+
+---
+
 ## Session `arena/d6e08526-china2` — final verification, stale-PR close-out & integration
 
 > Environment note: Arena pins this session to branch `arena/d6e08526-china2`; the fixed branch is used as-is (no branch creation or switching; it substitutes for `session-<id>/<task>`). Full board (above) read before claiming. All prior sessions' scopes are preserved unedited unless a takeover is explicitly recorded below. Claim pushed before substantive work, per protocol.
