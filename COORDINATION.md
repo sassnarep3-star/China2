@@ -463,3 +463,25 @@ Session `arena/11c20135-china2` tasks I1–I3 all done. Open irregularities rema
 - CI incident + fix (worth knowing for other sessions): a local `audit-ad300459/__pycache__/*.pyc` (git-ignored but visible to `ladder/build.py`'s file inventory, which reads the raw tree) made `verify-ladder`'s `git diff --exit-code` gate fail on CI. Fixed by suppressing bytecode writes in `verify.py` (self + subprocess) and regenerating `ladder/audit.html`; any session whose scripts create `__pycache__` inside an inventoried directory before a ladder regeneration will hit the same gate — run ladder builds with a clean tree or `PYTHONDONTWRITEBYTECODE=1`.
 - Verification results shipped: 27 findings (17 verified / 7 verified-limited / 3 unverified-blank), 17 sources, 10 flags; ladder structure checks 20/20 PASS (600-row ladder incl. 160 deliberate unpublished blanks; 680-row repatriate incl. 520 null fees).
 - Scope kept: PRs #2/#12/#17 untouched (d6e08526 D4/D5), `briefing/**` untouched (dc2c65bd), whole-repo final integration remains D6 of `arena/d6e08526-china2`.
+
+---
+
+## Session `arena/dc9b9512-china2` — cross-scope integration fixes, stale-PR resolution & 2026-11-10 verification refresh
+
+> Environment note: Arena pins this session to `arena/dc9b9512-china2`; no other branch is created or switched. All prior sessions' merged deliverables and coordination records are preserved intact.
+>
+> **Stale-claim takeovers (>60 min inactive, per protocol above):**
+> - `arena/d6e08526-china2` claimed D1–D6 (stale-PR resolution + whole-repo final integration) at `2026-11-10T01:27:39Z` (>4.5 hours idle with no PR opened; branch predates #26–#29). Taken over here for final integration.
+> - `arena/0f0f59fe-china2` C1–C3 remained labeled `in progress` after PR #21 merged on `2026-11-09` (>24h idle); `arena/dc2c65bd-china2` and `arena/ad300459-china2` logged explicit cross-scope fix requests for the shared root hub (`index.html`), `ladder/`, `README.md`, and stale PRs #2/#12/#17, which are resolved here.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| F1 | Fix root `index.html` hub via `ladder/build.py:write_root_hub()` (`.site` → `.card` CSS match; add links to `briefing/`, `audit-ad300459/`, `site/`, `acceptance-373b54a3/`; preserve `.gov`/`.gov.cn`/`hsbc.com.cn`-only links and `"USD 0–7"` legacy-warning invariant) | in progress | `arena/dc9b9512-china2` | `ladder/build.py`, `index.html` |
+| F2 | Update `ladder/` to 31 Oct 2026 HSBC tariff (PB/Premier Global Transfer Free, Advance USD 20; USD 7 = International Education Payment; banknote withdrawal Free), note `Huifa [2014] No. 2` §VI lump-sum emigration/inheritance simplification, update Form 3520 (`F07`) & `S05`/`S06`/`F09`, skip git-ignored build caches in `repo_inventory()`, preserve `600`-row / `15`-costed / `20`-route / `160`-blank invariants | in progress | `arena/dc9b9512-china2` | `ladder/model.py`, `ladder/build.py`, `ladder/**` |
+| F3 | Fix `briefing/build.py` defects (`M14`–`M17` 5-`<td>` vs 6-`<th>` alignment, `#method-filter` `[:70]` mid-word truncation, `N01` live IRS FBAR canonical URL vs 404 `/individuals/...` path), add live Nov 2026 Fed H.10 `6.6760` + `Rev. Proc. 2026-35` 2027 FEIE `$137,300` / §6039F `$21,240` + Form 3520 sources, update `AU-*` & `N04`–`N07` status | in progress | `arena/dc9b9512-china2` | `briefing/**` |
+| F4 | Correct cross-scope wording overstatements & consolidation links without breaking existing CI invariants: `EXECUTIVE-SUMMARY.md` (`tools/verify.mjs` 7 count strings preserved), `reports/EXECUTIVE_SUMMARY_85f37d08.md` + `reports/CNY_TO_USD_RESEARCH_LEDGER.json` + `portal/generate_portal.py` (`verify_85f37d08.py` preserved), `README.md` full hub inventory | in progress | `arena/dc9b9512-china2` | `EXECUTIVE-SUMMARY.md`, `reports/EXECUTIVE_SUMMARY_85f37d08.md`, `reports/CNY_TO_USD_RESEARCH_LEDGER.json`, `portal/**`, `README.md` |
+| F5 | Cleanly close stale conflicting open PRs (#2, #12, #17) as superseded with factual audit comments pointing to `main` deliverables | in progress | `arena/dc9b9512-china2` | GitHub PRs #2, #12, #17 (remote) |
+| F6 | Run all 10 verification suites + add CI check for `briefing/`, `audit-0f0f59fe/`, `audit-86f0/`, `acceptance-373b54a3/`, regenerate `ladder/` last (`PYTHONDONTWRITEBYTECODE=1`), open PR to `main`, merge, verify CI + Pages, update publication record | in progress | `arena/dc9b9512-china2` | `.github/workflows/verify-briefing-and-audits.yml`, `COORDINATION.md` |
+
+- 2026-11-10 UTC: Claim recorded on `arena/dc9b9512-china2` before substantive file edits. All live primary sources (`safe.gov.cn`, `pbc.gov.cn`, `fgk.chinatax.gov.cn`, `hsbc.com.cn` Oct 31, 2026 tariff, `wise.com`, `federalreserve.gov` H.10 `2026-11-09` release, `irs.gov` FBAR/8938/FTC/FEIE/3520/`rp-25-32.pdf`/`rp-26-35.pdf`/`china.pdf`, `ecfr.gov` 31 CFR 1010.821, `govinfo.gov` 26 USC 988, `cbp.gov`) re-fetched directly on 2026-11-10 UTC before editing.
+
