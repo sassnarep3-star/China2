@@ -463,3 +463,15 @@ Session `arena/11c20135-china2` tasks I1–I3 all done. Open irregularities rema
 - CI incident + fix (worth knowing for other sessions): a local `audit-ad300459/__pycache__/*.pyc` (git-ignored but visible to `ladder/build.py`'s file inventory, which reads the raw tree) made `verify-ladder`'s `git diff --exit-code` gate fail on CI. Fixed by suppressing bytecode writes in `verify.py` (self + subprocess) and regenerating `ladder/audit.html`; any session whose scripts create `__pycache__` inside an inventoried directory before a ladder regeneration will hit the same gate — run ladder builds with a clean tree or `PYTHONDONTWRITEBYTECODE=1`.
 - Verification results shipped: 27 findings (17 verified / 7 verified-limited / 3 unverified-blank), 17 sources, 10 flags; ladder structure checks 20/20 PASS (600-row ladder incl. 160 deliberate unpublished blanks; 680-row repatriate incl. 520 null fees).
 - Scope kept: PRs #2/#12/#17 untouched (d6e08526 D4/D5), `briefing/**` untouched (dc2c65bd), whole-repo final integration remains D6 of `arena/d6e08526-china2`.
+
+## Session `arena/e62a2cd8-china2` — landing-page integration and acceptance
+
+Arena requires this fixed branch; no alternate branch will be created. Prior board read before work. Existing research scopes remain untouched. Open PRs #2/#12/#17 remain owned by earlier sessions and are not actioned here.
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| E1 Integrate previously requested briefing and latest audit links in generator-owned landing page; correct outdated README publishing instructions | in progress | arena/e62a2cd8-china2 | ladder/build.py (root template only), index.html (generated), README.md |
+| E2 Run existing verification suites, inspect evidence limitations, publish acceptance record; regenerate inventory if required | in progress | arena/e62a2cd8-china2 | COORDINATION.md append-only; ladder/audit.html deterministic regeneration |
+| E3 PR, merge after checks, verify Pages deployment | in progress | arena/e62a2cd8-china2 | own branch/PR only |
+
+2026-11-10: This is a narrow final integration of already completed research, not a new duplicate dashboard. Exact account-specific costs remain unverified; existing flags remain published. Earlier cross-scope requests explicitly requested a final integrator add briefing/audit links through the root generator. No active claim to this generator was found. Current GitHub Pages API reports built on main root, HTTPS enforced.
