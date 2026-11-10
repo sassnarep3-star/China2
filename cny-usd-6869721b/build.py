@@ -219,7 +219,7 @@ def glance_table():
         rows.append([usd(a, False), f'{usd(r["boc_total"])}<br><small>{pct(r["boc_pct"])}</small>', f'{usd(r["abc_total"])}<br><small>{pct(r["abc_pct"])}</small>',
                      f'{usd(r["emigrant_total"])}<br><small>{r["emigrant_wires"]} wire{"s" if r["emigrant_wires"] > 1 else ""}, {r["emigrant_years"]} yr</small>',
                      f'{r["atm_years"]} yr<br><small>{usd(r["atm_fee_usd"])} fee</small>', f'{r["cash_trips_5k"]} trips', src(["R2", "F1", "R4", "F3", "L8", "L11", "L12"])])
-    return table(["You send", "Bank of China wire", "Agricultural Bank wire", "Emigrant transfer", "ATM abroad", "Cash, $5,000 a trip", "Source"], rows, "num")
+    return table(["You send", "Bank of China wire", "Agricultural Bank wire", "Emigrant transfer", "ATM abroad", "Cash, $5,000 a trip", "Source"], rows, "num glance")
 
 
 # ---------------------------------------------------------------- index
@@ -289,7 +289,7 @@ def build_costs():
             cells = [r["sell_s"], r["buy_s"], pct(r["half"] * 100, 4)]
         else:
             cells = [BLANK, BLANK, BLANK]
-        bank_rows.append([f'<b>{E(ob["bank"])}</b>'] + cells + [BLANK + f'<br><small>{E(ob["fee_note"])}</small>', BLANK, src(ob["sources"])])
+        bank_rows.append([f'<b>{E(ob["bank"])}</b>'] + cells + [BLANK + f'<br><small class="wn">{E(ob["fee_note"])}</small>', BLANK, src(ob["sources"])])
     banks = table(["Bank", "Sells $100 for", "Buys $100 for", "Spread from midpoint", "Fee per wire", "All-in at $400,000", "Source"], bank_rows, "num")
 
     def ladder(cols, fn, sources):
