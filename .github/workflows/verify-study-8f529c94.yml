@@ -1,0 +1,38 @@
+name: Verify CNY-to-USD study (arena/8f529c94-china2 scope)
+
+# CI verification only — do NOT add actions/deploy-pages here.
+# GitHub Pages for this repository uses native main:/ publishing;
+# study-8f529c94/ publishes automatically at /China2/study-8f529c94/.
+
+on:
+  pull_request:
+  push:
+    branches: ["main", "arena/8f529c94-china2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-study:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Deterministic rebuild of study-8f529c94
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 study-8f529c94/build.py
+      - name: Check generated output is committed byte-identically
+        run: git diff --exit-code -- study-8f529c94
+      - name: Independent line-by-line verification (sources, arithmetic, blanks, row links, local anchors)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 study-8f529c94/verify.py
+      - name: Check browser JavaScript syntax
+        run: node --check study-8f529c94/assets/app.js
