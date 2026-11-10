@@ -1,0 +1,41 @@
+name: Verify cost-increments matrix (arena-8a2bd205-china2 scope, integrated)
+
+# CI only - no deploy step. GitHub Pages for this repository is native from the
+# main root (see COORDINATION.md); adding actions/deploy-pages here would change
+# the Pages source and break the live site. The cost-increments/ directory is
+# served as static files at /China2/cost-increments/ with no settings change.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-cost-increments:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Deterministic rebuild (byte-identical output required)
+        run: |
+          python3 cost-increments/build.py
+          git diff --exit-code -- cost-increments
+      - name: Independent verification (recomputation, sources, blanks, links)
+        run: python3 cost-increments/verify.py
+      - name: HTML sanity (python stdlib parser on every page)
+        run: |
+          python3 - << 'EOF'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class P(HTMLParser):
+              pass
+          for f in sorted(Path('cost-increments').glob('*.html')):
+              P().feed(f.read_text())
+              print('parsed', f.name)
+          EOF

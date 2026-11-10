@@ -840,6 +840,8 @@ def write_root_hub():
          "Shows modelled bands using explicit assumptions. Not an account quote or an officially verified all-in cost."),
         ("audit-86f0/costs.html", "Source-only blank matrix", "22 methods · 40 tiers",
          "Leaves unverified FX spreads, transfer totals and tax amounts blank. Blank means unverified, not zero."),
+        ("cost-increments/index.html", "Cost increments detail", "40 steps from $10k to $400k · 20 sources",
+         "Known fee components computed line by line at each increment; unverified items stay blank and flagged (I-01–I-15)."),
         ("ladder/routes.html", "Methods & execution", "Eligibility · pros/cons · step by step",
          "Routes are conditional; the bank must confirm documents, status, service availability and limits."),
         ("ladder/tax.html", "Tax & reporting", "PRC income tax · U.S. FTC · FBAR/FATCA",
@@ -856,6 +858,8 @@ def write_root_hub():
          "A separate official-source portal; compare scope and caveats before relying on a claim."),
         ("repatriate/index.html", "Repatriation study", "Methods · costs · tax · audit",
          "Another independent route/cost review. Its data and caveats are documented on that site."),
+        ("acceptance-373b54a3/index.html", "Independent acceptance review", "Combined-tree acceptance checks",
+         "Third-party acceptance run of the published suites: what was verified and which limits remain needs-review."),
     ]
     site_cards = "".join(
         f'<a class="site" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
