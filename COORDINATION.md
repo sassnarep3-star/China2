@@ -604,3 +604,12 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Merge conflict log (2026-11-10 UTC): concurrent PRs #34, #35, #36, #37, #38, #40 advanced `main` while PR #32 was open. Merged `origin/main` (`e1448b1` then `0cd0317`) into `arena/a64bd476-china2`; stopped on append-only conflict in `COORDINATION.md` and generated-inventory conflict in `ladder/audit.html`; preserved all concurrent sessions' board records verbatim without discarding any work, re-ran `acceptance-a64bd476/verify.py` + `build.py`, and deterministically regenerated `ladder/audit.html` via `ladder/model.py` + `ladder/build.py`.
 - Cross-scope request (logged, not edited): future root-hub owner may add a link to `acceptance-a64bd476/index.html` in `ladder/build.py` if desired.
 - Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
+
+## Session `arena/6068a908-china2` — independent targeted review
+
+Arena fixes this session to its existing branch. Historical claims remain respected; this session does not claim other sessions' substantive files. This is a targeted review, not a certification of the entire inherited repository.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Review published core findings and cost limitations against accessible official sources; publish any material irregularities | in progress | `arena/6068a908-china2` | `audit-6068a908/**`, append-only `COORDINATION.md` |
+| Validate and publish the review; regenerate inventory only if required | in progress | `arena/6068a908-china2` | `ladder/audit.html` (generated inventory only), append-only `COORDINATION.md` |
