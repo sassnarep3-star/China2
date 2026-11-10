@@ -427,3 +427,39 @@ No other session's file scope will be edited. Existing cost matrices and route c
 | D6 | Final integration: one PR from this session branch to `main` with summary/sources/irregularities; merge without waiting; confirm GitHub Pages deploy; fix any failing check and retry; record PR + merge + Pages results here | in progress | `arena/d6e08526-china2` | `COORDINATION.md` (append) |
 
 - 2026-11-10 UTC: Claim recorded before substantive work. No active claim by another session found (0f0f59fe C1–C3 rows are stale past 60 minutes; its PR #21 already merged). Prior sessions' file scopes preserved.
+
+---
+
+## Session `arena/8a2bd205-china2` — imported by integration (taken over, `cost-increments/`)
+
+> **Takeover note (2026-11-10, `arena/d6e08526-china2`):** PR #17 head has had no commits since 2026-11-08 23:22 UTC (>60 minutes stale) and its own session never published a completion record on main. Under the 60-minute rule its commits are merged through this integration branch (original commit history preserved, no force push to their branch). Their COORDINATION copy predated later sessions' sections; those sections are preserved verbatim above and were NOT overwritten. Their verbatim board section follows.
+
+## Session `arena/8a2bd205-china2` — CNY→USD Cost-Increment Analysis ($10,000–$400,000) & Integration
+
+> **Environment note:** this session is pinned to branch `arena/8a2bd205-china2` (based on `bb7796b` = current `main` HEAD, which includes all prior sessions' merged work: PRs #1, #3, #4, #6, #7, #8, #9, #10, #11). This session does **not** touch files owned by prior sessions (`docs/**`, `site/**`, `portal/**`, `research/**`, `data/**`, `scripts/**`, `tools/**`, `README.md`, root `index.html`) and does **not** touch files claimed by the in-flight session `arena/5cdc93ae-china2` (PR #12: `research/00–06*.md`, `deep-dive/**`, `EXECUTIVE_SUMMARY_arena-5cdc93ae.md`). All new work lives in one new disjoint directory: `cost-increments/**`. Shared outputs (root redirect, `docs/` navigation) are **not** edited; a cross-link request is logged below instead.
+
+| # | Task | Status | Owner | Files |
+|---|------|--------|-------|-------|
+| B1 | Official-source verification pass for cost-increment model inputs (SAFE quota, beyond-quota docs, IIT law, treaty, FEIE, FBAR/8938 thresholds, CMIR, HSBC tariff, IRS §988(e), USD/CNY reference rate, US/PRC receiving fees where officially published) | in progress | `arena/8a2bd205-china2` | `cost-increments/data.json` (new) |
+| B2 | Cost tables for transferring/converting CNY→USD in USD 10,000 increments from $10,000 to $400,000 — verified cost components, per method, mobile-friendly, most-important-first | in progress | `arena/8a2bd205-china2` | `cost-increments/**` (new) |
+| B3 | Step-by-step execution procedure per method; cost model + assumptions + flagged/unverified items | in progress | `arena/8a2bd205-china2` | `cost-increments/**` (new) |
+| B4 | Consolidated executive summary updates + repo spot-audit of cost-relevant claims | in progress | `arena/8a2bd205-china2` | `cost-increments/**` (new) |
+| B5 | Final integration: PR from `arena/8a2bd205-china2` to `main`, merge, GitHub Pages live confirmation, record in COORDINATION.md | in progress | `arena/8a2bd205-china2` | `COORDINATION.md` (append-only) |
+
+### Pending cross-scope link request (logged, not unilaterally edited per protocol)
+- `arena/8a2bd205-china2` requests a link to `/China2/cost-increments/` be added to the `docs/` navigation and/or root redirect page in a future integration that owns those files. Until then the page is served directly at `https://sassnarep3-star.github.io/China2/cost-increments/` (native Pages, repo root, no settings change).
+
+### Concurrency note
+- 2026-11-08 UTC: PR #12 (`arena/5cdc93ae-china2`) was open and updated at 2026-11-08T23:08:54Z (minutes before this claim). This session therefore claims only the disjoint `cost-increments/**` path. If PR #12 merges before this session's PR, this session will rebase onto the new `main`, resolve any `COORDINATION.md` append conflict by keeping both boards, and re-verify before merging.
+
+### Integration & concurrency log — `arena/8a2bd205-china2`
+- 2026-11-08 UTC (rebase #1 onto `84967fc`): `main` advanced while this session worked — `arena/86f0e94b-china2` merged PRs #13/#14 (`audit-86f0/`, blank-cost 22×40 matrix) and `arena/de9755b1-china2` merged PR #15 (`ladder/`, costed 15-route × 40-tier model, and replaced root `index.html` with a generated navigation hub; README now leads with `ladder/`). This session had already pushed claim `4fa40e4` and deliverable `43349a0` to its own session branch. Resolved via a **merge** (no force push, no history rewriting): `COORDINATION.md` append conflict resolved by keeping 100% of the 86f0e94b and de9755b1 sections **verbatim and first**, then this session's claim — matching the established convention. Zero file overlap on disk (`audit-86f0/**`, `ladder/**` vs `cost-increments/**`). Follow-up commit `51a2a7d` corrects a stale “root redirect” wording in this session's `verification.html` accordingly; `verify.py` re-run green.
+- **Disclosure of overlapping scope:** two same-topic deliverables now exist on `main` and this branch adds a third: `ladder/` (spread *band* model, final-integration-owned shared outputs) and `audit-86f0/` (blank-cost policy). `cost-increments/` deliberately does the mechanical, formula-printed version: source-backed fee components only, spread blank, master matrix + per-method tables + step-by-step for R01–R18. Cross-linked from this session's pages; readers should compare all three. This session does not endorse or disavow the others' content beyond what its own verification.html states.
+- Tasks B1–B4 done (verification pass, $10k–$400k tables, step-by-step, executive summary + spot audit). B5 (integration/merge/Pages confirmation) completes with this session's PR; final merge record will be carried in a small follow-up PR as the publication record cannot pre-exist the merge.
+- Link request (extended): add `/China2/cost-increments/` to the root hub (`index.html`), `README.md`, and `docs/` navigation at the next integration that owns those shared files.
+
+### Cross-scope generated-output note — `arena/8a2bd205-china2`
+- 2026-11-08 UTC: PR #17’s `verify-ladder` check failed on `git diff --exit-code -- ladder index.html` because `ladder/build.py` (arena/de9755b1 scope) embeds a repository file inventory in the generated `ladder/audit.html`, and this PR adds new files. Resolution per that workflow’s own design: ran `python3 ladder/build.py` and committed its output verbatim (`ladder/audit.html` only; no hand edits to any `ladder/` file, no source changes). `ladder/model.py` → 600 rows; `ladder/verify.py` → 9,346 checks, 0 failures on the combined tree before the commit. Root `index.html` did not change.
+
+### Ladder-CI resolution — `arena/8a2bd205-china2`
+- 2026-11-08 UTC: `verify-ladder` failed on `git diff --exit-code -- ladder index.html` because `ladder/build.py` inventories the working tree (including gitignored `.cache/`) into the generated `ladder/audit.html`. First committed regeneration was polluted by this session's local headless-browser install (`.cache/browser`, ~350 MB of npm artifacts). Fix: removed `.cache/` and all `__pycache__/` from the tree, re-ran `python3 ladder/build.py` (95 files inventoried → the committed `ladder/audit.html` was regenerated to match a clean checkout exactly), `ladder/verify.py` → 9,346 checks, 0 failures. No `ladder/` source file was edited by hand; only the generated file was committed, twice, with the second commit representing the clean tree. COORDINATION.md is unchanged after this note's commit; audit.html regenerated after this note and committed separately.
