@@ -489,3 +489,43 @@ Arena requires this fixed branch; no alternate branch will be created. Prior boa
 - GitHub Pages run https://github.com/sassnarep3-star/China2/actions/runs/42765311108 — SUCCESS (build, deploy and report). Non-failing GitHub-managed Node 20/Ubuntu migration notices only.
 - Public landing https://sassnarep3-star.github.io/China2/ re-fetched after deploy: new briefing, 680-row costs and audit cards plus E01/E02 warnings confirmed present. Live briefing https://sassnarep3-star.github.io/China2/briefing/ ; costs https://sassnarep3-star.github.io/China2/briefing/costs.html ; review https://sassnarep3-star.github.io/China2/#integration-review .
 - This publication record is carried in a documentation-only follow-up PR because the observed merge/deploy result did not exist before the first merge. E1–E3 done; E01/E02 remain needs review, not blocking. No funds moved, bank contacted, or individual tax conclusion asserted.
+
+---
+
+## Session `arena/ec367b00-china2` — whole-repo final integration (takeover of stale claim) + integrated answer-first dashboard
+
+> Environment note: Arena pins this session to `arena/ec367b00-china2`; that fixed branch substitutes for a `session-<id>/<task>` branch (no branch creation or switching). Board read in full at `main` `f62f032` (PR #31). Because live sessions' claims are not on `main` yet, the claim text on **every** remote session branch with a commit in the last 60 minutes was also read before claiming (table below).
+
+### Live claims read from session branches at 2026-11-10 ~06:00 UTC — respected, not touched
+
+| Session | Their scope | Status seen |
+|---|---|---|
+| `arena/e62a2cd8-china2` | `ladder/build.py` root-hub template, generated root `index.html`, `README.md` (PRs #30/#31) | done / merged |
+| `arena/26d87742-china2` | `ladder/model.py`, `ladder/build.py` fee notices, `ladder/data/*`, `ladder/*.html` (PR #36) | in progress |
+| `arena/4d0863f7-china2` | `briefing/**`, `.github/workflows/verify-briefing.yml` | in progress |
+| `arena/88f5a1be-china2` | `verify-88f5a1be/**`, `.github/workflows/verify-88f5a1be.yml` (PR #35) | in progress |
+| `arena/c9cc56a6-china2` | `guide-c9cc56a6/**`, `.github/workflows/verify-guide-c9cc56a6.yml` | in progress |
+| `arena/a64bd476-china2` | `acceptance-a64bd476/**`, `.github/workflows/verify-acceptance-a64bd476.yml` (PR #32) | in progress |
+| `arena/456e7542-china2` | `audit-456e7542/**` | in progress |
+
+### Handoff note — takeover of the stale whole-repo final-integration claim
+
+- `arena/d6e08526-china2` claimed D1–D6 including the whole-repo "final integration PR". Its last commit is 2026-11-10 01:27 UTC (`d16975c`), it has no open PR, and its board section never reached `main`. That is more than 60 minutes with no commits, so the **final-integration task only** is taken over here under the 60-minute rule. Its branch is not modified and nothing on it is discarded; its unmerged content is inventoried under X4.
+- Older unmerged "final integration / unified dashboard" claims are likewise stale by more than 24 hours and never reached `main`: `arena/e5c3fa35-china2` (11-09 01:30), `arena/21827432-china2` (11-08 23:21), `arena/60be3931-china2` (11-08 23:13), `arena/b9a30a06-china2` (11-08 23:10).
+- No live session claims whole-repo final integration (`arena/c9cc56a6-china2` states explicitly that it does not).
+
+### Why this scope (gap analysis, so this is not a duplicate dashboard)
+
+`main` publishes ten separate dashboards that give different method counts and, in places, contradictory answers; four more are in flight. The landing page is a link hub whose headline tiles read "undetermined". The brief's final-integration duties — one clean landing page, combined data re-verified line by line, no broken links across the whole site — have not been carried out by any session. This session does that, and adds research only where no existing or in-flight scope has it.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| X1 | Fresh official-source research for gaps no other scope covers: (a) published tariffs and posted exchange-rate boards of the major mainland banks, so the FX-spread part of the conversion cost is computed from published figures instead of left blank or assumed; (b) decision matrix by **source of funds** (wages, property sale, inheritance, gift, pre-emigration assets, business profits, money originally brought in); (c) the PRC tax-filing rule for outward payments and the emigrant/inheritance property-transfer rules; (d) U.S. receiving side (Form 3520, §988, FTC, FBAR/8938, late-filing relief). Every row source-linked to a document fetched this session; anything not confirmable left blank and flagged | in progress | `arena/ec367b00-china2` | `integrated/data/**` |
+| X2 | Integrated answer-first dashboard: landing page with the executive summary, plus category subpages (methods + step by step, costs at every $10,000 to $400,000, conversion-penalty breakdown, taxes, sources, repo review, Flagged for Review), mobile-first, no runtime dependencies | in progress | `arena/ec367b00-china2` | `integrated/**` |
+| X3 | Line-by-line reconciliation of the combined published data: each load-bearing claim → what each dashboard on `main` says → verified position with official link; disagreements published on Flagged for Review, not silently rewritten | in progress | `arena/ec367b00-china2` | `integrated/**` (all other directories read-only) |
+| X4 | Whole-site review: every HTML page on `main` crawled for broken local links/fragments; inventory of unmerged session branches and open PRs with a recommendation each | in progress | `arena/ec367b00-china2` | `integrated/**` (read-only elsewhere) |
+| X5 | Independent verifier + CI for this scope | in progress | `arena/ec367b00-china2` | `integrated/verify.py`, `.github/workflows/verify-integrated.yml` |
+| X6 | **Final integration of shared outputs** — root `index.html` (landing), `README.md`, site navigation. Executed **only after** every live task in the table above is merged, done or stale; until then this session does not edit `index.html`, `README.md`, `ladder/**` or `briefing/**`. Any change needed inside another scope's generator is limited to the root-landing hook and is logged here first | pending (blocked on live sessions) | `arena/ec367b00-china2` | root `index.html`, `README.md`; `ladder/audit.html` by unmodified regeneration only |
+| X7 | PR → `main`, merge without waiting, confirm GitHub Pages deploy, record PR link and merge result here | pending | `arena/ec367b00-china2` | `COORDINATION.md` (append-only) |
+
+- 2026-11-10 ~06:02 UTC: Claim recorded and pushed before any research or file edits. Policy for this scope: unknown private facts are never inferred; every table row carries a link to an official source fetched this session; a cost figure is published only when it is arithmetic on published inputs, with the inputs and formula shown; anything else stays blank and is flagged; structural checks are labelled structure-only and are not presented as legal verification.
