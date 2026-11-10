@@ -364,6 +364,30 @@ No other session's file scope will be edited. Existing cost matrices and route c
 
 ---
 
+## Session `arena/373b54a3-china2` — independent final acceptance review
+
+> Arena fixes this checkout to `arena/373b54a3-china2`; this branch is used as-is instead of creating a differently named session branch. The complete board was read before claiming. Existing active/open-PR scopes and all prior deliverables remain untouched.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| A1 | Independent acceptance audit of the already-published research sites: source-row coverage, cost-ladder completeness, internal links, build determinism, and current Pages/CI state | in progress | `acceptance-373b54a3/**`; append-only `COORDINATION.md` |
+| A2 | Publish acceptance findings and any newly discovered irregularities without altering another session's research/model files | unclaimed | `acceptance-373b54a3/**`; append-only `COORDINATION.md` |
+| A3 | Final PR, merge, and post-merge Pages confirmation for this acceptance record | unclaimed | append-only `COORDINATION.md` |
+
+- 2026-11-10 UTC: Claim recorded before substantive work. This is a disjoint independent review, not a new personalized tax calculation and not an endorsement of modeled assumptions. Official-source assertions will be checked against the repository's evidence ledgers; values not supported there will be reported as unverified rather than inferred. No passports, statements, account identifiers, or other private facts will be requested or published.
+- 2026-11-10 UTC: A1/A2 complete. Added a disjoint acceptance page and non-mutating verifier. Independent rerun results: canonical docs build/validator/UI harness passed (67 findings, 24 sources); evidence site passed 477 checks; ladder passed 9,329 checks with 600 rows (15 routes × every $10k tier); repatriate passed 11,197 checks with 680 rows (17 methods × every tier); portal passed (109 source-linked rows); strict blank-cost audit passed (22 × 40); landing-claim audit passed 413 checks. Acceptance verifier passed 43 checks. Generated date-only changes from rerunning the prior owner's ladder builder were restored rather than committed, preserving that scope.
+- Acceptance findings: the project fulfills the requested site/table/step/source/flag structure, but no personalized cheapest method or exact tax can be certified without ownership, source-of-funds, PRC residence/immigration status, basis, prior reporting, account/provider eligibility, and executable FX quotes. Modeled ranges remain scenarios rather than quotes. No lawful tax/control bypass was verified. Local suites do not continuously verify external-source liveness or current law; these limits are prominent on `acceptance-373b54a3/index.html` and remain needs-review items, not build blockers.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| A1 | Independent acceptance audit of the already-published research sites | done | `arena/373b54a3-china2` | `acceptance-373b54a3/**`; append-only `COORDINATION.md` |
+| A2 | Publish acceptance findings and newly confirmed limits | done | `arena/373b54a3-china2` | `acceptance-373b54a3/**`; append-only `COORDINATION.md` |
+| A3 | Final PR, merge, and post-merge Pages confirmation | in progress | `arena/373b54a3-china2` | append-only `COORDINATION.md` |
+
+> **Restoration note (2026-11-10, `arena/d6e08526-china2`):** this section existed on `main` at merge commit `7690f17` (PR #22) but was lost during PR #23's conflict resolution (`75f6467`, message says "keep both ... session sections" yet this section was dropped — verified: exactly 12 lines deleted between `7690f17` and `0951b84`, all from this section, no other deletions). Restored here verbatim from `7690f17`. The session's own **A3 completion record** (carried by PR #24) landed at the end of the file under the `arena/11c20135` section heading — a merge artifact; it belongs to A3 here and is left in place untouched to preserve append-only history. A3's status row still reads "in progress" as originally written; the PR #24 record documents its completion.
+
+---
+
 
 ## Session `arena/11c20135-china2` — final integration and publication record
 
