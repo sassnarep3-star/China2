@@ -1,0 +1,562 @@
+{
+  "meta": {
+    "session": "arena/c9cc56a6-china2",
+    "compiled": "2026-11-10",
+    "scope": "Consolidated CNY to USD repatriation guide: executive summary, all lawful and unlawful methods, conversion-tax and penalty breakdown, USD 10,000-400,000 cost ladder, flagged items, sources, repo audit.",
+    "fx_note": "All cost tables are USD. CNY-denominated bank fee caps are converted at 7.10 CNY/USD purely to express a cap in dollars; the tiers themselves are USD so no exchange-rate forecast is embedded."
+  },
+  "exec": {
+    "headline": "There is no tax on converting CNY into USD. Both governments tax the income, not the conversion - and the income was already taxed when you earned it.",
+    "bullets": [
+      {
+        "t": "China does not tax a conversion",
+        "d": "The Individual Income Tax Law taxes nine listed categories of income - wages, services, author's remuneration, royalties, business income, interest, dividends, property leasing, property transfer, incidental income. Converting your own after-tax renminbi is not one of them. Nothing in the nine categories is triggered by moving an existing balance to USD.",
+        "src": [
+          "G09"
+        ]
+      },
+      {
+        "t": "The US does not tax a conversion either - only the exchange-rate difference",
+        "d": "US citizens are taxed on worldwide income, and foreign income is translated to dollars at the rate in effect when it is earned. Converting later can therefore create only a section 988 foreign-currency gain or loss measured from the rate on the day you acquired the currency. For an individual that is a personal transaction: no gain is recognised if the exchange gain is USD 200 or less.",
+        "src": [
+          "G13",
+          "G18",
+          "G17"
+        ]
+      },
+      {
+        "t": "At official IRS rates, the exchange difference on recent CNY has been a loss, not a gain",
+        "d": "The IRS yearly average for the yuan is 6.452 (2021), 6.730 (2022), 7.075 (2023), 7.189 (2024) and 7.129 (2025). Yuan acquired in 2021-2023 and converted at the 2025 average is worth fewer dollars than its basis, so there is an exchange loss, not a taxable gain. Only a 2024-acquired balance shows a gain, and it is 0.84% of the amount.",
+        "src": [
+          "G19"
+        ]
+      },
+      {
+        "t": "The real cost of lawful conversion is small and published",
+        "d": "The one itemised personal tariff verified for this study charges 0.1% of the remittance with a minimum of CNY 100 and a maximum of CNY 500, plus a CNY 120 cable fee. That is USD 30.99 on USD 10,000 (0.31%) and USD 87.32 on USD 400,000 (0.022%) - the fee cap stops growing while the amount does.",
+        "src": [
+          "G08"
+        ]
+      },
+      {
+        "t": "The real obstacle is documentation, not tax",
+        "d": "A non-domestic individual may convert lawful renminbi current-account income on presenting identity documents plus source-of-funds materials, including tax vouchers. The USD 50,000 annual quota is a facilitation figure that binds quota-based purchases and domestic individuals; the documented-income route is not capped by it. What blocks a stuck balance is the absence of tax records, not a tax rate.",
+        "src": [
+          "G01",
+          "G03",
+          "G02"
+        ]
+      },
+      {
+        "t": "The expensive mistakes are the shortcuts",
+        "d": "Splitting a large amount into small batches, borrowing other people's quotas, using an underground bank, or presenting fabricated documents are statutory violations with fines of 30%-100% of the amount involved - orders of magnitude more than any lawful route costs.",
+        "src": [
+          "G01",
+          "G05"
+        ]
+      }
+    ],
+    "bottom_line": "Do the slow, documented thing. Get the PRC tax record that proves the balance is after-tax income, convert it at your bank with documents rather than within the quota, and file the US reports on time. That costs about 0.02%-0.31% in published bank fees, plus an FX margin the bank will not publish in advance, plus - possibly - a small section 988 exchange gain. Every shortcut converts a fee of tens of dollars into a fine of tens of thousands."
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "method": "C01",
+      "why": "Documented after-tax China income converted and wired from the bank. No annual cap in the published rules, published fee capped at CNY 500 + CNY 120, only route that scales to USD 400,000 without staging over years.",
+      "watch": "Requires tax vouchers and source-of-funds documents for the amount converted.",
+      "src": [
+        "G01",
+        "G03",
+        "G08"
+      ]
+    },
+    {
+      "rank": 2,
+      "method": "C02",
+      "why": "Same documented conversion, but delivered through an own-name HSBC Global Transfer: published fee is zero for Premier and Private Banking, USD 20 for Advance. Removes the correspondent-bank uncertainty on the internal leg.",
+      "watch": "Needs an HSBC account on both ends and Premier's CNY 500,000 total relationship balance for the free tier.",
+      "src": [
+        "G08"
+      ]
+    },
+    {
+      "rank": 3,
+      "method": "C21",
+      "why": "Quota-based purchase with ID only - the least paperwork of any lawful route.",
+      "watch": "USD 50,000 per person per year, so USD 400,000 needs eight calendar years; and it is generally not open to a foreign passport holder without a PRC foreign permanent resident ID.",
+      "src": [
+        "G02",
+        "G04"
+      ]
+    },
+    {
+      "rank": 4,
+      "method": "C07",
+      "why": "Emigration asset transfer - the capital-account route for moving a whole personal balance on emigration, applied for once and remitted in stages.",
+      "watch": "Staged over two years by rule; approval-based; the staging text is an inherited verification (see F06).",
+      "src": [
+        "G07",
+        "G04"
+      ]
+    },
+    {
+      "rank": 5,
+      "method": "C03",
+      "why": "Re-converting unused yuan that was originally bought with foreign currency - cheap and mechanical when the original exchange memo exists.",
+      "watch": "Only works for the amount you can prove you converted into yuan in the first place.",
+      "src": [
+        "G04"
+      ]
+    }
+  ],
+  "tax": {
+    "framework": [
+      {
+        "stage": "1. You earn renminbi in China",
+        "prc": "PRC individual income tax is assessed on the income. Comprehensive income is progressive 3%-45%; business income 5%-35%; interest, dividends, property leasing, property transfer and incidental income 20%. Annual reconciliation 1 March - 30 June.",
+        "us": "The same income is translated to dollars at the rate on the day it is earned and reported on the US return.",
+        "src": [
+          "G09",
+          "G18"
+        ]
+      },
+      {
+        "stage": "2. You hold the renminbi",
+        "prc": "No tax event. A bank deposit is not income.",
+        "us": "No tax event. The dollar basis of the currency is fixed at acquisition.",
+        "src": [
+          "G09",
+          "G17"
+        ]
+      },
+      {
+        "stage": "3. You convert renminbi to dollars",
+        "prc": "No tax event. Conversion is not among the nine categories of taxable income; it is a foreign-exchange transaction governed by SAFE/PBOC, not by the IIT Law.",
+        "us": "Only the exchange-rate difference since acquisition is a section 988 transaction. For an individual's personal transaction no gain is recognised if the exchange gain is USD 200 or less.",
+        "src": [
+          "G09",
+          "G17"
+        ]
+      },
+      {
+        "stage": "4. The dollars sit in your US account",
+        "prc": "Nothing further.",
+        "us": "Reporting, not tax: FBAR if aggregate foreign accounts exceed USD 10,000 at any time; Form 8938 above the FATCA thresholds. Foreign tax already paid on the income can be credited on Form 1116.",
+        "src": [
+          "G10",
+          "G11",
+          "G12"
+        ]
+      }
+    ],
+    "prc_rates": [
+      {
+        "category": "Comprehensive income (wages, services, author's remuneration, royalties)",
+        "rate": "3% - 45% progressive",
+        "note": "RMB 60,000 annual deduction plus itemised deductions",
+        "src": [
+          "G09"
+        ]
+      },
+      {
+        "category": "Business income",
+        "rate": "5% - 35% progressive",
+        "note": "On business operating income",
+        "src": [
+          "G09"
+        ]
+      },
+      {
+        "category": "Interest, dividends, property leasing, property transfer, incidental income",
+        "rate": "20% flat",
+        "note": "Withheld at source in most cases",
+        "src": [
+          "G09"
+        ]
+      },
+      {
+        "category": "A bare CNY-to-USD conversion of your own after-tax balance",
+        "rate": "",
+        "note": "Not a listed category - no PRC tax attaches to the conversion itself. Left blank because no official text imposes one.",
+        "src": [
+          "G09"
+        ]
+      }
+    ],
+    "us_reporting": [
+      {
+        "item": "FBAR (FinCEN Form 114)",
+        "threshold": "Aggregate foreign financial accounts over USD 10,000 at any time in the calendar year",
+        "consequence": "Non-willful maximum USD 16,536 per violation; willful maximum USD 165,353 (amounts assessed on or after 17 January 2025)",
+        "due": "15 April, automatic extension to 15 October",
+        "src": [
+          "G10",
+          "G16",
+          "G15"
+        ]
+      },
+      {
+        "item": "Form 8938 (FATCA)",
+        "threshold": "Living abroad: USD 200,000 last day / USD 300,000 any time (single); USD 400,000 / USD 600,000 (joint). Living in the US: USD 50,000 / 75,000 (single); USD 100,000 / 150,000 (joint)",
+        "consequence": "",
+        "due": "With the annual return",
+        "src": [
+          "G11"
+        ]
+      },
+      {
+        "item": "Form 1116 (foreign tax credit)",
+        "threshold": "Any foreign income tax paid on income also taxed by the US",
+        "consequence": "Not a penalty - this is the relief. The credit reduces US tax dollar for dollar; foreign tax on FEIE-excluded income cannot be credited",
+        "due": "With the annual return",
+        "src": [
+          "G12",
+          "G14"
+        ]
+      },
+      {
+        "item": "FinCEN Form 105 (currency at the border)",
+        "threshold": "More than USD 10,000 carried, sent or received at one time into or out of the US",
+        "consequence": "Forfeiture and seizure, plus civil or criminal penalties",
+        "due": "At the time of transport",
+        "src": [
+          "G20"
+        ]
+      },
+      {
+        "item": "Section 988 exchange gain on the conversion",
+        "threshold": "Exchange gain above USD 200 on a personal transaction",
+        "consequence": "Gain is recognised; the character question is flagged - see F04",
+        "due": "With the annual return",
+        "src": [
+          "G17"
+        ]
+      }
+    ],
+    "us988_note": "Section 988(e)(1) switches the ordinary-income rule off for an individual's personal transaction, and 988(e)(2) then says no gain is recognised on the disposition of nonfunctional currency by reason of exchange-rate changes - unless the gain would exceed USD 200. The statute does not state the character of the gain once that USD 200 line is crossed. The frequently quoted statement that it is reported as a capital gain could not be verified verbatim from the publication this session (F04), so this site does not choose a character. What it can say with certainty is the amount: only the exchange-rate movement since acquisition."
+  },
+  "penalties": [
+    {
+      "route": "C18 Quota splitting / borrowing other people's quotas",
+      "instrument": "PBOC Decree [2006] No. 3 Art. 7 - evading limit administration by splitting a large amount into small batches",
+      "penalty": "Statutory violation; the fine follows Decree 532 Art. 39 - up to 30% of the amount, 30% to 100% if serious",
+      "src": [
+        "G01",
+        "G05"
+      ]
+    },
+    {
+      "route": "C16 Underground bank / matched onshore-offshore swap",
+      "instrument": "State Council Decree 532 Art. 45 - private or illegal foreign exchange trading",
+      "penalty": "Confiscation of the funds plus a fine of up to 30%, or 30% to 100% if serious; criminal exposure for illegal business operation",
+      "src": [
+        "G05"
+      ]
+    },
+    {
+      "route": "C19 Fabricated contracts or invoices",
+      "instrument": "PBOC Decree [2006] No. 3 Art. 7 - tampering with authenticity administration using fabricated vouchers",
+      "penalty": "Statutory violation; fine follows Decree 532 Art. 39 - up to 30%, 30%-100% if serious",
+      "src": [
+        "G01",
+        "G05"
+      ]
+    },
+    {
+      "route": "C06 / C06 Carrying cash or banknotes out without declaring",
+      "instrument": "State Council Decree 532 Art. 42 - illegal carriage of foreign exchange across the border",
+      "penalty": "Warning plus a fine of up to 20% of the amount; on the US side, undisclosed currency over USD 10,000 is subject to seizure and forfeiture",
+      "src": [
+        "G05",
+        "G20"
+      ]
+    },
+    {
+      "route": "Any route - evading foreign exchange control generally",
+      "instrument": "State Council Decree 532 Art. 39",
+      "penalty": "Fine of up to 30% of the amount involved; where serious, 30% of the amount up to the full amount",
+      "src": [
+        "G05"
+      ]
+    },
+    {
+      "route": "Missing FBAR",
+      "instrument": "31 U.S.C. 5321(a)(5)(B)(i) and (C)(i)(I), as adjusted by 31 CFR 1010.821",
+      "penalty": "Non-willful maximum USD 16,536 per violation; willful maximum USD 165,353",
+      "src": [
+        "G15",
+        "G16"
+      ]
+    },
+    {
+      "route": "Missing Form 8938",
+      "instrument": "26 U.S.C. 6038D / Form 8938 reporting",
+      "penalty": "",
+      "src": [
+        "G11"
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "id": "F01",
+      "topic": "The FX conversion margin is not published - every all-in cost cell carries an assumption",
+      "status": "unverified",
+      "detail": "No bank publishes the customer CNY/USD bid and offer it will actually deal on, so the FX margin cannot be sourced. The cost ladder models a band of 0.30%-1.50% for telegraphic routes, 0.80%-3.00% for cash, 0.00%-3.00% for card routes and 0.20%-1.00% for the offshore route. Those bands are labelled assumptions on every table and are NOT official figures. The published fee column is separate and exact.",
+      "action": "Replace the band with the bank's own executable quote before acting. The published fee is the small part of the all-in cost.",
+      "src": [
+        "G08"
+      ]
+    },
+    {
+      "id": "F02",
+      "topic": "The repo's existing ladder uses a superseded HSBC tariff",
+      "status": "irregularity",
+      "detail": "ladder/data/sources.json (S06) cites the tariff effective 1 January 2021, and ladder/data/costs.csv therefore charges USD 7.00 for a Global Transfer (route R02). The tariff effective 31 October 2026 (G08, item 2.2.6.1) states: free for Private Banking and Premier, and for Advance a CNY 145 indication charge whose actual charge is USD 20 per transaction. This guide uses the 2026 figures. The ladder files were not edited - they are outside this session's scope.",
+      "action": "Ladder owner should refresh S06 to the 31 October 2026 tariff.",
+      "src": [
+        "G08"
+      ]
+    },
+    {
+      "id": "F03",
+      "topic": "Only one bank's personal tariff could be verified",
+      "status": "unverified",
+      "detail": "Bank of China, ICBC, China Construction Bank and Bank of Communications tariffs were not retrieved this session. The fixed-fee column is therefore an HSBC China tariff, and other banks will publish different numbers - some price a wire at a flat fee, some at 0.1% uncapped. Treat the published fee as an order of magnitude, not the price at your bank.",
+      "action": "Substitute your own bank's published schedule.",
+      "src": [
+        "G08"
+      ]
+    },
+    {
+      "id": "F04",
+      "topic": "Section 988 character once the USD 200 line is crossed: capital or ordinary?",
+      "status": "needs-review",
+      "detail": "26 U.S.C. 988(e)(1)-(3) is verified verbatim. What it does not state is the character of the recognised gain above USD 200. One reading applies section 1001 and treats it as gain on a capital asset; another reads section 988(a)(1)(A) as still governing. IRS Publication 525 is widely quoted as saying such a gain is reported as a capital gain, but this session retrieved only the publication's table of contents and could not verify the sentence, so no character is chosen anywhere on this site and no cell depends on one.",
+      "action": "Ask a preparer, or read Publication 525's foreign-currency paragraph and note 26 CFR 1.988-1(a)(8).",
+      "src": [
+        "G17",
+        "G23",
+        "G19"
+      ]
+    },
+    {
+      "id": "F05",
+      "topic": "The PRC virtual-currency prohibition notices were not retrieved",
+      "status": "unverified",
+      "detail": "The 2021 notice (Yin Fa [2021] No. 237) and the 2026 notice (Yin Fa [2026] No. 42) are described in secondary sources as classifying virtual-currency business activity as illegal financial activity. No PBOC body text was retrieved by this session, so the C17 crypto route is marked unlawful on the strength of a flagged source only. It is not used to support any number.",
+      "action": "Retrieve the PBOC notice text before relying on the C17 classification.",
+      "src": [
+        "G21",
+        "G22"
+      ]
+    },
+    {
+      "id": "F06",
+      "topic": "The emigration route requires proof that your PRC household registration is cancelled",
+      "status": "needs-review",
+      "detail": "The staging rules for C07 and C08 were re-verified directly on 2026-11-10 (G07, Arts. 6, 8, 10, 11): one application for the whole amount, no more than half first, no more than half of the remainder after a year, the balance after two years, and amounts up to RMB 200,000 in one go after approval. What is not resolved is eligibility: Art. 8(4) requires the police-issued cancellation of PRC household registration plus a certificate of overseas residence issued or authenticated by a Chinese embassy or consulate, and Art. 8(6) requires a tax certificate. A US citizen who has never held PRC household registration, or who has not cancelled it, cannot assemble that file. This site therefore describes C07 as conditional rather than recommending it.",
+      "action": "Confirm with the local SAFE branch whether you can satisfy Art. 8(4) before relying on this route.",
+      "src": [
+        "G07",
+        "G04"
+      ]
+    },
+    {
+      "id": "F07",
+      "topic": "Who the USD 50,000 quota actually binds",
+      "status": "needs-review",
+      "detail": "The quota figure itself is verified (G02). Its scope rests on an inherited source (G04 Art. 2), which applies the annual aggregate to individuals' FX sales and to domestic individuals' FX purchases. A foreign national resident in China for one year or more is a 'domestic individual' under Decree 532 Art. 52 - so a long-staying US citizen may be inside the quota regime while a new arrival is not. The distinction between quota purchases and documented income conversion is what makes C01 uncapped and C21 capped.",
+      "action": "Confirm your own classification with the bank before choosing C01 or C21.",
+      "src": [
+        "G02",
+        "G04",
+        "G05",
+        "G01"
+      ]
+    },
+    {
+      "id": "F08",
+      "topic": "PRC tax on the source income is not computed anywhere on this site",
+      "status": "unverified",
+      "detail": "The tax depends on which of the nine categories the income falls into, what was withheld in China, what deductions apply and which years are open. No figure is filled. The Tax page shows the statutory rates and pure arithmetic on them, clearly labelled, so the reader can size the exposure without the site inventing a liability.",
+      "action": "Obtain the PRC tax payment records - they are also the document the bank requires.",
+      "src": [
+        "G09",
+        "G03"
+      ]
+    },
+    {
+      "id": "F09",
+      "topic": "Form 8938 penalty amounts are not stated",
+      "status": "unverified",
+      "detail": "The FATCA thresholds are verified (G11). The penalty provision for failing to file Form 8938 was not retrieved from an official source, so the penalty cell is blank rather than filled with a remembered number.",
+      "action": "Retrieve 26 U.S.C. 6038D(d) and the current inflation-adjusted amount.",
+      "src": [
+        "G11"
+      ]
+    },
+    {
+      "id": "F10",
+      "topic": "Trade settlement account exemption - entity availability unclear for individuals",
+      "status": "needs-review",
+      "detail": "SAFE states that funds in a trade settlement account are exempt from the quota on presentation of valid documents (G02). Whether an individual - as opposed to a business entity - can hold such an account was not established this session. C24 is therefore described but not costed.",
+      "action": "Confirm account eligibility at the bank.",
+      "src": [
+        "G02"
+      ]
+    },
+    {
+      "id": "F11",
+      "topic": "Cash-carrying limits by the PRC side were not verified",
+      "status": "unverified",
+      "detail": "The US side is verified: more than USD 10,000 at one time requires FinCEN Form 105 (G20). The PRC-side limit on carrying renminbi or foreign cash out of China is not stated on this site because no official text was retrieved this session; the C11 and C06 descriptions therefore warn about declaration duties without quoting a PRC threshold.",
+      "action": "Retrieve the SAFE / General Administration of Customs carrying measures.",
+      "src": [
+        "G20"
+      ]
+    },
+    {
+      "id": "F12",
+      "topic": "The 7.10 CNY/USD rate is a conversion convenience, not a quote",
+      "status": "assumption",
+      "detail": "Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 amounts are affected. At USD 400,000 the whole swing across a 6.80-7.40 band is under USD 15 on a USD 87 fee. The ladder tiers are dollar amounts, so no exchange-rate forecast is embedded in any table.",
+      "action": "None - but do not read 7.10 as a market view.",
+      "src": [
+        "G08"
+      ]
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "Telegraphic route FX margin: 0.30%-1.50% of principal",
+      "status": "assumption"
+    },
+    {
+      "id": "A2",
+      "text": "Cash / counter route FX margin: 0.80%-3.00%",
+      "status": "assumption"
+    },
+    {
+      "id": "A3",
+      "text": "Card / ATM route margin plus issuer fee: 0.00%-3.00%",
+      "status": "assumption"
+    },
+    {
+      "id": "A4",
+      "text": "Offshore CNH margin before the USD leg: 0.20%-1.00%",
+      "status": "assumption"
+    },
+    {
+      "id": "A5",
+      "text": "One wire per tranche - no per-transfer ceiling for a documented individual remittance was verified, so none is invented",
+      "status": "assumption"
+    },
+    {
+      "id": "A6",
+      "text": "CNY 7.10 per USD to express CNY fee caps in dollars",
+      "status": "assumption"
+    },
+    {
+      "id": "A7",
+      "text": "US compliance preparation fees are not modelled - left blank",
+      "status": "unverified"
+    }
+  ],
+  "audit": [
+    {
+      "id": "A01",
+      "target": "index.html (root)",
+      "finding": "Generated by ladder/build.py and gated by a byte-parity CI check (verify-ladder). Not edited here; the guide adds its own landing page under guide-c9cc56a6/.",
+      "verdict": "left alone",
+      "src": [
+        "G08"
+      ]
+    },
+    {
+      "id": "A02",
+      "target": "ladder/data/sources.json S06",
+      "finding": "Cites the HSBC China personal tariff effective 1 January 2021. The tariff in force from 31 October 2026 charges 0.1% min CNY 100 max CNY 500 plus CNY 120 cable, and sets Global Transfer at free (Private Banking, Premier) and USD 20 (Advance). The ladder therefore carries a stale Global Transfer fee of USD 7.",
+      "verdict": "irregularity — flagged F02",
+      "src": [
+        "G08"
+      ]
+    },
+    {
+      "id": "A03",
+      "target": "ladder/data/costs.csv",
+      "finding": "600 rows = 15 costed routes x 40 tiers. The five unlawful routes carry no cost rows, which is correct: they have no lawful price. Spot-check of the published-fee column at USD 10k/50k/100k/400k reproduces 30.99 / 66.90 / 87.32 / 87.32 exactly, matching a fresh computation from the 2026 tariff.",
+      "verdict": "consistent",
+      "src": [
+        "G08"
+      ]
+    },
+    {
+      "id": "A04",
+      "target": "repatriate/data/methods.json",
+      "finding": "17 methods with sourced pros, cons and steps. Used here as a cross-check on coverage: the seven it describes that the ladder does not (quota purchase, Wise, Western Union, trade settlement account, cash carry of banknotes) were added as C21-C24 and C05-C06.",
+      "verdict": "consistent, coverage extended",
+      "src": [
+        "G02",
+        "G24",
+        "G25"
+      ]
+    },
+    {
+      "id": "A05",
+      "target": "docs/, site/, portal/, briefing/, audit-* /",
+      "finding": "Five overlapping dashboards predate both the cost ladder and this guide, so the same conclusion appears five times with different numbers of rows (67, 109, 600, 680). None of them carried a section 988 line, which is the only US tax that can attach to the conversion itself. That gap is what guide-c9cc56a6 fills.",
+      "verdict": "gap identified",
+      "src": [
+        "G17",
+        "G19"
+      ]
+    },
+    {
+      "id": "A06",
+      "target": "EXECUTIVE-SUMMARY.md / EXECUTIVE_SUMMARY.md",
+      "finding": "Both state there is no standalone conversion tax and that the USD 50,000 quota is the binding constraint. That agrees with PBOC Decree [2006] No. 3 Art. 13 and the SAFE quota page, and with the IIT Law's nine categories.",
+      "verdict": "consistent",
+      "src": [
+        "G01",
+        "G02",
+        "G09"
+      ]
+    },
+    {
+      "id": "A10",
+      "target": "FX margin in every cost table",
+      "finding": "No published executable CNY/USD customer rate exists in any tariff retrieved, in either the ladder's sources or this session's. Every all-in figure therefore contains an assumption band. Flagged F01 rather than presented as a quote.",
+      "verdict": "flagged F01",
+      "src": [
+        "G08"
+      ]
+    }
+  ],
+  "verify_checks": [
+    "Every source id used by a row, a card or a table exists in data/sources.json and has an https URL.",
+    "Every local link and every in-page anchor resolves to a file or an id that exists.",
+    "Every cost row carries a non-empty data-src attribute - a row without a source link fails the build.",
+    "A blank cost cell must carry a data-flag attribute, and the flag id must exist on the Flagged page. Blank without a flag fails.",
+    "The published bank fee is recomputed from the 2026 tariff formula and compared with the rendered value at all 40 tiers.",
+    "Tier coverage: every costed route must have exactly 40 rows, from USD 10,000 to USD 400,000 in USD 10,000 steps.",
+    "The section 988 gain table is recomputed from the IRS yearly averages and compared cell by cell.",
+    "No rendered page may contain 'None', 'nan' or an unformatted float.",
+    "The count of channels, lawful routes and flagged items is asserted so a silent deletion is caught."
+  ],
+  "audit_notes": [
+    {
+      "id": "A07",
+      "text": ".github/workflows/ - Six validators exist (ladder, portal, repatriate, site data, audit, generic validate). This session adds a seventh for the guide, scoped to guide-c9cc56a6/** so it cannot fail another session's files. (extended)"
+    },
+    {
+      "id": "A08",
+      "text": "open pull requests #2, #12, #17 - Predate this session and are unrelated to guide-c9cc56a6. Not merged, not closed, not rebased. (left alone)"
+    },
+    {
+      "id": "A09",
+      "text": "COORDINATION.md - Claim recorded for guide-c9cc56a6/** and .github/workflows/verify-guide-c9cc56a6.yml before any file was written; the claim was pushed on its own commit. (compliant)"
+    }
+  ]
+}
