@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagged for Review</title>
+<meta name="description" content="Source-linked research on converting CNY to USD from mainland China as a U.S. citizen: methods, costs at every $10,000 step, tax, penalties and step-by-step execution.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="">
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">China&nbsp;money<span>CNY → USD · U.S. citizen</span></a>
+    <nav class="topnav" aria-label="Sections"><a href="index.html">Overview</a><a href="methods.html">Methods</a><a href="costs.html">Costs</a><a href="steps.html">Step by step</a><a href="tax.html">Tax &amp; penalties</a><a href="flagged.html" aria-current="page">Flagged</a><a href="sources.html">Sources</a><a href="audit.html">Repo audit</a></nav>
+  </div>
+</header>
+<div class="masthead">
+  <div class="wrap">
+    <h1>Flagged for Review</h1>
+    <p class="sub">Everything that could not be confirmed from an official source, with the reason and the source link, so you can check it yourself.</p>
+  </div>
+</div>
+<main class="wrap">
+
+<div class="callout warn">
+  <h2>What this page is for</h2>
+  <p>Every value on this site that could not be confirmed from an official primary source is listed here with the
+  reason it is unconfirmed. <strong>Blank means unverified, not zero, and not free.</strong> Nothing on this page was
+  filled in by inference, and nothing here is hidden in a footnote. There are
+  12 substantive flags and 15 method-level cost gaps.</p>
+  <p>Two of these matter far more than the rest: <strong>F01</strong> (the spread is one bank's board rate, applied as
+  an assumption) and <strong>F03</strong> (whether your balance can be documented at all is unknown). If you read
+  nothing else here, read those two.</p>
+</div>
+
+<article class="flag high" id="F01">
+  <h3><span class="sev high">high</span> F01 — The spread used in every cost table is an assumption drawn from one bank&#x27;s board rate</h3>
+  <p>The 0.419% spread comes from Bank of China&#x27;s published USD board rates on 10 November 2026 (buy 665.72, sell 668.52 per 100 USD), on a page that states the table is for reference only and that the rate actually applied at the counter or in the app governs. It is applied uniformly to every method and every tier. Your bank&#x27;s executable rate will differ, and the spread dominates the total at large amounts.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="Bank of China foreign exchange board rates (USD row, published 2026-11-10 17:44:59)">S22</a></p>
+</article>
+<article class="flag high" id="F02">
+  <h3><span class="sev high">high</span> F02 — No intermediary or receiving-bank fee could be sourced</h3>
+  <p>The HSBC China tariff expressly excludes charges collected by other institutions and by regulators. No official source publishes what a US receiving bank or a correspondent will deduct. Those cells are blank, not zero, and the totals on this site are therefore lower bounds for the delivered amount.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 Oct 2026)">S11</a></p>
+</article>
+<article class="flag high" id="F03">
+  <h3><span class="sev high">high</span> F03 — Whether your specific balance is documentation-eligible is unknown</h3>
+  <p>Every lawful route in this guide turns on documents: a PRC tax record, a source-of-funds file, cancelled household registration, or an original exchange memo. None of those facts were supplied. The guide states what each rule requires and does not conclude that any particular balance qualifies.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer" title="Implementation Rules of the Measures for the Administration of Individual Foreign Exchange (Hui Fa [2007] No. 1)">S02</a> · <a href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer" title="2026 FX administration internet information - individual FX (08): how a non-domestic individual purchases FX to remit labour remuneration earned in China">S03</a> · <a href="https://www.safe.gov.cn/safe/2004/1116/4133.html" target="_blank" rel="noopener noreferrer" title="Provisional Measures for the Administration of Sale and Payment of Foreign Exchange for Individuals&#x27; Outward Asset Transfers (2004)">S06</a></p>
+</article>
+<article class="flag high" id="F04">
+  <h3><span class="sev high">high</span> F04 — The U.S. foreign tax credit mechanics were not re-verified in this session</h3>
+  <p>The PRC tax already paid on the income may be creditable in the US by treaty or under section 901/903, and Form 1116 is the usual mechanism. That path was named but not read in this session, so no conclusion is drawn and no credit amount is computed.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener noreferrer" title="Report of Foreign Bank and Financial Accounts (FBAR)">S15</a></p>
+</article>
+<article class="flag medium" id="F05">
+  <h3><span class="sev medium">medium</span> F05 — Whether you are a domestic or a non-domestic individual under PRC FX law is unknown</h3>
+  <p>The operative rule differs: a domestic individual&#x27;s FX purchases face the annual total (S02 Art. 12), while a non-domestic individual converts lawful current-account income on identity plus source and tax documents (S02 Art. 13(1); S03). The test turns on residence and household registration, neither of which is known.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer" title="Implementation Rules of the Measures for the Administration of Individual Foreign Exchange (Hui Fa [2007] No. 1)">S02</a> · <a href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer" title="2026 FX administration internet information - individual FX (08): how a non-domestic individual purchases FX to remit labour remuneration earned in China">S03</a> · <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a></p>
+</article>
+<article class="flag medium" id="F06">
+  <h3><span class="sev medium">medium</span> F06 — Earlier pages in this repository carried a superseded Global Transfer fee</h3>
+  <p>A &quot;USD 0-7&quot; same-name Global Transfer figure and a &quot;USD 7&quot; reference appear in earlier material here. In the tariff effective 31 October 2026 the USD 7 figure belongs to International Education Payment (item 2.2.7), and same-name Global Transfer is Free for Private Banking and Premier, with Advance at CNY 145 indicative / actual USD 20 (item 2.2.6.1). This guide uses the current text. The earlier pages were not edited by this session because they are outside its scope.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 Oct 2026)">S11</a></p>
+</article>
+<article class="flag medium" id="F07">
+  <h3><span class="sev medium">medium</span> F07 — An earlier page&#x27;s section 988 illustration did not reproduce exactly</h3>
+  <p>An earlier page stated a +0.83% exchange gain for renminbi acquired in 2024 and a USD 200 threshold at about $23,963. Recomputing from the same IRS yearly averages gives +0.84% and a threshold of about $23,800. The difference is rounding. This guide publishes its own recomputation on the Tax page rather than restating the earlier figure.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" target="_blank" rel="noopener noreferrer" title="Yearly average currency exchange rates (China row)">S14</a> · <a href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener noreferrer" title="26 U.S.C. 988 - Treatment of certain foreign currency transactions (U.S. Code 2024 edition)">S12</a></p>
+</article>
+<article class="flag medium" id="F08">
+  <h3><span class="sev medium">medium</span> F08 — The emigration route&#x27;s practical availability was not tested</h3>
+  <p>The measure requires cancelled Chinese household registration and certified proof of settlement abroad. Many naturalised US citizens no longer hold the first document. The rule is verified; whether it is achievable for any particular person is not, and no adviser or SAFE branch was contacted.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2004/1116/4133.html" target="_blank" rel="noopener noreferrer" title="Provisional Measures for the Administration of Sale and Payment of Foreign Exchange for Individuals&#x27; Outward Asset Transfers (2004)">S06</a></p>
+</article>
+<article class="flag medium" id="F09">
+  <h3><span class="sev medium">medium</span> F09 — Offshore RMB (CNH) eligibility for an individual was not established</h3>
+  <p>Whether, and on what basis, an individual may move a personal RMB balance offshore outside the documented current-account and capital-account channels was not established from the sources read. The method is listed as conditional with no cost, not as a recommendation.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a> · <a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">S01</a></p>
+</article>
+<article class="flag medium" id="F10">
+  <h3><span class="sev medium">medium</span> F10 — Card settlement margins and issuer fees are not in the official documents read</h3>
+  <p>The ATM and card-spending routes have published caps and published rules, but no published retail FX settlement margin or issuer foreign-transaction fee was located. Their cost cells are blank.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2017/1230/8116.html" target="_blank" rel="noopener noreferrer" title="Notice on Regulating Large Cash Withdrawals Abroad with Bank Cards (Hui Fa [2017] No. 29)">S08</a> · <a href="http://www.safe.gov.cn/shanghai/2019/1213/1198.html" target="_blank" rel="noopener noreferrer" title="Individual FX in plain terms (2019): the USD 50,000 annual total and prohibited uses">S10</a></p>
+</article>
+<article class="flag low" id="F11">
+  <h3><span class="sev low">low</span> F11 — Corporate, service-invoice, goods and QDII structures were not costed</h3>
+  <p>Their PRC VAT, withholding and duty rates were not verified in this session, and each depends on facts about a business that do not exist in the material supplied. They are described as structures with all cost cells blank, and are not presented as ways to move a personal balance.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">S01</a> · <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a></p>
+</article>
+<article class="flag low" id="F12">
+  <h3><span class="sev low">low</span> F12 — The 7.10 CNY/USD rate used to express CNY fees in dollars is an assumption</h3>
+  <p>It affects only the CNY-denominated published caps (100, 500, 120, 145). At USD 400,000 the entire effect of the choice is under USD 15, and no exchange-rate forecast is embedded anywhere, because the tiers themselves are USD amounts.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 Oct 2026)">S11</a></p>
+</article>
+<article class="flag medium" id="F-M10">
+  <h3><span class="sev medium">medium</span> F-M10 — M10 — cost not published</h3>
+  <p>Neither a bank fee nor a conversion spread is published in the official documents read for this method. Both cells are blank rather than estimated.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="http://www.safe.gov.cn/shanghai/2019/1213/1198.html" target="_blank" rel="noopener noreferrer" title="Individual FX in plain terms (2019): the USD 50,000 annual total and prohibited uses">S10</a> · <a href="https://www.safe.gov.cn/safe/2017/1230/8116.html" target="_blank" rel="noopener noreferrer" title="Notice on Regulating Large Cash Withdrawals Abroad with Bank Cards (Hui Fa [2017] No. 29)">S08</a></p>
+</article>
+<article class="flag medium" id="F-M11">
+  <h3><span class="sev medium">medium</span> F-M11 — M11 — cost not published</h3>
+  <p>Neither a bank fee nor a conversion spread is published in the official documents read for this method. Both cells are blank rather than estimated.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2017/1230/8116.html" target="_blank" rel="noopener noreferrer" title="Notice on Regulating Large Cash Withdrawals Abroad with Bank Cards (Hui Fa [2017] No. 29)">S08</a></p>
+</article>
+<article class="flag medium" id="F-M14">
+  <h3><span class="sev medium">medium</span> F-M14 — M14 — cost not published</h3>
+  <p>Neither a bank fee nor a conversion spread is published in the official documents read for this method. Both cells are blank rather than estimated.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a></p>
+</article>
+<article class="flag medium" id="F-M15">
+  <h3><span class="sev medium">medium</span> F-M15 — M15 — cost not published</h3>
+  <p>Neither a bank fee nor a conversion spread is published in the official documents read for this method. Both cells are blank rather than estimated.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a> · <a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">S01</a></p>
+</article>
+<article class="flag medium" id="F-M16">
+  <h3><span class="sev medium">medium</span> F-M16 — M16 — cost not published</h3>
+  <p>Neither a bank fee nor a conversion spread is published in the official documents read for this method. Both cells are blank rather than estimated.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a></p>
+</article>
+<article class="flag medium" id="F-M17">
+  <h3><span class="sev medium">medium</span> F-M17 — M17 — cost not published</h3>
+  <p>Neither a bank fee nor a conversion spread is published in the official documents read for this method. Both cells are blank rather than estimated.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a> · <a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">S01</a></p>
+</article>
+<article class="flag medium" id="F-M19">
+  <h3><span class="sev medium">medium</span> F-M19 — M19 — cost not published</h3>
+  <p>Neither a bank fee nor a conversion spread is published in the official documents read for this method. Both cells are blank rather than estimated.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">S01</a></p>
+</article>
+<article class="flag medium" id="F-M20">
+  <h3><span class="sev medium">medium</span> F-M20 — M20 — cost not published</h3>
+  <p>Neither a bank fee nor a conversion spread is published in the official documents read for this method. Both cells are blank rather than estimated.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">S01</a></p>
+</article>
+<article class="flag low" id="F-U01">
+  <h3><span class="sev low">low</span> F-U01 — U01 — cost not published</h3>
+  <p>No lawful cost exists for an unlawful method. The published statutory exposure is stated on the method itself; no price is invented.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a> · <a href="https://www.safe.gov.cn/safe/2015/1231/5442.html" target="_blank" rel="noopener noreferrer" title="Notice on Further Improving Individual Foreign Exchange Administration (Hui Fa [2015] No. 49)">S09</a></p>
+</article>
+<article class="flag low" id="F-U02">
+  <h3><span class="sev low">low</span> F-U02 — U02 — cost not published</h3>
+  <p>No lawful cost exists for an unlawful method. The published statutory exposure is stated on the method itself; no price is invented.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a></p>
+</article>
+<article class="flag low" id="F-U03">
+  <h3><span class="sev low">low</span> F-U03 — U03 — cost not published</h3>
+  <p>No lawful cost exists for an unlawful method. The published statutory exposure is stated on the method itself; no price is invented.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.gov.cn/zhengce/zhengceku/2021-10/08/content_5641404.htm" target="_blank" rel="noopener noreferrer" title="Notice on Further Preventing and Handling the Risks of Virtual Currency Trading and Speculation">S21</a></p>
+</article>
+<article class="flag low" id="F-U04">
+  <h3><span class="sev low">low</span> F-U04 — U04 — cost not published</h3>
+  <p>No lawful cost exists for an unlawful method. The published statutory exposure is stated on the method itself; no price is invented.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2015/1231/5442.html" target="_blank" rel="noopener noreferrer" title="Notice on Further Improving Individual Foreign Exchange Administration (Hui Fa [2015] No. 49)">S09</a> · <a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">S01</a></p>
+</article>
+<article class="flag low" id="F-U05">
+  <h3><span class="sev low">low</span> F-U05 — U05 — cost not published</h3>
+  <p>No lawful cost exists for an unlawful method. The published statutory exposure is stated on the method itself; no price is invented.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">S01</a> · <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a></p>
+</article>
+<article class="flag low" id="F-U06">
+  <h3><span class="sev low">low</span> F-U06 — U06 — cost not published</h3>
+  <p>No lawful cost exists for an unlawful method. The published statutory exposure is stated on the method itself; no price is invented.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">S01</a> · <a href="https://www.safe.gov.cn/safe/2015/1231/5442.html" target="_blank" rel="noopener noreferrer" title="Notice on Further Improving Individual Foreign Exchange Administration (Hui Fa [2015] No. 49)">S09</a></p>
+</article>
+<article class="flag low" id="F-U07">
+  <h3><span class="sev low">low</span> F-U07 — U07 — cost not published</h3>
+  <p>No lawful cost exists for an unlawful method. The published statutory exposure is stated on the method itself; no price is invented.</p>
+  <p class="srcs"><strong>Sources:</strong> <a href="https://www.safe.gov.cn/safe/2003/0828/5444.html" target="_blank" rel="noopener noreferrer" title="Provisional Measures on Carrying Foreign Currency Cash Across the Border (Hui Fa [2003] No. 102)">S07</a> · <a href="https://www.cbp.gov/travel/international-visitors/money-monetary-instruments" target="_blank" rel="noopener noreferrer" title="Money and Other Monetary Instruments (FinCEN Form 105 reporting)">S20</a> · <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">S05</a></p>
+</article>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Research, not advice.</strong> Prepared 10 November 2026. Every table row links to the primary official source it rests on; values that could not be confirmed are blank and listed on the <a href="flagged.html">Flagged for Review</a> page. No bank was contacted, no funds were moved and no return was filed for any person.</p>
+    <p class="tiny"><a href="index.html">Overview</a> · <a href="methods.html">Methods</a> · <a href="costs.html">Costs</a> · <a href="steps.html">Step by step</a> · <a href="tax.html">Tax &amp; penalties</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a> · <a href="audit.html">Repo audit</a> · <a href="../COORDINATION.md">Task board</a></p>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

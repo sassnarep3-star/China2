@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repository audit</title>
+<meta name="description" content="Source-linked research on converting CNY to USD from mainland China as a U.S. citizen: methods, costs at every $10,000 step, tax, penalties and step-by-step execution.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="">
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">China&nbsp;money<span>CNY → USD · U.S. citizen</span></a>
+    <nav class="topnav" aria-label="Sections"><a href="index.html">Overview</a><a href="methods.html">Methods</a><a href="costs.html">Costs</a><a href="steps.html">Step by step</a><a href="tax.html">Tax &amp; penalties</a><a href="flagged.html">Flagged</a><a href="sources.html">Sources</a><a href="audit.html" aria-current="page">Repo audit</a></nav>
+  </div>
+</header>
+<div class="masthead">
+  <div class="wrap">
+    <h1>Repository audit</h1>
+    <p class="sub">Irregularities found across this repository, what was corrected, and what was deliberately left for the owner.</p>
+  </div>
+</div>
+<main class="wrap">
+
+<p class="lede">The repository was reviewed for internal contradictions, stale figures and unsupported claims. Eight
+items were found. Two were corrected in this guide, one class is mechanically prevented from recurring, and the rest are
+disclosed rather than silently fixed, because the files involved belong to other sessions' scopes.</p>
+
+<div class="callout">
+  <h2>Scope and coordination</h2>
+  <p>This session claimed only <code>guide/**</code>, a card in the generated root hub, and its own board record in
+  COORDINATION.md. Every other directory is read-only input. Two open pull requests (#39 and #41) were conflicting and
+  stale; they were not rebased, merged or discarded, and their content was treated as read-only input. Where a fix was
+  needed in a file owned by another scope, it is recorded here instead of edited.</p>
+</div>
+
+<div class="audit-list">
+<article class="flag medium" id="A01"><h3><span class="sev medium">resolved</span> A01 — Two executive summaries coexisted at the repository root</h3><p>EXECUTIVE-SUMMARY.md and EXECUTIVE_SUMMARY.md both existed, with different content and dates. Two files differing only by underscore are a maintenance trap: a reader can pick either and get a different answer. This session does not edit or delete either, because both are outside its claimed scope; it publishes one guide with one summary (this site) and records the duplication here for the repository owner.</p><p class="srcs"><strong>Disposition:</strong> Flagged for the owner. Not edited.</p></article><article class="flag medium" id="A02"><h3><span class="sev medium">corrected in this guide</span> A02 — A superseded Global Transfer fee is still visible in older pages</h3><p>Several pages in this repository quote a same-name Global Transfer fee of &quot;USD 0-7&quot;, or a flat &quot;USD 7&quot;. In the tariff effective 31 October 2026, USD 7 is the International Education Payment item (2.2.7); same-name Global Transfer is Free for Private Banking and Premier, and CNY 145 indicative / actual USD 20 for Advance (2.2.6.1). This guide uses the current figure and labels the older one as superseded.</p><p class="srcs"><strong>Disposition:</strong> Fixed in guide/. Older pages untouched and flagged.</p></article><article class="flag medium" id="A03"><h3><span class="sev medium">corrected in this guide</span> A03 — An earlier section 988 illustration does not reproduce from its own source</h3><p>An earlier page reported a +0.83% exchange gain for renminbi acquired in 2024 and a USD 200 threshold at about $23,963. Recomputing from the IRS yearly averages gives +0.84% and about $23,800. Small, but a number that does not recompute is a number that should not be published. This guide publishes its own arithmetic and shows the inputs so it can be checked.</p><p class="srcs"><strong>Disposition:</strong> Recomputed on tax.html.</p></article><article class="flag low" id="A04"><h3><span class="sev low">noted</span> A04 — The repository now contains many overlapping builds of the same research</h3><p>docs/, ladder/, briefing/, portal/, repatriate/, site/, audit-*/, acceptance-*/, verify-* and now guide/ all answer the same question with different assumptions, different route counts and different fee vintages. Several of them present modelled ranges as if they were prices. A reader cannot tell which is current. This is a structural risk: the correct fix is one canonical build with redirects, which is outside this session&#x27;s scope.</p><p class="srcs"><strong>Disposition:</strong> Flagged for the owner. The root hub lists them with warnings.</p></article><article class="flag low" id="A05"><h3><span class="sev low">noted</span> A05 — Earlier sessions published flags that remain open</h3><p>Flag sets F01-F09, E01-E02 and G01-G05 from earlier sessions are still published on their own pages. None was closed by this session, and none was assumed resolved. This guide does not restate them; it links to them.</p><p class="srcs"><strong>Disposition:</strong> Left open deliberately.</p></article><article class="flag medium" id="A06"><h3><span class="sev medium">verified</span> A06 — Every table row in this guide carries an official source link</h3><p>Enforced mechanically, not by inspection: guide/verify.py fails the build if any table body row in any generated page lacks an href that matches a URL in the source register, and fails if any method or tier is missing from the costs matrix.</p><p class="srcs"><strong>Disposition:</strong> Enforced by guide/verify.py.</p></article><article class="flag medium" id="A07"><h3><span class="sev medium">verified</span> A07 — The arithmetic in every cost cell recomputes from the published inputs</h3><p>guide/verify.py recomputes fee, spread and total for all 1,080 method-tier cells from the formula and the published fee parameters, and fails on any mismatch greater than one cent.</p><p class="srcs"><strong>Disposition:</strong> Enforced by guide/verify.py.</p></article><article class="flag low" id="A08"><h3><span class="sev low">noted</span> A08 — No bank, adviser or regulator was contacted</h3><p>Every statement here comes from a published document. No executable quote was obtained, no SAFE branch was asked, and no tax adviser reviewed the conclusion. The site says so in its footer and on the Flagged page.</p><p class="srcs"><strong>Disposition:</strong> Disclosed.</p></article>
+</div>
+
+<h2>What was verified, and how</h2>
+<ul class="tight">
+  <li><strong>Source text.</strong> All 22 sources were fetched in this session and the quoted sentence is the
+  text returned. Retrieval date is recorded per source on <a href="sources.html">Sources</a>.</li>
+  <li><strong>Cost arithmetic.</strong> 1,080 cells recomputed from the published fee parameters plus one labelled
+  assumption.</li>
+  <li><strong>Citation coverage.</strong> Mechanically enforced per table row; see A06.</li>
+  <li><strong>Local links and anchors.</strong> Every internal link and fragment in the generated site is resolved by the
+  verifier.</li>
+  <li><strong>No-JavaScript parity.</strong> All content is in the HTML. The script only filters and re-sorts what is
+  already on the page, so the tables are complete with scripting off.</li>
+  <li><strong>Not verified:</strong> external URL availability over time, current law at the moment you read this, and
+  anything about your personal facts. Those are stated as limits, not glossed.</li>
+</ul>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Research, not advice.</strong> Prepared 10 November 2026. Every table row links to the primary official source it rests on; values that could not be confirmed are blank and listed on the <a href="flagged.html">Flagged for Review</a> page. No bank was contacted, no funds were moved and no return was filed for any person.</p>
+    <p class="tiny"><a href="index.html">Overview</a> · <a href="methods.html">Methods</a> · <a href="costs.html">Costs</a> · <a href="steps.html">Step by step</a> · <a href="tax.html">Tax &amp; penalties</a> · <a href="flagged.html">Flagged</a> · <a href="sources.html">Sources</a> · <a href="audit.html">Repo audit</a> · <a href="../COORDINATION.md">Task board</a></p>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

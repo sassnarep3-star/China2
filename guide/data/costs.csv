@@ -1,0 +1,1081 @@
+method,name,status,tier_usd,fee_usd,spread_pct,spread_usd,total_usd,pct_of_principal,over_annual_cap
+M01,"Documented income to SWIFT",lawful,10000,30.99,0.419,41.90,72.89,0.729,no
+M01,"Documented income to SWIFT",lawful,20000,36.90,0.419,83.80,120.70,0.604,no
+M01,"Documented income to SWIFT",lawful,30000,46.90,0.419,125.70,172.60,0.575,no
+M01,"Documented income to SWIFT",lawful,40000,56.90,0.419,167.60,224.50,0.561,no
+M01,"Documented income to SWIFT",lawful,50000,66.90,0.419,209.50,276.40,0.553,no
+M01,"Documented income to SWIFT",lawful,60000,76.90,0.419,251.40,328.30,0.547,no
+M01,"Documented income to SWIFT",lawful,70000,86.90,0.419,293.30,380.20,0.543,no
+M01,"Documented income to SWIFT",lawful,80000,87.32,0.419,335.20,422.52,0.528,no
+M01,"Documented income to SWIFT",lawful,90000,87.32,0.419,377.10,464.42,0.516,no
+M01,"Documented income to SWIFT",lawful,100000,87.32,0.419,419.00,506.32,0.506,no
+M01,"Documented income to SWIFT",lawful,110000,87.32,0.419,460.90,548.22,0.498,no
+M01,"Documented income to SWIFT",lawful,120000,87.32,0.419,502.80,590.12,0.492,no
+M01,"Documented income to SWIFT",lawful,130000,87.32,0.419,544.70,632.02,0.486,no
+M01,"Documented income to SWIFT",lawful,140000,87.32,0.419,586.60,673.92,0.481,no
+M01,"Documented income to SWIFT",lawful,150000,87.32,0.419,628.50,715.82,0.477,no
+M01,"Documented income to SWIFT",lawful,160000,87.32,0.419,670.40,757.72,0.474,no
+M01,"Documented income to SWIFT",lawful,170000,87.32,0.419,712.30,799.62,0.470,no
+M01,"Documented income to SWIFT",lawful,180000,87.32,0.419,754.20,841.52,0.468,no
+M01,"Documented income to SWIFT",lawful,190000,87.32,0.419,796.10,883.42,0.465,no
+M01,"Documented income to SWIFT",lawful,200000,87.32,0.419,838.00,925.32,0.463,no
+M01,"Documented income to SWIFT",lawful,210000,87.32,0.419,879.90,967.22,0.461,no
+M01,"Documented income to SWIFT",lawful,220000,87.32,0.419,921.80,1009.12,0.459,no
+M01,"Documented income to SWIFT",lawful,230000,87.32,0.419,963.70,1051.02,0.457,no
+M01,"Documented income to SWIFT",lawful,240000,87.32,0.419,1005.60,1092.92,0.455,no
+M01,"Documented income to SWIFT",lawful,250000,87.32,0.419,1047.50,1134.82,0.454,no
+M01,"Documented income to SWIFT",lawful,260000,87.32,0.419,1089.40,1176.72,0.453,no
+M01,"Documented income to SWIFT",lawful,270000,87.32,0.419,1131.30,1218.62,0.451,no
+M01,"Documented income to SWIFT",lawful,280000,87.32,0.419,1173.20,1260.52,0.450,no
+M01,"Documented income to SWIFT",lawful,290000,87.32,0.419,1215.10,1302.42,0.449,no
+M01,"Documented income to SWIFT",lawful,300000,87.32,0.419,1257.00,1344.32,0.448,no
+M01,"Documented income to SWIFT",lawful,310000,87.32,0.419,1298.90,1386.22,0.447,no
+M01,"Documented income to SWIFT",lawful,320000,87.32,0.419,1340.80,1428.12,0.446,no
+M01,"Documented income to SWIFT",lawful,330000,87.32,0.419,1382.70,1470.02,0.445,no
+M01,"Documented income to SWIFT",lawful,340000,87.32,0.419,1424.60,1511.92,0.445,no
+M01,"Documented income to SWIFT",lawful,350000,87.32,0.419,1466.50,1553.82,0.444,no
+M01,"Documented income to SWIFT",lawful,360000,87.32,0.419,1508.40,1595.72,0.443,no
+M01,"Documented income to SWIFT",lawful,370000,87.32,0.419,1550.30,1637.62,0.443,no
+M01,"Documented income to SWIFT",lawful,380000,87.32,0.419,1592.20,1679.52,0.442,no
+M01,"Documented income to SWIFT",lawful,390000,87.32,0.419,1634.10,1721.42,0.441,no
+M01,"Documented income to SWIFT",lawful,400000,87.32,0.419,1676.00,1763.32,0.441,no
+M02,"Documented income to Global Transfer",lawful,10000,0.00,0.419,41.90,41.90,0.419,no
+M02,"Documented income to Global Transfer",lawful,20000,0.00,0.419,83.80,83.80,0.419,no
+M02,"Documented income to Global Transfer",lawful,30000,0.00,0.419,125.70,125.70,0.419,no
+M02,"Documented income to Global Transfer",lawful,40000,0.00,0.419,167.60,167.60,0.419,no
+M02,"Documented income to Global Transfer",lawful,50000,0.00,0.419,209.50,209.50,0.419,no
+M02,"Documented income to Global Transfer",lawful,60000,0.00,0.419,251.40,251.40,0.419,no
+M02,"Documented income to Global Transfer",lawful,70000,0.00,0.419,293.30,293.30,0.419,no
+M02,"Documented income to Global Transfer",lawful,80000,0.00,0.419,335.20,335.20,0.419,no
+M02,"Documented income to Global Transfer",lawful,90000,0.00,0.419,377.10,377.10,0.419,no
+M02,"Documented income to Global Transfer",lawful,100000,0.00,0.419,419.00,419.00,0.419,no
+M02,"Documented income to Global Transfer",lawful,110000,0.00,0.419,460.90,460.90,0.419,no
+M02,"Documented income to Global Transfer",lawful,120000,0.00,0.419,502.80,502.80,0.419,no
+M02,"Documented income to Global Transfer",lawful,130000,0.00,0.419,544.70,544.70,0.419,no
+M02,"Documented income to Global Transfer",lawful,140000,0.00,0.419,586.60,586.60,0.419,no
+M02,"Documented income to Global Transfer",lawful,150000,0.00,0.419,628.50,628.50,0.419,no
+M02,"Documented income to Global Transfer",lawful,160000,0.00,0.419,670.40,670.40,0.419,no
+M02,"Documented income to Global Transfer",lawful,170000,0.00,0.419,712.30,712.30,0.419,no
+M02,"Documented income to Global Transfer",lawful,180000,0.00,0.419,754.20,754.20,0.419,no
+M02,"Documented income to Global Transfer",lawful,190000,0.00,0.419,796.10,796.10,0.419,no
+M02,"Documented income to Global Transfer",lawful,200000,0.00,0.419,838.00,838.00,0.419,no
+M02,"Documented income to Global Transfer",lawful,210000,0.00,0.419,879.90,879.90,0.419,no
+M02,"Documented income to Global Transfer",lawful,220000,0.00,0.419,921.80,921.80,0.419,no
+M02,"Documented income to Global Transfer",lawful,230000,0.00,0.419,963.70,963.70,0.419,no
+M02,"Documented income to Global Transfer",lawful,240000,0.00,0.419,1005.60,1005.60,0.419,no
+M02,"Documented income to Global Transfer",lawful,250000,0.00,0.419,1047.50,1047.50,0.419,no
+M02,"Documented income to Global Transfer",lawful,260000,0.00,0.419,1089.40,1089.40,0.419,no
+M02,"Documented income to Global Transfer",lawful,270000,0.00,0.419,1131.30,1131.30,0.419,no
+M02,"Documented income to Global Transfer",lawful,280000,0.00,0.419,1173.20,1173.20,0.419,no
+M02,"Documented income to Global Transfer",lawful,290000,0.00,0.419,1215.10,1215.10,0.419,no
+M02,"Documented income to Global Transfer",lawful,300000,0.00,0.419,1257.00,1257.00,0.419,no
+M02,"Documented income to Global Transfer",lawful,310000,0.00,0.419,1298.90,1298.90,0.419,no
+M02,"Documented income to Global Transfer",lawful,320000,0.00,0.419,1340.80,1340.80,0.419,no
+M02,"Documented income to Global Transfer",lawful,330000,0.00,0.419,1382.70,1382.70,0.419,no
+M02,"Documented income to Global Transfer",lawful,340000,0.00,0.419,1424.60,1424.60,0.419,no
+M02,"Documented income to Global Transfer",lawful,350000,0.00,0.419,1466.50,1466.50,0.419,no
+M02,"Documented income to Global Transfer",lawful,360000,0.00,0.419,1508.40,1508.40,0.419,no
+M02,"Documented income to Global Transfer",lawful,370000,0.00,0.419,1550.30,1550.30,0.419,no
+M02,"Documented income to Global Transfer",lawful,380000,0.00,0.419,1592.20,1592.20,0.419,no
+M02,"Documented income to Global Transfer",lawful,390000,0.00,0.419,1634.10,1634.10,0.419,no
+M02,"Documented income to Global Transfer",lawful,400000,0.00,0.419,1676.00,1676.00,0.419,no
+M03,"Emigration transfer",lawful,10000,30.99,0.419,41.90,72.89,0.729,no
+M03,"Emigration transfer",lawful,20000,36.90,0.419,83.80,120.70,0.604,no
+M03,"Emigration transfer",lawful,30000,46.90,0.419,125.70,172.60,0.575,no
+M03,"Emigration transfer",lawful,40000,56.90,0.419,167.60,224.50,0.561,no
+M03,"Emigration transfer",lawful,50000,66.90,0.419,209.50,276.40,0.553,no
+M03,"Emigration transfer",lawful,60000,76.90,0.419,251.40,328.30,0.547,no
+M03,"Emigration transfer",lawful,70000,86.90,0.419,293.30,380.20,0.543,no
+M03,"Emigration transfer",lawful,80000,87.32,0.419,335.20,422.52,0.528,no
+M03,"Emigration transfer",lawful,90000,87.32,0.419,377.10,464.42,0.516,no
+M03,"Emigration transfer",lawful,100000,87.32,0.419,419.00,506.32,0.506,no
+M03,"Emigration transfer",lawful,110000,87.32,0.419,460.90,548.22,0.498,no
+M03,"Emigration transfer",lawful,120000,87.32,0.419,502.80,590.12,0.492,no
+M03,"Emigration transfer",lawful,130000,87.32,0.419,544.70,632.02,0.486,no
+M03,"Emigration transfer",lawful,140000,87.32,0.419,586.60,673.92,0.481,no
+M03,"Emigration transfer",lawful,150000,87.32,0.419,628.50,715.82,0.477,no
+M03,"Emigration transfer",lawful,160000,87.32,0.419,670.40,757.72,0.474,no
+M03,"Emigration transfer",lawful,170000,87.32,0.419,712.30,799.62,0.470,no
+M03,"Emigration transfer",lawful,180000,87.32,0.419,754.20,841.52,0.468,no
+M03,"Emigration transfer",lawful,190000,87.32,0.419,796.10,883.42,0.465,no
+M03,"Emigration transfer",lawful,200000,87.32,0.419,838.00,925.32,0.463,no
+M03,"Emigration transfer",lawful,210000,87.32,0.419,879.90,967.22,0.461,no
+M03,"Emigration transfer",lawful,220000,87.32,0.419,921.80,1009.12,0.459,no
+M03,"Emigration transfer",lawful,230000,87.32,0.419,963.70,1051.02,0.457,no
+M03,"Emigration transfer",lawful,240000,87.32,0.419,1005.60,1092.92,0.455,no
+M03,"Emigration transfer",lawful,250000,87.32,0.419,1047.50,1134.82,0.454,no
+M03,"Emigration transfer",lawful,260000,87.32,0.419,1089.40,1176.72,0.453,no
+M03,"Emigration transfer",lawful,270000,87.32,0.419,1131.30,1218.62,0.451,no
+M03,"Emigration transfer",lawful,280000,87.32,0.419,1173.20,1260.52,0.450,no
+M03,"Emigration transfer",lawful,290000,87.32,0.419,1215.10,1302.42,0.449,no
+M03,"Emigration transfer",lawful,300000,87.32,0.419,1257.00,1344.32,0.448,no
+M03,"Emigration transfer",lawful,310000,87.32,0.419,1298.90,1386.22,0.447,no
+M03,"Emigration transfer",lawful,320000,87.32,0.419,1340.80,1428.12,0.446,no
+M03,"Emigration transfer",lawful,330000,87.32,0.419,1382.70,1470.02,0.445,no
+M03,"Emigration transfer",lawful,340000,87.32,0.419,1424.60,1511.92,0.445,no
+M03,"Emigration transfer",lawful,350000,87.32,0.419,1466.50,1553.82,0.444,no
+M03,"Emigration transfer",lawful,360000,87.32,0.419,1508.40,1595.72,0.443,no
+M03,"Emigration transfer",lawful,370000,87.32,0.419,1550.30,1637.62,0.443,no
+M03,"Emigration transfer",lawful,380000,87.32,0.419,1592.20,1679.52,0.442,no
+M03,"Emigration transfer",lawful,390000,87.32,0.419,1634.10,1721.42,0.441,no
+M03,"Emigration transfer",lawful,400000,87.32,0.419,1676.00,1763.32,0.441,no
+M04,"Inheritance transfer",lawful,10000,30.99,0.419,41.90,72.89,0.729,no
+M04,"Inheritance transfer",lawful,20000,36.90,0.419,83.80,120.70,0.604,no
+M04,"Inheritance transfer",lawful,30000,46.90,0.419,125.70,172.60,0.575,no
+M04,"Inheritance transfer",lawful,40000,56.90,0.419,167.60,224.50,0.561,no
+M04,"Inheritance transfer",lawful,50000,66.90,0.419,209.50,276.40,0.553,no
+M04,"Inheritance transfer",lawful,60000,76.90,0.419,251.40,328.30,0.547,no
+M04,"Inheritance transfer",lawful,70000,86.90,0.419,293.30,380.20,0.543,no
+M04,"Inheritance transfer",lawful,80000,87.32,0.419,335.20,422.52,0.528,no
+M04,"Inheritance transfer",lawful,90000,87.32,0.419,377.10,464.42,0.516,no
+M04,"Inheritance transfer",lawful,100000,87.32,0.419,419.00,506.32,0.506,no
+M04,"Inheritance transfer",lawful,110000,87.32,0.419,460.90,548.22,0.498,no
+M04,"Inheritance transfer",lawful,120000,87.32,0.419,502.80,590.12,0.492,no
+M04,"Inheritance transfer",lawful,130000,87.32,0.419,544.70,632.02,0.486,no
+M04,"Inheritance transfer",lawful,140000,87.32,0.419,586.60,673.92,0.481,no
+M04,"Inheritance transfer",lawful,150000,87.32,0.419,628.50,715.82,0.477,no
+M04,"Inheritance transfer",lawful,160000,87.32,0.419,670.40,757.72,0.474,no
+M04,"Inheritance transfer",lawful,170000,87.32,0.419,712.30,799.62,0.470,no
+M04,"Inheritance transfer",lawful,180000,87.32,0.419,754.20,841.52,0.468,no
+M04,"Inheritance transfer",lawful,190000,87.32,0.419,796.10,883.42,0.465,no
+M04,"Inheritance transfer",lawful,200000,87.32,0.419,838.00,925.32,0.463,no
+M04,"Inheritance transfer",lawful,210000,87.32,0.419,879.90,967.22,0.461,no
+M04,"Inheritance transfer",lawful,220000,87.32,0.419,921.80,1009.12,0.459,no
+M04,"Inheritance transfer",lawful,230000,87.32,0.419,963.70,1051.02,0.457,no
+M04,"Inheritance transfer",lawful,240000,87.32,0.419,1005.60,1092.92,0.455,no
+M04,"Inheritance transfer",lawful,250000,87.32,0.419,1047.50,1134.82,0.454,no
+M04,"Inheritance transfer",lawful,260000,87.32,0.419,1089.40,1176.72,0.453,no
+M04,"Inheritance transfer",lawful,270000,87.32,0.419,1131.30,1218.62,0.451,no
+M04,"Inheritance transfer",lawful,280000,87.32,0.419,1173.20,1260.52,0.450,no
+M04,"Inheritance transfer",lawful,290000,87.32,0.419,1215.10,1302.42,0.449,no
+M04,"Inheritance transfer",lawful,300000,87.32,0.419,1257.00,1344.32,0.448,no
+M04,"Inheritance transfer",lawful,310000,87.32,0.419,1298.90,1386.22,0.447,no
+M04,"Inheritance transfer",lawful,320000,87.32,0.419,1340.80,1428.12,0.446,no
+M04,"Inheritance transfer",lawful,330000,87.32,0.419,1382.70,1470.02,0.445,no
+M04,"Inheritance transfer",lawful,340000,87.32,0.419,1424.60,1511.92,0.445,no
+M04,"Inheritance transfer",lawful,350000,87.32,0.419,1466.50,1553.82,0.444,no
+M04,"Inheritance transfer",lawful,360000,87.32,0.419,1508.40,1595.72,0.443,no
+M04,"Inheritance transfer",lawful,370000,87.32,0.419,1550.30,1637.62,0.443,no
+M04,"Inheritance transfer",lawful,380000,87.32,0.419,1592.20,1679.52,0.442,no
+M04,"Inheritance transfer",lawful,390000,87.32,0.419,1634.10,1721.42,0.441,no
+M04,"Inheritance transfer",lawful,400000,87.32,0.419,1676.00,1763.32,0.441,no
+M05,"Re-conversion, original memo",lawful,10000,30.99,0.419,41.90,72.89,0.729,no
+M05,"Re-conversion, original memo",lawful,20000,36.90,0.419,83.80,120.70,0.604,no
+M05,"Re-conversion, original memo",lawful,30000,46.90,0.419,125.70,172.60,0.575,no
+M05,"Re-conversion, original memo",lawful,40000,56.90,0.419,167.60,224.50,0.561,no
+M05,"Re-conversion, original memo",lawful,50000,66.90,0.419,209.50,276.40,0.553,no
+M05,"Re-conversion, original memo",lawful,60000,76.90,0.419,251.40,328.30,0.547,no
+M05,"Re-conversion, original memo",lawful,70000,86.90,0.419,293.30,380.20,0.543,no
+M05,"Re-conversion, original memo",lawful,80000,87.32,0.419,335.20,422.52,0.528,no
+M05,"Re-conversion, original memo",lawful,90000,87.32,0.419,377.10,464.42,0.516,no
+M05,"Re-conversion, original memo",lawful,100000,87.32,0.419,419.00,506.32,0.506,no
+M05,"Re-conversion, original memo",lawful,110000,87.32,0.419,460.90,548.22,0.498,no
+M05,"Re-conversion, original memo",lawful,120000,87.32,0.419,502.80,590.12,0.492,no
+M05,"Re-conversion, original memo",lawful,130000,87.32,0.419,544.70,632.02,0.486,no
+M05,"Re-conversion, original memo",lawful,140000,87.32,0.419,586.60,673.92,0.481,no
+M05,"Re-conversion, original memo",lawful,150000,87.32,0.419,628.50,715.82,0.477,no
+M05,"Re-conversion, original memo",lawful,160000,87.32,0.419,670.40,757.72,0.474,no
+M05,"Re-conversion, original memo",lawful,170000,87.32,0.419,712.30,799.62,0.470,no
+M05,"Re-conversion, original memo",lawful,180000,87.32,0.419,754.20,841.52,0.468,no
+M05,"Re-conversion, original memo",lawful,190000,87.32,0.419,796.10,883.42,0.465,no
+M05,"Re-conversion, original memo",lawful,200000,87.32,0.419,838.00,925.32,0.463,no
+M05,"Re-conversion, original memo",lawful,210000,87.32,0.419,879.90,967.22,0.461,no
+M05,"Re-conversion, original memo",lawful,220000,87.32,0.419,921.80,1009.12,0.459,no
+M05,"Re-conversion, original memo",lawful,230000,87.32,0.419,963.70,1051.02,0.457,no
+M05,"Re-conversion, original memo",lawful,240000,87.32,0.419,1005.60,1092.92,0.455,no
+M05,"Re-conversion, original memo",lawful,250000,87.32,0.419,1047.50,1134.82,0.454,no
+M05,"Re-conversion, original memo",lawful,260000,87.32,0.419,1089.40,1176.72,0.453,no
+M05,"Re-conversion, original memo",lawful,270000,87.32,0.419,1131.30,1218.62,0.451,no
+M05,"Re-conversion, original memo",lawful,280000,87.32,0.419,1173.20,1260.52,0.450,no
+M05,"Re-conversion, original memo",lawful,290000,87.32,0.419,1215.10,1302.42,0.449,no
+M05,"Re-conversion, original memo",lawful,300000,87.32,0.419,1257.00,1344.32,0.448,no
+M05,"Re-conversion, original memo",lawful,310000,87.32,0.419,1298.90,1386.22,0.447,no
+M05,"Re-conversion, original memo",lawful,320000,87.32,0.419,1340.80,1428.12,0.446,no
+M05,"Re-conversion, original memo",lawful,330000,87.32,0.419,1382.70,1470.02,0.445,no
+M05,"Re-conversion, original memo",lawful,340000,87.32,0.419,1424.60,1511.92,0.445,no
+M05,"Re-conversion, original memo",lawful,350000,87.32,0.419,1466.50,1553.82,0.444,no
+M05,"Re-conversion, original memo",lawful,360000,87.32,0.419,1508.40,1595.72,0.443,no
+M05,"Re-conversion, original memo",lawful,370000,87.32,0.419,1550.30,1637.62,0.443,no
+M05,"Re-conversion, original memo",lawful,380000,87.32,0.419,1592.20,1679.52,0.442,no
+M05,"Re-conversion, original memo",lawful,390000,87.32,0.419,1634.10,1721.42,0.441,no
+M05,"Re-conversion, original memo",lawful,400000,87.32,0.419,1676.00,1763.32,0.441,no
+M06,"Remit existing FX, no conversion",lawful,10000,30.99,0.000,0.00,30.99,0.310,no
+M06,"Remit existing FX, no conversion",lawful,20000,36.90,0.000,0.00,36.90,0.185,no
+M06,"Remit existing FX, no conversion",lawful,30000,46.90,0.000,0.00,46.90,0.156,no
+M06,"Remit existing FX, no conversion",lawful,40000,56.90,0.000,0.00,56.90,0.142,no
+M06,"Remit existing FX, no conversion",lawful,50000,66.90,0.000,0.00,66.90,0.134,no
+M06,"Remit existing FX, no conversion",lawful,60000,76.90,0.000,0.00,76.90,0.128,no
+M06,"Remit existing FX, no conversion",lawful,70000,86.90,0.000,0.00,86.90,0.124,no
+M06,"Remit existing FX, no conversion",lawful,80000,87.32,0.000,0.00,87.32,0.109,no
+M06,"Remit existing FX, no conversion",lawful,90000,87.32,0.000,0.00,87.32,0.097,no
+M06,"Remit existing FX, no conversion",lawful,100000,87.32,0.000,0.00,87.32,0.087,no
+M06,"Remit existing FX, no conversion",lawful,110000,87.32,0.000,0.00,87.32,0.079,no
+M06,"Remit existing FX, no conversion",lawful,120000,87.32,0.000,0.00,87.32,0.073,no
+M06,"Remit existing FX, no conversion",lawful,130000,87.32,0.000,0.00,87.32,0.067,no
+M06,"Remit existing FX, no conversion",lawful,140000,87.32,0.000,0.00,87.32,0.062,no
+M06,"Remit existing FX, no conversion",lawful,150000,87.32,0.000,0.00,87.32,0.058,no
+M06,"Remit existing FX, no conversion",lawful,160000,87.32,0.000,0.00,87.32,0.055,no
+M06,"Remit existing FX, no conversion",lawful,170000,87.32,0.000,0.00,87.32,0.051,no
+M06,"Remit existing FX, no conversion",lawful,180000,87.32,0.000,0.00,87.32,0.049,no
+M06,"Remit existing FX, no conversion",lawful,190000,87.32,0.000,0.00,87.32,0.046,no
+M06,"Remit existing FX, no conversion",lawful,200000,87.32,0.000,0.00,87.32,0.044,no
+M06,"Remit existing FX, no conversion",lawful,210000,87.32,0.000,0.00,87.32,0.042,no
+M06,"Remit existing FX, no conversion",lawful,220000,87.32,0.000,0.00,87.32,0.040,no
+M06,"Remit existing FX, no conversion",lawful,230000,87.32,0.000,0.00,87.32,0.038,no
+M06,"Remit existing FX, no conversion",lawful,240000,87.32,0.000,0.00,87.32,0.036,no
+M06,"Remit existing FX, no conversion",lawful,250000,87.32,0.000,0.00,87.32,0.035,no
+M06,"Remit existing FX, no conversion",lawful,260000,87.32,0.000,0.00,87.32,0.034,no
+M06,"Remit existing FX, no conversion",lawful,270000,87.32,0.000,0.00,87.32,0.032,no
+M06,"Remit existing FX, no conversion",lawful,280000,87.32,0.000,0.00,87.32,0.031,no
+M06,"Remit existing FX, no conversion",lawful,290000,87.32,0.000,0.00,87.32,0.030,no
+M06,"Remit existing FX, no conversion",lawful,300000,87.32,0.000,0.00,87.32,0.029,no
+M06,"Remit existing FX, no conversion",lawful,310000,87.32,0.000,0.00,87.32,0.028,no
+M06,"Remit existing FX, no conversion",lawful,320000,87.32,0.000,0.00,87.32,0.027,no
+M06,"Remit existing FX, no conversion",lawful,330000,87.32,0.000,0.00,87.32,0.026,no
+M06,"Remit existing FX, no conversion",lawful,340000,87.32,0.000,0.00,87.32,0.026,no
+M06,"Remit existing FX, no conversion",lawful,350000,87.32,0.000,0.00,87.32,0.025,no
+M06,"Remit existing FX, no conversion",lawful,360000,87.32,0.000,0.00,87.32,0.024,no
+M06,"Remit existing FX, no conversion",lawful,370000,87.32,0.000,0.00,87.32,0.024,no
+M06,"Remit existing FX, no conversion",lawful,380000,87.32,0.000,0.00,87.32,0.023,no
+M06,"Remit existing FX, no conversion",lawful,390000,87.32,0.000,0.00,87.32,0.022,no
+M06,"Remit existing FX, no conversion",lawful,400000,87.32,0.000,0.00,87.32,0.022,no
+M07,"Property proceeds",lawful,10000,30.99,0.419,41.90,72.89,0.729,no
+M07,"Property proceeds",lawful,20000,36.90,0.419,83.80,120.70,0.604,no
+M07,"Property proceeds",lawful,30000,46.90,0.419,125.70,172.60,0.575,no
+M07,"Property proceeds",lawful,40000,56.90,0.419,167.60,224.50,0.561,no
+M07,"Property proceeds",lawful,50000,66.90,0.419,209.50,276.40,0.553,no
+M07,"Property proceeds",lawful,60000,76.90,0.419,251.40,328.30,0.547,no
+M07,"Property proceeds",lawful,70000,86.90,0.419,293.30,380.20,0.543,no
+M07,"Property proceeds",lawful,80000,87.32,0.419,335.20,422.52,0.528,no
+M07,"Property proceeds",lawful,90000,87.32,0.419,377.10,464.42,0.516,no
+M07,"Property proceeds",lawful,100000,87.32,0.419,419.00,506.32,0.506,no
+M07,"Property proceeds",lawful,110000,87.32,0.419,460.90,548.22,0.498,no
+M07,"Property proceeds",lawful,120000,87.32,0.419,502.80,590.12,0.492,no
+M07,"Property proceeds",lawful,130000,87.32,0.419,544.70,632.02,0.486,no
+M07,"Property proceeds",lawful,140000,87.32,0.419,586.60,673.92,0.481,no
+M07,"Property proceeds",lawful,150000,87.32,0.419,628.50,715.82,0.477,no
+M07,"Property proceeds",lawful,160000,87.32,0.419,670.40,757.72,0.474,no
+M07,"Property proceeds",lawful,170000,87.32,0.419,712.30,799.62,0.470,no
+M07,"Property proceeds",lawful,180000,87.32,0.419,754.20,841.52,0.468,no
+M07,"Property proceeds",lawful,190000,87.32,0.419,796.10,883.42,0.465,no
+M07,"Property proceeds",lawful,200000,87.32,0.419,838.00,925.32,0.463,no
+M07,"Property proceeds",lawful,210000,87.32,0.419,879.90,967.22,0.461,no
+M07,"Property proceeds",lawful,220000,87.32,0.419,921.80,1009.12,0.459,no
+M07,"Property proceeds",lawful,230000,87.32,0.419,963.70,1051.02,0.457,no
+M07,"Property proceeds",lawful,240000,87.32,0.419,1005.60,1092.92,0.455,no
+M07,"Property proceeds",lawful,250000,87.32,0.419,1047.50,1134.82,0.454,no
+M07,"Property proceeds",lawful,260000,87.32,0.419,1089.40,1176.72,0.453,no
+M07,"Property proceeds",lawful,270000,87.32,0.419,1131.30,1218.62,0.451,no
+M07,"Property proceeds",lawful,280000,87.32,0.419,1173.20,1260.52,0.450,no
+M07,"Property proceeds",lawful,290000,87.32,0.419,1215.10,1302.42,0.449,no
+M07,"Property proceeds",lawful,300000,87.32,0.419,1257.00,1344.32,0.448,no
+M07,"Property proceeds",lawful,310000,87.32,0.419,1298.90,1386.22,0.447,no
+M07,"Property proceeds",lawful,320000,87.32,0.419,1340.80,1428.12,0.446,no
+M07,"Property proceeds",lawful,330000,87.32,0.419,1382.70,1470.02,0.445,no
+M07,"Property proceeds",lawful,340000,87.32,0.419,1424.60,1511.92,0.445,no
+M07,"Property proceeds",lawful,350000,87.32,0.419,1466.50,1553.82,0.444,no
+M07,"Property proceeds",lawful,360000,87.32,0.419,1508.40,1595.72,0.443,no
+M07,"Property proceeds",lawful,370000,87.32,0.419,1550.30,1637.62,0.443,no
+M07,"Property proceeds",lawful,380000,87.32,0.419,1592.20,1679.52,0.442,no
+M07,"Property proceeds",lawful,390000,87.32,0.419,1634.10,1721.42,0.441,no
+M07,"Property proceeds",lawful,400000,87.32,0.419,1676.00,1763.32,0.441,no
+M08,"Relative acts as agent",lawful,10000,30.99,0.419,41.90,72.89,0.729,no
+M08,"Relative acts as agent",lawful,20000,36.90,0.419,83.80,120.70,0.604,no
+M08,"Relative acts as agent",lawful,30000,46.90,0.419,125.70,172.60,0.575,no
+M08,"Relative acts as agent",lawful,40000,56.90,0.419,167.60,224.50,0.561,no
+M08,"Relative acts as agent",lawful,50000,66.90,0.419,209.50,276.40,0.553,no
+M08,"Relative acts as agent",lawful,60000,76.90,0.419,251.40,328.30,0.547,yes
+M08,"Relative acts as agent",lawful,70000,86.90,0.419,293.30,380.20,0.543,yes
+M08,"Relative acts as agent",lawful,80000,87.32,0.419,335.20,422.52,0.528,yes
+M08,"Relative acts as agent",lawful,90000,87.32,0.419,377.10,464.42,0.516,yes
+M08,"Relative acts as agent",lawful,100000,87.32,0.419,419.00,506.32,0.506,yes
+M08,"Relative acts as agent",lawful,110000,87.32,0.419,460.90,548.22,0.498,yes
+M08,"Relative acts as agent",lawful,120000,87.32,0.419,502.80,590.12,0.492,yes
+M08,"Relative acts as agent",lawful,130000,87.32,0.419,544.70,632.02,0.486,yes
+M08,"Relative acts as agent",lawful,140000,87.32,0.419,586.60,673.92,0.481,yes
+M08,"Relative acts as agent",lawful,150000,87.32,0.419,628.50,715.82,0.477,yes
+M08,"Relative acts as agent",lawful,160000,87.32,0.419,670.40,757.72,0.474,yes
+M08,"Relative acts as agent",lawful,170000,87.32,0.419,712.30,799.62,0.470,yes
+M08,"Relative acts as agent",lawful,180000,87.32,0.419,754.20,841.52,0.468,yes
+M08,"Relative acts as agent",lawful,190000,87.32,0.419,796.10,883.42,0.465,yes
+M08,"Relative acts as agent",lawful,200000,87.32,0.419,838.00,925.32,0.463,yes
+M08,"Relative acts as agent",lawful,210000,87.32,0.419,879.90,967.22,0.461,yes
+M08,"Relative acts as agent",lawful,220000,87.32,0.419,921.80,1009.12,0.459,yes
+M08,"Relative acts as agent",lawful,230000,87.32,0.419,963.70,1051.02,0.457,yes
+M08,"Relative acts as agent",lawful,240000,87.32,0.419,1005.60,1092.92,0.455,yes
+M08,"Relative acts as agent",lawful,250000,87.32,0.419,1047.50,1134.82,0.454,yes
+M08,"Relative acts as agent",lawful,260000,87.32,0.419,1089.40,1176.72,0.453,yes
+M08,"Relative acts as agent",lawful,270000,87.32,0.419,1131.30,1218.62,0.451,yes
+M08,"Relative acts as agent",lawful,280000,87.32,0.419,1173.20,1260.52,0.450,yes
+M08,"Relative acts as agent",lawful,290000,87.32,0.419,1215.10,1302.42,0.449,yes
+M08,"Relative acts as agent",lawful,300000,87.32,0.419,1257.00,1344.32,0.448,yes
+M08,"Relative acts as agent",lawful,310000,87.32,0.419,1298.90,1386.22,0.447,yes
+M08,"Relative acts as agent",lawful,320000,87.32,0.419,1340.80,1428.12,0.446,yes
+M08,"Relative acts as agent",lawful,330000,87.32,0.419,1382.70,1470.02,0.445,yes
+M08,"Relative acts as agent",lawful,340000,87.32,0.419,1424.60,1511.92,0.445,yes
+M08,"Relative acts as agent",lawful,350000,87.32,0.419,1466.50,1553.82,0.444,yes
+M08,"Relative acts as agent",lawful,360000,87.32,0.419,1508.40,1595.72,0.443,yes
+M08,"Relative acts as agent",lawful,370000,87.32,0.419,1550.30,1637.62,0.443,yes
+M08,"Relative acts as agent",lawful,380000,87.32,0.419,1592.20,1679.52,0.442,yes
+M08,"Relative acts as agent",lawful,390000,87.32,0.419,1634.10,1721.42,0.441,yes
+M08,"Relative acts as agent",lawful,400000,87.32,0.419,1676.00,1763.32,0.441,yes
+M09,"Keep it in China",lawful,10000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,20000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,30000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,40000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,50000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,60000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,70000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,80000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,90000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,100000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,110000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,120000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,130000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,140000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,150000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,160000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,170000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,180000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,190000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,200000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,210000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,220000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,230000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,240000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,250000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,260000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,270000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,280000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,290000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,300000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,310000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,320000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,330000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,340000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,350000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,360000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,370000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,380000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,390000,0.00,0.000,0.00,0.00,0.000,no
+M09,"Keep it in China",lawful,400000,0.00,0.000,0.00,0.00,0.000,no
+M10,"Card spending abroad",lawful,10000,,,,,,no
+M10,"Card spending abroad",lawful,20000,,,,,,no
+M10,"Card spending abroad",lawful,30000,,,,,,no
+M10,"Card spending abroad",lawful,40000,,,,,,no
+M10,"Card spending abroad",lawful,50000,,,,,,no
+M10,"Card spending abroad",lawful,60000,,,,,,no
+M10,"Card spending abroad",lawful,70000,,,,,,no
+M10,"Card spending abroad",lawful,80000,,,,,,no
+M10,"Card spending abroad",lawful,90000,,,,,,no
+M10,"Card spending abroad",lawful,100000,,,,,,no
+M10,"Card spending abroad",lawful,110000,,,,,,no
+M10,"Card spending abroad",lawful,120000,,,,,,no
+M10,"Card spending abroad",lawful,130000,,,,,,no
+M10,"Card spending abroad",lawful,140000,,,,,,no
+M10,"Card spending abroad",lawful,150000,,,,,,no
+M10,"Card spending abroad",lawful,160000,,,,,,no
+M10,"Card spending abroad",lawful,170000,,,,,,no
+M10,"Card spending abroad",lawful,180000,,,,,,no
+M10,"Card spending abroad",lawful,190000,,,,,,no
+M10,"Card spending abroad",lawful,200000,,,,,,no
+M10,"Card spending abroad",lawful,210000,,,,,,no
+M10,"Card spending abroad",lawful,220000,,,,,,no
+M10,"Card spending abroad",lawful,230000,,,,,,no
+M10,"Card spending abroad",lawful,240000,,,,,,no
+M10,"Card spending abroad",lawful,250000,,,,,,no
+M10,"Card spending abroad",lawful,260000,,,,,,no
+M10,"Card spending abroad",lawful,270000,,,,,,no
+M10,"Card spending abroad",lawful,280000,,,,,,no
+M10,"Card spending abroad",lawful,290000,,,,,,no
+M10,"Card spending abroad",lawful,300000,,,,,,no
+M10,"Card spending abroad",lawful,310000,,,,,,no
+M10,"Card spending abroad",lawful,320000,,,,,,no
+M10,"Card spending abroad",lawful,330000,,,,,,no
+M10,"Card spending abroad",lawful,340000,,,,,,no
+M10,"Card spending abroad",lawful,350000,,,,,,no
+M10,"Card spending abroad",lawful,360000,,,,,,no
+M10,"Card spending abroad",lawful,370000,,,,,,no
+M10,"Card spending abroad",lawful,380000,,,,,,no
+M10,"Card spending abroad",lawful,390000,,,,,,no
+M10,"Card spending abroad",lawful,400000,,,,,,no
+M11,"Overseas ATM cash",lawful,10000,,,,,,no
+M11,"Overseas ATM cash",lawful,20000,,,,,,yes
+M11,"Overseas ATM cash",lawful,30000,,,,,,yes
+M11,"Overseas ATM cash",lawful,40000,,,,,,yes
+M11,"Overseas ATM cash",lawful,50000,,,,,,yes
+M11,"Overseas ATM cash",lawful,60000,,,,,,yes
+M11,"Overseas ATM cash",lawful,70000,,,,,,yes
+M11,"Overseas ATM cash",lawful,80000,,,,,,yes
+M11,"Overseas ATM cash",lawful,90000,,,,,,yes
+M11,"Overseas ATM cash",lawful,100000,,,,,,yes
+M11,"Overseas ATM cash",lawful,110000,,,,,,yes
+M11,"Overseas ATM cash",lawful,120000,,,,,,yes
+M11,"Overseas ATM cash",lawful,130000,,,,,,yes
+M11,"Overseas ATM cash",lawful,140000,,,,,,yes
+M11,"Overseas ATM cash",lawful,150000,,,,,,yes
+M11,"Overseas ATM cash",lawful,160000,,,,,,yes
+M11,"Overseas ATM cash",lawful,170000,,,,,,yes
+M11,"Overseas ATM cash",lawful,180000,,,,,,yes
+M11,"Overseas ATM cash",lawful,190000,,,,,,yes
+M11,"Overseas ATM cash",lawful,200000,,,,,,yes
+M11,"Overseas ATM cash",lawful,210000,,,,,,yes
+M11,"Overseas ATM cash",lawful,220000,,,,,,yes
+M11,"Overseas ATM cash",lawful,230000,,,,,,yes
+M11,"Overseas ATM cash",lawful,240000,,,,,,yes
+M11,"Overseas ATM cash",lawful,250000,,,,,,yes
+M11,"Overseas ATM cash",lawful,260000,,,,,,yes
+M11,"Overseas ATM cash",lawful,270000,,,,,,yes
+M11,"Overseas ATM cash",lawful,280000,,,,,,yes
+M11,"Overseas ATM cash",lawful,290000,,,,,,yes
+M11,"Overseas ATM cash",lawful,300000,,,,,,yes
+M11,"Overseas ATM cash",lawful,310000,,,,,,yes
+M11,"Overseas ATM cash",lawful,320000,,,,,,yes
+M11,"Overseas ATM cash",lawful,330000,,,,,,yes
+M11,"Overseas ATM cash",lawful,340000,,,,,,yes
+M11,"Overseas ATM cash",lawful,350000,,,,,,yes
+M11,"Overseas ATM cash",lawful,360000,,,,,,yes
+M11,"Overseas ATM cash",lawful,370000,,,,,,yes
+M11,"Overseas ATM cash",lawful,380000,,,,,,yes
+M11,"Overseas ATM cash",lawful,390000,,,,,,yes
+M11,"Overseas ATM cash",lawful,400000,,,,,,yes
+M12,"Carry USD cash",lawful,10000,0.00,0.419,41.90,41.90,0.419,no
+M12,"Carry USD cash",lawful,20000,0.00,0.419,83.80,83.80,0.419,no
+M12,"Carry USD cash",lawful,30000,0.00,0.419,125.70,125.70,0.419,no
+M12,"Carry USD cash",lawful,40000,0.00,0.419,167.60,167.60,0.419,no
+M12,"Carry USD cash",lawful,50000,0.00,0.419,209.50,209.50,0.419,no
+M12,"Carry USD cash",lawful,60000,0.00,0.419,251.40,251.40,0.419,no
+M12,"Carry USD cash",lawful,70000,0.00,0.419,293.30,293.30,0.419,no
+M12,"Carry USD cash",lawful,80000,0.00,0.419,335.20,335.20,0.419,no
+M12,"Carry USD cash",lawful,90000,0.00,0.419,377.10,377.10,0.419,no
+M12,"Carry USD cash",lawful,100000,0.00,0.419,419.00,419.00,0.419,no
+M12,"Carry USD cash",lawful,110000,0.00,0.419,460.90,460.90,0.419,no
+M12,"Carry USD cash",lawful,120000,0.00,0.419,502.80,502.80,0.419,no
+M12,"Carry USD cash",lawful,130000,0.00,0.419,544.70,544.70,0.419,no
+M12,"Carry USD cash",lawful,140000,0.00,0.419,586.60,586.60,0.419,no
+M12,"Carry USD cash",lawful,150000,0.00,0.419,628.50,628.50,0.419,no
+M12,"Carry USD cash",lawful,160000,0.00,0.419,670.40,670.40,0.419,no
+M12,"Carry USD cash",lawful,170000,0.00,0.419,712.30,712.30,0.419,no
+M12,"Carry USD cash",lawful,180000,0.00,0.419,754.20,754.20,0.419,no
+M12,"Carry USD cash",lawful,190000,0.00,0.419,796.10,796.10,0.419,no
+M12,"Carry USD cash",lawful,200000,0.00,0.419,838.00,838.00,0.419,no
+M12,"Carry USD cash",lawful,210000,0.00,0.419,879.90,879.90,0.419,no
+M12,"Carry USD cash",lawful,220000,0.00,0.419,921.80,921.80,0.419,no
+M12,"Carry USD cash",lawful,230000,0.00,0.419,963.70,963.70,0.419,no
+M12,"Carry USD cash",lawful,240000,0.00,0.419,1005.60,1005.60,0.419,no
+M12,"Carry USD cash",lawful,250000,0.00,0.419,1047.50,1047.50,0.419,no
+M12,"Carry USD cash",lawful,260000,0.00,0.419,1089.40,1089.40,0.419,no
+M12,"Carry USD cash",lawful,270000,0.00,0.419,1131.30,1131.30,0.419,no
+M12,"Carry USD cash",lawful,280000,0.00,0.419,1173.20,1173.20,0.419,no
+M12,"Carry USD cash",lawful,290000,0.00,0.419,1215.10,1215.10,0.419,no
+M12,"Carry USD cash",lawful,300000,0.00,0.419,1257.00,1257.00,0.419,no
+M12,"Carry USD cash",lawful,310000,0.00,0.419,1298.90,1298.90,0.419,no
+M12,"Carry USD cash",lawful,320000,0.00,0.419,1340.80,1340.80,0.419,no
+M12,"Carry USD cash",lawful,330000,0.00,0.419,1382.70,1382.70,0.419,no
+M12,"Carry USD cash",lawful,340000,0.00,0.419,1424.60,1424.60,0.419,no
+M12,"Carry USD cash",lawful,350000,0.00,0.419,1466.50,1466.50,0.419,no
+M12,"Carry USD cash",lawful,360000,0.00,0.419,1508.40,1508.40,0.419,no
+M12,"Carry USD cash",lawful,370000,0.00,0.419,1550.30,1550.30,0.419,no
+M12,"Carry USD cash",lawful,380000,0.00,0.419,1592.20,1592.20,0.419,no
+M12,"Carry USD cash",lawful,390000,0.00,0.419,1634.10,1634.10,0.419,no
+M12,"Carry USD cash",lawful,400000,0.00,0.419,1676.00,1676.00,0.419,no
+M13,"Small ID-only conversion",lawful,10000,0.00,0.419,41.90,41.90,0.419,no
+M13,"Small ID-only conversion",lawful,20000,0.00,0.419,83.80,83.80,0.419,no
+M13,"Small ID-only conversion",lawful,30000,0.00,0.419,125.70,125.70,0.419,no
+M13,"Small ID-only conversion",lawful,40000,0.00,0.419,167.60,167.60,0.419,no
+M13,"Small ID-only conversion",lawful,50000,0.00,0.419,209.50,209.50,0.419,no
+M13,"Small ID-only conversion",lawful,60000,0.00,0.419,251.40,251.40,0.419,no
+M13,"Small ID-only conversion",lawful,70000,0.00,0.419,293.30,293.30,0.419,no
+M13,"Small ID-only conversion",lawful,80000,0.00,0.419,335.20,335.20,0.419,no
+M13,"Small ID-only conversion",lawful,90000,0.00,0.419,377.10,377.10,0.419,no
+M13,"Small ID-only conversion",lawful,100000,0.00,0.419,419.00,419.00,0.419,no
+M13,"Small ID-only conversion",lawful,110000,0.00,0.419,460.90,460.90,0.419,no
+M13,"Small ID-only conversion",lawful,120000,0.00,0.419,502.80,502.80,0.419,no
+M13,"Small ID-only conversion",lawful,130000,0.00,0.419,544.70,544.70,0.419,no
+M13,"Small ID-only conversion",lawful,140000,0.00,0.419,586.60,586.60,0.419,no
+M13,"Small ID-only conversion",lawful,150000,0.00,0.419,628.50,628.50,0.419,no
+M13,"Small ID-only conversion",lawful,160000,0.00,0.419,670.40,670.40,0.419,no
+M13,"Small ID-only conversion",lawful,170000,0.00,0.419,712.30,712.30,0.419,no
+M13,"Small ID-only conversion",lawful,180000,0.00,0.419,754.20,754.20,0.419,no
+M13,"Small ID-only conversion",lawful,190000,0.00,0.419,796.10,796.10,0.419,no
+M13,"Small ID-only conversion",lawful,200000,0.00,0.419,838.00,838.00,0.419,no
+M13,"Small ID-only conversion",lawful,210000,0.00,0.419,879.90,879.90,0.419,no
+M13,"Small ID-only conversion",lawful,220000,0.00,0.419,921.80,921.80,0.419,no
+M13,"Small ID-only conversion",lawful,230000,0.00,0.419,963.70,963.70,0.419,no
+M13,"Small ID-only conversion",lawful,240000,0.00,0.419,1005.60,1005.60,0.419,no
+M13,"Small ID-only conversion",lawful,250000,0.00,0.419,1047.50,1047.50,0.419,no
+M13,"Small ID-only conversion",lawful,260000,0.00,0.419,1089.40,1089.40,0.419,no
+M13,"Small ID-only conversion",lawful,270000,0.00,0.419,1131.30,1131.30,0.419,no
+M13,"Small ID-only conversion",lawful,280000,0.00,0.419,1173.20,1173.20,0.419,no
+M13,"Small ID-only conversion",lawful,290000,0.00,0.419,1215.10,1215.10,0.419,no
+M13,"Small ID-only conversion",lawful,300000,0.00,0.419,1257.00,1257.00,0.419,no
+M13,"Small ID-only conversion",lawful,310000,0.00,0.419,1298.90,1298.90,0.419,no
+M13,"Small ID-only conversion",lawful,320000,0.00,0.419,1340.80,1340.80,0.419,no
+M13,"Small ID-only conversion",lawful,330000,0.00,0.419,1382.70,1382.70,0.419,no
+M13,"Small ID-only conversion",lawful,340000,0.00,0.419,1424.60,1424.60,0.419,no
+M13,"Small ID-only conversion",lawful,350000,0.00,0.419,1466.50,1466.50,0.419,no
+M13,"Small ID-only conversion",lawful,360000,0.00,0.419,1508.40,1508.40,0.419,no
+M13,"Small ID-only conversion",lawful,370000,0.00,0.419,1550.30,1550.30,0.419,no
+M13,"Small ID-only conversion",lawful,380000,0.00,0.419,1592.20,1592.20,0.419,no
+M13,"Small ID-only conversion",lawful,390000,0.00,0.419,1634.10,1634.10,0.419,no
+M13,"Small ID-only conversion",lawful,400000,0.00,0.419,1676.00,1676.00,0.419,no
+M14,"Company dividend",conditional,10000,,,,,,no
+M14,"Company dividend",conditional,20000,,,,,,no
+M14,"Company dividend",conditional,30000,,,,,,no
+M14,"Company dividend",conditional,40000,,,,,,no
+M14,"Company dividend",conditional,50000,,,,,,no
+M14,"Company dividend",conditional,60000,,,,,,no
+M14,"Company dividend",conditional,70000,,,,,,no
+M14,"Company dividend",conditional,80000,,,,,,no
+M14,"Company dividend",conditional,90000,,,,,,no
+M14,"Company dividend",conditional,100000,,,,,,no
+M14,"Company dividend",conditional,110000,,,,,,no
+M14,"Company dividend",conditional,120000,,,,,,no
+M14,"Company dividend",conditional,130000,,,,,,no
+M14,"Company dividend",conditional,140000,,,,,,no
+M14,"Company dividend",conditional,150000,,,,,,no
+M14,"Company dividend",conditional,160000,,,,,,no
+M14,"Company dividend",conditional,170000,,,,,,no
+M14,"Company dividend",conditional,180000,,,,,,no
+M14,"Company dividend",conditional,190000,,,,,,no
+M14,"Company dividend",conditional,200000,,,,,,no
+M14,"Company dividend",conditional,210000,,,,,,no
+M14,"Company dividend",conditional,220000,,,,,,no
+M14,"Company dividend",conditional,230000,,,,,,no
+M14,"Company dividend",conditional,240000,,,,,,no
+M14,"Company dividend",conditional,250000,,,,,,no
+M14,"Company dividend",conditional,260000,,,,,,no
+M14,"Company dividend",conditional,270000,,,,,,no
+M14,"Company dividend",conditional,280000,,,,,,no
+M14,"Company dividend",conditional,290000,,,,,,no
+M14,"Company dividend",conditional,300000,,,,,,no
+M14,"Company dividend",conditional,310000,,,,,,no
+M14,"Company dividend",conditional,320000,,,,,,no
+M14,"Company dividend",conditional,330000,,,,,,no
+M14,"Company dividend",conditional,340000,,,,,,no
+M14,"Company dividend",conditional,350000,,,,,,no
+M14,"Company dividend",conditional,360000,,,,,,no
+M14,"Company dividend",conditional,370000,,,,,,no
+M14,"Company dividend",conditional,380000,,,,,,no
+M14,"Company dividend",conditional,390000,,,,,,no
+M14,"Company dividend",conditional,400000,,,,,,no
+M15,"Services to own US entity",conditional,10000,,,,,,no
+M15,"Services to own US entity",conditional,20000,,,,,,no
+M15,"Services to own US entity",conditional,30000,,,,,,no
+M15,"Services to own US entity",conditional,40000,,,,,,no
+M15,"Services to own US entity",conditional,50000,,,,,,no
+M15,"Services to own US entity",conditional,60000,,,,,,no
+M15,"Services to own US entity",conditional,70000,,,,,,no
+M15,"Services to own US entity",conditional,80000,,,,,,no
+M15,"Services to own US entity",conditional,90000,,,,,,no
+M15,"Services to own US entity",conditional,100000,,,,,,no
+M15,"Services to own US entity",conditional,110000,,,,,,no
+M15,"Services to own US entity",conditional,120000,,,,,,no
+M15,"Services to own US entity",conditional,130000,,,,,,no
+M15,"Services to own US entity",conditional,140000,,,,,,no
+M15,"Services to own US entity",conditional,150000,,,,,,no
+M15,"Services to own US entity",conditional,160000,,,,,,no
+M15,"Services to own US entity",conditional,170000,,,,,,no
+M15,"Services to own US entity",conditional,180000,,,,,,no
+M15,"Services to own US entity",conditional,190000,,,,,,no
+M15,"Services to own US entity",conditional,200000,,,,,,no
+M15,"Services to own US entity",conditional,210000,,,,,,no
+M15,"Services to own US entity",conditional,220000,,,,,,no
+M15,"Services to own US entity",conditional,230000,,,,,,no
+M15,"Services to own US entity",conditional,240000,,,,,,no
+M15,"Services to own US entity",conditional,250000,,,,,,no
+M15,"Services to own US entity",conditional,260000,,,,,,no
+M15,"Services to own US entity",conditional,270000,,,,,,no
+M15,"Services to own US entity",conditional,280000,,,,,,no
+M15,"Services to own US entity",conditional,290000,,,,,,no
+M15,"Services to own US entity",conditional,300000,,,,,,no
+M15,"Services to own US entity",conditional,310000,,,,,,no
+M15,"Services to own US entity",conditional,320000,,,,,,no
+M15,"Services to own US entity",conditional,330000,,,,,,no
+M15,"Services to own US entity",conditional,340000,,,,,,no
+M15,"Services to own US entity",conditional,350000,,,,,,no
+M15,"Services to own US entity",conditional,360000,,,,,,no
+M15,"Services to own US entity",conditional,370000,,,,,,no
+M15,"Services to own US entity",conditional,380000,,,,,,no
+M15,"Services to own US entity",conditional,390000,,,,,,no
+M15,"Services to own US entity",conditional,400000,,,,,,no
+M16,"Import goods and sell",conditional,10000,,,,,,no
+M16,"Import goods and sell",conditional,20000,,,,,,no
+M16,"Import goods and sell",conditional,30000,,,,,,no
+M16,"Import goods and sell",conditional,40000,,,,,,no
+M16,"Import goods and sell",conditional,50000,,,,,,no
+M16,"Import goods and sell",conditional,60000,,,,,,no
+M16,"Import goods and sell",conditional,70000,,,,,,no
+M16,"Import goods and sell",conditional,80000,,,,,,no
+M16,"Import goods and sell",conditional,90000,,,,,,no
+M16,"Import goods and sell",conditional,100000,,,,,,no
+M16,"Import goods and sell",conditional,110000,,,,,,no
+M16,"Import goods and sell",conditional,120000,,,,,,no
+M16,"Import goods and sell",conditional,130000,,,,,,no
+M16,"Import goods and sell",conditional,140000,,,,,,no
+M16,"Import goods and sell",conditional,150000,,,,,,no
+M16,"Import goods and sell",conditional,160000,,,,,,no
+M16,"Import goods and sell",conditional,170000,,,,,,no
+M16,"Import goods and sell",conditional,180000,,,,,,no
+M16,"Import goods and sell",conditional,190000,,,,,,no
+M16,"Import goods and sell",conditional,200000,,,,,,no
+M16,"Import goods and sell",conditional,210000,,,,,,no
+M16,"Import goods and sell",conditional,220000,,,,,,no
+M16,"Import goods and sell",conditional,230000,,,,,,no
+M16,"Import goods and sell",conditional,240000,,,,,,no
+M16,"Import goods and sell",conditional,250000,,,,,,no
+M16,"Import goods and sell",conditional,260000,,,,,,no
+M16,"Import goods and sell",conditional,270000,,,,,,no
+M16,"Import goods and sell",conditional,280000,,,,,,no
+M16,"Import goods and sell",conditional,290000,,,,,,no
+M16,"Import goods and sell",conditional,300000,,,,,,no
+M16,"Import goods and sell",conditional,310000,,,,,,no
+M16,"Import goods and sell",conditional,320000,,,,,,no
+M16,"Import goods and sell",conditional,330000,,,,,,no
+M16,"Import goods and sell",conditional,340000,,,,,,no
+M16,"Import goods and sell",conditional,350000,,,,,,no
+M16,"Import goods and sell",conditional,360000,,,,,,no
+M16,"Import goods and sell",conditional,370000,,,,,,no
+M16,"Import goods and sell",conditional,380000,,,,,,no
+M16,"Import goods and sell",conditional,390000,,,,,,no
+M16,"Import goods and sell",conditional,400000,,,,,,no
+M17,"Offshore CNH then convert",conditional,10000,,,,,,no
+M17,"Offshore CNH then convert",conditional,20000,,,,,,no
+M17,"Offshore CNH then convert",conditional,30000,,,,,,no
+M17,"Offshore CNH then convert",conditional,40000,,,,,,no
+M17,"Offshore CNH then convert",conditional,50000,,,,,,no
+M17,"Offshore CNH then convert",conditional,60000,,,,,,no
+M17,"Offshore CNH then convert",conditional,70000,,,,,,no
+M17,"Offshore CNH then convert",conditional,80000,,,,,,no
+M17,"Offshore CNH then convert",conditional,90000,,,,,,no
+M17,"Offshore CNH then convert",conditional,100000,,,,,,no
+M17,"Offshore CNH then convert",conditional,110000,,,,,,no
+M17,"Offshore CNH then convert",conditional,120000,,,,,,no
+M17,"Offshore CNH then convert",conditional,130000,,,,,,no
+M17,"Offshore CNH then convert",conditional,140000,,,,,,no
+M17,"Offshore CNH then convert",conditional,150000,,,,,,no
+M17,"Offshore CNH then convert",conditional,160000,,,,,,no
+M17,"Offshore CNH then convert",conditional,170000,,,,,,no
+M17,"Offshore CNH then convert",conditional,180000,,,,,,no
+M17,"Offshore CNH then convert",conditional,190000,,,,,,no
+M17,"Offshore CNH then convert",conditional,200000,,,,,,no
+M17,"Offshore CNH then convert",conditional,210000,,,,,,no
+M17,"Offshore CNH then convert",conditional,220000,,,,,,no
+M17,"Offshore CNH then convert",conditional,230000,,,,,,no
+M17,"Offshore CNH then convert",conditional,240000,,,,,,no
+M17,"Offshore CNH then convert",conditional,250000,,,,,,no
+M17,"Offshore CNH then convert",conditional,260000,,,,,,no
+M17,"Offshore CNH then convert",conditional,270000,,,,,,no
+M17,"Offshore CNH then convert",conditional,280000,,,,,,no
+M17,"Offshore CNH then convert",conditional,290000,,,,,,no
+M17,"Offshore CNH then convert",conditional,300000,,,,,,no
+M17,"Offshore CNH then convert",conditional,310000,,,,,,no
+M17,"Offshore CNH then convert",conditional,320000,,,,,,no
+M17,"Offshore CNH then convert",conditional,330000,,,,,,no
+M17,"Offshore CNH then convert",conditional,340000,,,,,,no
+M17,"Offshore CNH then convert",conditional,350000,,,,,,no
+M17,"Offshore CNH then convert",conditional,360000,,,,,,no
+M17,"Offshore CNH then convert",conditional,370000,,,,,,no
+M17,"Offshore CNH then convert",conditional,380000,,,,,,no
+M17,"Offshore CNH then convert",conditional,390000,,,,,,no
+M17,"Offshore CNH then convert",conditional,400000,,,,,,no
+M18,"GBA Wealth Management Connect",conditional,10000,0.00,0.419,41.90,41.90,0.419,no
+M18,"GBA Wealth Management Connect",conditional,20000,0.00,0.419,83.80,83.80,0.419,no
+M18,"GBA Wealth Management Connect",conditional,30000,0.00,0.419,125.70,125.70,0.419,no
+M18,"GBA Wealth Management Connect",conditional,40000,0.00,0.419,167.60,167.60,0.419,no
+M18,"GBA Wealth Management Connect",conditional,50000,0.00,0.419,209.50,209.50,0.419,no
+M18,"GBA Wealth Management Connect",conditional,60000,0.00,0.419,251.40,251.40,0.419,no
+M18,"GBA Wealth Management Connect",conditional,70000,0.00,0.419,293.30,293.30,0.419,no
+M18,"GBA Wealth Management Connect",conditional,80000,0.00,0.419,335.20,335.20,0.419,no
+M18,"GBA Wealth Management Connect",conditional,90000,0.00,0.419,377.10,377.10,0.419,no
+M18,"GBA Wealth Management Connect",conditional,100000,0.00,0.419,419.00,419.00,0.419,no
+M18,"GBA Wealth Management Connect",conditional,110000,0.00,0.419,460.90,460.90,0.419,no
+M18,"GBA Wealth Management Connect",conditional,120000,0.00,0.419,502.80,502.80,0.419,no
+M18,"GBA Wealth Management Connect",conditional,130000,0.00,0.419,544.70,544.70,0.419,no
+M18,"GBA Wealth Management Connect",conditional,140000,0.00,0.419,586.60,586.60,0.419,no
+M18,"GBA Wealth Management Connect",conditional,150000,0.00,0.419,628.50,628.50,0.419,no
+M18,"GBA Wealth Management Connect",conditional,160000,0.00,0.419,670.40,670.40,0.419,no
+M18,"GBA Wealth Management Connect",conditional,170000,0.00,0.419,712.30,712.30,0.419,no
+M18,"GBA Wealth Management Connect",conditional,180000,0.00,0.419,754.20,754.20,0.419,no
+M18,"GBA Wealth Management Connect",conditional,190000,0.00,0.419,796.10,796.10,0.419,no
+M18,"GBA Wealth Management Connect",conditional,200000,0.00,0.419,838.00,838.00,0.419,no
+M18,"GBA Wealth Management Connect",conditional,210000,0.00,0.419,879.90,879.90,0.419,no
+M18,"GBA Wealth Management Connect",conditional,220000,0.00,0.419,921.80,921.80,0.419,no
+M18,"GBA Wealth Management Connect",conditional,230000,0.00,0.419,963.70,963.70,0.419,no
+M18,"GBA Wealth Management Connect",conditional,240000,0.00,0.419,1005.60,1005.60,0.419,no
+M18,"GBA Wealth Management Connect",conditional,250000,0.00,0.419,1047.50,1047.50,0.419,no
+M18,"GBA Wealth Management Connect",conditional,260000,0.00,0.419,1089.40,1089.40,0.419,no
+M18,"GBA Wealth Management Connect",conditional,270000,0.00,0.419,1131.30,1131.30,0.419,no
+M18,"GBA Wealth Management Connect",conditional,280000,0.00,0.419,1173.20,1173.20,0.419,no
+M18,"GBA Wealth Management Connect",conditional,290000,0.00,0.419,1215.10,1215.10,0.419,no
+M18,"GBA Wealth Management Connect",conditional,300000,0.00,0.419,1257.00,1257.00,0.419,no
+M18,"GBA Wealth Management Connect",conditional,310000,0.00,0.419,1298.90,1298.90,0.419,no
+M18,"GBA Wealth Management Connect",conditional,320000,0.00,0.419,1340.80,1340.80,0.419,no
+M18,"GBA Wealth Management Connect",conditional,330000,0.00,0.419,1382.70,1382.70,0.419,no
+M18,"GBA Wealth Management Connect",conditional,340000,0.00,0.419,1424.60,1424.60,0.419,no
+M18,"GBA Wealth Management Connect",conditional,350000,0.00,0.419,1466.50,1466.50,0.419,no
+M18,"GBA Wealth Management Connect",conditional,360000,0.00,0.419,1508.40,1508.40,0.419,no
+M18,"GBA Wealth Management Connect",conditional,370000,0.00,0.419,1550.30,1550.30,0.419,no
+M18,"GBA Wealth Management Connect",conditional,380000,0.00,0.419,1592.20,1592.20,0.419,no
+M18,"GBA Wealth Management Connect",conditional,390000,0.00,0.419,1634.10,1634.10,0.419,no
+M18,"GBA Wealth Management Connect",conditional,400000,0.00,0.419,1676.00,1676.00,0.419,no
+M19,"QDII / QDLP fund",conditional,10000,,,,,,no
+M19,"QDII / QDLP fund",conditional,20000,,,,,,no
+M19,"QDII / QDLP fund",conditional,30000,,,,,,no
+M19,"QDII / QDLP fund",conditional,40000,,,,,,no
+M19,"QDII / QDLP fund",conditional,50000,,,,,,no
+M19,"QDII / QDLP fund",conditional,60000,,,,,,no
+M19,"QDII / QDLP fund",conditional,70000,,,,,,no
+M19,"QDII / QDLP fund",conditional,80000,,,,,,no
+M19,"QDII / QDLP fund",conditional,90000,,,,,,no
+M19,"QDII / QDLP fund",conditional,100000,,,,,,no
+M19,"QDII / QDLP fund",conditional,110000,,,,,,no
+M19,"QDII / QDLP fund",conditional,120000,,,,,,no
+M19,"QDII / QDLP fund",conditional,130000,,,,,,no
+M19,"QDII / QDLP fund",conditional,140000,,,,,,no
+M19,"QDII / QDLP fund",conditional,150000,,,,,,no
+M19,"QDII / QDLP fund",conditional,160000,,,,,,no
+M19,"QDII / QDLP fund",conditional,170000,,,,,,no
+M19,"QDII / QDLP fund",conditional,180000,,,,,,no
+M19,"QDII / QDLP fund",conditional,190000,,,,,,no
+M19,"QDII / QDLP fund",conditional,200000,,,,,,no
+M19,"QDII / QDLP fund",conditional,210000,,,,,,no
+M19,"QDII / QDLP fund",conditional,220000,,,,,,no
+M19,"QDII / QDLP fund",conditional,230000,,,,,,no
+M19,"QDII / QDLP fund",conditional,240000,,,,,,no
+M19,"QDII / QDLP fund",conditional,250000,,,,,,no
+M19,"QDII / QDLP fund",conditional,260000,,,,,,no
+M19,"QDII / QDLP fund",conditional,270000,,,,,,no
+M19,"QDII / QDLP fund",conditional,280000,,,,,,no
+M19,"QDII / QDLP fund",conditional,290000,,,,,,no
+M19,"QDII / QDLP fund",conditional,300000,,,,,,no
+M19,"QDII / QDLP fund",conditional,310000,,,,,,no
+M19,"QDII / QDLP fund",conditional,320000,,,,,,no
+M19,"QDII / QDLP fund",conditional,330000,,,,,,no
+M19,"QDII / QDLP fund",conditional,340000,,,,,,no
+M19,"QDII / QDLP fund",conditional,350000,,,,,,no
+M19,"QDII / QDLP fund",conditional,360000,,,,,,no
+M19,"QDII / QDLP fund",conditional,370000,,,,,,no
+M19,"QDII / QDLP fund",conditional,380000,,,,,,no
+M19,"QDII / QDLP fund",conditional,390000,,,,,,no
+M19,"QDII / QDLP fund",conditional,400000,,,,,,no
+M20,"Individual ODI",conditional,10000,,,,,,no
+M20,"Individual ODI",conditional,20000,,,,,,no
+M20,"Individual ODI",conditional,30000,,,,,,no
+M20,"Individual ODI",conditional,40000,,,,,,no
+M20,"Individual ODI",conditional,50000,,,,,,no
+M20,"Individual ODI",conditional,60000,,,,,,no
+M20,"Individual ODI",conditional,70000,,,,,,no
+M20,"Individual ODI",conditional,80000,,,,,,no
+M20,"Individual ODI",conditional,90000,,,,,,no
+M20,"Individual ODI",conditional,100000,,,,,,no
+M20,"Individual ODI",conditional,110000,,,,,,no
+M20,"Individual ODI",conditional,120000,,,,,,no
+M20,"Individual ODI",conditional,130000,,,,,,no
+M20,"Individual ODI",conditional,140000,,,,,,no
+M20,"Individual ODI",conditional,150000,,,,,,no
+M20,"Individual ODI",conditional,160000,,,,,,no
+M20,"Individual ODI",conditional,170000,,,,,,no
+M20,"Individual ODI",conditional,180000,,,,,,no
+M20,"Individual ODI",conditional,190000,,,,,,no
+M20,"Individual ODI",conditional,200000,,,,,,no
+M20,"Individual ODI",conditional,210000,,,,,,no
+M20,"Individual ODI",conditional,220000,,,,,,no
+M20,"Individual ODI",conditional,230000,,,,,,no
+M20,"Individual ODI",conditional,240000,,,,,,no
+M20,"Individual ODI",conditional,250000,,,,,,no
+M20,"Individual ODI",conditional,260000,,,,,,no
+M20,"Individual ODI",conditional,270000,,,,,,no
+M20,"Individual ODI",conditional,280000,,,,,,no
+M20,"Individual ODI",conditional,290000,,,,,,no
+M20,"Individual ODI",conditional,300000,,,,,,no
+M20,"Individual ODI",conditional,310000,,,,,,no
+M20,"Individual ODI",conditional,320000,,,,,,no
+M20,"Individual ODI",conditional,330000,,,,,,no
+M20,"Individual ODI",conditional,340000,,,,,,no
+M20,"Individual ODI",conditional,350000,,,,,,no
+M20,"Individual ODI",conditional,360000,,,,,,no
+M20,"Individual ODI",conditional,370000,,,,,,no
+M20,"Individual ODI",conditional,380000,,,,,,no
+M20,"Individual ODI",conditional,390000,,,,,,no
+M20,"Individual ODI",conditional,400000,,,,,,no
+U01,"Underground bank",unlawful,10000,,,,,,no
+U01,"Underground bank",unlawful,20000,,,,,,no
+U01,"Underground bank",unlawful,30000,,,,,,no
+U01,"Underground bank",unlawful,40000,,,,,,no
+U01,"Underground bank",unlawful,50000,,,,,,no
+U01,"Underground bank",unlawful,60000,,,,,,no
+U01,"Underground bank",unlawful,70000,,,,,,no
+U01,"Underground bank",unlawful,80000,,,,,,no
+U01,"Underground bank",unlawful,90000,,,,,,no
+U01,"Underground bank",unlawful,100000,,,,,,no
+U01,"Underground bank",unlawful,110000,,,,,,no
+U01,"Underground bank",unlawful,120000,,,,,,no
+U01,"Underground bank",unlawful,130000,,,,,,no
+U01,"Underground bank",unlawful,140000,,,,,,no
+U01,"Underground bank",unlawful,150000,,,,,,no
+U01,"Underground bank",unlawful,160000,,,,,,no
+U01,"Underground bank",unlawful,170000,,,,,,no
+U01,"Underground bank",unlawful,180000,,,,,,no
+U01,"Underground bank",unlawful,190000,,,,,,no
+U01,"Underground bank",unlawful,200000,,,,,,no
+U01,"Underground bank",unlawful,210000,,,,,,no
+U01,"Underground bank",unlawful,220000,,,,,,no
+U01,"Underground bank",unlawful,230000,,,,,,no
+U01,"Underground bank",unlawful,240000,,,,,,no
+U01,"Underground bank",unlawful,250000,,,,,,no
+U01,"Underground bank",unlawful,260000,,,,,,no
+U01,"Underground bank",unlawful,270000,,,,,,no
+U01,"Underground bank",unlawful,280000,,,,,,no
+U01,"Underground bank",unlawful,290000,,,,,,no
+U01,"Underground bank",unlawful,300000,,,,,,no
+U01,"Underground bank",unlawful,310000,,,,,,no
+U01,"Underground bank",unlawful,320000,,,,,,no
+U01,"Underground bank",unlawful,330000,,,,,,no
+U01,"Underground bank",unlawful,340000,,,,,,no
+U01,"Underground bank",unlawful,350000,,,,,,no
+U01,"Underground bank",unlawful,360000,,,,,,no
+U01,"Underground bank",unlawful,370000,,,,,,no
+U01,"Underground bank",unlawful,380000,,,,,,no
+U01,"Underground bank",unlawful,390000,,,,,,no
+U01,"Underground bank",unlawful,400000,,,,,,no
+U02,"Private FX swap",unlawful,10000,,,,,,no
+U02,"Private FX swap",unlawful,20000,,,,,,no
+U02,"Private FX swap",unlawful,30000,,,,,,no
+U02,"Private FX swap",unlawful,40000,,,,,,no
+U02,"Private FX swap",unlawful,50000,,,,,,no
+U02,"Private FX swap",unlawful,60000,,,,,,no
+U02,"Private FX swap",unlawful,70000,,,,,,no
+U02,"Private FX swap",unlawful,80000,,,,,,no
+U02,"Private FX swap",unlawful,90000,,,,,,no
+U02,"Private FX swap",unlawful,100000,,,,,,no
+U02,"Private FX swap",unlawful,110000,,,,,,no
+U02,"Private FX swap",unlawful,120000,,,,,,no
+U02,"Private FX swap",unlawful,130000,,,,,,no
+U02,"Private FX swap",unlawful,140000,,,,,,no
+U02,"Private FX swap",unlawful,150000,,,,,,no
+U02,"Private FX swap",unlawful,160000,,,,,,no
+U02,"Private FX swap",unlawful,170000,,,,,,no
+U02,"Private FX swap",unlawful,180000,,,,,,no
+U02,"Private FX swap",unlawful,190000,,,,,,no
+U02,"Private FX swap",unlawful,200000,,,,,,no
+U02,"Private FX swap",unlawful,210000,,,,,,no
+U02,"Private FX swap",unlawful,220000,,,,,,no
+U02,"Private FX swap",unlawful,230000,,,,,,no
+U02,"Private FX swap",unlawful,240000,,,,,,no
+U02,"Private FX swap",unlawful,250000,,,,,,no
+U02,"Private FX swap",unlawful,260000,,,,,,no
+U02,"Private FX swap",unlawful,270000,,,,,,no
+U02,"Private FX swap",unlawful,280000,,,,,,no
+U02,"Private FX swap",unlawful,290000,,,,,,no
+U02,"Private FX swap",unlawful,300000,,,,,,no
+U02,"Private FX swap",unlawful,310000,,,,,,no
+U02,"Private FX swap",unlawful,320000,,,,,,no
+U02,"Private FX swap",unlawful,330000,,,,,,no
+U02,"Private FX swap",unlawful,340000,,,,,,no
+U02,"Private FX swap",unlawful,350000,,,,,,no
+U02,"Private FX swap",unlawful,360000,,,,,,no
+U02,"Private FX swap",unlawful,370000,,,,,,no
+U02,"Private FX swap",unlawful,380000,,,,,,no
+U02,"Private FX swap",unlawful,390000,,,,,,no
+U02,"Private FX swap",unlawful,400000,,,,,,no
+U03,"Crypto / USDT",unlawful,10000,,,,,,no
+U03,"Crypto / USDT",unlawful,20000,,,,,,no
+U03,"Crypto / USDT",unlawful,30000,,,,,,no
+U03,"Crypto / USDT",unlawful,40000,,,,,,no
+U03,"Crypto / USDT",unlawful,50000,,,,,,no
+U03,"Crypto / USDT",unlawful,60000,,,,,,no
+U03,"Crypto / USDT",unlawful,70000,,,,,,no
+U03,"Crypto / USDT",unlawful,80000,,,,,,no
+U03,"Crypto / USDT",unlawful,90000,,,,,,no
+U03,"Crypto / USDT",unlawful,100000,,,,,,no
+U03,"Crypto / USDT",unlawful,110000,,,,,,no
+U03,"Crypto / USDT",unlawful,120000,,,,,,no
+U03,"Crypto / USDT",unlawful,130000,,,,,,no
+U03,"Crypto / USDT",unlawful,140000,,,,,,no
+U03,"Crypto / USDT",unlawful,150000,,,,,,no
+U03,"Crypto / USDT",unlawful,160000,,,,,,no
+U03,"Crypto / USDT",unlawful,170000,,,,,,no
+U03,"Crypto / USDT",unlawful,180000,,,,,,no
+U03,"Crypto / USDT",unlawful,190000,,,,,,no
+U03,"Crypto / USDT",unlawful,200000,,,,,,no
+U03,"Crypto / USDT",unlawful,210000,,,,,,no
+U03,"Crypto / USDT",unlawful,220000,,,,,,no
+U03,"Crypto / USDT",unlawful,230000,,,,,,no
+U03,"Crypto / USDT",unlawful,240000,,,,,,no
+U03,"Crypto / USDT",unlawful,250000,,,,,,no
+U03,"Crypto / USDT",unlawful,260000,,,,,,no
+U03,"Crypto / USDT",unlawful,270000,,,,,,no
+U03,"Crypto / USDT",unlawful,280000,,,,,,no
+U03,"Crypto / USDT",unlawful,290000,,,,,,no
+U03,"Crypto / USDT",unlawful,300000,,,,,,no
+U03,"Crypto / USDT",unlawful,310000,,,,,,no
+U03,"Crypto / USDT",unlawful,320000,,,,,,no
+U03,"Crypto / USDT",unlawful,330000,,,,,,no
+U03,"Crypto / USDT",unlawful,340000,,,,,,no
+U03,"Crypto / USDT",unlawful,350000,,,,,,no
+U03,"Crypto / USDT",unlawful,360000,,,,,,no
+U03,"Crypto / USDT",unlawful,370000,,,,,,no
+U03,"Crypto / USDT",unlawful,380000,,,,,,no
+U03,"Crypto / USDT",unlawful,390000,,,,,,no
+U03,"Crypto / USDT",unlawful,400000,,,,,,no
+U04,"Borrow a quota",unlawful,10000,,,,,,no
+U04,"Borrow a quota",unlawful,20000,,,,,,no
+U04,"Borrow a quota",unlawful,30000,,,,,,no
+U04,"Borrow a quota",unlawful,40000,,,,,,no
+U04,"Borrow a quota",unlawful,50000,,,,,,no
+U04,"Borrow a quota",unlawful,60000,,,,,,no
+U04,"Borrow a quota",unlawful,70000,,,,,,no
+U04,"Borrow a quota",unlawful,80000,,,,,,no
+U04,"Borrow a quota",unlawful,90000,,,,,,no
+U04,"Borrow a quota",unlawful,100000,,,,,,no
+U04,"Borrow a quota",unlawful,110000,,,,,,no
+U04,"Borrow a quota",unlawful,120000,,,,,,no
+U04,"Borrow a quota",unlawful,130000,,,,,,no
+U04,"Borrow a quota",unlawful,140000,,,,,,no
+U04,"Borrow a quota",unlawful,150000,,,,,,no
+U04,"Borrow a quota",unlawful,160000,,,,,,no
+U04,"Borrow a quota",unlawful,170000,,,,,,no
+U04,"Borrow a quota",unlawful,180000,,,,,,no
+U04,"Borrow a quota",unlawful,190000,,,,,,no
+U04,"Borrow a quota",unlawful,200000,,,,,,no
+U04,"Borrow a quota",unlawful,210000,,,,,,no
+U04,"Borrow a quota",unlawful,220000,,,,,,no
+U04,"Borrow a quota",unlawful,230000,,,,,,no
+U04,"Borrow a quota",unlawful,240000,,,,,,no
+U04,"Borrow a quota",unlawful,250000,,,,,,no
+U04,"Borrow a quota",unlawful,260000,,,,,,no
+U04,"Borrow a quota",unlawful,270000,,,,,,no
+U04,"Borrow a quota",unlawful,280000,,,,,,no
+U04,"Borrow a quota",unlawful,290000,,,,,,no
+U04,"Borrow a quota",unlawful,300000,,,,,,no
+U04,"Borrow a quota",unlawful,310000,,,,,,no
+U04,"Borrow a quota",unlawful,320000,,,,,,no
+U04,"Borrow a quota",unlawful,330000,,,,,,no
+U04,"Borrow a quota",unlawful,340000,,,,,,no
+U04,"Borrow a quota",unlawful,350000,,,,,,no
+U04,"Borrow a quota",unlawful,360000,,,,,,no
+U04,"Borrow a quota",unlawful,370000,,,,,,no
+U04,"Borrow a quota",unlawful,380000,,,,,,no
+U04,"Borrow a quota",unlawful,390000,,,,,,no
+U04,"Borrow a quota",unlawful,400000,,,,,,no
+U05,"Fabricated documents",unlawful,10000,,,,,,no
+U05,"Fabricated documents",unlawful,20000,,,,,,no
+U05,"Fabricated documents",unlawful,30000,,,,,,no
+U05,"Fabricated documents",unlawful,40000,,,,,,no
+U05,"Fabricated documents",unlawful,50000,,,,,,no
+U05,"Fabricated documents",unlawful,60000,,,,,,no
+U05,"Fabricated documents",unlawful,70000,,,,,,no
+U05,"Fabricated documents",unlawful,80000,,,,,,no
+U05,"Fabricated documents",unlawful,90000,,,,,,no
+U05,"Fabricated documents",unlawful,100000,,,,,,no
+U05,"Fabricated documents",unlawful,110000,,,,,,no
+U05,"Fabricated documents",unlawful,120000,,,,,,no
+U05,"Fabricated documents",unlawful,130000,,,,,,no
+U05,"Fabricated documents",unlawful,140000,,,,,,no
+U05,"Fabricated documents",unlawful,150000,,,,,,no
+U05,"Fabricated documents",unlawful,160000,,,,,,no
+U05,"Fabricated documents",unlawful,170000,,,,,,no
+U05,"Fabricated documents",unlawful,180000,,,,,,no
+U05,"Fabricated documents",unlawful,190000,,,,,,no
+U05,"Fabricated documents",unlawful,200000,,,,,,no
+U05,"Fabricated documents",unlawful,210000,,,,,,no
+U05,"Fabricated documents",unlawful,220000,,,,,,no
+U05,"Fabricated documents",unlawful,230000,,,,,,no
+U05,"Fabricated documents",unlawful,240000,,,,,,no
+U05,"Fabricated documents",unlawful,250000,,,,,,no
+U05,"Fabricated documents",unlawful,260000,,,,,,no
+U05,"Fabricated documents",unlawful,270000,,,,,,no
+U05,"Fabricated documents",unlawful,280000,,,,,,no
+U05,"Fabricated documents",unlawful,290000,,,,,,no
+U05,"Fabricated documents",unlawful,300000,,,,,,no
+U05,"Fabricated documents",unlawful,310000,,,,,,no
+U05,"Fabricated documents",unlawful,320000,,,,,,no
+U05,"Fabricated documents",unlawful,330000,,,,,,no
+U05,"Fabricated documents",unlawful,340000,,,,,,no
+U05,"Fabricated documents",unlawful,350000,,,,,,no
+U05,"Fabricated documents",unlawful,360000,,,,,,no
+U05,"Fabricated documents",unlawful,370000,,,,,,no
+U05,"Fabricated documents",unlawful,380000,,,,,,no
+U05,"Fabricated documents",unlawful,390000,,,,,,no
+U05,"Fabricated documents",unlawful,400000,,,,,,no
+U06,"Structuring transfers",unlawful,10000,,,,,,no
+U06,"Structuring transfers",unlawful,20000,,,,,,no
+U06,"Structuring transfers",unlawful,30000,,,,,,no
+U06,"Structuring transfers",unlawful,40000,,,,,,no
+U06,"Structuring transfers",unlawful,50000,,,,,,no
+U06,"Structuring transfers",unlawful,60000,,,,,,no
+U06,"Structuring transfers",unlawful,70000,,,,,,no
+U06,"Structuring transfers",unlawful,80000,,,,,,no
+U06,"Structuring transfers",unlawful,90000,,,,,,no
+U06,"Structuring transfers",unlawful,100000,,,,,,no
+U06,"Structuring transfers",unlawful,110000,,,,,,no
+U06,"Structuring transfers",unlawful,120000,,,,,,no
+U06,"Structuring transfers",unlawful,130000,,,,,,no
+U06,"Structuring transfers",unlawful,140000,,,,,,no
+U06,"Structuring transfers",unlawful,150000,,,,,,no
+U06,"Structuring transfers",unlawful,160000,,,,,,no
+U06,"Structuring transfers",unlawful,170000,,,,,,no
+U06,"Structuring transfers",unlawful,180000,,,,,,no
+U06,"Structuring transfers",unlawful,190000,,,,,,no
+U06,"Structuring transfers",unlawful,200000,,,,,,no
+U06,"Structuring transfers",unlawful,210000,,,,,,no
+U06,"Structuring transfers",unlawful,220000,,,,,,no
+U06,"Structuring transfers",unlawful,230000,,,,,,no
+U06,"Structuring transfers",unlawful,240000,,,,,,no
+U06,"Structuring transfers",unlawful,250000,,,,,,no
+U06,"Structuring transfers",unlawful,260000,,,,,,no
+U06,"Structuring transfers",unlawful,270000,,,,,,no
+U06,"Structuring transfers",unlawful,280000,,,,,,no
+U06,"Structuring transfers",unlawful,290000,,,,,,no
+U06,"Structuring transfers",unlawful,300000,,,,,,no
+U06,"Structuring transfers",unlawful,310000,,,,,,no
+U06,"Structuring transfers",unlawful,320000,,,,,,no
+U06,"Structuring transfers",unlawful,330000,,,,,,no
+U06,"Structuring transfers",unlawful,340000,,,,,,no
+U06,"Structuring transfers",unlawful,350000,,,,,,no
+U06,"Structuring transfers",unlawful,360000,,,,,,no
+U06,"Structuring transfers",unlawful,370000,,,,,,no
+U06,"Structuring transfers",unlawful,380000,,,,,,no
+U06,"Structuring transfers",unlawful,390000,,,,,,no
+U06,"Structuring transfers",unlawful,400000,,,,,,no
+U07,"Undeclared cash",unlawful,10000,,,,,,no
+U07,"Undeclared cash",unlawful,20000,,,,,,no
+U07,"Undeclared cash",unlawful,30000,,,,,,no
+U07,"Undeclared cash",unlawful,40000,,,,,,no
+U07,"Undeclared cash",unlawful,50000,,,,,,no
+U07,"Undeclared cash",unlawful,60000,,,,,,no
+U07,"Undeclared cash",unlawful,70000,,,,,,no
+U07,"Undeclared cash",unlawful,80000,,,,,,no
+U07,"Undeclared cash",unlawful,90000,,,,,,no
+U07,"Undeclared cash",unlawful,100000,,,,,,no
+U07,"Undeclared cash",unlawful,110000,,,,,,no
+U07,"Undeclared cash",unlawful,120000,,,,,,no
+U07,"Undeclared cash",unlawful,130000,,,,,,no
+U07,"Undeclared cash",unlawful,140000,,,,,,no
+U07,"Undeclared cash",unlawful,150000,,,,,,no
+U07,"Undeclared cash",unlawful,160000,,,,,,no
+U07,"Undeclared cash",unlawful,170000,,,,,,no
+U07,"Undeclared cash",unlawful,180000,,,,,,no
+U07,"Undeclared cash",unlawful,190000,,,,,,no
+U07,"Undeclared cash",unlawful,200000,,,,,,no
+U07,"Undeclared cash",unlawful,210000,,,,,,no
+U07,"Undeclared cash",unlawful,220000,,,,,,no
+U07,"Undeclared cash",unlawful,230000,,,,,,no
+U07,"Undeclared cash",unlawful,240000,,,,,,no
+U07,"Undeclared cash",unlawful,250000,,,,,,no
+U07,"Undeclared cash",unlawful,260000,,,,,,no
+U07,"Undeclared cash",unlawful,270000,,,,,,no
+U07,"Undeclared cash",unlawful,280000,,,,,,no
+U07,"Undeclared cash",unlawful,290000,,,,,,no
+U07,"Undeclared cash",unlawful,300000,,,,,,no
+U07,"Undeclared cash",unlawful,310000,,,,,,no
+U07,"Undeclared cash",unlawful,320000,,,,,,no
+U07,"Undeclared cash",unlawful,330000,,,,,,no
+U07,"Undeclared cash",unlawful,340000,,,,,,no
+U07,"Undeclared cash",unlawful,350000,,,,,,no
+U07,"Undeclared cash",unlawful,360000,,,,,,no
+U07,"Undeclared cash",unlawful,370000,,,,,,no
+U07,"Undeclared cash",unlawful,380000,,,,,,no
+U07,"Undeclared cash",unlawful,390000,,,,,,no
+U07,"Undeclared cash",unlawful,400000,,,,,,no

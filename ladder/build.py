@@ -845,7 +845,9 @@ def write_root_hub():
                 f'{esc(label)}</a>')
 
     cards = [
-        ("briefing/index.html", "Executive briefing · start here", "Summary · 17 methods · 680 cost rows",
+        ("guide/index.html", "Consolidated guide · start here", "27 methods · 1,080 cost cells · $10k–$400k",
+         "The current build: every route including the unlawful ones, fee and spread separated, one source link per row, blanks left blank."),
+        ("briefing/index.html", "Executive briefing", "Summary · 17 methods · 680 cost rows",
          "Consolidated comparison with steps and caveats. Published fees are not all-in quotes; read the review notes below."),
         ("audit-ad300459/index.html", "Latest evidence audit", "27 findings · official-source review · ladder checks",
          "Separates verified, limited and unverified claims. Arithmetic checks do not establish personal eligibility."),

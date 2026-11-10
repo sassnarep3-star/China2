@@ -1,0 +1,1102 @@
+{
+  "meta": {
+    "title": "Methods to convert CNY into USD from mainland China, as a U.S. citizen",
+    "retrieved": "2026-11-10",
+    "count": 27,
+    "lawful": 13,
+    "conditional": 7,
+    "unlawful": 7,
+    "policy": "Each method carries the primary official source that establishes it. Cost columns contain only published figures plus one clearly labelled model assumption (the same-day published board spread from S22, applied uniformly). Where no published figure exists the cost cell is null and the method is listed on flagged.html. Statutory penalty ranges are quoted from the statute, not estimated.",
+    "recompute": "fee_usd(P) = clamp(0.001 * P, 100/7.10, 500/7.10) + 120/7.10 + flat_usd, multiplied by the number of transactions; spread_usd(P) = P * spread_pct/100; total = fee_usd + spread_usd.",
+    "rate_assumption": {
+      "id": "A1",
+      "value": 7.10,
+      "why": "Used only to express CNY-denominated published fees (100, 500, 120, 145) in USD. The tiers are USD amounts, so no exchange-rate forecast is embedded. At USD 400,000 the entire effect of this assumption on a capped fee is under USD 15."
+    },
+    "spread_assumption": {
+      "id": "A2",
+      "value_pct": 0.419,
+      "source": "S22",
+      "why": "The only same-day published retail CNY/USD board spread verified in this session: Bank of China, 10 Nov 2026, cash-remittance buy 665.72 vs sell 668.52 CNY per 100 USD, i.e. (668.52 - 665.72) / 668.52 = 0.419%. It is another bank's board rate, explicitly 'for reference only' on its own page, and NOT an executable quote for any account. It is applied uniformly as a model input, never presented as a price you have been offered."
+    }
+  },
+  "methods": [
+    {
+      "id": "M01",
+      "name": "Documented lawful income: bank FX purchase + SWIFT wire",
+      "short": "Documented income to SWIFT",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "Works for both characterisations: a non-domestic individual under S02 Art. 13(1), or a domestic individual above the annual total under S02 Art. 12.",
+      "what": "Take the RMB balance to the bank that holds it, buy USD against proof of the underlying lawful income (including the PRC tax record), then wire the USD to your own US account.",
+      "capacity": "No USD 50,000 purchase-quota ceiling where the money is proved lawful current-account income; the ceiling is the size of the documented income. Overseas property, securities and investment-type insurance are excluded declared purposes (S10).",
+      "capacity_usd_per_year": null,
+      "basis": ["S01", "S02", "S03", "S05", "S11"],
+      "docs": [
+        "Passport (and any China residence permit)",
+        "Employment contract, invoices or service agreement proving the income",
+        "PRC individual income tax payment record or tax certificate (完税证明 / 纳税记录), years matching the balance [S02 Art. 13(1); S03]",
+        "Bank statements showing the credits into the account",
+        "Signed China-side source-of-funds statement, and the receiving US bank's source-of-funds form"
+      ],
+      "steps": [
+        "Identify which characterisation applies: US citizen residing in China for a continuous year or more is a domestic individual (S05 Art. 52(2)); otherwise a non-domestic individual. This decides whether S02 Art. 12 or Art. 13(1) is the operative article, and both require documents.",
+        "Obtain the PRC tax record for every year represented in the balance: download the personal income tax payment record from the national tax app, or request a tax certificate at the tax service hall. This is the document the bank will ask for [S02 Art. 13(1); S03].",
+        "Assemble the income file so that the amounts tie exactly to the balance: contract, payslips or invoices, bank credits, tax record.",
+        "Book a counter appointment at the branch that holds the account. Ask, in writing, for an executable quote showing the applied CNY/USD rate, the commission, the cable charge and any intermediary deduction [S11 items 2.2.4.1-2.2.4.2].",
+        "Complete the FX purchase at the counter, and keep the exchange memo (水单) - it is the evidence that the conversion was authorised, and it is the document needed for any later re-conversion within 24 months [S02 Art. 13(2)].",
+        "Instruct the wire to your own US account in the same name. Keep the SWIFT MT103 and the remittance advice.",
+        "Confirm the USD arrives net of intermediary charges. The bank's tariff expressly excludes other institutions' charges [S11 Important Note 7].",
+        "Report the account on FinCEN Form 114 (FBAR) by 15 April, and Form 8938 with the return if the threshold is met [S15, S18, S19]. Claim any PRC tax already paid by treaty or by section 901/903; the mechanics of that credit were not re-verified in this session."
+      ],
+      "pros": [
+        "No published USD 50,000 ceiling when the income is documented, so a six-figure balance does not need to be spread over years.",
+        "Conversion of already-taxed income is not itself a PRC taxing event in the instruments reviewed (S02, S05): the tax was on the income, not on the exchange.",
+        "Clean audit trail for both SAFE and the receiving US bank."
+      ],
+      "cons": [
+        "Counter review is discretionary and a thin file is refused; the tax record is the usual sticking point.",
+        "The bank's spread is not published in advance and is the largest component of cost.",
+        "Intermediary and receiving-bank deductions are outside the published tariff."
+      ],
+      "prc_tax": "No PRC tax on the exchange itself. PRC individual income tax was due on the income when earned (IIT Law Art. 2 lists the nine taxable categories - a currency exchange is not one of them). If the underlying income was never taxed, the tax is on the income, not on the conversion.",
+      "us_tax": "The conversion is a disposition of nonfunctional currency under 26 U.S.C. 988(c)(1)(C)(i); as a personal transaction it is excluded by 988(e)(1)-(2) unless the exchange gain exceeds USD 200. Income earned in RMB must be translated when earned.",
+      "penalty": "None if documented. Undocumented or false documents expose you to a fine of up to CNY 50,000 for the individual (S05 Art. 48) and, if the conversion is found to be illegal FX arbitrage, up to 30% of the amount (S05 Art. 40).",
+      "cost": {
+        "fee": {"type": "pct_minmax", "pct": 0.001, "min_cny": 100, "max_cny": 500, "cable_cny": 120, "flat_usd": 0, "source": "S11", "locator": "2.2.4.1 + 2.2.4.2 (Premier / Advance individual)"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "Published as 0.1% of the remittance amount, minimum CNY 100, maximum CNY 500 per transaction, plus a CNY 120 cable charge. Private Banking individual customers are published Free for both items (S11).",
+        "cost_sources": ["S11", "S22"]
+      }
+    },
+    {
+      "id": "M02",
+      "name": "Documented income routed through same-name HSBC Global Transfer",
+      "short": "Documented income to Global Transfer",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "As M01, but you hold or can open HSBC accounts on both sides and meet the Premier balance condition.",
+      "what": "Convert inside HSBC China exactly as in M01, then move the USD to your own HSBC US account through Global Transfer to Self instead of an ordinary SWIFT wire.",
+      "capacity": "Same documentary ceiling as M01. The tariff's availability remark lists Canada, US, UK, Australia and Hong Kong SAR for Global Transfer [S11].",
+      "capacity_usd_per_year": null,
+      "basis": ["S02", "S03", "S11"],
+      "docs": [
+        "Everything in M01",
+        "HSBC US account in exactly the same name",
+        "Premier status on both sides: last month's Total Relationship Balance of at least CNY 500,000 or equivalent [S11 Important Note 3]"
+      ],
+      "steps": [
+        "Confirm the two accounts are in exactly the same name and that the China-to-US corridor is enabled for Global Transfer to Self.",
+        "Complete the M01 documentation and the CNY-to-USD purchase inside HSBC China.",
+        "Send the USD by Global Transfer to Self. Under the tariff effective 31 October 2026 this item is published Free for Private Banking and Premier; for Advance it is CNY 145 indicative per transaction with an actual charge of USD 20 [S11 item 2.2.6.1].",
+        "Keep the transfer confirmation; the receiving bank still needs a source-of-funds note.",
+        "File FBAR, Form 8938 and any credit claim exactly as in M01."
+      ],
+      "pros": [
+        "No published fixed fee for Private Banking or Premier same-name Global Transfer (S11 2.2.6.1).",
+        "Fewer correspondent hops, so fewer unexpected deductions."
+      ],
+      "cons": [
+        "Requires an eligible HSBC relationship on both sides; Premier requires CNY 500,000 or equivalent on deposit (S11 Important Note 3).",
+        "The CNY-to-USD spread, which is the dominant cost, is unchanged.",
+        "A US person opening a Chinese bank account faces enhanced due diligence."
+      ],
+      "prc_tax": "Same as M01: no PRC tax on the exchange of already-taxed income.",
+      "us_tax": "Same as M01: 988(e)(2) excludes personal-transaction exchange gain up to USD 200.",
+      "penalty": "None if documented; same statutory exposure as M01 for false documents.",
+      "cost": {
+        "fee": {"type": "flat_usd", "usd": 0, "source": "S11", "locator": "2.2.6.1 (Private Banking / Premier: Free; Advance: CNY 145 indicative, actual USD 20)"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "Modelled at the published Premier/Private Banking price of Free. If you are on Advance the published charge is USD 20 per transaction, which adds USD 20 to the total at every tier.",
+        "cost_sources": ["S11", "S22"]
+      }
+    },
+    {
+      "id": "M03",
+      "name": "Emigration asset transfer (移民财产转移) - approved, staged remittance",
+      "short": "Emigration transfer",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "A natural person who emigrated from mainland China (or settled in Hong Kong/Macau) and is moving lawful assets they owned before acquiring the immigration status. For a naturalised US citizen who cancelled Chinese household registration, this is the route designed for exactly this situation.",
+      "what": "Apply once to SAFE for the whole amount, then remit in stages over up to two years through a designated bank, against a tax certificate.",
+      "capacity": "No upper limit stated in the measure. Approval level: up to RMB 500,000 equivalent by the local SAFE branch; above that by SAFE head office [S06 Art. 10]. Staging: no more than half first, then no more than half of the remainder after one year, then the balance after two years; amounts up to RMB 200,000 may go in one transfer after approval [S06 Art. 6].",
+      "capacity_usd_per_year": null,
+      "basis": ["S06", "S02"],
+      "docs": [
+        "Written application describing the reason and the source and realisation of the assets [S06 Art. 8(1)]",
+        "Completed applicant and application forms [S06 Art. 8(2)-(3)]",
+        "Identity documents, plus the cancelled Chinese household registration certificate from the police and proof of settlement abroad certified by a Chinese embassy or consulate [S06 Art. 8(4)]",
+        "Proof of property rights: title deed, sale contract, demolition compensation agreement or other evidence [S06 Art. 8(5)]",
+        "Tax certificate or tax payment voucher issued by the competent tax authority where the assets or income are located [S06 Art. 8(6)]",
+        "Anything else SAFE requests [S06 Art. 8(7)]; notarisation of un-notarised documents [S06 Art. 8 closing paragraph]"
+      ],
+      "steps": [
+        "Confirm you hold the immigration documents the measure requires: cancelled Chinese household registration (户籍注销证明) and certified proof of settlement abroad [S06 Art. 8(4)]. Without these the route is closed.",
+        "Realise the assets in China and pay any PRC tax that arises on the realisation, then obtain the tax certificate or payment voucher from the competent tax authority [S06 Art. 8(6)].",
+        "File one application for the whole amount with the SAFE branch at your former household registration location; the property must be your own lawful property and free of disputes [S06 Arts. 3, 5].",
+        "If the total is above RMB 500,000 equivalent, the branch forwards it to SAFE head office for approval [S06 Art. 10].",
+        "On approval, take the approval letter and the capital-account approval document to the designated bank and buy USD [S06 Art. 10].",
+        "Remit directly to your own account in your country of residence. The bank may not hand you FX cash inside China [S06 Art. 11].",
+        "For the second and later tranches, return with the earlier approval letter and approval document to the same SAFE branch [S06 Art. 8 closing paragraph].",
+        "File FBAR and Form 8938 for the year(s) the account existed, and FinCEN Form 105 only if you physically carry currency [S15, S18, S20]."
+      ],
+      "pros": [
+        "The only route in the reviewed instruments that is expressly built to move a large, already-owned balance abroad without a USD 50,000 ceiling.",
+        "Staged remittance is authorised by the approval, so it is not 'structuring'.",
+        "Direct remittance to your own overseas account is mandated, which suits a US citizen."
+      ],
+      "cons": [
+        "Requires cancelled Chinese household registration, which many naturalised citizens no longer have.",
+        "One application, then up to two years to get everything out.",
+        "Head-office approval above RMB 500,000: slow, discretionary, and document-heavy.",
+        "A tax certificate is mandatory, so untaxed income cannot pass."
+      ],
+      "prc_tax": "PRC tax attaches to the realisation of the assets (for example property transfer income at 20% of the gain under IIT Law Art. 3(3)), not to the FX conversion. The tax certificate is a required document.",
+      "us_tax": "A personal-transaction conversion is excluded by 988(e)(2) up to USD 200 of exchange gain. Any gain on the sale of Chinese property is a separate US tax question and was not analysed here.",
+      "penalty": "Applications with false materials or repeat applications for the same property are punished under S05 Art. 40 (illegal FX arbitrage), up to 30% of the amount; the bank is separately liable for processing outside the measure [S06 Art. 13].",
+      "cost": {
+        "fee": {"type": "pct_minmax", "pct": 0.001, "min_cny": 100, "max_cny": 500, "cable_cny": 120, "flat_usd": 0, "source": "S11", "locator": "2.2.4.1 + 2.2.4.2, used as the bank-side quote; the measure itself sets no fee"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "Bank-side fees are modelled with the published HSBC tariff. SAFE charges no fee in the measure itself, but the cost of notarisation, translation, certification and travel is not published anywhere and is left blank.",
+        "cost_sources": ["S06", "S11", "S22"]
+      }
+    },
+    {
+      "id": "M04",
+      "name": "Inheritance asset transfer (继承财产转移)",
+      "short": "Inheritance transfer",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "A foreign citizen (including a US citizen) or a Hong Kong/Macau resident who has lawfully inherited assets located in mainland China.",
+      "what": "Realise the inherited Chinese estate, apply once to SAFE at the deceased's former household registration location, and remit abroad against a tax certificate.",
+      "capacity": "No upper limit stated; same RMB 500,000 approval split and direct-to-own-account rule as M03 [S06 Arts. 10, 11]. Inherited property from several deceased persons must be applied for separately [S06 Art. 6].",
+      "capacity_usd_per_year": null,
+      "basis": ["S06"],
+      "docs": [
+        "Written application including the relationship to the deceased and the source and realisation of the estate [S06 Art. 9(1)]",
+        "Application forms [S06 Art. 9(2)]",
+        "Identity documents plus certified proof of settlement abroad for a foreign citizen [S06 Art. 9(3)]",
+        "Proof of inheritance [S06 Art. 9(4)]",
+        "The deceased's property-right documents and the tax certificate or payment voucher from the competent tax authority [S06 Art. 9(5)]",
+        "Notarisation of the agency agreement, the inheritance proof and the deceased's title documents where not already notarised [S06 Art. 9 closing paragraph]"
+      ],
+      "steps": [
+        "Complete the inheritance formalities in China and obtain notarised proof of inheritance.",
+        "Realise the estate and settle any PRC tax arising, obtaining the tax certificate.",
+        "File the application with the SAFE branch at the deceased's former household registration location; a central sub-branch may accept the file [S06 Art. 5].",
+        "Obtain approval (head office above RMB 500,000 equivalent).",
+        "Buy USD at the designated bank and remit to your own overseas account; cash payment inside China is prohibited [S06 Art. 11].",
+        "Keep the approval documents for any additional remittance.",
+        "Report the account and the receipt on FBAR and Form 8938 as applicable [S15, S18]."
+      ],
+      "pros": [
+        "Expressly available to foreign citizens, so a US passport is not an obstacle.",
+        "No USD 50,000 ceiling.",
+        "May be remitted in one go or in instalments after a single application [S06 Art. 6]."
+      ],
+      "cons": [
+        "Requires a completed inheritance with notarised documents, which is slow and expensive in China.",
+        "A tax certificate is mandatory.",
+        "Approval is discretionary and the file must be complete."
+      ],
+      "prc_tax": "PRC tax on the realisation of the estate, not on the exchange; the tax certificate is a required document [S06 Art. 9(5)].",
+      "us_tax": "Inheritances are generally not income to the recipient (IRS Publication 525, 'Gifts and inheritances'), while the conversion is a personal transaction excluded by 988(e)(2) up to USD 200 of gain.",
+      "penalty": "False materials engage S05 Art. 40 (up to 30% of the amount); the bank is liable for processing outside the measure [S06 Art. 13].",
+      "cost": {
+        "fee": {"type": "pct_minmax", "pct": 0.001, "min_cny": 100, "max_cny": 500, "cable_cny": 120, "flat_usd": 0, "source": "S11", "locator": "2.2.4.1 + 2.2.4.2"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "Bank-side cost modelled on the published tariff; notarisation, translation and probate costs are not published and are left blank.",
+        "cost_sources": ["S06", "S11", "S22"]
+      }
+    },
+    {
+      "id": "M05",
+      "name": "Re-conversion of unused RMB against the original exchange memo",
+      "short": "Re-conversion, original memo",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "A non-domestic individual whose RMB came from converting foreign currency inside China, who still holds the original exchange memo and is inside the 24-month window.",
+      "what": "Present the original exchange memo (水单) and your ID; the bank converts the unused RMB back to the original currency and you remit it.",
+      "capacity": "The memo is valid for 24 months from the exchange date [S02 Art. 13(2); S04]. Same-day totals up to USD 500 (or USD 1,000 at a port-side location before departure) can be handled on ID alone [S02 Art. 13(2); S04].",
+      "capacity_usd_per_year": null,
+      "basis": ["S02", "S04", "S01"],
+      "docs": [
+        "Passport",
+        "Original exchange memo (原兑换水单) for each conversion being reversed",
+        "Bank statements showing the original conversion"
+      ],
+      "steps": [
+        "Locate the original exchange memo for every conversion you want to reverse; without it only the small ID-only amounts in step 2 are available.",
+        "For a small residue, same-day totals up to USD 500 (or USD 1,000 at a port-side location before departure) may be converted on ID alone [S04].",
+        "Check the date: the memo is valid for 24 months from the exchange date [S02 Art. 13(2)].",
+        "Present the passport and memo at the counter and request conversion back to the original currency.",
+        "Remit to your own account, keeping the new memo as the receipt for the outbound leg.",
+        "Report on FBAR/8938 as in M01."
+      ],
+      "pros": [
+        "No tax certificate is required for this category, which makes it the cleanest documentary path where it applies.",
+        "No USD 50,000 quota interaction: it is the return of your own principal."
+      ],
+      "cons": [
+        "Only works for RMB that came from FX you brought in, which is usually not the case for salary savings.",
+        "24-month expiry.",
+        "The memo is a single physical document and is commonly lost."
+      ],
+      "prc_tax": "None on the conversion: this is the return of previously settled principal, and no tax voucher is required for the category [S02 Art. 13(2); S04].",
+      "us_tax": "Personal transaction under 988(e)(1)-(2): no recognition of exchange gain up to USD 200.",
+      "penalty": "None if the memo is genuine; presenting a false memo falls under S05 Art. 40.",
+      "cost": {
+        "fee": {"type": "pct_minmax", "pct": 0.001, "min_cny": 100, "max_cny": 500, "cable_cny": 120, "flat_usd": 0, "source": "S11", "locator": "2.2.4.1 + 2.2.4.2"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "Bank-side cost modelled on the published tariff. The statutory text sets no fee.",
+        "cost_sources": ["S02", "S11", "S22"]
+      }
+    },
+    {
+      "id": "M06",
+      "name": "Remit foreign currency already sitting in a Chinese FX account (no CNY conversion)",
+      "short": "Remit existing FX, no conversion",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "Anyone holding USD (or another currency) in a foreign-exchange savings account in China, so that no CNY-to-USD conversion is needed at all.",
+      "what": "If part of the balance is already in USD, skip the conversion entirely and remit the existing foreign currency.",
+      "capacity": "Same-day remittance from a foreign-exchange savings account up to USD 50,000 equivalent on ID alone; above that, with authenticity documents [S02 Art. 14]. Cash-funded remittance up to USD 10,000 same-day on ID [S02 Art. 14].",
+      "capacity_usd_per_year": null,
+      "basis": ["S02", "S01"],
+      "docs": ["Passport", "Bank statements for the FX account", "Authenticity documents where the same-day amount exceeds USD 50,000"],
+      "steps": [
+        "Ask the bank whether any part of the balance is already denominated in USD or another convertible currency.",
+        "Remit up to USD 50,000 equivalent same-day on ID alone, or present authenticity documents for a larger amount [S02 Art. 14].",
+        "If the money is held as FX cash in hand, the same-day ceiling is USD 10,000 on ID [S02 Art. 14].",
+        "Keep the remittance advice and report on FBAR/8938."
+      ],
+      "pros": [
+        "No exchange at all, so no spread on that portion.",
+        "Simplest documentary path for that portion."
+      ],
+      "cons": [
+        "Only helps for the part of the balance not held in RMB.",
+        "Above USD 50,000 same-day, documents are still required."
+      ],
+      "prc_tax": "None: there is no conversion and the funds are your own already-settled foreign currency.",
+      "us_tax": "No 988 disposition occurs if no currency is exchanged; the account is still reportable.",
+      "penalty": "None if the documents are accurate (S05 Art. 48 applies to false or missing documents).",
+      "cost": {
+        "fee": {"type": "pct_minmax", "pct": 0.001, "min_cny": 100, "max_cny": 500, "cable_cny": 120, "flat_usd": 0, "source": "S11", "locator": "2.2.4.1 + 2.2.4.2"},
+        "spread": {"pct": 0.0, "source": "none - no currency is exchanged"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "No conversion means no spread; only the wire charge applies. Modelled with zero spread because the method by definition avoids exchange.",
+        "cost_sources": ["S02", "S11"]
+      }
+    },
+    {
+      "id": "M07",
+      "name": "Sale proceeds of Chinese property, then remit through an approved channel",
+      "short": "Property proceeds",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "An owner of Chinese real property who sells it and then remits the proceeds either as documented income, as an emigration transfer, or as an inheritance transfer.",
+      "what": "Sell the property, pay PRC tax on the gain, then move the money out under whichever of M01, M03 or M04 fits your status. There is no separate 'property proceeds' FX channel.",
+      "capacity": "Determined by the channel used: M01 (documented income), M03 (emigration) or M04 (inheritance). Overseas property purchase with converted RMB is an excluded purpose in the other direction [S10].",
+      "capacity_usd_per_year": null,
+      "basis": ["S06", "S02", "S10"],
+      "docs": ["Title deed and sale contract", "PRC tax payment record for the property transfer", "Plus the documents of the channel used (M01, M03 or M04)"],
+      "steps": [
+        "Complete the sale in China and settle PRC tax on the transfer; obtain the tax payment record. Property transfer income is taxed at 20% of the gain under IIT Law Art. 3(3).",
+        "Choose the channel: documented income (M01), emigration transfer (M03) if you have cancelled Chinese household registration and settled abroad, or inheritance transfer (M04) if the property came by inheritance.",
+        "Assemble the file for that channel and apply, or present documents at the counter.",
+        "Complete the FX purchase and remit to your own account.",
+        "Report the account, and the sale, on the US side as applicable [S15, S18]."
+      ],
+      "pros": [
+        "Property sale proceeds are one of the few large, cleanly documentable sources of RMB.",
+        "The tax paid on the transfer is itself the tax certificate the FX channel needs."
+      ],
+      "cons": [
+        "The 20% PRC tax on the gain is a real cost and cannot be avoided by choosing a different FX route.",
+        "No dedicated FX channel exists: you must fit the proceeds into M01, M03 or M04."
+      ],
+      "prc_tax": "20% of the gain on the transfer of property (IIT Law Art. 3(3), category 财产转让所得). This is the dominant tax and it arises on the sale, not on the exchange.",
+      "us_tax": "A US person is taxable on worldwide capital gain; foreign tax paid may be creditable, and the mechanics were not re-verified here. The conversion itself remains a 988(e) personal transaction.",
+      "penalty": "Under-declaring the sale price in China is a tax offence and would also invalidate the tax certificate relied on for the FX channel.",
+      "cost": {
+        "fee": {"type": "pct_minmax", "pct": 0.001, "min_cny": 100, "max_cny": 500, "cable_cny": 120, "flat_usd": 0, "source": "S11", "locator": "2.2.4.1 + 2.2.4.2"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "FX cost modelled on the published tariff. The 20% PRC property-transfer tax is NOT included in this column; it is a tax on the sale, not a conversion cost, and its amount depends on the gain.",
+        "cost_sources": ["S06", "S11", "S22"]
+      }
+    },
+    {
+      "id": "M08",
+      "name": "A direct relative acts for you within your own annual total",
+      "short": "Relative acts as agent",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "Anyone with a parent, child or spouse in China able to attend the counter on your behalf.",
+      "what": "Your parent, child or spouse handles the paperwork in China as your agent. This is agency, not a transfer of someone else's quota.",
+      "capacity": "Your own annual total only. Where the amount exceeds the annual total, the relative may still act, but must produce the full supporting documents [S02 Arts. 4, 38]. Using a relative's own quota instead is a different and prohibited act (U04).",
+      "capacity_usd_per_year": 50000,
+      "basis": ["S02", "S09"],
+      "docs": [
+        "Both parties' valid ID documents",
+        "Your signed authorisation letter (授权书)",
+        "Proof of the direct relationship: household register, marriage certificate, or a certificate from a government office, police or notary [S02 Art. 38]",
+        "The documents for the underlying channel (M01)"
+      ],
+      "steps": [
+        "Confirm the relationship is one the rule recognises: parents, children or spouse only [S02 Art. 38].",
+        "Sign an authorisation letter and have it legalised or notarised as the bank requires.",
+        "Assemble proof of the relationship: household register, marriage certificate, or a certificate from a sub-district office, police or notary [S02 Art. 38].",
+        "The relative attends the counter with both IDs and the authorisation, within your own annual total [S02 Arts. 4, 38].",
+        "Above the annual total, the same agency is allowed but the full supporting documents for the category must be produced [S02 Art. 4].",
+        "Keep copies of everything: an agency file with a gap is refused."
+      ],
+      "pros": [
+        "Expressly permitted, and it is not quota-borrowing.",
+        "Removes the need for you to travel to China for a counter transaction."
+      ],
+      "cons": [
+        "Only parents, children and spouse qualify [S02 Art. 38].",
+        "Banks increasingly require notarised authorisations.",
+        "It never increases your own annual total."
+      ],
+      "prc_tax": "Depends on the underlying channel; the agency itself is not a taxable event.",
+      "us_tax": "Agency does not change the US analysis: the disposition is still yours.",
+      "penalty": "Doing the same thing with a non-relative, or using their quota, is penalised: watch-list entry for that year plus two more [S09].",
+      "cost": {
+        "fee": {"type": "pct_minmax", "pct": 0.001, "min_cny": 100, "max_cny": 500, "cable_cny": 120, "flat_usd": 0, "source": "S11", "locator": "2.2.4.1 + 2.2.4.2"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": 50000,
+        "note": "Bank-side cost modelled on the published tariff; the notarisation cost of the authorisation is not published and is left blank.",
+        "cost_sources": ["S02", "S11", "S22"]
+      }
+    },
+    {
+      "id": "M09",
+      "name": "Do nothing: keep the RMB in China and spend it there",
+      "short": "Keep it in China",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "Anyone not needing the money in USD immediately.",
+      "what": "Leave the balance where it is. No conversion, no spread, no US tax on a conversion - but the account is still reportable.",
+      "capacity": "Not applicable.",
+      "capacity_usd_per_year": null,
+      "basis": ["S15", "S18", "S17"],
+      "docs": ["Nothing to file in China", "FBAR (FinCEN 114) and Form 8938 as applicable in the US [S15, S18]"],
+      "steps": [
+        "Nothing to do in China.",
+        "Continue filing FBAR by 15 April each year if the aggregate of all foreign accounts exceeded USD 10,000 at any time in the year [S15].",
+        "Continue filing Form 8938 with your return if the applicable threshold is met [S18, S19].",
+        "Revisit the decision if the RMB needs to become USD, or if the bank's documentation requirements change."
+      ],
+      "pros": [
+        "Zero conversion cost and zero exchange-gain exposure.",
+        "No PRC documentary review."
+      ],
+      "cons": [
+        "Currency risk stays with you: an RMB depreciation is a loss in USD terms.",
+        "FBAR and Form 8938 obligations continue regardless [S15, S18].",
+        "The documentation problem does not go away; it compounds."
+      ],
+      "prc_tax": "Interest earned may be subject to PRC tax depending on its character; not analysed here.",
+      "us_tax": "No 988 disposition because nothing is converted. Interest income remains reportable.",
+      "penalty": "Non-filing exposure only: FBAR non-willful maximum USD 16,536 per violation, willful maximum USD 165,353 (S16); Form 8938 USD 10,000 plus up to USD 50,000 (S18).",
+      "cost": {
+        "fee": {"type": "zero", "source": "n/a - no transaction"},
+        "spread": {"pct": 0.0, "source": "none - no currency is exchanged"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "Zero transaction cost by definition. Reporting obligations still apply and are not costs.",
+        "cost_sources": ["S15", "S18"]
+      }
+    },
+    {
+      "id": "M10",
+      "name": "Pay US expenses directly with a China-issued card (consume, do not convert)",
+      "short": "Card spending abroad",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "Anyone who can pay US merchants, tuition or bills with a UnionPay/Visa/Mastercard card issued in China.",
+      "what": "Rather than converting the balance, spend it. The card scheme converts at settlement, and SAFE states that card spending abroad repaid in FX after return does not count against the annual total [S10].",
+      "capacity": "No published annual cap for genuine card spending. Cash withdrawals are separately capped (see M11).",
+      "capacity_usd_per_year": null,
+      "basis": ["S10", "S08"],
+      "docs": ["China-issued card", "Merchant receipts and statements"],
+      "steps": [
+        "Confirm the card is enabled for overseas use and check the scheme's foreign-transaction fee with the issuer (not published in the tariff excerpt read here, so left blank).",
+        "Pay the US merchant, bill or institution directly with the card.",
+        "Keep the statements: the settlement rate applied by the scheme is your effective exchange rate.",
+        "Do not use the card for cash advances to sidestep the ATM cap; that is the M11 limit and is enforced separately [S08]."
+      ],
+      "pros": [
+        "No FX purchase at the counter and no conversion paperwork.",
+        "Card spending abroad repaid in FX after return does not count against the annual total [S10]."
+      ],
+      "cons": [
+        "Only works for spendable expenses, not for moving capital.",
+        "The scheme's settlement margin and the issuer's foreign-transaction fee are not published in the documents reviewed, so the cost is blank here.",
+        "Some US merchants do not accept UnionPay."
+      ],
+      "prc_tax": "None on the spend.",
+      "us_tax": "No 988 disposition until the card is settled and the currency is bought; the final FX purchase is a separate event.",
+      "penalty": "Cash advances above the ATM limits engage S08 point 1.",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "No published card-settlement spread or issuer foreign-transaction fee was located in the official documents read. Cost is left blank rather than estimated.",
+        "cost_sources": ["S10"]
+      }
+    },
+    {
+      "id": "M11",
+      "name": "ATM withdrawals abroad on a China-issued card",
+      "short": "Overseas ATM cash",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "Anyone with a China-issued card, withdrawing USD cash from a US ATM.",
+      "what": "Withdraw cash abroad. Hard-capped by SAFE at CNY 100,000 equivalent per person per calendar year across all your cards.",
+      "capacity": "CNY 100,000 equivalent per person per calendar year across all cards including supplementary cards; exceeding it suspends overseas cash withdrawal for the rest of that year and the whole of the next [S08 point 1]. Per card per day, CNY 10,000 equivalent [S08 point 4]. At the model rate that is about USD 14,085 per year - about 2.8% of a USD 400,000 balance.",
+      "capacity_usd_per_year": 14084.51,
+      "basis": ["S08"],
+      "docs": ["China-issued card", "ATM receipts"],
+      "steps": [
+        "Check your year-to-date overseas cash withdrawals: the cap is per person across all cards, not per card [S08 point 1].",
+        "Withdraw no more than CNY 10,000 equivalent per card per day [S08 point 4].",
+        "Do not let anyone else use your card and do not use theirs; the notice expressly prohibits that [S08 point 1].",
+        "Keep receipts; the issuer and SAFE both monitor the annual total.",
+        "Report any resulting US cash movement over USD 10,000 on FinCEN Form 105 [S20]."
+      ],
+      "pros": [
+        "No counter paperwork and no source-of-funds file.",
+        "Useful for living costs while you resolve the main route."
+      ],
+      "cons": [
+        "Hard legal ceiling of about USD 14,085 a year at the model rate: it cannot move a six-figure balance.",
+        "Exceeding it triggers a two-year suspension [S08 point 1].",
+        "ATM operator fees and the issuer's conversion margin were not found in the official documents read, so cost is blank."
+      ],
+      "prc_tax": "None on the withdrawal.",
+      "us_tax": "No 988 disposition of your own currency; the bank's conversion rate is embedded in the withdrawal.",
+      "penalty": "Exceeding the annual cap suspends the facility for the rest of the year and the following year; circumventing it through other people's cards is separately prohibited [S08].",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": 1408.45,
+        "annual_cap_usd": 14084.51,
+        "note": "The annual and daily caps are published (S08). The issuer's per-withdrawal fee and conversion margin are not published in the official documents read, so cost is blank. The per-transaction figure is the published daily cap of CNY 10,000 converted at 7.10.",
+        "cost_sources": ["S08"]
+      }
+    },
+    {
+      "id": "M12",
+      "name": "Carry USD banknotes out of China",
+      "short": "Carry USD cash",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "Anyone willing to travel with cash within the published limits.",
+      "what": "Buy USD banknotes in China and carry them out: up to USD 5,000 with no permit, up to USD 10,000 with a bank-issued carrying certificate, and in principle no more than USD 10,000 at all [S07].",
+      "capacity": "No published annual limit, but each departure is capped at USD 5,000 without a permit and USD 10,000 with one; above USD 10,000 is in principle prohibited except for listed special cases with a SAFE permit [S07]. Moving USD 400,000 this way would need 40-80 separate departures.",
+      "capacity_usd_per_year": null,
+      "basis": ["S07", "S20", "S05"],
+      "docs": ["Passport", "Bank carrying certificate (携带证) for USD 5,000-10,000 [S07]", "FinCEN Form 105 on the US side for amounts over USD 10,000 [S20]"],
+      "steps": [
+        "Buy USD banknotes at the bank; note withdrawal is free at the counter under the HSBC tariff, and the notes buy/sell board rate applies [S11 items 2.2.2.1].",
+        "For USD 5,000 or less, no carrying certificate is needed and customs will release the cash [S07].",
+        "For USD 5,000-10,000, obtain a carrying certificate from a designated bank and present it to customs [S07].",
+        "Do not attempt more than USD 10,000 without a SAFE-issued permit; that is in principle prohibited [S07].",
+        "On entering the US with more than USD 10,000 (the threshold applies to the family or group total, not per person), file FinCEN Form 105 with CBP [S20]."
+      ],
+      "pros": [
+        "Physical settlement, so no wire fee and no intermediary deductions.",
+        "The bank's counter note withdrawal is published Free [S11 item 2.2.2.1]."
+      ],
+      "cons": [
+        "About 0.42% board spread on the notes [S22] plus travel cost.",
+        "At USD 400,000 this is 40-80 trips, which is not a real option.",
+        "Theft and loss risk, and a US declaration obligation above USD 10,000 [S20].",
+        "Failure to declare at the US border risks seizure and forfeiture [S20]."
+      ],
+      "prc_tax": "None on the purchase of banknotes.",
+      "us_tax": "The purchase is a 988 disposition; as a personal transaction it is excluded up to USD 200 of gain. The cash is not income.",
+      "penalty": "Carrying FX in breach of the rules is punishable by a warning and a fine of up to 20% of the amount (S05 Art. 42); failing to declare on entry to the US risks forfeiture and seizure (S20).",
+      "cost": {
+        "fee": {"type": "flat_usd", "usd": 0, "source": "S11", "locator": "2.2.2.1 Foreign Currency Notes Withdrawal over the counter: Free (all segments)"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": 5000,
+        "annual_cap_usd": null,
+        "note": "Published bank charge is Free. The board spread is the same-day published BOC notes rate. Airfare, insurance and the cost of 40-80 trips are not published and are left blank.",
+        "cost_sources": ["S07", "S11", "S22"]
+      }
+    },
+    {
+      "id": "M13",
+      "name": "Small counter conversion or port-side exchange on ID only",
+      "short": "Small ID-only conversion",
+      "group": "Lawful",
+      "status": "lawful",
+      "persona": "A non-domestic individual with leftover RMB, including at the airport before departure.",
+      "what": "Convert small amounts of unused RMB back to FX on ID alone: up to USD 500 per day, or USD 1,000 per day at a port-side location before departure [S04].",
+      "capacity": "USD 500 per day, or USD 1,000 per day at a port-side location [S02 Art. 13(2); S04]. No annual figure is published for repeated use, so it is left blank.",
+      "capacity_usd_per_year": null,
+      "basis": ["S02", "S04"],
+      "docs": ["Passport only, within the daily limits"],
+      "steps": [
+        "Use this for small residues, or at the airport before departure where the USD 1,000 daily limit applies [S04].",
+        "Present your passport at the counter.",
+        "Convert up to the daily limit; above it the original exchange memo or full documents are required [S02 Art. 13(2)].",
+        "Keep the receipt."
+      ],
+      "pros": [
+        "No paperwork beyond ID.",
+        "The only route usable in the departure lounge."
+      ],
+      "cons": [
+        "Trivial capacity: USD 500-1,000 per day.",
+        "Repeating it to move a large balance is exactly the splitting behaviour that S09 penalises."
+      ],
+      "prc_tax": "None.",
+      "us_tax": "Personal transaction exclusion under 988(e).",
+      "penalty": "Repeated small conversions to evade limits engage S09 (watch list) and S05 Art. 40.",
+      "cost": {
+        "fee": {"type": "zero", "source": "S02", "locator": "Art. 13(2) - no fee specified for the ID-only category"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": 500,
+        "annual_cap_usd": null,
+        "note": "No bank charge is specified in the rule; only the board spread applies. Modelled at the same-day published BOC notes spread.",
+        "cost_sources": ["S02", "S22"]
+      }
+    },
+    {
+      "id": "M14",
+      "name": "Corporate channel: dividends from a China company you own",
+      "short": "Company dividend",
+      "group": "Conditional",
+      "status": "conditional",
+      "persona": "Only if the money is company money, or you can lawfully cause a China company to declare a dividend to you as a shareholder.",
+      "what": "Distribute after-tax profit as a dividend to you as a foreign shareholder, then remit. The mechanism is a shareholder distribution, not a currency trick.",
+      "capacity": "No USD 50,000 ceiling for a properly documented dividend, but it requires a real company, audited profit and PRC withholding. The exact procedural steps were not verified in this session.",
+      "capacity_usd_per_year": null,
+      "basis": ["S05"],
+      "docs": ["Shareholder and company documents", "Board/shareholder dividend resolution", "Audited financial statements", "PRC tax payment evidence for the withholding"],
+      "steps": [
+        "Confirm you are a shareholder of a PRC company with distributable after-tax profit.",
+        "Pass a dividend resolution and have the accounts audited.",
+        "Have the company withhold PRC individual income tax on the dividend. IIT Law Art. 3(3) sets a flat 20% rate on dividends; a treaty rate may be lower, but the US-China treaty was not verified in this session and is flagged.",
+        "Remit the net dividend through the company's bank with the tax payment evidence.",
+        "Report the dividend as US income and the account on FBAR/8938."
+      ],
+      "pros": [
+        "No USD 50,000 ceiling if the company and the tax file are in order.",
+        "Legitimate for genuine business profits."
+      ],
+      "cons": [
+        "20% PRC withholding tax on the dividend before any treaty relief.",
+        "Requires an actual company, audited profit and corporate formalities.",
+        "The step-by-step procedure and any treaty rate were not verified here: flagged, not asserted."
+      ],
+      "prc_tax": "20% flat on dividends (IIT Law Arts. 1, 2(6), 3(3)); a treaty rate may reduce it but was not verified.",
+      "us_tax": "The dividend is US-taxable income; a foreign tax credit may be available. Not analysed in detail here.",
+      "penalty": "False invoicing or a sham distribution engages S05 Art. 40 and the criminal provisions in S05.",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "Corporate remittance fees and the audit cost are not published in the documents read. Cost left blank. The 20% withholding is a tax, not a conversion cost, and is excluded from these columns.",
+        "cost_sources": ["S05"]
+      }
+    },
+    {
+      "id": "M15",
+      "name": "Charge your own US company for genuine services or royalties",
+      "short": "Services to own US entity",
+      "group": "Conditional",
+      "status": "conditional",
+      "persona": "Only if you genuinely provide services to, or license rights to, a US entity you control, and the China side is a business with the right registrations.",
+      "what": "Invoice a US entity for real services, receive the RMB in China, and remit it as business current-account income. It is a commercial structure, not a conversion route.",
+      "capacity": "Depends entirely on a genuine commercial relationship; not a mechanism for moving a personal balance.",
+      "capacity_usd_per_year": null,
+      "basis": ["S05", "S01"],
+      "docs": ["Service contract or licence", "Invoices and delivery evidence", "PRC VAT and withholding filings", "Business registration in China"],
+      "steps": [
+        "Confirm the services are real and priced at arm's length; the anti-avoidance rule in IIT Law Art. 8 lets the tax authority adjust related-party dealings.",
+        "Invoice the US entity and receive payment.",
+        "Settle PRC VAT and withholding obligations (rates not verified in this session: flagged).",
+        "Remit as current-account business income with the contract, invoices and tax evidence.",
+        "Report on both sides."
+      ],
+      "pros": [
+        "Uses an ordinary commercial channel with no USD 50,000 ceiling."
+      ],
+      "cons": [
+        "Only lawful if the services are genuine; a circular arrangement is a sham.",
+        "PRC VAT and withholding rates were not verified here, so no cost figure is given.",
+        "Does not convert a personal savings balance."
+      ],
+      "prc_tax": "VAT and withholding apply to genuine service income; the exact rates were not verified in this session and are flagged rather than asserted.",
+      "us_tax": "The US entity's deduction and your income are separate questions, not analysed here.",
+      "penalty": "A sham arrangement is caught by S01 Art. 7 and S05 Art. 40.",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "No published fee or tax rate was verified for this structure. Left blank.",
+        "cost_sources": ["S01", "S05"]
+      }
+    },
+    {
+      "id": "M16",
+      "name": "Import physical goods into the US and sell them there",
+      "short": "Import goods and sell",
+      "group": "Conditional",
+      "status": "conditional",
+      "persona": "Anyone willing to convert capital into inventory and operate a trading business.",
+      "what": "Buy goods in China with the RMB, export them, sell them in the US, and keep the USD proceeds. The RMB is spent, not converted.",
+      "capacity": "Limited only by the business, but it converts capital into inventory risk.",
+      "capacity_usd_per_year": null,
+      "basis": ["S05"],
+      "docs": ["Supplier contracts and invoices", "Export documentation", "US import entries and duty payment"],
+      "steps": [
+        "Form a business able to import (or use an existing importer of record).",
+        "Buy and export the goods; keep the customs and shipping file.",
+        "Sell in the US and retain the USD proceeds.",
+        "Account for US import duty and income tax (rates vary by product and were not verified here: left blank)."
+      ],
+      "pros": [
+        "No FX conversion of the capital at all.",
+        "Legitimate commercial activity."
+      ],
+      "cons": [
+        "Inventory, tariff and demand risk.",
+        "Duty rates are product-specific and were not verified, so cost is blank.",
+        "Slow: it is a business, not a transfer."
+      ],
+      "prc_tax": "Export VAT treatment was not verified in this session.",
+      "us_tax": "Business income and duty; not analysed here.",
+      "penalty": "Under-invoicing to move value is S05 Art. 40 and S01 Art. 7 territory.",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "Duty, freight and insurance are product-specific and were not verified. Left blank.",
+        "cost_sources": ["S05"]
+      }
+    },
+    {
+      "id": "M17",
+      "name": "Move RMB offshore (CNH) first, then convert outside the mainland",
+      "short": "Offshore CNH then convert",
+      "group": "Conditional",
+      "status": "conditional",
+      "persona": "Only if a lawful channel already entitles you to hold RMB outside the mainland, for example an existing offshore RMB account funded by permitted current-account receipts.",
+      "what": "Once RMB is genuinely offshore it trades as CNH and can be converted in Hong Kong or another offshore centre. Whether you can lawfully get your particular balance offshore is the open question.",
+      "capacity": "Not verified. Whether an individual may move a personal RMB balance offshore outside the M01-M06 channels was not established from the documents read.",
+      "capacity_usd_per_year": null,
+      "basis": ["S05", "S01"],
+      "docs": ["Evidence of the lawful basis on which the RMB became offshore", "Offshore account documents"],
+      "steps": [
+        "Establish, from an official source, the specific basis on which your RMB may leave the mainland as RMB. This was not established in this session and is flagged.",
+        "Open or use an offshore RMB account with the documentation that basis requires.",
+        "Convert CNH to USD offshore.",
+        "Report the offshore account on FBAR and Form 8938 [S15, S18]."
+      ],
+      "pros": [
+        "Offshore CNH spreads are generally narrower than onshore retail board rates.",
+        "Conversion happens outside mainland FX administration."
+      ],
+      "cons": [
+        "The eligibility question is unresolved here: flagged, not asserted.",
+        "No published CNH spread was verified for a retail customer, so cost is blank.",
+        "Moving RMB offshore without a lawful basis is an evasion offence under S05 Art. 39."
+      ],
+      "prc_tax": "None on the conversion itself if the offshore holding was lawful.",
+      "us_tax": "A 988 disposition when the CNH is converted; the personal-transaction exclusion applies to gain up to USD 200.",
+      "penalty": "Unlawful transfer of domestic FX or capital abroad is punishable by a fine of up to 30% of the amount, and up to the equivalent of the full amount where serious (S05 Art. 39).",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "No published offshore retail spread or fee was verified. Left blank.",
+        "cost_sources": ["S05"]
+      }
+    },
+    {
+      "id": "M18",
+      "name": "Greater Bay Area Wealth Management Connect (published bank fees, eligibility unverified)",
+      "short": "GBA Wealth Management Connect",
+      "group": "Conditional",
+      "status": "conditional",
+      "persona": "Residents of the Guangdong-Hong Kong-Macao Greater Bay Area who meet the scheme's qualification requirements. A US citizen living in the US is very unlikely to qualify, but the tariff publishes the fees.",
+      "what": "The scheme has a published remittance channel whose outward remittance is Free at HSBC China for Premier and Advance [S11 items 2.2.8.1-2.2.8.2]. Eligibility is a separate, unresolved question.",
+      "capacity": "Not verified. The scheme's investment quota is set by the scheme rules, which were not read in this session.",
+      "capacity_usd_per_year": null,
+      "basis": ["S11"],
+      "docs": ["GBA residency/qualification evidence", "Scheme account documents"],
+      "steps": [
+        "Confirm you meet the scheme's residency and qualification requirements (not verified here: flagged).",
+        "Open the scheme account; HSBC China provides a witnessing service at GBA branches [S11 item 2.2.1.10].",
+        "Remit under the scheme; the outward remittance item is published Free for Premier and Advance [S11 item 2.2.8.2].",
+        "Report the account on FBAR and Form 8938 [S15, S18]."
+      ],
+      "pros": [
+        "Published bank fees are zero for Premier and Advance on the outward leg [S11 2.2.8.2]."
+      ],
+      "cons": [
+        "Eligibility is a residency-based scheme and was not verified for a US citizen abroad.",
+        "The scheme is for investment, not for repatriating an arbitrary personal balance.",
+        "Quota rules were not read here, so capacity is blank."
+      ],
+      "prc_tax": "Investment returns are separately taxed; not analysed here.",
+      "us_tax": "Offshore investment reporting is complex and was not analysed here.",
+      "penalty": "Using a scheme account for a purpose it does not allow engages S05 Art. 44.",
+      "cost": {
+        "fee": {"type": "flat_usd", "usd": 0, "source": "S11", "locator": "2.2.8.2 Outward Remittance (including Electronic Banking Service): Premier Free, Advance Free"},
+        "spread": {"pct": 0.419, "source": "S22"},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "The published bank fee is Free. Eligibility and the scheme quota were not verified; treat the cost figure as conditional on qualifying at all.",
+        "cost_sources": ["S11", "S22"]
+      }
+    },
+    {
+      "id": "M19",
+      "name": "Qualified domestic institutional investor funds (QDII / QDLP)",
+      "short": "QDII / QDLP fund",
+      "group": "Conditional",
+      "status": "conditional",
+      "persona": "An investor buying a QDII or QDLP product inside China; the money is invested abroad, not remitted to you personally.",
+      "what": "Buy a qualified outbound-investment product with RMB inside China. The scheme converts and invests abroad, but the asset stays in the product, not in your US bank account.",
+      "capacity": "Set by the product and its quota; not verified in this session.",
+      "capacity_usd_per_year": null,
+      "basis": ["S01"],
+      "docs": ["Product documentation", "Investor suitability documents"],
+      "steps": [
+        "Identify an approved QDII/QDLP product and its quota availability (not verified here).",
+        "Complete suitability and subscription.",
+        "Hold the offshore exposure in the product.",
+        "Report the product interest on Form 8938 where required [S18]."
+      ],
+      "pros": [
+        "A lawful, regulated way to hold offshore exposure from inside China."
+      ],
+      "cons": [
+        "It does not put USD in your US bank account.",
+        "Product fees and quotas were not verified, so cost is blank.",
+        "Redemption returns RMB, so the conversion question reopens."
+      ],
+      "prc_tax": "Investment returns are taxable in China; not analysed here.",
+      "us_tax": "PFIC and other rules may apply; not analysed here.",
+      "penalty": "None specific.",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "No published fee or quota was verified. Left blank.",
+        "cost_sources": ["S01"]
+      }
+    },
+    {
+      "id": "M20",
+      "name": "Individual outbound direct investment (ODI) with SAFE registration",
+      "short": "Individual ODI",
+      "group": "Conditional",
+      "status": "conditional",
+      "persona": "An individual making a genuine outbound direct investment, with SAFE approval and registration.",
+      "what": "Invest abroad directly after SAFE approval and registration. It moves capital as an investment, not as a personal transfer.",
+      "capacity": "Approval-based; no published ceiling read in this session.",
+      "capacity_usd_per_year": null,
+      "basis": ["S01"],
+      "docs": ["Investment project documents", "SAFE approval and registration", "Commerce-side filing"],
+      "steps": [
+        "Obtain the commerce-side approval or filing for the outbound investment.",
+        "Apply to SAFE for approval and complete the outbound investment FX registration [S01 Art. 16].",
+        "Buy FX or use your own FX and remit.",
+        "Report the foreign entity interest on the US side."
+      ],
+      "pros": [
+        "A lawful capital-account route that is not limited to USD 50,000."
+      ],
+      "cons": [
+        "Approval-based and slow; the money must be a genuine investment, not a personal account balance.",
+        "Fees and timelines were not verified, so cost is blank."
+      ],
+      "prc_tax": "Depends on the investment; not analysed here.",
+      "us_tax": "Foreign entity reporting may apply; not analysed here.",
+      "penalty": "Investing abroad without registration engages S01 Art. 16 and S05 capital-account penalties.",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": null,
+        "note": "No published fee was verified. Left blank.",
+        "cost_sources": ["S01"]
+      }
+    },
+    {
+      "id": "U01",
+      "name": "Underground bank (地下钱庄) / matched onshore-offshore settlement",
+      "short": "Underground bank",
+      "group": "Unlawful",
+      "status": "unlawful",
+      "persona": "Not available lawfully to anyone.",
+      "what": "You pay RMB to an operator in China and a counterparty abroad pays you USD, with no money crossing the border. This is the classic 'no way to convert' workaround and it is a criminal exposure, not a route.",
+      "capacity": "No lawful capacity.",
+      "capacity_usd_per_year": 0,
+      "basis": ["S05", "S09"],
+      "docs": ["None that would make it lawful"],
+      "steps": [
+        "There are no lawful steps. The description is included so that the option is identified and rejected, not used.",
+        "If you are being offered this, the offer itself is evidence of an offence under S05 Art. 45 (private or disguised FX dealing).",
+        "Settlement outside the banking system also creates an unexplained USD deposit in the US, which the receiving bank must question."
+      ],
+      "pros": ["None. It is not a lawful option."],
+      "cons": [
+        "Fine of up to 30% of the amount involved, and 30% up to the equivalent of the full amount where serious, with confiscation of the proceeds (S05 Art. 45).",
+        "Criminal liability where it constitutes a crime (S05 Art. 45, Art. 39).",
+        "No enforceable contract, so the counterparty can simply keep the money.",
+        "The USD arriving in the US has no lawful paper trail, which is a separate US problem."
+      ],
+      "prc_tax": "Not applicable; the transaction is unlawful.",
+      "us_tax": "Unexplained foreign deposits invite examination; concealing the source is a separate offence.",
+      "penalty": "Up to 30% of the amount involved; 30% up to the full equivalent where serious; confiscation; criminal liability (S05 Arts. 39, 45).",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": 0,
+        "note": "No lawful cost exists; the published penalty is up to 30% of the amount involved (S05 Art. 45), which is the effective price of being caught.",
+        "cost_sources": ["S05"]
+      }
+    },
+    {
+      "id": "U02",
+      "name": "Private FX swap with a counterparty who needs RMB",
+      "short": "Private FX swap",
+      "group": "Unlawful",
+      "status": "unlawful",
+      "persona": "Not available lawfully to anyone.",
+      "what": "You and a counterparty exchange RMB for USD privately, each paying the other in your own country.",
+      "capacity": "No lawful capacity.",
+      "capacity_usd_per_year": 0,
+      "basis": ["S05"],
+      "docs": ["None that would make it lawful"],
+      "steps": [
+        "There are no lawful steps.",
+        "Private and disguised FX trading (私自买卖外汇、变相买卖外汇) is expressly penalised by S05 Art. 45.",
+        "A private swap also leaves each side holding funds the other's bank will question."
+      ],
+      "pros": ["None."],
+      "cons": [
+        "Fine up to 30% of the amount, higher where serious, plus confiscation (S05 Art. 45).",
+        "Counterparty risk with no recourse.",
+        "The 50,000 annual total still applies to each side independently."
+      ],
+      "prc_tax": "Not applicable.",
+      "us_tax": "Unexplained receipts are reportable and hard to substantiate.",
+      "penalty": "Up to 30% of the amount involved; 30% up to the full equivalent where serious; confiscation (S05 Art. 45).",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": 0,
+        "note": "No lawful cost; the statutory exposure is up to 30% of the amount (S05 Art. 45).",
+        "cost_sources": ["S05"]
+      }
+    },
+    {
+      "id": "U03",
+      "name": "Crypto / USDT off-ramp",
+      "short": "Crypto / USDT",
+      "group": "Unlawful",
+      "status": "unlawful",
+      "persona": "Not available lawfully to anyone.",
+      "what": "Buy USDT or another token with RMB through an over-the-counter broker and sell it abroad for USD.",
+      "capacity": "No lawful capacity.",
+      "capacity_usd_per_year": 0,
+      "basis": ["S21"],
+      "docs": ["None that would make it lawful"],
+      "steps": [
+        "There are no lawful steps. Converting between legal tender and virtual currency is expressly prohibited (S21 point 1(2)).",
+        "Offshore exchanges serving residents of China over the internet are themselves treated as conducting illegal financial activity (S21 point 1(3)).",
+        "Banks and payment institutions may not open accounts, transfer funds or clear for this activity (S21 point 4(9))."
+      ],
+      "pros": ["None."],
+      "cons": [
+        "Expressly prohibited as illegal financial activity, with criminal liability where it constitutes a crime (S21).",
+        "Civil acts in breach are void, and the loss falls on you (S21 point 1(4)).",
+        "The on-ramp and off-ramp counterparties are precisely what the AML monitoring is built to detect."
+      ],
+      "prc_tax": "Not applicable.",
+      "us_tax": "Virtual currency is separately reportable and taxable in the US; the Chinese prohibition does not make it tax-free.",
+      "penalty": "Illegal financial activity under S21; criminal liability where it constitutes a crime; any resulting civil act is void (S21 point 1(4)).",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": 0,
+        "note": "No lawful cost exists. The prohibition is absolute, so no price can be stated.",
+        "cost_sources": ["S21"]
+      }
+    },
+    {
+      "id": "U04",
+      "name": "Borrow or lend a quota (借用他人额度 / 出借本人额度)",
+      "short": "Borrow a quota",
+      "group": "Unlawful",
+      "status": "unlawful",
+      "persona": "Not available lawfully to anyone.",
+      "what": "Use friends' or relatives' USD 50,000 allowances to convert more than your own total.",
+      "capacity": "No lawful capacity.",
+      "capacity_usd_per_year": 0,
+      "basis": ["S09", "S01"],
+      "docs": ["None that would make it lawful"],
+      "steps": [
+        "There are no lawful steps.",
+        "Borrowing another person's quota puts you on SAFE's watch list (关注名单) for that year and the following two years; lending your own quota triggers a risk notice and then the watch list on a repeat (S09 point 2).",
+        "During the watch-list period every FX transaction requires documents, however small (S09 point 2)."
+      ],
+      "pros": ["None."],
+      "cons": [
+        "Watch-list entry for three years, with documents required for every transaction.",
+        "The relatives who lend their quota are exposed too (S09).",
+        "It is the specific behaviour the monitoring system was built to catch (S01 Art. 7)."
+      ],
+      "prc_tax": "Not applicable.",
+      "us_tax": "Funds that are legally someone else's create gift and reporting questions for both sides.",
+      "penalty": "Watch-list management for three years and documentary review of every subsequent transaction (S09 point 2); false documents bring S05 Art. 48.",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": 0,
+        "note": "No lawful cost exists; the sanction is administrative (watch list), not a published fine.",
+        "cost_sources": ["S09"]
+      }
+    },
+    {
+      "id": "U05",
+      "name": "Fabricated or inflated documents (trade invoices, contracts, tax certificates)",
+      "short": "Fabricated documents",
+      "group": "Unlawful",
+      "status": "unlawful",
+      "persona": "Not available lawfully to anyone.",
+      "what": "Present invented contracts, invoices or a tax record to satisfy the bank's document check.",
+      "capacity": "No lawful capacity.",
+      "capacity_usd_per_year": 0,
+      "basis": ["S01", "S05"],
+      "docs": ["None that would make it lawful"],
+      "steps": [
+        "There are no lawful steps.",
+        "The bank is required to review the authenticity of the documents and the consistency of the transaction (S05 Art. 12).",
+        "Fabrication is expressly prohibited by S01 Art. 7."
+      ],
+      "pros": ["None."],
+      "cons": [
+        "Illegal FX arbitrage (非法套汇): the funds are ordered converted back and a fine of up to 30% of the amount applies, higher where serious (S05 Art. 40).",
+        "The individual may separately be fined up to CNY 50,000 for untrue documents (S05 Art. 48).",
+        "Criminal liability where it constitutes a crime."
+      ],
+      "prc_tax": "A false tax certificate is itself a tax offence.",
+      "us_tax": "A false foreign tax credit claim is a US offence as well.",
+      "penalty": "Up to 30% of the amount, 30% up to the full equivalent where serious, plus conversion back of the funds (S05 Art. 40); up to CNY 50,000 for untrue documents (S05 Art. 48).",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": 0,
+        "note": "No lawful cost; the published exposure is up to 30% of the amount involved (S05 Art. 40).",
+        "cost_sources": ["S05"]
+      }
+    },
+    {
+      "id": "U06",
+      "name": "Structuring / smurfing transfers to stay under the limits",
+      "short": "Structuring transfers",
+      "group": "Unlawful",
+      "status": "unlawful",
+      "persona": "Not available lawfully to anyone.",
+      "what": "Break one large amount into many small transfers or many people's transfers to stay under a reporting or quota threshold.",
+      "capacity": "No lawful capacity.",
+      "capacity_usd_per_year": 0,
+      "basis": ["S01", "S09"],
+      "docs": ["None that would make it lawful"],
+      "steps": [
+        "There are no lawful steps.",
+        "Splitting a large amount into small batches to evade limit administration is expressly prohibited (S01 Art. 7).",
+        "SAFE operates a watch list for exactly this (S09 point 2)."
+      ],
+      "pros": ["None."],
+      "cons": [
+        "Watch-list management for three years and documentary review of every later transaction (S09).",
+        "Structuring is a recognised indicator, so the pattern itself is the evidence.",
+        "If documents are also false, S05 Art. 40 applies (up to 30%)."
+      ],
+      "prc_tax": "Not applicable.",
+      "us_tax": "Structuring around US reporting thresholds is separately unlawful in the US.",
+      "penalty": "Watch-list management for three years (S09 point 2); up to 30% of the amount where documents are also false (S05 Art. 40).",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": 0,
+        "note": "No lawful cost; the sanction is administrative (watch list), not a published fine.",
+        "cost_sources": ["S01", "S09"]
+      }
+    },
+    {
+      "id": "U07",
+      "name": "Carry or mail undeclared cash above the declaration thresholds",
+      "short": "Undeclared cash",
+      "group": "Unlawful",
+      "status": "unlawful",
+      "persona": "Not available lawfully to anyone.",
+      "what": "Carry more than the permitted amount out of China, or enter the US with more than USD 10,000 without filing FinCEN Form 105.",
+      "capacity": "No lawful capacity.",
+      "capacity_usd_per_year": 0,
+      "basis": ["S07", "S20", "S05"],
+      "docs": ["None that would make it lawful"],
+      "steps": [
+        "There are no lawful steps.",
+        "Above USD 10,000 out of China is in principle prohibited without a SAFE permit (S07).",
+        "Entering the US with more than USD 10,000 without a FinCEN Form 105 risks seizure and forfeiture (S20)."
+      ],
+      "pros": ["None."],
+      "cons": [
+        "Fine of up to 20% of the amount for carrying FX in breach of the rules (S05 Art. 42).",
+        "US seizure and forfeiture, plus civil or criminal penalties (S20).",
+        "Cash is unrecoverable if seized."
+      ],
+      "prc_tax": "Not applicable.",
+      "us_tax": "Currency-reporting violations are separate from tax.",
+      "penalty": "Up to 20% of the amount (S05 Art. 42) on the China side; seizure, forfeiture and civil or criminal penalties on the US side (S20).",
+      "cost": {
+        "fee": {"type": "unverified"},
+        "spread": {"pct": null, "source": null},
+        "per_tx_cap_usd": null,
+        "annual_cap_usd": 0,
+        "note": "No lawful cost; the published exposure is up to 20% of the amount (S05 Art. 42), plus forfeiture risk (S20).",
+        "cost_sources": ["S05", "S20"]
+      }
+    }
+  ]
+}

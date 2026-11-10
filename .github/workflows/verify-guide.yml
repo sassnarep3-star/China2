@@ -1,0 +1,32 @@
+name: Verify consolidated guide (arena/8cdb25b4 scope)
+
+on:
+  pull_request:
+  push:
+    branches: ["main", "arena/8cdb25b4-china2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-guide:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Recompute the cost ladder
+        run: python3 guide/model.py
+      - name: Regenerate the static pages
+        run: python3 guide/build.py
+      - name: Check generated output is committed
+        run: git diff --exit-code -- guide
+      - name: Verify citations, arithmetic and local links
+        run: python3 guide/verify.py
+      - name: Check browser script syntax
+        run: node --check guide/assets/app.js
