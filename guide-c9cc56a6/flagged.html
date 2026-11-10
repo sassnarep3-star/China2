@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagged for Review · CNY → USD guide</title>
+<meta name="description" content="Every value that could not be confirmed from an official source, every inconsistency found in the repository, and the assumptions the cost tables rest on.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">CNY → USD<span>repatriation guide</span></a>
+  <nav><a href="index.html">Overview</a><a href="methods.html">Methods</a><a href="costs.html">Costs</a><a href="taxes.html">Tax &amp; penalties</a><a href="flagged.html" class="on">Flagged</a><a href="sources.html">Sources</a><a href="audit.html">Repo audit</a></nav>
+</header>
+<main>
+<h1>Flagged for Review</h1>
+<p class="lead">Every value that could not be confirmed from an official source, every inconsistency found in the repository, and the assumptions the cost tables rest on.</p>
+
+<div class="callout">
+  <p>Nothing on this page blocks publication; it exists so the gaps are visible instead of hidden. Each item
+  says what could not be confirmed, what was done instead, and what would settle it.</p>
+</div>
+<h2>Open items</h2>
+
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F01</span> The FX conversion margin is not published - every all-in cost cell carries an assumption</h3>
+  <span class="badge bad">unverified</span></div>
+  <p>No bank publishes the customer CNY/USD bid and offer it will actually deal on, so the FX margin cannot be sourced. The cost ladder models a band of 0.30%-1.50% for telegraphic routes, 0.80%-3.00% for cash, 0.00%-3.00% for card routes and 0.20%-1.00% for the offshore route. Those bands are labelled assumptions on every table and are NOT official figures. The published fee column is separate and exact.</p>
+  <p class="action"><b>To resolve:</b> Replace the band with the bank&#x27;s own executable quote before acting. The published fee is the small part of the all-in cost.</p>
+  <p class="src"><a class="chip" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" rel="noopener" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 October 2026)">G08 · HSBC Bank</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F02</span> The repo&#x27;s existing ladder uses a superseded HSBC tariff</h3>
+  <span class="badge bad">irregularity</span></div>
+  <p>ladder/data/sources.json (S06) cites the tariff effective 1 January 2021, and ladder/data/costs.csv therefore charges USD 7.00 for a Global Transfer (route R02). The tariff effective 31 October 2026 (G08, item 2.2.6.1) states: free for Private Banking and Premier, and for Advance a CNY 145 indication charge whose actual charge is USD 20 per transaction. This guide uses the 2026 figures. The ladder files were not edited - they are outside this session&#x27;s scope.</p>
+  <p class="action"><b>To resolve:</b> Ladder owner should refresh S06 to the 31 October 2026 tariff.</p>
+  <p class="src"><a class="chip" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" rel="noopener" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 October 2026)">G08 · HSBC Bank</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F03</span> Only one bank&#x27;s personal tariff could be verified</h3>
+  <span class="badge bad">unverified</span></div>
+  <p>Bank of China, ICBC, China Construction Bank and Bank of Communications tariffs were not retrieved this session. The fixed-fee column is therefore an HSBC China tariff, and other banks will publish different numbers - some price a wire at a flat fee, some at 0.1% uncapped. Treat the published fee as an order of magnitude, not the price at your bank.</p>
+  <p class="action"><b>To resolve:</b> Substitute your own bank&#x27;s published schedule.</p>
+  <p class="src"><a class="chip" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" rel="noopener" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 October 2026)">G08 · HSBC Bank</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F04</span> Section 988 character once the USD 200 line is crossed: capital or ordinary?</h3>
+  <span class="badge warn">needs-review</span></div>
+  <p>26 U.S.C. 988(e)(1)-(3) is verified verbatim. What it does not state is the character of the recognised gain above USD 200. One reading applies section 1001 and treats it as gain on a capital asset; another reads section 988(a)(1)(A) as still governing. IRS Publication 525 is widely quoted as saying such a gain is reported as a capital gain, but this session retrieved only the publication&#x27;s table of contents and could not verify the sentence, so no character is chosen anywhere on this site and no cell depends on one.</p>
+  <p class="action"><b>To resolve:</b> Ask a preparer, or read Publication 525&#x27;s foreign-currency paragraph and note 26 CFR 1.988-1(a)(8).</p>
+  <p class="src"><a class="chip" href="https://www.law.cornell.edu/uscode/text/26/988" rel="noopener" title="26 U.S.C. 988 - Treatment of certain foreign currency transactions">G17 · US Code</a> <a class="chip warn" href="https://www.irs.gov/publications/p525" rel="noopener" title="Publication 525, Taxable and Nontaxable Income - personal foreign currency transactions">G23 · IRS</a> <a class="chip" href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" rel="noopener" title="Yearly average currency exchange rates">G19 · IRS</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F05</span> The PRC virtual-currency prohibition notices were not retrieved</h3>
+  <span class="badge bad">unverified</span></div>
+  <p>The 2021 notice (Yin Fa [2021] No. 237) and the 2026 notice (Yin Fa [2026] No. 42) are described in secondary sources as classifying virtual-currency business activity as illegal financial activity. No PBOC body text was retrieved by this session, so the C17 crypto route is marked unlawful on the strength of a flagged source only. It is not used to support any number.</p>
+  <p class="action"><b>To resolve:</b> Retrieve the PBOC notice text before relying on the C17 classification.</p>
+  <p class="src"><a class="chip warn" href="https://www.pbc.gov.cn/" rel="noopener" title="Notice on Further Preventing and Handling the Risks of Virtual Currency Trading Speculation (Yin Fa [2021] No. 237)">G21 · PBOC and nine other departments</a> <a class="chip warn" href="https://www.pbc.gov.cn/" rel="noopener" title="Notice on Further Preventing and Handling Virtual Currency and Related Risks (Yin Fa [2026] No. 42)">G22 · PBOC and seven other departments</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F06</span> The emigration route requires proof that your PRC household registration is cancelled</h3>
+  <span class="badge warn">needs-review</span></div>
+  <p>The staging rules for C07 and C08 were re-verified directly on 2026-11-10 (G07, Arts. 6, 8, 10, 11): one application for the whole amount, no more than half first, no more than half of the remainder after a year, the balance after two years, and amounts up to RMB 200,000 in one go after approval. What is not resolved is eligibility: Art. 8(4) requires the police-issued cancellation of PRC household registration plus a certificate of overseas residence issued or authenticated by a Chinese embassy or consulate, and Art. 8(6) requires a tax certificate. A US citizen who has never held PRC household registration, or who has not cancelled it, cannot assemble that file. This site therefore describes C07 as conditional rather than recommending it.</p>
+  <p class="action"><b>To resolve:</b> Confirm with the local SAFE branch whether you can satisfy Art. 8(4) before relying on this route.</p>
+  <p class="src"><a class="chip" href="https://www.safe.gov.cn/safe/2004/1116/4133.html" rel="noopener" title="Provisional Measures for the Administration of Sale and Payment of Foreign Exchange for Individuals&#x27; Outward Asset Transfers (PBOC Announcement [2004] No. 16)">G07 · PBOC</a> <a class="chip" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" rel="noopener" title="Implementation Rules of the Measures for the Administration of Individual Foreign Exchange (Hui Fa [2007] No. 1, as amended)">G04 · SAFE</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F07</span> Who the USD 50,000 quota actually binds</h3>
+  <span class="badge warn">needs-review</span></div>
+  <p>The quota figure itself is verified (G02). Its scope rests on an inherited source (G04 Art. 2), which applies the annual aggregate to individuals&#x27; FX sales and to domestic individuals&#x27; FX purchases. A foreign national resident in China for one year or more is a &#x27;domestic individual&#x27; under Decree 532 Art. 52 - so a long-staying US citizen may be inside the quota regime while a new arrival is not. The distinction between quota purchases and documented income conversion is what makes C01 uncapped and C21 capped.</p>
+  <p class="action"><b>To resolve:</b> Confirm your own classification with the bank before choosing C01 or C21.</p>
+  <p class="src"><a class="chip" href="https://www.safe.gov.cn/en/2007/0105/819.html" rel="noopener" title="Individual foreign exchange: the USD 50,000 annual quota (SAFE Q&amp;A)">G02 · State Administration of Foreign Exchange</a> <a class="chip" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" rel="noopener" title="Implementation Rules of the Measures for the Administration of Individual Foreign Exchange (Hui Fa [2007] No. 1, as amended)">G04 · SAFE</a> <a class="chip" href="https://www.safe.gov.cn/safe/2008/0806/5321.html" rel="noopener" title="Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)">G05 · State Council of the PRC</a> <a class="chip" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" rel="noopener" title="Administrative Rules on Individuals&#x27; Foreign Exchange (PBOC Decree [2006] No. 3)">G01 · People&#x27;s Bank of China</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F08</span> PRC tax on the source income is not computed anywhere on this site</h3>
+  <span class="badge bad">unverified</span></div>
+  <p>The tax depends on which of the nine categories the income falls into, what was withheld in China, what deductions apply and which years are open. No figure is filled. The Tax page shows the statutory rates and pure arithmetic on them, clearly labelled, so the reader can size the exposure without the site inventing a liability.</p>
+  <p class="action"><b>To resolve:</b> Obtain the PRC tax payment records - they are also the document the bank requires.</p>
+  <p class="src"><a class="chip" href="https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html" rel="noopener" title="Individual Income Tax Law of the PRC (2018 revision)">G09 · National People&#x27;s Congress / State Taxation Administration</a> <a class="chip" href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" rel="noopener" title="2026 foreign exchange administration Q&amp;A (individual FX) - cited rule: Huifa [2020] No. 14, Art. 59">G03 · SAFE Tianjin branch</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F09</span> Form 8938 penalty amounts are not stated</h3>
+  <span class="badge bad">unverified</span></div>
+  <p>The FATCA thresholds are verified (G11). The penalty provision for failing to file Form 8938 was not retrieved from an official source, so the penalty cell is blank rather than filled with a remembered number.</p>
+  <p class="action"><b>To resolve:</b> Retrieve 26 U.S.C. 6038D(d) and the current inflation-adjusted amount.</p>
+  <p class="src"><a class="chip" href="https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers" rel="noopener" title="Summary of FATCA reporting for US taxpayers (Form 8938)">G11 · IRS</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F10</span> Trade settlement account exemption - entity availability unclear for individuals</h3>
+  <span class="badge warn">needs-review</span></div>
+  <p>SAFE states that funds in a trade settlement account are exempt from the quota on presentation of valid documents (G02). Whether an individual - as opposed to a business entity - can hold such an account was not established this session. C24 is therefore described but not costed.</p>
+  <p class="action"><b>To resolve:</b> Confirm account eligibility at the bank.</p>
+  <p class="src"><a class="chip" href="https://www.safe.gov.cn/en/2007/0105/819.html" rel="noopener" title="Individual foreign exchange: the USD 50,000 annual quota (SAFE Q&amp;A)">G02 · State Administration of Foreign Exchange</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F11</span> Cash-carrying limits by the PRC side were not verified</h3>
+  <span class="badge bad">unverified</span></div>
+  <p>The US side is verified: more than USD 10,000 at one time requires FinCEN Form 105 (G20). The PRC-side limit on carrying renminbi or foreign cash out of China is not stated on this site because no official text was retrieved this session; the C11 and C06 descriptions therefore warn about declaration duties without quoting a PRC threshold.</p>
+  <p class="action"><b>To resolve:</b> Retrieve the SAFE / General Administration of Customs carrying measures.</p>
+  <p class="src"><a class="chip" href="https://www.cbp.gov/travel/international-visitors/money-monetary-instruments" rel="noopener" title="Money and Other Monetary Instruments - federal mandate to report currency exceeding USD 10,000">G20 · US Customs and Border Protection</a></p>
+</article>
+<article class="card flag">
+  <div class="methodhead"><h3><span class="mid">F12</span> The 7.10 CNY/USD rate is a conversion convenience, not a quote</h3>
+  <span class="badge warn">assumption</span></div>
+  <p>Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 amounts are affected. At USD 400,000 the whole swing across a 6.80-7.40 band is under USD 15 on a USD 87 fee. The ladder tiers are dollar amounts, so no exchange-rate forecast is embedded in any table.</p>
+  <p class="action"><b>To resolve:</b> None - but do not read 7.10 as a market view.</p>
+  <p class="src"><a class="chip" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" rel="noopener" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 October 2026)">G08 · HSBC Bank</a></p>
+</article>
+<h2>Assumptions the tables rest on</h2>
+<ul class="assumptions"><li><b>A1</b> — Telegraphic route FX margin: 0.30%-1.50% of principal <span class="tag">assumption</span></li><li><b>A2</b> — Cash / counter route FX margin: 0.80%-3.00% <span class="tag">assumption</span></li><li><b>A3</b> — Card / ATM route margin plus issuer fee: 0.00%-3.00% <span class="tag">assumption</span></li><li><b>A4</b> — Offshore CNH margin before the USD leg: 0.20%-1.00% <span class="tag">assumption</span></li><li><b>A5</b> — One wire per tranche - no per-transfer ceiling for a documented individual remittance was verified, so none is invented <span class="tag">assumption</span></li><li><b>A6</b> — CNY 7.10 per USD to express CNY fee caps in dollars <span class="tag">assumption</span></li><li><b>A7</b> — US compliance preparation fees are not modelled - left blank <span class="tag">unverified</span></li></ul>
+<h2>Sources that are explicitly not verified</h2>
+<p>The following are linked for review but were never used to support a filled cell:</p>
+<ul class="assumptions"><li><b>G21</b> — Notice on Further Preventing and Handling the Risks of Virtual Currency Trading Speculation (Yin Fa [2021] No. 237) · <span class="tag warn">unverified</span> <a href="https://www.pbc.gov.cn/">open</a></li><li><b>G22</b> — Notice on Further Preventing and Handling Virtual Currency and Related Risks (Yin Fa [2026] No. 42) · <span class="tag warn">unverified</span> <a href="https://www.pbc.gov.cn/">open</a></li><li><b>G23</b> — Publication 525, Taxable and Nontaxable Income - personal foreign currency transactions · <span class="tag warn">unverified</span> <a href="https://www.irs.gov/publications/p525">open</a></li><li><b>G24</b> — Wise help centre - sending money from CNY / China · <span class="tag warn">unverified</span> <a href="https://wise.com/help/">open</a></li><li><b>G25</b> — Western Union - send money from China · <span class="tag warn">unverified</span> <a href="https://www.westernunion.com/">open</a></li><li><b>G26</b> — Guidelines for the Administration of Foreign Exchange Business (Huifa [2020] No. 14) · <span class="tag warn">unverified</span> <a href="https://www.safe.gov.cn/">open</a></li></ul>
+
+</main>
+<footer>
+  <p>Built 2026-11-10 by session <code>arena/c9cc56a6-china2</code>. Every figure is either taken from a
+  published official or commercial source (linked) or computed from one by arithmetic this repo re-checks
+  in <code>verify.py</code>. Anything that could not be confirmed is blank and listed on the
+  <a href="flagged.html">Flagged for Review</a> page. This is research, not tax or legal advice.</p>
+  <p><a href="sources.html">32 sources</a> · <a href="audit.html">repo audit</a> ·
+  <a href="https://github.com/sassnarep3-star/China2">repository</a></p>
+</footer>
+</body>
+</html>

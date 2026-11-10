@@ -1,0 +1,62 @@
+name: verify-guide-c9cc56a6
+
+on:
+  push:
+    paths:
+      - "guide-c9cc56a6/**"
+      - ".github/workflows/verify-guide-c9cc56a6.yml"
+  pull_request:
+    paths:
+      - "guide-c9cc56a6/**"
+      - ".github/workflows/verify-guide-c9cc56a6.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: verify-guide-c9cc56a6-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild the guide from its data
+        run: python3 guide-c9cc56a6/build.py
+
+      - name: Committed output must match the data
+        run: |
+          if ! git diff --quiet -- guide-c9cc56a6; then
+            echo "::error::guide-c9cc56a6 is stale - run build.py and commit the output"
+            git --no-pager diff --stat -- guide-c9cc56a6
+            exit 1
+          fi
+
+      - name: Verify sources, links, flags and fee arithmetic
+        run: python3 guide-c9cc56a6/verify.py
+
+      - name: Confirm no page references a missing local file
+        run: |
+          python3 - <<'PY'
+          import re, pathlib, sys
+          root = pathlib.Path("guide-c9cc56a6")
+          missing = []
+          for page in root.glob("*.html"):
+              html = page.read_text(encoding="utf-8")
+              for href in re.findall(r'(?:href|src)="([^"]+)"', html):
+                  if href.startswith(("http://", "https://", "mailto:", "#")):
+                      continue
+                  target = href.split("#")[0]
+                  if target and not (root / target).exists():
+                      missing.append(f"{page.name} -> {href}")
+          if missing:
+              print("\n".join(missing))
+              sys.exit(1)
+          print("all local references resolve")
+          PY

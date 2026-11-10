@@ -1,0 +1,361 @@
+{
+  "meta": {
+    "session": "arena/c9cc56a6-china2",
+    "compiled": "2026-11-10",
+    "policy": "verification_level is either 'fetched-this-session' (the page body was retrieved and the locator text read on 2026-11-10 by this session), 'inherited' (verified by an earlier repo session; URL is official but this session did not re-open the body), or 'unverified' (no official body obtained - never used to support a value). A source labeled unverified cannot support a filled cell; those cells are blank and listed on the Flagged for Review page."
+  },
+  "sources": [
+    {
+      "id": "G01",
+      "jur": "PRC",
+      "authority": "People's Bank of China (PBOC)",
+      "title": "Administrative Rules on Individuals' Foreign Exchange (PBOC Decree [2006] No. 3)",
+      "url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
+      "locator": "Arts. 2, 7, 9, 13, 14",
+      "verification_level": "fetched-this-session",
+      "quote": "Art. 7 prohibits evading limit administration by splitting a large amount into small batches or tampering with authenticity administration using fabricated commercial bills or vouchers. Art. 13 permits a non-domestic individual to convert lawful RMB current-account income and remit it abroad on presenting valid identity documents and relevant documents.",
+      "used_for": "Legal basis of the documented-income route (M01); the anti-splitting rule that makes M15 unlawful."
+    },
+    {
+      "id": "G02",
+      "jur": "PRC",
+      "authority": "State Administration of Foreign Exchange (SAFE)",
+      "title": "Individual foreign exchange: the USD 50,000 annual quota (SAFE Q&A)",
+      "url": "https://www.safe.gov.cn/en/2007/0105/819.html",
+      "locator": "Quota paragraph; authenticity-review paragraph; trade settlement account paragraph",
+      "verification_level": "fetched-this-session",
+      "quote": "Individuals may purchase/sell foreign exchange up to the equivalent of USD 50,000 per person per year; purchases beyond the quota are handled after an authenticity review of the supporting documents; funds in a trade settlement account are exempt from the quota on presentation of valid documents.",
+      "used_for": "The USD 50,000/year quota figure used in M02 and in the 'quota years' column of the cost ladder."
+    },
+    {
+      "id": "G03",
+      "jur": "PRC",
+      "authority": "SAFE Tianjin branch",
+      "title": "2026 foreign exchange administration Q&A (individual FX) - cited rule: Huifa [2020] No. 14, Art. 59",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+      "locator": "Q&A on an overseas individual converting lawful RMB income; cites Huifa [2020] No. 14 Art. 59",
+      "verification_level": "fetched-this-session",
+      "quote": "An overseas individual in China converting lawful RMB income must present identity documents plus source-of-funds materials for the transaction amount, including tax vouchers.",
+      "used_for": "The document set (identity + source materials + tax vouchers) required by M01."
+    },
+    {
+      "id": "G04",
+      "jur": "PRC",
+      "authority": "SAFE",
+      "title": "Implementation Rules of the Measures for the Administration of Individual Foreign Exchange (Hui Fa [2007] No. 1, as amended)",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html",
+      "locator": "Arts. 2, 13(1), 20",
+      "verification_level": "inherited",
+      "quote": "Art. 2: the annual aggregate of USD 50,000 per person applies to individuals' FX sales and to domestic individuals' FX purchases. Art. 13(1): a non-domestic individual converting lawful RMB current-account income must present identity documents plus transaction-amount documents including tax vouchers. Art. 20: emigration and inheritance transfers follow the separate 2004 measure.",
+      "used_for": "Scope of the quota (who it binds) and the emigration/inheritance pointer. Verified by an earlier repo session; not re-opened on 2026-11-10."
+    },
+    {
+      "id": "G05",
+      "jur": "PRC",
+      "authority": "State Council of the PRC",
+      "title": "Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532)",
+      "url": "https://www.safe.gov.cn/safe/2008/0806/5321.html",
+      "locator": "Arts. 39, 42, 45, 52",
+      "verification_level": "fetched-this-session",
+      "quote": "Art. 39: evasion of foreign exchange administration - a fine of up to 30% of the amount involved, or between 30% and the full amount if serious. Art. 42: illegal carriage of foreign exchange across the border - warning plus a fine of up to 20%. Art. 45: private (illegal) foreign exchange trading - confiscation of the funds plus a fine of up to 30%, or 30%-100% if serious. Art. 52: a foreign national who has resided continuously in China for one year or more is a 'domestic individual'.",
+      "used_for": "Every penalty percentage in the penalty tables, and the residence test in M02."
+    },
+    {
+      "id": "G06",
+      "jur": "PRC",
+      "authority": "SAFE",
+      "title": "Notice on Regulating Large Cash Withdrawals Abroad with Bank Cards (Hui Fa [2017] No. 29)",
+      "url": "https://www.safe.gov.cn/en/2017/1230/1397.html",
+      "locator": "Arts. 1 and 4",
+      "verification_level": "fetched-this-session",
+      "quote": "Aggregate overseas cash withdrawals on a person's domestic bank cards may not exceed the equivalent of RMB 100,000 per calendar year; each card is capped at the equivalent of RMB 10,000 per day.",
+      "used_for": "The hard caps on M06 (ATM) and the 'years / days needed' columns for card and cash routes."
+    },
+    {
+      "id": "G07",
+      "jur": "PRC",
+      "authority": "PBOC",
+      "title": "Provisional Measures for the Administration of Sale and Payment of Foreign Exchange for Individuals' Outward Asset Transfers (PBOC Announcement [2004] No. 16)",
+      "url": "https://www.safe.gov.cn/safe/2004/1116/4133.html",
+      "locator": "Arts. 6, 8(4), 8(6), 10, 11",
+      "verification_level": "fetched-this-session",
+      "quote": "Art. 6: an emigration transfer must be applied for once for the whole amount and remitted in stages - the first remittance may not exceed half of the property, after one year no more than half of the remainder, and after two years the whole balance; amounts up to RMB 200,000 may be remitted in one go after approval. Art. 8(4): an applicant settling abroad must provide the police-issued cancellation of PRC household registration plus a certificate of overseas residence issued or authenticated by a Chinese embassy or consulate. Art. 8(6): a tax certificate or tax payment voucher issued by the competent tax authority is required. Art. 10: up to RMB 500,000 is approved by the local SAFE branch; above that it goes to SAFE head office. Art. 11: the bank must remit directly to the applicant's own overseas account and may not pay out foreign cash domestically.",
+      "used_for": "Staging of the emigration and inheritance routes (C07, C08), the document set, and the approval threshold."
+    },
+    {
+      "id": "G08",
+      "jur": "PRC (commercial bank)",
+      "authority": "HSBC Bank (China) Company Limited",
+      "title": "Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 October 2026)",
+      "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+      "locator": "Items 2.2.4.1 (telegraphic transfer issuance), 2.2.4.2 (cable charge), 2.2.6.1 (Global Transfer), 2.2.7 (International Education Payment); Important Note 3 (Premier eligibility, CNY 500,000 TRB)",
+      "verification_level": "fetched-this-session",
+      "quote": "2.2.4.1 Telegraphic Transfer Issuance - individual customer: 0.1% of remittance amount, minimum CNY 100, maximum CNY 500 per transaction, plus cable charge (Private Banking individual: free). 2.2.4.2 Cable Charges: CNY 120 per cable. 2.2.6.1 Global Transfer to your own overseas HSBC account: Free (Private Banking), Free (Premier), Advance CNY 145 indication charge - actual charge USD 20 or equivalent per transaction. Important Note 3: Premier requires last month's Total Relationship Balance of at least CNY 500,000 or equivalent.",
+      "used_for": "Every published fixed fee in the cost ladder. This is a commercial price list, not a regulator's figure and not a quote for any specific account."
+    },
+    {
+      "id": "G09",
+      "jur": "PRC",
+      "authority": "National People's Congress / State Taxation Administration",
+      "title": "Individual Income Tax Law of the PRC (2018 revision)",
+      "url": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html",
+      "locator": "Arts. 2, 3, 6, 11",
+      "verification_level": "fetched-this-session",
+      "quote": "Art. 2 lists the nine categories of income subject to IIT (wages and salaries, remuneration for personal services, author's remuneration, royalties, business income, interest, dividends, property leasing, property transfer, incidental income). Art. 3: comprehensive income 3%-45% progressive; business income 5%-35%; interest, dividends, property leasing, property transfer and incidental income 20%. Art. 6: RMB 60,000 annual deduction. Art. 11: annual reconciliation window 1 March - 30 June.",
+      "used_for": "The PRC income tax rates in the penalty/tax breakdown. A bare currency conversion appears in none of the nine categories."
+    },
+    {
+      "id": "G10",
+      "jur": "US",
+      "authority": "Internal Revenue Service (IRS)",
+      "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "locator": "Filing requirement; due date; automatic extension; FinCEN 114 / BSA E-Filing",
+      "verification_level": "fetched-this-session",
+      "quote": "A US person must file an FBAR if the aggregate value of foreign financial accounts exceeds USD 10,000 at any time during the calendar year. Due 15 April, with an automatic extension to 15 October; filed as FinCEN Form 114 through BSA E-Filing.",
+      "used_for": "The USD 10,000 FBAR trigger and the filing calendar used in the tax section and the step-by-step."
+    },
+    {
+      "id": "G11",
+      "jur": "US",
+      "authority": "IRS",
+      "title": "Summary of FATCA reporting for US taxpayers (Form 8938)",
+      "url": "https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers",
+      "locator": "Form 8938 thresholds table",
+      "verification_level": "fetched-this-session",
+      "quote": "Unmarried taxpayer living in the US: USD 50,000 on the last day of the year or USD 75,000 at any time. Married filing jointly living in the US: USD 100,000 / USD 150,000. Unmarried living abroad: USD 200,000 / USD 300,000. Married filing jointly living abroad: USD 400,000 / USD 600,000.",
+      "used_for": "Form 8938 thresholds in the tax section."
+    },
+    {
+      "id": "G12",
+      "jur": "US",
+      "authority": "IRS",
+      "title": "Foreign tax credit",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+      "locator": "Choice between credit and deduction; Form 1116; interaction with the foreign earned income exclusion",
+      "verification_level": "fetched-this-session",
+      "quote": "A taxpayer may choose to take the foreign tax credit (Form 1116) or an itemized deduction; the credit reduces US tax dollar for dollar. Foreign taxes on income excluded under the foreign earned income exclusion cannot be credited.",
+      "used_for": "Why the PRC tax that is already paid does not stack on top of the US tax (the credit), and the FEIE interaction."
+    },
+    {
+      "id": "G13",
+      "jur": "US",
+      "authority": "IRS",
+      "title": "US citizens and resident aliens abroad",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
+      "locator": "Worldwide income paragraph; filing and reporting overview",
+      "verification_level": "fetched-this-session",
+      "quote": "US citizens and resident aliens are taxed on their worldwide income regardless of where they live, and are subject to the same filing rules; the page lists the FBAR, Form 8938, foreign tax credit and foreign earned income exclusion as the relief and reporting provisions.",
+      "used_for": "The starting premise that the US taxes the income, not the conversion."
+    },
+    {
+      "id": "G14",
+      "jur": "US",
+      "authority": "IRS",
+      "title": "Foreign earned income exclusion",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion",
+      "locator": "Eligibility tests; inflation-adjusted maximum exclusion; Form 2555",
+      "verification_level": "fetched-this-session",
+      "quote": "The exclusion is available to a US citizen who has a tax home in a foreign country and meets either the bona fide residence test or the physical presence test (330 full days in a 12-month period). The exclusion amount is inflation-adjusted annually and is claimed on Form 2555.",
+      "used_for": "The FEIE tests named in the step-by-step, and the warning that excluded income cannot also generate a foreign tax credit."
+    },
+    {
+      "id": "G15",
+      "jur": "US",
+      "authority": "FinCEN / eCFR",
+      "title": "31 CFR 1010.821 - Penalty adjustment and table (civil monetary penalties, assessed on or after 17 January 2025)",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "locator": "Table 1, rows for 31 U.S.C. 5321(a)(5)(B)(i) and 5321(a)(5)(C)(i)(I)",
+      "verification_level": "fetched-this-session",
+      "quote": "Foreign financial agency transaction - non-willful violation of transaction: maximum USD 16,536 (statute USD 10,000). Foreign financial agency transaction - willful violation: maximum USD 165,353 (statute USD 100,000). Also 31 U.S.C. 5321(a)(1) general civil penalty for willful BSA violations: USD 71,545 - 286,184.",
+      "used_for": "The only FBAR penalty dollar figures on this site. Anything else about FBAR penalties is left blank or dated to its own source."
+    },
+    {
+      "id": "G16",
+      "jur": "US",
+      "authority": "FinCEN / eCFR",
+      "title": "31 CFR 1010.350 - Reports of foreign financial accounts",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.350",
+      "locator": "(a), (b), (c), (d)",
+      "verification_level": "inherited",
+      "quote": "Each US person having a financial interest in, or signature or other authority over, a bank, securities or other financial account in a foreign country shall report the account annually when the aggregate value exceeds USD 10,000.",
+      "used_for": "The legal form of the FBAR requirement behind G10. Verified by an earlier repo session; not re-opened on 2026-11-10."
+    },
+    {
+      "id": "G17",
+      "jur": "US",
+      "authority": "US Code (26 U.S.C. 988), via Cornell LII",
+      "title": "26 U.S.C. 988 - Treatment of certain foreign currency transactions",
+      "url": "https://www.law.cornell.edu/uscode/text/26/988",
+      "locator": "988(a)(1)(A); 988(b)(1); 988(e)(1), (e)(2), (e)(3)",
+      "verification_level": "fetched-this-session",
+      "quote": "988(a)(1)(A): any foreign currency gain or loss attributable to a section 988 transaction is computed separately and treated as ordinary income or loss. 988(e)(1): the preceding provisions of the section do not apply to a section 988 transaction entered into by an individual which is a personal transaction. 988(e)(2): where nonfunctional currency is disposed of by an individual in a personal transaction, no gain is recognized by reason of exchange-rate changes after acquisition - but that sentence does not apply if the gain would exceed USD 200. 988(e)(3): a personal transaction is any transaction entered into by an individual, except to the extent allocable expenses meet section 162 or section 212.",
+      "used_for": "The only US tax that can attach to the conversion itself. The character question (capital vs ordinary once the USD 200 line is crossed) is flagged for review - see F04."
+    },
+    {
+      "id": "G18",
+      "jur": "US",
+      "authority": "IRS",
+      "title": "Foreign currency and currency exchange rates",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+      "locator": "Functional currency; translation at the rate prevailing when the item is received, paid or accrued",
+      "verification_level": "fetched-this-session",
+      "quote": "If your functional currency is the US dollar you must immediately translate into dollars all items of income, expense and taxes that you receive, pay or accrue in a foreign currency, using the exchange rate prevailing when you receive, pay or accrue the item.",
+      "used_for": "Why the income is fixed in USD when it is earned, so a later conversion can only produce an exchange-rate difference - not a second tax on the income."
+    },
+    {
+      "id": "G19",
+      "jur": "US",
+      "authority": "IRS",
+      "title": "Yearly average currency exchange rates",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+      "locator": "China / Yuan row; 'The Internal Revenue Service has no official exchange rate' note",
+      "verification_level": "fetched-this-session",
+      "quote": "China, Yuan: 7.129 (2025), 7.189 (2024), 7.075 (2023), 6.730 (2022), 6.452 (2021). The IRS states that it has no official exchange rate and generally accepts any posted rate used consistently.",
+      "used_for": "The acquisition-rate inputs in the 988 exchange-gain table on the Tax page - each cell is arithmetic on these published rates."
+    },
+    {
+      "id": "G20",
+      "jur": "US",
+      "authority": "US Customs and Border Protection (CBP) / FinCEN",
+      "title": "Money and Other Monetary Instruments - federal mandate to report currency exceeding USD 10,000",
+      "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
+      "locator": "Who must file; FinCEN Form 105; consequences of not filing",
+      "verification_level": "fetched-this-session",
+      "quote": "Anyone who brings, sends or receives currency or monetary instruments totalling more than USD 10,000 at one time, into or out of the United States, must report it on FinCEN Form 105 (electronic filing at fincen105.cbp.dhs.gov). Failure to file or submitting false information risks forfeiture and seizure, and civil or criminal penalties under 31 U.S.C. 5321, 5322, 5317 and 5332.",
+      "used_for": "The cash-carrying limit in M06/M07 and the 'carry cash' warnings."
+    },
+    {
+      "id": "G21",
+      "jur": "PRC",
+      "authority": "PBOC and nine other departments",
+      "title": "Notice on Further Preventing and Handling the Risks of Virtual Currency Trading Speculation (Yin Fa [2021] No. 237)",
+      "url": "https://www.pbc.gov.cn/",
+      "locator": "Not retrieved - see F05",
+      "verification_level": "unverified",
+      "quote": "No official body text was retrieved by this session. The statement that virtual-currency business activity is illegal financial activity is therefore published as flagged and is not used to support any filled value.",
+      "used_for": "Nothing. Listed so the crypto route carries a source link and an explicit flag rather than an unsourced assertion."
+    },
+    {
+      "id": "G22",
+      "jur": "PRC",
+      "authority": "PBOC and seven other departments",
+      "title": "Notice on Further Preventing and Handling Virtual Currency and Related Risks (Yin Fa [2026] No. 42)",
+      "url": "https://www.pbc.gov.cn/",
+      "locator": "Not retrieved - see F05",
+      "verification_level": "unverified",
+      "quote": "No official body text was retrieved by this session; the existence and content of this instrument are reported only in secondary sources, so it is flagged for review.",
+      "used_for": "Nothing. Flagged only."
+    },
+    {
+      "id": "G23",
+      "jur": "US",
+      "authority": "IRS",
+      "title": "Publication 525, Taxable and Nontaxable Income - personal foreign currency transactions",
+      "url": "https://www.irs.gov/publications/p525",
+      "locator": "Foreign currency transactions paragraph - not located verbatim by this session; see F04",
+      "verification_level": "unverified",
+      "quote": "This session retrieved the publication's table of contents but not the foreign-currency paragraph, so the frequently quoted sentence ('if the gain is over USD 200, report it as a capital gain') is NOT quoted as verified here. The capital-versus-ordinary question is presented as an open interpretive issue.",
+      "used_for": "Nothing. Named on the Flagged page so the reader can check the primary text."
+    },
+    {
+      "id": "G24",
+      "jur": "PRC (commercial provider)",
+      "authority": "Wise",
+      "title": "Wise help centre - sending money from CNY / China",
+      "url": "https://wise.com/help/",
+      "locator": "Not retrieved by this session",
+      "verification_level": "unverified",
+      "quote": "Provider documentation, not a government source. The eligibility statement, the CNY 300,000 per-transfer figure and the 'documented after-tax salary' limit are attributed to the provider and are flagged, not verified.",
+      "used_for": "M04 description only; every cost cell for M04 is blank and flagged."
+    },
+    {
+      "id": "G25",
+      "jur": "PRC (commercial provider)",
+      "authority": "Western Union",
+      "title": "Western Union - send money from China",
+      "url": "https://www.westernunion.com/",
+      "locator": "Not retrieved by this session",
+      "verification_level": "unverified",
+      "quote": "Provider documentation, not a government source. Agent-bank availability and any fee or limit are attributed to the provider and flagged.",
+      "used_for": "M05 description only; every cost cell for M05 is blank and flagged."
+    },
+    {
+      "id": "G26",
+      "jur": "PRC",
+      "authority": "SAFE",
+      "title": "Guidelines for the Administration of Foreign Exchange Business (Huifa [2020] No. 14)",
+      "url": "https://www.safe.gov.cn/",
+      "locator": "Art. 59 - cited second-hand through G03",
+      "verification_level": "unverified",
+      "quote": "The article number and its content are taken from the SAFE Tianjin Q&A (G03); the consolidated guidelines text was not opened by this session.",
+      "used_for": "Pointer only. The operative citation used on the site is G03."
+    },
+    {
+      "id": "G27",
+      "jur": "PRC",
+      "authority": "State Taxation Administration",
+      "title": "Enterprise Income Tax Law of the PRC",
+      "url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103003/c5245840/content.html",
+      "locator": "Arts. 3, 4",
+      "verification_level": "inherited",
+      "quote": "Enterprise income tax at 25% on the taxable income of enterprises; relevant to the company-level tax behind a dividend repatriation.",
+      "used_for": "Background for the dividend route C10. Verified by an earlier repo session; not re-opened on 2026-11-10."
+    },
+    {
+      "id": "G28",
+      "jur": "US / PRC",
+      "authority": "US Treasury / IRS",
+      "title": "United States - People's Republic of China Income Tax Convention (1984, protocols 1986)",
+      "url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+      "locator": "Arts. 9, 10, 11, 22",
+      "verification_level": "inherited",
+      "quote": "Treaty allocation of taxing rights over employment income, dividends and interest between the US and China.",
+      "used_for": "Treaty context; no figure on this site depends on it."
+    },
+    {
+      "id": "G29",
+      "jur": "PRC",
+      "authority": "SAFE / General Administration of Customs",
+      "title": "Provisional Measures on Carrying Foreign Currency Cash Across the Border (Hui Fa [2003] No. 102)",
+      "url": "https://www.safe.gov.cn/safe/2003/0828/5444.html",
+      "locator": "Point II",
+      "verification_level": "inherited",
+      "quote": "Rules on carrying foreign-currency cash across the PRC border, including the declaration and permit thresholds.",
+      "used_for": "The PRC-side cash-carrying warning. The threshold itself is not quoted on this site - see F11."
+    },
+    {
+      "id": "G30",
+      "jur": "PRC",
+      "authority": "SAFE",
+      "title": "Notice on Further Improving Individual Foreign Exchange Administration (Hui Fa [2015] No. 49)",
+      "url": "https://www.safe.gov.cn/safe/2015/1231/5442.html",
+      "locator": "Art. 2; 'watch list'",
+      "verification_level": "inherited",
+      "quote": "Individual foreign exchange business rules, including the watch-list mechanism for suspected splitting.",
+      "used_for": "The watch-list consequence described for quota splitting. No figure depends on it."
+    },
+    {
+      "id": "G31",
+      "jur": "PRC",
+      "authority": "SAFE Beijing branch",
+      "title": "Current-account FAQ: how a non-domestic individual purchases foreign exchange",
+      "url": "https://www.safe.gov.cn/beijing/file/file/20191127/b29df7fa63504266b9ccb23429185d40.pdf",
+      "locator": "Question 5",
+      "verification_level": "inherited",
+      "quote": "A non-domestic individual purchasing foreign exchange for current-account items presents identity documents and the documents for the specific item.",
+      "used_for": "Operational detail for C01."
+    },
+    {
+      "id": "G32",
+      "jur": "PRC",
+      "authority": "SAFE",
+      "title": "Catalogue of Currently Effective Major Foreign Exchange Regulations (as at 30 June 2026)",
+      "url": "https://www.safe.gov.cn/safe/file/file/20260805/d2d0d6ce1441436eadc8bc600eb79c43.pdf",
+      "locator": "Items 1-3, 18-19",
+      "verification_level": "inherited",
+      "quote": "SAFE's own list of instruments still in force - used to sanity-check that the individual foreign exchange rules relied on here have not been repealed.",
+      "used_for": "Currency check on the PRC instruments. Not re-opened on 2026-11-10."
+    }
+  ]
+}

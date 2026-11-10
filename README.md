@@ -4,6 +4,7 @@ A source-linked research dashboard about lawful mainland China CNY→USD convers
 
 **Executive briefing (start here):** [briefing/index.html](briefing/index.html) — the consolidated least-tax answer, all-methods cost tables at every $10,000 step from $10,000 to $400,000, and the source-linked repo audit.
 **Website:** https://sassnarep3-star.github.io/China2/
+**Consolidated guide (2026-11-10):** [guide-c9cc56a6/index.html](guide-c9cc56a6/index.html) — 24 routes, the section 988 exchange-gain analysis, and a $10,000-$400,000 cost ladder in which every published fee is recomputed from the current bank tariff and every unverifiable value is blank and flagged.
 **Cost ladder (start here):** [ladder/index.html](ladder/index.html) — every route priced at each $10,000 step from $10,000 to $400,000, with a source link per row and unverified values left blank and flagged.
 **Executive summary:** [research/EXECUTIVE_SUMMARY.md](research/EXECUTIVE_SUMMARY.md)
 **Verification and limitations:** [research/METHODOLOGY.md](research/METHODOLOGY.md)
