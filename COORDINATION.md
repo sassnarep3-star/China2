@@ -604,3 +604,50 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Merge conflict log (2026-11-10 UTC): concurrent PRs #34, #35, #36, #37, #38, #40 advanced `main` while PR #32 was open. Merged `origin/main` (`e1448b1` then `0cd0317`) into `arena/a64bd476-china2`; stopped on append-only conflict in `COORDINATION.md` and generated-inventory conflict in `ladder/audit.html`; preserved all concurrent sessions' board records verbatim without discarding any work, re-ran `acceptance-a64bd476/verify.py` + `build.py`, and deterministically regenerated `ladder/audit.html` via `ladder/model.py` + `ladder/build.py`.
 - Cross-scope request (logged, not edited): future root-hub owner may add a link to `acceptance-a64bd476/index.html` in `ladder/build.py` if desired.
 - Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
+
+---
+
+# Session `arena-cf76e239` — final integration (2026-11-10)
+
+Branch: `arena/cf76e239-china2` (fixed by the environment; no other branch used).
+Scope: consolidation of the competing dashboards into one canonical, source-linked site;
+new `dash/` namespace; root `index.html` landing; README and navigation; review of prior
+sessions' claims. Legacy directories are **not deleted**; they are linked from the archive page.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Read shared board, inventory prior sessions | done | arena-cf76e239 | COORDINATION.md (this section, additive) |
+| Re-verify load-bearing official sources | done | arena-cf76e239 | dash/data/sources.json |
+| Canonical data model: 20 routes, 40 tiers x $10k-$400k | in progress | arena-cf76e239 | dash/data/*, dash/build.py |
+| Canonical pages: summary, methods, costs, taxes, steps, sources, flagged, audit, archive | in progress | arena-cf76e239 | dash/*.html |
+| Root landing page + navigation | in progress | arena-cf76e239 | index.html, ladder/build.py (hub write removed), ladder/verify.py |
+| Independent verification script | in progress | arena-cf76e239 | dash/verify.py, .github/workflows/verify-dash.yml |
+| PR, merge, Pages deployment confirmation | unclaimed | — | COORDINATION.md |
+
+No other session's scope is edited except the two shared-output items the task board reserves
+for final integration (root `index.html` navigation, and the ladder hub that wrote it). Any
+other need will be logged here instead of edited.
+
+## Corrections found during this session's review (published on dash/flagged.html)
+
+- **X01 — staged emigration remittance is out of date.** The 2004 measure's Art. 6 staging
+  ("half, then half, then the rest over two years") was cancelled by SAFE Hui Fa [2014] No. 2,
+  Art. 6(2): after approval the bank may remit "once or in instalments" within the approval.
+  The same notice cancelled the >RMB 500,000 head-office filing (Art. 6(1)) and the notarisation
+  requirements (Art. 6(4)). Earlier builds (`ladder/`) modelled three wires for this route and
+  printed the superseded staging as a requirement; this integration models one remittance and
+  labels the 2004 text as amended.
+- **X02 — quota scope.** The USD 50,000 annual facilitation quota applies to an individual's
+  FX *sale* (结汇) and to a **domestic** individual's FX *purchase* (境内个人购汇); a
+  non-domestic individual's purchase against lawful current-account RMB income is document-based,
+  not quota-based (Hui Fa [2020] No. 14 Art. 54, 58; 2007 implementation rules Art. 2, 13).
+  Prior pages that present "USD 50,000 per year" as the ceiling for every US citizen are
+  imprecise; eligibility and documentation must still be confirmed by the bank.
+- **X03 — HSBC Global Transfer wording.** The USD 7 figure belongs to the International Education
+  Payment item; same-name Global Transfer is Free (Private Banking, Premier) and USD 20 (Advance)
+  under the tariff effective 31 Oct 2026. (Already corrected by `audit-0f0f59fe`; carried forward
+  with the current PDF re-read.)
+- **X04 — U.S. currency-gain character.** Pub. 525 says a gain above USD 200 on a *personal*
+  foreign-currency transaction is reported as a capital gain; a non-personal §988 transaction is
+  ordinary. The amount here depends on acquisition basis, which is unknown, so it is left blank
+  and flagged rather than modelled as a fixed percentage.
