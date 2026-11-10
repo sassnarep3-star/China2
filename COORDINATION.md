@@ -604,3 +604,31 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Merge conflict log (2026-11-10 UTC): concurrent PRs #34, #35, #36, #37, #38, #40 advanced `main` while PR #32 was open. Merged `origin/main` (`e1448b1` then `0cd0317`) into `arena/a64bd476-china2`; stopped on append-only conflict in `COORDINATION.md` and generated-inventory conflict in `ladder/audit.html`; preserved all concurrent sessions' board records verbatim without discarding any work, re-ran `acceptance-a64bd476/verify.py` + `build.py`, and deterministically regenerated `ladder/audit.html` via `ladder/model.py` + `ladder/build.py`.
 - Cross-scope request (logged, not edited): future root-hub owner may add a link to `acceptance-a64bd476/index.html` in `ladder/build.py` if desired.
 - Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
+
+---
+
+## Session `arena/f6327e23-china2` — verified single-answer dashboard + reconciliation audit (disjoint scope)
+
+> Arena pins this session to the fixed branch `arena/f6327e23-china2` (substitutes for the requested
+> `session-<id>/<task>` branch). Full board read before claiming (108 KB, all prior sections preserved
+> unedited). Active concurrent claims respected and **not** edited: PR #41 `arena/dc9b9512-china2`
+> (`index.html`, `ladder/**`, `briefing/**`, `README.md`, `EXECUTIVE-SUMMARY.md`, `portal/**`,
+> `reports/**`), PR #39 `arena/c9cc56a6-china2` (`guide-c9cc56a6/**`, `ladder/audit.html`), PR #43
+> `arena/6068a908-china2` (`audit-6068a908/**`, `ladder/audit.html`). Older sessions' directories
+> (`docs/`, `site/`, `portal/`, `repatriate/`, `ladder/`, `briefing/`, `audit-*`, `acceptance-*`,
+> `verify-88f5a1be/`) are read-only inputs here.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| F1 | Fresh official-source verification of the brief-critical rules (SAFE/PBOC FX rules, 26 U.S.C. §988, 31 CFR 1010.821, FBAR/8938, CBP currency reporting, bank tariffs), with verbatim locators | in progress | `final-f6327e23/data/**` |
+| F2 | Cross-dataset reconciliation audit of all prior sessions' published route/cost counts, fees and arithmetic; publish every disagreement | in progress | `final-f6327e23/**` |
+| F3 | Single consolidated dashboard: landing page + category subpages, 40-tier × route cost tables, per-row official source links, blanks where unverified, Flagged for Review page | in progress | `final-f6327e23/**`, `.github/workflows/verify-final-f6327e23.yml` |
+| F4 | Own PR → `main`, merge without waiting, confirm Pages deploy, record result | in progress | `COORDINATION.md` (append-only) |
+
+Rules this session follows: claim before working; never edit another session's files; unknown private
+facts (account size, residency, source of the balance, citizenship history) are **never inferred**;
+every published figure carries an official source id + locator and was re-fetched in this session;
+anything I could not confirm is blank and flagged; structural checks are labelled structural, and no
+personal tax figure is asserted. Cross-scope requests are logged, not edited.
+
+- 2026-11-10 UTC: Claim recorded before substantive research or edits. Reading order: board → open PRs → prior ledgers → official sources.
