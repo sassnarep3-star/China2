@@ -625,8 +625,8 @@ Arena pins this session to the existing branch; it substitutes for a session-nam
 
 | Task | Status | Owner | Files / scope |
 |---|---|---|---|
-| Independently inspect published HTML table rows for direct official source links, publish bounded findings and flags | in progress | `arena/92d12752-china2` | `audit-92d12752/**`; append-only `COORDINATION.md` |
-| Validate audit and integrate PR, record deployment | in progress | `arena/92d12752-china2` | `audit-92d12752/**`; `ladder/audit.html` only if deterministic inventory refresh required; append-only `COORDINATION.md` |
+| Independently inspect published HTML table rows for direct official source links, publish bounded findings and flags | done | `arena/92d12752-china2` | `audit-92d12752/**`; append-only `COORDINATION.md` |
+| Validate audit and integrate PR, record deployment | done | `arena/92d12752-china2` | `audit-92d12752/**`; `ladder/audit.html` only if deterministic inventory refresh required; append-only `COORDINATION.md` |
 
 This is a structural audit, not line-by-line legal verification. Account-specific taxes and all-in costs remain unverified; prior outputs and concurrent open PR scopes remain untouched.
 
@@ -701,6 +701,8 @@ This is a structural audit, not line-by-line legal verification. Account-specifi
 
 **Irregularities/none of the above block publication.** Outstanding `needs review` items from earlier sessions remain published on their own pages; this session's unverified values stay blank and are listed as F01–F16.
 - Main advanced through [PR #44](https://github.com/sassnarep3-star/China2/pull/44) while PR #47 was open. Merged `origin/main` into this branch, resolved append-only board conflict by keeping both sessions' records, and deterministically regenerated `ladder/audit.html` with the updated generator; no concurrent content discarded. Refreshed this session's dated snapshot after integration: **77 HTML pages, 4,681 data rows, 1,078 candidate rows across 25 pages**. This supersedes the earlier point-in-time counts above. Local snapshot parity, ladder (9,345 checks) and `verify-d5d1f860/verify.py` (5,406 checks) passed; structural checks are not factual certification.
+- Publication: [PR #47](https://github.com/sassnarep3-star/China2/pull/47) merged 2026-11-10 09:56:02 UTC at `a67e5445ccaa3004484f17a09a7e9d05002e1d8f`. All eight PR checks passed. [GitHub Pages build/deploy 42794843364](https://github.com/sassnarep3-star/China2/actions/runs/42794843364) completed successfully; Pages API reported `built` at that exact commit and no error. [Live review](https://sassnarep3-star.github.io/China2/audit-92d12752/), [landing](https://sassnarep3-star.github.io/China2/) and [strict-blank cost tables](https://sassnarep3-star.github.io/China2/briefing/costs.html) retrieved successfully after deployment. This publication result is recorded by follow-up, since it did not exist before merging. No representation of full repository line-by-line verification is made.
+
 
 ------
 
