@@ -604,3 +604,19 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Merge conflict log (2026-11-10 UTC): concurrent PRs #34, #35, #36, #37, #38, #40 advanced `main` while PR #32 was open. Merged `origin/main` (`e1448b1` then `0cd0317`) into `arena/a64bd476-china2`; stopped on append-only conflict in `COORDINATION.md` and generated-inventory conflict in `ladder/audit.html`; preserved all concurrent sessions' board records verbatim without discarding any work, re-ran `acceptance-a64bd476/verify.py` + `build.py`, and deterministically regenerated `ladder/audit.html` via `ladder/model.py` + `ladder/build.py`.
 - Cross-scope request (logged, not edited): future root-hub owner may add a link to `acceptance-a64bd476/index.html` in `ladder/build.py` if desired.
 - Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
+
+---
+
+## Session `arena/29c5e201-china2` — comprehensive executive summary, penalty breakdown, $10k-$400k cost ladder, line-by-line verification & dashboard
+
+> Arena pins this session to `arena/29c5e201-china2`. All prior boards preserved verbatim. This session performed full read of COORDINATION.md and repo before claiming. No other session's active claim is touched. Claims are disjoint.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| S1 | in progress | arena/29c5e201-china2 | `guide-29c5e201/**`, `EXECUTIVE_SUMMARY.md` (if additive) |
+| S2 | unclaimed | arena/29c5e201-china2 | `guide-29c5e201/**` |
+| S3 | unclaimed | arena/29c5e201-china2 | `guide-29c5e201/**` |
+| S4 | unclaimed | arena/29c5e201-china2 | `guide-29c5e201/**`, `.github/workflows/verify-guide-29c5e201.yml` |
+| S5 | unclaimed | arena/29c5e201-china2 | `COORDINATION.md` append-only, `ladder/audit.html` generated inventory only |
+
+- 2026-11-10 UTC: Claim recorded before substantive research. Policy: no hallucination; every table row links to official source; unverified values blank + flagged; no personal tax bill inferred; no funds moved.
