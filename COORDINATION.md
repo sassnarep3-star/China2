@@ -702,9 +702,7 @@ This is a structural audit, not line-by-line legal verification. Account-specifi
 **Irregularities/none of the above block publication.** Outstanding `needs review` items from earlier sessions remain published on their own pages; this session's unverified values stay blank and are listed as F01–F16.
 - Main advanced through [PR #44](https://github.com/sassnarep3-star/China2/pull/44) while PR #47 was open. Merged `origin/main` into this branch, resolved append-only board conflict by keeping both sessions' records, and deterministically regenerated `ladder/audit.html` with the updated generator; no concurrent content discarded. Refreshed this session's dated snapshot after integration: **77 HTML pages, 4,681 data rows, 1,078 candidate rows across 25 pages**. This supersedes the earlier point-in-time counts above. Local snapshot parity, ladder (9,345 checks) and `verify-d5d1f860/verify.py` (5,406 checks) passed; structural checks are not factual certification.
 
----
-
----
+------
 
 ## Session `arena/f6327e23-china2` — verified single-answer dashboard + reconciliation audit (disjoint scope)
 
