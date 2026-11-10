@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-10",
-  "retrieved": "2026-11-08",
+  "retrieved": "2026-11-10",
   "tiers": [
     10000,
     20000,
@@ -49,7 +49,7 @@
     "high": 7.4,
     "note": "Illustrative CNY per USD, used only to express CNY-denominated fee caps in USD. Not a quote. Ladder tiers are USD-denominated, so no exchange-rate forecast is embedded in the model."
   },
-  "source_count": 20,
+  "source_count": 21,
   "route_count": 20,
   "costed_route_count": 15,
   "assumption_count": 9,

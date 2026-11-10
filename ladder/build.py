@@ -225,7 +225,7 @@ def page_index():
          [src_link("S12"), external(irs_credit, "IRS Foreign Tax Credit")]),
         ("What is the exact transfer cost?",
          "Not verified for this account. The current HSBC tariff has fee tiers and excludes other institutions' charges; the bank sets the rate used when a non-CNY charge is paid. The user's bank, service eligibility, applied rate and intermediary/receiver fees are unknown.",
-         [external(current_hsbc, "HSBC China tariff, effective 31 Oct 2026"), src_link("S06")]),
+         [external(current_hsbc, "HSBC China tariff, effective 31 Oct 2026"), src_link("S21")]),
         ("Should I split transfers or use a crypto / quota workaround?",
          "Do not evade FX limits by splitting transactions or using false documents. The current PBOC virtual-currency notice addresses specified exchange and related business activity; this review found no official basis for saying every quota borrower is automatically put on a 'watch list'.",
          [src_link("S01"), src_link("S16")]),
@@ -245,7 +245,7 @@ def page_index():
     <p><strong>What can be said safely:</strong> the PRC FX rules reviewed describe transaction and documentation requirements; no separate tax imposed solely for converting CNY was found in those instruments. That is <em>not</em> a determination that this balance is tax-paid, tax-free, or eligible to move. Ask the bank to distinguish any assessed tax from a requested certificate and from its own fees, and state the legal basis in writing. {external(faq_income, "SAFE's 2026 income-conversion guidance")} · {external("https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html", "PRC Individual Income Tax Law")}</p>
   </div>
   <div class="callout">
-    <p><strong>Current-fee correction:</strong> some route, step-by-step and assumptions pages still use HSBC's 2021 tariff and show a same-name Global Transfer fee of USD 0–7. The USD 7 reference in the current tariff is listed for International Education Payment; it does not establish a general same-name transfer price or this account's eligibility. The 31 October 2026 tariff lists Premier/Advance wire issuance at 0.1% (CNY 100 minimum/CNY 500 maximum) plus CNY 120 per cable, but excludes other institutions' charges and is not an all-in quote. Do not rely on the older Global Transfer fee or route ranking without a bank quote. {external(current_hsbc, "HSBC tariff effective 31 Oct 2026")} · <a href="../audit-0f0f59fe/index.html">review finding C04</a></p>
+    <p><strong>Fee basis (updated 10 November 2026):</strong> route, step-by-step and cost pages cite HSBC China's tariff effective 31 October 2026 (S21, re-fetched from the official PDF on 10 November 2026). Wire issuance for Premier/Advance is 0.1% (CNY 100 minimum / CNY 500 maximum) plus CNY 120 per cable; Private Banking individuals are exempt from issuance and cable charges (items 2.2.4.1–2.2.4.2). Same-name Global Transfer to self-name overseas HSBC accounts is published Free for Private Banking and Premier; Advance pays CNY 145 indicative per transaction (actual USD 20), item 2.2.6.1. The tariff's USD 7 reference is specific to International Education Payment (item 2.2.7), not a general same-name remittance fee. Charges exclude other institutions and are not an all-in quote. {external(current_hsbc, "HSBC tariff effective 31 Oct 2026")} · <a href="../audit-0f0f59fe/index.html">review finding C04</a></p>
   </div>
   <div class="kpis">
     <div class="card kpi"><p class="kpi-l">$10,000 principal</p><p class="kpi-v">All-in cost: —</p><p class="kpi-s">Not source-confirmed for this account</p></div>
@@ -585,11 +585,17 @@ of it is a regulator's figure, a bank quote, or a fact about your account.</p>
 <section class="panel">
   <h2>Published values that the model actually uses</h2>
   <ul class="plain">
-    <li>Outward telegraphic transfer: 0.1%, minimum CNY 100, maximum CNY 500 per transaction, plus a CNY 120
-    cable fee. {src_link('S06')}</li>
-    <li>Currency of a cash balance converted to remittable FX: 1% (waived for Premier). {src_link('S06')}</li>
-    <li>Same-name HSBC Global Transfer: free for Premier, reference price USD 7 per transfer. {src_link('S06')}</li>
-    <li>Foreign cash withdrawal: 0.25%–0.4%, minimum CNY 40. {src_link('S06')}</li>
+    <li>Wire issuance (Premier/Advance): 0.1% of remittance amount, minimum CNY 100, maximum CNY 500 per
+    transaction, plus CNY 120 per cable; Private Banking individuals are exempt. {src_link('S21')}</li>
+    <li>Same-name HSBC Global Transfer to self-name overseas HSBC accounts: Free for Private Banking and
+    Premier; Advance pays CNY 145 indicative per transaction (actual USD 20). Available only where Global
+    Transfer to Self is offered — tariff remark lists Canada, US, UK, Australia and Hong Kong SAR.
+    {src_link('S21')}</li>
+    <li>Foreign-currency notes withdrawal over the counter: Free for Private Banking, Premier and Advance;
+    USD/HKD of at least USD 5,000 equivalent needs at least three working days' advance notice. CNY↔notes
+    conversion uses notes buy/sell board rates (the modelled cash spread), not a fixed fee. {src_link('S21')}</li>
+    <li>International Education Payment (platform-specific): USD 7 actual for Advance (CNY 50 indicative) —
+    listed only to prevent the earlier confusion with a general same-name Global Transfer fee. {src_link('S21')}</li>
     <li>CNY 100,000 per person per calendar year of overseas ATM cash; CNY 10,000 per card per day.
     {src_link('S03')}</li>
     <li>USD 500 per day onshore / USD 1,000 per day port-side conversion exemption. {src_link('S17')}</li>
@@ -734,7 +740,7 @@ FLAG_ITEMS = [
      "not in doubt, but the citation is not relied on alone.", ["S18", "S01"]),
     ("F04", "No published CNY/USD spread exists for any account", "high",
      "Every cost figure here therefore contains a modelled spread band (A2–A5). The bank's executable quote "
-     "is the only real number. Treat the ladder as a planning band, not a quote.", ["S06"]),
+     "is the only real number. Treat the ladder as a planning band, not a quote.", ["S21"]),
     ("F05", "Offshore RMB (CNH) route eligibility is unverified", "medium",
      "Whether a non-resident US citizen may move RMB to Hong Kong and convert there was not established from "
      "a primary source. Route R14 is published with a blank eligibility and is not priced for a decision.",
@@ -751,10 +757,13 @@ FLAG_ITEMS = [
      "ATM operator fees, issuer foreign-transaction markups and card scheme settlement rates were not "
      "obtained. Routes R11 and R12 are marked PARTIAL: their estimates include the spread only.",
      ["S03"]),
-    ("F09", "The verified bank tariff is dated 1 January 2021", "medium",
-     "The HSBC China personal tariff retrieved is the current document reachable on the bank's site, but its "
-     "effective date is 2021. Confirm the current schedule at the branch; a change in the CNY 500 cap or the "
-     "CNY 120 cable fee would move every fixed-fee row.", ["S06"]),
+    ("F09", "The tariff used for the original 2026-11-08 build was dated 1 January 2021 (S06)", "low",
+     "Re-verified and superseded on 10 November 2026: the tariff effective 31 October 2026 was retrieved "
+     "from the bank's official site and recorded as S21; wire, cable, cash-notes and Global Transfer items "
+     "are now modelled from S21. The CNY 500 wire cap and CNY 120 cable are unchanged for Premier/Advance "
+     "between the two editions (Private Banking individuals are now exempt). Residual risk: the bank may "
+     "adjust the schedule again — confirm at the branch. The spread-band caveat (F04) is unchanged.",
+     ["S21", "S06"]),
     ("F10", "Three prior dashboards publish different counts", "low",
      "docs/, site/ and portal/ present overlapping material with different totals. None was edited; the "
      "inconsistency is recorded rather than resolved by deletion.", []),
@@ -908,7 +917,7 @@ footer a{{color:#a4e5cf}}
 <h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
 <p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>
 <div class="summary"><p><strong>What the source review supports:</strong> PRC FX rules reviewed set transaction-document requirements. No separate tax solely for exchanging currency was located in those instruments, but the source and tax history of the balance are unknown. For lawful current-account income, SAFE guidance requires identity and transaction/source evidence including tax documents; the correct category is individual-specific. {ext("https://www.safe.gov.cn/tianjin/2026/0713/3088.html", "SAFE 2026 guidance")} · {ext("https://www.safe.gov.cn/safe/2008/0806/5321.html", "State Council FX rules")}</p></div>
-<div class="notice"><strong>Most important limitation:</strong> the exact tax due, best eligible route and all-in USD cost cannot be determined from the facts provided. Current FX rate/spread and all intermediary/receiver fees are not available as an account-specific executable quote. Do not treat modeled ranges in the scenario ladder as verified prices. <strong>HSBC fee alert:</strong> some detailed route pages still show Global Transfer at USD 0–7 using a 2021 tariff; the current tariff's USD 7 reference is for International Education Payment, not a general same-name remittance. See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and the <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">current tariff</a>.</div>
+<div class="notice"><strong>Most important limitation:</strong> the exact tax due, best eligible route and all-in USD cost cannot be determined from the facts provided. Current FX rate/spread and all intermediary/receiver fees are not available as an account-specific executable quote. Do not treat modeled ranges in the scenario ladder as verified prices. <strong>HSBC fee note (updated 10 November 2026):</strong> route pages cite the tariff effective 31 October 2026; the former “USD 0–7” same-name Global Transfer wording shown with the 2021 tariff is superseded — same-name Global Transfer is now published Free for Private Banking and Premier (Advance: CNY 145 indicative per transaction, actual USD 20), and the tariff's USD 7 reference is specific to International Education Payment, not a general same-name remittance. See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and the <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">current tariff</a>.</div>
 <div class="status">
   <div class="status-card"><p class="label">PRC tax on this balance</p><p class="value">— / undetermined</p><p class="small">Source, category, dates and prior tax records are unknown.</p></div>
   <div class="status-card"><p class="label">Route eligibility</p><p class="value">— / undetermined</p><p class="small">Residence category, account type and transaction origin matter.</p></div>

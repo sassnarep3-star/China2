@@ -75,7 +75,7 @@
     "status": "verified",
     "locator": "Items 5.1.1.1, 5.1.1.2, 5.1.1.3, 5.1.1.4, 5.3.1, 3.1.1",
     "quote": "5.1.1.1 outward telegraphic transfer: 0.1% of the remittance amount, minimum CNY 100, maximum CNY 500 per transaction, plus cable fee. 5.1.1.2 cable fee: CNY 120 per transaction. 5.1.1.4 cash-to-remittance conversion: 1% of the foreign-currency amount (waived for Premier). 5.3.1 same-name HSBC Global Transfer: free for Premier; reference CNY 50, actual USD 7 per transaction. 3.1.1 foreign cash withdrawal: 0.25%-0.4%, minimum CNY 40.",
-    "used_for": "The only published, itemised bank tariff used in this ladder. A commercial tariff, not a regulator's figure, and not a quote for any specific account."
+    "used_for": "Superseded for the wire, cable, cash-notes and Global Transfer items by S21 (effective 31 Oct 2026). Retained verbatim for the audit trail. A commercial tariff, not a regulator's figure, and not a quote for any specific account."
   },
   {
     "id": "S07",
@@ -260,5 +260,18 @@
     "quote": "A non-domestic individual purchasing FX for lawful RMB current-account income presents valid ID plus documents proving the transaction amount, including tax vouchers; unused RMB is converted back against the original exchange memo.",
     "used_for": "Corroborates the documentary requirement in S02 Art. 13.",
     "flag": null
+  },
+  {
+    "id": "S21",
+    "jur": "PRC (commercial)",
+    "authority": "HSBC Bank (China) Company Limited",
+    "title": "Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 Oct 2026)",
+    "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+    "lang": "EN",
+    "retrieval": "direct",
+    "status": "verified",
+    "locator": "Items 2.2.2.1, 2.2.2.2, 2.2.4.1-2.2.4.4, 2.2.6.1, 2.2.6.2, 2.2.7",
+    "quote": "2.2.4.1 Telegraphic Transfer Issuance: Private Banking individuals — Free; PB entity 0.1% min CNY100/max CNY1,000; Premier and Advance — 0.1% of remittance amount, minimum CNY100/equivalent, maximum CNY500/equivalent per transaction, plus cable charge. 2.2.4.2 cable charges: PB individuals Free; PB entity CNY140/equivalent per cable; Premier and Advance CNY120/equivalent per cable. 2.2.4.3 additional cable messages: PB individuals Free; otherwise CNY100/equivalent per page. 2.2.4.4 amendment/cancellation: PB individuals Free; otherwise up to 5 cables CNY200/equivalent, each additional cable CNY40/equivalent, plus overseas bank charge. 2.2.2.1 Foreign Currency Notes Withdrawal over the counter: Free for PB, Premier and Advance; for USD/HKD, withdrawals of at least USD5,000 equivalent need at least three working days' advance notice. 2.2.2.2 Cash Exchange (foreign-currency notes): PB Free; Premier and Advance Free for HSBC Group customers (self-named HSBC card/statement). 2.2.6.1 Global Transfer to self-name HSBC accounts in other countries/territories: Free (PB), Free (Premier); Advance CNY145 per transaction (indicative — actual charge USD20 or equivalent). Service available only in countries/territories offering Global Transfer to Self (tariff remark lists Canada, US, UK, Australia and Hong Kong SAR); not applicable to PB entity customers. 2.2.6.2 Global Transfer to Family (same HSBC Premier Family): Free / Free / Not applicable. 2.2.7 HSBC International Education Payment: Free / Free / Advance CNY50 indicative (actual USD7) — a platform-specific item, not a general same-name remittance fee. Charges exclude other institutions and authorities.",
+    "used_for": "Current (31 Oct 2026) schedule used for cost modelling; supersedes the affected items in S06. A commercial tariff; excludes other institutions' charges and is not a quote for any specific account."
   }
 ]
