@@ -39,7 +39,7 @@
     "topic": "Fixed fees at banks other than HSBC China",
     "value": "same as the HSBC China published tariff",
     "status": "model assumption",
-    "why": "Only one itemised personal tariff (S06) was verified. Other banks publish different tariffs; substitute your own bank's schedule."
+    "why": "Modelling uses S21 (HSBC China tariff effective 31 Oct 2026); S06 (effective 2021-01-01) is retained for audit history. Other banks publish different tariffs; substitute your own bank's schedule."
   },
   {
     "id": "A7",

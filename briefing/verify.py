@@ -73,7 +73,7 @@ def fee_cny(usd):
 
 # M01 rows: recompute published fee
 m01 = re.search(r'id="M01"(.*?)<section', costs, re.S).group(1)
-for t in (10000, 80000, 400000):
+for t in range(10000, 400001, 10000):
     m = re.search(rf'<tr data-tier="{t}">(.*?)</tr>', m01, re.S)
     cells = re.findall(r'<td[^>]*>([^<]*)</td>', m.group(1))
     expect = (fee_cny(t) + 120.0) / RATE
@@ -114,6 +114,20 @@ check(sources_html.count("<tr") >= 37, "≥37 source rows")
 flagged_html = (ROOT / "flagged.html").read_text()
 ids = re.findall(r"<strong>((?:F|N)\d+)</strong>", flagged_html)
 check(len(ids) == len(set(ids)) == 24, f"24 unique flags (got {len(ids)}, unique {len(set(ids))})")
+
+# Correction regression gates: structural tests, not verification of personal facts.
+for tier, row in rows:
+    check('data-label="Official sources"' in row and 'https://' in row,
+          f"tier {tier}: direct official citation present")
+    if 'All-in cost (unverified)' in row:
+        allin = re.search(r'data-label="All-in cost \(unverified\)">(.*?)</td>', row).group(1)
+        spread = re.search(r'data-label="FX spread \(unverified\)">(.*?)</td>', row).group(1)
+        check(allin == '' and spread == '', f"tier {tier}: unsupported all-in/spread cells blank")
+for name in ('index.html', 'costs.html', 'EXECUTIVE_SUMMARY.md'):
+    text = (ROOT / name).read_text()
+    check(not any(b in text for b in ('0.30–1.50%', '0.80–3.00%', 'no such thing as', 'None on the exchange')),
+          f"{name}: no invented spread range or categorical tax exclusion")
+check('id="corrections"' in flagged_html, 'source-linked correction findings published')
 
 print()
 if fail:

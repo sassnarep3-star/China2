@@ -1,0 +1,16 @@
+name: Verify corrected briefing
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  verify-briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild and verify blank-only costs and citations
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python3 briefing/build.py
+          git diff --exit-code -- briefing
+          python3 briefing/verify.py
+          node --check briefing/assets/app.js

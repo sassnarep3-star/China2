@@ -35,7 +35,7 @@
       "Download your personal IIT payment record from the PRC individual income tax app or request a 完税证明 at the tax service hall for the years the balance was earned.",
       "Assemble the income file: contract or invoices, payslips, bank statements showing the credits, and the tax record. Amounts must tie to the balance.",
       "Book a counter appointment at the account-holding branch (foreign-exchange business is not reliably transacted at a machine for this category).",
-      "Ask for an executable all-in quote: the USD selling rate applied, the 0.1% commission with its CNY 100/500 floor and cap, and the CNY 120 cable fee.",
+      "Ask for an executable all-in quote: the USD selling rate applied, the 0.1% commission with its CNY 100/500 floor and cap, and the CNY 120 cable fee (Private Banking individuals: issuance and cable are Free under the 31 Oct 2026 tariff).",
       "Complete the FX purchase; keep the exchange memo (水单) — it is the document that proves the conversion was authorised and is needed for any later re-conversion.",
       "Instruct the wire to your own US account. Keep the SWIFT MT103 / remittance advice.",
       "File FBAR (FinCEN 114) by 15 April and Form 8938 with your return if thresholds are met; claim PRC tax on Form 1116."
@@ -61,7 +61,7 @@
     "basis": [
       "S01",
       "S02",
-      "S06"
+      "S21"
     ],
     "fee": "global",
     "cap": null,
@@ -84,12 +84,12 @@
     "steps": [
       "Confirm both accounts are in exactly the same name and that Global Transfer is enabled for the China-US corridor.",
       "Complete the R01 documentation and FX conversion inside HSBC China.",
-      "Use Global Transfer to move the USD to your own HSBC US account: free for Premier, reference price USD 7 per transfer otherwise (S06 item 5.3.1).",
+      "Use Global Transfer to move the USD to your own HSBC US account: free for Private Banking and Premier under the tariff effective 31 Oct 2026 (item 2.2.6.1). Advance pays CNY145 indicative per transaction (actual USD20 or equivalent). Available only where Global Transfer to Self is offered — the tariff remark lists Canada, US, UK, Australia and Hong Kong SAR.",
       "Keep the transfer confirmation as the audit trail; the receiving bank still needs a source-of-funds note.",
       "File FBAR / Form 8938 / Form 1116 as in R01."
     ],
     "pros": [
-      "Cheapest published fixed fee of any fully documented route (0 to USD 7).",
+      "No published fixed fee for a Private Banking/Premier same-name Global Transfer (Free under the current tariff, item 2.2.6.1).",
       "Same-bank transfer reduces correspondent-bank deductions and intermediary questions."
     ],
     "cons": [
@@ -228,7 +228,7 @@
     "status": "lawful",
     "who": "Any individual, up to the cash-carrying ceiling.",
     "basis": [
-      "S06",
+      "S21",
       "S15",
       "S13"
     ],
@@ -249,7 +249,7 @@
       "FinCEN Form 105 on arrival above USD 10,000"
     ],
     "steps": [
-      "Convert or withdraw USD cash at the counter. On the verified tariff a foreign-cash withdrawal costs 0.25%-0.4% with a CNY 40 minimum on non-Premier accounts and is waived for Premier (S06 item 3.1.1).",
+      "Convert or withdraw USD notes at the counter. Under the tariff effective 31 Oct 2026, foreign-currency notes withdrawal over the counter is Free for Private Banking, Premier and Advance (item 2.2.2.1); USD/HKD withdrawals of at least USD5,000 equivalent need at least three working days' advance notice. CNY-to-notes conversion uses the notes buy/sell board rates, whose margin is the modelled cash spread above.",
       "Above USD 5,000 and up to USD 10,000, obtain a bank carrying certificate before departure.",
       "Above USD 10,000 a SAFE-issued certificate is required and is granted only in listed special cases.",
       "Declare to CBP on arrival above USD 10,000 in aggregate.",
@@ -591,7 +591,7 @@
     "who": "Potentially an individual eligible for cross-border RMB remittance. Eligibility for a non-resident US citizen was NOT verified in this session.",
     "basis": [
       "S02",
-      "S06"
+      "S21"
     ],
     "fee": "wire",
     "cap": null,

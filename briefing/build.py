@@ -73,8 +73,8 @@ def cost_row(method_id, tier):
     cid = method_id
     if cid == "M01":
         fee_cny = hsbc_tt_fee_cny(tier) + 120.0
-        return dict(fee=fee_cny / RATE, fee_cny=fee_cny, band=(0.003 * tier, 0.015 * tier),
-                    spread="0.30–1.50%*", constraint="1 wire", note="Wire fee caps at CNY 500 + CNY 120 cable ≥ ~$70,150 equivalent (CNY 500,000)")
+        return dict(fee=fee_cny / RATE, fee_cny=fee_cny, band=None,
+                    spread="", constraint="1 wire", note="Wire fee caps at CNY 500 + CNY 120 cable ≥ ~$70,150 equivalent (CNY 500,000)")
     if cid == "M02":
         n = math.ceil(tier / 50000)
         total = 0.0
@@ -84,23 +84,23 @@ def cost_row(method_id, tier):
             total += hsbc_tt_fee_cny(tier, tr) + 120.0
             remaining -= tr
         yrs = n
-        return dict(fee=total / RATE, fee_cny=total, band=(0.003 * tier, 0.015 * tier),
-                    spread="0.30–1.50%*", constraint=f"{yrs} calendar yr{'s' if yrs>1 else ''}",
+        return dict(fee=total / RATE, fee_cny=total, band=None,
+                    spread="", constraint=f"{yrs} calendar yr{'s' if yrs>1 else ''}",
                     note=f"{n} wire(s) of ≤$50,000 (own quota only)")
     if cid == "M03":
-        return dict(fee=0.0, fee_cny=0.0, band=(0.003 * tier, 0.015 * tier),
-                    spread="0.30–1.50%*", constraint="Premier / Private Banking",
+        return dict(fee=0.0, fee_cny=0.0, band=None,
+                    spread="", constraint="Premier / Private Banking",
                     note="Published fee $0 (PB/Premier). Advance: USD 20 per transfer; transfer count unverified")
     if cid == "M07":
         trips = math.ceil(tier / 5000)
         trips_permit = math.ceil(tier / 10000)
-        return dict(fee=0.0, fee_cny=0.0, band=(0.008 * tier, 0.030 * tier),
-                    spread="0.80–3.00%*", constraint=f"{trips} trips (no permit)",
+        return dict(fee=None, fee_cny=None, band=None,
+                    spread="", constraint=f"{trips} trips (no permit)",
                     note=f"{trips_permit} trips with bank permits ($5k–$10k/trip); travel cost unverified")
     if cid == "M09":
         days = math.ceil(tier / 500)
-        return dict(fee=None, fee_cny=None, band=(0.008 * tier, 0.030 * tier),
-                    spread="0.80–3.00%*", constraint=f"{days} bank days (ID-only)",
+        return dict(fee=None, fee_cny=None, band=None,
+                    spread="", constraint=f"{days} bank days (ID-only)",
                     note="Memo route only up to original exchange; memo valid 24 months")
     if cid == "M04":
         n = math.ceil(cny / 300000)
@@ -154,7 +154,7 @@ HEAD = """<!doctype html>
 <main>
 """
 FOOT = """</main>
-<footer><p><strong>Research, not advice.</strong> No private account facts were used, no bank was contacted, no funds moved, no returns filed. Every unverified figure is blank or flagged; modelled bands are marked * and are not quotes. See <a href="flagged.html">Flagged for review</a>.</p>
+<footer><p><strong>Research, not advice.</strong> No private account facts were used, no bank was contacted, no funds moved, no returns filed. Unknown all-in costs and FX spreads remain blank. Published fee components are not quotes or total costs. See <a href="flagged.html">Flagged for review</a>.</p>
 <p><a href="index.html">Briefing home</a> · <a href="EXECUTIVE_SUMMARY.md">Markdown summary</a> · <a href="AUDIT.md">Audit (MD)</a> · <a href="../COORDINATION.md">Task board</a></p></footer>
 <script src="assets/app.js"></script></body></html>
 """
@@ -167,8 +167,10 @@ def nav(active):
         items.append(f'<a href="{h}"{cur}>{t}</a>')
     return "<nav>" + "".join(items) + "</nav>"
 
+CORRECTION_NOTICE = """<aside class="notice"><strong>Verification correction · 10 November 2026.</strong> Unsupported numeric FX-spread bands have been removed from this briefing. Unknown all-in costs remain blank. This is not a guarantee of zero tax, eligibility or cheapest service. <a href="flagged.html#corrections">Read the correction findings and official sources</a>.</aside>"""
+
 def page(title, desc, active, body):
-    return HEAD.format(title=esc(title), desc=esc(desc), nav=nav(active)) + body + FOOT
+    return HEAD.format(title=esc(title), desc=esc(desc), nav=nav(active)) + CORRECTION_NOTICE + body + FOOT
 
 def src_link(sid, label=None):
     url = SRC_URL.get(sid)
@@ -195,11 +197,11 @@ def build_costs():
         def band_at(t):
             r = cost_row(mid, t)
             if r.get("fine"):
-                return f'{money(r["fine"][0],"$",0)}–{money(r["fine"][2],"$",0)}*'
+                return 'Rejected — see risk table'
             if r["band"]:
                 lo = (r["fee"] or 0) + r["band"][0]; hi = (r["fee"] or 0) + r["band"][1]
                 return f"{money(lo,'$',0)}–{money(hi,'$',0)}*"
-            return "not verified"
+            return money(r["fee"]) if r["fee"] is not None else "—"
         decision.append((i, mid, m, tag_cls, tag_txt, band_at(10000), band_at(100000), band_at(250000), band_at(400000)))
         trs = []
         for t in TIERS:
@@ -211,11 +213,11 @@ def build_costs():
                 cells = (f'<td class="num" data-label="Amount (USD)">{money(t,"$",0)}</td>'
                          f'<td class="num" data-label="Fine ≤30%">{money(fine_lo,"$",0)}</td>'
                          f'<td class="num" data-label="Serious 30–100%">{money(fine_lo,"$",0)}–{money(fine_hi,"$",0)}</td>'
-                         f'<td class="num" data-label="Fee %">—</td>'
+                         f'<td class="num" data-label="Fee %">—</td><td data-label="Spread">—</td>'
                          f'<td data-label="Constraint">{esc(r["constraint"])}</td>')
             else:
                 if r["fee"] is None:
-                    fee_cell = '<span aria-label="unverified">—</span>'; fee_pct = "—"; allin = "not verified"
+                    fee_cell = '<span aria-label="unverified">—</span>'; fee_pct = "—"; allin = ""
                     fee_cls = "blank"
                 else:
                     fee_cell = money(r["fee"], "$"); fee_pct = f'{r["fee"]/t*100:.3f}%'
@@ -223,20 +225,21 @@ def build_costs():
                         lo = r["fee"] + r["band"][0]; hi = r["fee"] + r["band"][1]
                         allin = f"{money(lo)}–{money(hi)}*"
                     else:
-                        allin = money(r["fee"])
+                        allin = ""  # Published fee is not an all-in total.
                     fee_cls = ""
-                spread = r["spread"]
+                spread = ""  # No official executable FX quote; blank by policy.
                 cells = (f'<td class="num" data-label="Amount (USD)">{money(t,"$",0)}</td>'
                          f'<td class="num {fee_cls}" data-label="Published fee (USD)">{fee_cell}</td>'
                          f'<td class="num" data-label="Fee % of amount">{fee_pct}</td>'
-                         f'<td class="num" data-label="Est. all-in band*">{allin}</td>'
-                         f'<td data-label="Spread (model)">{esc(spread)}</td>'
+                         f'<td class="num" data-label="All-in cost (unverified)">{allin}</td>'
+                         f'<td data-label="FX spread (unverified)">{esc(spread)}</td>'
                          f'<td data-label="Constraint">{esc(r["constraint"])}</td>')
+            cells += '<td data-label="Official sources">' + ' '.join(src_link(sid) for sid in dict.fromkeys(m['sources'] + (['B06', 'S23'] if not is_bad else ['S13'])) ) + '</td>'
             trs.append(f'<tr data-tier="{t}">{cells}</tr>')
         src_links = " ".join(src_link(s) for s in m["sources"])
         band_note = ""
         if mid not in ("M14","M15","M16","M17"):
-            band_note = "<p class='small'>*Band = published/computed fee + modelled spread (wire 0.30–1.50% / counter 0.80–3.00%). Spread is <strong>unverified</strong> — obtain the bank's executable quote. Blank = not published; never estimated. CNY reference at IRS 2025 average 7.129 CNY/USD (S23).</p>"
+            band_note = "<p class='small'>All-in cost and FX spread are blank: no executable quote was verified. Published fees are only one component. Blank = not published; never estimated. CNY reference at IRS 2025 average 7.129 CNY/USD (S23).</p>"
         else:
             band_note = "<p class='small'>Fine columns are statutory exposure (PRC FX rules, S13), <strong>not a price</strong>. Criminal liability and confiscation may also apply. Do not use these routes.</p>"
         if is_bad:
@@ -247,7 +250,7 @@ def build_costs():
 <p class="small"><strong>Who:</strong> {esc(m['who'])}</p>
 <p class="small"><strong>Sources:</strong> {src_links}</p>
 <div class="table-wrap"><table class="stack">
-<thead><tr><th class="num">Amount (USD)</th><th class="num">{'Fine ≤30%' if is_bad else 'Published fee (USD)'}</th><th class="num">{'Serious 30–100%' if is_bad else 'Fee %'}</th><th class="num">{'—' if is_bad else 'Est. all-in band*'}</th><th>{'—' if is_bad else 'Spread (model)'}</th><th>Constraint</th></tr></thead>
+<thead><tr><th class="num">Amount (USD)</th><th class="num">{'Fine ≤30%' if is_bad else 'Published fee (USD)'}</th><th class="num">{'Serious 30–100%' if is_bad else 'Fee %'}</th><th class="num">{'—' if is_bad else 'All-in cost (unverified)'}</th><th>{'—' if is_bad else 'FX spread (unverified)'}</th><th>Constraint</th><th>Official sources</th></tr></thead>
 <tbody>
 {''.join(trs)}
 </tbody></table></div>
@@ -256,19 +259,19 @@ def build_costs():
 </section>""")
     dec_rows = []
     for i, mid, m, tag_cls, tag_txt, b10, b100, b250, b400 in decision:
-        dec_rows.append(f"<tr><td data-label='#'>{i}</td><td data-label='Method'><a href='#{mid}'><strong>{esc(m['short'] if m.get('short') else m['name'][:60])}</strong></a> <span class='tag {tag_cls}'>{tag_txt}</span></td><td class='num' data-label='$10,000'>{b10}</td><td class='num' data-label='$100,000'>{b100}</td><td class='num' data-label='$250,000'>{b250}</td><td class='num' data-label='$400,000'>{b400}</td></tr>")
+        dec_rows.append(f"<tr><td data-label='#'>{i}</td><td data-label='Method'><a href='#{mid}'><strong>{esc(m['short'] if m.get('short') else m['name'][:60])}</strong></a> <span class='tag {tag_cls}'>{tag_txt}</span></td><td class='num' data-label='$10,000'>{b10}</td><td class='num' data-label='$100,000'>{b100}</td><td class='num' data-label='$250,000'>{b250}</td><td class='num' data-label='$400,000'>{b400}</td><td data-label='Official sources'>{' '.join(src_link(sid) for sid in m['sources'])}</td></tr>")
     body = f"""
 <h1>Cost to move CNY → USD: every $10,000 step, $10,000 → $400,000</h1>
-<p class="lede">All 17 methods, costed at every $10,000 increment. Published fees are computed from the HSBC China tariff (effective 2026-10-31, items 2.2.4.x/2.2.6.1/2.2.2.1, {src_link('B06','tariff')}) at the IRS 2025 average reference rate 7.129 CNY/USD ({src_link('S23','IRS yearly average')}). Unpublished commercial values are blank, never estimated. * = modelled spread band, unverified.</p>
-<div class="notice"><strong>Read first:</strong> there is no CNY→USD conversion tax in the PRC or the US. The real costs are (1) bank spread, (2) published tariff fees, (3) penalties for unlawful methods, (4) US reporting-penalty exposure. The single largest component — the spread — is not published; get the bank's executable quote before acting. Fee floors below assume one wire (or one tranche per calendar year for M02).</div>
+<p class="lede">All 17 methods, costed at every $10,000 increment. Published fees are computed from the HSBC China tariff (effective 2026-10-31, items 2.2.4.x/2.2.6.1/2.2.2.1, {src_link('B06','tariff')}) at the IRS 2025 average reference rate 7.129 CNY/USD ({src_link('S23','IRS yearly average')}). Unpublished commercial values are blank, never estimated.</p>
+<div class="notice"><strong>Read first:</strong> a bank transfer fee is not a tax; taxable income or an FX gain may create separate tax liability. The real costs are (1) bank spread, (2) published tariff fees, (3) penalties for unlawful methods, (4) US reporting-penalty exposure. The FX spread is unverified; get the bank's executable quote before acting. Fee floors below assume one wire (or one tranche per calendar year for M02).</div>
 <div class="info"><label for="method-filter"><strong>Filter methods:</strong> </label>
 <select id="method-filter"><option value="">All 17 methods</option>{''.join(f'<option value="{mid}">{mid} — {esc(methods[mid]["name"][:70])}</option>' for mid in M_ORDER)}</select></div>
 <label for="amount-filter"><strong>Highlight amount:</strong> </label>
 <select id="amount-filter"><option value="">All amounts</option>{''.join(f'<option value="{t}">${t:,}</option>' for t in TIERS)}</select>
 
-<h2>1 · Decision table (most important first) — est. all-in cost*</h2>
-<p class="small">All-in band = published fee + modelled spread. “Not verified” means no public figure exists (blank rather than guessed). Rejected methods show statutory fine exposure, not a price.</p>
-<div class="table-wrap"><table class="stack"><thead><tr><th>#</th><th>Method</th><th class="num">$10,000</th><th class="num">$100,000</th><th class="num">$250,000</th><th class="num">$400,000</th></tr></thead><tbody>{''.join(dec_rows)}</tbody></table></div>
+<h2>1 · Decision table (most important first) — published fee components only</h2>
+<p class="small">All-in costs are blank (— in the summary): no account-specific quote was verified. A missing quote is not proof that no public quote exists. Rejected methods show statutory fine exposure, not a price.</p>
+<div class="table-wrap"><table class="stack"><thead><tr><th>#</th><th>Method</th><th class="num">$10,000</th><th class="num">$100,000</th><th class="num">$250,000</th><th class="num">$400,000</th><th>Official sources</th></tr></thead><tbody>{''.join(dec_rows)}</tbody></table></div>
 
 <h2>2 · Per-method tables ($10k steps)</h2>
 {''.join(rows_html)}
@@ -355,6 +358,7 @@ def build_flagged():
     for nid, title, detail, srcs_ids in new_flags:
         srcs = " ".join(src_link(s) for s in srcs_ids) or "—"
         rows.append(f"<tr class='hl'><td data-label='ID'><strong>{nid}</strong> <span class='tag warn'>new</span></td><td data-label='Severity'><span class='tag warn'>needs review</span></td><td data-label='Title'>{esc(title)}<div class='small'>{esc(detail)}</div></td><td data-label='Sources'>{srcs}</td></tr>")
+    rows.append("""<tr id="corrections"><td data-label="ID">C01–C04</td><td data-label="Severity">needs review</td><td data-label="Finding">Correction 2026-11-10: prior assumed spread bands were unsupported and removed; all-in totals remain blank. A currency exchange may realize taxable gain, so no universal $0-tax guarantee is supported. SAFE's documented current-account route is conditional, not a guarantee for all balances. Streamlined filing requires non-willfulness and other eligibility conditions. Other dashboards retain historical assumptions; this pass does not re-verify all their claims.</td><td data-label="Sources"><a href="https://www.irs.gov/publications/p525">IRS Pub. 525, Foreign currency transactions</a> · <a href="https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures">IRS streamlined eligibility</a> · <a href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html">SAFE current-account documents</a> · <a href="https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates">IRS exchange rates</a> · <a href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit">IRS credit restrictions</a></td></tr>""")
     body = f"""
 <h1>Flagged for review — unverified, disputed or stale items</h1>
 <p class="lede">Nothing here is hidden and nothing here blocks the site. F01–F15 are carried from the repatriate ledger (2026-11-08); N01–N09 were found in this session (2026-11-10). Each row links its official source. Request changes via the repository issue tracker or by replying to the session.</p>
@@ -374,14 +378,14 @@ EXEC_SUMMARY_MD = """# Executive Summary — China money: getting CNY out as a U
 
 ## The one-line answer
 
-There is **no tax on converting CNY into USD** — not in China, not in the U.S. The "considerable taxes" people describe are almost always one of four different things: (1) PRC individual income tax already owed on the income that created the balance, (2) the bank's exchange-rate spread and wire fees (not tax), (3) PRC penalties for unlawful movement (up to 30% / 30–100%), or (4) U.S. reporting penalties (FBAR / Form 8938) for an undeclared account. Fix those, and a documented, after-tax balance moves out lawfully via a bank wire — the least-tax path is paperwork, not cleverness.
+A transfer fee is not tax. No universal zero-tax conclusion can be drawn: source-income liability and taxable currency gains require separate review. Possible explanations for the quoted cost include: (1) PRC individual income tax already owed on the income that created the balance, (2) the bank's exchange-rate spread and wire fees (not tax), (3) PRC penalties for unlawful movement (up to 30% / 30–100%), or (4) U.S. reporting penalties (FBAR / Form 8938) for an undeclared account. If the relevant rules and documentation are satisfied, a bank wire may be available — the first route to evaluate is documented bank conversion; no cheapest or least-tax route can be verified without the private facts.
 
 ## What the "conversion penalty" actually is (line by line)
 
-1. **PRC: no conversion tax.** SAFE's individual FX regime sets an annual facilitation quota (USD 50,000 equivalent/person/year for domestic individuals, purchases and sales) and an authenticity review; it levies no tax on buying/selling FX. Over the quota, transactions are not forbidden — authenticity review is "strengthened". [SAFE 2007 / SAFE Tianjin rules (S01, S02)]
-2. **PRC individual income tax** attaches to the *income*, when it arose — 3%–45% progressive comprehensive-income rates after the RMB 60,000 annual deduction; flat 20% on interest, dividends and property transfers. Owed regardless of remittance; if unpaid, the bank route stalls until the tax certificate exists. [PRC IIT Law, S15]
-3. **The bank's spread + fees — the real, ordinary cost.** Not a tax. For HSBC China Premier/Advance (current tariff, effective 2026-10-31): outward SWIFT wire 0.1% of amount, min CNY 100 / max CNY 500, **plus** CNY 120 cable — a $400,000 wire costs CNY 620 ≈ **$86.97** in published fees. Private Banking individuals: free. Global Transfer to your own overseas HSBC account: free (PB/Premier) / USD 20 (Advance). The **spread is unpublished** and is the largest cost component; modelled band 0.30–1.50% (unverified assumption). [HSBC tariff, B06]
-4. **U.S. tax on the conversion itself.** None on the exchange. Only *exchange-rate gain on the currency position* can be taxed; IRS Pub. 525: a gain on a **personal** foreign currency transaction is not included in income unless it exceeds **$200**; above that, capital gain. [B02 / 26 U.S.C. 988 [S24]]
+1. **PRC: distinguish FX rules from tax law.** SAFE's individual FX regime sets an annual facilitation quota (USD 50,000 equivalent/person/year for domestic individuals, purchases and sales) and an authenticity review; no separate conversion levy was identified in those cited FX rules (not a complete tax review). Over the quota, transactions are not forbidden — authenticity review is "strengthened". [SAFE 2007 / SAFE Tianjin rules (S01, S02)]
+2. **PRC individual income tax** attaches to the *income*, when it arose — 3%–45% progressive comprehensive-income rates after the RMB 60,000 annual deduction; flat 20% on interest, dividends and property transfers. Owed regardless of remittance; the bank may require tax documentation; no personal refusal reason was verified. [PRC IIT Law, S15]
+3. **The bank's spread + fees — the real, ordinary cost.** Not a tax. For HSBC China Premier/Advance (current tariff, effective 2026-10-31): outward SWIFT wire 0.1% of amount, min CNY 100 / max CNY 500, **plus** CNY 120 cable — a $400,000 wire costs CNY 620 ≈ **$86.97** in published fees. Private Banking individuals: free. Global Transfer to your own overseas HSBC account: free (PB/Premier) / USD 20 (Advance). The **spread is unverified**; amount blank (no executable quote verified). [HSBC tariff, B06]
+4. **U.S. tax on the conversion itself.** Currency exchange can realize taxable gain. *Exchange-rate gain on the currency position* can be taxed; IRS Pub. 525: a gain on a **personal** foreign currency transaction is not included in income unless it exceeds **$200**; above that, capital gain. [B02 / 26 U.S.C. 988 [S24]]
 5. **U.S. reporting penalties — where large money is actually lost.**
    - **FBAR (FinCEN 114)**: file if aggregate foreign accounts > **$10,000** at any time in the year, whether or not tax is owed. Non-willful penalty: up to **$16,536** per report (31 CFR 1010.821, penalties assessed on/after 2025-01-17). Willful: greater of **$165,353** or **50%** of the account balance. Bittner (2023): non-willful cap applies per report, not per account. [B01, B05]
    - **Form 8938 (FATCA)**: thresholds vary by filing status/residence (higher for expats: e.g. $200k year-end/$300k any-time single; $400k/$600k joint abroad). $10,000 + $10,000 for each 30 days after IRS notice, up to $60,000 potential max. [B03, B04]
@@ -392,14 +396,14 @@ There is **no tax on converting CNY into USD** — not in China, not in the U.S.
 
 | # | Situation | Route | Published cost at $400k | Catch |
 |---|---|---|---|---|
-| 1 | Balance is documented, after-tax China income (salary/services) | **M01** bank conversion + SWIFT wire to own US account | $86.97 HSBC Premier/Advance (0.1% capped CNY 500 + CNY 120 cable) | Needs tax vouchers + contract/invoices; spread unverified (model 0.30–1.50% ≈ $1,200–$6,000) |
+| 1 | Balance is documented, after-tax China income (salary/services) | **M01** evaluate bank conversion + SWIFT wire to own US account (eligibility unverified) | $86.97 HSBC Premier/Advance (0.1% capped CNY 500 + CNY 120 cable) | Needs tax vouchers + contract/invoices; spread unverified; amount blank |
 | 2 | Same facts + own-name HSBC accounts in both countries + Premier/PB | **M03** Global Transfer (after M01/M02 conversion basis) | **$0** published fee (PB/Premier); USD 20 (Advance) | Same SAFE basis required; Premier eligibility (TRB ≥ CNY 500,000) |
 | 3 | You hold PRC ID / Foreign Permanent Resident ID; no income docs | **M02** annual quota | $534.66 over 8 calendar years ($66.83/yr × 8) | ~USD 50k/yr cap; purchase facilitation for foreigners limited to PR-ID holders (S05) — confirm |
 | 4 | Emigrated from mainland China / inherited China assets | **M10** / **M11** SAFE-approved transfer | Blank — process fees unpublished | Narrow eligibility; hukou cancellation / inheritance proofs; lump sum OK after approval |
 | 5 | Own individual trade business | **M13** settlement account | Blank | Genuine trade only; quota-exempt with valid docs |
 | 6 | Documented after-tax salary, recent tax records (≤3 yrs) | **M04** Wise (from-CNY) | Blank — quote shown in-app only | Own accounts only; ≤CNY 300k per bank-app transfer; limit = documented salary |
 | 7 | Almost any; no FX paperwork | **M06** ATM cash | Blank — card fees unverified | Cap CNY 100,000/person/yr (~USD 14,027); 8+ years for $400k |
-| 8 | Small amounts only | **M07** USD cash carry-out | $0 published; spread 0.80–3.00%* | USD 5,000/trip no permit; 80 trips for $400k — impractical |
+| 8 | Small amounts only | **M07** USD cash carry-out | Unverified; blank | USD 5,000/trip no permit; 80 trips for $400k — impractical |
 | — | "Just use crypto / pool quotas / underground bank" | **M14–M17 — do not use** | Fine exposure $120,000–$400,000 (30–100%) | Confiscation + criminal liability; no legal recourse |
 
 *Spread model unverified — the bank's quote governs.
@@ -408,28 +412,28 @@ There is **no tax on converting CNY into USD** — not in China, not in the U.S.
 
 1. **Gather source-of-funds proof**: employment contract or service invoices; payslips; bank statements showing each credit; the balance must tie to the documents.
 2. **Get the tax records**: download your PRC individual income tax payment records from the IIT app, or request a 完税证明 (tax payment certificate) at the tax service hall for every year covered.
-3. **Fix any unpaid PRC tax first** — this is the step that stalls $400k balances. Under the IIT law, 2022 onward comprehensive income is settled annually (汇算清缴); tax due is on the income, not the remittance.
+3. **Review whether PRC tax is unpaid** — the actual reason for this account's restriction is unknown. Under the IIT law, 2022 onward comprehensive income is settled annually (汇算清缴); tax due is on the income, not the remittance.
 4. **Book the account-holding branch's FX counter** (this is not reliably doable at a machine) and bring: passport, tax records, income contract/invoices, account passbook/card.
 5. **Ask for the executable all-in quote in writing**: applied CNY→USD rate, 0.1% fee (min CNY 100/max CNY 500), CNY 120 cable, any Pay Exact surcharge CNY 200, and whether the receiving/correspondent bank charges extra (not covered by the tariff).
 6. **Complete the conversion and the wire** to your own US account (same-name). Keep the exchange memo (水单), the MT103/remittance advice and every receipt.
-7. **US side**: file FBAR by April 15 (auto-extension to Oct 15) and Form 8938 with your return if thresholds are met; claim PRC tax on Form 1116 subject to limits. If past years were never reported, talk to a tax professional about **Streamlined Filing Compliance Procedures** — coming forward before the IRS contacts you is categorically better than after.
+7. **US side**: file FBAR by April 15 (auto-extension to Oct 15) and Form 8938 with your return if thresholds are met; claim PRC tax on Form 1116 subject to limits. If past years were never reported, talk to a tax professional about **Streamlined Filing Compliance Procedures** — eligibility requires non-willful conduct and other conditions; an IRS examination or criminal investigation can disqualify the taxpayer.
 8. **Never** split the remittance with family/friends' quotas, use false invoices, or route through crypto/underground banks to "save" the spread. The fine bands (up to 30% / 30–100% of the illegal amount) dwarf any saving, and criminal liability applies.
 
 ## What is missing to price YOUR situation
 
-Balance source and years; PRC tax paid; whether you hold PRC ID/hukou history; residency (a foreign national resident in China ≥1 full year counts as a "domestic individual" under State Council Decree 532 Art. 52); your US filing history; and your bank's live quote. Until those are supplied, **no honest personal tax figure or "best route for you" can be certified** — see flags F01–F02.
+Balance source and years; PRC tax paid; whether you hold PRC ID/hukou history; residency (statutory residence definitions and the personal-FX operational rules may differ; ask the bank which category applies); your US filing history; and your bank's live quote. Until those are supplied, **no honest personal tax figure or "best route for you" can be certified** — see flags F01–F02.
 
-**Bottom line:** the cheapest lawful path is almost always *documented source of funds → one big wire → correct US reporting*. The "tax penalty" is a paperwork problem: unpaid PRC tax on the income and unfiled US foreign-account reports — both fixable, both far costlier to ignore.
+**Bottom line:** evaluate *documented source of funds → approved bank conversion/wire → correct US reporting*. A cheapest route or personal tax liability cannot be determined without evidence; unknown values stay blank.
 """
 
 def index_page():
     md = EXEC_SUMMARY_MD
     body = f"""
-<h1>China money: the least-tax, lawful way to move CNY → USD</h1>
-<p class="lede">As a U.S. citizen: there is no such thing as a CNY→USD “conversion tax”. What people call the conversion penalty is a stack of four separate things — PRC income tax on the source of the balance, the bank's spread and wire fees, PRC fines for unlawful routes, and U.S. reporting penalties. This page is the executive summary; every claim links its official source.</p>
+<h1>China money: evaluate lawful CNY → USD routes</h1>
+<p class="lede">As a U.S. citizen: do not assume a quoted bank charge is a tax, or that exchanging currency is always tax-free. What people call the conversion penalty is a stack of four separate things — PRC income tax on the source of the balance, the bank's spread and wire fees, PRC fines for unlawful routes, and U.S. reporting penalties. This page is the executive summary; every claim links its official source.</p>
 <div class="notice"><strong>Not tax or legal advice.</strong> No private account facts were used. Every unverifiable number is blank and flagged (<a href="flagged.html">F01–F15, N01–N09</a>). Do not act on this page alone; take the <a href="#checklist">bank-first checklist</a> to a Chinese-qualified adviser.</div>
 <div class="kpi">
-<div class="box"><div class="n">$0</div><div class="d">PRC or U.S. tax on the conversion act itself</div></div>
+<div class="box"><div class="n">Not determined</div><div class="d">Personal tax liability: income history and currency gain must be reviewed</div></div>
 <div class="box"><div class="n">$86.97</div><div class="d">Published fee: HSBC Premier/Advance wire at $400k (0.1% capped CNY 500 + CNY 120 cable) · {src_link('B06','tariff')}</div></div>
 <div class="box"><div class="n">$16,536</div><div class="d">Max non-willful FBAR penalty per report (assessed on/after 2025-01-17) · {src_link('B01','31 CFR 1010.821')}</div></div>
 <div class="box"><div class="n">30–100%</div><div class="d">PRC fine band for FX evasion / illegal conversion routes · {src_link('S13','FE Regs')}</div></div>
@@ -437,24 +441,24 @@ def index_page():
 
 <h2>1 · The "conversion penalty", broken down line by line</h2>
 <div class="table-wrap"><table class="stack"><thead><tr><th>#</th><th>Layer</th><th>What it actually is</th><th>Official source</th></tr></thead><tbody>
-<tr><td data-label='#'>1</td><td data-label='Layer'>PRC conversion tax</td><td data-label='What'><strong>None exists.</strong> SAFE limits by quota (USD 50,000/yr facilitation for domestic individuals, purchases and sales) and authenticity review; above quota, review is "strengthened" — not banned, not taxed.</td><td data-label='Source'>{src_link('S01','SAFE rules (2007, as amended)')} · {src_link('S02','SAFE Tianjin detailed rules')}</td></tr>
-<tr><td data-label='#'>2</td><td data-label='Layer'>PRC IIT on the income</td><td data-label='What'>3%–45% progressive on comprehensive income (after RMB 60,000 annual deduction); flat 20% interest/dividends/property. Owed when the income arose, not at remittance. Unpaid → bank conversion stalls until tax certifies.</td><td data-label='Source'>{src_link('S15','PRC IIT Law (chinatax.gov.cn)')}</td></tr>
-<tr><td data-label='#'>3</td><td data-label='Layer'>Bank spread + fees (not tax)</td><td data-label='What'>The real ordinary cost. HSBC Premier/Advance (tariff eff. 2026-10-31): outward TT 0.1%, min CNY 100 / max CNY 500 + CNY 120 cable. ≥≈$70,150 (CNY 500k) the fee caps → $86.97 for $400k. Private Banking individuals: free. <strong>Spread unpublished</strong> — modelled 0.30–1.50%, unverified.</td><td data-label='Source'>{src_link('B06','HSBC tariff eff. 2026-10-31')}</td></tr>
-<tr><td data-label='#'>4</td><td data-label='Layer'>U.S. tax on the conversion</td><td data-label='What'>None on the exchange. Personal FX gain excluded from income unless &gt; <strong>$200</strong>; above that, capital gain. (Business/investment currency differs — §988.)</td><td data-label='Source'>{src_link('B02','IRS Pub. 525 (2025)')} · {src_link('S24','26 U.S.C. 988')}</td></tr>
+<tr><td data-label='#'>1</td><td data-label='Layer'>PRC conversion tax</td><td data-label='What'><strong>No separate conversion levy identified in the cited FX rules; this is not a complete tax opinion.</strong> SAFE limits by quota (USD 50,000/yr facilitation for domestic individuals, purchases and sales) and authenticity review; above-quota eligibility depends on transaction type and supporting documents.</td><td data-label='Source'>{src_link('S01','SAFE rules (2007, as amended)')} · {src_link('S02','SAFE Tianjin detailed rules')}</td></tr>
+<tr><td data-label='#'>2</td><td data-label='Layer'>PRC IIT on the income</td><td data-label='What'>3%–45% progressive on comprehensive income (after RMB 60,000 annual deduction); flat 20% interest/dividends/property. Owed when the income arose, not at remittance. Tax-document requirements depend on the route; no account-specific refusal reason is known.</td><td data-label='Source'>{src_link('S15','PRC IIT Law (chinatax.gov.cn)')}</td></tr>
+<tr><td data-label='#'>3</td><td data-label='Layer'>Bank spread + fees (not tax)</td><td data-label='What'>The real ordinary cost. HSBC Premier/Advance (tariff eff. 2026-10-31): outward TT 0.1%, min CNY 100 / max CNY 500 + CNY 120 cable. ≥≈$70,150 (CNY 500k) the fee caps → $86.97 for $400k. Private Banking individuals: free. <strong>Spread unverified</strong> — no numeric estimate published here.</td><td data-label='Source'>{src_link('B06','HSBC tariff eff. 2026-10-31')}</td></tr>
+<tr><td data-label='#'>4</td><td data-label='Layer'>U.S. tax on the conversion</td><td data-label='What'>A currency exchange can realize taxable gain. Personal FX gain excluded from income unless &gt; <strong>$200</strong>; above that, capital gain. (Business/investment currency differs — §988.)</td><td data-label='Source'>{src_link('B02','IRS Pub. 525 (2025)')} · {src_link('S24','26 U.S.C. 988')}</td></tr>
 <tr><td data-label='#'>5</td><td data-label='Layer'>U.S. reporting penalties</td><td data-label='What'><strong>FBAR</strong> (accounts &gt; $10,000 aggregate any time): non-willful ≤ <strong>$16,536</strong>/report; willful ≤ greater of <strong>$165,353</strong> or <strong>50%</strong> of balance (per account per year; Bittner 2023 caps non-willful per report). <strong>Form 8938</strong>: $10,000 + $10,000 per 30 days after notice, potential max <strong>$60,000</strong>. Thresholds vary by filing status/residence.</td><td data-label='Source'>{src_link('B01','31 CFR 1010.821')} · {src_link('B05','IRS IRM 4.26.16')} · {src_link('B03','IRS About Form 8938')} · {src_link('B04','IRS IRM 5.21.6')}</td></tr>
 <tr><td data-label='#'>6</td><td data-label='Layer'>PRC fines for unlawful routes</td><td data-label='What'>Evasion / illegal FX purchase: warning, confiscate illegal gains, fine ≤ <strong>30%</strong>; serious: <strong>30–100%</strong> + criminal liability. Applies to crypto bridges, quota pooling, underground banks, false documents.</td><td data-label='Source'>{src_link('S13','PRC FE Administration Regulations, Arts. 39/40/42/45')} · {src_link('S14','PBOC et al. 2026 virtual-currency notice')}</td></tr>
 <tr><td data-label='#'>7</td><td data-label='Layer'>U.S.–China treaty / FTC</td><td data-label='What'>PRC tax on the same income may be credited via Form 1116, subject to category &amp; limitation rules (credit, not refund). Treaty documents: IRS China treaty page.</td><td data-label='Source'>{src_link('S20','IRS Form 1116/FTC')} · {src_link('S25','IRS China tax treaty documents')}</td></tr>
 </tbody></table></div>
 
-<h2>2 · The least-tax path, in decision order</h2>
+<h2>2 · Route evaluation, in decision order</h2>
 <ol>
-<li><strong>Prove the source of the balance</strong> (contract/invoices + bank statements + tax vouchers). Nothing moves lawfully without this.</li>
-<li><strong>Settle any unpaid PRC tax on that income</strong> — this is the step that stalls large balances.</li>
-<li>Move it via <strong>M01</strong> (bank conversion + same-name SWIFT wire — published fee caps at $86.97 regardless of size) or <strong>M03</strong> (Global Transfer, $0 published fee for PB/Premier) — see <a href="costs.html">cost tables</a>.</li>
-<li>US side: <strong>FBAR + Form 8938</strong> on time; <strong>Form 1116</strong> for the PRC tax; if past years were missed, use <strong>Streamlined procedures</strong> before the IRS finds you.</li>
+<li><strong>Prove the source of the balance</strong> (contract/invoices + bank statements + tax vouchers). Required documents depend on the applicable route.</li>
+<li><strong>Settle any unpaid PRC tax on that income</strong> if legally due; the actual account restriction remains unverified.</li>
+<li>Move it via <strong>M01</strong> (bank conversion + same-name SWIFT wire — illustrative tariff components cap at CNY 620 for one Premier/Advance wire; other charges excluded) or <strong>M03</strong> (Global Transfer, $0 published fee for PB/Premier) — see <a href="costs.html">cost tables</a>.</li>
+<li>US side: <strong>FBAR + Form 8938</strong> on time; <strong>Form 1116</strong> for the PRC tax; if past years were missed, obtain advice on the appropriate correction procedure. Streamlined filing requires eligibility, including a non-willfulness certification; it is not automatic.</li>
 <li><strong>Never</strong> use M14–M17 (crypto/smurfing/underground banks/false docs): fines 30–100% + criminal exposure.</li>
 </ol>
-<div class="summary"><strong>Cheapest published-cost path for a documented after-tax balance:</strong> one wire from China → own US account. At $400,000: published fees $86.97 (HSBC Premier/Advance) or $0 (Private Banking individual / Global Transfer PB-Premier), plus the unpublished spread (model 0.30–1.50% = $1,200–$6,000, unverified). At $10,000: same routes, fee $30.86, spread $30–$150. The fee is trivial; the spread and the paperwork are the game.</div>
+<div class="summary"><strong>First route to evaluate, not a verified cheapest route:</strong> documented bank conversion and a same-name wire. At $400,000 the illustrative HSBC Premier/Advance issuance plus cable components total CNY 620 (about $86.97 at the historical reference rate); FX spread, intermediary fees, receiving fees, optional services, account costs and tax are excluded. A lower published transfer fee does not prove a lower total cost. Eligibility is unverified.</div>
 
 <h2 id="checklist">3 · The bank-first checklist (take this to your branch)</h2>
 <ol>
@@ -477,7 +481,7 @@ def index_page():
 <a class="card" href="../repatriate/index.html"><strong>Prior dashboard (repatriate/)</strong><span>The earlier independent study this briefing consolidates.</span></a>
 </div>
 """
-    return page("Executive summary", "The least-tax lawful way for a U.S. citizen to move CNY to USD.", "index.html", body)
+    return page("Executive summary", "Lawful routes, cost components and unresolved tax questions for a U.S. citizen.", "index.html", body)
 
 # ---------- audit.html ----------
 AUDIT_ROWS = [
@@ -504,7 +508,7 @@ AUDIT_ROWS = [
     ("AU-21","README vs reality","README documented only the docs/ dashboard and main/ root Pages; now gains an additive briefing link. Root index.html is generated by ladder/build.py (verify-ladder byte-parity gate), so no hand-edited card was added there — a briefing-card request to the ladder generator owner is logged in COORDINATION.md instead.","README.md diff; COORDINATION.md log","Fixed in this PR (README only); root card = logged request"),
     ("AU-22","Coordination protocol","This session claimed D1–D5 in COORDINATION.md before work; prior sessions' claims/close-outs preserved verbatim; no closed scope edited.","COORDINATION.md 2026-11-10","OK"),
     ("AU-23","Privacy of this briefing","Briefing contains only public sources and model arithmetic; no private identifiers. Verification: briefing/verify.py + grep.","this PR","OK"),
-    ("AU-24","Cost-model honesty","Every “all-in” figure carries * (modelled spread, unverified) or “not verified/blank”. Published fees only from HSBC tariff (one provider, Premier/Advance segment). Substitute your bank's schedule.","briefing/costs.html","OK — limitations explicit"),
+    ("AU-24","Cost-model honesty","Correction 2026-11-10: unsupported spread bands removed, all-in columns blank. Published fee components are not total costs. Each cost row now includes direct official links.","briefing/costs.html","OK — limitations explicit"),
     ("AU-25","Counts in this briefing","17 methods · 680 amount rows (17×40) · 37 sources (31 ledger + 6 this session) · 24 flags (F01–F15, N01–N09) · 25 audit rows. Verified by briefing/verify.py.","verify.py","OK"),
 ]
 
@@ -535,6 +539,23 @@ def audit_md():
               "", "Official sources re-verified this session: B01–B06 (see sources.html).", ""]
     return "\n".join(lines)
 
+def summary_with_sources():
+    """Attach route-specific primary-source links to each decision-table row."""
+    import re
+    lines = []
+    for line in EXEC_SUMMARY_MD.splitlines():
+        if line.startswith('|'):
+            if line.startswith('| #'):
+                line += ' Official sources |'
+            elif line.startswith('|---'):
+                line += '---|'
+            else:
+                match = re.search(r'M\d{2}', line)
+                ids = methods[match.group(0)]['sources'] if match else ['S01']
+                line += ' ' + ' · '.join(f'[{sid}]({SRC_URL[sid]})' for sid in ids) + ' |'
+        lines.append(line)
+    return '\n'.join(lines) + '\n'
+
 def main():
     (BR / "assets").mkdir(exist_ok=True)
     out = {
@@ -544,7 +565,7 @@ def main():
         "sources.html": build_sources(),
         "flagged.html": build_flagged(),
         "audit.html": build_audit(),
-        "EXECUTIVE_SUMMARY.md": EXEC_SUMMARY_MD,
+        "EXECUTIVE_SUMMARY.md": summary_with_sources(),
         "AUDIT.md": audit_md(),
     }
     for name, content in out.items():
