@@ -463,3 +463,14 @@ Session `arena/11c20135-china2` tasks I1–I3 all done. Open irregularities rema
 - CI incident + fix (worth knowing for other sessions): a local `audit-ad300459/__pycache__/*.pyc` (git-ignored but visible to `ladder/build.py`'s file inventory, which reads the raw tree) made `verify-ladder`'s `git diff --exit-code` gate fail on CI. Fixed by suppressing bytecode writes in `verify.py` (self + subprocess) and regenerating `ladder/audit.html`; any session whose scripts create `__pycache__` inside an inventoried directory before a ladder regeneration will hit the same gate — run ladder builds with a clean tree or `PYTHONDONTWRITEBYTECODE=1`.
 - Verification results shipped: 27 findings (17 verified / 7 verified-limited / 3 unverified-blank), 17 sources, 10 flags; ladder structure checks 20/20 PASS (600-row ladder incl. 160 deliberate unpublished blanks; 680-row repatriate incl. 520 null fees).
 - Scope kept: PRs #2/#12/#17 untouched (d6e08526 D4/D5), `briefing/**` untouched (dc2c65bd), whole-repo final integration remains D6 of `arena/d6e08526-china2`.
+
+## Session arena/4d0863f7-china2 — corrective final integration (2026-11-10 UTC)
+
+Fixed Arena branch used as required by environment. Read the full task board and existing generated-site scopes before work. Earlier briefing and ladder implementation claims are marked done. No stale open PR is taken over.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| C1 Remove unsupported numeric spread assumptions and categorical tax/eligibility advice from the completed briefing; add source-linked review notice and regression checks | in progress | arena/4d0863f7-china2 | briefing/**; .github/workflows/verify-briefing.yml |
+| C2 Re-run existing suites, mechanically refresh inventory only, PR/merge and Pages verification | in progress | arena/4d0863f7-china2 | ladder/audit.html (generated only); COORDINATION.md (append-only) |
+
+Fresh official body retrieval this session: SAFE Tianjin 2026-07-13 article 3088 (current-account lawful RMB income, identity/source/tax documents); IRS foreign-currency-and-currency-exchange-rates; IRS foreign-tax-credit; IRS streamlined-filing-compliance-procedures. Existing briefing publishes invented spread ranges despite the requested blank-only rule; publishes $0 universal conversion tax despite taxable FX-gain qualification; and prescribes streamlined filing without eligibility conditions. These are correction targets, not verified personal conclusions. Other dashboards remain read-only and their unsupported assumptions will be flagged, not silently validated.
