@@ -1,0 +1,673 @@
+{
+  "meta": {
+    "session": "arena/8f529c94-china2",
+    "method_count": 23,
+    "categories": [
+      {
+        "code": "A",
+        "title": "Documented Current-Account Bank & Licensed Channels",
+        "subtitle": "Primary lawful channels for a U.S. citizen holding documented after-tax RMB income (salary, consulting, rent, royalties)"
+      },
+      {
+        "code": "B",
+        "title": "Status-Specific Quota & FX Reconversion Channels",
+        "subtitle": "Channels restricted to PRC Foreign Permanent Resident ID holders or unspent previously exchanged foreign currency"
+      },
+      {
+        "code": "C",
+        "title": "Capital-Account, Property, Corporate & Trade Channels",
+        "subtitle": "Lawful lump-sum exits for PRC apartment sales, inheritances, emigrants, corporate dividends, liquidations, and registered traders"
+      },
+      {
+        "code": "D",
+        "title": "Bank Card, Physical Cash & Remittance-Agent Channels",
+        "subtitle": "Small-sum liquidity or direct overseas consumption channels subject to strict annual/per-trip statutory ceilings"
+      },
+      {
+        "code": "E",
+        "title": "Closed-Loop Non-Exit & Unlawful / Rejected Workarounds",
+        "subtitle": "Closed-loop investment schemes that cannot deliver open USD abroad and illegal workarounds carrying 30%–100% PRC fines"
+      }
+    ]
+  },
+  "methods": [
+    {
+      "id": "M01",
+      "category": "A",
+      "name": "Onshore Bank Documented Current-Account Conversion + SWIFT Wire (SHA / OUR / Private Banking)",
+      "legal_status": "lawful-documented",
+      "best_for": "U.S. citizen with lawful onshore RMB income (salary, labor remuneration, rent, royalties) backed by contracts and PRC tax vouchers (完税证明 / 纳税记录), including multi-year historical earnings",
+      "statutory_cap": "No statutory upper dollar cap — limited strictly to documented after-tax lawful RMB income verified by the bank (Hui Fa [2007] No. 1 Art. 13(1); SAFE Henan Q&A 5 confirms no statutory age limit on historical salary records)",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "hsbc_personal_tt",
+      "prc_tax_at_conversion": "0% conversion tax; 0% extra PRC income tax if statutory IIT (3%–45% comprehensive / 20% lease / 10% treaty royalty) was already withheld/paid",
+      "us_tax_impact": "Principal transfer is not U.S. income; PRC IIT paid is creditable on Form 1116 (unless excluded via Form 2555 FEIE up to $132,900 in 2026); personal FX gain > $200 vs USD tax basis is capital gain (26 U.S.C. § 988(e)(2); Pub. 525)",
+      "pros": [
+        "No USD 50,000/year cap — moves the entire documented after-tax balance ($10,000 to $400,000+) in a single lawful wire.",
+        "SAFE confirms no statutory expiration window on older lawful RMB salary (even 10-year-old earnings qualify if original contracts and tax proofs are presented).",
+        "Published sender wire fee is capped: at HSBC China, Private Banking / Premier Elite individuals pay $0.00; Premier / Advance pay 0.1% capped at CNY 500 + CNY 120 cable ($86.97 at 7.129 reference rate, or $115.02 with optional CNY 200 Pay Exact OUR arrangement).",
+        "Creates an ironclad audit trail (bank FX memo + SWIFT MT103) for U.S. bank AML review and IRS / FinCEN compliance."
+      ],
+      "cons": [
+        "Cannot convert undocumented RMB or deposits whose PRC tax has not been settled and evidenced by official STA tax records.",
+        "Requires in-person branch FX counter review (or formal proxy under M05); mobile banking apps generally block non-PR foreign passports from self-service RMB→USD purchase.",
+        "Bank CNY→USD customer selling-rate spread and any SHA intermediary/receiving bank fees are not fixed by statute and must be quoted live."
+      ],
+      "steps": [
+        "Download official PRC Individual Income Tax Payment Records (个人所得税纳税记录) and income details from the PRC Personal Income Tax App (个人所得税 App) or print 税收完税证明 at the local STA tax hall for every year that funded the RMB balance.",
+        "Compile matching underlying contracts (stamped employment contracts, payroll slips, lease registration + tax invoices) and bank statements tying deposits to net after-tax income.",
+        "Confirm U.S. FinCEN Form 114 (FBAR, >$10,000 aggregate) and Form 8938 filings are current before wiring large sums into a U.S. bank.",
+        "Book an FX counter appointment at your account-holding China bank branch; bring valid U.S. passport, old passport if account/tax records used an earlier passport number, residence/work permit history, contracts, and STA tax vouchers.",
+        "Request a written pre-execution quote showing: (a) applied CNY→USD spot selling rate, (b) sender wire commission + cable fee, and (c) SHA vs OUR (Pay Exact) intermediary fee option.",
+        "Convert CNY to USD onshore and wire via SWIFT to your own-name U.S. bank account; retain the FX purchase slip (购汇水单), SWIFT MT103, and STA tax records for at least 5 years."
+      ],
+      "source_ids": ["SRC-01", "SRC-02", "SRC-03", "SRC-05", "SRC-08", "SRC-19", "SRC-24", "SRC-25", "SRC-26", "SRC-28", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02", "FL-03", "FL-09"]
+    },
+    {
+      "id": "M02",
+      "category": "A",
+      "name": "Same-Name Multinational Bank Book Transfer After Lawful FX Conversion (HSBC Global Transfer)",
+      "legal_status": "lawful-documented",
+      "best_for": "U.S. citizen who qualifies for lawful onshore CNY→USD conversion (under M01, M06, M07, M09, or M10) and holds self-named HSBC accounts in both Mainland China and the United States",
+      "statutory_cap": "Same SAFE conversion gate as the underlying FX basis (unlimited up to documented after-tax income under M01; ~USD 50,000/yr if using PR-ID quota M06)",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "hsbc_global_transfer",
+      "prc_tax_at_conversion": "0% conversion tax; requires same STA tax vouchers as M01 if converting onshore RMB income",
+      "us_tax_impact": "Same as M01: non-taxable principal transfer; check § 988(e)(2) > $200 personal FX gain and FBAR / Form 8938 thresholds",
+      "pros": [
+        "Published HSBC Global Transfer fee to self-named overseas HSBC account is $0.00 for Private Banking, Premier Elite, and Qualified Premier (TRB >= CNY 500,000 or Home-Country Premier), and a flat USD 20.00 (CNY 145 indicative) for Advance.",
+        "Avoids third-party SWIFT intermediary lifting fees between unrelated banks and settles near-instantly once USD sits in the HSBC China FX savings sub-account.",
+        "Can convert up to $400,000+ in one branch visit (under M01) and sweep to HSBC U.S. at $0 Premier transfer fee."
+      ],
+      "cons": [
+        "Does NOT bypass SAFE's CNY→USD conversion gate — RMB still must be converted to USD at the counter with passport + contracts + tax vouchers first.",
+        "Qualified HSBC China Premier requires CNY 500,000 Total Relationship Balance (or qualifying overseas HSBC Premier link) to avoid monthly service fees; new Advance account opening has been restricted since 18 March 2026.",
+        "HSBC's live CNY→USD FX conversion spread still applies and is unverified in static tariffs."
+      ],
+      "steps": [
+        "Open and link same-name HSBC China and HSBC U.S. accounts under Global View / Global Transfer (confirm Premier qualification under Important Note 3 of the HSBC China tariff).",
+        "Complete onshore CNY→USD conversion into your HSBC China USD savings sub-account at the branch counter using M01 documentation (passport + contract + STA tax vouchers).",
+        "Initiate HSBC Global Transfer to Self (Tariff Item 2.2.6.1) online or at the branch from your HSBC China USD sub-account to your HSBC U.S. USD account ($0 PB/Premier; USD 20 Advance).",
+        "Archive the onshore FX purchase memo, Global Transfer confirmation, and year-end peak balances for FBAR and Form 8938."
+      ],
+      "source_ids": ["SRC-03", "SRC-05", "SRC-24", "SRC-26", "SRC-30", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02", "FL-09", "FL-10"]
+    },
+    {
+      "id": "M03",
+      "category": "A",
+      "name": "Wise From-CNY Digital Salary Remittance via China Bank App (<= CNY 300,000 / Transfer)",
+      "legal_status": "lawful-documented",
+      "best_for": "U.S. citizen (non-mainland-Chinese) with PRC salary earned and taxed within the last 3 calendar years who wants 100% digital execution without visiting a bank counter",
+      "statutory_cap": "Single transfer <= CNY 300,000 (~$42,082 at 7.129); cumulative lifetime Wise+Skyremit limit equals after-tax China salary proven by tax records paid within the last 3 years",
+      "batch_mode": "wise_bank_300k",
+      "fee_mode": "unverified_live_quote",
+      "prc_tax_at_conversion": "0% conversion tax; requires official PRC tax records paid within the last 3 years",
+      "us_tax_impact": "Same as M01: Form 1116 FTC / Form 2555 FEIE on underlying salary; § 988(e)(2) > $200 personal FX gain check",
+      "pros": [
+        "Fully digital onboarding (1–2 working days verification) via PBOC-regulated payment partner — works even after returning to the United States if your China bank mobile app remains active.",
+        "Displays mid-market rate and explicit itemized Wise fee inside the app before funding.",
+        "High per-transfer cap via China bank app (CNY 300,000 per transfer = only 10 transfers needed for $400,000 if cumulative 3-year after-tax salary covers it)."
+      ],
+      "cons": [
+        "Strict 3-year tax-record cutoff: tax payments older than 3 years are rejected by Wise (unlike bank counter M01, which has no statutory age limit).",
+        "Cannot be used by Mainland PRC ID holders, corporate accounts, or non-salary sources (such as property sales or inheritances); own-name recipient account only.",
+        "Exact percentage + fixed CNY fee is quoted dynamically in-app only and not published in Wise's static help guide (left blank in cost tables)."
+      ],
+      "steps": [
+        "Verify your Wise personal profile as a non-mainland-Chinese passport holder and upload your passport, employment contract, and official PRC IIT payment records from the last 3 years.",
+        "Wait 1–2 business days for Wise's PBOC-licensed partner to approve your cumulative after-tax CNY sending limit (shared with Skyremit).",
+        "Set up a CNY→USD transfer in Wise to your own-name U.S. bank account (<= CNY 300,000 per batch) to lock in the live fee and rate quote.",
+        "Pay CNY from your own-name Chinese mobile banking app to the designated domestic partner account; retain Wise receipts and tax records."
+      ],
+      "source_ids": ["SRC-05", "SRC-24", "SRC-26", "SRC-39"],
+      "flag_ids": ["FL-01", "FL-04"]
+    },
+    {
+      "id": "M04",
+      "category": "A",
+      "name": "Wise From-CNY Digital Salary Remittance via Alipay (<= CNY 50,000 / Transfer)",
+      "legal_status": "lawful-documented",
+      "best_for": "Small-to-medium transfers of recent (<= 3 years) taxed China salary when Alipay funding is more convenient than a bank app domestic transfer",
+      "statutory_cap": "Single transfer <= CNY 50,000 (~$7,014 at 7.129); cumulative limit equals <= 3-year documented after-tax China salary",
+      "batch_mode": "wise_alipay_50k",
+      "fee_mode": "unverified_live_quote",
+      "prc_tax_at_conversion": "0% conversion tax; requires <= 3-year PRC tax payment records",
+      "us_tax_impact": "Same as M01 / M03",
+      "pros": [
+        "No branch visit required; funds directly from linked China debit card / Alipay balance.",
+        "Transparent live in-app quote prior to confirmation; sends directly to your own U.S. bank account."
+      ],
+      "cons": [
+        "CNY 50,000 single-transfer ceiling requires 2 transfers even for $10,000 and 58 separate transfers for $400,000.",
+        "Same 3-year tax-record window and salary-only / non-mainland-passport restrictions as M03.",
+        "Static fee schedule is unpublished outside the live app (left blank and flagged)."
+      ],
+      "steps": [
+        "Complete Wise From-CNY identity, contract, and <= 3-year PRC IIT record verification.",
+        "Create a CNY→USD transfer to your own U.S. account in chunks of <= CNY 50,000.",
+        "Select Alipay as funding method, authorize payment in Alipay from your own-name PRC account, and store confirmations."
+      ],
+      "source_ids": ["SRC-05", "SRC-26", "SRC-39"],
+      "flag_ids": ["FL-01", "FL-04"]
+    },
+    {
+      "id": "M05",
+      "category": "A",
+      "name": "Entrusted Proxy Bank Conversion & Outward Wire (委托代办 When Already Outside China)",
+      "legal_status": "lawful-documented",
+      "best_for": "U.S. citizen already living back in the United States who cannot fly to China in person and has documented lawful RMB salary/income in a Mainland bank account",
+      "statutory_cap": "No statutory upper dollar cap — matches documented lawful after-tax RMB income (Hui Fa [2007] No. 1 Arts. 4 & 38; SAFE Henan Q&A 3)",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "hsbc_personal_tt",
+      "prc_tax_at_conversion": "0% conversion tax; requires account holder's STA tax vouchers",
+      "us_tax_impact": "Same as M01; power-of-attorney/apostille/courier expenses are non-deductible personal administrative costs",
+      "pros": [
+        "Expressly authorized by SAFE: Hui Fa [2007] No. 1 Arts. 4 & 38 and SAFE Henan Q&A (Three) state a foreign individual's RMB salary conversion and outward wire may be entrusted to employer finance staff or another individual.",
+        "Eliminates international round-trip airfare to China while accessing the uncapped M01 bank-wire channel.",
+        "Bank wire fee itself follows the same published schedule as M01 ($0 PB/Premier Elite; $30.86–$86.97 Premier/Advance at 7.129)."
+      ],
+      "cons": [
+        "Requires strict document formalities: signed/notarized/apostilled Power of Attorney (per branch policy), original or verified IDs of both principal and agent, employment contract, and STA tax records.",
+        "Notary, apostille, translation, and international courier costs vary and are unverified in bank tariffs (left blank).",
+        "Individual branches exercise strict anti-fraud verification (video call / account-opening branch restriction) before executing large proxy wires."
+      ],
+      "steps": [
+        "Call your Mainland account-holding branch first to confirm its exact proxy template, whether an apostilled/consular-authenticated Power of Attorney is required, and how account-holder identity original-sight is satisfied.",
+        "Execute the Power of Attorney authorizing a trusted agent in China (e.g., former employer's finance officer or legal proxy) specifically to convert documented RMB salary into USD and wire to your same-name U.S. bank account.",
+        "Provide the agent with your STA IIT payment records (个人所得税纳税记录), employment contract, payroll vouchers, identity copies, and receiving U.S. bank wire instructions.",
+        "Agent submits the dossier at the Mainland bank FX counter, obtains the written FX rate + fee quote, and executes the SWIFT wire directly to your U.S. account."
+      ],
+      "source_ids": ["SRC-03", "SRC-05", "SRC-08", "SRC-09", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02", "FL-05"]
+    },
+    {
+      "id": "M06",
+      "category": "B",
+      "name": "Annual USD 50,000 Facilitated FX Purchase Quota + SWIFT Wire (PRC Permanent Resident ID / PRC ID Holders Only)",
+      "legal_status": "lawful-conditional",
+      "best_for": "Individual holding a PRC Foreign Permanent Resident ID Card (外国人永久居留身份证, 'Chinese Green Card') or PRC Resident ID whose RMB savings lack current-account tax/contract vouchers",
+      "statutory_cap": "USD 50,000 equivalent per person per calendar year (resets Jan 1; unused quota does not roll over; Hui Fa [2007] No. 1 Art. 2; SAFE Tianjin 2024 Case 9)",
+      "batch_mode": "annual_50k_quota",
+      "fee_mode": "hsbc_quota_annual_tt",
+      "prc_tax_at_conversion": "0% conversion tax; ID-only inside USD 50,000/yr without submitting tax vouchers at counter (does not extinguish any unpaid statutory tax liability)",
+      "us_tax_impact": "Principal transfer non-taxable; multi-year staging exposes remaining RMB balance to multi-year § 988(e)(2) exchange-rate movements and ongoing annual FBAR / Form 8938 filing",
+      "pros": [
+        "Drastically simplified counter/app procedure — requires only eligible ID inside USD 50,000/year without contract or tax-voucher review.",
+        "Low published bank wire fees ($66.83/year at $50,000 for HSBC Premier/Advance, totaling $534.66 across 8 years for $400,000; $0 for Private Banking/Premier Elite)."
+      ],
+      "cons": [
+        "NOT AVAILABLE to a U.S. citizen holding only a U.S. passport and standard work/residence visa — SAFE Tianjin 2024 Case 9 confirms foreign individuals qualify for facilitated FX purchase ONLY with a PRC Foreign Permanent Resident ID Card.",
+        "Moving $400,000 takes 8 separate calendar years ($50,000/year).",
+        "Splitting funds across relatives or friends to multiply quotas is illegal under PBOC Decree [2006] No. 3 Art. 7."
+      ],
+      "steps": [
+        "Verify you hold a valid PRC Foreign Permanent Resident ID Card (or PRC Resident ID); do NOT attempt this route on a standard foreign passport.",
+        "Convert up to USD 50,000 equivalent in the current calendar year via bank counter or online banking under genuine personal current-account purpose.",
+        "Wire up to USD 50,000/day to your own-name U.S. account with ID only (Hui Fa [2007] No. 1 Art. 14).",
+        "Repeat once per calendar year until the full balance is transferred, filing FBAR and Form 8938 each year the balance exceeds U.S. thresholds."
+      ],
+      "source_ids": ["SRC-01", "SRC-02", "SRC-03", "SRC-04", "SRC-07", "SRC-30", "SRC-32", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02", "FL-06"]
+    },
+    {
+      "id": "M07",
+      "category": "B",
+      "name": "Bank Reconversion of Unspent Previously Exchanged RMB with Original FX Settlement Slip (<= 24 Months)",
+      "legal_status": "lawful-conditional",
+      "best_for": "U.S. citizen whose stuck RMB originally came from converting inbound USD/foreign currency into RMB within the past 24 months",
+      "statutory_cap": "Up to the exact amount on the original FX-to-RMB exchange memo (原兑换水单), valid for 24 months from the original exchange date (Hui Fa [2007] No. 1 Art. 13(2); SAFE Tianjin 2026 FAQ 10)",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "hsbc_personal_tt",
+      "prc_tax_at_conversion": "0% PRC tax — return of your own previously converted foreign-currency principal, not PRC income",
+      "us_tax_impact": "0% U.S. income tax on principal; check § 988(e)(2) if RMB appreciated > $200 between original USD→CNY conversion and CNY→USD reconversion",
+      "pros": [
+        "Zero PRC tax certificate needed — the original bank FX settlement memo (结汇水单) within 24 months proves lawful origin.",
+        "Can reconvert and wire the full documented principal in a single transaction."
+      ],
+      "cons": [
+        "Strictly inapplicable to RMB earned inside China (wages, business, rent, or property sales).",
+        "Hard 24-month expiration from the date of the original USD→RMB exchange slip."
+      ],
+      "steps": [
+        "Locate the original bank FX settlement memo (原兑换水单) dated within the past 24 months.",
+        "Present valid U.S. passport and the original settlement memo at an authorized FX bank branch to reconvert unspent RMB back to USD.",
+        "Wire the reconverted USD from your FX savings account to your U.S. account under Hui Fa [2007] No. 1 Art. 15(1)."
+      ],
+      "source_ids": ["SRC-02", "SRC-03", "SRC-06", "SRC-24", "SRC-26", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02"]
+    },
+    {
+      "id": "M08",
+      "category": "B",
+      "name": "Passport-Only Small Reconversion of Unspent RMB (<= USD 500/Day Branch or <= USD 1,000 Port Pre-Departure)",
+      "legal_status": "lawful-conditional",
+      "best_for": "Clearing tiny leftover travel RMB (<= $500–$1,000) when departing China without an original exchange slip",
+      "statutory_cap": "Cumulative <= USD 500 equivalent/day onshore branch or <= USD 1,000 equivalent/day at airside/port exchange before departure, strictly for unspent previously exchanged RMB (SAFE Tianjin 2026 FAQ 10)",
+      "batch_mode": "small_reconv_500_day",
+      "fee_mode": "hsbc_cash_zero_fee",
+      "prc_tax_at_conversion": "0% on genuine leftover travel cash",
+      "us_tax_impact": "De minimis personal currency reconversion (exempt unless FX gain > $200 per transaction)",
+      "pros": [
+        "Requires only a valid U.S. passport — no original FX memo or tax voucher for <= $500 onshore / <= $1,000 airside.",
+        "HSBC China published counter cash-exchange service charge is $0.00 for HSBC Group customers (Item 2.2.2.2)."
+      ],
+      "cons": [
+        "Legally restricted to unspent previously exchanged RMB — NOT a lawful daily loophole to drain domestic salary or business balances.",
+        "Mathematically unworkable at $10k–$400k scale (20 branch days for $10,000; 800 branch days for $400,000), and repeated daily conversions trigger PBOC Art. 7 anti-splitting blocks in SAFE's real-time system.",
+        "Applies cash/banknote board rate (wider spread than telegraphic transfer rate, unverified)."
+      ],
+      "steps": [
+        "Confirm the small RMB balance genuinely represents unspent previously exchanged travel cash.",
+        "Present valid U.S. passport at a bank branch (<= USD 500/day) or pre-departure airport port counter (<= USD 1,000/day) to exchange into USD banknotes.",
+        "Comply with customs cash-carry rules (<= USD 5,000 permit-free leaving China; FinCEN 105 if > $10,000 entering the U.S.)."
+      ],
+      "source_ids": ["SRC-02", "SRC-03", "SRC-06", "SRC-11", "SRC-37", "SRC-38"],
+      "flag_ids": ["FL-02", "FL-07"]
+    },
+    {
+      "id": "M09",
+      "category": "C",
+      "name": "Sale of Legitimate Self-Use PRC Residential Property — Net After-Tax Proceeds Conversion & Wire",
+      "legal_status": "lawful-documented",
+      "best_for": "U.S. citizen whose stuck RMB comes from selling a legitimately purchased self-use apartment/house in Mainland China",
+      "statutory_cap": "Up to 100% of net sale price minus taxes and fees paid on the transfer (PBOC Decree [2006] No. 3 Art. 22; SAFE Real Estate Q&A Q14 & Q18; Hui Zong Fa [2017] No. 105)",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "hsbc_personal_tt",
+      "prc_tax_at_conversion": "0% conversion tax; property transfer taxes must be cleared first (statutory 20% IIT on net gain under PRC IIT Law Art. 3(3) unless exempt, plus applicable local VAT/stamp/deed rules); free STA Tax Recordal if > USD 50,000",
+      "us_tax_impact": "Report real-estate capital gain in USD on Schedule D / Form 8949 (compute basis at purchase-date USD rate and proceeds at sale-date USD rate; check IRC § 121 primary-residence exclusion if eligible; claim Form 1116 FTC for PRC IIT paid on gain)",
+      "pros": [
+        "Moves the entire net apartment sale proceeds ($100,000–$400,000+) in one lawful capital-account remittance outside the $50k quota.",
+        "SAFE Q14 explicitly confirms you do NOT need to submit the original inbound FX settlement voucher from when you bought the home.",
+        "STA/SAFE Outbound Payment Tax Recordal (> USD 50,000) is free of charge and processed online/on-the-spot once transfer taxes are cleared."
+      ],
+      "cons": [
+        "Remittance cannot exceed the tax-cleared net proceeds recorded on the housing transfer contract and tax certificate.",
+        "If entrusting an agent in China to handle the sale proceeds conversion, SAFE Hainan Q&A (49) requires a formally notarized Power of Attorney.",
+        "Underlying PRC property-transfer tax and U.S. USD-functional-currency gain (including currency swing over the holding period) depend on purchase/sale dates and basis (left blank)."
+      ],
+      "steps": [
+        "Complete buyer ownership transfer registration at the municipal housing/real-estate authority.",
+        "Settle PRC property-transfer taxes at the local tax bureau and obtain the official property-transfer tax clearance certificates (房屋权属转让完税证明).",
+        "For net proceeds > USD 50,000, complete the free STA/SAFE Outbound Payment Tax Recordal Form (服务贸易等项目对外支付税务备案表) online via the Electronic Tax Bureau or at the tax service hall (Announcement [2013] No. 40 & [2021] No. 19).",
+        "Submit passport, registered property sale contract, updated title transfer proof, tax clearance, and Tax Recordal serial/verification code to the bank in the property's city to convert RMB→USD and wire to your U.S. account.",
+        "Report the sale on your U.S. return in USD and claim Form 1116 Foreign Tax Credit for PRC income tax paid on the gain."
+      ],
+      "source_ids": ["SRC-01", "SRC-02", "SRC-15", "SRC-16", "SRC-17", "SRC-18", "SRC-19", "SRC-23", "SRC-27", "SRC-28", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02", "FL-08"]
+    },
+    {
+      "id": "M10",
+      "category": "C",
+      "name": "Foreign Citizen Inheritance of Mainland PRC Estate — SAFE One-Off Outbound Asset Transfer",
+      "legal_status": "lawful-documented",
+      "best_for": "U.S. citizen who inherited RMB bank deposits, real estate proceeds, or other lawful Mainland assets from a deceased relative in China",
+      "statutory_cap": "100% of lawfully inherited net estate — lump-sum outward remittance permitted upon SAFE approval outside the USD 50,000 quota (PBOC Public Notice [2004] No. 16; SAFE Hui Fa [2014] No. 2)",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "hsbc_personal_tt",
+      "prc_tax_at_conversion": "0% PRC inheritance tax (China levies no standalone estate/inheritance tax; any unpaid pre-death or liquidation taxes on underlying liquidated assets must be cleared)",
+      "us_tax_impact": "0% U.S. federal income tax on inherited principal (Pub. 525); MANDATORY IRS Form 3520 Part IV if aggregate foreign bequest/gifts > $100,000 in a tax year (IRC § 6039F penalty: 5%/month up to 25% if unfiled!)",
+      "pros": [
+        "Zero PRC inheritance tax and zero U.S. federal income tax on the bequest itself.",
+        "Exempt from the USD 50,000 annual quota — moves $100,000 to $400,000+ in a single approved lump sum.",
+        "SAFE's 2014 reform (Hui Fa [2014] No. 2) abolished mandatory notarization of property-right and agency agreements and allows combined filing across multiple decedents."
+      ],
+      "cons": [
+        "Requires formal SAFE branch approval at the decedent's registered residence plus inheritance certificate/notarized succession proof and tax-clearance proof.",
+        "Missing IRS Form 3520 on a > $100,000 foreign inheritance triggers a severe 5%/month (up to 25%) IRS penalty even though zero income tax was owed!"
+      ],
+      "steps": [
+        "Obtain inheritance right documentation (notarized succession certificate or court judgment) and liquidate any non-cash estate assets into RMB.",
+        "Obtain tax-clearance proof from the local tax bureau where the estate assets were located.",
+        "Submit the Inheritor Asset Outbound Transfer application (in person or via agent) to the SAFE branch at the decedent's place of household registration.",
+        "Take SAFE's approval document to the designated bank to convert the full approved RMB into USD and wire in one lump sum to your U.S. account.",
+        "File IRS Form 3520 (if > $100,000 received from foreign estate/nonresident aliens in the year) by your U.S. return due date, plus FBAR/Form 8938 if held in a foreign account."
+      ],
+      "source_ids": ["SRC-02", "SRC-03", "SRC-13", "SRC-14", "SRC-26", "SRC-30", "SRC-33", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02"]
+    },
+    {
+      "id": "M11",
+      "category": "C",
+      "name": "Mainland Emigrant One-Off Personal Asset Transfer (移民财产对外转移)",
+      "legal_status": "lawful-conditional",
+      "best_for": "Naturalized U.S. citizen (formerly a Mainland PRC citizen) who cancelled Mainland household registration (户口注销) and owns pre-emigration RMB savings/assets in China",
+      "statutory_cap": "100% of lawful Mainland assets owned BEFORE obtaining foreign permanent residence — lump-sum transfer permitted after SAFE approval (PBOC [2004] No. 16; SAFE Hui Fa [2014] No. 2 removed the old 2-year staging rule)",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "hsbc_personal_tt",
+      "prc_tax_at_conversion": "0% conversion tax; requires tax vouchers proving PRC taxes on the pre-emigration wealth were settled",
+      "us_tax_impact": "Pre-U.S.-person principal is not U.S. income; check § 988(e)(2) FX gain accrued after becoming a U.S. tax resident, plus FBAR & Form 8938",
+      "pros": [
+        "Designed specifically to move an ex-mainland resident's entire life savings ($100,000–$400,000+) legally outside the $50k quota.",
+        "SAFE Hui Fa [2014] No. 2 eliminated the old 50%/25%/25% two-year installment rule — 100% can now be wired in one lump sum upon approval."
+      ],
+      "cons": [
+        "Inapplicable to U.S.-born citizens who never held Mainland PRC household registration (hukou).",
+        "Requires proof of permanent hukou cancellation from PRC public security authorities, which permanently closes domestic PRC ID banking privileges.",
+        "Covers only assets acquired before obtaining foreign permanent resident status."
+      ],
+      "steps": [
+        "Gather proof of foreign permanent residence/naturalization, public security certificate of Mainland hukou cancellation, proof of lawful asset origin, and PRC tax vouchers.",
+        "Apply (in person or via authorized agent) to the SAFE branch where your original Mainland hukou was registered.",
+        "Upon SAFE approval, convert the approved RMB into USD at a designated bank and wire in one lump sum to your own U.S. account."
+      ],
+      "source_ids": ["SRC-02", "SRC-03", "SRC-13", "SRC-14", "SRC-24", "SRC-30", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02"]
+    },
+    {
+      "id": "M12",
+      "category": "C",
+      "name": "PRC Company / WFOE Audited Profit Dividend Distribution to U.S. Shareholder (10% Treaty Cap)",
+      "legal_status": "lawful-documented",
+      "best_for": "U.S. citizen whose stuck RMB is actually retained profit inside a Mainland PRC company / WFOE they own rather than already-distributed personal salary",
+      "statutory_cap": "No upper dollar cap — limited to audited distributable after-EIT profits after statutory reserve allocation",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "hsbc_entity_dividend_wht10",
+      "prc_tax_at_conversion": "10% dividend withholding tax under U.S.–China Tax Treaty Art. 9(2) (reduced from 20% statutory IIT Law Art. 3(3)), after company paid 25% standard EIT (or applicable small-profit/high-tech rate); free STA Tax Recordal if > USD 50,000",
+      "us_tax_impact": "Dividend is taxable U.S. income (qualified dividend rates generally apply under US–China Treaty), and the 10% PRC withholding tax is creditable on Form 1116 (subject to rate-differential & FTC limitation rules; also check Form 5471 CFC rules!)",
+      "pros": [
+        "U.S.–China Income Tax Treaty Art. 9(2) cuts PRC individual dividend withholding in half from 20% statutory to 10% of gross dividend.",
+        "10% PRC dividend tax paid is creditable against U.S. federal tax on Form 1116 (recall IRS disallows credit above the 10% treaty rate if you fail to claim the treaty!).",
+        "Uncapped single corporate SWIFT wire (HSBC entity TT published fee: 0.1% min CNY 100 max CNY 1,000 + CNY 140 cable = $33.67 to $159.91 at 7.129)."
+      ],
+      "cons": [
+        "Underlying company profits are first subject to PRC Enterprise Income Tax (25% standard) and statutory reserve rules before dividend distribution.",
+        "Requires annual statutory CPA audit, board/shareholder profit-distribution resolution, treaty benefit filing, WHT payment, and STA >$50k Tax Recordal.",
+        "U.S. ownership of >= 10% of a PRC corporation triggers complex IRS Form 5471 / Subpart F / GILTI compliance."
+      ],
+      "steps": [
+        "Complete the PRC company's annual CPA audit, settle Enterprise Income Tax, fund statutory reserve, and adopt a formal shareholder dividend resolution.",
+        "File non-resident treaty benefit information claiming the 10% dividend cap under Article 9(2) of the U.S.–China Income Tax Convention and withhold/remit 10% PRC tax.",
+        "If the dividend exceeds USD 50,000, submit the free online STA/SAFE Outbound Payment Tax Recordal Form (Announcement [2013] No. 40 & [2021] No. 19).",
+        "Present audit report, dividend resolution, tax payment certificate, and Tax Recordal code to the company's PRC FX bank to convert RMB→USD and wire to the U.S. shareholder.",
+        "Report dividend on U.S. return, coordinate Form 5471 if a CFC, and claim the 10% PRC withholding tax on Form 1116."
+      ],
+      "source_ids": ["SRC-01", "SRC-17", "SRC-18", "SRC-19", "SRC-20", "SRC-23", "SRC-28", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02", "FL-11"]
+    },
+    {
+      "id": "M13",
+      "category": "C",
+      "name": "Foreign-Invested Enterprise Liquidation or Equity-Transfer Proceeds Remittance",
+      "legal_status": "lawful-documented",
+      "best_for": "U.S. investor winding down a PRC company or selling equity in a PRC enterprise",
+      "statutory_cap": "100% of lawful after-tax liquidation or equity-transfer proceeds belonging to the foreign investor (State Council Decree 532 Art. 22(2))",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "hsbc_personal_tt",
+      "prc_tax_at_conversion": "0% on return of paid-in capital; 20% IIT (or applicable EIT/treaty rule under Treaty Art. 12) on net capital gain; free STA Tax Recordal if > USD 50,000",
+      "us_tax_impact": "Capital gain/loss computed in USD against original USD basis; PRC income tax on gain creditable on Form 1116",
+      "pros": [
+        "Expressly guaranteed by State Council Decree No. 532 Art. 22(2): after lawful liquidation and tax payment, RMB belonging to a foreign investor may be converted at a bank and remitted abroad.",
+        "Return of original invested capital bears zero income tax."
+      ],
+      "cons": [
+        "Requires full tax deregistration/equity-transfer tax clearance, FDI FX deregistration/change registration at the bank, and >$50k STA Tax Recordal.",
+        "Gain/tax depends entirely on historical basis and valuation (left blank)."
+      ],
+      "steps": [
+        "Complete corporate tax clearance (or equity-transfer IIT/EIT filing) with the local STA authority.",
+        "Complete FDI FX change/cancellation registration at the bank and obtain the FDI registration voucher.",
+        "Complete free STA/SAFE Outbound Payment Tax Recordal if > USD 50,000, then convert RMB→USD and wire proceeds to your U.S. account."
+      ],
+      "source_ids": ["SRC-01", "SRC-17", "SRC-18", "SRC-19", "SRC-23", "SRC-28", "SRC-38"],
+      "flag_ids": ["FL-01", "FL-02", "FL-11"]
+    },
+    {
+      "id": "M14",
+      "category": "C",
+      "name": "Registered Individual Foreign Trade Operator (个人对外贸易经营者 / 个体工商户) FX Settlement Account",
+      "legal_status": "lawful-conditional",
+      "best_for": "Individual lawfully registered for commercial/foreign-trade operations in China paying genuine cross-border trade obligations",
+      "statutory_cap": "Exempt from the USD 50,000 personal quota regardless of amount when backed by authentic contracts and commercial/transport vouchers (Hui Fa [2007] No. 1 Art. 9; SAFE 2007 Q&A)",
+      "batch_mode": "single_wire_uncapped",
+      "fee_mode": "unverified_live_quote",
+      "prc_tax_at_conversion": "Subject to business-operation IIT (5%–35% progressive, IIT Law Art. 3(2)) and applicable VAT",
+      "us_tax_impact": "Schedule C / business income; trade FX transactions do NOT qualify for the $200 personal currency-gain exclusion (26 U.S.C. § 988(e)(3))",
+      "pros": [
+        "Expressly exempt from the USD 50,000 annual personal quota when paying genuine cross-border trade obligations."
+      ],
+      "cons": [
+        "Managed like an institutional account — strictly requires genuine goods/trade contracts and transport/customs bills; fabricating trade invoices to move personal savings is illegal arbitrage (Decree 532 Art. 40: 30%–100% fine).",
+        "Commercial settlement-account fees and spreads are unpublished here (left blank)."
+      ],
+      "steps": [
+        "Hold valid industrial/commercial registration and foreign-trade filing and open an individual FX settlement account (外汇结算账户).",
+        "Submit authentic import/trade contracts and logistics/customs vouchers to the bank for FX purchase and outward trade payment.",
+        "Report business income and § 988 ordinary FX gains/losses on U.S. Schedule C."
+      ],
+      "source_ids": ["SRC-01", "SRC-02", "SRC-03", "SRC-04", "SRC-19", "SRC-24"],
+      "flag_ids": ["FL-01", "FL-12"]
+    },
+    {
+      "id": "M15",
+      "category": "D",
+      "name": "Overseas ATM Cash Withdrawal Using Mainland PRC Debit Card",
+      "legal_status": "lawful-conditional",
+      "best_for": "Small-scale USD liquidity (<= ~$14,027/year) in the United States without visiting a Mainland bank counter",
+      "statutory_cap": "Hard statutory cap: RMB 10,000 equivalent/card/day (~$1,403) AND RMB 100,000 equivalent/person/calendar year (~$14,027 at 7.129) aggregated across ALL Mainland bank cards under your name (SAFE Hui Fa [2017] No. 29)",
+      "batch_mode": "atm_100k_cny_yr",
+      "fee_mode": "unverified_live_quote",
+      "prc_tax_at_conversion": "0% ATM withdrawal tax (does not extinguish any underlying PRC tax liability)",
+      "us_tax_impact": "Account remains fully reportable on FBAR (>$10k) and Form 8938; check § 988(e)(2) if FX gain on a withdrawal exceeds $200",
+      "pros": [
+        "Works directly at U.S. ATMs accepting UnionPay / Visa / Mastercard without counter FX paperwork.",
+        "Converts automatically at card-network daily rate."
+      ],
+      "cons": [
+        "Hard RMB 100,000/year (~$14,027/year) statutory ceiling means $50,000 takes 4 calendar years, $100,000 takes 8 calendar years, and $400,000 takes 29 calendar years (286 daily ATM withdrawals)!",
+        "Exceeding RMB 100,000 by even RMB 1 puts you on SAFE's daily suspension list, blocking ALL overseas ATM withdrawals across ALL your Mainland bank cards for both the current AND the entire next calendar year!",
+        "Issuer overseas ATM fees + U.S. ATM operator surcharges apply on each of the ~10+ withdrawals/year (unverified across issuers, left blank); lending cards to others is expressly prohibited."
+      ],
+      "steps": [
+        "Confirm overseas withdrawal permission is enabled on your own-name Mainland debit card and track cumulative calendar-year withdrawals strictly below RMB 100,000 across all cards.",
+        "Withdraw USD at participating U.S. ATMs within the <= RMB 10,000/card/day limit and deposit into your U.S. bank account.",
+        "Never exceed RMB 100,000/year or lend cards to third parties; continue filing annual FBAR / Form 8938 while Mainland balance > thresholds."
+      ],
+      "source_ids": ["SRC-01", "SRC-10", "SRC-24", "SRC-25", "SRC-30", "SRC-32"],
+      "flag_ids": ["FL-01", "FL-13"]
+    },
+    {
+      "id": "M16",
+      "category": "D",
+      "name": "Direct Overseas Bank Card / Mobile Wallet POS Merchant Spending (Genuine Personal Consumption)",
+      "legal_status": "lawful-conditional",
+      "best_for": "Gradually spending down Mainland RMB on genuine everyday U.S./international retail, travel, tuition, or medical bills without converting into USD bank deposits",
+      "statutory_cap": "Not subject to the USD 50,000 FX purchase quota or the RMB 100,000 ATM cash cap (Hui Fa [2007] No. 1 Art. 35(5)); constrained by card/issuer daily/annual POS limits and strict genuine-consumption rules",
+      "batch_mode": "consumption_non_deposit",
+      "fee_mode": "unverified_live_quote",
+      "prc_tax_at_conversion": "0% POS tax",
+      "us_tax_impact": "Personal consumption transactions exempt from FX gain under § 988(e)(2) unless FX gain on a single purchase > $200; FBAR & Form 8938 still required on the Mainland balance",
+      "pros": [
+        "Exempt from both the USD 50,000 quota and the RMB 100,000 ATM cash cap when used for bona fide personal purchases (tuition, flights, hotels, retail).",
+        "Offsets U.S. household USD expenses dollar-for-dollar without wire fees."
+      ],
+      "cons": [
+        "Does NOT put liquid USD cash into your U.S. checking/brokerage account.",
+        "Restricted merchant categories (investments, real estate, gambling, crypto, insurance/cash-equivalents) are blocked, and fake merchant swipe cash-outs (套现) violate State Council Decree 532 Art. 40 (up to 30%–100% fine).",
+        "Card issuer foreign-transaction fees and network spreads are unverified (left blank)."
+      ],
+      "steps": [
+        "Pay genuine personal overseas merchant bills (retail, travel, tuition, healthcare) directly with your own-name Mainland UnionPay/dual-currency card.",
+        "Retain receipts for large transactions (e.g., tuition) in case issuer risk control requests verification; never engage in fake-merchant cash-back schemes."
+      ],
+      "source_ids": ["SRC-01", "SRC-03", "SRC-10", "SRC-24", "SRC-30"],
+      "flag_ids": ["FL-01", "FL-13"]
+    },
+    {
+      "id": "M17",
+      "category": "D",
+      "name": "Physical Cross-Border USD Banknote Carry (<= USD 5,000 Permit-Free / <= USD 10,000 with Bank Carry Permit)",
+      "legal_status": "lawful-conditional",
+      "best_for": "Traveler already flying from China to the U.S. carrying <= $5,000 (or <= $10,000 with a Bank FX Carry Permit) of lawfully sourced USD banknotes",
+      "statutory_cap": "<= USD 5,000/trip permit-free (lower for same-day $500 / 15-day repeat $1,000 travelers); > USD 5,000 to <= USD 10,000 requires Bank FX Carry Permit (携带外汇出境许可证); > USD 10,000 prohibited in principle without special SAFE permit (Hui Fa [2003] No. 102)",
+      "batch_mode": "usd_cash_5k_trip",
+      "fee_mode": "hsbc_cash_zero_fee",
+      "prc_tax_at_conversion": "0% customs fee; still requires lawful FX source to buy USD first! Unlawful carry-out faces warning + up to 20% PRC fine (Decree 532 Art. 42)",
+      "us_tax_impact": "0% U.S. border tax/fee, but FinCEN Form 105 CBP declaration is MANDATORY if total currency/instruments carried by individual/family exceeds $10,000 (seizure/forfeiture if undeclared!)",
+      "pros": [
+        "HSBC China published counter USD banknote withdrawal fee is $0.00 (Item 2.2.2.1; >= $5,000 requires 3 working days' advance notice).",
+        "No SWIFT or intermediary wire fee for a single small sum while already traveling."
+      ],
+      "cons": [
+        "Does NOT bypass SAFE's RMB→USD conversion gate — you must already hold lawful USD or qualify to buy USD first.",
+        "Impractical above $10,000: $400,000 would take 80 international trips at $5,000/trip (or 40 trips at $10,000/trip with a new Bank Carry Permit every trip), plus massive airfare, loss/theft risk, and U.S. bank cash-deposit AML scrutiny."
+      ],
+      "steps": [
+        "Convert RMB to USD via a lawful basis (e.g., M01/M06/M07) and reserve USD banknotes >= 3 working days ahead at the bank.",
+        "If carrying > USD 5,000 up to USD 10,000, obtain a stamped Bank FX Carry Permit (携带证, valid 30 days, single use) from the bank before departure.",
+        "If carrying > USD 10,000 collectively across all monetary instruments/family members when entering the U.S., file free FinCEN Form 105 electronically or with CBP upon arrival."
+      ],
+      "source_ids": ["SRC-01", "SRC-03", "SRC-11", "SRC-37", "SRC-38"],
+      "flag_ids": ["FL-02", "FL-07"]
+    },
+    {
+      "id": "M18",
+      "category": "D",
+      "name": "Physical Cross-Border RMB Banknote Carry (<= RMB 20,000 / Trip) + Offshore Exchange",
+      "legal_status": "lawful-conditional",
+      "best_for": "Carrying pocket RMB (<= RMB 20,000 ≈ $2,805) when already flying internationally",
+      "statutory_cap": "RMB 20,000 per person per cross-border trip (~$2,805.44 at 7.129; PBOC 2004 Cross-Border RMB Limit Q&A)",
+      "batch_mode": "rmb_cash_20k_trip",
+      "fee_mode": "unverified_live_quote",
+      "prc_tax_at_conversion": "0% within <= RMB 20,000/trip limit",
+      "us_tax_impact": "FinCEN Form 105 mandatory if combined RMB + USD + other monetary instruments carried by traveler/family exceed $10,000 equivalent",
+      "pros": [
+        "Requires no onshore RMB→USD conversion paperwork — domestic CNY cash withdrawal is free at HSBC China (Item 1.1.3; >= CNY 50,000 needs 1-day notice)."
+      ],
+      "cons": [
+        "Tiny per-trip cap (~$2,805/trip) means $10,000 takes 4 international flights and $400,000 takes 143 international flights!",
+        "Offshore retail CNH banknote exchange desks charge wide bid-ask spreads (unverified, left blank)."
+      ],
+      "steps": [
+        "Withdraw <= RMB 20,000 in banknotes from your Mainland account prior to an existing international trip.",
+        "Carry <= RMB 20,000 across PRC Customs (declare on FinCEN Form 105 if total all-currency cash with family > $10,000 entering the U.S.) and exchange at an overseas bank/licensed FX counter."
+      ],
+      "source_ids": ["SRC-12", "SRC-25", "SRC-37", "SRC-38"],
+      "flag_ids": ["FL-07", "FL-14"]
+    },
+    {
+      "id": "M19",
+      "category": "D",
+      "name": "Western Union China Partner-Bank Outbound Remittance",
+      "legal_status": "lawful-conditional",
+      "best_for": "Small urgent cash-pickup remittance where supported by a Western Union PRC partner bank",
+      "statutory_cap": "Subject to partner bank (BOC mobile, CEB, SPDB, PSBC) compliance/FX rules; PSBC restricts to 84 whitelist countries (incl. USA); WU China page notes direct transfers to recipient bank accounts are 'temporarily unavailable'",
+      "batch_mode": "unverified_batches",
+      "fee_mode": "unverified_live_quote",
+      "prc_tax_at_conversion": "0% conversion tax; partner bank still enforces PRC SAFE individual FX rules on foreign passport holders",
+      "us_tax_impact": "Same as M01",
+      "pros": [
+        "Accepts foreign Passports at participating PRC partner banks (BOC, CEB, SPDB, PSBC) with fast overseas cash pickup."
+      ],
+      "cons": [
+        "Western Union China's official page currently displays a notice that 'Transfers to the recipient's bank account are temporarily unavailable' (cash pickup only).",
+        "Partner banks still apply local SAFE FX documentation/risk controls on foreign passport holders, and WU publishes no static fee or FX-spread table on its China page (left blank)."
+      ],
+      "steps": [
+        "Check with a participating partner bank branch (BOC, CEB, SPDB, PSBC) whether your passport and FX documentation are accepted and request the exact fee + FX rate.",
+        "Do NOT rely on Western Union for large ($50k–$400k) bank-to-bank repatriation while direct bank-account payout is unavailable."
+      ],
+      "source_ids": ["SRC-03", "SRC-40"],
+      "flag_ids": ["FL-15"]
+    },
+    {
+      "id": "M20",
+      "category": "E",
+      "name": "GBA Cross-Boundary Wealth Management Connect (跨境理财通) / Onshore QDII Funds — Closed-Loop Non-Exit",
+      "legal_status": "closed-loop-non-exit",
+      "best_for": "Holding offshore-linked/USD-denominated investment exposure inside China's closed-loop system — NOT usable to deliver unrestricted USD to a U.S. bank account",
+      "statutory_cap": "Closed-loop remittance pipeline (资金闭环汇划管道): redeemed principal & returns must return in closed loop to the Mainland account (PBOC Guangdong Bulletin)",
+      "batch_mode": "closed_loop_no_exit",
+      "fee_mode": "hsbc_gba_closed_loop",
+      "prc_tax_at_conversion": "0% remittance fee at HSBC Premier/Advance (Item 2.2.8.2), but funds CANNOT exit the closed loop to a U.S. checking account",
+      "us_tax_impact": "SEVERE U.S. PFIC TAX TRAP: buying non-U.S. mutual funds (HK/Macau funds or onshore PRC QDII mutual funds) as a U.S. citizen generally triggers punitive IRS Form 8621 Passive Foreign Investment Company (PFIC) taxation & reporting!",
+      "pros": [
+        "Lawful way for eligible investors who keep funds in China/GBA to gain foreign-currency asset exposure ($0 HSBC GBA WMC remittance fee)."
+      ],
+      "cons": [
+        "DOES NOT GET MONEY OUT OF CHINA TO THE U.S.: PBOC enforces strict closed-loop fund pipes so funds must return to the Mainland account upon redemption.",
+        "Foreign mutual funds create punitive U.S. PFIC (IRC §§ 1291–1298 / Form 8621) tax exposure for U.S. citizens."
+      ],
+      "steps": [
+        "Do NOT use GBA Southbound Wealth Management Connect or onshore QDII mutual funds if your goal is unrestricted USD in a U.S. bank account or avoiding punitive U.S. PFIC tax rules — use M01, M09, M10, or M11 instead."
+      ],
+      "source_ids": ["SRC-02", "SRC-22", "SRC-32", "SRC-38"],
+      "flag_ids": ["FL-16"]
+    },
+    {
+      "id": "M21",
+      "category": "E",
+      "name": "REJECTED / UNLAWFUL: Splitting ('Smurfing') Across Relatives' or Friends' USD 50,000 Quotas (分拆逃汇)",
+      "legal_status": "rejected-unlawful",
+      "best_for": "DO NOT USE — Expressly unlawful FX evasion under PRC law",
+      "statutory_cap": "PROHIBITED ($0 lawful limit): PBOC Decree [2006] No. 3 Art. 7 prohibits evading quota management by splitting large sums into small batches",
+      "batch_mode": "unlawful_prohibited",
+      "fee_mode": "prc_fine_30_to_100_pct",
+      "prc_tax_at_conversion": "Statutory PRC FX evasion fine: up to 30% of illegal amount (30%–100% if serious) + forced reconversion + SAFE watchlist (State Council Decree 532 Arts. 39–40)",
+      "us_tax_impact": "Multiple third-party incoming wires from unrelated Chinese individuals trigger U.S. bank AML freezes/account closures and IRS gift/income audit inquiries",
+      "pros": [
+        "None — SAFE operates a nationwide bank-connected personal FX monitoring system specifically built to detect split/pooled remittances to the same overseas recipient."
+      ],
+      "cons": [
+        "Statutory PRC fine exposure of up to 30% ($120,000 on $400,000) or 30%–100% ($120,000–$400,000 on $400,000) in serious cases, plus forced reconversion and blacklisting.",
+        "Hui Fa [2007] No. 1 Art. 28(3) also treats domestic transfers between domestic and non-domestic individual accounts as cross-border transactions subject to FX review."
+      ],
+      "steps": [
+        "DO NOT transfer RMB to Chinese friends/relatives to wire USD to your U.S. account.",
+        "Instead, gather your lawful income + STA tax vouchers and execute M01 (or M09/M10/M11) in your own name for 0% fine exposure."
+      ],
+      "source_ids": ["SRC-01", "SRC-02", "SRC-03", "SRC-04"],
+      "flag_ids": ["FL-17"]
+    },
+    {
+      "id": "M22",
+      "category": "E",
+      "name": "REJECTED / UNLAWFUL: Cryptocurrency / USDT / Stablecoin / RWA Token Bridge (银发〔2026〕42号)",
+      "legal_status": "rejected-unlawful",
+      "best_for": "DO NOT USE — Illegal financial activity in Mainland China",
+      "statutory_cap": "PROHIBITED ($0 lawful limit): PBOC & 7 Ministries Yin Fa [2026] No. 42 (eff. 2026-02-06, repealing Yin Fa [2021] No. 237) bans fiat↔virtual currency exchange, offshore platforms serving Mainland subjects, unauthorized RMB stablecoins, and unauthorized RWA tokenization",
+      "batch_mode": "unlawful_prohibited",
+      "fee_mode": "prc_fine_30_to_100_pct",
+      "prc_tax_at_conversion": "Statutory PRC fine up to 30% (30%–100% if serious) under Decree 532 Art. 45 + bank/payment account freeze + criminal liability + civil acts invalid at own loss",
+      "us_tax_impact": "Every crypto/stablecoin disposal is a reportable U.S. digital-asset transaction (Form 1040 digital-asset question + Schedule D / Form 8949), and P2P OTC inflows risk U.S. exchange/bank AML freezes",
+      "pros": [
+        "None — high probability of PRC bank card judicial freeze (冻卡) from tainted OTC counterparty funds in addition to regulatory fines."
+      ],
+      "cons": [
+        "Expressly illegal financial activity under Yin Fa [2026] No. 42; civil contracts void with zero legal recourse if OTC counterparty defaults.",
+        "Statutory PRC FX fine up to 30% / 30%–100% ($120,000–$400,000 at $400k) plus criminal prosecution risk."
+      ],
+      "steps": [
+        "DO NOT buy USDT/BTC/stablecoins with Mainland RMB or use offshore crypto OTC desks to bridge CNY→USD.",
+        "Use documented bank conversion (M01) or Wise From-CNY (M03) instead."
+      ],
+      "source_ids": ["SRC-01", "SRC-21"],
+      "flag_ids": ["FL-17"]
+    },
+    {
+      "id": "M23",
+      "category": "E",
+      "name": "REJECTED / UNLAWFUL: Underground Banking / Informal Peer-to-Peer FX Swap (对敲) & Fabricated Invoices",
+      "legal_status": "rejected-unlawful",
+      "best_for": "DO NOT USE — Illegal FX trading / fraudulent arbitrage carrying 30%–100% fines and criminal liability",
+      "statutory_cap": "PROHIBITED ($0 lawful limit): State Council Decree 532 Arts. 40 & 45 and PBOC Decree [2006] No. 3 Art. 7",
+      "batch_mode": "unlawful_prohibited",
+      "fee_mode": "prc_fine_30_to_100_pct",
+      "prc_tax_at_conversion": "Confiscation of illegal gains + fine up to 30% of illegal amount (30%–100% if serious) + criminal liability under PRC law",
+      "us_tax_impact": "Unexplained third-party USD deposits into a U.S. bank account trigger Bank Secrecy Act SAR filings, account closure, civil forfeiture risk, and IRS unreported-income assessments",
+      "pros": [
+        "None — even if RMB never crosses the border physically (对敲 matching RMB in China for USD in the U.S.), Decree 532 Art. 45 expressly penalizes disguised FX trading (变相买卖外汇)."
+      ],
+      "cons": [
+        "30%–100% PRC statutory fine ($120,000–$400,000 on $400,000) + criminal prosecution + U.S. AML freeze/seizure risk + total counterparty theft risk."
+      ],
+      "steps": [
+        "DO NOT swap RMB domestically for USD abroad with private counterparties, money changers, or fabricated service/trade invoices.",
+        "If your RMB balance lacks tax vouchers because PRC tax was unpaid, consult a licensed PRC tax adviser to settle statutory PRC tax voluntarily (unlocking M01) and claim U.S. Form 1116 Foreign Tax Credits so you do not pay double tax."
+      ],
+      "source_ids": ["SRC-01", "SRC-02"],
+      "flag_ids": ["FL-17"]
+    }
+  ]
+}
