@@ -1,0 +1,681 @@
+method,status,amount_usd,amount_cny_at_7.129,published_fee_usd,binding_constraint,fine_standard_30pct_usd,fine_serious_cap_100pct_usd,unverified_components,sources
+M01,lawful-conditional,10000,71290.00,30.86,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,20000,142580.00,36.83,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,30000,213870.00,46.83,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,40000,285160.00,56.83,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,50000,356450.00,66.83,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,60000,427740.00,76.83,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,70000,499030.00,86.83,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,80000,570320.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,90000,641610.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,100000,712900.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,110000,784190.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,120000,855480.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,130000,926770.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,140000,998060.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,150000,1069350.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,160000,1140640.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,170000,1211930.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,180000,1283220.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,190000,1354510.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,200000,1425800.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,210000,1497090.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,220000,1568380.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,230000,1639670.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,240000,1710960.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,250000,1782250.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,260000,1853540.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,270000,1924830.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,280000,1996120.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,290000,2067410.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,300000,2138700.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,310000,2209990.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,320000,2281280.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,330000,2352570.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,340000,2423860.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,350000,2495150.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,360000,2566440.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,370000,2637730.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,380000,2709020.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,390000,2780310.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M01,lawful-conditional,400000,2851600.00,86.97,1 wire,,,"FX spread, correspondent/recipient charges",VS01;VS02;VS08;VS13;VS14;VS11
+M02,lawful-conditional,10000,71290.00,30.86,1 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,20000,142580.00,36.83,1 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,30000,213870.00,46.83,1 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,40000,285160.00,56.83,1 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,50000,356450.00,66.83,1 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,60000,427740.00,97.69,2 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,70000,499030.00,103.67,2 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,80000,570320.00,113.67,2 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,90000,641610.00,123.67,2 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,100000,712900.00,133.67,2 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,110000,784190.00,164.53,3 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,120000,855480.00,170.50,3 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,130000,926770.00,180.50,3 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,140000,998060.00,190.50,3 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,150000,1069350.00,200.50,3 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,160000,1140640.00,231.36,4 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,170000,1211930.00,237.33,4 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,180000,1283220.00,247.33,4 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,190000,1354510.00,257.33,4 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,200000,1425800.00,267.33,4 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,210000,1497090.00,298.19,5 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,220000,1568380.00,304.16,5 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,230000,1639670.00,314.16,5 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,240000,1710960.00,324.16,5 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,250000,1782250.00,334.16,5 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,260000,1853540.00,365.02,6 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,270000,1924830.00,371.00,6 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,280000,1996120.00,381.00,6 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,290000,2067410.00,391.00,6 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,300000,2138700.00,401.00,6 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,310000,2209990.00,431.86,7 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,320000,2281280.00,437.83,7 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,330000,2352570.00,447.83,7 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,340000,2423860.00,457.83,7 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,350000,2495150.00,467.83,7 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,360000,2566440.00,498.69,8 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,370000,2637730.00,504.66,8 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,380000,2709020.00,514.66,8 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,390000,2780310.00,524.66,8 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M02,lawful-conditional,400000,2851600.00,534.66,8 calendar year(s),,,FX spread; eligibility requires PRC ID or permanent-resident card,VS02;VS04;VS06;VS13;VS14
+M03,lawful-conditional,10000,71290.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,20000,142580.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,30000,213870.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,40000,285160.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,50000,356450.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,60000,427740.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,70000,499030.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,80000,570320.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,90000,641610.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,100000,712900.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,110000,784190.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,120000,855480.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,130000,926770.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,140000,998060.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,150000,1069350.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,160000,1140640.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,170000,1211930.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,180000,1283220.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,190000,1354510.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,200000,1425800.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,210000,1497090.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,220000,1568380.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,230000,1639670.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,240000,1710960.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,250000,1782250.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,260000,1853540.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,270000,1924830.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,280000,1996120.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,290000,2067410.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,300000,2138700.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,310000,2209990.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,320000,2281280.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,330000,2352570.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,340000,2423860.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,350000,2495150.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,360000,2566440.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,370000,2637730.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,380000,2709020.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,390000,2780310.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M03,lawful-conditional,400000,2851600.00,0.00,Transfer count unpublished,,,FX spread; Advance = USD 20/transfer with count unpublished,VS13;VS01
+M04,lawful-conditional,10000,71290.00,,"1 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,20000,142580.00,,"1 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,30000,213870.00,,"1 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,40000,285160.00,,"1 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,50000,356450.00,,"2 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,60000,427740.00,,"2 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,70000,499030.00,,"2 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,80000,570320.00,,"2 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,90000,641610.00,,"3 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,100000,712900.00,,"3 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,110000,784190.00,,"3 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,120000,855480.00,,"3 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,130000,926770.00,,"4 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,140000,998060.00,,"4 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,150000,1069350.00,,"4 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,160000,1140640.00,,"4 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,170000,1211930.00,,"5 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,180000,1283220.00,,"5 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,190000,1354510.00,,"5 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,200000,1425800.00,,"5 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,210000,1497090.00,,"5 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,220000,1568380.00,,"6 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,230000,1639670.00,,"6 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,240000,1710960.00,,"6 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,250000,1782250.00,,"6 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,260000,1853540.00,,"7 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,270000,1924830.00,,"7 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,280000,1996120.00,,"7 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,290000,2067410.00,,"7 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,300000,2138700.00,,"8 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,310000,2209990.00,,"8 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,320000,2281280.00,,"8 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,330000,2352570.00,,"8 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,340000,2423860.00,,"9 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,350000,2495150.00,,"9 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,360000,2566440.00,,"9 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,370000,2637730.00,,"9 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,380000,2709020.00,,"10 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,390000,2780310.00,,"10 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M04,lawful-conditional,400000,2851600.00,,"10 transfer(s) at ≤¥300,000",,,Wise fee is quoted only in-app; overall limit set by your tax records,VS21;VS01;VS11
+M05,lawful-conditional,10000,71290.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,20000,142580.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,30000,213870.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,40000,285160.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,50000,356450.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,60000,427740.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,70000,499030.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,80000,570320.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,90000,641610.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,100000,712900.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,110000,784190.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,120000,855480.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,130000,926770.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,140000,998060.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,150000,1069350.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,160000,1140640.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,170000,1211930.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,180000,1283220.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,190000,1354510.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,200000,1425800.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,210000,1497090.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,220000,1568380.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,230000,1639670.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,240000,1710960.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,250000,1782250.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,260000,1853540.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,270000,1924830.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,280000,1996120.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,290000,2067410.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,300000,2138700.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,310000,2209990.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,320000,2281280.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,330000,2352570.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,340000,2423860.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,350000,2495150.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,360000,2566440.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,370000,2637730.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,380000,2709020.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,390000,2780310.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M05,lawful-conditional,400000,2851600.00,,Eligibility/quote required,,,"Fee, limit and FX rate are not published",VS22;VS08
+M06,lawful-conditional,10000,71290.00,,"1 year(s), 8 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,20000,142580.00,,"2 year(s), 15 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,30000,213870.00,,"3 year(s), 22 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,40000,285160.00,,"3 year(s), 29 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,50000,356450.00,,"4 year(s), 36 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,60000,427740.00,,"5 year(s), 43 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,70000,499030.00,,"5 year(s), 50 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,80000,570320.00,,"6 year(s), 58 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,90000,641610.00,,"7 year(s), 65 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,100000,712900.00,,"8 year(s), 72 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,110000,784190.00,,"8 year(s), 79 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,120000,855480.00,,"9 year(s), 86 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,130000,926770.00,,"10 year(s), 93 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,140000,998060.00,,"10 year(s), 100 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,150000,1069350.00,,"11 year(s), 107 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,160000,1140640.00,,"12 year(s), 115 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,170000,1211930.00,,"13 year(s), 122 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,180000,1283220.00,,"13 year(s), 129 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,190000,1354510.00,,"14 year(s), 136 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,200000,1425800.00,,"15 year(s), 143 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,210000,1497090.00,,"15 year(s), 150 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,220000,1568380.00,,"16 year(s), 157 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,230000,1639670.00,,"17 year(s), 164 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,240000,1710960.00,,"18 year(s), 172 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,250000,1782250.00,,"18 year(s), 179 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,260000,1853540.00,,"19 year(s), 186 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,270000,1924830.00,,"20 year(s), 193 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,280000,1996120.00,,"20 year(s), 200 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,290000,2067410.00,,"21 year(s), 207 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,300000,2138700.00,,"22 year(s), 214 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,310000,2209990.00,,"23 year(s), 221 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,320000,2281280.00,,"23 year(s), 229 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,330000,2352570.00,,"24 year(s), 236 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,340000,2423860.00,,"25 year(s), 243 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,350000,2495150.00,,"25 year(s), 250 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,360000,2566440.00,,"26 year(s), 257 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,370000,2637730.00,,"27 year(s), 264 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,380000,2709020.00,,"28 year(s), 271 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,390000,2780310.00,,"28 year(s), 279 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M06,lawful-conditional,400000,2851600.00,,"29 year(s), 286 withdrawal(s)",,,"Card-issuer and ATM fees; RMB 100,000/year is a hard ceiling (VS05)",VS05;VS06
+M07,lawful-conditional,10000,71290.00,0.00,2 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,20000,142580.00,0.00,4 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,30000,213870.00,0.00,6 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,40000,285160.00,0.00,8 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,50000,356450.00,0.00,10 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,60000,427740.00,0.00,12 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,70000,499030.00,0.00,14 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,80000,570320.00,0.00,16 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,90000,641610.00,0.00,18 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,100000,712900.00,0.00,20 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,110000,784190.00,0.00,22 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,120000,855480.00,0.00,24 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,130000,926770.00,0.00,26 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,140000,998060.00,0.00,28 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,150000,1069350.00,0.00,30 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,160000,1140640.00,0.00,32 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,170000,1211930.00,0.00,34 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,180000,1283220.00,0.00,36 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,190000,1354510.00,0.00,38 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,200000,1425800.00,0.00,40 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,210000,1497090.00,0.00,42 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,220000,1568380.00,0.00,44 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,230000,1639670.00,0.00,46 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,240000,1710960.00,0.00,48 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,250000,1782250.00,0.00,50 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,260000,1853540.00,0.00,52 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,270000,1924830.00,0.00,54 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,280000,1996120.00,0.00,56 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,290000,2067410.00,0.00,58 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,300000,2138700.00,0.00,60 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,310000,2209990.00,0.00,62 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,320000,2281280.00,0.00,64 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,330000,2352570.00,0.00,66 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,340000,2423860.00,0.00,68 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,350000,2495150.00,0.00,70 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,360000,2566440.00,0.00,72 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,370000,2637730.00,0.00,74 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,380000,2709020.00,0.00,76 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,390000,2780310.00,0.00,78 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M07,lawful-conditional,400000,2851600.00,0.00,80 trip(s),,,"Cash FX spread, travel cost, insurance/risk (not published)",VS07;VS23;VS13;VS06
+M08,lawful-conditional,10000,71290.00,,"4 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,20000,142580.00,,"8 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,30000,213870.00,,"11 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,40000,285160.00,,"15 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,50000,356450.00,,"18 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,60000,427740.00,,"22 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,70000,499030.00,,"25 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,80000,570320.00,,"29 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,90000,641610.00,,"33 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,100000,712900.00,,"36 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,110000,784190.00,,"40 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,120000,855480.00,,"43 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,130000,926770.00,,"47 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,140000,998060.00,,"50 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,150000,1069350.00,,"54 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,160000,1140640.00,,"58 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,170000,1211930.00,,"61 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,180000,1283220.00,,"65 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,190000,1354510.00,,"68 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,200000,1425800.00,,"72 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,210000,1497090.00,,"75 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,220000,1568380.00,,"79 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,230000,1639670.00,,"82 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,240000,1710960.00,,"86 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,250000,1782250.00,,"90 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,260000,1853540.00,,"93 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,270000,1924830.00,,"97 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,280000,1996120.00,,"100 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,290000,2067410.00,,"104 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,300000,2138700.00,,"107 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,310000,2209990.00,,"111 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,320000,2281280.00,,"115 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,330000,2352570.00,,"118 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,340000,2423860.00,,"122 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,350000,2495150.00,,"125 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,360000,2566440.00,,"129 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,370000,2637730.00,,"132 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,380000,2709020.00,,"136 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,390000,2780310.00,,"140 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M08,lawful-conditional,400000,2851600.00,,"143 trip(s) at ≤¥20,000",,,Offshore conversion rate and fees; current customs practice,VS09;VS06
+M09,lawful-conditional,10000,71290.00,,20 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,20000,142580.00,,40 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,30000,213870.00,,60 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,40000,285160.00,,80 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,50000,356450.00,,100 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,60000,427740.00,,120 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,70000,499030.00,,140 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,80000,570320.00,,160 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,90000,641610.00,,180 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,100000,712900.00,,200 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,110000,784190.00,,220 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,120000,855480.00,,240 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,130000,926770.00,,260 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,140000,998060.00,,280 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,150000,1069350.00,,300 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,160000,1140640.00,,320 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,170000,1211930.00,,340 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,180000,1283220.00,,360 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,190000,1354510.00,,380 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,200000,1425800.00,,400 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,210000,1497090.00,,420 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,220000,1568380.00,,440 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,230000,1639670.00,,460 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,240000,1710960.00,,480 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,250000,1782250.00,,500 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,260000,1853540.00,,520 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,270000,1924830.00,,540 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,280000,1996120.00,,560 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,290000,2067410.00,,580 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,300000,2138700.00,,600 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,310000,2209990.00,,620 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,320000,2281280.00,,640 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,330000,2352570.00,,660 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,340000,2423860.00,,680 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,350000,2495150.00,,700 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,360000,2566440.00,,720 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,370000,2637730.00,,740 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,380000,2709020.00,,760 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,390000,2780310.00,,780 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M09,lawful-conditional,400000,2851600.00,,800 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
+M10,lawful-conditional,10000,71290.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,20000,142580.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,30000,213870.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,40000,285160.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,50000,356450.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,60000,427740.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,70000,499030.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,80000,570320.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,90000,641610.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,100000,712900.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,110000,784190.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,120000,855480.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,130000,926770.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,140000,998060.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,150000,1069350.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,160000,1140640.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,170000,1211930.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,180000,1283220.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,190000,1354510.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,200000,1425800.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,210000,1497090.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,220000,1568380.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,230000,1639670.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,240000,1710960.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,250000,1782250.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,260000,1853540.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,270000,1924830.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,280000,1996120.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,290000,2067410.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,300000,2138700.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,310000,2209990.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,320000,2281280.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,330000,2352570.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,340000,2423860.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,350000,2495150.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,360000,2566440.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,370000,2637730.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,380000,2709020.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,390000,2780310.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,400000,2851600.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,10000,71290.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,20000,142580.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,30000,213870.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,40000,285160.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,50000,356450.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,60000,427740.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,70000,499030.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,80000,570320.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,90000,641610.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,100000,712900.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,110000,784190.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,120000,855480.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,130000,926770.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,140000,998060.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,150000,1069350.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,160000,1140640.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,170000,1211930.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,180000,1283220.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,190000,1354510.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,200000,1425800.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,210000,1497090.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,220000,1568380.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,230000,1639670.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,240000,1710960.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,250000,1782250.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,260000,1853540.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,270000,1924830.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,280000,1996120.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,290000,2067410.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,300000,2138700.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,310000,2209990.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,320000,2281280.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,330000,2352570.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,340000,2423860.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,350000,2495150.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,360000,2566440.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,370000,2637730.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,380000,2709020.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,390000,2780310.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M11,lawful-conditional,400000,2851600.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M12,lawful-conditional,10000,71290.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,20000,142580.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,30000,213870.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,40000,285160.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,50000,356450.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,60000,427740.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,70000,499030.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,80000,570320.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,90000,641610.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,100000,712900.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,110000,784190.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,120000,855480.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,130000,926770.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,140000,998060.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,150000,1069350.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,160000,1140640.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,170000,1211930.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,180000,1283220.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,190000,1354510.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,200000,1425800.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,210000,1497090.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,220000,1568380.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,230000,1639670.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,240000,1710960.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,250000,1782250.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,260000,1853540.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,270000,1924830.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,280000,1996120.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,290000,2067410.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,300000,2138700.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,310000,2209990.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,320000,2281280.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,330000,2352570.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,340000,2423860.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,350000,2495150.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,360000,2566440.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,370000,2637730.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,380000,2709020.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,390000,2780310.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M12,lawful-conditional,400000,2851600.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
+M13,lawful-conditional,10000,71290.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,20000,142580.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,30000,213870.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,40000,285160.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,50000,356450.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,60000,427740.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,70000,499030.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,80000,570320.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,90000,641610.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,100000,712900.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,110000,784190.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,120000,855480.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,130000,926770.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,140000,998060.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,150000,1069350.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,160000,1140640.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,170000,1211930.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,180000,1283220.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,190000,1354510.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,200000,1425800.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,210000,1497090.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,220000,1568380.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,230000,1639670.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,240000,1710960.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,250000,1782250.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,260000,1853540.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,270000,1924830.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,280000,1996120.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,290000,2067410.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,300000,2138700.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,310000,2209990.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,320000,2281280.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,330000,2352570.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,340000,2423860.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,350000,2495150.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,360000,2566440.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,370000,2637730.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,380000,2709020.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,390000,2780310.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M13,lawful-conditional,400000,2851600.00,,Registered trade operator only,,,Not available for a savings balance,VS02;VS08
+M14,rejected-unlawful,10000,71290.00,,REJECTED — unlawful,3000.00,10000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,20000,142580.00,,REJECTED — unlawful,6000.00,20000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,30000,213870.00,,REJECTED — unlawful,9000.00,30000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,40000,285160.00,,REJECTED — unlawful,12000.00,40000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,50000,356450.00,,REJECTED — unlawful,15000.00,50000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,60000,427740.00,,REJECTED — unlawful,18000.00,60000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,70000,499030.00,,REJECTED — unlawful,21000.00,70000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,80000,570320.00,,REJECTED — unlawful,24000.00,80000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,90000,641610.00,,REJECTED — unlawful,27000.00,90000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,100000,712900.00,,REJECTED — unlawful,30000.00,100000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,110000,784190.00,,REJECTED — unlawful,33000.00,110000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,120000,855480.00,,REJECTED — unlawful,36000.00,120000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,130000,926770.00,,REJECTED — unlawful,39000.00,130000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,140000,998060.00,,REJECTED — unlawful,42000.00,140000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,150000,1069350.00,,REJECTED — unlawful,45000.00,150000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,160000,1140640.00,,REJECTED — unlawful,48000.00,160000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,170000,1211930.00,,REJECTED — unlawful,51000.00,170000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,180000,1283220.00,,REJECTED — unlawful,54000.00,180000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,190000,1354510.00,,REJECTED — unlawful,57000.00,190000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,200000,1425800.00,,REJECTED — unlawful,60000.00,200000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,210000,1497090.00,,REJECTED — unlawful,63000.00,210000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,220000,1568380.00,,REJECTED — unlawful,66000.00,220000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,230000,1639670.00,,REJECTED — unlawful,69000.00,230000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,240000,1710960.00,,REJECTED — unlawful,72000.00,240000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,250000,1782250.00,,REJECTED — unlawful,75000.00,250000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,260000,1853540.00,,REJECTED — unlawful,78000.00,260000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,270000,1924830.00,,REJECTED — unlawful,81000.00,270000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,280000,1996120.00,,REJECTED — unlawful,84000.00,280000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,290000,2067410.00,,REJECTED — unlawful,87000.00,290000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,300000,2138700.00,,REJECTED — unlawful,90000.00,300000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,310000,2209990.00,,REJECTED — unlawful,93000.00,310000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,320000,2281280.00,,REJECTED — unlawful,96000.00,320000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,330000,2352570.00,,REJECTED — unlawful,99000.00,330000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,340000,2423860.00,,REJECTED — unlawful,102000.00,340000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,350000,2495150.00,,REJECTED — unlawful,105000.00,350000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,360000,2566440.00,,REJECTED — unlawful,108000.00,360000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,370000,2637730.00,,REJECTED — unlawful,111000.00,370000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,380000,2709020.00,,REJECTED — unlawful,114000.00,380000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,390000,2780310.00,,REJECTED — unlawful,117000.00,390000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M14,rejected-unlawful,400000,2851600.00,,REJECTED — unlawful,120000.00,400000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS12;VS06
+M15,rejected-unlawful,10000,71290.00,,REJECTED — unlawful,3000.00,10000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,20000,142580.00,,REJECTED — unlawful,6000.00,20000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,30000,213870.00,,REJECTED — unlawful,9000.00,30000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,40000,285160.00,,REJECTED — unlawful,12000.00,40000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,50000,356450.00,,REJECTED — unlawful,15000.00,50000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,60000,427740.00,,REJECTED — unlawful,18000.00,60000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,70000,499030.00,,REJECTED — unlawful,21000.00,70000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,80000,570320.00,,REJECTED — unlawful,24000.00,80000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,90000,641610.00,,REJECTED — unlawful,27000.00,90000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,100000,712900.00,,REJECTED — unlawful,30000.00,100000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,110000,784190.00,,REJECTED — unlawful,33000.00,110000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,120000,855480.00,,REJECTED — unlawful,36000.00,120000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,130000,926770.00,,REJECTED — unlawful,39000.00,130000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,140000,998060.00,,REJECTED — unlawful,42000.00,140000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,150000,1069350.00,,REJECTED — unlawful,45000.00,150000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,160000,1140640.00,,REJECTED — unlawful,48000.00,160000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,170000,1211930.00,,REJECTED — unlawful,51000.00,170000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,180000,1283220.00,,REJECTED — unlawful,54000.00,180000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,190000,1354510.00,,REJECTED — unlawful,57000.00,190000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,200000,1425800.00,,REJECTED — unlawful,60000.00,200000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,210000,1497090.00,,REJECTED — unlawful,63000.00,210000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,220000,1568380.00,,REJECTED — unlawful,66000.00,220000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,230000,1639670.00,,REJECTED — unlawful,69000.00,230000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,240000,1710960.00,,REJECTED — unlawful,72000.00,240000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,250000,1782250.00,,REJECTED — unlawful,75000.00,250000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,260000,1853540.00,,REJECTED — unlawful,78000.00,260000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,270000,1924830.00,,REJECTED — unlawful,81000.00,270000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,280000,1996120.00,,REJECTED — unlawful,84000.00,280000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,290000,2067410.00,,REJECTED — unlawful,87000.00,290000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,300000,2138700.00,,REJECTED — unlawful,90000.00,300000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,310000,2209990.00,,REJECTED — unlawful,93000.00,310000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,320000,2281280.00,,REJECTED — unlawful,96000.00,320000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,330000,2352570.00,,REJECTED — unlawful,99000.00,330000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,340000,2423860.00,,REJECTED — unlawful,102000.00,340000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,350000,2495150.00,,REJECTED — unlawful,105000.00,350000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,360000,2566440.00,,REJECTED — unlawful,108000.00,360000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,370000,2637730.00,,REJECTED — unlawful,111000.00,370000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,380000,2709020.00,,REJECTED — unlawful,114000.00,380000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,390000,2780310.00,,REJECTED — unlawful,117000.00,390000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M15,rejected-unlawful,400000,2851600.00,,REJECTED — unlawful,120000.00,400000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS08;VS06
+M16,rejected-unlawful,10000,71290.00,,REJECTED — unlawful,3000.00,10000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,20000,142580.00,,REJECTED — unlawful,6000.00,20000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,30000,213870.00,,REJECTED — unlawful,9000.00,30000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,40000,285160.00,,REJECTED — unlawful,12000.00,40000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,50000,356450.00,,REJECTED — unlawful,15000.00,50000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,60000,427740.00,,REJECTED — unlawful,18000.00,60000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,70000,499030.00,,REJECTED — unlawful,21000.00,70000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,80000,570320.00,,REJECTED — unlawful,24000.00,80000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,90000,641610.00,,REJECTED — unlawful,27000.00,90000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,100000,712900.00,,REJECTED — unlawful,30000.00,100000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,110000,784190.00,,REJECTED — unlawful,33000.00,110000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,120000,855480.00,,REJECTED — unlawful,36000.00,120000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,130000,926770.00,,REJECTED — unlawful,39000.00,130000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,140000,998060.00,,REJECTED — unlawful,42000.00,140000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,150000,1069350.00,,REJECTED — unlawful,45000.00,150000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,160000,1140640.00,,REJECTED — unlawful,48000.00,160000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,170000,1211930.00,,REJECTED — unlawful,51000.00,170000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,180000,1283220.00,,REJECTED — unlawful,54000.00,180000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,190000,1354510.00,,REJECTED — unlawful,57000.00,190000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,200000,1425800.00,,REJECTED — unlawful,60000.00,200000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,210000,1497090.00,,REJECTED — unlawful,63000.00,210000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,220000,1568380.00,,REJECTED — unlawful,66000.00,220000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,230000,1639670.00,,REJECTED — unlawful,69000.00,230000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,240000,1710960.00,,REJECTED — unlawful,72000.00,240000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,250000,1782250.00,,REJECTED — unlawful,75000.00,250000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,260000,1853540.00,,REJECTED — unlawful,78000.00,260000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,270000,1924830.00,,REJECTED — unlawful,81000.00,270000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,280000,1996120.00,,REJECTED — unlawful,84000.00,280000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,290000,2067410.00,,REJECTED — unlawful,87000.00,290000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,300000,2138700.00,,REJECTED — unlawful,90000.00,300000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,310000,2209990.00,,REJECTED — unlawful,93000.00,310000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,320000,2281280.00,,REJECTED — unlawful,96000.00,320000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,330000,2352570.00,,REJECTED — unlawful,99000.00,330000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,340000,2423860.00,,REJECTED — unlawful,102000.00,340000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,350000,2495150.00,,REJECTED — unlawful,105000.00,350000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,360000,2566440.00,,REJECTED — unlawful,108000.00,360000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,370000,2637730.00,,REJECTED — unlawful,111000.00,370000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,380000,2709020.00,,REJECTED — unlawful,114000.00,380000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,390000,2780310.00,,REJECTED — unlawful,117000.00,390000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M16,rejected-unlawful,400000,2851600.00,,REJECTED — unlawful,120000.00,400000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,10000,71290.00,,REJECTED — unlawful,3000.00,10000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,20000,142580.00,,REJECTED — unlawful,6000.00,20000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,30000,213870.00,,REJECTED — unlawful,9000.00,30000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,40000,285160.00,,REJECTED — unlawful,12000.00,40000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,50000,356450.00,,REJECTED — unlawful,15000.00,50000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,60000,427740.00,,REJECTED — unlawful,18000.00,60000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,70000,499030.00,,REJECTED — unlawful,21000.00,70000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,80000,570320.00,,REJECTED — unlawful,24000.00,80000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,90000,641610.00,,REJECTED — unlawful,27000.00,90000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,100000,712900.00,,REJECTED — unlawful,30000.00,100000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,110000,784190.00,,REJECTED — unlawful,33000.00,110000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,120000,855480.00,,REJECTED — unlawful,36000.00,120000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,130000,926770.00,,REJECTED — unlawful,39000.00,130000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,140000,998060.00,,REJECTED — unlawful,42000.00,140000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,150000,1069350.00,,REJECTED — unlawful,45000.00,150000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,160000,1140640.00,,REJECTED — unlawful,48000.00,160000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,170000,1211930.00,,REJECTED — unlawful,51000.00,170000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,180000,1283220.00,,REJECTED — unlawful,54000.00,180000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,190000,1354510.00,,REJECTED — unlawful,57000.00,190000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,200000,1425800.00,,REJECTED — unlawful,60000.00,200000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,210000,1497090.00,,REJECTED — unlawful,63000.00,210000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,220000,1568380.00,,REJECTED — unlawful,66000.00,220000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,230000,1639670.00,,REJECTED — unlawful,69000.00,230000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,240000,1710960.00,,REJECTED — unlawful,72000.00,240000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,250000,1782250.00,,REJECTED — unlawful,75000.00,250000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,260000,1853540.00,,REJECTED — unlawful,78000.00,260000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,270000,1924830.00,,REJECTED — unlawful,81000.00,270000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,280000,1996120.00,,REJECTED — unlawful,84000.00,280000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,290000,2067410.00,,REJECTED — unlawful,87000.00,290000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,300000,2138700.00,,REJECTED — unlawful,90000.00,300000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,310000,2209990.00,,REJECTED — unlawful,93000.00,310000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,320000,2281280.00,,REJECTED — unlawful,96000.00,320000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,330000,2352570.00,,REJECTED — unlawful,99000.00,330000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,340000,2423860.00,,REJECTED — unlawful,102000.00,340000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,350000,2495150.00,,REJECTED — unlawful,105000.00,350000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,360000,2566440.00,,REJECTED — unlawful,108000.00,360000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,370000,2637730.00,,REJECTED — unlawful,111000.00,370000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,380000,2709020.00,,REJECTED — unlawful,114000.00,380000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,390000,2780310.00,,REJECTED — unlawful,117000.00,390000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08
+M17,rejected-unlawful,400000,2851600.00,,REJECTED — unlawful,120000.00,400000.00,"Statutory fine exposure, not a price: 30% standard / 30–100% serious (VS06)",VS06;VS08

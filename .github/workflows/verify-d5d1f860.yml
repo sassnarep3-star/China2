@@ -1,0 +1,31 @@
+name: Verify live-source dashboard (d5d1f860)
+
+on:
+  pull_request:
+  push:
+    branches: ["main", "arena/d5d1f860-china2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild the dashboard
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 verify-d5d1f860/build.py
+      - name: Check generated output is committed
+        run: git diff --exit-code -- verify-d5d1f860
+      - name: Verify ladder arithmetic, citations and local links
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 verify-d5d1f860/verify.py
+      - name: Check browser script syntax
+        run: node --check verify-d5d1f860/assets/app.js
