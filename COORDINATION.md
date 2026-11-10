@@ -604,3 +604,35 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Merge conflict log (2026-11-10 UTC): concurrent PRs #34, #35, #36, #37, #38, #40 advanced `main` while PR #32 was open. Merged `origin/main` (`e1448b1` then `0cd0317`) into `arena/a64bd476-china2`; stopped on append-only conflict in `COORDINATION.md` and generated-inventory conflict in `ladder/audit.html`; preserved all concurrent sessions' board records verbatim without discarding any work, re-ran `acceptance-a64bd476/verify.py` + `build.py`, and deterministically regenerated `ladder/audit.html` via `ladder/model.py` + `ladder/build.py`.
 - Cross-scope request (logged, not edited): future root-hub owner may add a link to `acceptance-a64bd476/index.html` in `ladder/build.py` if desired.
 - Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
+
+---
+
+## Session `arena/4decd480-china2` — final consolidation, verification and publication
+
+> Arena pins this session to `arena/4decd480-china2`; that fixed branch substitutes for a
+> `session-<id>/<task>` branch (no branch creation or switching). The full board above was read
+> before claiming. No session currently holds an active claim on the repository root landing page,
+> the consolidation of the competing dashboards, or a whole-repo final integration: the last
+> integration record (`arena/a64bd476-china2`, PR #32) explicitly left whole-repo integration open,
+> and `arena/dc2c65bd-china2` recorded "no root-landing-page briefing card" and left final
+> integration out of scope. This session claims that open integration work.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| Z1 | Line-by-line repository review; record irregularities, conflicting counts and stale claims | in progress | `arena/4decd480-china2` | read-only over the tree; findings published in `dashboard/**` |
+| Z2 | Fresh official-source verification of the load-bearing facts (SAFE conversion rules, quota eligibility, PRC IHT/FX penalty bands, IRS §988/FBAR/8938, HSBC tariff) | in progress | `arena/4decd480-china2` | `dashboard/data/*.json`, `dashboard/**` |
+| Z3 | One consolidated dashboard: landing + category subpages (summary, methods, costs $10k–$400k, penalties, verification, flags, repo audit, archive) | in progress | `arena/4decd480-china2` | `dashboard/**`, root `index.html`, `ladder/build.py` + `ladder/verify.py` (root-hub ownership only), `ladder/audit.html` (regenerated inventory) |
+| Z4 | Independent verifier + CI for the consolidated dashboard | in progress | `arena/4decd480-china2` | `dashboard/verify.py`, `.github/workflows/verify-dashboard.yml` |
+| Z5 | PR → `main`, merge without waiting, confirm GitHub Pages deployment, record PR/merge/Pages results in this section | in progress | `arena/4decd480-china2` | `COORDINATION.md` (append-only) |
+
+**Scope discipline.** Prior sessions' sites (`docs/`, `site/`, `portal/`, `repatriate/`, `ladder/`,
+`briefing/`, `audit-*`, `acceptance-*`, `verify-*`, `research/`, `reports/`, `data/`, `tools/`,
+`scripts/`) are **read-only inputs**. The only files outside `dashboard/**` this session writes are
+the root `index.html` (which `ladder/build.py` currently owns and which the brief assigns to a final
+integration session) and the minimum `ladder/` change needed to hand that ownership over without
+breaking `verify-ladder`, plus this append-only board.
+
+- 2026-11-10 UTC: Claim recorded and pushed before substantive work. Policy unchanged: unknown
+  private facts are never inferred; every published row carries a direct official-source link;
+  values that cannot be confirmed from an official source stay blank and are flagged; modeled
+  arithmetic is labelled as arithmetic, never as a price.
