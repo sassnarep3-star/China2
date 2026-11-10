@@ -2,6 +2,7 @@
 
 A source-linked research dashboard about lawful mainland China CNY→USD conversion and repatriation for a U.S. citizen. **Research, not personalized tax/legal advice.** No funds moved or returns filed.
 
+**Newest live-verified dashboard (2026-11-10):** [verify-d5d1f860/index.html](verify-d5d1f860/index.html) — 24 primary documents re-fetched and quoted, 17 methods priced across 40 tiers ($10k–$400k) with the fee arithmetic recomputed independently, 16 published flags, and blanks wherever nothing is published.
 **Executive briefing (start here):** [briefing/index.html](briefing/index.html) — the consolidated least-tax answer, all-methods cost tables at every $10,000 step from $10,000 to $400,000, and the source-linked repo audit.
 **Website:** https://sassnarep3-star.github.io/China2/
 **Cost ladder (start here):** [ladder/index.html](ladder/index.html) — every route priced at each $10,000 step from $10,000 to $400,000, with a source link per row and unverified values left blank and flagged.

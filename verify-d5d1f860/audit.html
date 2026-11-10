@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repository audit · China money dashboard</title>
+<meta name="description" content="Independent review of the repository&#x27;s published CNY to USD claims: count drift, stale figures, fee-segment errors and structural-only verification.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="bar"><b>China money · CNY → USD</b><span class="meta">Independent verification pass · 2026-11-10 · research, not tax or legal advice</span></div>
+  <nav aria-label="Sections"><a href="index.html">Overview</a><a href="costs.html">Costs $10k–$400k</a><a href="methods.html">17 methods</a><a href="taxes.html">Tax &amp; reporting</a><a href="sources.html">Sources verified</a><a href="audit.html" aria-current=page>Repo audit</a><a href="flagged.html">Flagged for review</a></nav>
+</header>
+<main>
+
+<h1>Repository audit: what the existing sites get right, and where they drift</h1>
+<p class="lede">This repository contains seven prior dashboards built by different sessions. They are preserved, not overwritten. This page records what an independent read of the published claims found on 2026-11-10, and what this dashboard does differently. Nothing below is an accusation of bad faith — several items are already flagged by their own authors.</p>
+<div class="box"><strong>Scope.</strong> Read-only review of the checked-in HTML/data plus the primary sources in the <a href="sources.html">ledger</a>. I did not re-verify every row of every prior site; structural checks in those repos do not establish factual accuracy, and this audit does not claim to be exhaustive.</div>
+<div class="tablewrap"><table>
+<thead><tr><th class="first">ID</th><th>Observation and evidence</th><th>Status</th><th>Handling</th></tr></thead>
+<tbody><tr><td class="first"><b>AU-01</b></td><td><b>Cross-site method-count drift</b><div class="small">Sites in this repository state 22, 20, 18, 17 and 13 methods/legal routes for the same question. Each has its own scope note, but a reader landing on the hub cannot tell which count is canonical.</div></td><td><span class="badge b-warn">Open / documented</span></td><td class="small">This dashboard reconciles to the 17-method set in repatriate/data/methods.json, which is the only set with a complete 40-tier cost ladder.</td></tr><tr><td class="first"><b>AU-02</b></td><td><b>Discounting the fee illustration&#x27;s customer segment</b><div class="small">The headline &quot;$30.86–$86.97 per wire&quot; is HSBC Premier/Advance. HSBC&#x27;s own tariff makes telegraphic transfer issuance and cable charges Free for Private Banking individual customers, so the illustration does not apply to that segment.</div></td><td><span class="badge b-ok">Corrected here</span></td><td class="small">Segment is stated on every cost row; the Private Banking case is shown separately as $0.00.</td></tr><tr><td class="first"><b>AU-03</b></td><td><b>Stale IRS FEIE page cited for a current figure</b><div class="small">irs.gov&#x27;s FEIE page still prints 2020–2023 amounts ($120,000 for 2023). Any 2026 amount derived from it would be wrong.</div></td><td><span class="badge b-warn">Flagged</span></td><td class="small">2026 amount taken from Form 2555 instructions ($132,900) and the stale page is cited only as evidence of staleness.</td></tr><tr><td class="first"><b>AU-04</b></td><td><b>Absence of a cap presented as an entitlement</b><div class="small">SAFE&#x27;s guidance for foreign individuals&#x27; documented income states documents, not a dollar ceiling. Several pages summarise this as &quot;no annual cap&quot;, which is an inference from silence, not an affirmative unlimited right.</div></td><td><span class="badge b-warn">Flagged</span></td><td class="small">Rendered as &quot;no numeric cap appears in the cited text; the bank&#x27;s review decides&quot;.</td></tr><tr><td class="first"><b>AU-05</b></td><td><b>&quot;$0&quot; published fees for cash routes</b><div class="small">Method pages show a published bank fee of zero for buying/carrying cash. Spread, travel and risk are not zero and are not published; a reader can misread $0 as free.</div></td><td><span class="badge b-warn">Flagged</span></td><td class="small">Marked &quot;$0.00 †&quot; with the unverified components named in the same row.</td></tr><tr><td class="first"><b>AU-06</b></td><td><b>Mutually inconsistent dashboards</b><div class="small">docs/, site/, portal/, repatriate/, ladder/, briefing/ and audit-*/ each present overlapping claim sets with different corrections applied. Several earlier pages were superseded rather than withdrawn.</div></td><td><span class="badge b-warn">Open / documented</span></td><td class="small">This site links the repository hub and states its own scope; it does not silently re-endorse other pages.</td></tr><tr><td class="first"><b>AU-07</b></td><td><b>The &quot;no conversion tax&quot; headline is true but incomplete</b><div class="small">The statement is supported for the act of conversion, but it reads as an all-clear. The real exposure is PRC income tax already owed, FX spread, US reporting penalties and FX-evasion fines.</div></td><td><span class="badge b-ok">Corrected here</span></td><td class="small">Five-layer decomposition on the Tax page, each layer separately sourced.</td></tr><tr><td class="first"><b>AU-08</b></td><td><b>Unrealistic single-wire assumption at the top of the ladder</b><div class="small">The $400,000 row assumes one wire. Banks commonly split large remittances; each extra wire re-applies the ¥100 floor (or ¥500 cap) and ¥120 cable.</div></td><td><span class="badge b-warn">Flagged</span></td><td class="small">Single-wire assumption disclosed; multi-wire totals are not invented.</td></tr><tr><td class="first"><b>AU-09</b></td><td><b>Bank tariff cited as if it were the cost of the transfer</b><div class="small">An HSBC tariff line is a published charge of one bank for one segment, excluding correspondent, recipient and third-party charges (tariff Important Note 7) and excluding taxes.</div></td><td><span class="badge b-ok">Corrected here</span></td><td class="small">&quot;Published fee&quot; is a named column, never presented as all-in cost.</td></tr><tr><td class="first"><b>AU-10</b></td><td><b>No live link-health check in prior CI</b><div class="small">Earlier verifiers checked that a URL string was present and looked official, not that the document still exists or says what is claimed. A 404 or rewritten page would pass.</div></td><td><span class="badge b-ok">Improved</span></td><td class="small">24 documents fetched and quote-checked by hand on 2026-11-10; this is a point-in-time check, not continuous monitoring.</td></tr><tr><td class="first"><b>AU-11</b></td><td><b>Instrument-number precision on the RMB carry limit</b><div class="small">The CNY 20,000 limit is attributed to PBOC Announcement [2004] No. 18, but the fetched PBC page is an explanatory Q&amp;A that states the 20,000 figure without reproducing the announcement.</div></td><td><span class="badge b-warn">Flagged</span></td><td class="small">Marked &quot;verified · limited&quot; with the limitation on the source row.</td></tr><tr><td class="first"><b>AU-12</b></td><td><b>Different exchange-rate conventions across pages</b><div class="small">Some pages restate CNY fees at 6.9, others at 7.129. Mixing conventions changes USD figures by several percent and makes cross-page comparison unreliable.</div></td><td><span class="badge b-ok">Corrected here</span></td><td class="small">One rate (7.129, IRS 2025 average) declared once and repeated in every table footnote.</td></tr></tbody></table></div>
+
+<h2>Structural observations</h2>
+<div class="box">
+<ul>
+<li><strong>Seven dashboards, one question.</strong> <span class="mono">docs/ · site/ · portal/ · repatriate/ · ladder/ · briefing/ · audit-*/</span> — each with its own verifier and CI job. Coverage is impressive; coherence is not.</li>
+<li><strong>Verifier quality varies.</strong> The strongest existing checks (row counts, citation presence, local links, arithmetic recomputation) prove structure. None of them can prove that a cited page still says what the row claims — the gap this pass targets.</li>
+<li><strong>Repeated corrections without retraction.</strong> Later sessions corrected earlier claims by adding new pages rather than amending the old ones, so a search engine or a direct link can still land on superseded wording.</li>
+<li><strong>Deterministic builds are enforced.</strong> <span class="mono">verify-ladder</span> regenerates output and fails on any diff; this session kept that contract and regenerated the ladder inventory after adding files.</li>
+</ul>
+</div>
+
+<h2>What this dashboard adds</h2>
+<div class="box ok">
+<ol>
+<li>Quote-level verification: 24 documents fetched on 2026-11-10, with the exact sentence shown next to the link.</li>
+<li>A single cost ladder (17 × 40 = 680 cells) recomputed independently, with the fee model written out line by line.</li>
+<li>Explicit separation of published fee, binding constraint, fine exposure and unverified spread — so a "$0" cannot be read as "free".</li>
+<li>Segment-correct HSBC fees (Private Banking free; Premier/Advance 0.1% + cable).</li>
+<li>Blank-by-default policy for every value no source publishes, with the reason on the row.</li>
+</ol>
+</div>
+
+</main>
+<footer><div class="in">
+<p><strong>Scope and limits.</strong> Every source on this site was fetched and quoted on 2026-11-10; the quote shown is the text relied on. Values a provider or regulator does not publish are left blank and flagged — blank means unverified, not zero. No private account facts were used, no bank was contacted, no funds moved and no return filed. The 24 sources here are a re-verification of load-bearing claims, not a legal opinion or a personalised tax computation.</p>
+<p class="small">Session arena/d5d1f860-china2 · <a href="sources.html">source ledger</a> · <a href="flagged.html">flags</a> · <a href="../COORDINATION.md">task board</a> · <a href="../index.html">repository hub</a></p>
+</div></footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
