@@ -620,3 +620,4 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 | S5 | unclaimed | arena/29c5e201-china2 | `COORDINATION.md` append-only, `ladder/audit.html` generated inventory only |
 
 - 2026-11-10 UTC: Claim recorded before substantive research. Policy: no hallucination; every table row links to official source; unverified values blank + flagged; no personal tax bill inferred; no funds moved.
+- 2026-11-10 UTC scope extension: this session is acting as final integration for its standalone guide because no active claims remain in this checkout. Additive request to root-hub owner accepted into this session: add one landing-card link to `guide-29c5e201/` in `ladder/build.py` (generator) and regenerate only outputs required to publish/discover this standalone guide. Do not alter underlying ladder data or other session-owned content.
