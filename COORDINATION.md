@@ -703,6 +703,56 @@ This is a structural audit, not line-by-line legal verification. Account-specifi
 - Main advanced through [PR #44](https://github.com/sassnarep3-star/China2/pull/44) while PR #47 was open. Merged `origin/main` into this branch, resolved append-only board conflict by keeping both sessions' records, and deterministically regenerated `ladder/audit.html` with the updated generator; no concurrent content discarded. Refreshed this session's dated snapshot after integration: **77 HTML pages, 4,681 data rows, 1,078 candidate rows across 25 pages**. This supersedes the earlier point-in-time counts above. Local snapshot parity, ladder (9,345 checks) and `verify-d5d1f860/verify.py` (5,406 checks) passed; structural checks are not factual certification.
 - Publication: [PR #47](https://github.com/sassnarep3-star/China2/pull/47) merged 2026-11-10 09:56:02 UTC at `a67e5445ccaa3004484f17a09a7e9d05002e1d8f`. All eight PR checks passed. [GitHub Pages build/deploy 42794843364](https://github.com/sassnarep3-star/China2/actions/runs/42794843364) completed successfully; Pages API reported `built` at that exact commit and no error. [Live review](https://sassnarep3-star.github.io/China2/audit-92d12752/), [landing](https://sassnarep3-star.github.io/China2/) and [strict-blank cost tables](https://sassnarep3-star.github.io/China2/briefing/costs.html) retrieved successfully after deployment. This publication result is recorded by follow-up, since it did not exist before merging. No representation of full repository line-by-line verification is made.
 
+---
+
+## Session `arena/ba22a0ba-china2` — takeover & integration of stale PR #41 (2026-11-10 UTC)
+
+> Environment note: Arena pins this session to `arena/ba22a0ba-china2`; that fixed branch substitutes for a `session-<id>/<task>` branch (no branch creation/switching). Full board read before claiming, plus every remote-branch claim pushed 09:43–10:00 UTC on 2026-11-10.
+
+**Takeover justified by the 60-minute rule:** PR #41 (`arena/dc9b9512-china2`) last commit 2026-11-10 06:06:43 UTC (>3h50m idle at claim time) and is `CONFLICTING` with `main` (main advanced through PRs #30–#47 since its fork at `00ddace`). Every other active session's claim explicitly declines to touch PR #41 (`ce945c85` T1 "PR #41's branch is not edited"; `f6327e23`, `416f3c1b`, `a53d707e`, `8cdb25b4`, `6869721b`, `9ee32c2c` "not touched"), so no session holds its integration. **Coordination with `arena/facf2fe9-china2` P7:** their claim is stale-PR *triage/comments/recommendation* — a PR comment with their recommendation is welcome and will be incorporated; this session claims only the conflict resolution and merge of #41. PR #39's takeover belongs to `arena/ce945c85-china2` (T1) and is not touched here. Root-hub ownership claims by other sessions are respected: this session touches `ladder/build.py`/`index.html` only insofar as resolving PR #41's own committed changes requires it, and adds no new hub cards of its own beyond what PR #41 already carries.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| B1 | Take over stale PR #41: merge latest `main` into `arena/dc9b9512-china2`, resolve every conflict **preserving main's verified corrections** (PR #34 blank-unverified policy incl. no invented spread bands and the correction notice, PR #36 Oct-2026 HSBC tariff, PRs #37/#38 briefing corrections) while keeping PR #41's genuine unique fixes (M14–M17 table alignment, `#method-filter` truncation, N01 FBAR URL, new sources B07–B10, extra hub cards, README inventory, `verify-briefing-and-audits.yml` workflow) | in progress | `arena/ba22a0ba-china2` | `arena/dc9b9512-china2` branch (takeover), then PR #41 |
+| B2 | Verify PR #41's new load-bearing claims against official sources re-fetched this session (IRS Rev. Proc. 2026-35 FEIE §911 / §6039F figures, Fed H.10 2026-11-09 China rate, IRS FBAR canonical URL, HSBC tariff items, Form 3520 thresholds); anything unconfirmable stays blank/flagged | in progress | `arena/ba22a0ba-china2` | takeover branch content; `COORDINATION.md` (append-only) |
+| B3 | Run every existing verifier suite on the combined tree; deterministic `ladder/audit.html` regeneration (`PYTHONDONTWRITEBYTECODE=1`); local link/anchor crawl; push and merge PR #41 without waiting | in progress | `arena/ba22a0ba-china2` | takeover branch; `ladder/audit.html` (generated only) |
+| B4 | Own PR → `main`, merge without waiting, confirm GitHub Pages deploy, record PR/merge/Pages results here | unclaimed → pending B1–B3 | `arena/ba22a0ba-china2` | `COORDINATION.md` (append-only) |
+
+- 2026-11-10 UTC: Claim recorded and pushed before any file edits. Policy: unknown private facts are never inferred; every published row keeps an official source link; unverifiable values stay blank and flagged; structural checks are labelled structural; no personal tax bill is asserted; no other active session's directory is edited outside the taken-over PR branch; no work is discarded.
+---
+
+## Session `arena/dc9b9512-china2` — cross-scope integration fixes, stale-PR resolution & 2026-11-10 verification refresh
+
+> Environment note: Arena pins this session to `arena/dc9b9512-china2`; no other branch is created or switched. All prior sessions' merged deliverables and coordination records are preserved intact.
+>
+> **Stale-claim takeovers (>60 min inactive, per protocol above):**
+> - `arena/d6e08526-china2` claimed D1–D6 (stale-PR resolution + whole-repo final integration) at `2026-11-10T01:27:39Z` (>4.5 hours idle with no PR opened; branch predates #26–#29). Taken over here for final integration.
+> - `arena/0f0f59fe-china2` C1–C3 remained labeled `in progress` after PR #21 merged on `2026-11-09` (>24h idle); `arena/dc2c65bd-china2` and `arena/ad300459-china2` logged explicit cross-scope fix requests for the shared root hub (`index.html`), `ladder/`, `README.md`, and stale PRs #2/#12/#17, which are resolved here.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| F1 | Fix root `index.html` hub via `ladder/build.py:write_root_hub()` (`.site` → `.card` CSS match; add links to `briefing/`, `audit-ad300459/`, `site/`, `acceptance-373b54a3/`; preserve `.gov`/`.gov.cn`/`hsbc.com.cn`-only links and `"USD 0–7"` legacy-warning invariant) | done | `arena/dc9b9512-china2` | `ladder/build.py`, `index.html` |
+| F2 | Update `ladder/` to 31 Oct 2026 HSBC tariff (PB/Premier Global Transfer Free, Advance USD 20; USD 7 = International Education Payment; banknote withdrawal Free), note `Huifa [2014] No. 2` §VI lump-sum emigration/inheritance simplification, update Form 3520 (`F07`) & `S05`/`S06`/`F09`, skip git-ignored build caches in `repo_inventory()`, preserve `600`-row / `15`-costed / `20`-route / `160`-blank invariants | done | `arena/dc9b9512-china2` | `ladder/model.py`, `ladder/build.py`, `ladder/**` |
+| F3 | Fix `briefing/build.py` defects (`M14`–`M17` 5-`<td>` vs 6-`<th>` alignment, `#method-filter` `[:70]` mid-word truncation, `N01` live IRS FBAR canonical URL vs 404 `/individuals/...` path), add live Nov 2026 Fed H.10 `6.6760` + `Rev. Proc. 2026-35` 2027 FEIE `$137,300` / §6039F `$21,240` + Form 3520 sources, update `AU-*` & `N04`–`N07` status | done | `arena/dc9b9512-china2` | `briefing/**` |
+| F4 | Correct cross-scope wording overstatements & consolidation links without breaking existing CI invariants: `EXECUTIVE-SUMMARY.md` (`tools/verify.mjs` 7 count strings preserved), `reports/EXECUTIVE_SUMMARY_85f37d08.md` + `reports/CNY_TO_USD_RESEARCH_LEDGER.json` + `portal/generate_portal.py` (`verify_85f37d08.py` preserved), `README.md` full hub inventory | done | `arena/dc9b9512-china2` | `EXECUTIVE-SUMMARY.md`, `reports/EXECUTIVE_SUMMARY_85f37d08.md`, `reports/CNY_TO_USD_RESEARCH_LEDGER.json`, `portal/**`, `README.md` |
+| F5 | Cleanly close stale conflicting open PRs (#2, #12, #17) as superseded with factual audit comments pointing to `main` deliverables | done | `arena/dc9b9512-china2` | GitHub PRs #2, #12, #17 (closed) |
+| F6 | Run all 10 verification suites + add CI workflow `verify-briefing-and-audits.yml`, regenerate `ladder/` last (`PYTHONDONTWRITEBYTECODE=1`), open PR to `main`, merge, verify CI + Pages | ready for PR | `arena/dc9b9512-china2` | `.github/workflows/verify-briefing-and-audits.yml`, `COORDINATION.md` |
+
+- 2026-11-10 UTC: Claim recorded on `arena/dc9b9512-china2` before substantive file edits. All live primary sources (`safe.gov.cn`, `pbc.gov.cn`, `fgk.chinatax.gov.cn`, `hsbc.com.cn` Oct 31, 2026 tariff, `wise.com`, `federalreserve.gov` H.10 `2026-11-09` release, `irs.gov` FBAR/8938/FTC/FEIE/3520/`rp-25-32.pdf`/`rp-26-35.pdf`/`china.pdf`, `ecfr.gov` 31 CFR 1010.821, `govinfo.gov` 26 USC 988, `cbp.gov`) re-fetched directly on 2026-11-10 UTC before editing.
+- 2026-11-10 UTC — Integration verification summary (all 10 suites pass, 0 failures; `PYTHONDONTWRITEBYTECODE=1`):
+  - `briefing/build.py` + `briefing/verify.py` + `node --check briefing/assets/app.js`: **PASS** (680 cost rows, 17 methods, 41 sources `S01–S31` + `B01–B10`, 24 flags `F01–F15` + `N01–N09`).
+  - `ladder/model.py` + `ladder/build.py` + `ladder/verify.py` + `node --check ladder/assets/app.js`: **9,327 checks, 0 failures** (`600` rows, `20` routes, `15` costed, `20` sources, `9` assumptions; root `index.html` `.card` grid + 14 hub cards + Oct 2026 tariff updates).
+  - `scripts/build.py` + `scripts/validate.py` + `node --check docs/assets/app.js` + `node scripts/test_ui.js`: **PASS** (9 pages, 67 findings, 24 sources).
+  - `node tools/build.mjs` + `node tools/verify.mjs`: **477 checks, 0 failures** (18 routes, 17 sources, 16 flags, `EXECUTIVE-SUMMARY.md` count parity intact).
+  - `portal/generate_portal.py` + `verify_85f37d08.py` + `node --check portal/app.js`: **PASS** (7 pages, 109 table rows, 100% `.gov`/`.gov.cn` external links).
+  - `repatriate/build.py` + `repatriate/verify.py` + `node --check repatriate/assets/app.js`: **11,197 checks, 0 failures** (680 rows, 17 methods, 31 sources).
+  - `audit-86f0/verify.py`: **PASS** (4 pages, 22 × 40 blank rows).
+  - `audit-0f0f59fe/verify.py`: **420 checks, 0 failures** (including root `index.html` link/host/C04 checks).
+  - `audit-ad300459/verify.py`: **624 checks, 0 failures** (27 findings, 17 sources, 10 flags, deterministic rebuild + 20/20 ladder/repatriate structural checks).
+  - `acceptance-373b54a3/verify.py`: **43 checks, 0 failures**.
+  - Local HTTP smoke test across all 14 published directories: **200 OK** on every route; zero `__pycache__` artifacts in tree.
+  - Closed stale conflicting open PRs #2, #12, #17 as superseded with factual audit notes pointing to `main`.
+
 
 ------
 

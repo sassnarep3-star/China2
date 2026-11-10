@@ -54,15 +54,15 @@
   {
     "id": "S05",
     "jur": "PRC",
-    "authority": "PBOC",
-    "title": "Provisional Measures for the Administration of Sale and Payment of Foreign Exchange for Individuals' Outward Asset Transfers (PBOC Announcement [2004] No. 16)",
-    "url": "http://m.safe.gov.cn/safe/2004/1116/4133.html",
-    "lang": "ZH",
-    "retrieval": "search",
+    "authority": "PBOC / SAFE",
+    "title": "Provisional Rules for Personal Asset Outbound Transfers (PBOC [2004] No. 16) as simplified by SAFE Huifa [2014] No. 2",
+    "url": "https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html",
+    "lang": "EN",
+    "retrieval": "direct",
     "status": "verified",
-    "locator": "Arts. 2, 6, 8, 9, 10, 11",
-    "quote": "Art. 6: an emigration transfer must be applied for once for the whole amount, then remitted in stages — no more than half first, no more than half of the remainder after one year, the balance after two years; amounts up to RMB 200,000 may be remitted in one go after approval. Art. 11: the bank must remit directly to the applicant's own overseas account and may not pay out cash domestically.",
-    "used_for": "Emigration and inheritance transfer routes and their staging limits."
+    "locator": "PBOC [2004] Arts. 2, 6, 8–11; simplified by SAFE Huifa [2014] No. 2 §VI (safe.gov.cn/en/2014/0801/741.html)",
+    "quote": "PBOC [2004] Arts. 2–11 cover pre-emigration and inherited assets with local SAFE approval and direct bank remittance to the applicant's overseas account. SAFE Huifa [2014] No. 2 §VI cancelled the >RMB 500,000 SAFE head-office filing and cancelled the multi-installment requirement so banks may remit in a lump sum or in batches within the approved limit.",
+    "used_for": "Emigration and inheritance transfer routes, lump-sum remittance and local SAFE approval."
   },
   {
     "id": "S06",
@@ -241,11 +241,11 @@
     "title": "Catalogue of Currently Effective Major Foreign Exchange Regulations (as at 30 June 2026)",
     "url": "https://www.safe.gov.cn/safe/file/file/20260805/d2d0d6ce1441436eadc8bc600eb79c43.pdf",
     "lang": "ZH",
-    "retrieval": "search",
+    "retrieval": "direct",
     "status": "verified",
-    "locator": "Items 1-3, 18-19",
-    "quote": "Lists State Council Decree No. 532, PBOC Decree [2006] No. 3 and Hui Fa [2007] No. 1 as currently effective, and Hui Fa [2003] No. 102 on carrying cash across the border.",
-    "used_for": "Confirms the core instruments are still in force as at mid-2026."
+    "locator": "Items 1-3, 18-19, 30, 38, 97",
+    "quote": "Lists State Council Decree No. 532, PBOC Decree [2006] No. 3, Hui Fa [2007] No. 1, Hui Fa [2003] No. 102, Hui Fa [2020] No. 14, Hui Fa [2014] No. 2, and PBOC Announcement [2004] No. 16 as currently effective.",
+    "used_for": "Confirms the core FX instruments and capital-account simplifications remain in force as at mid-2026."
   },
   {
     "id": "S20",

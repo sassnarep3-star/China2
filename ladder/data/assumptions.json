@@ -4,7 +4,7 @@
     "topic": "CNY/USD used to express CNY fee caps",
     "value": "7.10 CNY per USD (band 6.80-7.40)",
     "status": "model assumption",
-    "why": "Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 / 40 caps are affected; at 400,000 USD the whole cap swing is under 15 USD. No rate forecast is used anywhere."
+    "why": "Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 caps are affected; at 400,000 USD the whole cap swing is under 15 USD (IRS 2025 avg = 7.129; Fed H.10 noon buying rate 2026-11-06 = 6.6760). No rate forecast is used anywhere."
   },
   {
     "id": "A2",
