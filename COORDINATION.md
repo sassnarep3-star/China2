@@ -489,3 +489,13 @@ Arena requires this fixed branch; no alternate branch will be created. Prior boa
 - GitHub Pages run https://github.com/sassnarep3-star/China2/actions/runs/42765311108 — SUCCESS (build, deploy and report). Non-failing GitHub-managed Node 20/Ubuntu migration notices only.
 - Public landing https://sassnarep3-star.github.io/China2/ re-fetched after deploy: new briefing, 680-row costs and audit cards plus E01/E02 warnings confirmed present. Live briefing https://sassnarep3-star.github.io/China2/briefing/ ; costs https://sassnarep3-star.github.io/China2/briefing/costs.html ; review https://sassnarep3-star.github.io/China2/#integration-review .
 - This publication record is carried in a documentation-only follow-up PR because the observed merge/deploy result did not exist before the first merge. E1–E3 done; E01/E02 remain needs review, not blocking. No funds moved, bank contacted, or individual tax conclusion asserted.
+## Session `arena/456e7542-china2` — independent critical-claims review
+
+Arena requires the existing fixed session branch, which substitutes for a session-named branch. Historical claims and publication records above are preserved. The earlier `arena/d6e08526-china2` work is noted in another session's log but no live PR or checked-in claim from it is visible; its scopes and the three old open PRs are not touched. This session claims only the following disjoint scope:
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Independently examine published user-critical recommendations and cost presentation against official sources; document gaps and findings | in progress | `arena/456e7542-china2` | `audit-456e7542/**` |
+| Validate own review, integration checks, PR and deployment | in progress | `arena/456e7542-china2` | append-only `COORDINATION.md`; `ladder/audit.html` only if deterministic inventory regeneration is required |
+
+Unknown personal facts, quotes, and taxes will not be inferred. Any source limitation or inconsistency will be flagged. Shared landing and previous sessions' substantive outputs are outside this claim.
