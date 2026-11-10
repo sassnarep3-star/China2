@@ -836,6 +836,10 @@ def write_root_hub():
                 f'{esc(label)}</a>')
 
     cards = [
+        ("briefing/index.html", "Executive briefing · corrected", "17 methods · 680 cost rows · source-only unknowns",
+         "Start here: fee components, route steps and review flags. Unsupported spread assumptions removed; unknown all-in costs stay blank."),
+        ("audit-ad300459/index.html", "Fresh official-source audit", "Claim review · ladder integrity · unresolved facts",
+         "Independent source review and structural verification; not a personal eligibility or cost guarantee."),
         ("ladder/index.html", "Cost ladder · scenario model", "15 routes · 40 tiers · $10k–$400k",
          "Shows modelled bands using explicit assumptions. Not an account quote or an officially verified all-in cost."),
         ("audit-86f0/costs.html", "Source-only blank matrix", "22 methods · 40 tiers",
@@ -858,7 +862,7 @@ def write_root_hub():
          "Another independent route/cost review. Its data and caveats are documented on that site."),
     ]
     site_cards = "".join(
-        f'<a class="site" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
+        f'<a class="card" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
         f'<em>{esc(d)}</em></a>' for u, t, sub, d in cards)
     page = f"""<!doctype html>
 <html lang="en">
