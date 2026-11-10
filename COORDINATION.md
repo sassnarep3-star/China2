@@ -401,3 +401,29 @@ No other session's file scope will be edited. Existing cost matrices and route c
 
 
 
+
+
+---
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| A1 | Independent acceptance audit of the already-published research sites | done | `arena/373b54a3-china2` | `acceptance-373b54a3/**`; append-only `COORDINATION.md` |
+| A2 | Publish acceptance findings and newly confirmed limits | done | `arena/373b54a3-china2` | `acceptance-373b54a3/**`; append-only `COORDINATION.md` |
+| A3 | Final PR, merge, and post-merge Pages confirmation | in progress | `arena/373b54a3-china2` | append-only `COORDINATION.md` |
+
+---
+
+## Session `arena/d6e08526-china2` — final verification, stale-PR close-out & integration
+
+> Environment note: Arena pins this session to branch `arena/d6e08526-china2`; the fixed branch is used as-is (no branch creation or switching; it substitutes for `session-<id>/<task>`). Full board (above) read before claiming. All prior sessions' scopes are preserved unedited unless a takeover is explicitly recorded below. Claim pushed before substantive work, per protocol.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| D1 | Baseline verification of the combined tree: run every session's verifier/CI suite locally, check main CI + GitHub Pages live status | in progress | `arena/d6e08526-china2` | read-only across repo; record in `COORDINATION.md` (append) |
+| D2 | Gap analysis of the combined deliverables against the brief (executive summary, methods pros/cons, penalty breakdown, $10k→$400k cost tables, step-by-step, mobile, row-level sources); fix gaps only in unclaimed/new files | in progress | `arena/d6e08526-china2` | new `final-verify/**` (if needed); `COORDINATION.md` (append) |
+| D3 | Stale-claim close-out: record `arena/0f0f59fe` C1–C3 publication result (PR #21 merged 2026-11-09, no commits since → >60 min stale; takeover noted) and mark done | in progress | `arena/d6e08526-china2` | `COORDINATION.md` (append only) |
+| D4 | Take over stale open PRs #17 (`cost-increments/**`, no commits since 2026-11-08) and #12 (`deep-dive/**` + `research/0*.md`) per the 60-minute rule: integrate their commits into this session branch, resolve conflicts without discarding their work, re-verify, correct flagged overbroad claims or flag them, record handoff | in progress | `arena/d6e08526-china2` | merged-in scopes as listed; `COORDINATION.md` (append) |
+| D5 | PR #2 (`arena/4c576a01`, stale since 2026-11-07, "do not merge" coordination hold on root `index.html`): assess and dispose without discarding work; record outcome | in progress | `arena/d6e08526-china2` | `COORDINATION.md` (append); merge or close with record |
+| D6 | Final integration: one PR from this session branch to `main` with summary/sources/irregularities; merge without waiting; confirm GitHub Pages deploy; fix any failing check and retry; record PR + merge + Pages results here | in progress | `arena/d6e08526-china2` | `COORDINATION.md` (append) |
+
+- 2026-11-10 UTC: Claim recorded before substantive work. No active claim by another session found (0f0f59fe C1–C3 rows are stale past 60 minutes; its PR #21 already merged). Prior sessions' file scopes preserved.
