@@ -836,10 +836,13 @@ def write_root_hub():
                 f'{esc(label)}</a>')
 
     cards = [
-        ("briefing/index.html", "Executive briefing · corrected", "17 methods · 680 cost rows · source-only unknowns",
-         "Start here: fee components, route steps and review flags. Unsupported spread assumptions removed; unknown all-in costs stay blank."),
-        ("audit-ad300459/index.html", "Fresh official-source audit", "Claim review · ladder integrity · unresolved facts",
-         "Independent source review and structural verification; not a personal eligibility or cost guarantee."),
+        ("briefing/index.html", "Executive briefing · start here", "Summary · 17 methods · 680 cost rows",
+         "Consolidated comparison with steps and caveats. Published fees are not all-in quotes; read the review notes below."),
+        ("audit-ad300459/index.html", "Latest evidence audit", "27 findings · official-source review · ladder checks",
+         "Separates verified, limited and unverified claims. Arithmetic checks do not establish personal eligibility."),
+        ("briefing/costs.html", "Costs · every $10,000 to $400,000", "17 methods · 40 tiers each",
+         "Corrected source-only briefing: published fee components; unknown spreads and all-in costs left blank."),
+
         ("ladder/index.html", "Cost ladder · scenario model", "15 routes · 40 tiers · $10k–$400k",
          "Shows modelled bands using explicit assumptions. Not an account quote or an officially verified all-in cost."),
         ("audit-86f0/costs.html", "Source-only blank matrix", "22 methods · 40 tiers",
@@ -900,7 +903,7 @@ footer a{{color:#a4e5cf}}
 </style>
 </head>
 <body>
-<header><strong>China money</strong><p>Official-source research · summary re-reviewed 9 November 2026 · not tax or legal advice</p></header>
+<header><strong>China money</strong><p>Official-source research · summary re-reviewed 9 November 2026 · navigation integrated 10 November 2026 · not tax or legal advice</p></header>
 <main>
 <h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
 <p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>
@@ -911,6 +914,12 @@ footer a{{color:#a4e5cf}}
   <div class="status-card"><p class="label">Route eligibility</p><p class="value">— / undetermined</p><p class="small">Residence category, account type and transaction origin matter.</p></div>
   <div class="status-card"><p class="label">Current all-in cost</p><p class="value">— / unverified</p><p class="small">Request current, executable rate and itemized fees.</p></div>
 </div>
+<section class="notice" id="integration-review">
+<h2>Flagged for Review · briefing limitations</h2>
+<p><strong>E01 — blanket no-tax wording is not a personal tax conclusion.</strong> The briefing's “no tax on converting” language must not be read as a guarantee of no taxable income or currency gain. The IRS requires foreign-currency income and relevant tax items to be translated into the taxpayer's functional currency. Tax basis, source and transaction history are unknown. {ext("https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates", "IRS currency rules (re-read 10 November 2026)")} · <a href="briefing/EXECUTIVE_SUMMARY.md">Affected executive summary</a></p>
+<p><strong>E02 — historic rate, not today's executable quote.</strong> The briefing's USD fee illustrations use CNY 7.129/USD (2025 annual average), not a current customer conversion rate. Do not interpret the $86.97 wire-fee illustration as the cost of converting or delivering $400,000. Spread, intermediary fees, receiving fees and personal taxes remain unverified. {ext("https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates", "IRS rate-use guidance")} · <a href="briefing/costs.html">Affected cost tables and assumptions</a></p>
+<p>All other unresolved findings: <a href="briefing/flagged.html">consolidated Flagged for Review</a> · <a href="audit-ad300459/flagged.html">latest source-audit flags</a>. These cautions do not establish that a bank will accept this particular balance.</p>
+</section>
 <h2>Choose a category</h2>
 <div class="grid">{site_cards}</div>
 <section class="summary">
