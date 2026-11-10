@@ -1,0 +1,87 @@
+{
+  "session": "arena/a64bd476-china2",
+  "retrieved": "2026-11-10",
+  "note": "Fresh spot-verification pass. Status meanings: verified = confirmed in official text retrieved this session; verified-limited = confirmed with a stated limit; unverified-blank = value left blank because it cannot be confirmed from an official source retrieved this session. No personal facts inferred; no personal tax bill computed.",
+  "findings": [
+    {
+      "id": "A01",
+      "claim": "Overseas individuals' lawful current-account CNY income in China is converted at a bank with valid ID and source/transaction evidence including tax vouchers.",
+      "status": "verified",
+      "source_id": "A-S01",
+      "locator": "SAFE Tianjin 2026-07-13 Q&A, citing Huifa [2020] No. 14 Art. 59",
+      "detail": "The bank, not the taxpayer alone, applies the FX category. Documentation is the gate; no separate conversion tax is stated in this guidance."
+    },
+    {
+      "id": "A02",
+      "claim": "U.S. tax items received/paid in foreign currency must be translated into functional currency (generally USD) at the prevailing rate.",
+      "status": "verified",
+      "source_id": "A-S02",
+      "locator": "IRS 'Foreign currency and currency exchange rates', functional-currency section",
+      "detail": "Supports the E01 limitation: 'no tax on converting' must not be read as 'no taxable income or currency gain'. Basis and history remain unknown."
+    },
+    {
+      "id": "A03",
+      "claim": "IRS yearly average for China Yuan in 2025 is 7.129 CNY/USD; the IRS has no official exchange rate and generally accepts a consistently used posted/spot rate.",
+      "status": "verified",
+      "source_id": "A-S03",
+      "locator": "IRS yearly-average table, China row (2025 column); 'IRS has no official exchange rate' note",
+      "detail": "7.129 is a reference conversion only. It is not a bank's executable CNY/USD rate and must not be presented as today's conversion quote (flag G03)."
+    },
+    {
+      "id": "A04",
+      "claim": "FBAR civil penalty maximums for penalties assessed on/after 2025-01-17: non-willful $16,536; willful $165,353.",
+      "status": "verified",
+      "source_id": "A-S04",
+      "locator": "31 CFR 1010.821 Table 1, rows for 31 U.S.C. 5321(a)(5)(B)(i) and (a)(5)(C)(i)(I)",
+      "detail": "Maximums only. Whether any penalty applies depends on filing history, willfulness and account facts, which are unknown. eCFR is authoritative but unofficial."
+    },
+    {
+      "id": "A05",
+      "claim": "HSBC China outward telegraphic transfer (Premier/Advance): 0.1% of amount, min CNY 100, max CNY 500, plus CNY 120 per cable; Private Banking individuals free.",
+      "status": "verified",
+      "source_id": "A-S05",
+      "locator": "Tariff items 2.2.4.1 (issuance) and 2.2.4.2 (cable), effective 31 Oct 2026",
+      "detail": "Recomputed this session at 7.129: $10,000 -> CNY 220 fee ($30.86); $400,000 -> CNY 620 fee ($86.97). Fee caps at CNY 500 + CNY 120 cable once 0.1% exceeds CNY 500 (about $70,150). Pay Exact adds CNY 200 (item 2.2.4.1 remark)."
+    },
+    {
+      "id": "A06",
+      "claim": "HSBC Global Transfer to own overseas HSBC account: free for Private Banking and Premier; Advance CNY 145 indicative (USD 20). The USD 7 item is International Education Payment, not a general remittance fee.",
+      "status": "verified",
+      "source_id": "A-S05",
+      "locator": "Tariff items 2.2.6.1 (Global Transfer), 2.2.6.2 (Global Transfer to Family), 2.2.7 (Education Payment)",
+      "detail": "Confirms prior-session correction C04. Any page still showing 'Global Transfer USD 0-7' as a general fee is outdated (see ladder flagged page)."
+    },
+    {
+      "id": "A07",
+      "claim": "HSBC tariff charges exclude charges of other institutions (correspondent/intermediary banks, other HSBC Group members, taxes/levies). The tariff does not publish an FX spread.",
+      "status": "verified-limited",
+      "source_id": "A-S05",
+      "locator": "Tariff Important Note 7; no spread item in items 2.2.4-2.2.7",
+      "detail": "Published wire fees are therefore not all-in delivery costs. Modelled spread bands (e.g. 0.30-1.50%) remain unverified assumptions (flag G03)."
+    },
+    {
+      "id": "A08",
+      "claim": "Personal foreign-currency gain over $200 is a capital gain (IRS Pub. 525).",
+      "status": "unverified-blank",
+      "source_id": "A-S06",
+      "locator": "Pub. 525 (2025) — table of contents retrieved this session; $200 text not re-read",
+      "detail": "Figure carried from prior sessions (briefing layer 4). Left unverified in this fresh pass; see flag G01. Do not cite this session as fresh confirmation of the $200 figure."
+    },
+    {
+      "id": "A09",
+      "claim": "Best lawful route and exact tax due for this user's China balance.",
+      "status": "unverified-blank",
+      "source_id": "",
+      "locator": "",
+      "detail": "Source of funds, residency, account type, tax history and prior filings are unknown. Value intentionally blank. See Flagged for Review."
+    },
+    {
+      "id": "A10",
+      "claim": "Current executable all-in CNY-to-USD cost (rate + spread + all fees) for any amount $10,000-$400,000.",
+      "status": "unverified-blank",
+      "source_id": "",
+      "locator": "",
+      "detail": "No bank quote was obtained and no funds moved. Published HSBC fees above are tariff items only. All-in cost intentionally blank; see Flagged for Review."
+    }
+  ]
+}

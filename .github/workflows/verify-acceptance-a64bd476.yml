@@ -1,0 +1,34 @@
+name: verify-acceptance-a64bd476
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'acceptance-a64bd476/**'
+      - '.github/workflows/verify-acceptance-a64bd476.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'acceptance-a64bd476/**'
+      - '.github/workflows/verify-acceptance-a64bd476.yml'
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Independent acceptance verification (schema, repo crawl, fee arithmetic, row counts)
+        run: PYTHONDONTWRITEBYTECODE=1 python acceptance-a64bd476/verify.py
+      - name: Regenerate acceptance pages (deterministic output required)
+        run: PYTHONDONTWRITEBYTECODE=1 python acceptance-a64bd476/build.py
+      - name: Check generated output is committed
+        run: git diff --exit-code -- acceptance-a64bd476
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check browser script syntax
+        run: node --check acceptance-a64bd476/app.js
