@@ -1,0 +1,379 @@
+{
+ "flags": [
+  {
+   "id": "F01",
+   "item": "Charges taken by intermediary and receiving banks",
+   "why": "No fee schedule for them was read; HSBC China's tariff states its charges exclude other institutions' charges. They are blank in every route and not in any total.",
+   "resolve": "Ask the receiving U.S. bank for its incoming-wire fee and the sending bank which correspondent it uses.",
+   "sources": [
+    "S20"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F02",
+   "item": "HSBC China's exchange rate and margin",
+   "why": "The address tried for HSBC China's rate board returned 'Page not found', so no HSBC rate was read. HSBC's margin is blank; where an HSBC charge in RMB is shown in USD, Bank of China's published selling rate is used for the conversion.",
+   "resolve": "Read HSBC China's board rate for USD on the day, or ask for a written quote.",
+   "sources": [
+    "S53",
+    "S20"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F03",
+   "item": "Bank of China rate is a dated snapshot",
+   "why": "The rate board is a live page (published 2026/11/10 17:39:58). The snapshot cannot be re-read at the same address later and rates move daily, so every margin and RMB amount is a snapshot, not a quote.",
+   "resolve": "Re-read the board on the day you convert and re-run the arithmetic.",
+   "sources": [
+    "S16"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F04",
+   "item": "Bank of China wire fee table is dated",
+   "why": "The table is headed '收费标准2014年11月1日起' and says local differences, agreements and promotions override it.",
+   "resolve": "Confirm the wire and cable fee at the branch or in the app before sending.",
+   "sources": [
+    "S19"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F05",
+   "item": "Wise's fee and exchange rate for CNY to USD",
+   "why": "Wise publishes the limits but shows the fee and rate only when a transfer is set up. Both are blank.",
+   "resolve": "Set up a transfer in Wise and record the quote before paying.",
+   "sources": [
+    "S21"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F06",
+   "item": "Personal cross-border RMB remittance (route A6)",
+   "why": "Only a government-portal republication of a news report about PBOC notice Yin Fa [2018] No. 3 was read; the notice text was not, and the PBOC Beijing page found by search returned 404. Eligibility, documents, limits and price are blank.",
+   "resolve": "Read the PBOC notice and obtain the bank's written terms.",
+   "sources": [
+    "S14",
+    "S54"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F07",
+   "item": "Are you a 'domestic' or 'non-domestic' individual for the USD 50,000 facility?",
+   "why": "The Regulations define a foreigner who has lived in China continuously for one year as a domestic individual, while SAFE's 2024 Q&A says the facility applies to non-domestic individuals who hold a Foreign Permanent Resident ID. The texts point in different directions for a long-resident foreigner; residence history is unknown here.",
+   "resolve": "Ask the bank how its system classifies you, in writing.",
+   "sources": [
+    "S06",
+    "S02",
+    "S04"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F08",
+   "item": "Price of overseas ATM withdrawals",
+   "why": "The card scheme's exchange rate and the issuer's and ATM owner's fees were not read; the price is blank. Years needed are counted with Bank of China's selling rate as the RMB equivalent.",
+   "resolve": "Get the card issuer's overseas withdrawal fee schedule and rate rule.",
+   "sources": [
+    "S07"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F09",
+   "item": "RMB 20,000 cash limit",
+   "why": "Taken from the PBC's 2004 official Q&A explaining the adjustment, not from the announcement itself; current validity was not re-confirmed.",
+   "resolve": "Read PBC Announcement [2004] No. 18 or current customs guidance.",
+   "sources": [
+    "S09"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F10",
+   "item": "USD 5,000 / USD 10,000 cash rule",
+   "why": "From a 2003 SAFE and Customs notice; the attached Measures were not opened and current validity was not re-confirmed.",
+   "resolve": "Check SAFE's current list of effective regulations or ask the bank that issues the carrying permit.",
+   "sources": [
+    "S08"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F11",
+   "item": "Property-sale route handling step",
+   "why": "The source is a 2011 SAFE Q&A requiring review by the local SAFE office; whether that review has since moved to banks was not checked.",
+   "resolve": "Ask the local SAFE office or the bank for the current handling guide.",
+   "sources": [
+    "S12"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F12",
+   "item": "Inheritance and emigrant-asset route details",
+   "why": "Based on the 2004 rules as amended by the 2014 circular; the current SAFE handling guide was not read and no government fee is stated in the texts read (fee blank).",
+   "resolve": "Read the current SAFE service guide for personal property transfers.",
+   "sources": [
+    "S10",
+    "S11"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F13",
+   "item": "PRC tax on the income itself",
+   "why": "Only the statutory rates are shown (3% to 45%; 20%). Whether and how much PRC tax was due or paid on this money is personal and not computed; treatment of bank-deposit interest was not verified.",
+   "resolve": "Obtain your PRC tax payment records for the years concerned.",
+   "sources": [
+    "S15"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F14",
+   "item": "When the yuan was acquired",
+   "why": "Unknown, so the exchange gain is shown for every year from 2001 to 2025. The yearly average stands in for the actual rate on the day the money was received; 2026 has no annual average yet and is blank.",
+   "resolve": "Use the posted rate for the actual dates the RMB was received.",
+   "sources": [
+    "S22",
+    "S23"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F15",
+   "item": "Two official 2025 averages for the yuan differ",
+   "why": "IRS table: 7.129 yuan per dollar for 2025. Federal Reserve G.5A: 7.1875. They differ by 0.8%; for 2021 to 2024 the two agree within 0.1%. This site uses the Federal Reserve series for all years.",
+   "resolve": "Pick one posted source and use it consistently, as the IRS page allows.",
+   "sources": [
+    "S22",
+    "S23"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F16",
+   "item": "Is the exchange gain capital or ordinary?",
+   "why": "Publication 525 says a personal-transaction gain above $200 is reported as a capital gain. Section 988(e)(3) says a transaction is not 'personal' to the extent its expenses would be deductible under section 162 or 212, in which case section 988 treats the gain as ordinary. Which applies to a savings deposit depends on facts not known here; both rate sets are shown.",
+   "resolve": "A U.S. tax adviser must classify the deposit.",
+   "sources": [
+    "S30",
+    "S31"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F17",
+   "item": "Exchange losses",
+   "why": "Whether a loss on converting the yuan is deductible was not confirmed (IRS Topic 409: losses on personal-use property are not deductible; section 988 makes non-personal losses ordinary). Loss cells show no tax saving.",
+   "resolve": "A U.S. tax adviser must classify the deposit.",
+   "sources": [
+    "S32",
+    "S30"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F18",
+   "item": "Net investment income tax",
+   "why": "A further 3.8% can apply to net gains when income is above the thresholds; whether it applies here was not determined, so it is not in the scenario columns.",
+   "resolve": "Check Form 8960 with your income for the year.",
+   "sources": [
+    "S34"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F19",
+   "item": "FBAR penalty figures and inflation adjustment",
+   "why": "The eCFR table, current as of 6 Nov 2026, still shows the amounts for penalties 'assessed on or after January 17, 2025'; no later adjustment appears there.",
+   "resolve": "Re-check the table when a penalty is actually assessed.",
+   "sources": [
+    "S39"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F20",
+   "item": "Willful FBAR figure is a ceiling",
+   "why": "The statute sets a maximum per violation; the actual amount depends on facts and on IRS examiner guidelines that were not read. The table shows the ceiling, not a prediction.",
+   "resolve": "Legal advice before any contact with the IRS if conduct may be seen as willful.",
+   "sources": [
+    "S40"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F21",
+   "item": "Form 8938 threshold that applies to you",
+   "why": "Depends on filing status and on whether you 'live abroad' (tax home abroad and 330 days); both are unknown. All four thresholds are shown.",
+   "resolve": "Apply your own filing status and residence.",
+   "sources": [
+    "S42"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F22",
+   "item": "Eligibility for the streamlined procedures",
+   "why": "Requires non-willful conduct, no IRS examination under way and, for the foreign version, 330 full days outside the U.S. in at least one of the last three years. These personal facts are unknown; the 0% and 5% terms are shown as published.",
+   "resolve": "Assess with a U.S. tax professional before filing.",
+   "sources": [
+    "S44",
+    "S45",
+    "S46"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F23",
+   "item": "IRS 'Delinquent FBAR submission procedures' address is dead",
+   "why": "The address returned 'Page Not Found' on 10 Nov 2026. The current instruction on the FBAR page is to file late FBARs as soon as possible with an explanation.",
+   "resolve": "Use the FBAR page and FinCEN's late-filing instructions.",
+   "sources": [
+    "S52",
+    "S38"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F24",
+   "item": "IRS foreign earned income exclusion landing page is stale",
+   "why": "It lists amounts only through 2023 ($120,000). The 'Figuring' page gives $130,000 for 2025 and $132,900 for 2026.",
+   "resolve": "Use the 'Figuring' page figure for the tax year concerned.",
+   "sources": [
+    "S51",
+    "S37"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F25",
+   "item": "U.S. state income tax",
+   "why": "No state is identified; state tax on income or exchange gains is not covered.",
+   "resolve": "Check your state of residence.",
+   "sources": [
+    "S35"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F26",
+   "item": "U.S.-China income tax treaty",
+   "why": "Only the IRS index page was read; the treaty text was not read this session and no treaty effect is modelled.",
+   "resolve": "Read the treaty and technical explanation for your income type.",
+   "sources": [
+    "S55"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F27",
+   "item": "Bank limits per wire or per day",
+   "why": "Per-transaction and per-day limits in bank channels were not published in the sources read, so more than one wire may be required for large amounts.",
+   "resolve": "Ask the branch for the counter and online limits before planning one wire.",
+   "sources": [
+    "S19"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F28",
+   "item": "Routes not evaluated",
+   "why": "Western Union, MoneyGram, Alipay or WeChat outward remittance, card purchases abroad, Stock Connect, Wealth Management Connect and QDII products were not evaluated: no official source for them was read this session, so they are not listed as methods.",
+   "resolve": "Read each provider's or regulator's own terms before considering them.",
+   "sources": [
+    "S05"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F29",
+   "item": "'Conversion itself is not taxed in China'",
+   "why": "The FX rules read describe documents and limits, not a levy on converting. No official statement that conversion is tax-free was read, so no blanket zero is asserted; that cell is blank.",
+   "resolve": "Ask the bank or tax bureau whether any charge other than the bank's fee applies.",
+   "sources": [
+    "S01",
+    "S04"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F30",
+   "item": "Price of exchanging RMB banknotes abroad",
+   "why": "No published price was read; blank.",
+   "resolve": "Get the exchange counter's posted rate.",
+   "sources": [
+    "S09"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F31",
+   "item": "HSBC Global Transfer to a U.S. HSBC account",
+   "why": "The tariff prices the service but which destinations are available to a given customer was not confirmed.",
+   "resolve": "Ask HSBC China whether your own U.S. HSBC account can be linked.",
+   "sources": [
+    "S20"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F32",
+   "item": "Education payments by a non-domestic payer",
+   "why": "The tariff prices the platform; the documents a non-domestic individual needs were not confirmed.",
+   "resolve": "Ask HSBC China for the payer requirements.",
+   "sources": [
+    "S20"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F33",
+   "item": "Waiting has no computable cost",
+   "why": "Future exchange rates are unknown; nothing is estimated.",
+   "resolve": "None: this is uncertainty, not missing data.",
+   "sources": [
+    "S17"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F34",
+   "item": "No fine scale in the crypto notice or the ATM circular",
+   "why": "Both refer to other provisions rather than state an amount; the fine is blank.",
+   "resolve": "Legal advice; the Regulations' general penalties may apply.",
+   "sources": [
+    "S13",
+    "S07"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F35",
+   "item": "Interest on unpaid U.S. tax and preparer fees",
+   "why": "The streamlined procedures require tax and interest to be paid with the filings; interest rates and professional fees were not read or modelled.",
+   "resolve": "Compute with the IRS interest tables for the years concerned.",
+   "sources": [
+    "S45"
+   ],
+   "status": "needs review"
+  },
+  {
+   "id": "F36",
+   "item": "Converting the account balance to USD for U.S. thresholds",
+   "why": "The U.S. thresholds are tested with Treasury's year-end exchange rate, which was not read. The balance tiers here are already USD figures.",
+   "resolve": "Use Treasury's Reporting Rates of Exchange for each year.",
+   "sources": [
+    "S42"
+   ],
+   "status": "needs review"
+  }
+ ]
+}

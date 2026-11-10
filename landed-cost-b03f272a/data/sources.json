@@ -1,0 +1,899 @@
+{
+ "generated_note": "Source ledger for landed-cost-b03f272a. Every page was fetched and read on 2026-11-10 (UTC). 'quotes' are substrings of the fetched page text, kept for manual review.",
+ "sources": [
+  {
+   "id": "S01",
+   "publisher": "SAFE Tianjin Branch (State Administration of Foreign Exchange)",
+   "kind": "government",
+   "title": "2026 FX administration online Q&A, individual FX (08): how a non-domestic individual buys FX with income earned in China (published 2026-07-13)",
+   "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+   "fetched": "2026-11-10",
+   "locator": "Answer paragraph, citing Hui Fa [2020] No. 14, Art. 59",
+   "quotes": [
+    "境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇"
+   ],
+   "supports": "A non-domestic individual converts lawful current-account RMB income at a bank with ID plus source-of-funds documents showing the amount, including tax certificates.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S02",
+   "publisher": "SAFE Tianjin Branch",
+   "kind": "government",
+   "title": "2024 current-account FX policy Q&A case (9): does a non-domestic individual get the annual facilitation quota? (published 2024-06-21)",
+   "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
+   "fetched": "2026-11-10",
+   "locator": "Answer paragraph",
+   "quotes": [
+    "持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。"
+   ],
+   "supports": "The annual FX-purchase facilitation quota applies to non-domestic individuals who hold a Foreign Permanent Resident ID Card.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S03",
+   "publisher": "SAFE Tianjin Branch",
+   "kind": "government",
+   "title": "2026 FX administration online Q&A, individual FX (10): changing unused RMB back into foreign currency (published 2026-09-17)",
+   "url": "https://www.safe.gov.cn/tianjin/2026/0917/3134.html",
+   "fetched": "2026-11-10",
+   "locator": "Answer paragraph, citing Hui Fa [2020] No. 14, Art. 60",
+   "quotes": [
+    "原兑换水单的兑回有效期为自兑换日起24个月",
+    "对于当日累计兑换不超过等值500美元（含）以及离境前在境内关外场所当日累计不超过等值1000美元（含）的兑换，可凭本人有效身份证件办理"
+   ],
+   "supports": "Unused RMB that was originally exchanged from foreign currency can be changed back with ID and the original exchange memo within 24 months; up to USD 500 per day (USD 1,000 airside before departure) with ID only.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S04",
+   "publisher": "SAFE (republished by SAFE Tianjin Branch, 2024-04-30, marked 'amended')",
+   "kind": "government",
+   "title": "Implementing Rules for the Measures for the Administration of Individual Foreign Exchange (Hui Fa [2007] No. 1)",
+   "url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html",
+   "fetched": "2026-11-10",
+   "locator": "Arts. 2, 13, 15, 20, 21, 30",
+   "quotes": [
+    "对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。",
+    "在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。",
+    "外汇储蓄账户内外汇汇出，凭本人有效身份证件办理",
+    "个人提取外币现钞当日累计等值1万美元以下（含）的，可以在银行直接办理",
+    "移居境外的境内个人将其取得合法移民身份前境内财产对外转移以及外国公民依法继承境内遗产的对外转移，按《个人财产对外转移售付汇管理暂行办法》等有关规定办理。"
+   ],
+   "supports": "USD 50,000 annual total covers FX sale by individuals and FX purchase by domestic individuals; non-domestic individuals buy FX against documented lawful income (incl. tax certificate); FX in own FX savings account can be remitted abroad with ID; USD cash withdrawal up to USD 10,000 per day at the bank.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S05",
+   "publisher": "People's Bank of China",
+   "kind": "central bank",
+   "title": "Administrative Rules on Individual's Foreign Exchange, PBOC Decree [2006] No. 3 (English)",
+   "url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
+   "fetched": "2026-11-10",
+   "locator": "Arts. 5, 7, 9, 13",
+   "quotes": [
+    "splitting large amount into small batches",
+    "into foreign exchange and remit abroad at a bank"
+   ],
+   "supports": "Art. 7: banks and individuals must not evade limits by splitting or use fabricated documents. Art. 13: a non-domestic individual can convert legitimate RMB income earned in China and remit it abroad at a bank.",
+   "status": "verified",
+   "note": "The English page text runs some words together; the quotes are the unbroken substrings."
+  },
+  {
+   "id": "S06",
+   "publisher": "State Council (text on SAFE website)",
+   "kind": "government",
+   "title": "Regulations of the PRC on Foreign Exchange Administration (State Council Decree No. 532, 2008)",
+   "url": "https://www.safe.gov.cn/safe/2008/0806/5321.html",
+   "fetched": "2026-11-10",
+   "locator": "Arts. 39, 40, 42, 45, 48, 52(2)",
+   "quotes": [
+    "处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任",
+    "处非法套汇金额30%以下的罚款；情节严重的，处非法套汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任",
+    "违反规定携带外汇出入境的，由外汇管理机关给予警告，可以处违法金额20%以下的罚款",
+    "私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的，由外汇管理机关给予警告，没收违法所得，处违法金额30%以下的罚款；情节严重的，处违法金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任",
+    "对个人可以处5万元以下的罚款",
+    "境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人"
+   ],
+   "supports": "PRC penalties: fine up to 30% of the amount (30% up to 100% in serious cases) and criminal liability for evading FX control, fraudulent FX purchase and private/disguised FX trading; up to 20% for unlawful carrying of FX; up to RMB 50,000 for an individual who submits untrue documents. Art. 52(2): a foreigner who has lived in China continuously for one year counts as a 'domestic individual'.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S07",
+   "publisher": "State Administration of Foreign Exchange",
+   "kind": "government",
+   "title": "Circular on Regulating Large-sum Overseas Cash Withdrawals with Bank Cards (Hui Fa [2017] No. 29), English",
+   "url": "https://www.safe.gov.cn/en/2017/1230/1397.html",
+   "fetched": "2026-11-10",
+   "locator": "Sections I and IV",
+   "quotes": [
+    "shall not exceed the equivalent of RMB 100,000 in every civil year",
+    "the individuals will not be allowed to withdraw cash overseas with the domestic bank cards in the current and second years",
+    "Individuals are prohibited from borrowing others' bank cards or lending their bank cards",
+    "the equivalent of RMB 10,000 per card per day"
+   ],
+   "supports": "Overseas cash withdrawals with mainland cards: RMB 100,000 equivalent per person per calendar year (all cards together) and RMB 10,000 equivalent per card per day; borrowing or lending cards to get round the limit is prohibited.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S08",
+   "publisher": "SAFE and General Administration of Customs",
+   "kind": "government",
+   "title": "Notice issuing the Interim Measures on Carrying Foreign Currency Cash Into and Out of China (Hui Fa [2003] No. 102)",
+   "url": "https://www.safe.gov.cn/safe/2003/0828/5444.html",
+   "fetched": "2026-11-10",
+   "locator": "Section II of the notice",
+   "quotes": [
+    "出境人员携带不超过等值5000美元（含5000美元）的外币现钞出境的，无须申领《携带证》",
+    "出境人员携带外币现钞金额在等值5000美元以上至10000美元（含10000美元）的，应向外汇指定银行申领《携带证》",
+    "出境人员原则上不得携带超过等值10000美元的外币现钞出境"
+   ],
+   "supports": "Leaving China with foreign-currency cash: up to USD 5,000 needs no permit; above USD 5,000 up to USD 10,000 needs a carrying permit issued by the bank; above USD 10,000 is not allowed in principle.",
+   "status": "needs review",
+   "note": "2003 notice; the attached Measures were not opened and current validity was not re-confirmed this session (flag F10)."
+  },
+  {
+   "id": "S09",
+   "publisher": "People's Bank of China",
+   "kind": "central bank",
+   "title": "PBC Official on the Adjustment in the Limit Set for Cross-Border Transportation of National Currency (2004-12-10, English)",
+   "url": "https://www.pbc.gov.cn/english/130721/2025080815064111752/index.html",
+   "fetched": "2026-11-10",
+   "locator": "Third question and answer",
+   "quotes": [
+    "the limit has a good reason to be reset at 20000 Yuan per person",
+    "carrying foreign exchange cash equivalent to US$5000 or below per person"
+   ],
+   "supports": "RMB cash carried across the border: limit adjusted to RMB 20,000 per person per trip; foreign-currency cash up to USD 5,000 need not be declared.",
+   "status": "needs review",
+   "note": "This is the PBC's official Q&A explaining the adjustment, not the announcement text itself (flag F09)."
+  },
+  {
+   "id": "S10",
+   "publisher": "People's Bank of China",
+   "kind": "central bank",
+   "title": "Provisional Administrative Rules on Sales and Payment of Foreign Exchange for Personal Asset Outbound Transfer (2004, English, unofficial translation)",
+   "url": "https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html",
+   "fetched": "2026-11-10",
+   "locator": "Arts. 2, 3, 8, 9, 11, 12, 13",
+   "quotes": [
+    "documents certifying tax payment issued by",
+    "Drawing foreign exchange cash within the territory of Mainland China",
+    "The SAFE shall notaccept application for the transfer of assets that are legally untransferableor have no proof of legality."
+   ],
+   "supports": "Emigrant-asset and inheritance transfers need a SAFE application with identity, ownership/inheritance and tax-payment documents; the bank remits to the applicant's own overseas account; no cash withdrawal; assets without proof of legality are not accepted.",
+   "status": "verified",
+   "note": "Staging and head-office filing in the 2004 text were later cancelled: see S11."
+  },
+  {
+   "id": "S11",
+   "publisher": "State Administration of Foreign Exchange",
+   "kind": "government",
+   "title": "Circular on Further Improving and Adjusting Foreign Exchange Administration Policies under the Capital Account (Hui Fa [2014] No. 2), English",
+   "url": "https://www.safe.gov.cn/en/2014/0801/741.html",
+   "fetched": "2026-11-10",
+   "locator": "Section VI (I)-(IV)",
+   "quotes": [
+    "property can be transferred several times is cancelled",
+    "the bank may remit the relevant funds in a lump sum or in several batches within the limit specified in the approval document",
+    "shall be reported to the SAFE for the record shall be cancelled",
+    "The notarization requirement for documents concerning property rights"
+   ],
+   "supports": "From 10 Feb 2014 the staged-remittance requirement for emigrant assets, the head-office filing above RMB 500,000 and the notarisation requirement are cancelled; after local SAFE approval the bank may remit in one lump sum.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S12",
+   "publisher": "State Administration of Foreign Exchange",
+   "kind": "government",
+   "title": "Policy Q&A on foreign exchange administration of the real-estate market (published 2011-08-26)",
+   "url": "http://m.safe.gov.cn/safe/2011/0826/2498.html",
+   "fetched": "2026-11-10",
+   "locator": "Q18 (and Q14)",
+   "quotes": [
+    "境内分支、代表机构和境外个人转让所购境内商品房取得的人民币资金，经商品房所在地国家外汇管理局分支局、外汇管理部审核确认以下文件后，方可购汇汇出",
+    "（三）房屋权属转让的完税证明文件。",
+    "境外机构和个人出售境内房地产所得资金购汇申请时，可以不需要提交原结汇凭证。"
+   ],
+   "supports": "A non-domestic individual who sells a mainland home can buy FX and remit the RMB proceeds after the local SAFE office reviews the application, the sale contract and the tax-paid certificate for the transfer.",
+   "status": "needs review",
+   "note": "2011 Q&A; whether the review step has since moved to banks was not checked (flag F11)."
+  },
+  {
+   "id": "S13",
+   "publisher": "People's Bank of China and seven other authorities",
+   "kind": "central bank",
+   "title": "Notice on Further Preventing and Handling Risks of Virtual Currency and Related Activities (Yin Fa [2026] No. 42, 2026-02-06)",
+   "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+   "fetched": "2026-11-10",
+   "locator": "Sections 1(1), 3(6), 6(18)-(19), final paragraph",
+   "quotes": [
+    "虚拟货币相关业务活动属于非法金融活动",
+    "金融机构（含非银行支付机构）不得为虚拟货币相关业务活动提供账户开立、资金划转和清算结算等服务",
+    "构成犯罪的，依法追究刑事责任",
+    "（银发〔2021〕237号）同时废止"
+   ],
+   "supports": "In mainland China virtual-currency business (including exchange between legal tender and virtual currency) is illegal financial activity; banks and payment institutions may not serve it; the 2021 notice is repealed and replaced.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S14",
+   "publisher": "Belt and Road Portal (yidaiyilu.gov.cn), republishing Economic Daily, 2018-01-06",
+   "kind": "government portal republication",
+   "title": "Report on PBOC notice Yin Fa [2018] No. 3 improving cross-border RMB business policy",
+   "url": "https://www.yidaiyilu.gov.cn/p/42746.html",
+   "fetched": "2026-11-10",
+   "locator": "Third paragraph",
+   "quotes": [
+    "为便利境内个人将境外合法收入汇回境内使用，以及境外个人将境内合法人民币收入汇出境外"
+   ],
+   "supports": "Banks may handle individuals' 'other current-account' cross-border RMB settlement, so a non-domestic individual's lawful RMB income can be remitted abroad in RMB.",
+   "status": "needs review",
+   "note": "Government-portal republication of a news report. The PBOC notice text itself was not read this session (flag F06)."
+  },
+  {
+   "id": "S15",
+   "publisher": "State Taxation Administration (official English text)",
+   "kind": "government",
+   "title": "Individual Income Tax Law of the People's Republic of China (as amended 2018-08-31)",
+   "url": "https://fgk.chinatax.gov.cn/eng/c102962/c102967/c102997/c103004/c5245849/content.html",
+   "fetched": "2026-11-10",
+   "locator": "Arts. 1, 2, 3",
+   "quotes": [
+    "progressive tax rates ranging from 3 percent to 45 percent shall apply",
+    "a flat tax rate of 20 percent shall apply",
+    "has resided in China for an aggregate of 183 days or more within a tax year, shall be regarded as a resident individual"
+   ],
+   "supports": "PRC individual income tax rates: 3%-45% on comprehensive income (wages etc.); flat 20% on interest, dividends, leasing, transfer of assets and incidental income.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S16",
+   "publisher": "Bank of China",
+   "kind": "bank (own published prices)",
+   "title": "BOC Exchange Rate board (English), USD row, publication time 2026/11/10 17:39:58",
+   "url": "https://www.boc.cn/sourcedb/whpj/enindex_1619.html",
+   "fetched": "2026-11-10",
+   "locator": "USD row: Buying 665.71, Cash Buying 665.71, Selling 668.51, Cash Selling 668.51, Middle Rate 671.67",
+   "quotes": [
+    "USD | 665.71 | 665.71 | 668.51 | 668.51 | 671.67 | 2026/11/10 17:39:58"
+   ],
+   "supports": "The bank's own published price for selling USD to a customer (668.51 RMB per USD 100) and for buying USD (665.71).",
+   "status": "verified",
+   "note": "Live page: it shows the current rates, so this dated snapshot cannot be re-read at the same URL later (flag F03). The 'quote' is the table row as fetched."
+  },
+  {
+   "id": "S17",
+   "publisher": "State Administration of Foreign Exchange",
+   "kind": "government",
+   "title": "RMB central parity rates (人民币汇率中间价), row for 2026-11-10",
+   "url": "https://www.safe.gov.cn/safe/rmbhlzjj/index.html",
+   "fetched": "2026-11-10",
+   "locator": "Row 2026-11-10, USD column",
+   "quotes": [
+    "2026-11-10 | 671.67"
+   ],
+   "supports": "Official central parity on 10 Nov 2026: RMB 671.67 per USD 100. It equals the 'Middle Rate' column on the BOC board.",
+   "status": "verified",
+   "note": "Live page listing the latest ten business days."
+  },
+  {
+   "id": "S18",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "kind": "central bank",
+   "title": "Foreign Exchange Rates - H.10 weekly release dated November 9, 2026",
+   "url": "https://www.federalreserve.gov/releases/h10/current/",
+   "fetched": "2026-11-10",
+   "locator": "Row CHINA, P.R. (Nov. 2 to Nov. 6, 2026)",
+   "quotes": [
+    "CHINA, P.R. | YUAN | 6.6480 | 6.6701 | 6.6731 | 6.6680 | 6.6760"
+   ],
+   "supports": "New York noon buying rate for the yuan in the week before this build (6.6760 on 6 Nov 2026) - a cross-check that the BOC board is close to the market.",
+   "status": "verified",
+   "note": "'Current' URL: it moves to the next weekly release."
+  },
+  {
+   "id": "S19",
+   "publisher": "Bank of China",
+   "kind": "bank (own published prices)",
+   "title": "BOC e-banking personal service: transfer and remittance fee table (收费标准2014年11月1日起)",
+   "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+   "fetched": "2026-11-10",
+   "locator": "Row 跨境汇款（电汇）; remark 1",
+   "quotes": [
+    "每笔汇款金额的1‰，最低收取50元/笔，最高收取260元/笔；另收电讯费,港澳台地区人民币80元/笔,非港澳台地区人民币150元/笔。",
+    "另有协议约定、价格优惠、地方性收费差异的，按照协议或当地公示的内容收取相关费用。"
+   ],
+   "supports": "BOC cross-border wire: 0.1% of the amount, minimum RMB 50, maximum RMB 260 per wire, plus a cable fee of RMB 150 per wire for destinations outside Hong Kong, Macao and Taiwan.",
+   "status": "verified",
+   "note": "The table is dated 1 Nov 2014 and allows local differences and promotions (flag F04)."
+  },
+  {
+   "id": "S20",
+   "publisher": "HSBC Bank (China) Company Limited",
+   "kind": "bank (own published prices)",
+   "title": "Tariff of Accounts and Services for Wealth and Personal Banking Business (effective from 31 Oct 2026)",
+   "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+   "fetched": "2026-11-10",
+   "locator": "Items 2.2.2.1, 2.2.4.1, 2.2.4.2, 2.2.6.1, 2.2.7; Important Note 7",
+   "quotes": [
+    "0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY500 / equivalent per transaction Plus Cable Charge",
+    "CNY120 / equivalent per cable",
+    "CNY200 / equivalent will be collected from the remitter to cover the overseas bank charge and handling fee for this special arrangement",
+    "The actual charge per transaction will be USD20 or equivalent in other foreign currency.",
+    "The actual charge per transaction will be USD7 or equivalent in other foreign currency.",
+    "The charges shown in this tariff do not include charges collected by other institutions"
+   ],
+   "supports": "HSBC China outward telegraphic transfer: Premier and Advance pay 0.1% (min RMB 100, max RMB 500) plus RMB 120 cable; Private Banking individuals: free. Global Transfer to own HSBC account abroad: free for Private Banking and Premier, USD 20 for Advance. International Education Payment: free / USD 7 (Advance). Optional 'Pay Exact' RMB 200. Other institutions' charges are not included.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S21",
+   "publisher": "Wise (Help Centre)",
+   "kind": "provider (own published terms)",
+   "title": "Guide to CNY transfers - section 'Sending from CNY'",
+   "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+   "fetched": "2026-11-10",
+   "locator": "Sections 'Who can send money from CNY?', 'Who can receive...', 'How much can I send?', 'Total sending limits'",
+   "quotes": [
+    "You have a valid tax record issued by the China tax authority showing taxes paid within the last 3 years",
+    "Due to regulations, you can only send CNY from China to another account you own.",
+    "the maximum you can send in one transfer is 300,000 CNY",
+    "In general, your overall limit is the amount of salary you've earned in China after deducting the amount of tax paid in China."
+   ],
+   "supports": "Wise accepts transfers from a Chinese bank account for non-mainland people who work or worked in China and hold a China tax record from the last 3 years; only to an account in the same name; up to RMB 300,000 per transfer; total limit equals after-tax salary evidenced.",
+   "status": "verified",
+   "note": "The fee and the exchange rate are shown only when a transfer is set up; none is published on this page (flag F05)."
+  },
+  {
+   "id": "S22",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Yearly average currency exchange rates",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+   "fetched": "2026-11-10",
+   "locator": "Sections 'Translating foreign currency' and 'Currency exchange rates'; table row China",
+   "quotes": [
+    "In general, use the exchange rate prevailing (i.e., the spot rate) when you receive, pay or accrue the item.",
+    "Generally, it accepts any posted exchange rate that is used consistently.",
+    "| Yuan | 7.129 | 7.189 | 7.075 | 6.730 | 6.452 |"
+   ],
+   "supports": "The IRS has no official exchange rate and accepts any posted rate used consistently; its own yearly averages for China are 7.129 (2025), 7.189 (2024), 7.075 (2023), 6.730 (2022), 6.452 (2021).",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S23",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "kind": "central bank",
+   "title": "Foreign Exchange Rates - G.5A annual release dated January 5, 2026",
+   "url": "https://www.federalreserve.gov/releases/g5a/current/",
+   "fetched": "2026-11-10",
+   "locator": "Row CHINA, P.R. (2025, 2024, 2023, 2022)",
+   "quotes": [
+    "CHINA, P.R. | YUAN | 7.1875 | 7.1957 | 7.0809 | 6.7290"
+   ],
+   "supports": "Annual average yuan per US dollar (noon buying rates in New York) for 2025, 2024, 2023, 2022.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S24",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "kind": "central bank",
+   "title": "Foreign Exchange Rates - G.5A annual release dated January 3, 2022",
+   "url": "https://www.federalreserve.gov/releases/g5a/20220103/",
+   "fetched": "2026-11-10",
+   "locator": "Row CHINA, P.R. (2021, 2020, 2019, 2018)",
+   "quotes": [
+    "CHINA, P.R. | YUAN | 6.4508 | 6.9042 | 6.9081 | 6.6090"
+   ],
+   "supports": "Annual average yuan per US dollar (noon buying rates in New York) for 2021, 2020, 2019, 2018.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S25",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "kind": "central bank",
+   "title": "Foreign Exchange Rates - G.5A annual release dated January 4, 2021 (page shows release date November 1, 2021)",
+   "url": "https://www.federalreserve.gov/releases/g5a/20210104/",
+   "fetched": "2026-11-10",
+   "locator": "Row CHINA, P.R. (2020, 2019, 2018, 2017)",
+   "quotes": [
+    "CHINA, P.R. | YUAN | 6.9042 | 6.9081 | 6.6090 | 6.7569"
+   ],
+   "supports": "Annual average yuan per US dollar (noon buying rates in New York) for 2020, 2019, 2018, 2017.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S26",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "kind": "central bank",
+   "title": "Foreign Exchange Rates - G.5A annual release dated January 4, 2017",
+   "url": "https://www.federalreserve.gov/releases/g5a/20170104/",
+   "fetched": "2026-11-10",
+   "locator": "Row CHINA, P.R. (2016, 2015, 2014, 2013)",
+   "quotes": [
+    "CHINA,P.R. | YUAN | 6.6400 | 6.2827 | 6.1620 | 6.1478"
+   ],
+   "supports": "Annual average yuan per US dollar (noon buying rates in New York) for 2016, 2015, 2014, 2013.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S27",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "kind": "central bank",
+   "title": "Foreign Exchange Rates - G.5A annual release dated January 2, 2013",
+   "url": "https://www.federalreserve.gov/releases/g5a/20130102",
+   "fetched": "2026-11-10",
+   "locator": "Row CHINA, P.R. (2012, 2011, 2010, 2009)",
+   "quotes": [
+    "CHINA,P.R. | YUAN | 6.3093 | 6.4630 | 6.7696 | 6.8307"
+   ],
+   "supports": "Annual average yuan per US dollar (noon buying rates in New York) for 2012, 2011, 2010, 2009.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S28",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "kind": "central bank",
+   "title": "Foreign Exchange Rates - G.5A annual release dated January 2, 2009",
+   "url": "https://www.federalreserve.gov/releases/g5a/20090102/",
+   "fetched": "2026-11-10",
+   "locator": "Row CHINA, P.R. (2008, 2007, 2006, 2005)",
+   "quotes": [
+    "CHINA,P.R.       YUAN            6.9477       7.6058       7.9723       8.1936"
+   ],
+   "supports": "Annual average yuan per US dollar (noon buying rates in New York) for 2008, 2007, 2006, 2005.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S29",
+   "publisher": "Board of Governors of the Federal Reserve System",
+   "kind": "central bank",
+   "title": "Foreign Exchange Rates - G.5A annual release dated January 3, 2005",
+   "url": "https://www.federalreserve.gov/releases/g5a/20050103/",
+   "fetched": "2026-11-10",
+   "locator": "Row CHINA, P.R. (2004, 2003, 2002, 2001)",
+   "quotes": [
+    "CHINA,P.R.       YUAN            8.2768       8.2772       8.2771       8.2770"
+   ],
+   "supports": "Annual average yuan per US dollar (noon buying rates in New York) for 2004, 2003, 2002, 2001.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S30",
+   "publisher": "U.S. Government Publishing Office (govinfo), United States Code 2024 edition",
+   "kind": "government",
+   "title": "26 U.S.C. 988 - Treatment of certain foreign currency transactions",
+   "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+   "fetched": "2026-11-10",
+   "locator": "Subsections (a)(1)(A), (c)(1)(C), (e)(1)-(3)",
+   "quotes": [
+    "any foreign currency gain or loss attributable to a section 988 transaction shall be computed separately and treated as ordinary income or loss",
+    "nonfunctional currency denominated demand or time deposits or similar instruments issued by a bank or other financial institution",
+    "no gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.",
+    "such term shall not include any transaction to the extent that expenses properly allocable to such transaction meet the requirements of"
+   ],
+   "supports": "Disposing of foreign currency (including a foreign-currency bank deposit) is a section 988 transaction; gain is ordinary unless the transaction is a 'personal transaction', in which case no gain is recognised unless it exceeds $200. A transaction is not 'personal' to the extent its expenses would be deductible under section 162 or 212.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S31",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Publication 525 (2025), Taxable and Nontaxable Income - 'Foreign currency transactions'",
+   "url": "https://www.irs.gov/publications/p525",
+   "fetched": "2026-11-10",
+   "locator": "Other Income, paragraph 'Foreign currency transactions.'",
+   "quotes": [
+    "If the gain is more than $200, report it as a capital gain."
+   ],
+   "supports": "A gain on a personal foreign-currency transaction is not income unless it is more than $200; above $200 it is reported as a capital gain.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S32",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Topic no. 409, Capital gains and losses",
+   "url": "https://www.irs.gov/taxtopics/tc409",
+   "fetched": "2026-11-10",
+   "locator": "Sections 'Short-term or long-term' and 'Capital gains tax rates'",
+   "quotes": [
+    "Generally, if you hold the asset for more than one year before you dispose of it, your capital gain or loss is long-term.",
+    "$48,350 for single and married filing separately;",
+    "Net short-term capital gains are subject to taxation as ordinary income at graduated tax rates.",
+    "Losses from the sale of personal-use property, such as your home or car, aren't tax deductible."
+   ],
+   "supports": "Long-term capital gain (asset held more than one year) is taxed at 0%, 15% or 20% depending on taxable income (2025: 0% up to $48,350 single / $96,700 joint; 20% above $533,400 single / $600,050 joint); short-term gain is taxed at ordinary rates; losses on personal-use property are not deductible.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S33",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Federal income tax rates and brackets (2025)",
+   "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets",
+   "fetched": "2026-11-10",
+   "locator": "Table '2025 tax rates for a single taxpayer'",
+   "quotes": [
+    "| 37% | $626,351 | And up |",
+    "| 10% | $0 | $11,925 |"
+   ],
+   "supports": "Ordinary federal income tax rates for 2025 run from 10% to 37%.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S34",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Topic no. 559, Net investment income tax",
+   "url": "https://www.irs.gov/taxtopics/tc559",
+   "fetched": "2026-11-10",
+   "locator": "Opening paragraph and 'Individuals'",
+   "quotes": [
+    "A 3.8 percent net investment income tax (NIIT) applies to individuals, estates, and trusts that have net investment income above applicable threshold amounts.",
+    "$200,000 for single or head of household"
+   ],
+   "supports": "A further 3.8% tax can apply to net investment income (including net gains from disposing of property) when modified AGI exceeds $200,000 single / $250,000 joint.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S35",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "U.S. citizens and resident aliens abroad",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
+   "fetched": "2026-11-10",
+   "locator": "First paragraph",
+   "quotes": [
+    "You are subject to tax on worldwide income from all sources and must report all taxable income and pay taxes according to the Internal Revenue Code."
+   ],
+   "supports": "A U.S. citizen is taxed on worldwide income wherever earned and wherever the money is kept.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S36",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Foreign Tax Credit",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+   "fetched": "2026-11-10",
+   "locator": "First paragraph and 'Qualifying foreign taxes'",
+   "quotes": [
+    "If you paid or accrued foreign taxes to a foreign country or U.S. possession and are subject to U.S. tax on the same income, you may be able to take either a credit or an itemized deduction for those taxes.",
+    "you cannot take a foreign tax credit for taxes on income you exclude"
+   ],
+   "supports": "PRC income tax paid on the same income can be credited against U.S. tax (Form 1116); no credit for tax on income excluded under the foreign earned income exclusion.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S37",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Figuring the foreign earned income exclusion",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/figuring-the-foreign-earned-income-exclusion",
+   "fetched": "2026-11-10",
+   "locator": "Section 'Limit on excludable amount'",
+   "quotes": [
+    "For tax year 2025, the maximum foreign earned income exclusion is the lesser of the foreign income earned or $130,000 per qualifying person. For tax year 2026, the maximum exclusion is $132,900 per person."
+   ],
+   "supports": "Foreign earned income exclusion maximum: $130,000 for 2025 and $132,900 for 2026; the income must still be reported on a filed return.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S38",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+   "fetched": "2026-11-10",
+   "locator": "Sections 'Who must file', 'When to file', 'Filing delinquent FBARs'",
+   "quotes": [
+    "the aggregate value of those foreign financial accounts exceeded $10,000 at any time during the calendar year reported",
+    "The FBAR is an annual report, due April 15 following the calendar year reported.",
+    "you should file late FBARs as soon as possible to keep potential penalties to a minimum"
+   ],
+   "supports": "An FBAR (FinCEN Form 114) is due for every calendar year in which foreign accounts together exceeded $10,000 at any time; due 15 April with automatic extension to 15 October; late FBARs should be filed as soon as possible if the IRS has not made contact.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S39",
+   "publisher": "Office of the Federal Register / GPO (eCFR, current as of 2026-11-06)",
+   "kind": "government",
+   "title": "31 CFR 1010.821 - Penalty adjustment and table",
+   "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+   "fetched": "2026-11-10",
+   "locator": "Table 1, rows 31 U.S.C. 5321(a)(5)(B)(i) and (a)(5)(C)(i)(I)",
+   "quotes": [
+    "Foreign Financial Agency Transaction—Non-Willful Violation of Transaction | 10,000 | 16,536",
+    "Foreign Financial Agency Transaction—Willful Violation of Transaction | 100,000 | 165,353",
+    "Displaying title 31, up to date as of 11/06/2026."
+   ],
+   "supports": "Inflation-adjusted FBAR civil penalty maxima for penalties assessed on or after 17 January 2025: $16,536 (non-willful) and $165,353 (willful floor).",
+   "status": "verified",
+   "note": "The table heading still reads 'assessed on or after January 17, 2025' in the eCFR current as of 6 Nov 2026 (flag F19)."
+  },
+  {
+   "id": "S40",
+   "publisher": "U.S. Government Publishing Office (govinfo), United States Code 2024 edition",
+   "kind": "government",
+   "title": "31 U.S.C. 5321 - Civil penalties",
+   "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title31/html/USCODE-2024-title31-subtitleIV-chap53-subchapII-sec5321.htm",
+   "fetched": "2026-11-10",
+   "locator": "Subsection (a)(5)(B)-(D); subsection (b)(1)",
+   "quotes": [
+    "(II) 50 percent of the amount determined under subparagraph (D), and",
+    "the balance in the account at the time of the violation",
+    "(I) such violation was due to reasonable cause, and",
+    "at any time before the end of the 6-year period beginning on the date of the transaction with respect to which the penalty is assessed"
+   ],
+   "supports": "FBAR penalties: non-willful up to $10,000 (before inflation adjustment), none if there was reasonable cause and the balance was properly reported; willful up to the greater of $100,000 (before adjustment) or 50% of the account balance at the time of the violation; six-year assessment period.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S41",
+   "publisher": "Supreme Court of the United States",
+   "kind": "court",
+   "title": "Bittner v. United States, No. 21-1195 (decided February 28, 2023), syllabus",
+   "url": "https://www.supremecourt.gov/opinions/22pdf/21-1195_h3ci.pdf",
+   "fetched": "2026-11-10",
+   "locator": "Syllabus, 'Held'",
+   "quotes": [
+    "accrues on a per-report, not a per-account, basis"
+   ],
+   "supports": "The non-willful FBAR penalty applies once per late or deficient annual report, not once per account.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S42",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Summary of FATCA reporting for U.S. taxpayers (Form 8938)",
+   "url": "https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers",
+   "fetched": "2026-11-10",
+   "locator": "Sections 'Reporting thresholds' and 'Non-compliance with Form 8938 reporting requirements'",
+   "quotes": [
+    "more than $50,000 on the last day of the tax year or more than $75,000 at any time during the tax year",
+    "more than $100,000 on the last day of the tax year or more than $150,000 at any time during the tax year",
+    "more than $200,000 on the last day of the tax year or more than $300,000 at any time during the year",
+    "more than $400,000 on the last day of the tax year or more than $600,000 at any time during the year",
+    "a $10,000 failure to file penalty, an additional penalty of up to $50,000 for continued failure to file after IRS notification, and a 40 percent penalty on an understatement of tax attributable to non-disclosed assets",
+    "you are a U.S. citizen whose tax home is in a foreign country and you have been present in a foreign country or countries for at least 330 days out of a consecutive 12-month period"
+   ],
+   "supports": "Form 8938 thresholds by filing status and residence, and the penalties for not filing: $10,000, up to $50,000 more after IRS notice, and a 40% penalty on tax understated on undisclosed assets.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S43",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Gifts from foreign person (Form 3520, Part IV)",
+   "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+   "fetched": "2026-11-10",
+   "locator": "Sections 'Reporting requirements' and 'Penalties for failure to file Part IV of Form 3520'",
+   "quotes": [
+    "exceeds $100,000 during the taxable year",
+    "equal to five percent of the value of the gift or bequest for each month in which the gift or bequest is not reported, not to exceed 25 percent of the gift"
+   ],
+   "supports": "A gift or bequest of more than $100,000 in a year from a nonresident alien or foreign estate must be reported on Form 3520; late or missing filing: 5% of the amount per month up to 25%, unless reasonable cause.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S44",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Streamlined filing compliance procedures",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures",
+   "fetched": "2026-11-10",
+   "locator": "Section 'Eligibility criteria for the streamlined procedures'",
+   "quotes": [
+    "Taxpayers must certify that conduct was not willful",
+    "the taxpayer will not be eligible to use the streamlined procedures"
+   ],
+   "supports": "The streamlined procedures are for non-willful conduct only and are closed once the IRS has started a civil examination or criminal investigation.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S45",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "U.S. taxpayers residing in the United States (Streamlined Domestic Offshore Procedures)",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/us-taxpayers-residing-in-the-united-states",
+   "fetched": "2026-11-10",
+   "locator": "Section 'Description of scope and effect of procedures'",
+   "quotes": [
+    "The Title 26 miscellaneous offshore penalty is equal to 5 percent of the highest aggregate balance/value",
+    "for each of the most recent 6 years for which the FBAR due date has passed",
+    "will not be subject to accuracy-related penalties, information return penalties, or FBAR penalties"
+   ],
+   "supports": "Living in the U.S.: amend 3 years of returns, file 6 years of FBARs, pay the tax and interest plus a penalty of 5% of the highest year-end aggregate balance of the unreported foreign financial assets; no other penalties.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S46",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "U.S. taxpayers residing outside the United States (Streamlined Foreign Offshore Procedures)",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/us-taxpayers-residing-outside-the-united-states",
+   "fetched": "2026-11-10",
+   "locator": "Sections 'Eligibility...' and 'Description of scope and effect of procedures'",
+   "quotes": [
+    "physically outside the United States for at least 330 full days",
+    "will not be subject to failure-to-file and failure-to-pay penalties, accuracy-related penalties, information return penalties, or FBAR penalties"
+   ],
+   "supports": "Living abroad (no U.S. abode and at least 330 full days outside the U.S. in at least one of the last 3 years): file 3 years of returns and 6 years of FBARs and pay the tax and interest; no penalty.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S47",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Delinquent international information return submission procedures",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures",
+   "fetched": "2026-11-10",
+   "locator": "First section",
+   "quotes": [
+    "should file the delinquent information returns through normal filing procedures",
+    "Penalties may be assessed in accordance with existing procedures."
+   ],
+   "supports": "Late Forms 8938 / 3520 are filed through normal procedures with a reasonable-cause statement; penalties may still be assessed.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S48",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Options available for U.S. taxpayers with undisclosed foreign financial assets",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/options-available-for-us-taxpayers-with-undisclosed-foreign-financial-assets",
+   "fetched": "2026-11-10",
+   "locator": "Numbered list",
+   "quotes": [
+    "The IRS encourages taxpayers to consult with professional tax or legal advisors in determining which option is the most appropriate for them."
+   ],
+   "supports": "The IRS lists three options: Criminal Investigation Voluntary Disclosure Practice, Streamlined Filing Compliance Procedures, and delinquent international information return submission.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S49",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Accuracy-related penalty",
+   "url": "https://www.irs.gov/payments/accuracy-related-penalty",
+   "fetched": "2026-11-10",
+   "locator": "Section 'How we calculate the penalty'",
+   "quotes": [
+    "In cases of substantial understatement, the accuracy-related penalty is 20% of the portion of the underpayment of tax."
+   ],
+   "supports": "Unreported income outside a compliance programme: accuracy-related penalty of 20% of the underpaid tax.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S50",
+   "publisher": "U.S. Customs and Border Protection",
+   "kind": "government",
+   "title": "Money and Other Monetary Instruments",
+   "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
+   "fetched": "2026-11-10",
+   "locator": "Sections 'Federal Mandate...', 'Who Must File?', 'What if I don't file?'",
+   "quotes": [
+    "Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection (CBP).",
+    "the $10,000 threshold applies to the total amount they are carrying or sending collectively, not per individual",
+    "risk having their currency or monetary instruments forfeited and seized"
+   ],
+   "supports": "Carrying, mailing or shipping more than $10,000 in currency or monetary instruments into the U.S. must be reported (FinCEN Form 105); the threshold applies to a family or group together; unreported cash can be seized.",
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "S51",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Foreign earned income exclusion (landing page)",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion",
+   "fetched": "2026-11-10",
+   "locator": "Fourth paragraph",
+   "quotes": [
+    "($107,600 for 2020, $108,700 for 2021, $112,000 for 2022, and $120,000 for 2023)"
+   ],
+   "supports": "Shows that this IRS page lists exclusion amounts only through 2023; use S37 for 2025 and 2026.",
+   "status": "needs review",
+   "note": "Stale page content (flag F24)."
+  },
+  {
+   "id": "S52",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "Delinquent FBAR submission procedures (URL formerly used for this guidance)",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/delinquent-fbar-submission-procedures",
+   "fetched": "2026-11-10",
+   "locator": "Whole page",
+   "quotes": [
+    "Page Not Found."
+   ],
+   "supports": "The address returned the IRS 'Page Not Found' page on 10 Nov 2026.",
+   "status": "needs review",
+   "note": "Dead link (flag F23); the current guidance is on S38."
+  },
+  {
+   "id": "S53",
+   "publisher": "HSBC Bank (China) Company Limited",
+   "kind": "bank (own published prices)",
+   "title": "HSBC China foreign exchange rates page (address tried)",
+   "url": "https://www.hsbc.com.cn/en-cn/foreign-exchange/rates/",
+   "fetched": "2026-11-10",
+   "locator": "Whole page",
+   "quotes": [
+    "404 Page not found"
+   ],
+   "supports": "The address tried for HSBC China's published FX board returned 'Page not found' on 10 Nov 2026, so no HSBC exchange rate was read.",
+   "status": "needs review",
+   "note": "Flag F02."
+  },
+  {
+   "id": "S54",
+   "publisher": "People's Bank of China, Beijing office",
+   "kind": "central bank",
+   "title": "Page on cross-border RMB salary remittances under Yin Fa [2018] No. 3 (address found by search)",
+   "url": "http://beijing.pbc.gov.cn/beijing/132026/3660457/index.html",
+   "fetched": "2026-11-10",
+   "locator": "Whole page",
+   "quotes": [
+    "404 Not Found"
+   ],
+   "supports": "The address returned '404 Not Found' on 10 Nov 2026, so the PBOC's own description was not read.",
+   "status": "needs review",
+   "note": "Flag F06."
+  },
+  {
+   "id": "S55",
+   "publisher": "Internal Revenue Service",
+   "kind": "government",
+   "title": "China - Tax treaty documents (index page)",
+   "url": "https://www.irs.gov/businesses/international-businesses/china-tax-treaty-documents",
+   "fetched": "2026-11-10",
+   "locator": "List of documents",
+   "quotes": [
+    "Income Tax Treaty PDF"
+   ],
+   "supports": "Where the 1984 U.S.-China income tax treaty and its technical explanation are published.",
+   "status": "needs review",
+   "note": "Only the index page was read; the treaty text was not read this session and no treaty effect is modelled (flag F26)."
+  }
+ ]
+}

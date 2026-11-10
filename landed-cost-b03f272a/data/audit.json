@@ -1,0 +1,253 @@
+{
+ "scanned_commit": "06ce485",
+ "scanned_on": "2026-11-10",
+ "scope": "tracked text files of all other sessions on origin/main (COORDINATION.md and this directory excluded)",
+ "files_scanned": 197,
+ "findings": [
+  {
+   "id": "R01",
+   "title": "Emigrant-asset route still shown as staged over two years",
+   "where": {
+    "hits": 130,
+    "files": 8,
+    "examples": [
+     "ladder/costs.html:37"
+    ]
+   },
+   "repo_says": "The ladder site labels this route 'up to 2 years of staged remittances' on every cost row and models several wires.",
+   "official_says": "SAFE Circular Hui Fa [2014] No. 2, section VI(II): the requirement that an immigrant's property be transferred in several instalments 'is cancelled'; after approval the bank 'may remit the relevant funds in a lump sum or in several batches'.",
+   "assessment": "Superseded rule still published. One remittance is allowed after approval, so the extra wires and the two-year wait are not required.",
+   "verdict": "irregularity",
+   "sources": [
+    "S11",
+    "S10"
+   ]
+  },
+  {
+   "id": "R02",
+   "title": "Superseded 2021 HSBC tariff still listed as a verified source",
+   "where": {
+    "hits": 3,
+    "files": 3,
+    "examples": [
+     "ladder/data/sources.json:72"
+    ]
+   },
+   "repo_says": "The ladder source register keeps 'Account and Service Tariff, Personal Customers (effective 1 January 2021)' as source S06 with status 'verified'.",
+   "official_says": "HSBC China's tariff in force is the one 'Effective from 31 Oct 2026' (items 2.2.4.1, 2.2.4.2, 2.2.6.1, 2.2.7).",
+   "assessment": "A superseded price list is still marked verified beside the current one. Prices must be read from the 31 Oct 2026 tariff only.",
+   "verdict": "irregularity",
+   "sources": [
+    "S20"
+   ]
+  },
+  {
+   "id": "R03",
+   "title": "Modelled exchange-rate spread bands presented in cost tables",
+   "where": {
+    "hits": 51,
+    "files": 4,
+    "examples": [
+     "ladder/build.py:132"
+    ]
+   },
+   "repo_says": "The ladder cost tables price several routes with assumed spread bands such as '0.80% – 3.00%' ('fixed fee not published — spread only').",
+   "official_says": "Bank of China's own board on 10 Nov 2026 shows USD buying 665.71 and selling 668.51 per USD 100: a gap of 0.42%, i.e. 0.21% from the mid-point to the selling price.",
+   "assessment": "The bands are assumptions, not published prices, and are several times wider than the one bank margin that could be read from a published board. Treat those tables as scenarios.",
+   "verdict": "needs review",
+   "sources": [
+    "S16"
+   ]
+  },
+  {
+   "id": "R04",
+   "title": "7.129 yuan per dollar used as the conversion reference",
+   "where": {
+    "hits": 107,
+    "files": 53,
+    "examples": [
+     "acceptance-a64bd476/build.py:115",
+     "audit-92d12752/build.py:25",
+     "audit-ad300459/checks.py:141",
+     "briefing/AUDIT.md:14"
+    ]
+   },
+   "repo_says": "Briefing, repatriate and acceptance pages convert RMB fees to USD at 7.129, the IRS 2025 yearly average.",
+   "official_says": "IRS table: 7.129 for 2025 (correctly quoted). Federal Reserve G.5A 2025 average: 7.1875. Bank of China selling rate on 10 Nov 2026: 6.6851.",
+   "assessment": "Correctly quoted from the IRS, but it is a 2025 average, not a November 2026 price. At the bank's published rate an RMB 620 fee is USD 92.74, not USD 86.97, and the IRS and Federal Reserve 2025 figures differ by 0.8%.",
+   "verdict": "needs review",
+   "sources": [
+    "S22",
+    "S23",
+    "S16"
+   ]
+  },
+  {
+   "id": "R05",
+   "title": "FBAR penalty maxima",
+   "where": {
+    "hits": 35,
+    "files": 28,
+    "examples": [
+     "acceptance-a64bd476/findings.html:20",
+     "briefing/AUDIT.md:15",
+     "final-f6327e23/README.md:25",
+     "repatriate/build.py:285"
+    ]
+   },
+   "repo_says": "Briefing, repatriate and acceptance pages state $16,536 (non-willful) and $165,353 (willful floor).",
+   "official_says": "eCFR 31 CFR 1010.821, current as of 6 Nov 2026: 16,536 and 165,353 for penalties assessed on or after 17 January 2025.",
+   "assessment": "Matches the official table read today.",
+   "verdict": "consistent",
+   "sources": [
+    "S39"
+   ]
+  },
+  {
+   "id": "R06",
+   "title": "Form 3520 threshold left 'not verified' by earlier audits",
+   "where": {
+    "hits": 13,
+    "files": 10,
+    "examples": [
+     "audit-ad300459/exports/findings.csv:30",
+     "ladder/audit.html:34"
+    ]
+   },
+   "repo_says": "Audit audit-ad300459 (flag FL02) and the ladder flags say the Form 3520 threshold was asserted but not verified.",
+   "official_says": "IRS 'Gifts from foreign person': report when gifts or bequests from a nonresident alien or foreign estate exceed $100,000 in the year; penalty 5% per month up to 25%.",
+   "assessment": "Now verified against the IRS page: the $100,000 threshold stated elsewhere in the repo is correct.",
+   "verdict": "resolved",
+   "sources": [
+    "S43"
+   ]
+  },
+  {
+   "id": "R07",
+   "title": "Foreign earned income exclusion amounts",
+   "where": {
+    "hits": 78,
+    "files": 36,
+    "examples": [
+     "audit-86f0/costs.html:1",
+     "audit-ad300459/exports/findings.csv:31",
+     "briefing/AUDIT.md:19",
+     "final-f6327e23/costs.html:32"
+    ]
+   },
+   "repo_says": "Portal and repatriate pages give $130,000 (2025) and $132,900 (2026); an audit note describes $132,900 as the 2025 figure.",
+   "official_says": "IRS 'Figuring the foreign earned income exclusion': $130,000 for tax year 2025; $132,900 for tax year 2026. The IRS landing page still stops at 2023.",
+   "assessment": "The amounts are right; the audit note that ties $132,900 to 2025 is mislabelled (it is the 2026 figure).",
+   "verdict": "consistent",
+   "sources": [
+    "S37",
+    "S51"
+   ]
+  },
+  {
+   "id": "R08",
+   "title": "Wise 'send from CNY' described as available with conditions",
+   "where": {
+    "hits": 38,
+    "files": 25,
+    "examples": [
+     "briefing/EXECUTIVE_SUMMARY.md:33",
+     "docs/data/findings.json:65",
+     "repatriate/EXECUTIVE_SUMMARY.md:23",
+     "research/METHODOLOGY.md:31"
+    ]
+   },
+   "repo_says": "Briefing and repatriate pages list Wise from-CNY: own accounts only, tax records within 3 years, at most RMB 300,000 per transfer, fee shown only in the app.",
+   "official_says": "Wise Help Centre: 'the maximum you can send in one transfer is 300,000 CNY'; a China tax record 'within the last 3 years'; 'only ... to another account you own'.",
+   "assessment": "Matches the provider's page read today.",
+   "verdict": "consistent",
+   "sources": [
+    "S21"
+   ]
+  },
+  {
+   "id": "R09",
+   "title": "HSBC Global Transfer 'USD 0–7' wording",
+   "where": {
+    "hits": 16,
+    "files": 13,
+    "examples": [
+     "acceptance-a64bd476/findings.html:22",
+     "audit-0f0f59fe/findings.json:37",
+     "audit-ad300459/exports/findings.csv:34",
+     "briefing/build.py:351"
+    ]
+   },
+   "repo_says": "The root hub and audits record that the former 'USD 0–7' Global Transfer wording is superseded.",
+   "official_says": "HSBC China tariff effective 31 Oct 2026: Global Transfer to own account is Free (Private Banking, Premier) or USD 20 (Advance); USD 7 is the International Education Payment charge.",
+   "assessment": "The correction on the hub matches the tariff read today.",
+   "verdict": "consistent",
+   "sources": [
+    "S20"
+   ]
+  },
+  {
+   "id": "R10",
+   "title": "Willful FBAR penalty formula",
+   "where": {
+    "hits": 0,
+    "files": 0,
+    "examples": []
+   },
+   "repo_says": "Briefing pages state the willful penalty as the greater of $165,353 or 50% of the balance.",
+   "official_says": "31 U.S.C. 5321(a)(5)(C)-(D): the greater of $100,000 (before inflation adjustment) or 50 percent of 'the balance in the account at the time of the violation'.",
+   "assessment": "Matches the statute and the adjusted figure.",
+   "verdict": "consistent",
+   "sources": [
+    "S40",
+    "S39"
+   ]
+  },
+  {
+   "id": "R11",
+   "title": "Section 988 exchange gains described as ordinary income",
+   "where": {
+    "hits": 32,
+    "files": 28,
+    "examples": [
+     "audit-86f0/build.py:51",
+     "audit-ad300459/exports/findings.csv:19",
+     "briefing/flagged.html:17",
+     "data/methods.json:167"
+    ]
+   },
+   "repo_says": "Several pages say section 988 exchange gains are ordinary; later audits add the personal-transaction exception.",
+   "official_says": "26 U.S.C. 988(e): the section does not apply to an individual's personal transaction, and no gain is recognised unless it exceeds $200. Publication 525: above $200 'report it as a capital gain'.",
+   "assessment": "Both statements are needed together. Whether a savings deposit is a 'personal transaction' is a facts question; this site shows both rate sets.",
+   "verdict": "needs review",
+   "sources": [
+    "S30",
+    "S31"
+   ]
+  },
+  {
+   "id": "R12",
+   "title": "No page priced tax penalties or exchange gain at each $10,000 step",
+   "where": {
+    "hits": 0,
+    "files": 0,
+    "examples": []
+   },
+   "repo_says": "Every earlier $10,000-step table prices the transfer (fee, sometimes a spread). None shows U.S. reporting-penalty exposure or the exchange gain by year of acquisition at each step.",
+   "official_says": "The inputs are published: eCFR penalty table; IRS streamlined terms (0% abroad, 5% in the U.S.); Federal Reserve annual average rates for every year.",
+   "assessment": "Gap in the earlier work, filled by the Penalty and Exchange-gain pages of this section.",
+   "verdict": "gap filled",
+   "sources": [
+    "S39",
+    "S45",
+    "S23"
+   ]
+  }
+ ],
+ "structural": [
+  "More than a dozen separately built sub-sites on main answer the same question; hub cards quote different counts (15 routes, 17 methods, 22 methods) because each session defined routes differently.",
+  "Two root summaries exist side by side: EXECUTIVE_SUMMARY.md and EXECUTIVE-SUMMARY.md, with different content and dates.",
+  "At least ten sessions claimed work between 09:43 and 09:50 UTC on 10 Nov 2026; five of them claimed the root landing page at the same time.",
+  "The repository's automated checks test structure, links and arithmetic. None of them re-reads the official pages, so a passing check is not proof that a statement is true."
+ ]
+}
