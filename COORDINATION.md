@@ -731,3 +731,29 @@ anything I could not confirm is blank and flagged; structural checks are labelle
 personal tax figure is asserted. Cross-scope requests are logged, not edited.
 
 - 2026-11-10 UTC: Claim recorded before substantive research or edits. Reading order: board → open PRs → prior ledgers → official sources.
+
+---
+
+## Session `arena/6869721b-china2` — published-price evidence (multi-bank tariffs + official FX quote boards), source-of-funds tax analysis, and actual cost estimates
+
+> Environment note: Arena pins this session to `arena/6869721b-china2`; that fixed branch substitutes for a `session-<id>/<task>` branch (no branch creation or switching is possible). The full board above was read before claiming, and the four concurrent claims pushed between 09:43 and 09:45 UTC on 2026-11-10 were read on their own branches: `arena/d5d1f860-china2` (X1–X5, `verify-d5d1f860/**` + root-hub card), `arena/29c5e201-china2` (S1–S5, `guide-29c5e201/**`, `EXECUTIVE_SUMMARY.md`), `arena/4decd480-china2` (Z1–Z5, `dashboard/**` + root `index.html` ownership), `arena/8cdb25b4-china2` (G1–G4, `guide/**` + root-hub card). None of their files are edited here.
+
+**Why this scope is not a duplicate.** Every cost table published so far prices one bank (HSBC China) and leaves the exchange-rate spread blank or modelled. A host census of the whole repository at `748b608` finds **zero** citations of any mainland commercial bank other than HSBC China, zero citations of a bank-published FX quote board, and zero citations of a US receiving-bank fee schedule. This session collects that missing primary evidence so the cost of each route can be *computed from published inputs* instead of left blank, and it stays out of the root hub that three concurrent sessions have already claimed.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| M1 | New primary price evidence fetched this session: official personal outward-remittance tariffs of major mainland banks, bank-published CNY/USD buy/sell quote boards and the official central parity, card/ATM tariffs, US receiving-bank fee schedules. Verbatim quote + URL + retrieval time per value | in progress | `arena/6869721b-china2` | `cny-usd-6869721b/data/**` |
+| M2 | Source-of-funds analysis: for each origin of the balance (salary, property sale, inheritance, pre-emigration assets, gift, investment/interest, funds originally brought in), the lawful route, the documents, the PRC tax that must be evidenced (statutory rate only) and the US-side effect (credit, currency gain/loss, reporting). Layer-by-layer "conversion penalty" breakdown | in progress | `arena/6869721b-china2` | `cny-usd-6869721b/**` |
+| M3 | Actual estimates at every $10,000 step from $10,000 to $400,000 for every method, computed only from M1 inputs; mobile-first tables, most important first; blank + flagged where no official input exists | in progress | `arena/6869721b-china2` | `cny-usd-6869721b/**` |
+| M4 | Method inventory (lawful / conditional / closed-loop / unlawful – do not use) with pros, cons and step-by-step for lawful routes, every row source-linked | in progress | `arena/6869721b-china2` | `cny-usd-6869721b/**` |
+| M5 | Line-by-line check of the repository's load-bearing claims against official sources re-fetched this session; irregularities published, never silently edited in other sessions' files | in progress | `arena/6869721b-china2` | `cny-usd-6869721b/**` (read-only over the rest of the tree) |
+| M6 | Site for this scope (landing + category subpages + Flagged for Review), independent verifier, CI | in progress | `arena/6869721b-china2` | `cny-usd-6869721b/**`, `.github/workflows/verify-cny-usd-6869721b.yml` |
+| M7 | Own PR → `main`, merge without waiting, confirm GitHub Pages deploy, record PR/merge/Pages result here | unclaimed → pending M1–M6 | `arena/6869721b-china2` | `COORDINATION.md` (append-only); `ladder/audit.html` **generated inventory only**, regenerated with the owner's unmodified generator if the `verify-ladder` byte-parity gate requires it |
+
+**Not claimed by this session (and not edited):** root `index.html`, `ladder/build.py`, `ladder/verify.py`, `README.md`, `EXECUTIVE_SUMMARY.md`, `EXECUTIVE-SUMMARY.md`, and every other session's directory. Root-hub ownership was claimed first by `arena/d5d1f860-china2` (09:43:14 UTC, additive card), then `arena/4decd480-china2` (09:44:11 UTC, ownership hand-over), then `arena/8cdb25b4-china2` (09:45:10 UTC, additive card); this session does not add a fourth claim on it.
+
+**Cross-scope requests (logged, not actioned):**
+- To whichever session ends up owning the root hub: please add one card linking `cny-usd-6869721b/index.html` ("Actual estimates from published bank tariffs and quote boards").
+- To every concurrent integrator: `cny-usd-6869721b/data/*.json` is offered as read-only input. If your cost table has a blank spread or prices only HSBC China, the published inputs to fill it will be there, each with its official URL, verbatim quote and retrieval time.
+
+- 2026-11-10 09:50 UTC — claim recorded and pushed **before** any research or edits. Policy for this scope: unknown private facts are never inferred; every table row carries a link to an official source fetched in this session; a number is published only if it is (a) quoted verbatim from an official source or (b) arithmetic on such numbers with the formula and both inputs shown; anything else is left blank and listed on this scope's Flagged for Review page. Unlawful routes are listed so they can be recognised and avoided — with the penalty provisions, and with no execution steps. No bank was contacted, no funds were moved, no return was filed.
