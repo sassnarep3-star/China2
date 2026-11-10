@@ -76,7 +76,7 @@ Assumption: USD 500,000 of CNY, and the money is **already-taxed personal salary
 
 | Route | China tax | US tax | Total leakage | Verdict |
 |---|---|---|---|---|
-| A1 — bank remittance with documents | 0% | § 988(e) gain only, if CNY appreciated | Bank spread only | **Cheapest lawful route** |
+| A1 — bank remittance with documents | 0% on the conversion itself, if the source was already PRC-taxed in the correct category | § 988(e) gain only, if CNY appreciated | Bank spread only | **Lowest-fee route compared (conditional — not a personalized ranking)** |
 | A3 — restructure as WFOE dividend | 32.5% | offset by FTC | 32.5% + spread | Only if the money really is company profit |
 | A8 — pay overseas expenses directly | 0% | 0% | 0% | Best of all, but limited to genuine obligations |
 | B — underground banking | n/a | n/a | Criminal exposure | Never |

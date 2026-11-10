@@ -854,6 +854,8 @@ def write_root_hub():
          "Direct source text and locators for manual review."),
         ("docs/index.html", "Research dashboard", "Findings · evidence ledger · checklist",
          "A separate source-linked research build from earlier project work."),
+        ("deep-dive/index.html", "Deep-dive analysis", "12 lawful + 7 prohibited channels · five penalty layers",
+         "Supplementary route/tax/penalty analysis; categorical claims corrected on integration review with its own Flagged page."),
         ("portal/index.html", "Research portal", "Statutory verification · repository audit",
          "A separate official-source portal; compare scope and caveats before relying on a claim."),
         ("repatriate/index.html", "Repatriation study", "Methods · costs · tax · audit",

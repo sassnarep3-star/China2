@@ -11,12 +11,12 @@
 | Rule | Value | Source |
 |---|---|---|
 | Annual FX purchase quota per individual (conversion of CNY into foreign currency under the current account) | USD 50,000 per person per year | [SAFE CN-1](https://www.safe.gov.cn/en/2007/0105/819.html) |
-| Documentation required **within** the quota | Valid ID only | [SAFE CN-1](https://www.safe.gov.cn/en/2007/0105/819.html) |
+| Documentation required **within** the quota | Valid ID card (SAFE: "by presenting a valid ID card" — 2015 press Q&A) | [SAFE CN-3](https://www.safe.gov.cn/en/2015/1111/1175.html) · [SAFE CN-1](https://www.safe.gov.cn/en/2007/0105/819.html) |
 | Documentation required **beyond** the quota | ID plus documents proving the transaction is genuine | [SAFE CN-1](https://www.safe.gov.cn/en/2007/0105/819.html) · [SAFE CN-3](https://www.safe.gov.cn/en/2015/1111/1175.html) |
 | Is beyond-quota conversion prohibited? | No — it is permitted where the underlying transaction is genuine and documented | [SAFE CN-3](https://www.safe.gov.cn/en/2015/1111/1175.html) |
 | The quota is an aggregate across all banks for the same individual | Confirmed by SAFE (the quota attaches to the individual, not the account) | [SAFE CN-2](https://www.safe.gov.cn/en/2017/0119/1244.html) |
 
-**Reading of the rule.** The USD 50,000 figure is a *documentation* threshold, not a hard legal ceiling on getting money out. SAFE states explicitly that conversion beyond the quota can be done "with valid identity documents and supporting documents proving the authenticity of the transaction". The tax question and the paperwork question are therefore separable.
+**Reading of the rule (quote corrected 2026-11-10 against the official page).** The USD 50,000 figure is largely a *documentation* threshold rather than a hard legal ceiling on getting money out. SAFE's official 2015 press-conference text reads: individuals within the limit "can purchase or pay foreign exchange of no higher than USD 50,000 ... by presenting a valid ID card. In the case that the amount exceeds the equivalent of USD 50,000, individuals can go through relevant procedures with banks by presenting personal ID cards and relevant supporting materials indicating the transaction amount, provided that the transaction background is true" ([SAFE CN-3](https://www.safe.gov.cn/en/2015/1111/1175.html)). *Status caveat (integration review 2026-11-10):* the 2007 SAFE rules tie FX *purchases* to *domestic* individuals ([SAFE CN-1](https://www.safe.gov.cn/en/2007/0105/819.html) — "domestic individual foreign exchange purchases"), and State Council Decree No. 532 art. 52(2) counts foreign nationals resident in China ≥1 year as 境内个人 (see `ladder/flagged.html` F02) — eligibility is status-dependent. The tax question and the paperwork question are separable.
 
 ## 1.2 Consequences of violating the quota rules ("splitting" / borrowed quotas)
 

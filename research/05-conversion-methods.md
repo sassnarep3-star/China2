@@ -22,7 +22,7 @@ Convert CNY at a mainland bank and wire USD to a US account under the **current 
 | **US tax leakage** | Only the § 988(e) currency gain, if the CNY has appreciated against your acquisition cost by more than USD 200. |
 | **Costs** | Bank FX spread + wire charges. *(No official source for the spread — left blank.)* |
 | **Legal risk** | Low. SAFE explicitly permits beyond-quota conversion with genuine supporting documents. |
-| **Pros** | Cheapest lawful route; no additional Chinese tax; no approval process; money arrives in days; preserves the FBAR/8938 history cleanly. |
+| **Pros** | Lowest-fee lawful route of those compared (conditional on documentation and status — not a personalized ranking); no additional Chinese income tax on the conversion itself when the source was already taxed in the correct category; no approval process; money arrives in days; preserves the FBAR/8938 history cleanly. |
 | **Cons** | Requires the bank to accept your proof of lawful source; the USD 50,000 quota is a documentation threshold, so a single large transfer needs a strong paper trail; the bank may ask for tax records going back years. |
 | **Sources** | [SAFE quota](https://www.safe.gov.cn/en/2007/0105/819.html) · [SAFE beyond-quota with documents](https://www.safe.gov.cn/en/2015/1111/1175.html) · [SAFE violation consequences](https://www.safe.gov.cn/en/2017/0119/1244.html) · [§ 988(e)](https://www.law.cornell.edu/uscode/text/26/988) |
 
@@ -99,7 +99,7 @@ Pay foreign suppliers, tuition, insurance, mortgages and credit cards directly o
 | **China tax leakage** | 0% — no income is created by paying an expense. |
 | **US tax leakage** | 0% — no income, no currency gain, no FBAR movement. |
 | **Legal risk** | Low if the expense is genuine and documented. |
-| **Pros** | **Zero tax on both sides.** Converts CNY into the *economic benefit* of the payment without ever creating taxable income. Bank document review generally applies above USD 50,000 per payment. |
+| **Pros** | **No tax event from spending per se** (integration review 2026-11-10: prior wording "zero tax on both sides" was categorical — PRC tax status was fixed when the money was earned; U.S. FBAR/Form 8938 duties continue while the balance sits in China). Converts CNY into the *economic benefit* of the payment without creating a new taxable income event. Bank document review generally applies above USD 50,000 per payment. |
 | **Cons** | Only works to the extent you have genuine overseas obligations; requires contracts and invoices; can't be used for pure investment. |
 | **Sources** | [SAFE CN-4 — evidencing documents at the bank](https://www.safe.gov.cn/en/2017/0126/1248.html) · *Huifa [2020] No. 14 art. 49 threshold — secondary, flagged* |
 

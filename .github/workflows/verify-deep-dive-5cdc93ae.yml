@@ -1,0 +1,26 @@
+name: Verify deep-dive section (arena-5cdc93ae-china2 scope, integrated)
+
+# CI only - no deploy step. GitHub Pages for this repository is native from the
+# main root (see COORDINATION.md); adding actions/deploy-pages here would change
+# the Pages source and break the live site. The deep-dive/ directory is served
+# as static files at /China2/deep-dive/ with no settings change.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-deep-dive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Local links, anchors, row source links, correction markers, HTML parse
+        run: python3 deep-dive/verify_links.py

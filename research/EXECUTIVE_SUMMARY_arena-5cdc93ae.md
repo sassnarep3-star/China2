@@ -4,13 +4,15 @@
 
 Every figure below is sourced to an official government page. The full source registry is in [`research/00-source-registry.md`](research/00-source-registry.md). Values that could not be confirmed from an official source are left blank and listed on the site's [Flagged for Review](docs/flagged.html) page.
 
+> **Integration-review caveat (2026-11-10, `arena/d6e08526-china2`, correcting two PR-review findings):** (1) whether the USD 50,000 *purchase* facility applies depends on individual status — the 2007 SAFE rules tie FX purchases to *domestic* individuals and State Council Decree No. 532 art. 52(2) counts foreign nationals resident in China ≥1 year as 境内个人 (see `ladder/flagged.html` F02); the beyond-quota-with-documents statement itself was re-verified verbatim on [SAFE's 2015 press-conference page](https://www.safe.gov.cn/en/2015/1111/1175.html). (2) categorical "0% / no tax / cheapest" statements below are modelled comparisons conditioned on the stated facts — they are not personalized tax rulings; PRC income-tax category, source, residency and U.S. foreign-tax-credit limits are not determined here.
+
 ---
 
 ## 1. The headline answer
 
-**If the CNY sitting in the mainland bank account is personal, lawfully-earned money that has already been taxed in China, converting it to USD carries no Chinese income tax at all.** The only costs are the bank's FX spread and, on the US side, any currency gain above USD 200 under 26 U.S.C. § 988(e).
+**If the CNY sitting in the mainland bank account is personal, lawfully-earned money whose source has already been subjected to PRC income tax in the correct category, the conversion itself adds no further PRC income tax** (modelled conclusion with the caveats above — not a personalized ruling). The other costs are the bank's FX spread and, on the US side, any currency gain above USD 200 under 26 U.S.C. § 988(e).
 
-China's individual FX rules set a **USD 50,000 per person per year** documentation threshold, not a legal ceiling. SAFE states explicitly that conversion beyond the quota is permitted with valid ID plus documents proving the transaction is genuine. Outward remittance of company profits is a **current-account** item handled directly at the bank with evidencing documents and **no quota**.
+China's individual FX rules set a **USD 50,000 per person per year** facilitation limit that behaves largely as a documentation threshold rather than an absolute ceiling: SAFE states officially that amounts above the limit can be handled at banks with ID plus supporting materials when the transaction background is true ([SAFE, 2015 press-conference Q&A](https://www.safe.gov.cn/en/2015/1111/1175.html)) — subject to the individual-status caveat in the box above. Outward remittance of company profits is a **current-account** item handled directly at the bank with evidencing documents and **no quota**.
 
 The "considerable amount of taxes" comes from one of three specific places, and each has a different fix:
 
@@ -40,7 +42,7 @@ The "considerable amount of taxes" comes from one of three specific places, and 
 
 | Rank | Method | China tax | US tax | Conditions |
 |---|---|---|---|---|
-| **1** | **Pay genuine overseas expenses directly from the CNY account** | **0%** | **0%** | You must have real overseas obligations. Tax-free on both sides. |
+| **1** | **Pay genuine overseas expenses directly from the CNY account** | **0%**\* | **0%**\* | You must have real overseas obligations; modelled comparison, not a personalized ruling (see caveat box). |
 | **2** | **Direct bank remittance of already-taxed personal CNY, with documentation** | **0%** | § 988(e) gain only | The money must be provably lawful and already taxed. SAFE permits beyond-quota conversion with documents. |
 | **3** | **After-tax salary remittance while employed in China** | **0%** | FEIE may zero it (up to **USD 130,000** in 2025) | You must still qualify under the bona fide residence or 330-day physical presence test. |
 | **4** | **Equipment rental royalties** | **7% effective** | Largely offset by FTC | Requires a genuine equipment lease. |

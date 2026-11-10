@@ -16,9 +16,9 @@ Last verified: 2026-11-07.
 
 | ID | Source (official) | URL | Status |
 |---|---|---|---|
-| CN-1 | SAFE — Q&A on individual foreign exchange purchase/service quota: USD 50,000 per person per year; within quota, ID only | https://www.safe.gov.cn/en/2007/0105/819.html | Official |
+| CN-1 | SAFE — 2007 press Q&A on the individual FX rules: USD 50,000 annual quota applying to individual FX *sales* (both domestic and foreign individuals) and to FX *purchases* by **domestic individuals**; within the quota formalities drastically simplified, beyond it strengthened authenticity examination | https://www.safe.gov.cn/en/2007/0105/819.html | Official |
 | CN-2 | SAFE — Q&A on the individual FX quota and consequences of violation (watchlist, quota restriction, credit record, AML / criminal referral) | https://www.safe.gov.cn/en/2017/0119/1244.html | Official |
-| CN-3 | SAFE — Q&A: conversion **beyond** USD 50,000 permitted with ID + authenticity documents where the transaction is genuine | https://www.safe.gov.cn/en/2015/1111/1175.html | Official |
+| CN-3 | SAFE — 2015 Q3 press-conference transcript (Q&A format): above USD 50,000, individuals may proceed at banks with ID + supporting materials indicating the transaction amount, provided the transaction background is true (quote verified verbatim 2026-11-10) | https://www.safe.gov.cn/en/2015/1111/1175.html | Official |
 | CN-4 | SAFE — Q&A: outward remittance of FDI profits is handled under the **current account** at the bank with evidencing documents, no quota, if genuine | https://www.safe.gov.cn/en/2017/0126/1248.html | Official |
 | CN-5 | SAFE — Huifa [2017] No. 29: overseas ATM withdrawals with domestic cards, RMB 100,000/person/year, RMB 10,000/card/day; borrowing/lending cards prohibited | https://www.safe.gov.cn/en/2017/1230/1397.html | Official |
 | CN-6 | SAFE — Catalogue of major existing FX laws and regulations (confirms existence of PBOC Announcement [2004] No. 16 "Interim Measures … External Transfers of Personal Property", Huifa [2004] No. 118, Huifa [2005] No. 9, Huifa [2007] No. 1, Huifa [2007] No. 90) | https://www.safe.gov.cn/en/2014/1126/1131.html | Official (index only) |
