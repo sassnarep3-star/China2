@@ -1,0 +1,555 @@
+[
+ {
+  "id": "R01",
+  "name": "Documented current-account conversion, then wire the USD out",
+  "short": "Bank documented conversion + wire",
+  "category": "lawful",
+  "verdict": "Primary route",
+  "cost_model": "documented_wire",
+  "capability": "capable",
+  "who": "US citizen with lawful RMB current-account income in a mainland bank (salary, fees, etc.)",
+  "legal_basis": "Current Account FX Business Guidelines 2020, 汇发〔2020〕14号 Art. 59 (non-domestic individual) or Art. 56 (domestic individual); FX Regulations 条例 Art. 5 and 12; PBOC Order No. 3 Art. 13",
+  "requirements": [
+   "Passport (valid ID)",
+   "Source-of-funds documents for the amount: employment contract, payslips, and the PRC individual income tax payment record (税务凭证 / 完税凭证) — Art. 59 expressly includes tax vouchers",
+   "Bank's own authenticity review under 条例 Art. 12 and Art. 68"
+  ],
+  "caps": "No USD 50,000 cap is stated for this documented conversion. Art. 54 puts the USD 50,000 annual facilitation quota on individuals' FX SALES and DOMESTIC individuals' FX PURCHASES; Art. 59 handles a non-domestic individual's documented current-account purchase separately. A holder of a PRC Foreign Permanent Resident ID may instead use the quota (Art. 59 second sentence).",
+  "pros": [
+   "Lawful and expressly provided for in the current rule text",
+   "No published quota cap for documented current-account income",
+   "Once the money is in your own FX account, Art. 65(1) lets a non-domestic individual remit it abroad on ID alone"
+  ],
+  "cons": [
+   "The bank, not you, decides whether the paper is sufficient (Art. 68 lets it refuse)",
+   "Requires an unbroken tax and employment paper trail for the whole balance",
+   "Bank fee is capped but the FX spread scales with the amount",
+   "Chinese banks may require the receiving account name to match exactly"
+  ],
+  "steps": [
+   "Ask the bank for its written list of required documents for a non-resident/foreign-individual current-account conversion of this amount.",
+   "Assemble the tax payment record for the same period as the funds (税务凭证/完税凭证) plus contracts and payslips.",
+   "Convert CNY→USD at the bank counter or in online banking; keep the 结汇/购汇 slip (水单).",
+   "Either remit directly (step 5) or park the USD in your own 外汇储蓄账户, then remit under Art. 65(1).",
+   "Send the wire with your name and address exactly as on the US account; choose SHA/OUR consciously (OUR + 'Pay Exact' costs CNY 200 at HSBC).",
+   "Keep the SWIFT confirmation, the Chinese conversion slip and the tax vouchers — they are the evidence for both FBAR/8938 and any later audit."
+  ],
+  "sources": [
+   "S01",
+   "S02",
+   "S03",
+   "S07",
+   "S14",
+   "S15",
+   "S16"
+  ],
+  "unverified": [
+   "The FX spread your particular bank will apply (commercial, not published as a rule)",
+   "Any intermediary/correspondent bank deduction",
+   "Whether your specific documents will be accepted"
+  ]
+ },
+ {
+  "id": "R02",
+  "name": "Remit a foreign-currency balance you already hold",
+  "short": "Remit existing FX balance",
+  "category": "lawful",
+  "verdict": "Cheapest if the account is already in USD",
+  "cost_model": "fx_account_wire",
+  "capability": "conditional",
+  "who": "Only if the balance is already foreign currency in your own FX savings account",
+  "legal_basis": "Current Account FX Business Guidelines 2020 Art. 65(1); PBOC Order No. 3 Art. 14",
+  "requirements": [
+   "Funds already in a foreign-currency account in your own name",
+   "Valid ID at the counter (Art. 65(1) requires no amount cap and no transaction documents)"
+  ],
+  "caps": "No amount cap stated for a non-domestic individual remitting from an FX account (Art. 65(1)). Cash is different: USD 10,000/day with documents above that (Art. 65(2)).",
+  "pros": [
+   "No conversion spread at this step — the CNY→USD conversion already happened earlier",
+   "Only the wire fee applies",
+   "The rule text requires ID only, not a document bundle"
+  ],
+  "cons": [
+   "Only works to the extent the money is already in FX — does not solve a CNY balance",
+   "The original CNY→FX conversion would itself have carried a spread"
+  ],
+  "steps": [
+   "Confirm with the bank whether the balance is CNY or a foreign currency, and in which account type.",
+   "If FX: instruct the outward remittance under Art. 65(1) with your passport.",
+   "If the bank asks for source documents anyway, supply them; the rule permits a bank to refuse a suspicious transaction (Art. 68).",
+   "Reconcile the amount received against the amount sent to measure the true all-in deduction."
+  ],
+  "sources": [
+   "S01",
+   "S03",
+   "S14",
+   "S15"
+  ],
+  "unverified": [
+   "Whether your balance is CNY or FX — a private fact I must not assume"
+  ]
+ },
+ {
+  "id": "R03",
+  "name": "HSBC Global Transfer to your own HSBC account abroad",
+  "short": "HSBC Global Transfer",
+  "category": "lawful",
+  "verdict": "Lowest published fee, but only HSBC-to-HSBC",
+  "cost_model": "global_transfer",
+  "capability": "conditional",
+  "who": "HSBC China customer who also holds an HSBC account in the US",
+  "legal_basis": "HSBC China tariff 2.2.6.1; the underlying conversion still needs 汇发〔2020〕14号 compliance",
+  "requirements": [
+   "HSBC China account at Advance/Premier/Private Banking tier",
+   "HSBC account in your own name in the US (2.2.6.1 covers self-name transfers)",
+   "The same conversion documentation as R01 for the CNY→USD leg"
+  ],
+  "caps": "Tariff states no amount cap. The FX-conversion rules still apply before any transfer.",
+  "pros": [
+   "Premier: free; Advance: USD 20 per transaction (tariff 2.2.6.1)",
+   "One institution on both ends can shorten the correspondent chain"
+  ],
+  "cons": [
+   "Requires HSBC on both ends",
+   "The free/discounted tier requires a CNY 500,000 relationship balance or equivalent (tariff Important Note 3)",
+   "Still needs the Art. 59 documentation for the conversion itself"
+  ],
+  "steps": [
+   "Confirm your HSBC China tier and whether a US HSBC account exists in your name.",
+   "Complete the documented conversion (R01 steps 1–3).",
+   "Use Global Transfer to Self; the tariff price applies per transaction, not per dollar.",
+   "Confirm receipt and record any deduction."
+  ],
+  "sources": [
+   "S14",
+   "S01",
+   "S15"
+  ],
+  "unverified": [
+   "HSBC US incoming-wire fee (not verified this session)"
+  ]
+ },
+ {
+  "id": "R04",
+  "name": "Withdraw USD cash abroad on a mainland bank card (ATM)",
+  "short": "ATM cash abroad",
+  "category": "lawful-capped",
+  "verdict": "Small amounts only — hard annual cap",
+  "cost_model": "atm_card",
+  "capability": "capped",
+  "who": "Anyone holding a mainland-issued RMB or foreign-currency bank card",
+  "legal_basis": "SAFE Notice 汇发〔2017〕29号 Arts. 1 and 4",
+  "requirements": [
+   "Mainland-issued bank card",
+   "Overseas ATM that accepts the card network"
+  ],
+  "caps": "CNY 100,000 equivalent per person per calendar year across all your cards (supplementary cards included); CNY 10,000 equivalent per card per day. Exceeding the annual cap suspends overseas cash withdrawals for the rest of that year AND the following year (Art. 1).",
+  "pros": [
+   "No up-front document bundle",
+   "Useful for living costs rather than repatriation"
+  ],
+  "cons": [
+   "Cannot move USD 400,000 — the annual ceiling is about USD 14,958 at the 2026-11-10 BOC rate",
+   "Breaching the cap triggers a suspension, and card-lending to evade is expressly prohibited (Art. 1)",
+   "ATM operator fees and card FX pricing are set commercially and were not verifiable"
+  ],
+  "steps": [
+   "Check the card's daily and annual limits with the issuing bank.",
+   "Withdraw at an ATM in the US; keep every receipt.",
+   "Track cumulative withdrawals against the CNY 100,000 annual ceiling.",
+   "Do not use anyone else's card and do not lend yours (Art. 1)."
+  ],
+  "sources": [
+   "S06",
+   "S16"
+  ],
+  "unverified": [
+   "Issuing-bank ATM fee",
+   "Card-network FX markup"
+  ]
+ },
+ {
+  "id": "R05",
+  "name": "Spend the CNY directly on US expenses with the card",
+  "short": "Spend, don't convert",
+  "category": "lawful",
+  "verdict": "Avoids conversion, but you never receive USD",
+  "cost_model": "card_spend",
+  "capability": "partial",
+  "who": "Anyone who can pay US merchants with a mainland card",
+  "legal_basis": "Current Account FX Business Guidelines 2020 Art. 76(5) (domestic cards used abroad, repaid by FX purchase)",
+  "requirements": [
+   "Merchant that accepts UnionPay or the card network"
+  ],
+  "caps": "Merchant and card limits apply; no regulator cap stated for purchases.",
+  "pros": [
+   "No conversion paperwork",
+   "Buys goods and services at the point of need"
+  ],
+  "cons": [
+   "Does not produce a USD balance you control",
+   "Card FX markup and any foreign-transaction fee apply to every purchase",
+   "Merchant acceptance of UnionPay in the US is uneven"
+  ],
+  "steps": [
+   "Test a small purchase to see the posted rate and any fee.",
+   "Compare the posted CNY cost against the BOC published rate to measure the markup.",
+   "Use only for expenses you would incur anyway."
+  ],
+  "sources": [
+   "S01",
+   "S16"
+  ],
+  "unverified": [
+   "Card FX markup",
+   "Foreign transaction fee"
+  ]
+ },
+ {
+  "id": "R06",
+  "name": "Emigration asset transfer (移民财产转移)",
+  "short": "Emigration transfer",
+  "category": "lawful-conditional",
+  "verdict": "For pre-emigration assets — needs cancelled hukou",
+  "cost_model": "documented_wire",
+  "capability": "conditional",
+  "who": "A person who emigrated from the mainland (or settled in HK/Macau) and is moving assets owned BEFORE acquiring emigrant status",
+  "legal_basis": "Provisional Measures on Individuals' Outward Asset Transfers (个人财产对外转移售付汇管理暂行办法) Arts. 2, 6, 8, 10, 11",
+  "requirements": [
+   "Cancelled PRC household registration certificate (户籍注销证明) from the police",
+   "Proof of settling abroad issued or authenticated by a Chinese embassy/consulate",
+   "Property-rights documents and the tax certificate / 完税凭证 from the tax authority",
+   "One application for the entire amount"
+  ],
+  "caps": "Staged by rule: first remittance ≤ half; after one year ≤ half of the remainder; after two years the balance. Total ≤ RMB 200,000 may go in one approved remittance. Approval level: ≤ RMB 500,000 local SAFE; above that SAFE headquarters.",
+  "pros": [
+   "Designed exactly for moving a whole lawful estate abroad",
+   "Explicit legal pathway with defined documents"
+  ],
+  "cons": [
+   "Requires having given up PRC household registration — a one-way step",
+   "Two-year staging for large amounts",
+   "SAFE HQ approval above RMB 500,000",
+   "Bank must remit to your own account abroad; no cash payout in China"
+  ],
+  "steps": [
+   "Confirm you hold the 户籍注销证明 and embassy-authenticated settlement proof.",
+   "Obtain the tax certificate for the assets from the competent tax authority.",
+   "File one application with the SAFE branch where your household was registered.",
+   "After approval, take the 核准件 to the designated bank for the first tranche.",
+   "Repeat within the staged limits (≤ half, then ≤ half of the remainder after a year, then the balance)."
+  ],
+  "sources": [
+   "S04",
+   "S01"
+  ],
+  "unverified": [
+   "Eligibility depends on private facts (whether you ever held PRC hukou)"
+  ]
+ },
+ {
+  "id": "R07",
+  "name": "Inheritance asset transfer (继承财产转移)",
+  "short": "Inheritance transfer",
+  "category": "lawful-conditional",
+  "verdict": "Only for a lawful inheritance of a mainland estate",
+  "cost_model": "documented_wire",
+  "capability": "conditional",
+  "who": "A foreign citizen (or HK/Macau resident) who has lawfully inherited a mainland estate",
+  "legal_basis": "Provisional Measures on Individuals' Outward Asset Transfers Arts. 2, 9, 10, 11",
+  "requirements": [
+   "Proof of inheritance (will/probate/bank records), notarised if not already",
+   "Deceased's property-rights documents and the tax certificate from the tax authority where the estate is",
+   "Proof of settling abroad authenticated by a Chinese embassy/consulate",
+   "One application for all property inherited from the same person"
+  ],
+  "caps": "Same approval thresholds as R06 (≤ RMB 500,000 local SAFE; above, SAFE HQ). Separate applications for different deceased persons.",
+  "pros": [
+   "Clear statutory route for inherited funds",
+   "Can be remitted in one or several tranches"
+  ],
+  "cons": [
+   "Only applies to inherited property, not your own savings",
+   "Notarisation and tax certificates take time",
+   "Different deceased persons cannot be combined"
+  ],
+  "steps": [
+   "Collect the inheritance documents and the deceased's property documents.",
+   "Obtain the tax certificate / 完税凭证.",
+   "Apply to the SAFE branch where the deceased was registered.",
+   "Remit through the designated bank to your own account abroad."
+  ],
+  "sources": [
+   "S04"
+  ],
+  "unverified": [
+   "Eligibility depends on private facts"
+  ]
+ },
+ {
+  "id": "R08",
+  "name": "Sell mainland property, then repatriate the proceeds",
+  "short": "Property sale proceeds",
+  "category": "lawful-conditional",
+  "verdict": "Capital-account route with its own approvals",
+  "cost_model": "documented_wire",
+  "capability": "conditional",
+  "who": "Owner of mainland real estate selling as a foreign individual",
+  "legal_basis": "PBOC Order No. 3 Art. 22 (non-domestic individual buying commercial housing, own-use principle) and the property FX rules it cross-refers to",
+  "requirements": [
+   "Completed sale with title transfer and tax paid",
+   "Bank/SAFE review of the capital-account documentation",
+   "Proof the property was acquired lawfully"
+  ],
+  "caps": "Not determined by the documents I verified this session — the specific property-repatriation rules were not re-read here.",
+  "pros": [
+   "Converts an illiquid asset into a remittable balance",
+   "Tax on the gain is assessed on the sale, separately"
+  ],
+  "cons": [
+   "Property-specific approvals on top of everything else",
+   "Market and transaction risk; selling is slow",
+   "The precise repatriation document list is unverified in this session"
+  ],
+  "steps": [
+   "Obtain the property-specific document list from the bank and the local SAFE branch before listing.",
+   "Complete the sale and settle all taxes.",
+   "Apply for the outward transfer of the net proceeds.",
+   "Remit to your own account abroad."
+  ],
+  "sources": [
+   "S03",
+   "S02",
+   "S04"
+  ],
+  "unverified": [
+   "Property repatriation document list",
+   "Any property-specific cap"
+  ]
+ },
+ {
+  "id": "R09",
+  "name": "Entrust a near relative to act for you within their own quota",
+  "short": "Relative acts for you",
+  "category": "lawful-conditional",
+  "verdict": "Lawful for genuine family support; not a quota pool",
+  "cost_model": "documented_wire",
+  "capability": "conditional",
+  "who": "Where genuine family support or a documented transaction exists",
+  "legal_basis": "Current Account FX Business Guidelines 2020 Arts. 61 and 62",
+  "requirements": [
+   "Entrustment with both IDs, a power of attorney and a near-relative relationship document (household register, marriage certificate, birth certificate)",
+   "A genuine underlying transaction or support obligation"
+  ],
+  "caps": "Within-quota agency is limited to the relative's own USD 50,000 facilitation quota, and only for genuine purposes. Using relatives' quotas to move YOUR money is the prohibited 分拆 (Art. 62).",
+  "pros": [
+   "Practical for genuine support payments to family",
+   "Expressly permitted with the right paperwork"
+  ],
+  "cons": [
+   "Cannot be used to multiply your own quota — that is the exact conduct Art. 62 targets",
+   "Both sides risk the '关注名单' watchlist and a 3-year enhanced review"
+  ],
+  "steps": [
+   "Confirm the transfer is genuine support, not a split of your own balance.",
+   "Prepare the power of attorney and relationship proof.",
+   "The relative applies within their own quota for the genuine purpose.",
+   "Keep the support rationale documented."
+  ],
+  "sources": [
+   "S01",
+   "S02"
+  ],
+  "unverified": []
+ },
+ {
+  "id": "R10",
+  "name": "Split the balance across relatives' USD 50,000 quotas",
+  "short": "Quota splitting (分拆)",
+  "category": "unlawful",
+  "verdict": "Prohibited — watchlist and fines",
+  "cost_model": "unlawful_split",
+  "capability": "unlawful",
+  "who": "—",
+  "legal_basis": "Current Account FX Business Guidelines 2020 Art. 62 (anti-splitting); FX Regulations 条例 Art. 39; PBOC Order No. 3 Art. 7",
+  "requirements": [
+   "—"
+  ],
+  "caps": "Prohibited outright.",
+  "pros": [],
+  "cons": [
+   "Art. 62: individuals may not evade quota or authenticity management by splitting; the offender goes on the '关注名单' (watchlist) for the year plus two more",
+   "Lenders of their quota get a risk warning, then the watchlist on a repeat",
+   "逃汇 exposure under 条例 Art. 39: fine up to 30% of the amount, or 30% up to the equivalent amount if serious",
+   "Taints the relatives' records too"
+  ],
+  "steps": [
+   "Do not do this."
+  ],
+  "sources": [
+   "S01",
+   "S02",
+   "S03"
+  ],
+  "unverified": []
+ },
+ {
+  "id": "R11",
+  "name": "Underground bank, hawala or a private FX dealer",
+  "short": "Underground/private dealer",
+  "category": "unlawful",
+  "verdict": "Criminal exposure",
+  "cost_model": "underground",
+  "capability": "unlawful",
+  "who": "—",
+  "legal_basis": "FX Regulations 条例 Arts. 45 and 39 (criminal liability referred to in both)",
+  "requirements": [
+   "—"
+  ],
+  "caps": "Prohibited outright.",
+  "pros": [],
+  "cons": [
+   "条例 Art. 45: private or disguised FX trading — warning, confiscation of illegal gains, fine up to 30% (30%–100% if serious), plus criminal liability",
+   "条例 Art. 39: moving funds abroad in evasion — fine up to 30%, or 30% to the equivalent amount if serious",
+   "No legal recourse if the counterparty disappears"
+  ],
+  "steps": [
+   "Do not do this."
+  ],
+  "sources": [
+   "S02"
+  ],
+  "unverified": []
+ },
+ {
+  "id": "R12",
+  "name": "Carry USD cash out in person",
+  "short": "Carry cash",
+  "category": "lawful-capped",
+  "verdict": "Legal only in small amounts; impractical",
+  "cost_model": "cash_carry",
+  "capability": "capped",
+  "who": "Traveller carrying their own converted cash",
+  "legal_basis": "Provisional Measures on Carrying FX Cash Across the Border 汇发〔2003〕102号 Arts. 3, 5, 7; 条例 Art. 42; CBP currency reporting",
+  "requirements": [
+   "Conversion and cash withdrawal inside China (bank 携带证 above USD 5,000)",
+   "US FinCEN Form 105 above USD 10,000"
+  ],
+  "caps": "China: ≤ USD 5,000 no permit; USD 5,000–10,000 bank 携带证; above USD 10,000 a SAFE-branch permit, and in principle not above USD 10,000 at all (Art. 7). US: report amounts over USD 10,000 on FinCEN 105. China penalty for illegal carriage: warning plus fine up to 20% (条例 Art. 42).",
+  "pros": [
+   "No wire fee",
+   "Immediate"
+  ],
+  "cons": [
+   "Hard limit of about USD 10,000 per trip",
+   "Physical loss/theft risk",
+   "US declaration obligation and seizure risk if not filed",
+   "Carrying USD 400,000 is not lawful in one trip and is unsafe in any case"
+  ],
+  "steps": [
+   "Convert at the bank and request cash with a 携带证 if between USD 5,000 and 10,000.",
+   "Declare to CBP on FinCEN 105 if bringing in more than USD 10,000.",
+   "Never split cash among travellers to stay under thresholds — CBP aggregates family/group amounts (S13)."
+  ],
+  "sources": [
+   "S05",
+   "S02",
+   "S13"
+  ],
+  "unverified": [
+   "Whether any bank will issue a 携带证 for your amount"
+  ]
+ },
+ {
+  "id": "R13",
+  "name": "Third-party remittance platform (Wise-type)",
+  "short": "Third-party platform",
+  "category": "unverified",
+  "verdict": "No verified path from a mainland CNY balance",
+  "cost_model": "unverified",
+  "capability": "unverified",
+  "who": "—",
+  "legal_basis": "None verified this session",
+  "requirements": [
+   "—"
+  ],
+  "caps": "Unverified.",
+  "pros": [
+   "Would be cheap if it existed for this corridor"
+  ],
+  "cons": [
+   "I found no official source confirming that a mainland-bank CNY balance can be sent to the US through such a platform",
+   "Any such flow still has to satisfy the same Chinese conversion rules",
+   "Prior sessions cited a platform help page; that is a company page, not a regulator, and it was not re-verified here"
+  ],
+  "steps": [
+   "Verify the corridor directly with the provider and your bank before relying on it."
+  ],
+  "sources": [],
+  "unverified": [
+   "Whether the corridor exists at all for a mainland personal CNY balance",
+   "Fee"
+  ]
+ },
+ {
+  "id": "R14",
+  "name": "Move it through an investment channel (QDII / QDLP / Stock Connect)",
+  "short": "Investment channel",
+  "category": "does-not-achieve-goal",
+  "verdict": "Does not put USD in your hands",
+  "cost_model": "not_costed",
+  "capability": "no",
+  "who": "—",
+  "legal_basis": "PBOC Order No. 3 Art. 17 (domestic individual may invest abroad through qualified domestic institutional investors)",
+  "requirements": [
+   "Eligibility set by the institution and the scheme"
+  ],
+  "caps": "Scheme-specific; not verified this session.",
+  "pros": [
+   "A lawful way to hold overseas exposure"
+  ],
+  "cons": [
+   "The money stays inside the domestic scheme — selling does not remit USD to you",
+   "Stock Connect is a closed loop by design",
+   "Not a repatriation method"
+  ],
+  "steps": [
+   "—"
+  ],
+  "sources": [
+   "S03"
+  ],
+  "unverified": [
+   "Scheme caps",
+   "Whether any scheme permits personal remittance of proceeds"
+  ]
+ },
+ {
+  "id": "R15",
+  "name": "Buy crypto / USDT inside China and sell abroad",
+  "short": "Crypto / USDT",
+  "category": "flagged",
+  "verdict": "Not assessed — status not re-verified this session",
+  "cost_model": "not_costed",
+  "capability": "flagged",
+  "who": "—",
+  "legal_basis": "Not re-verified in this session",
+  "requirements": [
+   "—"
+  ],
+  "caps": "Unknown here.",
+  "pros": [],
+  "cons": [
+   "PRC crypto trading is widely described as prohibited, but I did not re-read the PBOC notice in this session, so the status is flagged rather than asserted",
+   "Even if a channel existed, moving value this way to avoid FX rules would engage 条例 Arts. 39 and 45"
+  ],
+  "steps": [
+   "—"
+  ],
+  "sources": [],
+  "unverified": [
+   "Legal status of crypto conversion in the PRC",
+   "Any cost"
+  ]
+ }
+]
