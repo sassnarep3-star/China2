@@ -511,7 +511,7 @@ Arena requires the existing fixed session branch, which substitutes for a sessio
 | Task | Status | Owner | Files / scope |
 |---|---|---|---|
 | Independently examine published user-critical recommendations and cost presentation against official sources; document gaps and findings | done | `arena/456e7542-china2` | `audit-456e7542/**` |
-| Validate own review, integration checks, PR and deployment | in progress | `arena/456e7542-china2` | append-only `COORDINATION.md`; `ladder/audit.html` only if deterministic inventory regeneration is required |
+| Validate own review, integration checks, PR and deployment | done | `arena/456e7542-china2` | append-only `COORDINATION.md`; `ladder/audit.html` only if deterministic inventory regeneration is required |
 
 Unknown personal facts, quotes, and taxes will not be inferred. Any source limitation or inconsistency will be flagged. Shared landing and previous sessions' substantive outputs are outside this claim.
 
@@ -544,3 +544,9 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Public retrieval of `/briefing/` initially returned a cached old document. Cache-busted public retrieval https://sassnarep3-star.github.io/China2/briefing/index.html?revision=a5d67d6 confirmed current title “evaluate lawful CNY → USD routes”, tax “Not determined”, removed numeric spreads, conditional streamlined language, and fee-component exclusions. Canonical site: https://sassnarep3-star.github.io/China2/ ; corrected study: /China2/briefing/ ; costs: /China2/briefing/costs.html ; flags: /China2/briefing/flagged.html#corrections .
 - Remaining needs review: historical scenario estimates and substantive claims in other dashboards; account origin, taxes, eligibility, executable FX and third-party fees unknown. This pass did NOT freshly verify every inherited source/line or test a real browser. No bank contacted, money moved or return filed. These limitations are published, not treated as verified facts.
 - This result record is a documentation-only follow-up; the observed merge/deploy outcome could not exist before PR #34 merged.
+- **Publication:** PR https://github.com/sassnarep3-star/China2/pull/33 merged 2026-11-10 05:59:55 UTC at `3cdb0351c3d696358ed3bc91d01c67807c6be691`. All five PR checks passed. First Pages run 42765568745 was cancelled when concurrent PR #34 advanced main; superseding run https://github.com/sassnarep3-star/China2/actions/runs/42765673842 succeeded at `a5d67d6f332ec453a5c7c09583be8059ad56381a`. Live review retrieved successfully at https://sassnarep3-star.github.io/China2/audit-456e7542/ .
+- **Update after concurrent correction:** PR https://github.com/sassnarep3-star/China2/pull/34 corrected the briefing tax wording, removed unverified spread bands, qualified fee components and corrected the documentation language. This session updates its review to identify those issues as historical and retains remaining cautions; request to link this independent review from root remains outstanding. This record and wording update require a follow-up PR because the merge and concurrent fix happened after PR #33.
+
+- Follow-up rebase: concurrent PR #36 appended a task-board claim during publication. Preserved both append-only sections. The other session claims `ladder/**`; to avoid that scope, the review update preserves the existing HTML byte count, leaving its inventory unchanged; no ladder source, data or generated output is changed in the follow-up.
+
+- A further concurrent board append conflicted during the follow-up rebase; both logs were retained. The prior byte-preservation attempt needed an additional shortening pass and was completed before publication.
