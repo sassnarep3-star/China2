@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-RETRIEVED = "2026-11-08"
+RETRIEVED = "2026-11-10"
 
 # ---------------------------------------------------------------------------
 # FX handling. All tables are in USD. CNY amounts appear only in bank tariffs,
@@ -108,7 +108,8 @@ SOURCES = [
                "(waived for Premier). 5.3.1 same-name HSBC Global Transfer: free for Premier; reference "
                "CNY 50, actual USD 7 per transaction. 3.1.1 foreign cash withdrawal: 0.25%-0.4%, "
                "minimum CNY 40.",
-         used_for="The only published, itemised bank tariff used in this ladder. A commercial tariff, "
+         used_for="Superseded for the wire, cable, cash-notes and Global Transfer items by S21 "
+                 "(effective 31 Oct 2026). Retained verbatim for the audit trail. A commercial tariff, "
                  "not a regulator's figure, and not a quote for any specific account."),
     dict(id="S07", jur="PRC", authority="National People's Congress / State Taxation Administration",
          title="Individual Income Tax Law of the PRC (2018 revision)",
@@ -239,6 +240,13 @@ SOURCES = [
                "RMB is converted back against the original exchange memo.",
          used_for="Corroborates the documentary requirement in S02 Art. 13.",
          flag=None),
+    dict(id="S21", jur="PRC (commercial)", authority="HSBC Bank (China) Company Limited",
+         title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 Oct 2026)",
+         url="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+         lang="EN", retrieval="direct", status="verified",
+         locator="Items 2.2.2.1, 2.2.2.2, 2.2.4.1-2.2.4.4, 2.2.6.1, 2.2.6.2, 2.2.7",
+         quote="2.2.4.1 Telegraphic Transfer Issuance: Private Banking individuals — Free; PB entity 0.1% min CNY100/max CNY1,000; Premier and Advance — 0.1% of remittance amount, minimum CNY100/equivalent, maximum CNY500/equivalent per transaction, plus cable charge. 2.2.4.2 cable charges: PB individuals Free; PB entity CNY140/equivalent per cable; Premier and Advance CNY120/equivalent per cable. 2.2.4.3 additional cable messages: PB individuals Free; otherwise CNY100/equivalent per page. 2.2.4.4 amendment/cancellation: PB individuals Free; otherwise up to 5 cables CNY200/equivalent, each additional cable CNY40/equivalent, plus overseas bank charge. 2.2.2.1 Foreign Currency Notes Withdrawal over the counter: Free for PB, Premier and Advance; for USD/HKD, withdrawals of at least USD5,000 equivalent need at least three working days' advance notice. 2.2.2.2 Cash Exchange (foreign-currency notes): PB Free; Premier and Advance Free for HSBC Group customers (self-named HSBC card/statement). 2.2.6.1 Global Transfer to self-name HSBC accounts in other countries/territories: Free (PB), Free (Premier); Advance CNY145 per transaction (indicative — actual charge USD20 or equivalent). Service available only in countries/territories offering Global Transfer to Self (tariff remark lists Canada, US, UK, Australia and Hong Kong SAR); not applicable to PB entity customers. 2.2.6.2 Global Transfer to Family (same HSBC Premier Family): Free / Free / Not applicable. 2.2.7 HSBC International Education Payment: Free / Free / Advance CNY50 indicative (actual USD7) — a platform-specific item, not a general same-name remittance fee. Charges exclude other institutions and authorities.",
+         used_for="Current (31 Oct 2026) schedule used for cost modelling; supersedes the affected items in S06. A commercial tariff; excludes other institutions' charges and is not a quote for any specific account."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -268,8 +276,9 @@ ASSUMPTIONS = [
              "RMB offshore was not verified (see F05)."),
     dict(id="A6", topic="Fixed fees at banks other than HSBC China",
          value="same as the HSBC China published tariff", status="model assumption",
-         why="Only one itemised personal tariff (S06) was verified. Other banks publish different "
-             "tariffs; substitute your own bank's schedule."),
+         why="Modelling uses S21 (HSBC China tariff effective 31 Oct 2026); S06 (effective 2021-01-01) "
+             "is retained for audit history. Other banks publish different tariffs; substitute your own "
+             "bank's schedule."),
     dict(id="A7", topic="Number of wires per tier", value="one wire per tranche",
          status="model assumption",
          why="No per-transfer ceiling for a non-domestic individual remittance was verified, so the "
@@ -285,16 +294,20 @@ ASSUMPTIONS = [
 ]
 
 # ---------------------------------------------------------------------------
-# USEFUL CHANNEL PRIMITIVES, all traceable to S06 (HSBC China tariff).
+# USEFUL CHANNEL PRIMITIVES, all traceable to S21 (HSBC China tariff, effective 31 Oct 2026).
 # ---------------------------------------------------------------------------
-WIRE_PCT = 0.001          # 5.1.1.1
-WIRE_MIN = cny(100)       # 5.1.1.1
-WIRE_MAX = cny(500)       # 5.1.1.1
-CABLE = cny(120)          # 5.1.1.2
-GLOBAL_XFER = 7.00        # 5.3.1 (actual reference price, USD)
-CASH_CONV_PCT = 0.01      # 5.1.1.4
-CASH_WD_PCT = (0.0025, 0.0040)  # 3.1.1
-CASH_WD_MIN = cny(40)
+WIRE_PCT = 0.001          # S21 item 2.2.4.1 (Premier/Advance); PB individuals are Free
+WIRE_MIN = cny(100)       # S21 item 2.2.4.1
+WIRE_MAX = cny(500)       # S21 item 2.2.4.1 (PB entity max is CNY1,000; modelled segments are Premier/Advance)
+CABLE = cny(120)          # S21 item 2.2.4.2 (PB individuals Free)
+GLOBAL_XFER = 0.00        # S21 item 2.2.6.1: Free for PB and Premier same-name Global Transfer to
+                          # self-name overseas HSBC accounts. Advance pays CNY145 indicative per
+                          # transaction (actual USD20); the modelled route requires Premier.
+                          # (S06 item 5.3.1 "USD 7" was the 2021 reference price tied to International
+                          # Education Payment; superseded by S21 item 2.2.7.)
+NOTES_WITHDRAWAL_FEE = 0.00  # S21 item 2.2.2.1: foreign-currency notes withdrawal over the counter Free
+                             # (PB/Premier/Advance). USD/HKD >= USD5,000 equivalent needs >=3 working
+                             # days' advance notice.
 
 ATM_YEAR_CAP = cny(100_000)   # S03 Art. 1  (RMB 100k/person/year)
 ATM_DAY_CAP = cny(10_000)     # S03 Art. 4  (RMB 10k/card/day)
@@ -304,7 +317,7 @@ AIRPORT_DAILY_CAP = 1_000     # S17
 
 
 def wire_fee(amount: float) -> float:
-    """One outward telegraphic transfer, HSBC China personal tariff (S06)."""
+    """One outward telegraphic transfer, HSBC China tariff as in S21 (items 2.2.4.1-2.2.4.2)."""
     return min(max(WIRE_PCT * amount, WIRE_MIN), WIRE_MAX) + CABLE
 
 
@@ -336,7 +349,8 @@ ROUTES = [
             "Book a counter appointment at the account-holding branch (foreign-exchange business is "
             "not reliably transacted at a machine for this category).",
             "Ask for an executable all-in quote: the USD selling rate applied, the 0.1% commission "
-            "with its CNY 100/500 floor and cap, and the CNY 120 cable fee.",
+            "with its CNY 100/500 floor and cap, and the CNY 120 cable fee (Private Banking "
+            "individuals: issuance and cable are Free under the 31 Oct 2026 tariff).",
             "Complete the FX purchase; keep the exchange memo (水单) — it is the document that proves "
             "the conversion was authorised and is needed for any later re-conversion.",
             "Instruct the wire to your own US account. Keep the SWIFT MT103 / remittance advice.",
@@ -358,7 +372,7 @@ ROUTES = [
         status="lawful",
         who="As R01, but you already hold, or can open, an HSBC account in the US and an HSBC China "
             "Premier relationship.",
-        basis=["S01", "S02", "S06"], fee="global", cap=None,
+        basis=["S01", "S02", "S21"], fee="global", cap=None,
         spread="wire", tax=(0.0, 0.0),
         tax_note="Same tax analysis as R01: conversion of already-taxed income adds no PRC tax.",
         time="1-5 business days", time_days=(1, 5),
@@ -368,13 +382,17 @@ ROUTES = [
             "Confirm both accounts are in exactly the same name and that Global Transfer is enabled "
             "for the China-US corridor.",
             "Complete the R01 documentation and FX conversion inside HSBC China.",
-            "Use Global Transfer to move the USD to your own HSBC US account: free for Premier, "
-            "reference price USD 7 per transfer otherwise (S06 item 5.3.1).",
+            "Use Global Transfer to move the USD to your own HSBC US account: free for Private Banking "
+            "and Premier under the tariff effective 31 Oct 2026 (item 2.2.6.1). Advance pays CNY145 "
+            "indicative per transaction (actual USD20 or equivalent). Available only where Global "
+            "Transfer to Self is offered — the tariff remark lists Canada, US, UK, Australia and Hong "
+            "Kong SAR.",
             "Keep the transfer confirmation as the audit trail; the receiving bank still needs a "
             "source-of-funds note.",
             "File FBAR / Form 8938 / Form 1116 as in R01.",
         ],
-        pros=["Cheapest published fixed fee of any fully documented route (0 to USD 7).",
+        pros=["No published fixed fee for a Private Banking/Premier same-name Global Transfer (Free "
+              "under the current tariff, item 2.2.6.1).",
               "Same-bank transfer reduces correspondent-bank deductions and intermediary questions."],
         cons=["Requires an eligible HSBC relationship on both sides; Premier has balance conditions.",
               "The spread on the CNY→USD leg is unchanged and remains the dominant cost.",
@@ -459,7 +477,7 @@ ROUTES = [
         group="Lawful · capped, impractical",
         status="lawful",
         who="Any individual, up to the cash-carrying ceiling.",
-        basis=["S06", "S15", "S13"], fee="cashcarry", cap=CASH_EXPORT_CAP,
+        basis=["S21", "S15", "S13"], fee="cashcarry", cap=CASH_EXPORT_CAP,
         spread="cash", tax=(0.0, 0.0),
         tax_note="Carrying cash is not a taxable event in itself; it also does not discharge any "
         "unpaid PRC or US tax.",
@@ -467,9 +485,11 @@ ROUTES = [
         docs=["Passport", "Bank withdrawal slip", "Carrying certificate for USD 5,000-10,000",
               "FinCEN Form 105 on arrival above USD 10,000"],
         steps=[
-            "Convert or withdraw USD cash at the counter. On the verified tariff a foreign-cash "
-            "withdrawal costs 0.25%-0.4% with a CNY 40 minimum on non-Premier accounts and is waived for "
-            "Premier (S06 item 3.1.1).",
+            "Convert or withdraw USD notes at the counter. Under the tariff effective 31 Oct 2026, "
+            "foreign-currency notes withdrawal over the counter is Free for Private Banking, Premier and "
+            "Advance (item 2.2.2.1); USD/HKD withdrawals of at least USD5,000 equivalent need at least "
+            "three working days' advance notice. CNY-to-notes conversion uses the notes buy/sell board "
+            "rates, whose margin is the modelled cash spread above.",
             "Above USD 5,000 and up to USD 10,000, obtain a bank carrying certificate before departure.",
             "Above USD 10,000 a SAFE-issued certificate is required and is granted only in listed "
             "special cases.",
@@ -678,7 +698,7 @@ ROUTES = [
         status="conditional",
         who="Potentially an individual eligible for cross-border RMB remittance. Eligibility for a "
             "non-resident US citizen was NOT verified in this session.",
-        basis=["S02", "S06"], fee="wire", cap=None,
+        basis=["S02", "S21"], fee="wire", cap=None,
         spread="cnh", tax=(0.0, 0.0),
         tax_note="Conversion offshore does not create PRC tax, and does not cure an untaxed onshore "
         "balance. Moving RMB out still requires a compliant onshore basis.",
@@ -822,9 +842,8 @@ def fixed_and_cap(route: dict, tier: float):
     if kind == "global":
         return n, n * GLOBAL_XFER, "published", cap
     if kind == "cashcarry":
-        lo = min(max(CASH_WD_PCT[0] * per, CASH_WD_MIN), CASH_WD_PCT[1] * per)
-        hi = max(CASH_WD_PCT[1] * per, CASH_WD_MIN)
-        return n, (n * lo, n * hi), "published-band", cap
+        # S21 item 2.2.2.1: foreign-currency notes withdrawal over the counter is Free.
+        return n, n * NOTES_WITHDRAWAL_FEE, "published", cap
     if kind in ("cash", "atm", "card"):
         return n, None, "unpublished", cap
     return 1, 0.0, "none", cap
