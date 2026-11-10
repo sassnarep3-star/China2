@@ -361,3 +361,39 @@ No other session's file scope will be edited. Existing cost matrices and route c
 - Cross-scope correction request (logged, not edited): owner of the completed `ladder/**` route/model scope, please update `ladder/routes.html`, `ladder/steps.html`, `ladder/assumptions.html` (and their canonical `ladder/build.py`/`ladder/data/routes.json` assumptions as needed) so they do not describe the 2021 USD 0–7 education-payment reference as the current fee for a same-name Global Transfer or use it as a verified route ranking. Re-check route availability/eligibility and re-run model/build/verifier after correction. The current overview and independent finding C04 warn readers in the interim. This preserves the disjoint-scope protocol.
 - Verification so far: `python3 audit-0f0f59fe/verify.py` (375 checks, 0 failures); `python3 ladder/verify.py` (9,328 checks, 0 failures); `scripts/build.py` + `scripts/validate.py` (9 pages, 67 findings, 24 sources, all table rows source-linked, local links pass); `node scripts/test_ui.js` pass; `node tools/build.mjs` + `node tools/verify.mjs` (477 checks, 0 failures); portal verification (7 pages, 109 rows, 0 broken links); repatriate verification (11,197 checks, 0 failures). Final deterministic build and integration checks are still pending.
 - Verification update: added the IRS Form 8938 page as P14 after retrieving the official page; the 14-source register now records its status test and thresholds vary by filing status/residence. The earlier progress line's “13 sources” and intermediate counts were point-in-time; final `audit-0f0f59fe/verify.py` is **413 checks, 0 failures**. `ladder/verify.py` is **9,329 checks, 0 failures**; ladder output hashes match across two consecutive builds. `audit-86f0/verify.py` confirms 22 × 40 blank rows, row-source context and local links. Final integration build/test pass: docs validator (67 findings/24 sources/all table rows official-linked), UI test, evidence-site verifier (477 checks), portal verifier (109 rows), repatriate verifier (11,197 checks), HTML parser across top-level site pages, all JavaScript syntax checks, and `git diff --check`. No external law/source liveness is asserted by local validators.
+
+---
+
+## Session `arena/11c20135-china2` — final integration and publication record
+
+> Environment note: this session is pinned to branch `arena/11c20135-china2` (status: active). All prior sessions' deliverable scopes are preserved intact (`docs/`, `site/`, `portal/`, `repatriate/`, `ladder/`, `audit-86f0/`, `audit-0f0f59fe/`, `reports/`, `research/`, `scripts/`, `tools/`, `.github/*`). This session touches only the append-only `COORDINATION.md` publication record. Head of this branch == `main` == `1a99e80` at session start; no other session's files are edited.
+
+| # | Task | Status | Owner | Files |
+|---|------|--------|-------|-------|
+| I1 | Final re-verification of every published deliverable on the checked-in tree | done | `arena/11c20135-china2` | all verifier suites (see results below) |
+| I2 | Publish C1–C3 completion record: claims, verification results, open irregularities | done | `arena/11c20135-china2` | `COORDINATION.md` (append-only, this section) |
+| I3 | Pull request `arena/11c20135-china2` → `main`, merge, GitHub Pages deploy confirmation | in progress | `arena/11c20135-china2` | `COORDINATION.md` (append-only); PR created from this branch |
+
+### Verification results — re-run 2026-11-10 on tree `1a99e80` (all green)
+
+- `audit-0f0f59fe/verify.py`: **413 checks, 0 failures** (independent landing-page claim review, official-text citations, corrections, unresolved facts).
+- `python3 scripts/build.py` + `python3 scripts/validate.py`: **PASS** — 9 pages, 67 findings, 24 sources; every table body row carries an official link; all local links/anchors resolve; download parity matches canonical data.
+- `node scripts/test_ui.js`: **PASS** — search, status filter, empty state, ledger filter, print action.
+- `node tools/build.mjs` + `node tools/verify.mjs`: **477 checks, 0 failures** — evidence ledger, 16 flags published, count-drift guard.
+- `python3 ladder/model.py` + `ladder/build.py` + `ladder/verify.py`: **600 rows · 20 routes · 20 sources · 9 assumptions; 9,329 checks, 0 failures**; root hub regenerated identically (no committed churn from this session).
+- `python3 repatriate/build.py` + `python3 repatriate/verify.py`: **17 methods × 40 increments = 680 cost rows ($10k–$400k); 11,197 checks; 31 fetched sources; every table row source-linked; blanks enforced; local links/anchors resolved — PASS.**
+- `python3 portal/generate_portal.py` + `python3 verify_85f37d08.py`: **7 pages, 109 table rows, 100% `.gov`/`.gov.cn` row source links, blank unverified cells enforced, 0 broken local links — PASS.**
+- `python3 audit-86f0/verify.py`: **4 pages, 22 × 40 blank cost rows, row source context, all local links/anchors — PASS.**
+- GitHub Pages: **status `built`**, source `main` / (native/legacy), live at https://sassnarep3-star.github.io/China2/ ; Pages API `error.message: null` at the current commit.
+
+### Open items carried forward (needs review / out of scope — not blocking this integration)
+
+- Prior dashboards' flagged items remain published and unresolved: `docs/review.html` F01–F09; `portal/flagged-for-review.html` FLG-01–FLG-13; `repatriate/flagged.html` F01–F15; `ladder/flagged.html`; `audit-86f0/review.html`; `audit-0f0f59fe/index.html` findings C01–Cxx. No personal tax amount, route eligibility, or all-in cost is inferred; blank cells mean unverified.
+- Open pull requests not actioned by this session (other sessions' branches, out of scope): #2 `arena/4c576a01-china2`, #12 `arena/5cdc93ae-china2`, #17 `arena/8a2bd205-china2` (the last reports `CONFLICTING` against `main`). The cost-increment request underlying #17 ($10,000 steps to $400,000) is already published and verified on `main` at `repatriate/costs.html` (17 methods × 40 increments = 680 rows) and `ladder/costs.html` (20 routes × 40 tiers = 600 rows).
+- No session may edit another session's files; cross-scope corrections are logged here, not applied unilaterally.
+
+### Integration plan (I3)
+
+1. Commit this claim + verification record on `arena/11c20135-china2` and push.
+2. Open PR `arena/11c20135-china2` → `main`; merge without waiting; CI must be green and Pages `status: built` with `error.message: null`.
+3. Follow-up commit records the PR number, merge commit, and Pages result below, then a second PR merges that record.
