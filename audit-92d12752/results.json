@@ -1,0 +1,470 @@
+{
+  "pages_scanned": 77,
+  "data_rows": 4681,
+  "without_direct_primary": 1078,
+  "pages_with_candidates": 25,
+  "pages": [
+    {
+      "path": "acceptance-373b54a3/index.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "acceptance-a64bd476/checks.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "acceptance-a64bd476/findings.html",
+      "rows": 10,
+      "without_direct_primary": 2,
+      "first_example": "A09 Best lawful route and exact tax due for this user's China balance. Source of funds, residency, account type, tax history and prior filings are unknown. Value intentionally blan"
+    },
+    {
+      "path": "acceptance-a64bd476/flagged.html",
+      "rows": 5,
+      "without_direct_primary": 2,
+      "first_example": "G04 Landing-hub briefing links (resolved by PR #30) At claim time the root hub did not yet link the briefing. PR #30 (arena/e62a2cd8-china2) merged 2026-11-10 and integrated those "
+    },
+    {
+      "path": "acceptance-a64bd476/index.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "acceptance-a64bd476/sources.html",
+      "rows": 6,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-0f0f59fe/index.html",
+      "rows": 25,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-456e7542/index.html",
+      "rows": 8,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-6068a908/index.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-86f0/costs.html",
+      "rows": 920,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-86f0/index.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-86f0/review.html",
+      "rows": 8,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-86f0/routes.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-ad300459/findings.html",
+      "rows": 27,
+      "without_direct_primary": 3,
+      "first_example": "#25 · V25 Conversion-penalty layer — FX spread V25 — No official or bank-published customer CNY/USD spread or executable all-in conversion rate was located in any instrument re-fet"
+    },
+    {
+      "path": "audit-ad300459/flagged.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-ad300459/index.html",
+      "rows": 7,
+      "without_direct_primary": 7,
+      "first_example": "1 · FX spread / executable rate No official source publishes a customer spread — BLANK V25"
+    },
+    {
+      "path": "audit-ad300459/ladder-check.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "audit-ad300459/sources.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "briefing/audit.html",
+      "rows": 25,
+      "without_direct_primary": 25,
+      "first_example": "AU-01 Root duplicates Two root executive summaries (EXECUTIVE_SUMMARY.md, EXECUTIVE-SUMMARY.md) with different content and no drift check between them. ls + diff; both preserved ne"
+    },
+    {
+      "path": "briefing/costs.html",
+      "rows": 697,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "briefing/flagged.html",
+      "rows": 25,
+      "without_direct_primary": 3,
+      "first_example": "F12 needs review Parallel dashboards in this repo disagree on method counts data/methods.json has 18 routes; research/findings.json 67 findings across 22 routes; reports ledger 22 "
+    },
+    {
+      "path": "briefing/index.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "briefing/methods.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "briefing/sources.html",
+      "rows": 37,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "docs/checklist.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "docs/costs.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "docs/flagged.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "docs/index.html",
+      "rows": 6,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "docs/methods.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "docs/review.html",
+      "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "docs/routes.html",
+      "rows": 22,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "docs/sources.html",
+      "rows": 24,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "docs/taxes.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "index.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ladder/assumptions.html",
+      "rows": 9,
+      "without_direct_primary": 9,
+      "first_example": "A1 CNY/USD used to express CNY fee caps 7.10 CNY per USD (band 6.80-7.40) model assumption Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 / 40 caps are affected;"
+    },
+    {
+      "path": "ladder/audit.html",
+      "rows": 176,
+      "without_direct_primary": 176,
+      "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
+    },
+    {
+      "path": "ladder/costs.html",
+      "rows": 90,
+      "without_direct_primary": 90,
+      "first_example": "1 Documented income → Global Transfer R02 $30 – $150 0.30% – 1.50% 1-5 business days S01 · pbc.gov.cn S02 · safe.gov.cn S21 · hsbc.com.cn"
+    },
+    {
+      "path": "ladder/flagged.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ladder/index.html",
+      "rows": 9,
+      "without_direct_primary": 3,
+      "first_example": "Does exchanging CNY into USD itself establish a PRC tax bill? No separate tax levied solely for the exchange was identified in the instruments reviewed. This does not establish tha"
+    },
+    {
+      "path": "ladder/ladder.html",
+      "rows": 600,
+      "without_direct_primary": 600,
+      "first_example": "1 Documented income → Global Transfer R02 $30 – $150 0.30% – 1.50% 1-5 business days S01 · pbc.gov.cn S02 · safe.gov.cn S21 · hsbc.com.cn"
+    },
+    {
+      "path": "ladder/routes.html",
+      "rows": 45,
+      "without_direct_primary": 45,
+      "first_example": "$10,000 $61 – $181 0.61% – 1.81% 1 1-10 business days S01 · pbc.gov.cn S02 · safe.gov.cn S20 · safe.gov.cn"
+    },
+    {
+      "path": "ladder/sources.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ladder/steps.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ladder/tax.html",
+      "rows": 18,
+      "without_direct_primary": 18,
+      "first_example": "Comprehensive income (salary, fees, royalties, authorship) 3% – 45% progressive S07 · chinatax.gov.cn Art. 3(1)"
+    },
+    {
+      "path": "portal/conversion-penalties.html",
+      "rows": 16,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "portal/flagged-for-review.html",
+      "rows": 13,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "portal/index.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "portal/methods.html",
+      "rows": 22,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "portal/repo-audit.html",
+      "rows": 13,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "portal/sources.html",
+      "rows": 26,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "portal/tax-compliance.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "repatriate/audit.html",
+      "rows": 13,
+      "without_direct_primary": 7,
+      "first_example": "A01 index.html (root) 1 OK Root redirect to docs/ dashboard is intact and relative; works under the /China2/ Pages subpath. Three parallel dashboards (docs/, site/, portal/) exist;"
+    },
+    {
+      "path": "repatriate/costs.html",
+      "rows": 680,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "repatriate/flagged.html",
+      "rows": 15,
+      "without_direct_primary": 1,
+      "first_example": "F12 Parallel dashboards in this repo disagree on method counts needs review data/methods.json has 18 routes; research/findings.json 67 findings across 22 routes; reports ledger 22 "
+    },
+    {
+      "path": "repatriate/index.html",
+      "rows": 5,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "repatriate/methods.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "repatriate/sources.html",
+      "rows": 31,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "repatriate/taxes.html",
+      "rows": 14,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "site/china-rules.html",
+      "rows": 25,
+      "without_direct_primary": 3,
+      "first_example": "C23 Chinese customs thresholds for carrying cash out of the country Frequently quoted thresholds for RMB cash and foreign-currency cash carried across the Chinese border could NOT "
+    },
+    {
+      "path": "site/conversion-routes.html",
+      "rows": 18,
+      "without_direct_primary": 1,
+      "first_example": "R18 Qualified institutional outbound investment channels (QDII / QDLP) Institutional Licensed institutions invest outbound under an approved quota; individuals participate through "
+    },
+    {
+      "path": "site/cost-breakdown.html",
+      "rows": 8,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "site/executive-summary.html",
+      "rows": 25,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "site/flagged-for-review.html",
+      "rows": 16,
+      "without_direct_primary": 1,
+      "first_example": "F03 HIGH The repository contained no existing China-money data to review The task asked for a line-by-line review of the existing repository verified against official sources. At t"
+    },
+    {
+      "path": "site/index.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "site/methodology.html",
+      "rows": 5,
+      "without_direct_primary": 5,
+      "first_example": "Every table row must have a source link to an official site All content is rendered from data/*.json by tools/build.mjs . The renderer has exactly two possible outputs for a source"
+    },
+    {
+      "path": "site/repo-audit.html",
+      "rows": 12,
+      "without_direct_primary": 12,
+      "first_example": "Commits on main at session start 1 d9f3976 — \"Initial commit\""
+    },
+    {
+      "path": "site/sources.html",
+      "rows": 17,
+      "without_direct_primary": 2,
+      "first_example": "S12 China: New Rules Increase Restrictions on Overseas Cash Withdrawals (24 January 2018) Library of Congress — Global Legal Monitor search-index loc.gov item text returned by sear"
+    },
+    {
+      "path": "site/unlawful-routes.html",
+      "rows": 5,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "site/us-tax-rules.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-88f5a1be/index.html",
+      "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-d5d1f860/audit.html",
+      "rows": 12,
+      "without_direct_primary": 12,
+      "first_example": "AU-01 Cross-site method-count drift Sites in this repository state 22, 20, 18, 17 and 13 methods/legal routes for the same question. Each has its own scope note, but a reader landi"
+    },
+    {
+      "path": "verify-d5d1f860/costs.html",
+      "rows": 680,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-d5d1f860/flagged.html",
+      "rows": 16,
+      "without_direct_primary": 16,
+      "first_example": "F01 Your PRC tax history and the source of the balance are unknown The single largest determinant of both PRC tax and route eligibility. No amount is computed. Blocking for any per"
+    },
+    {
+      "path": "verify-d5d1f860/index.html",
+      "rows": 34,
+      "without_direct_primary": 34,
+      "first_example": "M01 Bank SWIFT wire of documented after-tax China income $30.86 $66.83 $86.97 $86.97 $86.97"
+    },
+    {
+      "path": "verify-d5d1f860/methods.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-d5d1f860/sources.html",
+      "rows": 24,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-d5d1f860/taxes.html",
+      "rows": 16,
+      "without_direct_primary": 1,
+      "first_example": "2. Bank FX spread The margin between the board rate and mid-market — the largest real cost on a large conversion. Not published by banks in the reviewed documents; HSBC tariff Impo"
+    }
+  ]
+}
