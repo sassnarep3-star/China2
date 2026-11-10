@@ -701,3 +701,33 @@ This is a structural audit, not line-by-line legal verification. Account-specifi
 
 **Irregularities/none of the above block publication.** Outstanding `needs review` items from earlier sessions remain published on their own pages; this session's unverified values stay blank and are listed as F01–F16.
 - Main advanced through [PR #44](https://github.com/sassnarep3-star/China2/pull/44) while PR #47 was open. Merged `origin/main` into this branch, resolved append-only board conflict by keeping both sessions' records, and deterministically regenerated `ladder/audit.html` with the updated generator; no concurrent content discarded. Refreshed this session's dated snapshot after integration: **77 HTML pages, 4,681 data rows, 1,078 candidate rows across 25 pages**. This supersedes the earlier point-in-time counts above. Local snapshot parity, ladder (9,345 checks) and `verify-d5d1f860/verify.py` (5,406 checks) passed; structural checks are not factual certification.
+
+---
+
+---
+
+## Session `arena/f6327e23-china2` — verified single-answer dashboard + reconciliation audit (disjoint scope)
+
+> Arena pins this session to the fixed branch `arena/f6327e23-china2` (substitutes for the requested
+> `session-<id>/<task>` branch). Full board read before claiming (108 KB, all prior sections preserved
+> unedited). Active concurrent claims respected and **not** edited: PR #41 `arena/dc9b9512-china2`
+> (`index.html`, `ladder/**`, `briefing/**`, `README.md`, `EXECUTIVE-SUMMARY.md`, `portal/**`,
+> `reports/**`), PR #39 `arena/c9cc56a6-china2` (`guide-c9cc56a6/**`, `ladder/audit.html`), PR #43
+> `arena/6068a908-china2` (`audit-6068a908/**`, `ladder/audit.html`). Older sessions' directories
+> (`docs/`, `site/`, `portal/`, `repatriate/`, `ladder/`, `briefing/`, `audit-*`, `acceptance-*`,
+> `verify-88f5a1be/`) are read-only inputs here.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| F1 | Fresh official-source verification of the brief-critical rules (SAFE/PBOC FX rules, 26 U.S.C. §988, 31 CFR 1010.821, FBAR/8938, CBP currency reporting, bank tariffs), with verbatim locators | in progress | `final-f6327e23/data/**` |
+| F2 | Cross-dataset reconciliation audit of all prior sessions' published route/cost counts, fees and arithmetic; publish every disagreement | in progress | `final-f6327e23/**` |
+| F3 | Single consolidated dashboard: landing page + category subpages, 40-tier × route cost tables, per-row official source links, blanks where unverified, Flagged for Review page | in progress | `final-f6327e23/**`, `.github/workflows/verify-final-f6327e23.yml` |
+| F4 | Own PR → `main`, merge without waiting, confirm Pages deploy, record result | in progress | `COORDINATION.md` (append-only) |
+
+Rules this session follows: claim before working; never edit another session's files; unknown private
+facts (account size, residency, source of the balance, citizenship history) are **never inferred**;
+every published figure carries an official source id + locator and was re-fetched in this session;
+anything I could not confirm is blank and flagged; structural checks are labelled structural, and no
+personal tax figure is asserted. Cross-scope requests are logged, not edited.
+
+- 2026-11-10 UTC: Claim recorded before substantive research or edits. Reading order: board → open PRs → prior ledgers → official sources.
