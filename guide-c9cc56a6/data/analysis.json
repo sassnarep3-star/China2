@@ -310,12 +310,13 @@
     },
     {
       "id": "F02",
-      "topic": "The repo's existing ladder uses a superseded HSBC tariff",
-      "status": "irregularity",
-      "detail": "ladder/data/sources.json (S06) cites the tariff effective 1 January 2021, and ladder/data/costs.csv therefore charges USD 7.00 for a Global Transfer (route R02). The tariff effective 31 October 2026 (G08, item 2.2.6.1) states: free for Private Banking and Premier, and for Advance a CNY 145 indication charge whose actual charge is USD 20 per transaction. This guide uses the 2026 figures. The ladder files were not edited - they are outside this session's scope.",
-      "action": "Ladder owner should refresh S06 to the 31 October 2026 tariff.",
+      "topic": "The repo ladder used a superseded HSBC tariff — re-verified by another session mid-build",
+      "status": "resolved",
+      "detail": "When this guide was written, ladder/data/sources.json S06 cited the HSBC China tariff effective 1 January 2021, and ladder/data/costs.csv charged USD 7.00 for a Global Transfer (route R02). That was correct when observed and was flagged here rather than edited, because ladder/** is another session's scope. While this guide was being verified, commit 8a2f69d (\"Re-verify HSBC China tariff (eff. 2026-10-31) and model it\") landed on main and fixed it: S06 is retained for audit history and marked superseded, a new source S21 records the 31 October 2026 tariff, and R02 is now modelled as free for Private Banking and Premier with Advance's indicative USD 20 noted. This guide's own fee model was written independently against the same 31 October 2026 tariff, so the two now agree.",
+      "action": "No action - closed. Kept in the log because the flag was open at the time of writing and the cross-session fix is itself evidence the board works.",
       "src": [
-        "G08"
+        "G08",
+        "G02"
       ]
     },
     {
@@ -477,8 +478,8 @@
     {
       "id": "A02",
       "target": "ladder/data/sources.json S06",
-      "finding": "Cites the HSBC China personal tariff effective 1 January 2021. The tariff in force from 31 October 2026 charges 0.1% min CNY 100 max CNY 500 plus CNY 120 cable, and sets Global Transfer at free (Private Banking, Premier) and USD 20 (Advance). The ladder therefore carries a stale Global Transfer fee of USD 7.",
-      "verdict": "irregularity — flagged F02",
+      "finding": "When first audited, S06 cited the 2021 HSBC China personal tariff and costs.csv charged USD 7.00 for a Global Transfer. Commit 8a2f69d later re-verified the tariff effective 31 October 2026 (new source S21), marked S06 superseded, and remodelled R02 as free for Private Banking and Premier with Advance's indicative USD 20 noted. The ladder and this guide now rest on the same tariff.",
+      "verdict": "irregularity — fixed upstream during this build (F02)",
       "src": [
         "G08"
       ]
@@ -486,7 +487,7 @@
     {
       "id": "A03",
       "target": "ladder/data/costs.csv",
-      "finding": "600 rows = 15 costed routes x 40 tiers. The five unlawful routes carry no cost rows, which is correct: they have no lawful price. Spot-check of the published-fee column at USD 10k/50k/100k/400k reproduces 30.99 / 66.90 / 87.32 / 87.32 exactly, matching a fresh computation from the 2026 tariff.",
+      "finding": "600 rows = 15 costed routes x 40 tiers. The five unlawful routes carry no cost rows, which is correct: they have no lawful price. A spot-check of the published-fee column at USD 10k/50k/100k/400k reproduces 30.99 / 66.90 / 87.32 / 87.32 exactly, matching a fresh computation from the 31 October 2026 tariff.",
       "verdict": "consistent",
       "src": [
         "G08"

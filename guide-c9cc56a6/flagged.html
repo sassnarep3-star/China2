@@ -30,11 +30,11 @@
   <p class="src"><a class="chip" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" rel="noopener" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 October 2026)">G08 · HSBC Bank</a></p>
 </article>
 <article class="card flag">
-  <div class="methodhead"><h3><span class="mid">F02</span> The repo&#x27;s existing ladder uses a superseded HSBC tariff</h3>
-  <span class="badge bad">irregularity</span></div>
-  <p>ladder/data/sources.json (S06) cites the tariff effective 1 January 2021, and ladder/data/costs.csv therefore charges USD 7.00 for a Global Transfer (route R02). The tariff effective 31 October 2026 (G08, item 2.2.6.1) states: free for Private Banking and Premier, and for Advance a CNY 145 indication charge whose actual charge is USD 20 per transaction. This guide uses the 2026 figures. The ladder files were not edited - they are outside this session&#x27;s scope.</p>
-  <p class="action"><b>To resolve:</b> Ladder owner should refresh S06 to the 31 October 2026 tariff.</p>
-  <p class="src"><a class="chip" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" rel="noopener" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 October 2026)">G08 · HSBC Bank</a></p>
+  <div class="methodhead"><h3><span class="mid">F02</span> The repo ladder used a superseded HSBC tariff — re-verified by another session mid-build</h3>
+  <span class="badge warn">resolved</span></div>
+  <p>When this guide was written, ladder/data/sources.json S06 cited the HSBC China tariff effective 1 January 2021, and ladder/data/costs.csv charged USD 7.00 for a Global Transfer (route R02). That was correct when observed and was flagged here rather than edited, because ladder/** is another session&#x27;s scope. While this guide was being verified, commit 8a2f69d (&quot;Re-verify HSBC China tariff (eff. 2026-10-31) and model it&quot;) landed on main and fixed it: S06 is retained for audit history and marked superseded, a new source S21 records the 31 October 2026 tariff, and R02 is now modelled as free for Private Banking and Premier with Advance&#x27;s indicative USD 20 noted. This guide&#x27;s own fee model was written independently against the same 31 October 2026 tariff, so the two now agree.</p>
+  <p class="action"><b>To resolve:</b> No action - closed. Kept in the log because the flag was open at the time of writing and the cross-session fix is itself evidence the board works.</p>
+  <p class="src"><a class="chip" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" rel="noopener" title="Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 October 2026)">G08 · HSBC Bank</a> <a class="chip" href="https://www.safe.gov.cn/en/2007/0105/819.html" rel="noopener" title="Individual foreign exchange: the USD 50,000 annual quota (SAFE Q&amp;A)">G02 · State Administration of Foreign Exchange</a></p>
 </article>
 <article class="card flag">
   <div class="methodhead"><h3><span class="mid">F03</span> Only one bank&#x27;s personal tariff could be verified</h3>

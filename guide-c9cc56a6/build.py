@@ -944,7 +944,7 @@ def page_audit():
 </div>
 <p class="note">The same four amounts reproduce the fee column in <code>ladder/data/costs.csv</code>
 (30.99 / 66.90 / 87.32 / 87.32), so the two independent models agree on the published-fee component. They
-disagree on the Global Transfer fee, where the ladder still uses the 2021 tariff — see F02.</p>
+agree on the Global Transfer fee as well, both resting on the 31 October 2026 tariff after commit 8a2f69d — see F02.</p>
 """
     return page("audit.html", "Repository audit",
                 "What was re-verified line by line, which pre-existing artefacts agree with the official sources, "
