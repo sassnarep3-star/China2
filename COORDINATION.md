@@ -611,8 +611,8 @@ Arena fixes this session to its existing branch. Historical claims remain respec
 
 | Task | Status | Owner | Files / scope |
 |---|---|---|---|
-| Review published core findings and cost limitations against accessible official sources; publish any material irregularities | in progress | `arena/6068a908-china2` | `audit-6068a908/**`, append-only `COORDINATION.md` |
-| Validate and publish the review; regenerate inventory only if required | in progress | `arena/6068a908-china2` | `ladder/audit.html` (generated inventory only), append-only `COORDINATION.md` |
+| Review published core findings and cost limitations against accessible official sources; publish any material irregularities | done | `arena/6068a908-china2` | `audit-6068a908/**`, append-only `COORDINATION.md` |
+| Validate and publish the review; regenerate inventory only if required | done | `arena/6068a908-china2` | `ladder/audit.html` (generated inventory only), append-only `COORDINATION.md` |
 
 ### Targeted review completion — 2026-11-10
 - Both tasks above: **done**. Freshly read SAFE Tianjin's [current-account conversion FAQ](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), IRS [currency guidance](https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates) and [FBAR guidance](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar), and the 2024 [26 USC 988(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm). Limited findings and three **needs review** flags are published in `audit-6068a908/index.html`; no personal all-in cost, eligibility or tax estimated without evidence. HSBC tariff and annual averages linked for manual follow-up, not freshly reverified by this session. No claim of full repository factual certification.
