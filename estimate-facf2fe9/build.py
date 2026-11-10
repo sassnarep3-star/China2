@@ -34,6 +34,7 @@ TAX = load("tax.json")
 FLAGS = load("flags.json")["flags"]
 FLAG = {f["id"]: f for f in FLAGS}
 REVIEW = load("repo_review.json")["findings"]
+HOUSE = load("repo_review.json")["housekeeping"]
 SCAN = load("repo_scan.json")
 COSTS = load("costs.json")
 META = COSTS["meta"]
@@ -70,7 +71,7 @@ STATUS = {
     "penalty exposure": ("bad", "Penalty exposure"), "verified": ("ok", "Verified"),
     "verified-limited": ("warn", "Verified, limited"), "reading": ("warn", "Reading"),
     "irregularity": ("bad", "Irregularity"), "gap": ("warn", "Gap"), "consistent": ("ok", "Consistent"),
-    "needs review": ("warn", "Needs review"), "note": ("mute", "Note"),
+    "needs review": ("warn", "Needs review"), "note": ("mute", "Note"), "illustration": ("warn", "Illustration"),
 }
 NAV = [("index.html", "Overview"), ("costs.html", "Costs"), ("methods.html", "Methods"), ("tax.html", "Tax"),
        ("sources.html", "Sources"), ("repo-review.html", "Repo review"), ("flagged.html", "Flagged for Review")]
@@ -245,7 +246,7 @@ def build_index():
 <a class="tile" href="methods.html"><strong>Methods</strong><span>Who may use each one, limits, steps, pros and cons.</span></a>
 <a class="tile" href="tax.html"><strong>Tax</strong><span>Chinese tax by where the money came from; US rules; exchange-gain illustration.</span></a>
 <a class="tile" href="sources.html"><strong>Sources</strong><span>{len(SRC)} official pages with the sentences relied on.</span></a>
-<a class="tile" href="repo-review.html"><strong>Repo review</strong><span>{len(REVIEW)} findings from re-checking {SCAN['scanned_files']} files against today's readings.</span></a>
+<a class="tile" href="repo-review.html"><strong>Repo review</strong><span>{len(REVIEW) + len(HOUSE)} findings from re-checking {SCAN['scanned_files']} files against today's readings.</span></a>
 <a class="tile" href="flagged.html"><strong>Flagged for Review</strong><span>{n_flags} flags; {n_blank} cost cells left blank.</span></a>
 </div>
 </section>"""
@@ -430,7 +431,7 @@ def build_tax():
     for f in COSTS["fx_gain"]:
         grows.append(f'<tr><th scope="row">{f["year"]}</th>' + cell(f["irs_avg"]) + cell(f["gain_pct"] + "%")
                      + cell(usd(f["per_10k"], False)) + cell(usd(f["per_100k"], False)) + cell(usd(f["per_400k"], False))
-                     + f'<td class="txt">{pill("reading")} {flag_links(["F21"])}</td><td class="src">{links(["U02", "B01", "U01"])}</td></tr>')
+                     + f'<td class="txt">{pill("illustration")} {flag_links(["F21"])}</td><td class="src">{links(["U02", "B01", "U01"])}</td></tr>')
     gain = table(["Year the renminbi was acquired", "IRS yearly average (¥ per $)", "Gain as share of dollars received",
                   "Per $10,000", "Per $100,000", "Per $400,000", "Status", "Source"], grows)
     body = f"""
@@ -535,11 +536,21 @@ def build_review():
         srow.append(f'<tr><th scope="row">{esc(p["label"])}</th>' + cell(str(p["files"])) + cell(str(p["lines"]))
                     + f'<td class="where">{tops or "—"}</td><td class="txt"><code>{esc(p["regex"])}</code></td>'
                     f'<td class="src">{links(p["sources"])}</td></tr>')
+    hrow = []
+    for h in HOUSE:
+        ls = " · ".join(ext(u, lab) for lab, u in h["links"])
+        hrow.append(f'<tr id="{h["id"]}"><th scope="row">{h["id"]}</th><td>{esc(h["area"])}</td><td>{esc(h["finding"])}</td>'
+                    f'<td class="txt">{pill(h["verdict"])}</td><td class="src">{ls}</td></tr>')
     body = f"""
 <section>
 <h2>Findings</h2>
 <p>Every tracked text file outside this section was scanned line by line ({SCAN['scanned_files']} files, {SCAN['lines']:,} lines, at main commit <code>{esc(SCAN['main_commit'])}</code>) for the figures re-read today, and the figures were compared with the official pages. Other sessions' files were not edited; the findings are for their owners and for manual review.</p>
 {table(["ID", "Area", "Finding", "Verdict", "Where in the repository", "Official source"], rows, "review")}
+</section>
+<section>
+<h2>Repository housekeeping</h2>
+<p>Findings about the repository itself rather than about the law. The source for each is the file or pull request on GitHub.</p>
+{table(["ID", "Area", "Finding", "Verdict", "See"], hrow)}
 </section>
 <section>
 <h2>Scan detail</h2>

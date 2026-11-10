@@ -21,11 +21,13 @@
   },
   {
    "q": "Is there a US tax on receiving your own money?",
-   "a": "The transfer is reported, not taxed. What can be taxed is the income when it was earned and any exchange gain on the renminbi between the day you got it and the day you converted it.",
-   "status": "verified",
+   "a": "No US tax on moving your own money was found. The account is reported (FBAR, Form 8938). What is taxed is the income when it was earned, and any exchange gain on the renminbi between the day you got it and the day you converted it.",
+   "status": "reading",
    "sources": [
-    "U02",
-    "U01"
+    "U11",
+    "U05",
+    "U01",
+    "U02"
    ],
    "flag": "F21"
   },
@@ -197,14 +199,15 @@
   },
   {
    "source": "Money you brought into China and exchanged",
-   "tax": "Not Chinese income",
+   "tax": "No income arises from exchanging money you already owned",
    "base": "",
    "to_convert": "ID plus the original exchange memo, within 24 months",
-   "status": "verified",
+   "status": "reading",
    "sources": [
-    "R06"
+    "R06",
+    "X01"
    ],
-   "flag": ""
+   "flag": "F20"
   },
   {
    "source": "Savings from before you emigrated (former Chinese national)",
@@ -266,7 +269,7 @@
  "us_rules": [
   {
    "item": "Worldwide income",
-   "rule": "US citizens are taxed on income from all sources, foreign and domestic, in the year it is earned — including pay and interest earned in China",
+   "rule": "US citizens living abroad are taxed on income from all sources, foreign and US — which takes in pay and interest earned in China",
    "number": "",
    "status": "verified-limited",
    "sources": [

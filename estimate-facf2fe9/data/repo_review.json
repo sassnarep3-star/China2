@@ -161,5 +161,79 @@
     "R02"
    ]
   }
+ ],
+ "housekeeping": [
+  {
+   "id": "RH01",
+   "area": "Acceptance audit counters are out of step",
+   "finding": "Regenerating acceptance-a64bd476 on main at commit 06ce485 changes its three generated files: its crawl counts no longer match the pages now in the repository. Its CI job runs only when its own folder changes, so nothing shows red. Not edited here; logged for its owner.",
+   "verdict": "irregularity",
+   "links": [
+    [
+     "acceptance-a64bd476/checks.json",
+     "https://github.com/sassnarep3-star/China2/blob/main/acceptance-a64bd476/checks.json"
+    ],
+    [
+     "workflow",
+     "https://github.com/sassnarep3-star/China2/blob/main/.github/workflows/verify-acceptance-a64bd476.yml"
+    ]
+   ]
+  },
+  {
+   "id": "RH02",
+   "area": "Source-link audit snapshot no longer reproduces",
+   "finding": "audit-92d12752/verify.py stops on its own assertion ('snapshot differs') on main at commit 06ce485, because pages were added after its snapshot. It has no CI job. Its published counts are a point-in-time figure. Not edited here.",
+   "verdict": "irregularity",
+   "links": [
+    [
+     "audit-92d12752/verify.py",
+     "https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/verify.py"
+    ],
+    [
+     "audit-92d12752/results.json",
+     "https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/results.json"
+    ]
+   ]
+  },
+  {
+   "id": "RH03",
+   "area": "Pull request 41, open and conflicting since 06:06 UTC",
+   "finding": "Rewrites 37 files across the hub, the ladder, the briefing, the portal and the reports (+1,906 / -1,807 lines) — all other sessions' scopes — and has been overtaken by later merges. Recommendation to its owner: close it, or rebase and cut it down to its own files. Not merged or closed by this session.",
+   "verdict": "needs review",
+   "links": [
+    [
+     "PR #41",
+     "https://github.com/sassnarep3-star/China2/pull/41"
+    ]
+   ]
+  },
+  {
+   "id": "RH04",
+   "area": "Pull request 39, open and conflicting since 06:06 UTC",
+   "finding": "Adds a self-contained guide (14 files under guide-c9cc56a6) plus a regenerated ladder inventory. The guide is additive and could be published after its owner rebases and regenerates the inventory. Not merged or closed by this session.",
+   "verdict": "needs review",
+   "links": [
+    [
+     "PR #39",
+     "https://github.com/sassnarep3-star/China2/pull/39"
+    ]
+   ]
+  },
+  {
+   "id": "RH05",
+   "area": "Many sessions publishing at once",
+   "finding": "Between 09:50 and 10:18 UTC on 10 November 2026 eight pull requests were merged and six more were open. Every merge changes the shared task board and the generated file inventory, so each session must merge main and regenerate before it can publish. The board keeps every session's record; nothing was discarded by this session.",
+   "verdict": "note",
+   "links": [
+    [
+     "COORDINATION.md",
+     "https://github.com/sassnarep3-star/China2/blob/main/COORDINATION.md"
+    ],
+    [
+     "Pull requests",
+     "https://github.com/sassnarep3-star/China2/pulls?q=is%3Apr"
+    ]
+   ]
+  }
  ]
 }

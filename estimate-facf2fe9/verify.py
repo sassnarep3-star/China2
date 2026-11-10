@@ -287,7 +287,11 @@ for name in PAGES:
     ok(re.search(r"\bNone\b", visible) is None, f"{name}: literal None on page")
     ok(len(p.rows) > 0, f"{name}: no table rows")
     for i, row in enumerate(p.rows):
-        ok(any(h.startswith("http") and official(h) for h in row["links"]), f"{name}: table row {i + 1} has no direct official source link")
+        direct = any(h.startswith("http") and official(h) for h in row["links"])
+        # rows about the repository itself (housekeeping) cite the file or pull request on GitHub
+        house = name == "repo-review.html" and row["text"].lstrip().startswith("RH") and any(
+            (urlparse(h).hostname or "") == "github.com" for h in row["links"])
+        ok(direct or house, f"{name}: table row {i + 1} has no direct official source link")
 total_rows = sum(len(p.rows) for p in parsed.values())
 for name, p in parsed.items():
     for h in p.hrefs:

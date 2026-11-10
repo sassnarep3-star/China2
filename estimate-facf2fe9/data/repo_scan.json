@@ -1,6 +1,6 @@
 {
- "scanned_files": 198,
- "lines": 50827,
+ "scanned_files": 220,
+ "lines": 59828,
  "patterns": [
   {
    "key": "rate_7129",
@@ -10,8 +10,8 @@
     "U02",
     "B01"
    ],
-   "files": 47,
-   "lines": 103,
+   "files": 54,
+   "lines": 113,
    "top": [
     {
      "file": "briefing/costs.html",
@@ -127,8 +127,8 @@
     "B01",
     "B04"
    ],
-   "files": 9,
-   "lines": 101,
+   "files": 11,
+   "lines": 103,
    "top": [
     {
      "file": "ladder/ladder.html",
@@ -153,22 +153,22 @@
     {
      "file": "COORDINATION.md",
      "count": 1,
-     "first_line": 721
+     "first_line": 752
+    },
+    {
+     "file": "final-f6327e23/build.py",
+     "count": 1,
+     "first_line": 595
+    },
+    {
+     "file": "final-f6327e23/review.html",
+     "count": 1,
+     "first_line": 35
     },
     {
      "file": "ladder/assumptions.html",
      "count": 1,
      "first_line": 31
-    },
-    {
-     "file": "ladder/data/assumptions.json",
-     "count": 1,
-     "first_line": 12
-    },
-    {
-     "file": "ladder/model.py",
-     "count": 1,
-     "first_line": 261
     }
    ]
   },
@@ -233,8 +233,8 @@
     "T07",
     "B06"
    ],
-   "files": 23,
-   "lines": 34,
+   "files": 26,
+   "lines": 38,
    "top": [
     {
      "file": "COORDINATION.md",
@@ -250,6 +250,11 @@
      "file": "acceptance-a64bd476/verify.py",
      "count": 2,
      "first_line": 102
+    },
+    {
+     "file": "final-f6327e23/build.py",
+     "count": 2,
+     "first_line": 589
     },
     {
      "file": "repatriate/costs.html",
@@ -270,11 +275,6 @@
      "file": "verify-d5d1f860/costs.html",
      "count": 2,
      "first_line": 26
-    },
-    {
-     "file": "verify-d5d1f860/exports/costs.csv",
-     "count": 2,
-     "first_line": 2
     }
    ]
   },
@@ -289,13 +289,48 @@
     "B04",
     "B05"
    ],
-   "files": 1,
-   "lines": 1,
+   "files": 8,
+   "lines": 16,
    "top": [
+    {
+     "file": "final-f6327e23/costs.html",
+     "count": 3,
+     "first_line": 29
+    },
+    {
+     "file": "final-f6327e23/index.html",
+     "count": 3,
+     "first_line": 49
+    },
+    {
+     "file": "final-f6327e23/methods.html",
+     "count": 3,
+     "first_line": 36
+    },
+    {
+     "file": "final-f6327e23/review.html",
+     "count": 2,
+     "first_line": 33
+    },
+    {
+     "file": "final-f6327e23/taxes.html",
+     "count": 2,
+     "first_line": 52
+    },
     {
      "file": "audit-92d12752/scan.py",
      "count": 1,
      "first_line": 13
+    },
+    {
+     "file": "final-f6327e23/data/sources.json",
+     "count": 1,
+     "first_line": 202
+    },
+    {
+     "file": "final-f6327e23/sources.html",
+     "count": 1,
+     "first_line": 116
     }
    ]
   },
@@ -358,8 +393,8 @@
    "sources": [
     "R12"
    ],
-   "files": 42,
-   "lines": 66,
+   "files": 44,
+   "lines": 70,
    "top": [
     {
      "file": "briefing/methods.html",
@@ -410,12 +445,12 @@
    "sources": [
     "U01"
    ],
-   "files": 66,
-   "lines": 121,
+   "files": 78,
+   "lines": 156,
    "top": [
     {
      "file": "COORDINATION.md",
-     "count": 7,
+     "count": 8,
      "first_line": 159
     },
     {
@@ -434,6 +469,16 @@
      "first_line": 56
     },
     {
+     "file": "final-f6327e23/build.py",
+     "count": 6,
+     "first_line": 411
+    },
+    {
+     "file": "final-f6327e23/taxes.html",
+     "count": 6,
+     "first_line": 27
+    },
+    {
      "file": "audit-ad300459/findings.json",
      "count": 5,
      "first_line": 120
@@ -442,19 +487,9 @@
      "file": "verify-d5d1f860/build.py",
      "count": 5,
      "first_line": 378
-    },
-    {
-     "file": "portal/generate_portal.py",
-     "count": 4,
-     "first_line": 119
-    },
-    {
-     "file": "reports/EXECUTIVE_SUMMARY_85f37d08.md",
-     "count": 4,
-     "first_line": 26
     }
    ]
   }
  ],
- "main_commit": "a67e544"
+ "main_commit": "06ce485"
 }

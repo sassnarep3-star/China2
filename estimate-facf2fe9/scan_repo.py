@@ -24,7 +24,10 @@ PATTERNS = [
 PATTERN_SOURCES = {'rate_7129': ['U02', 'B01'], 'rate_710': ['B01'], 'rate_69': ['B01'], 'spread_band': ['B01', 'B04'], 'usd_8697': ['T07', 'B06'], 'usd_3086': ['T07', 'B06'], 'boards': ['B01', 'B02', 'B03', 'B04', 'B05'], 'ann40': ['R10'], 'emigrant': ['R12'], 's988': ['U01']}
 EXT = {".md", ".json", ".html", ".py", ".js", ".mjs", ".csv", ".txt", ".yml", ".css"}
 files = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True, check=True).stdout.split("\n")
-files = sorted(f for f in files if f and not f.startswith("estimate-facf2fe9/") and Path(f).suffix in EXT)
+# ladder/audit.html is a generated inventory of every file in the repository (including this section),
+# so it is left out: scanning it would make this snapshot depend on itself.
+SKIP = {"ladder/audit.html"}
+files = sorted(f for f in files if f and not f.startswith("estimate-facf2fe9/") and f not in SKIP and Path(f).suffix in EXT)
 out = {"scanned_files": len(files), "lines": 0, "patterns": []}
 texts = {}
 for f in files:
