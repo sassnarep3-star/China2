@@ -1,0 +1,55 @@
+{
+  "session": "arena/a64bd476-china2",
+  "retrieved": "2026-11-10",
+  "note": "Official sources re-fetched by this session on 2026-11-10 via page retrieval. Only sources actually retrieved this session are listed here. Carried prior-session sources are not re-listed as fresh.",
+  "sources": [
+    {
+      "id": "A-S01",
+      "publisher": "SAFE Tianjin Branch (safe.gov.cn)",
+      "title": "2026 FX Administration Internet Information — Personal FX (08): How do overseas individuals repatriate labor income earned in China?",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+      "status": "fetched 2026-11-10",
+      "used_for": "Overseas individuals' lawful current-account CNY income: valid ID + transaction-amount/source evidence including tax vouchers at the bank (citing Huifa [2020] No. 14, Art. 59)."
+    },
+    {
+      "id": "A-S02",
+      "publisher": "IRS (irs.gov)",
+      "title": "Foreign currency and currency exchange rates",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates",
+      "status": "fetched 2026-11-10",
+      "used_for": "U.S. tax items must be translated into functional currency (generally USD) at the rate prevailing when received/paid/accrued."
+    },
+    {
+      "id": "A-S03",
+      "publisher": "IRS (irs.gov)",
+      "title": "Yearly average currency exchange rates",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+      "status": "fetched 2026-11-10",
+      "used_for": "China Yuan 2025 yearly average 7.129; IRS has no official exchange rate; spot rate generally used. Reference rate only, not an executable bank quote."
+    },
+    {
+      "id": "A-S04",
+      "publisher": "FinCEN / eCFR (ecfr.gov)",
+      "title": "31 CFR 1010.821 — Penalty adjustment and table (penalties assessed on or after January 17, 2025)",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "status": "fetched 2026-11-10 (current to 2026-11-06)",
+      "used_for": "FBAR maximums: non-willful $16,536 (31 U.S.C. 5321(a)(5)(B)(i)); willful $165,353 (31 U.S.C. 5321(a)(5)(C)(i)(I)). eCFR is authoritative but unofficial."
+    },
+    {
+      "id": "A-S05",
+      "publisher": "HSBC Bank (China) Company Limited (hsbc.com.cn)",
+      "title": "Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 Oct 2026)",
+      "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+      "status": "fetched 2026-11-10 (items 2.2.2.1, 2.2.4.1-2.2.4.4, 2.2.6.1-2.2.6.2, 2.2.7; Important Notes 1-9)",
+      "used_for": "TT issuance 0.1% min CNY 100 / max CNY 500 (Premier/Advance) + CNY 120 cable; Global Transfer PB/Premier free, Advance USD 20 indicative; International Education Payment USD 7 (not a general remittance fee); charges exclude other institutions."
+    },
+    {
+      "id": "A-S06",
+      "publisher": "IRS (irs.gov)",
+      "title": "Publication 525 (2025), Taxable and Nontaxable Income — table of contents retrieved",
+      "url": "https://www.irs.gov/publications/p525",
+      "status": "table of contents fetched 2026-11-10; specific $200 personal-FX text NOT re-read this session",
+      "used_for": "Existence of the publication confirmed. The $200 personal foreign-currency gain figure is carried from prior sessions and flagged G01 — not freshly verified here."
+    }
+  ]
+}

@@ -580,3 +580,22 @@ Unknown personal facts, quotes, and taxes will not be inferred. Any source limit
 - Main advanced concurrently through PRs #33, #34, #36 and #37. Board conflicts preserved both sides and generated inventory was refreshed rather than discarding other sessions' work; subsequent merge was automatic. `ladder/audit.html` is mechanically regenerated for inventory changes only, not a substantive edit. Existing other-session claims and review warnings remain intact. Cross-scope request: final hub owner may add a link to `verify-88f5a1be/` if desired; this session does not edit the hub generator.
 - Main advanced through PR #38 during this publication. The append-only board conflict was resolved by retaining both publication records and this review; audit updates were retained unchanged.
 - Main advanced again through PR #40; retained its complete publication record and this session's entries when resolving the board conflict.
+
+## Session `arena/a64bd476-china2` — independent acceptance audit (disjoint scope)
+
+> Arena pins this session to `arena/a64bd476-china2`; that fixed branch substitutes for a `session-<id>/<task>` branch. Full board read before claiming. Active concurrent claim respected: `arena/e62a2cd8-china2` E1–E3 (PR #30: `ladder/build.py` root template, generated `index.html`, `README.md`, `ladder/audit.html`) — none of those files are edited here. Open PRs #2/#12/#17 are not touched. All prior research scopes (`docs/`, `ladder/`, `repatriate/`, `briefing/`, `portal/`, `site/`, `audit-*`) are read-only inputs.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| A1 | Independent acceptance audit: local link/fragment crawl, cost-table row counts + arithmetic, table-row source-link presence, mobile/viewport checks across published pages | done | `acceptance-a64bd476/**` |
+| A2 | Fresh official-source spot re-verification of brief-critical claims (SAFE, IRS, HSBC tariff, eCFR) fetched this session; blanks + flags where unverifiable | done | `acceptance-a64bd476/**` |
+| A3 | Publish acceptance pages + verifier + CI, own PR → `main`, merge without waiting, confirm Pages deploy, record results here; deterministic `ladder/audit.html` inventory refresh if required by `verify-ladder` CI | in progress | `acceptance-a64bd476/**`, `.github/workflows/verify-acceptance-a64bd476.yml`, `ladder/audit.html` (generated inventory only), `COORDINATION.md` (append-only) |
+
+- 2026-11-10 UTC: Claim recorded before substantive research or edits. Policy: unknown private facts never inferred; no personal tax bill computed; unverified values stay blank and flagged; structural checks labelled structure-only, not factual verification. Cross-scope requests will be logged here, not edited.
+
+### A1–A3 completion record (2026-11-10 UTC)
+- A1 done: independent verifier `acceptance-a64bd476/verify.py` — 0 failures across HTML pages crawled; local links/fragments resolve; viewport present; HSBC M01 fee recomputed at 7.129 for all 40 tiers matches repatriate CSV; $10,000 → $30.86, $400,000 → $86.97; briefing 680 rows, repatriate CSV 680, ladder 600. Structural checks only — not legal verification.
+- A2 done: six official sources re-fetched this session (SAFE Tianjin 2026-07-13; IRS currency + yearly-average pages; eCFR 31 CFR 1010.821 current to 2026-11-06; HSBC tariff eff. 2026-10-31 items 2.2.2.1/2.2.4.x/2.2.6.x/2.2.7; IRS Pub. 525 TOC). Findings: 10 (6 verified, 1 verified-limited, 3 unverified-blank). Pub. 525 $200 text NOT re-read — flagged G01, not freshly verified.
+- A3 done locally: pages generated deterministically (`build.py`); `node --check app.js` pass; local server returned 200 for acceptance + briefing pages; live briefing confirmed via public retrieval. New CI workflow `verify-acceptance-a64bd476.yml`. Flags G01–G05 published at `acceptance-a64bd476/flagged.html`.
+- Merge conflict log (2026-11-10 UTC): concurrent PRs #34, #35, #36, #37, #38, #40 advanced `main` while PR #32 was open. Merged `origin/main` (`e1448b1` then `0cd0317`) into `arena/a64bd476-china2`; stopped on append-only conflict in `COORDINATION.md` and generated-inventory conflict in `ladder/audit.html`; preserved all concurrent sessions' board records verbatim without discarding any work, re-ran `acceptance-a64bd476/verify.py` + `build.py`, and deterministically regenerated `ladder/audit.html` via `ladder/model.py` + `ladder/build.py`.
+- Irregularities: none new beyond G01–G05. Personal tax/best route/all-in cost remain blank (A09–A10) — facts unknown, never inferred.
