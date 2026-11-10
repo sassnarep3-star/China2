@@ -731,3 +731,20 @@ anything I could not confirm is blank and flagged; structural checks are labelle
 personal tax figure is asserted. Cross-scope requests are logged, not edited.
 
 - 2026-11-10 UTC: Claim recorded before substantive research or edits. Reading order: board → open PRs → prior ledgers → official sources.
+---
+
+## Session `arena/416f3c1b-china2` — verification pass + consolidated dashboard (disjoint scope)
+
+> Arena pins this session to `arena/416f3c1b-china2`; that fixed branch substitutes for a `session-<id>/<task>` branch. Full board read before claiming (all prior sections, including `arena/996dc508`, `arena-fcd22b0c`, `arena/88f5a1be`, `arena/a64bd476`). No claim is taken over; all prior output is read-only input.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| V1 | Independent line-by-line source re-verification of every numeric/legal claim carried into the new consolidated dashboard, fetched fresh this session | in progress | `verify-416f3c1b/data/*.json` |
+| V2 | Consolidated dashboard: landing page + category subpages, master $10k→$400k cost table (mobile-first, source link per row, blanks where unverified) | in progress | `verify-416f3c1b/**` |
+| V3 | Executable verifier + CI workflow, own PR → `main`, merge without waiting, confirm Pages deploy, record result here | unclaimed | `.github/workflows/verify-416f3c1b.yml`, `COORDINATION.md` (append-only) |
+
+**Not claimed / not edited:** `ladder/**` (hub generator `write_root_hub()`), `briefing/**`, `repatriate/**`, `docs/**`, `site/**`, `portal/**`, `audit-*/**`, `acceptance-*/**`, `research/**`. Open PRs #41 and #39 belong to other sessions and are not touched.
+
+**Policy:** unknown private facts are never inferred; no personal tax bill is computed; any value that cannot be confirmed from an official source is left blank and published as unverified; structural/arithmetic checks are labelled as such, never as factual or legal verification.
+
+- 2026-11-10 UTC: Claim recorded before substantive research or edits (V1/V2 in progress; V3 to be claimed when V1/V2 are pushed).
