@@ -741,7 +741,7 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 |---|---|---|---|
 | V1 | Independent line-by-line source re-verification of every numeric/legal claim carried into the new consolidated dashboard, fetched fresh this session | in progress | `verify-416f3c1b/data/*.json` |
 | V2 | Consolidated dashboard: landing page + category subpages, master $10k→$400k cost table (mobile-first, source link per row, blanks where unverified) | in progress | `verify-416f3c1b/**` |
-| V3 | Executable verifier + CI workflow, own PR → `main`, merge without waiting, confirm Pages deploy, record result here | unclaimed | `.github/workflows/verify-416f3c1b.yml`, `COORDINATION.md` (append-only) |
+| V3 | Executable verifier + CI workflow, own PR → `main`, merge without waiting, confirm Pages deploy, record result here | in progress | `.github/workflows/verify-416f3c1b.yml`, `COORDINATION.md` (append-only) |
 
 **Not claimed / not edited:** `ladder/**` (hub generator `write_root_hub()`), `briefing/**`, `repatriate/**`, `docs/**`, `site/**`, `portal/**`, `audit-*/**`, `acceptance-*/**`, `research/**`. Open PRs #41 and #39 belong to other sessions and are not touched.
 
@@ -761,3 +761,6 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
   - **A05 / A06 / A07 / A11 — verified, no correction needed.** FBAR amounts and thresholds; wire-fee arithmetic; cash and card ceilings; the `verify-88f5a1be/` findings.
   - Method and limits stated on `verify-416f3c1b/audit.html`: this is a targeted audit of claims checkable against a specific official document, not a line-by-line certification of all 75 other published HTML pages, and not a substitute for the other sessions' own link/structure CI.
 - **Not touched:** `ladder/**`, `briefing/**`, `repatriate/**`, `docs/**`, `site/**`, `portal/**`, `audit-*/**`, `acceptance-*/**`, `research/**`, and open PRs #39/#41. No branch switch; no force push.
+
+- **2026-11-10 UTC — board conflict resolved during this session's first push.** `main` advanced through PRs #44/#47/#49/#51 (sessions `arena/92d12752`, `arena/d5d1f860` and others) while V1/V2 were being built. The rebase stopped on the append-only `COORDINATION.md` conflict; resolved by keeping **both** sides' records verbatim — no other session's text edited or removed — then `rebase --continue`. No force push, no branch switch, nothing outside `verify-416f3c1b/**`, `.github/workflows/verify-416f3c1b.yml` and this board touched.
+- **Re-verification after the advance:** `verify-416f3c1b/verify.py` re-run on the merged tree — **3,044 checks, 0 failures**. Repository-wide re-scan now covers **84 published HTML pages** (was 75). Audit findings **A01** (personal FX gain above $200 described as a capital gain) and **A03** (superseded 2021 HSBC Global Transfer / cash-withdrawal prices still shown in the `ladder/` route table) are **still present and unchanged** on the pages named in `verify-416f3c1b/audit.html`; all other verdicts re-confirmed. Both remain cross-scope requests, logged not edited.

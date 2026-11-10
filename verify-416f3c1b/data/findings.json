@@ -228,7 +228,8 @@
     "meta": {
       "session": "arena/416f3c1b-china2",
       "verified_on": "2026-11-10",
-      "pages_scanned": 75
+      "pages_scanned": 84,
+      "note": "Scan repeated after main advanced to f0d90fb (PR #51 added 9 more pages, 84 total). A01 and A03 still present and unchanged; all other verdicts re-confirmed."
     },
     "items": [
       {
@@ -237,7 +238,7 @@
         "title": "Personal currency gain above $200 is described as a capital gain — contradicted by the statute",
         "claim": "“Personal FX gain excluded from income unless > $200; above that, capital gain” (briefing/index.html). “above that it is reported as a capital gain” (briefing/sources.html, site/executive-summary.html). “$0 where the personal gain is $200 or less per transaction; above that, tax on the gain as a capital gain” (site/cost-breakdown.html).",
         "verdict": "contradicted",
-        "finding": "26 U.S.C. §988(a)(1)(A) requires foreign currency gain or loss on a §988 transaction to be 'computed separately and treated as ordinary income or loss'. Section 988(a)(1)(B) allows a capital-election only for certain forward, futures and option contracts identified before the close of the trading day — not for a simple disposition of currency. A personal currency conversion above the $200 line therefore produces ORDINARY gain, not capital gain. On a true long-term gain the two treatments differ by up to 20 percentage points of federal rate, so this is not cosmetic.",
+        "finding": "26 U.S.C. §988(a)(1)(A) requires foreign currency gain or loss on a §988 transaction to be 'computed separately and treated as ordinary income or loss'. Section 988(a)(1)(B) allows a capital-election only for certain forward, futures and option contracts identified before the close of the trading day — not for a simple disposition of currency. A personal currency conversion above the $200 line therefore produces ORDINARY gain, not capital gain. On a true long-term gain the two treatments differ by up to 20 percentage points of federal rate, so this is not cosmetic. Re-checked after main advanced through PR #51: the wording is still present on the listed pages.",
         "request": "Owner of briefing/** and site/**: replace 'capital gain' with 'ordinary income' in the five files listed, or delete the sentence. Cross-scope: not edited by this session.",
         "sources": [
           "S06"
@@ -263,7 +264,7 @@
         "title": "Route table still prices the USD 7 Global Transfer and the 0.25%–0.4% cash fee from the superseded 2021 tariff",
         "claim": "Ranked route table carries Global Transfer and cash-withdrawal costs derived from the '1 January 2021' HSBC tariff. ladder/sources.html quotes it: 'same-name HSBC Global Transfer: free for Premier; reference CNY 50, actual USD 7 per transaction' and 'foreign cash withdrawal: 0.25%-0.4%, minimum CNY 40'.",
         "verdict": "contradicted",
-        "finding": "The current HSBC China tariff, effective 31 October 2026, prices same-name Global Transfer to Self at Free for Private Banking and Premier and CNY 145 indicative (actual USD 20) for Advance — item 2.2.6.1. The USD 7 figure belongs to item 2.2.7, HSBC International Education Payment, a different service. Item 2.2.2.1 prices foreign-currency notes withdrawal over the counter at Free for all three segments. The old 0.25%–0.4% cash charge is not in the current schedule. ladder/sources.html does label S06 as superseded by S21 for these items, but the route table still displays the derived prices.",
+        "finding": "The current HSBC China tariff, effective 31 October 2026, prices same-name Global Transfer to Self at Free for Private Banking and Premier and CNY 145 indicative (actual USD 20) for Advance — item 2.2.6.1. The USD 7 figure belongs to item 2.2.7, HSBC International Education Payment, a different service. Item 2.2.2.1 prices foreign-currency notes withdrawal over the counter at Free for all three segments. The old 0.25%–0.4% cash charge is not in the current schedule. ladder/sources.html does label S06 as superseded by S21 for these items, but the route table still displays the derived prices. Re-checked after main advanced through PR #51: the wording is still present on the listed pages.",
         "request": "Owner of ladder/: reprice the Global Transfer and cash rows from S21 items 2.2.6.1 and 2.2.2.1, or mark those rows 'superseded — not priced'. Cross-scope: not edited by this session.",
         "sources": [
           "S24"
