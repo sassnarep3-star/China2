@@ -495,7 +495,12 @@ Arena requires the existing fixed session branch, which substitutes for a sessio
 
 | Task | Status | Owner | Files / scope |
 |---|---|---|---|
-| Independently examine published user-critical recommendations and cost presentation against official sources; document gaps and findings | in progress | `arena/456e7542-china2` | `audit-456e7542/**` |
+| Independently examine published user-critical recommendations and cost presentation against official sources; document gaps and findings | done | `arena/456e7542-china2` | `audit-456e7542/**` |
 | Validate own review, integration checks, PR and deployment | in progress | `arena/456e7542-china2` | append-only `COORDINATION.md`; `ladder/audit.html` only if deterministic inventory regeneration is required |
 
 Unknown personal facts, quotes, and taxes will not be inferred. Any source limitation or inconsistency will be flagged. Shared landing and previous sessions' substantive outputs are outside this claim.
+
+- 2026-11-10: Critical targeted review completed in `audit-456e7542/index.html`, with primary links per finding. Re-read 26 USC §988(c),(e), IRS FTC/FEIE guidance, SAFE 2020 guidance arts 54–68 and 2026 Tianjin FAQs, SAFE regulations arts 39–45, 52, HSBC tariff cover/notes and charges; discovered the public `briefing/index.html` asserts a categorical $0 US tax on currency conversion despite the currency-gain rules, and calls an illustrative historic-rate fee a cap regardless of size; `briefing/costs.html` shows assumed spread bands as estimated all-in costs. Findings explicitly identify assumptions and unknowns. This is targeted review, not verification of every repository line.
+- **Cross-scope correction request:** `briefing/` owner or final integration session: replace categorical no-tax wording, make exchange-gain risk prominent, and replace unverified all-in spreads with blank values per user instruction; fix the fee cap wording; link the critical review from briefing and the root hub. This session does not edit that session's claimed scope. The standalone review is published at `audit-456e7542/index.html` and its entries are **needs review**.
+
+- 2026-11-10: Structural review test: `audit-456e7542/verify.py` passed (8 source-linked rows and local links; no factual/live-link claim). Existing suites passed: docs builder/validator/UI, site builder/verifier (477), ladder (9,329), repatriate (11,197), portal (109 rows), audit-ad300459 (624), audit-0f0f59fe (413). `ladder/audit.html` regenerated solely because its repository inventory changed; no generator or route data changed. HSBC is a primary commercial tariff source, not a government authority. First claim push found no remote session branch; pulled/rebased against main before creating it, then pushed normally.
