@@ -1,0 +1,577 @@
+{
+  "meta": {
+    "session": "arena/ad300459-china2",
+    "fetched": "2026-11-10",
+    "title": "Fresh official-source verification pass — CNY to USD repatriation claims",
+    "policy": "Every finding below was checked against a document re-fetched during this session. Values that cannot be confirmed from an official source are left blank and published on flagged.html. No personal account facts were used or inferred; this is research verification, not tax or legal advice."
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "issuer": "SAFE Tianjin (State Administration of Foreign Exchange, PRC)",
+      "title": "2026 FX internet information — personal FX (08): how overseas individuals remit employment income",
+      "date": "2026-07-13",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+      "quote": "根据……汇发〔2020〕14号）第五十九条规定，“境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇”。",
+      "status": "fetched 2026-11-10"
+    },
+    {
+      "id": "S02",
+      "issuer": "SAFE Tianjin (PRC)",
+      "title": "2026 FX internet information — personal FX (10): reconversion of unused previously exchanged RMB",
+      "date": "2026-09-17",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0917/3134.html",
+      "quote": "境外个人原兑换未用完的人民币兑回外汇……兑回有效期为自兑换日起24个月；对于当日累计兑换不超过等值500美元（含）以及离境前在境内关外场所当日累计不超过等值1000美元（含）的兑换，可凭本人有效身份证件办理。",
+      "status": "fetched 2026-11-10"
+    },
+    {
+      "id": "S03",
+      "issuer": "SAFE Tianjin (PRC)",
+      "title": "2024 current-account FX policy Q&A case (9): do overseas individuals enjoy the annual facilitation quota?",
+      "date": "2024-06-21",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
+      "quote": "……汇发〔2020〕14号）第五十九条，境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。",
+      "status": "fetched 2026-11-10"
+    },
+    {
+      "id": "S04",
+      "issuer": "State Council of the PRC (published via SAFE mirror)",
+      "title": "Regulations of the PRC on Foreign Exchange Administration, State Council Order No. 532",
+      "date": "2008-08-05",
+      "url": "https://www.safe.gov.cn/safe/2008/0806/5321.html",
+      "quote": "第五十二条（二）境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人……；第三十九条 逃汇行为……处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款……第四十五条 私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的……第四十六条 未经批准擅自经营结汇、售汇业务……违法所得50万元以上……并处违法所得1倍以上5倍以下的罚款……50万元以上200万元以下的罚款……",
+      "status": "fetched 2026-11-10"
+    },
+    {
+      "id": "S05",
+      "issuer": "SAFE (PRC)",
+      "title": "Implementing Rules of the Measures for the Administration of Individual Foreign Exchange, Hui Fa [2007] No. 1 (page marked as amended)",
+      "date": "2007-01-05",
+      "url": "https://www.safe.gov.cn/safe/2007/0105/5320.html",
+      "quote": "第二条 对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。……第十四条 境内个人外汇汇出境外用于经常项目支出……当日累计等值5万美元以下（含）的，凭本人有效身份证件在银行办理……第三十条 个人提取外币现钞当日累计等值1万美元以下（含）的，可以在银行直接办理；超过上述金额的……事前报备……（页面注：第三十九条已被汇发〔2023〕8号废止）",
+      "status": "fetched 2026-11-10"
+    },
+    {
+      "id": "S06",
+      "issuer": "State Council of the PRC (State Council Gazette)",
+      "title": "SAFE Notice on issuing the Current Account FX Business Guidelines (2020 edition), Hui Fa [2020] No. 14 — full text incl. Chapter 3 personal current-account rules",
+      "date": "2020-08-28",
+      "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+      "quote": "第五十四条 ……个人结汇和境内个人购汇实行年度便利化额度管理，便利化额度分别为每人每年等值5万美元。第五十九条 境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。第六十二条 个人不得以分拆等方式规避便利化额度管理及真实性管理……“关注名单”内……关注期限为列入之当年及之后连续2年……第四十九条 ……办理单笔等值5万美元以上的服务贸易对外支付，境内机构和个人应先按照服务贸易对外支付税务备案有关规定办理备案手续……第八十九条 个人携带外币现钞等入境，超过等值5000美元的应向海关书面申报……；此前规定与本通知不一致的，按照本通知执行。",
+      "status": "fetched 2026-11-10 (6 document chunks re-read end to end)"
+    },
+    {
+      "id": "S07",
+      "issuer": "State Taxation Administration of the PRC (Hainan provincial bureau mirror; STA law-database link on page)",
+      "title": "Individual Income Tax Law of the PRC (2018 amendment, full text)",
+      "date": "2018-08-31",
+      "url": "https://hainan.chinatax.gov.cn/xxgk_6_1/01135066.html",
+      "quote": "第一条 ……一个纳税年度内在中国境内居住累计满一百八十三天的，为居民个人……居民个人从中国境内和境外取得的所得……缴纳个人所得税。第三条（一）综合所得，适用百分之三至百分之四十五的超额累进税率……（三）利息、股息、红利所得……税率为百分之二十。第六条（一）居民个人的综合所得……减除费用六万元……第七条 居民个人从中国境外取得的所得，可以……抵免已在境外缴纳的个人所得税税额，但抵免额不得超过……",
+      "status": "fetched 2026-11-10"
+    },
+    {
+      "id": "S08",
+      "issuer": "Internal Revenue Service, US Department of the Treasury",
+      "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "date": "current page",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "quote": "must file an FBAR to report … the aggregate value of those foreign financial accounts exceeded $10,000 at any time during the calendar year reported … due April 15 … automatic extension to October 15 … You may be subject to civil monetary penalties and/or criminal penalties … Civil FBAR penalty maximums … are adjusted annually for inflation.",
+      "status": "fetched 2026-11-10 (page 1 of 2)"
+    },
+    {
+      "id": "S09",
+      "issuer": "Internal Revenue Service, US Treasury",
+      "title": "Summary of FATCA reporting for U.S. taxpayers (Form 8938 thresholds)",
+      "date": "current page",
+      "url": "https://www.irs.gov/businesses/corporations/summary-of-fatca-reporting-for-us-taxpayers",
+      "quote": "If you are single or file separately … more than $200,000 … at the end of the year and you live abroad; or more than $50,000, if you live in the United States … married filing jointly … $400,000 on the last day … or more than $600,000 at any time (living abroad) … $100,000 / $150,000 (living in the United States).",
+      "status": "fetched 2026-11-10 (page 1 of 2)"
+    },
+    {
+      "id": "S10",
+      "issuer": "Internal Revenue Service, US Treasury",
+      "title": "Foreign Tax Credit",
+      "date": "current page",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+      "quote": "you may be able to take either a credit or an itemized deduction … File Form 1116 … If you elect to exclude either foreign earned income or foreign housing costs, you cannot take a foreign tax credit for taxes on income you exclude … If you are entitled to a reduced rate of foreign tax based on an income tax treaty … only that reduced tax qualifies for the credit.",
+      "status": "fetched 2026-11-10"
+    },
+    {
+      "id": "S11",
+      "issuer": "Internal Revenue Service, US Treasury",
+      "title": "Foreign earned income exclusion",
+      "date": "current page",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion",
+      "quote": "As a U.S. citizen or a U.S. resident alien of the United States and you live abroad, you are taxed on your worldwide income … bona fide resident … or physically present … at least 330 full days during any period of 12 consecutive months … up to an amount that is adjusted annually for inflation ($107,600 for 2020, $108,700 for 2021, $112,000 for 2022, and $120,000 for 2023).",
+      "status": "fetched 2026-11-10 (page 1 of 2; page lists amounts only through 2023)"
+    },
+    {
+      "id": "S12",
+      "issuer": "Office of the Federal Register / GPO (eCFR)",
+      "title": "31 CFR 1010.350 — Reports of foreign financial accounts",
+      "date": "displayed current as of 2026-11-06",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-C/section-1010.350",
+      "quote": "Each United States person having a financial interest in, or signature or other authority over, a bank, securities, or other financial account in a foreign country shall report such relationship … in each year in which such relationship exists …",
+      "status": "fetched 2026-11-10 (regulatory text chunk)"
+    },
+    {
+      "id": "S13",
+      "issuer": "US Government Publishing Office (govinfo.gov)",
+      "title": "26 U.S.C. § 988 — Treatment of certain foreign currency transactions, 2024 edition",
+      "date": "2024 edition",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "quote": "(a)(1)(A) any foreign currency gain or loss attributable to a section 988 transaction shall be computed separately and treated as ordinary income or loss … (c)(1)(C) In the case of any disposition of any nonfunctional currency … treated as a section 988 transaction … (e)(1) … shall not apply to any section 988 transaction entered into by an individual which is a personal transaction. (e)(2) … no gain shall be recognized … The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.",
+      "status": "fetched 2026-11-10 (chunks 0, 1, 2 re-read; (e) text verbatim)"
+    },
+    {
+      "id": "S14",
+      "issuer": "U.S. Customs and Border Protection (CBP)",
+      "title": "Dulles CBP officers seize over $111k in Unreported Currency (official local media release)",
+      "date": "2025-08-28",
+      "url": "https://www.cbp.gov/newsroom/local-media-release/dulles-cbp-officers-seize-over-111k-unreported-currency",
+      "quote": "There is no limit to how much currency or other monetary instruments they may bring to or take out of the United States. However, federal law [31 USC 5316] requires travelers to report all currency and monetary instruments of $10,000 or greater to a CBP officer … complete … [FINCEN 105] … travelers can now complete and submit FINCEN form 105 electronically at https://fincen105.cbp.dhs.gov prior to a CBP arrival or departure inspection.",
+      "status": "fetched via official-source search 2026-11-10 (quoted text retrieved; CBP general information page URL previously used by the repo returned 404 — see FL07)"
+    },
+    {
+      "id": "S15",
+      "issuer": "U.S. Customs and Border Protection (CBP)",
+      "title": "CBP Seizes over $100K from Travelers (official local media release)",
+      "date": "2017-12-12",
+      "url": "https://www.cbp.gov/newsroom/local-media-release/cbp-seizes-over-100k-travelers",
+      "quote": "International travelers can carry an unlimited amount of money traveling into or departing from the U.S., but are required to report currency over $10,000 … Currency is reported by completing FinCEN Form 105 … Failure to comply can result in civil and criminal penalties …",
+      "status": "fetched via official-source search 2026-11-10"
+    },
+    {
+      "id": "S16",
+      "issuer": "HSBC Bank (China) Company Limited (commercial primary source — bank tariff, not a government instrument)",
+      "title": "Tariff of Accounts and Services for Wealth and Personal Banking Business, effective 31 October 2026",
+      "date": "effective 2026-10-31",
+      "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+      "quote": "2.2.4.1 Telegraphic Transfer Issuance — Premier: 0.1% of remittance amount, Min. CNY100, Max. CNY500 per transaction, Plus Cable Charge; Private Banking individual customer: Free. 2.2.4.2 Cable Charges — Premier/Advance: CNY120 per cable; Private Banking individual: Free. Remark: Pay Exact CNY200 … does not include fees incurred in remittance paths charged by third parties … Note 7: charges shown do not include charges collected by other institutions …",
+      "status": "fetched 2026-11-10 (14 document chunks; fee tables read directly)"
+    },
+    {
+      "id": "S17",
+      "issuer": "Internal Revenue Service, US Treasury",
+      "title": "United States–China Income Tax Convention (signed 1984-04-30; in force 1987-01-01), official treaty PDF",
+      "date": "1984/1986",
+      "url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+      "quote": "ARTICLE 9 … the tax so charged shall not exceed 10 percent of the gross amount of the dividends. ARTICLE 10 … shall not exceed 10 percent of the gross amount of the interest. ARTICLE 11 … shall not exceed 10 percent of the gross amount of the royalties. (Letter of Submittal: the agreement … limits the tax which each country may impose on dividends, interest and royalties … to no more than 10 percent in each case; entered into force January 1, 1987.)",
+      "status": "fetched 2026-11-10 (front matter, Article 9–11 text re-read)"
+    }
+  ],
+  "findings": [
+    {
+      "id": "V01",
+      "rank": 1,
+      "topic": "PRC quota — what actually exists",
+      "claim": "PRC annual facilitation quota: each person may settle FX and each DOMESTIC individual may buy FX up to USD 50,000 equivalent per year with ID only; above-quota transactions need transaction documents.",
+      "repo": ["ladder/tax.html", "repatriate/index.html", "portal/tax-compliance.html", "docs/routes.html"],
+      "verdict": "verified-limited",
+      "source": "S06",
+      "locator": "Hui Fa [2020] No. 14, Art. 54–55 (also Hui Fa [2007] No. 1, Art. 2)",
+      "note": "Scope matters: the purchase side of the quota is for domestic individuals (境内个人). Overseas individuals purchase against income/source documents (see V03) unless they hold a foreigner permanent-residence ID (V04). Whether a US citizen is domestic or overseas depends on residence — see V02."
+    },
+    {
+      "id": "V02",
+      "rank": 2,
+      "topic": "PRC classification of a US citizen",
+      "claim": "A foreign national who has been continuously resident in the PRC for one year or more counts as a domestic individual (境内个人) under PRC FX rules; below one year the person is an overseas individual (境外个人).",
+      "repo": ["ladder/flagged.html", "ladder/tax.html", "repatriate/taxes.html"],
+      "verdict": "verified",
+      "source": "S04",
+      "locator": "State Council Order No. 532, Art. 52(2)",
+      "note": "This classification decides which purchase/remittance rulebook applies (quota vs source-docs). The user's residence duration is unknown here, so no route is asserted as applicable to any private balance."
+    },
+    {
+      "id": "V03",
+      "rank": 3,
+      "topic": "PRC route — documented income",
+      "claim": "Overseas individuals convert lawful RMB current-account income earned in China (e.g., employment pay) into FX at a bank with valid ID plus transaction-bearing source-of-funds materials that include a tax voucher (税务凭证); the bank then handles the outward current-account remittance under its document rules.",
+      "repo": ["portal/methods.html", "repatriate/methods.html", "ladder/routes.html", "docs/methods.html"],
+      "verdict": "verified",
+      "source": "S06",
+      "locator": "Hui Fa [2020] No. 14, Art. 59 ¶1 (quoted verbatim by SAFE Tianjin S01; remittance side: Art. 65)",
+      "note": "This is the central lawful 'get money out' path for documented income: FX purchase against proof of lawful income (incl. tax voucher), then account remittance with ID (Art. 65)."
+    },
+    {
+      "id": "V04",
+      "rank": 4,
+      "topic": "PRC quota — permanent residents",
+      "claim": "Overseas individuals who hold a Foreigner's Permanent Residence ID (外国人永久居留身份证) use the annual facilitation quota for FX purchases.",
+      "repo": ["repatriate/flagged.html", "ladder/flagged.html"],
+      "verdict": "verified",
+      "source": "S03",
+      "locator": "Hui Fa [2020] No. 14, Art. 59 ¶2 (in gazette S06) + SAFE Tianjin 2024-06-21 Q&A",
+      "note": "Statements that ANY overseas individual automatically enjoys the USD 50,000 purchase quota go beyond this text; such wording in older repository summaries is tracked in FL06."
+    },
+    {
+      "id": "V05",
+      "rank": 5,
+      "topic": "PRC outward remittance thresholds",
+      "claim": "Domestic individuals: FX-account remittance for current account up to USD 50,000 equivalent same day needs ID only (above: transaction documents); FX cash remittance up to USD 10,000 same day needs ID (above: customs-stamped declaration or original withdrawal slip plus documents). Overseas individuals: FX-account remittance needs valid ID; FX cash remittance up to USD 10,000 same day needs ID (above: customs-stamped declaration or original withdrawal slip).",
+      "repo": ["ladder/steps.html", "repatriate/methods.html", "portal/methods.html", "docs/routes.html"],
+      "verdict": "verified",
+      "source": "S06",
+      "locator": "Hui Fa [2020] No. 14, Art. 64–65 (same structure in Hui Fa [2007] No. 1, Art. 14–15)",
+      "note": "USD 50,000 here is a daily document-free threshold for outward remittance of FX already held — not a lifetime or annual cap on transfers, and not a tax."
+    },
+    {
+      "id": "V06",
+      "rank": 6,
+      "topic": "PRC reconversion (RMB back to FX)",
+      "claim": "An overseas individual may reconvert previously exchanged but UNUSED RMB back to FX with ID plus the original exchange slip (兑换水单) within 24 months of exchange; without the slip, only same-day conversions up to USD 500 equivalent (USD 1,000 at domestic-offshore locations before departure) are ID-only.",
+      "repo": ["portal/methods.html", "ladder/flagged.html", "repatriate/flagged.html"],
+      "verdict": "verified-limited",
+      "source": "S02",
+      "locator": "Hui Fa [2020] No. 14, Art. 60 (quoted verbatim by SAFE Tianjin 2026-09-17; also in gazette S06)",
+      "note": "Scope matters: this is a narrow reconversion rule for previously exchanged unused RMB — NOT a general USD 500/day allowance to convert any RMB. Older pages that generalized it are tracked in FL06."
+    },
+    {
+      "id": "V07",
+      "rank": 7,
+      "topic": "PRC anti-splitting / watch list",
+      "claim": "Individuals must not split transactions (分拆) to evade the facilitation-quota or truthfulness requirements. Lending your quota triggers a risk warning, then watch-list (关注名单) status on repetition; borrowing others' quota puts you on the watch list directly; listing lasts the year of listing plus the following 2 years, during which all FX settlement/purchase requires transaction documents.",
+      "repo": ["ladder/routes.html", "ladder/steps.html", "repatriate/methods.html", "portal/conversion-penalties.html"],
+      "verdict": "verified",
+      "source": "S06",
+      "locator": "Hui Fa [2020] No. 14, Art. 62–63 (also Art. 47 for service trade)",
+      "note": "Structuring payments to stay under thresholds is restricted on the PRC side; on the US side cash structuring is separately prohibited (see V23)."
+    },
+    {
+      "id": "V08",
+      "rank": 8,
+      "topic": "PRC bank refusal — get it in writing",
+      "claim": "Banks must reasonably review transaction documents for personal current-account FX, may refuse transactions that violate FX rules or whose authenticity is doubtful, and must state the refusal reason accurately and provide the appeal channel.",
+      "repo": ["index.html", "docs/checklist.html", "portal/methods.html"],
+      "verdict": "verified",
+      "source": "S06",
+      "locator": "Hui Fa [2020] No. 14, Art. 68",
+      "note": "Supports the repo's advice to ask the bank for the specific reason (documents, FX category, tax certificate vs tax assessment) in writing."
+    },
+    {
+      "id": "V09",
+      "rank": 9,
+      "topic": "PRC tax-filing gate on large service payments",
+      "claim": "Outward service-trade payments above USD 50,000 equivalent by domestic institutions AND individuals require prior tax-filing (税务备案) procedures, and the bank verifies the tax filing form.",
+      "repo": ["portal/tax-compliance.html", "docs/taxes.html"],
+      "verdict": "verified-limited",
+      "source": "S06",
+      "locator": "Hui Fa [2020] No. 14, Art. 49(4)",
+      "note": "Applies to service-trade payments (a business payment category), not to personal remittances of one's own funds; do not read it as a general tax on remittance."
+    },
+    {
+      "id": "V10",
+      "rank": 10,
+      "topic": "PRC cash-in-bank thresholds",
+      "claim": "FX cash withdrawal from a bank up to USD 10,000 equivalent same day: ID only; above that: ID plus withdrawal-purpose evidence with prior SAFE filing (提取外币现钞备案表). FX cash deposits and cash-convert settlements: up to USD 10,000 same day handled per identity/document rules; above requires customs-stamped declaration or the original withdrawal slip.",
+      "repo": ["ladder/steps.html", "repatriate/methods.html", "ladder/tax.html"],
+      "verdict": "verified-limited",
+      "source": "S06",
+      "locator": "Hui Fa [2020] No. 14, Art. 86–88; supersession clause in the issuing notice; Hui Fa [2007] No. 1, Art. 30–31 for the earlier USD 5,000 deposit figure",
+      "note": "The 2007 Rules state a USD 5,000 same-day deposit threshold (Art. 31); the 2020 Guidelines (Art. 87) state USD 10,000, and the 2020 notice says prior provisions inconsistent with it are governed by it. Bank practice confirmation remains a customer question (FL10)."
+    },
+    {
+      "id": "V11",
+      "rank": 11,
+      "topic": "PRC physical cash crossing",
+      "claim": "Carrying foreign currency INTO China above USD 5,000 equivalent requires a written customs declaration (and any second-or-later crossing in a short period requires it regardless of amount). Carrying FX OUT: amounts between USD 5,000 and 10,000 beyond the recorded inbound amount require a bank-issued Carry Permit for Foreign Exchange (携带外汇出境许可证); above USD 10,000 (for qualifying destinations) requires a SAFE-issued permit.",
+      "repo": ["ladder/steps.html", "repatriate/methods.html", "portal/conversion-penalties.html"],
+      "verdict": "verified",
+      "source": "S06",
+      "locator": "Hui Fa [2020] No. 14, Art. 89 (bank/SAFE permit system also in Hui Fa [2007] No. 1, Art. 5)",
+      "note": "PRC-side carry rules; the US-side report is separate (V23)."
+    },
+    {
+      "id": "V12",
+      "rank": 12,
+      "topic": "PRC penalties for control evasion",
+      "claim": "PRC FX penalties (statutory maxima): evading FX controls (逃汇) — fine up to 30% of the amount, or 30% up to the equivalent amount if serious, criminal liability possible; illegal FX arbitrage via false documents (非法套汇) — same 30% structure; private/improper buying-selling or brokering FX in large amounts — warning, confiscation of gains, fine up to 30%, 30%+ if serious, criminal liability; operating settlement/sale FX business without approval — confiscation of gains plus 1–5× gains if gains ≥ CNY 500,000, or CNY 500,000–2,000,000 if no/low gains, license suspension/revocation, criminal liability; carrying FX across the border in violation — warning plus fine up to 20% of the amount.",
+      "repo": ["ladder/tax.html", "portal/conversion-penalties.html", "repatriate/taxes.html", "docs/taxes.html"],
+      "verdict": "verified",
+      "source": "S04",
+      "locator": "State Council Order No. 532, Art. 39, 40, 45, 46, 42",
+      "note": "Arithmetic illustration only (not a forecast): a 30% fine on USD 400,000 is USD 120,000. These are maxima applied case by case; 2020 Guidelines violations are punished via the same Regulations (S06, Art. 188)."
+    },
+    {
+      "id": "V13",
+      "rank": 13,
+      "topic": "PRC policy baseline",
+      "claim": "PRC policy imposes no restriction in principle on current-account international payments and transfers; current-account FX income may be retained or sold, and current-account payments are made with valid documents.",
+      "repo": ["index.html", "portal/index.html", "repatriate/index.html"],
+      "verdict": "verified-limited",
+      "source": "S04",
+      "locator": "State Council Order No. 532, Art. 5, 12–14",
+      "note": "A policy principle — individual transactions still require identity and authenticity documents (V03, V05)."
+    },
+    {
+      "id": "V14",
+      "rank": 14,
+      "topic": "PRC income tax basics",
+      "claim": "PRC individual income tax: a person domiciled in China or present ≥183 days in a tax year is a resident and taxed on worldwide income; comprehensive income (wages etc.) is taxed at 3%–45% progressive rates with a CNY 60,000 annual standard deduction (non-residents: CNY 5,000/month); interest, dividends, property rental/transfer and incidental income are taxed at a flat 20%.",
+      "repo": ["repatriate/taxes.html", "portal/tax-compliance.html", "ladder/tax.html", "docs/taxes.html"],
+      "verdict": "verified",
+      "source": "S07",
+      "locator": "PRC IIT Law, Art. 1, 3, 6 (2018 amendment)",
+      "note": "Tax attaches to INCOME, not to the act of currency conversion (V16). Whether this user's balance is taxed, already taxed, or in which category is unknown (FL05)."
+    },
+    {
+      "id": "V15",
+      "rank": 15,
+      "topic": "PRC foreign tax credit",
+      "claim": "PRC residents may credit foreign income tax paid against PRC tax on foreign-source income, capped at the PRC tax computed on that income under the IIT Law.",
+      "repo": ["repatriate/taxes.html", "portal/tax-compliance.html"],
+      "verdict": "verified",
+      "source": "S07",
+      "locator": "PRC IIT Law, Art. 7",
+      "note": "The US–China treaty also obliges the residence state to give a credit for the other state's tax (treaty Art. 22, per S17 front matter)."
+    },
+    {
+      "id": "V16",
+      "rank": 16,
+      "topic": "Conversion-penalty layer — is there a PRC tax on converting?",
+      "claim": "In the PRC instruments reviewed for this check (State Council Order No. 532; Hui Fa [2007] No. 1; Hui Fa [2020] No. 14) no standalone tax on the act of currency conversion was located — those instruments impose identity, document, quota and penalty rules instead. Any PRC tax due follows the underlying income (V14), not the conversion itself.",
+      "repo": ["index.html", "portal/conversion-penalties.html", "ladder/tax.html"],
+      "verdict": "verified-limited",
+      "source": "S06",
+      "locator": "Absence check across S04, S05, S06 (full texts re-read this session)",
+      "note": "An absence claim is limited to the instruments read; it is not proof that no tax exists in any circumstance. The source and tax history of any private balance remain unknown (FL05). The root landing page states this same careful wording."
+    },
+    {
+      "id": "V17",
+      "rank": 17,
+      "topic": "US taxation of a citizen",
+      "claim": "US citizens and resident aliens living abroad are taxed on worldwide income; a foreign earned income exclusion may apply if the bona fide residence test or the 330-day physical presence test is met, with amounts adjusted annually for inflation (fetched page lists $107,600 for 2020 through $120,000 for 2023).",
+      "repo": ["repatriate/taxes.html", "docs/taxes.html", "portal/tax-compliance.html"],
+      "verdict": "verified-limited",
+      "source": "S11",
+      "locator": "IRS 'Foreign earned income exclusion' (page 1)",
+      "note": "Later-year exclusion amounts (2024–2026) are NOT on the fetched page and were not re-verified here — left blank (FL03). Repatriate's $132,900 figure is therefore not re-confirmed by this session."
+    },
+    {
+      "id": "V18",
+      "rank": 18,
+      "topic": "US currency-gain rule on personal conversions",
+      "claim": "Under 26 U.S.C. §988, gains or losses on foreign-currency transactions are ordinary income/loss, and disposing of nonfunctional currency (including bank deposits) is a §988 transaction — BUT for individuals, personal transactions are outside §988, and in a personal disposal no gain is recognized due to exchange-rate movement unless the gain would exceed $200.",
+      "repo": ["repatriate/taxes.html", "docs/taxes.html", "portal/conversion-penalties.html", "ladder/tax.html"],
+      "verdict": "verified",
+      "source": "S13",
+      "locator": "26 U.S.C. §988(a)(1), (c)(1)(C), (e)(1)–(3) (2024 edition)",
+      "note": "The repo's §988(e)(2) statement matches the statutory text ($200 threshold). Amounts above $200, or non-personal transactions, need real tax computation — none is done here."
+    },
+    {
+      "id": "V19",
+      "rank": 19,
+      "topic": "US FBAR",
+      "claim": "A US person with a financial interest in, or signature/other authority over, foreign financial accounts must file the FBAR (FinCEN Form 114) if the aggregate value exceeded USD 10,000 at any time during the calendar year; due April 15 with automatic extension to October 15; account income is irrelevant; civil and/or criminal penalties apply, with civil maxima adjusted annually for inflation.",
+      "repo": ["ladder/tax.html", "repatriate/taxes.html", "portal/tax-compliance.html", "docs/taxes.html"],
+      "verdict": "verified",
+      "source": "S08",
+      "locator": "IRS FBAR page + 31 CFR 1010.350 (S12)",
+      "note": "Specific current civil penalty DOLLAR maxima are inflation-adjusted and were not re-fetched for this pass — left blank (FL04)."
+    },
+    {
+      "id": "V20",
+      "rank": 20,
+      "topic": "US Form 8938 (FATCA)",
+      "claim": "Form 8938 thresholds for specified foreign financial assets: living in the US — unmarried/married-filing-separate more than $50,000 at year end or $75,000 at any time; married filing jointly more than $100,000/$150,000. Living abroad — unmarried more than $200,000/$300,000; married filing jointly more than $400,000/$600,000. Filing Form 8938 does not relieve FBAR duties.",
+      "repo": ["repatriate/taxes.html", "portal/tax-compliance.html", "docs/taxes.html"],
+      "verdict": "verified",
+      "source": "S09",
+      "locator": "IRS FATCA summary, 'Reporting thresholds' section",
+      "note": "'Living abroad' requires tax home abroad plus 330-day presence per the page. Form 3520 thresholds asserted elsewhere in the repo were NOT verified here (FL02)."
+    },
+    {
+      "id": "V21",
+      "rank": 21,
+      "topic": "US foreign tax credit vs exclusion",
+      "claim": "US citizens may claim a foreign tax credit (Form 1116) for qualifying foreign income taxes instead of an itemized deduction; no credit is allowed for tax on income excluded under the foreign earned income exclusion; where a treaty reduces the foreign tax rate, only the reduced amount qualifies for the credit.",
+      "repo": ["repatriate/taxes.html", "docs/taxes.html", "portal/tax-compliance.html"],
+      "verdict": "verified",
+      "source": "S10",
+      "locator": "IRS 'Foreign Tax Credit' page sections 'Qualifying foreign taxes', 'Compliance issues'",
+      "note": "FEIE and FTC are alternatives with interactions — choosing between them is a personal tax computation not performed here."
+    },
+    {
+      "id": "V22",
+      "rank": 22,
+      "topic": "US–China treaty rates",
+      "claim": "The US–China income tax treaty (in force since 1 January 1987) caps source-state tax on dividends, interest and royalties at 10% of the gross amount in each case (for beneficial owners), and the residence state gives credit for the other state's tax; a saving clause sits in Protocol 1.",
+      "repo": ["docs/taxes.html", "repatriate/taxes.html", "ladder/tax.html"],
+      "verdict": "verified",
+      "source": "S17",
+      "locator": "Treaty Arts. 9, 10, 11, 22; Letter of Submittal; Protocol 1 saving clause",
+      "note": "Treaty rates matter for investment-type income, not for the FX conversion itself."
+    },
+    {
+      "id": "V23",
+      "rank": 23,
+      "topic": "US cash-carry reporting",
+      "claim": "There is no legal limit on how much currency or monetary instruments a traveler may carry into or out of the United States, but amounts of $10,000 or greater (combined) must be reported to CBP on FinCEN Form 105 (electronic filing at fincen105.cbp.dhs.gov); non-reporting risks seizure plus civil and/or criminal penalties (31 USC 5316).",
+      "repo": ["ladder/tax.html", "ladder/steps.html", "repatriate/methods.html", "portal/conversion-penalties.html"],
+      "verdict": "verified",
+      "source": "S14",
+      "locator": "CBP official releases (S14 2025; corroborating S15 2017)",
+      "note": "Filing the report is not a tax and not a limit. Deliberately structuring carry amounts to avoid the report is separately prohibited."
+    },
+    {
+      "id": "V24",
+      "rank": 24,
+      "topic": "Bank fee schedule (verified commercial primary source)",
+      "claim": "HSBC China tariff effective 31 Oct 2026: outward telegraphic transfer issuance for Premier/Advance customers 0.1% of the remittance amount, min CNY 100, max CNY 500 per transaction, plus a cable charge of CNY 120 per cable (Private Banking individual customers: free); optional 'Pay Exact' arrangement CNY 200 plus any overseas shortfall; the tariff expressly excludes charges collected by other institutions (intermediary/correspondent banks).",
+      "repo": ["ladder/assumptions.html", "ladder/sources.html", "audit-0f0f59fe/index.html", "repatriate/sources.html"],
+      "verdict": "verified",
+      "source": "S16",
+      "locator": "Tariff items 2.2.4.1 and 2.2.4.2; remarks; Important Note 7",
+      "note": "Bank tariff = commercial primary source, labelled as such. Eligibility for any particular customer segment is account-specific and unverified (FL05). The legacy 'USD 0–7 same-name Global Transfer' claim remains flagged by earlier audits (FL06)."
+    },
+    {
+      "id": "V25",
+      "rank": 25,
+      "topic": "Conversion-penalty layer — FX spread",
+      "claim": "No official or bank-published customer CNY/USD spread or executable all-in conversion rate was located in any instrument re-fetched this session; every dollar cost that depends on spread or on the current rate therefore remains unverified.",
+      "repo": ["index.html", "ladder/flagged.html", "audit-86f0/review.html", "repatriate/flagged.html"],
+      "verdict": "unverified",
+      "source": "",
+      "locator": "",
+      "note": "Left blank on purpose (FL01, FL08). Obtain a current executable all-in quote (rate, sender fee, cable, correspondent and recipient charges) from the bank before relying on any modeled band."
+    },
+    {
+      "id": "V26",
+      "rank": 26,
+      "topic": "Conversion-penalty layer — intermediary fees",
+      "claim": "Intermediary/correspondent and beneficiary-bank charges are excluded from the verified bank tariff and were not published in any fetched official source; their amount for any given transfer is unverified.",
+      "repo": ["ladder/flagged.html", "repatriate/flagged.html", "index.html"],
+      "verdict": "unverified",
+      "source": "",
+      "locator": "",
+      "note": "Left blank on purpose (FL01). The HSBC 'Pay Exact' remark confirms third-party charges exist but does not quantify them."
+    },
+    {
+      "id": "V27",
+      "rank": 27,
+      "topic": "This user's personal tax result",
+      "claim": "The exact PRC tax due (if any), eligible route, and all-in USD cost for the specific balance described by the user cannot be determined from fetched official sources: source of funds, income category, residence duration, tax history and account facts are unknown.",
+      "repo": ["index.html", "ladder/flagged.html", "repatriate/flagged.html", "docs/review.html"],
+      "verdict": "unverified",
+      "source": "",
+      "locator": "",
+      "note": "Left blank and flagged (FL05). No personalized amount is computed or implied anywhere on this site."
+    }
+  ],
+  "flags": [
+    {
+      "id": "FL01",
+      "title": "FX spread, all-in rate and intermediary fees — blank by design",
+      "detail": "No official source publishes a customer CNY/USD spread or corridor fees. Fields remain blank; modeled bands elsewhere in the repo are scenarios, not quotes.",
+      "repo": ["ladder/flagged.html", "repatriate/flagged.html", "audit-86f0/review.html"],
+      "url": "",
+      "status": "needs review"
+    },
+    {
+      "id": "FL02",
+      "title": "Form 3520 threshold asserted elsewhere — not re-verified here",
+      "detail": "Earlier pages assert Form 3520 reporting thresholds (ladder flag F05). This session did not fetch the IRS Form 3520 instructions; the value is left blank on this site.",
+      "repo": ["ladder/flagged.html"],
+      "url": "",
+      "status": "needs review"
+    },
+    {
+      "id": "FL03",
+      "title": "Foreign earned income exclusion amounts after 2023 — blank",
+      "detail": "The fetched IRS page lists amounts only through 2023 ($120,000). Repatriate cites $132,900 (2025). This session did not fetch a later IRS cost-of-living notice, so later-year amounts are left blank here.",
+      "repo": ["repatriate/taxes.html"],
+      "url": "",
+      "status": "needs review"
+    },
+    {
+      "id": "FL04",
+      "title": "FBAR civil penalty dollar maxima — blank",
+      "detail": "IRS states civil FBAR penalty maximums are adjusted annually for inflation; the specific current dollar figures were not re-fetched for this pass and are left blank here.",
+      "repo": ["repatriate/taxes.html"],
+      "url": "",
+      "status": "needs review"
+    },
+    {
+      "id": "FL05",
+      "title": "Personal facts unknown — no personalized tax or eligibility result",
+      "detail": "Source of funds, PRC tax history, residence duration, account type and customer segment are unknown. Nothing on this site determines the user's tax bill, route eligibility or executable cost.",
+      "repo": ["index.html"],
+      "url": "",
+      "status": "needs review"
+    },
+    {
+      "id": "FL06",
+      "title": "Carried-forward wording issues in older repository pages",
+      "detail": "Prior audits flagged: overbroad 'foreign individuals get the USD 50,000 purchase quota' wording (this pass confirms quota purchase treatment only for domestic individuals and PR-ID holders — V01/V04); generalizing the USD 500 reconversion rule (narrow rule — V06); the legacy HSBC 'USD 0–7 Global Transfer' figure (audit-0f0f59fe C04). Those pages remain owned by their sessions; corrections were logged, not edited.",
+      "repo": ["research/EXECUTIVE_SUMMARY.md", "reports/EXECUTIVE_SUMMARY_85f37d08.md", "EXECUTIVE-SUMMARY.md"],
+      "url": "",
+      "status": "needs review"
+    },
+    {
+      "id": "FL07",
+      "title": "CBP canonical information-page URL returns 404",
+      "detail": "The repository previously linked cbp.gov/travel/carrying/monetary/monetary-reporting-requirements, which returned 404 on 2026-11-10. This pass verifies the same rule via official CBP newsroom releases (S14/S15) instead. A stable canonical CBP page should replace the dead link where that session's files are next edited.",
+      "repo": ["ladder/sources.html", "repatriate/sources.html"],
+      "url": "https://www.cbp.gov/newsroom/local-media-release/dulles-cbp-officers-seize-over-111k-unreported-currency",
+      "status": "needs review"
+    },
+    {
+      "id": "FL08",
+      "title": "Reference rates in cost models are illustrative, not live",
+      "detail": "Cost ladders use fixed reference rates (7.1 in ladder/, 7.129 in repatriate/) labeled as illustrative. This session verified no live executable rate; all spread-dependent dollar figures remain unverified.",
+      "repo": ["ladder/data/costs.json", "repatriate/exports/cost-ladders.json"],
+      "url": "",
+      "status": "needs review"
+    },
+    {
+      "id": "FL09",
+      "title": "Open pull requests and concurrent sessions — out of this scope",
+      "detail": "PRs #2, #12 and #17 were open and CONFLICTING when this pass ran; sessions d6e08526 (stale-PR takeover D4/D5, final integration D6) and dc2c65bd (briefing/) held active claims. Their content was not merged, verified or altered by this session.",
+      "repo": ["COORDINATION.md"],
+      "url": "https://github.com/sassnarep3-star/China2/pulls",
+      "status": "needs review"
+    },
+    {
+      "id": "FL10",
+      "title": "PRC cash-deposit threshold: 2007 rule vs 2020 Guidelines",
+      "detail": "Hui Fa [2007] No. 1 Art. 31 states a USD 5,000 same-day FX cash deposit threshold; Hui Fa [2020] No. 14 Art. 87 states USD 10,000; the 2020 notice says prior inconsistent provisions are governed by it. Verified as a documentation chain (V10); the operating bank's actual threshold should still be confirmed at the counter.",
+      "repo": ["ladder/steps.html", "repatriate/methods.html"],
+      "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+      "status": "needs review"
+    }
+  ],
+  "ladder_check": {
+    "label": "Independent structure/arithmetic check — results only; not source-meaning verification",
+    "ladder": {
+      "file": "ladder/data/costs.json",
+      "expected_rows": 600,
+      "expected_routes_costed": 15,
+      "tiers": "10000..400000 step 10000 (40 tiers)",
+        "checks": [
+        "row count = 600",
+        "each costed route has exactly the 40 tiers in order, no duplicates or gaps",
+        "spread_lo <= spread_hi, total_lo <= total_hi, pct_lo <= pct_hi on every row",
+        "pct_lo/hi equal total/tier within 0.02 percentage points (recomputed)",
+        "fixed_fee numeric and >= 0, or null exactly when marked fixed_status=unpublished + partial=true (blank policy honoured, 160 such rows)",
+        "prc_tax_pct_lo <= prc_tax_pct_hi",
+        "meta.tiers equals the 40-step sequence; meta route counts equal unique row counts"
+      ]
+    },
+    "repatriate": {
+      "file": "repatriate/exports/cost-ladders.json",
+      "expected_rows": 680,
+      "expected_methods": 17,
+      "tiers": "10000..400000 step 10000 (40 amounts)",
+      "checks": [
+        "row count = 680; each of 17 methods has exactly the 40 amounts in order",
+        "null fee = unverified policy honoured: null stays null (no silent zero-fill)",
+        "where published_fee_usd is non-null: equals published_fee_cny / 7.129 rounded to cents",
+        "amount_cny_ref equals amount_usd * 7.129 rounded to cents",
+        "CSV export row count matches JSON (680 + header)",
+        "every row carries at least one source id resolvable in repatriate/data/sources.json"
+      ]
+    },
+    "conclusion": "Run by audit-ad300459/verify.py on 2026-11-10. Structure and arithmetic only — it does not prove that any fee, rate or legal meaning behind these rows is correct; those are covered by the findings table where fetched, and left blank where not."
+  }
+}

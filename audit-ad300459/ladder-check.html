@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cost-ladder structure check</title>
+<meta name="description" content="Independent read-only structure and arithmetic checks of the 600-row and 680-row cost ladders.">
+<style>
+:root{color-scheme:light;--ink:#15221d;--muted:#5a6b63;--line:#dbe3dd;--bg:#f4f6f3;--card:#fff;
+--ok:#0d6b3f;--ok-bg:#e5f4ea;--lim:#8a5200;--lim-bg:#fff2d9;--bad:#a3282a;--bad-bg:#fdeaea;
+--link:#0a5ea6;--accent:#0b705e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:#122620;color:#f2f6f3;padding:.9rem clamp(1rem,4vw,2.2rem)}
+header strong{font-size:1.05rem}
+header p{margin:.15rem 0 0;color:#b9cfc5;font-size:.8rem}
+main{max-width:1120px;margin:0 auto;padding:clamp(1rem,3.5vw,2.2rem) clamp(.85rem,3.5vw,2rem) 3rem}
+h1{font-size:clamp(1.55rem,4.6vw,2.35rem);line-height:1.12;letter-spacing:-.02em;margin:.3rem 0 .55rem}
+h2{margin:2rem 0 .6rem;font-size:clamp(1.15rem,3vw,1.45rem)}
+h3{margin:1.2rem 0 .4rem;font-size:1rem}
+.lede{color:#33473e;max-width:78ch}
+.nav{display:flex;flex-wrap:wrap;gap:.5rem;margin:.9rem 0}
+.nav a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.38rem .8rem;
+text-decoration:none;color:var(--ink);font-size:.86rem;font-weight:650}
+.nav a:hover{border-color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.7rem;margin:1rem 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.8rem .9rem}
+.card .k{font-size:1.6rem;font-weight:800;margin:.1rem 0}
+.card .l{font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0}
+.card .s{font-size:.8rem;color:var(--muted);margin:.2rem 0 0}
+.k.ok{color:var(--ok)}.k.lim{color:var(--lim)}.k.bad{color:var(--bad)}
+.notice{background:var(--lim-bg);border:1px solid #ecd4a0;border-left:5px solid #b07b17;
+border-radius:10px;padding:.8rem .95rem;margin:1rem 0;font-size:.92rem}
+.summary{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
+border-radius:12px;padding:.85rem 1rem;margin:1rem 0}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--card);
+border:1px solid var(--line);border-radius:12px;margin:.8rem 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:640px}
+th,td{border-bottom:1px solid var(--line);padding:.55rem .6rem;text-align:left;vertical-align:top}
+th{background:#eef3ef;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:#3c544a}
+tr:last-child td{border-bottom:none}
+td.id{font-weight:750;white-space:nowrap}
+a{color:var(--link)}
+.src{font-size:.86rem;word-break:break-word}
+.badge{display:inline-block;border-radius:999px;padding:.12rem .55rem;font-size:.74rem;font-weight:750;white-space:nowrap}
+.b-ok{background:var(--ok-bg);color:var(--ok)}
+.b-lim{background:var(--lim-bg);color:var(--lim)}
+.b-bad{background:var(--bad-bg);color:var(--bad)}
+.note{font-size:.84rem;color:#41564c;margin:.25rem 0 0}
+.refs{font-size:.78rem;color:var(--muted);margin:.2rem 0 0;word-break:break-word}
+details{margin:.35rem 0}
+summary{cursor:pointer;font-size:.84rem;color:var(--link)}
+.quote{font-size:.83rem;background:#f2f5f2;border-left:3px solid var(--accent);
+padding:.5rem .65rem;border-radius:6px;margin:.35rem 0;white-space:pre-wrap;word-break:break-word}
+.flag{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;margin:.7rem 0}
+.flag h3{margin:.15rem 0 .3rem}
+.checks li{margin:.28rem 0;font-size:.92rem}
+.checks .pass{color:var(--ok);font-weight:750}
+footer{background:#122620;color:#cfe0d8;padding:1.2rem clamp(1rem,4vw,2.2rem);font-size:.84rem}
+footer a{color:#9fd9c4}
+@media (max-width:720px){
+ table,thead,tbody,tr,th,td{display:block}
+ thead{display:none}
+ .scroll{border:none;background:transparent}
+ tr{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:.6rem 0;padding:.35rem .2rem}
+ td{border-bottom:1px dashed var(--line);padding:.42rem .6rem}
+ td:last-child{border-bottom:none}
+ td::before{content:attr(data-label);display:block;font-size:.68rem;text-transform:uppercase;
+ letter-spacing:.05em;color:var(--muted);font-weight:750;margin-bottom:.1rem}
+ td.id::before{display:none}
+}
+@media print{header,footer{background:#fff;color:#000}.nav{display:none}}
+</style>
+</head>
+<body>
+<header><strong>China money · independent verification (audit-ad300459)</strong>
+<p>Session arena/ad300459-china2 · sources re-fetched 2026-11-10 · research verification, not tax or legal advice</p></header>
+<main>
+<nav class="nav" aria-label="Pages"><a href="index.html">Summary</a><a href="findings.html">Findings</a><a href="sources.html">Sources</a><a href="ladder-check.html" aria-current="page">Ladder check</a><a href="flagged.html">Flagged</a></nav>
+<h1>Cost-ladder structure check (independent, read-only)</h1>
+<p class="lede">Independent structure/arithmetic check — results only; not source-meaning verification. Two published ladders were re-parsed from their checked-in data files and
+recomputed: <strong>ladder/ 600 rows</strong> (15 costed routes × 40 tiers, $10,000 → $400,000 in $10,000 steps)
+and <strong>repatriate/ 680 rows</strong> (17 methods × the same 40 amounts). Results below are produced by
+<code>audit-ad300459/checks.py</code> at build time and re-run independently by <code>verify.py</code> in CI.</p>
+<div class="cards">
+  <article class="card"><p class="l">Ladder rows</p><p class="k ok">600</p><p class="s">ladder/data/costs.json</p></article>
+  <article class="card"><p class="l">Repatriate rows</p><p class="k ok">680</p><p class="s">repatriate/exports/cost-ladders.json</p></article>
+  <article class="card"><p class="l">Tiers</p><p class="k">40</p><p class="s">$10,000 → $400,000, step $10,000</p></article>
+  <article class="card"><p class="l">Failures</p><p class="k ok">0</p><p class="s">of 20 checks</p></article>
+</div>
+<h2>ladder/data/costs.json — 600 expected rows</h2>
+<ul class="checks"><li><span class="pass">PASS</span> — ladder row count == 600 <span class="note">(rows=600)</span></li><li><span class="pass">PASS</span> — meta.tiers == 40-step sequence <span class="note">(len=40)</span></li><li><span class="pass">PASS</span> — costed route count == 15 <span class="note">(routes=15)</span></li><li><span class="pass">PASS</span> — meta.costed_route_count matches rows <span class="note">(meta=15 rows_routes=15)</span></li><li><span class="pass">PASS</span> — each costed route has exactly the 40 tiers in order <span class="note">(all 15 routes OK)</span></li><li><span class="pass">PASS</span> — tier rows appear in ascending order within each route <span class="note">(in-file order OK)</span></li><li><span class="pass">PASS</span> — spread/total/prc-tax bands ordered lo&lt;=hi on every row <span class="note">(600/600 rows)</span></li><li><span class="pass">PASS</span> — pct_lo/hi recomputed from total/tier within 0.02pp <span class="note">(600/600 rows)</span></li><li><span class="pass">PASS</span> — fixed_fee numeric&gt;=0 or blank exactly when marked unpublished+partial <span class="note">(600/600 rows OK (160 deliberate blanks))</span></li><li><span class="pass">PASS</span> — meta.route_count == 20 (incl. unpublished routes) <span class="note">(meta=20)</span></li></ul>
+<h2>repatriate/exports/cost-ladders.json — 680 expected rows</h2>
+<ul class="checks"><li><span class="pass">PASS</span> — repatriate row count == 680 <span class="note">(rows=680)</span></li><li><span class="pass">PASS</span> — reference rate == 7.129 <span class="note">(rate=7.129)</span></li><li><span class="pass">PASS</span> — method count == 17 <span class="note">(methods=17)</span></li><li><span class="pass">PASS</span> — each method has exactly the 40 amounts in order <span class="note">(17/17 methods OK)</span></li><li><span class="pass">PASS</span> — null fees stay fully null (no half-fill) <span class="note">(520 null rows OK)</span></li><li><span class="pass">PASS</span> — published_fee_usd == published_fee_cny / 7.129 (cents) <span class="note">(160 rows OK)</span></li><li><span class="pass">PASS</span> — amount_cny_ref == amount_usd * 7.129 (cents) <span class="note">(680 rows OK)</span></li><li><span class="pass">PASS</span> — CSV export row count matches JSON <span class="note">(csv=680 json=680)</span></li><li><span class="pass">PASS</span> — every row&#x27;s source ids resolve in repatriate/data/sources.json <span class="note">(680 rows OK)</span></li><li><span class="pass">PASS</span> — every ladder route basis id resolves in ladder/data/sources.json <span class="note">(20 routes OK)</span></li></ul>
+<div class="notice"><strong>What this does NOT prove:</strong> Run by audit-ad300459/verify.py on 2026-11-10. Structure and arithmetic only — it does not prove that any fee, rate or legal meaning behind these rows is correct; those are covered by the findings table where fetched, and left blank where not.</div>
+<h2>Published check definitions (from the ledger)</h2>
+<h3>ladder/</h3><ul class="checks"><li>row count = 600</li> <li>each costed route has exactly the 40 tiers in order, no duplicates or gaps</li> <li>spread_lo &lt;= spread_hi, total_lo &lt;= total_hi, pct_lo &lt;= pct_hi on every row</li> <li>pct_lo/hi equal total/tier within 0.02 percentage points (recomputed)</li> <li>fixed_fee numeric and &gt;= 0, or null exactly when marked fixed_status=unpublished + partial=true (blank policy honoured, 160 such rows)</li> <li>prc_tax_pct_lo &lt;= prc_tax_pct_hi</li> <li>meta.tiers equals the 40-step sequence; meta route counts equal unique row counts</li></ul>
+<h3>repatriate/</h3><ul class="checks"><li>row count = 680; each of 17 methods has exactly the 40 amounts in order</li> <li>null fee = unverified policy honoured: null stays null (no silent zero-fill)</li> <li>where published_fee_usd is non-null: equals published_fee_cny / 7.129 rounded to cents</li> <li>amount_cny_ref equals amount_usd * 7.129 rounded to cents</li> <li>CSV export row count matches JSON (680 + header)</li> <li>every row carries at least one source id resolvable in repatriate/data/sources.json</li></ul>
+
+</main>
+<footer>Every verified row below links the official document re-read in this session. Blank = unverified, never inferred.
+No personal account facts were used. <a href="../index.html">Project hub</a> ·
+<a href="findings.html">Findings</a> · <a href="flagged.html">Flagged</a> ·
+<a href="../COORDINATION.md">Task board</a></footer>
+</body>
+</html>

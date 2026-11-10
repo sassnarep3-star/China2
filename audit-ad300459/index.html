@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>China money · independent verification summary</title>
+<meta name="description" content="Source-linked verification of CNY-to-USD repatriation claims: verdict counts, conversion-penalty layers, limits.">
+<style>
+:root{color-scheme:light;--ink:#15221d;--muted:#5a6b63;--line:#dbe3dd;--bg:#f4f6f3;--card:#fff;
+--ok:#0d6b3f;--ok-bg:#e5f4ea;--lim:#8a5200;--lim-bg:#fff2d9;--bad:#a3282a;--bad-bg:#fdeaea;
+--link:#0a5ea6;--accent:#0b705e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:#122620;color:#f2f6f3;padding:.9rem clamp(1rem,4vw,2.2rem)}
+header strong{font-size:1.05rem}
+header p{margin:.15rem 0 0;color:#b9cfc5;font-size:.8rem}
+main{max-width:1120px;margin:0 auto;padding:clamp(1rem,3.5vw,2.2rem) clamp(.85rem,3.5vw,2rem) 3rem}
+h1{font-size:clamp(1.55rem,4.6vw,2.35rem);line-height:1.12;letter-spacing:-.02em;margin:.3rem 0 .55rem}
+h2{margin:2rem 0 .6rem;font-size:clamp(1.15rem,3vw,1.45rem)}
+h3{margin:1.2rem 0 .4rem;font-size:1rem}
+.lede{color:#33473e;max-width:78ch}
+.nav{display:flex;flex-wrap:wrap;gap:.5rem;margin:.9rem 0}
+.nav a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.38rem .8rem;
+text-decoration:none;color:var(--ink);font-size:.86rem;font-weight:650}
+.nav a:hover{border-color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.7rem;margin:1rem 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.8rem .9rem}
+.card .k{font-size:1.6rem;font-weight:800;margin:.1rem 0}
+.card .l{font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0}
+.card .s{font-size:.8rem;color:var(--muted);margin:.2rem 0 0}
+.k.ok{color:var(--ok)}.k.lim{color:var(--lim)}.k.bad{color:var(--bad)}
+.notice{background:var(--lim-bg);border:1px solid #ecd4a0;border-left:5px solid #b07b17;
+border-radius:10px;padding:.8rem .95rem;margin:1rem 0;font-size:.92rem}
+.summary{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);
+border-radius:12px;padding:.85rem 1rem;margin:1rem 0}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--card);
+border:1px solid var(--line);border-radius:12px;margin:.8rem 0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:640px}
+th,td{border-bottom:1px solid var(--line);padding:.55rem .6rem;text-align:left;vertical-align:top}
+th{background:#eef3ef;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:#3c544a}
+tr:last-child td{border-bottom:none}
+td.id{font-weight:750;white-space:nowrap}
+a{color:var(--link)}
+.src{font-size:.86rem;word-break:break-word}
+.badge{display:inline-block;border-radius:999px;padding:.12rem .55rem;font-size:.74rem;font-weight:750;white-space:nowrap}
+.b-ok{background:var(--ok-bg);color:var(--ok)}
+.b-lim{background:var(--lim-bg);color:var(--lim)}
+.b-bad{background:var(--bad-bg);color:var(--bad)}
+.note{font-size:.84rem;color:#41564c;margin:.25rem 0 0}
+.refs{font-size:.78rem;color:var(--muted);margin:.2rem 0 0;word-break:break-word}
+details{margin:.35rem 0}
+summary{cursor:pointer;font-size:.84rem;color:var(--link)}
+.quote{font-size:.83rem;background:#f2f5f2;border-left:3px solid var(--accent);
+padding:.5rem .65rem;border-radius:6px;margin:.35rem 0;white-space:pre-wrap;word-break:break-word}
+.flag{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;margin:.7rem 0}
+.flag h3{margin:.15rem 0 .3rem}
+.checks li{margin:.28rem 0;font-size:.92rem}
+.checks .pass{color:var(--ok);font-weight:750}
+footer{background:#122620;color:#cfe0d8;padding:1.2rem clamp(1rem,4vw,2.2rem);font-size:.84rem}
+footer a{color:#9fd9c4}
+@media (max-width:720px){
+ table,thead,tbody,tr,th,td{display:block}
+ thead{display:none}
+ .scroll{border:none;background:transparent}
+ tr{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:.6rem 0;padding:.35rem .2rem}
+ td{border-bottom:1px dashed var(--line);padding:.42rem .6rem}
+ td:last-child{border-bottom:none}
+ td::before{content:attr(data-label);display:block;font-size:.68rem;text-transform:uppercase;
+ letter-spacing:.05em;color:var(--muted);font-weight:750;margin-bottom:.1rem}
+ td.id::before{display:none}
+}
+@media print{header,footer{background:#fff;color:#000}.nav{display:none}}
+</style>
+</head>
+<body>
+<header><strong>China money · independent verification (audit-ad300459)</strong>
+<p>Session arena/ad300459-china2 · sources re-fetched 2026-11-10 · research verification, not tax or legal advice</p></header>
+<main>
+<nav class="nav" aria-label="Pages"><a href="index.html" aria-current="page">Summary</a><a href="findings.html">Findings</a><a href="sources.html">Sources</a><a href="ladder-check.html">Ladder check</a><a href="flagged.html">Flagged</a></nav>
+<h1>Fresh official-source verification of the CNY → USD claims</h1>
+<p class="lede">This pass re-read 17 official and primary documents end to end during this session and
+checked 27 published claims line by line against them. Anything that could not be confirmed
+from a fetched source is left blank and flagged (10 flags) — never filled in by inference.</p>
+<div class="cards">
+  <article class="card"><p class="l">Verified</p><p class="k ok">17</p><p class="s">claim matches fetched text</p></article>
+  <article class="card"><p class="l">Verified · limited</p><p class="k lim">7</p><p class="s">holds only with stated scope caveats</p></article>
+  <article class="card"><p class="l">Unverified · blank</p><p class="k bad">3</p><p class="s">no official source — blank + flagged</p></article>
+  <article class="card"><p class="l">Flags open</p><p class="k">10</p><p class="s">needs review, published openly</p></article>
+</div>
+<div class="notice"><strong>Most important limits:</strong> no live FX spread or executable rate was verifiable
+(FL01/FL08); the user's source of funds, residence duration and tax history are unknown, so no personalized
+tax, eligibility or all-in cost is computed anywhere here (FL05). Modeled ladders elsewhere in the repo remain
+scenarios, not quotes. Ladder structure/arithmetic was independently re-checked —
+<a href="ladder-check.html">600 + 680 rows</a> — that check does not validate real-world meaning.</div>
+<h2>Conversion-penalty breakdown — most important first</h2>
+<div class="scroll"><table>
+<thead><tr><th>Penalty layer</th><th>What the fetched official sources establish</th><th>Finding</th></tr></thead>
+<tbody><tr><td data-label="Layer"><strong>1 · FX spread / executable rate</strong></td><td data-label="What the fetched sources establish">No official source publishes a customer spread — BLANK</td><td data-label="Finding" class="id"><a href="findings.html#V25">V25</a></td></tr><tr><td data-label="Layer"><strong>2 · Bank transfer fee (published example)</strong></td><td data-label="What the fetched sources establish">HSBC China: 0.1% (min CNY 100, max CNY 500) + CNY 120 cable, eff. 31 Oct 2026</td><td data-label="Finding" class="id"><a href="findings.html#V24">V24</a></td></tr><tr><td data-label="Layer"><strong>3 · Intermediary / beneficiary bank fees</strong></td><td data-label="What the fetched sources establish">Excluded from the tariff; not published anywhere official — BLANK</td><td data-label="Finding" class="id"><a href="findings.html#V26">V26</a></td></tr><tr><td data-label="Layer"><strong>4 · PRC tax</strong></td><td data-label="What the fetched sources establish">No conversion tax located in reviewed instruments; income taxed 3%–45% / 20%</td><td data-label="Finding" class="id"><a href="findings.html#V16">V16 · V14</a></td></tr><tr><td data-label="Layer"><strong>5 · US tax</strong></td><td data-label="What the fetched sources establish">Worldwide taxation; personal FX gain exempt ≤ $200 (§988(e)); FTC/FEIE available</td><td data-label="Finding" class="id"><a href="findings.html#V17">V17 · V18 · V21</a></td></tr><tr><td data-label="Layer"><strong>6 · Cross-border reporting</strong></td><td data-label="What the fetched sources establish">FBAR &gt; $10k aggregate; Form 8938 thresholds; FinCEN 105 for &gt;$10k cash</td><td data-label="Finding" class="id"><a href="findings.html#V19">V19 · V20 · V23</a></td></tr><tr><td data-label="Layer"><strong>7 · Control-violation penalties</strong></td><td data-label="What the fetched sources establish">PRC fines up to 30% (30%–$400k = $120k illustration); unlicensed FX business CNY 0.5–2M</td><td data-label="Finding" class="id"><a href="findings.html#V12">V12 · V07</a></td></tr></tbody></table></div>
+<div class="summary"><h3 style="margin-top:0">Best lawful path supported by the fetched text (not personalized advice)</h3>
+<p>1) Establish lawful source of funds and PRC tax documentation (V03 — Art. 59 purchase against source
+materials incl. tax voucher). 2) Confirm your PRC classification: ≥1 year continuous residence = domestic
+individual with the USD 50,000 annual facility, below that = overseas individual converting against income
+documents (V02, V01, V03). 3) Remit outward with the bank: account FX for overseas individuals needs ID only
+(V05); keep every remittance inside the same documented purpose (V07). 4) Expect tax to attach to income
+(3%–45% PRC; worldwide US taxation with FTC/§988(e) relief), never to the conversion act itself (V14, V16,
+V17, V18). 5) Get a current executable all-in quote — spread and intermediary fees are the only large
+unverified cost layers (V25, V26). 6) Never split transactions to dodge thresholds — watch-list on the PRC
+side, structuring rules on the US side (V07, V23).</p></div>
+<h2>How this was verified</h2>
+<p class="note">Sources were fetched live on 2026-11-10 from official government publishers (SAFE, State Council
+Gazette, STA, IRS, eCFR, govinfo, CBP) plus two primary non-government documents explicitly labelled as such
+(HSBC China tariff; US treaty PDF hosted by IRS). Each finding row names the exact article/section read.
+Structural validators elsewhere in this repo prove links and arithmetic — this pass additionally re-read the
+law text itself. <a href="sources.html">Open the source register →</a></p>
+
+</main>
+<footer>Every verified row below links the official document re-read in this session. Blank = unverified, never inferred.
+No personal account facts were used. <a href="../index.html">Project hub</a> ·
+<a href="findings.html">Findings</a> · <a href="flagged.html">Flagged</a> ·
+<a href="../COORDINATION.md">Task board</a></footer>
+</body>
+</html>
