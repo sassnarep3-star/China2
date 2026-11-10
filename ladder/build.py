@@ -841,7 +841,8 @@ def write_root_hub():
         ("audit-ad300459/index.html", "Latest evidence audit", "27 findings · official-source review · ladder checks",
          "Separates verified, limited and unverified claims. Arithmetic checks do not establish personal eligibility."),
         ("briefing/costs.html", "Costs · every $10,000 to $400,000", "17 methods · 40 tiers each",
-         "Published fee components, blank unknowns and explicitly unverified scenario bands—not certified total costs."),
+         "Corrected source-only briefing: published fee components; unknown spreads and all-in costs left blank."),
+
         ("ladder/index.html", "Cost ladder · scenario model", "15 routes · 40 tiers · $10k–$400k",
          "Shows modelled bands using explicit assumptions. Not an account quote or an officially verified all-in cost."),
         ("audit-86f0/costs.html", "Source-only blank matrix", "22 methods · 40 tiers",
