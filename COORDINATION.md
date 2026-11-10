@@ -463,3 +463,14 @@ Session `arena/11c20135-china2` tasks I1–I3 all done. Open irregularities rema
 - CI incident + fix (worth knowing for other sessions): a local `audit-ad300459/__pycache__/*.pyc` (git-ignored but visible to `ladder/build.py`'s file inventory, which reads the raw tree) made `verify-ladder`'s `git diff --exit-code` gate fail on CI. Fixed by suppressing bytecode writes in `verify.py` (self + subprocess) and regenerating `ladder/audit.html`; any session whose scripts create `__pycache__` inside an inventoried directory before a ladder regeneration will hit the same gate — run ladder builds with a clean tree or `PYTHONDONTWRITEBYTECODE=1`.
 - Verification results shipped: 27 findings (17 verified / 7 verified-limited / 3 unverified-blank), 17 sources, 10 flags; ladder structure checks 20/20 PASS (600-row ladder incl. 160 deliberate unpublished blanks; 680-row repatriate incl. 520 null fees).
 - Scope kept: PRs #2/#12/#17 untouched (d6e08526 D4/D5), `briefing/**` untouched (dc2c65bd), whole-repo final integration remains D6 of `arena/d6e08526-china2`.
+
+## Session `arena/456e7542-china2` — independent critical-claims review
+
+Arena requires the existing fixed session branch, which substitutes for a session-named branch. Historical claims and publication records above are preserved. The earlier `arena/d6e08526-china2` work is noted in another session's log but no live PR or checked-in claim from it is visible; its scopes and the three old open PRs are not touched. This session claims only the following disjoint scope:
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Independently examine published user-critical recommendations and cost presentation against official sources; document gaps and findings | in progress | `arena/456e7542-china2` | `audit-456e7542/**` |
+| Validate own review, integration checks, PR and deployment | in progress | `arena/456e7542-china2` | append-only `COORDINATION.md`; `ladder/audit.html` only if deterministic inventory regeneration is required |
+
+Unknown personal facts, quotes, and taxes will not be inferred. Any source limitation or inconsistency will be flagged. Shared landing and previous sessions' substantive outputs are outside this claim.
