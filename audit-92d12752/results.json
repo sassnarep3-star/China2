@@ -1,8 +1,8 @@
 {
-  "pages_scanned": 70,
-  "data_rows": 3886,
-  "without_direct_primary": 1002,
-  "pages_with_candidates": 21,
+  "pages_scanned": 77,
+  "data_rows": 4681,
+  "without_direct_primary": 1078,
+  "pages_with_candidates": 25,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
@@ -216,8 +216,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 163,
-      "without_direct_primary": 163,
+      "rows": 176,
+      "without_direct_primary": 176,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -423,6 +423,48 @@
       "rows": 9,
       "without_direct_primary": 0,
       "first_example": ""
+    },
+    {
+      "path": "verify-d5d1f860/audit.html",
+      "rows": 12,
+      "without_direct_primary": 12,
+      "first_example": "AU-01 Cross-site method-count drift Sites in this repository state 22, 20, 18, 17 and 13 methods/legal routes for the same question. Each has its own scope note, but a reader landi"
+    },
+    {
+      "path": "verify-d5d1f860/costs.html",
+      "rows": 680,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-d5d1f860/flagged.html",
+      "rows": 16,
+      "without_direct_primary": 16,
+      "first_example": "F01 Your PRC tax history and the source of the balance are unknown The single largest determinant of both PRC tax and route eligibility. No amount is computed. Blocking for any per"
+    },
+    {
+      "path": "verify-d5d1f860/index.html",
+      "rows": 34,
+      "without_direct_primary": 34,
+      "first_example": "M01 Bank SWIFT wire of documented after-tax China income $30.86 $66.83 $86.97 $86.97 $86.97"
+    },
+    {
+      "path": "verify-d5d1f860/methods.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-d5d1f860/sources.html",
+      "rows": 24,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-d5d1f860/taxes.html",
+      "rows": 16,
+      "without_direct_primary": 1,
+      "first_example": "2. Bank FX spread The margin between the board rate and mid-market — the largest real cost on a large conversion. Not published by banks in the reviewed documents; HSBC tariff Impo"
     }
   ]
 }
