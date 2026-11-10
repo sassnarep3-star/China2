@@ -49,7 +49,7 @@ jobs:
           missing = []
           for page in root.glob("*.html"):
               html = page.read_text(encoding="utf-8")
-              for href in re.findall(r'(?:href|src)="([^"]+)"', html):
+              for href in re.findall(r'(?<![\w-])(?:href|src)="([^"]+)"', html):
                   if href.startswith(("http://", "https://", "mailto:", "#")):
                       continue
                   target = href.split("#")[0]
