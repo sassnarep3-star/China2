@@ -20,7 +20,7 @@
   {
    "id": "RR02",
    "area": "'No published spread' and modelled spread bands",
-   "finding": "Earlier work either leaves the exchange-rate margin blank ('no bank publishes one') or models a band of 0.3%-1.5%. Five mainland banks and HSBC China publish buying and selling rates; the margin over the mid-point works out at 0.21%-0.26% for the five mainland banks and 0.50% for HSBC. The modelled band starts above what the mainland boards show.",
+   "finding": "Older sections (ladder, repatriate, briefing, verify-d5d1f860) leave the exchange-rate margin blank or model a band of 0.3%-1.5%. One section published the same morning, final-f6327e23, measures it from the Bank of China board alone and reads the same figures as this section (665.71 / 668.51 at 17:39:58, 0.21% over the bank's own mid) — an independent match. This section adds four more mainland boards and HSBC: 0.21%-0.26% for the five mainland banks and 0.50% for HSBC. The modelled band starts above what the mainland boards show.",
    "verdict": "irregularity",
    "scan": [
     "spread_band",
@@ -38,7 +38,7 @@
   {
    "id": "RR03",
    "area": "Fee tables rest on one bank",
-   "finding": "Every fee in the earlier cost tables comes from HSBC China's tariff. Bank of China, Agricultural Bank and China Merchants Bank publish personal wire fees on their own sites; Agricultural Bank's cap (¥200 + ¥80) is less than half HSBC's (¥500 + ¥120). No earlier ledger cites a mainland bank's own site.",
+   "finding": "Every fee in the other cost tables comes from HSBC China's tariff. Bank of China, Agricultural Bank and China Merchants Bank publish personal wire fees on their own sites; Agricultural Bank's cap (¥200 + ¥80) is less than half HSBC's (¥500 + ¥120). Outside this section the only citation of a mainland bank's site is the Bank of China rate board in final-f6327e23; no other section cites a mainland bank's fee table.",
    "verdict": "gap",
    "scan": [
     "boards"
@@ -93,9 +93,9 @@
   },
   {
    "id": "RR07",
-   "area": "US exchange gain is described but never sized",
-   "finding": "Section 988 is mentioned throughout the repository, but no page shows what the gain is at today's rate. With the yuan at about 6.685 against yearly averages of 7.075-7.189 for 2023-2025, roughly 5.5%-7.0% of every dollar received would be exchange gain on renminbi acquired in those years — far more than any bank charge.",
-   "verdict": "gap",
+   "area": "US exchange gain is sized in one other section only",
+   "finding": "Section 988 is mentioned throughout the repository. The older sections give the rule without a number. final-f6327e23 sizes the gain for 2025 renminbi at USD 6,226.68 per USD 100,000 converted at 6.6851, which agrees with this section's USD 6,227. This section adds the 2021-2024 vintages: with yearly averages of 7.075-7.189 for 2023-2025, about 5.5%-7.0% of every dollar received would be exchange gain — far more than any bank charge.",
+   "verdict": "consistent",
    "scan": [
     "s988"
    ],
@@ -165,9 +165,9 @@
  "housekeeping": [
   {
    "id": "RH01",
-   "area": "Acceptance audit counters are out of step",
-   "finding": "Regenerating acceptance-a64bd476 on main at commit 06ce485 changes its three generated files: its crawl counts no longer match the pages now in the repository. Its CI job runs only when its own folder changes, so nothing shows red. Not edited here; logged for its owner.",
-   "verdict": "irregularity",
+   "area": "Acceptance audit counters (resolved)",
+   "finding": "When this section was first published the generated files of acceptance-a64bd476 no longer matched the pages in the repository. Session arena/ba22a0ba-china2 regenerated them in pull request 58 (merged 10:42 UTC). Adding this section's card to the landing hub moved the crawl count from 20,698 to 20,699, so the three generated files were regenerated again, mechanically, with that change.",
+   "verdict": "consistent",
    "links": [
     [
      "acceptance-a64bd476/checks.json",
@@ -182,7 +182,7 @@
   {
    "id": "RH02",
    "area": "Source-link audit snapshot no longer reproduces",
-   "finding": "audit-92d12752/verify.py stops on its own assertion ('snapshot differs') on main at commit 06ce485, because pages were added after its snapshot. It has no CI job. Its published counts are a point-in-time figure. Not edited here.",
+   "finding": "audit-92d12752/verify.py stops on its own assertion ('snapshot differs') on main at commit d9d2c1c, because pages were added after its snapshot. It has no CI job. Its published counts are a point-in-time figure. Not edited here.",
    "verdict": "irregularity",
    "links": [
     [
@@ -197,13 +197,17 @@
   },
   {
    "id": "RH03",
-   "area": "Pull request 41, open and conflicting since 06:06 UTC",
-   "finding": "Rewrites 37 files across the hub, the ladder, the briefing, the portal and the reports (+1,906 / -1,807 lines) — all other sessions' scopes — and has been overtaken by later merges. Recommendation to its owner: close it, or rebase and cut it down to its own files. Not merged or closed by this session.",
-   "verdict": "needs review",
+   "area": "Pull request 41 (resolved)",
+   "finding": "Open and conflicting from 06:06 UTC until after this section was first published. Session arena/ba22a0ba-china2 then took it over under the stale-claim rule, merged main into it and published it through pull request 58 at 10:42 UTC. The regression chain was re-run on the merged tree and passes. Not merged by this session.",
+   "verdict": "note",
    "links": [
     [
      "PR #41",
      "https://github.com/sassnarep3-star/China2/pull/41"
+    ],
+    [
+     "PR #58",
+     "https://github.com/sassnarep3-star/China2/pull/58"
     ]
    ]
   },
@@ -222,7 +226,7 @@
   {
    "id": "RH05",
    "area": "Many sessions publishing at once",
-   "finding": "Between 09:50 and 10:18 UTC on 10 November 2026 eight pull requests were merged and six more were open. Every merge changes the shared task board and the generated file inventory, so each session must merge main and regenerate before it can publish. The board keeps every session's record; nothing was discarded by this session.",
+   "finding": "Between 09:50 and 10:45 UTC on 10 November 2026 thirteen pull requests were merged while others were open. Every merge changes the shared task board, and most change the generated inventories, so each session must merge main and regenerate before it can publish. The board keeps every session's record; nothing was discarded by this session.",
    "verdict": "note",
    "links": [
     [
