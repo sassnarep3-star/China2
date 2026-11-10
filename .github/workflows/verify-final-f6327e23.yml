@@ -1,0 +1,51 @@
+name: verify-final-f6327e23
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Model, build, verify
+        run: |
+          set -euo pipefail
+          PYTHONDONTWRITEBYTECODE=1 python3 final-f6327e23/model.py
+          PYTHONDONTWRITEBYTECODE=1 python3 final-f6327e23/build.py
+          PYTHONDONTWRITEBYTECODE=1 python3 final-f6327e23/verify.py
+
+      - name: Committed output is current
+        run: |
+          set -euo pipefail
+          git diff --exit-code -- final-f6327e23 \
+            || (echo "::error::generated files are stale; rerun model.py and build.py" && exit 1)
+
+      - name: JavaScript syntax
+        run: node --check final-f6327e23/assets/app.js
+
+      - name: Ledger sanity (no empty source fields)
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, sys
+          src = json.load(open("final-f6327e23/data/sources.json"))
+          bad = [s["id"] for s in src if not all(s.get(k) for k in ("url","quote","locator","verified_at","authority"))]
+          if bad:
+              print("::error::incomplete source records:", bad); sys.exit(1)
+          rows = json.load(open("final-f6327e23/data/costs.json"))["rows"]
+          if len(rows) != 440:
+              print(f"::error::expected 440 cost rows, found {len(rows)}"); sys.exit(1)
+          print(f"ok: {len(src)} sources, {len(rows)} rows")
+          PY
