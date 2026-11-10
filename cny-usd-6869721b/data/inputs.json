@@ -1,0 +1,47 @@
+{
+  "note": "Every number used in a calculation. 'anchor' is the exact substring of the cited source's verbatim quote that carries the value; verify.py checks that the anchor is in the quote and the value is in the anchor.",
+  "amounts_usd": {"start": 10000, "step": 10000, "end": 400000},
+  "rates": {
+    "BOC":  {"name": "Bank of China", "buy": "665.71", "sell": "668.51", "source": "R2", "anchor_buy": "Buying Rate 665.71", "anchor_sell": "Selling Rate 668.51", "as_of": "2026-11-10 17:39:58"},
+    "ABC":  {"name": "Agricultural Bank of China", "buy": "665.60", "sell": "668.40", "source": "R4", "anchor_buy": "买入汇率 665.60", "anchor_sell": "卖出汇率 668.40", "as_of": "2026-11-10 17:49:49"},
+    "ICBC": {"name": "ICBC", "buy": "665.07", "sell": "668.54", "source": "R3", "anchor_buy": "\"foreignBuy\":\"665.07\"", "anchor_sell": "\"foreignSell\":\"668.54\"", "as_of": "2026-11-10 17:50:58"},
+    "CMB":  {"name": "China Merchants Bank", "buy": "665.746", "sell": "668.647", "source": "R5", "anchor_buy": "现汇买入价 665.746", "anchor_sell": "现汇卖出价 668.647", "as_of": "2026-11-10 17:47:52"}
+  },
+  "parity": {"value": "671.67", "source": "R1", "anchor": "美元 671.67", "as_of": "2026-11-10"},
+  "irs_avg": {
+    "source": "R6",
+    "years": {
+      "2025": {"value": "7.129", "anchor": "2025: 7.129"},
+      "2024": {"value": "7.189", "anchor": "2024: 7.189"},
+      "2023": {"value": "7.075", "anchor": "2023: 7.075"},
+      "2022": {"value": "6.730", "anchor": "2022: 6.730"},
+      "2021": {"value": "6.452", "anchor": "2021: 6.452"}
+    }
+  },
+  "wire_fees": {
+    "BOC":  {"permille": "1", "min": "50", "max": "260", "cable": "150", "source": "F1",
+             "anchor_rate": "电汇/票汇按汇款金额的1‰", "anchor_min": "最低收取50元/笔", "anchor_max": "最高收取260元/笔", "anchor_cable": "国际发电150元/笔",
+             "full_amount_usd": "25", "anchor_full": "其他均为 25 美元/笔"},
+    "ABC":  {"permille": "1", "min": "20", "max": "200", "cable": "80", "source": "F3",
+             "anchor_rate": "汇款金额的千分之一", "anchor_min": "最低20元", "anchor_max": "最高200元", "anchor_cable": "邮电费80元"},
+    "HSBC": {"permille": "1", "min": "100", "max": "500", "cable": "120", "source": "F4",
+             "anchor_rate": "0.1% of remittance amount", "anchor_min": "Min. CNY100", "anchor_max": "Max. CNY500", "anchor_cable": "Premier: CNY120 / equivalent per cable",
+             "pay_exact_cny": "200", "anchor_pay_exact": "CNY200 / equivalent will be collected from the remitter"}
+  },
+  "atm": {"per_wd_fixed": "12", "per_wd_pct": "1", "per_wd_max": "112", "source": "F1", "anchor": "（12 元+取现金额的 1%）收取，最高 112 元/笔",
+          "per_card_day_cny": "1", "anchor_day": "每卡每日额度统一为等值1万元人民币",
+          "per_person_year_cny": "10", "anchor_year": "每个自然年度不得超过等值10万元人民币", "limit_source": "L11"},
+  "cash": {"no_permit_usd": "5000", "anchor_no_permit": "不超過等值5000美元（含5000美元）", "bank_permit_usd": "10000", "anchor_bank_permit": "至10000美元（含10000美元）", "source": "L12",
+           "permit_fee_cny": "10", "anchor_permit_fee": "外币携带证：10元/份", "permit_fee_source": "F1",
+           "us_report_usd": "10,000", "anchor_us": "more than $10,000", "us_source": "A7"},
+  "quota": {"usd_per_year": "5", "anchor": "每人每年等值5万美元", "source": "L4"},
+  "emigrant": {"single_cap_cny": "20", "anchor": "等值人民币20万元以下（含20万元）", "source": "L8"},
+  "reconversion": {"id_only_usd_per_day": "500", "anchor": "不超过等值500美元（含）", "airside_usd_per_day": "1000", "anchor_airside": "不超过等值1000美元（含）", "memo_months": "24", "anchor_memo": "24个月", "source": "L2"},
+  "wise": {"bank_app_cny": "300,000", "anchor": "300,000 CNY", "alipay_cny": "50,000", "anchor_alipay": "50,000 CNY", "source": "F13"},
+  "wu": {"counter_usd": "1", "anchor": "等值1万美元", "online_usd": "5000", "anchor_online": "等值5000美元", "source": "F12"},
+  "rmb_cash": {"per_trip_cny": "20000", "anchor": "调整为20000元", "source": "L13"},
+  "us": {"gain_threshold_usd": "200", "anchor": "more than $200", "source": "A2",
+         "fbar_nonwillful": "16,536", "fbar_willful": "165,353", "fbar_source": "A4",
+         "f8938_penalty": "10,000", "f8938_more": "50,000", "f8938_source": "A5",
+         "f3520_threshold": "100,000", "f3520_source": "A6"}
+}

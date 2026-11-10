@@ -1,0 +1,31 @@
+name: Verify yuan-to-dollars site (6869721b)
+
+# CI only. This workflow never deploys; GitHub Pages keeps publishing from main.
+
+on:
+  pull_request:
+  push:
+    branches: ["main", "arena/6869721b-china2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Rebuild pages and ladder from data/*.json
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 cny-usd-6869721b/build.py
+      - name: Committed output is current
+        run: git diff --exit-code -- cny-usd-6869721b
+      - name: Anchors, arithmetic, row-level source links and local links
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 cny-usd-6869721b/verify.py
