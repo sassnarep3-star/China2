@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "session": "arena/416f3c1b-china2",
+    "verified_on": "2026-11-10",
+    "policy": "Only published, source-attributed numbers are computed. Every unverified component is left null so it renders blank, never estimated. The ladder shows 'documented published fees', not an all-in quote."
+  },
+  "assumptions": [
+    {"id": "A1", "text": "Reference exchange rate: 7.129 CNY per USD, the IRS 2025 yearly average for China (S05). Labelled reference conversion only; not an executable rate.", "source": "S05"},
+    {"id": "A2", "text": "Tiers are U.S. dollar amounts sent, from USD 10,000 to USD 400,000 in USD 10,000 steps (40 tiers). The CNY amount is derived as USD x 7.129.", "source": "S05"},
+    {"id": "A3", "text": "R01 uses the HSBC Premier / Advance published percentage: 0.1% of the remittance amount, minimum CNY 100, maximum CNY 500 per transaction, plus a CNY 120 cable charge (S24 items 2.2.4.1 and 2.2.4.2).", "source": "S24"},
+    {"id": "A4", "text": "R02 uses the published Global Transfer to Self fee: Free for Private Banking and Premier, USD 20 per transaction for Advance (S24 item 2.2.6.1).", "source": "S24"},
+    {"id": "A5", "text": "R07 uses the published over-the-counter foreign-currency note withdrawal fee of Free (S24 item 2.2.2.1) and the USD 10,000 per person per exit cash cap (S14).", "source": "S14"},
+    {"id": "A6", "text": "NOT included anywhere in the computed figures: FX spread, correspondent/intermediary bank charges, receiving bank charges, optional 'Pay Exact' (CNY 200), taxes, penalties, professional fees, and travel costs.", "source": "S24"},
+    {"id": "A7", "text": "No assumption is made about the user's HSBC segment, residency, PRC household registration, source of funds or U.S. filing history. Where a fee depends on the segment, both published variants are shown.", "source": "S04"}
+  ],
+  "tiers": {"start_usd": 10000, "end_usd": 400000, "step_usd": 10000},
+  "rate_cny_per_usd": 7.129,
+  "routes": {
+    "R01": {"type": "tt", "pct": 0.001, "min_cny": 100, "max_cny": 500, "cable_cny": 120, "source": "S24"},
+    "R02": {"type": "flat_usd_segment", "usd_premier": 0, "usd_pb": 0, "usd_advance": 20, "source": "S24"},
+    "R07": {"type": "cash", "fee_usd": 0, "per_trip_cap_usd": 10000, "source": "S14"}
+  }
+}

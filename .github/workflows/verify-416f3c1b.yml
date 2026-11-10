@@ -1,0 +1,38 @@
+name: verify-416f3c1b
+
+on:
+  push:
+    paths:
+      - "verify-416f3c1b/**"
+      - ".github/workflows/verify-416f3c1b.yml"
+  pull_request:
+    paths:
+      - "verify-416f3c1b/**"
+      - ".github/workflows/verify-416f3c1b.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Rebuild pages from data
+        working-directory: verify-416f3c1b
+        run: PYTHONDONTWRITEBYTECODE=1 python3 build.py
+      - name: Fail if committed HTML differs from a fresh build
+        run: |
+          if ! git diff --quiet -- verify-416f3c1b/; then
+            echo "::error::Generated HTML is out of date. Run: cd verify-416f3c1b && python3 build.py"
+            git --no-pager diff --stat
+            exit 1
+          fi
+      - name: Verify sources, citations, links and arithmetic
+        working-directory: verify-416f3c1b
+        run: PYTHONDONTWRITEBYTECODE=1 python3 verify.py
+      - name: Check JavaScript syntax
+        run: node --check verify-416f3c1b/assets/app.js

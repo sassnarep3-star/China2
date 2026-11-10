@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "session": "arena/416f3c1b-china2",
+    "verified_on": "2026-11-10"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "claim": "There is no separate PRC tax on exchanging CNY for USD. The Individual Income Tax Law taxes nine enumerated categories of income; disposing of your own currency is not one of them.",
+      "status": "verified",
+      "sources": [
+        "S19"
+      ],
+      "note": "Art. 2 lists the nine categories. This says nothing about whether the underlying balance was ever taxable income - that is a separate question, flagged F-02."
+    },
+    {
+      "id": "F-02",
+      "claim": "The amount of PRC tax, if any, owed on the existing balance cannot be determined from the facts supplied.",
+      "status": "unverified",
+      "sources": [
+        "S19",
+        "S02"
+      ],
+      "note": "Source, category, dates and prior tax records of the balance are unknown. Left blank rather than estimated."
+    },
+    {
+      "id": "F-03",
+      "claim": "The U.S. does not tax the act of converting. A personal conversion produces, at most, a section 988 exchange gain, and no gain is recognised unless it exceeds USD 200.",
+      "status": "verified",
+      "sources": [
+        "S06"
+      ],
+      "note": "Sec. 988(e)(2). Note the personal-transaction test in (e)(3): if allocable expenses meet section 162 or 212 the exclusion does not apply."
+    },
+    {
+      "id": "F-04",
+      "claim": "At the IRS's own yearly averages, RMB acquired in 2021-2024 and converted at the 2025 average shows an exchange LOSS for 2021/2022/2023 and a small gain only for 2024.",
+      "status": "verified",
+      "sources": [
+        "S05",
+        "S06"
+      ],
+      "note": "Computed from S05: 6.452 (2021), 6.730 (2022), 7.075 (2023), 7.189 (2024) against 7.129 (2025). See the tax page for the arithmetic."
+    },
+    {
+      "id": "F-05",
+      "claim": "The USD 50,000 annual facilitation quota is not a general entitlement for a foreign individual. It applies ID-only to domestic individuals, and to a foreign individual only if they hold a Foreigner's Permanent Residence ID card.",
+      "status": "verified",
+      "sources": [
+        "S02",
+        "S04"
+      ],
+      "note": "This is the single most common misconception behind 'my money is stuck'. The documented current-account route is not capped at USD 50,000."
+    },
+    {
+      "id": "F-06",
+      "claim": "For documented lawful current-account income, SAFE's published position requires ID plus source-of-funds evidence including tax vouchers - not a fixed dollar ceiling.",
+      "status": "verified",
+      "sources": [
+        "S02",
+        "S03"
+      ],
+      "note": "Art. 13(1) of the Detailed Rules and Art. 59 of Huifa [2020] No. 14 as restated by SAFE Tianjin in 2026."
+    },
+    {
+      "id": "F-07",
+      "claim": "Published bank fees are small relative to the balance: at HSBC Premier/Advance a telegraphic transfer costs 0.1% with a CNY 500 cap plus a CNY 120 cable - about USD 30.86 on USD 10,000-equivalent and USD 86.97 on USD 400,000-equivalent.",
+      "status": "verified",
+      "sources": [
+        "S24",
+        "S05"
+      ],
+      "note": "Published tariff only. FX spread and correspondent fees are excluded and unverified. This is not an all-in cost."
+    },
+    {
+      "id": "F-08",
+      "claim": "The dominant penalty risk is not a conversion tax, it is non-compliance: FBAR non-willful maximum USD 16,536 and willful maximum USD 165,353 per violation, inflation-adjusted.",
+      "status": "verified",
+      "sources": [
+        "S08",
+        "S09"
+      ],
+      "note": "Figures as assessed on or after 17 January 2025 per 31 CFR 1010.821 Table 1. Maximums, not typical amounts."
+    },
+    {
+      "id": "F-09",
+      "claim": "Cash or card cannot move USD 400,000: card cash withdrawals are capped at RMB 100,000 per person per calendar year and cash carried out is capped at USD 10,000 equivalent per exit.",
+      "status": "verified",
+      "sources": [
+        "S21",
+        "S14"
+      ],
+      "note": "Both are hard legal caps, not bank preferences."
+    },
+    {
+      "id": "F-10",
+      "claim": "Crypto and underground-bank conversions are prohibited in China, so any 'cheap' quote from those channels is the price of an unlawful transaction.",
+      "status": "verified",
+      "sources": [
+        "S23",
+        "S01"
+      ],
+      "note": "Yin Fa [2026] No. 42 (effective 2026-02-06) and Art. 45 of the FX Regulations."
+    },
+    {
+      "id": "F-11",
+      "claim": "A foreign citizen who never held Chinese household registration has no emigrant-property-transfer route, and the emigrant route requires proof that Chinese residence was cancelled.",
+      "status": "verified",
+      "sources": [
+        "S17",
+        "S18"
+      ],
+      "note": "Art. 8(4) of the Provisional Measures. Eligibility for the specific user is flagged F-03 on the Flagged for Review page."
+    },
+    {
+      "id": "F-12",
+      "claim": "The all-in USD cost of moving USD 10,000 to USD 400,000 out of China cannot be stated from official sources, because the FX spread and intermediary charges are commercial and unpublished.",
+      "status": "unverified",
+      "sources": [
+        "S24",
+        "S01"
+      ],
+      "note": "Every published-fee cell is shown; every spread cell is blank. Blank means unverified, not zero."
+    }
+  ],
+  "flags": [
+    {
+      "id": "G-01",
+      "title": "Personal facts are unknown, so no route is recommended and no personal tax figure is given",
+      "detail": "Residency status, hukou status, account type, the source and dates of the balance, and prior U.S. filing history were not supplied and are never inferred here. Any route marked lawful-conditional depends on facts only you can confirm with the bank and a licensed adviser.",
+      "sources": [
+        "S02",
+        "S17",
+        "S06"
+      ],
+      "impact": "Blocks: which route applies, and any personal tax or penalty number."
+    },
+    {
+      "id": "G-02",
+      "title": "No official source states an FX spread, so total cost is blank",
+      "detail": "The HSBC tariff expressly excludes other institutions' charges and any taxes or levies (note 7). No regulator publishes a retail CNY/USD spread. Every modelled spread figure would be an invention, so the spread column is empty.",
+      "sources": [
+        "S24",
+        "S01"
+      ],
+      "impact": "Blocks: all-in cost per tier. Published-fee sub-totals are shown."
+    },
+    {
+      "id": "G-03",
+      "title": "Whether the existing balance qualifies as documented lawful current-account income is unverified",
+      "detail": "S02 Art. 13(1) and S03 require source-of-funds evidence including tax vouchers. If the balance cannot be tied to lawful, taxed income, the bank may refuse the purchase under S01 Art. 12, and no route on this site fixes that.",
+      "sources": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "impact": "Blocks: eligibility for R01-R05."
+    },
+    {
+      "id": "G-04",
+      "title": "Provider corridors (Wise, Western Union and similar) were not verified against a primary provider document",
+      "detail": "Their CNY-from-mainland support and fees were not established from a primary source in this session, so R11 carries no numbers at all. Treat any app-based plan as unverified until the provider confirms the corridor in writing.",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "impact": "Blocks: R11 costs and eligibility."
+    },
+    {
+      "id": "G-05",
+      "title": "QDII / Hong Kong insurance / GBA Wealth Management Connect terms were not verified",
+      "detail": "Scheme eligibility, quotas and product terms come from scheme-specific regulators and insurers and were not read in this session. R12 carries no numbers.",
+      "sources": [
+        "S01"
+      ],
+      "impact": "Blocks: R12 costs and eligibility."
+    },
+    {
+      "id": "G-06",
+      "title": "The emigrant-transfer instalment rules conflict across published texts",
+      "detail": "Art. 6 of the 2004 Provisional Measures (S17, S18) describes one application with staged remittance for amounts above RMB 200,000, while Huifa [2014] No. 2 (S16) section VI(II) cancels the requirement that an immigrant's property be transferred several times. Both texts are still published. Branch practice therefore cannot be verified from the sources alone.",
+      "sources": [
+        "S16",
+        "S17",
+        "S18"
+      ],
+      "impact": "Affects: R03 remittance timing. Amount and eligibility unaffected."
+    },
+    {
+      "id": "G-07",
+      "title": "The Provisional Measures' effective date differs between two official pages",
+      "detail": "The PBOC English page (S17) ends with 1 February 2004; the SAFE news release (S18) and the PBOC news text say 1 December 2004. The discrepancy is inside the official record and is not resolved here.",
+      "sources": [
+        "S17",
+        "S18"
+      ],
+      "impact": "Cosmetic: does not change any current rule, since the Measures were amended in 2014."
+    },
+    {
+      "id": "G-08",
+      "title": "U.S. gift-reporting thresholds were not verified this session",
+      "detail": "R13 notes that a genuine foreign gift is generally not U.S. income, but the current Form 3520 threshold and rule were not re-read from a primary IRS page in this session, so no threshold is published.",
+      "sources": [
+        "S11"
+      ],
+      "impact": "Blocks: R13 U.S. reporting detail only."
+    },
+    {
+      "id": "G-09",
+      "title": "The 2026 foreign earned income exclusion amount was not on the IRS page read",
+      "detail": "S12 lists 2020-2023 amounts only. No 2026 figure is used anywhere on this site; the page states the exclusion is adjusted annually for inflation.",
+      "sources": [
+        "S12"
+      ],
+      "impact": "Blocks: any 2026 FEIE amount. Affects only the tax discussion, not the cost ladder."
+    },
+    {
+      "id": "G-10",
+      "title": "The HSBC tariff is one bank's price list, not a market price",
+      "detail": "S24 is HSBC Bank (China)'s published tariff. Other banks publish different fees, and the tariff may change at any time by public announcement. Using it as a proxy for 'the bank's fee' in general would be wrong.",
+      "sources": [
+        "S24"
+      ],
+      "impact": "Affects: generalising the published-fee figures beyond HSBC."
+    }
+  ],
+  "audit": {
+    "meta": {
+      "session": "arena/416f3c1b-china2",
+      "verified_on": "2026-11-10",
+      "pages_scanned": 84,
+      "note": "Scan repeated after main advanced to f0d90fb (PR #51 added 9 more pages, 84 total). A01 and A03 still present and unchanged; all other verdicts re-confirmed."
+    },
+    "items": [
+      {
+        "id": "A01",
+        "page": "briefing/index.html; briefing/sources.html; site/executive-summary.html; site/cost-breakdown.html; site/conversion-routes.html",
+        "title": "Personal currency gain above $200 is described as a capital gain — contradicted by the statute",
+        "claim": "“Personal FX gain excluded from income unless > $200; above that, capital gain” (briefing/index.html). “above that it is reported as a capital gain” (briefing/sources.html, site/executive-summary.html). “$0 where the personal gain is $200 or less per transaction; above that, tax on the gain as a capital gain” (site/cost-breakdown.html).",
+        "verdict": "contradicted",
+        "finding": "26 U.S.C. §988(a)(1)(A) requires foreign currency gain or loss on a §988 transaction to be 'computed separately and treated as ordinary income or loss'. Section 988(a)(1)(B) allows a capital-election only for certain forward, futures and option contracts identified before the close of the trading day — not for a simple disposition of currency. A personal currency conversion above the $200 line therefore produces ORDINARY gain, not capital gain. On a true long-term gain the two treatments differ by up to 20 percentage points of federal rate, so this is not cosmetic. Re-checked after main advanced through PR #51: the wording is still present on the listed pages.",
+        "request": "Owner of briefing/** and site/**: replace 'capital gain' with 'ordinary income' in the five files listed, or delete the sentence. Cross-scope: not edited by this session.",
+        "sources": [
+          "S06"
+        ]
+      },
+      {
+        "id": "A02",
+        "page": "root index.html (hub card); briefing/index.html; briefing/methods.html; briefing/costs.html",
+        "title": "The USD 50,000 facilitation quota is presented as a general conversion ceiling",
+        "claim": "Card text and method M02 describe a 'Bank wire within the USD 50,000/year facilitation quota' with '8 years for $400k', i.e. the quota is treated as the operative ceiling for an individual conversion.",
+        "verdict": "verified-limited",
+        "finding": "The USD 50,000 annual facilitation quota is real (Detailed Rules Art. 2) and is genuinely ID-only within the quota. But Art. 2 applies to settlement/purchase by domestic individuals, and SAFE's own 2024 Q&A states that a foreign individual gets the quota only if they hold a Foreigner's Permanent Residence ID card; otherwise the documented current-account route under Art. 59 of Huifa [2020] No. 14 applies and has no published USD ceiling. The pages do state elsewhere that the quota is not the ceiling for documented income, so the claim is true only in the narrow PRC-ID case — which is where it is most likely to mislead a U.S. citizen reading 'my money is stuck'.",
+        "request": "Owner of briefing/** and the root hub: qualify the M02 row and the hub card with 'only for PRC-ID or permanent-residence-ID holders; documented current-account income is not capped by it'.",
+        "sources": [
+          "S02",
+          "S04",
+          "S03"
+        ]
+      },
+      {
+        "id": "A03",
+        "page": "ladder/ladder.html (route table); ladder/sources.html (S06 quote)",
+        "title": "Route table still prices the USD 7 Global Transfer and the 0.25%–0.4% cash fee from the superseded 2021 tariff",
+        "claim": "Ranked route table carries Global Transfer and cash-withdrawal costs derived from the '1 January 2021' HSBC tariff. ladder/sources.html quotes it: 'same-name HSBC Global Transfer: free for Premier; reference CNY 50, actual USD 7 per transaction' and 'foreign cash withdrawal: 0.25%-0.4%, minimum CNY 40'.",
+        "verdict": "contradicted",
+        "finding": "The current HSBC China tariff, effective 31 October 2026, prices same-name Global Transfer to Self at Free for Private Banking and Premier and CNY 145 indicative (actual USD 20) for Advance — item 2.2.6.1. The USD 7 figure belongs to item 2.2.7, HSBC International Education Payment, a different service. Item 2.2.2.1 prices foreign-currency notes withdrawal over the counter at Free for all three segments. The old 0.25%–0.4% cash charge is not in the current schedule. ladder/sources.html does label S06 as superseded by S21 for these items, but the route table still displays the derived prices. Re-checked after main advanced through PR #51: the wording is still present on the listed pages.",
+        "request": "Owner of ladder/: reprice the Global Transfer and cash rows from S21 items 2.2.6.1 and 2.2.2.1, or mark those rows 'superseded — not priced'. Cross-scope: not edited by this session.",
+        "sources": [
+          "S24"
+        ]
+      },
+      {
+        "id": "A04",
+        "page": "briefing/methods.html; root index.html; ladder/tax.html; audit-ad300459/**",
+        "title": "“No tax on converting” and “$0” conversion-tax statements",
+        "claim": "The executive briefing states the tax on the conversion itself is '$0 in China' and '$0' in the U.S. below the $200 line, and the root hub carries a blanket 'no tax on converting' caution.",
+        "verdict": "verified-limited",
+        "finding": "Accurate as far as it goes: exchanging your own renminbi is not among the nine taxable income categories in the PRC Individual Income Tax Law, and the U.S. does not tax the exchange itself. It is not a personal tax conclusion. The same pages already flag this (root hub E01), but the '$0' cell reads as an answer. The risk is that it is read as 'the bank's tax demand is wrong', when the far more likely cause is unpaid PRC income tax on the money when earned, or missing source-of-funds evidence under FX Regulations Art. 12.",
+        "request": "Owner of briefing/**: add 'attaches to income, not to the exchange; the balance itself is not assessed here' beside each $0 cell.",
+        "sources": [
+          "S19",
+          "S06",
+          "S01"
+        ]
+      },
+      {
+        "id": "A05",
+        "page": "briefing/**, ladder/tax.html, audit-ad300459/**",
+        "title": "FBAR penalty maxima and reporting thresholds",
+        "claim": "Non-willful FBAR maximum $16,536; willful maximum $165,353; FBAR filing threshold $10,000 aggregate; Form 8938 thresholds as quoted.",
+        "verdict": "verified",
+        "finding": "Matches 31 CFR 1010.821 Table 1 for penalties assessed on or after 17 January 2025 (USD 16,536 and USD 165,353), the IRS FBAR page (aggregate over USD 10,000 at any time in the year, income irrelevant), and the IRS Form 8938 thresholds. No correction needed.",
+        "sources": [
+          "S09",
+          "S08",
+          "S10"
+        ]
+      },
+      {
+        "id": "A06",
+        "page": "ladder/costs.html; ladder/routes.html; briefing/costs.html; acceptance-a64bd476/**",
+        "title": "Telegraphic-transfer fee arithmetic (0.1%, CNY 100 floor, CNY 500 cap, CNY 120 cable)",
+        "claim": "$30.86 on USD 10,000-equivalent and $86.97 on USD 400,000-equivalent; CNY 220 and CNY 620 totals.",
+        "verdict": "verified",
+        "finding": "Recomputed independently at the IRS 2025 average of 7.129: USD 10,000 → CNY 71,290 → 0.1% = CNY 71.29, floor CNY 100 applies, + CNY 120 cable = CNY 220 → $30.86. USD 400,000 → CNY 2,851,600 → 0.1% = CNY 2,851.60, cap CNY 500 applies, + CNY 120 = CNY 620 → $86.97. Matches the current tariff items 2.2.4.1 and 2.2.4.2 and the pages' own figures.",
+        "sources": [
+          "S24",
+          "S05"
+        ]
+      },
+      {
+        "id": "A07",
+        "page": "briefing/methods.html; ladder/routes.html; docs/routes.html",
+        "title": "Cash-carrying and card-withdrawal ceilings",
+        "claim": "USD 5,000 without a certificate, USD 10,000 with a bank certificate, above that only in special cases; overseas card cash withdrawal capped at RMB 100,000 per person per calendar year and RMB 10,000 per card per day.",
+        "verdict": "verified",
+        "finding": "Matches Huifa [2003] No. 102 point 2 and Huifa [2017] No. 29 points I and IV exactly, including the suspension of overseas card withdrawals for the current and following year if the annual cap is exceeded.",
+        "sources": [
+          "S14",
+          "S21"
+        ]
+      },
+      {
+        "id": "A08",
+        "page": "briefing/**, ladder/**, site/**",
+        "title": "All-in USD cost ranges and FX-spread bands",
+        "claim": "Route tables quote 'all-in cost (est.)' ranges such as $510–$2,550 and percentage bands such as 0.30%–1.50%.",
+        "verdict": "unverified",
+        "finding": "No regulator or bank in the sources publishes a retail CNY/USD spread. The HSBC tariff expressly excludes other institutions' charges and any taxes or levies (note 7). These bands are the modelling sessions' own assumptions, disclosed as such on their assumptions pages, but a reader scanning the table sees a price. My own ladder therefore shows published fees only and leaves the spread column blank.",
+        "request": "Owner of ladder/** and briefing/**: label the spread component 'assumption, not a quote' inside the table cell, not only on the assumptions page.",
+        "sources": [
+          "S24",
+          "S01"
+        ]
+      },
+      {
+        "id": "A09",
+        "page": "briefing/methods.html; docs/routes.html",
+        "title": "Third-party app corridors (Wise, Western Union, PBOC-regulated partner accounts)",
+        "claim": "Methods list app-based remittance with CNY 300,000/transfer and CNY 50,000 limits for a partner account and Alipay.",
+        "verdict": "unverified",
+        "finding": "No primary provider or regulator document supporting those specific limits was re-read in this session, and a U.S. person cannot open or use some of these channels. Treated as unverified here: my R11 carries no numbers at all.",
+        "request": "Owner of briefing/** and docs/**: attach a primary provider document to each app row or mark the row unverified.",
+        "sources": [
+          "S01",
+          "S02"
+        ]
+      },
+      {
+        "id": "A10",
+        "page": "portal/conversion-penalties.html; docs/taxes.html",
+        "title": "“Conversion penalty” framings",
+        "claim": "Pages discuss a penalty attaching to conversion of CNY to USD.",
+        "verdict": "unverified",
+        "finding": "No PRC instrument read in this session imposes a penalty on converting lawful, documented current-account income. Penalties in the FX Regulations attach to evasion, illegal arbitrage, false documents and illegal private FX trading (Arts. 39, 40, 45, 48). Where a bank has quoted a 'tax' or a 'penalty', the type, taxpayer, base and legal basis must be obtained in writing before it can be verified.",
+        "request": "Owner of portal/** and docs/**: state explicitly that no conversion penalty was located, and that any quoted penalty needs a written legal basis.",
+        "sources": [
+          "S01",
+          "S19"
+        ]
+      },
+      {
+        "id": "A11",
+        "page": "verify-88f5a1be/index.html",
+        "title": "Six narrowly sourced findings — spot-checked",
+        "claim": "Small replacement page concentrating on SAFE documentation, §988, FBAR and the HSBC tariff.",
+        "verdict": "verified",
+        "finding": "The two claims that matter most — that documented current-account income requires ID plus source-of-funds evidence including tax vouchers, and that personal FX gain is not recognised below $200 — match S02/S03 and S06. Its linked sources resolve to official hosts. No correction needed.",
+        "sources": [
+          "S02",
+          "S03",
+          "S06"
+        ]
+      },
+      {
+        "id": "A12",
+        "page": "docs/index.html and the other six docs/ pages",
+        "title": "Older research dashboard: no claim contradicted, but no §988 analysis",
+        "claim": "67 source-linked findings, 24 sources, nine review flags; routes and costs without a §988 currency-gain treatment.",
+        "verdict": "verified-limited",
+        "finding": "Its structural claims hold up (the pages do link official sources per row, and unknown values are blank), and the categories it covers match the source set. It predates the §988 analysis, so a reader who stops there will not learn that the U.S. conversion gain is ordinary, not capital, and that below $200 it is not recognised at all.",
+        "request": "Owner of docs/**: add a link to verify-416f3c1b/tax.html for the §988 treatment rather than duplicating it.",
+        "sources": [
+          "S06",
+          "S19"
+        ]
+      }
+    ]
+  }
+}

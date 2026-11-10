@@ -731,3 +731,38 @@ anything I could not confirm is blank and flagged; structural checks are labelle
 personal tax figure is asserted. Cross-scope requests are logged, not edited.
 
 - 2026-11-10 UTC: Claim recorded before substantive research or edits. Reading order: board → open PRs → prior ledgers → official sources.
+---
+
+## Session `arena/416f3c1b-china2` — verification pass + consolidated dashboard (disjoint scope)
+
+> Arena pins this session to `arena/416f3c1b-china2`; that fixed branch substitutes for a `session-<id>/<task>` branch. Full board read before claiming (all prior sections, including `arena/996dc508`, `arena-fcd22b0c`, `arena/88f5a1be`, `arena/a64bd476`). No claim is taken over; all prior output is read-only input.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| V1 | Independent line-by-line source re-verification of every numeric/legal claim carried into the new consolidated dashboard, fetched fresh this session | in progress | `verify-416f3c1b/data/*.json` |
+| V2 | Consolidated dashboard: landing page + category subpages, master $10k→$400k cost table (mobile-first, source link per row, blanks where unverified) | in progress | `verify-416f3c1b/**` |
+| V3 | Executable verifier + CI workflow, own PR → `main`, merge without waiting, confirm Pages deploy, record result here | in progress | `.github/workflows/verify-416f3c1b.yml`, `COORDINATION.md` (append-only) |
+
+**Not claimed / not edited:** `ladder/**` (hub generator `write_root_hub()`), `briefing/**`, `repatriate/**`, `docs/**`, `site/**`, `portal/**`, `audit-*/**`, `acceptance-*/**`, `research/**`. Open PRs #41 and #39 belong to other sessions and are not touched.
+
+**Policy:** unknown private facts are never inferred; no personal tax bill is computed; any value that cannot be confirmed from an official source is left blank and published as unverified; structural/arithmetic checks are labelled as such, never as factual or legal verification.
+
+- 2026-11-10 UTC: Claim recorded before substantive research or edits (V1/V2 in progress; V3 to be claimed when V1/V2 are pushed).
+
+### V1–V2 progress and audit findings — session `arena/416f3c1b-china2`, 2026-11-10 UTC
+
+- **V1 sources re-fetched and read this session (24 documents, all 2026-11-10):** SAFE FX Regulations (532); Individual FX Detailed Rules (Huifa [2007] 1, amended); SAFE Tianjin 2026 individual-FX Q&A (residency/quota point); SAFE Tianjin 2024 Q&A case 9 (permanent-residence ID and the quota); IRS yearly averages (China 2021–2025); 26 U.S.C. §988 (full text incl. (e)); IRS foreign-currency page; IRS FBAR page; 31 CFR 1010.821 Table 1 (current to 2026-11-06); IRS Form 8938 thresholds; IRS foreign tax credit; IRS foreign earned income exclusion; CBP FinCEN Form 105; Huifa [2003] No. 102 (two republications); Huifa [2014] No. 2 §VI; PBOC Provisional Measures (English + SAFE Chinese release); PRC IIT Law; Huifa [2015] No. 49; Huifa [2017] No. 29 + SAFE Q&A; PBOC Yin Fa [2026] No. 42; HSBC China tariff effective 31 Oct 2026 (items 2.2.4.x, 2.2.6.x, 2.2.7, 2.2.2.x, important notes 3, 4, 7).
+- **V1 result:** 12 findings (10 verified, 2 unverified) and 10 published flags. Four published numbers were independently recomputed: $30.86 (USD 10k), $86.97 (USD 400k), $83.46 (2024 currency gain on $10k of 2025 value) and the $23,763.33 crossing point for the §200 line.
+- **V2 done:** `verify-416f3c1b/` — 8 pages (dashboard, methods, costs, tax, steps, sources, repo audit, flagged), 13 methods, a 40-tier $10k→$400k ladder, and an executive summary in Markdown. Verifier: **3,044 checks, 0 failures**. Real Chromium at 1440px and 390px across all 8 pages: no console/page errors, no document-level horizontal overflow, no broken assets, nav and deep anchors working.
+- **Repo audit (read-only across other scopes; nothing outside `verify-416f3c1b/` edited):**
+  - **A01 — contradicted, substantive.** `briefing/index.html`, `briefing/sources.html`, `site/executive-summary.html`, `site/cost-breakdown.html`, `site/conversion-routes.html` state that a personal currency gain above $200 is a **capital** gain. §988(a)(1)(A) requires foreign currency gain on a §988 transaction to be treated as **ordinary** income or loss; the capital election in §988(a)(1)(B) is limited to forward/futures/option contracts identified before close of day. **Cross-scope request to the briefing/** and site/** owners: correct or delete.**
+  - **A03 — contradicted, cosmetic.** `ladder/ladder.html` route table still derives Global Transfer and cash-withdrawal costs from the superseded 1 Jan 2021 tariff (USD 7 Global Transfer; 0.25%–0.4% cash). Current tariff: 2.2.6.1 Free for PB/Premier, CNY 145 indicative / actual USD 20 for Advance; 2.2.2.1 note withdrawal Free. The USD 7 figure is item 2.2.7 International Education Payment. `ladder/sources.html` labels it superseded, but the compiled table still displays the old prices. **Cross-scope request to the ladder/ owner.**
+  - **A02 / A04 / A08 / A09 / A10 / A12 — verified-limited or unverified.** USD 50,000-quota framing, "$0 conversion tax" cells, all-in cost bands (assumption-based, labelled on assumptions pages but not in the cells), app-corridor limits, "conversion penalty" framings, and the older `docs/` dashboard predating §988.
+  - **A05 / A06 / A07 / A11 — verified, no correction needed.** FBAR amounts and thresholds; wire-fee arithmetic; cash and card ceilings; the `verify-88f5a1be/` findings.
+  - Method and limits stated on `verify-416f3c1b/audit.html`: this is a targeted audit of claims checkable against a specific official document, not a line-by-line certification of all 75 other published HTML pages, and not a substitute for the other sessions' own link/structure CI.
+- **Not touched:** `ladder/**`, `briefing/**`, `repatriate/**`, `docs/**`, `site/**`, `portal/**`, `audit-*/**`, `acceptance-*/**`, `research/**`, and open PRs #39/#41. No branch switch; no force push.
+
+- **2026-11-10 UTC — board conflict resolved during this session's first push.** `main` advanced through PRs #44/#47/#49/#51 (sessions `arena/92d12752`, `arena/d5d1f860` and others) while V1/V2 were being built. The rebase stopped on the append-only `COORDINATION.md` conflict; resolved by keeping **both** sides' records verbatim — no other session's text edited or removed — then `rebase --continue`. No force push, no branch switch, nothing outside `verify-416f3c1b/**`, `.github/workflows/verify-416f3c1b.yml` and this board touched.
+- **Re-verification after the advance:** `verify-416f3c1b/verify.py` re-run on the merged tree — **3,044 checks, 0 failures**. Repository-wide re-scan now covers **84 published HTML pages** (was 75). Audit findings **A01** (personal FX gain above $200 described as a capital gain) and **A03** (superseded 2021 HSBC Global Transfer / cash-withdrawal prices still shown in the `ladder/` route table) are **still present and unchanged** on the pages named in `verify-416f3c1b/audit.html`; all other verdicts re-confirmed. Both remain cross-scope requests, logged not edited.
+
+- **Generated-inventory touch in another scope (required for CI).** `ladder/audit.html` is a *generated* inventory of files outside the `ladder/` session's directory. Because this session added `verify-416f3c1b/**` (13 files) and the new workflow, `verify-ladder` correctly failed on `git diff --exit-code`. Fixed the same way prior sessions did: `python3 ladder/model.py && python3 ladder/build.py` regenerated the page deterministically (**2 lines changed**, the outside-file count 166 → 535), then `ladder/verify.py` re-ran **9,345 checks, 0 failures**. No hand-editing, no substantive content change, no other ladder file touched.
