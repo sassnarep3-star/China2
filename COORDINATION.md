@@ -907,6 +907,23 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 
 ---
 
+## Session `arena/bb2a3876-china2` — corrective pass on published flagged items + full-suite re-verification (2026-11-11 UTC)
+
+Prior sessions' substantive research and the live GitHub Pages site are complete and merged (see publication records above). This session does not duplicate that work. It claims only the still-open, verifiable items published as "needs review" and a full local re-verification of every CI suite on the current tree, then publishes the result as a PR.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| B-01 ATM cash table row: "8+ years for $400k" -> ~29 calendar years ($400,000 / ($100,000/7.129) = 28.52 yr) | in progress | arena/bb2a3876-china2 | briefing/build.py; briefing/EXECUTIVE_SUMMARY.md (generated); briefing/*.html via rebuild |
+| B-02 ladder audit prose hardcoded "Twenty sources ... of 20" (ledger: 21 sources, 17 direct) -> computed counts | in progress | arena/bb2a3876-china2 | ladder/build.py; ladder/audit.html via rebuild; root index.html via ladder/build.py (deterministic) |
+| B-03 EXECUTIVE-SUMMARY.md: http:// SAFE/GC links -> HTTPS; repealed 2021 crypto-notice citation re-pointed to PBOC Yin Fa [2026] No. 42; R01 row conditioned on domestic/PR-ID purchase-quota rule | in progress | arena/bb2a3876-china2 | EXECUTIVE-SUMMARY.md |
+| B-04 README.md hardcoded session-branch sentence (audit-ad300459 RA-13) -> genericized | in progress | arena/bb2a3876-china2 | README.md |
+| B-05 audit-92d12752 snapshot regenerated after repository changes (its verify.py requires scan()==results.json) | in progress | arena/bb2a3876-china2 | audit-92d12752/results.json; audit-92d12752/index.html |
+| B-06 Full local re-verification of all CI suites + PR, merge, Pages confirmation | in progress | arena/bb2a3876-china2 | COORDINATION.md (append-only); no other file |
+
+Rules in force: no other session's published findings are rewritten; every edit above traces to an item already flagged as irregular by a prior published audit (study-8f529c94 RA-01/RA-02/RA-03/RA-04/RA-13, ladder AUD list, briefing N-series). Sources: SAFE Hui Fa [2017] No. 29 (RMB 100k/person/civil year ATM cap) https://www.safe.gov.cn/en/2017/1230/1397.html ; IRS 2025 yearly average 7.129 https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates ; PBOC Yin Fa [2026] No. 42 https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html ; SAFE Hui Fa [2007] No. 1 / SAFE Tianjin 2024 Case 9 (foreign-individual purchase quota limited to Foreign Permanent Resident ID holders) https://www.safe.gov.cn/tianjin/2024/0621/2529.html .
+
+---
+
 ## Session `arena/820042b6-china2` — independent critical-claim and publication audit
 
 Arena requires the fixed session branch, which substitutes for a session-named branch. Earlier completed work is treated as read-only; no other session's claimed files will be edited. Shared hub changes are not claimed.
@@ -930,3 +947,5 @@ Arena requires the fixed session branch, which substitutes for a session-named b
 - Findings: the `study-8f529c94` overview's unconditional tax/FTC and one-uncapped-wire wording is not established by the cited sources; `estimate-facf2fe9/costs.html` describes partial arithmetic as all-in despite missing charges and taxes. Five source-linked flags published under `review-820042b6/index.html#flags`; no assumptions made about private tax or eligibility. BOC illustration provides 40 tiers of dated, explicit arithmetic, leaving true all-in cost blank. Electronic tariff published since 2014 is not confirmation of present applicability.
 - Verification: 50 new data rows have direct primary links; relative target files exist; regenerated output from `build.py`; `npm run check` (477 checks), `python3 estimate-facf2fe9/verify.py` (14,423 checks), `python3 study-8f529c94/verify.py` (19,686 checks) all passed. These are technical/structural checks, not legal verification of every legacy row. Initial Pages API was built at `30ea791` on main root.
 - Cross-scope request: integration/hub owner, add `review-820042b6/index.html` to root hub and place prominent warnings or correct the identified `study-8f529c94` / `estimate-facf2fe9` language. These existing owner-scoped files were not edited. The new page will be available directly on Pages after publication.
+
+- 2026-11-11: Main advanced through PR #61 during this work. The required pull --rebase stopped at an append-only board conflict; aborted to avoid rewriting the already-pushed claim, merged origin/main, and preserved both session sections verbatim. No work discarded.

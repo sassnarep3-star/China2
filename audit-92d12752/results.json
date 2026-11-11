@@ -1,8 +1,8 @@
 {
-  "pages_scanned": 77,
-  "data_rows": 4681,
-  "without_direct_primary": 1078,
-  "pages_with_candidates": 25,
+  "pages_scanned": 100,
+  "data_rows": 7107,
+  "without_direct_primary": 1384,
+  "pages_with_candidates": 34,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
@@ -116,7 +116,7 @@
       "path": "briefing/audit.html",
       "rows": 25,
       "without_direct_primary": 25,
-      "first_example": "AU-01 Root duplicates Two root executive summaries (EXECUTIVE_SUMMARY.md, EXECUTIVE-SUMMARY.md) with different content and no drift check between them. ls + diff; both preserved ne"
+      "first_example": "AU-01 Root summaries Two root executive summaries (EXECUTIVE_SUMMARY.md synced with docs/ by validate.yml; EXECUTIVE-SUMMARY.md count-checked against data/*.json by verify-site-dat"
     },
     {
       "path": "briefing/costs.html",
@@ -127,7 +127,7 @@
     {
       "path": "briefing/flagged.html",
       "rows": 25,
-      "without_direct_primary": 3,
+      "without_direct_primary": 2,
       "first_example": "F12 needs review Parallel dashboards in this repo disagree on method counts data/methods.json has 18 routes; research/findings.json 67 findings across 22 routes; reports ledger 22 "
     },
     {
@@ -144,7 +144,7 @@
     },
     {
       "path": "briefing/sources.html",
-      "rows": 37,
+      "rows": 41,
       "without_direct_primary": 0,
       "first_example": ""
     },
@@ -203,6 +203,96 @@
       "first_example": ""
     },
     {
+      "path": "estimate-facf2fe9/costs.html",
+      "rows": 958,
+      "without_direct_primary": 215,
+      "first_example": "ICBC 6.68520 6.65050 0.260% 0.228% 2026-11-10 17:48:59 Beijing Verified ICBC rates"
+    },
+    {
+      "path": "estimate-facf2fe9/flagged.html",
+      "rows": 42,
+      "without_direct_primary": 10,
+      "first_example": "F02 Bank of Communications rate and fee The board's rows are script-rendered and were not captured; no tariff page was found. All BoCom cost fields are blank. blank BoCom rates"
+    },
+    {
+      "path": "estimate-facf2fe9/index.html",
+      "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "estimate-facf2fe9/methods.html",
+      "rows": 23,
+      "without_direct_primary": 5,
+      "first_example": "Agricultural Bank of China — buy USD and wire it Lawful $252 · 0.25% No published cap for documented current-account income; the cap is what your papers support. The route the rule"
+    },
+    {
+      "path": "estimate-facf2fe9/repo-review.html",
+      "rows": 27,
+      "without_direct_primary": 5,
+      "first_example": "RH01 Acceptance audit counters (resolved) When this section was first published the generated files of acceptance-a64bd476 no longer matched the pages in the repository. Session ar"
+    },
+    {
+      "path": "estimate-facf2fe9/sources.html",
+      "rows": 47,
+      "without_direct_primary": 11,
+      "first_example": "B02 Industrial and Commercial Bank of China FX board (人民币即期外汇牌价), USD row Full page read 美元(USD) 银行买入价 665.05 银行卖出价 668.52 2026年11月10日 17:48:59 本牌价展示的汇率仅供参考，成交价以各地分行实际交易汇率为准。 Unit:"
+    },
+    {
+      "path": "estimate-facf2fe9/tax.html",
+      "rows": 41,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "final-f6327e23/costs.html",
+      "rows": 80,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "final-f6327e23/index.html",
+      "rows": 20,
+      "without_direct_primary": 2,
+      "first_example": "R13 Third-party platform Unverified — No verified path from a mainland CNY balance none"
+    },
+    {
+      "path": "final-f6327e23/methods.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "final-f6327e23/repo-audit.html",
+      "rows": 6,
+      "without_direct_primary": 6,
+      "first_example": "Internal links and fragments Crawled all 69 HTML files in the repository for href/src targets and resolved them on disk 0 broken internal references root hub , ladder , docs"
+    },
+    {
+      "path": "final-f6327e23/review.html",
+      "rows": 14,
+      "without_direct_primary": 3,
+      "first_example": "F05 Commercial provider pages appear in an 'Official sources' column briefing/costs.html labels Wise and Western Union help pages as official sources for methods. A company page is"
+    },
+    {
+      "path": "final-f6327e23/sources.html",
+      "rows": 16,
+      "without_direct_primary": 1,
+      "first_example": "S15 Bank of America US · EN Overview of Bank of America Interest Checking key policies and fees (Clarity Statement) Locator: Additional fees table — Incoming wire transfers “Incomi"
+    },
+    {
+      "path": "final-f6327e23/steps.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "final-f6327e23/taxes.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
       "path": "index.html",
       "rows": 0,
       "without_direct_primary": 0,
@@ -212,12 +302,12 @@
       "path": "ladder/assumptions.html",
       "rows": 9,
       "without_direct_primary": 9,
-      "first_example": "A1 CNY/USD used to express CNY fee caps 7.10 CNY per USD (band 6.80-7.40) model assumption Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 / 40 caps are affected;"
+      "first_example": "A1 CNY/USD used to express CNY fee caps 7.10 CNY per USD (band 6.80-7.40) model assumption Bank tariffs are denominated in CNY. Only the CNY 100 / 500 / 120 caps are affected; at 4"
     },
     {
       "path": "ladder/audit.html",
-      "rows": 176,
-      "without_direct_primary": 176,
+      "rows": 225,
+      "without_direct_primary": 225,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -415,6 +505,54 @@
     {
       "path": "site/us-tax-rules.html",
       "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "study-8f529c94/audit.html",
+      "rows": 14,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "study-8f529c94/costs.html",
+      "rows": 943,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "study-8f529c94/flagged.html",
+      "rows": 18,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "study-8f529c94/index.html",
+      "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "study-8f529c94/methods.html",
+      "rows": 23,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "study-8f529c94/penalties.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "study-8f529c94/sources.html",
+      "rows": 40,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "study-8f529c94/taxes.html",
+      "rows": 12,
       "without_direct_primary": 0,
       "first_example": ""
     },
