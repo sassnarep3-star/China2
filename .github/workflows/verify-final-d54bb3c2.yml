@@ -1,0 +1,38 @@
+name: verify-final-d54bb3c2
+# Scope: arena/d54bb3c2-china2. Runs only when this section or this file changes, so it never
+# blocks another session's pull request. data/review.json is a point-in-time scan of the rest of
+# the repository; it is excluded from the byte-for-byte diff because it changes whenever any other
+# session adds a page.
+on:
+  push:
+    branches: [main, arena/d54bb3c2-china2]
+    paths: ['final-d54bb3c2/**', '.github/workflows/verify-final-d54bb3c2.yml']
+  pull_request:
+    branches: [main]
+    paths: ['final-d54bb3c2/**', '.github/workflows/verify-final-d54bb3c2.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Recompute the cost ladder from the board rates
+        run: python3 final-d54bb3c2/model.py
+      - name: Recompute the penalty layers
+        run: python3 final-d54bb3c2/penalties.py
+      - name: Refresh the mechanical repo review
+        run: python3 final-d54bb3c2/review.py
+      - name: Rebuild every page
+        run: python3 final-d54bb3c2/build.py
+      - name: Generated cost data is committed byte for byte
+        run: git diff --exit-code -- final-d54bb3c2/data/costs.csv final-d54bb3c2/data/costs.json final-d54bb3c2/data/penalties.json
+      - name: Independent checks (arithmetic, source links on every cost row, blanks flagged, ledger integrity, internal links)
+        run: python3 final-d54bb3c2/verify.py
+      - name: Section pages are reachable from the landing page
+        run: grep -q 'final-d54bb3c2/index.html' index.html

@@ -9,12 +9,13 @@ Source-linked research on lawful mainland China CNY→USD conversion, repatriati
 **Executive briefing:** [briefing/index.html](briefing/index.html) — the consolidated least-tax answer, all-methods cost tables at every $10,000 step from $10,000 to $400,000, and the source-linked repo audit.
 **Website:** https://sassnarep3-star.github.io/China2/
 **Cost ladder:** [ladder/index.html](ladder/index.html) — every route priced at each $10,000 step from $10,000 to $400,000, with a source link per row and unverified values left blank and flagged.
-**Executive summary:** [research/EXECUTIVE_SUMMARY.md](research/EXECUTIVE_SUMMARY.md)
+**Executive summary:** [final-d54bb3c2/EXECUTIVE_SUMMARY.md](final-d54bb3c2/EXECUTIVE_SUMMARY.md) · [research/EXECUTIVE_SUMMARY.md](research/EXECUTIVE_SUMMARY.md)
 **Verification and limitations:** [research/METHODOLOGY.md](research/METHODOLOGY.md)
 **Task board / publication record:** [COORDINATION.md](COORDINATION.md)
 
 ## Primary Entry Points
 
+- **Final section — cost ladder and penalty layers (11 Nov 2026, 20:39 boards):** [final-d54bb3c2/index.html](final-d54bb3c2/index.html) — 31 sources, 16 routes with pros/cons/steps, 40 cost rows recomputed by one model, 9 penalty layers separated, 15 decision questions, 17 flagged items, and a mechanical review of the other 140 pages. Every cost row carries its four source links. Verify: `python3 final-d54bb3c2/model.py && python3 final-d54bb3c2/penalties.py && python3 final-d54bb3c2/build.py && python3 final-d54bb3c2/verify.py` (1,075 assertions).
 - **Landing page (start here):** [index.html](index.html) — the integration dashboard; every other set is linked from it.
 - **Consolidated dashboard, freshest pass (11 Nov):** [ledger-21f3ecb6/index.html](ledger-21f3ecb6/index.html) — 12 penalty layers, every method priced at every step, [question register](ledger-21f3ecb6/questions.html), [cost ladder](ledger-21f3ecb6/costs.html) and [Flagged for Review](ledger-21f3ecb6/review.html).
 - **Decision guide + line-level repo review (11 Nov):** [guide-fb2f2562/index.html](guide-fb2f2562/index.html) — 30 official sources read 11 Nov 2026 (incl. Rev. Proc. 2026-35 §3.41 FEIE `$137,300`), 11 methods with steps, 40-tier cost tables, US FX-gain check, [Flagged for Review](guide-fb2f2562/flagged.html) and a [file:line review](guide-fb2f2562/review.html) of every other section. Verify: `python3 guide-fb2f2562/model.py && python3 guide-fb2f2562/build.py && python3 guide-fb2f2562/verify.py`.
