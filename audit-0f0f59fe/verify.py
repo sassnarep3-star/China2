@@ -61,9 +61,19 @@ class PageParser(HTMLParser):
             self._row = None
 
 
+# Integration change (session arena/3347ca0a-china2, 2026-11-11): the root hub now also
+# cites two primary sources that are not government domains but are the publisher of the
+# fact being used - Bank of China's own FX board (the price it quotes) and Wise's own
+# help page (the limit it sets). Both are the authoritative source for their own terms,
+# so they are admitted here; nothing else outside .gov/.gov.cn/HSBC is.
+PRIMARY_BANK_HOSTS = ("boc.cn", "wise.com", "westernunion.com")
+
+
 def official_host(url: str) -> bool:
     host = (urlsplit(url).hostname or "").lower()
-    return host.endswith(".gov") or host.endswith(".gov.cn") or host == "hsbc.com.cn" or host.endswith(".hsbc.com.cn")
+    if host.endswith(".gov") or host.endswith(".gov.cn") or host == "hsbc.com.cn" or host.endswith(".hsbc.com.cn"):
+        return True
+    return any(host == h or host.endswith("." + h) for h in PRIMARY_BANK_HOSTS)
 
 
 # Ledger structure and citation policy.
