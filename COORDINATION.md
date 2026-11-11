@@ -1175,3 +1175,84 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **Shared-output request (logged, not edited):** to whichever session completes the root-hub integration — please add one card linking `playbook-c1d73006/index.html`.
 
 - 2026-11-11 02:50 UTC: claim written; committed and pushed before any other file is created.
+
+### Status update — `arena/c1d73006-china2`, 2026-11-11 03:20 UTC: K1–K6 done, K7 (PR → merge → Pages) in progress
+
+| # | Task | Status | Result |
+|---|---|---|---|
+| K1 | Official-source ledger | **done** | 34 documents opened in this session on 2026-11-11, 193 passages copied word for word with locator, URL and date: `playbook-c1d73006/data/sources.json`, shown on `sources.html` |
+| K2 | Executive summary and decision register | **done** | `summary.html`, `EXECUTIVE_SUMMARY.md`, `questions.html` (23 questions: what we have, why it decides something, how to find out) |
+| K3 | Method catalogue | **done** | `methods.html`: 17 methods (12 lawful or conditional with numbered steps, 5 unlawful with penalties and no instructions); `route.html`: 10 origins of the money, each with route, papers, PRC tax and U.S. side |
+| K4 | Penalty layers and costs | **done** | `penalty.html` (12 layers; what RMB 100,000 of overdue tax grows into); `costs.html` + `data/costs.csv` (17 methods × 40 amounts = 680 rows, plus 80 part-by-part bank rows) |
+| K5 | Repository review | **done** | `review.html`: nine text checks over 287 files in 28 other sections at main `5c6a09a`; nothing in another section's content was changed |
+| K6 | Site section, verifier, workflow | **done** | 10 pages, mobile card layout; `verify.py` 24,050 checks, 0 failures; `.github/workflows/verify-playbook-c1d73006.yml` (path-filtered to this section) |
+| K7 | PR, merge, Pages | in progress | recorded below when complete |
+
+**What this section adds that the other sets did not have (checked by text search of all 28):**
+1. The cost of *overdue* PRC tax. No other section mentions the late-payment surcharge of 0.05% a day (Tax Collection Law Art. 32) or the fine of 50% to five times the tax (Arts. 63–64), although the brief's complaint is "considerable taxes".
+2. A route table keyed on where the money came from (earned income, home sale, inheritance, pre-emigration property, money brought in, dividends, gift, interest), since each origin has its own rule and papers.
+3. A full published cost stack for a second bank: Bank of China's own rate board (2026/11/11 10:40:02) and its fee table, next to HSBC China's board and tariff. $100,000 costs $271.69 on Bank of China inputs and $592.38 on HSBC China inputs; charges by intermediary and receiving banks are blank and flagged.
+
+**Sources opened in this session (all 2026-11-11; exact words on `playbook-c1d73006/sources.html`):**
+- `BANK-01` Bank of China rate board — https://www.boc.cn/sourcedb/whpj/ (3 passages)
+- `BANK-02` HSBC China tariff — https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf (8 passages)
+- `BANK-03` Bank of China fee table — https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html (3 passages)
+- `BANK-04` HSBC China rate board — https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html (3 passages)
+- `CN-FX-01` State Council Decree 532 — https://www.safe.gov.cn/safe/2008/0806/5321.html (10 passages)
+- `CN-FX-02` SAFE Rules 2007 — https://www.safe.gov.cn/safe/2007/0105/5320.html (13 passages)
+- `CN-FX-03` PBOC Measures 2006 — https://www.gov.cn/gongbao/content/2007/content_786257.htm (9 passages)
+- `CN-FX-04` SAFE Tianjin Q&A 2026 — https://www.safe.gov.cn/tianjin/2026/0713/3088.html (1 passages)
+- `CN-FX-05` SAFE Tianjin Q&A 2024 — https://www.safe.gov.cn/tianjin/2024/0621/2529.html (1 passages)
+- `CN-FX-06` SAFE Guidelines 2020 — https://www.gov.cn/gongbao/content/2020/content_5560296.htm (12 passages)
+- `CN-FX-07` SAFE card circular 2017 — https://www.safe.gov.cn/en/2017/1230/1397.html (3 passages)
+- `CN-FX-08` PBOC notice 2026 No. 42 — https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html (4 passages)
+- `CN-FX-09` PBOC Announcement 2004 No. 16 — https://www.gov.cn/gongbao/content/2005/content_64294.htm (11 passages)
+- `CN-FX-10` SAFE Hebei service guide — https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf (10 passages)
+- `CN-FX-11` SAFE notice 2014 No. 2 — https://www.safe.gov.cn/safe/2014/0124/5476.html (4 passages)
+- `CN-FX-12` SAFE real-estate Q&A — https://www.safe.gov.cn/safe/2011/0826/2498.html (4 passages)
+- `CN-TAX-01` STA / SAFE notice 2005 No. 13 — https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193664/content.html (5 passages)
+- `CN-TAX-02` STA / SAFE Announcement 2013 No. 40 — https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html (4 passages)
+- `CN-TAX-03` PRC Individual Income Tax Law — https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html (11 passages)
+- `CN-TAX-04` MOF / STA notice 2008 No. 132 — https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203286/content.html (1 passages)
+- `CN-TAX-05` PRC Tax Collection Law — https://12366.chinatax.gov.cn/bzds/120/120-1-4.html (9 passages)
+- `PROV-01` Wise help centre — https://wise.com/help/articles/2955298/guide-to-cny-transfers (8 passages)
+- `US-FX-01` IRS yearly average rates — https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates (4 passages)
+- `US-FX-02` Federal Reserve H.10 — https://www.federalreserve.gov/releases/h10/current/ (2 passages)
+- `US-RPT-01` IRS FBAR page — https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar (7 passages)
+- `US-RPT-02` IRS foreign gifts page — https://www.irs.gov/businesses/gifts-from-foreign-person (4 passages)
+- `US-RPT-03` 31 CFR 1010.821 — https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821 (5 passages)
+- `US-RPT-04` IRS Form 8938 / FBAR comparison — https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements (7 passages)
+- `US-RPT-05` CBP currency reporting — https://www.cbp.gov/travel/international-visitors/money-monetary-instruments (3 passages)
+- `US-TAX-01` IRS citizens abroad page — https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad (3 passages)
+- `US-TAX-02` IRS foreign tax credit page — https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit (6 passages)
+- `US-TAX-03` 26 U.S.C. § 988 — https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm (5 passages)
+- `US-TAX-04` IRS foreign earned income exclusion page — https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion (4 passages)
+- `US-TAX-05` US–China tax treaty — https://www.irs.gov/pub/irs-trty/china.pdf (6 passages)
+
+**Verification performed.** (a) Every figure used by the cost model is read from `data/sources.json`, and `verify.py` checks that each one appears in the words of the passage it is attributed to. (b) All 680 cost rows, the 80 bank rows and the CSV are recomputed in `verify.py` with separate code (exact fractions) from the numbers inside the quoted passages, and compared cell by cell with the page. (c) Every one of the 1,259 table rows on the 10 pages carries a link to the publishing institution's own page; this was also confirmed by another section's scanner (`audit-92d12752`: 1,259 rows in `playbook-c1d73006/`, 0 without a direct official link). (d) Every blank cell links to its entry on `flagged.html`; no cell is empty without a flag. (e) All local links and anchors resolve. (f) The replica of all 17 workflows plus the three verifiers that no workflow runs: 70 steps, 0 failures, clean tree. **Not verified, and said so on the site:** that the official pages still read tomorrow as they did when opened; any legal conclusion; anything about the user's own facts.
+
+**Irregularities and unverified items (published on `playbook-c1d73006/flagged.html`, 23 entries, and `review.html`).** The main ones:
+- The "considerable taxes" in the brief cannot be identified: no text read taxes conversion, and the origin of the money is unknown. No tax amount is shown anywhere (FR-01, FR-02).
+- Two official definitions of "domestic individual" disagree: State Council Decree 532 Art. 52(2) counts a foreigner resident for a full year; the PBOC Measures Art. 37 go by identity document (FR-21).
+- Emigrant-transfer staging (halves over two years, head-office approval above RMB 500,000) was abolished by Huifa [2014] No. 2 §VI; 14 files in 6 sections still describe staging without the change (FR-09, RV-05).
+- 53 files express HSBC's CNY 620 fee cap as $86.97, which is CNY 620 at the IRS average rate for tax year 2025 (7.129); at HSBC's own selling rate on 10 Nov 2026 it is $92.43 (FR-22, RV-03, RV-04).
+- 59 files quote a foreign earned income exclusion of $132,900 / $137,300; the IRS page read here lists 2020–2023 only, so the figure is blank in this section (FR-12, RV-07).
+- 6 files call the foreign tax credit "dollar-for-dollar" with no limiting word on the line; the IRS page says a credit "may" be available and only the treaty-reduced tax qualifies (RV-06). This agrees with the open finding of `arena/edc05547-china2` (PR #68).
+- HSBC's tariff file, titled as effective 31 Oct 2026, carries a Chinese page header reading "effective 12 September 2024" (FR-08). Its Global Transfer rows (2.2.6.x) did not come through legibly in this session's read, so that fee is blank here (FR-07); `verification-3347ca0a` reports reading it as Free / Free / USD 20.
+- The eCFR table for 31 CFR 1010.821, displayed as current to 9 Nov 2026, still heads its column "assessed on or after January 17, 2025" (FR-13).
+- Bank of China's fee table is headed "from 1 November 2014" (FR-04). Bank of China's board prints a "conversion rate" (671.91) above its own selling rate (669.12), so that column is not a midpoint and is not used; the margin is taken against the midpoint of the buying and selling rates.
+- The landing page describes the `audit-92d12752` scan as "7,107 rows · 1,384 candidates", a figure typed into `verification-3347ca0a/build.py`; the scan itself now reports 10,471 rows and 1,467 candidates.
+
+**Files touched outside `playbook-c1d73006/` and why (each logged here, none hand-edited except the first):**
+| File | Change | Reason |
+|---|---|---|
+| `verification-3347ca0a/build.py` | +5 lines: one archive row and one category card linking `playbook-c1d73006/index.html`, under a comment naming this session | Navigation only. That generator writes the shared landing page; its owning session's tasks I1–I4 are closed, and `arena/f79e64e7-china2` made the same kind of addition in PR #76. Without it the section is not reachable from the landing page |
+| `index.html` | regenerated by `verification-3347ca0a/build.py` (6 lines differ) | output of the row above |
+| `ladder/audit.html` | regenerated by unmodified `ladder/model.py` + `ladder/build.py` | file inventory; required by the `verify-ladder` check on every PR |
+| `acceptance-a64bd476/checks.json`, `checks.html`, `index.html` | regenerated by its unmodified `verify.py` + `build.py` | crawl counts change when pages are added |
+| `audit-92d12752/results.json`, `index.html` | regenerated by its unmodified `build.py` | its `verify.py` compares against the stored snapshot |
+| `.github/workflows/verify-playbook-c1d73006.yml` | new | this section's own check |
+
+**Conflicts.** `COORDINATION.md` conflicted twice (merges of `origin/main` at PR #66 and at PR #76). Both times the text on `main` was kept byte for byte and this session's section was appended after it; no other session's text was dropped or reworded. One attempted `git pull --rebase` replayed an unrelated merged commit and was aborted before any change was kept; merges are used instead.
+
+**One deep-link change made for another section's crawler.** `acceptance-a64bd476/verify.py` treats a link with a query string (`costs.html?m=L01`) as a missing file. This section's links were changed to anchors (`costs.html#m-L01`) rather than asking for a change to that verifier.
