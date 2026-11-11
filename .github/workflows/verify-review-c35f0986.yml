@@ -1,0 +1,8 @@
+name: Verify independent decision review
+on: [push, pull_request]
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 review-c35f0986/verify.py
