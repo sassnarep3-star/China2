@@ -1,7 +1,7 @@
 {
-  "pages_scanned": 129,
-  "data_rows": 10471,
-  "without_direct_primary": 1467,
+  "pages_scanned": 139,
+  "data_rows": 11750,
+  "without_direct_primary": 1487,
   "pages_with_candidates": 36,
   "pages": [
     {
@@ -145,6 +145,66 @@
     {
       "path": "briefing/sources.html",
       "rows": 41,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/costs.html",
+      "rows": 777,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/flagged.html",
+      "rows": 23,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/index.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/methods.html",
+      "rows": 80,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/penalty.html",
+      "rows": 31,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/questions.html",
+      "rows": 23,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/review.html",
+      "rows": 39,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/route.html",
+      "rows": 13,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/sources.html",
+      "rows": 227,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "consolidated-88b9c268/summary.html",
+      "rows": 29,
       "without_direct_primary": 0,
       "first_example": ""
     },
@@ -342,8 +402,8 @@
     },
     {
       "path": "index.html",
-      "rows": 64,
-      "without_direct_primary": 17,
+      "rows": 65,
+      "without_direct_primary": 18,
       "first_example": "Transfer guide 23 methods · 40 sources · 920 cost rows Newest complete set (10-11 Nov 2026). Used as the canonical detail set from this page."
     },
     {
@@ -354,8 +414,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 284,
-      "without_direct_primary": 284,
+      "rows": 303,
+      "without_direct_primary": 303,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {

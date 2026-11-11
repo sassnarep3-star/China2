@@ -2,7 +2,8 @@
 
 Source-linked research on lawful mainland China CNY→USD conversion, repatriation routes, PRC/U.S. tax treatment, reporting obligations, and itemized $10,000–$400,000 cost tiers for a U.S. citizen. **Research, not individualized tax, legal, or investment advice.** No personal facts were verified, no transfers were made, and no tax returns were filed.
 
-**Start here:** the landing page, [index.html](index.html) (live: https://sassnarep3-star.github.io/China2/), rebuilt on 2026-11-11 by the integration session `arena/3347ca0a-china2`.
+**Start here:** the landing page, [index.html](index.html) (live: https://sassnarep3-star.github.io/China2/), rebuilt on 2026-11-11 by the integration sessions `arena/3347ca0a-china2` + `arena/88b9c268-china2`.
+**Final consolidation (2026-11-11, this session):** [consolidated-88b9c268/index.html](consolidated-88b9c268/index.html) — least-tax lawful answer for a U.S. citizen, 23 decision questions with known/unknown/how-to-find-out, 17 methods with pros/cons/steps, 12-layer conversion-penalty breakdown, and 680 cost rows at $10k→$400k every $10k at Bank of China 6.6911 + HSBC China published tariffs. Every row source-linked; blanks are unverified. Live: https://sassnarep3-star.github.io/China2/consolidated-88b9c268/
 **Second verification pass (2026-11-11):** [dashboard-f79e64e7/index.html](dashboard-f79e64e7/index.html) — 34 official sources re-opened and quote-checked that day, 13 decision questions, 17 methods with pros, cons and steps, 680 cost rows from $10,000 to $400,000 at Bank of China's rate posted 11 November 2026, 14 tax and penalty layers, 19 flagged items, and a recheck of 18 earlier claims. Live: https://sassnarep3-star.github.io/China2/dashboard-f79e64e7/
 **Earlier live-verified dashboard (2026-11-10):** [verify-d5d1f860/index.html](verify-d5d1f860/index.html) — 24 primary documents re-fetched and quoted, 17 methods priced across 40 tiers ($10k–$400k) with the fee arithmetic recomputed independently, 16 published flags, and blanks wherever nothing is published.
 **Executive briefing:** [briefing/index.html](briefing/index.html) — the consolidated least-tax answer, all-methods cost tables at every $10,000 step from $10,000 to $400,000, and the source-linked repo audit.
@@ -14,7 +15,8 @@ Source-linked research on lawful mainland China CNY→USD conversion, repatriati
 
 ## Primary Entry Points
 
-- **Landing page (start here):** [index.html](index.html) — the integration dashboard; every other set is linked from it.
+- **Final consolidation — start here (least-tax answer):** [consolidated-88b9c268/index.html](consolidated-88b9c268/index.html) — executive summary, 23 decision questions, 17 methods (pros/cons/steps), 12-layer penalty breakdown, and full $10k→$400k cost ladder (680 rows, every $10k step, Bank of China 669.11 / HSBC China tariff) — most-important-first, mobile-friendly, source-linked, blanks where unpublished.
+- **Landing page (hub of all sets):** [index.html](index.html) — the integration dashboard; every other set is linked from it.
 - **Second verification pass:** [dashboard-f79e64e7/index.html](dashboard-f79e64e7/index.html) — summary, questions, methods, costs, tax and penalties, sources, [Flagged for Review](dashboard-f79e64e7/flagged.html) and [repo review](dashboard-f79e64e7/repo-review.html); every table row links to an official page opened on 11 November 2026.
 - **Consolidated Executive Briefing:** [briefing/index.html](briefing/index.html) — least-tax lawful answer, 17 methods with pros/cons/steps, 680-row `$10k→$400k` tables (`7.129` IRS 2025 reference rate + Nov 6, 2026 Fed H.10 `6.6760` sensitivity note), and consolidated repo audit.
 - **Cost Ladder Scenario Model:** [ladder/index.html](ladder/index.html) — 20 routes (`15` costed × `40` tiers = `600` rows, `$10k→$400k`), updated to the 31 October 2026 HSBC China Personal Tariff (`2.2.4.x`, `2.2.6.1`, `2.2.2.1`) and SAFE `Huifa [2014] No. 2` §VI lump-sum emigration/inheritance rules.
@@ -49,6 +51,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 audit-86f0/verify.py
 PYTHONDONTWRITEBYTECODE=1 python3 audit-0f0f59fe/verify.py
 PYTHONDONTWRITEBYTECODE=1 python3 audit-ad300459/verify.py
 PYTHONDONTWRITEBYTECODE=1 python3 acceptance-373b54a3/verify.py
+PYTHONDONTWRITEBYTECODE=1 python3 consolidated-88b9c268/build.py && PYTHONDONTWRITEBYTECODE=1 python3 consolidated-88b9c268/verify.py && node --check consolidated-88b9c268/assets/app.js
 PYTHONDONTWRITEBYTECODE=1 python3 ladder/model.py && PYTHONDONTWRITEBYTECODE=1 python3 ladder/build.py && PYTHONDONTWRITEBYTECODE=1 python3 ladder/verify.py && node --check ladder/assets/app.js
 ```
 
