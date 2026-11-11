@@ -1,0 +1,147 @@
+[
+ {
+  "id": "L1",
+  "layer": "Tax on the act of converting",
+  "who": "China and U.S.",
+  "amount": "None found",
+  "note": "No tax on exchanging RMB for dollars appears in the PRC foreign exchange rules read; current payments are unrestricted when the transaction is real and lawful. This is a none-found result, not a legal opinion (flag F07).",
+  "src": [
+   "S06",
+   "S01"
+  ]
+ },
+ {
+  "id": "L2",
+  "layer": "PRC income tax on the income behind the balance",
+  "who": "China",
+  "amount": "3%–45% wages · 5%–35% business · 20% dividends, rent, asset sales",
+  "note": "This is the real tax. If it was already withheld, as with payroll, converting adds nothing; the bank only wants the proof. If it was never paid, it is owed whether or not you convert.",
+  "src": [
+   "S14",
+   "S01"
+  ]
+ },
+ {
+  "id": "L3",
+  "layer": "PRC tax on bank interest earned on the balance",
+  "who": "China",
+  "amount": "0% (temporarily exempt)",
+  "note": "Savings deposit interest has been exempt since 9 October 2008.",
+  "src": [
+   "S15"
+  ]
+ },
+ {
+  "id": "L4",
+  "layer": "Tax recordal for one payment above USD 50,000",
+  "who": "China",
+  "amount": "No charge found; a filing",
+  "note": "A form filed with the tax office for listed payment types. Whether your payment is a listed type is for the bank or tax office to confirm (flag F14).",
+  "src": [
+   "S10"
+  ]
+ },
+ {
+  "id": "L5",
+  "layer": "Bank exchange spread",
+  "who": "Bank",
+  "amount": "0.21% at Bank of China when read",
+  "note": "Half the gap between the bank's posted buying and selling rates: RMB 0.01405 per dollar.",
+  "src": [
+   "S17"
+  ]
+ },
+ {
+  "id": "L6",
+  "layer": "Wire fee",
+  "who": "Bank",
+  "amount": "RMB 200 to 410 per wire at Bank of China",
+  "note": "0.1% with a RMB 50 floor and RMB 260 cap, plus RMB 150 cable. Fees taken by intermediary and receiving banks are not published and are left blank (flag F02).",
+  "src": [
+   "S18"
+  ]
+ },
+ {
+  "id": "L7",
+  "layer": "U.S. income tax on the underlying income",
+  "who": "U.S.",
+  "amount": "Depends on your return",
+  "note": "A U.S. citizen owes U.S. tax on worldwide income in the year it is earned, not when it is moved. PRC income tax on the same income can be credited on Form 1116; qualifying earned income up to USD 132,900 for 2026 can be excluded instead.",
+  "src": [
+   "S28",
+   "S27"
+  ]
+ },
+ {
+  "id": "L8",
+  "layer": "U.S. tax on currency gain",
+  "who": "U.S.",
+  "amount": "Gain above USD 200 is recognised",
+  "note": "If the RMB is worth more dollars when converted than when you received it, the difference is a gain. The yuan is stronger today than the 2023 to 2025 averages, so this can be the largest U.S. cost; see the worked table below.",
+  "src": [
+   "S21",
+   "S29"
+  ]
+ },
+ {
+  "id": "L9",
+  "layer": "U.S. account reporting (FBAR)",
+  "who": "U.S.",
+  "amount": "No tax; up to USD 16,536 if missed non-wilfully",
+  "note": "Due when foreign accounts together passed USD 10,000 at any time in the year. The wilful dollar maximum in the table is USD 165,353.",
+  "src": [
+   "S22",
+   "S23"
+  ]
+ },
+ {
+  "id": "L10",
+  "layer": "U.S. asset reporting (Form 8938)",
+  "who": "U.S.",
+  "amount": "No tax; USD 10,000 if missed",
+  "note": "Thresholds start at USD 50,000 for a single filer living in the U.S. and USD 200,000 living abroad. Up to USD 50,000 more after an IRS notice, and 40% on related understatements.",
+  "src": [
+   "S24"
+  ]
+ },
+ {
+  "id": "L11",
+  "layer": "U.S. gift or bequest reporting (Form 3520)",
+  "who": "U.S.",
+  "amount": "No tax to the recipient; penalties if missed",
+  "note": "Needed when gifts or bequests from one foreign person and related persons pass USD 100,000 in the year.",
+  "src": [
+   "S25"
+  ]
+ },
+ {
+  "id": "L12",
+  "layer": "Cash declaration entering the U.S.",
+  "who": "U.S.",
+  "amount": "No charge; seizure risk if not declared",
+  "note": "More than USD 10,000 in currency must be reported on FinCEN Form 105.",
+  "src": [
+   "S26"
+  ]
+ },
+ {
+  "id": "L13",
+  "layer": "Catching up on missed U.S. filings",
+  "who": "U.S.",
+  "amount": "5% of the highest balance if you live in the U.S.",
+  "note": "The Streamlined Domestic Offshore Procedures charge a 5% miscellaneous offshore penalty for non-wilful cases. Terms for people living abroad were not re-read today (flag F09).",
+  "src": [
+   "S31"
+  ]
+ },
+ {
+  "id": "L14",
+  "layer": "PRC fines for unlawful routes",
+  "who": "China",
+  "amount": "Up to 30%; 30%–100% if serious",
+  "note": "Applies to evasion, fraudulent purchase and private FX trading. Unlawful carrying of cash: up to 20%.",
+  "src": [
+   "S06"
+  ]
+ }
+]

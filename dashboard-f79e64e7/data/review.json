@@ -1,0 +1,175 @@
+[
+ {
+  "id": "R01",
+  "where": "index.html (root), README.md",
+  "claim": "A foreign individual's lawful income is converted on ID plus source papers including tax documents.",
+  "result": "Confirmed",
+  "note": "Matches the SAFE Tianjin 2026 answer word for word.",
+  "src": [
+   "S01"
+  ]
+ },
+ {
+  "id": "R02",
+  "where": "README.md, transfer-guide/, estimate-facf2fe9/",
+  "claim": "USD 50,000 yearly quota; among foreigners only permanent resident ID holders get it.",
+  "result": "Confirmed",
+  "note": "Both statements read today.",
+  "src": [
+   "S07",
+   "S02"
+  ]
+ },
+ {
+  "id": "R03",
+  "where": "briefing/, transfer-guide/",
+  "claim": "Overseas ATM cap RMB 100,000 a year and RMB 10,000 a day.",
+  "result": "Confirmed",
+  "note": "Read in SAFE's English circular.",
+  "src": [
+   "S04"
+  ]
+ },
+ {
+  "id": "R04",
+  "where": "estimate-facf2fe9/, study-8f529c94/",
+  "claim": "Cash: USD 5,000 without a permit, USD 10,000 with a bank permit.",
+  "result": "Confirmed",
+  "note": "Also read: a second exit within 15 days is limited to USD 1,000.",
+  "src": [
+   "S05"
+  ]
+ },
+ {
+  "id": "R05",
+  "where": "README.md",
+  "claim": "FBAR maximums USD 16,536 and USD 165,353.",
+  "result": "Confirmed",
+  "note": "eCFR current to 9 November 2026 still shows the 17 January 2025 table. The 'or 50%' wording in the README was not re-read today.",
+  "src": [
+   "S23"
+  ]
+ },
+ {
+  "id": "R06",
+  "where": "briefing/, repatriate/, transfer-guide/, study-8f529c94/ (48 pages cite 7.129)",
+  "claim": "Dollar figures use RMB 7.129 per dollar, the IRS 2025 average.",
+  "result": "Confirmed but stale for pricing",
+  "note": "The IRS figure is right. Bank of China sold dollars at 6.6911 today, so RMB fees look 6.5% cheaper in those tables than they are now: the RMB 620 HSBC cap is USD 86.97 at 7.129 and USD 92.66 at 6.6911.",
+  "src": [
+   "S29",
+   "S17"
+  ]
+ },
+ {
+  "id": "R07",
+  "where": "estimate-facf2fe9/data/inputs.json",
+  "claim": "Bank of China board 6.6571 buy, 6.6851 sell on 10 November 2026.",
+  "result": "Superseded by today's board",
+  "note": "Today 6.6630 buy, 6.6911 sell. Boards change during the day; every estimate needs its timestamp.",
+  "src": [
+   "S17"
+  ]
+ },
+ {
+  "id": "R08",
+  "where": "estimate-facf2fe9/",
+  "claim": "Bank of China wire fee 0.1%, RMB 50 to 260, cable RMB 150.",
+  "result": "Confirmed",
+  "note": "The table is headed 1 November 2014.",
+  "src": [
+   "S18"
+  ]
+ },
+ {
+  "id": "R09",
+  "where": "index.html (root), briefing/, ladder/",
+  "claim": "HSBC China: 0.1%, CNY 100 to 500, plus CNY 120 cable for Premier and Advance; free for Private Banking.",
+  "result": "Figures seen, tiers not re-confirmed",
+  "note": "See flag F05.",
+  "src": [
+   "S19"
+  ]
+ },
+ {
+  "id": "R10",
+  "where": "README.md",
+  "claim": "Bank spread 'typically 0.30%–1.50% modelled'.",
+  "result": "Irregular",
+  "note": "No official source gives that band. Bank of China's posted half-gap today is 0.21%.",
+  "src": [
+   "S17"
+  ]
+ },
+ {
+  "id": "R11",
+  "where": "README.md",
+  "claim": "Foreign earned income exclusion USD 132,900 in 2026 and USD 137,300 in 2027.",
+  "result": "2026 confirmed; 2027 not seen",
+  "note": "The IRS page read today gives 2025 and 2026 only.",
+  "src": [
+   "S27"
+  ]
+ },
+ {
+  "id": "R12",
+  "where": "transfer-guide/, study-8f529c94/",
+  "claim": "Form 3520 for foreign gifts above USD 100,000.",
+  "result": "Confirmed",
+  "note": "The IRS page also gives USD 20,573 for 2026 for purported gifts from foreign corporations or partnerships.",
+  "src": [
+   "S25"
+  ]
+ },
+ {
+  "id": "R13",
+  "where": "estimate-facf2fe9/, transfer-guide/",
+  "claim": "Wise: CNY 300,000 per transfer, foreigners with a tax record.",
+  "result": "Confirmed",
+  "note": "Also read: only to an account you own; overall limit about after-tax salary.",
+  "src": [
+   "S20"
+  ]
+ },
+ {
+  "id": "R14",
+  "where": "README.md, briefing/",
+  "claim": "PRC fines of 30% to 100% for unlawful routes.",
+  "result": "Confirmed",
+  "note": "Articles 39, 40 and 45: up to 30%, and 30% to 100% if serious.",
+  "src": [
+   "S06"
+  ]
+ },
+ {
+  "id": "R15",
+  "where": "Repository root",
+  "claim": "One executive summary and one starting page.",
+  "result": "Irregular",
+  "note": "There are ten executive-summary files, two at the root with near-identical names, and the README marks two different pages 'start here' and a third as newest. Method counts differ between views (15 to 23). This dashboard is now the single front door; earlier views are kept and listed on the landing page.",
+  "src": [
+   "S01"
+  ]
+ },
+ {
+  "id": "R16",
+  "where": "index.html (root)",
+  "claim": "'Current all-in cost — / unverified'.",
+  "result": "Updated",
+  "note": "An account quote is still unknown, but a published-rate estimate exists and is now shown with its timestamp.",
+  "src": [
+   "S17",
+   "S18"
+  ]
+ },
+ {
+  "id": "R17",
+  "where": "Open pull requests",
+  "claim": "All work is merged.",
+  "result": "Irregular",
+  "note": "Pull requests 55, 63, 65, 66 and 68 were open when this session started; 55 has conflicted since 10 November. They belong to other sessions and were not touched.",
+  "src": [
+   "S01"
+  ]
+ }
+]

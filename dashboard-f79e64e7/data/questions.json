@@ -1,0 +1,148 @@
+[
+ {
+  "id": "Q01",
+  "q": "Where did the money come from?",
+  "known": "The route and the PRC tax both depend on the source: wages, business, a home sale, inheritance, a gift, a company, or dollars you brought in.",
+  "unknown": "The source of this balance.",
+  "find": "List each deposit from the bank statements and match it to a contract, payslip, sale, will or exchange memo.",
+  "src": [
+   "S01",
+   "S14"
+  ]
+ },
+ {
+  "id": "Q02",
+  "q": "Was PRC tax already paid on it, and can you prove it?",
+  "known": "Banks convert a foreign individual's income on source papers that include tax vouchers.",
+  "unknown": "Whether tax was withheld and whether you hold the records.",
+  "find": "Request your tax payment record from the PRC tax authority for each year the income was earned; ask the employer for withholding records.",
+  "src": [
+   "S01",
+   "S14"
+  ]
+ },
+ {
+  "id": "Q03",
+  "q": "What exactly did the bank say the tax is?",
+  "known": "No tax on converting was found in the rules read. A bank asking for tax proof is not the same as a bank charging tax.",
+  "unknown": "Whether the bank named a tax, an amount and a legal basis, or asked for a document.",
+  "find": "Ask the branch to state in writing the tax type, taxpayer, amount and legal basis, or the document it wants.",
+  "src": [
+   "S06",
+   "S10"
+  ]
+ },
+ {
+  "id": "Q04",
+  "q": "How does SAFE classify you?",
+  "known": "A foreigner who has lived in China continuously for one year is a domestic individual under the Regulations; only Foreign Permanent Resident ID holders among foreigners get the USD 50,000 quota.",
+  "unknown": "Your ID type, residence history and whether you hold a permanent resident card.",
+  "find": "Check your residence permit history and ask the bank which category its system applies to your ID.",
+  "src": [
+   "S06",
+   "S02",
+   "S07"
+  ]
+ },
+ {
+  "id": "Q05",
+  "q": "Whose name is on the account?",
+  "known": "Routing your money through other people's quotas is prohibited; a relative's own money given as a gift is a different case.",
+  "unknown": "Whether the account is yours, a spouse's, a relative's or a company's.",
+  "find": "Read the account opening papers and statements.",
+  "src": [
+   "S08",
+   "S09"
+  ]
+ },
+ {
+  "id": "Q06",
+  "q": "How much is there and how soon do you need it?",
+  "known": "One documented wire can move any documented amount; the quota, ATM and cash routes are capped per year or per trip.",
+  "unknown": "The balance in RMB and your deadline.",
+  "find": "Take the balance from the bank app and use the cost tables to see how long each route takes.",
+  "src": [
+   "S07",
+   "S04",
+   "S05"
+  ]
+ },
+ {
+  "id": "Q07",
+  "q": "Can you go to the branch, or will someone act for you?",
+  "known": "Purchases by foreign individuals and above-quota purchases can be delegated with the supporting documents; a home-sale agent needs a notarised power of attorney.",
+  "unknown": "Whether you are in China and who could act for you.",
+  "find": "Ask the branch for its agent requirements and whether a consular notarisation is accepted.",
+  "src": [
+   "S07",
+   "S13"
+  ]
+ },
+ {
+  "id": "Q08",
+  "q": "Did you report the income on your U.S. returns when it was earned?",
+  "known": "U.S. citizens are taxed on worldwide income in the year earned; PRC tax on it can be credited.",
+  "unknown": "Whether past U.S. returns included this income.",
+  "find": "Compare your U.S. returns for those years with the PRC payslips and tax records.",
+  "src": [
+   "S28",
+   "S27"
+  ]
+ },
+ {
+  "id": "Q09",
+  "q": "Were FBAR and Form 8938 filed for every year the account was over the thresholds?",
+  "known": "FBAR applies above USD 10,000 in total; Form 8938 starts at USD 50,000 for a single filer in the U.S.",
+  "unknown": "Your filing history.",
+  "find": "Check your FinCEN filing confirmations and the Forms 8938 attached to past returns; if any are missing, look at the streamlined procedures before moving money.",
+  "src": [
+   "S22",
+   "S24",
+   "S31"
+  ]
+ },
+ {
+  "id": "Q10",
+  "q": "When did you receive the RMB, and at what exchange rates?",
+  "known": "Currency gain above USD 200 is recognised when you convert; the yuan is stronger now than the 2023 to 2025 averages.",
+  "unknown": "The dates and dollar value of each deposit.",
+  "find": "For each deposit, record the date and the exchange rate that day; any posted rate used consistently is accepted.",
+  "src": [
+   "S21",
+   "S29"
+  ]
+ },
+ {
+  "id": "Q11",
+  "q": "What will your bank actually charge?",
+  "known": "Bank of China's posted rate and fee table give about 0.2% to 0.5% all told; other banks differ.",
+  "unknown": "Your bank, your tier, and what intermediary and receiving banks will deduct.",
+  "find": "Ask for a written quote showing the rate, the commission, the cable fee and whether intermediary charges are deducted; ask your U.S. bank for its incoming wire fee.",
+  "src": [
+   "S17",
+   "S18"
+  ]
+ },
+ {
+  "id": "Q12",
+  "q": "Is the money an inheritance, a gift, or the proceeds of a home?",
+  "known": "Each has its own route and papers, and gifts or bequests above USD 100,000 need Form 3520.",
+  "unknown": "Whether any of these apply and what documents exist.",
+  "find": "Collect the will or inheritance notarisation, gift evidence or sale contract and tax papers.",
+  "src": [
+   "S11",
+   "S13",
+   "S25"
+  ]
+ },
+ {
+  "id": "Q13",
+  "q": "Which U.S. state do you live in?",
+  "known": "Nothing was researched today on state income tax.",
+  "unknown": "Your state and its treatment of foreign income and currency gain.",
+  "find": "Check your state revenue department's guidance or ask a preparer; federal rules are linked here.",
+  "src": [
+   "S28"
+  ]
+ }
+]
