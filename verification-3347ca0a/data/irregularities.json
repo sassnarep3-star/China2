@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "session": "arena/3347ca0a-china2",
+    "reviewed_on": "2026-11-11",
+    "scope": "Whole repository as checked out on the integration branch: 110 HTML pages, 20 research/site directories, 1 root landing page.",
+    "severity_legend": {
+      "structure": "Duplication or organisation problem; no data is wrong, but the reader can be misled about which figure is current.",
+      "conflict": "Two published figures for the same thing exist in the repository; at least one is stale or differently based.",
+      "stale": "A page carries an older date or superseded wording.",
+      "gap": "A required value has no official source in the row where it is used.",
+      "resolved": "Checked in this pass and found consistent; recorded so the check is visible."
+    }
+  },
+  "findings": [
+    {
+      "id": "IR-01",
+      "severity": "structure",
+      "finding": "Twenty separate research sites exist in one repository, each with its own landing page. The root page previously presented sixteen of them as equal cards.",
+      "evidence": "20 directories contain HTML: docs (9 pages), site (11), portal (7), briefing (6), ladder (10), repatriate (7), study-8f529c94 (8), estimate-facf2fe9 (7), final-f6327e23 (8), verify-d5d1f860 (7), transfer-guide (9), audit-86f0 (4), audit-ad300459 (5), audit-0f0f59fe (1), audit-92d12752 (1), acceptance-373b54a3 (1), acceptance-a64bd476 (5), audit-456e7542 (1), audit-6068a908 (1), verify-88f5a1be (1) = 110 pages.",
+      "impact": "The reader cannot tell which dashboard is current. This page now designates one canonical set and lists the rest explicitly as archive.",
+      "verification": "Counted with a filesystem walk on 2026-11-11 (glob '**/*.html' per directory).",
+      "source": "https://github.com/sassnarep3-star/China2"
+    },
+    {
+      "id": "IR-02",
+      "severity": "conflict",
+      "finding": "The number of CNY-to-USD methods or routes differs between published sites: 15, 17, 22 and 23.",
+      "evidence": "final-f6327e23 states 15 methods; briefing, repatriate and verify-d5d1f860 state 17; docs, portal and site state 22 routes; study-8f529c94, estimate-facf2fe9 and transfer-guide state 23.",
+      "impact": "A reader comparing two pages sees different route universes. The 23-method catalogue is the superset and is used as canonical here; the smaller counts are earlier editions.",
+      "verification": "Text of each site's index page read on 2026-11-11.",
+      "source": "https://github.com/sassnarep3-star/China2/tree/main/transfer-guide"
+    },
+    {
+      "id": "IR-03",
+      "severity": "conflict",
+      "finding": "Cost-table row counts differ between sites: 600, 680 and 920 rows for the same USD 10,000-400,000 ladder.",
+      "evidence": "briefing and audit-ad300459 describe a 680-row ladder; acceptance-373b54a3 compares a 600-row and a 680-row ladder; transfer-guide and study-8f529c94 publish 920 rows (23 methods x 40 tiers).",
+      "impact": "Same problem, three different datasets. Only the 920-row export is internally consistent with a 23-method catalogue.",
+      "verification": "Row counts recomputed from transfer-guide/exports/cost-ladder-920.csv (920 data rows) on 2026-11-11.",
+      "source": "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/exports/cost-ladder-920.csv"
+    },
+    {
+      "id": "IR-04",
+      "severity": "conflict",
+      "finding": "Source-register size and open-flag counts differ between sites: 16, 24 and 40 sources; 9, 16, 18 and 31 flags.",
+      "evidence": "docs states 24 sources and 9 flags; ladder/briefing 17 methods with 16 flags; estimate-facf2fe9 states 31 flags; transfer-guide registers 40 sources and 18 flags.",
+      "impact": "A reader cannot tell whether a flag is unique or a duplicate under another ID. This page links one register (transfer-guide) and one consolidated flag page.",
+      "verification": "Registers loaded from transfer-guide/data/sources.json (40 entries) and docs/data/sources.json (24 entries) on 2026-11-11.",
+      "source": "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/data/sources.json"
+    },
+    {
+      "id": "IR-05",
+      "severity": "conflict",
+      "finding": "Every dollar figure in the fee tables is converted from renminbi at 7.129 CNY/USD (the IRS 2025 yearly average) or at a 7.10 model assumption, while the live retail rate on 2026-11-11 was 6.6911 CNY/USD. Dollar equivalents of renminbi fees are therefore understated by about 6%.",
+      "evidence": "IRS 2025 average 7.129 (verified, V18). Bank of China board 2026-11-11 10:25:02: sell 669.11 per 100 USD = 6.6911 (verified, V20). The same CNY 620 fee is USD 86.97 at 7.129 and USD 92.66 at 6.6911. '7.129' appears in 48 HTML files; a 7.10 assumption appears in ladder/assumptions.html and estimate-facf2fe9/repo-review.html.",
+      "impact": "Not a factual error - a tax-translation rate is legitimately 7.129 - but presenting it as the cost rate misstates the dollar cost of renminbi fees by roughly 6%. This page states both rates and labels which is which.",
+      "verification": "Both rates re-fetched from their official pages on 2026-11-11; arithmetic recomputed.",
+      "source": "https://www.boc.cn/sourcedb/whpj/"
+    },
+    {
+      "id": "IR-06",
+      "severity": "gap",
+      "finding": "On a point-in-time scan, 1,384 table rows across 34 pages carry no direct official-domain URL inside their own static row.",
+      "evidence": "audit-92d12752/results.json, regenerated on 2026-11-11 after these pages were added: 111 pages, 8,298 table rows scanned, 1,423 candidate rows on 36 pages. Of these, 15 are this page's own archive index (declared navigational rows) and 7 are this audit page's internal-evidence rows, which cite repository files rather than an external document.",
+      "impact": "Structural only: it neither proves the claim is unsupported nor checks link liveness. Every claim-bearing row on this page and on the verification page carries an inline official link; the remaining candidates are navigational or cite repository files by design.",
+      "verification": "Snapshot re-read from audit-92d12752/results.json on 2026-11-11; not re-run.",
+      "source": "https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/results.json"
+    },
+    {
+      "id": "IR-07",
+      "severity": "stale",
+      "finding": "Pages carry four different review dates.",
+      "evidence": "docs/* pages carry '07 NOV 2026' (datetime 2026-11-07); transfer-guide carries 2026-11-10; the root page carried '10 November 2026'; this page is 2026-11-11.",
+      "impact": "A reader cannot tell whether a fee or rule shown on a page has been checked since the HSBC tariff changed on 31 October 2026 or since the last source pass.",
+      "verification": "Dates read from the page headers on 2026-11-11.",
+      "source": "https://github.com/sassnarep3-star/China2/tree/main/docs"
+    },
+    {
+      "id": "IR-08",
+      "severity": "conflict",
+      "finding": "In the 920-row export the reference-rate column says 7.13 while the fee-detail text in the same row says '@ 7.129'.",
+      "evidence": "cost-ladder-920.csv, first data row: reference_fx_rate=7.13; published_fee_detail='HSBC Premier/Advance SHA (CNY 220.00 @ 7.129)'.",
+      "impact": "Cosmetic, but a line-by-line reader will read it as two different rates. The arithmetic uses 7.129.",
+      "verification": "Read directly from the CSV on 2026-11-11; 220/7.129 = 30.86 confirms the arithmetic basis.",
+      "source": "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/exports/cost-ladder-920.csv"
+    },
+    {
+      "id": "IR-09",
+      "severity": "resolved",
+      "finding": "The superseded 'USD 0-7' same-name Global Transfer wording now survives only where it is being corrected or flagged, not as a published fee.",
+      "evidence": "Tariff item 2.2.6.1 (Global Transfer to self) = Free / Free / USD 20 actual; item 2.2.7 (International Education Payment) = USD 7 actual. Occurrences of 'USD 0-7' are in the correction notice on the root page, audit-ad300459 and briefing/flagged.html.",
+      "impact": "No action. Recorded so the correction is auditable.",
+      "verification": "Tariff re-read on 2026-11-11 (V12); occurrence list generated by text search over all HTML.",
+      "source": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf"
+    },
+    {
+      "id": "IR-10",
+      "severity": "resolved",
+      "finding": "The HSBC fee arithmetic used across the repository reproduces the tariff exactly.",
+      "evidence": "At 7.129: CNY 220 -> USD 30.86 (10,000 tier); 0.1% of CNY 356,450 = 356.45 + 120 = 476.45 -> USD 66.83 (50,000 tier); cap CNY 500 + 120 = 620 -> USD 86.97 (100,000 and above). At the 2026-11-11 board rate 6.6911 the same fee is USD 32.88 and USD 92.66.",
+      "impact": "No action. This is the arithmetic this page republishes.",
+      "verification": "Recomputed independently in verification-3347ca0a/build.py from the tariff text; see verify.py which re-derives every row.",
+      "source": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf"
+    },
+    {
+      "id": "IR-11",
+      "severity": "gap",
+      "finding": "The USD 50,000 annual quota is described inconsistently: SAFE's rule text ties it to settlement and to a domestic individual's purchase, while bank and third-party guides describe it as a general per-person ceiling.",
+      "evidence": "Hui Fa [2007] No. 1 Art. 2 (verified, V04): '对个人结汇和境内个人购汇实行年度总额管理…每人每年等值5万美元'. The earlier HSBC guide and several pages in this repository treat USD 50,000 as a blanket limit.",
+      "impact": "Material to route choice: if the balance is lawful income of an overseas individual, the documentary route (not the quota) governs. This remains unconfirmed for any specific bank in writing; carried forward as an open flag.",
+      "verification": "SAFE text re-read 2026-11-11. Bank practice not tested and cannot be tested without the account holder.",
+      "source": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html"
+    },
+    {
+      "id": "IR-12",
+      "severity": "resolved",
+      "finding": "Article 39 of Hui Fa [2007] No. 1 is reproduced on the official page but is expressly repealed, so its penalty amounts must not be cited.",
+      "evidence": "Page footnote: '根据…（汇发〔2023〕8号）…以下内容已被废止：《个人外汇管理办法实施细则》（汇发〔2007〕1号印发）第三十九条'.",
+      "impact": "No action if pages cite Decree 532 Arts. 39/40/45 instead, as this page does.",
+      "verification": "Repeal note read on the official page on 2026-11-11.",
+      "source": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html"
+    }
+  ]
+}

@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import subprocess
 from datetime import date
 from pathlib import Path
@@ -975,7 +976,14 @@ def main():
     }
     for name, html_text in out.items():
         (ROOT / name).write_text(html_text)
-    write_root_hub()
+    # Integration change (session arena/3347ca0a-china2, 2026-11-11): the repository root
+    # index.html is now the final-integration dashboard and is owned by that session.
+    # This generator must not silently overwrite the published landing page, so the root
+    # hub is only written when explicitly requested.
+    if os.environ.get("LADDER_WRITE_ROOT_HUB") == "1":
+        write_root_hub()
+    else:
+        print("root hub not written (set LADDER_WRITE_ROOT_HUB=1 to regenerate it)")
     print(f"wrote {len(out)} pages, {sum(len(v) for v in out.values()):,} bytes")
 
 

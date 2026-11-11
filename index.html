@@ -3,64 +3,714 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>China money · CNY to USD research</title>
-<meta name="description" content="Source-linked research on lawful CNY-to-USD conversion, route eligibility, tax and costs. Unknown account-specific values remain blank or flagged.">
+<title>China money · CNY to USD, priced and sourced</title>
+<meta name="description" content="A source-linked dashboard for moving lawful CNY out of mainland China to the United States: published fees at USD 10,000-400,000, the documentary gate, PRC and U.S. tax rules, and what is still unverified.">
+<meta name="theme-color" content="#101d1a">
+<link rel="icon" href="verification-3347ca0a/assets/favicon.svg" type="image/svg+xml">
 <style>
-:root{--ink:#142722;--muted:#5c7167;--paper:#f5f5ef;--line:#dce2dc;--accent:#0b705e;--warn:#744600;--warn-bg:#fff3d8}
+:root{
+  --ink:#101d1a;--ink-2:#1d2f2a;--paper:#f6f5f0;--card:#ffffff;--line:#dfe3dd;
+  --muted:#5f7268;--accent:#0c6b58;--accent-2:#0a574a;--warn:#7a4a00;
+  --warn-bg:#fff6e0;--warn-line:#e8d3a0;--ok:#0c6b58;--bad:#8d2f23;--bad-bg:#fdeeec;
+  --pill:#eef3ef;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.58 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-header{background:var(--ink);color:#f6f5ef;padding:1.1rem clamp(1rem,4vw,2.5rem)}
-header p{margin:.2rem 0 0;color:#cbd9d1;font-size:.84rem}
-main{max-width:1080px;margin:0 auto;padding:clamp(1.2rem,4vw,2.6rem) clamp(1rem,4vw,2rem) 3rem}
-h1{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.1;letter-spacing:-.03em;margin:.25rem 0 .7rem}
-.lede{font-size:1.08rem;color:#32483d;max-width:74ch}
-.summary{background:#fff;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:14px;padding:1rem 1.1rem;margin:1rem 0}
-.notice{background:var(--warn-bg);border:1px solid #e7d2a3;border-left:5px solid #a36a10;border-radius:12px;padding:.95rem 1.1rem;margin:1rem 0}
-.status{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin:1.1rem 0}
-.status-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}
-.status-card .label{font-size:.77rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin:0}
-.status-card .value{font-size:1.35rem;font-weight:750;margin:.2rem 0}
-.status-card .small{font-size:.83rem;color:var(--muted);margin:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.8rem;margin:1rem 0}
-.card{display:flex;flex-direction:column;gap:.3rem;background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
-.card:hover{border-color:var(--accent);transform:translateY(-1px)}
-.card strong{font-size:1rem;color:#075b49}
-.card span{font-size:.82rem;color:#263b33;font-weight:650}
-.card em{font-style:normal;font-size:.84rem;color:var(--muted)}
-footer{background:var(--ink);color:#e1e9e4;padding:1.5rem clamp(1rem,4vw,2.5rem);font-size:.86rem}
-footer a{color:#a4e5cf}
-@media(max-width:520px){.grid{grid-template-columns:1fr}}
-@media print{header,footer{print-color-adjust:exact}.card{break-inside:avoid}}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent-2)}
+a:hover{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(.9rem,3.5vw,2rem)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;background:#fff;padding:.5rem;z-index:20}
+
+header.site{background:var(--ink);color:#f2f4f0;padding:.85rem 0}
+header.site .wrap{display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.55rem;font-weight:750;letter-spacing:-.01em;color:#fff;text-decoration:none}
+.brand .mark{display:inline-grid;place-items:center;width:2rem;height:2rem;border-radius:.55rem;
+  background:#0c6b58;color:#fff;font-size:.95rem}
+.brand small{display:block;font-size:.66rem;letter-spacing:.14em;color:#9fb5ab;font-weight:600}
+.site-meta{font-size:.78rem;color:#b9c9c0;text-align:right}
+nav.site{background:#16281f;border-bottom:1px solid #213a2f;position:sticky;top:0;z-index:10}
+nav.site .wrap{display:flex;gap:.15rem;overflow-x:auto;padding:.35rem clamp(.9rem,3.5vw,2rem)}
+nav.site a{color:#cfe0d6;text-decoration:none;font-size:.82rem;font-weight:600;
+  padding:.5rem .7rem;border-radius:.5rem;white-space:nowrap}
+nav.site a:hover{background:#20372c;color:#fff}
+
+main{padding:1.4rem 0 3rem}
+h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.12;letter-spacing:-.02em;margin:.4rem 0 .6rem}
+h2{font-size:clamp(1.2rem,3.2vw,1.55rem);letter-spacing:-.01em;margin:2.2rem 0 .5rem}
+h3{font-size:1.02rem;margin:0 0 .3rem}
+p{margin:.5rem 0}
+.eyebrow{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);font-weight:750;margin-bottom:.2rem}
+.lede{font-size:1.06rem;color:#31463d;max-width:74ch}
+.muted{color:var(--muted);font-size:.85rem}
+
+.notice{background:var(--warn-bg);border:1px solid var(--warn-line);border-left:5px solid #b17a12;
+  border-radius:.7rem;padding:.85rem 1rem;margin:1rem 0;font-size:.9rem}
+.notice strong{color:var(--warn)}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.7rem;margin:1.3rem 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:.9rem 1rem}
+.kpi .label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0}
+.kpi .value{font-size:1.5rem;font-weight:780;letter-spacing:-.02em;margin:.25rem 0 .1rem;color:var(--ink)}
+.kpi .sub{font-size:.8rem;color:var(--muted);margin:0}
+
+.answers{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.75rem;margin:1rem 0}
+.answer{background:var(--card);border:1px solid var(--line);border-radius:.85rem;padding:1rem}
+.answer h3{color:var(--accent-2)}
+.answer p{font-size:.92rem;margin:.35rem 0}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:.8rem;background:var(--card);margin:.8rem 0}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:640px}
+caption{text-align:left;font-size:.8rem;color:var(--muted);padding:.7rem .8rem .2rem}
+th,td{text-align:left;padding:.6rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:#f0f3ef;font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:#3d5348;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:#fbfbf8}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rowhead{font-weight:700}
+.blank{color:#9aa8a0;font-style:italic}
+.pill{display:inline-block;font-size:.7rem;font-weight:750;letter-spacing:.03em;
+  padding:.12rem .45rem;border-radius:999px;background:var(--pill);color:#2c4a3e;white-space:nowrap}
+.pill.ok{background:#e4f1eb;color:#075b49}
+.pill.warn{background:#fdf1d8;color:#7a4a00}
+.pill.bad{background:#fbe8e5;color:#8d2f23}
+.src{font-size:.76rem;white-space:nowrap}
+.src a{text-decoration:none;border-bottom:1px dotted var(--accent)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.7rem;margin:1rem 0}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:.85rem;
+  padding:.95rem 1rem;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px);color:var(--ink)}
+.card b{display:block;color:var(--accent-2);font-size:.98rem;margin-bottom:.15rem}
+.card span{font-size:.82rem;color:#42584d;font-weight:650;display:block}
+.card em{font-style:normal;font-size:.82rem;color:var(--muted);display:block;margin-top:.25rem}
+
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:1rem 0}
+ol.steps li{position:relative;padding:.7rem 0 .7rem 2.5rem;border-bottom:1px dashed var(--line);font-size:.93rem}
+ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:.65rem;
+  width:1.7rem;height:1.7rem;border-radius:50%;background:var(--accent);color:#fff;
+  display:grid;place-items:center;font-size:.8rem;font-weight:750}
+ol.steps li:last-child{border-bottom:0}
+
+footer.site{background:var(--ink);color:#d8e3dc;padding:1.6rem 0;font-size:.84rem}
+footer.site a{color:#9de0c7}
+.smallprint{font-size:.78rem;color:#a9bdb3}
+
+@media (max-width:720px){
+  table{min-width:0}
+  thead{position:absolute;left:-9999px}
+  tbody tr{display:block;border:1px solid var(--line);border-radius:.7rem;margin:.55rem;padding:.2rem .2rem .4rem;background:#fff}
+  tbody tr:nth-child(even){background:#fff}
+  tbody td,tbody th{display:flex;justify-content:space-between;gap:1rem;border:0;padding:.32rem .7rem;font-size:.86rem;text-align:right}
+  tbody td:before,tbody th[data-label]:before{content:attr(data-label);font-weight:700;color:var(--muted);
+    font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;text-align:left}
+  tbody td.num{justify-content:space-between}
+  .tablewrap{overflow:visible;border:0;background:transparent}
+  caption{padding:.2rem .55rem}
+}
+@media print{
+  nav.site{display:none}
+  body{background:#fff}
+  .card,.kpi,.answer{break-inside:avoid}
+}
 </style>
 </head>
 <body>
-    <header><strong>China money</strong><p>Official-source research · summary re-reviewed 10 November 2026 · navigation integrated 10 November 2026 · not tax or legal advice</p></header>
-<main>
-<h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
-<p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>
-<div class="summary"><p><strong>What the source review supports:</strong> PRC FX rules reviewed set transaction-document requirements. No separate tax solely for exchanging currency was located in those instruments, but the source and tax history of the balance are unknown. For lawful current-account income, SAFE guidance requires identity and transaction/source evidence including tax documents; the correct category is individual-specific. <a href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer">SAFE 2026 guidance</a> · <a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer">State Council FX rules</a></p></div>
-<div class="notice"><strong>Most important limitation:</strong> the exact tax due, best eligible route and all-in USD cost cannot be determined from the facts provided. Current FX rate/spread and all intermediary/receiver fees are not available as an account-specific executable quote. Do not treat modeled ranges in the scenario ladder as verified prices. <strong>HSBC fee note (updated 10 November 2026):</strong> route pages cite the tariff effective 31 October 2026; the former “USD 0–7” same-name Global Transfer wording shown with the 2021 tariff is superseded — same-name Global Transfer is now published Free for Private Banking and Premier (Advance: CNY 145 indicative per transaction, actual USD 20), and the tariff's USD 7 reference is specific to International Education Payment, not a general same-name remittance. See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and the <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">current tariff</a>.</div>
-<div class="status">
-  <div class="status-card"><p class="label">PRC tax on this balance</p><p class="value">— / undetermined</p><p class="small">Source, category, dates and prior tax records are unknown.</p></div>
-  <div class="status-card"><p class="label">Route eligibility</p><p class="value">— / undetermined</p><p class="small">Residence category, account type and transaction origin matter.</p></div>
-  <div class="status-card"><p class="label">Current all-in cost</p><p class="value">— / unverified</p><p class="small">Request current, executable rate and itemized fees.</p></div>
+<a class="skip" href="#answer">Skip to the answer</a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mark">¥</span><span>China Money<small>CNY → USD DESK</small></span></a>
+  <div class="site-meta">Independent source review<br>Last verified 2026-11-11 · not tax or legal advice</div>
+</div></header>
+<nav class="site" aria-label="Sections"><div class="wrap"><a href="#answer">Answer first</a><a href="#costs">Costs</a><a href="#methods">Methods</a><a href="#how">Step by step</a><a href="#subpages">All pages</a><a href="#questions">Open questions</a><a href="verification-3347ca0a/index.html">Verification</a><a href="verification-3347ca0a/irregularities.html">Repo audit</a></div></nav>
+<main class="wrap">
+
+<h1>The tax is rarely the problem. The evidence is.</h1>
+<p class="lede">What feels like a “conversion penalty” is usually four separate things: a tax on where the money came
+from, a bank that wants proof of it, the bank’s own exchange margin, and U.S. reporting duties. They have different
+sizes, different fixes and different sources. This desk prices what is published, quotes the exact sentence, and
+leaves blank what is not published.</p>
+
+<div class="kpis">
+  <div class="kpi"><p class="label">Tax on converting CNY→USD</p><p class="value">$0</p>
+    <p class="sub">No exchange tax appears in the PRC FX regulations reviewed. What they impose is a document and source-of-funds test. [<a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="V01">V01 ↗</a> <a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="V02">V02 ↗</a>]</p></div>
+  <div class="kpi"><p class="label">Published wire fee · $10k → $400k</p><p class="value">$32.88 → $92.66</p>
+    <p class="sub">HSBC China telegraphic transfer + cable, Premier/Advance. Private Banking and Premier Elite individuals: $0.00. [<a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="V11">V11 ↗</a>]</p></div>
+  <div class="kpi"><p class="label">The bigger number: exchange margin</p><p class="value">≤ 0.42%</p>
+    <p class="sub">Bound from the Bank of China USD board on 2026-11-11 (666.30 buy / 669.11 sell per 100). At $400,000 that bound is $1,679.84 — 18× the wire fee. [<a class="source" href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="V20">V20 ↗</a>]</p></div>
 </div>
-<section class="notice" id="integration-review">
-<h2>Flagged for Review · briefing limitations</h2>
-<p><strong>E01 — blanket no-tax wording is not a personal tax conclusion.</strong> The briefing's “no tax on converting” language must not be read as a guarantee of no taxable income or currency gain. The IRS requires foreign-currency income and relevant tax items to be translated into the taxpayer's functional currency. Tax basis, source and transaction history are unknown. <a href="https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates" target="_blank" rel="noopener noreferrer">IRS currency rules (re-read 10 November 2026)</a> · <a href="briefing/EXECUTIVE_SUMMARY.md">Affected executive summary</a></p>
-<p><strong>E02 — historic rate, not today's executable quote.</strong> The briefing's USD fee illustrations use CNY 7.129/USD (2025 annual average), not a current customer conversion rate. Do not interpret the $86.97 wire-fee illustration as the cost of converting or delivering $400,000. Spread, intermediary fees, receiving fees and personal taxes remain unverified. <a href="https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates" target="_blank" rel="noopener noreferrer">IRS rate-use guidance</a> · <a href="briefing/costs.html">Affected cost tables and assumptions</a></p>
-<p>All other unresolved findings: <a href="briefing/flagged.html">consolidated Flagged for Review</a> · <a href="audit-ad300459/flagged.html">latest source-audit flags</a>. These cautions do not establish that a bank will accept this particular balance.</p>
-</section>
-<h2>Choose a category</h2>
-<div class="grid"><a class="card" href="verify-d5d1f860/index.html"><strong>Live-verified dashboard · newest pass</strong><span>24 sources re-fetched · 680 rows · 16 flags</span><em>Quote-level re-verification dated 10 November 2026: each load-bearing document was re-fetched and the exact sentence is shown with its link. Fees recomputed independently; blanks where nothing is published.</em></a><a class="card" href="estimate-facf2fe9/index.html"><strong>Published-rate estimates · bank boards read 10 Nov 2026</strong><span>6 bank boards · 4 tariffs · 23 methods × 40 tiers</span><em>All-in cost worked out from the rates and fees the banks themselves publish, with the tax rules and an exchange-gain illustration. Blank where a rate or fee could not be read. Indicative, not a quote.</em></a><a class="card" href="briefing/index.html"><strong>Executive briefing · start here</strong><span>Summary · 17 methods · 680 cost rows</span><em>Consolidated comparison with steps and caveats. Published fees are not all-in quotes; read the review notes below.</em></a><a class="card" href="audit-ad300459/index.html"><strong>Latest evidence audit</strong><span>27 findings · official-source review · ladder checks</span><em>Separates verified, limited and unverified claims. Arithmetic checks do not establish personal eligibility.</em></a><a class="card" href="briefing/costs.html"><strong>Costs · every $10,000 to $400,000</strong><span>17 methods · 40 tiers each</span><em>Corrected source-only briefing: published fee components; unknown spreads and all-in costs left blank.</em></a><a class="card" href="ladder/index.html"><strong>Cost ladder · scenario model</strong><span>15 routes · 40 tiers · $10k–$400k</span><em>Shows modelled bands using explicit assumptions. Not an account quote or an officially verified all-in cost.</em></a><a class="card" href="audit-86f0/costs.html"><strong>Source-only blank matrix</strong><span>22 methods · 40 tiers</span><em>Leaves unverified FX spreads, transfer totals and tax amounts blank. Blank means unverified, not zero.</em></a><a class="card" href="audit-0f0f59fe/index.html"><strong>Landing-page claim review</strong><span>Official text · corrections · unresolved facts</span><em>Independent check of root claims, legacy-tariff warnings and unresolved account facts.</em></a><a class="card" href="ladder/routes.html"><strong>Methods &amp; execution</strong><span>Eligibility · pros/cons · step by step</span><em>Routes are conditional; the bank must confirm documents, status, service availability and limits.</em></a><a class="card" href="ladder/tax.html"><strong>Tax &amp; reporting</strong><span>PRC income tax · U.S. FTC · FBAR/FATCA</span><em>A transfer is not a personalized tax calculation. U.S. credits and reporting have separate tests.</em></a><a class="card" href="ladder/flagged.html"><strong>Flagged for review</strong><span>Unverified values · eligibility · open caveats</span><em>Open issues are published here rather than filled in by inference.</em></a><a class="card" href="ladder/sources.html"><strong>Primary source register</strong><span>SAFE · PBOC · tax authorities · IRS · bank tariff</span><em>Direct source text and locators for manual review.</em></a><a class="card" href="docs/index.html"><strong>Research dashboard</strong><span>22 routes · 67 findings · 24 official sources</span><em>Searchable source-linked decision dashboard with execution checklist and CSV/JSON exports.</em></a><a class="card" href="site/index.html"><strong>Evidence ledger site</strong><span>18 routes · 16 flags · strict allowlist</span><em>Source-only evidence site built strictly from government and registry domain ledgers.</em></a><a class="card" href="portal/index.html"><strong>Government-source portal</strong><span>22 methods · .gov / .gov.cn only</span><em>Independent statutory verification portal linking exclusively to government domains.</em></a><a class="card" href="acceptance-373b54a3/index.html"><strong>Acceptance summary &amp; checks</strong><span>Cross-repo deliverable check</span><em>Independent completeness verification across the published 600-row and 680-row ladders.</em></a></div>
-<section class="summary">
-<h2>What to ask the bank first</h2>
-<p>Request the refusal in writing. Ask it to identify the tax type (if any), taxpayer, period, tax base, amount and legal basis; distinguish a tax payment from a tax certificate or a bank fee; list acceptable source-of-funds evidence; confirm which FX category applies; and provide a current all-in quote showing the applied CNY/USD rate, sender fee, cable, correspondent/intermediary and recipient charges. The current HSBC schedule, for example, is specific to customer segments and excludes charges of other institutions. <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">HSBC China tariff effective 31 October 2026</a></p>
-</section>
+
+<div class="summary" style="background:#fff;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:.7rem;padding:.85rem 1rem;margin:1rem 0;font-size:.9rem">
+<strong>Corrected wording, kept visible:</strong> earlier pages carried a “USD 0–7” same-name Global Transfer fee from a
+superseded tariff. The current HSBC China tariff (effective 31 Oct 2026) publishes same-name Global Transfer as
+<strong>Free</strong> for Private Banking and Premier and <strong>USD 20</strong> for Advance (item 2.2.6.1); the
+<strong>USD 7</strong> figure belongs to International Education Payment (item 2.2.7) and to no other remittance.
+[<a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="V12">V12 ↗</a>]
+See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and
+<a href="verification-3347ca0a/irregularities.html#IR-09">IR-09</a>.</div>
+
+<div class="notice"><strong>Read this before the numbers.</strong> Nothing here is a personal determination. The source,
+the tax history and the acquisition dates of your balance are unknown; no bank has been asked for a quote; no rate
+shown is executable. Values that could not be confirmed from an official document are left blank and flagged, not
+estimated. <a href="verification-3347ca0a/index.html">22 re-verified source checks</a> ·
+<a href="verification-3347ca0a/irregularities.html">12 repository findings</a>.</div>
+
+<h2 id="answer">Answer first</h2>
+<div class="answers">
+  <div class="answer"><h3>If the RMB is already-taxed salary</h3>
+    <p>One documented bank conversion plus one wire is the route to assess first (M01). SAFE states there is no
+    statutory time limit on remitting historic lawful salary [<a class="source" href="https://www.safe.gov.cn/henan/2022/0718/1249.html" target="_blank" rel="noopener noreferrer" title="V09">V09 ↗</a>]
+    and that a third party can run the formalities if you are abroad [<a class="source" href="https://www.safe.gov.cn/henan/2022/0718/1247.html" target="_blank" rel="noopener noreferrer" title="V08">V08 ↗</a>].
+    What you must produce is the contract plus the tax record — that is the gate, not a tax.</p></div>
+  <div class="answer"><h3>The USD 50,000 figure is not a universal ceiling</h3>
+    <p>The rule’s own words apply the annual total to settlement and to a <em>domestic</em> individual’s purchase
+    (境内个人购汇) [<a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="V04">V04 ↗</a>]. Treating it as a blanket cap on an
+    overseas individual’s documented income is not supported by that text — but bank practice varies and is
+    unresolved here. <a href="verification-3347ca0a/irregularities.html#IR-11">Flag IR-11</a>.</p></div>
+  <div class="answer"><h3>Cheaper routes exist; most are capped or closed</h3>
+    <p>ATM cash is hard-capped at RMB 100,000 a calendar year [<a class="source" href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener noreferrer" title="V19">V19 ↗</a>] —
+    27 years for $400,000 at the 2026-11-11 board (29 at the 7.129 tax rate). Wise is limited to
+    CNY 300,000 per transfer and 3-year-old tax records [<a class="source" href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer" title="V14">V14 ↗</a>].
+    Physical cash hits a USD 10,000 declaration line every trip [<a class="source" href="https://www.cbp.gov/travel/international-visitors/money-monetary-instruments" target="_blank" rel="noopener noreferrer" title="V17">V17 ↗</a>].</p></div>
+  <div class="answer"><h3>Do not manufacture a route</h3>
+    <p>Splitting across relatives’ quotas, underground swaps and crypto bridges are unlawful, and the statute prices
+    them: fines of up to 30% of the amount, or 30%–100% in serious cases
+    [<a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="V10">V10 ↗</a>]. Four of the 23 catalogued methods are rejected
+    for this reason and are kept visible so they are not re-discovered as “ideas”.</p></div>
+  <div class="answer"><h3>The U.S. side is reporting, not a transfer tax</h3>
+    <p>Moving your own principal is not U.S. income. Personal FX gain is ignored unless it exceeds $200
+    [<a class="source" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener noreferrer" title="V15">V15 ↗</a>];
+    the 2026 foreign earned income exclusion is $132,900 [<a class="source" href="https://www.irs.gov/pub/irs-pdf/i2555.pdf" target="_blank" rel="noopener noreferrer" title="V16">V16 ↗</a>].
+    The expensive mistakes are unreported accounts and unfiled forms, not the wire.</p></div>
+  <div class="answer"><h3>What still cannot be answered</h3>
+    <p>The exact tax on this balance, the eligible route, the all-in USD cost and the cheapest provider all depend on
+    private facts and a live quote. 18 open flags and 2
+    items this pass could not re-verify are published rather than filled in.
+    <a href="transfer-guide/flagged.html">See every flag →</a></p></div>
+</div>
+
+<h2 id="costs">What it costs to move the money</h2>
+<p class="muted">Published sender fees are converted from the bank’s renminbi tariff at the Bank of China board of
+2026-11-11 10:25:02 (6.6911 CNY/USD). The exchange margin is a bound, not a quote: it is the full gap between the
+board’s buying and selling prices (0.42%), which no retail customer can do better than. Intermediary,
+receiving-bank and correspondent fees are not published by this bank and stay blank.</p>
+
+<div class="tablewrap">
+<table>
+<caption>Documented bank route (M01) · milestone tiers · full 40-tier ladder in the cost page</caption>
+<thead><tr>
+  <th scope="col">Amount</th><th scope="col" class="num">CNY needed</th><th scope="col">Route</th>
+  <th scope="col" class="num">Sender fee<br>Premier/Advance</th><th scope="col" class="num">Sender fee<br>Private Bkg / Elite</th>
+  <th scope="col" class="num">Exchange margin<br>(board bound)</th><th scope="col" class="num">Indicative total</th><th scope="col">Source</th>
+</tr></thead>
+<tbody>
+        <tr>
+          <th scope="row" data-label="Amount">$10,000.00</th>
+          <td class="num" data-label="CNY needed (BOC 11 Nov)">66,911</td>
+          <td data-label="Documented bank route">1 wire — M01</td>
+          <td class="num" data-label="Sender fee (Premier/Advance)">$32.88</td>
+          <td class="num" data-label="Sender fee (Private Banking / Premier Elite)">$0.00</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $42.00</td>
+          <td class="num" data-label="Indicative total">$74.88</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC 2.2.4.1 [V11]">HSBC 2.2.4.1 [V11] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$50,000.00</th>
+          <td class="num" data-label="CNY needed (BOC 11 Nov)">334,555</td>
+          <td data-label="Documented bank route">1 wire — M01</td>
+          <td class="num" data-label="Sender fee (Premier/Advance)">$67.93</td>
+          <td class="num" data-label="Sender fee (Private Banking / Premier Elite)">$0.00</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $209.98</td>
+          <td class="num" data-label="Indicative total">$277.91</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC 2.2.4.1 [V11]">HSBC 2.2.4.1 [V11] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$100,000.00</th>
+          <td class="num" data-label="CNY needed (BOC 11 Nov)">669,110</td>
+          <td data-label="Documented bank route">1 wire — M01</td>
+          <td class="num" data-label="Sender fee (Premier/Advance)">$92.66</td>
+          <td class="num" data-label="Sender fee (Private Banking / Premier Elite)">$0.00</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $419.96</td>
+          <td class="num" data-label="Indicative total">$512.62</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC 2.2.4.1 [V11]">HSBC 2.2.4.1 [V11] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$200,000.00</th>
+          <td class="num" data-label="CNY needed (BOC 11 Nov)">1,338,220</td>
+          <td data-label="Documented bank route">1 wire — M01</td>
+          <td class="num" data-label="Sender fee (Premier/Advance)">$92.66</td>
+          <td class="num" data-label="Sender fee (Private Banking / Premier Elite)">$0.00</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $839.92</td>
+          <td class="num" data-label="Indicative total">$932.58</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC 2.2.4.1 [V11]">HSBC 2.2.4.1 [V11] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$400,000.00</th>
+          <td class="num" data-label="CNY needed (BOC 11 Nov)">2,676,440</td>
+          <td data-label="Documented bank route">1 wire — M01</td>
+          <td class="num" data-label="Sender fee (Premier/Advance)">$92.66</td>
+          <td class="num" data-label="Sender fee (Private Banking / Premier Elite)">$0.00</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $1,679.84</td>
+          <td class="num" data-label="Indicative total">$1,772.50</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC 2.2.4.1 [V11]">HSBC 2.2.4.1 [V11] ↗</a></td>
+        </tr></tbody>
+</table>
+</div>
+<p class="muted">“Indicative total” = sender fee at the board rate + the exchange-margin bound. It excludes any tax,
+any intermediary or receiving-bank charge, and any U.S. reporting cost. In renminbi the fee is
+0.1% of the amount, minimum CNY 100, maximum CNY 500, plus a CNY 120 cable — that cap is why the dollar fee stops
+rising after roughly $70,000.</p>
+
+<div class="tablewrap">
+<table>
+<caption>Same tiers, other routes · the constraints are visible in the “steps” column</caption>
+<thead><tr>
+  <th scope="col">Amount</th><th scope="col">Route</th><th scope="col">Constraint</th>
+  <th scope="col" class="num">Fee</th><th scope="col" class="num">Margin bound</th><th scope="col">Source</th>
+</tr></thead>
+<tbody>
+<tr><th scope="row" data-label="Amount">any</th><td data-label="Route">M02 HSBC Global Transfer, self-named overseas account</td>
+  <td data-label="Constraint">Needs HSBC accounts in both countries + Premier/Elite relationship</td>
+  <td class="num" data-label="Fee">$0.00 PB/Premier<br>$20 Advance</td>
+  <td class="num" data-label="Margin bound">≤ 0.42%</td>
+  <td class="src" data-label="Source"><a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC 2.2.6.1 [V12]">HSBC 2.2.6.1 [V12] ↗</a></td></tr>
+
+        <tr>
+          <th scope="row" data-label="Amount">$10,000.00</th>
+          <td data-label="Route">M06 USD-50,000 annual quota + wire (PR-ID / PRC ID holders only)</td>
+          <td class="num" data-label="Wires / calendar years">1 / 1</td>
+          <td class="num" data-label="Sender fee per wire">$67.93</td>
+          <td class="num" data-label="Sender fee, all wires">$67.93</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $42.00</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="SAFE Art. 2 [V04]">SAFE Art. 2 [V04] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$50,000.00</th>
+          <td data-label="Route">M06 USD-50,000 annual quota + wire (PR-ID / PRC ID holders only)</td>
+          <td class="num" data-label="Wires / calendar years">1 / 1</td>
+          <td class="num" data-label="Sender fee per wire">$67.93</td>
+          <td class="num" data-label="Sender fee, all wires">$67.93</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $209.98</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="SAFE Art. 2 [V04]">SAFE Art. 2 [V04] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$100,000.00</th>
+          <td data-label="Route">M06 USD-50,000 annual quota + wire (PR-ID / PRC ID holders only)</td>
+          <td class="num" data-label="Wires / calendar years">2 / 2</td>
+          <td class="num" data-label="Sender fee per wire">$67.93</td>
+          <td class="num" data-label="Sender fee, all wires">$135.87</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $419.96</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="SAFE Art. 2 [V04]">SAFE Art. 2 [V04] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$200,000.00</th>
+          <td data-label="Route">M06 USD-50,000 annual quota + wire (PR-ID / PRC ID holders only)</td>
+          <td class="num" data-label="Wires / calendar years">4 / 4</td>
+          <td class="num" data-label="Sender fee per wire">$67.93</td>
+          <td class="num" data-label="Sender fee, all wires">$271.74</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $839.92</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="SAFE Art. 2 [V04]">SAFE Art. 2 [V04] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$400,000.00</th>
+          <td data-label="Route">M06 USD-50,000 annual quota + wire (PR-ID / PRC ID holders only)</td>
+          <td class="num" data-label="Wires / calendar years">8 / 8</td>
+          <td class="num" data-label="Sender fee per wire">$67.93</td>
+          <td class="num" data-label="Sender fee, all wires">$543.47</td>
+          <td class="num" data-label="Exchange margin (board bound)">≤ $1,679.84</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="SAFE Art. 2 [V04]">SAFE Art. 2 [V04] ↗</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row" data-label="Amount">$10,000.00</th>
+          <td data-label="Route">M15 overseas ATM withdrawals with a mainland debit card</td>
+          <td class="num" data-label="Calendar years needed">1</td>
+          <td class="num" data-label="Withdrawals at RMB 10,000/day cap">7</td>
+          <td class="num" data-label="Issuer / ATM fees">—</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener noreferrer" title="SAFE [2017] 29 [V19]">SAFE [2017] 29 [V19] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$50,000.00</th>
+          <td data-label="Route">M15 overseas ATM withdrawals with a mainland debit card</td>
+          <td class="num" data-label="Calendar years needed">4</td>
+          <td class="num" data-label="Withdrawals at RMB 10,000/day cap">34</td>
+          <td class="num" data-label="Issuer / ATM fees">—</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener noreferrer" title="SAFE [2017] 29 [V19]">SAFE [2017] 29 [V19] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$100,000.00</th>
+          <td data-label="Route">M15 overseas ATM withdrawals with a mainland debit card</td>
+          <td class="num" data-label="Calendar years needed">7</td>
+          <td class="num" data-label="Withdrawals at RMB 10,000/day cap">67</td>
+          <td class="num" data-label="Issuer / ATM fees">—</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener noreferrer" title="SAFE [2017] 29 [V19]">SAFE [2017] 29 [V19] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$200,000.00</th>
+          <td data-label="Route">M15 overseas ATM withdrawals with a mainland debit card</td>
+          <td class="num" data-label="Calendar years needed">14</td>
+          <td class="num" data-label="Withdrawals at RMB 10,000/day cap">134</td>
+          <td class="num" data-label="Issuer / ATM fees">—</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener noreferrer" title="SAFE [2017] 29 [V19]">SAFE [2017] 29 [V19] ↗</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Amount">$400,000.00</th>
+          <td data-label="Route">M15 overseas ATM withdrawals with a mainland debit card</td>
+          <td class="num" data-label="Calendar years needed">27</td>
+          <td class="num" data-label="Withdrawals at RMB 10,000/day cap">268</td>
+          <td class="num" data-label="Issuer / ATM fees">—</td>
+          <td class="src" data-label="Sources"><a class="source" href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener noreferrer" title="SAFE [2017] 29 [V19]">SAFE [2017] 29 [V19] ↗</a></td>
+        </tr>
+</tbody>
+</table>
+</div>
+<p class="muted">M06 uses the USD 50,000 annual total: it is only available to PRC-ID / permanent-resident holders, and
+one wire per calendar year. M15 is not a transfer at all — it is retail cash with a hard statutory ceiling and no
+paperwork, and its issuer fees are not published uniformly, so they stay blank.</p>
+
+<h2 id="methods">Every method, with its status</h2>
+<p class="muted">23 catalogued routes: 17 lawful or conditional, 1 closed-loop (no exit), 4 rejected as unlawful. Each
+row links to the full pros, cons, statutory cap and numbered playbook.</p>
+<div class="tablewrap">
+<table>
+<caption>Method catalogue · status is the repository’s legal reading, with its own source per row</caption>
+<thead><tr><th scope="col">ID</th><th scope="col">Method</th><th scope="col">Status</th><th scope="col">Best for</th><th scope="col">Official source</th><th scope="col">Detail</th></tr></thead>
+<tbody>
+        <tr>
+          <th scope="row" data-label="Method">M01</th>
+          <td data-label="Name">Onshore Bank Documented Current-Account Conversion + SWIFT Wire (SHA / OUR / Private Banking)</td>
+          <td data-label="Status"><span class="pill ok">lawful documented</span></td>
+          <td data-label="Best for">U.S. citizen with lawful onshore RMB income (salary, labor remuneration, rent, royalties) backed by contracts and PRC tax vouchers (完税证明 / 纳税记录), …</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M01">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M02</th>
+          <td data-label="Name">Same-Name Multinational Bank Book Transfer After Lawful FX Conversion (HSBC Global Transfer)</td>
+          <td data-label="Status"><span class="pill ok">lawful documented</span></td>
+          <td data-label="Best for">U.S. citizen who qualifies for lawful onshore CNY→USD conversion (under M01, M06, M07, M09, or M10) and holds self-named HSBC accounts in both …</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="SRC-03">SRC-03 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M02">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M03</th>
+          <td data-label="Name">Wise From-CNY Digital Salary Remittance via China Bank App (&lt;= CNY 300,000 / Transfer)</td>
+          <td data-label="Status"><span class="pill ok">lawful documented</span></td>
+          <td data-label="Best for">U.S. citizen (non-mainland-Chinese) with PRC salary earned and taxed within the last 3 calendar years who wants 100% digital execution without …</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer" title="SRC-05">SRC-05 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M03">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M04</th>
+          <td data-label="Name">Wise From-CNY Digital Salary Remittance via Alipay (&lt;= CNY 50,000 / Transfer)</td>
+          <td data-label="Status"><span class="pill ok">lawful documented</span></td>
+          <td data-label="Best for">Small-to-medium transfers of recent (&lt;= 3 years) taxed China salary when Alipay funding is more convenient than a bank app domestic transfer</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer" title="SRC-05">SRC-05 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M04">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M05</th>
+          <td data-label="Name">Entrusted Proxy Bank Conversion &amp; Outward Wire (委托代办 When Already Outside China)</td>
+          <td data-label="Status"><span class="pill ok">lawful documented</span></td>
+          <td data-label="Best for">U.S. citizen already living back in the United States who cannot fly to China in person and has documented lawful RMB salary/income in a Mainland …</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="SRC-03">SRC-03 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M05">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M06</th>
+          <td data-label="Name">Annual USD 50,000 Facilitated FX Purchase Quota + SWIFT Wire (PRC Permanent Resident ID / PRC ID Holders Only)</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">Individual holding a PRC Foreign Permanent Resident ID Card (外国人永久居留身份证, 'Chinese Green Card') or PRC Resident ID whose RMB savings lack …</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M06">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M07</th>
+          <td data-label="Name">Bank Reconversion of Unspent Previously Exchanged RMB with Original FX Settlement Slip (&lt;= 24 Months)</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">U.S. citizen whose stuck RMB originally came from converting inbound USD/foreign currency into RMB within the past 24 months</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="SRC-02">SRC-02 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M07">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M08</th>
+          <td data-label="Name">Passport-Only Small Reconversion of Unspent RMB (&lt;= USD 500/Day Branch or &lt;= USD 1,000 Port Pre-Departure)</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">Clearing tiny leftover travel RMB (&lt;= $500–$1,000) when departing China without an original exchange slip</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="SRC-02">SRC-02 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M08">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M09</th>
+          <td data-label="Name">Sale of Legitimate Self-Use PRC Residential Property — Net After-Tax Proceeds Conversion &amp; Wire</td>
+          <td data-label="Status"><span class="pill ok">lawful documented</span></td>
+          <td data-label="Best for">U.S. citizen whose stuck RMB comes from selling a legitimately purchased self-use apartment/house in Mainland China</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M09">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M10</th>
+          <td data-label="Name">Foreign Citizen Inheritance of Mainland PRC Estate — SAFE One-Off Outbound Asset Transfer</td>
+          <td data-label="Status"><span class="pill ok">lawful documented</span></td>
+          <td data-label="Best for">U.S. citizen who inherited RMB bank deposits, real estate proceeds, or other lawful Mainland assets from a deceased relative in China</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="SRC-02">SRC-02 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M10">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M11</th>
+          <td data-label="Name">Mainland Emigrant One-Off Personal Asset Transfer (移民财产对外转移)</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">Naturalized U.S. citizen (formerly a Mainland PRC citizen) who cancelled Mainland household registration (户口注销) and owns pre-emigration RMB …</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="SRC-02">SRC-02 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M11">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M12</th>
+          <td data-label="Name">PRC Company / WFOE Audited Profit Dividend Distribution to U.S. Shareholder (10% Treaty Cap)</td>
+          <td data-label="Status"><span class="pill ok">lawful documented</span></td>
+          <td data-label="Best for">U.S. citizen whose stuck RMB is actually retained profit inside a Mainland PRC company / WFOE they own rather than already-distributed personal salary</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M12">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M13</th>
+          <td data-label="Name">Foreign-Invested Enterprise Liquidation or Equity-Transfer Proceeds Remittance</td>
+          <td data-label="Status"><span class="pill ok">lawful documented</span></td>
+          <td data-label="Best for">U.S. investor winding down a PRC company or selling equity in a PRC enterprise</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M13">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M14</th>
+          <td data-label="Name">Registered Individual Foreign Trade Operator (个人对外贸易经营者 / 个体工商户) FX Settlement Account</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">Individual lawfully registered for commercial/foreign-trade operations in China paying genuine cross-border trade obligations</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M14">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M15</th>
+          <td data-label="Name">Overseas ATM Cash Withdrawal Using Mainland PRC Debit Card</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">Small-scale USD liquidity (&lt;= ~$14,027/year) in the United States without visiting a Mainland bank counter</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M15">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M16</th>
+          <td data-label="Name">Direct Overseas Bank Card / Mobile Wallet POS Merchant Spending (Genuine Personal Consumption)</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">Gradually spending down Mainland RMB on genuine everyday U.S./international retail, travel, tuition, or medical bills without converting into USD …</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M16">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M17</th>
+          <td data-label="Name">Physical Cross-Border USD Banknote Carry (&lt;= USD 5,000 Permit-Free / &lt;= USD 10,000 with Bank Carry Permit)</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">Traveler already flying from China to the U.S. carrying &lt;= $5,000 (or &lt;= $10,000 with a Bank FX Carry Permit) of lawfully sourced USD banknotes</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M17">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M18</th>
+          <td data-label="Name">Physical Cross-Border RMB Banknote Carry (&lt;= RMB 20,000 / Trip) + Offshore Exchange</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">Carrying pocket RMB (&lt;= RMB 20,000 ≈ $2,805) when already flying internationally</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.pbc.gov.cn/english/130721/2025080815064111752/index.html" target="_blank" rel="noopener noreferrer" title="SRC-12">SRC-12 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M18">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M19</th>
+          <td data-label="Name">Western Union China Partner-Bank Outbound Remittance</td>
+          <td data-label="Status"><span class="pill ok">lawful conditional</span></td>
+          <td data-label="Best for">Small urgent cash-pickup remittance where supported by a Western Union PRC partner bank</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="SRC-03">SRC-03 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M19">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M20</th>
+          <td data-label="Name">GBA Cross-Boundary Wealth Management Connect (跨境理财通) / Onshore QDII Funds — Closed-Loop Non-Exit</td>
+          <td data-label="Status"><span class="pill warn">closed loop non exit</span></td>
+          <td data-label="Best for">Holding offshore-linked/USD-denominated investment exposure inside China's closed-loop system — NOT usable to deliver unrestricted USD to a U.S. …</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="SRC-02">SRC-02 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M20">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M21</th>
+          <td data-label="Name">REJECTED / UNLAWFUL: Splitting ('Smurfing') Across Relatives' or Friends' USD 50,000 Quotas (分拆逃汇)</td>
+          <td data-label="Status"><span class="pill bad">rejected unlawful</span></td>
+          <td data-label="Best for">DO NOT USE — Expressly unlawful FX evasion under PRC law</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M21">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M22</th>
+          <td data-label="Name">REJECTED / UNLAWFUL: Cryptocurrency / USDT / Stablecoin / RWA Token Bridge (银发〔2026〕42号)</td>
+          <td data-label="Status"><span class="pill bad">rejected unlawful</span></td>
+          <td data-label="Best for">DO NOT USE — Illegal financial activity in Mainland China</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M22">pros / cons / steps &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Method">M23</th>
+          <td data-label="Name">REJECTED / UNLAWFUL: Underground Banking / Informal Peer-to-Peer FX Swap (对敲) &amp; Fabricated Invoices</td>
+          <td data-label="Status"><span class="pill bad">rejected unlawful</span></td>
+          <td data-label="Best for">DO NOT USE — Illegal FX trading / fraudulent arbitrage carrying 30%–100% fines and criminal liability</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/methods.html#M23">pros / cons / steps &rarr;</a></td>
+        </tr></tbody>
+</table>
+</div>
+
+<h2 id="how">How a $400,000 transfer actually works</h2>
+<ol class="steps">
+  <li><strong>Establish what the money is.</strong> Pull the PRC individual income-tax payment record
+  (个人所得税纳税记录) for every year that funded the balance, from the tax app or the tax office. This is the document the
+  bank will ask for first. [<a class="source" href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer" title="V03">V03 ↗</a>]</li>
+  <li><strong>Match it to contracts and payroll evidence.</strong> Employment contract, payroll slips, and — for older
+  income — anything showing the money was actually earned then. SAFE says there is no deadline on this
+  [<a class="source" href="https://www.safe.gov.cn/henan/2022/0718/1249.html" target="_blank" rel="noopener noreferrer" title="V09">V09 ↗</a>], so the constraint is your own paperwork, not a statute.</li>
+  <li><strong>Ask the bank, in writing, what it will accept.</strong> Request the refusal or the requirement in writing,
+  naming the tax type, period, base and legal basis if a tax is asserted — and a separate all-in quote showing the
+  applied rate, the commission, the cable, and any correspondent or receiving charge.</li>
+  <li><strong>Decide who executes.</strong> If you are outside China, SAFE’s published Q&amp;A allows another person to
+  run the remittance formalities [<a class="source" href="https://www.safe.gov.cn/henan/2022/0718/1247.html" target="_blank" rel="noopener noreferrer" title="V08">V08 ↗</a>]; the bank will still
+  want an authorisation it accepts.</li>
+  <li><strong>Convert at the counter, then remit.</strong> The conversion produces a memo (兑换水单) you must keep: it is
+  the only thing that lets you reverse an unspent remainder later, and only for 24 months
+  [<a class="source" href="https://www.safe.gov.cn/tianjin/2026/0917/3134.html" target="_blank" rel="noopener noreferrer" title="V05">V05 ↗</a>].</li>
+  <li><strong>Price the wire two ways.</strong> Telegraphic transfer costs 0.1% (min CNY 100, max CNY 500) + CNY 120 cable
+  for Premier/Advance, and $0.00 for Private Banking/Premier Elite individuals
+  [<a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="V11">V11 ↗</a>].
+  “Pay Exact” (OUR) adds CNY 200 if you want the receiver credited in full.</li>
+  <li><strong>Check the U.S. side before the money lands.</strong> Principal is not income; personal FX gain above $200 is
+  not de minimis [<a class="source" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener noreferrer" title="V15">V15 ↗</a>];
+  FBAR and Form 8938 depend on balances, not on transfers.</li>
+  <li><strong>File the reports the balance triggers.</strong> A closed account or a completed transfer does not erase an
+  earlier reporting obligation for the year in which the threshold was crossed.</li>
+</ol>
+
+<h2 id="subpages">All pages, by category</h2>
+<div class="cards">
+  <a class="card" href="transfer-guide/methods.html"><b>Methods &amp; playbooks</b><span>23 methods · pros · cons · steps</span>
+    <em>Every route with its statutory cap and numbered execution steps.</em></a>
+  <a class="card" href="transfer-guide/costs.html"><b>Cost ladder</b><span>40 tiers × 23 methods = 920 rows</span>
+    <em>$10,000 to $400,000 in $10,000 steps, filtered and searchable, blank where unpublished.</em></a>
+  <a class="card" href="transfer-guide/penalties.html"><b>Penalties &amp; taxes</b><span>7 layers, PRC and U.S.</span>
+    <em>What is a tax, what is a fee, what is a fine — and which document each one comes from.</em></a>
+  <a class="card" href="transfer-guide/questions.html"><b>Open questions</b><span>12 gating facts</span>
+    <em>What we know, what we do not, and how to find out — the decision checklist.</em></a>
+  <a class="card" href="transfer-guide/flagged.html"><b>Flagged for review</b><span>18 items</span>
+    <em>Unverified values and eligibility limits, published rather than guessed.</em></a>
+  <a class="card" href="transfer-guide/sources.html"><b>Source register</b><span>40 official documents</span>
+    <em>PRC regulators, PRC tax, IRS, GPO, CBP, FinCEN, bank tariffs — with locators.</em></a>
+  <a class="card" href="verification-3347ca0a/index.html"><b>This pass’s verification</b><span>22 checks · exact quotes</span>
+    <em>Every load-bearing sentence re-fetched on 2026-11-11, with what could not be re-checked stated plainly.</em></a>
+  <a class="card" href="verification-3347ca0a/irregularities.html"><b>Repository audit</b><span>12 findings</span>
+    <em>Duplicate sites, conflicting counts, rate bases and rows without a source.</em></a>
+</div>
+
+<h2 id="questions">What has to be answered before a decision</h2>
+<p class="muted">No route can be chosen and no tax figure can be calculated until these are established. Each has a way
+to find out — that is the point of listing them.</p>
+<div class="tablewrap">
+<table>
+<caption>Gating questions · first eight of the full checklist</caption>
+<thead><tr><th scope="col">ID</th><th scope="col">Question</th><th scope="col">How to find out</th><th scope="col">Official source</th><th scope="col">Detail</th></tr></thead>
+<tbody>
+        <tr>
+          <th scope="row" data-label="ID">Q01</th>
+          <td data-label="Question">What is the legal origin of the stuck CNY balance? (salary / labor remuneration / rent / royalties / business profit / property-sale proceeds / inheritance / pre-emigration assets / previously converted USD→RMB / untaxed receipts)</td>
+          <td data-label="How to find out">Pull 5-year bank statements; list each large credit with payer, contract/invoice, and tax slip. Match to STA 个人所得税纳税记录 (Personal Income Tax App). Classify each tranche by origin before choosing a route.</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer" title="SRC-02">SRC-02 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/questions.html">full checklist &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="ID">Q02</th>
+          <td data-label="Question">Was PRC Individual Income Tax (or Enterprise Income Tax / withholding tax) already withheld/paid on the income that created the balance? Do you hold official STA tax vouchers (税收完税证明 / 个人所得税纳税记录)?</td>
+          <td data-label="How to find out">Download IIT payment records from 个人所得税 App for each earning year; request 完税证明 at local tax hall. If gap found, ask licensed PRC tax adviser for voluntary settlement quote — then you unlock M01 single-wire conversion with $0 extra conversion tax.</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer" title="SRC-05">SRC-05 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/questions.html">full checklist &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="ID">Q03</th>
+          <td data-label="Question">How does SAFE classify you for FX purchase: 'domestic individual' (境内个人) vs 'non-domestic individual' (境外个人) — and do you hold a PRC Foreign Permanent Resident ID Card (外国人永久居留身份证)?</td>
+          <td data-label="How to find out">Check passport/visa/residence permit history. If PR-ID holder, confirm with bank: does bank treat you as 境内个人 for purchase quota? Get answer in writing. If not, plan for M01 documented income route (uncapped), not $50k quota staging.</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/beijing/2018/1221/1010.html" target="_blank" rel="noopener noreferrer" title="SRC-01">SRC-01 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/questions.html">full checklist &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="ID">Q04</th>
+          <td data-label="Question">When was each CNY tranche acquired, and what is its USD functional-currency basis? (IRS spot / yearly average: 6.452 '21, 6.730 '22, 7.075 '23, 7.189 '24, 7.129 '25)</td>
+          <td data-label="How to find out">Export bank credits by date; assign each credit's USD basis using Fed H.10 or IRS yearly average consistently. Compute pro-rata gain at conversion. Keep memo for Schedule D if &gt;$200 per tranche.</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener noreferrer" title="SRC-24">SRC-24 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/questions.html">full checklist &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="ID">Q05</th>
+          <td data-label="Question">What is your U.S. offshore reporting history? (FBAR FinCEN 114 &gt;$10k aggregate any time; Form 8938 thresholds; Form 3520 &gt;$100k foreign gift/bequest; FBAR penalties $16,536 non-willful / max($165,353,50%) willful)</td>
+          <td data-label="How to find out">Pull peak balances for each calendar year from Chinese bank statements. If delinquent and non-willful + no active IRS exam, consult U.S. cross-border CPA/attorney about Streamlined Foreign (0% if 330-day abroad test met) vs Domestic (5%) BEFORE wiring large sum to U.S. — timing matters.</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener noreferrer" title="SRC-30">SRC-30 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/questions.html">full checklist &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="ID">Q06</th>
+          <td data-label="Question">What executable CNY→USD rate, bank commission/cable fees, intermediary lifting fees, and delivery timeline has your bank quoted in writing? (HSBC China tariff 31 Oct 2026: PB/Premier Elite $0; Premier/Advance 0.1% min100 max500 +120 cable; Pay Exact +200; Global Transfer $0 PB/Premier, $20 Advance)</td>
+          <td data-label="How to find out">Request at counter: 'Provide an all-in written quote showing: applied CNY/USD telegraphic selling rate, sender commission + cable, SHA vs OUR (Pay Exact) intermediary option, and expected correspondent/receiving deductions. Distinguish tax certificate vs tax payment.' Compare to Wise quote if &lt;3-yr salary eligible.</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" target="_blank" rel="noopener noreferrer" title="SRC-25">SRC-25 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/questions.html">full checklist &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="ID">Q07</th>
+          <td data-label="Question">If balance includes property-sale proceeds, inheritance, or pre-emigration assets — do you have the capital-account documents? (sale contract + tax clearance + free &gt;$50k Tax Recordal; inheritance certificate + SAFE approval; hukou cancellation proof)</td>
+          <td data-label="How to find out">If property: get housing transfer tax certificates from local tax bureau. If inheritance: get notarized succession certificate. If emigrant: get public-security hukou cancellation. Ask SAFE branch for its checklist.</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html" target="_blank" rel="noopener noreferrer" title="SRC-13">SRC-13 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/questions.html">full checklist &rarr;</a></td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="ID">Q08</th>
+          <td data-label="Question">Are you physically in China now, or back in the U.S. needing a proxy? (SAFE Henan Q&amp;A 3 expressly permits entrusting salary conversion/wire to employer finance staff or another person)</td>
+          <td data-label="How to find out">Call account-holding branch: ask for its exact proxy template, whether apostilled POA required, and if video call satisfies identity check. Then execute POA via U.S. notary + apostille + courier.</td>
+          <td class="src" data-label="Official source"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="SRC-03">SRC-03 ↗</a></td>
+          <td class="src" data-label="Detail"><a href="transfer-guide/questions.html">full checklist &rarr;</a></td>
+        </tr></tbody>
+</table>
+</div>
+
+<h2 id="archive">Other research runs in this repository</h2>
+<p class="muted">This repository contains 15 parallel research sets built by separate sessions. They are
+listed here for audit, not as equal choices: counts differ between them
+(<a href="verification-3347ca0a/irregularities.html#IR-02">IR-02</a>,
+<a href="verification-3347ca0a/irregularities.html#IR-03">IR-03</a>,
+<a href="verification-3347ca0a/irregularities.html#IR-04">IR-04</a>). This page and the eight pages above are the
+canonical set.</p>
+<div class="tablewrap">
+<table class="nav-index">
+<caption>Archive · navigational index, not claims · kept because deleting another session’s work would destroy its audit trail</caption>
+<thead><tr><th scope="col">Set</th><th scope="col">Published counts</th><th scope="col">Status</th></tr></thead>
+<tbody><tr><th scope="row" data-label="Set"><a href="transfer-guide/index.html">Transfer guide</a></th><td data-label="Published counts">23 methods · 40 sources · 920 cost rows</td><td data-label="Status / note">Newest complete set (10-11 Nov 2026). Used as the canonical detail set from this page.</td></tr><tr><th scope="row" data-label="Set"><a href="docs/index.html">Research dashboard</a></th><td data-label="Published counts">22 routes · 24 sources · 9 flags</td><td data-label="Status / note">Polished earlier dashboard (7 Nov 2026). Different route count; superseded on counts.</td></tr><tr><th scope="row" data-label="Set"><a href="estimate-facf2fe9/index.html">Published-rate estimates</a></th><td data-label="Published counts">23 methods · 40 tiers · live bank boards</td><td data-label="Status / note">Adds six bank rate boards and a repo review with its own irregularities list.</td></tr><tr><th scope="row" data-label="Set"><a href="verify-d5d1f860/index.html">Quote-level verification</a></th><td data-label="Published counts">24 sources re-fetched · 680 rows</td><td data-label="Status / note">Earlier verification pass (10 Nov 2026).</td></tr><tr><th scope="row" data-label="Set"><a href="briefing/index.html">Executive briefing</a></th><td data-label="Published counts">17 methods · 680 cost rows</td><td data-label="Status / note">Earlier edition: 17 methods.</td></tr><tr><th scope="row" data-label="Set"><a href="ladder/index.html">Cost ladder model</a></th><td data-label="Published counts">15 routes · 40 tiers · modelled bands</td><td data-label="Status / note">Modelled, not published fees. Read its assumptions page before quoting it.</td></tr><tr><th scope="row" data-label="Set"><a href="repatriate/index.html">Repatriation set</a></th><td data-label="Published counts">17 methods · 780 table rows</td><td data-label="Status / note">Earlier edition.</td></tr><tr><th scope="row" data-label="Set"><a href="study-8f529c94/index.html">Method study</a></th><td data-label="Published counts">23 methods · 920 rows</td><td data-label="Status / note">Source of the 23-method catalogue.</td></tr><tr><th scope="row" data-label="Set"><a href="final-f6327e23/index.html">Final set (earlier)</a></th><td data-label="Published counts">15 methods · 16 sources</td><td data-label="Status / note">Earlier edition: 15 methods.</td></tr><tr><th scope="row" data-label="Set"><a href="audit-ad300459/index.html">Evidence audit</a></th><td data-label="Published counts">27 findings · 10 flags</td><td data-label="Status / note">Claim-by-claim audit of the other pages.</td></tr><tr><th scope="row" data-label="Set"><a href="portal/index.html">Government-source portal</a></th><td data-label="Published counts">22 methods · .gov / .gov.cn only</td><td data-label="Status / note">Restricted to government domains; no commercial bank terms.</td></tr><tr><th scope="row" data-label="Set"><a href="site/index.html">Evidence ledger site</a></th><td data-label="Published counts">18 routes · strict allowlist</td><td data-label="Status / note">Strict domain allowlist; earlier edition.</td></tr><tr><th scope="row" data-label="Set"><a href="audit-86f0/costs.html">Blank cost matrix</a></th><td data-label="Published counts">22 methods · 40 tiers</td><td data-label="Status / note">Leaves unverified values blank by design.</td></tr><tr><th scope="row" data-label="Set"><a href="audit-0f0f59fe/index.html">Root claim review</a></th><td data-label="Published counts">Official text · corrections</td><td data-label="Status / note">Checks claims previously made on this landing page.</td></tr><tr><th scope="row" data-label="Set"><a href="audit-92d12752/index.html">Structural link scan</a></th><td data-label="Published counts">7,107 rows · 1,384 candidates</td><td data-label="Status / note">Point-in-time scan for rows without a direct primary-domain URL.</td></tr></tbody>
+</table>
+</div>
 </main>
-<footer>
-<p><strong>Research, not advice.</strong> No private account facts were entered, no bank was contacted, no funds moved and no tax return filed. Every unresolved personal value is left blank or flagged.</p>
-<p><a href="briefing/index.html">Executive briefing</a> · <a href="audit-ad300459/index.html">Official-source audit</a> · <a href="audit-0f0f59fe/index.html">Claim review</a> · <a href="ladder/flagged.html">Flagged for review</a> · <a href="ladder/sources.html">Sources</a> · <a href="README.md">README</a> · <a href="COORDINATION.md">Task board</a></p>
-</footer>
-</body>
-</html>
+
+<footer class="site"><div class="wrap">
+  <p><strong>Research, not advice.</strong> No account facts were supplied, no bank was contacted, no funds moved and no
+  return filed. Every unresolved personal value is left blank or flagged.</p>
+  <p class="smallprint">Rate bases: 6.6911 CNY/USD = Bank of China USD cash-remittance selling price on 2026-11-11 10:25:02
+  [<a class="source" href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="V20">V20 ↗</a>]; 7.129 CNY/USD = IRS 2025 yearly average for tax translation
+  [<a class="source" href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" target="_blank" rel="noopener noreferrer" title="V18">V18 ↗</a>]. A
+  renminbi fee of CNY 620 is $92.66 at the board rate and $86.97 at the tax rate — the
+  repository’s older tables use the second. Source-backed means the sentence exists; analysis means it was derived;
+  blank means it was not published.</p>
+  <p class="smallprint"><a href="verification-3347ca0a/EXECUTIVE_SUMMARY.md" download>Executive summary (Markdown)</a> ·
+  <a href="verification-3347ca0a/index.html">Verification ledger</a> ·
+  <a href="verification-3347ca0a/irregularities.html">Repository audit</a> ·
+  <a href="transfer-guide/sources.html">Sources</a> ·
+  <a href="transfer-guide/flagged.html">Flags</a> ·
+  <a href="COORDINATION.md">Task board</a> ·
+  <a href="README.md">README</a></p>
+</div></footer>
+</body></html>
