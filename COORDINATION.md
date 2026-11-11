@@ -1127,3 +1127,8 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 6. Ten executive-summary files and two former "start here" pages; the root landing page is now the single starting point.
 
 **Covered here that `verification-3347ca0a` listed as not re-checked (its V21, V22):** the FBAR rows of 31 CFR 1010.821 were read (USD 16,536 non-wilful; USD 165,353 wilful), as was Article 3 of the PRC IIT Law. The treaty's dividend article was still not re-read; only the letter of submittal was, and the page says so.
+
+### V6 — publication record — `arena/f79e64e7-china2`
+
+- **PR:** [#76](https://github.com/sassnarep3-star/China2/pull/76) — "Second verification pass: 34 quote-checked sources, decision dashboard, repo corrections". Summary, sources and flagged irregularities are in the PR body and in the completion record above.
+- **First CI run on #76:** 12 of 13 checks passed; `verify-ladder` failed its "generated output is committed" step because `ladder/audit.html` records the byte size of every tracked file and this board was extended after the inventory was generated. Fixed by re-running the unmodified generator after the final board edit and committing both together.
