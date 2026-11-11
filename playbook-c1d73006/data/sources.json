@@ -1,5 +1,102 @@
 [
  {
+  "id": "BANK-01",
+  "group": "Published bank rates and fees",
+  "publisher": "Bank of China (中国银行) — official foreign-exchange rate board",
+  "title": "中国银行外汇牌价 (BOC Exchange Rate board), snapshot published 2026/11/11 10:40:02 Beijing time",
+  "doc_no": "Rate board; unit is RMB per 100 units of foreign currency; the page states it is for reference and the actual transaction rate governs",
+  "url": "https://www.boc.cn/sourcedb/whpj/",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "usd_row",
+    "locator": "表格 美元 行 (table row for USD); columns 现汇买入价 / 现钞买入价 / 现汇卖出价 / 现钞卖出价 / 中行折算价 / 发布日期 / 发布时间",
+    "text": "美元 | 666.31 | 666.31 | 669.12 | 669.12 | 671.91 | 2026/11/11 | 10:40:02",
+    "en": "USD — buying rate 666.31, cash buying rate 666.31, selling rate 669.12, cash selling rate 669.12, BOC conversion (\"middle\") rate 671.91, published 2026/11/11 10:40:02. RMB per USD 100."
+   },
+   {
+    "key": "usd_row_en",
+    "locator": "English board https://www.boc.cn/sourcedb/whpj/enindex_1619.html, row USD; columns Buying Rate / Cash Buying Rate / Selling Rate / Cash Selling Rate / Middle Rate / Pub Time",
+    "text": "USD | 666.31 | 666.31 | 669.12 | 669.12 | 671.91 | 2026/11/11 10:40:02"
+   },
+   {
+    "key": "disclaimer",
+    "locator": "中国银行外汇牌价网页声明 1",
+    "text": "本汇率表单位为100外币换算人民币，仅供参考，客户办理结/购汇业务时，应以中国银行网上银行、手机银行、智能柜台或网点柜台实际交易汇率为准，对使用该汇率表所导致的结果，中国银行不承担任何责任；",
+    "en": "The table is in RMB per 100 units of foreign currency and is for reference only; when a customer settles or purchases foreign exchange, the actual transaction rate in BOC online banking, mobile banking, smart counter or branch counter governs."
+   }
+  ],
+  "values": {
+   "usd_buy": 666.31,
+   "usd_cash_buy": 666.31,
+   "usd_sell": 669.12,
+   "usd_cash_sell": 669.12,
+   "usd_boc_conversion": 671.91,
+   "per": 100,
+   "published": "2026/11/11 10:40:02"
+  }
+ },
+ {
+  "id": "BANK-02",
+  "group": "Published bank rates and fees",
+  "publisher": "HSBC Bank (China) Company Limited — official tariff PDF",
+  "title": "Tariff of Accounts and Services for Wealth and Personal Banking Business (Effective from 31 Oct 2026)",
+  "doc_no": "Items 2.2.4.1 and 2.2.4.2 (Overseas Remittances: Outward Remittances: Telegraphic Transfer) and Important Notes 1, 2 and 7",
+  "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "effective",
+    "locator": "Title and Important Note 2",
+    "text": "Tariff of Accounts and Services for Wealth and Personal Banking Business (Effective from 31 Oct 2026) … This tariff comes into effect as from 31 Oct 2026."
+   },
+   {
+    "key": "scope",
+    "locator": "Important Note 1",
+    "text": "This tariff is formulated by HSBC Bank (China) Company Limited (the “Bank”, “we”, “us” or “HSBC China”) and applies to services provided by the Bank to Private Banking customers(including individual and entity customers), Premier customers and Advance customers."
+   },
+   {
+    "key": "third_party",
+    "locator": "Important Note 7",
+    "text": "The charges shown in this tariff do not include charges collected by other institutions (including, without limitation, fund management companies, insurance companies, wealth management companies, any other HSBC Group members, whether situated within or outside Mainland China or any agent banks) or duties, levies, charges or taxes imposed by governmental or regulatory authorities."
+   },
+   {
+    "key": "tt_issuance",
+    "locator": "Item 2.2.4.1 Telegraphic Transfer Issuance — columns Private Banking / Premier / Advance",
+    "text": "For individual customer: Free For entity customer: 0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY1000 / equivalent per transaction Plus Cable Charge | 0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY500 / equivalent per transaction Plus Cable Charge | 0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY500 / equivalent per transaction Plus Cable Charge"
+   },
+   {
+    "key": "cable",
+    "locator": "Item 2.2.4.2 Cable Charges — columns Private Banking / Premier / Advance",
+    "text": "For individual customer: Free For entity customer: CNY140 / equivalent per cable | CNY120 / equivalent per cable | CNY120 / equivalent per cable"
+   },
+   {
+    "key": "pay_exact",
+    "locator": "Remark 1.1 to items 2.2.4.1–2.2.4.4",
+    "text": "If the remitter would like to ensure the beneficiary receive full payment of the USD remittance proceeds (Pay Exact), CNY200 / equivalent will be collected from the remitter to cover the overseas bank charge and handling fee for this special arrangement. In case of any shortfall in overseas bank charge, the outstanding part will be collected from the remitter. Premier Elite customers and Premier Elite passport customers will enjoy the benefit of service fee exemption"
+   },
+   {
+    "key": "premier_threshold",
+    "locator": "Important Note 3 (1)",
+    "text": "Last month’s Total Relationship Balance is not below the Premier Minimum Total Relationship Balance requirement, which is CNY 500,000 or equivalent;"
+   },
+   {
+    "key": "inward_free",
+    "locator": "Item 2.2.9.1 remark",
+    "text": "\"Free\" means that HSBC China waives the local handling charge which should be charged by HSBC China for the Inward Telegraphic Transfer paid to HSBC Account. Relevant correspondent banks' charge may apply."
+   }
+  ],
+  "values": {
+   "tt_pct": 0.001,
+   "tt_min_cny": 100,
+   "tt_max_cny": 500,
+   "cable_cny": 120,
+   "pay_exact_cny": 200
+  }
+ },
+ {
   "id": "CN-FX-01",
   "group": "PRC foreign-exchange rules",
   "publisher": "State Council of the PRC, as published by the State Administration of Foreign Exchange (SAFE)",
@@ -770,6 +867,336 @@
     "locator": "Table \"Yearly average exchange rates for converting foreign currencies into U.S. dollars\", row China / Yuan",
     "text": "China | Yuan | 7.129 | 7.189 | 7.075 | 6.730 | 6.452",
     "en": "Columns are 2025, 2024, 2023, 2022, 2021."
+   }
+  ]
+ },
+ {
+  "id": "US-FX-02",
+  "group": "Exchange-rate references",
+  "publisher": "Board of Governors of the Federal Reserve System",
+  "title": "Foreign Exchange Rates — H.10 Weekly, release date November 9, 2026",
+  "doc_no": "H.10 release; rates in currency units per U.S. dollar",
+  "url": "https://www.federalreserve.gov/releases/h10/current/",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "release",
+    "locator": "Release header",
+    "text": "Release Date: November 9, 2026 … (Rates in currency units per U.S. dollar except as noted by an asterisk)"
+   },
+   {
+    "key": "china_row",
+    "locator": "Table row CHINA, P.R. / YUAN; columns Nov. 2 / Nov. 3 / Nov. 4 / Nov. 5 / Nov. 6",
+    "text": "CHINA, P.R. | YUAN | 6.6480 | 6.6701 | 6.6731 | 6.6680 | 6.6760"
+   }
+  ],
+  "values": {
+   "cny_per_usd_2026_11_06": 6.676
+  }
+ },
+ {
+  "id": "US-RPT-01",
+  "group": "U.S. reporting rules",
+  "publisher": "Internal Revenue Service (IRS)",
+  "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+  "doc_no": "IRS web page (FinCEN Form 114)",
+  "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "who",
+    "locator": "Who must file",
+    "text": "A U.S. person, including a citizen, resident, corporation, partnership, limited liability company, trust and estate, must file an FBAR to report: a financial interest in or signature or other authority over at least one financial account located outside the United States if the aggregate value of those foreign financial accounts exceeded $10,000 at any time during the calendar year reported."
+   },
+   {
+    "key": "no_income_needed",
+    "locator": "Who must file",
+    "text": "Whether the account produced taxable income has no effect on whether the account is a foreign financial account for FBAR purposes."
+   },
+   {
+    "key": "when",
+    "locator": "When to file",
+    "text": "The FBAR is an annual report, due April 15 following the calendar year reported. You’re allowed an automatic extension to October 15 if you fail to meet the FBAR annual due date of April 15. You don’t need to request an extension to file the FBAR."
+   },
+   {
+    "key": "how",
+    "locator": "How to file",
+    "text": "You must file the FBAR electronically through FinCEN’s BSA E-Filing System. You don’t file the FBAR with your federal tax return."
+   },
+   {
+    "key": "records",
+    "locator": "Keeping records",
+    "text": "Generally, you must keep these records for five years from the due date of the FBAR."
+   },
+   {
+    "key": "penalties",
+    "locator": "Penalties",
+    "text": "You may be subject to civil monetary penalties and/or criminal penalties for FBAR reporting and/or recordkeeping violations. Assertion of penalties depends on facts and circumstances. Civil FBAR penalty maximums in Title 31 of the United States Code are adjusted annually for inflation."
+   },
+   {
+    "key": "late",
+    "locator": "Filing delinquent FBARs",
+    "text": "Filing an FBAR late or not at all is a violation and may subject you to penalties. If the IRS hasn’t contacted you about a late FBAR and you’re not under civil or criminal investigation by the IRS, you should file late FBARs as soon as possible to keep potential penalties to a minimum."
+   }
+  ]
+ },
+ {
+  "id": "US-RPT-02",
+  "group": "U.S. reporting rules",
+  "publisher": "Internal Revenue Service (IRS)",
+  "title": "Gifts from foreign person",
+  "doc_no": "IRS web page (Form 3520, Part IV)",
+  "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "general",
+    "locator": "General rule: Foreign gifts and bequests",
+    "text": "In general, a foreign gift or bequest is any amount received from a person other than a U.S. person (a foreign person) that the recipient treats as a gift or bequest and excludes from gross income."
+   },
+   {
+    "key": "threshold",
+    "locator": "Reporting requirements, first bullet",
+    "text": "For gifts or bequests from a nonresident alien or foreign estate, you are required to report the receipt of such gifts or bequests only if the aggregate amount received from that nonresident alien or foreign estate, or foreign person that you know or have reason to know are related to the nonresident alien or foreign estate, exceeds $100,000 during the taxable year. If the gifts or bequests exceed $100,000, you must separately identify each gift in excess of $5,000."
+   },
+   {
+    "key": "due",
+    "locator": "Reporting requirements",
+    "text": "File Form 3520 separately from your income tax return by following the directions in the Instructions to the Form 3520. In general, the due date for a U.S. person to file a Form 3520 is the 15th day of the fourth month following the end of the U.S. person's tax year."
+   },
+   {
+    "key": "penalty",
+    "locator": "International tax gap series, first paragraph",
+    "text": "If you file Form 3520 late, or if the information provided is incomplete or incorrect, the IRS may determine the income tax consequences of the receipt of such foreign gift or bequest and you may be subject to penalties under IRC section 6039F(c) if you do not have reasonable cause."
+   }
+  ]
+ },
+ {
+  "id": "US-RPT-03",
+  "group": "U.S. reporting rules",
+  "publisher": "Financial Crimes Enforcement Network (FinCEN), U.S. Treasury — Electronic Code of Federal Regulations",
+  "title": "31 CFR 1010.821 — Penalty adjustment and table",
+  "doc_no": "eCFR, displayed as \"up to date as of 11/09/2026\"; the eCFR states it is authoritative but unofficial",
+  "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "currency",
+    "locator": "Page header",
+    "text": "Displaying title 31, up to date as of 11/09/2026. Title 31 was last amended 11/06/2026."
+   },
+   {
+    "key": "column",
+    "locator": "Table 1, last column heading",
+    "text": "Maximum penalty amounts or range of minimum and maximum penalty amounts for penalties assessed on or after January 17, 2025"
+   },
+   {
+    "key": "nonwillful",
+    "locator": "Table 1, row 31 U.S.C. 5321(a)(5)(B)(i)",
+    "text": "Foreign Financial Agency Transaction—Non-Willful Violation of Transaction | 10,000 | 16,536"
+   },
+   {
+    "key": "willful",
+    "locator": "Table 1, row 31 U.S.C. 5321(a)(5)(C)(i)(I)",
+    "text": "Foreign Financial Agency Transaction—Willful Violation of Transaction | 100,000 | 165,353"
+   },
+   {
+    "key": "history",
+    "locator": "Amendment history under Table 1",
+    "text": "89 FR 4821, Jan. 25, 2024; 90 FR 5630, Jan. 17, 2025"
+   }
+  ],
+  "values": {
+   "fbar_nonwillful_max": 16536,
+   "fbar_willful_floor": 165353
+  }
+ },
+ {
+  "id": "US-RPT-04",
+  "group": "U.S. reporting rules",
+  "publisher": "Internal Revenue Service (IRS)",
+  "title": "Comparison of Form 8938 and FBAR requirements",
+  "doc_no": "IRS web page",
+  "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "both",
+    "locator": "First paragraph",
+    "text": "The Form 8938 filing requirement does not replace or otherwise affect a taxpayer’s obligation to file FinCEN Form 114 (Report of Foreign Bank and Financial Accounts)."
+   },
+   {
+    "key": "thr_us",
+    "locator": "Table row \"Reporting threshold (total value of assets)\", Form 8938 column, living in the US",
+    "text": "Specified individuals living in the US: Unmarried individual (or married filing separately): Total value of assets was more than $50,000 on the last day of the tax year, or more than $75,000 at any time during the year. Married individual filing jointly: Total value of assets was more than $100,000 on the last day of the tax year, or more than $150,000 at any time during the year."
+   },
+   {
+    "key": "thr_abroad",
+    "locator": "Table row \"Reporting threshold (total value of assets)\", Form 8938 column, living outside the US",
+    "text": "Specified individuals living outside the US: Unmarried individual (or married filing separately): Total value of assets was more than $200,000 on the last day of the tax year, or more than $300,000 at any time during the year. Married individual filing jointly: Total value of assets was more than $400,000 on the last day of the tax year, or more than $600,000 at any time during the year."
+   },
+   {
+    "key": "thr_fbar",
+    "locator": "Table row \"Reporting threshold (total value of assets)\", FBAR column",
+    "text": "Aggregate value of financial accounts exceeds $10,000 at any time during the calendar year. This is a cumulative balance, meaning if you have 2 accounts with a combined account balance greater than $10,000 at any one time, both accounts would have to be reported."
+   },
+   {
+    "key": "pen_8938",
+    "locator": "Table row \"Penalties\", Form 8938 column",
+    "text": "Up to $10,000 for failure to disclose and an additional $10,000 for each 30 days of non-filing after IRS notice of a failure to disclose, for a potential maximum penalty of $60,000; criminal penalties may also apply"
+   },
+   {
+    "key": "fx",
+    "locator": "Table row \"How are maximum account or asset values determined and reported?\", FBAR column",
+    "text": "Use periodic account statements to determine the maximum value in the currency of the account. Convert to U.S. dollars using the end of the calendar year exchange rate and report in U.S. dollars."
+   },
+   {
+    "key": "real_estate",
+    "locator": "Table \"Types of foreign assets\", row \"Foreign real estate held directly\"",
+    "text": "Foreign real estate held directly | No | No"
+   }
+  ]
+ },
+ {
+  "id": "US-TAX-01",
+  "group": "U.S. tax rules",
+  "publisher": "Internal Revenue Service (IRS)",
+  "title": "U.S. citizens and resident aliens abroad",
+  "doc_no": "IRS web page",
+  "url": "https://www.irs.gov/individuals/international-taxpayers/us-citizens-and-resident-aliens-abroad",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "worldwide",
+    "locator": "First paragraph",
+    "text": "If you are a U.S. citizen or resident alien, the rules for filing income, estate, and gift tax returns and paying estimated tax are generally the same whether you are in the United States or abroad. You are subject to tax on worldwide income from all sources and must report all taxable income and pay taxes according to the Internal Revenue Code."
+   },
+   {
+    "key": "benefits",
+    "locator": "Second paragraph",
+    "text": "Many Americans living abroad qualify for special tax benefits, such as the foreign earned income exclusion and foreign tax credit, but they can only get these benefits by filing a relevant U.S. return."
+   },
+   {
+    "key": "f3520",
+    "locator": "Form 3520 list, second bullet",
+    "text": "Receipt of more than $100,000 in gifts or bequests from a nonresident alien individual or foreign estate (including foreign persons related to that nonresident alien individual or foreign estate)"
+   }
+  ]
+ },
+ {
+  "id": "US-TAX-02",
+  "group": "U.S. tax rules",
+  "publisher": "Internal Revenue Service (IRS)",
+  "title": "Foreign Tax Credit",
+  "doc_no": "IRS web page (Form 1116)",
+  "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "may",
+    "locator": "First paragraph",
+    "text": "If you paid or accrued foreign taxes to a foreign country or U.S. possession and are subject to U.S. tax on the same income, you may be able to take either a credit or an itemized deduction for those taxes."
+   },
+   {
+    "key": "qualifying",
+    "locator": "Qualifying foreign taxes",
+    "text": "You can claim a credit only for foreign taxes that are imposed on you by a foreign country or U.S. possession. Generally, only income, war profits and excess profits taxes qualify for the credit."
+   },
+   {
+    "key": "feie_interaction",
+    "locator": "Qualifying foreign taxes, last paragraph",
+    "text": "If you elect to exclude either foreign earned income or foreign housing costs, you cannot take a foreign tax credit for taxes on income you exclude. If you do take the credit, one or both of the elections may be considered revoked."
+   },
+   {
+    "key": "treaty_limit",
+    "locator": "Compliance issues, fourth bullet",
+    "text": "The amount of foreign tax that qualifies as a foreign tax credit is not necessarily the amount of tax withheld by the foreign country. If you are entitled to a reduced rate of foreign tax based on an income tax treaty between the United States and a foreign country, only that reduced tax qualifies for the credit. It is up to you whether you want to file with the foreign country for a refund of the difference (excess) for which a foreign tax credit is not allowed."
+   },
+   {
+    "key": "complex",
+    "locator": "Compliance issues, first sentence",
+    "text": "The foreign tax credit laws are complex."
+   },
+   {
+    "key": "ten_years",
+    "locator": "French CSG/CRDS section, third paragraph",
+    "text": "Generally individual taxpayers have ten (10) years to file a claim for refund of U.S. income taxes paid if they find they paid or accrued more creditable foreign taxes than what they previously claimed."
+   }
+  ]
+ },
+ {
+  "id": "US-TAX-03",
+  "group": "U.S. tax rules",
+  "publisher": "U.S. Government Publishing Office (govinfo.gov) — United States Code, 2024 Edition",
+  "title": "26 U.S.C. § 988 — Treatment of certain foreign currency transactions",
+  "doc_no": "Internal Revenue Code § 988(a)(1)(A), (c)(1)(C), (e)",
+  "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "a1A",
+    "locator": "§ 988(a)(1)(A)",
+    "text": "Except as otherwise provided in this section, any foreign currency gain or loss attributable to a section 988 transaction shall be computed separately and treated as ordinary income or loss (as the case may be)."
+   },
+   {
+    "key": "c1C",
+    "locator": "§ 988(c)(1)(C)(i)–(ii)",
+    "text": "In the case of any disposition of any nonfunctional currency— (I) such disposition shall be treated as a section 988 transaction, and (II) any gain or loss from such transaction shall be treated as foreign currency gain or loss (as the case may be). … the term \"nonfunctional currency\" includes coin or currency, and nonfunctional currency denominated demand or time deposits or similar instruments issued by a bank or other financial institution."
+   },
+   {
+    "key": "e1",
+    "locator": "§ 988(e)(1)",
+    "text": "The preceding provisions of this section shall not apply to any section 988 transaction entered into by an individual which is a personal transaction."
+   },
+   {
+    "key": "e2",
+    "locator": "§ 988(e)(2)",
+    "text": "If— (A) nonfunctional currency is disposed of by an individual in any transaction, and (B) such transaction is a personal transaction, no gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200."
+   },
+   {
+    "key": "e3",
+    "locator": "§ 988(e)(3)",
+    "text": "For purposes of this subsection, the term \"personal transaction\" means any transaction entered into by an individual, except that such term shall not include any transaction to the extent that expenses properly allocable to such transaction meet the requirements of— (A) section 162 (other than traveling expenses described in subsection (a)(2) thereof), or (B) section 212 (other than that part of section 212 dealing with expenses incurred in connection with taxes)."
+   }
+  ]
+ },
+ {
+  "id": "US-TAX-04",
+  "group": "U.S. tax rules",
+  "publisher": "Internal Revenue Service (IRS)",
+  "title": "Foreign earned income exclusion",
+  "doc_no": "IRS web page (Form 2555)",
+  "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-earned-income-exclusion",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "tests",
+    "locator": "First paragraph and bullets",
+    "text": "To claim these benefits, you must have foreign earned income, your tax home must be in a foreign country, and you must be one of the following: A U.S. citizen who is a bona fide resident of a foreign country or countries for an uninterrupted period that includes an entire tax year, … or A U.S. citizen or a U.S. resident alien who is physically present in a foreign country or countries for at least 330 full days during any period of 12 consecutive months."
+   },
+   {
+    "key": "amounts",
+    "locator": "Fourth paragraph",
+    "text": "If you are a U.S. citizen or a resident alien of the United States and you live abroad, you are taxed on your worldwide income. However, you may qualify to exclude your foreign earnings from income up to an amount that is adjusted annually for inflation ($107,600 for 2020, $108,700 for 2021, $112,000 for 2022, and $120,000 for 2023)."
+   },
+   {
+    "key": "earned_only",
+    "locator": "Other rules — Foreign-earned income",
+    "text": "Foreign-earned income means wages, salaries, professional fees, or other amounts paid to you for personal services rendered by you."
+   },
+   {
+    "key": "not_earned",
+    "locator": "Other rules — Not foreign earned income",
+    "text": "Payments received after the end of the tax year following the year in which the services that earned the income were performed … Pension or annuity payments, including social security benefits"
    }
   ]
  }
