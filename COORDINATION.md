@@ -1355,6 +1355,44 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 - **Pages:** `pages-build-deployment` run https://github.com/sassnarep3-star/China2/actions/runs/42983349325 for head `89ea1e6` completed SUCCESS (build, deploy, report-build-status). The legacy `/pages/builds` API lists the 07:58:05Z build as `built` with `error: null` but shows the previous commit `c36198d` in its `commit` field; the deployment run above is the record for the merge commit. The sandbox cannot reach `github.io`, so no live-page fetch is claimed. Entry point: https://sassnarep3-star.github.io/China2/guide-fb2f2562/
 - **Status:** G1–G7 done. Flagged items (F-01…F-18 and the 35 conflicting repo lines) remain needs review and did not block the merge.
 
+## Session `arena/732da534-china2` — targeted safety and delivery review (2026-11-11 UTC)
+
+Arena fixes this session to the current branch; no session-named branch will be created. Existing completed guides and open PRs are retained. This session does not claim or modify another session's files.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Independently check material recent-guide claims against cited primary sources; publish a focused, source-linked review and verification boundary | in progress | arena/732da534-china2 | `review-732da534/**`; `COORDINATION.md` append-only |
+| Validate existing entry points and publish review via PR when checks permit | in progress | arena/732da534-china2 | `review-732da534/**`; `COORDINATION.md` append-only; mechanically generated inventories only if required by existing CI |
+
+- Claim pushed as `73bff5f`; the session branch did not yet exist remotely, so its first pull reported missing ref; fetched and rebased onto `origin/main`, then pushed. No conflicts.
+- Independent source checks retrieved 2026-11-11: SAFE Tianjin [2026 income FAQ](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), [2024 quota FAQ](https://www.safe.gov.cn/tianjin/2024/0621/2529.html), [Hebei emigrant guide](https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf), [2014 circular §VI](https://www.safe.gov.cn/safe/2014/0124/5476.html); [BOC reference board](https://www.boc.cn/sourcedb/whpj/) and [fee schedule](https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html); [US Code §988 2024 edition](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm); IRS [FTC](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit), [FBAR](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar), [comparison](https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements).
+- **Needs review / request to guide owner:** `guide-fb2f2562/content.py` executive summary says emigrant transfer is "free, 25 working days at most" (also generated `EXECUTIVE_SUMMARY.md` and `summary.html`). SAFE Hebei sections VIII–IX state no *administrative license fee*, a 5-day acceptance time and 20 days after acceptance for approval with possible 10-day extension and exclusions; neither an end-to-end maximum nor a cost-free transfer is established. Please qualify wording and regenerate. The owner’s files were not edited.
+- Other limitations published at `review-732da534/index.html`: conditional emigration eligibility, limited cheapest-route comparison, quoted-rate versus actual rate, permanent residence quota distinction, personal §988 exception, FTC limits and FBAR/form distinctions. This is a focused review, not a complete line-by-line certification. Published values remain illustrations, with unknown individual costs and taxes unverified.
+- Verification: seven review rows each contain primary-publisher links and all relative review-page links exist; `guide-fb2f2562/verify.py` passed 12,865 checks; `playbook-c1d73006/verify.py` passed 24,050; `verification-3347ca0a/verify.py` passed 542; `acceptance-382482c0/verify.py` passed 2,915. `ladder/model.py`, `ladder/build.py`, and `ladder/verify.py` passed 9,345 checks; `ladder/audit.html` mechanically regenerated to include the new tracked page, with the generator unchanged. These checks do not certify legal conclusions or all historical lines.
+- Scope request to final integrator/owner of the generated root hub: link `review-732da534/index.html` from the landing page / relevant flags so readers encounter the new correction; this session has not edited another owner's navigation or guide content.
+- Focused source-review task: **done**; emigrant time/cost wording and all private facts remain **needs review**, published in `review-732da534/index.html`. PR/deploy task remains in progress.
+---
+
+## Session `arena/5e1a6d91-china2` — fresh dated verification + decision synthesis (disjoint scope, 2026-11-11 UTC)
+
+> Arena pins this session to `arena/5e1a6d91-china2`; it substitutes for `session-<id>/<task>`. Full board read before claiming. All prior scopes preserved unedited. Open/stale PRs not touched.
+
+| # | Task | Status | Owner | Files |
+|---|---|---|---|---|
+| N1 | Fresh official-source re-fetch (SAFE/PBOC/STA/IRS/eCFR/CBP/bank boards+tariffs/Wise) with quotes | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N2 | Executive summary + Q&A decision register (known/unknown/how to discover) | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N3 | All methods pros/cons/steps + penalty layers + $10k→$400k cost tables (published inputs only, blanks flagged) | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N4 | Verifier+CI, PR→merge→Pages confirm, record | in progress | arena/5e1a6d91-china2 | `.github/workflows/verify-5e1a6d91.yml`, COORDINATION.md append-only |
+
+Policy: no private fact inferred; every row links official publisher; unverified = blank+flagged; no personal tax bill asserted.
+
+### Publication result — arena/5e1a6d91 (N1-N4 done)
+- PR https://github.com/sassnarep3-star/China2/pull/85 MERGED, merge commit 973eb54cf6c67617e90def230a5e58a598060590; all 13 checks passed. Pages builds/latest: built at that commit, error null. Live confirmed (cache-busted): https://sassnarep3-star.github.io/China2/verify-5e1a6d91/index.html (milestones $10k $53.41 / $400k $900.50, BOC board 2026-11-11). Sources re-fetched today: SAFE FAQ08/Case9/FAQ10, BOC board+fees, IRS FTC/FBAR, 26 USC 988, eCFR 1010.821, Wise. Unverified blank+flagged F1-F5, needs review, non-blocking. No personal tax asserted.
+- Concurrency: PR #86 initially could not merge because main advanced through PR #85. Merged `origin/main` into this fixed session branch. The append-only task-board conflict was resolved by retaining both sessions' sections; the ladder inventory conflict was resolved by regenerating the combined tracked-file inventory using its unchanged generator. No other work discarded or force-pushed.
+
+### Publication result — `arena/732da534-china2`
+- PR [#86](https://github.com/sassnarep3-star/China2/pull/86) **merged** 2026-11-11T12:53:22Z, merge commit `21c30ad5d36b9bb4cc88e8a84c2bb8044207480b`. All 13 reported PR checks passed after the concurrent integration; a full line-by-line substantive certification was not performed.
+- GitHub Pages run [43024243349](https://github.com/sassnarep3-star/China2/actions/runs/43024243349) for that merge completed **success** (build, deploy, report). Review URL: https://sassnarep3-star.github.io/China2/review-732da534/ . No live browser retrieval was claimed. The navigation/correction requests and other flagged issues remain **needs review**. Both tasks in this session are done.
 ---
 
 ## Session `arena/21f3ecb6-china2` — consolidated decision dashboard + fresh same-day verification (2026-11-11 UTC)
