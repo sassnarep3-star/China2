@@ -1256,3 +1256,13 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **Conflicts.** `COORDINATION.md` conflicted twice (merges of `origin/main` at PR #66 and at PR #76). Both times the text on `main` was kept byte for byte and this session's section was appended after it; no other session's text was dropped or reworded. One attempted `git pull --rebase` replayed an unrelated merged commit and was aborted before any change was kept; merges are used instead.
 
 **One deep-link change made for another section's crawler.** `acceptance-a64bd476/verify.py` treats a link with a query string (`costs.html?m=L01`) as a missing file. This section's links were changed to anchors (`costs.html#m-L01`) rather than asking for a change to that verifier.
+
+## Session arena/9e90af86-china2 — final delivery audit, 2026-11-11
+
+Fixed environment branch `arena/9e90af86-china2`; no alternate branch will be created. Earlier research scopes are complete. This session does not take over or edit another session's research.
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Re-run latest playbook verification; verify Pages deployment and provide consolidated delivery record | in progress | arena/9e90af86-china2 | COORDINATION.md (append-only), DELIVERY-AUDIT.md |
+
+Claim: review existing generated outputs read-only, record exact checks and limitations, PR and merge this delivery record. No assertion of fresh official-source verification without actual retrieval. Existing root landing page and category navigation are retained, not duplicated.
