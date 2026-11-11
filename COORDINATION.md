@@ -1256,3 +1256,18 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **Conflicts.** `COORDINATION.md` conflicted twice (merges of `origin/main` at PR #66 and at PR #76). Both times the text on `main` was kept byte for byte and this session's section was appended after it; no other session's text was dropped or reworded. One attempted `git pull --rebase` replayed an unrelated merged commit and was aborted before any change was kept; merges are used instead.
 
 **One deep-link change made for another section's crawler.** `acceptance-a64bd476/verify.py` treats a link with a query string (`costs.html?m=L01`) as a missing file. This section's links were changed to anchors (`costs.html#m-L01`) rather than asking for a change to that verifier.
+
+---
+
+## Session `arena/382482c0-china2` — corrective final integration and acceptance (2026-11-11 UTC)
+
+Arena pins this session to the existing fixed branch; it substitutes for a session-named branch. The complete board and open PR list were read. Open PRs #39, #48, #49, #52, #53, #55, #63, #65, #68, #69 and #71 have been inactive for over 60 minutes and are conflicting; none is taken over or edited. This session does not create another duplicate research dashboard.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| A1 | Fresh official-source spot verification of the load-bearing PRC/U.S. rules and published bank inputs; document limitations | in progress | `acceptance-382482c0/**` |
+| A2 | Correct final-integration navigation and outdated README claims; promote the complete 40-tier guide without endorsing unresolved assumptions | in progress | `verification-3347ca0a/build.py` (navigation/corrections only), generated `index.html`, `README.md` |
+| A3 | Run all applicable deterministic builds/verifiers and local-link/mobile checks; publish flagged irregularities | in progress | `acceptance-382482c0/**`; generated snapshots only where their unmodified generators require |
+| A4 | PR to main, merge after green checks, confirm Pages deploy, record exact results | in progress | `COORDINATION.md` (append-only) |
+
+Policy: no private fact is inferred; blank means unverified, never zero; commercial estimates are dated illustrations, not executable quotes or tax determinations; every substantive new table row will link its primary publisher. Existing source evidence is not treated as proof of personal eligibility or current all-in cost.
