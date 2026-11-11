@@ -1511,322 +1511,602 @@
    {
     "usd": 10000,
     "cny_at_fed": 66760.0,
+    "cny_at_wise_rate": 66666.67,
     "transfers_bank_app": 1,
-    "transfers_alipay": 2,
-    "fee": null,
-    "rate": null
+    "transfers_alipay": 1,
+    "fee_cny_published_scale": 408.09,
+    "fee_cny_published_scale_balance": 402.66,
+    "fee_usd_published_scale": 61.21,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 408.09
    },
    {
     "usd": 20000,
     "cny_at_fed": 133520.0,
+    "cny_at_wise_rate": 133333.33,
     "transfers_bank_app": 1,
-    "transfers_alipay": 3,
-    "fee": null,
-    "rate": null
+    "transfers_alipay": 1,
+    "fee_cny_published_scale": 816.18,
+    "fee_cny_published_scale_balance": 805.33,
+    "fee_usd_published_scale": 122.43,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 816.18
    },
    {
     "usd": 30000,
     "cny_at_fed": 200280.0,
+    "cny_at_wise_rate": 200000.0,
     "transfers_bank_app": 1,
-    "transfers_alipay": 5,
-    "fee": null,
-    "rate": null
+    "transfers_alipay": 1,
+    "fee_cny_published_scale": 1224.27,
+    "fee_cny_published_scale_balance": 1207.99,
+    "fee_usd_published_scale": 183.64,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 1224.27
    },
    {
     "usd": 40000,
     "cny_at_fed": 267040.0,
-    "transfers_bank_app": 1,
-    "transfers_alipay": 6,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 266666.67,
+    "transfers_bank_app": 2,
+    "transfers_alipay": 2,
+    "fee_cny_published_scale": 1632.36,
+    "fee_cny_published_scale_balance": 1610.65,
+    "fee_usd_published_scale": 244.85,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 1632.36
    },
    {
     "usd": 50000,
     "cny_at_fed": 333800.0,
+    "cny_at_wise_rate": 333333.33,
     "transfers_bank_app": 2,
-    "transfers_alipay": 7,
-    "fee": null,
-    "rate": null
+    "transfers_alipay": 2,
+    "fee_cny_published_scale": 2040.45,
+    "fee_cny_published_scale_balance": 2013.32,
+    "fee_usd_published_scale": 306.07,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 2040.45
    },
    {
     "usd": 60000,
     "cny_at_fed": 400560.0,
+    "cny_at_wise_rate": 400000.0,
     "transfers_bank_app": 2,
-    "transfers_alipay": 9,
-    "fee": null,
-    "rate": null
+    "transfers_alipay": 2,
+    "fee_cny_published_scale": 2448.54,
+    "fee_cny_published_scale_balance": 2415.98,
+    "fee_usd_published_scale": 367.28,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 2448.54
    },
    {
     "usd": 70000,
     "cny_at_fed": 467320.0,
-    "transfers_bank_app": 2,
-    "transfers_alipay": 10,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 466666.67,
+    "transfers_bank_app": 3,
+    "transfers_alipay": 3,
+    "fee_cny_published_scale": 2856.63,
+    "fee_cny_published_scale_balance": 2818.64,
+    "fee_usd_published_scale": 428.49,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 2856.63
    },
    {
     "usd": 80000,
     "cny_at_fed": 534080.0,
-    "transfers_bank_app": 2,
-    "transfers_alipay": 11,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 533333.33,
+    "transfers_bank_app": 3,
+    "transfers_alipay": 3,
+    "fee_cny_published_scale": 3264.72,
+    "fee_cny_published_scale_balance": 3221.31,
+    "fee_usd_published_scale": 489.71,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 3264.72
    },
    {
     "usd": 90000,
     "cny_at_fed": 600840.0,
+    "cny_at_wise_rate": 600000.0,
     "transfers_bank_app": 3,
-    "transfers_alipay": 13,
-    "fee": null,
-    "rate": null
+    "transfers_alipay": 3,
+    "fee_cny_published_scale": 3672.81,
+    "fee_cny_published_scale_balance": 3623.97,
+    "fee_usd_published_scale": 550.92,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 3672.81
    },
    {
     "usd": 100000,
     "cny_at_fed": 667600.0,
-    "transfers_bank_app": 3,
-    "transfers_alipay": 14,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 666666.67,
+    "transfers_bank_app": 4,
+    "transfers_alipay": 4,
+    "fee_cny_published_scale": 4080.9,
+    "fee_cny_published_scale_balance": 4026.63,
+    "fee_usd_published_scale": 612.14,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 4080.9
    },
    {
     "usd": 110000,
     "cny_at_fed": 734360.0,
-    "transfers_bank_app": 3,
-    "transfers_alipay": 15,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 733333.33,
+    "transfers_bank_app": 4,
+    "transfers_alipay": 4,
+    "fee_cny_published_scale": 4488.99,
+    "fee_cny_published_scale_balance": 4429.3,
+    "fee_usd_published_scale": 673.35,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 4488.99
    },
    {
     "usd": 120000,
     "cny_at_fed": 801120.0,
-    "transfers_bank_app": 3,
-    "transfers_alipay": 17,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 800000.0,
+    "transfers_bank_app": 4,
+    "transfers_alipay": 4,
+    "fee_cny_published_scale": 4897.08,
+    "fee_cny_published_scale_balance": 4831.96,
+    "fee_usd_published_scale": 734.56,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 4897.08
    },
    {
     "usd": 130000,
     "cny_at_fed": 867880.0,
-    "transfers_bank_app": 3,
-    "transfers_alipay": 18,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 866666.67,
+    "transfers_bank_app": 5,
+    "transfers_alipay": 5,
+    "fee_cny_published_scale": 5305.17,
+    "fee_cny_published_scale_balance": 5234.62,
+    "fee_usd_published_scale": 795.78,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 5305.17
    },
    {
     "usd": 140000,
     "cny_at_fed": 934640.0,
-    "transfers_bank_app": 4,
-    "transfers_alipay": 19,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 933333.33,
+    "transfers_bank_app": 5,
+    "transfers_alipay": 5,
+    "fee_cny_published_scale": 5713.26,
+    "fee_cny_published_scale_balance": 5637.29,
+    "fee_usd_published_scale": 856.99,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 5713.26
    },
    {
     "usd": 150000,
     "cny_at_fed": 1001400.0,
-    "transfers_bank_app": 4,
-    "transfers_alipay": 21,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1000000.0,
+    "transfers_bank_app": 5,
+    "transfers_alipay": 5,
+    "fee_cny_published_scale": 6121.35,
+    "fee_cny_published_scale_balance": 6039.95,
+    "fee_usd_published_scale": 918.2,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 6121.35
    },
    {
     "usd": 160000,
     "cny_at_fed": 1068160.0,
-    "transfers_bank_app": 4,
-    "transfers_alipay": 22,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1066666.67,
+    "transfers_bank_app": 6,
+    "transfers_alipay": 6,
+    "fee_cny_published_scale": 6529.44,
+    "fee_cny_published_scale_balance": 6442.61,
+    "fee_usd_published_scale": 979.42,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 6529.44
    },
    {
     "usd": 170000,
     "cny_at_fed": 1134920.0,
-    "transfers_bank_app": 4,
-    "transfers_alipay": 23,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1133333.33,
+    "transfers_bank_app": 6,
+    "transfers_alipay": 6,
+    "fee_cny_published_scale": 6937.53,
+    "fee_cny_published_scale_balance": 6845.28,
+    "fee_usd_published_scale": 1040.63,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 6937.53
    },
    {
     "usd": 180000,
     "cny_at_fed": 1201680.0,
-    "transfers_bank_app": 5,
-    "transfers_alipay": 25,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1200000.0,
+    "transfers_bank_app": 6,
+    "transfers_alipay": 6,
+    "fee_cny_published_scale": 7345.62,
+    "fee_cny_published_scale_balance": 7247.94,
+    "fee_usd_published_scale": 1101.84,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 7345.62
    },
    {
     "usd": 190000,
     "cny_at_fed": 1268440.0,
-    "transfers_bank_app": 5,
-    "transfers_alipay": 26,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1266666.67,
+    "transfers_bank_app": 7,
+    "transfers_alipay": 7,
+    "fee_cny_published_scale": 7753.71,
+    "fee_cny_published_scale_balance": 7650.6,
+    "fee_usd_published_scale": 1163.06,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 7753.71
    },
    {
     "usd": 200000,
     "cny_at_fed": 1335200.0,
-    "transfers_bank_app": 5,
-    "transfers_alipay": 27,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1333333.33,
+    "transfers_bank_app": 7,
+    "transfers_alipay": 7,
+    "fee_cny_published_scale": 8161.8,
+    "fee_cny_published_scale_balance": 8053.27,
+    "fee_usd_published_scale": 1224.27,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 8161.8
    },
    {
     "usd": 210000,
     "cny_at_fed": 1401960.0,
-    "transfers_bank_app": 5,
-    "transfers_alipay": 29,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1400000.0,
+    "transfers_bank_app": 7,
+    "transfers_alipay": 7,
+    "fee_cny_published_scale": 8569.89,
+    "fee_cny_published_scale_balance": 8455.93,
+    "fee_usd_published_scale": 1285.48,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 8569.89
    },
    {
     "usd": 220000,
     "cny_at_fed": 1468720.0,
-    "transfers_bank_app": 5,
-    "transfers_alipay": 30,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1466666.67,
+    "transfers_bank_app": 8,
+    "transfers_alipay": 8,
+    "fee_cny_published_scale": 8977.98,
+    "fee_cny_published_scale_balance": 8858.59,
+    "fee_usd_published_scale": 1346.7,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 8977.98
    },
    {
     "usd": 230000,
     "cny_at_fed": 1535480.0,
-    "transfers_bank_app": 6,
-    "transfers_alipay": 31,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1533333.33,
+    "transfers_bank_app": 8,
+    "transfers_alipay": 8,
+    "fee_cny_published_scale": 9386.07,
+    "fee_cny_published_scale_balance": 9261.26,
+    "fee_usd_published_scale": 1407.91,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 9386.07
    },
    {
     "usd": 240000,
     "cny_at_fed": 1602240.0,
-    "transfers_bank_app": 6,
-    "transfers_alipay": 33,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1600000.0,
+    "transfers_bank_app": 8,
+    "transfers_alipay": 8,
+    "fee_cny_published_scale": 9794.16,
+    "fee_cny_published_scale_balance": 9663.92,
+    "fee_usd_published_scale": 1469.12,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 9794.16
    },
    {
     "usd": 250000,
     "cny_at_fed": 1669000.0,
-    "transfers_bank_app": 6,
-    "transfers_alipay": 34,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1666666.67,
+    "transfers_bank_app": 9,
+    "transfers_alipay": 9,
+    "fee_cny_published_scale": 10202.25,
+    "fee_cny_published_scale_balance": 10066.58,
+    "fee_usd_published_scale": 1530.34,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 10202.25
    },
    {
     "usd": 260000,
     "cny_at_fed": 1735760.0,
-    "transfers_bank_app": 6,
-    "transfers_alipay": 35,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1733333.33,
+    "transfers_bank_app": 9,
+    "transfers_alipay": 9,
+    "fee_cny_published_scale": 10610.34,
+    "fee_cny_published_scale_balance": 10469.25,
+    "fee_usd_published_scale": 1591.55,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 10610.34
    },
    {
     "usd": 270000,
     "cny_at_fed": 1802520.0,
-    "transfers_bank_app": 7,
-    "transfers_alipay": 37,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1800000.0,
+    "transfers_bank_app": 9,
+    "transfers_alipay": 9,
+    "fee_cny_published_scale": 11018.43,
+    "fee_cny_published_scale_balance": 10871.91,
+    "fee_usd_published_scale": 1652.76,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 11018.43
    },
    {
     "usd": 280000,
     "cny_at_fed": 1869280.0,
-    "transfers_bank_app": 7,
-    "transfers_alipay": 38,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1866666.67,
+    "transfers_bank_app": 10,
+    "transfers_alipay": 10,
+    "fee_cny_published_scale": 11426.52,
+    "fee_cny_published_scale_balance": 11274.57,
+    "fee_usd_published_scale": 1713.98,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 11426.52
    },
    {
     "usd": 290000,
     "cny_at_fed": 1936040.0,
-    "transfers_bank_app": 7,
-    "transfers_alipay": 39,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 1933333.33,
+    "transfers_bank_app": 10,
+    "transfers_alipay": 10,
+    "fee_cny_published_scale": 11834.61,
+    "fee_cny_published_scale_balance": 11677.24,
+    "fee_usd_published_scale": 1775.19,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 11834.61
    },
    {
     "usd": 300000,
     "cny_at_fed": 2002800.0,
-    "transfers_bank_app": 7,
-    "transfers_alipay": 41,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2000000.0,
+    "transfers_bank_app": 10,
+    "transfers_alipay": 10,
+    "fee_cny_published_scale": 12242.7,
+    "fee_cny_published_scale_balance": 12079.9,
+    "fee_usd_published_scale": 1836.41,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 12242.7
    },
    {
     "usd": 310000,
     "cny_at_fed": 2069560.0,
-    "transfers_bank_app": 7,
-    "transfers_alipay": 42,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2066666.67,
+    "transfers_bank_app": 11,
+    "transfers_alipay": 11,
+    "fee_cny_published_scale": 12650.79,
+    "fee_cny_published_scale_balance": 12482.56,
+    "fee_usd_published_scale": 1897.62,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 12650.79
    },
    {
     "usd": 320000,
     "cny_at_fed": 2136320.0,
-    "transfers_bank_app": 8,
-    "transfers_alipay": 43,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2133333.33,
+    "transfers_bank_app": 11,
+    "transfers_alipay": 11,
+    "fee_cny_published_scale": 13058.88,
+    "fee_cny_published_scale_balance": 12885.23,
+    "fee_usd_published_scale": 1958.83,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 13058.88
    },
    {
     "usd": 330000,
     "cny_at_fed": 2203080.0,
-    "transfers_bank_app": 8,
-    "transfers_alipay": 45,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2200000.0,
+    "transfers_bank_app": 11,
+    "transfers_alipay": 11,
+    "fee_cny_published_scale": 13466.97,
+    "fee_cny_published_scale_balance": 13287.89,
+    "fee_usd_published_scale": 2020.05,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 13466.97
    },
    {
     "usd": 340000,
     "cny_at_fed": 2269840.0,
-    "transfers_bank_app": 8,
-    "transfers_alipay": 46,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2266666.67,
+    "transfers_bank_app": 12,
+    "transfers_alipay": 12,
+    "fee_cny_published_scale": 13875.06,
+    "fee_cny_published_scale_balance": 13690.55,
+    "fee_usd_published_scale": 2081.26,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 13875.06
    },
    {
     "usd": 350000,
     "cny_at_fed": 2336600.0,
-    "transfers_bank_app": 8,
-    "transfers_alipay": 47,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2333333.33,
+    "transfers_bank_app": 12,
+    "transfers_alipay": 12,
+    "fee_cny_published_scale": 14283.15,
+    "fee_cny_published_scale_balance": 14093.22,
+    "fee_usd_published_scale": 2142.47,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 14283.15
    },
    {
     "usd": 360000,
     "cny_at_fed": 2403360.0,
-    "transfers_bank_app": 9,
-    "transfers_alipay": 49,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2400000.0,
+    "transfers_bank_app": 12,
+    "transfers_alipay": 12,
+    "fee_cny_published_scale": 14691.24,
+    "fee_cny_published_scale_balance": 14495.88,
+    "fee_usd_published_scale": 2203.69,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 14691.24
    },
    {
     "usd": 370000,
     "cny_at_fed": 2470120.0,
-    "transfers_bank_app": 9,
-    "transfers_alipay": 50,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2466666.67,
+    "transfers_bank_app": 13,
+    "transfers_alipay": 13,
+    "fee_cny_published_scale": 15099.33,
+    "fee_cny_published_scale_balance": 14898.54,
+    "fee_usd_published_scale": 2264.9,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 15099.33
    },
    {
     "usd": 380000,
     "cny_at_fed": 2536880.0,
-    "transfers_bank_app": 9,
-    "transfers_alipay": 51,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2533333.33,
+    "transfers_bank_app": 13,
+    "transfers_alipay": 13,
+    "fee_cny_published_scale": 15507.42,
+    "fee_cny_published_scale_balance": 15301.21,
+    "fee_usd_published_scale": 2326.11,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 15507.42
    },
    {
     "usd": 390000,
     "cny_at_fed": 2603640.0,
-    "transfers_bank_app": 9,
-    "transfers_alipay": 53,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2600000.0,
+    "transfers_bank_app": 13,
+    "transfers_alipay": 13,
+    "fee_cny_published_scale": 15915.51,
+    "fee_cny_published_scale_balance": 15703.87,
+    "fee_usd_published_scale": 2387.33,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 15915.51
    },
    {
     "usd": 400000,
     "cny_at_fed": 2670400.0,
-    "transfers_bank_app": 9,
-    "transfers_alipay": 54,
-    "fee": null,
-    "rate": null
+    "cny_at_wise_rate": 2666666.67,
+    "transfers_bank_app": 14,
+    "transfers_alipay": 14,
+    "fee_cny_published_scale": 16323.6,
+    "fee_cny_published_scale_balance": 16106.53,
+    "fee_usd_published_scale": 2448.54,
+    "fee_pct": 0.612,
+    "rate": 0.15,
+    "rate_source": "published panel",
+    "fee_is_extrapolated": true,
+    "fee": 16323.6
    }
   ],
   "M05": [
@@ -3923,6 +4203,248 @@
     "gain_if_basis_2025": 24794.5,
     "gain_if_basis_2024": 27926.0,
     "tax_on_gain": null
+   }
+  ],
+  "REMITTANCE_TAX": [
+   {
+    "usd": 10000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 100.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 20000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 200.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 30000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 300.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 40000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 400.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 50000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 500.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 60000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 600.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 70000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 700.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 80000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 800.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 90000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 900.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 100000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1000.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 110000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1100.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 120000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1200.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 130000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1300.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 140000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1400.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 150000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1500.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 160000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1600.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 170000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1700.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 180000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1800.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 190000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 1900.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 200000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2000.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 210000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2100.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 220000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2200.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 230000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2300.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 240000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2400.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 250000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2500.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 260000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2600.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 270000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2700.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 280000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2800.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 290000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 2900.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 300000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3000.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 310000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3100.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 320000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3200.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 330000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3300.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 340000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3400.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 350000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3500.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 360000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3600.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 370000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3700.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 380000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3800.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 390000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 3900.0,
+    "tax_if_wire_or_platform_usd": null
+   },
+   {
+    "usd": 400000,
+    "pct": 1.0,
+    "tax_if_taxable_usd": 4000.0,
+    "tax_if_wire_or_platform_usd": null
    }
   ]
  }

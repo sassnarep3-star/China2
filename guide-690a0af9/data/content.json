@@ -457,7 +457,7 @@
    "id": "P1",
    "layer": "Tax on the act of converting",
    "size": "None found",
-   "note": "None of the 30 official pages read today imposes a tax on exchanging CNY for USD. Current-account payments are not restricted [S09 Art. 5]; what applies is a documentary test [S08 Art. 13, S10].",
+   "note": "None of the official pages read today imposes a tax on exchanging CNY for USD. Current-account payments are not restricted [S09 Art. 5]; what applies is a documentary test [S08 Art. 13, S10].",
    "sources": [
     "S09",
     "S08",
@@ -508,7 +508,7 @@
    "id": "P6",
    "layer": "US tax on exchange gain",
    "size": "Gain above USD 200 per conversion is not excluded",
-   "note": "§988(e)(2) [S27]. With the RMB stronger than its 2025 IRS average (7.129) [S07] against 6.6886 today [S01], RMB acquired earlier can show a USD gain on conversion. The tax rate on that gain depends on your return — blank (flag F-11).",
+   "note": "§988(e)(2) [S27]. With the RMB stronger than its 2025 IRS average (7.129) [S07] than the BOC sell rate used here [S01], RMB acquired earlier can show a USD gain on conversion. The tax rate on that gain depends on your return — blank (flag F-11).",
    "sources": [
     "S27",
     "S07",
@@ -524,6 +524,16 @@
     "S21",
     "S22",
     "S23"
+   ]
+  },
+  {
+   "id": "P9",
+   "layer": "US excise tax on the transfer (new in 2026)",
+   "size": "1% — but only when the sender pays in cash or a cash-like instrument",
+   "note": "IRS: from 1 Jan 2026 a 1% remittance transfer tax applies to remittances sent from the United States when the sender provides cash, a money order, a cashier's check or a similar physical instrument [S31, S32]. The funding source decides it: a transfer paid from a bank account or by card is outside the charge, and a China→US transfer is not a remittance \"sent from the United States\" in the first place. Applies to you only if you fund a US-side transfer with cash (flag F-19).",
+   "sources": [
+    "S31",
+    "S32"
    ]
   },
   {
@@ -701,6 +711,43 @@
    ]
   },
   {
+   "id": "F-19",
+   "item": "Whether the 2026 1% remittance transfer tax can touch any step of a China→US repatriation",
+   "status": "Not applicable on the pages read — conditional",
+   "action": "Keep it out of the plan by funding any US-side leg from a bank account or card, never cash or a money order (IRS: the charge is limited to cash-like funding).",
+   "sources": [
+    "S31",
+    "S32"
+   ]
+  },
+  {
+   "id": "F-20",
+   "item": "Wise fee above the one published amount (CNY 200,000) is a straight-line extension of a single quote",
+   "status": "Extrapolated, flagged",
+   "action": "Get a live quote for your exact amount; Wise states fees fall as the amount rises, so the rows above CNY 200,000 overstate the fee and rows below it understate it.",
+   "sources": [
+    "S05"
+   ]
+  },
+  {
+   "id": "F-21",
+   "item": "Whether Wise's CNY-out service is available to a US citizen who no longer works in China",
+   "status": "Needs review — eligibility wording",
+   "action": "Wise's panel limits the service to foreign and non-mainland Chinese individuals who have worked or are currently working in China; confirm eligibility in the app before relying on M04.",
+   "sources": [
+    "S05"
+   ]
+  },
+  {
+   "id": "F-22",
+   "item": "Rounding in the published Wise panel (rate shown to 4 decimals, fee to 2)",
+   "status": "Precision limit",
+   "action": "Treat M04 figures as indicative to about 0.1%; the quote at the moment of transfer governs.",
+   "sources": [
+    "S05"
+   ]
+  },
+  {
    "id": "F-18",
    "item": "US–China tax treaty provisions (only the cover/contents of the IRS treaty PDF was read today)",
    "status": "Not used for any figure",
@@ -711,12 +758,14 @@
   }
  ],
  "summary": [
-  "There is no tax on converting CNY to USD in any of the 30 official pages read today. The real \"conversion penalty\" has four parts: the bank's exchange spread (0.21% at Bank of China, 0.50% at HSBC China to the board midpoint today), a capped wire fee (at most CNY 410 at BOC, CNY 620 at HSBC), PRC income tax that should already have been paid on how the money was earned, and US reporting duties.",
+  "There is no tax on converting CNY to USD in any of the official pages read today. The real \"conversion penalty\" has four parts: the bank's exchange spread (0.21% at Bank of China, 0.50% at HSBC China to the board midpoint today), a capped wire fee (at most CNY 410 at BOC, CNY 620 at HSBC), PRC income tax that should already have been paid on how the money was earned, and US reporting duties.",
   "The lawful path for a US citizen is a documented purchase of USD at the bank holding the money, followed by a wire to a US account in your own name. The bank's gate is paperwork: passport plus proof of where the RMB came from and that PRC tax was paid (SAFE 汇发[2007]1号 Art. 13; SAFE Tianjin 2026 Q&A).",
   "Cheapest published route for most amounts: Bank of China online purchase + online cross-border wire (an existing HSBC Premier customer pays less with Global Transfer at $10,000, before the CNY 300 monthly Premier fee). Known cost (fee + spread to the board midpoint) is $53.37 at USD 10,000 and $898.75 at USD 400,000 (0.225%). The same transfer through HSBC China costs $2,083.91 at USD 400,000. Correspondent and receiving fees are not published and are left blank.",
   "If you emigrated from China and the money is pre-emigration property, use SAFE's emigrant property transfer: free, 25 working days at most, and staged remittance was abolished in 2014.",
   "Avoid: splitting across other people's quotas (watch list for 3 years), underground swaps (fine up to 30%), disguised transfers (30%–100%), and any crypto/stablecoin bridge (illegal since 银发〔2026〕42号).",
-  "US side: none of the IRS, FinCEN or CBP pages read taxes the wire itself; what can be taxable is FX gain, which is not excluded above USD 200 per conversion (26 USC 988(e)(2)) — RMB bought at the 2025 IRS average of 7.129 and sold at 6.6886 shows about a 6.20% USD gain. File FBAR if your foreign accounts exceeded USD 10,000 at any time, and check Form 8938. FEIE is USD 132,900 for 2026 and USD 137,300 for 2027 (Rev. Proc. 2026-35 §3.41, verified in the official PDF today).",
+  "US side: none of the IRS, FinCEN or CBP pages read taxes the wire itself; what can be taxable is FX gain, which is not excluded above USD 200 per conversion (26 USC 988(e)(2)) — RMB acquired when the 2025 IRS average rate was 7.129 and converted at the BOC sell rate used here shows about a 6.20% USD gain. File FBAR if your foreign accounts exceeded USD 10,000 at any time, and check Form 8938. FEIE is USD 132,900 for 2026 and USD 137,300 for 2027 (Rev. Proc. 2026-35 §3.41, verified in the official PDF today).",
+  "A separate 1% US excise tax now exists on remittance transfers (from 1 Jan 2026), but the IRS limits it to transfers the sender funds with cash, a money order or a cashier's check; paying from a bank account or card keeps a transfer out of it, and a China→US wire is not a remittance sent from the US. Budget 1% only for a cash-funded US-side leg (flag F-19).",
+  "Using a commercial platform instead of a bank wire is priced, not blank: Wise's own panel quotes 0.1500 USD per CNY and a CNY 1,224.27 fee on CNY 200,000 — about 0.61%, or USD 61 at USD 10,000 and USD 2,448.54 at USD 400,000 on a straight-line extension of that single quote (flag F-20) — with eligibility limited to people who have worked in China (flag F-21).",
   "This repository's earlier sections still contain lines that conflict with the official text — emigrant transfers described as staged, a \"dollar-for-dollar\" foreign tax credit — and crypto mentioned in places without its illegal status (to check). Every line is listed with file and line number on review.html."
  ]
 }

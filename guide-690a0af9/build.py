@@ -126,7 +126,8 @@ FMT["m03_note"] = ("" if not CHEAPER_M03 else
                    f" (an existing HSBC Premier customer pays less with Global Transfer at {', '.join(usd(x)[:-3] for x in CHEAPER_M03)}, before the CNY 300 monthly Premier fee)")
 SUMMARY = [s.format(**FMT) for s in C.SUMMARY]
 SUMMARY_SRC = [["S09", "S01", "S02", "S03", "S04", "S20", "S21"], ["S08", "S10", "S13"], ["S01", "S03", "S02", "S04"],
-               ["S12", "S14"], ["S15", "S09", "S18"], ["S27", "S07", "S01", "S21", "S23", "S25", "S26"], ["S12", "S29", "S18"]]
+               ["S12", "S14"], ["S15", "S09", "S18"], ["S27", "S07", "S01", "S21", "S23", "S25", "S26"],
+               ["S31", "S32"], ["S05"], ["S01", "S09", "S12", "S18", "S29"]]
 
 REPO_FLAGS = [x for x in REVIEW["findings"] if x["verdict"] == "conflict"]
 
@@ -152,7 +153,7 @@ anything they do not state is left blank and listed on <a href="flagged.html">Fl
  <div class="kpi"><p class="l">US gain if RMB bought at 7.129</p><p class="v">≈ {FMT["gain_pct"]}</p><p class="s">Not excluded above $200 per conversion {srcs(["S27", "S07"])}</p></div>
 </div>
 <div class="notice"><strong>Before you choose:</strong> the route depends on where the money came from and whether PRC tax was paid.
-Answer the <a href="questions.html">12 decision questions</a> first. Nothing here is a personal tax determination or an executable quote.</div>
+Answer the <a href="questions.html">{len(C.QUESTIONS)} decision questions</a> first. Nothing here is a personal tax determination or an executable quote.</div>
 <h2>Start here</h2>
 <div class="cards">
  <a class="card" href="methods.html#M01"><b>Salary or other taxed income</b><span>Documented USD purchase + wire to your own US account (M01–M03). Bring passport, contract, tax records.</span></a>
@@ -169,7 +170,8 @@ Answer the <a href="questions.html">12 decision questions</a> first. Nothing her
  <a class="card" href="questions.html"><b>Decision questions</b><span>{len(C.QUESTIONS)} questions · known · unknown · how to find out</span></a>
  <a class="card" href="methods.html"><b>All methods</b><span>{len(C.METHODS)} methods · pros, cons, step by step</span></a>
  <a class="card" href="penalty.html"><b>The “conversion penalty”</b><span>{len(C.PENALTY)} layers · FX-gain calculator</span></a>
- <a class="card" href="costs.html"><b>Costs $10k–$400k</b><span>40 steps × {len(C.METHODS)} methods + US gain table</span></a>
+ <a class="card" href="costs.html"><b>Costs $10k–$400k</b><span>40 steps × {len(C.METHODS)} methods · cheapest-first table · Wise priced</span></a>
+ <a class="card" href="costs.html#rmit"><b>2026 US remittance tax</b><span>1% only on cash-funded transfers — not a China→US wire</span></a>
  <a class="card" href="review.html"><b>Repo review</b><span>{REVIEW["scanned_files"]} files scanned · {t["conflict"]} conflicting lines · {t["check"]} to check</span></a>
  <a class="card warn" href="flagged.html"><b>Flagged for Review</b><span>{len(C.FLAGS)} blanks/open items + {len(REPO_FLAGS)} conflicting repo lines</span></a>
  <a class="card" href="sources.html"><b>Sources</b><span>{len(SOURCES)} official pages read {C.TODAY}</span></a>
@@ -242,7 +244,7 @@ def p_penalty():
     g = ROWS["USTAX"]
     grows = "".join(
         f'<tr><th scope="row" data-label="USD received">{usd(r["usd"])}</th>{td(usd(r["gain_if_basis_2025"]), "Gain if basis 7.129 (2025 avg)")}'
-        f'{td(usd(r["gain_if_basis_2024"]), "Gain if basis 7.189 (2024 avg)")}{td(cny(r["cny_converted"]), "CNY converted at 6.6886")}'
+        f'{td(usd(r["gain_if_basis_2024"]), "Gain if basis 7.189 (2024 avg)")}{td(cny(r["cny_converted"]), "CNY converted at the BOC sell rate")}'
         f'{blank_td("US tax on the gain")}<td class="src" data-label="Source">{srcs(["S27", "S07", "S01"])}</td></tr>' for r in g)
     body = f"""<h1>The “conversion penalty”, layer by layer</h1>
 <p class="lede">There is no single penalty. These are the separate costs and risks people lump together.</p>
@@ -265,6 +267,7 @@ COST_SPECS = {
     "M01": ("wire", ["S01", "S03"]), "M02": ("wire", ["S02", "S04"]), "M03": ("wire", ["S02", "S04"]),
     "M04": ("wise", ["S05", "S06"]), "M05": ("emig", ["S14"]), "M06": ("atm", ["S16", "S06"]), "M07": ("cash", ["S17", "S01", "S28"]),
     "U01": ("fine", ["S15"]), "U02": ("fine", ["S09"]), "U03": ("fine", ["S18"]), "U04": ("fine", ["S09"]),
+    "REMITTANCE_TAX": ("rmit", ["S31", "S32"]),
 }
 
 
@@ -280,10 +283,12 @@ def cost_table(mid):
                         f'{td(cny(r["cny_debited"]), "CNY debited")}{td(usd(r["gap_to_fed_usd"]), "Gap to Fed H.10")}{blank_td("Intermediary + receiving fee")}'
                         f'<td class="src" data-label="Source">{s}</td></tr>')
     elif kind == "wise":
-        head = ["USD", "Transfers (bank app ≤ CNY 300k)", "Transfers (Alipay ≤ CNY 50k)", "CNY at Fed H.10", "Wise fee", "Wise rate", "Source"]
+        head = ["USD received", "Wise fee (CNY)", "Wise fee (USD)", "Fee % of amount", "CNY to send at the quoted rate", "CNY at Fed H.10 for comparison", "Wise rate", "Source"]
         for r in ROWS[mid]:
-            rows.append(f'<tr><th scope="row" data-label="USD">{usd(r["usd"])}</th>{td(n0(r["transfers_bank_app"]), "Transfers (bank app)")}'
-                        f'{td(n0(r["transfers_alipay"]), "Transfers (Alipay)")}{td(cny(r["cny_at_fed"]), "CNY at Fed H.10")}{blank_td("Wise fee")}{blank_td("Wise rate")}'
+            rows.append(f'<tr><th scope="row" data-label="USD received">{usd(r["usd"])}</th>{td(cny(r["fee_cny_published_scale"]), "Wise fee (CNY)")}'
+                        f'{td("<b>" + usd(r["fee_usd_published_scale"]) + "</b>", "Wise fee (USD)")}{td(pct(r["fee_pct"]), "Fee %")}'
+                        f'{td(cny(r["cny_at_wise_rate"]), "CNY to send")}{td(cny(r["cny_at_fed"]), "CNY at Fed H.10")}'
+                        f'{td("1 CNY = %.4f USD" % r["rate"], "Wise rate")}'
                         f'<td class="src" data-label="Source">{s}</td></tr>')
     elif kind == "emig":
         head = ["USD", "SAFE approval fee", "SAFE max working days", "Bank fee", "FX spread", "Source"]
@@ -300,6 +305,11 @@ def cost_table(mid):
         for r in ROWS[mid]:
             rows.append(f'<tr><th scope="row" data-label="USD">{usd(r["usd"])}</th>{td("<b>" + n0(r["trips_no_permit"]) + "</b>", "Exits ≤ $5,000")}'
                         f'{td(n0(r["trips_bank_permit"]), "Exits ≤ $10,000")}{td(usd(r["fx_margin_usd"]), "FX spread")}{blank_td("Withdrawal fee")}<td class="src" data-label="Source">{s}</td></tr>')
+    elif kind == "rmit":
+        head = ["Amount", "If the transfer were taxable (1%)", "If funded from a bank account or card", "Source"]
+        for r in ROWS[mid]:
+            rows.append(f'<tr><th scope="row" data-label="Amount">{usd(r["usd"])}</th>{td(usd(r["tax_if_taxable_usd"]), "If taxable")}'
+                        f'{blank_td("If funded from an account or card")}<td class="src" data-label="Source">{s}</td></tr>')
     else:
         head = ["USD", "Fine up to 30%", "Serious case up to 100%", "Consequence", "Source"]
         for r in ROWS[mid]:
@@ -310,6 +320,30 @@ def cost_table(mid):
     return f'<div class="tablewrap"><table class="stack"><thead><tr>{th}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
 
 
+def cheapest_table():
+    """Most important table first: cheapest priced route per $10,000 step, with the gap to the next."""
+    rows = []
+    for i, t in enumerate(COSTS["tiers"]):
+        cand = [("BOC wire (M01)", ROWS["M01"][i]["total_known_usd"]),
+                ("HSBC TT (M02)", ROWS["M02"][i]["total_known_usd"]),
+                ("HSBC Premier GT (M03)", ROWS["M03"][i]["total_known_usd"]),
+                ("Wise (M04)", ROWS["M04"][i]["fee_usd_published_scale"])]
+        cand.sort(key=lambda x: x[1])
+        best, best_v = cand[0]
+        rows.append(f'<tr><th scope="row" data-label="USD received">{usd(t)}</th>'
+                    f'{td("<b>" + esc(best) + "</b>", "Cheapest published route")}'
+                    f'{td("<b>" + usd(best_v) + "</b>", "Cost of the cheapest")}'
+                    f'{td(pct(best_v / t * 100), "% of the amount")}'
+                    f'{td(usd(cand[1][1]), "Next cheapest: " + esc(cand[1][0]))}'
+                    f'{td(usd(cand[1][1] - best_v), "Difference")}'
+                    f'<td class="src" data-label="Source">{srcs(["S01", "S03", "S02", "S04", "S05"])}</td></tr>')
+    return (f'<p class="small">Fee plus spread to the board midpoint for the banks; the published Wise fee for the platform. '
+            f'Cheapest first, then what the next route would add. Wise rows above CNY 200,000 are a straight-line extension of one quote (flag F-20).</p>'
+            f'<div class="tablewrap"><table class="stack"><thead><tr><th>USD received</th><th>Cheapest published route</th>'
+            f'<th class="num">Cost of the cheapest</th><th class="num">% of the amount</th><th class="num">Next cheapest</th>'
+            f'<th class="num">Difference</th><th>Source</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
+
+
 def p_costs():
     m01, m02, m03 = ROWS["M01"], ROWS["M02"], ROWS["M03"]
     comp = "".join(
@@ -317,13 +351,17 @@ def p_costs():
         f'{td(usd(b["total_known_usd"]), "HSBC TT (M02)")}{td(usd(c["total_known_usd"]), "HSBC Premier GT (M03)")}'
         f'{td(pct(a["total_known_pct"]), "BOC %")}<td class="src" data-label="Source">{srcs(["S01", "S03", "S02", "S04"])}</td></tr>'
         for a, b, c in zip(m01, m02, m03))
+    comp = "".join(comp)
+
     opts = "".join(f'<option value="c-{m["id"]}">{m["id"]} · {esc(m["name"])}</option>' for m in C.METHODS)
     sections = "".join(
         f'<section class="ctab" id="c-{m["id"]}"><h3>{m["id"]} · {esc(m["name"])}</h3><p class="small">{KIND[m["kind"]]} · '
         f'<a href="methods.html#{m["id"]}">Method details</a></p>{cost_table(m["id"])}</section>' for m in C.METHODS)
     body = f"""<h1>Costs at every $10,000 step, $10,000 – $400,000</h1>
-<p class="lede">Published inputs only: Bank of China board 666.06 / 668.86 per 100 USD (15:30, {C.TODAY}) {srcs(["S01"])} and fee table {srcs(["S03"])};
-HSBC China board 6.6386339 / 6.7053746 (10 Nov) {srcs(["S02"])} and tariff {srcs(["S04"])}. “Known cost” = bank fee + spread to the board midpoint.
+<h2 id="cheapest-first">The answer first: cheapest published route at each step</h2>
+{cheapest_table()}
+<p class="lede">Published inputs only: Bank of China board 665.91 / 668.71 per 100 USD (20:39, {C.TODAY}) {srcs(["S01"])} and fee table {srcs(["S03"])};
+HSBC China board 6.6362813 / 6.7030239 (10 Nov) {srcs(["S02"])} and tariff {srcs(["S04"])}. “Known cost” = bank fee + spread to the board midpoint.
 Blank (yellow) = no official figure; see <a href="flagged.html">Flagged</a>.</p>
 <div class="notice">Fee caps: BOC CNY {P['boc_fee_cap_cny']:.0f} (≈ {usd(P['boc_cap_usd'])}); HSBC CNY {P['hsbc_fee_cap_cny']:.0f} (≈ {usd(P['hsbc_cap_usd'])} at HSBC's sell rate).
 Above about $40,000 (BOC) and $75,000 (HSBC) the fee stops growing and the spread is almost the whole cost.
@@ -332,7 +370,12 @@ CSV: <a href="data/costs.csv">costs.csv</a> · JSON: <a href="data/costs.json">c
 <div class="tablewrap"><table class="stack"><thead><tr><th>USD sent</th><th class="num">BOC (M01)</th><th class="num">HSBC TT (M02)</th><th class="num">HSBC Premier GT (M03)</th><th class="num">BOC % of amount</th><th>Source</th></tr></thead><tbody>{comp}</tbody></table></div>
 <h2 id="each">Every method, every step</h2>
 <label for="msel" class="small">Show one method:</label><br><select id="msel" class="filter"><option value="">All methods</option>{opts}</select>
-{sections}"""
+{sections}
+<h2 id="rmit">The one US tax on a transfer amount — and why it should not apply to you</h2>
+<p>From 1 January 2026 a 1% excise tax applies to remittances sent from the United States when the sender pays in cash, a money order, a cashier's check or a similar physical instrument {srcs(["S31", "S32"])}.
+A bank-funded or card-funded transfer is outside the charge, and a China→US repatriation is not a remittance sent from the United States.
+The table shows the 1% figure only so the exposure is explicit if a cash-funded US-side leg were ever used; the applicable cost is left blank because no page read makes it applicable.</p>
+{cost_table("REMITTANCE_TAX")}"""
     return page("costs.html", "Costs", body)
 
 

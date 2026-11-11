@@ -78,7 +78,7 @@ def r_hsbc(win, m):
     if not has(r"620|HSBC|汇丰|cap|max", win):
         return None
     if hit.startswith("86.97"):
-        return ("check", "CNY 620 converted at the IRS 2025 average (7.129), not at HSBC's dealing rate; HSBC's 2026-11-10 sell rate 6.7053746 gives USD 92.46.")
+        return ("check", "CNY 620 converted at the IRS 2025 average (7.129), not at HSBC's dealing rate; HSBC's 2026-11-10 sell rate 6.7030239 gives USD 92.50.")
     return ("consistent", "CNY 620 converted at an HSBC/BOC board rate (≈ USD 92.4–92.7 depending on the day).")
 
 
@@ -139,7 +139,7 @@ RULES = [
          official="USD 132,900 for 2026 (Form 2555 instructions).",
          pattern=r"132,900|126,500|130,000", fn=r_feie26),
     dict(id="RA-05", title="HSBC CNY 620 wire-fee cap in USD", sources=["S04", "S02", "S07"],
-         official="Cap CNY 500 + cable CNY 120 = CNY 620; at HSBC's 2026-11-10 sell rate 6.7053746 that is USD 92.46.",
+         official="Cap CNY 500 + cable CNY 120 = CNY 620; at HSBC's 2026-11-10 sell rate 6.7030239 that is USD 92.50.",
          pattern=r"86\.97|92\.4\d|92\.70", fn=r_hsbc),
     dict(id="RA-06", title="Crypto / stablecoin routes", sources=["S18"],
          official="银发〔2026〕42号: all virtual-currency business, stablecoins included, is illegal financial activity.",

@@ -67,16 +67,19 @@
  },
  {
   "id": "S05",
-  "group": "Bank rates and fees",
-  "publisher": "Wise (licensed provider; help centre)",
-  "title": "Guide to CNY transfers",
-  "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+  "group": "Commercial transfer providers",
+  "publisher": "Wise",
+  "title": "Send money to the USA from China (rate and fee panel)",
+  "url": "https://wise.com/us/send-money/send-money-to-the-usa-from-china",
   "read": "2026-11-11",
-  "locator": "Sections: who can send; limits",
-  "finding": "Sending CNY out of China is for non-mainland customers with a China tax record from the last 3 years; money goes only to the sender's own account; per-transfer limit CNY 300,000 by bank app, CNY 50,000 by Alipay; overall limit is roughly salary minus tax. No CNY→USD fee figure was read on this page.",
+  "locator": "Fee panel and \"Cheapest way\" table, read 2026-11-11",
+  "finding": "Quoted rate 1 CNY = 0.1500 USD (guaranteed 24h). Sending CNY 200,000 to the USA: total fee 1,224.27 CNY by bank transfer (1,207.99 CNY from a Wise balance), including a 32.06 CNY volume discount. The panel says this CNH/CNY-out service is only for foreign and non-mainland Chinese individuals who have worked or are currently working in China, and that fees fall as the amount rises. Note: this is a fee and rate quoted at one amount, not a schedule.",
   "figures": {
-   "per_transfer_bank_cny": 300000,
-   "per_transfer_alipay_cny": 50000
+   "rate_usd_per_cny": 0.15,
+   "fee_cny_at_200k": 1224.27,
+   "fee_cny_at_200k_balance": 1207.99,
+   "published_cny_amount": 200000,
+   "volume_discount_cny": 32.06
   }
  },
  {
@@ -259,12 +262,12 @@
  {
   "id": "S21",
   "group": "US reporting",
-  "publisher": "IRS",
-  "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
-  "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+  "publisher": "FinCEN (US Treasury)",
+  "title": "Report Foreign Bank and Financial Accounts (FBAR)",
+  "url": "https://www.fincen.gov/report-foreign-bank-and-financial-accounts",
   "read": "2026-11-11",
-  "locator": "Who must file; due date",
-  "finding": "A US person must file FinCEN Form 114 when the aggregate value of foreign financial accounts exceeds USD 10,000 at any time during the calendar year. Due April 15 with automatic extension to October 15; filed electronically through BSA E-Filing.",
+  "locator": "\"Who Must File the FBAR?\" first paragraph",
+  "finding": "A United States person with a financial interest in or signature authority over foreign financial accounts must file an FBAR if the aggregate value of those accounts exceeds USD 10,000 at any time in the calendar year. Filing is electronic through the BSA E-Filing System, separate from the IRS.",
   "figures": {
    "threshold_usd": 10000
   }
@@ -386,5 +389,29 @@
   "read": "2026-11-11",
   "locator": "Eligibility",
   "finding": "For taxpayers who certify that failure to report foreign assets and pay tax was non-wilful; not available to taxpayers under civil examination or criminal investigation."
+ },
+ {
+  "id": "S31",
+  "group": "US tax on the transfer itself",
+  "publisher": "IRS",
+  "title": "IR-2026-48: proposed regulations on the remittance transfer tax (10 April 2026)",
+  "url": "https://www.irs.gov/newsroom/treasury-irs-issue-proposed-regulations-on-the-new-remittance-transfer-tax-established-under-the-one-big-beautiful-bill",
+  "read": "2026-11-11",
+  "locator": "First two paragraphs",
+  "finding": "\"Beginning Jan. 1, 2026, a 1% remittance transfer tax applies to remittances sent from the United States to recipients in foreign countries when the sender provides cash, a money order, a cashier's check, or other similar physical instrument to the remittance transfer provider. The sender is liable for the tax...\" Payments with cash or similar physical instruments; funding from an account at a financial institution is carved out in the statute.",
+  "figures": {
+   "rate_pct": 1.0
+  }
+ },
+ {
+  "id": "S32",
+  "group": "US tax on the transfer itself",
+  "publisher": "IRS",
+  "title": "Excise tax — \"Excise tax on certain remittance transfers\" update",
+  "url": "https://www.irs.gov/businesses/small-businesses-self-employed/excise-tax",
+  "read": "2026-11-11",
+  "locator": "\"Recent tax law updates\" section, second item",
+  "finding": "\"Beginning Jan. 1, 2026, remittance transfer providers must: Collect the 1% excise tax on applicable remittance transfers when the sender pays with certain specified instruments. Make semimonthly deposits. File Form 720 quarterly returns with the IRS.\"",
+  "figures": {}
  }
 ]

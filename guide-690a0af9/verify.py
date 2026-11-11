@@ -37,7 +37,7 @@ SRC = {s["id"]: s for s in SOURCES}
 COSTS = json.load(open(os.path.join(HERE, "data", "costs.json"), encoding="utf-8"))
 REVIEW = json.load(open(os.path.join(HERE, "data", "review.json"), encoding="utf-8"))
 OFFICIAL = ("safe.gov.cn", "pbc.gov.cn", "gov.cn", "chinatax.gov.cn", "boc.cn", "hsbc.com.cn", "wise.com",
-            "irs.gov", "ecfr.gov", "govinfo.gov", "cbp.gov", "federalreserve.gov")
+            "irs.gov", "ecfr.gov", "govinfo.gov", "cbp.gov", "federalreserve.gov", "fincen.gov")
 
 # 1. ledger -----------------------------------------------------------------------------------
 check(len(SOURCES) == len(SRC), "duplicate source ids")
@@ -79,8 +79,13 @@ for i, t in enumerate(tiers):
     r = COSTS["rows"]["M03"][i]
     check(abs(r["total_known_usd"] - t * (hs - (hs + hb) / 2) / hs) < 0.006 and r["fee_usd"] == 0, f"M03 {t}")
     r = COSTS["rows"]["M04"][i]
-    check(r["transfers_bank_app"] == math.ceil(round(t * fed, 6) / F("S05", "per_transfer_bank_cny")), f"M04 {t} transfers")
-    check(r["fee"] is None and r["rate"] is None, f"M04 {t} Wise fee must be blank")
+    wr, wf, wa = F("S05", "rate_usd_per_cny"), F("S05", "fee_cny_at_200k"), F("S05", "published_cny_amount")
+    cny_wise = t / wr
+    check(abs(r["cny_at_wise_rate"] - cny_wise) < 0.011, f"M04 {t} CNY at quoted rate")
+    check(abs(r["fee_cny_published_scale"] - wf * cny_wise / wa) < 0.011, f"M04 {t} fee CNY")
+    check(abs(r["fee_usd_published_scale"] - wf * cny_wise / wa * wr) < 0.011, f"M04 {t} fee USD")
+    check(abs(r["fee_pct"] - wf / wa * 100) < 0.0006, f"M04 {t} fee pct is not the published ratio")
+    check(r["rate"] == wr and r["fee_is_extrapolated"] is True, f"M04 {t} rate/flag")
     r = COSTS["rows"]["M06"][i]
     check(r["calendar_years"] == math.ceil(round(t * fed, 6) / F("S16", "annual_cny")), f"M06 {t} years")
     r = COSTS["rows"]["M07"][i]
@@ -151,7 +156,8 @@ for p in PAGES:
             if "blank" in c["cls"].split():
                 check(c["text"].strip() == "", f"{p}: blank cell carries a value")
 blank_cells = sum(1 for r in parsed["costs.html"].rows for c in r["cells"] if "blank" in c["cls"].split())
-nones = sum(1 for m in ("M01", "M02", "M03", "M04", "M05", "M06", "M07", "U01", "U02", "U03", "U04") for r in COSTS["rows"][m] for v in r.values() if v is None)
+nones = sum(1 for m in ("M01", "M02", "M03", "M04", "M05", "M06", "M07", "U01", "U02", "U03", "U04", "REMITTANCE_TAX")
+            for r in COSTS["rows"][m] for v in r.values() if v is None)
 nones -= sum(1 for m in ("M01", "M02", "M03") for r in COSTS["rows"][m])  # intermediary + receiving share one cell
 check(blank_cells == nones, f"costs.html blank cells {blank_cells} != None values {nones}")
 for p, pp in parsed.items():
@@ -171,7 +177,10 @@ for p, pp in parsed.items():
 # 5. numbers in content come from the ledger or computed params ----------------------------------
 allowed_text = json.dumps(SOURCES, ensure_ascii=False)
 allowed = set(re.sub(",", "", x) for x in re.findall(r"\d[\d,]*(?:\.\d+)?", allowed_text))
-allowed |= {str(t) for t in tiers} | {"400000", "200", "2026", "2027", "2014", "2025", "2024", "1116", "114", "105", "3520", "8938", "2555", "988", "911", "6039"}
+allowed |= {str(t) for t in tiers}
+# derived, printed values that are arithmetic on ledger figures (checked again in section 2)
+allowed |= {f"{v:,.2f}".replace(",", "") for m in ("M04",) for r in COSTS["rows"][m]
+            for v in (r["fee_usd_published_scale"], r["fee_cny_published_scale"], r["fee_cny_published_scale_balance"], r["cny_at_wise_rate"])} | {"400000", "200", "2026", "2027", "2014", "2025", "2024", "1116", "114", "105", "3520", "8938", "2555", "988", "911", "6039"}
 for v in COSTS["params"].values():
     allowed |= {str(v), f"{v:.2f}", f"{v:.0f}", f"{v:,.2f}".replace(",", "")}
 ctext = open(os.path.join(HERE, "content.py"), encoding="utf-8").read()
