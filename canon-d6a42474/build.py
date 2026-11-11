@@ -646,7 +646,7 @@ def scan_repo() -> dict:
     sections = []
     for dirpath, dirnames, filenames in os.walk(REPO):
         dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
-        for fn in filenames:
+        for fn in sorted(filenames):
             path = Path(dirpath) / fn
             rel = path.relative_to(REPO).as_posix()
             if fn.endswith((".html", ".htm")):
@@ -661,6 +661,8 @@ def scan_repo() -> dict:
             for pat, _desc, _srcs in SCAN_PATTERNS:
                 if pat in text:
                     hits[pat].append(rel)
+    for _pat in hits:
+        hits[_pat].sort()
     for entry in sorted(REPO.iterdir()):
         if entry.is_dir() and entry.name not in SKIP_DIRS and (entry / "index.html").exists():
             sections.append(entry.name)

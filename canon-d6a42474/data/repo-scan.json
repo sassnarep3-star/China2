@@ -37,11 +37,11 @@
       "file_count": 74,
       "examples": [
         "COORDINATION.md",
-        "index.html",
         "acceptance-a64bd476/build.py",
         "acceptance-a64bd476/checks.html",
         "acceptance-a64bd476/findings.html",
-        "acceptance-a64bd476/findings.json"
+        "acceptance-a64bd476/findings.json",
+        "acceptance-a64bd476/verify.py"
       ]
     },
     {
@@ -54,10 +54,10 @@
       "examples": [
         "COORDINATION.md",
         "playbook-c1d73006/costs.html",
-        "playbook-c1d73006/methods.html",
-        "playbook-c1d73006/review.html",
-        "playbook-c1d73006/review.py",
-        "playbook-c1d73006/summary.html"
+        "playbook-c1d73006/data/costs.csv",
+        "playbook-c1d73006/data/costs.json",
+        "playbook-c1d73006/data/review.json",
+        "playbook-c1d73006/methods.html"
       ]
     },
     {
@@ -66,8 +66,10 @@
       "sources": [
         "S07"
       ],
-      "file_count": 0,
-      "examples": []
+      "file_count": 1,
+      "examples": [
+        "COORDINATION.md"
+      ]
     },
     {
       "pattern": "666.30",
@@ -78,10 +80,10 @@
       "file_count": 9,
       "examples": [
         "COORDINATION.md",
-        "index.html",
         "dashboard-f79e64e7/content.py",
-        "dashboard-f79e64e7/flagged.html",
         "dashboard-f79e64e7/data/flags.json",
+        "dashboard-f79e64e7/flagged.html",
+        "index.html",
         "verification-3347ca0a/build.py"
       ]
     },
@@ -94,11 +96,11 @@
       "file_count": 13,
       "examples": [
         "COORDINATION.md",
-        "index.html",
         "dashboard-f79e64e7/content.py",
+        "dashboard-f79e64e7/data/flags.json",
+        "dashboard-f79e64e7/data/sources.json",
         "dashboard-f79e64e7/flagged.html",
-        "dashboard-f79e64e7/sources.html",
-        "dashboard-f79e64e7/data/flags.json"
+        "dashboard-f79e64e7/sources.html"
       ]
     },
     {
@@ -134,7 +136,7 @@
         "COORDINATION.md",
         "EXECUTIVE-SUMMARY.md",
         "README.md",
-        "index.html",
+        "audit-ad300459/exports/findings.csv",
         "audit-ad300459/findings.html",
         "audit-ad300459/findings.json"
       ]
@@ -163,8 +165,8 @@
       ],
       "file_count": 5,
       "examples": [
-        "index.html",
         "final-f6327e23/costs.html",
+        "index.html",
         "ladder/ladder.html",
         "verification-3347ca0a/EXECUTIVE_SUMMARY.md",
         "verification-3347ca0a/build.py"
@@ -176,8 +178,9 @@
       "sources": [
         "S07"
       ],
-      "file_count": 2,
+      "file_count": 3,
       "examples": [
+        "COORDINATION.md",
         "dashboard-f79e64e7/costs.html",
         "estimate-facf2fe9/costs.html"
       ]
@@ -192,11 +195,11 @@
       "file_count": 8,
       "examples": [
         "dashboard-f79e64e7/content.py",
-        "dashboard-f79e64e7/sources.html",
         "dashboard-f79e64e7/data/sources.json",
-        "estimate-facf2fe9/sources.html",
+        "dashboard-f79e64e7/sources.html",
         "estimate-facf2fe9/data/capture-log.md",
-        "estimate-facf2fe9/data/sources.json"
+        "estimate-facf2fe9/data/sources.json",
+        "estimate-facf2fe9/sources.html"
       ]
     },
     {
@@ -211,8 +214,8 @@
         "briefing/audit.html",
         "briefing/build.py",
         "study-8f529c94/audit.html",
-        "study-8f529c94/flagged.html",
-        "study-8f529c94/data/audit_and_flags.json"
+        "study-8f529c94/data/audit_and_flags.json",
+        "study-8f529c94/flagged.html"
       ]
     },
     {
@@ -221,14 +224,14 @@
       "sources": [
         "S13"
       ],
-      "file_count": 132,
+      "file_count": 133,
       "examples": [
         "COORDINATION.md",
         "README.md",
-        "index.html",
         "acceptance-a64bd476/build.py",
         "acceptance-a64bd476/checks.html",
-        "acceptance-a64bd476/findings.html"
+        "acceptance-a64bd476/findings.html",
+        "acceptance-a64bd476/findings.json"
       ]
     }
   ]
