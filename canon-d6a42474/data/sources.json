@@ -1,0 +1,279 @@
+{
+  "retrieved": "2026-11-11",
+  "note": "Every source below was opened and read in this session on 2026-11-11 (UTC). The quote field is copied from the page; locator says where. A source listed here is evidence of what the page said when read, not a legal opinion and not a guarantee that the page still reads the same today.",
+  "sources": [
+    {
+      "id": "S01",
+      "publisher": "State Council of the PRC (published by SAFE)",
+      "title": "Regulations on Foreign Exchange Administration (State Council Decree No. 532)",
+      "url": "https://www.safe.gov.cn/safe/2008/0806/5321.html",
+      "language": "zh",
+      "locator": "Arts. 5, 12, 39, 45, 52(2)",
+      "retrieved_utc": "2026-11-11T15:52Z",
+      "quotes": [
+        {"locator": "Art. 5", "text": "国家对经常性国际支付和转移不予限制。"},
+        {"locator": "Art. 12", "text": "经常项目外汇收支应当具有真实、合法的交易基础。"},
+        {"locator": "Art. 39", "text": "处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款"},
+        {"locator": "Art. 45", "text": "私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的，由外汇管理机关给予警告，没收违法所得，处违法金额30%以下的罚款；情节严重的，处违法金额30%以上等值以下的罚款"},
+        {"locator": "Art. 52(2)", "text": "境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人，外国驻华外交人员和国际组织驻华代表除外。"}
+      ],
+      "used_for": "Current-account payments are not restricted; authenticity test; penalty ceiling for evasion and unlicensed FX trading; who counts as a domestic individual."
+    },
+    {
+      "id": "S02",
+      "publisher": "State Administration of Foreign Exchange (SAFE)",
+      "title": "Implementation Rules of the Measures for the Administration of Individual Foreign Exchange (Hui Fa [2007] No. 1, as amended)",
+      "url": "https://www.safe.gov.cn/safe/2007/0105/5320.html",
+      "language": "zh",
+      "locator": "Arts. 2, 12, 13, 14, 15, 30; amendment note (Hui Fa [2023] No. 8)",
+      "retrieved_utc": "2026-11-11T15:58Z",
+      "quotes": [
+        {"locator": "Art. 2", "text": "对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。"},
+        {"locator": "Art. 12", "text": "境内个人经常项目项下非经营性购汇超过年度总额的，凭本人有效身份证件和有交易额的相关证明材料在银行办理。"},
+        {"locator": "Art. 13(1)", "text": "在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。"},
+        {"locator": "Art. 13(2)", "text": "原兑换未用完的人民币兑回外汇，凭本人有效身份证件和原兑换水单办理，原兑换水单的兑回有效期为自兑换日起24个月"},
+        {"locator": "Art. 15(1)", "text": "外汇储蓄账户内外汇汇出，凭本人有效身份证件办理；"},
+        {"locator": "Art. 30", "text": "个人提取外币现钞当日累计等值1万美元以下（含1万美元）的，可以在银行直接办理；超过上述金额的，凭本人有效身份证件、提钞用途证明等材料向银行所在地外汇局事前报备。"},
+        {"locator": "Amendment note", "text": "《个人外汇管理办法实施细则》（汇发〔2007〕1号印发）第三十九条。已被废止"},
+        {"locator": "Art. 14", "text": "外汇储蓄账户内外汇汇出境外当日累计等值5万美元以下（含）的，凭本人有效身份证件在银行办理；超过上述金额的，凭经常项目项下有交易额的真实性凭证办理。"}
+      ],
+      "used_for": "The USD 50,000 annual total applies to settlement and to a domestic individual's purchase; the overseas-individual purchase route is document-based; remitting from an FX savings account needs ID; cash withdrawal above USD 10,000/day needs prior SAFE filing; Art. 39 was repealed."
+    },
+    {
+      "id": "S03",
+      "publisher": "People's Bank of China (State Council Gazette)",
+      "title": "Interim Measures for the Administration of the Sale and Payment of Foreign Exchange for the Transfer Abroad of Personal Property (PBOC Announcement [2004] No. 16)",
+      "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+      "language": "zh",
+      "locator": "Arts. 6, 8, 10",
+      "retrieved_utc": "2026-11-11T16:11Z",
+      "quotes": [
+        {"locator": "Art. 6", "text": "移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。"},
+        {"locator": "Art. 8(4)", "text": "移居外国的，应当提供公安机关出具的中国户籍注销证明和中国驻外使领馆出具或认证的申请人在国外定居证明。"},
+        {"locator": "Art. 8(6)", "text": "申请转移财产所在地或收入来源地主管税务机关开具的税收证明或完税凭证。"},
+        {"locator": "Art. 10", "text": "申请财产对外转移总金额在等值人民币50万元以下（含50万元）的，由所在地外汇局审批。"}
+      ],
+      "used_for": "Emigrant and inheritance property transfer: one application, documents including household-registration cancellation and a tax certificate, SAFE approval. Arts. 6 and 10 were later amended by S04."
+    },
+    {
+      "id": "S04",
+      "publisher": "State Administration of Foreign Exchange (SAFE)",
+      "title": "Notice on Further Improving and Adjusting Capital Account Foreign Exchange Administration (Hui Fa [2014] No. 2), as amended",
+      "url": "https://www.safe.gov.cn/safe/2014/0124/5476.html",
+      "language": "zh",
+      "locator": "Section VI",
+      "retrieved_utc": "2026-11-11T15:54Z",
+      "quotes": [
+        {"locator": "VI(1)", "text": "取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。"},
+        {"locator": "VI(2)", "text": "取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。"},
+        {"locator": "VI(4)", "text": "取消对有关财产权利文件（如房屋产权证、房地产买卖契约或拆迁补偿安置协议、承包或租赁合同或协议、财产转让协议或合同、特许权使用协议或合同等）进行公证的要求"}
+      ],
+      "used_for": "The staged remittance and the above-RMB-500,000 head-office filing in S03 are no longer required; SAFE approval at the original household-registration location remains."
+    },
+    {
+      "id": "S05",
+      "publisher": "PBOC, NDRC, MIIT, MPS, SAMR, NFRA, CSRC, SAFE",
+      "title": "Notice on Further Preventing and Handling Risks Related to Virtual Currencies and RWA Tokenisation (Yin Fa [2026] No. 42)",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "language": "zh",
+      "locator": "Section I(1), Section VI(19)",
+      "retrieved_utc": "2026-11-11T16:03Z",
+      "quotes": [
+        {"locator": "I(1)", "text": "虚拟货币相关业务活动属于非法金融活动。在境内开展法定货币与虚拟货币兑换业务、虚拟货币之间的兑换业务……一律严格禁止，坚决依法取缔。"},
+        {"locator": "VI(19)", "text": "任何单位和个人投资虚拟货币、现实世界资产代币及相关金融产品，违背公序良俗的，相关民事法律行为无效，由此引发的损失由其自行承担"},
+        {"locator": "VI(18)", "text": "违反本通知规定开展虚拟货币、现实世界资产代币化相关非法金融活动……依照有关规定予以处罚；构成犯罪的，依法追究刑事责任。"}
+      ],
+      "used_for": "A crypto bridge out of CNY is an illegal financial activity in mainland China and the civil act is void. No instructions are given for it."
+    },
+    {
+      "id": "S06",
+      "publisher": "SAFE Tianjin Branch",
+      "title": "2026 individual foreign-exchange Q&A No. 08: how an overseas individual remits labour remuneration earned in China",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+      "language": "zh",
+      "locator": "Answer, quoting Hui Fa [2020] No. 14 Art. 59",
+      "retrieved_utc": "2026-11-11T16:00Z",
+      "quotes": [
+        {"locator": "Answer", "text": "境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。"}
+      ],
+      "used_for": "Confirms in 2026 that an overseas individual converts legitimate current-account RMB income at a bank on ID plus source-of-funds documents including tax vouchers."
+    },
+    {
+      "id": "S07",
+      "publisher": "Bank of China",
+      "title": "Foreign exchange rate board (USD row)",
+      "url": "https://www.boc.cn/sourcedb/whpj/",
+      "language": "zh",
+      "locator": "USD row, publication time 2026/11/11 15:30:04; rates quoted per 100 foreign-currency units",
+      "retrieved_utc": "2026-11-11T15:47Z",
+      "quotes": [
+        {"locator": "USD row", "text": "美元 | 666.06 | 666.06 | 668.86 | 668.86 | 671.91 | 2026/11/11 | 15:30:04"},
+        {"locator": "Page note 1", "text": "本汇率表单位为100外币换算人民币，仅供参考，客户办理结/购汇业务时，应以中国银行网上银行、手机银行、智能柜台或网点柜台实际交易汇率为准"}
+      ],
+      "used_for": "Buying USD at the counter costs CNY 668.86 per USD; the page's own disclaimer says the board is indicative and the executed rate governs. The board's 折算价 column (671.91) is not a midpoint and is not used."
+    },
+    {
+      "id": "S08",
+      "publisher": "Bank of China",
+      "title": "Personal e-banking transfer and remittance fee schedule",
+      "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+      "language": "zh",
+      "locator": "Row 跨境汇款（电汇）; header 收费标准2014年11月1日起",
+      "retrieved_utc": "2026-11-11T16:07Z",
+      "quotes": [
+        {"locator": "Cross-border telegraphic transfer", "text": "跨境汇款（电汇） | 每笔汇款金额的1‰，最低收取50元/笔，最高收取260元/笔；另收电讯费,港澳台地区人民币80元/笔,非港澳台地区人民币150元/笔。"},
+        {"locator": "Column header", "text": "收费标准2014年11月1日起（优惠活动公告请 点击这里）"}
+      ],
+      "used_for": "Bank of China sender fee: 0.1% min CNY 50 max CNY 260, plus a cable fee of CNY 150 outside Hong Kong/Macau/Taiwan. The schedule is headed as effective 1 November 2014 and no newer published version was located in this pass."
+    },
+    {
+      "id": "S09",
+      "publisher": "HSBC Bank (China) Company Limited",
+      "title": "Tariff of Accounts and Services for Wealth and Personal Banking Business",
+      "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+      "language": "en",
+      "locator": "Items 2.2.4.1, 2.2.4.2, 2.2.6.1, 2.2.7",
+      "retrieved_utc": "2026-11-11T15:56Z",
+      "quotes": [
+        {"locator": "Cover", "text": "Tariff of Accounts and Services for Wealth and Personal Banking Business (Effective from 31 Oct 2026)"},
+        {"locator": "2.2.4.1", "text": "Telegraphic Transfer Issuance | 2.2.4.1 | For individual customer: Free For entity customer: 0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY1000 / equivalent per transaction Plus Cable Charge | 0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY500 / equivalent per transaction Plus Cable Charge"},
+        {"locator": "2.2.4.2", "text": "Cable Charges | 2.2.4.2 | For individual customer: Free For entity customer: CNY140 / equivalent per cable | CNY120 / equivalent per cable | CNY120 / equivalent per cable"},
+        {"locator": "2.2.4.1 remark", "text": "If the remitter would like to ensure the beneficiary receive full payment of the USD remittance proceeds (Pay Exact), CNY200 / equivalent will be collected from the remitter"},
+        {"locator": "2.2.6.1", "text": "Fund transfer to self-name HSBC accounts in other countries/ territories via HSBC Global Transfer | 2.2.6.1 | Free | Free | CNY145 * per transaction * This is an indication charge. The actual charge per transaction will be USD20 or equivalent in other foreign currency."},
+        {"locator": "2.2.7", "text": "Fund transfer via the \"HSBC International Education Payment\" platform for overseas education related payments | 2.2.7 | Free | Free | CNY50 * per transaction * This is an indication charge. The actual charge per transaction will be USD7 or equivalent in other foreign currency."},
+        {"locator": "Chinese section header", "text": "财富管理及个人银行业务账户和服务费率（2024年9月12日生效）"}
+      ],
+      "used_for": "HSBC China wire fee (Advance/Premier), cable fee, Pay Exact option, Global Transfer fee by tier and the USD 7 education-payment fee. The Chinese section header still reads 12 September 2024 while the English cover reads 31 October 2026."
+    },
+    {
+      "id": "S10",
+      "publisher": "Internal Revenue Service",
+      "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "language": "en",
+      "locator": "Who must file; When to file; Penalties",
+      "retrieved_utc": "2026-11-11T15:49Z",
+      "quotes": [
+        {"locator": "Who must file", "text": "the aggregate value of those foreign financial accounts exceeded $10,000 at any time during the calendar year reported."},
+        {"locator": "When to file", "text": "The FBAR is an annual report, due April 15 following the calendar year reported. You're allowed an automatic extension to October 15 if you fail to meet the FBAR annual due date of April 15."},
+        {"locator": "Penalties", "text": "Civil FBAR penalty maximums in Title 31 of the United States Code are adjusted annually for inflation"}
+      ],
+      "used_for": "FBAR trigger, deadline, and the fact that the penalty amounts live in 31 CFR 1010.821 rather than on the page."
+    },
+    {
+      "id": "S11",
+      "publisher": "National Archives / OFR (eCFR)",
+      "title": "31 CFR 1010.821 — Penalty adjustment and table",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "language": "en",
+      "locator": "Table 1 rows for 31 U.S.C. 5321(a)(5)(B)(i) and 5321(a)(5)(C)(i)(I)",
+      "retrieved_utc": "2026-11-11T15:51Z",
+      "quotes": [
+        {"locator": "Table row, non-willful", "text": "Foreign Financial Agency Transaction—Non-Willful Violation of Transaction | 10,000 | 16,536"},
+        {"locator": "Table row, willful", "text": "Foreign Financial Agency Transaction—Willful Violation of Transaction | 100,000 | 165,353"},
+        {"locator": "Title banner", "text": "Displaying title 31, up to date as of 11/09/2026. Title 31 was last amended 11/06/2026."},
+        {"locator": "Table source line", "text": "90 FR 5630, Jan. 17, 2025"}
+      ],
+      "used_for": "Current civil FBAR maximums. The right-hand column is the inflation-adjusted amount; the page is displayed as current to 9 November 2026 and the table's last amendment is 17 January 2025."
+    },
+    {
+      "id": "S12",
+      "publisher": "U.S. Government Publishing Office",
+      "title": "26 U.S.C. § 988 — Treatment of certain foreign currency transactions",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "language": "en",
+      "locator": "§ 988(e)(2)",
+      "retrieved_utc": "2026-11-11T16:05Z",
+      "quotes": [
+        {"locator": "(e)(2)", "text": "no gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200."}
+      ],
+      "used_for": "A personal-transaction disposition of foreign currency by an individual ignores exchange-rate gain of $200 or less; above that the exception does not apply."
+    },
+    {
+      "id": "S13",
+      "publisher": "Internal Revenue Service",
+      "title": "Yearly average currency exchange rates",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+      "language": "en",
+      "locator": "Table, China / Yuan row; note 'The Internal Revenue Service has no official exchange rate.'",
+      "retrieved_utc": "2026-11-11T15:44Z",
+      "quotes": [
+        {"locator": "China row", "text": "| **China** | Yuan | 7.129 | 7.189 | 7.075 | 6.730 | 6.452 |"},
+        {"locator": "Note", "text": "The Internal Revenue Service has no official exchange rate. Generally, it accepts any posted exchange rate that is used consistently."}
+      ],
+      "used_for": "Reference rates for 2025 (7.129), 2024 (7.189), 2023 (7.075), 2022 (6.730), 2021 (6.452). These are yearly averages for reporting, not a rate any bank will execute."
+    },
+    {
+      "id": "S14",
+      "publisher": "Internal Revenue Service",
+      "title": "IR-2025-103: IRS releases tax inflation adjustments for tax year 2026",
+      "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "language": "en",
+      "locator": "Other notable items affected by indexing — Foreign Earned Income Exclusion",
+      "retrieved_utc": "2026-11-11T16:17Z",
+      "quotes": [
+        {"locator": "FEIE bullet", "text": "For tax year 2026, the foreign earned income exclusion is $132,900 up from $130,000 for tax year 2025."},
+        {"locator": "Banner", "text": "This is an archival or historical document and may not reflect current law, policies or procedures."}
+      ],
+      "used_for": "The 2026 FEIE figure, which the standing FEIE page (consulted separately) does not yet list — that page stops at 2023."
+    },
+    {
+      "id": "S15",
+      "publisher": "Internal Revenue Service",
+      "title": "Gifts from foreign person",
+      "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+      "language": "en",
+      "locator": "Reporting requirements",
+      "retrieved_utc": "2026-11-11T16:20Z",
+      "quotes": [
+        {"locator": "Nonresident alien gifts", "text": "you are required to report the receipt of such gifts or bequests only if the aggregate amount received from that nonresident alien or foreign estate, or foreign person that you know or have reason to know are related to the nonresident alien or foreign estate, exceeds $100,000 during the taxable year."},
+        {"locator": "Corporate/partnership gifts", "text": "exceeds $20,116 for 2025, and $20,573 for 2026 (adjusted annually for inflation)"}
+      ],
+      "used_for": "Form 3520 thresholds for foreign gifts; relevant to any plan that relies on relatives' gifts."
+    },
+    {
+      "id": "S16",
+      "publisher": "U.S. Customs and Border Protection",
+      "title": "Money and Other Monetary Instruments",
+      "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
+      "language": "en",
+      "locator": "Federal mandate; What if I don't file",
+      "retrieved_utc": "2026-11-11T16:22Z",
+      "quotes": [
+        {"locator": "Mandate", "text": "Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection (CBP)."},
+        {"locator": "Failure", "text": "An Individual who fails to file a report or submit false or fraudulent information, risk having their currency or monetary instruments forfeited and seized."}
+      ],
+      "used_for": "The USD 10,000 per-person/per-group reporting line for physical currency, and the forfeiture risk of not filing."
+    },
+    {
+      "id": "S17",
+      "publisher": "State Taxation Administration (Shanghai), text of the PRC Individual Income Tax Law",
+      "title": "中华人民共和国个人所得税法",
+      "url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+      "language": "zh",
+      "locator": "Arts. 3, 10(5), 13",
+      "retrieved_utc": "2026-11-11T16:24Z",
+      "quotes": [
+        {"locator": "Art. 3", "text": "（一）综合所得，适用百分之三至百分之四十五的超额累进税率（税率表附后）；（二）经营所得，适用百分之五至百分之三十五的超额累进税率（税率表附后）；（三）利息、股息、红利所得，财产租赁所得，财产转让所得和偶然所得，适用比例税率，税率为百分之二十。"},
+        {"locator": "Art. 10(5)", "text": "纳税人因移居境外注销中国户籍的，应当在注销中国户籍前办理税款清算。"},
+        {"locator": "Art. 13", "text": "纳税人因移居境外注销中国户籍的，应当在注销中国户籍前办理税款清算。"}
+      ],
+      "used_for": "PRC IIT rates by income type, and the pre-departure tax settlement required before cancelling household registration."
+    },
+    {
+      "id": "S18",
+      "publisher": "Internal Revenue Service",
+      "title": "United States–People's Republic of China Income Tax Convention",
+      "url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+      "language": "en",
+      "locator": "Arts. 9(2), 10(2), 11(2)",
+      "retrieved_utc": "2026-11-11T16:26Z",
+      "quotes": [
+        {"locator": "Art. 9(2)", "text": "if the recipient is the beneficial owner of the dividends the tax so charged shall not exceed 10 percent of the gross amount of the dividends."},
+        {"locator": "Art. 10(2)", "text": "if the recipient is the beneficial owner of the interest, the tax so charged shall not exceed 10 percent of the gross amount of the interest."},
+        {"locator": "Art. 11(2)", "text": "if the recipient is the beneficial owner of the royalties, the tax so charged shall not exceed 10 percent of the gross amount of the royalties."}
+      ],
+      "used_for": "Treaty ceilings on PRC withholding for dividends, interest and royalties (10% each), which matter when the money in the account came from investments."
+    }
+  ]
+}

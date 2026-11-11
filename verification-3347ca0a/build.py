@@ -430,6 +430,9 @@ def root_page():
         # Navigation-only addition by session arena/c1d73006-china2 (2026-11-11), logged in COORDINATION.md:
         # one archive row and one category card so its playbook is reachable from this landing page.
         ("playbook-c1d73006/index.html", "Route-by-origin playbook", "10 origins of the money · 17 methods · 680 cost rows", "Separate pass on 11 Nov 2026: the route, papers and tax for each origin of the money; what overdue PRC tax grows into; a text review of the other sets."),
+        # Navigation-only addition by session arena-d6a42474 (2026-11-11), logged in COORDINATION.md:
+        # one archive row and one category card so its consolidated dashboard is reachable from this landing page.
+        ("canon-d6a42474/index.html", "Consolidated dashboard", "18 sources · 8 priced routes · 40 tiers · 24 flags", "Latest dated pass (11 Nov 2026): separated the one-way margin from the round-trip spread, repriced at the 15:30:04 board, and counted the conflicts with earlier sets on its audit page."),
     ]
     archive_rows = "".join(
         f'<tr><th scope="row" data-label="Set"><a href="{href}">{esc(title)}</a></th>'
@@ -606,7 +609,12 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
 </ol>
 
 <h2 id="subpages">All pages, by category</h2>
+<p class="muted">Listed first is the latest dated pass, not a replacement for the sets below it. The consolidated
+dashboard re-read 18 official documents on 11 November 2026, prices the exchange margin one way rather than as the
+full buy–sell gap, and publishes the disagreements it found between the earlier sets.</p>
 <div class="cards">
+  <a class="card" href="canon-d6a42474/index.html"><b>Consolidated dashboard · latest re-read</b><span>18 sources · 8 priced routes · 24 flags</span>
+    <em>Answer first, then every $10,000 tier to $400,000, the tax layers, 16 gating questions and a reproducible repo audit.</em></a>
   <a class="card" href="transfer-guide/methods.html"><b>Methods &amp; playbooks</b><span>23 methods · pros · cons · steps</span>
     <em>Every route with its statutory cap and numbered execution steps.</em></a>
   <a class="card" href="transfer-guide/costs.html"><b>Cost ladder</b><span>40 tiers × 23 methods = 920 rows</span>

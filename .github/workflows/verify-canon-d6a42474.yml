@@ -1,0 +1,25 @@
+name: Verify consolidated dashboard (arena-d6a42474 scope)
+
+on:
+  pull_request:
+  push:
+    branches: ["main", "arena/d6a42474-china2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-canon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild the static pages from the published inputs
+        run: PYTHONDONTWRITEBYTECODE=1 python3 canon-d6a42474/build.py
+      - name: Check the committed output is the generated output
+        run: git diff --exit-code -- canon-d6a42474
+      - name: Verify citations, arithmetic, blanks, links and the repository scan
+        run: PYTHONDONTWRITEBYTECODE=1 python3 canon-d6a42474/verify.py

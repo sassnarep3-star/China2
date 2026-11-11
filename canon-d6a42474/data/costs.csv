@@ -1,0 +1,321 @@
+route,name,status,amount_usd,cny_needed,fee_usd,margin_usd,total_usd,pct,years,note,fee_source,rate_source
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,10000.00,66886.00,32.89,20.98,53.87,0.539,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,20000.00,133772.00,37.94,41.95,79.89,0.399,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,30000.00,200658.00,47.94,62.93,110.87,0.370,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,40000.00,267544.00,57.94,83.90,141.84,0.355,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,50000.00,334430.00,67.94,104.88,172.82,0.346,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,60000.00,401316.00,77.94,125.85,203.79,0.340,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,70000.00,468202.00,87.94,146.83,234.77,0.335,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,80000.00,535088.00,92.70,167.80,260.50,0.326,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,90000.00,601974.00,92.70,188.78,281.48,0.313,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,100000.00,668860.00,92.70,209.75,302.45,0.302,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,110000.00,735746.00,92.70,230.73,323.43,0.294,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,120000.00,802632.00,92.70,251.70,344.40,0.287,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,130000.00,869518.00,92.70,272.68,365.38,0.281,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,140000.00,936404.00,92.70,293.65,386.35,0.276,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,150000.00,1003290.00,92.70,314.63,407.33,0.272,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,160000.00,1070176.00,92.70,335.60,428.30,0.268,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,170000.00,1137062.00,92.70,356.58,449.28,0.264,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,180000.00,1203948.00,92.70,377.55,470.25,0.261,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,190000.00,1270834.00,92.70,398.53,491.23,0.259,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,200000.00,1337720.00,92.70,419.50,512.20,0.256,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,210000.00,1404606.00,92.70,440.48,533.18,0.254,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,220000.00,1471492.00,92.70,461.45,554.15,0.252,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,230000.00,1538378.00,92.70,482.43,575.13,0.250,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,240000.00,1605264.00,92.70,503.40,596.10,0.248,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,250000.00,1672150.00,92.70,524.38,617.08,0.247,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,260000.00,1739036.00,92.70,545.35,638.05,0.245,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,270000.00,1805922.00,92.70,566.33,659.03,0.244,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,280000.00,1872808.00,92.70,587.30,680.00,0.243,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,290000.00,1939694.00,92.70,608.28,700.98,0.242,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,300000.00,2006580.00,92.70,629.25,721.95,0.241,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,310000.00,2073466.00,92.70,650.23,742.93,0.240,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,320000.00,2140352.00,92.70,671.20,763.90,0.239,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,330000.00,2207238.00,92.70,692.18,784.88,0.238,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,340000.00,2274124.00,92.70,713.15,805.85,0.237,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,350000.00,2341010.00,92.70,734.13,826.83,0.236,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,360000.00,2407896.00,92.70,755.10,847.80,0.236,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,370000.00,2474782.00,92.70,776.08,868.78,0.235,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,380000.00,2541668.00,92.70,797.05,889.75,0.234,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,390000.00,2608554.00,92.70,818.03,910.73,0.234,1,,S09,S07
+M01,"Documented current-account income: HSBC Premier/Advance, one telegraphic transfer",lawful,400000.00,2675440.00,92.70,839.00,931.70,0.233,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,10000.00,66886.00,0.00,20.98,20.98,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,20000.00,133772.00,0.00,41.95,41.95,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,30000.00,200658.00,0.00,62.93,62.93,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,40000.00,267544.00,0.00,83.90,83.90,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,50000.00,334430.00,0.00,104.88,104.88,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,60000.00,401316.00,0.00,125.85,125.85,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,70000.00,468202.00,0.00,146.83,146.83,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,80000.00,535088.00,0.00,167.80,167.80,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,90000.00,601974.00,0.00,188.78,188.78,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,100000.00,668860.00,0.00,209.75,209.75,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,110000.00,735746.00,0.00,230.73,230.73,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,120000.00,802632.00,0.00,251.70,251.70,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,130000.00,869518.00,0.00,272.68,272.68,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,140000.00,936404.00,0.00,293.65,293.65,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,150000.00,1003290.00,0.00,314.63,314.63,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,160000.00,1070176.00,0.00,335.60,335.60,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,170000.00,1137062.00,0.00,356.58,356.58,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,180000.00,1203948.00,0.00,377.55,377.55,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,190000.00,1270834.00,0.00,398.53,398.53,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,200000.00,1337720.00,0.00,419.50,419.50,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,210000.00,1404606.00,0.00,440.48,440.48,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,220000.00,1471492.00,0.00,461.45,461.45,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,230000.00,1538378.00,0.00,482.43,482.43,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,240000.00,1605264.00,0.00,503.40,503.40,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,250000.00,1672150.00,0.00,524.38,524.38,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,260000.00,1739036.00,0.00,545.35,545.35,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,270000.00,1805922.00,0.00,566.33,566.33,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,280000.00,1872808.00,0.00,587.30,587.30,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,290000.00,1939694.00,0.00,608.28,608.28,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,300000.00,2006580.00,0.00,629.25,629.25,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,310000.00,2073466.00,0.00,650.23,650.23,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,320000.00,2140352.00,0.00,671.20,671.20,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,330000.00,2207238.00,0.00,692.18,692.18,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,340000.00,2274124.00,0.00,713.15,713.15,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,350000.00,2341010.00,0.00,734.13,734.13,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,360000.00,2407896.00,0.00,755.10,755.10,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,370000.00,2474782.00,0.00,776.08,776.08,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,380000.00,2541668.00,0.00,797.05,797.05,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,390000.00,2608554.00,0.00,818.03,818.03,0.210,1,,S09,S07
+M02,Same route at HSBC Private Banking (individual),conditional,400000.00,2675440.00,0.00,839.00,839.00,0.210,1,,S09,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,10000.00,66886.00,32.43,20.98,53.41,0.534,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,20000.00,133772.00,42.43,41.95,84.38,0.422,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,30000.00,200658.00,52.43,62.93,115.36,0.385,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,40000.00,267544.00,61.30,83.90,145.20,0.363,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,50000.00,334430.00,61.30,104.88,166.18,0.332,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,60000.00,401316.00,61.30,125.85,187.15,0.312,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,70000.00,468202.00,61.30,146.83,208.13,0.297,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,80000.00,535088.00,61.30,167.80,229.10,0.286,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,90000.00,601974.00,61.30,188.78,250.08,0.278,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,100000.00,668860.00,61.30,209.75,271.05,0.271,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,110000.00,735746.00,61.30,230.73,292.03,0.265,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,120000.00,802632.00,61.30,251.70,313.00,0.261,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,130000.00,869518.00,61.30,272.68,333.98,0.257,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,140000.00,936404.00,61.30,293.65,354.95,0.254,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,150000.00,1003290.00,61.30,314.63,375.93,0.251,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,160000.00,1070176.00,61.30,335.60,396.90,0.248,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,170000.00,1137062.00,61.30,356.58,417.88,0.246,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,180000.00,1203948.00,61.30,377.55,438.85,0.244,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,190000.00,1270834.00,61.30,398.53,459.83,0.242,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,200000.00,1337720.00,61.30,419.50,480.80,0.240,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,210000.00,1404606.00,61.30,440.48,501.78,0.239,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,220000.00,1471492.00,61.30,461.45,522.75,0.238,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,230000.00,1538378.00,61.30,482.43,543.73,0.236,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,240000.00,1605264.00,61.30,503.40,564.70,0.235,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,250000.00,1672150.00,61.30,524.38,585.68,0.234,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,260000.00,1739036.00,61.30,545.35,606.65,0.233,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,270000.00,1805922.00,61.30,566.33,627.63,0.232,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,280000.00,1872808.00,61.30,587.30,648.60,0.232,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,290000.00,1939694.00,61.30,608.28,669.58,0.231,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,300000.00,2006580.00,61.30,629.25,690.55,0.230,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,310000.00,2073466.00,61.30,650.23,711.53,0.230,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,320000.00,2140352.00,61.30,671.20,732.50,0.229,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,330000.00,2207238.00,61.30,692.18,753.48,0.228,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,340000.00,2274124.00,61.30,713.15,774.45,0.228,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,350000.00,2341010.00,61.30,734.13,795.43,0.227,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,360000.00,2407896.00,61.30,755.10,816.40,0.227,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,370000.00,2474782.00,61.30,776.08,837.38,0.226,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,380000.00,2541668.00,61.30,797.05,858.35,0.226,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,390000.00,2608554.00,61.30,818.03,879.33,0.225,1,,S08,S07
+M03,"Documented income: Bank of China, one cross-border wire",lawful,400000.00,2675440.00,61.30,839.00,900.30,0.225,1,,S08,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,10000.00,66886.00,32.89,20.98,53.87,0.539,1,1 annual tranche,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,20000.00,133772.00,37.94,41.95,79.89,0.399,1,1 annual tranche,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,30000.00,200658.00,47.94,62.93,110.87,0.370,1,1 annual tranche,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,40000.00,267544.00,57.94,83.90,141.84,0.355,1,1 annual tranche,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,50000.00,334430.00,67.94,104.88,172.82,0.346,1,1 annual tranche,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,60000.00,401316.00,135.88,125.85,261.73,0.436,2,2 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,70000.00,468202.00,135.88,146.83,282.71,0.404,2,2 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,80000.00,535088.00,135.88,167.80,303.68,0.380,2,2 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,90000.00,601974.00,135.88,188.78,324.66,0.361,2,2 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,100000.00,668860.00,135.88,209.75,345.63,0.346,2,2 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,110000.00,735746.00,203.82,230.73,434.55,0.395,3,3 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,120000.00,802632.00,203.82,251.70,455.52,0.380,3,3 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,130000.00,869518.00,203.82,272.68,476.50,0.367,3,3 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,140000.00,936404.00,203.82,293.65,497.47,0.355,3,3 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,150000.00,1003290.00,203.82,314.63,518.45,0.346,3,3 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,160000.00,1070176.00,271.76,335.60,607.36,0.380,4,4 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,170000.00,1137062.00,271.76,356.58,628.34,0.370,4,4 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,180000.00,1203948.00,271.76,377.55,649.31,0.361,4,4 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,190000.00,1270834.00,271.76,398.53,670.29,0.353,4,4 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,200000.00,1337720.00,271.76,419.50,691.26,0.346,4,4 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,210000.00,1404606.00,339.70,440.48,780.18,0.372,5,5 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,220000.00,1471492.00,339.70,461.45,801.15,0.364,5,5 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,230000.00,1538378.00,339.70,482.43,822.13,0.357,5,5 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,240000.00,1605264.00,339.70,503.40,843.10,0.351,5,5 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,250000.00,1672150.00,339.70,524.38,864.08,0.346,5,5 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,260000.00,1739036.00,407.65,545.35,953.00,0.367,6,6 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,270000.00,1805922.00,407.65,566.33,973.98,0.361,6,6 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,280000.00,1872808.00,407.65,587.30,994.95,0.355,6,6 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,290000.00,1939694.00,407.65,608.28,1015.93,0.350,6,6 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,300000.00,2006580.00,407.65,629.25,1036.90,0.346,6,6 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,310000.00,2073466.00,475.59,650.23,1125.82,0.363,7,7 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,320000.00,2140352.00,475.59,671.20,1146.79,0.358,7,7 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,330000.00,2207238.00,475.59,692.18,1167.77,0.354,7,7 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,340000.00,2274124.00,475.59,713.15,1188.74,0.350,7,7 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,350000.00,2341010.00,475.59,734.13,1209.72,0.346,7,7 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,360000.00,2407896.00,543.53,755.10,1298.63,0.361,8,8 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,370000.00,2474782.00,543.53,776.08,1319.61,0.357,8,8 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,380000.00,2541668.00,543.53,797.05,1340.58,0.353,8,8 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,390000.00,2608554.00,543.53,818.03,1361.56,0.349,8,8 annual tranches,S09,S07
+M06,"USD 50,000 annual purchase total, one wire per year (domestic individual)",conditional,400000.00,2675440.00,543.53,839.00,1382.53,0.346,8,8 annual tranches,S09,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,10000.00,66886.00,32.43,20.98,53.41,0.534,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,20000.00,133772.00,42.43,41.95,84.38,0.422,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,30000.00,200658.00,52.43,62.93,115.36,0.385,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,40000.00,267544.00,61.30,83.90,145.20,0.363,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,50000.00,334430.00,61.30,104.88,166.18,0.332,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,60000.00,401316.00,61.30,125.85,187.15,0.312,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,70000.00,468202.00,61.30,146.83,208.13,0.297,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,80000.00,535088.00,61.30,167.80,229.10,0.286,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,90000.00,601974.00,61.30,188.78,250.08,0.278,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,100000.00,668860.00,61.30,209.75,271.05,0.271,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,110000.00,735746.00,61.30,230.73,292.03,0.265,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,120000.00,802632.00,61.30,251.70,313.00,0.261,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,130000.00,869518.00,61.30,272.68,333.98,0.257,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,140000.00,936404.00,61.30,293.65,354.95,0.254,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,150000.00,1003290.00,61.30,314.63,375.93,0.251,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,160000.00,1070176.00,61.30,335.60,396.90,0.248,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,170000.00,1137062.00,61.30,356.58,417.88,0.246,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,180000.00,1203948.00,61.30,377.55,438.85,0.244,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,190000.00,1270834.00,61.30,398.53,459.83,0.242,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,200000.00,1337720.00,61.30,419.50,480.80,0.240,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,210000.00,1404606.00,61.30,440.48,501.78,0.239,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,220000.00,1471492.00,61.30,461.45,522.75,0.238,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,230000.00,1538378.00,61.30,482.43,543.73,0.236,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,240000.00,1605264.00,61.30,503.40,564.70,0.235,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,250000.00,1672150.00,61.30,524.38,585.68,0.234,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,260000.00,1739036.00,61.30,545.35,606.65,0.233,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,270000.00,1805922.00,61.30,566.33,627.63,0.232,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,280000.00,1872808.00,61.30,587.30,648.60,0.232,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,290000.00,1939694.00,61.30,608.28,669.58,0.231,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,300000.00,2006580.00,61.30,629.25,690.55,0.230,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,310000.00,2073466.00,61.30,650.23,711.53,0.230,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,320000.00,2140352.00,61.30,671.20,732.50,0.229,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,330000.00,2207238.00,61.30,692.18,753.48,0.228,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,340000.00,2274124.00,61.30,713.15,774.45,0.228,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,350000.00,2341010.00,61.30,734.13,795.43,0.227,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,360000.00,2407896.00,61.30,755.10,816.40,0.227,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,370000.00,2474782.00,61.30,776.08,837.38,0.226,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,380000.00,2541668.00,61.30,797.05,858.35,0.226,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,390000.00,2608554.00,61.30,818.03,879.33,0.225,1,,S08,S07
+M07,Emigrant property transfer (移民财产转移) after cancelling PRC household registration,conditional,400000.00,2675440.00,61.30,839.00,900.30,0.225,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,10000.00,66886.00,32.43,20.98,53.41,0.534,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,20000.00,133772.00,42.43,41.95,84.38,0.422,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,30000.00,200658.00,52.43,62.93,115.36,0.385,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,40000.00,267544.00,61.30,83.90,145.20,0.363,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,50000.00,334430.00,61.30,104.88,166.18,0.332,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,60000.00,401316.00,61.30,125.85,187.15,0.312,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,70000.00,468202.00,61.30,146.83,208.13,0.297,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,80000.00,535088.00,61.30,167.80,229.10,0.286,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,90000.00,601974.00,61.30,188.78,250.08,0.278,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,100000.00,668860.00,61.30,209.75,271.05,0.271,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,110000.00,735746.00,61.30,230.73,292.03,0.265,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,120000.00,802632.00,61.30,251.70,313.00,0.261,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,130000.00,869518.00,61.30,272.68,333.98,0.257,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,140000.00,936404.00,61.30,293.65,354.95,0.254,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,150000.00,1003290.00,61.30,314.63,375.93,0.251,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,160000.00,1070176.00,61.30,335.60,396.90,0.248,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,170000.00,1137062.00,61.30,356.58,417.88,0.246,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,180000.00,1203948.00,61.30,377.55,438.85,0.244,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,190000.00,1270834.00,61.30,398.53,459.83,0.242,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,200000.00,1337720.00,61.30,419.50,480.80,0.240,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,210000.00,1404606.00,61.30,440.48,501.78,0.239,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,220000.00,1471492.00,61.30,461.45,522.75,0.238,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,230000.00,1538378.00,61.30,482.43,543.73,0.236,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,240000.00,1605264.00,61.30,503.40,564.70,0.235,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,250000.00,1672150.00,61.30,524.38,585.68,0.234,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,260000.00,1739036.00,61.30,545.35,606.65,0.233,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,270000.00,1805922.00,61.30,566.33,627.63,0.232,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,280000.00,1872808.00,61.30,587.30,648.60,0.232,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,290000.00,1939694.00,61.30,608.28,669.58,0.231,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,300000.00,2006580.00,61.30,629.25,690.55,0.230,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,310000.00,2073466.00,61.30,650.23,711.53,0.230,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,320000.00,2140352.00,61.30,671.20,732.50,0.229,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,330000.00,2207238.00,61.30,692.18,753.48,0.228,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,340000.00,2274124.00,61.30,713.15,774.45,0.228,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,350000.00,2341010.00,61.30,734.13,795.43,0.227,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,360000.00,2407896.00,61.30,755.10,816.40,0.227,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,370000.00,2474782.00,61.30,776.08,837.38,0.226,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,380000.00,2541668.00,61.30,797.05,858.35,0.226,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,390000.00,2608554.00,61.30,818.03,879.33,0.225,1,,S08,S07
+M08,Inheritance property transfer (继承财产转移),conditional,400000.00,2675440.00,61.30,839.00,900.30,0.225,1,,S08,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,10000.00,66886.00,0.00,20.98,20.98,0.210,1,"1 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,20000.00,133772.00,0.00,41.95,41.95,0.210,1,"2 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,30000.00,200658.00,0.00,62.93,62.93,0.210,1,"3 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,40000.00,267544.00,0.00,83.90,83.90,0.210,1,"4 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,50000.00,334430.00,0.00,104.88,104.88,0.210,1,"5 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,60000.00,401316.00,0.00,125.85,125.85,0.210,1,"6 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,70000.00,468202.00,0.00,146.83,146.83,0.210,1,"7 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,80000.00,535088.00,0.00,167.80,167.80,0.210,1,"8 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,90000.00,601974.00,0.00,188.78,188.78,0.210,1,"9 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,100000.00,668860.00,0.00,209.75,209.75,0.210,1,"10 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,110000.00,735746.00,0.00,230.73,230.73,0.210,1,"11 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,120000.00,802632.00,0.00,251.70,251.70,0.210,1,"12 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,130000.00,869518.00,0.00,272.68,272.68,0.210,1,"13 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,140000.00,936404.00,0.00,293.65,293.65,0.210,1,"14 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,150000.00,1003290.00,0.00,314.63,314.63,0.210,1,"15 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,160000.00,1070176.00,0.00,335.60,335.60,0.210,1,"16 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,170000.00,1137062.00,0.00,356.58,356.58,0.210,1,"17 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,180000.00,1203948.00,0.00,377.55,377.55,0.210,1,"18 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,190000.00,1270834.00,0.00,398.53,398.53,0.210,1,"19 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,200000.00,1337720.00,0.00,419.50,419.50,0.210,1,"20 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,210000.00,1404606.00,0.00,440.48,440.48,0.210,1,"21 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,220000.00,1471492.00,0.00,461.45,461.45,0.210,1,"22 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,230000.00,1538378.00,0.00,482.43,482.43,0.210,1,"23 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,240000.00,1605264.00,0.00,503.40,503.40,0.210,1,"24 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,250000.00,1672150.00,0.00,524.38,524.38,0.210,1,"25 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,260000.00,1739036.00,0.00,545.35,545.35,0.210,1,"26 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,270000.00,1805922.00,0.00,566.33,566.33,0.210,1,"27 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,280000.00,1872808.00,0.00,587.30,587.30,0.210,1,"28 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,290000.00,1939694.00,0.00,608.28,608.28,0.210,1,"29 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,300000.00,2006580.00,0.00,629.25,629.25,0.210,1,"30 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,310000.00,2073466.00,0.00,650.23,650.23,0.210,1,"31 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,320000.00,2140352.00,0.00,671.20,671.20,0.210,1,"32 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,330000.00,2207238.00,0.00,692.18,692.18,0.210,1,"33 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,340000.00,2274124.00,0.00,713.15,713.15,0.210,1,"34 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,350000.00,2341010.00,0.00,734.13,734.13,0.210,1,"35 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,360000.00,2407896.00,0.00,755.10,755.10,0.210,1,"36 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,370000.00,2474782.00,0.00,776.08,776.08,0.210,1,"37 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,380000.00,2541668.00,0.00,797.05,797.05,0.210,1,"38 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,390000.00,2608554.00,0.00,818.03,818.03,0.210,1,"39 trips at USD 10,000",S07,S07
+M09,Carry foreign-currency cash (with the CBP declaration),conditional,400000.00,2675440.00,0.00,839.00,839.00,0.210,1,"40 trips at USD 10,000",S07,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,10000.00,66886.00,32.89,0.00,32.89,0.329,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,20000.00,133772.00,37.94,0.00,37.94,0.190,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,30000.00,200658.00,47.94,0.00,47.94,0.160,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,40000.00,267544.00,57.94,0.00,57.94,0.145,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,50000.00,334430.00,67.94,0.00,67.94,0.136,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,60000.00,401316.00,77.94,0.00,77.94,0.130,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,70000.00,468202.00,87.94,0.00,87.94,0.126,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,80000.00,535088.00,92.70,0.00,92.70,0.116,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,90000.00,601974.00,92.70,0.00,92.70,0.103,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,100000.00,668860.00,92.70,0.00,92.70,0.093,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,110000.00,735746.00,92.70,0.00,92.70,0.084,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,120000.00,802632.00,92.70,0.00,92.70,0.077,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,130000.00,869518.00,92.70,0.00,92.70,0.071,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,140000.00,936404.00,92.70,0.00,92.70,0.066,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,150000.00,1003290.00,92.70,0.00,92.70,0.062,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,160000.00,1070176.00,92.70,0.00,92.70,0.058,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,170000.00,1137062.00,92.70,0.00,92.70,0.055,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,180000.00,1203948.00,92.70,0.00,92.70,0.052,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,190000.00,1270834.00,92.70,0.00,92.70,0.049,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,200000.00,1337720.00,92.70,0.00,92.70,0.046,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,210000.00,1404606.00,92.70,0.00,92.70,0.044,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,220000.00,1471492.00,92.70,0.00,92.70,0.042,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,230000.00,1538378.00,92.70,0.00,92.70,0.040,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,240000.00,1605264.00,92.70,0.00,92.70,0.039,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,250000.00,1672150.00,92.70,0.00,92.70,0.037,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,260000.00,1739036.00,92.70,0.00,92.70,0.036,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,270000.00,1805922.00,92.70,0.00,92.70,0.034,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,280000.00,1872808.00,92.70,0.00,92.70,0.033,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,290000.00,1939694.00,92.70,0.00,92.70,0.032,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,300000.00,2006580.00,92.70,0.00,92.70,0.031,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,310000.00,2073466.00,92.70,0.00,92.70,0.030,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,320000.00,2140352.00,92.70,0.00,92.70,0.029,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,330000.00,2207238.00,92.70,0.00,92.70,0.028,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,340000.00,2274124.00,92.70,0.00,92.70,0.027,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,350000.00,2341010.00,92.70,0.00,92.70,0.026,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,360000.00,2407896.00,92.70,0.00,92.70,0.026,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,370000.00,2474782.00,92.70,0.00,92.70,0.025,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,380000.00,2541668.00,92.70,0.00,92.70,0.024,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,390000.00,2608554.00,92.70,0.00,92.70,0.024,1,No new conversion,S09,S07
+M10,Remit from an existing foreign-currency savings account (no new conversion),conditional,400000.00,2675440.00,92.70,0.00,92.70,0.023,1,No new conversion,S09,S07
