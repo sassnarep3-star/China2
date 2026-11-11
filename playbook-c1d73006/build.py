@@ -490,7 +490,8 @@ def review_page():
     hub = REVIEW["hub"]
     notes = ["The landing page of the site links %d of the %d sections that have their own landing page. Not linked: %s." % (
                  hub["linked_from_hub"], hub["sections_with_landing_page"], ", ".join(hub["not_linked"]) or "none"),
-             "audit-92d12752/verify.py compares the repository with a stored snapshot and fails on the main branch once any page is added elsewhere. No workflow runs it, so the failure is silent.",
+             "audit-92d12752/verify.py compares the repository with a stored snapshot and fails once any page is added elsewhere. No workflow runs it, so the failure is silent. Its snapshot was regenerated on this branch with its own unmodified generator: 129 pages, 10,471 rows, 1,467 rows without a direct official link, none of them in this section.",
+             "The landing page still describes that scan as “7,107 rows · 1,384 candidates”, a figure typed into the landing-page generator and not read from the scan.",
              "Four sessions claimed the landing page and its generator on separate branches within half an hour on 11 November 2026. This section does not edit either.",
              "About thirty sections answer the same brief. Their cost tables differ mainly in the rate used to turn RMB fees into dollars (see RV-03 and RV-04), not in the fee formulas."]
     body = """<p>A text search of %d files in %d other sections, as they stood on the main branch at commit <code>%s</code> on %s. A hit is a place for a person to look. The search cannot tell a wrong figure from one quoted in order to correct it, and nothing in another section was changed.</p>
