@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Penalty breakdown · China money</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#16181d;--muted:#5c6470;--line:#e3e6ea;
+--accent:#0b5fff;--good:#0a7a45;--warn:#a85b00;--bad:#b3261e;--chip:#eef2f7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:#0e1116;color:#fff;padding:14px 16px}
+header .wrap{max-width:1080px;margin:0 auto}
+header .t{font-weight:700;font-size:17px;letter-spacing:.2px}
+header .s{color:#a9b1bd;font-size:13px;margin-top:2px}
+nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;
+overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+nav .wrap{max-width:1080px;margin:0 auto;padding:0 8px}
+nav a{display:inline-block;padding:11px 10px;color:var(--muted);font-size:14px;font-weight:600}
+nav a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent)}
+main{max-width:1080px;margin:0 auto;padding:18px 14px 60px}
+h1{font-size:23px;line-height:1.25;margin:6px 0 6px}
+h2{font-size:18px;margin:28px 0 8px}
+h3{font-size:15px;margin:18px 0 6px}
+p{margin:8px 0}
+.lede{color:var(--muted);font-size:15px;margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}
+.grid{display:grid;gap:12px}
+@media(min-width:720px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.kpi .k{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+.kpi .v{font-size:22px;font-weight:700;margin:4px 0 0}
+.kpi .n{font-size:12px;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#f0f2f5;font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted)}
+tbody tr:nth-child(even){background:#fafbfc}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:#fff}
+.chip{display:inline-block;background:var(--chip);border-radius:999px;padding:2px 9px;font-size:12px;
+color:var(--muted);font-weight:600;margin:0 4px 4px 0}
+.good{color:var(--good);font-weight:600}.warn{color:var(--warn);font-weight:600}.bad{color:var(--bad);font-weight:600}
+.src{font-size:12px}
+.src a{display:inline-block;background:#eef4ff;border:1px solid #dbe6ff;border-radius:6px;
+padding:1px 6px;margin:2px 3px 2px 0;font-weight:600}
+.blank{color:var(--muted);font-style:italic}
+ul,ol{margin:6px 0 6px 18px;padding:0}
+li{margin:3px 0}
+.steps li{margin:6px 0}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fff;margin:8px 0}
+summary{cursor:pointer;font-weight:600}
+footer{max-width:1080px;margin:0 auto;padding:0 14px 40px;color:var(--muted);font-size:12px}
+@media(max-width:640px){
+  h1{font-size:20px}
+  table.resp thead{display:none}
+  table.resp,table.resp tbody,table.resp tr,table.resp td{display:block;width:100%}
+  table.resp tr{border:1px solid var(--line);border-radius:10px;margin:8px 0;background:#fff;padding:6px 4px}
+  table.resp td{border:0;padding:4px 10px;display:flex;justify-content:space-between;gap:10px;text-align:right}
+  table.resp td::before{content:attr(data-label);color:var(--muted);font-size:12px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.3px;text-align:left}
+  table.resp td.num{text-align:right}
+}
+</style></head>
+<body>
+<header><div class="wrap"><div class="t">China money · final section d54bb3c2</div>
+<div class="s">CNY to USD, verified against primary sources, 11 November 2026</div></div></header>
+<nav><div class="wrap"><a class="" href="index.html">Overview</a><a class="" href="summary.html">Executive summary</a><a class="" href="costs.html">Cost table</a><a class="" href="methods.html">Methods</a><a class="on" href="penalty.html">Penalty breakdown</a><a class="" href="questions.html">Questions</a><a class="" href="review.html">Repo review</a><a class="" href="flagged.html">Flagged</a><a class="" href="sources.html">Sources</a></div></nav>
+<main>
+
+<h1>The conversion penalty, broken into its actual parts</h1>
+<p class="lede">"Penalty" in this problem means at least nine different things. They are separated here so each can be sized and, where possible, avoided.
+Layers P1, P2 and P6 are unavoidable in any lawful conversion. P4 is not a conversion cost at all. P7 and P8 are the layers that can ruin the outcome.</p>
+
+<div class="scroll"><table class="resp"><thead><tr><th>Layer</th><th>Who pays</th><th>Size</th><th>Basis</th><th>Source</th></tr></thead><tbody><tr><td data-label='Layer'><b>P1</b> Bank FX spread</td><td data-label='Who pays'>Every conversion, lawful or not, at any bank.</td><td data-label='Size'>BOC 0.2094% of the amount converted; HSBC 0.4979%</td><td data-label='Basis'>Difference between the board sell rate and the midpoint of the board buy and sell rates.</td><td data-label='Sources'><span class="src"><a href="sources.html#S01" title="Bank of China foreign exchange board (中国银行外汇牌价)">S01</a><a href="sources.html#S02" title="HSBC Bank (China) foreign exchange board">S02</a></span></td></tr><tr><td data-label='Layer'><b>P2</b> Bank commission and cable charge</td><td data-label='Who pays'>Every wire.</td><td data-label='Size'>BOC: 0.1%, min CNY 50, max CNY 260, plus CNY 150 cable. HSBC: 0.1%, min CNY 100, max CNY 500, plus CNY 120 cable.</td><td data-label='Basis'>Published tariff, capped, so it falls as a percentage as the amount rises.</td><td data-label='Sources'><span class="src"><a href="sources.html#S03" title="Bank of China e-banking service charge table (cross-border remittance)">S03</a><a href="sources.html#S04" title="HSBC China tariff of accounts services for personal customers (v2)">S04</a></span></td></tr><tr><td data-label='Layer'><b>P3</b> Correspondent and receiving bank charges</td><td data-label='Who pays'>Every wire.</td><td data-label='Size'>Blank - not published on either bank&#x27;s page.</td><td data-label='Basis'>Both tariffs state only the sending bank&#x27;s charge.</td><td data-label='Sources'><span class="src"><a href="sources.html#S03" title="Bank of China e-banking service charge table (cross-border remittance)">S03</a><a href="sources.html#S04" title="HSBC China tariff of accounts services for personal customers (v2)">S04</a></span></td></tr><tr><td data-label='Layer'><b>P4</b> PRC individual income tax on the source income</td><td data-label='Who pays'>Anyone whose balance is untaxed income.</td><td data-label='Size'>20% on interest, dividends, property transfer and incidental income; 3%-45% on comprehensive income; 5%-35% on business income.</td><td data-label='Basis'>Statutory rates. This tax is due whether or not you convert, so it is not a cost of converting, but it is the item most often mistaken for one.</td><td data-label='Sources'><span class="src"><a href="sources.html#S20" title="中华人民共和国个人所得税法 (Individual Income Tax Law)">S20</a></span></td></tr><tr><td data-label='Layer'><b>P5</b> PRC late payment surcharge</td><td data-label='Who pays'>Anyone with unpaid PRC tax.</td><td data-label='Size'>0.05% of the overdue tax per day.</td><td data-label='Basis'>Statutory surcharge; the authority can recover tax and surcharge for three years, or five in special cases.</td><td data-label='Sources'><span class="src"><a href="sources.html#S31" title="中华人民共和国税收征收管理法 (Tax Collection and Administration Law)">S31</a></span></td></tr><tr><td data-label='Layer'><b>P6</b> US tax on the currency gain</td><td data-label='Who pays'>Every US citizen who converts.</td><td data-label='Size'>6.61% gain in the worked example (CNY acquired at the 2025 IRS average of 7.129 and sold at the BOC board sell rate of 6.6871); taxed at ordinary rates; only the first USD 200 of personal-transaction gain is excluded.</td><td data-label='Basis'>Section 988 treats the disposal of nonfunctional currency as an ordinary transaction.</td><td data-label='Sources'><span class="src"><a href="sources.html#S07" title="Yearly average currency exchange rates">S07</a><a href="sources.html#S27" title="26 USC 988 - Treatment of certain foreign currency transactions">S27</a></span></td></tr><tr><td data-label='Layer'><b>P7</b> US information-return penalties</td><td data-label='Who pays'>Anyone who missed an FBAR or Form 8938.</td><td data-label='Size'>FBAR non-willful USD 16,536; willful USD 165,353; Form 8938 USD 10,000 plus up to USD 50,000 more after notice.</td><td data-label='Basis'>Inflation-adjusted statutory maxima and published form penalties.</td><td data-label='Sources'><span class="src"><a href="sources.html#S22" title="31 CFR 1010.821 - penalty adjustment for inflation">S22</a><a href="sources.html#S23" title="Comparison of Form 8938 and FBAR requirements">S23</a></span></td></tr><tr><td data-label='Layer'><b>P8</b> PRC enforcement penalties on unlawful routes</td><td data-label='Who pays'>Only if the transfer is structured unlawfully.</td><td data-label='Size'>Evasion, illegal arbitrage or illegal conversion: 30% of the amount, or 30%-100% in serious cases. Currency carried in violation: warning plus up to 20%.</td><td data-label='Basis'>State Council Decree No. 532, Articles 39-45.</td><td data-label='Sources'><span class="src"><a href="sources.html#S09" title="中华人民共和国外汇管理条例 (State Council Decree No. 532)">S09</a></span></td></tr><tr><td data-label='Layer'><b>P9</b> Lost access and time</td><td data-label='Who pays'>Anyone placed on a watch list or hit by an approval delay.</td><td data-label='Size'>Blank - no monetary figure is published.</td><td data-label='Basis'>Watch-list review lasts two years; approval takes 20 working days plus a possible 10; a card&#x27;s overseas cash function can be suspended for two years.</td><td data-label='Sources'><span class="src"><a href="sources.html#S14" title="移民财产转移购付汇核准 service guide (Hebei branch, item 000171111002)">S14</a><a href="sources.html#S15" title="汇发〔2015〕49号 关于进一步完善个人外汇业务监测系统的通知">S15</a><a href="sources.html#S16" title="SAFE English release: overseas cash withdrawals with domestic bank cards">S16</a></span></td></tr></tbody></table></div>
+
+<h2>Lawful cost against enforcement exposure</h2>
+<div class="scroll"><table class="resp"><thead><tr><th>Amount</th><th>Lawful BOC cost</th><th>US FX gain at 6.6082%</th>
+<th>Evasion fine at 30%</th><th>Evasion fine up to 100%</th><th>One willful FBAR year</th></tr></thead><tbody><tr><td data-label='Amount' class='num'>$10,000</td><td data-label='Lawful BOC cost' class='num good'>$53.37</td><td data-label='US FX gain' class='num'>$660.82</td><td data-label='Evasion fine 30%' class='num bad'>$3,000.00</td><td data-label='Evasion fine up to 100%' class='num bad'>$10,000.00</td><td data-label='One willful FBAR' class='num bad'>$165,353.00</td></tr><tr><td data-label='Amount' class='num'>$100,000</td><td data-label='Lawful BOC cost' class='num good'>$270.67</td><td data-label='US FX gain' class='num'>$6,608.25</td><td data-label='Evasion fine 30%' class='num bad'>$30,000.00</td><td data-label='Evasion fine up to 100%' class='num bad'>$100,000.00</td><td data-label='One willful FBAR' class='num bad'>$165,353.00</td></tr><tr><td data-label='Amount' class='num'>$400,000</td><td data-label='Lawful BOC cost' class='num good'>$898.75</td><td data-label='US FX gain' class='num'>$26,432.98</td><td data-label='Evasion fine 30%' class='num bad'>$120,000.00</td><td data-label='Evasion fine up to 100%' class='num bad'>$400,000.00</td><td data-label='One willful FBAR' class='num bad'>$165,353.00</td></tr></tbody></table></div>
+<p class="src" style="margin-top:8px">Sources: <span class="src"><a href="sources.html#S01" title="Bank of China foreign exchange board (中国银行外汇牌价)">S01</a><a href="sources.html#S03" title="Bank of China e-banking service charge table (cross-border remittance)">S03</a><a href="sources.html#S07" title="Yearly average currency exchange rates">S07</a><a href="sources.html#S09" title="中华人民共和国外汇管理条例 (State Council Decree No. 532)">S09</a><a href="sources.html#S22" title="31 CFR 1010.821 - penalty adjustment for inflation">S22</a><a href="sources.html#S27" title="26 USC 988 - Treatment of certain foreign currency transactions">S27</a></span></p>
+
+<div class="card">
+<h2 style="margin-top:4px">What the table says</h2>
+<ul>
+<li>At USD 400,000 the lawful conversion costs <b>$898.75</b>. The same amount treated as evasion carries a floor fine of
+<b>$120,000.00</b> and a serious-case maximum of <b>$400,000.00</b> [S09 Art.39].</li>
+<li>One willful FBAR year (<b>$165,353.00</b>) costs more than the lawful conversion of USD 400,000 by a factor of
+184 [S22]. A single non-willful year is $16,536.00.</li>
+<li>The US currency gain of about 6.6082% is real but small next to either penalty layer; it is ordinary income, and only the first
+USD 200 of a personal-transaction gain is excluded [S27].</li>
+<li>PRC income tax (P4) is not caused by converting. It is due on the income whether or not the money moves, with a 0.05% per day surcharge if late [S20, S31].</li>
+</ul>
+</div>
+
+<div class="card">
+<h2 style="margin-top:4px">Worked example</h2>
+<p>Convert USD 400,000 through BOC. Spread 0.2094% and a capped fee of CNY 410 give a lawful cost of about USD 898.75, i.e. 0.225%. The same USD 400,000 routed through an unlawful channel and treated as evasion under Article 39 would face a fine of USD 120,000, or up to USD 400,000 in the serious band. One missed willful FBAR for one year would be USD 165,353, which is 184 times the lawful conversion cost.</p>
+<p class="src">Sources: <span class="src"><a href="sources.html#S01" title="Bank of China foreign exchange board (中国银行外汇牌价)">S01</a><a href="sources.html#S03" title="Bank of China e-banking service charge table (cross-border remittance)">S03</a><a href="sources.html#S09" title="中华人民共和国外汇管理条例 (State Council Decree No. 532)">S09</a><a href="sources.html#S22" title="31 CFR 1010.821 - penalty adjustment for inflation">S22</a></span></p>
+</div>
+
+<div class="card">
+<h2 style="margin-top:4px">Three ways the penalty gets triggered by accident</h2>
+<ol>
+<li><b>Quota splitting.</b> Using relatives' USD 50,000 quotas to move a large balance is expressly prohibited; it puts you on a watch list for two years [S15].</li>
+<li><b>Mislabeling.</b> Describing capital as a service payment does not survive the tax filing review that applies at USD 50,000 and above [S19], and is treated as evasion [S09].</li>
+<li><b>Silence on the US side.</b> Not filing the FBAR or Form 8938 does not become cheaper by moving the money; the penalty attaches to the account years [S21, S23, S22].</li>
+</ol>
+</div>
+
+</main>
+<footer>Every figure on this site is traceable to a page in the source ledger. Blank means unverified, not zero.
+Built by session <code>arena/d54bb3c2-china2</code>. Not tax or legal advice.</footer>
+</body></html>

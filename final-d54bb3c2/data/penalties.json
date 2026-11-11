@@ -1,0 +1,171 @@
+{
+  "section": "F5",
+  "fx_gain_pct": 6.6082,
+  "layers": [
+    {
+      "id": "P1",
+      "layer": "Bank FX spread",
+      "who": "Every conversion, lawful or not, at any bank.",
+      "amount": "BOC 0.2094% of the amount converted; HSBC 0.4979%",
+      "basis": "Difference between the board sell rate and the midpoint of the board buy and sell rates.",
+      "formula": "amount x (sell - mid) / sell",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "fixed": true
+    },
+    {
+      "id": "P2",
+      "layer": "Bank commission and cable charge",
+      "who": "Every wire.",
+      "amount": "BOC: 0.1%, min CNY 50, max CNY 260, plus CNY 150 cable. HSBC: 0.1%, min CNY 100, max CNY 500, plus CNY 120 cable.",
+      "basis": "Published tariff, capped, so it falls as a percentage as the amount rises.",
+      "formula": "max(min_rate, min(0.1% x CNY amount, max_rate)) + cable",
+      "sources": [
+        "S03",
+        "S04"
+      ],
+      "fixed": true
+    },
+    {
+      "id": "P3",
+      "layer": "Correspondent and receiving bank charges",
+      "who": "Every wire.",
+      "amount": "Blank - not published on either bank's page.",
+      "basis": "Both tariffs state only the sending bank's charge.",
+      "formula": "",
+      "sources": [
+        "S03",
+        "S04"
+      ],
+      "fixed": false
+    },
+    {
+      "id": "P4",
+      "layer": "PRC individual income tax on the source income",
+      "who": "Anyone whose balance is untaxed income.",
+      "amount": "20% on interest, dividends, property transfer and incidental income; 3%-45% on comprehensive income; 5%-35% on business income.",
+      "basis": "Statutory rates. This tax is due whether or not you convert, so it is not a cost of converting, but it is the item most often mistaken for one.",
+      "formula": "statutory rate x taxable income",
+      "sources": [
+        "S20"
+      ],
+      "fixed": true
+    },
+    {
+      "id": "P5",
+      "layer": "PRC late payment surcharge",
+      "who": "Anyone with unpaid PRC tax.",
+      "amount": "0.05% of the overdue tax per day.",
+      "basis": "Statutory surcharge; the authority can recover tax and surcharge for three years, or five in special cases.",
+      "formula": "overdue tax x 0.0005 x days late",
+      "sources": [
+        "S31"
+      ],
+      "fixed": true
+    },
+    {
+      "id": "P6",
+      "layer": "US tax on the currency gain",
+      "who": "Every US citizen who converts.",
+      "amount": "6.61% gain in the worked example (CNY acquired at the 2025 IRS average of 7.129 and sold at the BOC board sell rate of 6.6871); taxed at ordinary rates; only the first USD 200 of personal-transaction gain is excluded.",
+      "basis": "Section 988 treats the disposal of nonfunctional currency as an ordinary transaction.",
+      "formula": "USD proceeds - USD basis, taxed at your marginal rate",
+      "sources": [
+        "S07",
+        "S27"
+      ],
+      "fixed": true
+    },
+    {
+      "id": "P7",
+      "layer": "US information-return penalties",
+      "who": "Anyone who missed an FBAR or Form 8938.",
+      "amount": "FBAR non-willful USD 16,536; willful USD 165,353; Form 8938 USD 10,000 plus up to USD 50,000 more after notice.",
+      "basis": "Inflation-adjusted statutory maxima and published form penalties.",
+      "formula": "per violation, per year",
+      "sources": [
+        "S22",
+        "S23"
+      ],
+      "fixed": true
+    },
+    {
+      "id": "P8",
+      "layer": "PRC enforcement penalties on unlawful routes",
+      "who": "Only if the transfer is structured unlawfully.",
+      "amount": "Evasion, illegal arbitrage or illegal conversion: 30% of the amount, or 30%-100% in serious cases. Currency carried in violation: warning plus up to 20%.",
+      "basis": "State Council Decree No. 532, Articles 39-45.",
+      "formula": "rate x amount involved",
+      "sources": [
+        "S09"
+      ],
+      "fixed": true
+    },
+    {
+      "id": "P9",
+      "layer": "Lost access and time",
+      "who": "Anyone placed on a watch list or hit by an approval delay.",
+      "amount": "Blank - no monetary figure is published.",
+      "basis": "Watch-list review lasts two years; approval takes 20 working days plus a possible 10; a card's overseas cash function can be suspended for two years.",
+      "formula": "",
+      "sources": [
+        "S14",
+        "S15",
+        "S16"
+      ],
+      "fixed": false
+    }
+  ],
+  "scenarios": [
+    {
+      "usd": 10000,
+      "lawful_boc_cost_usd": 53.37,
+      "lawful_boc_pct": 0.5337,
+      "fx_gain_usd": 660.82,
+      "fx_gain_pct": 6.61,
+      "evasion_fine_low_usd": 3000.0,
+      "evasion_fine_high_usd": 10000.0,
+      "cash_carry_fine_usd": 2000.0,
+      "fbar_nonwillful_usd": 16536,
+      "fbar_willful_usd": 165353,
+      "form_8938_usd": 60000
+    },
+    {
+      "usd": 100000,
+      "lawful_boc_cost_usd": 270.67,
+      "lawful_boc_pct": 0.2707,
+      "fx_gain_usd": 6608.25,
+      "fx_gain_pct": 6.61,
+      "evasion_fine_low_usd": 30000.0,
+      "evasion_fine_high_usd": 100000.0,
+      "cash_carry_fine_usd": 20000.0,
+      "fbar_nonwillful_usd": 16536,
+      "fbar_willful_usd": 165353,
+      "form_8938_usd": 60000
+    },
+    {
+      "usd": 400000,
+      "lawful_boc_cost_usd": 898.75,
+      "lawful_boc_pct": 0.2247,
+      "fx_gain_usd": 26432.98,
+      "fx_gain_pct": 6.61,
+      "evasion_fine_low_usd": 120000.0,
+      "evasion_fine_high_usd": 400000.0,
+      "cash_carry_fine_usd": 80000.0,
+      "fbar_nonwillful_usd": 16536,
+      "fbar_willful_usd": 165353,
+      "form_8938_usd": 60000
+    }
+  ],
+  "worked_example": {
+    "text": "Convert USD 400,000 through BOC. Spread 0.2094% and a capped fee of CNY 410 give a lawful cost of about USD 898.75, i.e. 0.225%. The same USD 400,000 routed through an unlawful channel and treated as evasion under Article 39 would face a fine of USD 120,000, or up to USD 400,000 in the serious band. One missed willful FBAR for one year would be USD 165,353, which is 184 times the lawful conversion cost.",
+    "sources": [
+      "S01",
+      "S03",
+      "S09",
+      "S22"
+    ]
+  }
+}
