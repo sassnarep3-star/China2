@@ -958,7 +958,7 @@ Claim recorded before work. No other active claim for `audit-92d12752/**` appear
 | U3 | 7-layer conversion-penalty breakdown (PRC tax on underlying income vs. SAFE voucher gate vs. US FX gain/FTC/FEIE vs. spread/fees vs. reporting penalties) | done | `arena/50f278d8-china2` | `transfer-guide/**` |
 | U4 | $10,000→$400,000 cost estimator (40 tiers × N methods, mobile-friendly tables, source link per row, blanks where unverified, exports) | done | `arena/50f278d8-china2` | `transfer-guide/**` |
 | U5 | Line-by-line repo review + Flagged-for-Review + Sources register (official primary sources, verification checks) | done | `arena/50f278d8-china2` | `transfer-guide/**` |
-| U6 | Static site build + independent verifier + CI workflow, full-repo verification, PR → main, merge, Pages deploy confirmation | in progress | `arena/50f278d8-china2` | `.github/workflows/verify-transfer-guide.yml`, `transfer-guide/**`, `COORDINATION.md` (append-only), `ladder/audit.html` (inventory only if needed) |
+| U6 | Static site build + independent verifier + CI workflow, full-repo verification, PR → main, merge, Pages deploy confirmation | done | `arena/50f278d8-china2` | `.github/workflows/verify-transfer-guide.yml`, `transfer-guide/**`, `COORDINATION.md` (append-only), `ladder/audit.html` (inventory only if needed) |
 
 - 2026-11-11 UTC: Claim recorded and pushed before substantive edits. Policy: no private facts inferred; every table row carries a direct official-source link; unverifiable values left blank and flagged; no personal tax bill asserted; no other active session's directory edited outside logged request. Work is deterministic and rebuildable via `transfer-guide/build.py`.
 
@@ -969,7 +969,7 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 
 ### U1–U5 completion record — `arena/50f278d8-china2` (2026-11-11 UTC)
 
-**Status: U1–U5 done; U6 (PR → merge → Pages) in progress.** Files touched: `transfer-guide/**` (new), `.github/workflows/verify-transfer-guide.yml` (new), this section of `COORDINATION.md`. Root `index.html`, `ladder/build.py`, `README.md` and every other session's files were not edited (request logged above).
+**Status: U1–U6 done.** Files touched: `transfer-guide/**` (new), `.github/workflows/verify-transfer-guide.yml` (new), this section of `COORDINATION.md`. Root `index.html`, `ladder/build.py`, `README.md` and every other session's files were not edited (request logged above).
 
 **U1 — Executive summary:** `transfer-guide/index.html` (kpi-grid, decision matrix, 40-source header) + `transfer-guide/EXECUTIVE_SUMMARY.md` (markdown summary, 2026-11-11). Core diagnosis: $0 conversion excise tax; stuck money is SAFE tax-voucher gate (Hui Fa [2020] No.14 Art.59, SAFE Tianjin 2026 FAQ 08) + 3%–45%/20%/10% treaty underlying IIT. If taxed payroll, $0 extra PRC tax to convert $10k–$400k+ in one wire (M01) with no age limit (Henan Q&A 5) and proxy allowed if abroad (Henan Q&A 3). FTC Form 1116 (10-yr window) + Treaty 10% caps prevent double tax.
 
@@ -985,3 +985,25 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 
 
 
+
+
+### Confirmed Publication Result — `arena/50f278d8-china2` (U1–U6 all done)
+
+- **Pull Request:** https://github.com/sassnarep3-star/China2/pull/64 (`arena/50f278d8-china2` → `main`)
+- **Merge Result:** **MERGED** at `2026-11-11T02:33:39Z` via `gh pr merge 64 --merge`; merge commit `b678aa896ece0bd339c9621313121f5ddef16429`.
+- **CI Checks (13/13 passed on PR #64 before merge and 13/13 passed on `main` at `b678aa8`):** `verify-transfer-guide` (19,842 checks, 0 failures), `validate`, `verify-ladder` (9345 checks), `verify-briefing`, `verify-briefing-and-audits`, `verify-repatriate`, `verify-study`, `verify-portal`, `verify-d5d1f860`, `verify-88f5a1be`, `verify-acceptance-a64bd476`, `verify-audit-ad300459`, `verify-estimate-facf2fe9` — all green; Pages build `status: built`.
+- **GitHub Pages Deployment:** Pages API `pages/builds/latest` confirmed `status: built`, `error.message: null` at commit `b678aa896ece0bd339c9621313121f5ddef16429`.
+- **Live Deployed URLs Verified via Pages API (native Pages `main:/` serves `/China2/transfer-guide/` directly):**
+  - **Executive Summary & Decision Dashboard:** https://sassnarep3-star.github.io/China2/transfer-guide/index.html
+  - **Decision Checklist (Q01–Q12) — Knowns/Unknowns/How to Discover:** https://sassnarep3-star.github.io/China2/transfer-guide/questions.html
+  - **$10,000 → $400,000 Cost Estimator (920 Rows):** https://sassnarep3-star.github.io/China2/transfer-guide/costs.html
+  - **All 23 Methods & Step-by-Step Playbooks:** https://sassnarep3-star.github.io/China2/transfer-guide/methods.html
+  - **7-Layer Conversion Penalty Breakdown:** https://sassnarep3-star.github.io/China2/transfer-guide/penalties.html
+  - **U.S. & PRC Tax & Offshore Reporting Matrix:** https://sassnarep3-star.github.io/China2/transfer-guide/taxes.html
+  - **Line-by-Line Repository Review (`RA-01`–`RA-14`):** https://sassnarep3-star.github.io/China2/transfer-guide/audit.html
+  - **Flagged for Review (`FL-01`–`FL-18`):** https://sassnarep3-star.github.io/China2/transfer-guide/flagged.html
+  - **40 Official Primary Sources (`SRC-01`–`SRC-40`):** https://sassnarep3-star.github.io/China2/transfer-guide/sources.html
+  - **Exports:** https://sassnarep3-star.github.io/China2/transfer-guide/exports/cost-ladder-920.csv & `cost-ladder-920.json`
+  - **Markdown Executive Summary:** https://sassnarep3-star.github.io/China2/transfer-guide/EXECUTIVE_SUMMARY.md
+- **Merge conflict log:** Initial claim `c7c2177` pushed before edits. While `transfer-guide/` was being built, `main` advanced through PRs #61 (`arena/bb2a3876-china2`) and #62 (`arena/6201ba1b-china2`). Merged `origin/main` twice (`22561a4` → `714b743` and `bfbecbd` → `b678aa8`); preserved 100% of concurrent sessions' board sections verbatim in `COORDINATION.md` with append-only deterministic regeneration of `ladder/audit.html` (232 files) and `acceptance-a64bd476` counts (110 pages, 30392 checks) via unmodified generators.
+- This publication record is carried in a documentation-only follow-up commit because the merge SHA and Pages build result did not exist before PR #64 merged. All tasks U1–U6 are **done**; flagged items `FL-01`–`FL-18` and `RA-01`–`RA-14` remain published as `needs review` and do not block publication.
