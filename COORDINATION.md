@@ -1354,3 +1354,19 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 - **CI on the PR head:** all 14 checks passed, including the new `verify-guide-fb2f2562` and the path-filtered `verify-acceptance-a64bd476`; merge state was CLEAN.
 - **Pages:** `pages-build-deployment` run https://github.com/sassnarep3-star/China2/actions/runs/42983349325 for head `89ea1e6` completed SUCCESS (build, deploy, report-build-status). The legacy `/pages/builds` API lists the 07:58:05Z build as `built` with `error: null` but shows the previous commit `c36198d` in its `commit` field; the deployment run above is the record for the merge commit. The sandbox cannot reach `github.io`, so no live-page fetch is claimed. Entry point: https://sassnarep3-star.github.io/China2/guide-fb2f2562/
 - **Status:** G1–G7 done. Flagged items (F-01…F-18 and the 35 conflicting repo lines) remain needs review and did not block the merge.
+
+## Session `arena/b43b17a0-china2` — fresh dated drift-check: today's official figures vs the repo's published figures, refreshed executive summary, questions register, methods, penalty layers, 40-tier costs (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to `arena/b43b17a0-china2` and forbids creating or switching branches; this fixed branch substitutes for the requested `session-<id>/<task>` branch. The whole board above was read before claiming. All earlier claims marked "in progress" have later completion/publication records from their owners (or are older than 60 minutes with no commits) and none touches `final-b43b17a0/**`. Open PRs (#39, #48, #49, #52, #53, #55, #63, #65, #68, #69, #71, #79, #81) belong to other sessions and are not touched. Shared outputs (root `index.html`, `data/*.json`, `README.md`) are not edited here; they remain for a final integration session.
+
+| # | Task | Status | Owner | Files / scope | Claimed (UTC) |
+|---|------|--------|-------|---------------|---------------|
+| H1 | Same-day re-read of load-bearing official sources (BOC/HSBC boards and tariffs, SAFE quota and emigrant rules, PBOC crypto ban, IRS FBAR/FEIE/§988/yearly averages, Fed H.10, Wise guide) with exact quoted words; compare each figure with the repo's published figure and record agree / changed / unverified | in progress | `arena/b43b17a0-china2` | `final-b43b17a0/data/**` | 2026-11-11 |
+| H2 | Executive summary + decision register (question · what we know · what we do not know · how to find out) | in progress | `arena/b43b17a0-china2` | `final-b43b17a0/**` | 2026-11-11 |
+| H3 | Every CNY→USD method with pros, cons, step-by-step; "conversion penalty" split into layers | in progress | `arena/b43b17a0-china2` | `final-b43b17a0/**` | 2026-11-11 |
+| H4 | Cost of every priced method at each $10,000 step to $400,000 from today's published inputs only; mobile-first tables, total first; unpublished inputs left blank and flagged | in progress | `arena/b43b17a0-china2` | `final-b43b17a0/**` | 2026-11-11 |
+| H5 | Flagged for Review page (drift, blanks, irregularities) with source links | in progress | `arena/b43b17a0-china2` | `final-b43b17a0/**` (read-only elsewhere) | 2026-11-11 |
+| H6 | Section build + independent verifier + CI workflow; live-site health check (internal links, Pages status) | in progress | `arena/b43b17a0-china2` | `final-b43b17a0/**`, `.github/workflows/verify-final-b43b17a0.yml` | 2026-11-11 |
+| H7 | PR → merge → Pages confirmation; record PR link and merge result here | in progress | `arena/b43b17a0-china2` | `COORDINATION.md` (append-only) | 2026-11-11 |
+
+Baseline before any edit: working tree clean on `arena/b43b17a0-china2` at `2a5a470` (merge of PR #84).
