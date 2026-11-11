@@ -1,0 +1,35 @@
+name: verify-playbook-c1d73006
+# Scope: arena/c1d73006-china2. Runs only when this section or this file changes, so it never
+# blocks another session's pull request. The repository review snapshot (data/review.json) is
+# read as stored and is not rescanned here.
+on:
+  push:
+    branches: [main, arena/c1d73006-china2]
+    paths: ['playbook-c1d73006/**', '.github/workflows/verify-playbook-c1d73006.yml']
+  pull_request:
+    branches: [main]
+    paths: ['playbook-c1d73006/**', '.github/workflows/verify-playbook-c1d73006.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '20'}
+      - name: Recompute the cost table from the source ledger
+        run: python3 playbook-c1d73006/model.py
+      - name: Rebuild every page
+        run: python3 playbook-c1d73006/build.py
+      - name: Generated output is committed byte for byte
+        run: git diff --exit-code -- playbook-c1d73006
+      - name: Independent checks (official link on every row, blanks flagged, links, arithmetic)
+        run: python3 playbook-c1d73006/verify.py
+      - name: Browser script parses
+        run: node --check playbook-c1d73006/assets/app.js
