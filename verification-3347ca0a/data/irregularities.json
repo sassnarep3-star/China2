@@ -2,7 +2,7 @@
   "meta": {
     "session": "arena/3347ca0a-china2",
     "reviewed_on": "2026-11-11",
-    "scope": "Whole repository as checked out on the integration branch: 110 HTML pages, 20 research/site directories, 1 root landing page.",
+    "scope": "Whole repository as checked out on the integration branch: 111 HTML pages, 20 research/site directories, 1 root landing page.",
     "severity_legend": {
       "structure": "Duplication or organisation problem; no data is wrong, but the reader can be misled about which figure is current.",
       "conflict": "Two published figures for the same thing exist in the repository; at least one is stale or differently based.",
@@ -60,7 +60,7 @@
     {
       "id": "IR-06",
       "severity": "gap",
-      "finding": "On a point-in-time scan, 1,384 table rows across 34 pages carry no direct official-domain URL inside their own static row.",
+      "finding": "On a point-in-time scan, 1,423 table rows across 36 pages carry no direct official-domain URL inside their own static row (15 of them are this site's declared navigational archive rows and 7 cite repository files).",
       "evidence": "audit-92d12752/results.json, regenerated on 2026-11-11 after these pages were added: 111 pages, 8,298 table rows scanned, 1,423 candidate rows on 36 pages. Of these, 15 are this page's own archive index (declared navigational rows) and 7 are this audit page's internal-evidence rows, which cite repository files rather than an external document.",
       "impact": "Structural only: it neither proves the claim is unsupported nor checks link liveness. Every claim-bearing row on this page and on the verification page carries an inline official link; the remaining candidates are navigational or cite repository files by design.",
       "verification": "Snapshot re-read from audit-92d12752/results.json on 2026-11-11; not re-run.",
@@ -70,7 +70,7 @@
       "id": "IR-07",
       "severity": "stale",
       "finding": "Pages carry four different review dates.",
-      "evidence": "docs/* pages carry '07 NOV 2026' (datetime 2026-11-07); transfer-guide carries 2026-11-10; the root page carried '10 November 2026'; this page is 2026-11-11.",
+      "evidence": "docs/* pages carry '07 NOV 2026' (datetime 2026-11-07); transfer-guide carries 2026-11-10; the previous root page carried '10 November 2026'; the integration pages are 2026-11-11.",
       "impact": "A reader cannot tell whether a fee or rule shown on a page has been checked since the HSBC tariff changed on 31 October 2026 or since the last source pass.",
       "verification": "Dates read from the page headers on 2026-11-11.",
       "source": "https://github.com/sassnarep3-star/China2/tree/main/docs"

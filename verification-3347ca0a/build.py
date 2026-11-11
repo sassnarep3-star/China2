@@ -831,8 +831,9 @@ that can actually mislead money decisions are the rate base (<a href="#IR-05">IR
   each landing page was extracted with a pattern scan, and the numbers were compared rather than eyeballed.</li>
   <li><strong>Recompute money.</strong> Fees, caps and year counts were recomputed from the tariff text in
   <code>build.py</code> and re-derived independently in <code>verify.py</code>.</li>
-  <li><strong>Check links locally.</strong> All internal <code>href</code>/<code>src</code> paths across the
-  {110} HTML pages were resolved against the filesystem; none were broken on {TODAY}.</li>
+  <li><strong>Check links locally.</strong> Every internal <code>href</code>/<code>src</code> path on the three
+  generated pages was resolved against the filesystem, and the whole tree was re-scanned for broken internal links
+  (111 HTML pages, 0 broken on {TODAY}).</li>
   <li><strong>Read the corrections.</strong> Where a page corrects an earlier figure (the HSBC USD 7 wording), the
   occurrence list was generated so the correction itself is auditable.</li>
   <li><strong>State the boundary.</strong> A structural scan does not prove a claim is unsupported, and a retrieval does
