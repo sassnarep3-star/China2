@@ -438,7 +438,10 @@ def root_page():
         # Navigation-only addition by session arena/fb2f2562-china2 (2026-11-11), logged in COORDINATION.md:
         # one archive row and one category card so its decision guide and line-level repo review are reachable.
         ("guide-fb2f2562/index.html", "Decision guide + line-level repo review", "11 methods · 30 sources · 440 tier rows", "Separate pass on 11 Nov 2026: sources re-read the same day (incl. Rev. Proc. 2026-35 FEIE $137,300), cost at every $10,000 step, US FX-gain check, and a file:line scan of every other section against the official text."),
-    ]
+
+        # Navigation-only addition by session arena/690a0af9-china2 (2026-11-11), logged in COORDINATION.md:
+        # one archive row and one category card so its fresh same-day pass is reachable from this landing page.
+        ("guide-690a0af9/index.html", "Fresh pass + 2026 remittance-tax check", "11 methods · 32 sources · 40 tiers · priced Wise", "Separate pass on 11 Nov 2026: boards re-read at 20:39, Wise priced from its own panel, the new 1% US remittance tax (IRC 4475) checked and excluded for bank/card-funded transfers, cheapest-route-first cost tables."),    ]
     archive_rows = "".join(
         f'<tr><th scope="row" data-label="Set"><a href="{href}">{esc(title)}</a></th>'
         f'<td data-label="Published counts">{esc(counts)}</td>'
@@ -637,6 +640,8 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
     <em>A separate session’s decision dashboard: questions, routes, cost at every $10,000, and corrections to earlier sets.</em></a>
   <a class="card" href="playbook-c1d73006/index.html"><b>Route-by-origin playbook</b><span>10 origins · 34 sources · read 11 Nov</span>
     <em>A separate session’s playbook: pick the route by where the money came from, with the papers, the tax and the cost for each.</em></a>
+  <a class="card" href="guide-690a0af9/index.html"><b>Fresh pass · 2026 remittance tax</b><span>32 sources · read 11 Nov · priced Wise</span>
+    <em>Same-day re-read of the boards and tariffs, the new 1% US remittance tax checked against IRS text, and cheapest-route-first cost tables.</em></a>
   <a class="card" href="guide-fb2f2562/index.html"><b>Decision guide · line-level repo review</b><span>30 sources · read 11 Nov · 40 tiers</span>
     <em>A separate session’s guide: executive summary, decision questions, every method with steps, the penalty in layers, and each conflicting repository line by file and line.</em></a>
 </div>
