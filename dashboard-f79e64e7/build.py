@@ -281,7 +281,7 @@ def p_index():
 <ol class="answer">
 <li><strong>Converting is not what gets taxed.</strong> Nothing in the PRC exchange rules read today taxes the exchange itself. Banks convert a foreigner's lawful income on ID plus papers that show the amount, including tax vouchers. {chips(['S01', 'S06'])}</li>
 <li><strong>The tax, if any, is PRC income tax on how the money was earned:</strong> 3% to 45% on wages, 20% on dividends, rent and asset sales, and none at present on bank interest. If it was already withheld, converting adds no PRC tax. {chips(['S14', 'S15'])}</li>
-<li><strong>The cheapest lawful route is one documented bank wire.</strong> At Bank of China's posted rate and fees it costs about {c400['pct']}% to {c10['pct']}% of the amount, before any fees taken by other banks. {chips(['S17', 'S18'])}</li>
+<li><strong>The cheapest lawful route is one documented bank wire.</strong> At Bank of China's posted rate and fees it costs about 0.2% to 0.5% of the amount, before any fees taken by other banks. {chips(['S17', 'S18'])}</li>
 <li><strong>The U.S. taxes the income when earned and credits PRC tax paid on it.</strong> Moving the money is not a new taxable event, but a currency gain above $200 is recognised, and the yuan is stronger now than in 2023 to 2025. {chips(['S28', 'S21', 'S29'])}</li>
 <li><strong>The large U.S. penalties are for missed forms, not for the transfer:</strong> FBAR, Form 8938 and Form 3520. Bring those up to date first. {chips(['S22', 'S23', 'S24', 'S25'])}</li>
 </ol>
@@ -387,16 +387,17 @@ def p_costs():
             f'<summary><span class="chip {k[0]}">{k[1]}</span> <strong>{E(m["name"])}</strong>'
             f'<small>{E(r["basis"])}. Not included: {E(r["excluded"].lower())}.</small></summary>'
             + table(COST_HEAD, cost_rows(m["id"]), "wide") + "</details>")
-    body = f"""<section class="panel"><h2>How the estimate is made</h2>
-<p>For each amount, the cost is the bank's exchange spread plus its wire fees, using only prices the bank publishes. The spread is half the gap between the posted buying and selling rates. Fees taken by intermediary and receiving banks are not published, so they are left out and flagged, as is any tax. Where a provider publishes no price, the cost is a dash and only the number of transfers or the time is shown.</p></section>
-<section><h2>Inputs</h2>{table(['Input', 'Value', 'Note', 'Sources'], irows)}</section>
-<section><h2>The four fully priced routes side by side</h2>
+    body = f"""<section><h2>The four fully priced routes side by side</h2>
+<p class="note">Spread plus wire fees at Bank of China's published prices. Not included: fees taken by intermediary and receiving banks, and any tax. Scroll the table sideways for more columns.</p>
 <p class="controls"><label><input type="checkbox" id="only50"> Show every $50,000 only</label>
 <a class="btn" href="exports/costs.csv">Download all rows (CSV)</a></p>
 {table(COMPARE_HEAD, compare_rows([int(t) for t in TIERS]), 'wide')}</section>
 <section><h2>Every route, every $10,000</h2>
 <p class="controls"><label>Jump to a route <select id="jump"><option value="">Choose…</option>{opts}</select></label></p>
-{''.join(blocks)}</section>"""
+{''.join(blocks)}</section>
+<section class="panel"><h2>How the estimate is made</h2>
+<p>For each amount, the cost is the bank's exchange spread plus its wire fees, using only prices the bank publishes. The spread is half the gap between the posted buying and selling rates. Fees taken by intermediary and receiving banks are not published, so they are left out and flagged, as is any tax. Where a provider publishes no price, the cost is a dash and only the number of transfers or the time is shown.</p></section>
+<section><h2>Inputs</h2>{table(['Input', 'Value', 'Note', 'Sources'], irows)}</section>"""
     return page("costs.html", "Cost of moving $10,000 to $400,000",
                 f"{len(C.METHODS)} routes at {len(TIERS)} amounts, priced from Bank of China's posted rate and fee table on 11 November 2026.", body)
 
