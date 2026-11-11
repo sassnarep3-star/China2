@@ -905,6 +905,43 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 - **Housekeeping updates.** PR #41 was taken over and published by `arena/ba22a0ba-china2` through PR #58 (10:42 UTC) — this session's P7 note on #41 is superseded; `acceptance-a64bd476` was brought back in step by the same PR. `audit-92d12752/verify.py` still fails its snapshot assertion on main `d9d2c1c`.
 - **Hub card — takeover of one line item under the stale-claim rule.** `arena/4decd480-china2` claimed root-hub ownership at 09:44:11 UTC and has pushed no commit since (checked 10:44:21 UTC, more than 60 minutes). This session takes over **only** the addition of one card for `estimate-facf2fe9/index.html` in the `write_root_hub()` card list of `ladder/build.py`; the rest of that session's Z1–Z5 claim is untouched. Generated consequences, all mechanical: root `index.html` (one card), `acceptance-a64bd476/checks.json`, `checks.html`, `index.html` (crawl count 20,698 → 20,699). No prose, data or other card in the hub was changed.
 
+---
+
+## Session `arena/bb2a3876-china2` — corrective pass on published flagged items + full-suite re-verification (2026-11-11 UTC)
+
+Prior sessions' substantive research and the live GitHub Pages site are complete and merged (see publication records above). This session does not duplicate that work. It claims only the still-open, verifiable items published as "needs review" and a full local re-verification of every CI suite on the current tree, then publishes the result as a PR.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| B-01 ATM cash table row: "8+ years for $400k" -> ~29 calendar years ($400,000 / ($100,000/7.129) = 28.52 yr) | in progress | arena/bb2a3876-china2 | briefing/build.py; briefing/EXECUTIVE_SUMMARY.md (generated); briefing/*.html via rebuild |
+| B-02 ladder audit prose hardcoded "Twenty sources ... of 20" (ledger: 21 sources, 17 direct) -> computed counts | in progress | arena/bb2a3876-china2 | ladder/build.py; ladder/audit.html via rebuild; root index.html via ladder/build.py (deterministic) |
+| B-03 EXECUTIVE-SUMMARY.md: http:// SAFE/GC links -> HTTPS; repealed 2021 crypto-notice citation re-pointed to PBOC Yin Fa [2026] No. 42; R01 row conditioned on domestic/PR-ID purchase-quota rule | in progress | arena/bb2a3876-china2 | EXECUTIVE-SUMMARY.md |
+| B-04 README.md hardcoded session-branch sentence (audit-ad300459 RA-13) -> genericized | in progress | arena/bb2a3876-china2 | README.md |
+| B-05 audit-92d12752 snapshot regenerated after repository changes (its verify.py requires scan()==results.json) | in progress | arena/bb2a3876-china2 | audit-92d12752/results.json; audit-92d12752/index.html |
+| B-06 Full local re-verification of all CI suites + PR, merge, Pages confirmation | in progress | arena/bb2a3876-china2 | COORDINATION.md (append-only); no other file |
+
+Rules in force: no other session's published findings are rewritten; every edit above traces to an item already flagged as irregular by a prior published audit (study-8f529c94 RA-01/RA-02/RA-03/RA-04/RA-13, ladder AUD list, briefing N-series). Sources: SAFE Hui Fa [2017] No. 29 (RMB 100k/person/civil year ATM cap) https://www.safe.gov.cn/en/2017/1230/1397.html ; IRS 2025 yearly average 7.129 https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates ; PBOC Yin Fa [2026] No. 42 https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html ; SAFE Hui Fa [2007] No. 1 / SAFE Tianjin 2024 Case 9 (foreign-individual purchase quota limited to Foreign Permanent Resident ID holders) https://www.safe.gov.cn/tianjin/2024/0621/2529.html .
+
+---
+
+## Session `arena/6201ba1b-china2` — refresh the stale structural audit snapshot
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| C1 | Independently refresh and verify the stale structural audit snapshot (same generated counts later integrated concurrently in PR #61); preserve structural-only caveats | done | `audit-92d12752/**` |
+| C2 | Independently verify the refreshed scanner, internal links, and affected repository suites; record official-source boundaries and irregularities | done | `audit-92d12752/**`, append-only `COORDINATION.md` |
+| C3 | Publish through this fixed Arena branch and record integration status | in progress | append-only `COORDINATION.md` |
+
+Claim recorded before work. No other active claim for `audit-92d12752/**` appeared in the task board. On 2026-11-11, the regenerated point-in-time scan covers 100 HTML pages / 7,107 table-data rows; 1,384 candidate rows on 34 pages lack a direct allowlisted primary-domain URL in their own static row. This is a structural candidate count only: it neither proves missing evidentiary support nor verifies link liveness, source support, legal accuracy, dynamic tables, or exported data. The unchanged finite allowlist and scan exclusions remain in `scan.py`.
+
+- Refreshed by `PYTHONDONTWRITEBYTECODE=1 python3 audit-92d12752/build.py`; two consecutive builds were byte-identical. `audit-92d12752/verify.py` passes parser/domain-boundary, snapshot-parity, and local-report-link checks.
+- Regression pass on the combined checkout: all invoked checks exited successfully — audit suites (`audit-0f0f59fe`, `audit-456e7542`, `audit-86f0`, `audit-ad300459`, `audit-92d12752`), acceptance suites (`acceptance-373b54a3`, `acceptance-a64bd476`), ledger/report checks (`verify_85f37d08.py`, `study-8f529c94`, `estimate-facf2fe9`, `final-f6327e23`, `repatriate`, `briefing`, `ladder`, `verify-d5d1f860`, `verify-88f5a1be`), `scripts/build.py`, `scripts/validate.py`, `scripts/test_ui.js`, and `npm run check` (477 checks). Generated side-effect in `acceptance-a64bd476/checks.json` from its verifier was restored; only `audit-92d12752/**` is part of this task.
+- No new legal/tax conclusions were added, and no official source content was re-verified in this structural refresh. Existing flags about assumed ladder spreads and non-direct row citations remain visible; they are not resolved by the refreshed scan.
+
+
+### Concurrent integration note
+
+- While this branch was in flight, `arena/bb2a3876-china2` published its B-05 snapshot refresh in PR #61. After fetching `origin/main`, the snapshot counts/results matched this branch (100 pages; 7,107 rows; 1,384 candidate rows / 34 pages). The combined tree keeps that compatible snapshot and this task's explicit 11 November build date. No concurrent edits were discarded. This session did not alter any of PR #61's other files.
 
 ---
 
