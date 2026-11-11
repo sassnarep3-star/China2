@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "session": "arena/9fe02cf5-china2",
+    "note": "Twelve methods are listed. Only methods whose published fee was read in an official or bank-published document in this session carry a computed fee. Every other fee column is left blank and flagged.",
+    "status_legend": {
+      "LAWFUL": "Permitted on its face by the reviewed rule, subject to the bank's own due-diligence and documents.",
+      "CONDITIONAL": "Permitted only if specific facts or documents exist; eligibility is not established for any particular person.",
+      "REJECTED": "Prohibited by the reviewed rule. Listed so the risk is visible, not as advice."
+    }
+  },
+  "methods": [
+    {
+      "id": "M01",
+      "name": "Onshore bank conversion of documented current-account income, then outward SWIFT wire (SHA)",
+      "status": "LAWFUL",
+      "scope": "Foreign or domestic individual with lawful current-account RMB income and the source documents",
+      "basis_claims": [
+        "C01",
+        "C05",
+        "C06",
+        "C23"
+      ],
+      "cap": "No USD 50,000 cap on the document route; the bank reviews the transaction evidence.",
+      "fee_model": "hsbc_premier_sha",
+      "fee_label": "HSBC China Premier/Advance outward TT, sender pays own bank charges (SHA)",
+      "pros": [
+        "Expressly contemplated by the FX rules: identity plus transaction/source evidence, including tax documents where required.",
+        "No statutory limit on when the old income is converted.",
+        "Can be entrusted to another person with authorisation and documents if the holder is abroad.",
+        "At the tariff read here the sender-side fee is capped (CNY 500 + CNY 120 cable), so it does not scale with the amount."
+      ],
+      "cons": [
+        "The bank's due-diligence decision is discretionary; missing contemporaneous proof of the original income is the usual failure point.",
+        "Tax vouchers may have to be obtained first (a PRC tax filing, not a conversion fee).",
+        "FX spread and any correspondent/intermediary deductions are not published in the tariff and remain unverified.",
+        "Nothing here establishes that any particular balance qualifies."
+      ],
+      "steps": [
+        "Obtain the original evidence of the RMB income: contract, payroll records, invoices, tax payment certificates.",
+        "If PRC individual income tax was not withheld, settle the PRC filing at the competent tax authority and keep the certificate.",
+        "Ask the bank in writing which category it will book the conversion under and what document list it requires.",
+        "Complete the tax recordal only if the bank/payee structure requires it for a service-trade payment.",
+        "Instruct the conversion and the outward wire on the same visit; request the applied CNY/USD rate and an itemised fee slip.",
+        "Keep the exchange memo, the wire confirmation and the rate evidence: they are needed for US basis and reporting."
+      ]
+    },
+    {
+      "id": "M02",
+      "name": "Same wire with 'Pay Exact' (OUR) so the receiving bank charges are absorbed",
+      "status": "LAWFUL",
+      "scope": "Same as M01, when the US receiving bank must not deduct a fee",
+      "basis_claims": [
+        "C23",
+        "C24"
+      ],
+      "cap": "No amount cap in the tariff; CNY 200 per instruction at the bank read here.",
+      "fee_model": "hsbc_premier_our",
+      "fee_label": "HSBC China Premier/Advance outward TT with Pay Exact (OUR) at CNY 200",
+      "pros": [
+        "The published tariff states the beneficiary receives the full USD proceeds, with any shortfall collected later.",
+        "Removes uncertainty about receiving-bank deductions for the principal.",
+        "Same document route as M01, so no additional eligibility test."
+      ],
+      "cons": [
+        "Adds a fixed CNY 200 per instruction.",
+        "Any shortfall in overseas bank charges is still collected from the remitter afterwards.",
+        "Does not remove the FX spread, which is the larger cost at high amounts."
+      ],
+      "steps": [
+        "Complete the M01 document and conversion steps.",
+        "At instruction, tick the 'Pay Exact' / OUR option.",
+        "Confirm on the receipt that OUR was recorded and that the fee slip shows the CNY 200 item.",
+        "Retain the confirmation showing the exact USD amount the beneficiary received."
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "Outward wire through a Private Banking individual account",
+      "status": "LAWFUL",
+      "scope": "Private Banking individual customer of the same bank",
+      "basis_claims": [
+        "C23"
+      ],
+      "cap": "No amount cap in the tariff.",
+      "fee_model": "hsbc_pb_ind",
+      "fee_label": "HSBC China Private Banking individual outward TT and cable (both published free)",
+      "pros": [
+        "The tariff read here publishes the telegraphic-transfer issuance fee and the cable charge as free for individual Private Banking customers.",
+        "Same eligibility and document route as M01."
+      ],
+      "cons": [
+        "Requires Private Banking status, which the holder may not have.",
+        "Free sender fees do not mean free conversion: the spread is not published.",
+        "Third-party and correspondent charges are expressly excluded from the tariff."
+      ],
+      "steps": [
+        "Confirm the account is booked as a Private Banking individual account.",
+        "Obtain the same document set as M01.",
+        "Instruct the wire and obtain the fee slip showing zero commission and zero cable.",
+        "Record the applied rate, since the fee saving is trivial next to the spread."
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "Outward wire as a Premier Elite customer (service-fee exemption)",
+      "status": "CONDITIONAL",
+      "scope": "Customer who meets the bank's published Premier Elite conditions",
+      "basis_claims": [
+        "C23"
+      ],
+      "cap": "No amount cap published.",
+      "fee_model": "hsbc_elite",
+      "fee_label": "Premier Elite service-fee exemption published in the tariff remark",
+      "pros": [
+        "The tariff remark states Premier Elite and Premier Elite Passport customers enjoy the service-fee exemption.",
+        "No change to the documentary basis of the transfer."
+      ],
+      "cons": [
+        "Eligibility conditions are set by the bank and were not verified for any person.",
+        "Exemption covers the service fee only; the spread and third-party charges are unaffected."
+      ],
+      "steps": [
+        "Confirm in writing that the account carries Premier Elite status for the instruction date.",
+        "Request the exemption be applied to the instruction and shown on the fee slip.",
+        "Otherwise follow M01."
+      ]
+    },
+    {
+      "id": "M05",
+      "name": "Document-based conversion at a different mainland bank (fee schedule not read here)",
+      "status": "CONDITIONAL",
+      "scope": "Any mainland bank account, where the bank accepts the document set",
+      "basis_claims": [
+        "C01",
+        "C05",
+        "C06",
+        "C24"
+      ],
+      "cap": "Bank-specific.",
+      "fee_model": null,
+      "fee_label": "Published tariff for this bank was not read in this session",
+      "pros": [
+        "The FX rules apply to banks generally, so the same document route should be available at other banks.",
+        "A second bank may apply a different spread or a more experienced documentary review."
+      ],
+      "cons": [
+        "No fee, spread or acceptance practice is published in this study for any other bank; the cost cells are blank, not zero.",
+        "Branch-level practice and document lists differ."
+      ],
+      "steps": [
+        "Ask the second bank for its written document list and its all-in quote for the exact amount.",
+        "Compare the quoted CNY/USD rate against the published board on the same day.",
+        "Proceed only when the itemised quote is in hand."
+      ]
+    },
+    {
+      "id": "M06",
+      "name": "Annual USD 50,000 facilitation quota, in yearly tranches",
+      "status": "CONDITIONAL",
+      "scope": "Domestic individual, or a foreign individual holding a Foreign Permanent Resident ID",
+      "basis_claims": [
+        "C04",
+        "C07"
+      ],
+      "cap": "USD 50,000 equivalent per person per year.",
+      "fee_model": null,
+      "fee_label": "Bank fee for quota-based purchase not read in this session",
+      "batch_size_usd": 50000,
+      "pros": [
+        "Simple identity-based route inside the quota, without a transaction-by-transaction source review.",
+        "Available to a domestic individual or a PR-ID holder."
+      ],
+      "cons": [
+        "A foreign individual without a PR ID is outside this route.",
+        "Splitting a balance across people or years to defeat the quota is a separate unlawful act.",
+        "Takes 8 calendar years for USD 400,000 even if everything else is perfect."
+      ],
+      "steps": [
+        "Establish which category the holder falls into, in writing, before relying on this route.",
+        "Convert up to the quota each calendar year and wire it out.",
+        "Keep every conversion memo so the tranches can be traced.",
+        "Do not use family members' quotas to accelerate the schedule."
+      ]
+    },
+    {
+      "id": "M07",
+      "name": "Overseas ATM cash withdrawals on a mainland debit card",
+      "status": "LAWFUL",
+      "scope": "Cardholder with a domestic card and an overseas ATM",
+      "basis_claims": [
+        "C12"
+      ],
+      "cap": "RMB 100,000 equivalent per person per civil year; RMB 10,000 equivalent per card per day.",
+      "fee_model": null,
+      "fee_label": "ATM operator and card-issuer charges not read in this session",
+      "annual_rmb_cap": 100000,
+      "daily_rmb_cap": 10000,
+      "pros": [
+        "Uses an existing card; no documentary review at the counter.",
+        "Useful for spending needs rather than moving a balance."
+      ],
+      "cons": [
+        "Hard annual ceiling, and exceeding it blocks overseas cash withdrawal for the current and following year.",
+        "Requires many withdrawals and many years for large sums.",
+        "Cash still has to be deposited in the US and is subject to the USD 10,000 border-reporting rule if carried.",
+        "Card and ATM fees are not published in the documents read here."
+      ],
+      "steps": [
+        "Check the card's own overseas withdrawal limit and fee with the issuer.",
+        "Withdraw within RMB 10,000 equivalent per card per day.",
+        "Track the cumulative civil-year total against RMB 100,000.",
+        "Deposit the cash in a US account and keep the withdrawal slips."
+      ]
+    },
+    {
+      "id": "M08",
+      "name": "Reconversion of unspent RMB using the original exchange memo",
+      "status": "CONDITIONAL",
+      "scope": "Only money that itself came from an earlier FX conversion",
+      "basis_claims": [
+        "C10"
+      ],
+      "cap": "Original memo valid 24 months; ID-only handling up to USD 500/day (USD 1,000 at port facilities).",
+      "fee_model": null,
+      "fee_label": "Fee not read in this session",
+      "pros": [
+        "A clear rule with a defined document: the original exchange memo.",
+        "Small same-day amounts need only ID."
+      ],
+      "cons": [
+        "Does not apply to RMB earned in China, which is the usual case.",
+        "The 24-month validity has usually expired for a long-stuck balance.",
+        "Small daily limits make it irrelevant for USD 400,000."
+      ],
+      "steps": [
+        "Locate the original exchange memo and check its date.",
+        "Present ID and the memo at the bank within 24 months of the exchange.",
+        "For larger amounts, expect the bank to apply the general document route instead."
+      ]
+    },
+    {
+      "id": "M09",
+      "name": "Capital-account transfer: emigration, inheritance or property proceeds",
+      "status": "CONDITIONAL",
+      "scope": "Emigrating individual's pre-emigration assets; foreign citizen inheriting a PRC estate; qualifying property proceeds",
+      "basis_claims": [
+        "C02",
+        "C11"
+      ],
+      "cap": "Governed by the separate provisional rules; not re-read in this session.",
+      "fee_model": null,
+      "fee_label": "Fee not read in this session",
+      "pros": [
+        "A recognised route with its own rulebook rather than the current-account document route.",
+        "Can be the only route for genuinely capital-account money."
+      ],
+      "cons": [
+        "Heavy documentation and approval steps; the specific rulebook was not verified here.",
+        "Timeline and acceptance vary by locality.",
+        "Estate and property paperwork is usually the real bottleneck."
+      ],
+      "steps": [
+        "Identify whether the balance is capital-account money at all (property sale, inheritance, pre-emigration assets).",
+        "Obtain the SAFE local-branch document list for that category in writing.",
+        "Assemble the title, tax-clearance and identity documents.",
+        "Obtain approval before instructing any conversion."
+      ]
+    },
+    {
+      "id": "M10",
+      "name": "Third-party remittance apps or agents (Wise, Western Union, 'agents')",
+      "status": "CONDITIONAL",
+      "scope": "Only if the provider is lawfully operating in China for that corridor and the source documents are accepted",
+      "basis_claims": [
+        "C01",
+        "C06"
+      ],
+      "cap": "Provider-specific and mostly undocumented in official sources.",
+      "fee_model": null,
+      "fee_label": "Provider fee and availability not verified in this session",
+      "pros": [
+        "May be cheaper for small amounts if genuinely available.",
+        "Convenient interface."
+      ],
+      "cons": [
+        "No official PRC source read here confirms availability, limits or legality of any named provider for a mainland CNY balance.",
+        "Providers generally exclude third-party or business payments and require the money to be the sender's own salary.",
+        "Costs are blank in this study because nothing was verified."
+      ],
+      "steps": [
+        "Check the provider's own China eligibility page and ask whether it operates for a mainland CNY balance.",
+        "Ask the bank whether the payment would be booked as a lawful current-account remittance.",
+        "Treat any quote as indicative until the receiving amount in USD is confirmed."
+      ]
+    },
+    {
+      "id": "M11",
+      "name": "REJECTED: cryptocurrency / USDT / stablecoin bridge",
+      "status": "REJECTED",
+      "scope": "Not lawful in China",
+      "basis_claims": [
+        "C16",
+        "C26"
+      ],
+      "cap": "Prohibited.",
+      "fee_model": null,
+      "fee_label": "Not applicable",
+      "pros": [
+        "Advertised as fast and outside the banking system."
+      ],
+      "cons": [
+        "RMB-to-virtual-currency business is classified as illegal financial activity and must be strictly prohibited.",
+        "Banks and payment institutions may not provide accounts, transfers or settlement for it.",
+        "Counterparty, seizure and fraud risk sits entirely on the holder.",
+        "PRC FX penalties can reach 30% or more of the amount."
+      ],
+      "steps": [
+        "Do not use this route."
+      ]
+    },
+    {
+      "id": "M12",
+      "name": "REJECTED: underground banking, '对敲' peer swaps, or splitting quotas across relatives",
+      "status": "REJECTED",
+      "scope": "Not lawful in China",
+      "basis_claims": [
+        "C04",
+        "C26"
+      ],
+      "cap": "Prohibited.",
+      "fee_model": null,
+      "fee_label": "Not applicable",
+      "pros": [
+        "Usually presented as avoiding documentation entirely."
+      ],
+      "cons": [
+        "Private or disguised trading in foreign exchange is penalised at up to 30% of the amount, or more in serious cases.",
+        "Using other people's quotas to evade the annual limit is a separate evasion.",
+        "No legal recourse if the counterparty keeps the money.",
+        "Creates a US reporting problem on top of the PRC one."
+      ],
+      "steps": [
+        "Do not use this route."
+      ]
+    }
+  ]
+}

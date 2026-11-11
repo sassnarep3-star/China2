@@ -1,8 +1,8 @@
 {
-  "pages_scanned": 100,
-  "data_rows": 7107,
-  "without_direct_primary": 1384,
-  "pages_with_candidates": 34,
+  "pages_scanned": 118,
+  "data_rows": 8733,
+  "without_direct_primary": 1433,
+  "pages_with_candidates": 35,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
@@ -306,8 +306,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 225,
-      "without_direct_primary": 225,
+      "rows": 258,
+      "without_direct_primary": 258,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -557,8 +557,116 @@
       "first_example": ""
     },
     {
+      "path": "transfer-guide/audit.html",
+      "rows": 14,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/costs.html",
+      "rows": 943,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/flagged.html",
+      "rows": 18,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/index.html",
+      "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/methods.html",
+      "rows": 23,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/penalties.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/questions.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/sources.html",
+      "rows": 40,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/taxes.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
       "path": "verify-88f5a1be/index.html",
       "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/audit.html",
+      "rows": 16,
+      "without_direct_primary": 16,
+      "first_example": "HTML pages in repository 110 find . -name '*.html' -not -path './.git/*' | wc -l (before this session added its pages) file"
+    },
+    {
+      "path": "verify-9fe02cf5/costs.html",
+      "rows": 422,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/flagged.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/index.html",
+      "rows": 5,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/methods.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/questions.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/sources.html",
+      "rows": 21,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/taxes.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/verification.html",
+      "rows": 27,
       "without_direct_primary": 0,
       "first_example": ""
     },

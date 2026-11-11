@@ -1009,3 +1009,43 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 Policy for this session: no private fact is inferred; every table row carries a direct official-source link; a value not confirmed in an official primary source in this session is left blank and flagged, never filled from memory or from another session's page; no personal tax bill is asserted. `COORDINATION.md` is append-only here.
 
 Logged cross-session request carried out by this session (final integration): the `arena/50f278d8-china2` entry asked for a hub card linking `transfer-guide/index.html`. That request is accepted and will be executed in V4 only; no other session's prose or data is rewritten.
+
+### V1–V3 completion record — `arena/9fe02cf5-china2` (2026-11-11 UTC)
+
+**Status: V1–V3 done; V4 (PR → merge → Pages) in progress.** New files only in `verify-9fe02cf5/**` and `.github/workflows/verify-9fe02cf5.yml`; shared outputs touched: root `index.html` and the card list in `ladder/build.py`, plus the mechanically regenerated `acceptance-a64bd476/{checks.json,checks.html,index.html}`, `audit-92d12752/{results.json,index.html}` and `ladder/audit.html`. No other session's prose, data or page was edited.
+
+**What this pass did differently.** It re-fetched every load-bearing document itself on 2026-11-11 and quoted the supporting sentence, instead of copying conclusions:
+
+| Source | What was read | Claim |
+|---|---|---|
+| SAFE Beijing, 外汇管理条例 (Decree 532) | Arts. 5, 12, 22, 39, 45, 52(2) | C01, C02, C26 |
+| SAFE Tianjin, 汇发[2007]1号 consolidated | Arts. 2, 4, 12, 13, 14, 15, 20, 38 | C04, C05, C06, C09, C10, C11 |
+| SAFE Tianjin 2026 FAQ 08 / 2024 case 9 | Art. 59 quotation; PR-ID quota condition | C06, C07 |
+| SAFE Henan Q&A (5) and (3) | no time limit; proxy permitted | C08, C09 |
+| SAFE 汇发[2017]29号 | RMB 100,000 per civil year; RMB 10,000 per card per day | C12 |
+| STA/SAFE 公告2021年第19号 | recordal once per contract | C13 |
+| STA IIT Law (EN) | Art. 3 rates | C14 |
+| PBOC et al. 银发〔2026〕42号 | virtual-currency activity illegal; 2021 notice repealed | C16 |
+| IRS US–PRC treaty PDF | Arts. 9(2), 10(2), 11(2) — 10% each | C15 |
+| 26 U.S.C. § 988 (govinfo) | (e)(1), (e)(2), (e)(3) — $200 threshold | C18 |
+| 26 U.S.C. § 6677 (govinfo) | greater of $10,000 or 35%; 5% for 6048(b); $10,000/30 days | C27 |
+| IRS yearly average rates | 2025 China 7.129; no official IRS rate | C17 |
+| IRS FTC + how-to-figure | Form 1116, limit, 1-back/10-forward, FEIE conflict | C19 |
+| IRS 8938 vs FBAR | thresholds and $10,000/$60,000 penalties | C20 |
+| 31 CFR 1010.821 (eCFR) | $16,536 non-willful / $165,353 willful; 90 FR 5630 | C21 |
+| CBP money instruments | >$10,000 FinCEN 105; group aggregate | C22 |
+| HSBC China tariff (eff. 31 Oct 2026) | 2.2.4.1, 2.2.4.2, Pay Exact CNY 200, note 7 | C23, C24 |
+| Bank of China board | USD buy 666.30 / sell 669.11 at 2026-11-11 10:25:02 | C25 |
+
+**Cost ladder (V4 scope).** 40 tiers × 10 methods = 400 rows, $10,000–$400,000 in $10,000 steps, in `verify-9fe02cf5/costs.html` and `exports/cost-ladder.{csv,json}`. Rate used: BOC selling rate 6.6911 CNY/USD (dated on every page), **not** the IRS 2025 average of 7.129, which is retained only for tax translation. Published sender fees independently reproduce the tariff: CN¥620 → $92.66 at $400,000 for Premier/Advance, $0.00 for Private Banking individual, +$29.89 for Pay Exact. Benchmark spread 0.419961% derived from the two published BOC prices; blank for every method with no published fee.
+
+**Corrections and irregularities found (published on `verify-9fe02cf5/flagged.html` and `audit.html`).**
+- F01: the "5% per month up to 25%" Form 3520 figure could not be re-verified (govinfo and OLRC URLs for §6039F both returned 404); §6677, which was read, says greater of $10,000 or 35%. Recorded as unverified, **not** as a correction of the other session's page.
+- F02: §988(e) does not state that a personal exchange gain above $200 is capital; that description is not repeated anywhere in this site.
+- F05/F06/F07: FEIE 2026 amount, the outbound recordal threshold, and the capital-account rulebook were not re-read and are not used.
+- F15/RA-02: 144 plain-http `href`s across 22 pages (85 to safe.gov.cn) despite the repository's HTTPS policy.
+- F16/RA-01: eleven parallel dashboards with five different source counts (40/40/47/17/16) and five different method counts for the same question.
+- RA-03: `transfer-guide/data/*.json` and `study-8f529c94/data/*.json` are byte-identical duplicates (same md5).
+- RA-06: the same CN¥620 fee appears as $86.97 at 7.129 and as $92.66 at 6.6911 — a 6.5% difference that pages did not always label.
+
+**Verification performed (all green on this tree).** `verify-9fe02cf5/build.py` (deterministic; two consecutive builds byte-identical) and `verify-9fe02cf5/verify.py` → **7,189 independent checks, 0 failures** (9 pages, 400 cost rows recomputed from the published parameters, 27 claims, 21 sources, 16 flags, 100% HTTPS official-or-bank links on every table row, blank enforcement, local link/anchor resolution, `node --check` on the browser script). Whole-repository regression: transfer-guide 19,842; study-8f529c94 19,686; estimate-facf2fe9 14,423; repatriate 11,197; ladder 9,345; verify-d5d1f860 5,406; acceptance-a64bd476 30,675; audit-ad300459 624; audit-0f0f59fe 436; audit-456e7542, audit-86f0, acceptance-373b54a3, briefing, final-f6327e23, verify_85f37d08 pass; `scripts/build.py`, `scripts/validate.py`, `scripts/test_ui.js` and `npm run check` (477 checks) pass. Regenerated dependants committed: acceptance crawl 118 pages / 8,733 rows and `audit-92d12752` snapshot 1,433 candidate rows on 35 pages.

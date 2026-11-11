@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "session": "arena/9fe02cf5-china2",
+    "scanned": "2026-11-11",
+    "method": "Mechanical scans executed on the working tree on 2026-11-11 before this session's pages were added: file counts, href scheme counts, duplicate-file checksums, and cross-dashboard count comparison. Counts are a point-in-time snapshot and are recorded here rather than recomputed at build time, so the site cannot drift silently."
+  },
+  "inventory": {
+    "HTML pages in repository": {
+      "count": "110",
+      "how": "find . -name '*.html' -not -path './.git/*' | wc -l (before this session added its pages)",
+      "link": "https://github.com/sassnarep3-star/China2/blob/main/docs/index.html"
+    },
+    "Parallel dashboard directories": {
+      "count": "11",
+      "how": "docs, site, portal, ladder, briefing, repatriate, transfer-guide, study-8f529c94, estimate-facf2fe9, final-f6327e23, verify-d5d1f860",
+      "link": "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/index.html"
+    },
+    "Distinct declared source counts": {
+      "count": "5, and they disagree",
+      "how": "transfer-guide 40; study-8f529c94 40 (byte-identical file); estimate-facf2fe9 47; data/ 17; final-f6327e23 and ladder use a list format",
+      "link": "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/data/sources.json"
+    },
+    "Distinct declared method counts": {
+      "count": "5, and they disagree",
+      "how": "transfer-guide/study 23; estimate-facf2fe9 23; repatriate 17; verify-9fe02cf5 12 (this site); ladder pages describe 15",
+      "link": "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/data/methods.json"
+    },
+    "Plain http:// source links": {
+      "count": "144 across 22 pages",
+      "how": "grep -rho 'href=\"http://[^\"]*\"' --include=*.html . | wc -l ; 85 of them point at safe.gov.cn",
+      "link": "https://github.com/sassnarep3-star/China2/blob/main/estimate-facf2fe9/sources.html"
+    },
+    "CI workflows": {
+      "count": "15",
+      "how": ".github/workflows/*.yml",
+      "link": "https://github.com/sassnarep3-star/China2/blob/main/.github/workflows/verify-ladder.yml"
+    },
+    "Independent verifier scripts": {
+      "count": "16",
+      "how": "*/verify.py",
+      "link": "https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/verify.py"
+    },
+    "Python in the repository": {
+      "count": "14,113 lines",
+      "how": "find . -name '*.py' | xargs wc -l",
+      "link": "https://github.com/sassnarep3-star/China2/blob/main/ladder/build.py"
+    }
+  },
+  "findings": [
+    {
+      "finding": "Eleven dashboards answer the same question with different counts, with no statement of which is authoritative.",
+      "evidence": "Source counts published as 40, 47, 17 and 16; method counts as 12, 15, 17, 22 and 23. Each set is internally consistent, so a reader has no way to know which to trust.",
+      "status": "REVIEW",
+      "action": "This session publishes one consolidated guide and one verification pass, and the root hub now leads with them. The older directories are labelled as an archive rather than deleted, because each contains evidence another session may need.",
+      "links": [
+        "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/index.html",
+        "https://github.com/sassnarep3-star/China2/blob/main/estimate-facf2fe9/index.html"
+      ]
+    },
+    {
+      "finding": "Source links are published over plain http:// in 22 pages even though the repository's own sources pages claim HTTPS.",
+      "evidence": "144 href attributes start with http://, 85 of them to safe.gov.cn, including the ATM circular cited in this site's claim C12 (retrieved here over HTTPS at the same path).",
+      "status": "REVIEW",
+      "action": "Owner sessions should upgrade the scheme. Not edited here because those files are outside this session's scope.",
+      "links": [
+        "https://github.com/sassnarep3-star/China2/blob/main/estimate-facf2fe9/sources.html",
+        "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/data/sources.json"
+      ]
+    },
+    {
+      "finding": "The same 40-source ledger and 23-method ledger are stored twice with identical checksums, creating a drift risk.",
+      "evidence": "md5 transfer-guide/data/sources.json == study-8f529c94/data/sources.json (c46fd278...); methods.json identical (5eb23358...).",
+      "status": "REVIEW",
+      "action": "Keep one canonical ledger and have the other site read from it. Not changed here; both directories belong to other sessions.",
+      "links": [
+        "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/data/sources.json",
+        "https://github.com/sassnarep3-star/China2/blob/main/study-8f529c94/data/sources.json"
+      ]
+    },
+    {
+      "finding": "The newest and most complete guide was not reachable from the repository landing page.",
+      "evidence": "The root hub generated by ladder/build.py listed 16 cards and none of them was transfer-guide/index.html, although a prior session had logged a request for that link.",
+      "status": "REVIEW",
+      "action": "Carried out in this integration: the hub card list now links the consolidated guide, this verification pass, and the archive.",
+      "links": [
+        "https://github.com/sassnarep3-star/China2/blob/main/ladder/build.py"
+      ]
+    },
+    {
+      "finding": "A point-in-time snapshot file breaks whenever any other session adds a page.",
+      "evidence": "audit-92d12752/verify.py requires results.json to equal a fresh scan; two later sessions had to regenerate it (PRs #61 and #62) purely because other directories grew.",
+      "status": "REVIEW",
+      "action": "Noted for the owner. This site records its repository counts in data/repo_audit.json with an explicit 'scanned' date and does not rescan at build time, so it cannot drift.",
+      "links": [
+        "https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/results.json",
+        "https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/verify.py"
+      ]
+    },
+    {
+      "finding": "The same bank fee is expressed in dollars at two different exchange rates in different dashboards, a 6.5% difference.",
+      "evidence": "The capped HSBC cable-plus-commission amount (CNY 620) is published as $86.97 at the IRS 2025 yearly average of 7.129 and as $92.66 at Bank of China's 2026-11-11 selling rate of 6.6911. Both are arithmetic on a stated rate, but pages do not always say which rate was used.",
+      "status": "REVIEW",
+      "action": "This site states the rate and its source on every cost page and never mixes the tax-translation rate with a conversion rate.",
+      "links": [
+        "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/data/penalties_and_taxes.json",
+        "https://github.com/sassnarep3-star/China2/blob/main/final-f6327e23/data/sources.json"
+      ]
+    },
+    {
+      "finding": "Verification is fragmented across 16 scripts and 15 workflows; no single command checks the whole tree.",
+      "evidence": "npm run check covers only site/ and data/; every other directory has its own verifier and workflow.",
+      "status": "REVIEW",
+      "action": "This site ships its own verifier and workflow, and the session ran every existing suite before publishing. A repository-wide runner remains an open item.",
+      "links": [
+        "https://github.com/sassnarep3-star/China2/blob/main/.github/workflows/verify-briefing-and-audits.yml",
+        "https://github.com/sassnarep3-star/China2/blob/main/tools/verify.mjs"
+      ]
+    },
+    {
+      "finding": "Claim-level defects found during this pass are not repeated here; they are itemised where they can be acted on.",
+      "evidence": "The unverified Form 3520 figure, the $988 characterisation, the unverified FEIE amount and the unre-read recordal threshold are listed as F01, F02, F05 and F06.",
+      "status": "REVIEW",
+      "action": "Reader should review the Flagged page alongside this audit.",
+      "links": [
+        "https://github.com/sassnarep3-star/China2/blob/main/verify-9fe02cf5/flagged.html"
+      ]
+    }
+  ]
+}

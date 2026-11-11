@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "session": "arena/9fe02cf5-china2",
+    "published": "2026-11-11",
+    "rule": "Nothing on this page is a resolved value. Each item is either an unverified value left blank, a correction to an earlier claim, or an eligibility gap. None of them blocks publication."
+  },
+  "flags": [
+    {
+      "id": "F01",
+      "title": "The 5%-per-month / 25% cap figure for Form 3520 was not re-verifiable in this session",
+      "detail": "Earlier pages in this repository state 'Form 3520 gift/bequest: 5%/mo up to 25%'. This session re-read IRC §6677 (foreign trust information) and found the penalty there is the greater of USD 10,000 or 35% of the gross reportable amount, with 5% substituted for §6048(b) returns and USD 10,000 per 30 days after notice. The gift/bequest 5%-per-month figure belongs to a different provision (IRC §6039F) that this session could not retrieve at the govinfo and OLRC URLs tried. The figure is therefore neither confirmed nor contradicted here.",
+      "status": "UNVERIFIED",
+      "affected": "transfer-guide/taxes.html, transfer-guide/penalties.html, study-8f529c94/taxes.html (not edited by this session)",
+      "source_ids": ["S13"]
+    },
+    {
+      "id": "F02",
+      "title": "Characterisation of a personal exchange gain above USD 200 is not stated in §988",
+      "detail": "Section 988(e)(1) removes personal transactions from §988, and §988(e)(2) excludes recognition only where the gain does not exceed USD 200. The statute does not, in that text, say whether a larger personal exchange gain is capital or ordinary. Earlier pages describe it as a capital gain. That characterisation was not verified here and is not used in any computed row.",
+      "status": "UNVERIFIED",
+      "affected": "transfer-guide/data/penalties_and_taxes.json (TX-07), estimate-facf2fe9/tax.html",
+      "source_ids": ["S12"]
+    },
+    {
+      "id": "F03",
+      "title": "The FX spread for any actual account is unknown",
+      "detail": "No PRC rule and no reviewed tariff publishes the spread a bank applies to a customer conversion. The cost table therefore uses a dated, published benchmark band derived from Bank of China's own buying and selling rates (0.420% on 2026-11-11) and labels it as a benchmark, never as the holder's cost. The account-specific spread stays blank.",
+      "status": "UNVERIFIED",
+      "affected": "verify-9fe02cf5/costs.html (benchmark columns), all method pages",
+      "source_ids": ["S21", "S20"]
+    },
+    {
+      "id": "F04",
+      "title": "Correspondent, intermediary and receiving-bank charges are not published",
+      "detail": "The bank tariff read here expressly excludes charges collected by other institutions. No official source read in this session publishes those amounts. They are blank in the cost table.",
+      "status": "UNVERIFIED",
+      "affected": "verify-9fe02cf5/costs.html",
+      "source_ids": ["S20"]
+    },
+    {
+      "id": "F05",
+      "title": "The 2026 foreign earned income exclusion amount was not verified and is not used",
+      "detail": "Earlier pages quote a 2026 exclusion figure. This session did not retrieve the inflation-adjustment revenue procedure or the 2026 Form 2555, so no FEIE amount appears in any row here. Only the FEIE/foreign-tax-credit interaction is stated, because that is on the IRS foreign tax credit page.",
+      "status": "UNVERIFIED",
+      "affected": "transfer-guide/penalties.html, briefing/tax pages",
+      "source_ids": ["S15"]
+    },
+    {
+      "id": "F06",
+      "title": "The monetary threshold for outbound tax recordal was not re-read",
+      "detail": "The 2021 supplementary announcement that this session read confirms the recordal regime and the once-per-contract rule, but the USD threshold sits in the 2013 announcement No. 40, which was not retrieved. No threshold is asserted here.",
+      "status": "UNVERIFIED",
+      "affected": "verify-9fe02cf5/methods.html (M01), transfer-guide/methods.html",
+      "source_ids": ["S08"]
+    },
+    {
+      "id": "F07",
+      "title": "The capital-account rulebook (emigration, inheritance, property) was not read in this session",
+      "detail": "The implementing rules point those transfers to the provisional measures on outward transfer of personal property. That instrument was not retrieved here, so its quota exemptions, document list and approval sequence remain unverified; only the pointer is verified.",
+      "status": "UNVERIFIED",
+      "affected": "verify-9fe02cf5/methods.html (M09)",
+      "source_ids": ["S02"]
+    },
+    {
+      "id": "F08",
+      "title": "No named remittance app or agent is verified for a mainland CNY balance",
+      "detail": "Nothing read in this session establishes availability, limits, legality or fees for Wise, Western Union or any agent for a mainland CNY balance. Their fee cells are blank, not zero, and no endorsement is implied.",
+      "status": "UNVERIFIED",
+      "affected": "verify-9fe02cf5/methods.html (M10), transfer-guide/methods.html (M03, M04, M19)",
+      "source_ids": ["S01", "S02"]
+    },
+    {
+      "id": "F09",
+      "title": "The holder's SAFE category is unknown, so route eligibility is unknown",
+      "detail": "Whether the holder is a domestic individual, a foreign individual, or a foreign individual with a PR ID determines whether the USD 50,000 quota route (M06) exists at all. No assumption is made.",
+      "status": "UNVERIFIED",
+      "affected": "verify-9fe02cf5/questions.html (Q01, Q03, Q08)",
+      "source_ids": ["S01", "S02", "S04"]
+    },
+    {
+      "id": "F10",
+      "title": "The PRC tax position of the balance is unknown",
+      "detail": "If the money is untaxed PRC-source income, the cost is the PRC income tax (3%-45%, 5%-35% or flat 20%), not any conversion charge. If it was already taxed and documented, the conversion can cost nothing extra in PRC tax. The facts are not available.",
+      "status": "UNVERIFIED",
+      "affected": "verify-9fe02cf5/taxes.html",
+      "source_ids": ["S09", "S02", "S03"]
+    },
+    {
+      "id": "F11",
+      "title": "Acquisition dates, USD basis and prior US filings are unknown",
+      "detail": "Without tranche dates and rates, no exchange gain can be computed; without a filing history, no penalty exposure can be sized. Both remain blank.",
+      "status": "UNVERIFIED",
+      "affected": "verify-9fe02cf5/taxes.html, costs.html",
+      "source_ids": ["S12", "S14", "S17"]
+    },
+    {
+      "id": "F12",
+      "title": "The Bank of China board is a benchmark, not the holder's quote",
+      "detail": "The 0.420% band is derived from two prices one bank published at one timestamp. It is not the spread of the bank that holds the balance, and it is not an executable rate.",
+      "status": "UNVERIFIED",
+      "affected": "verify-9fe02cf5/costs.html",
+      "source_ids": ["S21"]
+    },
+    {
+      "id": "F13",
+      "title": "FBAR maxima are quoted as currently published, with the amendment date shown",
+      "detail": "The eCFR table read on 2026-11-11 is headed 'penalties assessed on or after January 17, 2025' and its last amendment note is 90 FR 5630 (17 January 2025). No later amendment appears in the rendering read. The figures are quoted with that date attached rather than presented as timeless.",
+      "status": "VERIFIED-WITH-DATE",
+      "affected": "verify-9fe02cf5/taxes.html",
+      "source_ids": ["S18"]
+    },
+    {
+      "id": "F14",
+      "title": "Absence of a conversion tax in the reviewed instruments is not proof that no tax applies",
+      "detail": "The FX regulations and implementing rules regulate eligibility, documents and penalties. Not finding a conversion tax in them is an absence-of-evidence result. It says nothing about PRC income tax on the underlying money or about US tax.",
+      "status": "PARTIAL",
+      "affected": "verify-9fe02cf5/index.html, taxes.html",
+      "source_ids": ["S01", "S02"]
+    },
+    {
+      "id": "F15",
+      "title": "Repository irregularity: 144 plain-http source links across 22 published pages",
+      "detail": "A mechanical scan on 2026-11-11 found 144 href attributes beginning with http:// across 22 HTML pages, 85 of them to safe.gov.cn (including the ATM circular cited here). They are inconsistent with the HTTPS policy stated on the repository's own sources pages. This session did not edit other sessions' pages; the finding is recorded for the owner sessions.",
+      "status": "REVIEW",
+      "affected": "22 HTML pages including estimate-facf2fe9/*, final-f6327e23/*, portal/*, site/*",
+      "source_ids": ["S07"]
+    },
+    {
+      "id": "F16",
+      "title": "Repository irregularity: ten parallel dashboards with overlapping and differently-bounded numbers",
+      "detail": "The repository contains docs/, site/, portal/, ladder/, briefing/, repatriate/, transfer-guide/, study-8f529c94/, estimate-facf2fe9/, final-f6327e23/, verify-d5d1f860/ and audit-* directories, several of which publish different method counts (15, 17, 22, 23) and different source counts for the same question. Each is internally verified, but a reader cannot tell which is authoritative. The root hub now leads with one guide and one verification pass, and the archive is labelled.",
+      "status": "REVIEW",
+      "affected": "root index.html (integration), all *_/ dashboard directories",
+      "source_ids": []
+    }
+  ]
+}
