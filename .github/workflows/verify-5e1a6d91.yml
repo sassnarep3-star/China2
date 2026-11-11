@@ -1,0 +1,6 @@
+name: verify-5e1a6d91
+on: {push: {paths: ['verify-5e1a6d91/**','.github/workflows/verify-5e1a6d91.yml']}, pull_request: {paths: ['verify-5e1a6d91/**','.github/workflows/verify-5e1a6d91.yml']}}
+jobs:
+  v:
+    runs-on: ubuntu-latest
+    steps: [{uses: actions/checkout@v4}, {run: 'python3 verify-5e1a6d91/build.py && python3 verify-5e1a6d91/verify.py && git diff --exit-code -- verify-5e1a6d91'}]

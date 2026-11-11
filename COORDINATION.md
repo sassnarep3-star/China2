@@ -1357,6 +1357,18 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 
 ---
 
+## Session `arena/5e1a6d91-china2` — fresh dated verification + decision synthesis (disjoint scope, 2026-11-11 UTC)
+
+> Arena pins this session to `arena/5e1a6d91-china2`; it substitutes for `session-<id>/<task>`. Full board read before claiming. All prior scopes preserved unedited. Open/stale PRs not touched.
+
+| # | Task | Status | Owner | Files |
+|---|---|---|---|---|
+| N1 | Fresh official-source re-fetch (SAFE/PBOC/STA/IRS/eCFR/CBP/bank boards+tariffs/Wise) with quotes | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N2 | Executive summary + Q&A decision register (known/unknown/how to discover) | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N3 | All methods pros/cons/steps + penalty layers + $10k→$400k cost tables (published inputs only, blanks flagged) | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N4 | Verifier+CI, PR→merge→Pages confirm, record | in progress | arena/5e1a6d91-china2 | `.github/workflows/verify-5e1a6d91.yml`, COORDINATION.md append-only |
+
+Policy: no private fact inferred; every row links official publisher; unverified = blank+flagged; no personal tax bill asserted.
 ## Session `arena/be3c20e8-china2` — independent primary-source decision register, all-method cost ladder, line-level audit and final integration (2026-11-11 12:51 UTC)
 
 > Environment note: Arena pins this session to `arena/be3c20e8-china2`, branched from `main` `2a5a470`; this fixed branch substitutes for the requested `session-<id>/<task>` branch. The complete board was read before claiming. Every earlier `in progress` row has a later completion/publication record by its owner, or is more than 60 minutes old with no commits; open PRs #39, #48, #49, #52, #53, #55, #63, #65, #68, #69, #71, #79 and #81 belong to other sessions and are not touched. No concurrent claim names `guide-be3c20e8/**` or `.github/workflows/verify-guide-be3c20e8.yml`. Shared root navigation is claimed only for the final-integration step, after all other tasks are done, as the user's brief directs.
@@ -1370,5 +1382,7 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 | B5 | Line-by-line audit of repo claims against today's official text; every finding has file:line, official source link and status; no edit to another session's files | in progress | `arena/be3c20e8-china2` | `guide-be3c20e8/**` (read-only elsewhere) | 2026-11-11 12:51 |
 | B6 | Clean dashboard landing + category subpages + Flagged for Review page, deterministic generator, independent verifier, CI workflow | in progress | `arena/be3c20e8-china2` | `guide-be3c20e8/**`, `.github/workflows/verify-guide-be3c20e8.yml` | 2026-11-11 12:51 |
 | B7 | Final integration: one entry on root landing via its unmodified generator's navigation lines, mechanical regeneration of affected inventory snapshots, README line, PR → merge without review → Pages check → record exact result | in progress | `arena/be3c20e8-china2` | `verification-3347ca0a/build.py` (one card/row only) → `index.html`; `README.md` (one entry line); affected generated snapshots by their unmodified generators; `COORDINATION.md` (append-only) | 2026-11-11 12:51 |
+
+- **Conflict at first push (12:53 UTC):** `main` advanced through PR #85 (`arena/5e1a6d91`) while this claim was being pushed. The attempted rebase stopped on an add/add conflict in `COORDINATION.md`; it was aborted, `origin/main` was merged, and the other session's board text and all 13 of its files were preserved byte-for-byte. This section is appended after that text. No force push and no other session's work was discarded.
 
 Policy: compute only from values actually printed by a primary publisher; blank means unverified, never zero; a computed illustration is explicitly not a quote, an eligibility determination or a personal tax conclusion. Every substantive table row links to its official source. Flagged items remain `needs review` and do not block publication. Small frequent commits and a merge-preserving rebase before every push; on conflict, preserve all other text and log it.
