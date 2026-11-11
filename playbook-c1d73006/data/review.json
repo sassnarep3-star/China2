@@ -1,20 +1,16 @@
 {
  "as_of": "2026-11-11",
- "main_commit": "b2874e8",
- "files_scanned": 257,
- "sections_scanned": 26,
+ "main_commit": "5c6a09a",
+ "files_scanned": 287,
+ "sections_scanned": 28,
  "hub": {
-  "sections_with_landing_page": 20,
-  "linked_from_hub": 11,
+  "sections_with_landing_page": 22,
+  "linked_from_hub": 17,
   "not_linked": [
+   "acceptance-373b54a3",
    "acceptance-a64bd476",
    "audit-456e7542",
    "audit-6068a908",
-   "audit-92d12752",
-   "final-f6327e23",
-   "repatriate",
-   "study-8f529c94",
-   "transfer-guide",
    "verify-88f5a1be"
   ]
  },
@@ -41,7 +37,7 @@
    ],
    "examples": [],
    "counts": {
-    "match_files": 45,
+    "match_files": 46,
     "differ_files": 0,
     "unverified_files": 0
    }
@@ -89,6 +85,7 @@
     "repatriate",
     "study-8f529c94",
     "transfer-guide",
+    "verification-3347ca0a",
     "verify-88f5a1be",
     "verify-d5d1f860"
    ],
@@ -122,7 +119,7 @@
    ],
    "counts": {
     "match_files": 0,
-    "differ_files": 51,
+    "differ_files": 53,
     "unverified_files": 0
    }
   },
@@ -140,19 +137,21 @@
     "audit-92d12752",
     "audit-ad300459",
     "briefing",
+    "dashboard-f79e64e7",
     "estimate-facf2fe9",
     "final-f6327e23",
     "ladder",
     "repatriate",
     "study-8f529c94",
     "transfer-guide",
+    "verification-3347ca0a",
     "verify-88f5a1be",
     "verify-d5d1f860"
    ],
    "examples": [
     {
      "path": "README.md",
-     "line": 15,
+     "line": 19,
      "text": "…nswer, 17 methods with pros/cons/steps, 680-row `$10k→$400k` tables (`7.129` IRS 2025 reference rate + Nov 6, 2026 Fed H.10 `6.6760` sensitivity …"
     },
     {
@@ -177,7 +176,7 @@
     }
    ],
    "counts": {
-    "match_files": 99,
+    "match_files": 112,
     "differ_files": 0,
     "unverified_files": 0
    }
@@ -190,6 +189,7 @@
    "quote": "vi_2",
    "how": "Lines that describe halves, instalments or stages for an emigrant transfer without mentioning the 2014 change.",
    "differ_sections": [
+    "dashboard-f79e64e7",
     "estimate-facf2fe9",
     "final-f6327e23",
     "portal",
@@ -198,6 +198,7 @@
    ],
    "match_sections": [
     "(repository root)",
+    "dashboard-f79e64e7",
     "data",
     "ladder",
     "repatriate",
@@ -205,6 +206,21 @@
     "tools"
    ],
    "examples": [
+    {
+     "path": "dashboard-f79e64e7/content.py",
+     "line": 566,
+     "text": "…, final-f6327e23/\", claim=\"Emigrant transfers above RMB 200,000 leave in stages over two years: half, then half of the rest, then the remainder.\","
+    },
+    {
+     "path": "dashboard-f79e64e7/data/review.json",
+     "line": 147,
+     "text": "\"claim\": \"Emigrant transfers above RMB 200,000 leave in stages over two years: half, then half of the rest, then the remainder.\","
+    },
+    {
+     "path": "dashboard-f79e64e7/repo-review.html",
+     "line": 127,
+     "text": "Emigrant transfers above RMB 200,000 leave in stages over two years: half, then half of the rest, then the remainder."
+    },
     {
      "path": "estimate-facf2fe9/costs.html",
      "line": 5782,
@@ -214,26 +230,11 @@
      "path": "estimate-facf2fe9/data/capture-log.md",
      "line": 68,
      "text": "…民身份之前在境内拥有的合法财产变现，通过外汇指定银行购汇和汇出境外的行为。\" ; 第六条 \"移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。…"
-    },
-    {
-     "path": "estimate-facf2fe9/data/sources.json",
-     "line": 432,
-     "text": "\"第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。…"
-    },
-    {
-     "path": "estimate-facf2fe9/sources.html",
-     "line": 231,
-     "text": "…（以下简称继承人）将依法继承的境内遗产变现，通过外汇指定银行购汇和汇出境外的行为。 第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。…"
-    },
-    {
-     "path": "final-f6327e23/data/sources.json",
-     "line": 49,
-     "text": "…Art. 6: 移民转移 must apply once for the whole amount; first remittance ≤ half, after 1 year ≤ half of the remainder, after 2 years the balance; tot…"
     }
    ],
    "counts": {
-    "match_files": 11,
-    "differ_files": 11,
+    "match_files": 15,
+    "differ_files": 14,
     "unverified_files": 0
    }
   },
@@ -302,12 +303,14 @@
     "(repository root)",
     "audit-ad300459",
     "briefing",
+    "dashboard-f79e64e7",
     "estimate-facf2fe9",
     "portal",
     "repatriate",
     "reports",
     "study-8f529c94",
     "transfer-guide",
+    "verification-3347ca0a",
     "verify-d5d1f860"
    ],
    "match_sections": [],
@@ -319,7 +322,7 @@
     },
     {
      "path": "README.md",
-     "line": 29,
+     "line": 33,
      "text": "… CFR 1010.821`; Form 8938; Form 3520; Form 1116 FTC / Form 2555 FEIE `$132,900` in 2026 and `$137,300` in 2027); and (d) **PRC penalties (`30%–100%`…"
     },
     {
@@ -341,7 +344,7 @@
    "counts": {
     "match_files": 0,
     "differ_files": 0,
-    "unverified_files": 52
+    "unverified_files": 59
    }
   },
   {
@@ -368,6 +371,7 @@
    "quote": "q18",
    "how": "Plain-http links to official hosts.",
    "differ_sections": [
+    "dashboard-f79e64e7",
     "data",
     "estimate-facf2fe9",
     "final-f6327e23",
@@ -377,34 +381,34 @@
    "match_sections": [],
    "examples": [
     {
+     "path": "dashboard-f79e64e7/content.py",
+     "line": 71,
+     "text": "url=\"http://m.safe.gov.cn/safe/2004/1116/12156.html\","
+    },
+    {
+     "path": "dashboard-f79e64e7/data/sources.json",
+     "line": 118,
+     "text": "\"url\": \"http://m.safe.gov.cn/safe/2004/1116/12156.html\","
+    },
+    {
+     "path": "dashboard-f79e64e7/exports/costs.csv",
+     "line": 242,
+     "text": "…es; any tax,https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn…"
+    },
+    {
+     "path": "dashboard-f79e64e7/exports/costs.json",
+     "line": 4579,
+     "text": "…rce_urls\": \"https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn…"
+    },
+    {
      "path": "data/flags.json",
      "line": 69,
      "text": "\"sourceUrl\": \"http://www.customs.gov.cn/\","
-    },
-    {
-     "path": "data/sources.json",
-     "line": 91,
-     "text": "\"url\": \"http://www.safe.gov.cn/en/2017/1230/1397.html\","
-    },
-    {
-     "path": "estimate-facf2fe9/data/capture-log.md",
-     "line": 19,
-     "text": "- CMB http://www.cmbchina.com/PersonalBank/GB/Page/standfee.htm item 6: \"向境外银行账户汇款：共有三个收费项：汇出汇款手续费，为汇款金额的0.1％，最低人民币100元，最高1000元；汇款通讯费…"
-    },
-    {
-     "path": "estimate-facf2fe9/data/sources.json",
-     "line": 146,
-     "text": "\"url\": \"http://www.cmbchina.com/PersonalBank/GB/Page/standfee.htm\","
-    },
-    {
-     "path": "estimate-facf2fe9/exports/costs.csv",
-     "line": 82,
-     "text": "….80,25.02,37.48,250.00,1,wire,estimated,,,https://fx.cmbchina.com/hq/ http://www.cmbchina.com/PersonalBank/GB/Page/standfee.htm"
     }
    ],
    "counts": {
     "match_files": 0,
-    "differ_files": 12,
+    "differ_files": 16,
     "unverified_files": 0
    }
   }

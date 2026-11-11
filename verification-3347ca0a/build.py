@@ -427,6 +427,9 @@ def root_page():
         # Navigation-only addition by session arena/f79e64e7-china2 (2026-11-11), logged in COORDINATION.md:
         # one archive row and one category card so its dashboard is reachable from this landing page.
         ("dashboard-f79e64e7/index.html", "Second verification pass", "17 methods · 34 sources · 680 cost rows", "Separate pass on 11 Nov 2026: each source re-opened and its quoted sentence checked, with corrections to earlier sets."),
+        # Navigation-only addition by session arena/c1d73006-china2 (2026-11-11), logged in COORDINATION.md:
+        # one archive row and one category card so its playbook is reachable from this landing page.
+        ("playbook-c1d73006/index.html", "Route-by-origin playbook", "10 origins of the money · 17 methods · 680 cost rows", "Separate pass on 11 Nov 2026: the route, papers and tax for each origin of the money; what overdue PRC tax grows into; a text review of the other sets."),
     ]
     archive_rows = "".join(
         f'<tr><th scope="row" data-label="Set"><a href="{href}">{esc(title)}</a></th>'
@@ -622,6 +625,8 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
     <em>Duplicate sites, conflicting counts, rate bases and rows without a source.</em></a>
   <a class="card" href="dashboard-f79e64e7/index.html"><b>Second verification pass</b><span>34 sources · quotes checked 11 Nov</span>
     <em>A separate session’s decision dashboard: questions, routes, cost at every $10,000, and corrections to earlier sets.</em></a>
+  <a class="card" href="playbook-c1d73006/index.html"><b>Route-by-origin playbook</b><span>10 origins · 34 sources · read 11 Nov</span>
+    <em>A separate session’s playbook: pick the route by where the money came from, with the papers, the tax and the cost for each.</em></a>
 </div>
 
 <h2 id="questions">What has to be answered before a decision</h2>
