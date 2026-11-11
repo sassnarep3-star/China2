@@ -6910,7 +6910,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 10000,
       "cnyAtReferenceRate": 71290.0,
       "verifiedBankFeeCny": null,
@@ -6929,7 +6929,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 20000,
       "cnyAtReferenceRate": 142580.0,
       "verifiedBankFeeCny": null,
@@ -6948,7 +6948,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 30000,
       "cnyAtReferenceRate": 213870.0,
       "verifiedBankFeeCny": null,
@@ -6967,7 +6967,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 40000,
       "cnyAtReferenceRate": 285160.0,
       "verifiedBankFeeCny": null,
@@ -6986,7 +6986,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 50000,
       "cnyAtReferenceRate": 356450.0,
       "verifiedBankFeeCny": null,
@@ -7005,7 +7005,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 60000,
       "cnyAtReferenceRate": 427740.0,
       "verifiedBankFeeCny": null,
@@ -7024,7 +7024,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 70000,
       "cnyAtReferenceRate": 499030.0,
       "verifiedBankFeeCny": null,
@@ -7043,7 +7043,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 80000,
       "cnyAtReferenceRate": 570320.0,
       "verifiedBankFeeCny": null,
@@ -7062,7 +7062,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 90000,
       "cnyAtReferenceRate": 641610.0,
       "verifiedBankFeeCny": null,
@@ -7081,7 +7081,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 100000,
       "cnyAtReferenceRate": 712900.0,
       "verifiedBankFeeCny": null,
@@ -7100,7 +7100,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 110000,
       "cnyAtReferenceRate": 784190.0,
       "verifiedBankFeeCny": null,
@@ -7119,7 +7119,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 120000,
       "cnyAtReferenceRate": 855480.0,
       "verifiedBankFeeCny": null,
@@ -7138,7 +7138,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 130000,
       "cnyAtReferenceRate": 926770.0,
       "verifiedBankFeeCny": null,
@@ -7157,7 +7157,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 140000,
       "cnyAtReferenceRate": 998060.0,
       "verifiedBankFeeCny": null,
@@ -7176,7 +7176,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 150000,
       "cnyAtReferenceRate": 1069350.0,
       "verifiedBankFeeCny": null,
@@ -7195,7 +7195,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 160000,
       "cnyAtReferenceRate": 1140640.0,
       "verifiedBankFeeCny": null,
@@ -7214,7 +7214,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 170000,
       "cnyAtReferenceRate": 1211930.0,
       "verifiedBankFeeCny": null,
@@ -7233,7 +7233,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 180000,
       "cnyAtReferenceRate": 1283220.0,
       "verifiedBankFeeCny": null,
@@ -7252,7 +7252,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 190000,
       "cnyAtReferenceRate": 1354510.0,
       "verifiedBankFeeCny": null,
@@ -7271,7 +7271,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 200000,
       "cnyAtReferenceRate": 1425800.0,
       "verifiedBankFeeCny": null,
@@ -7290,7 +7290,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 210000,
       "cnyAtReferenceRate": 1497090.0,
       "verifiedBankFeeCny": null,
@@ -7309,7 +7309,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 220000,
       "cnyAtReferenceRate": 1568380.0,
       "verifiedBankFeeCny": null,
@@ -7328,7 +7328,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 230000,
       "cnyAtReferenceRate": 1639670.0,
       "verifiedBankFeeCny": null,
@@ -7347,7 +7347,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 240000,
       "cnyAtReferenceRate": 1710960.0,
       "verifiedBankFeeCny": null,
@@ -7366,7 +7366,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 250000,
       "cnyAtReferenceRate": 1782250.0,
       "verifiedBankFeeCny": null,
@@ -7385,7 +7385,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 260000,
       "cnyAtReferenceRate": 1853540.0,
       "verifiedBankFeeCny": null,
@@ -7404,7 +7404,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 270000,
       "cnyAtReferenceRate": 1924830.0,
       "verifiedBankFeeCny": null,
@@ -7423,7 +7423,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 280000,
       "cnyAtReferenceRate": 1996120.0,
       "verifiedBankFeeCny": null,
@@ -7442,7 +7442,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 290000,
       "cnyAtReferenceRate": 2067410.0,
       "verifiedBankFeeCny": null,
@@ -7461,7 +7461,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 300000,
       "cnyAtReferenceRate": 2138700.0,
       "verifiedBankFeeCny": null,
@@ -7480,7 +7480,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 310000,
       "cnyAtReferenceRate": 2209990.0,
       "verifiedBankFeeCny": null,
@@ -7499,7 +7499,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 320000,
       "cnyAtReferenceRate": 2281280.0,
       "verifiedBankFeeCny": null,
@@ -7518,7 +7518,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 330000,
       "cnyAtReferenceRate": 2352570.0,
       "verifiedBankFeeCny": null,
@@ -7537,7 +7537,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 340000,
       "cnyAtReferenceRate": 2423860.0,
       "verifiedBankFeeCny": null,
@@ -7556,7 +7556,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 350000,
       "cnyAtReferenceRate": 2495150.0,
       "verifiedBankFeeCny": null,
@@ -7575,7 +7575,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 360000,
       "cnyAtReferenceRate": 2566440.0,
       "verifiedBankFeeCny": null,
@@ -7594,7 +7594,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 370000,
       "cnyAtReferenceRate": 2637730.0,
       "verifiedBankFeeCny": null,
@@ -7613,7 +7613,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 380000,
       "cnyAtReferenceRate": 2709020.0,
       "verifiedBankFeeCny": null,
@@ -7632,7 +7632,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 390000,
       "cnyAtReferenceRate": 2780310.0,
       "verifiedBankFeeCny": null,
@@ -7651,7 +7651,7 @@
     },
     {
       "methodId": "M10",
-      "methodName": "Outbound-payment tax recordal under STA / SAFE Announcement [2013] No. 40 (enabling step for a single payment above USD 50,000)",
+      "methodName": "Outbound-payment tax recordal for covered payment categories (enabling step, if applicable)",
       "tierUsd": 400000,
       "cnyAtReferenceRate": 2851600.0,
       "verifiedBankFeeCny": null,

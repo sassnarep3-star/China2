@@ -98,8 +98,8 @@ def shell(title, current, body, subtitle=""):
 <footer><div class="wrap">
   <p><strong>Research, not advice.</strong> This is a source-linked research record, not individualised
   tax, legal or investment advice. No transfer was made, no return was filed and no personal fact was
-  verified. Every figure was read from an official document fetched on 2026-11-11; anything that could
-  not be read from an official source is left <span class="blank">BLANK</span> rather than estimated.</p>
+  verified. Published tariff inputs were checked against documents fetched on 2026-11-11; illustrative
+  USD equivalents are calculations using a historical reference rate, not current quotes. Unknown amounts are left <span class="blank">BLANK</span> rather than estimated.</p>
   <p class="small">Session <code>arena/c6309933-china2</code> · data in <code>dashboard-c6309933/data/</code>
   · <a href="sources.html">12 official sources</a> · <a href="flagged.html">13 flagged values</a> ·
   <a href="../COORDINATION.md">task board</a></p>
@@ -184,10 +184,8 @@ Nothing fetched in this session imposes a tax on the act of converting CNY into 
 26 U.S.C. §988(e)(2) says a gain on a <em>personal</em> currency transaction is not recognised at all
 unless the gain exceeds $200 <span class="src">({srclink('S06', sources)})</span>, and the IRS states it has no
 official exchange rate and accepts any posted rate used consistently
-<span class="src">({srclink('S03', sources)})</span>. What is being experienced as a "conversion tax" is
-almost certainly <strong>PRC tax on the income that created the balance</strong>, which the bank and the tax
-authority gatekeep before the money is allowed to leave — not a charge on the conversion.
-That PRC rate could <strong>not</strong> be verified from an official source in this session and is therefore
+<span class="src">({srclink('S03', sources)})</span>. The reason for the reported charge is <strong>unknown</strong>. It could involve tax on underlying income, a documentation issue, or another charge; ask the bank for a written itemization and legal basis.
+The applicable PRC tax rate could <strong>not</strong> be established for this case and is therefore
 left <span class="blank">BLANK</span>, not guessed (flag F01).
 </div>
 
@@ -198,9 +196,9 @@ left <span class="blank">BLANK</span>, not guessed (flag F01).
 The verified bank charge is a <strong>floor, not a total</strong>. The HSBC tariff states that its free
 lines do not extend to receiving-bank or correspondent-bank charges in the payment path
 <span class="src">({srclink('S09', sources)})</span>, and it publishes <strong>no</strong> FX dealing spread.
-The spread is very likely the largest single cost — at 0.50% it would be $2,000 on $400,000, more than
+The spread may be material — at an illustrative 0.50% it would be $2,000 on $400,000, more than
 seventeen times the highest verified bank fee in this dataset — but 0.50% is an assumption, so it is not published
-here (flag F02). Discover it with one phone call: ask for an indicative dealing rate in writing.
+here as a verified cost (flag F02). Ask for a written executable dealing rate and all fees.
 </div>
 
 <h2>What is actually known</h2>
@@ -238,7 +236,7 @@ the <a href="methods.html">Methods</a> page; every tier on the <a href="costs.ht
     <p>{len(q['questions'])} questions, {len(q['answersSoFar'])} answers so far, and a concrete discovery
     action for each gap.</p></div>
   <div class="card"><h3><a href="repo-review.html">Repo review →</a></h3>
-    <p>{len(f['repoFindings'])} findings from reviewing this repository line by line, each with the command
+    <p>{len(f['repoFindings'])} targeted repository findings, each with the command
     that produced it.</p></div>
   <div class="card"><h3><a href="flagged.html">Flagged for review →</a></h3>
     <p>{len(f['dataFlags'])} values that could not be confirmed from an official source, left blank with a
@@ -363,8 +361,7 @@ def page_methods(d, sources):
 A route is lawful when the FX purchase is either inside the individual's annual USD 50,000 quota
 <span class="src">({srclink('S02', sources)})</span>, supported by authenticity documents above that quota,
 or covered by a SAFE approval under Huifa [2014] No. 2 Section VI
-<span class="src">({srclink('S01', sources)})</span> — and when a single payment above USD 50,000
-equivalent has its tax recordal in place
+<span class="src">({srclink('S01', sources)})</span> . For listed categories of outbound payment above USD 50,000 equivalent, tax recordal may apply; exemptions exist. Confirm applicability with the bank and tax authority
 <span class="src">({srclink('S10', sources)}, {srclink('S11', sources)})</span>.
 </div>
 {''.join(blocks)}
@@ -378,15 +375,14 @@ equivalent has its tax recordal in place
 def page_penalties(d, sources):
     layers = [
         ("L1", "PRC tax on the income that created the balance", "BLANK", "F01",
-         "Almost certainly the real cost the requester is describing. Not a charge on conversion — a charge "
-         "on the underlying income. Could not be verified from an official source in this session.", None),
-        ("L2", "PRC tax recordal gate above USD 50,000 per single payment", "No charge stated",
-         "F08", "S10 requires the recordal; S11 confirms one per contract and an online channel. Neither "
+         "Tax on underlying income is possible, but the reason for the reported charge and applicable amount are unknown. Obtain the bank’s written itemization and tax records.", "S10"),
+        ("L2", "PRC tax recordal for covered outbound payments above USD 50,000", "No charge stated",
+         "F08", "S10 applies to listed categories and includes exemptions; S11 confirms one per contract and an online channel. Neither "
          "states a fee, and absence of a stated fee is not evidence that it is free.", "S10"),
         ("L3", "Bank FX dealing spread", "BLANK", "F02",
-         "The single largest unquantified cost. The HSBC tariff publishes wire charges but no spread, and "
+         "A potentially material unquantified cost. The HSBC tariff publishes wire charges but no spread, and "
          "note 7 excludes anything not priced by HSBC.", "S09"),
-        ("L4", "Bank wire and cable charge", "RMB 0 – 620", None,
+        ("L4", "Bank wire and cable charge", "RMB 0 – 620 (wire and cable only)", None,
          "Fully verified. 0.1% with a RMB 100 minimum and RMB 500 maximum, plus a RMB 120 cable; RMB 0 for "
          "Private Banking and Premier Elite. About $30.86 to $115.02 at 7.129, depending on tier "
          "and charge-sharing option.", "S09"),
@@ -394,8 +390,8 @@ def page_penalties(d, sources):
          "S09 states expressly that free tariff lines do not cover receiving or correspondent banks in the "
          "payment path. OUR adds a RMB 200 pre-charge whose shortfall is billed later, uncapped.", "S09"),
         ("L6", "U.S. receiving bank inbound wire fee", "BLANK", "F03",
-         "No U.S. bank schedule was fetched in this session.", None),
-        ("L7", "U.S. tax on a currency gain", "Usually $0", None,
+         "No U.S. bank schedule was fetched in this session; S09 notes that other banks may charge.", "S09"),
+        ("L7", "U.S. tax on a currency gain", "BLANK", "F01",
          "26 U.S.C. 988(e)(2): no gain is recognised on a personal currency transaction unless the gain "
          "exceeds $200. Section 988(e)(1) disapplies the rest of the section to personal transactions.", "S06"),
         ("L8", "U.S. tax on the underlying income", "BLANK", "F01",
@@ -403,8 +399,7 @@ def page_penalties(d, sources):
          "income only: $132,900 for 2026, $137,300 for 2027. Treaty caps PRC withholding on dividends and "
          "interest at 10%.", "S07"),
         ("L9", "U.S. reporting exposure (FBAR)", "$16,536 / $165,353", None,
-         "Civil ceilings per violation under 31 CFR 1010.821, adjusted by 90 FR 5630. This exposure is per "
-         "year unreported and does not shrink by transferring in instalments.", "S05"),
+         "Inflation-adjusted amounts in 31 CFR 1010.821 as accessed; the willful maximum can be greater where 50% of the balance exceeds the listed amount. Applicability and assessment depend on the facts; check current adjustments.", "S05"),
         ("L10", "PRC penalty for unlawful routes (quota splitting, underground swaps)", "BLANK", "F11",
          "S02 confirms SAFE built the bank-to-SAFE monitoring system specifically to prevent repeated "
          "purchases and instalment sales. The penalty amount was not verified and is left blank.", "S02"),
@@ -422,11 +417,7 @@ def page_penalties(d, sources):
 
     body = f"""
 <div class="callout key"><span class="t">The headline finding</span>
-Of the ten layers that make up what feels like a "conversion penalty", only
-<strong>three</strong> could be quantified from official documents (L4, L7, L9), and one of those
-(L7) is usually <strong>zero</strong>. Six layers are <span class="blank">BLANK</span> because no official
-source published them. The two layers most likely to be large — L1 (PRC tax on the underlying income) and
-L3 (the bank's FX spread) — are both blank. Answering those two is worth far more than optimising the wire.
+Of the ten layers that make up what feels like a "conversion penalty", only some tariff and regulatory amounts could be identified. Actual taxes, the exchange spread and total transfer cost are <span class="blank">BLANK</span> because they depend on facts or quotes not available here. Penalty amounts are exposure, not a normal transfer cost.
 </div>
 <div class="tscroll"><table class="stack">
 <caption>Ten layers of the conversion penalty, ordered from the underlying income to the destination account</caption>
@@ -436,20 +427,15 @@ L3 (the bank's FX spread) — are both blank. Answering those two is worth far m
 <h2>What this means in practice</h2>
 <div class="grid g2">
   <div class="card"><h3>Stop optimising the wire</h3>
-    <p>The whole verified wire cost is between $0 and $115.02 on any amount from $10,000 to $400,000
-    <span class="src">({srclink('S09', sources)})</span>. Even eliminating it entirely saves under $115.02.
-    Time spent shopping wire fees is time not spent on L1 and L3.</p></div>
+    <p>The modeled HSBC tariff components range from $0 to $115.02 across the illustrated $10,000 to $400,000 tiers
+    <span class="src">({srclink('S09', sources)})</span>. These estimates exclude other bank charges, FX spread and taxes, and are not quotes.</p></div>
   <div class="card"><h3>Get the dealing rate in writing</h3>
-    <p>One phone call resolves L3. Ask the bank for an indicative CNY/USD dealing rate for the actual
-    amount, and compare it against the same-day PBOC central parity rate. The difference is the real
-    conversion penalty.</p></div>
+    <p>Ask the bank for a written executable CNY/USD dealing rate and all fees for the actual amount. Compare it with a contemporaneous reference rate; the difference is indicative, not necessarily a complete measure of cost.</p></div>
   <div class="card"><h3>Settle PRC tax before you move the money</h3>
     <p>S10 makes "whether the outbound item has paid tax as required" an express subject of the 15-working-day
-    review <span class="src">({srclink('S10', sources)})</span>. Paying it after the attempt is more expensive
-    than paying it before.</p></div>
+    review where recordal applies <span class="src">({srclink('S10', sources)})</span>. Verify whether any tax or filing is due with the relevant authorities.</p></div>
   <div class="card"><h3>Reporting exposure does not shrink by instalments</h3>
-    <p>FBAR exposure under S05 is per year the account went unreported. Splitting the transfer across years
-    does not reduce it, and it multiplies the RMB 100 minimum and RMB 120 cable on every wire.</p></div>
+    <p>Potential FBAR penalties depend on the facts and the filing obligations for each year. Splitting a transfer does not erase an existing reporting violation, and can multiply bank charges.</p></div>
 </div>
 """
     return shell("The conversion penalty, broken down", "penalties.html", body,
@@ -580,7 +566,7 @@ inside the nineteen other published sites in this repository; those are covered 
 <a href="flagged.html">Flagged for review</a> where a value could not be confirmed from an official source.</p></div>
 """
     return shell("Repository review", "repo-review.html", body,
-                 "Line-by-line findings from reviewing this repository, each with the command that produced "
+                 "Targeted findings from reviewing this repository, each with the command that produced "
                  "it.")
 
 

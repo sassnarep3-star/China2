@@ -15,7 +15,6 @@ emitted as None and rendered BLANK by build.py.
 """
 import json
 import os
-from datetime import date
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
@@ -124,7 +123,7 @@ def build():
     costed = [m["id"] for m in methods_doc["methods"] if m.get("costed")]
     blanks = sum(1 for r in rows if r["verifiedBankFeeCny"] is None)
     out = {
-        "generated": date.today().isoformat(),
+        "generated": "2026-11-11",  # research snapshot date, not the build date
         "referenceRateCnyPerUsd": rate,
         "referenceRateSourceId": rate_src,
         "tiers": tiers(),

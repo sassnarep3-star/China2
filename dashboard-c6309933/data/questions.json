@@ -1,23 +1,35 @@
 {
   "note": "The brief supplied two facts only: (1) the requester is a U.S. citizen, and (2) there is money in a bank account in mainland China that cannot be converted to USD without paying what the requester describes as a considerable amount of tax. Everything else is unknown. No unknown below has been inferred. Each entry states what is known, what is missing, why the decision turns on it, and a concrete action that would discover it.",
   "known": [
-    { "fact": "Requester is a U.S. citizen.", "source": "brief, stated by requester", "consequence": "Worldwide income is reportable to the IRS regardless of residence (S04 confirms the U.S. dollar functional-currency rule and that U.S. tax must be remitted in USD)." },
-    { "fact": "A CNY balance exists in a bank account in mainland China.", "source": "brief, stated by requester", "consequence": "The balance is a foreign financial account for U.S. reporting purposes; the reporting thresholds are S05-adjacent and are set out on the taxes page." },
-    { "fact": "The requester believes conversion into USD carries a considerable tax cost.", "source": "brief, stated by requester", "consequence": "Unverified as a tax. Nothing fetched in this session imposes a tax on the act of converting currency. See the conversion-penalty breakdown." }
+    {
+      "fact": "Requester is a U.S. citizen.",
+      "source": "brief, stated by requester",
+      "consequence": "Worldwide income is reportable to the IRS regardless of residence (S04 confirms the U.S. dollar functional-currency rule and that U.S. tax must be remitted in USD)."
+    },
+    {
+      "fact": "A CNY balance exists in a bank account in mainland China.",
+      "source": "brief, stated by requester",
+      "consequence": "The balance is a foreign financial account for U.S. reporting purposes; the reporting thresholds are S05-adjacent and are set out on the taxes page."
+    },
+    {
+      "fact": "The requester believes conversion into USD carries a considerable tax cost.",
+      "source": "brief, stated by requester",
+      "consequence": "Unverified as a tax. Nothing fetched in this session imposes a tax on the act of converting currency. See the conversion-penalty breakdown."
+    }
   ],
   "questions": [
     {
       "id": "Q01",
       "question": "What generated the CNY balance - salary, business profit, dividends, sale of property, sale of securities, an inheritance, or a gift?",
       "status": "MISSING - blocking",
-      "why": "The PRC tax position is set entirely by the character of the income, and the bank's document test is set by the same character. A salary balance is a current-account item that can be purchased and wired against payslips; a property-sale balance is a capital-account item that needs SAFE approval under S01. The answer decides which of M01-M09 is even available.",
+      "why": "Source of funds affects the PRC tax position and documentary requirements. Different transfer paths may be available; confirm the applicable route with the bank and SAFE.",
       "discovery": "Pull the bank statements for the account for the full period the balance accumulated, plus the underlying contract, payslips, sale agreement or share-transfer documents. Then pull the matching PRC tax filings and payment receipts from the electronic tax bureau for the same years."
     },
     {
       "id": "Q02",
       "question": "Has the requester emigrated from the PRC, and do they still hold a PRC hukou (registered permanent residence)?",
       "status": "MISSING - blocking for the lump-sum routes",
-      "why": "S01 Section VI gives a lump-sum conversion-and-remittance approval only for property transfers due to immigration, and routes the application to the SAFE branch at the immigrant's ORIGINAL registered permanent residence. Without emigration status, M08 is unavailable and the balance must move through the annual quota route instead.",
+      "why": "S01 Section VI discusses property transfers due to immigration and refers to the SAFE branch at the original registered permanent residence. Eligibility and other routes require confirmation.",
       "discovery": "Check hukou status with the local public security registration office, and check whether a PRC exit-emigration settlement (注销户口 / 定居国外) has been completed."
     },
     {
@@ -31,28 +43,28 @@
       "id": "Q04",
       "question": "What is the exact CNY balance, and is it one account or several?",
       "status": "MISSING - blocking for tier selection",
-      "why": "The brief asks for tiers from USD 10,000 to USD 400,000 but never states the actual balance. The verified HSBC fee schedule has a RMB 100 minimum and a RMB 500 percentage cap, so the cheapest tier depends on the actual amount, and the USD 50,000-equivalent recordal trigger (S10) depends on the size of each single payment, not the total.",
+      "why": "The actual balance is unknown. HSBC fees include a minimum and cap; S10 recordal applies only to covered categories of payment, subject to exemptions.",
       "discovery": "Read the current balance from the statement, and decide whether the plan is one payment or several."
     },
     {
       "id": "Q05",
       "question": "Has PRC individual income tax already been paid on the income that produced the balance?",
       "status": "MISSING - blocking",
-      "why": "This is almost certainly the real source of the 'considerable tax' the requester is describing. S10 Article 8(2) makes 'whether the outbound payment item has paid tax as required' an express subject of the tax authority's 15-working-day review. If the tax is unpaid, it becomes due before the money can leave; if it is paid, the recordal should clear and there is no further PRC tax on the transfer itself.",
+      "why": "Tax on underlying income is a possibility, but the reported charge is not identified. S10 Article 8 discusses review of tax compliance where recordal applies. Confirm with the bank and tax authority whether this case is in scope and what is owed.",
       "discovery": "Log into the provincial electronic tax bureau and download the individual income tax filing and payment records (个人所得税纳税记录) for every year the balance accumulated. Compare against the bank deposits."
     },
     {
       "id": "Q06",
       "question": "Is the requester a PRC tax resident for any year in which the balance was earned - 183 days or more, or the six-year rule applied?",
       "status": "MISSING - blocking",
-      "why": "PRC residence status determines whether PRC tax is owed at all on the underlying income. This session could NOT verify the PRC statutory rate table or the residence rules from an official source, so no PRC rate is published anywhere in this dashboard (flag F01).",
+      "why": "PRC residence and income source can affect the tax position. Residence rules and an applicable rate have not been established for this case (F01).",
       "discovery": "Count days in the PRC per calendar year from passport entry/exit stamps, and obtain the PRC residence determination from the competent tax authority or a PRC-licensed tax agent."
     },
     {
       "id": "Q07",
       "question": "Has the requester filed FinCEN Form 114 (FBAR) and Form 8938 for every year the account existed?",
       "status": "MISSING - blocking for the U.S. side",
-      "why": "S05 sets the current civil ceilings at USD 16,536 per non-willful violation and USD 165,353 per willful violation (or 50% of the account balance for a willful violation, under 31 U.S.C. 5321(a)(5)(C)). The exposure is per year the account was unreported, not per transfer, so it does not shrink by moving the money in small instalments.",
+      "why": "S05 lists inflation-adjusted FBAR penalty amounts; the willful maximum may be greater if 50% of the balance exceeds the specified amount. Filing and penalty exposure depend on the facts and the year.",
       "discovery": "Pull the filed returns and the BSA E-Filing acknowledgements for each year. If any year is missing, the IRS Streamlined filing procedures are the route to consider before any transfer."
     },
     {
@@ -120,9 +132,9 @@
     },
     {
       "id": "A03",
-      "finding": "The USD 50,000 figure that usually blocks a large transfer is a recordal threshold and a purchase quota, not a tax.",
-      "support": "S10 requires a tax recordal for a single outbound payment above USD 50,000 equivalent, with personal study/travel/visiting-relatives FX exempt under Article 3(13); S11 confirms one recordal per contract, an online channel, and an unchanged threshold. S02 separately sets the individual annual FX purchase quota at USD 50,000.",
-      "confidence": "High. Both are official documents."
+      "finding": "The USD 50,000 figures in SAFE and tax-recordal rules are distinct; application depends on the transaction.",
+      "support": "S10 requires a tax recordal for listed categories of single outbound payments above USD 50,000 equivalent, subject to exemptions, including specified personal-use FX under Article 3(13). S11 covers repeat payments under a contract and the filing channel. S02 separately discusses an annual FX purchase quota.",
+      "confidence": "The sources state these rules; applicability to this case is not established."
     },
     {
       "id": "A04",
@@ -132,9 +144,9 @@
     },
     {
       "id": "A05",
-      "finding": "On the U.S. side the material exposure is reporting, not the conversion.",
-      "support": "S05 sets the FBAR civil ceilings at USD 16,536 non-willful and USD 165,353 willful per violation. S07 and S08 set the FEIE at USD 132,900 for 2026 and USD 137,300 for 2027, but the FEIE reaches earned income only.",
-      "confidence": "High for the cited amounts. Application depends on Q07 and Q08."
+      "finding": "U.S. reporting and tax obligations must be assessed independently of the transfer.",
+      "support": "S05 lists adjusted FBAR penalty amounts, including USD 16,536 non-willful and USD 165,353 willful; the willful maximum can be greater if 50% of the balance exceeds the listed amount. S07 and S08 state FEIE amounts, subject to eligibility.",
+      "confidence": "The amounts are source-linked; applicability and current penalty adjustments require review."
     }
   ]
 }

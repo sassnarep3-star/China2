@@ -74,12 +74,22 @@ td.tier{font-weight:700;white-space:nowrap}
 
 /* stacked mobile tables */
 @media (max-width:720px){
-  table.stack thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  /* Stacked cells carry data-label, so the header row is redundant here.
+     display:none (not a visually-hidden clip) is deliberate: an absolutely
+     positioned, clipped thead still contributes to the root scroll width and
+     makes the page scroll sideways on a phone. */
+  table.stack thead{display:none}
   table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%}
   table.stack tr{border-bottom:2px solid var(--line);padding:7px 0}
   table.stack tr:last-child{border-bottom:none}
-  table.stack td{border:none;padding:3px 11px;display:flex;gap:10px;align-items:baseline}
-  table.stack td::before{content:attr(data-label);flex:0 0 44%;font-weight:650;color:var(--ink2);font-size:.8rem}
+  /* Block layout, not flex: a flex row's anonymous text item has min-width:auto
+     and a long unbreakable token pushes the table past the viewport without
+     widening any element's bounding box, so the page scrolls sideways. */
+  table.stack td{border:none;padding:4px 11px;display:block;
+    overflow-wrap:anywhere;word-break:break-word;min-width:0}
+  table.stack td::before{content:attr(data-label);display:block;font-weight:650;
+    color:var(--ink2);font-size:.8rem;margin-bottom:1px;letter-spacing:.02em}
+  table.stack td[data-label] + td[data-label]{padding-top:6px}
   table.stack td.num{text-align:left}
   table.stack td.tier{font-size:1.05rem;padding-top:8px}
   .tscroll{overflow-x:visible;border:none;box-shadow:none;background:none}

@@ -18,11 +18,7 @@
 <p class="lede">What the charge is actually made of — and how much of it can be verified at all.</p>
 
 <div class="callout key"><span class="t">The headline finding</span>
-Of the ten layers that make up what feels like a "conversion penalty", only
-<strong>three</strong> could be quantified from official documents (L4, L7, L9), and one of those
-(L7) is usually <strong>zero</strong>. Six layers are <span class="blank">BLANK</span> because no official
-source published them. The two layers most likely to be large — L1 (PRC tax on the underlying income) and
-L3 (the bank's FX spread) — are both blank. Answering those two is worth far more than optimising the wire.
+Of the ten layers that make up what feels like a "conversion penalty", only some tariff and regulatory amounts could be identified. Actual taxes, the exchange spread and total transfer cost are <span class="blank">BLANK</span> because they depend on facts or quotes not available here. Penalty amounts are exposure, not a normal transfer cost.
 </div>
 <div class="tscroll"><table class="stack">
 <caption>Ten layers of the conversion penalty, ordered from the underlying income to the destination account</caption>
@@ -32,15 +28,15 @@ L3 (the bank's FX spread) — are both blank. Answering those two is worth far m
         <td class="tier" data-label="Layer">L1</td>
         <td data-label="Layer">PRC tax on the income that created the balance</td>
         <td class="num" data-label="Amount"><span class="blank">BLANK</span></td>
-        <td data-label="Why">Almost certainly the real cost the requester is describing. Not a charge on conversion — a charge on the underlying income. Could not be verified from an official source in this session.</td>
-        <td class="src" data-label="Source"><span class="blank">none</span>
+        <td data-label="Why">Tax on underlying income is possible, but the reason for the reported charge and applicable amount are unknown. Obtain the bank’s written itemization and tax records.</td>
+        <td class="src" data-label="Source"><a href="https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html" rel="noopener noreferrer">S10 ↗</a>
              · <a href="flagged.html#F01">F01</a></td>
       </tr>
       <tr>
         <td class="tier" data-label="Layer">L2</td>
-        <td data-label="Layer">PRC tax recordal gate above USD 50,000 per single payment</td>
+        <td data-label="Layer">PRC tax recordal for covered outbound payments above USD 50,000</td>
         <td class="num" data-label="Amount"><span class="mono">No charge stated</span></td>
-        <td data-label="Why">S10 requires the recordal; S11 confirms one per contract and an online channel. Neither states a fee, and absence of a stated fee is not evidence that it is free.</td>
+        <td data-label="Why">S10 applies to listed categories and includes exemptions; S11 confirms one per contract and an online channel. Neither states a fee, and absence of a stated fee is not evidence that it is free.</td>
         <td class="src" data-label="Source"><a href="https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html" rel="noopener noreferrer">S10 ↗</a>
              · <a href="flagged.html#F08">F08</a></td>
       </tr>
@@ -48,14 +44,14 @@ L3 (the bank's FX spread) — are both blank. Answering those two is worth far m
         <td class="tier" data-label="Layer">L3</td>
         <td data-label="Layer">Bank FX dealing spread</td>
         <td class="num" data-label="Amount"><span class="blank">BLANK</span></td>
-        <td data-label="Why">The single largest unquantified cost. The HSBC tariff publishes wire charges but no spread, and note 7 excludes anything not priced by HSBC.</td>
+        <td data-label="Why">A potentially material unquantified cost. The HSBC tariff publishes wire charges but no spread, and note 7 excludes anything not priced by HSBC.</td>
         <td class="src" data-label="Source"><a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/%E8%B4%A6%E6%88%B7%E5%92%8C%E6%9C%8D%E5%8A%A1%E8%B4%B9%E7%8E%87-v2.pdf" rel="noopener noreferrer">S09 ↗</a>
              · <a href="flagged.html#F02">F02</a></td>
       </tr>
       <tr>
         <td class="tier" data-label="Layer">L4</td>
         <td data-label="Layer">Bank wire and cable charge</td>
-        <td class="num" data-label="Amount"><span class="mono">RMB 0 – 620</span></td>
+        <td class="num" data-label="Amount"><span class="mono">RMB 0 – 620 (wire and cable only)</span></td>
         <td data-label="Why">Fully verified. 0.1% with a RMB 100 minimum and RMB 500 maximum, plus a RMB 120 cable; RMB 0 for Private Banking and Premier Elite. About $30.86 to $115.02 at 7.129, depending on tier and charge-sharing option.</td>
         <td class="src" data-label="Source"><a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/%E8%B4%A6%E6%88%B7%E5%92%8C%E6%9C%8D%E5%8A%A1%E8%B4%B9%E7%8E%87-v2.pdf" rel="noopener noreferrer">S09 ↗</a>
             </td>
@@ -72,17 +68,17 @@ L3 (the bank's FX spread) — are both blank. Answering those two is worth far m
         <td class="tier" data-label="Layer">L6</td>
         <td data-label="Layer">U.S. receiving bank inbound wire fee</td>
         <td class="num" data-label="Amount"><span class="blank">BLANK</span></td>
-        <td data-label="Why">No U.S. bank schedule was fetched in this session.</td>
-        <td class="src" data-label="Source"><span class="blank">none</span>
+        <td data-label="Why">No U.S. bank schedule was fetched in this session; S09 notes that other banks may charge.</td>
+        <td class="src" data-label="Source"><a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/%E8%B4%A6%E6%88%B7%E5%92%8C%E6%9C%8D%E5%8A%A1%E8%B4%B9%E7%8E%87-v2.pdf" rel="noopener noreferrer">S09 ↗</a>
              · <a href="flagged.html#F03">F03</a></td>
       </tr>
       <tr>
         <td class="tier" data-label="Layer">L7</td>
         <td data-label="Layer">U.S. tax on a currency gain</td>
-        <td class="num" data-label="Amount"><span class="mono">Usually $0</span></td>
+        <td class="num" data-label="Amount"><span class="blank">BLANK</span></td>
         <td data-label="Why">26 U.S.C. 988(e)(2): no gain is recognised on a personal currency transaction unless the gain exceeds $200. Section 988(e)(1) disapplies the rest of the section to personal transactions.</td>
         <td class="src" data-label="Source"><a href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/pdf/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.pdf" rel="noopener noreferrer">S06 ↗</a>
-            </td>
+             · <a href="flagged.html#F01">F01</a></td>
       </tr>
       <tr>
         <td class="tier" data-label="Layer">L8</td>
@@ -96,7 +92,7 @@ L3 (the bank's FX spread) — are both blank. Answering those two is worth far m
         <td class="tier" data-label="Layer">L9</td>
         <td data-label="Layer">U.S. reporting exposure (FBAR)</td>
         <td class="num" data-label="Amount"><span class="mono">$16,536 / $165,353</span></td>
-        <td data-label="Why">Civil ceilings per violation under 31 CFR 1010.821, adjusted by 90 FR 5630. This exposure is per year unreported and does not shrink by transferring in instalments.</td>
+        <td data-label="Why">Inflation-adjusted amounts in 31 CFR 1010.821 as accessed; the willful maximum can be greater where 50% of the balance exceeds the listed amount. Applicability and assessment depend on the facts; check current adjustments.</td>
         <td class="src" data-label="Source"><a href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" rel="noopener noreferrer">S05 ↗</a>
             </td>
       </tr>
@@ -112,28 +108,23 @@ L3 (the bank's FX spread) — are both blank. Answering those two is worth far m
 <h2>What this means in practice</h2>
 <div class="grid g2">
   <div class="card"><h3>Stop optimising the wire</h3>
-    <p>The whole verified wire cost is between $0 and $115.02 on any amount from $10,000 to $400,000
-    <span class="src">(<a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/%E8%B4%A6%E6%88%B7%E5%92%8C%E6%9C%8D%E5%8A%A1%E8%B4%B9%E7%8E%87-v2.pdf" rel="noopener noreferrer">S09 ↗</a>)</span>. Even eliminating it entirely saves under $115.02.
-    Time spent shopping wire fees is time not spent on L1 and L3.</p></div>
+    <p>The modeled HSBC tariff components range from $0 to $115.02 across the illustrated $10,000 to $400,000 tiers
+    <span class="src">(<a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/%E8%B4%A6%E6%88%B7%E5%92%8C%E6%9C%8D%E5%8A%A1%E8%B4%B9%E7%8E%87-v2.pdf" rel="noopener noreferrer">S09 ↗</a>)</span>. These estimates exclude other bank charges, FX spread and taxes, and are not quotes.</p></div>
   <div class="card"><h3>Get the dealing rate in writing</h3>
-    <p>One phone call resolves L3. Ask the bank for an indicative CNY/USD dealing rate for the actual
-    amount, and compare it against the same-day PBOC central parity rate. The difference is the real
-    conversion penalty.</p></div>
+    <p>Ask the bank for a written executable CNY/USD dealing rate and all fees for the actual amount. Compare it with a contemporaneous reference rate; the difference is indicative, not necessarily a complete measure of cost.</p></div>
   <div class="card"><h3>Settle PRC tax before you move the money</h3>
     <p>S10 makes "whether the outbound item has paid tax as required" an express subject of the 15-working-day
-    review <span class="src">(<a href="https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html" rel="noopener noreferrer">S10 ↗</a>)</span>. Paying it after the attempt is more expensive
-    than paying it before.</p></div>
+    review where recordal applies <span class="src">(<a href="https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html" rel="noopener noreferrer">S10 ↗</a>)</span>. Verify whether any tax or filing is due with the relevant authorities.</p></div>
   <div class="card"><h3>Reporting exposure does not shrink by instalments</h3>
-    <p>FBAR exposure under S05 is per year the account went unreported. Splitting the transfer across years
-    does not reduce it, and it multiplies the RMB 100 minimum and RMB 120 cable on every wire.</p></div>
+    <p>Potential FBAR penalties depend on the facts and the filing obligations for each year. Splitting a transfer does not erase an existing reporting violation, and can multiply bank charges.</p></div>
 </div>
 
 </main></div>
 <footer><div class="wrap">
   <p><strong>Research, not advice.</strong> This is a source-linked research record, not individualised
   tax, legal or investment advice. No transfer was made, no return was filed and no personal fact was
-  verified. Every figure was read from an official document fetched on 2026-11-11; anything that could
-  not be read from an official source is left <span class="blank">BLANK</span> rather than estimated.</p>
+  verified. Published tariff inputs were checked against documents fetched on 2026-11-11; illustrative
+  USD equivalents are calculations using a historical reference rate, not current quotes. Unknown amounts are left <span class="blank">BLANK</span> rather than estimated.</p>
   <p class="small">Session <code>arena/c6309933-china2</code> · data in <code>dashboard-c6309933/data/</code>
   · <a href="sources.html">12 official sources</a> · <a href="flagged.html">13 flagged values</a> ·
   <a href="../COORDINATION.md">task board</a></p>

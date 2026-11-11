@@ -31,7 +31,7 @@
     {
       "id": "P04",
       "rule": "Outbound-payment tax recordal threshold",
-      "value": "A single outbound payment above USD 50,000 equivalent requires a tax recordal",
+      "value": "A single covered outbound payment above USD 50,000 equivalent requires a tax recordal, subject to exemptions",
       "appliesTo": "Domestic institutions and individuals paying the listed categories abroad",
       "sourceId": "S10",
       "quote": "境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元，下同）下列外汇资金 ... 均应向所在地主管税务机关进行税务备案",

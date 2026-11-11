@@ -99,7 +99,7 @@
       "status": "needs review",
       "value": "BLANK",
       "field": "Bank FX spread on a CNY-to-USD purchase",
-      "reason": "Not published. The HSBC China tariff fetched at source S09 publishes wire and cable charges and states in note 7 that the tariff excludes charges set by other institutions, but publishes no dealing spread. Modelling one would be invention, so every spread cell is BLANK. This is very likely the largest single cost and is the top item to discover (question Q10).",
+      "reason": "Not published. The HSBC China tariff fetched at source S09 publishes wire and cable charges and states in note 7 that the tariff excludes charges set by other institutions, but publishes no dealing spread. Modelling one would be invention, so every spread cell is BLANK. This may be material and is an important item to discover (question Q10).",
       "discovery": "Request an indicative dealing rate in writing for the actual amount and compare it to the same-day PBOC central parity rate."
     },
     {
