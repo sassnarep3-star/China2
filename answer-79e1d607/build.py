@@ -172,7 +172,8 @@ Not legal or tax advice. Nothing here is a fact about you: your own tax position
 
 def table(head, rows, cls=""):
     th = "".join("<th>%s</th>" % h for h in head)
-    tr = "".join("<tr>" + "".join("<td>%s</td>" % c for c in r) + "</tr>" for r in rows)
+    lab = [esc(re.sub(r"<[^>]+>", "", str(h))) for h in head]
+    tr = "".join("<tr>" + "".join('<td data-l="%s">%s</td>' % (lab[i], c) for i, c in enumerate(r)) + "</tr>" for r in rows)
     return '<div class="tw"><table class="%s"><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (cls, th, tr)
 
 
@@ -254,7 +255,7 @@ def p_methods():
         rows = [('<a href="#%s"><strong>%s</strong></a> %s' % (m["id"], m["id"], esc(m["name"])),
                  '<span class="st %s">%s</span>' % (g, status(m)), flagify(m["cost"]) if m["cost"] else blank(),
                  esc(m["limit"]) if m["limit"] else blank(), src(m["src"])) for m in ms]
-        out.append("<h2>%s</h2>%s" % (esc(gname), table(["Method", "Status", "Cost", "Limit", "Sources"], rows)))
+        out.append("<h2>%s</h2>%s" % (esc(gname), table(["Method", "Status", "Cost", "Limit", "Sources"], rows, "wide")))
     out.append("<h2>Each method in detail</h2>")
     for m in C.METHODS:
         s0 = src(m["src"])
@@ -296,7 +297,7 @@ def p_costs():
         brow.append(("<strong>%s</strong> %s<br><small>%s</small>" % (b["id"], esc(b["name"]), esc(b["route"])), "%s" % q(s, "0.00001"), "%s" % q(bu, "0.00001"),
                      "%s%%" % half_spread_pct(b), esc(feetxt), esc(b["stamp"]["value"]), flagify(b["caveat"]), src(bank_srcs(b) + [(b["stamp"]["sid"], "")])))
     out += ["<h2>The published prices behind each route</h2>",
-            table(["Route", "Bank sells $1 for (CNY)", "Bank buys $1 for (CNY)", "Margin, one way", "Wire fee", "Board time", "Caveat", "Sources"], brow)]
+            table(["Route", "Bank sells $1 for (CNY)", "Bank buys $1 for (CNY)", "Margin, one way", "Wire fee", "Board time", "Caveat", "Sources"], brow, "wide")]
     for b in C.BANKS:
         rws = [("$%s" % format(r["amount_usd"], ","), "<strong>%s</strong>" % money(r["cost_usd"]), "%s%%" % r["cost_pct"], money(r["spread_usd"]),
                 money(r["fee_usd"]), "¥%s" % format(r["cny_needed"], ",.2f"), src(bank_srcs(b))) for r in COSTS[b["id"]]]
@@ -310,7 +311,7 @@ def p_costs():
                    "Card cash abroad: calendar years at the RMB 100,000 yearly cap", "Card withdrawals at RMB 10,000", "Travel, ATM and card fees", "Sources"], crow, "num sticky"),
             '<p class="note">Card years use Bank of China\'s selling rate today as a stand-in; the card scheme\'s own rate was not read. A second trip within 15 days is limited to US$1,000 in notes.</p>']
     nrows = [("<strong>%s</strong>" % esc(x["name"]), esc(x["have"]) if x["have"] else blank(), esc(x["missing"]), blank(x["flag"]), src(x["src"])) for x in C.BLANKS]
-    out += ["<h2>Routes with no readable price</h2>", table(["Route", "What was read", "What is missing", "Cost", "Sources"], nrows)]
+    out += ["<h2>Routes with no readable price</h2>", table(["Route", "What was read", "What is missing", "Cost", "Sources"], nrows, "wide")]
     return page("costs.html", "What it costs to convert and send",
                 "Estimated from each bank's own rate board and fee sheet read on %s. Amount first, lowest computed cost next, then every route." % C.READ_DATE, "".join(out))
 
@@ -347,7 +348,7 @@ def p_flagged():
             for i, kind, what, eff, do, pairs in C.FLAGS]
     nr = [("<strong>%s</strong> %s" % (s["id"], esc(s["title"])), esc(s["read"]), src([(s["id"], "")])) for s in LEDGER if s["id"].startswith("NR")]
     body = ("<h2>Flagged items</h2>" + table(["#", "Kind", "What", "Effect on the published tables", "What a person should do", "Sources"], rows, "wide")
-            + "<h2>Pages that could not be read</h2>" + table(["Page", "What happened", "Link"], nr)
+            + "<h2>Pages that could not be read</h2>" + table(["Page", "What happened", "Link"], nr, "wide")
             + '<p class="note">Flagged items do not block publication. Each blank cell on this site links back to its flag here.</p>')
     return page("flagged.html", "Flagged for Review",
                 "Everything that could not be confirmed from the publisher's own page, and every irregularity found. Values in these rows are left blank on the other pages.", body)

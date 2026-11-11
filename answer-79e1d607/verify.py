@@ -249,7 +249,7 @@ for pg, p in parsed.items():
             ok(frag in parsed[target].ids, "%s links to missing anchor %s#%s" % (pg, target, frag))
 ctxt = read("costs.html")
 for x in C.AMOUNTS:
-    ok("<td>$%s</td>" % format(x, ",") in ctxt, "costs.html lacks the $%d row" % x)
+    ok('<td data-l="Send">$%s</td>' % format(x, ",") in ctxt, "costs.html lacks the $%d row" % x)
 ok(ctxt.count('class="blank"') >= 3 * 40, "blank cells missing for routes with no readable price")
 ok(all(('id="%s"' % f) in read("flagged.html") for f in flag_ids), "a flag is not published on the Flagged page")
 ok(all(('id="%s"' % s) in read("sources.html") for s in ledger), "a source is not published on the Sources page")

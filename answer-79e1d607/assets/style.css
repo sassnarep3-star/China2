@@ -52,5 +52,14 @@ summary{cursor:pointer;font-weight:600;padding:.5rem .7rem;background:var(--card
 details[open] summary{margin-bottom:.5rem}
 code{font-size:.82rem;background:#eef0f3;border-radius:4px;padding:0 .25rem;overflow-wrap:anywhere}
 footer{max-width:1180px;margin:1.5rem auto;padding:0 1rem 2rem;color:var(--mut);font-size:.85rem}
-@media (max-width:640px){body{font-size:15px}h1{font-size:1.3rem}main{padding:.7rem}th,td{padding:.4rem .45rem}.tile .v{font-size:1.15rem}}
+@media (max-width:640px){body{font-size:15px}h1{font-size:1.3rem}main{padding:.7rem}th,td{padding:.4rem .45rem}.tile .v{font-size:1.15rem}
+table.wide thead,table.kv thead{display:none}
+table.wide,table.wide tbody,table.wide tr,table.wide td,table.kv,table.kv tbody,table.kv tr,table.kv td{display:block;width:auto;min-width:0;white-space:normal}
+table.wide tr,table.kv tr{padding:.55rem .65rem;border-bottom:1px solid var(--line)}
+table.wide tbody tr:last-child,table.kv tbody tr:last-child{border-bottom:0}
+table.wide td,table.kv td{border:0;padding:.12rem 0}
+table.wide td::before{content:attr(data-l);display:block;font-size:.7rem;color:var(--mut);text-transform:uppercase;letter-spacing:.04em;margin-top:.35rem}
+table.wide td:first-child::before{display:none}
+table.wide td:first-child{font-size:1rem}
+table.kv td:first-child{font-weight:700;color:var(--ink);width:auto}}
 @media print{header{position:static}.tw{overflow:visible}details{display:block}}
