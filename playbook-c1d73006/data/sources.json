@@ -838,6 +838,90 @@
   ]
  },
  {
+  "id": "CN-TAX-04",
+  "group": "PRC tax rules",
+  "publisher": "Ministry of Finance and State Taxation Administration — STA policy database",
+  "title": "财政部 国家税务总局关于储蓄存款利息所得有关个人所得税政策的通知 (Notice on individual income tax on interest from savings deposits)",
+  "doc_no": "财税〔2008〕132号 (Caishui [2008] No. 132), 9 October 2008",
+  "url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203286/content.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "exempt",
+    "locator": "正文",
+    "text": "为配合国家宏观调控政策需要，经国务院批准，自2008年10月9日起，对储蓄存款利息所得暂免征收个人所得税。即储蓄存款在1999年10月31日前孳生的利息所得，不征收个人所得税；储蓄存款在1999年11月1日至2007年8月14日孳生的利息所得，按照20%的比例税率征收个人所得税；储蓄存款在2007年8月15日至2008年10月8日孳生的利息所得，按照5%的比例税率征收个人所得税；储蓄存款在2008年10月9日后（含10月9日）孳生的利息所得，暂免征收个人所得税。",
+    "en": "With State Council approval, from 9 October 2008 individual income tax on interest from savings deposits is temporarily not levied. Interest accrued before 31 October 1999: not taxed; 1 November 1999 – 14 August 2007: 20%; 15 August 2007 – 8 October 2008: 5%; on or after 9 October 2008: temporarily exempt."
+   }
+  ]
+ },
+ {
+  "id": "CN-TAX-05",
+  "group": "PRC tax rules",
+  "publisher": "National People's Congress; text as published on the State Taxation Administration's 12366 tax-service platform (the platform states its content is for reference and the law itself governs)",
+  "title": "中华人民共和国税收征收管理法 (Law of the PRC on the Administration of Tax Collection, as amended 24 April 2015)",
+  "doc_no": "Articles 32, 34, 44, 52, 63, 64, 69, 86, 88",
+  "url": "https://12366.chinatax.gov.cn/bzds/120/120-1-4.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "art32",
+    "locator": "第三十二条",
+    "text": "纳税人未按照规定期限缴纳税款的，扣缴义务人未按照规定期限解缴税款的，税务机关除责令限期缴纳外，从滞纳税款之日起，按日加收滞纳税款万分之五的滞纳金。",
+    "en": "Where tax is not paid on time, the tax authority orders payment within a time limit and, from the day the tax became overdue, adds a late-payment surcharge of 0.05% of the overdue tax per day."
+   },
+   {
+    "key": "art34",
+    "locator": "第三十四条",
+    "text": "税务机关征收税款时，必须给纳税人开具完税凭证。扣缴义务人代扣、代收税款时，纳税人要求扣缴义务人开具代扣、代收税款凭证的，扣缴义务人应当开具。",
+    "en": "When the tax authority collects tax it must issue the taxpayer a tax-payment voucher. Where a withholding agent withholds tax and the taxpayer asks for a withholding voucher, the agent must issue one."
+   },
+   {
+    "key": "art44",
+    "locator": "第四十四条",
+    "text": "欠缴税款的纳税人或者他的法定代表人需要出境的，应当在出境前向税务机关结清应纳税款、滞纳金或者提供担保。未结清税款、滞纳金，又不提供担保的，税务机关可以通知出境管理机关阻止其出境。",
+    "en": "A taxpayer who owes tax and needs to leave the country must settle the tax and surcharge, or provide a guarantee, before leaving; otherwise the tax authority may notify the exit-control authority to stop the departure."
+   },
+   {
+    "key": "art52",
+    "locator": "第五十二条",
+    "text": "因税务机关的责任，致使纳税人、扣缴义务人未缴或者少缴税款的，税务机关在三年内可以要求纳税人、扣缴义务人补缴税款，但是不得加收滞纳金。因纳税人、扣缴义务人计算错误等失误，未缴或者少缴税款的，税务机关在三年内可以追征税款、滞纳金；有特殊情况的，追征期可以延长到五年。对偷税、抗税、骗税的，税务机关追征其未缴或者少缴的税款、滞纳金或者所骗取的税款，不受前款规定期限的限制。",
+    "en": "Where tax was unpaid or underpaid through the tax authority's fault, it may require payment within three years but may not add the surcharge. Where it was through the taxpayer's or withholding agent's miscalculation or similar error, the authority may recover tax and surcharge within three years, extendable to five years in special circumstances. For tax evasion, refusal to pay or tax fraud there is no time limit."
+   },
+   {
+    "key": "art63",
+    "locator": "第六十三条 第一款",
+    "text": "纳税人伪造、变造、隐匿、擅自销毁帐簿、记帐凭证，或者在帐簿上多列支出或者不列、少列收入，或者经税务机关通知申报而拒不申报或者进行虚假的纳税申报，不缴或者少缴应纳税款的，是偷税。对纳税人偷税的，由税务机关追缴其不缴或者少缴的税款、滞纳金，并处不缴或者少缴的税款百分之五十以上五倍以下的罚款；构成犯罪的，依法追究刑事责任。",
+    "en": "Tax evasion (falsifying or hiding books, under-recording income, refusing to file after being notified, or filing falsely, so that tax is unpaid or underpaid): the authority recovers the tax and surcharge and imposes a fine of 50% to five times the unpaid tax; criminal liability where a crime is constituted."
+   },
+   {
+    "key": "art64",
+    "locator": "第六十四条 第二款",
+    "text": "纳税人不进行纳税申报，不缴或者少缴应纳税款的，由税务机关追缴其不缴或者少缴的税款、滞纳金，并处不缴或者少缴的税款百分之五十以上五倍以下的罚款。",
+    "en": "A taxpayer who does not file and so does not pay or underpays: the authority recovers the tax and surcharge and imposes a fine of 50% to five times the unpaid tax."
+   },
+   {
+    "key": "art69",
+    "locator": "第六十九条",
+    "text": "扣缴义务人应扣未扣、应收而不收税款的，由税务机关向纳税人追缴税款，对扣缴义务人处应扣未扣、应收未收税款百分之五十以上三倍以下的罚款。",
+    "en": "Where a withholding agent failed to withhold, the authority recovers the tax from the taxpayer and fines the withholding agent 50% to three times the tax that should have been withheld."
+   },
+   {
+    "key": "art86",
+    "locator": "第八十六条",
+    "text": "违反税收法律、行政法规应当给予行政处罚的行为，在五年内未被发现的，不再给予行政处罚。",
+    "en": "Conduct that should receive an administrative penalty under the tax laws is no longer penalised if it is not discovered within five years."
+   },
+   {
+    "key": "art88",
+    "locator": "第八十八条 第一款",
+    "text": "纳税人、扣缴义务人、纳税担保人同税务机关在纳税上发生争议时，必须先依照税务机关的纳税决定缴纳或者解缴税款及滞纳金或者提供相应的担保，然后可以依法申请行政复议；对行政复议决定不服的，可以依法向人民法院起诉。",
+    "en": "In a dispute with the tax authority over tax, the taxpayer must first pay the tax and surcharge under the authority's decision, or provide a guarantee, and may then apply for administrative review; a court action may follow if the review decision is not accepted."
+   }
+  ]
+ },
+ {
   "id": "US-FX-01",
   "group": "U.S. tax rules",
   "publisher": "Internal Revenue Service (IRS)",
@@ -1197,6 +1281,48 @@
     "key": "not_earned",
     "locator": "Other rules — Not foreign earned income",
     "text": "Payments received after the end of the tax year following the year in which the services that earned the income were performed … Pension or annuity payments, including social security benefits"
+   }
+  ]
+ },
+ {
+  "id": "US-TAX-05",
+  "group": "U.S. tax rules",
+  "publisher": "Internal Revenue Service (IRS) — treaty text PDF",
+  "title": "Agreement between the Government of the United States of America and the Government of the People's Republic of China for the Avoidance of Double Taxation and the Prevention of Tax Evasion with Respect to Taxes on Income",
+  "doc_no": "Articles 2, 4, 6, 9, 10 and 11 read; Articles 12 onward (including gains, relief from double taxation) and the Protocol were not read in this session",
+  "url": "https://www.irs.gov/pub/irs-trty/china.pdf",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "art2",
+    "locator": "Article 2(1)(a)(I) and (b)",
+    "text": "The taxes to which this Agreement applies are (a) in the People's Republic of China: (I) the individual income tax; … (b) in the United States of America: the Federal income taxes imposed"
+   },
+   {
+    "key": "art4",
+    "locator": "Article 4(1)–(2)",
+    "text": "For the purposes of this Agreement, the term \"resident of a Contracting State\" means any person who, under the laws of that Contracting State, is liable to tax therein by reason of his domicile, residence, place of head office, place of incorporation or any other criterion of a similar nature. Where by reason of the provisions of paragraph 1 an individual is a resident of both Contracting States, then the competent authorities of the Contracting States shall determine through consultations the Contracting State of which that individual shall be deemed to be a resident for the purposes of this Agreement."
+   },
+   {
+    "key": "art6",
+    "locator": "Article 6(1)",
+    "text": "Income derived by a resident of a Contracting State from real property situated in the other Contracting State may be taxed in that other Contracting State."
+   },
+   {
+    "key": "art9",
+    "locator": "Article 9(2)",
+    "text": "However, such dividends may also be taxed in the Contracting State of which the company paying the dividends is a resident, and according to the laws of that Contracting State, but if the recipient is the beneficial owner of the dividends the tax so charged shall not exceed 10 percent of the gross amount of the dividends."
+   },
+   {
+    "key": "art10",
+    "locator": "Article 10(2)",
+    "text": "However, such interest may also be taxed in the contracting State in which it arises and according to the laws of that Contracting State, but if the recipient is the beneficial owner of the interest, the tax so charged shall not exceed 10 percent of the gross amount of the interest."
+   },
+   {
+    "key": "art11",
+    "locator": "Article 11(2)",
+    "text": "However, such royalties may also be taxed in the Contracting State in which they arise and according to the laws of that Contracting State, but if the recipient is the beneficial owner of the royalties, the tax so charged shall not exceed 10 percent of the gross amount of the royalties."
    }
   ]
  }
