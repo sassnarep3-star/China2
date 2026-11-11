@@ -2,25 +2,25 @@
   "section": "F6",
   "method": "Mechanical scan of every HTML, Markdown, JSON, CSV and Python file outside this folder, plus a comparison of the cost files that several sections publish for the same route. No other session's file was modified: the findings are reported, and where a figure affects the price, this section publishes its own verified value.",
   "totals": {
-    "files_scanned": 316,
-    "html_pages": 140,
-    "links_checked": 41102,
-    "checks_run": 41120
+    "files_scanned": 327,
+    "html_pages": 147,
+    "links_checked": 41276,
+    "checks_run": 41294
   },
   "checks": [
     {
       "check": "Files scanned (HTML, MD, JSON, CSV, PY)",
-      "result": "316",
+      "result": "327",
       "detail": "Everything in the repository except this folder and .git."
     },
     {
       "check": "HTML pages scanned",
-      "result": "140",
+      "result": "147",
       "detail": "Every published page in every section, including superseded ones."
     },
     {
       "check": "Internal links checked",
-      "result": "41,102",
+      "result": "41,276",
       "detail": "Every href in every HTML page resolved against the file system."
     },
     {
@@ -31,7 +31,7 @@
     {
       "check": "Pages showing dollar figures with no external source link",
       "result": "13",
-      "detail": "of 140 pages. Listed under irregularities where the figures are cost or tax claims."
+      "detail": "of 147 pages. Listed under irregularities where the figures are cost or tax claims."
     },
     {
       "check": "Content sections not linked from the landing page",
@@ -41,12 +41,12 @@
     {
       "check": "Distinct FEIE values published across the repo",
       "result": "5",
-      "detail": "132,900 x392, 120,000 x359, 137,300 x123, 112,000 x6, 126,500 x2"
+      "detail": "132,900 x393, 120,000 x361, 137,300 x125, 112,000 x7, 126,500 x3"
     },
     {
       "check": "Distinct HSBC fee-cap values published across the repo",
       "result": "2",
-      "detail": "620 x3851, 500 x1632"
+      "detail": "620 x3852, 500 x1645"
     },
     {
       "check": "Source ids referenced by this section that exist in the ledger",
@@ -92,7 +92,7 @@
       "id": "I-04",
       "severity": "medium",
       "file": "index.html",
-      "finding": "The landing page links 20 of the 25 content sections. Not linked: acceptance-373b54a3, acceptance-a64bd476, audit-456e7542, audit-6068a908, verify-88f5a1be.",
+      "finding": "The landing page links 20 of the 27 content sections. Not linked: acceptance-373b54a3, acceptance-a64bd476, audit-456e7542, audit-6068a908, verify-88f5a1be.",
       "effect": "Published work is unreachable from the front door, so a reader cannot tell whether it exists or has been superseded.",
       "sources": []
     },
@@ -259,8 +259,12 @@
       "665.71": 14,
       "668.51": 14,
       "666.30": 15,
-      "669.11": 31,
+      "669.11": 32,
       "669.12": 16,
+      "665.91": 5,
+      "668.71": 6,
+      "666.06": 15,
+      "668.86": 21,
       "665.05": 5,
       "668.52": 5,
       "665.00": 2,
@@ -272,8 +276,6 @@
       "668.40": 3,
       "665.58": 3,
       "668.30": 4,
-      "666.06": 14,
-      "668.86": 20,
       "669.80": 3,
       "662.35": 1,
       "664.69": 2,
@@ -284,18 +286,24 @@
       "665.94": 3,
       "664.22": 1,
       "666.31": 15,
-      "664.21": 10
+      "664.21": 10,
+      "669.72": 3
+    },
+    "HSBC USD sell": {
+      "6.7030239": 2,
+      "6.7053746": 1130,
+      "6.7080734": 19
     },
     "FEIE amount": {
-      "132,900": 392,
-      "137,300": 123,
-      "120,000": 359,
-      "112,000": 6,
-      "126,500": 2
+      "132,900": 393,
+      "137,300": 125,
+      "126,500": 3,
+      "120,000": 361,
+      "112,000": 7
     },
     "HSBC fee cap (CNY)": {
-      "500": 1632,
-      "620": 3851
+      "500": 1645,
+      "620": 3852
     },
     "Willful FBAR maximum": {
       "165,353": 123
@@ -305,10 +313,6 @@
     },
     "BOC fee cap (CNY)": {
       "410": 513
-    },
-    "HSBC USD sell": {
-      "6.7053746": 1129,
-      "6.7080734": 19
     }
   }
 }

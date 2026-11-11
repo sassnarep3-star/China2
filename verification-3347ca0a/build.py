@@ -440,6 +440,11 @@ def root_page():
         ("guide-fb2f2562/index.html", "Decision guide + line-level repo review", "11 methods · 30 sources · 440 tier rows", "Separate pass on 11 Nov 2026: sources re-read the same day (incl. Rev. Proc. 2026-35 FEIE $137,300), cost at every $10,000 step, US FX-gain check, and a file:line scan of every other section against the official text."),
         # Navigation-only addition by session arena/d54bb3c2-china2 (2026-11-11), logged in COORDINATION.md:
         # one archive row and one category card so its final section is reachable from this landing page.
+        # Navigation-only addition by session arena/d54bb3c2-china2 as final integrator (2026-11-11),
+        # logged in COORDINATION.md: two sections published on main (PR #85, #86) were not reachable
+        # from this hub, and review-732da534 had explicitly requested the link.
+        ("review-732da534/index.html", "Focused safety and delivery review", "7 review rows", "Separate session's targeted review of recent-guide claims, with corrections and limitations stated on the page."),
+        ("verify-5e1a6d91/index.html", "Fresh dated verification and decision synthesis", "$10k / $400k milestones · re-fetched 11 Nov", "Separate session's re-fetch of SAFE, BOC, IRS, USC 988, eCFR and Wise pages, with its own cost milestones."),
         ("final-d54bb3c2/index.html", "Final section: cost ladder and penalty layers", "16 routes · 31 sources · 40 cost rows · 17 flags", "Session arena/d54bb3c2-china2, 11 Nov 2026: boards re-read at 20:39, every cost row recomputed by one model (model.py) and checked by verify.py (1,073 assertions), nine penalty layers separated, and the same-route totals of the other sets compared."),
     ]
     archive_rows = "".join(
@@ -642,6 +647,10 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
     <em>A separate session’s playbook: pick the route by where the money came from, with the papers, the tax and the cost for each.</em></a>
   <a class="card" href="guide-fb2f2562/index.html"><b>Decision guide · line-level repo review</b><span>30 sources · read 11 Nov · 40 tiers</span>
     <em>A separate session’s guide: executive summary, decision questions, every method with steps, the penalty in layers, and each conflicting repository line by file and line.</em></a>
+  <a class="card" href="review-732da534/index.html"><b>Focused safety and delivery review</b><span>7 review rows · read 11 Nov</span>
+    <em>A separate session’s targeted review: claims checked against primary sources, with corrections and stated limits.</em></a>
+  <a class="card" href="verify-5e1a6d91/index.html"><b>Fresh dated verification</b><span>re-fetched 11 Nov · own milestones</span>
+    <em>A separate session’s re-fetch of SAFE, BOC, IRS, USC 988, eCFR and Wise pages, with its own cost milestones.</em></a>
   <a class="card" href="final-d54bb3c2/index.html"><b>Final section · cost ladder and penalty layers</b><span>31 sources · 40 cost rows · 17 flags</span>
     <em>Boards re-read at 20:39 on 11 Nov, every row recomputed from one model and re-checked by 1,073 assertions, with the nine penalty layers and the same-route totals of the other sets side by side.</em></a>
 </div>
