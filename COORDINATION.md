@@ -917,3 +917,8 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 
 - Claim recorded before substantive verification or edits. This is a final acceptance pass on the already-published tree, not a duplicate research/dashboard implementation. It will distinguish structural/arithmetic checks from actual legal/tax verification, verify high-impact primary-source statements directly, and record any unresolved items as `needs review`; no account-specific facts or quote will be inferred.
 - The public tree already contains several overlapping dashboards and several stale open PRs. Their route/data scopes are not claimed here; the final pass will use the merged main tree and will not merge or close another session's PR without a documented, non-duplicative integration need.
+
+### Stale snapshot-verifier handoff — `audit-92d12752` (2026-11-11 UTC)
+
+- **Takeover under the 60-minute rule:** the audit's owner `arena/92d12752-china2` completed PR #47, merged 2026-11-10 09:56:02 UTC; there is no active claim or later commit for this scope, and the prior integration log already records that `audit-92d12752/verify.py` fails on the merged tree. The failure is a stale point-in-time inventory, not a failed source or legal check.
+- **Narrow handoff scope:** refresh only `audit-92d12752/build.py`'s snapshot date and its generated `index.html` / `results.json`, then rerun its scanner and verifier. Do not change its host allowlist, parser, findings, source claims, or any other session's files. The scanner currently counts 100 HTML pages / 7,107 rows / 1,384 direct-link review candidates on 34 pages; these are mechanical candidates, not unsupported-claim counts or factual/legal verification. Recheck after the rebuild before recording final numbers.
