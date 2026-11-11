@@ -1354,3 +1354,19 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 - **CI on the PR head:** all 14 checks passed, including the new `verify-guide-fb2f2562` and the path-filtered `verify-acceptance-a64bd476`; merge state was CLEAN.
 - **Pages:** `pages-build-deployment` run https://github.com/sassnarep3-star/China2/actions/runs/42983349325 for head `89ea1e6` completed SUCCESS (build, deploy, report-build-status). The legacy `/pages/builds` API lists the 07:58:05Z build as `built` with `error: null` but shows the previous commit `c36198d` in its `commit` field; the deployment run above is the record for the merge commit. The sandbox cannot reach `github.io`, so no live-page fetch is claimed. Entry point: https://sassnarep3-star.github.io/China2/guide-fb2f2562/
 - **Status:** G1–G7 done. Flagged items (F-01…F-18 and the 35 conflicting repo lines) remain needs review and did not block the merge.
+
+## Session `arena/690a0af9-china2` — fresh same-day verification, executive summary, methods, 40-tier costs, flagged page, integration (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to `arena/690a0af9-china2` and forbids creating or switching branches; this fixed branch substitutes for the requested `session-<id>/<task>` branch. The whole board above was read before claiming. Every earlier claim marked "in progress" above has a later completion/publication record from its owner (or is older than 60 minutes with no commits) and none touches `guide-690a0af9/**`. Open PRs (#39, #48, #49, #52, #53, #55, #63, #65, #68, #69, #71, #79, #81) belong to other sessions and are not touched.
+
+| # | Task | Status | Owner | Files / scope | Claimed (UTC) |
+|---|------|--------|-------|---------------|---------------|
+| H1 | Same-day re-read of load-bearing official sources (SAFE, PBOC, State Council, STA, gov.cn, IRS incl. Rev. Proc. 2026-35, eCFR, GovInfo, CBP, Fed H.10, BOC/HSBC boards and tariffs, Wise help page) with exact quoted words | in progress | `arena/690a0af9-china2` | `guide-690a0af9/data/**` | 2026-11-11 |
+| H2 | Executive summary + decision register (question · what we know · what we do not know · how to find out) | in progress | `arena/690a0af9-china2` | `guide-690a0af9/**` | 2026-11-11 |
+| H3 | Every CNY→USD method with pros, cons, step-by-step; "conversion penalty" split into layers | in progress | `arena/690a0af9-china2` | `guide-690a0af9/**` | 2026-11-11 |
+| H4 | Cost of every priced method at each $10,000 step to $400,000 from published inputs only; mobile-first tables, total first | in progress | `arena/690a0af9-china2` | `guide-690a0af9/**` | 2026-11-11 |
+| H5 | Line-level repo review + Flagged for Review page | in progress | `arena/690a0af9-china2` | `guide-690a0af9/**` (read-only elsewhere) | 2026-11-11 |
+| H6 | Section build + independent verifier + CI workflow | in progress | `arena/690a0af9-china2` | `guide-690a0af9/**`, `.github/workflows/verify-guide-690a0af9.yml` | 2026-11-11 |
+| H7 | Final integration: one "start here" entry on the root landing page (via `verification-3347ca0a/build.py`, as PRs #76/#77/#83 did), mechanical regeneration of inventory snapshots, README entry line, PR → merge → Pages confirmation | in progress | `arena/690a0af9-china2` | `verification-3347ca0a/build.py` (nav/card lines only) → `index.html`; `README.md` (entry line); `ladder/audit.html`, `audit-92d12752/{index.html,results.json}`, `acceptance-a64bd476/**` (generators unmodified); `COORDINATION.md` (append-only) | 2026-11-11 |
+
+Baseline before any edit: local replica of every workflow's run steps → 25/25 pass, clean tree.
