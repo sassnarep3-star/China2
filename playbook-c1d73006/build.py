@@ -44,11 +44,11 @@ def usd(x, dec=2):
     return "$" + format(D(str(x)), ",.%df" % dec)
 
 
+ROW = {(r["method"], r["amount"]): r for r in COSTS["rows"]}
+
+
 def cost_at(method, amount, key):
-    for r in COSTS["rows"]:
-        if r["method"] == method and r["amount"] == amount:
-            return r[key]
-    raise KeyError((method, amount))
+    return ROW[(method, amount)][key]
 
 
 FILL = {"boc_100k": usd(cost_at("L01", 100000, "boc_usd")), "hsbc_100k": usd(cost_at("L01", 100000, "hsbc_usd")),
@@ -156,6 +156,13 @@ def facts_table():
     return table(["Item", "What we have", "Note", "Source"], rows, "cards")
 
 
+def how_many(method, amount):
+    n, label, note = cost_at(method, amount, "count"), cost_at(method, amount, "count_label"), cost_at(method, amount, "note")
+    if not n:
+        return "Not applicable"
+    return "%s %s%s" % (format(n, ","), label, "; " + note if note else "")
+
+
 def ranking_table():
     rows = []
     order = sorted([m for m in C.METHODS if m["status"] != "unlawful"],
@@ -166,10 +173,11 @@ def ranking_table():
         cells = [td("Route", '<a href="methods.html#%s">%s · %s</a>' % (m["id"], m["id"], e(m["name"]))),
                  td("Bank of China inputs", "<strong>%s</strong>" % usd(b)) if b else blank("Bank of China inputs", fid, "Not published"),
                  td("HSBC China inputs", usd(h)) if h else blank("HSBC China inputs", fid, "Not published"),
+                 td("How many", e(how_many(m["id"], 100000))),
                  td("What limits it", e(m["cap"])),
                  src_cell(C.COST_SRC.get(m["id"], C.COST_SRC["bank"]), True)]
         rows.append(tr(cells))
-    return table(["Route", "Published cost at $100,000, Bank of China inputs", "HSBC China inputs", "What limits it", "Source"], rows, "cards")
+    return table(["Route", "Published cost at $100,000, Bank of China inputs", "HSBC China inputs", "How many", "What limits it", "Source"], rows, "cards")
 
 
 def index_page():
@@ -401,9 +409,7 @@ def costs_page():
         else:
             c1 = td("Bank of China inputs", "<strong>%s</strong>" % usd(r["boc_usd"])) if r["boc_usd"] else blank("Bank of China inputs", fid, "Not published")
             c2 = td("HSBC China inputs", usd(r["hsbc_usd"])) if r["hsbc_usd"] else blank("HSBC China inputs", fid, "Not published")
-        cnt = "%s %s" % (format(r["count"], ","), r["count_label"]) if r["count"] else "Not applicable"
-        if r["note"]:
-            cnt += "; " + r["note"]
+        cnt = how_many(r["method"], r["amount"])
         mrows.append(tr([td("Amount", "<strong>%s</strong>" % usd(r["amount"], 0)), c1, c2, td("How many", e(cnt)),
                          td("Method", '<a href="methods.html#%s">%s</a> %s' % (m["id"], m["id"], e(m["name"]))),
                          td("Not included", flag_link(fid, "Other charges · " + fid) if not unl else "Criminal liability is separate"),

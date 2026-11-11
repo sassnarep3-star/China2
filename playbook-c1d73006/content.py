@@ -174,7 +174,7 @@ SITUATIONS = [
      "Tax at the rate for that kind of income, a surcharge of 0.05% a day since it was due, and a possible fine of 50% to five times the tax.",
      "Chinese tax paid late may still be creditable; ask a U.S. preparer before paying.",
      "Go to the tax office for your taxpayer record before going back to the bank.",
-     ["CN-TAX-03:art13_2", "CN-TAX-05:art32", "CN-TAX-05:art64", "CN-TAX-01:item3_3"], ["FR-02"]),
+     ["CN-TAX-03:art13_2", "CN-TAX-05:art32", "CN-TAX-05:art64", "CN-TAX-01:item3_3", "US-TAX-02:ten_years"], ["FR-02"]),
     ("S3", "Money you brought in from abroad and exchanged into RMB", ["L02"],
      "Passport and the original exchange memo, dated within 24 months.",
      "None described; it is your own money coming back.",
