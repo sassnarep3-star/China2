@@ -423,7 +423,7 @@ A transfer fee is not tax. No universal zero-tax conclusion can be drawn: source
 | 4 | Emigrated from mainland China / inherited China assets | **M10** / **M11** SAFE-approved transfer | Blank — process fees unpublished | Narrow eligibility; hukou cancellation / inheritance proofs; lump sum OK after approval |
 | 5 | Own individual trade business | **M13** settlement account | Blank | Genuine trade only; quota-exempt with valid docs |
 | 6 | Documented after-tax salary, recent tax records (≤3 yrs) | **M04** Wise (from-CNY) | Blank — quote shown in-app only | Own accounts only; ≤CNY 300k per bank-app transfer; limit = documented salary |
-| 7 | Almost any; no FX paperwork | **M06** ATM cash | Blank — card fees unverified | Cap CNY 100,000/person/yr (~USD 14,027); 8+ years for $400k |
+| 7 | Almost any; no FX paperwork | **M06** ATM cash | Blank — card fees unverified | Cap CNY 100,000/person/yr (~USD 14,027); ~29 calendar years for $400k |
 | 8 | Small amounts only | **M07** USD cash carry-out | Unverified; blank | USD 5,000/trip no permit; 80 trips for $400k — impractical |
 | — | "Just use crypto / pool quotas / underground bank" | **M14–M17 — do not use** | Fine exposure $120,000–$400,000 (30–100%) | Confiscation + criminal liability; no legal recourse |
 

@@ -907,6 +907,23 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 
 ---
 
+## Session `arena/bb2a3876-china2` — corrective pass on published flagged items + full-suite re-verification (2026-11-11 UTC)
+
+Prior sessions' substantive research and the live GitHub Pages site are complete and merged (see publication records above). This session does not duplicate that work. It claims only the still-open, verifiable items published as "needs review" and a full local re-verification of every CI suite on the current tree, then publishes the result as a PR.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| B-01 ATM cash table row: "8+ years for $400k" -> ~29 calendar years ($400,000 / ($100,000/7.129) = 28.52 yr) | in progress | arena/bb2a3876-china2 | briefing/build.py; briefing/EXECUTIVE_SUMMARY.md (generated); briefing/*.html via rebuild |
+| B-02 ladder audit prose hardcoded "Twenty sources ... of 20" (ledger: 21 sources, 17 direct) -> computed counts | in progress | arena/bb2a3876-china2 | ladder/build.py; ladder/audit.html via rebuild; root index.html via ladder/build.py (deterministic) |
+| B-03 EXECUTIVE-SUMMARY.md: http:// SAFE/GC links -> HTTPS; repealed 2021 crypto-notice citation re-pointed to PBOC Yin Fa [2026] No. 42; R01 row conditioned on domestic/PR-ID purchase-quota rule | in progress | arena/bb2a3876-china2 | EXECUTIVE-SUMMARY.md |
+| B-04 README.md hardcoded session-branch sentence (audit-ad300459 RA-13) -> genericized | in progress | arena/bb2a3876-china2 | README.md |
+| B-05 audit-92d12752 snapshot regenerated after repository changes (its verify.py requires scan()==results.json) | in progress | arena/bb2a3876-china2 | audit-92d12752/results.json; audit-92d12752/index.html |
+| B-06 Full local re-verification of all CI suites + PR, merge, Pages confirmation | in progress | arena/bb2a3876-china2 | COORDINATION.md (append-only); no other file |
+
+Rules in force: no other session's published findings are rewritten; every edit above traces to an item already flagged as irregular by a prior published audit (study-8f529c94 RA-01/RA-02/RA-03/RA-04/RA-13, ladder AUD list, briefing N-series). Sources: SAFE Hui Fa [2017] No. 29 (RMB 100k/person/civil year ATM cap) https://www.safe.gov.cn/en/2017/1230/1397.html ; IRS 2025 yearly average 7.129 https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates ; PBOC Yin Fa [2026] No. 42 https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html ; SAFE Hui Fa [2007] No. 1 / SAFE Tianjin 2024 Case 9 (foreign-individual purchase quota limited to Foreign Permanent Resident ID holders) https://www.safe.gov.cn/tianjin/2024/0621/2529.html .
+
+---
+
 ## Session `arena/79e1d607-china2` — answer-first landing page, fresh dated verification, and final integration of the root hub (2026-11-11 UTC)
 
 > Environment note: Arena pins this session to the fixed branch `arena/79e1d607-china2`, which substitutes for the requested `session-<id>/<task>` branch (no branch creation or switching is possible here). The full board above (906 lines) was read before claiming, and **every remote branch was fetched** (`git fetch origin '+refs/heads/*:refs/remotes/origin/*'`) at 02:29 UTC to find claims that have not reached `main`. Session start: 2026-11-11 02:28 UTC, branch == `origin/main` == `30ea791`.
@@ -944,3 +961,4 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 **Rules this session applies.** No private fact (balance, residence status, dates, source of the money, US state, account type) is inferred. Every table row links to the publishing institution's own page. A value that is not published stays blank and is flagged — blank means unverified, never zero. An estimate is arithmetic on published inputs and is labelled as an estimate, not a quote. No personal tax bill is asserted. Unlawful channels are listed with their penalties and without instructions. Structural and arithmetic checks are labelled as such and are not presented as legal verification.
 
 - 2026-11-11 02:42 UTC: claim committed and pushed before any other edit.
+- **Conflict log — 2026-11-11 02:44 UTC (`arena/79e1d607-china2`):** `git pull --rebase origin main` before the claim push stopped on `COORDINATION.md` because `main` had advanced through PR #61 (`arena/bb2a3876-china2`) seconds earlier. The claim commit `6176cd1` had already reached the remote branch, so the rebase was **aborted** (finishing it would have rewritten a pushed commit and needed a force push) and `origin/main` was merged instead. Resolution: both sides kept verbatim — `bb2a3876`'s section first, this session's section after it; nothing from any session was removed or reworded. No force push. Later pulls use merge, not rebase, for the same reason.
