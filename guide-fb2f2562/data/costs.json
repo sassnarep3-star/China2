@@ -1,0 +1,3929 @@
+{
+ "generated": "2026-11-11",
+ "tiers": [
+  10000,
+  20000,
+  30000,
+  40000,
+  50000,
+  60000,
+  70000,
+  80000,
+  90000,
+  100000,
+  110000,
+  120000,
+  130000,
+  140000,
+  150000,
+  160000,
+  170000,
+  180000,
+  190000,
+  200000,
+  210000,
+  220000,
+  230000,
+  240000,
+  250000,
+  260000,
+  270000,
+  280000,
+  290000,
+  300000,
+  310000,
+  320000,
+  330000,
+  340000,
+  350000,
+  360000,
+  370000,
+  380000,
+  390000,
+  400000
+ ],
+ "params": {
+  "boc_sell": 6.6886,
+  "boc_buy": 6.6606,
+  "boc_mid": 6.6746,
+  "boc_spread_pct": 0.2093,
+  "hsbc_sell": 6.7053746,
+  "hsbc_buy": 6.6386339,
+  "hsbc_mid": 6.67200425,
+  "hsbc_spread_pct": 0.4977,
+  "fed": 6.676,
+  "irs2025": 7.129,
+  "irs2024": 7.189,
+  "gain_pct_2025": 6.18,
+  "boc_fee_cap_cny": 410.0,
+  "hsbc_fee_cap_cny": 620.0,
+  "hsbc_cap_usd": 92.46,
+  "boc_cap_usd": 61.3
+ },
+ "rows": {
+  "M01": [
+   {
+    "usd": 10000,
+    "total_known_usd": 53.36,
+    "total_known_pct": 0.534,
+    "fee_cny": 216.89,
+    "fee_usd": 32.43,
+    "margin_usd": 20.93,
+    "cny_debited": 67102.89,
+    "gap_to_fed_usd": 18.84,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 20000,
+    "total_known_usd": 84.29,
+    "total_known_pct": 0.421,
+    "fee_cny": 283.77,
+    "fee_usd": 42.43,
+    "margin_usd": 41.86,
+    "cny_debited": 134055.77,
+    "gap_to_fed_usd": 37.68,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 30000,
+    "total_known_usd": 115.22,
+    "total_known_pct": 0.384,
+    "fee_cny": 350.66,
+    "fee_usd": 52.43,
+    "margin_usd": 62.79,
+    "cny_debited": 201008.66,
+    "gap_to_fed_usd": 56.51,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 40000,
+    "total_known_usd": 145.02,
+    "total_known_pct": 0.363,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 83.72,
+    "cny_debited": 267954.0,
+    "gap_to_fed_usd": 75.35,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 50000,
+    "total_known_usd": 165.95,
+    "total_known_pct": 0.332,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 104.66,
+    "cny_debited": 334840.0,
+    "gap_to_fed_usd": 94.19,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 60000,
+    "total_known_usd": 186.89,
+    "total_known_pct": 0.311,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 125.59,
+    "cny_debited": 401726.0,
+    "gap_to_fed_usd": 113.03,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 70000,
+    "total_known_usd": 207.82,
+    "total_known_pct": 0.297,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 146.52,
+    "cny_debited": 468612.0,
+    "gap_to_fed_usd": 131.87,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 80000,
+    "total_known_usd": 228.75,
+    "total_known_pct": 0.286,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 167.45,
+    "cny_debited": 535498.0,
+    "gap_to_fed_usd": 150.7,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 90000,
+    "total_known_usd": 249.68,
+    "total_known_pct": 0.277,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 188.38,
+    "cny_debited": 602384.0,
+    "gap_to_fed_usd": 169.54,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 100000,
+    "total_known_usd": 270.61,
+    "total_known_pct": 0.271,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 209.31,
+    "cny_debited": 669270.0,
+    "gap_to_fed_usd": 188.38,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 110000,
+    "total_known_usd": 291.54,
+    "total_known_pct": 0.265,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 230.24,
+    "cny_debited": 736156.0,
+    "gap_to_fed_usd": 207.22,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 120000,
+    "total_known_usd": 312.47,
+    "total_known_pct": 0.26,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 251.17,
+    "cny_debited": 803042.0,
+    "gap_to_fed_usd": 226.06,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 130000,
+    "total_known_usd": 333.4,
+    "total_known_pct": 0.256,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 272.1,
+    "cny_debited": 869928.0,
+    "gap_to_fed_usd": 244.89,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 140000,
+    "total_known_usd": 354.33,
+    "total_known_pct": 0.253,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 293.04,
+    "cny_debited": 936814.0,
+    "gap_to_fed_usd": 263.73,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 150000,
+    "total_known_usd": 375.27,
+    "total_known_pct": 0.25,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 313.97,
+    "cny_debited": 1003700.0,
+    "gap_to_fed_usd": 282.57,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 160000,
+    "total_known_usd": 396.2,
+    "total_known_pct": 0.248,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 334.9,
+    "cny_debited": 1070586.0,
+    "gap_to_fed_usd": 301.41,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 170000,
+    "total_known_usd": 417.13,
+    "total_known_pct": 0.245,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 355.83,
+    "cny_debited": 1137472.0,
+    "gap_to_fed_usd": 320.25,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 180000,
+    "total_known_usd": 438.06,
+    "total_known_pct": 0.243,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 376.76,
+    "cny_debited": 1204358.0,
+    "gap_to_fed_usd": 339.08,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 190000,
+    "total_known_usd": 458.99,
+    "total_known_pct": 0.242,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 397.69,
+    "cny_debited": 1271244.0,
+    "gap_to_fed_usd": 357.92,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 200000,
+    "total_known_usd": 479.92,
+    "total_known_pct": 0.24,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 418.62,
+    "cny_debited": 1338130.0,
+    "gap_to_fed_usd": 376.76,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 210000,
+    "total_known_usd": 500.85,
+    "total_known_pct": 0.239,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 439.55,
+    "cny_debited": 1405016.0,
+    "gap_to_fed_usd": 395.6,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 220000,
+    "total_known_usd": 521.78,
+    "total_known_pct": 0.237,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 460.49,
+    "cny_debited": 1471902.0,
+    "gap_to_fed_usd": 414.44,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 230000,
+    "total_known_usd": 542.71,
+    "total_known_pct": 0.236,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 481.42,
+    "cny_debited": 1538788.0,
+    "gap_to_fed_usd": 433.27,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 240000,
+    "total_known_usd": 563.65,
+    "total_known_pct": 0.235,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 502.35,
+    "cny_debited": 1605674.0,
+    "gap_to_fed_usd": 452.11,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 250000,
+    "total_known_usd": 584.58,
+    "total_known_pct": 0.234,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 523.28,
+    "cny_debited": 1672560.0,
+    "gap_to_fed_usd": 470.95,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 260000,
+    "total_known_usd": 605.51,
+    "total_known_pct": 0.233,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 544.21,
+    "cny_debited": 1739446.0,
+    "gap_to_fed_usd": 489.79,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 270000,
+    "total_known_usd": 626.44,
+    "total_known_pct": 0.232,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 565.14,
+    "cny_debited": 1806332.0,
+    "gap_to_fed_usd": 508.63,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 280000,
+    "total_known_usd": 647.37,
+    "total_known_pct": 0.231,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 586.07,
+    "cny_debited": 1873218.0,
+    "gap_to_fed_usd": 527.46,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 290000,
+    "total_known_usd": 668.3,
+    "total_known_pct": 0.23,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 607.0,
+    "cny_debited": 1940104.0,
+    "gap_to_fed_usd": 546.3,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 300000,
+    "total_known_usd": 689.23,
+    "total_known_pct": 0.23,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 627.93,
+    "cny_debited": 2006990.0,
+    "gap_to_fed_usd": 565.14,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 310000,
+    "total_known_usd": 710.16,
+    "total_known_pct": 0.229,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 648.87,
+    "cny_debited": 2073876.0,
+    "gap_to_fed_usd": 583.98,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 320000,
+    "total_known_usd": 731.09,
+    "total_known_pct": 0.228,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 669.8,
+    "cny_debited": 2140762.0,
+    "gap_to_fed_usd": 602.82,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 330000,
+    "total_known_usd": 752.03,
+    "total_known_pct": 0.228,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 690.73,
+    "cny_debited": 2207648.0,
+    "gap_to_fed_usd": 621.65,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 340000,
+    "total_known_usd": 772.96,
+    "total_known_pct": 0.227,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 711.66,
+    "cny_debited": 2274534.0,
+    "gap_to_fed_usd": 640.49,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 350000,
+    "total_known_usd": 793.89,
+    "total_known_pct": 0.227,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 732.59,
+    "cny_debited": 2341420.0,
+    "gap_to_fed_usd": 659.33,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 360000,
+    "total_known_usd": 814.82,
+    "total_known_pct": 0.226,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 753.52,
+    "cny_debited": 2408306.0,
+    "gap_to_fed_usd": 678.17,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 370000,
+    "total_known_usd": 835.75,
+    "total_known_pct": 0.226,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 774.45,
+    "cny_debited": 2475192.0,
+    "gap_to_fed_usd": 697.01,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 380000,
+    "total_known_usd": 856.68,
+    "total_known_pct": 0.225,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 795.38,
+    "cny_debited": 2542078.0,
+    "gap_to_fed_usd": 715.84,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 390000,
+    "total_known_usd": 877.61,
+    "total_known_pct": 0.225,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 816.31,
+    "cny_debited": 2608964.0,
+    "gap_to_fed_usd": 734.68,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 400000,
+    "total_known_usd": 898.54,
+    "total_known_pct": 0.225,
+    "fee_cny": 410.0,
+    "fee_usd": 61.3,
+    "margin_usd": 837.25,
+    "cny_debited": 2675850.0,
+    "gap_to_fed_usd": 753.52,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   }
+  ],
+  "M02": [
+   {
+    "usd": 10000,
+    "total_known_usd": 82.58,
+    "total_known_pct": 0.826,
+    "fee_cny": 220.0,
+    "fee_usd": 32.81,
+    "margin_usd": 49.77,
+    "cny_debited": 67273.75,
+    "gap_to_fed_usd": 43.81,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 20000,
+    "total_known_usd": 137.43,
+    "total_known_pct": 0.687,
+    "fee_cny": 254.11,
+    "fee_usd": 37.9,
+    "margin_usd": 99.53,
+    "cny_debited": 134361.6,
+    "gap_to_fed_usd": 87.62,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 30000,
+    "total_known_usd": 197.2,
+    "total_known_pct": 0.657,
+    "fee_cny": 321.16,
+    "fee_usd": 47.9,
+    "margin_usd": 149.3,
+    "cny_debited": 201482.4,
+    "gap_to_fed_usd": 131.42,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 40000,
+    "total_known_usd": 256.96,
+    "total_known_pct": 0.642,
+    "fee_cny": 388.21,
+    "fee_usd": 57.9,
+    "margin_usd": 199.07,
+    "cny_debited": 268603.2,
+    "gap_to_fed_usd": 175.23,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 50000,
+    "total_known_usd": 316.73,
+    "total_known_pct": 0.633,
+    "fee_cny": 455.27,
+    "fee_usd": 67.9,
+    "margin_usd": 248.83,
+    "cny_debited": 335724.0,
+    "gap_to_fed_usd": 219.04,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 60000,
+    "total_known_usd": 376.5,
+    "total_known_pct": 0.627,
+    "fee_cny": 522.32,
+    "fee_usd": 77.9,
+    "margin_usd": 298.6,
+    "cny_debited": 402844.8,
+    "gap_to_fed_usd": 262.85,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 70000,
+    "total_known_usd": 436.26,
+    "total_known_pct": 0.623,
+    "fee_cny": 589.38,
+    "fee_usd": 87.9,
+    "margin_usd": 348.37,
+    "cny_debited": 469965.6,
+    "gap_to_fed_usd": 306.65,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 80000,
+    "total_known_usd": 490.6,
+    "total_known_pct": 0.613,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 398.13,
+    "cny_debited": 537049.97,
+    "gap_to_fed_usd": 350.46,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 90000,
+    "total_known_usd": 540.36,
+    "total_known_pct": 0.6,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 447.9,
+    "cny_debited": 604103.71,
+    "gap_to_fed_usd": 394.27,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 100000,
+    "total_known_usd": 590.13,
+    "total_known_pct": 0.59,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 497.67,
+    "cny_debited": 671157.46,
+    "gap_to_fed_usd": 438.08,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 110000,
+    "total_known_usd": 639.9,
+    "total_known_pct": 0.582,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 547.43,
+    "cny_debited": 738211.21,
+    "gap_to_fed_usd": 481.88,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 120000,
+    "total_known_usd": 689.66,
+    "total_known_pct": 0.575,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 597.2,
+    "cny_debited": 805264.95,
+    "gap_to_fed_usd": 525.69,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 130000,
+    "total_known_usd": 739.43,
+    "total_known_pct": 0.569,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 646.97,
+    "cny_debited": 872318.7,
+    "gap_to_fed_usd": 569.5,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 140000,
+    "total_known_usd": 789.2,
+    "total_known_pct": 0.564,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 696.73,
+    "cny_debited": 939372.44,
+    "gap_to_fed_usd": 613.31,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 150000,
+    "total_known_usd": 838.96,
+    "total_known_pct": 0.559,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 746.5,
+    "cny_debited": 1006426.19,
+    "gap_to_fed_usd": 657.11,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 160000,
+    "total_known_usd": 888.73,
+    "total_known_pct": 0.555,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 796.27,
+    "cny_debited": 1073479.94,
+    "gap_to_fed_usd": 700.92,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 170000,
+    "total_known_usd": 938.49,
+    "total_known_pct": 0.552,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 846.03,
+    "cny_debited": 1140533.68,
+    "gap_to_fed_usd": 744.73,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 180000,
+    "total_known_usd": 988.26,
+    "total_known_pct": 0.549,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 895.8,
+    "cny_debited": 1207587.43,
+    "gap_to_fed_usd": 788.54,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 190000,
+    "total_known_usd": 1038.03,
+    "total_known_pct": 0.546,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 945.56,
+    "cny_debited": 1274641.17,
+    "gap_to_fed_usd": 832.34,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 200000,
+    "total_known_usd": 1087.79,
+    "total_known_pct": 0.544,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 995.33,
+    "cny_debited": 1341694.92,
+    "gap_to_fed_usd": 876.15,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 210000,
+    "total_known_usd": 1137.56,
+    "total_known_pct": 0.542,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1045.1,
+    "cny_debited": 1408748.67,
+    "gap_to_fed_usd": 919.96,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 220000,
+    "total_known_usd": 1187.33,
+    "total_known_pct": 0.54,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1094.86,
+    "cny_debited": 1475802.41,
+    "gap_to_fed_usd": 963.77,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 230000,
+    "total_known_usd": 1237.09,
+    "total_known_pct": 0.538,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1144.63,
+    "cny_debited": 1542856.16,
+    "gap_to_fed_usd": 1007.57,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 240000,
+    "total_known_usd": 1286.86,
+    "total_known_pct": 0.536,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1194.4,
+    "cny_debited": 1609909.9,
+    "gap_to_fed_usd": 1051.38,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 250000,
+    "total_known_usd": 1336.63,
+    "total_known_pct": 0.535,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1244.16,
+    "cny_debited": 1676963.65,
+    "gap_to_fed_usd": 1095.19,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 260000,
+    "total_known_usd": 1386.39,
+    "total_known_pct": 0.533,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1293.93,
+    "cny_debited": 1744017.4,
+    "gap_to_fed_usd": 1139.0,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 270000,
+    "total_known_usd": 1436.16,
+    "total_known_pct": 0.532,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1343.7,
+    "cny_debited": 1811071.14,
+    "gap_to_fed_usd": 1182.8,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 280000,
+    "total_known_usd": 1485.93,
+    "total_known_pct": 0.531,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1393.46,
+    "cny_debited": 1878124.89,
+    "gap_to_fed_usd": 1226.61,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 290000,
+    "total_known_usd": 1535.69,
+    "total_known_pct": 0.53,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1443.23,
+    "cny_debited": 1945178.63,
+    "gap_to_fed_usd": 1270.42,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 300000,
+    "total_known_usd": 1585.46,
+    "total_known_pct": 0.528,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1493.0,
+    "cny_debited": 2012232.38,
+    "gap_to_fed_usd": 1314.23,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 310000,
+    "total_known_usd": 1635.23,
+    "total_known_pct": 0.527,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1542.76,
+    "cny_debited": 2079286.13,
+    "gap_to_fed_usd": 1358.03,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 320000,
+    "total_known_usd": 1684.99,
+    "total_known_pct": 0.527,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1592.53,
+    "cny_debited": 2146339.87,
+    "gap_to_fed_usd": 1401.84,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 330000,
+    "total_known_usd": 1734.76,
+    "total_known_pct": 0.526,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1642.3,
+    "cny_debited": 2213393.62,
+    "gap_to_fed_usd": 1445.65,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 340000,
+    "total_known_usd": 1784.53,
+    "total_known_pct": 0.525,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1692.06,
+    "cny_debited": 2280447.36,
+    "gap_to_fed_usd": 1489.46,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 350000,
+    "total_known_usd": 1834.29,
+    "total_known_pct": 0.524,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1741.83,
+    "cny_debited": 2347501.11,
+    "gap_to_fed_usd": 1533.26,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 360000,
+    "total_known_usd": 1884.06,
+    "total_known_pct": 0.523,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1791.6,
+    "cny_debited": 2414554.86,
+    "gap_to_fed_usd": 1577.07,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 370000,
+    "total_known_usd": 1933.83,
+    "total_known_pct": 0.523,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1841.36,
+    "cny_debited": 2481608.6,
+    "gap_to_fed_usd": 1620.88,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 380000,
+    "total_known_usd": 1983.59,
+    "total_known_pct": 0.522,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1891.13,
+    "cny_debited": 2548662.35,
+    "gap_to_fed_usd": 1664.69,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 390000,
+    "total_known_usd": 2033.36,
+    "total_known_pct": 0.521,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1940.9,
+    "cny_debited": 2615716.09,
+    "gap_to_fed_usd": 1708.49,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 400000,
+    "total_known_usd": 2083.13,
+    "total_known_pct": 0.521,
+    "fee_cny": 620.0,
+    "fee_usd": 92.46,
+    "margin_usd": 1990.66,
+    "cny_debited": 2682769.84,
+    "gap_to_fed_usd": 1752.3,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   }
+  ],
+  "M03": [
+   {
+    "usd": 10000,
+    "total_known_usd": 49.77,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 49.77,
+    "cny_debited": 67053.75,
+    "gap_to_fed_usd": 43.81,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 20000,
+    "total_known_usd": 99.53,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 99.53,
+    "cny_debited": 134107.49,
+    "gap_to_fed_usd": 87.62,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 30000,
+    "total_known_usd": 149.3,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 149.3,
+    "cny_debited": 201161.24,
+    "gap_to_fed_usd": 131.42,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 40000,
+    "total_known_usd": 199.07,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 199.07,
+    "cny_debited": 268214.98,
+    "gap_to_fed_usd": 175.23,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 50000,
+    "total_known_usd": 248.83,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 248.83,
+    "cny_debited": 335268.73,
+    "gap_to_fed_usd": 219.04,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 60000,
+    "total_known_usd": 298.6,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 298.6,
+    "cny_debited": 402322.48,
+    "gap_to_fed_usd": 262.85,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 70000,
+    "total_known_usd": 348.37,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 348.37,
+    "cny_debited": 469376.22,
+    "gap_to_fed_usd": 306.65,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 80000,
+    "total_known_usd": 398.13,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 398.13,
+    "cny_debited": 536429.97,
+    "gap_to_fed_usd": 350.46,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 90000,
+    "total_known_usd": 447.9,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 447.9,
+    "cny_debited": 603483.71,
+    "gap_to_fed_usd": 394.27,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 100000,
+    "total_known_usd": 497.67,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 497.67,
+    "cny_debited": 670537.46,
+    "gap_to_fed_usd": 438.08,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 110000,
+    "total_known_usd": 547.43,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 547.43,
+    "cny_debited": 737591.21,
+    "gap_to_fed_usd": 481.88,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 120000,
+    "total_known_usd": 597.2,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 597.2,
+    "cny_debited": 804644.95,
+    "gap_to_fed_usd": 525.69,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 130000,
+    "total_known_usd": 646.97,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 646.97,
+    "cny_debited": 871698.7,
+    "gap_to_fed_usd": 569.5,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 140000,
+    "total_known_usd": 696.73,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 696.73,
+    "cny_debited": 938752.44,
+    "gap_to_fed_usd": 613.31,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 150000,
+    "total_known_usd": 746.5,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 746.5,
+    "cny_debited": 1005806.19,
+    "gap_to_fed_usd": 657.11,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 160000,
+    "total_known_usd": 796.27,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 796.27,
+    "cny_debited": 1072859.94,
+    "gap_to_fed_usd": 700.92,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 170000,
+    "total_known_usd": 846.03,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 846.03,
+    "cny_debited": 1139913.68,
+    "gap_to_fed_usd": 744.73,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 180000,
+    "total_known_usd": 895.8,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 895.8,
+    "cny_debited": 1206967.43,
+    "gap_to_fed_usd": 788.54,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 190000,
+    "total_known_usd": 945.56,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 945.56,
+    "cny_debited": 1274021.17,
+    "gap_to_fed_usd": 832.34,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 200000,
+    "total_known_usd": 995.33,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 995.33,
+    "cny_debited": 1341074.92,
+    "gap_to_fed_usd": 876.15,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 210000,
+    "total_known_usd": 1045.1,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1045.1,
+    "cny_debited": 1408128.67,
+    "gap_to_fed_usd": 919.96,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 220000,
+    "total_known_usd": 1094.86,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1094.86,
+    "cny_debited": 1475182.41,
+    "gap_to_fed_usd": 963.77,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 230000,
+    "total_known_usd": 1144.63,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1144.63,
+    "cny_debited": 1542236.16,
+    "gap_to_fed_usd": 1007.57,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 240000,
+    "total_known_usd": 1194.4,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1194.4,
+    "cny_debited": 1609289.9,
+    "gap_to_fed_usd": 1051.38,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 250000,
+    "total_known_usd": 1244.16,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1244.16,
+    "cny_debited": 1676343.65,
+    "gap_to_fed_usd": 1095.19,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 260000,
+    "total_known_usd": 1293.93,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1293.93,
+    "cny_debited": 1743397.4,
+    "gap_to_fed_usd": 1139.0,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 270000,
+    "total_known_usd": 1343.7,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1343.7,
+    "cny_debited": 1810451.14,
+    "gap_to_fed_usd": 1182.8,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 280000,
+    "total_known_usd": 1393.46,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1393.46,
+    "cny_debited": 1877504.89,
+    "gap_to_fed_usd": 1226.61,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 290000,
+    "total_known_usd": 1443.23,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1443.23,
+    "cny_debited": 1944558.63,
+    "gap_to_fed_usd": 1270.42,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 300000,
+    "total_known_usd": 1493.0,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1493.0,
+    "cny_debited": 2011612.38,
+    "gap_to_fed_usd": 1314.23,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 310000,
+    "total_known_usd": 1542.76,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1542.76,
+    "cny_debited": 2078666.13,
+    "gap_to_fed_usd": 1358.03,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 320000,
+    "total_known_usd": 1592.53,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1592.53,
+    "cny_debited": 2145719.87,
+    "gap_to_fed_usd": 1401.84,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 330000,
+    "total_known_usd": 1642.3,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1642.3,
+    "cny_debited": 2212773.62,
+    "gap_to_fed_usd": 1445.65,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 340000,
+    "total_known_usd": 1692.06,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1692.06,
+    "cny_debited": 2279827.36,
+    "gap_to_fed_usd": 1489.46,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 350000,
+    "total_known_usd": 1741.83,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1741.83,
+    "cny_debited": 2346881.11,
+    "gap_to_fed_usd": 1533.26,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 360000,
+    "total_known_usd": 1791.6,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1791.6,
+    "cny_debited": 2413934.86,
+    "gap_to_fed_usd": 1577.07,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 370000,
+    "total_known_usd": 1841.36,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1841.36,
+    "cny_debited": 2480988.6,
+    "gap_to_fed_usd": 1620.88,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 380000,
+    "total_known_usd": 1891.13,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1891.13,
+    "cny_debited": 2548042.35,
+    "gap_to_fed_usd": 1664.69,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 390000,
+    "total_known_usd": 1940.9,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1940.9,
+    "cny_debited": 2615096.09,
+    "gap_to_fed_usd": 1708.49,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   },
+   {
+    "usd": 400000,
+    "total_known_usd": 1990.66,
+    "total_known_pct": 0.498,
+    "fee_cny": 0.0,
+    "fee_usd": 0.0,
+    "margin_usd": 1990.66,
+    "cny_debited": 2682149.84,
+    "gap_to_fed_usd": 1752.3,
+    "intermediary_fee": null,
+    "receiving_fee": null
+   }
+  ],
+  "M04": [
+   {
+    "usd": 10000,
+    "cny_at_fed": 66760.0,
+    "transfers_bank_app": 1,
+    "transfers_alipay": 2,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 20000,
+    "cny_at_fed": 133520.0,
+    "transfers_bank_app": 1,
+    "transfers_alipay": 3,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 30000,
+    "cny_at_fed": 200280.0,
+    "transfers_bank_app": 1,
+    "transfers_alipay": 5,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 40000,
+    "cny_at_fed": 267040.0,
+    "transfers_bank_app": 1,
+    "transfers_alipay": 6,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 50000,
+    "cny_at_fed": 333800.0,
+    "transfers_bank_app": 2,
+    "transfers_alipay": 7,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 60000,
+    "cny_at_fed": 400560.0,
+    "transfers_bank_app": 2,
+    "transfers_alipay": 9,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 70000,
+    "cny_at_fed": 467320.0,
+    "transfers_bank_app": 2,
+    "transfers_alipay": 10,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 80000,
+    "cny_at_fed": 534080.0,
+    "transfers_bank_app": 2,
+    "transfers_alipay": 11,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 90000,
+    "cny_at_fed": 600840.0,
+    "transfers_bank_app": 3,
+    "transfers_alipay": 13,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 100000,
+    "cny_at_fed": 667600.0,
+    "transfers_bank_app": 3,
+    "transfers_alipay": 14,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 110000,
+    "cny_at_fed": 734360.0,
+    "transfers_bank_app": 3,
+    "transfers_alipay": 15,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 120000,
+    "cny_at_fed": 801120.0,
+    "transfers_bank_app": 3,
+    "transfers_alipay": 17,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 130000,
+    "cny_at_fed": 867880.0,
+    "transfers_bank_app": 3,
+    "transfers_alipay": 18,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 140000,
+    "cny_at_fed": 934640.0,
+    "transfers_bank_app": 4,
+    "transfers_alipay": 19,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 150000,
+    "cny_at_fed": 1001400.0,
+    "transfers_bank_app": 4,
+    "transfers_alipay": 21,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 160000,
+    "cny_at_fed": 1068160.0,
+    "transfers_bank_app": 4,
+    "transfers_alipay": 22,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 170000,
+    "cny_at_fed": 1134920.0,
+    "transfers_bank_app": 4,
+    "transfers_alipay": 23,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 180000,
+    "cny_at_fed": 1201680.0,
+    "transfers_bank_app": 5,
+    "transfers_alipay": 25,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 190000,
+    "cny_at_fed": 1268440.0,
+    "transfers_bank_app": 5,
+    "transfers_alipay": 26,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 200000,
+    "cny_at_fed": 1335200.0,
+    "transfers_bank_app": 5,
+    "transfers_alipay": 27,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 210000,
+    "cny_at_fed": 1401960.0,
+    "transfers_bank_app": 5,
+    "transfers_alipay": 29,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 220000,
+    "cny_at_fed": 1468720.0,
+    "transfers_bank_app": 5,
+    "transfers_alipay": 30,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 230000,
+    "cny_at_fed": 1535480.0,
+    "transfers_bank_app": 6,
+    "transfers_alipay": 31,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 240000,
+    "cny_at_fed": 1602240.0,
+    "transfers_bank_app": 6,
+    "transfers_alipay": 33,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 250000,
+    "cny_at_fed": 1669000.0,
+    "transfers_bank_app": 6,
+    "transfers_alipay": 34,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 260000,
+    "cny_at_fed": 1735760.0,
+    "transfers_bank_app": 6,
+    "transfers_alipay": 35,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 270000,
+    "cny_at_fed": 1802520.0,
+    "transfers_bank_app": 7,
+    "transfers_alipay": 37,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 280000,
+    "cny_at_fed": 1869280.0,
+    "transfers_bank_app": 7,
+    "transfers_alipay": 38,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 290000,
+    "cny_at_fed": 1936040.0,
+    "transfers_bank_app": 7,
+    "transfers_alipay": 39,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 300000,
+    "cny_at_fed": 2002800.0,
+    "transfers_bank_app": 7,
+    "transfers_alipay": 41,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 310000,
+    "cny_at_fed": 2069560.0,
+    "transfers_bank_app": 7,
+    "transfers_alipay": 42,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 320000,
+    "cny_at_fed": 2136320.0,
+    "transfers_bank_app": 8,
+    "transfers_alipay": 43,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 330000,
+    "cny_at_fed": 2203080.0,
+    "transfers_bank_app": 8,
+    "transfers_alipay": 45,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 340000,
+    "cny_at_fed": 2269840.0,
+    "transfers_bank_app": 8,
+    "transfers_alipay": 46,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 350000,
+    "cny_at_fed": 2336600.0,
+    "transfers_bank_app": 8,
+    "transfers_alipay": 47,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 360000,
+    "cny_at_fed": 2403360.0,
+    "transfers_bank_app": 9,
+    "transfers_alipay": 49,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 370000,
+    "cny_at_fed": 2470120.0,
+    "transfers_bank_app": 9,
+    "transfers_alipay": 50,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 380000,
+    "cny_at_fed": 2536880.0,
+    "transfers_bank_app": 9,
+    "transfers_alipay": 51,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 390000,
+    "cny_at_fed": 2603640.0,
+    "transfers_bank_app": 9,
+    "transfers_alipay": 53,
+    "fee": null,
+    "rate": null
+   },
+   {
+    "usd": 400000,
+    "cny_at_fed": 2670400.0,
+    "transfers_bank_app": 9,
+    "transfers_alipay": 54,
+    "fee": null,
+    "rate": null
+   }
+  ],
+  "M05": [
+   {
+    "usd": 10000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 20000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 30000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 40000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 50000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 60000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 70000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 80000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 90000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 100000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 110000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 120000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 130000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 140000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 150000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 160000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 170000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 180000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 190000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 200000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 210000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 220000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 230000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 240000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 250000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 260000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 270000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 280000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 290000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 300000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 310000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 320000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 330000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 340000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 350000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 360000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 370000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 380000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 390000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   },
+   {
+    "usd": 400000,
+    "safe_fee_cny": 0.0,
+    "safe_max_working_days": 25,
+    "bank_fee": null,
+    "fx_margin": null
+   }
+  ],
+  "M06": [
+   {
+    "usd": 10000,
+    "cny_at_fed": 66760.0,
+    "calendar_years": 1,
+    "card_days": 7,
+    "atm_fee": null
+   },
+   {
+    "usd": 20000,
+    "cny_at_fed": 133520.0,
+    "calendar_years": 2,
+    "card_days": 14,
+    "atm_fee": null
+   },
+   {
+    "usd": 30000,
+    "cny_at_fed": 200280.0,
+    "calendar_years": 3,
+    "card_days": 21,
+    "atm_fee": null
+   },
+   {
+    "usd": 40000,
+    "cny_at_fed": 267040.0,
+    "calendar_years": 3,
+    "card_days": 27,
+    "atm_fee": null
+   },
+   {
+    "usd": 50000,
+    "cny_at_fed": 333800.0,
+    "calendar_years": 4,
+    "card_days": 34,
+    "atm_fee": null
+   },
+   {
+    "usd": 60000,
+    "cny_at_fed": 400560.0,
+    "calendar_years": 5,
+    "card_days": 41,
+    "atm_fee": null
+   },
+   {
+    "usd": 70000,
+    "cny_at_fed": 467320.0,
+    "calendar_years": 5,
+    "card_days": 47,
+    "atm_fee": null
+   },
+   {
+    "usd": 80000,
+    "cny_at_fed": 534080.0,
+    "calendar_years": 6,
+    "card_days": 54,
+    "atm_fee": null
+   },
+   {
+    "usd": 90000,
+    "cny_at_fed": 600840.0,
+    "calendar_years": 7,
+    "card_days": 61,
+    "atm_fee": null
+   },
+   {
+    "usd": 100000,
+    "cny_at_fed": 667600.0,
+    "calendar_years": 7,
+    "card_days": 67,
+    "atm_fee": null
+   },
+   {
+    "usd": 110000,
+    "cny_at_fed": 734360.0,
+    "calendar_years": 8,
+    "card_days": 74,
+    "atm_fee": null
+   },
+   {
+    "usd": 120000,
+    "cny_at_fed": 801120.0,
+    "calendar_years": 9,
+    "card_days": 81,
+    "atm_fee": null
+   },
+   {
+    "usd": 130000,
+    "cny_at_fed": 867880.0,
+    "calendar_years": 9,
+    "card_days": 87,
+    "atm_fee": null
+   },
+   {
+    "usd": 140000,
+    "cny_at_fed": 934640.0,
+    "calendar_years": 10,
+    "card_days": 94,
+    "atm_fee": null
+   },
+   {
+    "usd": 150000,
+    "cny_at_fed": 1001400.0,
+    "calendar_years": 11,
+    "card_days": 101,
+    "atm_fee": null
+   },
+   {
+    "usd": 160000,
+    "cny_at_fed": 1068160.0,
+    "calendar_years": 11,
+    "card_days": 107,
+    "atm_fee": null
+   },
+   {
+    "usd": 170000,
+    "cny_at_fed": 1134920.0,
+    "calendar_years": 12,
+    "card_days": 114,
+    "atm_fee": null
+   },
+   {
+    "usd": 180000,
+    "cny_at_fed": 1201680.0,
+    "calendar_years": 13,
+    "card_days": 121,
+    "atm_fee": null
+   },
+   {
+    "usd": 190000,
+    "cny_at_fed": 1268440.0,
+    "calendar_years": 13,
+    "card_days": 127,
+    "atm_fee": null
+   },
+   {
+    "usd": 200000,
+    "cny_at_fed": 1335200.0,
+    "calendar_years": 14,
+    "card_days": 134,
+    "atm_fee": null
+   },
+   {
+    "usd": 210000,
+    "cny_at_fed": 1401960.0,
+    "calendar_years": 15,
+    "card_days": 141,
+    "atm_fee": null
+   },
+   {
+    "usd": 220000,
+    "cny_at_fed": 1468720.0,
+    "calendar_years": 15,
+    "card_days": 147,
+    "atm_fee": null
+   },
+   {
+    "usd": 230000,
+    "cny_at_fed": 1535480.0,
+    "calendar_years": 16,
+    "card_days": 154,
+    "atm_fee": null
+   },
+   {
+    "usd": 240000,
+    "cny_at_fed": 1602240.0,
+    "calendar_years": 17,
+    "card_days": 161,
+    "atm_fee": null
+   },
+   {
+    "usd": 250000,
+    "cny_at_fed": 1669000.0,
+    "calendar_years": 17,
+    "card_days": 167,
+    "atm_fee": null
+   },
+   {
+    "usd": 260000,
+    "cny_at_fed": 1735760.0,
+    "calendar_years": 18,
+    "card_days": 174,
+    "atm_fee": null
+   },
+   {
+    "usd": 270000,
+    "cny_at_fed": 1802520.0,
+    "calendar_years": 19,
+    "card_days": 181,
+    "atm_fee": null
+   },
+   {
+    "usd": 280000,
+    "cny_at_fed": 1869280.0,
+    "calendar_years": 19,
+    "card_days": 187,
+    "atm_fee": null
+   },
+   {
+    "usd": 290000,
+    "cny_at_fed": 1936040.0,
+    "calendar_years": 20,
+    "card_days": 194,
+    "atm_fee": null
+   },
+   {
+    "usd": 300000,
+    "cny_at_fed": 2002800.0,
+    "calendar_years": 21,
+    "card_days": 201,
+    "atm_fee": null
+   },
+   {
+    "usd": 310000,
+    "cny_at_fed": 2069560.0,
+    "calendar_years": 21,
+    "card_days": 207,
+    "atm_fee": null
+   },
+   {
+    "usd": 320000,
+    "cny_at_fed": 2136320.0,
+    "calendar_years": 22,
+    "card_days": 214,
+    "atm_fee": null
+   },
+   {
+    "usd": 330000,
+    "cny_at_fed": 2203080.0,
+    "calendar_years": 23,
+    "card_days": 221,
+    "atm_fee": null
+   },
+   {
+    "usd": 340000,
+    "cny_at_fed": 2269840.0,
+    "calendar_years": 23,
+    "card_days": 227,
+    "atm_fee": null
+   },
+   {
+    "usd": 350000,
+    "cny_at_fed": 2336600.0,
+    "calendar_years": 24,
+    "card_days": 234,
+    "atm_fee": null
+   },
+   {
+    "usd": 360000,
+    "cny_at_fed": 2403360.0,
+    "calendar_years": 25,
+    "card_days": 241,
+    "atm_fee": null
+   },
+   {
+    "usd": 370000,
+    "cny_at_fed": 2470120.0,
+    "calendar_years": 25,
+    "card_days": 248,
+    "atm_fee": null
+   },
+   {
+    "usd": 380000,
+    "cny_at_fed": 2536880.0,
+    "calendar_years": 26,
+    "card_days": 254,
+    "atm_fee": null
+   },
+   {
+    "usd": 390000,
+    "cny_at_fed": 2603640.0,
+    "calendar_years": 27,
+    "card_days": 261,
+    "atm_fee": null
+   },
+   {
+    "usd": 400000,
+    "cny_at_fed": 2670400.0,
+    "calendar_years": 27,
+    "card_days": 268,
+    "atm_fee": null
+   }
+  ],
+  "M07": [
+   {
+    "usd": 10000,
+    "trips_no_permit": 2,
+    "trips_bank_permit": 1,
+    "fx_margin_usd": 20.93,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 20000,
+    "trips_no_permit": 4,
+    "trips_bank_permit": 2,
+    "fx_margin_usd": 41.86,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 30000,
+    "trips_no_permit": 6,
+    "trips_bank_permit": 3,
+    "fx_margin_usd": 62.79,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 40000,
+    "trips_no_permit": 8,
+    "trips_bank_permit": 4,
+    "fx_margin_usd": 83.72,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 50000,
+    "trips_no_permit": 10,
+    "trips_bank_permit": 5,
+    "fx_margin_usd": 104.66,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 60000,
+    "trips_no_permit": 12,
+    "trips_bank_permit": 6,
+    "fx_margin_usd": 125.59,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 70000,
+    "trips_no_permit": 14,
+    "trips_bank_permit": 7,
+    "fx_margin_usd": 146.52,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 80000,
+    "trips_no_permit": 16,
+    "trips_bank_permit": 8,
+    "fx_margin_usd": 167.45,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 90000,
+    "trips_no_permit": 18,
+    "trips_bank_permit": 9,
+    "fx_margin_usd": 188.38,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 100000,
+    "trips_no_permit": 20,
+    "trips_bank_permit": 10,
+    "fx_margin_usd": 209.31,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 110000,
+    "trips_no_permit": 22,
+    "trips_bank_permit": 11,
+    "fx_margin_usd": 230.24,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 120000,
+    "trips_no_permit": 24,
+    "trips_bank_permit": 12,
+    "fx_margin_usd": 251.17,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 130000,
+    "trips_no_permit": 26,
+    "trips_bank_permit": 13,
+    "fx_margin_usd": 272.1,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 140000,
+    "trips_no_permit": 28,
+    "trips_bank_permit": 14,
+    "fx_margin_usd": 293.04,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 150000,
+    "trips_no_permit": 30,
+    "trips_bank_permit": 15,
+    "fx_margin_usd": 313.97,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 160000,
+    "trips_no_permit": 32,
+    "trips_bank_permit": 16,
+    "fx_margin_usd": 334.9,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 170000,
+    "trips_no_permit": 34,
+    "trips_bank_permit": 17,
+    "fx_margin_usd": 355.83,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 180000,
+    "trips_no_permit": 36,
+    "trips_bank_permit": 18,
+    "fx_margin_usd": 376.76,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 190000,
+    "trips_no_permit": 38,
+    "trips_bank_permit": 19,
+    "fx_margin_usd": 397.69,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 200000,
+    "trips_no_permit": 40,
+    "trips_bank_permit": 20,
+    "fx_margin_usd": 418.62,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 210000,
+    "trips_no_permit": 42,
+    "trips_bank_permit": 21,
+    "fx_margin_usd": 439.55,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 220000,
+    "trips_no_permit": 44,
+    "trips_bank_permit": 22,
+    "fx_margin_usd": 460.49,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 230000,
+    "trips_no_permit": 46,
+    "trips_bank_permit": 23,
+    "fx_margin_usd": 481.42,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 240000,
+    "trips_no_permit": 48,
+    "trips_bank_permit": 24,
+    "fx_margin_usd": 502.35,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 250000,
+    "trips_no_permit": 50,
+    "trips_bank_permit": 25,
+    "fx_margin_usd": 523.28,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 260000,
+    "trips_no_permit": 52,
+    "trips_bank_permit": 26,
+    "fx_margin_usd": 544.21,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 270000,
+    "trips_no_permit": 54,
+    "trips_bank_permit": 27,
+    "fx_margin_usd": 565.14,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 280000,
+    "trips_no_permit": 56,
+    "trips_bank_permit": 28,
+    "fx_margin_usd": 586.07,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 290000,
+    "trips_no_permit": 58,
+    "trips_bank_permit": 29,
+    "fx_margin_usd": 607.0,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 300000,
+    "trips_no_permit": 60,
+    "trips_bank_permit": 30,
+    "fx_margin_usd": 627.93,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 310000,
+    "trips_no_permit": 62,
+    "trips_bank_permit": 31,
+    "fx_margin_usd": 648.87,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 320000,
+    "trips_no_permit": 64,
+    "trips_bank_permit": 32,
+    "fx_margin_usd": 669.8,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 330000,
+    "trips_no_permit": 66,
+    "trips_bank_permit": 33,
+    "fx_margin_usd": 690.73,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 340000,
+    "trips_no_permit": 68,
+    "trips_bank_permit": 34,
+    "fx_margin_usd": 711.66,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 350000,
+    "trips_no_permit": 70,
+    "trips_bank_permit": 35,
+    "fx_margin_usd": 732.59,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 360000,
+    "trips_no_permit": 72,
+    "trips_bank_permit": 36,
+    "fx_margin_usd": 753.52,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 370000,
+    "trips_no_permit": 74,
+    "trips_bank_permit": 37,
+    "fx_margin_usd": 774.45,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 380000,
+    "trips_no_permit": 76,
+    "trips_bank_permit": 38,
+    "fx_margin_usd": 795.38,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 390000,
+    "trips_no_permit": 78,
+    "trips_bank_permit": 39,
+    "fx_margin_usd": 816.31,
+    "withdrawal_fee": null
+   },
+   {
+    "usd": 400000,
+    "trips_no_permit": 80,
+    "trips_bank_permit": 40,
+    "fx_margin_usd": 837.25,
+    "withdrawal_fee": null
+   }
+  ],
+  "U01": [
+   {
+    "usd": 10000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 20000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 30000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 40000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 50000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 60000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 70000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 80000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 90000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 100000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 110000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 120000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 130000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 140000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 150000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 160000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 170000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 180000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 190000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 200000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 210000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 220000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 230000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 240000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 250000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 260000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 270000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 280000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 290000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 300000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 310000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 320000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 330000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 340000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 350000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 360000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 370000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 380000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 390000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   },
+   {
+    "usd": 400000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Watch list: year of listing + 2 years (S15)"
+   }
+  ],
+  "U02": [
+   {
+    "usd": 10000,
+    "fine_ordinary_usd": 3000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 20000,
+    "fine_ordinary_usd": 6000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 30000,
+    "fine_ordinary_usd": 9000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 40000,
+    "fine_ordinary_usd": 12000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 50000,
+    "fine_ordinary_usd": 15000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 60000,
+    "fine_ordinary_usd": 18000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 70000,
+    "fine_ordinary_usd": 21000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 80000,
+    "fine_ordinary_usd": 24000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 90000,
+    "fine_ordinary_usd": 27000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 100000,
+    "fine_ordinary_usd": 30000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 110000,
+    "fine_ordinary_usd": 33000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 120000,
+    "fine_ordinary_usd": 36000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 130000,
+    "fine_ordinary_usd": 39000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 140000,
+    "fine_ordinary_usd": 42000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 150000,
+    "fine_ordinary_usd": 45000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 160000,
+    "fine_ordinary_usd": 48000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 170000,
+    "fine_ordinary_usd": 51000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 180000,
+    "fine_ordinary_usd": 54000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 190000,
+    "fine_ordinary_usd": 57000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 200000,
+    "fine_ordinary_usd": 60000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 210000,
+    "fine_ordinary_usd": 63000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 220000,
+    "fine_ordinary_usd": 66000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 230000,
+    "fine_ordinary_usd": 69000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 240000,
+    "fine_ordinary_usd": 72000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 250000,
+    "fine_ordinary_usd": 75000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 260000,
+    "fine_ordinary_usd": 78000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 270000,
+    "fine_ordinary_usd": 81000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 280000,
+    "fine_ordinary_usd": 84000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 290000,
+    "fine_ordinary_usd": 87000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 300000,
+    "fine_ordinary_usd": 90000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 310000,
+    "fine_ordinary_usd": 93000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 320000,
+    "fine_ordinary_usd": 96000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 330000,
+    "fine_ordinary_usd": 99000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 340000,
+    "fine_ordinary_usd": 102000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 350000,
+    "fine_ordinary_usd": 105000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 360000,
+    "fine_ordinary_usd": 108000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 370000,
+    "fine_ordinary_usd": 111000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 380000,
+    "fine_ordinary_usd": 114000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 390000,
+    "fine_ordinary_usd": 117000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   },
+   {
+    "usd": 400000,
+    "fine_ordinary_usd": 120000.0,
+    "fine_serious_usd": null,
+    "consequence": "Art. 45 (S09)"
+   }
+  ],
+  "U03": [
+   {
+    "usd": 10000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 20000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 30000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 40000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 50000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 60000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 70000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 80000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 90000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 100000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 110000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 120000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 130000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 140000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 150000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 160000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 170000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 180000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 190000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 200000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 210000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 220000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 230000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 240000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 250000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 260000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 270000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 280000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 290000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 300000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 310000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 320000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 330000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 340000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 350000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 360000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 370000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 380000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 390000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   },
+   {
+    "usd": 400000,
+    "fine_ordinary_usd": null,
+    "fine_serious_usd": null,
+    "consequence": "Illegal activity (S18)"
+   }
+  ],
+  "U04": [
+   {
+    "usd": 10000,
+    "fine_ordinary_usd": 3000.0,
+    "fine_serious_usd": 10000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 20000,
+    "fine_ordinary_usd": 6000.0,
+    "fine_serious_usd": 20000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 30000,
+    "fine_ordinary_usd": 9000.0,
+    "fine_serious_usd": 30000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 40000,
+    "fine_ordinary_usd": 12000.0,
+    "fine_serious_usd": 40000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 50000,
+    "fine_ordinary_usd": 15000.0,
+    "fine_serious_usd": 50000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 60000,
+    "fine_ordinary_usd": 18000.0,
+    "fine_serious_usd": 60000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 70000,
+    "fine_ordinary_usd": 21000.0,
+    "fine_serious_usd": 70000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 80000,
+    "fine_ordinary_usd": 24000.0,
+    "fine_serious_usd": 80000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 90000,
+    "fine_ordinary_usd": 27000.0,
+    "fine_serious_usd": 90000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 100000,
+    "fine_ordinary_usd": 30000.0,
+    "fine_serious_usd": 100000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 110000,
+    "fine_ordinary_usd": 33000.0,
+    "fine_serious_usd": 110000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 120000,
+    "fine_ordinary_usd": 36000.0,
+    "fine_serious_usd": 120000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 130000,
+    "fine_ordinary_usd": 39000.0,
+    "fine_serious_usd": 130000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 140000,
+    "fine_ordinary_usd": 42000.0,
+    "fine_serious_usd": 140000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 150000,
+    "fine_ordinary_usd": 45000.0,
+    "fine_serious_usd": 150000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 160000,
+    "fine_ordinary_usd": 48000.0,
+    "fine_serious_usd": 160000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 170000,
+    "fine_ordinary_usd": 51000.0,
+    "fine_serious_usd": 170000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 180000,
+    "fine_ordinary_usd": 54000.0,
+    "fine_serious_usd": 180000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 190000,
+    "fine_ordinary_usd": 57000.0,
+    "fine_serious_usd": 190000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 200000,
+    "fine_ordinary_usd": 60000.0,
+    "fine_serious_usd": 200000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 210000,
+    "fine_ordinary_usd": 63000.0,
+    "fine_serious_usd": 210000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 220000,
+    "fine_ordinary_usd": 66000.0,
+    "fine_serious_usd": 220000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 230000,
+    "fine_ordinary_usd": 69000.0,
+    "fine_serious_usd": 230000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 240000,
+    "fine_ordinary_usd": 72000.0,
+    "fine_serious_usd": 240000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 250000,
+    "fine_ordinary_usd": 75000.0,
+    "fine_serious_usd": 250000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 260000,
+    "fine_ordinary_usd": 78000.0,
+    "fine_serious_usd": 260000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 270000,
+    "fine_ordinary_usd": 81000.0,
+    "fine_serious_usd": 270000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 280000,
+    "fine_ordinary_usd": 84000.0,
+    "fine_serious_usd": 280000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 290000,
+    "fine_ordinary_usd": 87000.0,
+    "fine_serious_usd": 290000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 300000,
+    "fine_ordinary_usd": 90000.0,
+    "fine_serious_usd": 300000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 310000,
+    "fine_ordinary_usd": 93000.0,
+    "fine_serious_usd": 310000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 320000,
+    "fine_ordinary_usd": 96000.0,
+    "fine_serious_usd": 320000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 330000,
+    "fine_ordinary_usd": 99000.0,
+    "fine_serious_usd": 330000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 340000,
+    "fine_ordinary_usd": 102000.0,
+    "fine_serious_usd": 340000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 350000,
+    "fine_ordinary_usd": 105000.0,
+    "fine_serious_usd": 350000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 360000,
+    "fine_ordinary_usd": 108000.0,
+    "fine_serious_usd": 360000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 370000,
+    "fine_ordinary_usd": 111000.0,
+    "fine_serious_usd": 370000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 380000,
+    "fine_ordinary_usd": 114000.0,
+    "fine_serious_usd": 380000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 390000,
+    "fine_ordinary_usd": 117000.0,
+    "fine_serious_usd": 390000.0,
+    "consequence": "Art. 39 (S09)"
+   },
+   {
+    "usd": 400000,
+    "fine_ordinary_usd": 120000.0,
+    "fine_serious_usd": 400000.0,
+    "consequence": "Art. 39 (S09)"
+   }
+  ],
+  "USTAX": [
+   {
+    "usd": 10000,
+    "cny_converted": 66886.0,
+    "gain_if_basis_2025": 617.76,
+    "gain_if_basis_2024": 696.06,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 20000,
+    "cny_converted": 133772.0,
+    "gain_if_basis_2025": 1235.52,
+    "gain_if_basis_2024": 1392.13,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 30000,
+    "cny_converted": 200658.0,
+    "gain_if_basis_2025": 1853.28,
+    "gain_if_basis_2024": 2088.19,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 40000,
+    "cny_converted": 267544.0,
+    "gain_if_basis_2025": 2471.03,
+    "gain_if_basis_2024": 2784.25,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 50000,
+    "cny_converted": 334430.0,
+    "gain_if_basis_2025": 3088.79,
+    "gain_if_basis_2024": 3480.32,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 60000,
+    "cny_converted": 401316.0,
+    "gain_if_basis_2025": 3706.55,
+    "gain_if_basis_2024": 4176.38,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 70000,
+    "cny_converted": 468202.0,
+    "gain_if_basis_2025": 4324.31,
+    "gain_if_basis_2024": 4872.44,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 80000,
+    "cny_converted": 535088.0,
+    "gain_if_basis_2025": 4942.07,
+    "gain_if_basis_2024": 5568.51,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 90000,
+    "cny_converted": 601974.0,
+    "gain_if_basis_2025": 5559.83,
+    "gain_if_basis_2024": 6264.57,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 100000,
+    "cny_converted": 668860.0,
+    "gain_if_basis_2025": 6177.58,
+    "gain_if_basis_2024": 6960.63,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 110000,
+    "cny_converted": 735746.0,
+    "gain_if_basis_2025": 6795.34,
+    "gain_if_basis_2024": 7656.7,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 120000,
+    "cny_converted": 802632.0,
+    "gain_if_basis_2025": 7413.1,
+    "gain_if_basis_2024": 8352.76,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 130000,
+    "cny_converted": 869518.0,
+    "gain_if_basis_2025": 8030.86,
+    "gain_if_basis_2024": 9048.82,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 140000,
+    "cny_converted": 936404.0,
+    "gain_if_basis_2025": 8648.62,
+    "gain_if_basis_2024": 9744.89,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 150000,
+    "cny_converted": 1003290.0,
+    "gain_if_basis_2025": 9266.38,
+    "gain_if_basis_2024": 10440.95,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 160000,
+    "cny_converted": 1070176.0,
+    "gain_if_basis_2025": 9884.14,
+    "gain_if_basis_2024": 11137.01,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 170000,
+    "cny_converted": 1137062.0,
+    "gain_if_basis_2025": 10501.89,
+    "gain_if_basis_2024": 11833.08,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 180000,
+    "cny_converted": 1203948.0,
+    "gain_if_basis_2025": 11119.65,
+    "gain_if_basis_2024": 12529.14,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 190000,
+    "cny_converted": 1270834.0,
+    "gain_if_basis_2025": 11737.41,
+    "gain_if_basis_2024": 13225.21,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 200000,
+    "cny_converted": 1337720.0,
+    "gain_if_basis_2025": 12355.17,
+    "gain_if_basis_2024": 13921.27,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 210000,
+    "cny_converted": 1404606.0,
+    "gain_if_basis_2025": 12972.93,
+    "gain_if_basis_2024": 14617.33,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 220000,
+    "cny_converted": 1471492.0,
+    "gain_if_basis_2025": 13590.69,
+    "gain_if_basis_2024": 15313.4,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 230000,
+    "cny_converted": 1538378.0,
+    "gain_if_basis_2025": 14208.44,
+    "gain_if_basis_2024": 16009.46,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 240000,
+    "cny_converted": 1605264.0,
+    "gain_if_basis_2025": 14826.2,
+    "gain_if_basis_2024": 16705.52,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 250000,
+    "cny_converted": 1672150.0,
+    "gain_if_basis_2025": 15443.96,
+    "gain_if_basis_2024": 17401.59,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 260000,
+    "cny_converted": 1739036.0,
+    "gain_if_basis_2025": 16061.72,
+    "gain_if_basis_2024": 18097.65,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 270000,
+    "cny_converted": 1805922.0,
+    "gain_if_basis_2025": 16679.48,
+    "gain_if_basis_2024": 18793.71,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 280000,
+    "cny_converted": 1872808.0,
+    "gain_if_basis_2025": 17297.24,
+    "gain_if_basis_2024": 19489.78,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 290000,
+    "cny_converted": 1939694.0,
+    "gain_if_basis_2025": 17915.0,
+    "gain_if_basis_2024": 20185.84,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 300000,
+    "cny_converted": 2006580.0,
+    "gain_if_basis_2025": 18532.75,
+    "gain_if_basis_2024": 20881.9,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 310000,
+    "cny_converted": 2073466.0,
+    "gain_if_basis_2025": 19150.51,
+    "gain_if_basis_2024": 21577.97,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 320000,
+    "cny_converted": 2140352.0,
+    "gain_if_basis_2025": 19768.27,
+    "gain_if_basis_2024": 22274.03,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 330000,
+    "cny_converted": 2207238.0,
+    "gain_if_basis_2025": 20386.03,
+    "gain_if_basis_2024": 22970.09,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 340000,
+    "cny_converted": 2274124.0,
+    "gain_if_basis_2025": 21003.79,
+    "gain_if_basis_2024": 23666.16,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 350000,
+    "cny_converted": 2341010.0,
+    "gain_if_basis_2025": 21621.55,
+    "gain_if_basis_2024": 24362.22,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 360000,
+    "cny_converted": 2407896.0,
+    "gain_if_basis_2025": 22239.3,
+    "gain_if_basis_2024": 25058.28,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 370000,
+    "cny_converted": 2474782.0,
+    "gain_if_basis_2025": 22857.06,
+    "gain_if_basis_2024": 25754.35,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 380000,
+    "cny_converted": 2541668.0,
+    "gain_if_basis_2025": 23474.82,
+    "gain_if_basis_2024": 26450.41,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 390000,
+    "cny_converted": 2608554.0,
+    "gain_if_basis_2025": 24092.58,
+    "gain_if_basis_2024": 27146.47,
+    "tax_on_gain": null
+   },
+   {
+    "usd": 400000,
+    "cny_converted": 2675440.0,
+    "gain_if_basis_2025": 24710.34,
+    "gain_if_basis_2024": 27842.54,
+    "tax_on_gain": null
+   }
+  ]
+ }
+}

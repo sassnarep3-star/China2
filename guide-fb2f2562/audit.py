@@ -212,6 +212,9 @@ def main():
         seen.add(k)
         uniq.append(x)
     findings = uniq
+    for x in findings:  # keep the snapshot small: excerpts only where a reader must act
+        if x["verdict"] not in ("conflict", "check"):
+            x["excerpt"] = ""
     sections = sorted({section_of(f) for f in files})
     grid = {}
     for s in sections:
