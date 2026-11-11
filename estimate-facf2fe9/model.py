@@ -117,13 +117,10 @@ def build():
                 n = ceil_div(x, lim["annual_quota_usd"])
                 blk = wire_block(kind[1], kind[2], [x / n] * n)
                 r["count"], r["count_unit"] = n, "calendar years, one wire each"
-            elif kind[0] == "emigrant":
-                cny = x * boards[kind[1]]["sell"]
-                if cny <= lim["emigrant_single_cny"]:
-                    parts, r["count"], r["count_unit"] = [x], 1, "wire"
-                else:
-                    parts, r["count"], r["count_unit"] = [x / 2, x / 4, x / 4], 3, "wires over two years"
-                blk = wire_block(kind[1], kind[2], parts)
+            # The former "emigrant" cost model (three wires of 50% / 25% / 25% over two years above
+            # RMB 200,000, from PBOC Announcement [2004] No. 16 Art. 6) was removed on 2026-11-11:
+            # SAFE Hui Fa [2014] No. 2 Section 6(2) abolished the instalment requirement (source R17),
+            # so M14 is priced with the plain "wire" model above.
             elif kind[0] == "fee_only":
                 r["fee_usd"], r["fee_cny"] = "0.00", "0.00"
                 r["note"] = "Fee shown is for Private Banking and Premier; Advance pays USD 20. Rate not published for this service."

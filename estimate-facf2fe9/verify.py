@@ -69,6 +69,11 @@ for s in sources:
 for f in flags:
     ok(f["source"] in SRC, f"flag {f['id']}: unknown source")
     ok(len(f["detail"]) > 30, f"flag {f['id']}: no explanation")
+_m14 = next(m for m in methods if m["id"] == "M14")
+ok("R17" in _m14["sources"], "M14 must cite R17 (Hui Fa [2014] No. 2)")
+_m14_text = " ".join([_m14["summary"], _m14["limit"]] + _m14["steps"] + _m14["cons"])
+for _bad in ("first tranche", "two years after it", "Two years to finish", "staged 50%"):
+    ok(_bad not in _m14_text, f"M14: superseded instalment text {_bad!r} is back")
 for m in methods:
     ok(len(m["steps"]) >= 1 and len(m["pros"]) >= 1 and len(m["cons"]) >= 1, f"{m['id']}: steps/pros/cons missing")
     ok(all(i in SRC for i in m["sources"]) and m["sources"], f"{m['id']}: unknown or missing source")
@@ -151,11 +156,10 @@ for m in methods:
             n = math.ceil(x / L["annual_quota_usd"])
             exp = wires(kind[1], kind[2], [x / n] * n)
             ok(r["count"] == n, f"{m['id']} {x}: years")
-        elif kind[0] == "emigrant":
-            single = x * boards[kind[1]][1] <= L["emigrant_single_cny"]
-            exp = wires(kind[1], kind[2], [x] if single else [x / 2, x / 4, x / 4])
-            ok(r["count"] == (1 if single else 3), f"{m['id']} {x}: tranche count")
-        if kind[0] in ("wire", "quota", "emigrant"):
+        # Regression guard (correction of 2026-11-11): no method may use the superseded "emigrant"
+        # three-wire model; Hui Fa [2014] No. 2 Section 6(2) removed the instalment schedule (R17).
+        ok(kind[0] != "emigrant", f"{m['id']}: superseded instalment cost model is back")
+        if kind[0] in ("wire", "quota"):
             if exp is None:
                 ok(r["status"] == "unverified" and all(r[k] is None for k in ("total_usd", "pct", "cny_needed", "spread_usd", "fee_usd")),
                    f"{m['id']} {x}: rate not read, every cost cell must be blank")

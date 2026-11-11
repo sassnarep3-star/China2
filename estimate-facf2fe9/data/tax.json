@@ -213,10 +213,11 @@
    "source": "Savings from before you emigrated (former Chinese national)",
    "tax": "Tax certificates required for the assets",
    "base": "",
-   "to_convert": "SAFE approval for emigrant transfer; staged over two years above ¥200,000",
+   "to_convert": "SAFE approval for emigrant transfer; then one payment or several (no instalment schedule since 2014)",
    "status": "verified-limited",
    "sources": [
     "R12",
+    "R17",
     "R14"
    ],
    "flag": "F13"

@@ -563,14 +563,14 @@
     "One application covers the whole estate"
    ],
    "cons": [
-    "Approval takes time and papers must be notarised",
-    "Approval thresholds may have changed since the 2004 text",
+    "Approval takes time and the proof of inheritance must be notarised",
     "Late or missing Form 3520 carries penalties"
    ],
    "limit": "The approved amount.",
    "cost_model": "wire:BOC:BOC",
    "sources": [
     "R12",
+    "R17",
     "R14",
     "R02",
     "U07",
@@ -589,12 +589,11 @@
    "category": "B",
    "lawful": "yes",
    "who": "A person who moved abroad from mainland China and took foreign nationality, for lawful assets owned in China before obtaining that status.",
-   "summary": "Apply once for the whole amount; above ¥200,000 it leaves in stages: up to half first, up to half of the rest after one year, the remainder after two years. Cost shown is three Bank of China wires (one if the total is ¥200,000 or less).",
+   "summary": "Apply once for the whole amount to the SAFE office of your former place of household registration. There has been no instalment schedule since 10 February 2014: after approval the bank may send the approved amount in one payment or in several. Cost shown is one Bank of China wire. Corrected 11 November 2026: this entry previously priced three wires over two years under the 2004 schedule.",
    "steps": [
     "Gather proof of status (foreign passport, consular proof of settlement abroad, cancellation of household registration), proof of ownership and origin of the assets, and tax certificates.",
     "Apply once to the SAFE office of your former place of household registration for the full amount you intend to move.",
-    "After approval buy dollars at the bank and wire the first tranche (at most half) to your own account abroad.",
-    "One year after the first payment wire up to half of what remains; two years after it wire the rest.",
+    "After approval take the approval document to the bank, buy dollars and wire them to your own account abroad — in one payment or several, within the approved amount.",
     "US side: your own assets, not income on arrival; compute exchange gain or loss and keep the accounts on FBAR and Form 8938 meanwhile."
    ],
    "pros": [
@@ -602,14 +601,14 @@
     "Any amount, with approval"
    ],
    "cons": [
-    "Two years to finish above ¥200,000",
-    "Approval, notarisation and tax certificates required",
-    "Money stays exposed to the exchange rate while it waits"
+    "SAFE approval and tax certificates required before the bank will act",
+    "Money stays exposed to the exchange rate while the approval is pending"
    ],
-   "limit": "Approved amount; staged 50% / 25% / 25% above ¥200,000.",
-   "cost_model": "emigrant:BOC:BOC",
+   "limit": "The approved amount, in one payment or several. No instalment schedule since 2014.",
+   "cost_model": "wire:BOC:BOC",
    "sources": [
     "R12",
+    "R17",
     "R14",
     "B01",
     "T01"

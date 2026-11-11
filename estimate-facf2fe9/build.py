@@ -52,7 +52,7 @@ SHORT = {
     "R05": "SAFE Q&A 9", "R06": "SAFE FAQ 10", "R07": "SAFE card circular", "R08": "Cash-carry measures",
     "R09": "PBOC notice 18", "R10": "Tax-filing rule", "R11": "Tax-filing interpretation",
     "R12": "PBOC notice 16", "R13": "SAFE housing draft", "R14": "SAFE emigrant guide", "R15": "Yin Fa 42",
-    "R16": "SAFE Shanghai", "X01": "Income Tax Law", "X02": "Cai Shui 132", "U01": "26 USC 988",
+    "R16": "SAFE Shanghai", "R17": "Hui Fa 2014 No. 2", "X01": "Income Tax Law", "X02": "Cai Shui 132", "U01": "26 USC 988",
     "U02": "IRS rates", "U03": "IRS Pub. 525", "U04": "31 CFR 1010.821", "U05": "IRS FBAR",
     "U06": "IRS Form 8938", "U07": "IRS Form 3520", "U08": "CBP", "U09": "IRS Pub. 514",
     "U10": "IRS Form 2555", "U11": "IRS manual",
@@ -61,7 +61,7 @@ ROW_SRC = {
     "M01": ["B01", "T01"], "M02": ["B04", "T02"], "M03": ["B05", "T03"], "M04": ["B06", "T07"],
     "M05": ["B06", "T07"], "M06": ["B02", "T06"], "M07": ["B03", "T05"], "M08": ["B07"], "M09": ["T07"],
     "M10": ["R05", "R03", "B01", "T01"], "M11": ["R06", "B01", "T01"], "M12": ["R02", "B01", "T01"],
-    "M13": ["R12", "B01", "T01"], "M14": ["R12", "B01", "T01"], "M15": ["T09"], "M16": ["R07", "T08"],
+    "M13": ["R12", "B01", "T01"], "M14": ["R12", "R17", "B01", "T01"], "M15": ["T09"], "M16": ["R07", "T08"],
     "M17": ["R08", "B01"], "M18": ["R09"], "M19": ["T10"], "M20": ["R02"], "M21": ["R07"],
     "M22": ["X02", "U05"], "M23": ["R01"],
 }
@@ -116,7 +116,6 @@ def blank():
 
 SINGULAR = {
     "calendar years, one wire each": "calendar year, one wire",
-    "wires over two years": "wire",
     "transfers of at most ¥300,000": "transfer of at most ¥300,000",
     "calendar years at ¥100,000 a year": "calendar year at ¥100,000 a year",
     "trips with a bank permit": "trip with a bank permit",
@@ -224,7 +223,7 @@ def build_index():
         ("Money you brought in and exchanged within 24 months", "M11", "Convert it back with the original memo", "Not Chinese income", ["R06"]),
         ("Proceeds of selling housing", "M12", "Documented wire after title passes", "20% on the gain; cap is price less taxes", ["R02", "X01", "R13"]),
         ("Inherited assets", "M13", "SAFE approval, then wire", "US Form 3520 above $100,000", ["R12", "U07"]),
-        ("Savings from before you emigrated", "M14", "Emigrant transfer, staged over two years", "Tax certificates for the assets", ["R12"]),
+        ("Savings from before you emigrated", "M14", "Emigrant transfer: SAFE approval, then one wire or several", "Tax certificates for the assets", ["R12", "R17"]),
         ("You hold a Foreign Permanent Resident ID", "M10", "$50,000 a year on ID alone", "No tax on the purchase itself", ["R05", "R03"]),
         ("Income with unpaid tax or no papers", "", "Settle with the tax office first, then wire", "Tax is recovered with penalties if unpaid", ["R10"]),
         ("A few thousand dollars", "M16", "ATM abroad or cash within the limits", "No tax point; watch the yearly cap", ["R07", "R08"]),
@@ -478,9 +477,12 @@ def build_sources():
                     f'<td class="txt">{st}</td><td class="quote">{quotes}{note}</td><td class="src">{ext(s["url"], SHORT[s["id"]])}</td></tr>')
     n_full = sum(1 for s in SOURCES["sources"] if s["method"].startswith("full"))
     n_exc = sum(1 for s in SOURCES["sources"] if s["method"].startswith("excerpt"))
+    # sources added after the original session (their own retrieval time differs) are named explicitly
+    late = [s for s in SOURCES["sources"] if s["retrieved"] and s["retrieved"] != SOURCES["retrieved"]]
+    added = "".join(f'; {s["id"]} was added by a later correction and read on {esc(s["retrieved"])}' for s in late)
     body = f"""
 <section>
-<p>{len(SRC)} sources, all on the publisher's own site: {n_full} read in full, {n_exc} read as excerpts, {len(SRC) - n_full - n_exc} not read and used for nothing. Read on {esc(SOURCES['retrieved'])}. The words shown are the words relied on; follow the link to check them.</p>
+<p>{len(SRC)} sources, all on the publisher's own site: {n_full} read in full, {n_exc} read as excerpts, {len(SRC) - n_full - n_exc} not read and used for nothing. Read on {esc(SOURCES['retrieved'])}{added}. The words shown are the words relied on; follow the link to check them.</p>
 {table(["ID", "Publisher and page", "How read", "Words relied on", "Link"], rows, "sources")}
 <p>The raw capture log is kept at <a href="data/capture-log.md">data/capture-log.md</a>.</p>
 </section>"""

@@ -434,7 +434,7 @@
     "第十条 申请财产对外转移总金额在等值人民币50万元以下（含50万元）的，由所在地外汇局审批。… 超过上述金额的，由所在地外汇局初审后，报国家外汇管理局审批。",
     "第十一条 外汇指定银行办理售汇后，应直接将外汇汇往移民或继承人居住国或地区申请人本人的账户，不得在境内提取外币现钞。"
    ],
-   "note": "Same text on the SAFE site: http://m.safe.gov.cn/safe/2004/1116/5461.html. Approval levels may have been changed by the 2024 capital-account guidelines (R14); flagged."
+   "note": "Same text on the SAFE site: http://m.safe.gov.cn/safe/2004/1116/5461.html. Article 6 (instalments; separate applications for different deceased persons), Article 10 (head-office step above ¥500,000) and the notarisation of property papers in Articles 8 and 9 were removed by Hui Fa [2014] No. 2, Section 6 (R17). Note corrected 2026-11-11; the earlier note said only that approval levels may have changed."
   },
   {
    "id": "R13",
@@ -491,6 +491,23 @@
     "不得虚假办理涉外收支申报；不得提供不实材料；不得出借本人或借用他人额度；不得参与洗钱、逃税、地下钱庄交易等违法违规活动。"
    ],
    "note": ""
+  },
+  {
+   "id": "R17",
+   "publisher": "State Administration of Foreign Exchange (SAFE)",
+   "title": "Hui Fa [2014] No. 2: Notice on further improving and adjusting capital-account foreign exchange policies (国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知), in force 2014-02-10",
+   "url": "https://www.safe.gov.cn/safe/2014/0124/5476.html",
+   "kind": "regulator notice",
+   "method": "full page read",
+   "retrieved": "2026-11-11, 07:50 UTC",
+   "quotes": [
+    "六、简化个人财产转移售付汇管理 （一）移民财产转移购付汇核准，由移民原户籍所在地外汇局负责审批。继承财产转移购付汇核准，由被继承人生前户籍所在地外汇局负责审批。取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。",
+    "（二）取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。",
+    "（三）取消继承人从不同被继承人处继承的财产应分别申请、分别汇出的要求。继承人从不同被继承人处继承财产，可选择其中一个被继承人生前户籍所在地外汇局合并提交申请材料，经核准后可在银行一次或分次汇出相关资金。",
+    "（四）取消对有关财产权利文件（如房屋产权证、房地产买卖契约或拆迁补偿安置协议、承包或租赁合同或协议、财产转让协议或合同、特许权使用协议或合同等）进行公证的要求；取消对委托代理协议、代理人身份证明进行公证的要求。",
+    "本通知自2014年2月10日起实施，以前规定与本通知不符的，以本通知为准。"
+   ],
+   "note": "Added on 2026-11-11 by arena/8a85759a-china2 as a correction; it was not among the pages read on 2026-11-10. The page title is marked （已修改）: its footnote says Hui Fa [2023] No. 28 amended Section 3 only, so Section 6 stands as quoted."
   },
   {
    "id": "X01",

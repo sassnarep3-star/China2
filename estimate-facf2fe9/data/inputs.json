@@ -201,10 +201,6 @@
    "value": 300000,
    "source": "T09"
   },
-  "emigrant_single_cny": {
-   "value": 200000,
-   "source": "R12"
-  },
   "tax_filing_usd": {
    "value": 50000,
    "source": "R10"

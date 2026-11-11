@@ -11,7 +11,7 @@ rates and fees that the banks themselves published on 10 November 2026, instead 
 | `costs.html` | Bank rates and fees as read; 23 methods at every USD 10,000 step to USD 400,000 |
 | `methods.html` | Who may use each method, limits, steps, pros and cons |
 | `tax.html` | Chinese tax by source of funds, US rules, exchange-gain illustration |
-| `sources.html` | 47 official pages with the sentences relied on |
+| `sources.html` | 48 official pages with the sentences relied on (47 read on 2026-11-10; R17 added by a correction on 2026-11-11) |
 | `repo-review.html` | Re-check of the rest of the repository against today's readings |
 | `flagged.html` | Flagged for Review: unverified values, limits, assumptions |
 
