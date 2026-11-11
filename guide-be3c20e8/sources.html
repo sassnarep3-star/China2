@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Source register · guide-be3c20e8</title>
+<meta name="description" content="34 primary sources with exact quotes, locators, figures and limitations.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site"><div class="wrap">
+  <p class="eyebrow" style="color:#bcd8ff">Independent decision guide · read 2026-11-11</p>
+  <h1>Source register</h1>
+  <p>CNY to USD for a U.S. person: published inputs only, blanks where facts are unverified, official links on every substantive row.</p>
+</div></header>
+<nav class="site" aria-label="Sections"><div class="wrap"><ul><li><a href="index.html">Dashboard</a></li><li><a href="summary.html">Executive summary</a></li><li><a href="questions.html">Decision questions</a></li><li><a href="methods.html">Routes</a></li><li><a href="costs.html">Cost ladder</a></li><li><a href="penalties.html">Penalty layers</a></li><li><a href="flagged.html">Flagged for Review</a></li><li><a href="sources.html" aria-current="page">Sources</a></li><li><a href="review.html">Repo audit</a></li></ul></div></nav>
+<main id="content"><div class="wrap">
+
+<section class="callout"><h2>34 primary sources, re-read 2026-11-11</h2><p>Each row has the exact URL, locator, selected verbatim text, a plain-language reading and the published figures used by the model. Bank and provider pages are primary commercial sources, not government endorsements. Multi-chunk PDFs are quoted only from chunks actually read.</p></section>
+<div class="downloads"><a href="data/sources.json">Source ledger (JSON)</a> <a href="data/make_sources.py">Generator (Python)</a></div>
+<div class="tablewrap"><table>
+<caption>Exact quotes, locators, figures and limitations</caption>
+<thead><tr><th scope="col">ID</th><th scope="col">Publisher / official link</th><th scope="col">Title / locator</th><th scope="col">Exact text read</th><th scope="col">Reading</th><th scope="col">Limits</th><th scope="col">Figures</th></tr></thead>
+<tbody>
+<tr id="B01">
+<th scope="row" data-label="ID">B01</th>
+<td data-label="Publisher / official link"><strong>Bank of China</strong><br><a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="Bank of China">B01</a><br><span class="small">bank primary · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>中国银行外汇牌价 (BOC foreign-exchange board)</strong><br><span class="small">USD row, 2026/11/11 21:00:05; website disclaimer paragraph 1</span></td>
+<td data-label="Exact text read"><pre class="quote">美元 | 665.91 | 665.91 | 668.71 | 668.71 | 671.91 | 2026/11/11 | 21:00:05
+1.本汇率表单位为100外币换算人民币，仅供参考，客户办理结/购汇业务时，应以中国银行网上银行、手机银行、智能柜台或网点柜台实际交易汇率为准，对使用该汇率表所导致的结果，中国银行不承担任何责任；</pre></td>
+<td data-label="Reading">USD telegraphic-transfer buy, cash buy, telegraphic-transfer sell, cash sell and BOC conversion price, each per 100 USD. The board is for reference only; the rate actually offered in the transaction channel governs.</td>
+<td data-label="Limits">Intraday board; not an executable quote. A 20:39:19 reading the same day printed the same USD row, while the timestamp advanced to 21:00:05; see F-04.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;boc_buy_tt_per100&quot;: 665.91,
+  &quot;boc_buy_cash_per100&quot;: 665.91,
+  &quot;boc_sell_tt_per100&quot;: 668.71,
+  &quot;boc_sell_cash_per100&quot;: 668.71,
+  &quot;boc_conversion_per100&quot;: 671.91,
+  &quot;per&quot;: 100,
+  &quot;published_time&quot;: &quot;21:00:05&quot;,
+  &quot;earlier_same_day_reading&quot;: &quot;20:39:19&quot;
+}</pre></td>
+</tr>
+<tr id="B02">
+<th scope="row" data-label="ID">B02</th>
+<td data-label="Publisher / official link"><strong>HSBC Bank (China)</strong><br><a href="https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html" target="_blank" rel="noopener noreferrer" title="HSBC Bank (China)">B02</a><br><span class="small">bank primary · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>汇丰银行（中国）外汇汇率</strong><br><span class="small">USD row; page header last updated 2026年11月10日; disclaimer</span></td>
+<td data-label="Exact text read"><pre class="quote">最后更新时间： 2026年11月10日
+美元 (USD) | 6.7030239 | 6.7030239 | 6.6362813 | 6.5997540
+请注意，以上汇率均为外币对人民币之汇率。汇率仅供参考，如有变更，恕不另行通知。</pre></td>
+<td data-label="Reading">CNY per 1 USD: cash/TT sell 6.7030239, TT buy 6.6362813, cash buy 6.5997540. Reference only and subject to change without notice.</td>
+<td data-label="Limits">Dated one day before the BOC reading; not an executable quote.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;hsbc_sell_cash&quot;: 6.7030239,
+  &quot;hsbc_sell_tt&quot;: 6.7030239,
+  &quot;hsbc_buy_tt&quot;: 6.6362813,
+  &quot;hsbc_buy_cash&quot;: 6.599754,
+  &quot;board_date&quot;: &quot;2026-11-10&quot;
+}</pre></td>
+</tr>
+<tr id="B03">
+<th scope="row" data-label="ID">B03</th>
+<td data-label="Publisher / official link"><strong>Bank of China</strong><br><a href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer" title="Bank of China">B03</a><br><span class="small">bank primary · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>中国银行电子银行个人服务转账汇款费率表</strong><br><span class="small">跨境汇款（电汇） row; 备注 1; effective date in table header</span></td>
+<td data-label="Exact text read"><pre class="quote">跨境汇款（电汇） | 每笔汇款金额的1‰，最低收取50元/笔，最高收取260元/笔；另收电讯费,港澳台地区人民币80元/笔,非港澳台地区人民币150元/笔。
+1、另有协议约定、价格优惠、地方性收费差异的，按照协议或当地公示的内容收取相关费用。
+收费标准2014年11月1日起</pre></td>
+<td data-label="Reading">Personal e-banking cross-border telegraphic transfer: 0.1% of the remittance, min CNY 50 and max CNY 260, plus CNY 150 cable charge outside Hong Kong, Macau and Taiwan. Separate agreements, promotions and local price differences may change the charge.</td>
+<td data-label="Limits">E-banking schedule only; the linked promotion page now returns a 404 (B31). A branch or another channel may differ; blank where unpublished.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;boc_tt_rate&quot;: 0.001,
+  &quot;boc_tt_min_cny&quot;: 50,
+  &quot;boc_tt_max_cny&quot;: 260,
+  &quot;boc_cable_other_cny&quot;: 150,
+  &quot;boc_cable_hmt_cny&quot;: 80,
+  &quot;effective_date&quot;: &quot;2014-11-01&quot;
+}</pre></td>
+</tr>
+<tr id="B04">
+<th scope="row" data-label="ID">B04</th>
+<td data-label="Publisher / official link"><strong>HSBC Bank (China)</strong><br><a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC Bank (China)">B04</a><br><span class="small">bank primary · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Tariff of Accounts and Services for Wealth and Personal Banking Business (v2)</strong><br><span class="small">Cover; important notes 3 and 7; items 2.1.1, 2.2.2.1, 2.2.4.1, 2.2.4.2, 2.2.6.1, 2.2.6.2, 2.2.7, 2.2.16.7; embedded 2024 page headers</span></td>
+<td data-label="Exact text read"><pre class="quote">(Effective from 31 Oct 2026)
+Last month’s Total Relationship Balance is not below the Premier Minimum Total Relationship Balance requirement, which is CNY 500,000 or equivalent;
+The charges shown in this tariff do not include charges collected by other institutions
+or duties, levies, charges or taxes imposed by governmental or regulatory authorities.
+Monthly Service Fee | 2.1.1 | Not Applicable | CNY300 or equivalent\* / month | Free
+For individual customer: Free For entity customer: 0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY1000 / equivalent per transaction Plus Cable Charge
+0.1% of remittance amount Min. CNY100 / equivalent per transaction Max. CNY500 / equivalent per transaction Plus Cable Charge
+CNY120 / equivalent per cable
+CNY145 \* per transaction \* This is an indication charge. The actual charge per transaction will be USD20 or equivalent in other foreign currency.
+CNY50 \* per transaction \* This is an indication charge. The actual charge per transaction will be USD7 or equivalent in other foreign currency.
+Foreign Currency Notes Withdrawal Over Counter Currencies Available: USD, HKD, JPY, EUR (For exact foreign currency cash availability, please check with your nearest local branch) | 2.2.2.1 | Free | Free | Free
+Overseas China UnionPay ATMs: CNY20/equivalent+ 1% of withdrawal amount Max. CNY110 / equivalent
+财富管理及个人银行业务账户和服务费率（2024年9月12日生效）
+If the remitter would like to ensure the beneficiary receive full payment of the USD remittance proceeds (Pay Exact), CNY200 / equivalent will be collected from the remitter to cover the overseas bank charge and handling fee for this special arrangement. In case of any shortfall in overseas bank charge, the outstanding part will be collected from the remitter.
+The applicable countries or regions include: Canada, US, UK, Australia and Hong Kong SAR.</pre></td>
+<td data-label="Reading">The current cover says 31 Oct 2026 but embedded table headers say 12 Sep 2024. Outward TT is free for Private Banking individual customers; Premier/Advance pay 0.1% min CNY100 max CNY500 plus CNY120 cable. Same-name Global Transfer is free for Private Banking/Premier and USD20 actual charge for Advance; USD7 belongs to education payments. Overseas UnionPay ATM withdrawals have CNY20 + 1%, capped at CNY110, for Premier/Advance. Foreign-currency notes withdrawal is free. The tariff excludes other institutions&#x27; charges and taxes.</td>
+<td data-label="Limits">Two different effective-date headers in one PDF; see F-06. Pay Exact CNY200 is not a cap on correspondent-bank shortfalls. Premier CNY300/month is excluded from per-transfer cost. U.S. receiving-side HSBC terms were not read here.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;hsbc_tt_rate&quot;: 0.001,
+  &quot;hsbc_tt_min_cny&quot;: 100,
+  &quot;hsbc_tt_max_cny&quot;: 500,
+  &quot;hsbc_cable_cny&quot;: 120,
+  &quot;hsbc_pb_entity_max_cny&quot;: 1000,
+  &quot;hsbc_pb_entity_cable_cny&quot;: 140,
+  &quot;hsbc_gt_advance_cny_indicative&quot;: 145,
+  &quot;hsbc_gt_advance_usd&quot;: 20,
+  &quot;hsbc_education_cny_indicative&quot;: 50,
+  &quot;hsbc_education_usd&quot;: 7,
+  &quot;hsbc_premier_monthly_cny&quot;: 300,
+  &quot;hsbc_premier_min_trb_cny&quot;: 500000,
+  &quot;hsbc_pay_exact_cny&quot;: 200,
+  &quot;hsbc_atm_fixed_cny&quot;: 20,
+  &quot;hsbc_atm_rate&quot;: 0.01,
+  &quot;hsbc_atm_max_cny&quot;: 110,
+  &quot;notes_reservation_usd&quot;: 5000
+}</pre></td>
+</tr>
+<tr id="B05">
+<th scope="row" data-label="ID">B05</th>
+<td data-label="Publisher / official link"><strong>Wise</strong><br><a href="https://wise.com/help/articles/2955298/guide-to-cny-transfers" target="_blank" rel="noopener noreferrer" title="Wise">B05</a><br><span class="small">provider primary · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Guide to CNY transfers</strong><br><span class="small">Sending from CNY: who can send, who can receive, how much can I send, total sending limits, fees, arrival time</span></td>
+<td data-label="Exact text read"><pre class="quote">[Check the latest fees](https://www.wise.com/pricing)
+You can send money from CNY if:
+- You&#x27;re not mainland Chinese
+- You&#x27;re working or have worked in China before
+- You have a valid tax record issued by the China tax authority showing taxes paid within the last 3 years
+Due to regulations, you can only send CNY from China to another account you own.
+If you&#x27;re sending CNY from your China bank app, the maximum you can send in one transfer is 300,000 CNY.
+If you are sending CNY from Alipay, the maximum you can send in one transfer is 50,000 CNY.
+Your annual income
+The amount of tax you have paid in China
+The number of years you&#x27;ve paid taxes on, proven through tax record(s) submitted.</pre></td>
+<td data-label="Reading">Outbound CNY through Wise is conditional on non-mainland status, past/current China work and a recent official tax record; it can go only to an account the sender owns. Per-transfer caps are published, but the exact fee, conversion rate and personal overall limit are not published on this page.</td>
+<td data-label="Limits">A commercial provider&#x27;s help page, not a regulator. Exact fee/rate and personal overall limit blank; see F-08.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;wise_bank_per_transfer_cny&quot;: 300000,
+  &quot;wise_alipay_per_transfer_cny&quot;: 50000,
+  &quot;wise_tax_record_years&quot;: 3,
+  &quot;wise_verification_days_min&quot;: 1,
+  &quot;wise_verification_days_max&quot;: 2,
+  &quot;wise_payin_days_max&quot;: 1,
+  &quot;wise_conversion_days_max&quot;: 2
+}</pre></td>
+</tr>
+<tr id="B06">
+<th scope="row" data-label="ID">B06</th>
+<td data-label="Publisher / official link"><strong>Board of Governors of the Federal Reserve System</strong><br><a href="https://www.federalreserve.gov/releases/h10/current/" target="_blank" rel="noopener noreferrer" title="Board of Governors of the Federal Reserve System">B06</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Foreign Exchange Rates - H.10 Weekly</strong><br><span class="small">Release of November 9, 2026; CHINA, P.R. YUAN row; last update</span></td>
+<td data-label="Exact text read"><pre class="quote">Release Date: November 9, 2026
+CHINA, P.R. | YUAN | 6.6480 | 6.6701 | 6.6731 | 6.6680 | 6.6760
+Last Update: November 09, 2026</pre></td>
+<td data-label="Reading">Official weekly CNY-per-USD series; the latest daily column shown is Nov. 6, 2026 at 6.6760. It is not a same-day executable bank quote.</td>
+<td data-label="Limits">Latest release is dated before the 11 Nov bank boards; see F-19.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;fed_nov2&quot;: 6.648,
+  &quot;fed_nov3&quot;: 6.6701,
+  &quot;fed_nov4&quot;: 6.6731,
+  &quot;fed_nov5&quot;: 6.668,
+  &quot;fed_nov6&quot;: 6.676
+}</pre></td>
+</tr>
+<tr id="B07">
+<th scope="row" data-label="ID">B07</th>
+<td data-label="Publisher / official link"><strong>U.S. Internal Revenue Service</strong><br><a href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B07</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Yearly average currency exchange rates</strong><br><span class="small">Translating foreign currency into U.S. dollars; Currency exchange rates; China row</span></td>
+<td data-label="Exact text read"><pre class="quote">In general, use the exchange rate prevailing (i.e., the spot rate) when you receive, pay or accrue the item.
+A taxpayer may also need to recognize foreign currency gain or loss on certain foreign currency transactions. See section 988 of the Internal Revenue Code and the regulations thereunder.
+The Internal Revenue Service has no official exchange rate. Generally, it accepts any posted exchange rate that is used consistently.
+China | Yuan | 7.129 | 7.189 | 7.075 | 6.730 | 6.452</pre></td>
+<td data-label="Reading">For U.S. tax translation, use the spot rate when the item is received/paid/accrued; the IRS has no official exchange rate and generally accepts a consistently used posted rate. Yearly averages for China are 7.129 (2025), 7.189 (2024), 7.075 (2023), 6.730 (2022), 6.452 (2021). Currency gain may need recognition under §988.</td>
+<td data-label="Limits">Yearly averages are not acquisition-basis evidence or an executable rate for an individual&#x27;s CNY.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;irs_2025&quot;: 7.129,
+  &quot;irs_2024&quot;: 7.189,
+  &quot;irs_2023&quot;: 7.075,
+  &quot;irs_2022&quot;: 6.73,
+  &quot;irs_2021&quot;: 6.452
+}</pre></td>
+</tr>
+<tr id="B08">
+<th scope="row" data-label="ID">B08</th>
+<td data-label="Publisher / official link"><strong>State Administration of Foreign Exchange</strong><br><a href="https://www.safe.gov.cn/safe/2007/0105/5320.html" target="_blank" rel="noopener noreferrer" title="State Administration of Foreign Exchange">B08</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>个人外汇管理办法实施细则 (汇发[2007]1号, as modified)</strong><br><span class="small">Articles 2, 3, 12, 13, 14, 15, 30, 31, 39 repeal note and Article 9 amendment note</span></td>
+<td data-label="Exact text read"><pre class="quote">第二条 对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。国家外汇管理局可根据国际收支状况，对年度总额进行调整。
+第三条 个人所购外汇，可以汇出境外、存入本人外汇储蓄账户，或按照有关规定携带出境。
+第十三条 境外个人经常项目合法人民币收入购汇及未用完的人民币兑回，按以下规定办理：
+（一）在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。
+第十四条 境内个人外汇汇出境外用于经常项目支出，按以下规定办理：
+外汇储蓄账户内外汇汇出境外当日累计等值5万美元以下（含）的，凭本人有效身份证件在银行办理；超过上述金额的，凭经常项目项下有交易额的真实性凭证办理。
+第十五条 境外个人经常项目外汇汇出境外，按以下规定在银行办理：
+（一）外汇储蓄账户内外汇汇出，凭本人有效身份证件办理；
+第三十条 个人提取外币现钞当日累计等值1万美元以下（含）的，可以在银行直接办理；超过上述金额的，凭本人有效身份证件、提钞用途证明等材料向银行所在地外汇局事前报备。银行凭本人有效身份证件和经外汇局签章的《提取外币现钞备案表》（附1）为个人办理提取外币现钞手续。
+以下内容已被废止：《个人外汇管理办法实施细则》（汇发〔2007〕1号印发）第三十九条。</pre></td>
+<td data-label="Reading">USD 50,000 annual convenience quota applies to domestic individuals&#x27; purchase and all individuals&#x27; settlement, not automatically to every foreign national. Purchased FX may be remitted, held in the person&#x27;s own FX savings account, or carried out under the cash rules. Foreign individuals convert lawful current-account RMB income with ID, transaction-amount source documents and tax certificate. Foreign individuals may remit FX from their FX savings account with ID. Cash withdrawal of more than USD 10,000 equivalent in a day requires advance reporting to SAFE. Article 39&#x27;s penalty has been repealed; Article 9(2) was amended.</td>
+<td data-label="Limits">The page is marked 已修改 (modified); repealed/amended passages must not be quoted as current without qualification.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;annual_quota_usd&quot;: 50000,
+  &quot;wire_daily_usd&quot;: 50000,
+  &quot;cash_wire_daily_usd&quot;: 10000,
+  &quot;cash_withdraw_daily_usd&quot;: 10000,
+  &quot;cash_deposit_daily_usd&quot;: 5000,
+  &quot;unspent_small_usd&quot;: 500,
+  &quot;airport_small_usd&quot;: 1000,
+  &quot;exchange_memo_months&quot;: 24,
+  &quot;old_bank_fine_cny&quot;: 30000,
+  &quot;old_person_fine_cny&quot;: 1000
+}</pre></td>
+</tr>
+<tr id="B09">
+<th scope="row" data-label="ID">B09</th>
+<td data-label="Publisher / official link"><strong>State Council / State Administration of Foreign Exchange</strong><br><a href="https://www.safe.gov.cn/safe/2008/0806/5321.html" target="_blank" rel="noopener noreferrer" title="State Council / State Administration of Foreign Exchange">B09</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>中华人民共和国外汇管理条例 (国务院令第532号)</strong><br><span class="small">Articles 5, 12, 22, 39, 40, 42, 45 and 52(2)</span></td>
+<td data-label="Exact text read"><pre class="quote">第五条　国家对经常性国际支付和转移不予限制。
+第十二条　经常项目外汇收支应当具有真实、合法的交易基础。经营结汇、售汇业务的金融机构应当按照国务院外汇管理部门的规定，对交易单证的真实性及其与外汇收支的一致性进行合理审查。
+第二十二条　资本项目外汇支出，应当按照国务院外汇管理部门关于付汇与购汇的管理规定，凭有效单证以自有外汇支付或者向经营结汇、售汇业务的金融机构购汇支付。国家规定应当经外汇管理机关批准的，应当在外汇支付前办理批准手续。
+第三十九条　有违反规定将境内外汇转移境外，或者以欺骗手段将境内资本转移境外等逃汇行为的，由外汇管理机关责令限期调回外汇，处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。
+第四十条　有违反规定以外汇收付应当以人民币收付的款项，或者以虚假、无效的交易单证等向经营结汇、售汇业务的金融机构骗购外汇等非法套汇行为的，由外汇管理机关责令对非法套汇资金予以回兑，处非法套汇金额30%以下的罚款；情节严重的，处非法套汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。
+第四十二条　违反规定携带外汇出入境的，由外汇管理机关给予警告，可以处违法金额20%以下的罚款。法律、行政法规规定由海关予以处罚的，从其规定。
+第四十五条　私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的，由外汇管理机关给予警告，没收违法所得，处违法金额30%以下的罚款；情节严重的，处违法金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。
+（二）境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人，外国驻华外交人员和国际组织驻华代表除外。</pre></td>
+<td data-label="Reading">Current-account international payments and transfers are not restricted, but underlying transactions must be real and lawful and banks must reasonably review documents. Capital payments need valid documents and approval where required. Evasion, fraudulent FX purchase and private/underground FX dealing carry fines up to 30% of the amount (or, in serious cases, from 30% up to an equal amount) and possible criminal liability. Improperly carrying FX across the border can carry a fine up to 20%. A &#x27;domestic individual&#x27; includes a foreigner continuously resident in China for at least one year, excluding certain diplomats.</td>
+<td data-label="Limits">The statute does not set a bank&#x27;s execution rate, a personal eligibility outcome or a tax rate; no tax amount is inferred.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;fine_standard_pct&quot;: 30,
+  &quot;cash_violation_pct&quot;: 20,
+  &quot;domestic_resident_years&quot;: 1
+}</pre></td>
+</tr>
+<tr id="B10">
+<th scope="row" data-label="ID">B10</th>
+<td data-label="Publisher / official link"><strong>SAFE Tianjin Branch</strong><br><a href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer" title="SAFE Tianjin Branch">B10</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>2026年外汇管理互联网信息——个人外汇（08）</strong><br><span class="small">Question and answer; quotation of 汇发〔2020〕14号 Article 59</span></td>
+<td data-label="Exact text read"><pre class="quote">境外个人在境内工作期间取得的劳动报酬如何购汇汇出？
+答：根据《国家外汇管理局关于印发〈经常项目外汇业务指引（2020年版）〉的通知》（汇发〔2020〕14号）第五十九条规定，“境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇”。</pre></td>
+<td data-label="Reading">A SAFE branch FAQ confirms that a foreign individual&#x27;s lawful current-account RMB income earned in China may be used to purchase FX at a bank with valid ID, transaction-amount source materials and tax documentation.</td>
+<td data-label="Limits">Branch FAQ; establishes documentary rule, not that the user&#x27;s particular balance qualifies.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;guide_article&quot;: 59
+}</pre></td>
+</tr>
+<tr id="B11">
+<th scope="row" data-label="ID">B11</th>
+<td data-label="Publisher / official link"><strong>SAFE Tianjin Branch</strong><br><a href="https://www.safe.gov.cn/tianjin/2024/0621/2529.html" target="_blank" rel="noopener noreferrer" title="SAFE Tianjin Branch">B11</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>2024年经常项目外汇政策问答案例（九）</strong><br><span class="small">境外个人是否享受年度便利化额度购汇？</span></td>
+<td data-label="Exact text read"><pre class="quote">境外个人是否享受年度便利化额度购汇？
+根据《国家外汇管理局关于印发〈经常项目外汇业务指引（2020年版）〉的通知》（汇发〔2020〕14号）第五十九条，境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。</pre></td>
+<td data-label="Reading">Foreign individuals generally use the documented-lawful-income route; holders of a foreign permanent-residence ID card may use the annual convenience quota. A U.S. passport alone does not establish quota eligibility.</td>
+<td data-label="Limits">Branch FAQ; local bank implementation and personal status remain unverified.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;guide_article&quot;: 59
+}</pre></td>
+</tr>
+<tr id="B12">
+<th scope="row" data-label="ID">B12</th>
+<td data-label="Publisher / official link"><strong>State Administration of Foreign Exchange</strong><br><a href="https://www.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="State Administration of Foreign Exchange">B12</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>汇发[2014]2号 §VI — simplified personal property transfers (as modified)</strong><br><span class="small">Section VI (一)–(四); effective date; 2023 amendment note</span></td>
+<td data-label="Exact text read"><pre class="quote">六、简化个人财产转移售付汇管理
+（一）移民财产转移购付汇核准，由移民原户籍所在地外汇局负责审批。继承财产转移购付汇核准，由被继承人生前户籍所在地外汇局负责审批。取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。
+（二）取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。
+（三）取消继承人从不同被继承人处继承的财产应分别申请、分别汇出的要求。继承人从不同被继承人处继承财产，可选择其中一个被继承人生前户籍所在地外汇局合并提交申请材料，经核准后可在银行一次或分次汇出相关资金。
+（四）取消对有关财产权利文件（如房屋产权证、房地产买卖契约或拆迁补偿安置协议、承包或租赁合同或协议、财产转让协议或合同、特许权使用协议或合同等）进行公证的要求；取消对委托代理协议、代理人身份证明进行公证的要求。
+本通知自2014年2月10日起实施，以前规定与本通知不符的，以本通知为准。</pre></td>
+<td data-label="Reading">The original-hukou SAFE office approves emigrant transfers; the deceased&#x27;s hukou office approves inheritance transfers. HQ filing above CNY 500,000, the compulsory staged-emigrant-remittance requirement, separate applications for multiple inheritances and notarisation of listed documents were abolished. Banks may remit once or in instalments within the approved amount.</td>
+<td data-label="Limits">This later rule supersedes contradictory staged/HQ-filing wording in PBOC 2004 No.16; see F-18.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;notice_year&quot;: 2014,
+  &quot;hq_filing_threshold_cny&quot;: 500000,
+  &quot;effective_date&quot;: &quot;2014-02-10&quot;
+}</pre></td>
+</tr>
+<tr id="B13">
+<th scope="row" data-label="ID">B13</th>
+<td data-label="Publisher / official link"><strong>People&#x27;s Bank of China / State Council Gazette</strong><br><a href="https://www.gov.cn/gongbao/content/2005/content_64294.htm" target="_blank" rel="noopener noreferrer" title="People&#x27;s Bank of China / State Council Gazette">B13</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>个人财产对外转移售付汇管理暂行办法 (PBOC 2004 No.16)</strong><br><span class="small">Articles 2, 6, 8, 9, 10, 11, 12</span></td>
+<td data-label="Exact text read"><pre class="quote">第二条　本办法所称个人财产对外转移包括移民财产转移（以下简称移民转移）和继承财产转移（以下简称继承转移）。移民转移是指从中国内地移居外国，或者赴香港特别行政区、澳门特别行政区定居的自然人（以下简称移民），将其在取得移民身份之前在境内拥有的合法财产变现，通过外汇指定银行购汇和汇出境外的行为。继承转移是指外国公民或香港特别行政区、澳门特别行政区居民（以下简称继承人）将依法继承的境内遗产变现，通过外汇指定银行购汇和汇出境外的行为。
+第六条　移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万元）的，经批准后可一次性汇出。
+（四）移居外国的，应当提供公安机关出具的中国户籍注销证明和中国驻外使领馆出具或认证的申请人在国外定居证明。
+（六）申请转移财产所在地或收入来源地主管税务机关开具的税收证明或完税凭证。
+（四）申请人获得继承财产的证明文件。
+（五）被继承人财产权利证明文件和被继承人财产所在地主管税务机关开具的税收证明或完税凭证。
+第十条　申请财产对外转移总金额在等值人民币50万元以下（含50万元）的，由所在地外汇局审批。经批准后，所在地外汇局向申请人出具批准复函和核准件，申请人持核准件到当地外汇指定银行办理购付汇手续。
+第十一条　外汇指定银行办理售汇后，应直接将外汇汇往移民或继承人居住国或地区申请人本人的账户，不得在境内提取外币现钞。
+法律规定不得对外转移的财产、不能证明合法来源财产等的对外转移申请，外汇局不予受理。</pre></td>
+<td data-label="Reading">Defines emigrant and inheritance property transfers. Requires ID, hukou cancellation/settlement evidence, source/title documents and tax certificate; the bank must remit to the applicant&#x27;s own overseas account and may not pay domestic FX cash. Article 6&#x27;s staged schedule and Article 10&#x27;s HQ-approval clause have been superseded by B12 §VI and are not used as current instructions.</td>
+<td data-label="Limits">Historical text with later modifications; do not use Article 6 staging as current law.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;notice_year&quot;: 2004,
+  &quot;article&quot;: 6,
+  &quot;old_hq_threshold_cny&quot;: 500000,
+  &quot;old_one_off_cny&quot;: 200000,
+  &quot;old_first_half&quot;: 0.5,
+  &quot;old_wait_years&quot;: 2
+}</pre></td>
+</tr>
+<tr id="B14">
+<th scope="row" data-label="ID">B14</th>
+<td data-label="Publisher / official link"><strong>SAFE Hebei Branch</strong><br><a href="https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf" target="_blank" rel="noopener noreferrer" title="SAFE Hebei Branch">B14</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>移民财产转移购付汇核准 service guide</strong><br><span class="small">Conditions; application materials; times; fees; approval result; on-site visit</span></td>
+<td data-label="Exact text read"><pre class="quote">（一）准予行政许可的条件
+1. 申请人取得外国永久居留权、外国公民身份或港澳台地区居民身份。
+2.申请汇出资金为申请人在取得外国永久居留权、外国公民身份或港澳台地区居民身份之前在境内拥有的合法财产变现。
+3.申请人收入来源证明以及财产权利证明文件。
+4.主管税务部门出具的税务证明原件（按规定无需提交的除外），如个人确有需求，可在原件上加注业务办理情况，原件返
+（一）承诺受理时限：5 个工作日
+（二）法定审批时限：20 个工作日
+（一）办理行政许可是否收费：否
+（二）审批结果名称：《资本项目外汇业务核准件》
+（三）审批结果的有效期限：当次
+（七）到办事现场次数：1</pre></td>
+<td data-label="Reading">A published provincial service guide requires foreign permanent residence/citizenship or HK/Macau/Taiwan resident status and property owned before that status; it lists income-source, title and tax-proof documents. Acceptance is promised in 5 working days, decision in 20 working days, no administrative fee, a single-use approval document and one in-person visit.</td>
+<td data-label="Limits">Provincial guide, not a bank tariff. Bank FX rate, wire, intermediary and receiving fees remain blank; see F-09.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;accept_working_days&quot;: 5,
+  &quot;decision_working_days&quot;: 20,
+  &quot;admin_fee&quot;: 0,
+  &quot;approval_uses&quot;: 1,
+  &quot;onsite_visits&quot;: 1,
+  &quot;public_official_referral_cny&quot;: 1000000
+}</pre></td>
+</tr>
+<tr id="B15">
+<th scope="row" data-label="ID">B15</th>
+<td data-label="Publisher / official link"><strong>State Administration of Foreign Exchange</strong><br><a href="https://www.safe.gov.cn/safe/2015/1231/5442.html" target="_blank" rel="noopener noreferrer" title="State Administration of Foreign Exchange">B15</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>汇发[2015]49号 — personal FX management and watch list</strong><br><span class="small">Sections 2(一)–(三) and effective date</span></td>
+<td data-label="Exact text read"><pre class="quote">二、个人在办理外汇业务时，应当遵守个人外汇管理有关规定，不得以分拆等方式规避额度及真实性管理。国家外汇管理局及其分支局（以下简称外汇局）对规避额度及真实性管理的个人实施“关注名单”管理。
+（二）外汇局对以借用他人额度等方式规避额度及真实性管理的个人，列入“关注名单”管理，并通过银行以《个人外汇业务“关注名单”告知书》（见附件2）予以告知。
+（三）“关注名单”内个人的关注期限为列入“关注名单”的当年及之后连续2年。在关注期限内，“关注名单”内个人办理个人结售汇业务，应凭本人有效身份证件和有交易额的相关证明等材料在银行办理。银行应当按照真实性审核原则，严格审核相关证明材料。
+七、本通知自2016年1月1日起施行。</pre></td>
+<td data-label="Reading">Splitting or borrowing other people&#x27;s quotas to evade quota/authenticity management is prohibited; people who do so can be placed on a watch list for the year of listing plus the following two years and must provide full documentation during that period.</td>
+<td data-label="Limits">No account-specific watch-list status is known.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;watch_following_years&quot;: 2,
+  &quot;effective_date&quot;: &quot;2016-01-01&quot;
+}</pre></td>
+</tr>
+<tr id="B16">
+<th scope="row" data-label="ID">B16</th>
+<td data-label="Publisher / official link"><strong>State Administration of Foreign Exchange</strong><br><a href="https://www.safe.gov.cn/en/2017/1230/1397.html" target="_blank" rel="noopener noreferrer" title="State Administration of Foreign Exchange">B16</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Circular on Regulating Large-sum Overseas Cash Withdrawals with Bank Cards</strong><br><span class="small">Sections I, IV, VII and translation note</span></td>
+<td data-label="Exact text read"><pre class="quote">I. In overseas cash withdrawals by individuals with domestic bank cards, the sum of withdrawals using the bank cards under the name of the individual (including supplementary cards) shall not exceed the equivalent of RMB 100,000 in every civil year. In case of overseas cash withdrawals in excess of the annual quota, the individuals will not be allowed to withdraw cash overseas with the domestic bank cards in the current and second years.
+IV. For overseas cash withdrawals by individuals with their domestic bank cards, the ceiling for every foreign currency card per day is to be adjusted from the equivalent of USD 1,000 to the equivalent of RMB 10,000, which will be ensured by the card-issuing financial institutions through their business systems. The RMB card will continue to be subject to the ceiling of the equivalent of RMB 10,000 per card per day, which will be ensured by the domestic RMB card clearing organizations through their business systems.
+The English translation may only be used as a reference. In case a different interpretation of the translated information contained in this website arises, the original Chinese shall prevail.</pre></td>
+<td data-label="Reading">Domestic cards used abroad are capped at RMB 100,000 per person per calendar year and RMB 10,000 per card per day. Exceeding the annual cap blocks overseas cash withdrawals in the current and second years. The English text is a reference translation only.</td>
+<td data-label="Limits">This is a cash-withdrawal ceiling, not an FX conversion rate or a fee schedule.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;atm_year_cny&quot;: 100000,
+  &quot;atm_day_cny&quot;: 10000,
+  &quot;withdrawal_ban_years&quot;: 2,
+  &quot;old_daily_usd&quot;: 1000
+}</pre></td>
+</tr>
+<tr id="B17">
+<th scope="row" data-label="ID">B17</th>
+<td data-label="Publisher / official link"><strong>SAFE / General Administration of Customs / State Council Gazette</strong><br><a href="https://www.gov.cn/gongbao/content/2004/content_63085.htm" target="_blank" rel="noopener noreferrer" title="SAFE / General Administration of Customs / State Council Gazette">B17</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>携带外币现钞出入境管理暂行办法 (汇发〔2003〕102号)</strong><br><span class="small">Notice paragraph 2; Articles 5, 7–11</span></td>
+<td data-label="Exact text read"><pre class="quote">出境人员携带不超过等值5000美元(含5000美元)的外币现钞出境的，无须申领《携带证》，海关予以放行；出境人员携带外币现钞金额在等值5000美元以上至10000美元(含10000美元)的，应向外汇指定银行申领《携带证》，海关凭加盖外汇指定银行印章的《携带证》验放；出境人员原则上不得携带超过等值10000美元的外币现钞出境，对属于下列特殊情况之一的，出境人员可以向外汇局申领《携带证》：
+一、出境人员携出金额在等值5000美元以内(含5000美元)的，不需申领《携带证》，海关予以放行。当天多次往返及短期内多次往返者除外。
+二、出境人员携出金额在等值5000美元以上至10000美元(含10000美元)的，应当向银行申领《携带证》。出境时，海关凭加盖银行印章的《携带证》验放。对使用多张《携带证》的，若加盖银行印章的《携带证》累计总额超过等值10000美元，海关不予放行。
+三、出境人员携出金额在等值10000美元以上的，应当向存款或购汇银行所在地国家外汇管理局各分支局(以下简称外汇局)申领《携带证》，海关凭加盖外汇局印章的《携带证》验放。
+第十一条　《携带证》应盖有“国家外汇管理局携带外汇出境核准章”或“银行携带外汇出境专用章”，并自签发之日起30天内一次使用有效。</pre></td>
+<td data-label="Reading">Up to USD 5,000 equivalent in foreign notes may be carried out without a permit; USD 5,000–10,000 requires a bank-issued carry permit; over USD 10,000 is in principle not allowed and requires a SAFE permit in special cases. Each permit is valid 30 days for one use.</td>
+<td data-label="Limits">A permit rule, not a fee, exchange rate or U.S. entry permission. No cash-handling cost is published here.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;no_permit_usd&quot;: 5000,
+  &quot;bank_permit_upper_usd&quot;: 10000,
+  &quot;permit_valid_days&quot;: 30,
+  &quot;same_day_second_usd&quot;: 500,
+  &quot;short_trip_second_usd&quot;: 1000
+}</pre></td>
+</tr>
+<tr id="B18">
+<th scope="row" data-label="ID">B18</th>
+<td data-label="Publisher / official link"><strong>People&#x27;s Bank of China and other PRC authorities</strong><br><a href="https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html" target="_blank" rel="noopener noreferrer" title="People&#x27;s Bank of China and other PRC authorities">B18</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>银发〔2026〕42号 — virtual-currency risk notice</strong><br><span class="small">Section I(一), stablecoin paragraph, Section VI(十八)–(十九)</span></td>
+<td data-label="Exact text read"><pre class="quote">虚拟货币相关业务活动属于非法金融活动。在境内开展法定货币与虚拟货币兑换业务、虚拟货币之间的兑换业务、作为中央对手方买卖虚拟货币、为虚拟货币交易提供信息中介和定价服务、代币发行融资以及虚拟货币相关金融产品交易等虚拟货币相关业务活动，涉嫌非法发售代币票券、擅自公开发行证券、非法经营证券期货业务、非法集资等非法金融活动，一律严格禁止，坚决依法取缔。境外单位和个人不得以任何形式非法向境内主体提供虚拟货币相关服务。
+挂钩法定货币的稳定币在流通使用中变相履行了法定货币的部分功能。未经相关部门依法依规同意，境内外任何单位和个人不得在境外发行挂钩人民币的稳定币。
+（十八）违反本通知规定开展虚拟货币、现实世界资产代币化相关非法金融活动，以及为虚拟货币、现实世界资产代币化相关业务提供服务的，依照有关规定予以处罚；构成犯罪的，依法追究刑事责任。
+（十九）任何单位和个人投资虚拟货币、现实世界资产代币及相关金融产品，违背公序良俗的，相关民事法律行为无效，由此引发的损失由其自行承担；涉嫌破坏金融秩序、危害金融安全的，由相关部门依法查处。</pre></td>
+<td data-label="Reading">Fiat-to-virtual-currency exchange and related virtual-currency business in China are illegal financial activities and are strictly prohibited. Unapproved offshore issuance of RMB-linked stablecoins and illegal provision of services to domestic parties are prohibited. Penalties follow other rules; losses from covered investments are borne by the investor.</td>
+<td data-label="Limits">This page does not publish a numeric fine for a personal conversion attempt; penalties blank; see F-21.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;notice_date&quot;: &quot;2026-02-06&quot;
+}</pre></td>
+</tr>
+<tr id="B19">
+<th scope="row" data-label="ID">B19</th>
+<td data-label="Publisher / official link"><strong>State Taxation Administration / SAFE</strong><br><a href="https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html" target="_blank" rel="noopener noreferrer" title="State Taxation Administration / SAFE">B19</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>国家税务总局 国家外汇管理局公告2013年第40号 (as amended)</strong><br><span class="small">Article 1; Article 3(13); Article 4; headnote on 2021 repeals</span></td>
+<td data-label="Exact text read"><pre class="quote">一、境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元，下同）下列外汇资金，除本公告第三条规定的情形外，均应向所在地主管税务机关进行税务备案：
+（十三）境内个人境外留学、旅游、探亲等因私用汇；
+四、境外个人办理服务贸易、收益和经常转移项下对外支付，应按照个人外汇管理的相关规定办理。
+1.根据《国家税务总局 国家外汇管理局关于服务贸易等项目对外支付税务备案有关问题的补充公告》（国家税务总局 国家外汇管理局公告2021年第19号），自2021年6月29日起，本文第一条第二款、第二条第二款、第五条、第六条、第七条、第八条、第十条和附件2同时废止。</pre></td>
+<td data-label="Reading">A single outward payment above USD 50,000 in listed service-trade/income/current-transfer categories generally requires tax filing, with exemptions including an individual&#x27;s overseas study, tourism and visiting relatives. Foreign individuals&#x27; current-account payments follow personal FX rules. Several clauses of this 2013 notice were repealed in 2021; applicability to a transfer of one&#x27;s own savings is not determined here.</td>
+<td data-label="Limits">Modified text; no conclusion about the user&#x27;s particular payment purpose or tax filing is inferred.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;tax_filing_usd&quot;: 50000,
+  &quot;amendment_date&quot;: &quot;2021-06-29&quot;
+}</pre></td>
+</tr>
+<tr id="B20">
+<th scope="row" data-label="ID">B20</th>
+<td data-label="Publisher / official link"><strong>National People&#x27;s Congress / Shanghai Tax Service</strong><br><a href="https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html" target="_blank" rel="noopener noreferrer" title="National People&#x27;s Congress / Shanghai Tax Service">B20</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>中华人民共和国个人所得税法</strong><br><span class="small">Articles 1, 2, 3, 10, 13, 19; rate table 1</span></td>
+<td data-label="Exact text read"><pre class="quote">第一条　在中国境内有住所，或者无住所而一个纳税年度内在中国境内居住累计满一百八十三天的个人，为居民个人。居民个人从中国境内和境外取得的所得，依照本法规定缴纳个人所得税。
+第三条　个人所得税的税率：
+（一）综合所得，适用百分之三至百分之四十五的超额累进税率（税率表附后）；
+（二）经营所得，适用百分之五至百分之三十五的超额累进税率（税率表附后）；
+（三）利息、股息、红利所得，财产租赁所得，财产转让所得和偶然所得，适用比例税率，税率为百分之二十。
+（五）因移居境外注销中国户籍；
+纳税人因移居境外注销中国户籍的，应当在注销中国户籍前办理税款清算。
+第十九条　纳税人、扣缴义务人和税务机关及其工作人员违反本法规定的，依照《中华人民共和国税收征收管理法》和有关法律法规的规定追究法律责任。</pre></td>
+<td data-label="Reading">PRC individual income tax depends on residence (including the 183-day rule) and income category: comprehensive income 3–45%, business income 5–35%, and interest/dividends/property/other enumerated income 20%. Emigration with hukou cancellation requires tax clearance. This is tax on underlying income/assets, not a separately identified tax on the act of converting currency.</td>
+<td data-label="Limits">Personal residence, income character, deductions and tax-paid status are unknown; no personal rate or bill is calculated.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;resident_days&quot;: 183,
+  &quot;comprehensive_min_pct&quot;: 3,
+  &quot;comprehensive_max_pct&quot;: 45,
+  &quot;business_min_pct&quot;: 5,
+  &quot;business_max_pct&quot;: 35,
+  &quot;flat_pct&quot;: 20,
+  &quot;annual_deduction_cny&quot;: 60000,
+  &quot;nonresident_monthly_deduction_cny&quot;: 5000
+}</pre></td>
+</tr>
+<tr id="B21">
+<th scope="row" data-label="ID">B21</th>
+<td data-label="Publisher / official link"><strong>U.S. Internal Revenue Service</strong><br><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B21</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Report of Foreign Bank and Financial Accounts (FBAR)</strong><br><span class="small">Who must file; When to file; Penalties; Filing delinquent FBARs</span></td>
+<td data-label="Exact text read"><pre class="quote">A U.S. person, including a citizen, resident, corporation, partnership, limited liability company, trust and estate, must file an FBAR to report:
+1. a financial interest in or signature or other authority over at least one financial account located outside the United States if
+2. the aggregate value of those foreign financial accounts exceeded $10,000 at any time during the calendar year reported.
+The FBAR is an annual report, due April 15 following the calendar year reported. You’re allowed an automatic extension to October 15 if you fail to meet the FBAR annual due date of April 15. You don’t need to request an extension to file the FBAR.
+Generally, you must keep these records for five years from the due date of the FBAR.
+You may be subject to civil monetary penalties and/or criminal penalties for FBAR reporting and/or recordkeeping violations. Assertion of penalties depends on facts and circumstances. Civil FBAR penalty maximums in Title 31 of the United States Code are adjusted annually for inflation.</pre></td>
+<td data-label="Reading">A U.S. citizen with foreign accounts whose combined maximum exceeds USD 10,000 at any time in a year must file FinCEN Form 114; April 15 due date with automatic October 15 extension. It is a reporting duty, not a tax on conversion. Penalties depend on facts and are inflation-adjusted.</td>
+<td data-label="Limits">Prior filing history and account balances are unknown; see F-15.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;fbar_threshold_usd&quot;: 10000,
+  &quot;due_month&quot;: 4,
+  &quot;due_day&quot;: 15,
+  &quot;extension_month&quot;: 10,
+  &quot;extension_day&quot;: 15,
+  &quot;form&quot;: 114,
+  &quot;records_years&quot;: 5
+}</pre></td>
+</tr>
+<tr id="B22">
+<th scope="row" data-label="ID">B22</th>
+<td data-label="Publisher / official link"><strong>eCFR / FinCEN, U.S. Treasury</strong><br><a href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" target="_blank" rel="noopener noreferrer" title="eCFR / FinCEN, U.S. Treasury">B22</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>31 CFR 1010.821 — penalty adjustment table</strong><br><span class="small">Display date; Table 1 entries for 31 U.S.C. 5321(a)(5)(B)(i) and (C)(i)(I); amendment history</span></td>
+<td data-label="Exact text read"><pre class="quote">This content is from the eCFR and is authoritative but unofficial.
+Displaying title 31, up to date as of 11/09/2026. Title 31 was last amended 11/06/2026.
+Foreign Financial Agency Transaction—Non-Willful Violation of Transaction | 10,000 | 16,536
+Foreign Financial Agency Transaction—Willful Violation of Transaction | 100,000 | 165,353
+[90 FR 5630](https://www.federalregister.gov/citation/90-FR-5630), Jan. 17, 2025</pre></td>
+<td data-label="Reading">The displayed eCFR table gives adjusted maximum penalties of USD 16,536 for a non-willful foreign financial agency transaction violation and USD 165,353 for a willful violation. The table&#x27;s displayed amendment history ends with the 17 Jan 2025 Federal Register adjustment.</td>
+<td data-label="Limits">The eCFR says its content is authoritative but unofficial. No 2026 inflation adjustment is listed in the quoted amendment history; amounts may be stale; see F-17.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;nonwillful_usd&quot;: 16536,
+  &quot;willful_usd&quot;: 165353,
+  &quot;display_date&quot;: &quot;2026-11-09&quot;,
+  &quot;last_amended&quot;: &quot;2026-11-06&quot;,
+  &quot;latest_fr&quot;: &quot;90 FR 5630&quot;,
+  &quot;latest_fr_year&quot;: 2025
+}</pre></td>
+</tr>
+<tr id="B23">
+<th scope="row" data-label="ID">B23</th>
+<td data-label="Publisher / official link"><strong>U.S. Internal Revenue Service</strong><br><a href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B23</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Comparison of Form 8938 and FBAR requirements</strong><br><span class="small">Reporting threshold and Penalties rows; Form 8938 and FBAR columns</span></td>
+<td data-label="Exact text read"><pre class="quote">Specified individuals living in the US:
+- Unmarried individual (or married filing separately): Total value of assets was more than $50,000 on the last day of the tax year, or more than $75,000 at any time during the year.
+- Married individual filing jointly: Total value of assets was more than $100,000 on the last day of the tax year, or more than $150,000 at any time during the year.
+Specified individuals living outside the US:
+- Unmarried individual (or married filing separately): Total value of assets was more than $200,000 on the last day of the tax year, or more than $300,000 at any time during the year.
+- Married individual filing jointly: Total value of assets was more than $400,000 on the last day of the tax year, or more than $600,000 at any time during the year.
+Aggregate value of financial accounts exceeds $10,000 at any time during the calendar year. This is a cumulative balance, meaning if you have 2 accounts with a combined account balance greater than $10,000 at any one time, both accounts would have to be reported.
+Up to $10,000 for failure to disclose and an additional $10,000 for each 30 days of non-filing after IRS notice of a failure to disclose, for a potential maximum penalty of $60,000; criminal penalties may also apply</pre></td>
+<td data-label="Reading">Form 8938 thresholds depend on residence and filing status; for an unmarried individual in the U.S. they are &gt;USD 50,000 at year end or &gt;USD 75,000 during the year, and abroad &gt;USD 200,000 at year end or &gt;USD 300,000 during the year. FBAR uses &gt;USD 10,000 aggregate accounts. Form 8938 failure-to-disclose penalties can reach USD 60,000. Both forms may be required.</td>
+<td data-label="Limits">Residence, filing status and asset values are unknown; no filing conclusion is made.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;form&quot;: 8938,
+  &quot;form8938_us_joint_end_usd&quot;: 100000,
+  &quot;form8938_us_joint_any_usd&quot;: 150000,
+  &quot;form8938_abroad_joint_end_usd&quot;: 400000,
+  &quot;form8938_abroad_joint_any_usd&quot;: 600000,
+  &quot;form8938_us_single_end_usd&quot;: 50000,
+  &quot;form8938_us_single_any_usd&quot;: 75000,
+  &quot;form8938_abroad_single_end_usd&quot;: 200000,
+  &quot;form8938_abroad_single_any_usd&quot;: 300000,
+  &quot;form8938_penalty_usd&quot;: 10000,
+  &quot;form8938_max_penalty_usd&quot;: 60000,
+  &quot;fbar_threshold_usd&quot;: 10000
+}</pre></td>
+</tr>
+<tr id="B24">
+<th scope="row" data-label="ID">B24</th>
+<td data-label="Publisher / official link"><strong>U.S. Internal Revenue Service</strong><br><a href="https://www.irs.gov/businesses/gifts-from-foreign-person" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B24</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Gifts from foreign person</strong><br><span class="small">Reporting requirements; filing due date</span></td>
+<td data-label="Exact text read"><pre class="quote">For gifts or bequests from a nonresident alien or foreign estate, you are required to report the receipt of such gifts or bequests only if the aggregate amount received from that nonresident alien or foreign estate, or foreign person that you know or have reason to know are related to the nonresident alien or foreign estate, exceeds $100,000 during the taxable year. If the gifts or bequests exceed $100,000, you must separately identify each gift in excess of $5,000.
+For purported gifts from foreign corporations or foreign partnerships, you are required to report the receipt of such purported gifts only if the aggregate amount received from all foreign corporations, foreign partnerships, or foreign persons that you know or have reason to know are related to the foreign corporation or foreign partnership, exceeds $20,116 for 2025, and $20,573 for 2026 (adjusted annually for inflation).
+If you are a U.S. person (other than an organization described in IRC section 501(c) and exempt from tax under IRC section 501(a)) who received a large gift or bequest from a foreign person, you need to complete Part IV of Form 3520</pre></td>
+<td data-label="Reading">A U.S. person reports large foreign gifts/bequests on Form 3520 Part IV: &gt;USD 100,000 aggregate from a nonresident alien/foreign estate, or &gt;USD 20,573 in 2026 from foreign corporations/partnerships. Gifts from related parties are aggregated. This applies only if the funds are a gift/bequest.</td>
+<td data-label="Limits">The origin of the CNY balance is unknown; no gift/bequest characterization is inferred.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;gift_nra_usd&quot;: 100000,
+  &quot;gift_entity_2025_usd&quot;: 20116,
+  &quot;gift_entity_2026_usd&quot;: 20573,
+  &quot;separate_gift_usd&quot;: 5000,
+  &quot;form&quot;: 3520
+}</pre></td>
+</tr>
+<tr id="B25">
+<th scope="row" data-label="ID">B25</th>
+<td data-label="Publisher / official link"><strong>U.S. Internal Revenue Service</strong><br><a href="https://www.irs.gov/instructions/i2555" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B25</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Instructions for Form 2555 (2026)</strong><br><span class="small">What&#x27;s New — Exclusion amount; Who Qualifies — tax home test</span></td>
+<td data-label="Exact text read"><pre class="quote">For 2026, the maximum exclusion amount has increased to $132,900.
+You may qualify for the foreign earned income exclusion and the housing exclusion or deduction if both of the following apply.
+- You meet the tax home test (discussed later).
+- You meet either the bona fide residence test or the physical presence test (discussed later).
+You aren’t considered to have a tax home in a foreign country for any period during which your abode is in the United States, unless you are serving in support of the U.S. Armed Forces in an area designated as a combat zone.
+Income from working abroad as an employee of the U.S. Government does not qualify for either of the exclusions or the housing deduction. Don’t file Form 2555.</pre></td>
+<td data-label="Reading">The 2026 foreign earned income exclusion cap is USD 132,900, but eligibility requires a foreign tax home and either bona fide residence or physical presence; an abode in the United States generally defeats the tax-home test.</td>
+<td data-label="Limits">Eligibility is fact-specific and unverified; this is earned-income treatment, not a conversion or principal-tax rule.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;form&quot;: 2555,
+  &quot;feie_2026_usd&quot;: 132900
+}</pre></td>
+</tr>
+<tr id="B26">
+<th scope="row" data-label="ID">B26</th>
+<td data-label="Publisher / official link"><strong>U.S. Internal Revenue Service</strong><br><a href="https://www.irs.gov/pub/irs-drop/rp-26-35.pdf" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B26</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Rev. Proc. 2026-35 — 2027 inflation adjustments</strong><br><span class="small">Sections 3.41, 3.46(1), 3.51</span></td>
+<td data-label="Exact text read"><pre class="quote">.41 Foreign Earned Income Exclusion. For taxable years beginning in 2027, the foreign earned income exclusion amount under § 911(b)(2)(D)(i) is $137,300.
+(1) For calendar year 2027, the first $20,000 of gifts to any person (other than gifts of future interests in property) are not included in the total amount of taxable gifts under § 2503 made during that year.
+.51 Notice of Large Gifts Received from Foreign Persons. For taxable years beginning in 2027, § 6039F authorizes the Secretary of the Treasury or the Secretary&#x27;s delegate to require recipients of gifts from certain foreign persons to report these gifts if the aggregate value of gifts received in the taxable year exceeds $21,240.31.</pre></td>
+<td data-label="Reading">For 2027, the FEIE is USD 137,300; the annual gift exclusion is USD 20,000; the §6039F large-foreign-gift notice threshold is USD 21,240.31. These are 2027 amounts, not 2026 transfer figures.</td>
+<td data-label="Limits">Do not apply 2027 figures to a 2026 transaction; prior repository claims that the 2027 FEIE is unverified are conflicts.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;tax_year&quot;: 2027,
+  &quot;section&quot;: 6039,
+  &quot;feie_2027_usd&quot;: 137300,
+  &quot;gift_exclusion_2027_usd&quot;: 20000,
+  &quot;foreign_gift_notice_2027_usd&quot;: 21240.31
+}</pre></td>
+</tr>
+<tr id="B27">
+<th scope="row" data-label="ID">B27</th>
+<td data-label="Publisher / official link"><strong>U.S. Government Publishing Office</strong><br><a href="https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm" target="_blank" rel="noopener noreferrer" title="U.S. Government Publishing Office">B27</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>26 U.S.C. §988 (2024 edition)</strong><br><span class="small">§988(a)(1)(A), (c)(1)(C), (e)(1)–(3)</span></td>
+<td data-label="Exact text read"><pre class="quote">Except as otherwise provided in this section, any foreign currency gain or loss attributable to a section 988 transaction shall be computed separately and treated as ordinary income or loss (as the case may be).
+In the case of any disposition of any nonfunctional currency—
+(I) such disposition shall be treated as a section 988 transaction, and
+(II) any gain or loss from such transaction shall be treated as foreign currency gain or loss (as the case may be).
+The preceding provisions of this section shall not apply to any section 988 transaction entered into by an individual which is a personal transaction.
+no gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.</pre></td>
+<td data-label="Reading">Disposition of nonfunctional currency is a §988 transaction; an individual&#x27;s personal-transaction FX gain is not recognized only when the otherwise recognized gain does not exceed USD 200. Larger personal gains and non-personal transactions are ordinary income/loss, taxed at rates determined elsewhere.</td>
+<td data-label="Limits">Acquisition date/rate, whether the transaction is personal, and the applicable U.S. ordinary rate are unknown; no tax amount is inferred.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;section&quot;: 988,
+  &quot;personal_de_minimis_usd&quot;: 200
+}</pre></td>
+</tr>
+<tr id="B28">
+<th scope="row" data-label="ID">B28</th>
+<td data-label="Publisher / official link"><strong>U.S. Customs and Border Protection</strong><br><a href="https://www.cbp.gov/travel/international-visitors/money-monetary-instruments" target="_blank" rel="noopener noreferrer" title="U.S. Customs and Border Protection">B28</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Money and Other Monetary Instruments</strong><br><span class="small">Federal Mandate; Who Must File; What if I don&#x27;t file?</span></td>
+<td data-label="Exact text read"><pre class="quote">Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection (CBP). This requirement applies whether you are:
+- Anyone who brings, sends, or receives currency or monetary instruments totaling more than $10,000 at one time, either into or out of the United States, must report it. This includes individuals who transport, mail, or ship these items for themselves or on behalf of another person or business.
+- When families or groups are involved, the $10,000 threshold applies to the total amount they are carrying or sending collectively, not per individual.
+An Individual who fails to file a report or submit false or fraudulent information, risk having their currency or monetary instruments forfeited and seized. In some instances, they may face civil or criminal penalties such as fines or imprisonment.</pre></td>
+<td data-label="Reading">More than USD 10,000 in currency/monetary instruments entering or leaving the U.S. at one time must be reported on FinCEN Form 105; the threshold is collective for families/groups. Failure risks seizure and civil/criminal penalties. It is a reporting rule, not a tax.</td>
+<td data-label="Limits">No specific personal penalty amount is published here; blank; see F-11.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;cmir_threshold_usd&quot;: 10000,
+  &quot;form&quot;: 105
+}</pre></td>
+</tr>
+<tr id="B29">
+<th scope="row" data-label="ID">B29</th>
+<td data-label="Publisher / official link"><strong>U.S. Internal Revenue Service</strong><br><a href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B29</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Foreign Tax Credit</strong><br><span class="small">Opening; How to claim; Compliance issues bullets</span></td>
+<td data-label="Exact text read"><pre class="quote">If you paid or accrued foreign taxes to a foreign country or U.S. possession and are subject to U.S. tax on the same income, you may be able to take either a credit or an itemized deduction for those taxes.
+File Form 1116, Foreign Tax Credit (Individual, Estate, or Trust), to claim the foreign tax credit if you are an individual, estate or trust, and you paid or accrued certain foreign taxes to a foreign country or U.S. possession.
+If you elect to exclude either foreign earned income or foreign housing costs, you cannot take a foreign tax credit for taxes on income you exclude. If you do take the credit, one or both of the elections may be considered revoked.
+The amount of foreign tax that qualifies as a foreign tax credit is not necessarily the amount of tax withheld by the foreign country. If you are entitled to a reduced rate of foreign tax based on an income tax treaty between the United States and a foreign country, only that reduced tax qualifies for the credit.
+A foreign tax credit may not be claimed for taxes on income that you exclude from U.S. gross income, for example, the Foreign Earned Income Exclusion.</pre></td>
+<td data-label="Reading">A foreign tax credit under Form 1116 is available only for qualifying foreign taxes on the same income subject to U.S. tax; it is not a blanket dollar-for-dollar offset. No credit is allowed on income excluded under FEIE, and treaty-reduced tax may limit the credit.</td>
+<td data-label="Limits">Treaty text was not line-by-line verified in this session; no FTC amount is computed; see F-16.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;form&quot;: 1116
+}</pre></td>
+</tr>
+<tr id="B30">
+<th scope="row" data-label="ID">B30</th>
+<td data-label="Publisher / official link"><strong>U.S. Internal Revenue Service</strong><br><a href="https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B30</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>Streamlined filing compliance procedures</strong><br><span class="small">Purpose; Eligibility — non-willful certification; IRS Criminal Investigation practice</span></td>
+<td data-label="Exact text read"><pre class="quote">The streamlined filing compliance procedures (“streamlined procedures”) describe below are available to taxpayers certifying that their failure to report foreign financial assets and pay all tax due in respect of those assets did not result from willful conduct on their part.
+Non-willful conduct is conduct that is due to negligence, inadvertence, or mistake or conduct that is the result of a good faith misunderstanding of the requirements of the law
+If the IRS has initiated a civil examination of taxpayer&#x27;s returns for any taxable year, regardless of whether the examination relates to undisclosed foreign financial assets, the taxpayer will not be eligible to use the streamlined procedures.
+Taxpayers who are concerned that their failure to report income, pay tax, and submit required information returns was due to willful conduct and who therefore seek assurance that they will not be subject to criminal liability and/or substantial monetary penalties should consider participating in the IRS Criminal Investigation Voluntary Disclosure Practice and should consult with their professional or legal advisers.</pre></td>
+<td data-label="Reading">Streamlined procedures require certification of non-willful conduct; willful conduct requires a different voluntary-disclosure route and professional advice. Prior filing history is a gating fact.</td>
+<td data-label="Limits">No determination about the user&#x27;s filing history or willfulness is made.</td>
+<td data-label="Figures"><pre class="quote">{}</pre></td>
+</tr>
+<tr id="B31">
+<th scope="row" data-label="ID">B31</th>
+<td data-label="Publisher / official link"><strong>Bank of China</strong><br><a href="https://www.boc.cn/ebanking/bi3/bi31/202012/t20201231_18853335.html" target="_blank" rel="noopener noreferrer" title="Bank of China">B31</a><br><span class="small">bank primary · official 404 read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>BOC promotion link currently returns page-not-found</strong><br><span class="small">Linked as 优惠活动公告 from B03; page body</span></td>
+<td data-label="Exact text read"><pre class="quote">您访问的中国银行网站页面不存在</pre></td>
+<td data-label="Reading">The official fee schedule&#x27;s linked promotion announcement is unavailable. Any promotional or local discount cannot be verified from that official destination.</td>
+<td data-label="Limits">A 404 is not proof that no discount exists; it is proof that this page does not currently publish one. See F-07.</td>
+<td data-label="Figures"><pre class="quote">{}</pre></td>
+</tr>
+<tr id="B32">
+<th scope="row" data-label="ID">B32</th>
+<td data-label="Publisher / official link"><strong>State Taxation Administration taxpayer-service database</strong><br><a href="https://12366.chinatax.gov.cn/bzds/120/120-1-4.html" target="_blank" rel="noopener noreferrer" title="State Taxation Administration taxpayer-service database">B32</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>中华人民共和国税收征收管理法</strong><br><span class="small">Articles 32, 34, 44, 51, 52, 63; page disclaimer</span></td>
+<td data-label="Exact text read"><pre class="quote">本系统内所有内容仅供参考，具体税收政策，办税流程及表单填报要求等以法律法规及相关规定为准。
+第三十二条 纳税人未按照规定期限缴纳税款的，扣缴义务人未按照规定期限解缴税款的，税务机关除责令限期缴纳外，从滞纳税款之日起，按日加收滞纳税款万分之五的滞纳金。
+第三十四条 税务机关征收税款时，必须给纳税人开具完税凭证。扣缴义务人代扣、代收税款时，纳税人要求扣缴义务人开具代扣、代收税款凭证的，扣缴义务人应当开具。
+第四十四条 欠缴税款的纳税人或者他的法定代表人需要出境的，应当在出境前向税务机关结清应纳税款、滞纳金或者提供担保。未结清税款、滞纳金，又不提供担保的，税务机关可以通知出境管理机关阻止其出境。
+第六十三条 纳税人伪造、变造、隐匿、擅自销毁帐簿、记帐凭证，或者在帐簿上多列支出或者不列、少列收入，或者经税务机关通知申报而拒不申报或者进行虚假的纳税申报，不缴或者少缴应纳税款的，是偷税。对纳税人偷税的，由税务机关追缴其不缴或者少缴的税款、滞纳金，并处不缴或者少缴的税款百分之五十以上五倍以下的罚款；构成犯罪的，依法追究刑事责任。</pre></td>
+<td data-label="Reading">Late-paid tax accrues a daily 0.05% surcharge; tax payment certificates are issued; unpaid tax/surcharge can block departure without settlement or guarantee; tax evasion can lead to a fine of 50% to five times the underpaid tax. The hosting page says its contents are for reference and the law prevails.</td>
+<td data-label="Limits">These are enforcement rules, not a conversion tax; no personal overdue-tax status is known.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;late_daily_rate&quot;: 0.0005,
+  &quot;evasion_fine_min_multiple&quot;: 0.5,
+  &quot;evasion_fine_max_multiple&quot;: 5,
+  &quot;refund_years&quot;: 3,
+  &quot;general_pursuit_years&quot;: 3,
+  &quot;special_pursuit_years&quot;: 5
+}</pre></td>
+</tr>
+<tr id="B33">
+<th scope="row" data-label="ID">B33</th>
+<td data-label="Publisher / official link"><strong>People&#x27;s Bank of China and other PRC authorities</strong><br><a href="https://www.pbc.gov.cn/zhengwugongkai/4081330/4406346/4693545/4210907/index.html" target="_blank" rel="noopener noreferrer" title="People&#x27;s Bank of China and other PRC authorities">B33</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>银发〔2020〕330号 — cross-border RMB policy notice</strong><br><span class="small">Section IV (十三), (十四), Section V final paragraph</span></td>
+<td data-label="Exact text read"><pre class="quote">四、便利个人经常项目下跨境人民币收付
+（十三）支持个人经常项目下跨境人民币结算业务开展。支持境内银行在“展业三原则”的基础上，为个人办理经常项目下跨境人民币结算业务，进一步便利个人薪酬等合法合规收入的跨境收付业务。
+境内银行应不断丰富人民币金融产品，为市场主体在对外经贸活动和国际合作领域中使用人民币提供高效便捷的金融服务，同时按照《中华人民共和国反洗钱法》和其他有关规定，在办理跨境人民币业务时，应切实履行反洗钱、反恐怖融资、反逃税义务。</pre></td>
+<td data-label="Reading">Banks are supported in handling current-account cross-border RMB settlement for individuals, including lawful salary/compensation income, under know-your-customer, due-diligence and AML rules. The notice does not publish a general personal route, fee, rate or limit for moving an existing capital/savings balance abroad.</td>
+<td data-label="Limits">A direct RMB-to-overseas-account route is therefore listed as unverified, with blank costs; see F-12.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;notice_date&quot;: &quot;2020-12-31&quot;,
+  &quot;effective_date&quot;: &quot;2021-02-04&quot;
+}</pre></td>
+</tr>
+<tr id="B34">
+<th scope="row" data-label="ID">B34</th>
+<td data-label="Publisher / official link"><strong>U.S. Internal Revenue Service</strong><br><a href="https://www.irs.gov/forms-pubs/about-publication-901" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B34</a><br><span class="small">government · read 2026-11-11</span></td>
+<td data-label="Title / locator"><strong>About Publication 901, U.S. Tax Treaties</strong><br><span class="small">Opening description; current revision link</span></td>
+<td data-label="Exact text read"><pre class="quote">Publication 901 will tell you whether a tax treaty between the United States and a particular country offers a reduced rate of, or possibly a complete exemption from, U.S. income tax for residents of that particular country.
+Current revision: Publication 901 (09/2024), U.S. Tax Treaties</pre></td>
+<td data-label="Reading">Treaty effects depend on the specific treaty and the taxpayer&#x27;s residence. The official treaty publication exists and should be checked before claiming a reduced rate or exemption.</td>
+<td data-label="Limits">The treaty text was not read line-by-line in this session; no treaty conclusion is made; see F-16.</td>
+<td data-label="Figures"><pre class="quote">{
+  &quot;publication&quot;: 901,
+  &quot;revision&quot;: &quot;09/2024&quot;
+}</pre></td>
+</tr></tbody>
+</table></div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <p><strong>Research, not advice.</strong> No account facts were supplied, no bank was contacted, no funds moved and no tax return was filed. Every unresolved personal value is blank and flagged.</p>
+  <p class="small"><a href="../index.html">Landing hub</a> · <a href="../README.md">README</a> · <a href="../COORDINATION.md">Task board</a> · <a href="EXECUTIVE_SUMMARY.md">Executive summary (Markdown)</a> · <a href="data/costs.csv">Costs CSV</a> · <a href="data/penalty_costs.csv">Penalty CSV</a></p>
+  <p class="small">Rate boards are dated reference-only publisher values, not executable quotes. Known totals are arithmetic illustrations; all-in totals are blank by design.</p>
+</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

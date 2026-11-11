@@ -1,0 +1,57 @@
+{
+  "generator": "guide-be3c20e8/build.py",
+  "retrieved": "2026-11-11",
+  "pages": [
+    {
+      "href": "index.html",
+      "title": "Dashboard"
+    },
+    {
+      "href": "summary.html",
+      "title": "Executive summary"
+    },
+    {
+      "href": "questions.html",
+      "title": "Decision questions"
+    },
+    {
+      "href": "methods.html",
+      "title": "Routes"
+    },
+    {
+      "href": "costs.html",
+      "title": "Cost ladder"
+    },
+    {
+      "href": "penalties.html",
+      "title": "Penalty layers"
+    },
+    {
+      "href": "flagged.html",
+      "title": "Flagged for Review"
+    },
+    {
+      "href": "sources.html",
+      "title": "Sources"
+    },
+    {
+      "href": "review.html",
+      "title": "Repo audit"
+    }
+  ],
+  "exports": [
+    "costs.json",
+    "flags.json",
+    "methods.json",
+    "model_params.json",
+    "pages_manifest.json",
+    "penalty_costs.json",
+    "penalty_layers.json",
+    "questions.json",
+    "review.json",
+    "sources.json",
+    "summary.json",
+    "costs.csv",
+    "penalty_costs.csv"
+  ]
+}

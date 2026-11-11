@@ -1,0 +1,275 @@
+{
+  "retrieved": "2026-11-11",
+  "status": "needs review",
+  "flags": [
+    {
+      "id": "F-01",
+      "kind": "blank",
+      "affected": "All-in total for every route and tier",
+      "why": "No executable rate, correspondent/receiving fee, personal tax basis or future rate was published.",
+      "discover": "Request a written executable quote and full fee breakdown from both banks; document tax basis; leave blank until confirmed.",
+      "sources": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B07",
+        "B27"
+      ]
+    },
+    {
+      "id": "F-02",
+      "kind": "blank",
+      "affected": "Source, tax-paid status and 完税证明 for this balance",
+      "why": "No account documents were supplied; the official rules require lawful-source and tax evidence.",
+      "discover": "Obtain statements, contracts and an official tax certificate; ask the bank for its written checklist.",
+      "sources": [
+        "B08",
+        "B10",
+        "B14",
+        "B20",
+        "B32"
+      ]
+    },
+    {
+      "id": "F-03",
+      "kind": "blank",
+      "affected": "Personal immigration/residence/PR-card/hukou status",
+      "why": "Eligibility for quota, documented-income, emigrant and inheritance routes depends on private status facts.",
+      "discover": "Assemble passport, day count, residence permit, PR card and hukou-cancellation evidence; ask the bank/SAFE to classify in writing.",
+      "sources": [
+        "B08",
+        "B09",
+        "B11",
+        "B12",
+        "B14",
+        "B20"
+      ]
+    },
+    {
+      "id": "F-04",
+      "kind": "irregularity",
+      "affected": "BOC board timestamp 21:00:05 versus 20:39:19",
+      "why": "The USD row stayed the same between the two same-day readings while the timestamp advanced; the board says it is for reference only and the actual transaction rate governs.",
+      "discover": "Capture the exact board timestamp with any quote; use the bank's actual transaction rate for execution.",
+      "sources": [
+        "B01"
+      ]
+    },
+    {
+      "id": "F-05",
+      "kind": "irregularity",
+      "affected": "HSBC board last updated 2026-11-10",
+      "why": "It is dated before the BOC board and is subject to change without notice.",
+      "discover": "Ask HSBC for a same-day executable rate before comparing routes.",
+      "sources": [
+        "B02"
+      ]
+    },
+    {
+      "id": "F-06",
+      "kind": "irregularity",
+      "affected": "HSBC PDF has two effective-date headers",
+      "why": "The cover says one date while embedded table headers say another; the applicable version should be confirmed with the bank.",
+      "discover": "Ask HSBC to confirm the effective tariff for your account and retain the written answer.",
+      "sources": [
+        "B04"
+      ]
+    },
+    {
+      "id": "F-07",
+      "kind": "blank",
+      "affected": "BOC local/promotional discounts",
+      "why": "The official fee schedule links to a promotion page that now returns a 404; local/agreement differences are acknowledged but not published.",
+      "discover": "Ask the branch for its current local price list and any written discount; leave blank until supplied.",
+      "sources": [
+        "B03",
+        "B31"
+      ]
+    },
+    {
+      "id": "F-08",
+      "kind": "blank",
+      "affected": "Wise exact fee, conversion rate and personal overall limit",
+      "why": "The provider says to set up a transfer to see exact fees and computes an overall limit from private income/tax records.",
+      "discover": "Use the official setup screen without funding; capture the quoted fee/rate and the assigned limit; do not infer them here.",
+      "sources": [
+        "B05",
+        "B10"
+      ]
+    },
+    {
+      "id": "F-09",
+      "kind": "blank",
+      "affected": "Bank FX rate and wire fee for emigrant/inheritance transfers",
+      "why": "The SAFE guide publishes no administrative fee but not the bank's conversion rate or remittance charges.",
+      "discover": "After approval, ask the designated bank for a written rate and full fee schedule.",
+      "sources": [
+        "B12",
+        "B13",
+        "B14"
+      ]
+    },
+    {
+      "id": "F-10",
+      "kind": "blank",
+      "affected": "Foreign ATM-owner fee, network FX rate, cash deposit/conversion cost",
+      "why": "Only the PRC cap and one issuer's ATM fee are published.",
+      "discover": "Ask the card issuer and foreign ATM owner for written fees/rate; keep withdrawal receipts.",
+      "sources": [
+        "B04",
+        "B16"
+      ]
+    },
+    {
+      "id": "F-11",
+      "kind": "blank",
+      "affected": "Cash-permit fee, security, insurance and U.S. deposit/conversion cost",
+      "why": "The official cash rules publish limits and permits, not these costs.",
+      "discover": "Ask the bank for permit charges and the U.S. bank for cash-deposit terms; do not carry unverified amounts.",
+      "sources": [
+        "B17",
+        "B28"
+      ]
+    },
+    {
+      "id": "F-12",
+      "kind": "blank",
+      "affected": "Direct cross-border RMB route for an accumulated balance",
+      "why": "PBOC supports current-account RMB settlement but does not publish a general personal savings/capital route, fee, limit or rate.",
+      "discover": "Request written legal basis, purpose, tariff, limit and rate from the bank and SAFE; leave blank otherwise.",
+      "sources": [
+        "B09",
+        "B10",
+        "B33"
+      ]
+    },
+    {
+      "id": "F-13",
+      "kind": "blank",
+      "affected": "Personal PRC income-tax bill and overdue-tax exposure",
+      "why": "Residence, income type, deductions and payment history are unknown.",
+      "discover": "Give source documents and tax records to a qualified PRC tax professional; obtain written clearance where needed.",
+      "sources": [
+        "B20",
+        "B32"
+      ]
+    },
+    {
+      "id": "F-14",
+      "kind": "blank",
+      "affected": "Acquisition basis, personal-transaction status and U.S. ordinary tax rate",
+      "why": "§988 publishes character and a $200 threshold, not your basis or bracket.",
+      "discover": "Reconstruct acquisition dates/rates and provide them with your U.S. return data to a tax professional.",
+      "sources": [
+        "B06",
+        "B07",
+        "B27"
+      ]
+    },
+    {
+      "id": "F-15",
+      "kind": "blank",
+      "affected": "Prior FBAR, Form 8938, Form 3520 and CBP filing history",
+      "why": "No private filing history was provided; penalties depend on facts and willfulness.",
+      "discover": "Obtain IRS transcripts and prior filings; list every foreign account and annual maximum; seek professional correction advice.",
+      "sources": [
+        "B21",
+        "B23",
+        "B24",
+        "B28",
+        "B30"
+      ]
+    },
+    {
+      "id": "F-16",
+      "kind": "blank",
+      "affected": "FEIE/FTC eligibility and treaty position",
+      "why": "Tax home, abode, presence tests, foreign tax paid and treaty residence are private; the treaty text was not read line by line here.",
+      "discover": "Provide travel and tax records to a U.S. tax professional and consult the current treaty publication before claiming relief.",
+      "sources": [
+        "B25",
+        "B26",
+        "B29",
+        "B34"
+      ]
+    },
+    {
+      "id": "F-17",
+      "kind": "irregularity",
+      "affected": "eCFR penalty table amendment history",
+      "why": "The display is current but the quoted amendment history ends with the 2025 Federal Register adjustment; a newer inflation amount was not seen on this page.",
+      "discover": "Check the annual FinCEN inflation-adjustment notice before quoting a penalty maximum.",
+      "sources": [
+        "B21",
+        "B22"
+      ]
+    },
+    {
+      "id": "F-18",
+      "kind": "conflict",
+      "affected": "Historical staged-emigrant wording",
+      "why": "PBOC 2004 Article 6 says staged remittance, but SAFE 2014 §VI abolished the staged requirement and HQ filing; older repository lines repeat the superseded wording.",
+      "discover": "Use the later SAFE rule; ask the approving SAFE office for its current checklist; correct only in the owning session's files.",
+      "sources": [
+        "B12",
+        "B13"
+      ]
+    },
+    {
+      "id": "F-19",
+      "kind": "irregularity",
+      "affected": "Fed H.10 latest column versus same-day bank boards",
+      "why": "The weekly release's latest daily rate is dated before the BOC board; it is not a same-day executable rate.",
+      "discover": "Use a consistently applied posted rate for tax translation and record its date; do not mix it silently with a bank quote.",
+      "sources": [
+        "B01",
+        "B06",
+        "B07"
+      ]
+    },
+    {
+      "id": "F-20",
+      "kind": "blank",
+      "affected": "Bank authenticity-review outcome",
+      "why": "The law imposes a review duty; no bank has been asked about this balance.",
+      "discover": "Submit the document pack and obtain a written acceptance or a written list of deficiencies.",
+      "sources": [
+        "B08",
+        "B09",
+        "B10"
+      ]
+    },
+    {
+      "id": "F-21",
+      "kind": "blank",
+      "affected": "Numeric penalty for a proposed crypto/stablecoin conversion",
+      "why": "The official notice declares the activity illegal but refers to other rules for penalties.",
+      "discover": "Do not use the route; consult a PRC lawyer for the current enforcement provision if an exposure assessment is needed.",
+      "sources": [
+        "B18"
+      ]
+    },
+    {
+      "id": "F-22",
+      "kind": "blank",
+      "affected": "U.S.-side Global Transfer account terms",
+      "why": "The PRC tariff lists Canada, US, UK, Australia and Hong Kong SAR among applicable countries/regions for the family service, but the precise U.S. receiving-account terms and corridor details were not read line by line here.",
+      "discover": "Ask both HSBC entities to confirm corridor availability, account eligibility and charges in writing.",
+      "sources": [
+        "B04",
+        "B05"
+      ]
+    },
+    {
+      "id": "F-23",
+      "kind": "blank",
+      "affected": "HSBC Premier monthly service fee in an all-route comparison",
+      "why": "The tariff publishes a monthly fee and balance/promotion criteria, but the per-transfer cost excludes it because personal segment and waiver status are unknown.",
+      "discover": "Ask HSBC which segment applies and whether the monthly fee is waived; add it only after a written answer.",
+      "sources": [
+        "B04"
+      ]
+    }
+  ]
+}

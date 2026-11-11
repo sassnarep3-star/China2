@@ -1,0 +1,4849 @@
+{
+  "meta": {
+    "generated_by": "guide-be3c20e8/model.py",
+    "retrieved": "2026-11-11",
+    "note": "Published statutory ceilings only; actual personal penalty is null"
+  },
+  "rows": [
+    {
+      "usd": 10000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 3000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 10000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 2000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 20000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 6000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 20000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 4000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 30000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 9000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 30000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 6000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 40000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 12000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 40000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 8000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 50000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 15000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 50000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 10000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 60000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 18000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 12000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 70000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 21000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 70000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 14000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 80000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 24000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 80000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 16000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 90000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 27000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 90000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 18000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 100000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 30000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 100000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 20000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 110000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 33000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 110000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 22000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 120000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 36000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 120000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 24000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 130000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 39000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 130000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 26000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 140000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 42000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 140000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 28000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 150000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 45000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 150000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 30000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 160000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 48000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 160000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 32000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 170000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 51000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 170000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 34000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 180000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 54000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 180000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 36000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 190000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 57000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 190000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 38000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 200000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 200000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 40000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 210000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 63000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 210000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 42000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 220000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 66000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 220000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 44000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 230000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 69000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 230000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 46000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 240000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 72000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 240000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 48000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 250000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 75000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 250000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 50000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 260000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 78000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 260000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 52000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 270000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 81000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 270000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 54000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 280000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 84000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 280000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 56000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 290000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 87000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 290000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 58000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 300000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 90000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 300000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 310000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 93000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 310000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 62000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 320000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 96000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 320000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 64000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 330000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 99000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 330000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 66000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 340000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 102000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 340000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 68000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 350000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 105000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 350000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 70000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 360000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 108000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 360000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 72000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 370000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 111000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 370000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 74000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 380000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 114000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 380000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 76000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 390000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 117000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 390000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 78000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    },
+    {
+      "usd": 400000,
+      "published_ceilings": [
+        {
+          "layer": "P07",
+          "name": "PRC evasion/fraudulent FX purchase standard fine ceiling",
+          "value_usd": 120000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 30% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P07",
+          "name": "PRC serious evasion/fraudulent FX purchase fine ceiling",
+          "value_usd": 400000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling up to an equal amount in serious cases; not a predicted fine."
+        },
+        {
+          "layer": "P11",
+          "name": "Improper cash-carry fine ceiling",
+          "value_usd": 80000.0,
+          "source_ids": [
+            "B09"
+          ],
+          "note": "Statutory ceiling of 20% of the amount; not a predicted fine."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR non-willful adjusted maximum",
+          "value_usd": 16536.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; personal willfulness and filing history are unknown."
+        },
+        {
+          "layer": "P09",
+          "name": "FBAR willful adjusted maximum",
+          "value_usd": 165353.0,
+          "source_ids": [
+            "B21",
+            "B22"
+          ],
+          "note": "Adjusted statutory maximum; not a personal penalty determination."
+        },
+        {
+          "layer": "P09",
+          "name": "Form 8938 failure-to-disclose maximum",
+          "value_usd": 60000.0,
+          "source_ids": [
+            "B23"
+          ],
+          "note": "Published maximum after IRS notice; not a personal penalty determination."
+        }
+      ],
+      "blanks": [
+        {
+          "field": "actual_prc_fine_usd",
+          "value": null,
+          "reason": "Whether an evasion, cash or underground-dealing violation occurred is a private fact.",
+          "flag_ids": [
+            "F-21"
+          ]
+        },
+        {
+          "field": "prc_income_tax_usd",
+          "value": null,
+          "reason": "Income character, residence and tax-paid status are unknown.",
+          "flag_ids": [
+            "F-02",
+            "F-13"
+          ]
+        },
+        {
+          "field": "us_section988_gain_usd",
+          "value": null,
+          "reason": "Acquisition dates/rates and personal-transaction status are unknown.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "us_ordinary_tax_usd",
+          "value": null,
+          "reason": "The taxpayer's ordinary rate is not published here.",
+          "flag_ids": [
+            "F-14"
+          ]
+        },
+        {
+          "field": "actual_fbar_penalty_usd",
+          "value": null,
+          "reason": "Willfulness and filing history are private facts.",
+          "flag_ids": [
+            "F-15",
+            "F-17"
+          ]
+        },
+        {
+          "field": "actual_form8938_penalty_usd",
+          "value": null,
+          "reason": "Filing history and IRS notices are private facts.",
+          "flag_ids": [
+            "F-15"
+          ]
+        },
+        {
+          "field": "actual_total_penalty_usd",
+          "value": null,
+          "reason": "Personal facts cannot be combined into a penalty bill.",
+          "flag_ids": [
+            "F-01"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+name: verify-guide-be3c20e8
+
+on:
+  push:
+    branches: [main, arena/be3c20e8-china2]
+    paths:
+      - 'guide-be3c20e8/**'
+      - '.github/workflows/verify-guide-be3c20e8.yml'
+      - 'verification-3347ca0a/**'
+      - 'index.html'
+      - 'README.md'
+      - 'COORDINATION.md'
+      - 'ladder/audit.html'
+      - 'audit-92d12752/**'
+      - 'acceptance-a64bd476/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'guide-be3c20e8/**'
+      - '.github/workflows/verify-guide-be3c20e8.yml'
+      - 'verification-3347ca0a/**'
+      - 'index.html'
+      - 'README.md'
+      - 'COORDINATION.md'
+      - 'ladder/audit.html'
+      - 'audit-92d12752/**'
+      - 'acceptance-a64bd476/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Recompute source ledger, audit, model and build
+        run: |
+          set -euo pipefail
+          PYTHONDONTWRITEBYTECODE=1 python3 guide-be3c20e8/data/make_sources.py
+          PYTHONDONTWRITEBYTECODE=1 python3 guide-be3c20e8/audit.py
+          PYTHONDONTWRITEBYTECODE=1 python3 guide-be3c20e8/model.py
+          PYTHONDONTWRITEBYTECODE=1 python3 guide-be3c20e8/build.py
+      - name: Check byte-identical rebuild
+        run: git diff --exit-code -- guide-be3c20e8
+      - name: Independent verifier
+        run: PYTHONDONTWRITEBYTECODE=1 python3 guide-be3c20e8/verify.py
+      - name: JS/CSS/local-link checks
+        run: |
+          set -euo pipefail
+          node --check guide-be3c20e8/assets/app.js
+          PYTHONDONTWRITEBYTECODE=1 python3 guide-be3c20e8/verify.py --structure

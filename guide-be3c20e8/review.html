@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repository audit · guide-be3c20e8</title>
+<meta name="description" content="Mechanical line-by-line review with file:line findings and official source links.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site"><div class="wrap">
+  <p class="eyebrow" style="color:#bcd8ff">Independent decision guide · read 2026-11-11</p>
+  <h1>Repository audit</h1>
+  <p>CNY to USD for a U.S. person: published inputs only, blanks where facts are unverified, official links on every substantive row.</p>
+</div></header>
+<nav class="site" aria-label="Sections"><div class="wrap"><ul><li><a href="index.html">Dashboard</a></li><li><a href="summary.html">Executive summary</a></li><li><a href="questions.html">Decision questions</a></li><li><a href="methods.html">Routes</a></li><li><a href="costs.html">Cost ladder</a></li><li><a href="penalties.html">Penalty layers</a></li><li><a href="flagged.html">Flagged for Review</a></li><li><a href="sources.html">Sources</a></li><li><a href="review.html" aria-current="page">Repo audit</a></li></ul></div></nav>
+<main id="content"><div class="wrap">
+
+<section class="callout"><h2>Line-level repository audit</h2><p>Read 416 tracked text files and 235,815 lines line by line outside this section. 20 representative findings were re-located at build time; every finding has a file:line excerpt, a status and an official source link. Other sessions' files were not edited.</p></section>
+<div class="grid">
+  <div class="card"><p class="label">Tracked files considered</p><p class="value">416</p></div>
+  <div class="card"><p class="label">Text files read</p><p class="value">416</p></div>
+  <div class="card"><p class="label">Lines read</p><p class="value">235,815</p></div>
+  <div class="card"><p class="label">Substantive lines</p><p class="value">122,086</p></div>
+</div>
+<p class="muted">All tracked text files outside guide-be3c20e8 were read line by line. Findings are a finite, representative pattern review, not a certification of every legal sentence. Other sessions&#x27; files were not edited. Line numbers are re-located at build time. A matching line is a review candidate; the official link supports the comparison, not every word in the historical file.</p>
+<div class="downloads"><a href="data/review.json">Audit snapshot (JSON)</a> <a href="audit.py">Audit generator (Python)</a></div>
+<div class="tablewrap"><table>
+<caption>Findings · needs review unless explicitly marked verified or corrected</caption>
+<thead><tr><th scope="col">ID</th><th scope="col">File:line</th><th scope="col">Status</th><th scope="col">Finding</th><th scope="col">Line excerpt</th><th scope="col">Official sources</th></tr></thead>
+<tbody>
+<tr id="RV-01">
+<th scope="row" data-label="ID">RV-01</th>
+<td data-label="File:line"><a href="../verification-3347ca0a/build.py">verification-3347ca0a/build.py:28</a></td>
+<td data-label="Status"><span class="tag review">conflict · historical snapshot</span><br><span class="small">bank board</span></td>
+<td data-label="Finding">The root landing-page generator still prices BOC at 6.6911 from a 10:25:02 board.<br><span class="small">The fresh 21:00:05 board prints 6.6871 for the USD sell price; this section uses the fresh reading and does not edit the other session&#x27;s rate model.</span></td>
+<td data-label="Line excerpt"><pre class="quote">RATE_BOC = 669.11 / 100.0 # V20: BOC USD cash-remittance selling price, 2026-11-11 10:25:02</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="Bank of China">B01</a></td>
+</tr>
+<tr id="RV-02">
+<th scope="row" data-label="ID">RV-02</th>
+<td data-label="File:line"><a href="../dashboard-f79e64e7/content.py">dashboard-f79e64e7/content.py:97</a></td>
+<td data-label="Status"><span class="tag review">conflict · historical snapshot</span><br><span class="small">bank board</span></td>
+<td data-label="Finding">A quoted BOC board records buying 666.3 / selling 669.11 per 100 USD at 10:25:02.<br><span class="small">A dated snapshot, not today&#x27;s board; the discrepancy is published rather than silently corrected here.</span></td>
+<td data-label="Line excerpt"><pre class="quote">quote=&quot;USD | Buying Rate 666.3 | Cash Buying Rate 666.3 | Selling Rate 669.11 | Cash Selling Rate 669.11 | Middle Rate 671.91 | Pub Time 2026/11/11 10:25:02&quot;,</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="Bank of China">B01</a></td>
+</tr>
+<tr id="RV-03">
+<th scope="row" data-label="ID">RV-03</th>
+<td data-label="File:line"><a href="../guide-fb2f2562/build.py">guide-fb2f2562/build.py:325</a></td>
+<td data-label="Status"><span class="tag review">conflict · historical snapshot</span><br><span class="small">bank board</span></td>
+<td data-label="Finding">An older guide&#x27;s cost page states a BOC board of 666.06 / 668.86 per 100 USD at 15:30.<br><span class="small">The fresh board prints 665.91 / 668.71 per 100 USD at 21:00:05; both are dated reference-only boards.</span></td>
+<td data-label="Line excerpt"><pre class="quote">&lt;p class=&quot;lede&quot;&gt;Published inputs only: Bank of China board 666.06 / 668.86 per 100 USD (15:30, {C.TODAY}) {srcs([&quot;S01&quot;])} and fee table {srcs([&quot;S03&quot;])};</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="Bank of China">B01</a></td>
+</tr>
+<tr id="RV-04">
+<th scope="row" data-label="ID">RV-04</th>
+<td data-label="File:line"><a href="../guide-fb2f2562/content.py">guide-fb2f2562/content.py:18</a></td>
+<td data-label="Status"><span class="tag review">conflict · historical snapshot</span><br><span class="small">bank board</span></td>
+<td data-label="Finding">An older summary derives a 0.21% midpoint gap from the 668.86 BOC sell price.<br><span class="small">The fresh board gives 668.71 and a 0.2094% midpoint spread; the historical figure remains in its owning section.</span></td>
+<td data-label="Line excerpt"><pre class="quote">&quot;Lowest published exchange spread read today: BOC sells USD at 668.86 and buys at 666.06 per 100, a 0.21% gap to the midpoint [S01].&quot;,</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="Bank of China">B01</a></td>
+</tr>
+<tr id="RV-05">
+<th scope="row" data-label="ID">RV-05</th>
+<td data-label="File:line"><a href="../guide-fb2f2562/audit.py">guide-fb2f2562/audit.py:81</a></td>
+<td data-label="Status"><span class="tag review">rate-base conflict · needs review</span><br><span class="small">rate base</span></td>
+<td data-label="Finding">The HSBC CNY 620 fee cap is translated at the IRS 2025 yearly average of 7.129 rather than a bank dealing rate.<br><span class="small">CNY 620 = CNY 500 cap + CNY 120 cable; a tax-translation average is not an executable bank rate.</span></td>
+<td data-label="Line excerpt"><pre class="quote">return (&quot;check&quot;, &quot;CNY 620 converted at the IRS 2025 average (7.129), not at HSBC&#x27;s dealing rate; HSBC&#x27;s 2026-11-10 sell rate 6.7053746 gives USD 92.46.&quot;)</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html" target="_blank" rel="noopener noreferrer" title="HSBC Bank (China)">B02</a> <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC Bank (China)">B04</a> <a href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B07</a></td>
+</tr>
+<tr id="RV-06">
+<th scope="row" data-label="ID">RV-06</th>
+<td data-label="File:line"><a href="../verification-3347ca0a/build.py">verification-3347ca0a/build.py:691</a></td>
+<td data-label="Status"><span class="tag review">rate-base conflict · needs review</span><br><span class="small">rate base</span></td>
+<td data-label="Finding">The root generator compares CNY 620 at both a board rate and the IRS yearly-average rate.<br><span class="small">The published tariff&#x27;s cap and cable charge are correctly summed, but the two rate bases should not be presented as one all-in cost.</span></td>
+<td data-label="Line excerpt"><pre class="quote">renminbi fee of CNY 620 is {usd(620 / RATE_BOC)} at the board rate and {usd(620 / RATE_IRS)} at the tax rate — the</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="Bank of China">B01</a> <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC Bank (China)">B04</a> <a href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B07</a></td>
+</tr>
+<tr id="RV-07">
+<th scope="row" data-label="ID">RV-07</th>
+<td data-label="File:line"><a href="../COORDINATION.md">COORDINATION.md:1124</a></td>
+<td data-label="Status"><span class="tag review">corrected here · now verified</span><br><span class="small">tax figure</span></td>
+<td data-label="Finding">A prior board line says the 2027 FEIE of USD 137,300 was not confirmed.<br><span class="small">Rev. Proc. 2026-35 §3.41 explicitly publishes USD 137,300 for tax years beginning in 2027; this session verifies it.</span></td>
+<td data-label="Line excerpt"><pre class="quote">3. `README.md` cites a 2027 foreign earned income exclusion of USD 137,300; the IRS page read today gives 2025 and 2026 only. Not confirmed, not changed.</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.irs.gov/pub/irs-drop/rp-26-35.pdf" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B26</a></td>
+</tr>
+<tr id="RV-08">
+<th scope="row" data-label="ID">RV-08</th>
+<td data-label="File:line"><a href="../COORDINATION.md">COORDINATION.md:1239</a></td>
+<td data-label="Status"><span class="tag review">corrected here · now verified</span><br><span class="small">tax figure</span></td>
+<td data-label="Finding">A prior review says USD 132,900 / USD 137,300 were unverified and left blank.<br><span class="small">2026 Form 2555 instructions publish USD 132,900; Rev. Proc. 2026-35 publishes USD 137,300 for 2027.</span></td>
+<td data-label="Line excerpt"><pre class="quote">- 59 files quote a foreign earned income exclusion of $132,900 / $137,300; the IRS page read here lists 2020–2023 only, so the figure is blank in this section (FR-12, RV-07).</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.irs.gov/instructions/i2555" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B25</a> <a href="https://www.irs.gov/pub/irs-drop/rp-26-35.pdf" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B26</a></td>
+</tr>
+<tr id="RV-09">
+<th scope="row" data-label="ID">RV-09</th>
+<td data-label="File:line"><a href="../estimate-facf2fe9/data/sources.json">estimate-facf2fe9/data/sources.json:432</a></td>
+<td data-label="Status"><span class="tag review">superseded · needs review</span><br><span class="small">superseded rule</span></td>
+<td data-label="Finding">A historical source ledger repeats PBOC 2004 Article 6&#x27;s compulsory staged-emigrant-remittance wording.<br><span class="small">SAFE 汇发〔2014〕2号 §VI abolished the staged requirement and HQ filing; the later rule governs.</span></td>
+<td data-label="Line excerpt"><pre class="quote">&quot;第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万元）的，经批准后可一次性汇出。&quot;,</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="State Administration of Foreign Exchange">B12</a> <a href="https://www.gov.cn/gongbao/content/2005/content_64294.htm" target="_blank" rel="noopener noreferrer" title="People&#x27;s Bank of China / State Council Gazette">B13</a></td>
+</tr>
+<tr id="RV-10">
+<th scope="row" data-label="ID">RV-10</th>
+<td data-label="File:line"><a href="../dashboard-f79e64e7/content.py">dashboard-f79e64e7/content.py:172</a></td>
+<td data-label="Status"><span class="tag review">verified · corrected in that section</span><br><span class="small">superseded rule</span></td>
+<td data-label="Finding">A later dashboard quotes the SAFE rule abolishing compulsory staged emigrant remittance.<br><span class="small">The quoted rule matches the official 2014 notice read this session.</span></td>
+<td data-label="Line excerpt"><pre class="quote">quote=&quot;取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。&quot;,</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.safe.gov.cn/safe/2014/0124/5476.html" target="_blank" rel="noopener noreferrer" title="State Administration of Foreign Exchange">B12</a></td>
+</tr>
+<tr id="RV-11">
+<th scope="row" data-label="ID">RV-11</th>
+<td data-label="File:line"><a href="../audit-0f0f59fe/findings.json">audit-0f0f59fe/findings.json:46</a></td>
+<td data-label="Status"><span class="tag review">verified · corrected in that section</span><br><span class="small">foreign tax credit</span></td>
+<td data-label="Finding">A prior finding says the foreign tax credit is not automatic or necessarily dollar-for-dollar.<br><span class="small">IRS FTC guidance says the qualifying credit may be less than withholding and no credit is allowed on excluded income.</span></td>
+<td data-label="Line excerpt"><pre class="quote">&quot;topic&quot;: &quot;A U.S. foreign tax credit is not automatic or necessarily dollar-for-dollar&quot;,</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B29</a></td>
+</tr>
+<tr id="RV-12">
+<th scope="row" data-label="ID">RV-12</th>
+<td data-label="File:line"><a href="../guide-fb2f2562/audit.py">guide-fb2f2562/audit.py:51</a></td>
+<td data-label="Status"><span class="tag review">conflict · corrected by audit</span><br><span class="small">foreign tax credit</span></td>
+<td data-label="Finding">An older audit rule identifies a line calling the foreign tax credit dollar-for-dollar.<br><span class="small">The official FTC page states limits and a treaty-reduced-tax rule; this section does not repeat the overstatement.</span></td>
+<td data-label="Line excerpt"><pre class="quote">return (&quot;conflict&quot;, &quot;Calls the credit dollar-for-dollar; the IRS page limits it (no credit on FEIE-excluded income; only tax actually owed after treaty).&quot;)</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B29</a></td>
+</tr>
+<tr id="RV-13">
+<th scope="row" data-label="ID">RV-13</th>
+<td data-label="File:line"><a href="../COORDINATION.md">COORDINATION.md:673</a></td>
+<td data-label="Status"><span class="tag review">verified · current</span><br><span class="small">prohibited channel</span></td>
+<td data-label="Finding">The board records that fiat-to-virtual-currency business is illegal financial activity.<br><span class="small">PBOC 银发〔2026〕42号 says such business is strictly prohibited; actual numeric penalties remain blank.</span></td>
+<td data-label="Line excerpt"><pre class="quote">- PBOC et al. Yinfa [2026] No. 42 — fiat↔virtual currency business is illegal financial activity: https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html" target="_blank" rel="noopener noreferrer" title="People&#x27;s Bank of China and other PRC authorities">B18</a></td>
+</tr>
+<tr id="RV-14">
+<th scope="row" data-label="ID">RV-14</th>
+<td data-label="File:line"><a href="../briefing/AUDIT.md">briefing/AUDIT.md:16</a></td>
+<td data-label="Status"><span class="tag review">verified-limited · needs review</span><br><span class="small">tariff irregularity</span></td>
+<td data-label="Finding">A prior audit records two effective-date headers inside the HSBC tariff PDF.<br><span class="small">The cover says 31 Oct 2026 while embedded Chinese headers say 12 Sep 2024; the bank should confirm the applicable version.</span></td>
+<td data-label="Line excerpt"><pre class="quote">| AU-10 | **HSBC tariff internal header** — Retrieved PDF cover: effective 31 Oct 2026; internal Chinese section header reads “2024年9月12日生效” (12 Sep 2024). Fee items read from retrieved text. | Flag N02/F08 |</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="HSBC Bank (China)">B04</a></td>
+</tr>
+<tr id="RV-15">
+<th scope="row" data-label="ID">RV-15</th>
+<td data-label="File:line"><a href="../final-d54bb3c2/model.py">final-d54bb3c2/model.py:20</a></td>
+<td data-label="Status"><span class="tag review">historical · snapshot</span><br><span class="small">bank board</span></td>
+<td data-label="Finding">A final-section model records the 20:39:19 BOC board timestamp.<br><span class="small">The USD row was unchanged at the 21:00:05 re-read; this section uses the later timestamp.</span></td>
+<td data-label="Line excerpt"><pre class="quote"># S01 Bank of China board, 2026/11/11 20:39:19, CNY per 100 USD.</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="Bank of China">B01</a></td>
+</tr>
+<tr id="RV-16">
+<th scope="row" data-label="ID">RV-16</th>
+<td data-label="File:line"><a href="../COORDINATION.md">COORDINATION.md:677</a></td>
+<td data-label="Status"><span class="tag review">verified-limited · needs review</span><br><span class="small">penalty table</span></td>
+<td data-label="Finding">The board records the eCFR FBAR penalty amounts with a 2025 amendment citation.<br><span class="small">The eCFR table is displayed current to 11/09/2026 but its quoted amendment history ends at 90 FR 5630 (17 Jan 2025).</span></td>
+<td data-label="Line excerpt"><pre class="quote">- 31 CFR 1010.821 (eCFR, current to 2026-11-06) — non-willful USD 16,536 / willful USD 165,353 for assessments on/after 2025-01-17 (**verified-limited**: eCFR is authoritative but unofficial): https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B21</a> <a href="https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821" target="_blank" rel="noopener noreferrer" title="eCFR / FinCEN, U.S. Treasury">B22</a></td>
+</tr>
+<tr id="RV-17">
+<th scope="row" data-label="ID">RV-17</th>
+<td data-label="File:line"><a href="../verification-3347ca0a/build.py">verification-3347ca0a/build.py:440</a></td>
+<td data-label="Status"><span class="tag review">verified · current</span><br><span class="small">tax figure</span></td>
+<td data-label="Finding">The root generator&#x27;s archive note cites the 2027 FEIE of USD 137,300 from Rev. Proc. 2026-35.<br><span class="small">The figure is explicitly published in §3.41 of the official revenue procedure.</span></td>
+<td data-label="Line excerpt"><pre class="quote">(&quot;guide-fb2f2562/index.html&quot;, &quot;Decision guide + line-level repo review&quot;, &quot;11 methods · 30 sources · 440 tier rows&quot;, &quot;Separate pass on 11 Nov 2026: sources re-read the same day (incl. Rev. Proc. 2026-35 FEIE $137,300), cost at every $10,000 step, US FX-gain check, and a file:line scan of every other </pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.irs.gov/pub/irs-drop/rp-26-35.pdf" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B26</a></td>
+</tr>
+<tr id="RV-18">
+<th scope="row" data-label="ID">RV-18</th>
+<td data-label="File:line"><a href="../README.md">README.md:19</a></td>
+<td data-label="Status"><span class="tag review">verified · current</span><br><span class="small">tax figure</span></td>
+<td data-label="Finding">The README entry for an earlier guide cites the 2027 FEIE of USD 137,300.<br><span class="small">The figure is now verified; the 2026 cap of USD 132,900 is a different tax year.</span></td>
+<td data-label="Line excerpt"><pre class="quote">- **Decision guide + line-level repo review (11 Nov):** [guide-fb2f2562/index.html](guide-fb2f2562/index.html) — 30 official sources read 11 Nov 2026 (incl. Rev. Proc. 2026-35 §3.41 FEIE `$137,300`), 11 methods with steps, 40-tier cost tables, US FX-gain check, [Flagged for Review](guide-fb2f2562/fl</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.irs.gov/pub/irs-drop/rp-26-35.pdf" target="_blank" rel="noopener noreferrer" title="U.S. Internal Revenue Service">B26</a></td>
+</tr>
+<tr id="RV-19">
+<th scope="row" data-label="ID">RV-19</th>
+<td data-label="File:line"><a href="../final-d54bb3c2/data/review.json">final-d54bb3c2/data/review.json:73</a></td>
+<td data-label="Status"><span class="tag review">verified · historical comparison</span><br><span class="small">bank board</span></td>
+<td data-label="Finding">A prior review compares an older BOC/HSBC board with its own 20:39 reading.<br><span class="small">This is a documented comparison, not a live quote; the fresh 21:00:05 BOC board and 10 Nov HSBC board are used here.</span></td>
+<td data-label="Line excerpt"><pre class="quote">&quot;finding&quot;: &quot;The guide records the BOC board as buy 666.06 / sell 668.86 and the HSBC board as sell 6.7053746. The boards read for this section on 2026-11-11 20:39 are 665.91 / 668.71 and 6.7030239.&quot;,</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="Bank of China">B01</a> <a href="https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html" target="_blank" rel="noopener noreferrer" title="HSBC Bank (China)">B02</a></td>
+</tr>
+<tr id="RV-20">
+<th scope="row" data-label="ID">RV-20</th>
+<td data-label="File:line"><a href="../guide-fb2f2562/data/sources.json">guide-fb2f2562/data/sources.json:26</a></td>
+<td data-label="Status"><span class="tag review">conflict · historical snapshot</span><br><span class="small">bank board</span></td>
+<td data-label="Finding">An older source ledger records an HSBC sell rate of 6.7053746.<br><span class="small">The fresh HSBC board prints 6.7030239 sell and 6.6362813 TT buy; the board is dated 10 Nov and reference-only.</span></td>
+<td data-label="Line excerpt"><pre class="quote">&quot;finding&quot;: &quot;USD: bank sells (TT and cash) 6.7053746; bank buys TT 6.6386339; bank buys cash 6.6021025. Board dated 2026-11-10.&quot;,</pre></td>
+<td class="src" data-label="Official sources"><a href="https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html" target="_blank" rel="noopener noreferrer" title="HSBC Bank (China)">B02</a></td>
+</tr></tbody>
+</table></div>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <p><strong>Research, not advice.</strong> No account facts were supplied, no bank was contacted, no funds moved and no tax return was filed. Every unresolved personal value is blank and flagged.</p>
+  <p class="small"><a href="../index.html">Landing hub</a> · <a href="../README.md">README</a> · <a href="../COORDINATION.md">Task board</a> · <a href="EXECUTIVE_SUMMARY.md">Executive summary (Markdown)</a> · <a href="data/costs.csv">Costs CSV</a> · <a href="data/penalty_costs.csv">Penalty CSV</a></p>
+  <p class="small">Rate boards are dated reference-only publisher values, not executable quotes. Known totals are arithmetic illustrations; all-in totals are blank by design.</p>
+</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

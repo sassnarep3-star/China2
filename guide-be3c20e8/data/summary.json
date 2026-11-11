@@ -1,0 +1,136 @@
+{
+  "retrieved": "2026-11-11",
+  "items": [
+    {
+      "id": "S1",
+      "title": "Least-tax answer first",
+      "text": "No PRC provision reviewed here imposes a separate tax on the mere act of converting CNY into USD. That is not a conclusion that your balance is tax-free: PRC individual income tax applies by income type and residence, and a bank can refuse the transaction without lawful-source and tax documents. The least-penalty path is to settle or document any tax on the underlying funds, use one of the lawful bank/approval routes, avoid prohibited workarounds, and meet U.S. reporting duties on time.",
+      "sources": [
+        "B08",
+        "B09",
+        "B10",
+        "B19",
+        "B20",
+        "B21",
+        "B27",
+        "B29",
+        "B32"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "The gate is documentary, not a quota trick",
+      "text": "For a foreign individual with lawful current-account RMB income, SAFE's rule is valid ID plus transaction-amount source materials including tax documents. A foreign permanent-residence ID card holder may use the annual convenience quota; other foreign individuals generally do not get that quota merely from holding a foreign passport. Emigrant and inheritance property transfers are separate approval routes.",
+      "sources": [
+        "B08",
+        "B10",
+        "B11",
+        "B12",
+        "B13",
+        "B14"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Published known costs, not an all-in quote",
+      "text": "At the smallest tier, the lowest published known-component total among routes with a published fee or rate is HSBC China outward telegraphic transfer (Private Banking individual) at $49.79. At the largest tier it is BOC documented-income online FX purchase + one wire at $898.75. These are arithmetic illustrations from a reference-only board and published tariffs; every all-in total remains blank because correspondent, receiving, future-rate and personal-tax inputs are unpublished.",
+      "sources": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B07",
+        "B27"
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "The exchange spread dominates large transfers",
+      "text": "BOC's published USD sell and buy prices imply a midpoint spread of 0.2094%; HSBC's published sell and TT buy prices imply 0.4979%. At the largest tier those board spreads are $837.43 and $1,991.42. The bank pages say their rates are for reference only, so neither is an executable quote.",
+      "sources": [
+        "B01",
+        "B02",
+        "B03",
+        "B04"
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "The penalty is a stack, not one number",
+      "text": "Separate: tax on the underlying income or asset; the bank's document review; the FX spread; sender/cable/card/cash fees; third-party and receiving-bank charges; PRC fines for evasion, splitting or underground dealing; possible U.S. ordinary gain on personal currency disposition above $200; and reporting penalties for missed FBAR, 8938, 3520 or CBP forms. Filing compliance is not a conversion tax.",
+      "sources": [
+        "B09",
+        "B15",
+        "B18",
+        "B20",
+        "B21",
+        "B23",
+        "B24",
+        "B27",
+        "B28",
+        "B29",
+        "B32"
+      ]
+    },
+    {
+      "id": "S6",
+      "title": "Personal facts remain blank",
+      "text": "The origin of the CNY, its tax history, your PRC residence and emigration status, acquisition exchange rate, bank's written eligibility decision, U.S. filing history, and FEIE/FTC facts were not supplied. Every one is a gating question with a discovery action on the Questions page; none is inferred. A $200 personal-transaction threshold and a $132,900 exclusion cap are statutory figures, not a personal tax calculation.",
+      "sources": [
+        "B07",
+        "B08",
+        "B11",
+        "B14",
+        "B20",
+        "B21",
+        "B23",
+        "B25",
+        "B27",
+        "B30",
+        "B34"
+      ]
+    },
+    {
+      "id": "S7",
+      "title": "Flagged items do not block publication",
+      "text": "This pass read 34 primary sources on 2026-11-11, scanned 416 tracked repository files line by line, and recomputed 800 cost rows. Unverifiable cells are blank and all conflicts/open checks are published on the Flagged for Review page with direct official links. Needs review is a status, not a failure or a hidden assumption.",
+      "sources": [
+        "B01",
+        "B04",
+        "B05",
+        "B22",
+        "B31",
+        "B33",
+        "B34"
+      ]
+    }
+  ],
+  "params": {
+    "boc_buy": 6.6591,
+    "boc_sell": 6.6871,
+    "boc_mid": 6.6731,
+    "hsbc_buy": 6.6363,
+    "hsbc_sell": 6.703,
+    "hsbc_mid": 6.6697,
+    "boc_spread_pct": 0.2094,
+    "hsbc_spread_pct": 0.4979,
+    "boc_spread_400_usd": 837.43,
+    "hsbc_spread_400_usd": 1991.42,
+    "low_10_method_id": "R06",
+    "low_10_method": "HSBC China outward telegraphic transfer (Private Banking individual)",
+    "low_10_value_usd": 49.79,
+    "low_400_method_id": "R01",
+    "low_400_method": "BOC documented-income online FX purchase + one wire",
+    "low_400_value_usd": 898.75,
+    "tiers": 40,
+    "methods": 20,
+    "cost_rows": 800,
+    "penalty_rows": 40,
+    "source_count": 34,
+    "flags": 23,
+    "questions": 14,
+    "penalty_layers": 12,
+    "boc_board_timestamp": "21:00:05",
+    "hsbc_board_date": "2026-11-10"
+  }
+}

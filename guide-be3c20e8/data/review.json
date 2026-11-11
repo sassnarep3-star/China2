@@ -1,0 +1,463 @@
+{
+  "generated_by": "guide-be3c20e8/audit.py",
+  "retrieved": "2026-11-11",
+  "scope": "All tracked text files outside guide-be3c20e8 were read line by line. Findings are a finite, representative pattern review, not a certification of every legal sentence.",
+  "scan": {
+    "tracked_files_considered": 416,
+    "text_files": 416,
+    "lines_read": 235815,
+    "substantive_lines": 122086,
+    "bytes_read": 23885025
+  },
+  "findings": [
+    {
+      "id": "RV-01",
+      "file": "verification-3347ca0a/build.py",
+      "line": 28,
+      "excerpt": "RATE_BOC = 669.11 / 100.0 # V20: BOC USD cash-remittance selling price, 2026-11-11 10:25:02",
+      "category": "bank board",
+      "status": "conflict · historical snapshot",
+      "finding": "The root landing-page generator still prices BOC at 6.6911 from a 10:25:02 board.",
+      "reviewer_note": "The fresh 21:00:05 board prints 6.6871 for the USD sell price; this section uses the fresh reading and does not edit the other session's rate model.",
+      "source_ids": [
+        "B01"
+      ],
+      "official_urls": [
+        {
+          "id": "B01",
+          "url": "https://www.boc.cn/sourcedb/whpj/",
+          "publisher": "Bank of China"
+        }
+      ]
+    },
+    {
+      "id": "RV-02",
+      "file": "dashboard-f79e64e7/content.py",
+      "line": 97,
+      "excerpt": "quote=\"USD | Buying Rate 666.3 | Cash Buying Rate 666.3 | Selling Rate 669.11 | Cash Selling Rate 669.11 | Middle Rate 671.91 | Pub Time 2026/11/11 10:25:02\",",
+      "category": "bank board",
+      "status": "conflict · historical snapshot",
+      "finding": "A quoted BOC board records buying 666.3 / selling 669.11 per 100 USD at 10:25:02.",
+      "reviewer_note": "A dated snapshot, not today's board; the discrepancy is published rather than silently corrected here.",
+      "source_ids": [
+        "B01"
+      ],
+      "official_urls": [
+        {
+          "id": "B01",
+          "url": "https://www.boc.cn/sourcedb/whpj/",
+          "publisher": "Bank of China"
+        }
+      ]
+    },
+    {
+      "id": "RV-03",
+      "file": "guide-fb2f2562/build.py",
+      "line": 325,
+      "excerpt": "<p class=\"lede\">Published inputs only: Bank of China board 666.06 / 668.86 per 100 USD (15:30, {C.TODAY}) {srcs([\"S01\"])} and fee table {srcs([\"S03\"])};",
+      "category": "bank board",
+      "status": "conflict · historical snapshot",
+      "finding": "An older guide's cost page states a BOC board of 666.06 / 668.86 per 100 USD at 15:30.",
+      "reviewer_note": "The fresh board prints 665.91 / 668.71 per 100 USD at 21:00:05; both are dated reference-only boards.",
+      "source_ids": [
+        "B01"
+      ],
+      "official_urls": [
+        {
+          "id": "B01",
+          "url": "https://www.boc.cn/sourcedb/whpj/",
+          "publisher": "Bank of China"
+        }
+      ]
+    },
+    {
+      "id": "RV-04",
+      "file": "guide-fb2f2562/content.py",
+      "line": 18,
+      "excerpt": "\"Lowest published exchange spread read today: BOC sells USD at 668.86 and buys at 666.06 per 100, a 0.21% gap to the midpoint [S01].\",",
+      "category": "bank board",
+      "status": "conflict · historical snapshot",
+      "finding": "An older summary derives a 0.21% midpoint gap from the 668.86 BOC sell price.",
+      "reviewer_note": "The fresh board gives 668.71 and a 0.2094% midpoint spread; the historical figure remains in its owning section.",
+      "source_ids": [
+        "B01"
+      ],
+      "official_urls": [
+        {
+          "id": "B01",
+          "url": "https://www.boc.cn/sourcedb/whpj/",
+          "publisher": "Bank of China"
+        }
+      ]
+    },
+    {
+      "id": "RV-05",
+      "file": "guide-fb2f2562/audit.py",
+      "line": 81,
+      "excerpt": "return (\"check\", \"CNY 620 converted at the IRS 2025 average (7.129), not at HSBC's dealing rate; HSBC's 2026-11-10 sell rate 6.7053746 gives USD 92.46.\")",
+      "category": "rate base",
+      "status": "rate-base conflict · needs review",
+      "finding": "The HSBC CNY 620 fee cap is translated at the IRS 2025 yearly average of 7.129 rather than a bank dealing rate.",
+      "reviewer_note": "CNY 620 = CNY 500 cap + CNY 120 cable; a tax-translation average is not an executable bank rate.",
+      "source_ids": [
+        "B02",
+        "B04",
+        "B07"
+      ],
+      "official_urls": [
+        {
+          "id": "B02",
+          "url": "https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html",
+          "publisher": "HSBC Bank (China)"
+        },
+        {
+          "id": "B04",
+          "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+          "publisher": "HSBC Bank (China)"
+        },
+        {
+          "id": "B07",
+          "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+          "publisher": "U.S. Internal Revenue Service"
+        }
+      ]
+    },
+    {
+      "id": "RV-06",
+      "file": "verification-3347ca0a/build.py",
+      "line": 691,
+      "excerpt": "renminbi fee of CNY 620 is {usd(620 / RATE_BOC)} at the board rate and {usd(620 / RATE_IRS)} at the tax rate — the",
+      "category": "rate base",
+      "status": "rate-base conflict · needs review",
+      "finding": "The root generator compares CNY 620 at both a board rate and the IRS yearly-average rate.",
+      "reviewer_note": "The published tariff's cap and cable charge are correctly summed, but the two rate bases should not be presented as one all-in cost.",
+      "source_ids": [
+        "B01",
+        "B04",
+        "B07"
+      ],
+      "official_urls": [
+        {
+          "id": "B01",
+          "url": "https://www.boc.cn/sourcedb/whpj/",
+          "publisher": "Bank of China"
+        },
+        {
+          "id": "B04",
+          "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+          "publisher": "HSBC Bank (China)"
+        },
+        {
+          "id": "B07",
+          "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+          "publisher": "U.S. Internal Revenue Service"
+        }
+      ]
+    },
+    {
+      "id": "RV-07",
+      "file": "COORDINATION.md",
+      "line": 1124,
+      "excerpt": "3. `README.md` cites a 2027 foreign earned income exclusion of USD 137,300; the IRS page read today gives 2025 and 2026 only. Not confirmed, not changed.",
+      "category": "tax figure",
+      "status": "corrected here · now verified",
+      "finding": "A prior board line says the 2027 FEIE of USD 137,300 was not confirmed.",
+      "reviewer_note": "Rev. Proc. 2026-35 §3.41 explicitly publishes USD 137,300 for tax years beginning in 2027; this session verifies it.",
+      "source_ids": [
+        "B26"
+      ],
+      "official_urls": [
+        {
+          "id": "B26",
+          "url": "https://www.irs.gov/pub/irs-drop/rp-26-35.pdf",
+          "publisher": "U.S. Internal Revenue Service"
+        }
+      ]
+    },
+    {
+      "id": "RV-08",
+      "file": "COORDINATION.md",
+      "line": 1239,
+      "excerpt": "- 59 files quote a foreign earned income exclusion of $132,900 / $137,300; the IRS page read here lists 2020–2023 only, so the figure is blank in this section (FR-12, RV-07).",
+      "category": "tax figure",
+      "status": "corrected here · now verified",
+      "finding": "A prior review says USD 132,900 / USD 137,300 were unverified and left blank.",
+      "reviewer_note": "2026 Form 2555 instructions publish USD 132,900; Rev. Proc. 2026-35 publishes USD 137,300 for 2027.",
+      "source_ids": [
+        "B25",
+        "B26"
+      ],
+      "official_urls": [
+        {
+          "id": "B25",
+          "url": "https://www.irs.gov/instructions/i2555",
+          "publisher": "U.S. Internal Revenue Service"
+        },
+        {
+          "id": "B26",
+          "url": "https://www.irs.gov/pub/irs-drop/rp-26-35.pdf",
+          "publisher": "U.S. Internal Revenue Service"
+        }
+      ]
+    },
+    {
+      "id": "RV-09",
+      "file": "estimate-facf2fe9/data/sources.json",
+      "line": 432,
+      "excerpt": "\"第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万元）的，经批准后可一次性汇出。\",",
+      "category": "superseded rule",
+      "status": "superseded · needs review",
+      "finding": "A historical source ledger repeats PBOC 2004 Article 6's compulsory staged-emigrant-remittance wording.",
+      "reviewer_note": "SAFE 汇发〔2014〕2号 §VI abolished the staged requirement and HQ filing; the later rule governs.",
+      "source_ids": [
+        "B12",
+        "B13"
+      ],
+      "official_urls": [
+        {
+          "id": "B12",
+          "url": "https://www.safe.gov.cn/safe/2014/0124/5476.html",
+          "publisher": "State Administration of Foreign Exchange"
+        },
+        {
+          "id": "B13",
+          "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+          "publisher": "People's Bank of China / State Council Gazette"
+        }
+      ]
+    },
+    {
+      "id": "RV-10",
+      "file": "dashboard-f79e64e7/content.py",
+      "line": 172,
+      "excerpt": "quote=\"取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。\",",
+      "category": "superseded rule",
+      "status": "verified · corrected in that section",
+      "finding": "A later dashboard quotes the SAFE rule abolishing compulsory staged emigrant remittance.",
+      "reviewer_note": "The quoted rule matches the official 2014 notice read this session.",
+      "source_ids": [
+        "B12"
+      ],
+      "official_urls": [
+        {
+          "id": "B12",
+          "url": "https://www.safe.gov.cn/safe/2014/0124/5476.html",
+          "publisher": "State Administration of Foreign Exchange"
+        }
+      ]
+    },
+    {
+      "id": "RV-11",
+      "file": "audit-0f0f59fe/findings.json",
+      "line": 46,
+      "excerpt": "\"topic\": \"A U.S. foreign tax credit is not automatic or necessarily dollar-for-dollar\",",
+      "category": "foreign tax credit",
+      "status": "verified · corrected in that section",
+      "finding": "A prior finding says the foreign tax credit is not automatic or necessarily dollar-for-dollar.",
+      "reviewer_note": "IRS FTC guidance says the qualifying credit may be less than withholding and no credit is allowed on excluded income.",
+      "source_ids": [
+        "B29"
+      ],
+      "official_urls": [
+        {
+          "id": "B29",
+          "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+          "publisher": "U.S. Internal Revenue Service"
+        }
+      ]
+    },
+    {
+      "id": "RV-12",
+      "file": "guide-fb2f2562/audit.py",
+      "line": 51,
+      "excerpt": "return (\"conflict\", \"Calls the credit dollar-for-dollar; the IRS page limits it (no credit on FEIE-excluded income; only tax actually owed after treaty).\")",
+      "category": "foreign tax credit",
+      "status": "conflict · corrected by audit",
+      "finding": "An older audit rule identifies a line calling the foreign tax credit dollar-for-dollar.",
+      "reviewer_note": "The official FTC page states limits and a treaty-reduced-tax rule; this section does not repeat the overstatement.",
+      "source_ids": [
+        "B29"
+      ],
+      "official_urls": [
+        {
+          "id": "B29",
+          "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+          "publisher": "U.S. Internal Revenue Service"
+        }
+      ]
+    },
+    {
+      "id": "RV-13",
+      "file": "COORDINATION.md",
+      "line": 673,
+      "excerpt": "- PBOC et al. Yinfa [2026] No. 42 — fiat↔virtual currency business is illegal financial activity: https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "category": "prohibited channel",
+      "status": "verified · current",
+      "finding": "The board records that fiat-to-virtual-currency business is illegal financial activity.",
+      "reviewer_note": "PBOC 银发〔2026〕42号 says such business is strictly prohibited; actual numeric penalties remain blank.",
+      "source_ids": [
+        "B18"
+      ],
+      "official_urls": [
+        {
+          "id": "B18",
+          "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+          "publisher": "People's Bank of China and other PRC authorities"
+        }
+      ]
+    },
+    {
+      "id": "RV-14",
+      "file": "briefing/AUDIT.md",
+      "line": 16,
+      "excerpt": "| AU-10 | **HSBC tariff internal header** — Retrieved PDF cover: effective 31 Oct 2026; internal Chinese section header reads “2024年9月12日生效” (12 Sep 2024). Fee items read from retrieved text. | Flag N02/F08 |",
+      "category": "tariff irregularity",
+      "status": "verified-limited · needs review",
+      "finding": "A prior audit records two effective-date headers inside the HSBC tariff PDF.",
+      "reviewer_note": "The cover says 31 Oct 2026 while embedded Chinese headers say 12 Sep 2024; the bank should confirm the applicable version.",
+      "source_ids": [
+        "B04"
+      ],
+      "official_urls": [
+        {
+          "id": "B04",
+          "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+          "publisher": "HSBC Bank (China)"
+        }
+      ]
+    },
+    {
+      "id": "RV-15",
+      "file": "final-d54bb3c2/model.py",
+      "line": 20,
+      "excerpt": "# S01 Bank of China board, 2026/11/11 20:39:19, CNY per 100 USD.",
+      "category": "bank board",
+      "status": "historical · snapshot",
+      "finding": "A final-section model records the 20:39:19 BOC board timestamp.",
+      "reviewer_note": "The USD row was unchanged at the 21:00:05 re-read; this section uses the later timestamp.",
+      "source_ids": [
+        "B01"
+      ],
+      "official_urls": [
+        {
+          "id": "B01",
+          "url": "https://www.boc.cn/sourcedb/whpj/",
+          "publisher": "Bank of China"
+        }
+      ]
+    },
+    {
+      "id": "RV-16",
+      "file": "COORDINATION.md",
+      "line": 677,
+      "excerpt": "- 31 CFR 1010.821 (eCFR, current to 2026-11-06) — non-willful USD 16,536 / willful USD 165,353 for assessments on/after 2025-01-17 (**verified-limited**: eCFR is authoritative but unofficial): https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "category": "penalty table",
+      "status": "verified-limited · needs review",
+      "finding": "The board records the eCFR FBAR penalty amounts with a 2025 amendment citation.",
+      "reviewer_note": "The eCFR table is displayed current to 11/09/2026 but its quoted amendment history ends at 90 FR 5630 (17 Jan 2025).",
+      "source_ids": [
+        "B21",
+        "B22"
+      ],
+      "official_urls": [
+        {
+          "id": "B21",
+          "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+          "publisher": "U.S. Internal Revenue Service"
+        },
+        {
+          "id": "B22",
+          "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+          "publisher": "eCFR / FinCEN, U.S. Treasury"
+        }
+      ]
+    },
+    {
+      "id": "RV-17",
+      "file": "verification-3347ca0a/build.py",
+      "line": 440,
+      "excerpt": "(\"guide-fb2f2562/index.html\", \"Decision guide + line-level repo review\", \"11 methods · 30 sources · 440 tier rows\", \"Separate pass on 11 Nov 2026: sources re-read the same day (incl. Rev. Proc. 2026-35 FEIE $137,300), cost at every $10,000 step, US FX-gain check, and a file:line scan of every other ",
+      "category": "tax figure",
+      "status": "verified · current",
+      "finding": "The root generator's archive note cites the 2027 FEIE of USD 137,300 from Rev. Proc. 2026-35.",
+      "reviewer_note": "The figure is explicitly published in §3.41 of the official revenue procedure.",
+      "source_ids": [
+        "B26"
+      ],
+      "official_urls": [
+        {
+          "id": "B26",
+          "url": "https://www.irs.gov/pub/irs-drop/rp-26-35.pdf",
+          "publisher": "U.S. Internal Revenue Service"
+        }
+      ]
+    },
+    {
+      "id": "RV-18",
+      "file": "README.md",
+      "line": 19,
+      "excerpt": "- **Decision guide + line-level repo review (11 Nov):** [guide-fb2f2562/index.html](guide-fb2f2562/index.html) — 30 official sources read 11 Nov 2026 (incl. Rev. Proc. 2026-35 §3.41 FEIE `$137,300`), 11 methods with steps, 40-tier cost tables, US FX-gain check, [Flagged for Review](guide-fb2f2562/fl",
+      "category": "tax figure",
+      "status": "verified · current",
+      "finding": "The README entry for an earlier guide cites the 2027 FEIE of USD 137,300.",
+      "reviewer_note": "The figure is now verified; the 2026 cap of USD 132,900 is a different tax year.",
+      "source_ids": [
+        "B26"
+      ],
+      "official_urls": [
+        {
+          "id": "B26",
+          "url": "https://www.irs.gov/pub/irs-drop/rp-26-35.pdf",
+          "publisher": "U.S. Internal Revenue Service"
+        }
+      ]
+    },
+    {
+      "id": "RV-19",
+      "file": "final-d54bb3c2/data/review.json",
+      "line": 73,
+      "excerpt": "\"finding\": \"The guide records the BOC board as buy 666.06 / sell 668.86 and the HSBC board as sell 6.7053746. The boards read for this section on 2026-11-11 20:39 are 665.91 / 668.71 and 6.7030239.\",",
+      "category": "bank board",
+      "status": "verified · historical comparison",
+      "finding": "A prior review compares an older BOC/HSBC board with its own 20:39 reading.",
+      "reviewer_note": "This is a documented comparison, not a live quote; the fresh 21:00:05 BOC board and 10 Nov HSBC board are used here.",
+      "source_ids": [
+        "B01",
+        "B02"
+      ],
+      "official_urls": [
+        {
+          "id": "B01",
+          "url": "https://www.boc.cn/sourcedb/whpj/",
+          "publisher": "Bank of China"
+        },
+        {
+          "id": "B02",
+          "url": "https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html",
+          "publisher": "HSBC Bank (China)"
+        }
+      ]
+    },
+    {
+      "id": "RV-20",
+      "file": "guide-fb2f2562/data/sources.json",
+      "line": 26,
+      "excerpt": "\"finding\": \"USD: bank sells (TT and cash) 6.7053746; bank buys TT 6.6386339; bank buys cash 6.6021025. Board dated 2026-11-10.\",",
+      "category": "bank board",
+      "status": "conflict · historical snapshot",
+      "finding": "An older source ledger records an HSBC sell rate of 6.7053746.",
+      "reviewer_note": "The fresh HSBC board prints 6.7030239 sell and 6.6362813 TT buy; the board is dated 10 Nov and reference-only.",
+      "source_ids": [
+        "B02"
+      ],
+      "official_urls": [
+        {
+          "id": "B02",
+          "url": "https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html",
+          "publisher": "HSBC Bank (China)"
+        }
+      ]
+    }
+  ],
+  "limitations": "Other sessions' files were not edited. Line numbers are re-located at build time. A matching line is a review candidate; the official link supports the comparison, not every word in the historical file."
+}

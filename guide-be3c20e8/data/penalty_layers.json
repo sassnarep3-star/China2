@@ -1,0 +1,211 @@
+{
+  "retrieved": "2026-11-11",
+  "layers": [
+    {
+      "id": "P01",
+      "layer": "Separate conversion tax",
+      "what": "The reviewed PRC FX statutes impose authenticity, quota and approval rules; none of the reviewed pages identifies a standalone tax on the act of converting CNY into USD. This is not a tax-free certification for the underlying funds.",
+      "published": "Not identified",
+      "unknown": null,
+      "sources": [
+        "B08",
+        "B09",
+        "B19",
+        "B20"
+      ],
+      "flags": [
+        "F-02",
+        "F-13"
+      ]
+    },
+    {
+      "id": "P02",
+      "layer": "PRC tax on the underlying income or asset",
+      "what": "Tax follows the income type and residence: comprehensive income 3.00%–45.00%, business income 5.00%–35.00%, and a 20.00% rate for interest/dividends/property/other enumerated income. Hukou cancellation requires tax clearance; late tax accrues a daily 0.05% surcharge and evasion can attract a 0.5–5.0× fine.",
+      "published": "Published rates and enforcement ranges",
+      "unknown": null,
+      "sources": [
+        "B13",
+        "B14",
+        "B20",
+        "B32"
+      ],
+      "flags": [
+        "F-02",
+        "F-13"
+      ]
+    },
+    {
+      "id": "P03",
+      "layer": "Documentary gate",
+      "what": "The practical barrier is often proof, not price: lawful-source materials, a tax certificate, ID and, for property transfers, immigration/inheritance/title documents. Banks must reasonably review authenticity, and SAFE may refuse property with unproven lawful source.",
+      "published": "Document lists and review duty",
+      "unknown": null,
+      "sources": [
+        "B08",
+        "B09",
+        "B10",
+        "B12",
+        "B13",
+        "B14"
+      ],
+      "flags": [
+        "F-02",
+        "F-20"
+      ]
+    },
+    {
+      "id": "P04",
+      "layer": "Exchange spread",
+      "what": "Buying USD at a bank's sell price and valuing it at the midpoint of that bank's published buy/sell prices produces a measurable board spread: 0.2094% for BOC and 0.4979% for HSBC. The boards themselves are reference-only.",
+      "published": "Board-derived illustration",
+      "unknown": null,
+      "sources": [
+        "B01",
+        "B02",
+        "B07"
+      ],
+      "flags": [
+        "F-04",
+        "F-05"
+      ]
+    },
+    {
+      "id": "P05",
+      "layer": "Sender, cable, card and cash fees",
+      "what": "BOC publishes 0.10% (min CNY 50, max CNY 260) plus a CNY 150 cable charge for non-HK/Macau/Taiwan e-banking wires. HSBC publishes a comparable capped TT fee, free notes withdrawal, overseas-ATM charges and Global Transfer charges by segment.",
+      "published": "Published tariff components",
+      "unknown": null,
+      "sources": [
+        "B03",
+        "B04",
+        "B16"
+      ],
+      "flags": [
+        "F-06",
+        "F-07",
+        "F-23"
+      ]
+    },
+    {
+      "id": "P06",
+      "layer": "Intermediary and receiving charges",
+      "what": "HSBC's tariff states that its charges exclude other institutions' charges and government taxes; BOC's schedule points to local/agreement differences. Pay Exact is an optional published charge, not a cap on shortfalls. No receiving-bank fee was found.",
+      "published": "Exclusion and optional charge",
+      "unknown": null,
+      "sources": [
+        "B03",
+        "B04"
+      ],
+      "flags": [
+        "F-01",
+        "F-07"
+      ]
+    },
+    {
+      "id": "P07",
+      "layer": "PRC evasion, splitting and prohibited-channel fines",
+      "what": "Evasion, fraudulent FX purchase, private/underground FX dealing and disguised capital transfers can attract a fine up to 30.00% of the amount, or from 30.00% up to an equal amount in serious cases, plus criminal liability. Splitting or borrowing quotas can trigger a watch list; crypto business is declared illegal.",
+      "published": "Statutory ranges",
+      "unknown": null,
+      "sources": [
+        "B09",
+        "B15",
+        "B18",
+        "B32"
+      ],
+      "flags": [
+        "F-18",
+        "F-21"
+      ]
+    },
+    {
+      "id": "P08",
+      "layer": "U.S. §988 currency gain",
+      "what": "Disposition of nonfunctional currency is a §988 transaction. An individual's personal-transaction gain is not recognized only when the otherwise recognized gain does not exceed $200; larger gains are ordinary income/loss. Acquisition basis and the ordinary tax rate are personal facts.",
+      "published": "De-minimis threshold and character",
+      "unknown": null,
+      "sources": [
+        "B06",
+        "B07",
+        "B27"
+      ],
+      "flags": [
+        "F-14",
+        "F-19"
+      ]
+    },
+    {
+      "id": "P09",
+      "layer": "U.S. information-reporting penalties",
+      "what": "FBAR uses a 10,000 aggregate-account threshold; Form 8938 thresholds depend on residence/status; Form 3520 applies to large foreign gifts; CBP uses a 10,000 currency-reporting threshold. These are reporting duties, not taxes on the transfer. The eCFR table gives maximum non-willful and willful penalties but its amendment history ends in 2025.",
+      "published": "Thresholds and inflation-adjusted maxima",
+      "unknown": null,
+      "sources": [
+        "B21",
+        "B22",
+        "B23",
+        "B24",
+        "B28",
+        "B30"
+      ],
+      "flags": [
+        "F-15",
+        "F-17"
+      ]
+    },
+    {
+      "id": "P10",
+      "layer": "FEIE, FTC and treaty interaction",
+      "what": "The 2026 FEIE cap is $132,900 and the next-year cap is $137,300. A foreign tax credit uses qualifying tax on the same income, cannot be claimed on excluded income, and may be limited by a treaty-reduced rate. Treaty text was not read line by line here.",
+      "published": "Caps and interaction rules",
+      "unknown": null,
+      "sources": [
+        "B25",
+        "B26",
+        "B29",
+        "B34"
+      ],
+      "flags": [
+        "F-16"
+      ]
+    },
+    {
+      "id": "P11",
+      "layer": "Cash and ATM physical constraints",
+      "what": "Mainland cards used abroad are capped at CNY 100,000 per person per calendar year and CNY 10,000 per card per day; carrying foreign notes above 5,000 needs a bank permit and above 10,000 is generally prohibited. Foreign ATM-owner fees, network rates, cash deposit/conversion and security costs are not published.",
+      "published": "Caps and issuer ATM fee",
+      "unknown": null,
+      "sources": [
+        "B04",
+        "B16",
+        "B17",
+        "B28"
+      ],
+      "flags": [
+        "F-10",
+        "F-11"
+      ]
+    },
+    {
+      "id": "P12",
+      "layer": "Time and future-rate exposure",
+      "what": "Quota, ATM and cash routes can require multiple calendar years; the property-transfer approval has published acceptance and decision working-day limits. Future bank rates, tax years and approval outcomes are not published, so any multi-year all-in estimate would be invented.",
+      "published": "Published time/count limits",
+      "unknown": null,
+      "sources": [
+        "B01",
+        "B06",
+        "B12",
+        "B14",
+        "B16",
+        "B17"
+      ],
+      "flags": [
+        "F-01",
+        "F-04",
+        "F-19"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,750 @@
+{
+  "retrieved": "2026-11-11",
+  "methods": [
+    {
+      "id": "R01",
+      "name": "BOC documented-income online FX purchase + one wire",
+      "status": "lawful · documentary",
+      "pricing": "complete",
+      "cost_model": "boc_wire",
+      "short": "Convert lawful current-account RMB income at BOC and wire USD to your own U.S. account.",
+      "best_for": "Foreign individual with ID, transaction-amount source materials and a tax certificate.",
+      "pros": [
+        "BOC publishes both a USD board and an e-banking wire tariff.",
+        "One outgoing wire is possible when the bank accepts the documents.",
+        "Own-account remittance is the statutory property-transfer model and Wise's own-account rule is consistent."
+      ],
+      "cons": [
+        "The board is reference-only and changes intraday.",
+        "The bank may refuse documents or apply local/agreement fees.",
+        "Intermediary and receiving fees are unpublished; U.S. reporting and §988 still apply."
+      ],
+      "steps": [
+        "Ask the PRC bank in writing whether it accepts your passport, lawful-source materials and tax certificate for the documented-income route; keep the answer.",
+        "Review the live BOC board, then obtain an executable quote in online banking or at the branch. The web board says the actual transaction rate governs.",
+        "Buy USD with that actual rate and retain the exchange memo and tax/source pack.",
+        "Submit one cross-border telegraphic transfer to your own U.S. account; compare the bank's quote with BOC's published 0.10% fee, CNY 50 minimum, CNY 260 maximum and CNY 150 cable charge.",
+        "Before execution, ask for correspondent, intermediary and receiving-bank fees in writing; the tariff excludes charges by other institutions.",
+        "Record acquisition and disposal rates; have FBAR, Form 8938, §988 and FTC/FEIE effects reviewed before filing."
+      ],
+      "sources": [
+        "B01",
+        "B03",
+        "B08",
+        "B09",
+        "B10",
+        "B21",
+        "B23",
+        "B27",
+        "B29",
+        "B31"
+      ],
+      "flags": [
+        "F-01",
+        "F-02",
+        "F-04",
+        "F-07",
+        "F-14",
+        "F-15",
+        "F-20"
+      ]
+    },
+    {
+      "id": "R02",
+      "name": "BOC own annual-convenience-quota purchase + wires",
+      "status": "conditional · own quota only",
+      "pricing": "complete",
+      "cost_model": "boc_quota",
+      "short": "Use your own annual FX purchase convenience quota, then wire USD; larger amounts need later calendar years.",
+      "best_for": "A qualifying domestic individual or foreign permanent-residence ID card holder who needs a slow, quota-compliant route.",
+      "pros": [
+        "The annual quota and wire thresholds are published by SAFE.",
+        "The BOC board and e-banking tariff allow a reproducible cost illustration.",
+        "Using only your own quota does not involve borrowed quotas or a watch-list evasion."
+      ],
+      "cons": [
+        "A U.S. passport alone does not establish quota eligibility.",
+        "Amounts above the quota require multiple calendar years and unknown future rates.",
+        "Splitting or borrowing quotas is prohibited and can trigger the watch list."
+      ],
+      "steps": [
+        "Confirm with the bank, in writing, that you hold the foreign permanent-residence ID card or otherwise qualify for the annual convenience quota.",
+        "Use no more than US$50,000 of your own quota per calendar year; do not borrow another person's quota.",
+        "Obtain the actual bank transaction rate each time rather than relying on a historical board.",
+        "Buy USD and wire from your own FX account to your own overseas account under the published wire rule.",
+        "Repeat only in a later calendar year using your own quota; record each year's rate and documents.",
+        "Keep the exchange memos and complete any FBAR/Form 8938 filings triggered by the account balance."
+      ],
+      "sources": [
+        "B01",
+        "B03",
+        "B08",
+        "B11",
+        "B15",
+        "B21",
+        "B23"
+      ],
+      "flags": [
+        "F-01",
+        "F-03",
+        "F-04",
+        "F-07",
+        "F-15",
+        "F-19"
+      ]
+    },
+    {
+      "id": "R03",
+      "name": "BOC CNY→USD purchase and hold in a PRC FX savings account",
+      "status": "lawful · conversion only",
+      "pricing": "partial",
+      "cost_model": "boc_hold",
+      "short": "Convert CNY to USD and deposit it in your own foreign-currency savings account in China; no money leaves China yet.",
+      "best_for": "Someone who needs to stop CNY exposure while documents for a later remittance are assembled.",
+      "pros": [
+        "SAFE expressly allows purchased FX to be deposited in the person's own FX savings account.",
+        "No outgoing wire fee is incurred at this step.",
+        "The published board still permits a spread illustration."
+      ],
+      "cons": [
+        "This is not repatriation; the funds remain a foreign financial account for U.S. reporting purposes.",
+        "Future remittance rate and bank charges are unknown.",
+        "The BOC board is reference-only."
+      ],
+      "steps": [
+        "Confirm the bank will open or credit your own FX savings account and accept the source/tax documents.",
+        "Obtain an executable USD sell rate; the published board is only a reference.",
+        "Buy USD and credit the USD to the same-name FX savings account; retain the memo.",
+        "Do not treat the conversion as a transfer; continue to document the source and filing obligations.",
+        "When ready to remit, return to a lawful wire/approval route and obtain fresh quotes."
+      ],
+      "sources": [
+        "B01",
+        "B08",
+        "B21",
+        "B23"
+      ],
+      "flags": [
+        "F-01",
+        "F-04",
+        "F-15",
+        "F-20"
+      ]
+    },
+    {
+      "id": "R04",
+      "name": "BOC USD cash purchase + physical carry",
+      "status": "conditional · permits",
+      "pricing": "partial",
+      "cost_model": "boc_cash",
+      "short": "Buy foreign notes at BOC and carry them abroad within the published permit limits.",
+      "best_for": "Small amounts where a lawful cash route is genuinely needed and all permits/reports can be obtained.",
+      "pros": [
+        "BOC publishes a cash sell price; foreign-currency cash withdrawal rules are published.",
+        "Up to US$5,000 per trip needs no carry permit; a bank permit covers the next band."
+      ],
+      "cons": [
+        "Cash withdrawal above the daily threshold requires advance SAFE reporting.",
+        "Over US$10,000 is generally prohibited except special SAFE permits; CBP aggregates families/groups above US$10,000.",
+        "Security, deposit, cash-conversion and permit fees are unpublished; repeated trips create future-rate and reporting exposure."
+      ],
+      "steps": [
+        "Ask the bank whether it has the notes and what cash sell rate applies; reserve large withdrawals if required.",
+        "Buy the USD notes with your own funds and keep the purchase memo.",
+        "If the amount is within US$5,000, no carry permit is needed; otherwise obtain a bank-issued or, in special cases, SAFE-issued permit before departure.",
+        "Do not exceed the permit amount or validity; keep the permit for inspection.",
+        "On U.S. entry, report collectively carried currency/monetary instruments above the CBP threshold.",
+        "Deposit or convert the cash only after obtaining the receiving institution's written rate and fees."
+      ],
+      "sources": [
+        "B01",
+        "B08",
+        "B17",
+        "B28"
+      ],
+      "flags": [
+        "F-01",
+        "F-04",
+        "F-11",
+        "F-13",
+        "F-15"
+      ]
+    },
+    {
+      "id": "R05",
+      "name": "HSBC China outward telegraphic transfer (Premier/Advance)",
+      "status": "lawful · documentary",
+      "pricing": "complete",
+      "cost_model": "hsbc_tt",
+      "short": "Convert CNY at HSBC China and send a USD telegraphic transfer to your own U.S. account.",
+      "best_for": "A customer with accepted documentation and a Premier/Advance account who wants a published tariff.",
+      "pros": [
+        "The HSBC board and current tariff are both published.",
+        "The outward TT formula has a clear cap and cable charge.",
+        "The bank's document-review duty is explicit."
+      ],
+      "cons": [
+        "The board is dated and reference-only; the PDF has two effective-date headers.",
+        "Intermediary/receiving fees and taxes are excluded from the tariff.",
+        "Private Banking, Premier Elite and local waivers change the fee; personal eligibility is unknown."
+      ],
+      "steps": [
+        "Ask HSBC China for its written source-of-funds checklist and confirmation that your account segment is Premier or Advance.",
+        "Obtain a same-day executable USD sell rate; do not rely on the web board alone.",
+        "Buy USD and submit the outward TT to your own U.S. account.",
+        "Compare the quoted sender fee with the published 0.10% formula, CNY 100 minimum, CNY 500 maximum and CNY 120 cable charge.",
+        "If full beneficiary credit is needed, ask about Pay Exact and the published CNY 200 charge; remember any shortfall can still be collected.",
+        "Obtain written correspondent/receiving charges and keep records for U.S. reporting and currency-gain analysis."
+      ],
+      "sources": [
+        "B02",
+        "B04",
+        "B09",
+        "B10",
+        "B21",
+        "B23",
+        "B27"
+      ],
+      "flags": [
+        "F-01",
+        "F-05",
+        "F-06",
+        "F-14",
+        "F-15",
+        "F-20",
+        "F-23"
+      ]
+    },
+    {
+      "id": "R06",
+      "name": "HSBC China outward telegraphic transfer (Private Banking individual)",
+      "status": "conditional · segment",
+      "pricing": "complete",
+      "cost_model": "hsbc_pb_tt",
+      "short": "Same conversion and wire, using the tariff's free individual Private Banking TT pricing.",
+      "best_for": "A customer whom HSBC confirms is an individual Private Banking customer.",
+      "pros": [
+        "The tariff says outward TT issuance and cable are free for individual Private Banking customers.",
+        "The published board still permits a spread illustration."
+      ],
+      "cons": [
+        "Private Banking eligibility and any separate account terms were not verified.",
+        "The board is reference-only and the PDF has two date headers.",
+        "Third-party charges and personal tax/reporting exposure remain blank."
+      ],
+      "steps": [
+        "Ask HSBC to confirm in writing that your account is an individual Private Banking account and that the free TT/cable tariff applies.",
+        "Obtain a same-day executable USD sell rate and full source-of-funds approval.",
+        "Buy USD and instruct the TT to your own U.S. account.",
+        "Confirm that no separate cable or issuance charge will be debited; keep the tariff and written confirmation.",
+        "Request all correspondent/receiving charges in writing and complete U.S. reporting/currency-gain checks."
+      ],
+      "sources": [
+        "B02",
+        "B04",
+        "B09",
+        "B21",
+        "B23",
+        "B27"
+      ],
+      "flags": [
+        "F-01",
+        "F-05",
+        "F-06",
+        "F-14",
+        "F-15",
+        "F-20"
+      ]
+    },
+    {
+      "id": "R07",
+      "name": "HSBC same-name Global Transfer (Private Banking/Premier)",
+      "status": "conditional · own HSBC account",
+      "pricing": "complete",
+      "cost_model": "hsbc_gt_free",
+      "short": "Convert CNY and use HSBC Global Transfer to your own HSBC account abroad where the service is available.",
+      "best_for": "A customer with confirmed same-name HSBC accounts in both countries and a free-tariff segment.",
+      "pros": [
+        "The tariff publishes Global Transfer as free for Private Banking and Premier.",
+        "A same-name transfer fits the own-account theme in the official rules.",
+        "The board still lets the spread be illustrated."
+      ],
+      "cons": [
+        "U.S.-side availability and terms were not independently read here.",
+        "The exchange spread remains; the board is reference-only.",
+        "Premier monthly/waiver status and third-party charges are unknown."
+      ],
+      "steps": [
+        "Ask both HSBC entities in writing whether same-name Global Transfer to your U.S. HSBC account is available and which segment applies.",
+        "Obtain an executable USD conversion rate and written source-of-funds approval.",
+        "Buy USD, then initiate Global Transfer to the same-name account.",
+        "Confirm the free transfer charge from the tariff; do not confuse the education-payment $7 charge with Global Transfer.",
+        "Keep the exchange memo and written fee confirmations; complete U.S. reporting and §988 checks."
+      ],
+      "sources": [
+        "B02",
+        "B04",
+        "B05",
+        "B08",
+        "B21",
+        "B23",
+        "B27"
+      ],
+      "flags": [
+        "F-01",
+        "F-05",
+        "F-06",
+        "F-14",
+        "F-15",
+        "F-20",
+        "F-22",
+        "F-23"
+      ]
+    },
+    {
+      "id": "R08",
+      "name": "HSBC same-name Global Transfer (Advance)",
+      "status": "conditional · own HSBC account",
+      "pricing": "complete",
+      "cost_model": "hsbc_gt_advance",
+      "short": "Same route using the Advance segment's published actual Global Transfer charge.",
+      "best_for": "A confirmed Advance customer with same-name HSBC accounts in both countries.",
+      "pros": [
+        "The tariff publishes the Advance Global Transfer actual charge.",
+        "The exchange spread and transfer fee can be computed from primary pages."
+      ],
+      "cons": [
+        "U.S.-side availability and terms were not independently read here.",
+        "The board is reference-only; third-party charges remain unpublished.",
+        "Advance eligibility has published restrictions and the account segment is a private fact."
+      ],
+      "steps": [
+        "Ask both HSBC entities in writing whether the corridor and your Advance account are eligible.",
+        "Obtain an executable USD conversion rate and written source-of-funds approval.",
+        "Buy USD, then initiate Global Transfer to your same-name U.S. HSBC account.",
+        "Confirm the $20 actual charge and keep the published tariff page with your records.",
+        "Obtain all other charges in writing and complete U.S. reporting/currency-gain checks."
+      ],
+      "sources": [
+        "B02",
+        "B04",
+        "B05",
+        "B21",
+        "B23",
+        "B27"
+      ],
+      "flags": [
+        "F-01",
+        "F-05",
+        "F-06",
+        "F-14",
+        "F-15",
+        "F-20",
+        "F-22"
+      ]
+    },
+    {
+      "id": "R09",
+      "name": "Wise from-CNY transfer to your own overseas account",
+      "status": "conditional · provider",
+      "pricing": "blank",
+      "cost_model": "wise",
+      "short": "Use a licensed partner's from-CNY product, subject to tax-record verification and an overall limit.",
+      "best_for": "A non-mainland individual with recent official PRC tax records and an account in the same name.",
+      "pros": [
+        "Wise publishes eligibility, own-account restrictions and per-transfer caps.",
+        "The product uses a PBOC-regulated licensed partner and provides bank-app/Alipay payment routes."
+      ],
+      "cons": [
+        "The exact fee, conversion rate and personal overall limit are not published on the help page.",
+        "Overall limit depends on income and tax paid; this is not a regulator's eligibility guarantee.",
+        "Mainland Chinese nationals are not eligible under the stated rule."
+      ],
+      "steps": [
+        "Confirm in the official product that you are not mainland Chinese, worked in China and have a tax record covering the required recent period.",
+        "Complete first-time verification and upload the official tax record; do not fund before seeing the assigned limit.",
+        "Choose bank-app or Alipay payment and observe the applicable published per-transfer cap.",
+        "Set up the transfer to your own overseas account and capture the exact fee, conversion rate and delivery estimate on screen.",
+        "Keep the quote, tax record and transfer receipt; compare with a bank wire before funding.",
+        "Complete U.S. reporting and currency-gain checks with the documented dates and rates."
+      ],
+      "sources": [
+        "B05",
+        "B08",
+        "B10",
+        "B21",
+        "B23",
+        "B27"
+      ],
+      "flags": [
+        "F-01",
+        "F-02",
+        "F-03",
+        "F-08",
+        "F-14",
+        "F-15"
+      ]
+    },
+    {
+      "id": "R10",
+      "name": "SAFE emigrant property transfer approval",
+      "status": "conditional · approval",
+      "pricing": "blank",
+      "cost_model": "emigrant",
+      "short": "One-off approval to convert and remit lawful property owned before emigration, after hukou cancellation.",
+      "best_for": "A person with foreign citizenship/permanent residence and pre-status lawful property in mainland China.",
+      "pros": [
+        "The later SAFE rule abolished compulsory staging and HQ filing; the bank may remit once or in instalments within the approved amount.",
+        "The service guide publishes no administrative fee and gives acceptance/decision timelines.",
+        "The route is designed for a full property balance, not an annual quota."
+      ],
+      "cons": [
+        "Eligibility, hukou cancellation, source/title and tax documents are private and strict.",
+        "The approval is single-use and requires an in-person visit in the published guide.",
+        "Bank FX rate, wire fee and third-party charges are blank; future staged rates are unknown."
+      ],
+      "steps": [
+        "Confirm that you obtained the qualifying foreign status and that the property was owned before that status.",
+        "Obtain hukou-cancellation, foreign-settlement, ID, income-source, property-title and tax-certificate documents.",
+        "Apply to the original-hukou SAFE office; ask for its current checklist and whether the single-use approval covers the full amount.",
+        "Wait for the published acceptance and decision periods; do not move funds before approval.",
+        "Take the approval document to the designated bank; obtain a written executable rate and all bank/correspondent/receiving charges.",
+        "Instruct remittance only to your own overseas account; the rule prohibits domestic FX cash withdrawal.",
+        "Keep every document for PRC tax clearance and U.S. reporting/currency-gain analysis."
+      ],
+      "sources": [
+        "B09",
+        "B12",
+        "B13",
+        "B14",
+        "B20",
+        "B21",
+        "B23",
+        "B27",
+        "B32"
+      ],
+      "flags": [
+        "F-01",
+        "F-02",
+        "F-03",
+        "F-09",
+        "F-14",
+        "F-15",
+        "F-18"
+      ]
+    },
+    {
+      "id": "R11",
+      "name": "SAFE inheritance property transfer approval",
+      "status": "conditional · approval",
+      "pricing": "blank",
+      "cost_model": "inheritance",
+      "short": "Separate approval for a foreign citizen or qualifying resident to remit liquidated PRC inheritance.",
+      "best_for": "An heir with official inheritance, title and tax documents.",
+      "pros": [
+        "The rule defines inheritance transfer separately and abolished separate applications for different decedents and notarisation of listed documents.",
+        "The bank must remit to the heir's own overseas account."
+      ],
+      "cons": [
+        "An inheritance-specific service guide, administrative fee, bank rate and wire charges were not read here.",
+        "Eligibility and document acceptance are private; unproven lawful source is refused."
+      ],
+      "steps": [
+        "Obtain death, relationship/inheritance, property-title and tax-certificate documents.",
+        "Apply to the SAFE office for the deceased's original hukou; ask for its current checklist.",
+        "Do not treat inherited capital as salary or use another person's quota.",
+        "After approval, obtain a written executable rate and all bank/correspondent/receiving charges.",
+        "Instruct the bank to remit to your own overseas account; do not take domestic FX cash.",
+        "Keep documents for U.S. gift/bequest reporting review and currency-basis analysis."
+      ],
+      "sources": [
+        "B09",
+        "B12",
+        "B13",
+        "B20",
+        "B24",
+        "B27",
+        "B32"
+      ],
+      "flags": [
+        "F-01",
+        "F-02",
+        "F-03",
+        "F-09",
+        "F-12",
+        "F-14",
+        "F-15"
+      ]
+    },
+    {
+      "id": "R12",
+      "name": "Overseas ATM withdrawals with a mainland card",
+      "status": "conditional · cash ceiling",
+      "pricing": "partial",
+      "cost_model": "atm",
+      "short": "Withdraw local currency abroad from a mainland card, within annual/daily SAFE ceilings, then deposit/convert it.",
+      "best_for": "Small amounts over time where card and foreign ATM fees/rates are obtained in writing.",
+      "pros": [
+        "SAFE publishes an annual per-person ceiling and a per-card daily ceiling; one HSBC tariff publishes overseas ATM charges.",
+        "The arithmetic for withdrawals and years is reproducible from those caps."
+      ],
+      "cons": [
+        "The foreign ATM owner's fee, UnionPay/network conversion rate, cash deposit and security costs are blank.",
+        "Exceeding the annual cap blocks overseas withdrawals in the current and second years.",
+        "This is a slow cash route and creates CBP reporting exposure for large collective cash."
+      ],
+      "steps": [
+        "Ask the card issuer for its written overseas ATM fee, network FX rate and daily limit.",
+        "Confirm the SAFE annual and per-card daily ceilings apply to your cards, including supplementary cards.",
+        "Withdraw only within the published caps; keep each receipt and the exact conversion shown.",
+        "Deposit/convert the cash at a U.S. institution only after obtaining its written rate and fees.",
+        "If carrying or sending more than the CBP threshold at one time, file the required report.",
+        "Record every date/rate for U.S. currency-gain and FBAR work."
+      ],
+      "sources": [
+        "B01",
+        "B04",
+        "B16",
+        "B21",
+        "B27",
+        "B28"
+      ],
+      "flags": [
+        "F-01",
+        "F-10",
+        "F-11",
+        "F-14",
+        "F-15",
+        "F-19"
+      ]
+    },
+    {
+      "id": "R13",
+      "name": "Direct cross-border RMB settlement to an overseas account",
+      "status": "unverified · do not assume",
+      "pricing": "blank",
+      "cost_model": "cross_rmb",
+      "short": "A possible bank current-account RMB settlement followed by offshore conversion; not verified for an accumulated savings/capital balance.",
+      "best_for": "Only if a bank and SAFE give a written lawful basis, permitted purpose, limit, rate and tariff.",
+      "pros": [
+        "PBOC supports current-account cross-border RMB settlement for individuals, including lawful salary, under bank due diligence and AML duties."
+      ],
+      "cons": [
+        "No general personal savings/capital route, fee, exchange rate, limit or receiving-bank term was published on that page.",
+        "A generic policy statement is not approval for your balance."
+      ],
+      "steps": [
+        "Do not start with a transfer; first ask the bank for the exact rule and permitted transaction category in writing.",
+        "Ask SAFE to confirm the classification of your balance if the bank cannot cite a rule.",
+        "Request the full fee, rate, limit and receiving-bank terms in writing.",
+        "If any of those are missing, leave every cost cell blank and use a verified route."
+      ],
+      "sources": [
+        "B09",
+        "B10",
+        "B33"
+      ],
+      "flags": [
+        "F-01",
+        "F-12",
+        "F-20"
+      ]
+    },
+    {
+      "id": "R14",
+      "name": "HSBC USD cash purchase + physical carry",
+      "status": "conditional · permits",
+      "pricing": "partial",
+      "cost_model": "hsbc_cash",
+      "short": "Buy foreign notes at HSBC China, where notes withdrawal is published as free, and carry them under the permit rules.",
+      "best_for": "Small amounts where HSBC has notes and all PRC/U.S. permit and reporting requirements are met.",
+      "pros": [
+        "HSBC publishes a cash sell/buy board and says foreign-currency notes withdrawal over the counter is free.",
+        "The PRC and U.S. cash limits/reporting rules are published."
+      ],
+      "cons": [
+        "The cash buy/sell spread is larger than the TT spread; the board is reference-only and dated.",
+        "Security, deposit, cash-conversion and permit fees are blank.",
+        "Cash withdrawal and carry permits have advance-notice and amount limits."
+      ],
+      "steps": [
+        "Ask the branch whether it has USD notes, the advance-notice requirement and the actual cash sell rate.",
+        "Buy the notes and keep the purchase and withdrawal memos; confirm the free notes-withdrawal tariff applies.",
+        "Observe the PRC carry-permit rules and the permit validity period.",
+        "Do not exceed the bank/SAFE permit limits; retain the documents for inspection.",
+        "Report collectively carried currency/monetary instruments above the CBP threshold on U.S. entry.",
+        "Obtain written U.S. deposit/conversion terms before depositing."
+      ],
+      "sources": [
+        "B02",
+        "B04",
+        "B08",
+        "B17",
+        "B28"
+      ],
+      "flags": [
+        "F-01",
+        "F-05",
+        "F-06",
+        "F-11",
+        "F-13",
+        "F-15"
+      ]
+    },
+    {
+      "id": "U01",
+      "name": "Quota splitting or borrowing another person's quota",
+      "status": "unlawful",
+      "pricing": "not-priced",
+      "cost_model": "unlawful",
+      "short": "Prohibited workaround using multiple people's quotas to evade quota/authenticity management.",
+      "best_for": "Not a route; listed so the penalty is explicit.",
+      "pros": [
+        "None; it is prohibited."
+      ],
+      "cons": [
+        "SAFE says individuals must not use splitting to evade quota/authenticity management; borrowing quotas can place a person on the watch list for the listing year and the following two years.",
+        "Documentary checks are stricter during the watch period."
+      ],
+      "steps": [],
+      "sources": [
+        "B08",
+        "B11",
+        "B15"
+      ],
+      "flags": [
+        "F-18",
+        "F-21"
+      ]
+    },
+    {
+      "id": "U02",
+      "name": "Underground swap / private FX dealing",
+      "status": "unlawful",
+      "pricing": "not-priced",
+      "cost_model": "unlawful",
+      "short": "Exchanging CNY for offshore USD through an unlicensed broker or private counterparty.",
+      "best_for": "Not a route; listed so the penalty is explicit.",
+      "pros": [
+        "None; the activity is prohibited."
+      ],
+      "cons": [
+        "Private, disguised or brokered FX dealing can attract a fine up to 30.00% of the amount, or from 30.00% up to an equal amount in serious cases, plus confiscation and criminal liability.",
+        "The quoted bank cannot verify the source or rate."
+      ],
+      "steps": [],
+      "sources": [
+        "B09",
+        "B18"
+      ],
+      "flags": [
+        "F-21"
+      ]
+    },
+    {
+      "id": "U03",
+      "name": "Crypto / stablecoin conversion",
+      "status": "unlawful",
+      "pricing": "not-priced",
+      "cost_model": "unlawful",
+      "short": "Converting CNY into virtual currency or an RMB-linked stablecoin and moving value offshore.",
+      "best_for": "Not a route; listed so the legal status is explicit.",
+      "pros": [
+        "None; the activity is prohibited."
+      ],
+      "cons": [
+        "The official notice says fiat-to-virtual-currency exchange and related virtual-currency business are illegal financial activities, strictly prohibited and subject to penalties under other rules; RMB-linked stablecoin issuance is restricted.",
+        "Investment losses from covered conduct are borne by the investor."
+      ],
+      "steps": [],
+      "sources": [
+        "B09",
+        "B18"
+      ],
+      "flags": [
+        "F-21"
+      ]
+    },
+    {
+      "id": "U04",
+      "name": "False trade/current-transaction label or disguised capital transfer",
+      "status": "unlawful",
+      "pricing": "not-priced",
+      "cost_model": "unlawful",
+      "short": "Using fake invoices or a false payment purpose to buy FX or move capital abroad.",
+      "best_for": "Not a route; listed so the penalty is explicit.",
+      "pros": [
+        "None; the activity is prohibited."
+      ],
+      "cons": [
+        "Fraudulent FX purchase and evasion/套汇 carry fines, mandatory reversal and possible criminal liability; banks must reasonably review authenticity.",
+        "Mislabelling the source can also corrupt tax records."
+      ],
+      "steps": [],
+      "sources": [
+        "B09",
+        "B19",
+        "B20",
+        "B32"
+      ],
+      "flags": [
+        "F-02",
+        "F-13",
+        "F-21"
+      ]
+    },
+    {
+      "id": "U05",
+      "name": "Carrying cash above permit limits or repeated trips to evade",
+      "status": "unlawful",
+      "pricing": "not-priced",
+      "cost_model": "unlawful",
+      "short": "Exceeding the foreign-cash permit rules or structuring trips to avoid them.",
+      "best_for": "Not a route; listed so the penalty is explicit.",
+      "pros": [
+        "None; the activity is prohibited."
+      ],
+      "cons": [
+        "Carrying FX in violation of the rules can attract a warning and a fine up to 20.00% of the amount; U.S. failure to report more than 10,000 risks seizure and penalties.",
+        "Families/groups are aggregated for U.S. reporting."
+      ],
+      "steps": [],
+      "sources": [
+        "B09",
+        "B17",
+        "B28"
+      ],
+      "flags": [
+        "F-11"
+      ]
+    },
+    {
+      "id": "U06",
+      "name": "Third-party or straw-man account channel",
+      "status": "unlawful",
+      "pricing": "not-priced",
+      "cost_model": "unlawful",
+      "short": "Sending CNY through someone else's account or to a recipient that is not your own to bypass review.",
+      "best_for": "Not a route; listed so the penalty is explicit.",
+      "pros": [
+        "None; the activity conflicts with own-account and authenticity rules."
+      ],
+      "cons": [
+        "Property transfers must go to the applicant's own overseas account; Wise permits only own-account from-CNY transfers; banks review authenticity and quota splitting is prohibited.",
+        "A mismatched name can cause refusal and a compliance report."
+      ],
+      "steps": [],
+      "sources": [
+        "B05",
+        "B08",
+        "B09",
+        "B13",
+        "B15"
+      ],
+      "flags": [
+        "F-20",
+        "F-21"
+      ]
+    }
+  ]
+}
