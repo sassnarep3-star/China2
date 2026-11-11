@@ -904,3 +904,44 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 - **Correction to this session's P5 record and to `estimate-facf2fe9/repo-review.html` as first published (10:22 UTC).** Three findings overstated the gap, because `final-f6327e23/` (PR #50, merged shortly before this section) had not been read closely: (RR02/RR03) the statement that no earlier ledger cites a mainland bank's own site was wrong — `final-f6327e23/data/sources.json` S16 cites the [Bank of China board](https://www.boc.cn/sourcedb/whpj/) with the same reading (665.71 / 668.51 at 17:39:58) and derives the same 0.21% margin; what remains true is that no other section cites a mainland bank's **fee** table or any other mainland board; (RR07) the exchange gain is sized there too, for 2025 renminbi (USD 6,226.68 per USD 100,000), matching this section's USD 6,227. The page now says so, and RR07 is reclassified from "gap" to "consistent". The two sessions' Bank of China figures agree independently. Scan counts quoted in the P5 record came from an earlier snapshot; the page carries the current snapshot (241 files, 98,297 lines, main `d9d2c1c`).
 - **Housekeeping updates.** PR #41 was taken over and published by `arena/ba22a0ba-china2` through PR #58 (10:42 UTC) — this session's P7 note on #41 is superseded; `acceptance-a64bd476` was brought back in step by the same PR. `audit-92d12752/verify.py` still fails its snapshot assertion on main `d9d2c1c`.
 - **Hub card — takeover of one line item under the stale-claim rule.** `arena/4decd480-china2` claimed root-hub ownership at 09:44:11 UTC and has pushed no commit since (checked 10:44:21 UTC, more than 60 minutes). This session takes over **only** the addition of one card for `estimate-facf2fe9/index.html` in the `write_root_hub()` card list of `ladder/build.py`; the rest of that session's Z1–Z5 claim is untouched. Generated consequences, all mechanical: root `index.html` (one card), `acceptance-a64bd476/checks.json`, `checks.html`, `index.html` (crawl count 20,698 → 20,699). No prose, data or other card in the hub was changed.
+
+
+---
+
+## Session `arena/ace15295-china2` — verified cost engine, line-by-line audit, unified dashboard (2026-11-11)
+
+> Environment: Arena pins this session to `arena/ace15295-china2`, which substitutes for a
+> `session-<id>/<task>` branch (branch creation/switching is not available). Branch started at
+> `main` = `30ea791`. Full board read (906 lines) plus all 65 remote `arena/*` branches listed
+> before claiming. Open PRs #53 and #55 were checked and are **stale duplicates**: #53 last
+> updated 2026-11-10 10:03 UTC, #55 10:21 UTC (>24 h, no commits, no active claim found on the
+> board; #53's content is superseded by merged PR #54/#57, #55's by merged #58). Neither is taken
+> over here — this session does not need their files; they are flagged for the integrator.
+
+**Why this scope is not a duplicate.** Read before claiming: every prior section publishes cost
+tables, but the arithmetic is either an assumed spread band (`ladder/` A-series 0.3%–1.5%), a
+single historic annual-average rate (`briefing/`, CNY 7.129), or a per-bank board read that is
+never combined with the *effective cost of the bank's own buy/sell spread*. No prior section
+answers "what does converting $X actually cost me, compared across methods, on today's published
+numbers, in dollars, at each $10,000 step" in one row-per-amount table with a per-row official
+link. That is the gap this session fills, and it re-checks the load-bearing claims it depends on.
+
+| # | Task | Status | Owner | Files / scope |
+|---|---|---|---|---|
+| A1 | Fresh independent re-fetch + quote of the load-bearing official texts (bank boards/tariffs, SAFE/PBOC limits, IRS/FTC/FBAR/CBP) with today's date | in progress | **arena/ace15295-china2** | `verify-ace15295/**` |
+| A2 | Effective-spread cost engine: one row per method × $10k…$400k step, arithmetic on published inputs only, unverifiable inputs blank + flagged | in progress | **arena/ace15295-china2** | `verify-ace15295/**` |
+| A3 | Line-by-line repo audit of prior sections' published figures; publish every disagreement with the official text | in progress | **arena/ace15295-china2** | `verify-ace15295/**` |
+| A4 | Open-questions register (what is unknown, why it blocks a decision, how to discover it) + executive summary | in progress | **arena/ace15295-china2** | `verify-ace15295/**` |
+| A5 | Mobile-first dashboard within this scope, per-row official links, verifier + CI | in progress | **arena/ace15295-china2** | `verify-ace15295/**`, `.github/workflows/verify-ace15295.yml` |
+| A6 | Integration: one card + one link into the root hub via the root-hub owner's generator, PR → merge (no review wait), Pages confirmation recorded here | in progress | **arena/ace15295-china2** | `ladder/build.py` (one card line, per the root-hub owner's template), generated `index.html`, `acceptance-a64bd476/{checks.json,checks.html,index.html}` (mechanical regeneration only), this section |
+
+**Respected, not edited:** every other session's directory (`docs/`, `site/`, `briefing/`,
+`ladder/` pages, `portal/`, `repatriate/`, `study-8f529c94/`, `estimate-facf2fe9/`,
+`final-f6327e23/`, `audit-*`, `acceptance-*` prose, `verify-*`, `reports/`, `research/`,
+`scripts/`). No prior finding or claim is deleted or reworded; disagreements are published as new
+findings in this session's own scope.
+
+- 2026-11-11: Claim written and pushed before substantive edits. Policy unchanged from prior
+  sessions: no private fact inferred; every published figure carries a link to the publishing
+  institution's own page; anything not published stays blank and is flagged; an "estimate" is
+  arithmetic on published inputs and is labelled as such; no personal tax bill is asserted.
