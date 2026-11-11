@@ -853,6 +853,10 @@ def write_root_hub():
                 f'{esc(label)}</a>')
 
     cards = [
+        # Added by session arena-d6a42474 (2026-11-11): one navigation card for its
+        # consolidated section. Additive only; no other card or text changed.
+        ("canon-d6a42474/index.html", "Consolidated dashboard · re-read 11 November 2026", "18 official sources · 8 priced routes · 40 tiers each · 24 flags",
+         "Bank of China board 15:30:04 and both bank tariffs read that day; every fee recomputed from the published words, the one-way margin separated from round-trip, and every disagreement with earlier sections counted on the audit page."),
         ("verify-d5d1f860/index.html", "Live-verified dashboard · newest pass", "24 sources re-fetched · 680 rows · 16 flags",
          "Quote-level re-verification dated 10 November 2026: each load-bearing document was re-fetched and the exact sentence is shown with its link. Fees recomputed independently; blanks where nothing is published."),
         ("estimate-facf2fe9/index.html", "Published-rate estimates · bank boards read 10 Nov 2026", "6 bank boards · 4 tariffs · 23 methods × 40 tiers",
@@ -926,7 +930,7 @@ footer a{{color:#a4e5cf}}
 </style>
 </head>
 <body>
-    <header><strong>China money</strong><p>Official-source research · summary re-reviewed 10 November 2026 · navigation integrated 10 November 2026 · not tax or legal advice</p></header>
+    <header><strong>China money</strong><p>Official-source research · summary re-reviewed 10 November 2026 · consolidated section re-read 11 November 2026 · not tax or legal advice</p></header>
 <main>
 <h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
 <p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>

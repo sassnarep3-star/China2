@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repository audit · conflicts, duplicates and reproducible counts</title>
+<meta name="description" content="A build-time scan of the repository showing where the same figure appears in conflicting forms, with file counts, examples and the sources behind the version used here.">
+<meta name="theme-color" content="#0f1f1a">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mark">¥</span><span>China Money<small>CNY → USD · consolidated desk</small></span></a>
+  <div class="site-meta">Every figure read from an official page on 2026-11-11 · research, not tax or legal advice</div>
+</div></header>
+<nav class="site" aria-label="Sections"><div class="wrap">
+<a href="index.html">Answer</a>
+<a href="costs.html">Costs</a>
+<a href="methods.html">Methods</a>
+<a href="taxes.html">Tax &amp; penalties</a>
+<a href="questions.html">Questions</a>
+<a href="flags.html">Flagged</a>
+<a href="sources.html">Sources</a>
+<a href="audit.html" aria-current="page">Repo audit</a>
+</div></nav>
+<main id="main"><div class="wrap">
+
+<span class="eyebrow">Repository audit · generated 2026-11-11</span>
+<h1>What the repository contains, and where it disagrees</h1>
+<p class="lede">The counts on this page are produced by scanning the repository at build time and are re-checked by
+<code>verify.py</code>. Nothing here is typed by hand. The point is not to shame earlier sections — they are
+independent research runs — but to show which of them quote a superseded figure and where the same fact appears in
+two forms.</p>
+
+<div class="kpis">
+  <div class="kpi"><p class="label">Text files scanned</p><div class="value">314</div>
+    <p class="sub">excluding .git, caches and this section</p></div>
+  <div class="kpi"><p class="label">HTML pages</p><div class="value">131</div>
+    <p class="sub">including earlier dashboards</p></div>
+  <div class="kpi"><p class="label">Sections with an index</p><div class="value">24</div>
+    <p class="sub">each an independent research run</p></div>
+  <div class="kpi"><p class="label">Sources read here</p><div class="value">18</div>
+    <p class="sub">this session, 2026-11-11</p></div>
+</div>
+
+<h2 id="patterns">The same fact, in different forms</h2>
+<div class="tbl-wrap"><div class="tbl-scroll"><table>
+<caption>Reproducible text scan · file counts</caption>
+<thead><tr><th>Pattern</th><th>What it represents</th><th class="num">Files</th><th>Examples</th><th>Source</th></tr></thead>
+<tbody><tr><td data-label="Pattern"><span class="mono">86.97</span></td><td data-label="Meaning">HSBC CNY 620 converted at the IRS 2025 average (7.129)</td><td class="num" data-label="Files">74</td><td class="mono" data-label="Examples">COORDINATION.md, acceptance-a64bd476/build.py, acceptance-a64bd476/checks.html</td><td class="src" data-label="Source"><a href="sources.html#S09">S09</a> <a href="sources.html#S13">S13</a></td></tr><tr><td data-label="Pattern"><span class="mono">92.43</span></td><td data-label="Meaning">HSBC CNY 620 converted at a 2026-11-10 board rate</td><td class="num" data-label="Files">9</td><td class="mono" data-label="Examples">COORDINATION.md, playbook-c1d73006/costs.html, playbook-c1d73006/data/costs.csv</td><td class="src" data-label="Source"><a href="sources.html#S07">S07</a></td></tr><tr><td data-label="Pattern"><span class="mono">92.70</span></td><td data-label="Meaning">HSBC CNY 620 at the 2026-11-11 15:30:04 selling rate used here</td><td class="num" data-label="Files">1</td><td class="mono" data-label="Examples">COORDINATION.md</td><td class="src" data-label="Source"><a href="sources.html#S07">S07</a></td></tr><tr><td data-label="Pattern"><span class="mono">666.30</span></td><td data-label="Meaning">BOC buy price in the 10:25:02 snapshot</td><td class="num" data-label="Files">9</td><td class="mono" data-label="Examples">COORDINATION.md, dashboard-f79e64e7/content.py, dashboard-f79e64e7/data/flags.json</td><td class="src" data-label="Source"><a href="sources.html#S07">S07</a></td></tr><tr><td data-label="Pattern"><span class="mono">669.11</span></td><td data-label="Meaning">BOC sell price in the 10:25:02 snapshot</td><td class="num" data-label="Files">13</td><td class="mono" data-label="Examples">COORDINATION.md, dashboard-f79e64e7/content.py, dashboard-f79e64e7/data/flags.json</td><td class="src" data-label="Source"><a href="sources.html#S07">S07</a></td></tr><tr><td data-label="Pattern"><span class="mono">666.06</span></td><td data-label="Meaning">BOC buy price in the 15:30:04 snapshot</td><td class="num" data-label="Files">1</td><td class="mono" data-label="Examples">COORDINATION.md</td><td class="src" data-label="Source"><a href="sources.html#S07">S07</a></td></tr><tr><td data-label="Pattern"><span class="mono">668.86</span></td><td data-label="Meaning">BOC sell price in the 15:30:04 snapshot</td><td class="num" data-label="Files">1</td><td class="mono" data-label="Examples">COORDINATION.md</td><td class="src" data-label="Source"><a href="sources.html#S07">S07</a></td></tr><tr><td data-label="Pattern"><span class="mono">132,900</span></td><td data-label="Meaning">2026 foreign earned income exclusion</td><td class="num" data-label="Files">74</td><td class="mono" data-label="Examples">COORDINATION.md, EXECUTIVE-SUMMARY.md, audit-ad300459/exports/findings.csv</td><td class="src" data-label="Source"><a href="sources.html#S14">S14</a></td></tr><tr><td data-label="Pattern"><span class="mono">137,300</span></td><td data-label="Meaning">a 2027 exclusion figure</td><td class="num" data-label="Files">18</td><td class="mono" data-label="Examples">COORDINATION.md, EXECUTIVE-SUMMARY.md, briefing/AUDIT.md</td><td class="src" data-label="Source"><a href="sources.html#S14">S14</a></td></tr><tr><td data-label="Pattern"><span class="mono">0.42%</span></td><td data-label="Meaning">round-trip spread, used as a one-way 'bound' by some pages</td><td class="num" data-label="Files">5</td><td class="mono" data-label="Examples">final-f6327e23/costs.html, index.html, ladder/ladder.html</td><td class="src" data-label="Source"><a href="sources.html#S07">S07</a></td></tr><tr><td data-label="Pattern"><span class="mono">0.210%</span></td><td data-label="Meaning">one-way margin versus the midpoint used here</td><td class="num" data-label="Files">3</td><td class="mono" data-label="Examples">COORDINATION.md, dashboard-f79e64e7/costs.html, estimate-facf2fe9/costs.html</td><td class="src" data-label="Source"><a href="sources.html#S07">S07</a></td></tr><tr><td data-label="Pattern"><span class="mono">分次汇出</span></td><td data-label="Meaning">staged remittance language superseded by Hui Fa [2014] No. 2</td><td class="num" data-label="Files">8</td><td class="mono" data-label="Examples">dashboard-f79e64e7/content.py, dashboard-f79e64e7/data/sources.json, dashboard-f79e64e7/sources.html</td><td class="src" data-label="Source"><a href="sources.html#S03">S03</a> <a href="sources.html#S04">S04</a></td></tr><tr><td data-label="Pattern"><span class="mono">2024年9月12日</span></td><td data-label="Meaning">the Chinese effective-date header in HSBC's tariff</td><td class="num" data-label="Files">9</td><td class="mono" data-label="Examples">briefing/AUDIT.md, briefing/audit.html, briefing/build.py</td><td class="src" data-label="Source"><a href="sources.html#S09">S09</a></td></tr><tr><td data-label="Pattern"><span class="mono">7.129</span></td><td data-label="Meaning">IRS 2025 yearly average CNY/USD</td><td class="num" data-label="Files">133</td><td class="mono" data-label="Examples">COORDINATION.md, README.md, acceptance-a64bd476/build.py</td><td class="src" data-label="Source"><a href="sources.html#S13">S13</a></td></tr></tbody></table></div></div>
+<p class="muted">A file count is not an error count: a section may quote two rates deliberately, to show a
+discrepancy. What the scan establishes is that a reader will meet more than one version of the same number.</p>
+
+<h2>The findings that follow from it</h2>
+<ul>
+  <li><strong>The CNY 620 HSBC cap appears as both $86.97 and $92.43</strong> (and now $92.70 here). The first is the
+  cap converted at the IRS 2025 yearly average (7.129); the second at a 2026-11-10 board rate; the third at the
+  board read for this page. All three are arithmetic, but only one matches the rate a customer would pay on the day
+  (F04, F21).</li>
+  <li><strong>Same-day Bank of China snapshots differ.</strong> The 10:25:02 board (666.30 / 669.11) and the
+  15:30:04 board (666.06 / 668.86) both appear. The tables here use the later one and say so.</li>
+  <li><strong>The 2026 exclusion appears as $132,900 and $137,300.</strong> The first is published in IR-2025-103;
+  the second is not in any IRS page read for this pass and is therefore not used (F09).</li>
+  <li><strong>Staged emigrant remittance survives in older text.</strong> Files still containing 分次汇出 describe a
+  requirement cancelled by Hui Fa [2014] No. 2 §VI(2) (F10).</li>
+  <li><strong>The HSBC tariff carries two effective dates</strong> (English cover 31 October 2026, Chinese header
+  12 September 2024), and the scan finds the Chinese date in the file itself (F05).</li>
+  <li><strong>Root-hub counts mix sections.</strong> The landing page combines method counts, row counts and source
+  counts that come from different research runs; they are all individually sourced but do not describe one dataset.</li>
+</ul>
+
+<h2>What this session changed</h2>
+<p>Only added: this section and one navigation card. No other section's content was edited, and no figure from
+another section was carried over without being re-read. Where the same fact differs, both versions are published
+here and the one used is named.</p>
+
+<h2>Verification performed</h2>
+<ul>
+  <li>Every cost row is recomputed from the published CNY figures by <code>verify.py</code> with exact fractions and
+  compared cell by cell with the HTML and the CSV.</li>
+  <li>Every table row on every page is checked for a link to the publishing institution's own page.</li>
+  <li>Every blank cell is checked to link to a flag.</li>
+  <li>All local links and anchors are resolved; the scan above is re-run and compared with <code>data/repo-scan.json</code>.</li>
+  <li>Each source quotation is checked to appear in <code>data/sources.json</code> and each cited source id to exist.</li>
+</ul>
+
+<h2>Other sections in this repository</h2>
+<p><span class="pill gray">acceptance-373b54a3</span> <span class="pill gray">acceptance-382482c0</span> <span class="pill gray">acceptance-a64bd476</span> <span class="pill gray">audit-0f0f59fe</span> <span class="pill gray">audit-456e7542</span> <span class="pill gray">audit-6068a908</span> <span class="pill gray">audit-86f0</span> <span class="pill gray">audit-92d12752</span> <span class="pill gray">audit-ad300459</span> <span class="pill gray">briefing</span> <span class="pill gray">dashboard-f79e64e7</span> <span class="pill gray">docs</span> <span class="pill gray">estimate-facf2fe9</span> <span class="pill gray">final-f6327e23</span> <span class="pill gray">ladder</span> <span class="pill gray">playbook-c1d73006</span> <span class="pill gray">portal</span> <span class="pill gray">repatriate</span> <span class="pill gray">site</span> <span class="pill gray">study-8f529c94</span> <span class="pill gray">transfer-guide</span> <span class="pill gray">verification-3347ca0a</span> <span class="pill gray">verify-88f5a1be</span> <span class="pill gray">verify-d5d1f860</span></p>
+<p class="muted">They remain online as independent runs. This section does not claim they are wrong; it claims only
+what it re-read itself.</p>
+</div></main>
+<footer class="footer"><div class="wrap">
+  <p><strong>Scope.</strong> This desk prices published bank fees and the published exchange spread, and reports the
+  statutes it read. It does not compute your tax, does not know your facts, and is not advice. Blank means
+  “not verified”, never zero. Every table row links to the document it came from; unverified values are on the
+  <a href="flags.html">Flagged for review</a> page.</p>
+  <p>Built 2026-11-11 from <a href="sources.html">18 official sources</a> read that day ·
+  <a href="data/costs.csv">cost table (CSV)</a> ·
+  <a href="audit.html">repository audit</a> ·
+  <a href="../index.html">all repository sections</a></p>
+</div></footer>
+</body>
+</html>

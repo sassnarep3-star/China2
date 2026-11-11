@@ -1,8 +1,8 @@
 {
-  "pages_scanned": 130,
-  "data_rows": 10491,
-  "without_direct_primary": 1472,
-  "pages_with_candidates": 36,
+  "pages_scanned": 138,
+  "data_rows": 10983,
+  "without_direct_primary": 1946,
+  "pages_with_candidates": 43,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
@@ -153,6 +153,54 @@
       "rows": 41,
       "without_direct_primary": 0,
       "first_example": ""
+    },
+    {
+      "path": "canon-d6a42474/audit.html",
+      "rows": 14,
+      "without_direct_primary": 14,
+      "first_example": "86.97 HSBC CNY 620 converted at the IRS 2025 average (7.129) 74 COORDINATION.md, acceptance-a64bd476/build.py, acceptance-a64bd476/checks.html S09 S13"
+    },
+    {
+      "path": "canon-d6a42474/costs.html",
+      "rows": 336,
+      "without_direct_primary": 336,
+      "first_example": "$10,000.00 $20.98 $53.41 $53.87 $53.87 $20.98 $32.89 S07 S09 S08"
+    },
+    {
+      "path": "canon-d6a42474/flags.html",
+      "rows": 24,
+      "without_direct_primary": 24,
+      "first_example": "F01 blocking No conversion tax was found — the 'considerable tax' is unidentified Open — needs your document S01 S17 S18"
+    },
+    {
+      "path": "canon-d6a42474/index.html",
+      "rows": 30,
+      "without_direct_primary": 30,
+      "first_example": "$10,000.00 M03 · Documented income $32.43 $20.98 $53.41 0.534% S07 S08"
+    },
+    {
+      "path": "canon-d6a42474/methods.html",
+      "rows": 19,
+      "without_direct_primary": 19,
+      "first_example": "M01 Documented current-account income: HSBC Premier/Advance, one telegraphic transfer lawful $302.45 S01 S02 S06 S07 S09"
+    },
+    {
+      "path": "canon-d6a42474/questions.html",
+      "rows": 16,
+      "without_direct_primary": 16,
+      "first_example": "Q01 Where did the RMB come from, tranche by tranche? not published ⚑F02 S17"
+    },
+    {
+      "path": "canon-d6a42474/sources.html",
+      "rows": 18,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "canon-d6a42474/taxes.html",
+      "rows": 21,
+      "without_direct_primary": 21,
+      "first_example": "L1 PRC income tax on where the money came from PRC S17 Art. 3 3%–45% comprehensive; 5%–35% business; 20% flat on property transfer, interest, dividends, royalties Rate published; a"
     },
     {
       "path": "dashboard-f79e64e7/costs.html",
@@ -348,8 +396,8 @@
     },
     {
       "path": "index.html",
-      "rows": 64,
-      "without_direct_primary": 17,
+      "rows": 65,
+      "without_direct_primary": 18,
       "first_example": "Transfer guide 23 methods · 40 sources · 920 cost rows Newest complete set (10-11 Nov 2026). Used as the canonical detail set from this page."
     },
     {
@@ -360,8 +408,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 289,
-      "without_direct_primary": 289,
+      "rows": 302,
+      "without_direct_primary": 302,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
