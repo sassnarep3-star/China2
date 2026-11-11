@@ -682,6 +682,42 @@
   ]
  },
  {
+  "id": "CN-FX-12",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "State Administration of Foreign Exchange (SAFE)",
+  "title": "房地产市场外汇管理政策问答 (Policy Q&A on foreign-exchange administration of the real-estate market)",
+  "doc_no": "Published 2011-08-26; index no. 000014453-2011-00329; explains 汇发〔2006〕47号 (Huifa [2006] No. 47)",
+  "url": "https://www.safe.gov.cn/safe/2011/0826/2498.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "q9",
+    "locator": "问答 9",
+    "text": "在境内工作、学习时间超过一年的境外个人，可购买符合实际需要的自住商品房",
+    "en": "A foreign individual who has worked or studied in China for more than one year may buy commercial housing for own use that meets actual needs."
+   },
+   {
+    "key": "q14",
+    "locator": "问答 14",
+    "text": "境外机构和个人出售境内房地产所得资金购汇申请时，可以不需要提交原结汇凭证。",
+    "en": "When a foreign institution or individual applies to purchase foreign exchange with the proceeds of selling real estate in China, the original settlement voucher need not be submitted."
+   },
+   {
+    "key": "q18",
+    "locator": "问答 18",
+    "text": "境内分支、代表机构和境外个人转让所购境内商品房取得的人民币资金，经商品房所在地国家外汇管理局分支局、外汇管理部审核确认以下文件后，方可购汇汇出：（一）购汇申请书；（二）商品房转让合同；（三）房屋权属转让的完税证明文件。",
+    "en": "RMB obtained by a foreign individual from transferring commercial housing bought in China may be converted and remitted only after the SAFE branch where the property is located has reviewed and confirmed: (1) the application to purchase foreign exchange; (2) the housing transfer contract; (3) the tax-payment certificate for the transfer of title. (2011 text — see the flag on whether banks now handle this directly.)"
+   },
+   {
+    "key": "q12",
+    "locator": "问答 12",
+    "text": "境外个人是否可以委托他人办理购房结汇？答：可以。如委托房地产开发企业、二手房出让方或其他人办理，应提供经公证的授权委托书。",
+    "en": "A foreign individual may entrust another person to handle the settlement for a purchase; a notarised power of attorney is required."
+   }
+  ]
+ },
+ {
   "id": "CN-TAX-01",
   "group": "PRC tax rules",
   "publisher": "State Taxation Administration (STA) and SAFE — STA policy database",
@@ -920,6 +956,57 @@
     "en": "In a dispute with the tax authority over tax, the taxpayer must first pay the tax and surcharge under the authority's decision, or provide a guarantee, and may then apply for administrative review; a court action may follow if the review decision is not accepted."
    }
   ]
+ },
+ {
+  "id": "PROV-01",
+  "group": "Payment providers",
+  "publisher": "Wise — official Help Centre",
+  "title": "Guide to CNY transfers",
+  "doc_no": "Wise Help Centre article 2955298, section \"Sending from CNY\"",
+  "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "partner",
+    "locator": "Sending from CNY",
+    "text": "Regulatory requirements apply when you are using this product. Wise is collaborating with a licensed third party payment provider (regulated by the People’s Bank of China) in China to provide this service."
+   },
+   {
+    "key": "who",
+    "locator": "Who can send money from CNY?",
+    "text": "You can send money from CNY if: You're not mainland Chinese … You're working or have worked in China before … You have a valid tax record issued by the China tax authority showing taxes paid within the last 3 years"
+   },
+   {
+    "key": "personal_only",
+    "locator": "Who can send money from CNY?",
+    "text": "Keep in mind that sending from CNY is only available for personal accounts."
+   },
+   {
+    "key": "self_only",
+    "locator": "Who can receive transfers that are paid from-CNY?",
+    "text": "Due to regulations, you can only send CNY from China to another account you own. This can be your bank account outside of China, or your Wise Account."
+   },
+   {
+    "key": "per_transfer",
+    "locator": "How much can I send? — China bank app / Alipay",
+    "text": "If you're sending CNY from your China bank app, the maximum you can send in one transfer is 300,000 CNY. … If you are sending CNY from Alipay, the maximum you can send in one transfer is 50,000 CNY."
+   },
+   {
+    "key": "overall",
+    "locator": "Total sending limits",
+    "text": "In general, your overall limit is the amount of salary you've earned in China after deducting the amount of tax paid in China. Your sending limit does not expire. It remains active until you have reached the limit."
+   },
+   {
+    "key": "fees",
+    "locator": "How much are the fees?",
+    "text": "Set up a transfer and add a recipient to see the exact fees for your transaction."
+   }
+  ],
+  "values": {
+   "per_transfer_cny_bank_app": 300000,
+   "per_transfer_cny_alipay": 50000
+  }
  },
  {
   "id": "US-FX-01",
