@@ -1266,3 +1266,11 @@ Fixed environment branch `arena/9e90af86-china2`; no alternate branch will be cr
 | Re-run latest playbook verification; verify Pages deployment and provide consolidated delivery record | in progress | arena/9e90af86-china2 | COORDINATION.md (append-only), DELIVERY-AUDIT.md |
 
 Claim: review existing generated outputs read-only, record exact checks and limitations, PR and merge this delivery record. No assertion of fresh official-source verification without actual retrieval. Existing root landing page and category navigation are retained, not duplicated.
+
+### Delivery audit results — arena/9e90af86-china2
+
+- Claim push completed after first remote-branch pull returned missing-ref: fetched origin, rebased against origin/main (already current), then pushed the fixed session branch. No conflicts.
+- Existing latest playbook verifier: 24,050 checks, 0 failures; 1,259 rows with publisher links, 34 stored sources/193 passages. Rebuilt model/pages byte-for-byte; JS syntax passes. Older dashboard validator and UI harness also pass. These checks establish structure and arithmetic, not universal legal accuracy.
+- Fresh official pages read: SAFE https://www.safe.gov.cn/tianjin/2026/0713/3088.html ; IRS https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit ; IRS https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar (through penalties/delinquent-filing sections). No claim to fresh retrieval of every other source.
+- DELIVERY-AUDIT.md records direct deliverable links, exact verification boundaries, conditional credit language, aggregate FBAR trigger, and the unverified hypothesis about the bank's alleged tax demand. Existing published flags remain needs review; none block delivery.
+- Initial GitHub Pages API: built, main root, commit 1146dd2b1e41a46ba73b39db0cfb76747d26fa09, no error. Final audit PR/publication result follows.
