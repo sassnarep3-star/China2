@@ -1,7 +1,7 @@
 {
   "pages_scanned": 139,
-  "data_rows": 11299,
-  "without_direct_primary": 1473,
+  "data_rows": 11317,
+  "without_direct_primary": 1491,
   "pages_with_candidates": 36,
   "pages": [
     {
@@ -414,8 +414,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 289,
-      "without_direct_primary": 289,
+      "rows": 307,
+      "without_direct_primary": 307,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
