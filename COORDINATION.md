@@ -904,3 +904,44 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 - **Correction to this session's P5 record and to `estimate-facf2fe9/repo-review.html` as first published (10:22 UTC).** Three findings overstated the gap, because `final-f6327e23/` (PR #50, merged shortly before this section) had not been read closely: (RR02/RR03) the statement that no earlier ledger cites a mainland bank's own site was wrong — `final-f6327e23/data/sources.json` S16 cites the [Bank of China board](https://www.boc.cn/sourcedb/whpj/) with the same reading (665.71 / 668.51 at 17:39:58) and derives the same 0.21% margin; what remains true is that no other section cites a mainland bank's **fee** table or any other mainland board; (RR07) the exchange gain is sized there too, for 2025 renminbi (USD 6,226.68 per USD 100,000), matching this section's USD 6,227. The page now says so, and RR07 is reclassified from "gap" to "consistent". The two sessions' Bank of China figures agree independently. Scan counts quoted in the P5 record came from an earlier snapshot; the page carries the current snapshot (241 files, 98,297 lines, main `d9d2c1c`).
 - **Housekeeping updates.** PR #41 was taken over and published by `arena/ba22a0ba-china2` through PR #58 (10:42 UTC) — this session's P7 note on #41 is superseded; `acceptance-a64bd476` was brought back in step by the same PR. `audit-92d12752/verify.py` still fails its snapshot assertion on main `d9d2c1c`.
 - **Hub card — takeover of one line item under the stale-claim rule.** `arena/4decd480-china2` claimed root-hub ownership at 09:44:11 UTC and has pushed no commit since (checked 10:44:21 UTC, more than 60 minutes). This session takes over **only** the addition of one card for `estimate-facf2fe9/index.html` in the `write_root_hub()` card list of `ladder/build.py`; the rest of that session's Z1–Z5 claim is untouched. Generated consequences, all mechanical: root `index.html` (one card), `acceptance-a64bd476/checks.json`, `checks.html`, `index.html` (crawl count 20,698 → 20,699). No prose, data or other card in the hub was changed.
+
+
+---
+
+## Session `arena/c6309933-china2` — fresh official-source research pass, $10k→$400k cost ladder, consolidated dashboard
+
+> Environment note: Arena pins this session to the fixed branch `arena/c6309933-china2`, which
+> substitutes for the requested `session-<id>/<task>` branch (branch creation/switching is not
+> permitted here). Full board read before claiming; all six open PRs (#39, #48, #49, #52, #53, #55)
+> fetched and their file scopes recorded below so no claimed file is touched.
+
+**Concurrent claims observed at claim time (2026-11-11 UTC), respected and NOT edited:**
+
+| Open PR | Branch | Files claimed |
+|---|---|---|
+| #39 | `arena/c9cc56a6-china2` | `guide-c9cc56a6/**`, `README.md`, `.github/workflows/verify-guide-c9cc56a6.yml` |
+| #48 | `arena/d5d1f860-china2` | `COORDINATION.md` (append-only) |
+| #49 | `arena/29c5e201-china2` | `guide-29c5e201/**`, `.github/workflows/verify-guide-29c5e201.yml` |
+| #52 | `arena/a53d707e-china2` | `verify-a53d707e/**`, `index.html`, `ladder/build.py`, `ladder/audit.html`, `briefing/assets/style.css` |
+| #53 | `arena/416f3c1b-china2` | `verify-416f3c1b/**`, `ladder/audit.html`, `.github/workflows/verify-416f3c1b.yml` |
+| #55 | `arena/6869721b-china2` | `cny-usd-6869721b/**`, `acceptance-a64bd476/**`, `.github/workflows/verify-cny-usd-6869721b.yml` |
+
+**This session's claimed scope (disjoint from every row above):** `dashboard-c6309933/**`,
+`.github/workflows/verify-dashboard-c6309933.yml`, and `COORDINATION.md` (append-only).
+
+**Not edited by this session:** root `index.html`, `ladder/**`, `README.md`, `briefing/**`,
+`docs/**`, `site/**`, `portal/**`, `repatriate/**`, `study-8f529c94/**`, `estimate-facf2fe9/**`,
+`final-f6327e23/**`, `verify-d5d1f860/**`, `audit-*/**`, `acceptance-*/**`, `research/**`,
+`scripts/**`, `tools/**`, `data/**`, `reports/**`. Cross-scope requests are logged, not actioned.
+
+| # | Task | Status | Owner | Files / scope | Claimed (UTC) |
+|---|---|---|---|---|---|
+| G1 | Fresh official-source research: PRC FX rules (SAFE/PBOC/STA), U.S. tax & reporting (IRS/FinCEN/CBP), provider tariffs — every figure re-fetched and quoted with a locator | in progress | `arena/c6309933-china2` | `dashboard-c6309933/data/**` | 2026-11-11 |
+| G2 | Executive summary + open-questions/unknowns register with suggested discovery actions | in progress | `arena/c6309933-china2` | `dashboard-c6309933/data/questions.json`, `dashboard-c6309933/index.html` | 2026-11-11 |
+| G3 | Cost ladder: every method priced at each `$10,000` step from `$10,000` to `$400,000` (40 tiers), mobile-friendly, most-important-column-first, per-row official source link, blanks where unverified | in progress | `arena/c6309933-china2` | `dashboard-c6309933/costs.html`, `dashboard-c6309933/data/costs.json` | 2026-11-11 |
+| G4 | GitHub Pages dashboard: clean landing page + category subpages, simple dashboard UI | in progress | `arena/c6309933-china2` | `dashboard-c6309933/**` | 2026-11-11 |
+| G5 | Line-by-line repo review, flag irregularities, Flagged for Review page | in progress | `arena/c6309933-china2` | `dashboard-c6309933/repo-review.html`, `dashboard-c6309933/flagged.html` | 2026-11-11 |
+| G6 | Verify + PR to `main` + merge without waiting + confirm Pages deploy + record result | unclaimed→pending | `arena/c6309933-china2` | `COORDINATION.md` (append-only) | 2026-11-11 |
+
+- 2026-11-11 UTC: Claim committed and pushed before any substantive file edits. Repo state at claim:
+  `main` = `30ea791`, shallow clone, 272 tracked files, Pages `status: built` at `30ea791`.
