@@ -925,6 +925,28 @@ Rules in force: no other session's published findings are rewritten; every edit 
 
 ---
 
+
+## Session `arena/6201ba1b-china2` — refresh the stale structural audit snapshot
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| C1 | Independently refresh and verify the stale structural audit snapshot (same generated counts later integrated concurrently in PR #61); preserve structural-only caveats | done | `audit-92d12752/**` |
+| C2 | Independently verify the refreshed scanner, internal links, and affected repository suites; record official-source boundaries and irregularities | done | `audit-92d12752/**`, append-only `COORDINATION.md` |
+| C3 | Publish through this fixed Arena branch and record integration status | in progress | append-only `COORDINATION.md` |
+
+Claim recorded before work. No other active claim for `audit-92d12752/**` appeared in the task board. On 2026-11-11, the regenerated point-in-time scan covers 100 HTML pages / 7,107 table-data rows; 1,384 candidate rows on 34 pages lack a direct allowlisted primary-domain URL in their own static row. This is a structural candidate count only: it neither proves missing evidentiary support nor verifies link liveness, source support, legal accuracy, dynamic tables, or exported data. The unchanged finite allowlist and scan exclusions remain in `scan.py`.
+
+- Refreshed by `PYTHONDONTWRITEBYTECODE=1 python3 audit-92d12752/build.py`; two consecutive builds were byte-identical. `audit-92d12752/verify.py` passes parser/domain-boundary, snapshot-parity, and local-report-link checks.
+- Regression pass on the combined checkout: all invoked checks exited successfully — audit suites (`audit-0f0f59fe`, `audit-456e7542`, `audit-86f0`, `audit-ad300459`, `audit-92d12752`), acceptance suites (`acceptance-373b54a3`, `acceptance-a64bd476`), ledger/report checks (`verify_85f37d08.py`, `study-8f529c94`, `estimate-facf2fe9`, `final-f6327e23`, `repatriate`, `briefing`, `ladder`, `verify-d5d1f860`, `verify-88f5a1be`), `scripts/build.py`, `scripts/validate.py`, `scripts/test_ui.js`, and `npm run check` (477 checks). Generated side-effect in `acceptance-a64bd476/checks.json` from its verifier was restored; only `audit-92d12752/**` is part of this task.
+- No new legal/tax conclusions were added, and no official source content was re-verified in this structural refresh. Existing flags about assumed ladder spreads and non-direct row citations remain visible; they are not resolved by the refreshed scan.
+
+
+### Concurrent integration note
+
+- While this branch was in flight, `arena/bb2a3876-china2` published its B-05 snapshot refresh in PR #61. After fetching `origin/main`, the snapshot counts/results matched this branch (100 pages; 7,107 rows; 1,384 candidate rows / 34 pages). The combined tree keeps that compatible snapshot and this task's explicit 11 November build date. No concurrent edits were discarded. This session did not alter any of PR #61's other files.
+
+---
+
 ## Session `arena/50f278d8-china2` — unified repatriation guide with decision checklist, penalty breakdown, 40-tier cost ladder, and line-by-line repo audit (disjoint scope)
 
 > Environment note: Arena pins this session to `arena/50f278d8-china2` (status: active) and forbids creating or switching branches; this fixed branch substitutes for a `session-<id>/<task>` branch. Full task board above and active remote claims read before claiming. All prior and concurrent sessions' scopes are preserved unedited (`docs/**`, `site/**`, `portal/**`, `ladder/**` including `ladder/build.py`/`index.html` hub, `repatriate/**`, `briefing/**`, `study-8f529c94/**`, `estimate-facf2fe9/**`, `final-f6327e23/**`, `verify-*/**`, `audit-*/**`, `acceptance-*/**`, `research/**`, `reports/**`, `data/**`, `scripts/**`, `tools/**`, `EXECUTIVE_SUMMARY*.md`, `README.md`, `index.html`). This session works strictly in its disjoint scope `transfer-guide/**`, `.github/workflows/verify-transfer-guide.yml`, append-only `COORDINATION.md`, and mechanical `ladder/audit.html` inventory regeneration if required by CI. No other session's files are edited except as logged below as a request.
@@ -960,5 +982,6 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **U5 — Repo review + Flags + Sources register:** `transfer-guide/audit.html` (RA-01–RA-14, 14 findings, sources, file inventory, direct/source/assumption separation), `transfer-guide/flagged.html` (FL-01–FL-18, 18 unverified/conditional items, blanks where nothing is published), `transfer-guide/sources.html` (SRC-01–SRC-40, 22 PRC official + 15 US/treaty + 3 primary commercial, 100% HTTPS fetched 2026-11-10, verbatim excerpts). New `transfer-guide/questions.html` (Q01–Q12) covers every gating private fact prompt requires: origin of balance, PRC tax withholding/tax vouchers, SAFE 境内个人 vs 境外个人 / PR-ID status, tranche acquisition dates & USD basis (§988(e) $200), FBAR/8938/3520 history, bank executable quote, capital-account docs (property/inheritance/emigrant), proxy vs in-person, urgency/ATM/POS vs lump-sum, bank tariff, gray-market pitfalls — each row with What We Know / What We DO NOT Know / How to Discover + official links + flags.
 
 **Verification (U5/U6 structural):** `PYTHONDONTWRITEBYTECODE=1 python3 transfer-guide/build.py` + `transfer-guide/verify.py` → **19,842 independent checks, 0 failures** (9 pages, 920 cost rows across $10k–$400k × 23 methods, 100% direct HTTPS official links on every <tr> with <td>, strict blank enforcement on unconfirmed FX spreads and third-party wire deductions, all local links/fragments resolved, `node --check transfer-guide/assets/app.js` green). Includes independent re-derivation of every HSBC fee tier ($10k $30.86, $50k $66.83, $400k $86.97, M06 $400k $534.66) and ATM 29-year math, plus 12-question ledger validation. These are structural and arithmetic checks; they do not certify the law.
+
 
 
