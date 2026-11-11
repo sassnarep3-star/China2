@@ -905,6 +905,23 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 - **Housekeeping updates.** PR #41 was taken over and published by `arena/ba22a0ba-china2` through PR #58 (10:42 UTC) — this session's P7 note on #41 is superseded; `acceptance-a64bd476` was brought back in step by the same PR. `audit-92d12752/verify.py` still fails its snapshot assertion on main `d9d2c1c`.
 - **Hub card — takeover of one line item under the stale-claim rule.** `arena/4decd480-china2` claimed root-hub ownership at 09:44:11 UTC and has pushed no commit since (checked 10:44:21 UTC, more than 60 minutes). This session takes over **only** the addition of one card for `estimate-facf2fe9/index.html` in the `write_root_hub()` card list of `ladder/build.py`; the rest of that session's Z1–Z5 claim is untouched. Generated consequences, all mechanical: root `index.html` (one card), `acceptance-a64bd476/checks.json`, `checks.html`, `index.html` (crawl count 20,698 → 20,699). No prose, data or other card in the hub was changed.
 
+---
+
+## Session `arena/bb2a3876-china2` — corrective pass on published flagged items + full-suite re-verification (2026-11-11 UTC)
+
+Prior sessions' substantive research and the live GitHub Pages site are complete and merged (see publication records above). This session does not duplicate that work. It claims only the still-open, verifiable items published as "needs review" and a full local re-verification of every CI suite on the current tree, then publishes the result as a PR.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| B-01 ATM cash table row: "8+ years for $400k" -> ~29 calendar years ($400,000 / ($100,000/7.129) = 28.52 yr) | in progress | arena/bb2a3876-china2 | briefing/build.py; briefing/EXECUTIVE_SUMMARY.md (generated); briefing/*.html via rebuild |
+| B-02 ladder audit prose hardcoded "Twenty sources ... of 20" (ledger: 21 sources, 17 direct) -> computed counts | in progress | arena/bb2a3876-china2 | ladder/build.py; ladder/audit.html via rebuild; root index.html via ladder/build.py (deterministic) |
+| B-03 EXECUTIVE-SUMMARY.md: http:// SAFE/GC links -> HTTPS; repealed 2021 crypto-notice citation re-pointed to PBOC Yin Fa [2026] No. 42; R01 row conditioned on domestic/PR-ID purchase-quota rule | in progress | arena/bb2a3876-china2 | EXECUTIVE-SUMMARY.md |
+| B-04 README.md hardcoded session-branch sentence (audit-ad300459 RA-13) -> genericized | in progress | arena/bb2a3876-china2 | README.md |
+| B-05 audit-92d12752 snapshot regenerated after repository changes (its verify.py requires scan()==results.json) | in progress | arena/bb2a3876-china2 | audit-92d12752/results.json; audit-92d12752/index.html |
+| B-06 Full local re-verification of all CI suites + PR, merge, Pages confirmation | in progress | arena/bb2a3876-china2 | COORDINATION.md (append-only); no other file |
+
+Rules in force: no other session's published findings are rewritten; every edit above traces to an item already flagged as irregular by a prior published audit (study-8f529c94 RA-01/RA-02/RA-03/RA-04/RA-13, ladder AUD list, briefing N-series). Sources: SAFE Hui Fa [2017] No. 29 (RMB 100k/person/civil year ATM cap) https://www.safe.gov.cn/en/2017/1230/1397.html ; IRS 2025 yearly average 7.129 https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates ; PBOC Yin Fa [2026] No. 42 https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html ; SAFE Hui Fa [2007] No. 1 / SAFE Tianjin 2024 Case 9 (foreign-individual purchase quota limited to Foreign Permanent Resident ID holders) https://www.safe.gov.cn/tianjin/2024/0621/2529.html .
+
 ## Independent decision-critical review — `arena/c35f0986-china2` — 2026-11-11 UTC
 
 The environment fixes this session to `arena/c35f0986-china2`; it cannot create the requested session-named branch. Earlier logs contain historical in-progress rows that are superseded by their completion records. This claim does not take over any other scope.
@@ -924,3 +941,5 @@ Requested integration: if this review identifies issues in other sessions' scope
 - Targeted audit F1–F4 is published at `review-c35f0986/index.html`: historical modeled “all-in” amounts omit unquoted third-party fees; yearly average FX illustrations are not a taxpayer's actual basis; repeated $500 reconversions can invite scrutiny; actual account/eligibility/taxes/quotes are unknown. Earlier cost ladders were structurally rechecked, not individually substantively re-verified. This is **not** a line-by-line certification of the entire repository. Irregularities are `needs review`.
 - Validation: `python3 review-c35f0986/verify.py` (19 cited rows, 52 links, 6 anchors); `npm run check` (477 checks); `estimate-facf2fe9/verify.py` (14,423 checks); `study-8f529c94/verify.py` (19,686 checks). These are offline structural/arithmetic checks, not legal opinions or proofs of external link permanence.
 - Cross-scope request to final hub integrator: please add a link to `review-c35f0986/index.html` in the root hub if doing so does not conflict with another session. This session did not edit the hub or another owner's published research.
+
+- 2026-11-11: Merge of concurrent main PR #61 into this branch conflicted only in the append-only board. Kept both sessions’ sections verbatim, main first; no other work discarded.
