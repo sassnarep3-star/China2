@@ -1256,3 +1256,22 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **Conflicts.** `COORDINATION.md` conflicted twice (merges of `origin/main` at PR #66 and at PR #76). Both times the text on `main` was kept byte for byte and this session's section was appended after it; no other session's text was dropped or reworded. One attempted `git pull --rebase` replayed an unrelated merged commit and was aborted before any change was kept; merges are used instead.
 
 **One deep-link change made for another section's crawler.** `acceptance-a64bd476/verify.py` treats a link with a query string (`costs.html?m=L01`) as a missing file. This section's links were changed to anchors (`costs.html#m-L01`) rather than asking for a change to that verifier.
+
+---
+
+## Session `arena/88b9c268-china2` — final consolidation, executive summary, open-question decision checklist & publication (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to `arena/88b9c268-china2` (status: active). This fixed branch substitutes for a `session-<id>/<task>` branch. Full board (1,258 lines) and all prior deliverables read before claiming. At session start `HEAD == origin/main == 1146dd2` (PR #77 playbook merge). All prior scopes (`docs/**`, `site/**`, `portal/**`, `ladder/**`, `repatriate/**`, `briefing/**`, `transfer-guide/**`, `verification-3347ca0a/**`, `playbook-c1d73006/**`, `dashboard-f79e64e7/**`, `estimate-facf2fe9/**`, `final-f6327e23/**`, `study-8f529c94/**`, `audit-*/**`, `acceptance-*/**`, `verify-*/**`, `reports/**`, `research/**`, `data/**`, `scripts/**`, `tools/**`, `EXECUTIVE_SUMMARY*.md`, `README.md`, `index.html`) are **read-only** except as explicitly listed. Open PRs #55, #63, #65, #68, #69, #71 are not touched by this session.
+
+| # | Task | Status | Owner | Files / scope | Claimed (UTC) |
+|---|---|---|---|---|---|
+| E1 | Executive summary: least-tax lawful CNY→USD answer for U.S. citizen, with source-linked cost/penalty separation | in progress | `arena/88b9c268-china2` | `consolidated-88b9c268/**` | 2026-11-11 12:30 |
+| E2 | Decision checklist: every question/info/answer that must be resolved before choosing a route (known / unknown / how to discover) | in progress | `arena/88b9c268-china2` | `consolidated-88b9c268/**` | 2026-11-11 12:30 |
+| E3 | Method catalogue: every lawful CNY→USD route (pros/cons/steps) + unlawful routes (penalties only) with per-row official source | in progress | `arena/88b9c268-china2` | `consolidated-88b9c268/**` | 2026-11-11 12:30 |
+| E4 | Cost ladder $10k→$400k in $10k steps: for every method, mobile-first, most-important-first; blanks where unpublished, every row source-linked | in progress | `arena/88b9c268-china2` | `consolidated-88b9c268/**` | 2026-11-11 12:30 |
+| E5 | Conversion-penalty breakdown (12 layers: PRC IIT/EIT/WHT, SAFE voucher gate, overdue surcharge, bank spread/fees, US §988(e) gain, FTC/FEIE, FBAR/8938/3520 penalties) | in progress | `arena/88b9c268-china2` | `consolidated-88b9c268/**` | 2026-11-11 12:30 |
+| E6 | Line-by-line repo audit of all prior dashboards (duplicate counts, rate bases, stale figures) + Flagged for Review consolidation | in progress | `arena/88b9c268-china2` | `consolidated-88b9c268/**` | 2026-11-11 12:30 |
+| E7 | Verification, hub integration, PR → main → merge → Pages deploy confirmation | in progress | `arena/88b9c268-china2` | `consolidated-88b9c268/**`, `verification-3347ca0a/build.py` (one hub card/row), generated `index.html`, `README.md`, `.github/workflows/verify-consolidated-88b9c268.yml`, `ladder/audit.html` (inventory), `acceptance-a64bd476/**` + `audit-92d12752/**` (mechanical crawl refresh) | 2026-11-11 12:30 |
+
+- 2026-11-11 12:30 UTC: Claim recorded before substantive edits. Policy: no private facts inferred; every table row carries a direct official-source link fetched this session or verified from the cited text; unverifiable values stay blank and are flagged (blank = unverified, never $0); modelled spreads are labelled estimates, never quotes; no personal tax bill asserted; unlawful channels listed with statutory penalties and without instructions; structural/arithmetic checks are labelled structural.
+- Cross-scope request (logged, not edited until publication): final hub generator `verification-3347ca0a/build.py` is the shared output changed by this final integration session to add one navigation card/row for `consolidated-88b9c268/`; no ladder data/prose changed.
