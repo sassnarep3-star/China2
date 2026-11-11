@@ -18,7 +18,8 @@
    {
     "key": "usd_row_en",
     "locator": "English board https://www.boc.cn/sourcedb/whpj/enindex_1619.html, row USD; columns Buying Rate / Cash Buying Rate / Selling Rate / Cash Selling Rate / Middle Rate / Pub Time",
-    "text": "USD | 666.31 | 666.31 | 669.12 | 669.12 | 671.91 | 2026/11/11 10:40:02"
+    "text": "USD | 666.31 | 666.31 | 669.12 | 669.12 | 671.91 | 2026/11/11 10:40:02",
+    "en": "The same row on the bank's English board."
    },
    {
     "key": "disclaimer",
@@ -1112,6 +1113,11 @@
     "key": "fees",
     "locator": "How much are the fees?",
     "text": "Set up a transfer and add a recipient to see the exact fees for your transaction."
+   },
+   {
+    "key": "verify",
+    "locator": "Who can send money from CNY?",
+    "text": "If you're sending CNY with Wise for the first time, we’ll need to verify you. This can take 1-2 working days. You only need to be verified once — we only request documents for your first transfer, or new tax records when you've hit your limit."
    }
   ],
   "values": {

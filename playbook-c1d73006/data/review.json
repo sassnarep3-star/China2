@@ -1,0 +1,412 @@
+{
+ "as_of": "2026-11-11",
+ "main_commit": "b2874e8",
+ "files_scanned": 257,
+ "sections_scanned": 26,
+ "hub": {
+  "sections_with_landing_page": 20,
+  "linked_from_hub": 11,
+  "not_linked": [
+   "acceptance-a64bd476",
+   "audit-456e7542",
+   "audit-6068a908",
+   "audit-92d12752",
+   "final-f6327e23",
+   "repatriate",
+   "study-8f529c94",
+   "transfer-guide",
+   "verify-88f5a1be"
+  ]
+ },
+ "checks": [
+  {
+   "id": "RV-01",
+   "figure": "FBAR maximum civil penalty, non-willful",
+   "verified": "$16,536",
+   "source": "US-RPT-03",
+   "quote": "nonwillful",
+   "how": "A different dollar figure on a line about the non-willful penalty.",
+   "differ_sections": [],
+   "match_sections": [
+    "(repository root)",
+    "acceptance-a64bd476",
+    "briefing",
+    "estimate-facf2fe9",
+    "final-f6327e23",
+    "repatriate",
+    "reports",
+    "study-8f529c94",
+    "transfer-guide",
+    "verify-d5d1f860"
+   ],
+   "examples": [],
+   "counts": {
+    "match_files": 45,
+    "differ_files": 0,
+    "unverified_files": 0
+   }
+  },
+  {
+   "id": "RV-02",
+   "figure": "FBAR civil penalty, willful (fixed-dollar limb)",
+   "verified": "$165,353",
+   "source": "US-RPT-03",
+   "quote": "willful",
+   "how": "A different dollar figure on a line about the willful penalty.",
+   "differ_sections": [],
+   "match_sections": [
+    "(repository root)",
+    "acceptance-a64bd476",
+    "briefing",
+    "final-f6327e23",
+    "repatriate",
+    "reports",
+    "study-8f529c94",
+    "transfer-guide",
+    "verify-d5d1f860"
+   ],
+   "examples": [],
+   "counts": {
+    "match_files": 29,
+    "differ_files": 0,
+    "unverified_files": 0
+   }
+  },
+  {
+   "id": "RV-03",
+   "figure": "HSBC China wire fee cap expressed in dollars",
+   "verified": "CNY 500 + CNY 120 = CNY 620; $92.43 at HSBC's own selling rate of 6.7080734",
+   "source": "BANK-02",
+   "quote": "tt_issuance",
+   "how": "The figure $86.97 is CNY 620 divided by 7.129, the IRS average rate for tax year 2025. The fee is charged in CNY at the time of the wire, so the dollar value moves with the bank's current rate.",
+   "differ_sections": [
+    "(repository root)",
+    "acceptance-a64bd476",
+    "audit-456e7542",
+    "audit-92d12752",
+    "briefing",
+    "ladder",
+    "repatriate",
+    "study-8f529c94",
+    "transfer-guide",
+    "verify-88f5a1be",
+    "verify-d5d1f860"
+   ],
+   "match_sections": [],
+   "examples": [
+    {
+     "path": "acceptance-a64bd476/build.py",
+     "line": 115,
+     "text": "….129 for all 40 tiers vs repatriate CSV; $10,000 → $30.86, $400,000 → $86.97.</li>"
+    },
+    {
+     "path": "acceptance-a64bd476/checks.html",
+     "line": 28,
+     "text": "….129 for all 40 tiers vs repatriate CSV; $10,000 → $30.86, $400,000 → $86.97."
+    },
+    {
+     "path": "acceptance-a64bd476/findings.html",
+     "line": 55,
+     "text": "….129: $10,000 -&gt; CNY 220 fee ($30.86); $400,000 -&gt; CNY 620 fee ($86.97). Fee caps at CNY 500 + CNY 120 cable once 0.1% exceeds CNY 500 (abou…"
+    },
+    {
+     "path": "acceptance-a64bd476/findings.json",
+     "line": 44,
+     "text": "…n at 7.129: $10,000 -> CNY 220 fee ($30.86); $400,000 -> CNY 620 fee ($86.97). Fee caps at CNY 500 + CNY 120 cable once 0.1% exceeds CNY 500 (abou…"
+    },
+    {
+     "path": "acceptance-a64bd476/verify.py",
+     "line": 103,
+     "text": "…(abs(round(fee_usd(400000), 2) - 86.97) < 0.011, \"M01 $400,000 fee == $86.97\")"
+    }
+   ],
+   "counts": {
+    "match_files": 0,
+    "differ_files": 51,
+    "unverified_files": 0
+   }
+  },
+  {
+   "id": "RV-04",
+   "figure": "Rate used to turn CNY into USD in cost tables",
+   "verified": "7.129 is the IRS yearly average for 2025 (a tax-return translation rate); the Federal Reserve H.10 rate for 6 Nov 2026 is 6.6760",
+   "source": "US-FX-01",
+   "quote": "china_row",
+   "how": "Lines that use 7.129 in a cost, fee or rate context. Not an error in itself: it shows which sections price a 2026 transfer at the 2025 average.",
+   "differ_sections": [],
+   "match_sections": [
+    "(repository root)",
+    "acceptance-a64bd476",
+    "audit-92d12752",
+    "audit-ad300459",
+    "briefing",
+    "estimate-facf2fe9",
+    "final-f6327e23",
+    "ladder",
+    "repatriate",
+    "study-8f529c94",
+    "transfer-guide",
+    "verify-88f5a1be",
+    "verify-d5d1f860"
+   ],
+   "examples": [
+    {
+     "path": "README.md",
+     "line": 15,
+     "text": "…nswer, 17 methods with pros/cons/steps, 680-row `$10k→$400k` tables (`7.129` IRS 2025 reference rate + Nov 6, 2026 Fed H.10 `6.6760` sensitivity …"
+    },
+    {
+     "path": "acceptance-a64bd476/build.py",
+     "line": 115,
+     "text": "<li>HSBC M01 fee recomputed from tariff formula at 7.129 for all 40 tiers vs repatriate CSV; $10,000 → $30.86, $400,000 → $86.…"
+    },
+    {
+     "path": "acceptance-a64bd476/checks.html",
+     "line": 28,
+     "text": "HSBC M01 fee recomputed from tariff formula at 7.129 for all 40 tiers vs repatriate CSV; $10,000 → $30.86, $400,000 → $86.…"
+    },
+    {
+     "path": "acceptance-a64bd476/findings.html",
+     "line": 41,
+     "text": "IRS yearly average for China Yuan in 2025 is 7.129 CNY/USD; the IRS has no official exchange rate and generally accepts …"
+    },
+    {
+     "path": "acceptance-a64bd476/findings.json",
+     "line": 24,
+     "text": "\"claim\": \"IRS yearly average for China Yuan in 2025 is 7.129 CNY/USD; the IRS has no official exchange rate and generally accepts …"
+    }
+   ],
+   "counts": {
+    "match_files": 99,
+    "differ_files": 0,
+    "unverified_files": 0
+   }
+  },
+  {
+   "id": "RV-05",
+   "figure": "Emigrant property transfer paid out in stages",
+   "verified": "Staging was abolished in 2014; the bank may remit in one payment or several",
+   "source": "CN-FX-11",
+   "quote": "vi_2",
+   "how": "Lines that describe halves, instalments or stages for an emigrant transfer without mentioning the 2014 change.",
+   "differ_sections": [
+    "estimate-facf2fe9",
+    "final-f6327e23",
+    "portal",
+    "reports",
+    "verify-d5d1f860"
+   ],
+   "match_sections": [
+    "(repository root)",
+    "data",
+    "ladder",
+    "repatriate",
+    "site",
+    "tools"
+   ],
+   "examples": [
+    {
+     "path": "estimate-facf2fe9/costs.html",
+     "line": 5782,
+     "text": "…emigrating) Apply once for the whole amount; above ¥200,000 it leaves in stages: up to half first, up to half of the rest after one year, the remaind…"
+    },
+    {
+     "path": "estimate-facf2fe9/data/capture-log.md",
+     "line": 68,
+     "text": "…民身份之前在境内拥有的合法财产变现，通过外汇指定银行购汇和汇出境外的行为。\" ; 第六条 \"移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。…"
+    },
+    {
+     "path": "estimate-facf2fe9/data/sources.json",
+     "line": 432,
+     "text": "\"第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。…"
+    },
+    {
+     "path": "estimate-facf2fe9/sources.html",
+     "line": 231,
+     "text": "…（以下简称继承人）将依法继承的境内遗产变现，通过外汇指定银行购汇和汇出境外的行为。 第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。…"
+    },
+    {
+     "path": "final-f6327e23/data/sources.json",
+     "line": 49,
+     "text": "…Art. 6: 移民转移 must apply once for the whole amount; first remittance ≤ half, after 1 year ≤ half of the remainder, after 2 years the balance; tot…"
+    }
+   ],
+   "counts": {
+    "match_files": 11,
+    "differ_files": 11,
+    "unverified_files": 0
+   }
+  },
+  {
+   "id": "RV-06",
+   "figure": "Foreign tax credit described as dollar-for-dollar",
+   "verified": "The IRS says a credit \"may\" be available, only qualifying taxes count, and only the treaty-reduced tax qualifies",
+   "source": "US-TAX-02",
+   "quote": "treaty_limit",
+   "how": "Lines that say dollar-for-dollar with no limiting word on the same line.",
+   "differ_sections": [
+    "portal",
+    "reports",
+    "study-8f529c94",
+    "transfer-guide"
+   ],
+   "match_sections": [
+    "audit-0f0f59fe",
+    "ladder",
+    "portal",
+    "reports",
+    "study-8f529c94",
+    "transfer-guide"
+   ],
+   "examples": [
+    {
+     "path": "portal/conversion-penalties.html",
+     "line": 147,
+     "text": "Form 1116 dollar-for-dollar credit for creditable PRC income taxes (10-yr refund claim window); F…"
+    },
+    {
+     "path": "reports/CNY_TO_USD_RESEARCH_LEDGER.json",
+     "line": 608,
+     "text": "\"verified_rate_or_rule\": \"Form 1116 dollar-for-dollar credit for creditable PRC income taxes (10-yr refund claim window); F…"
+    },
+    {
+     "path": "study-8f529c94/data/methods.json",
+     "line": 483,
+     "text": "\"Offsets U.S. household USD expenses dollar-for-dollar without wire fees.\""
+    },
+    {
+     "path": "study-8f529c94/methods.html",
+     "line": 975,
+     "text": "Offsets U.S. household USD expenses dollar-for-dollar without wire fees."
+    },
+    {
+     "path": "transfer-guide/data/methods.json",
+     "line": 483,
+     "text": "\"Offsets U.S. household USD expenses dollar-for-dollar without wire fees.\""
+    }
+   ],
+   "counts": {
+    "match_files": 22,
+    "differ_files": 6,
+    "unverified_files": 0
+   }
+  },
+  {
+   "id": "RV-07",
+   "figure": "Foreign earned income exclusion amount for 2026 / 2027",
+   "verified": "",
+   "source": "US-TAX-04",
+   "quote": "amounts",
+   "how": "The IRS page read in this session lists the amount only for 2020 to 2023. The figures $132,900 and $137,300 were not re-read here.",
+   "differ_sections": [
+    "(repository root)",
+    "audit-ad300459",
+    "briefing",
+    "estimate-facf2fe9",
+    "portal",
+    "repatriate",
+    "reports",
+    "study-8f529c94",
+    "transfer-guide",
+    "verify-d5d1f860"
+   ],
+   "match_sections": [],
+   "examples": [
+    {
+     "path": "EXECUTIVE-SUMMARY.md",
+     "line": 6,
+     "text": "…current Nov 2026 Fed H.10 `6.6760` CNY/USD reference, 2026/2027 FEIE `$132,900`/`$137,300`, `31 CFR 1010.821` FBAR maxima `$16,536`/`$165,353`, PBOC…"
+    },
+    {
+     "path": "README.md",
+     "line": 29,
+     "text": "… CFR 1010.821`; Form 8938; Form 3520; Form 1116 FTC / Form 2555 FEIE `$132,900` in 2026 and `$137,300` in 2027); and (d) **PRC penalties (`30%–100%`…"
+    },
+    {
+     "path": "audit-ad300459/exports/findings.csv",
+     "line": 31,
+     "text": "…IRS page lists amounts only through 2023 ($120,000). Repatriate cites $132,900 (2025). This session did not fetch a later IRS cost-of-living notice,…"
+    },
+    {
+     "path": "audit-ad300459/findings.html",
+     "line": 164,
+     "text": "… and were not re-verified here — left blank (FL03). Repatriate&#x27;s $132,900 figure is therefore not re-confirmed by this session. appears in: rep…"
+    },
+    {
+     "path": "audit-ad300459/findings.json",
+     "line": 349,
+     "text": "… page and were not re-verified here — left blank (FL03). Repatriate's $132,900 figure is therefore not re-confirmed by this session.\""
+    }
+   ],
+   "counts": {
+    "match_files": 0,
+    "differ_files": 0,
+    "unverified_files": 52
+   }
+  },
+  {
+   "id": "RV-08",
+   "figure": "PRC late-payment surcharge on overdue tax",
+   "verified": "0.05% of the overdue tax per day",
+   "source": "CN-TAX-05",
+   "quote": "art32",
+   "how": "Counts where the surcharge is mentioned. A section that discusses unpaid PRC tax without it leaves out a cost that grows every day.",
+   "differ_sections": [],
+   "match_sections": [],
+   "examples": [],
+   "counts": {
+    "match_files": 0,
+    "differ_files": 0,
+    "unverified_files": 0
+   }
+  },
+  {
+   "id": "RV-09",
+   "figure": "Official pages linked over http instead of https",
+   "verified": "Same pages are served over https",
+   "source": "CN-FX-12",
+   "quote": "q18",
+   "how": "Plain-http links to official hosts.",
+   "differ_sections": [
+    "data",
+    "estimate-facf2fe9",
+    "final-f6327e23",
+    "reports",
+    "research"
+   ],
+   "match_sections": [],
+   "examples": [
+    {
+     "path": "data/flags.json",
+     "line": 69,
+     "text": "\"sourceUrl\": \"http://www.customs.gov.cn/\","
+    },
+    {
+     "path": "data/sources.json",
+     "line": 91,
+     "text": "\"url\": \"http://www.safe.gov.cn/en/2017/1230/1397.html\","
+    },
+    {
+     "path": "estimate-facf2fe9/data/capture-log.md",
+     "line": 19,
+     "text": "- CMB http://www.cmbchina.com/PersonalBank/GB/Page/standfee.htm item 6: \"向境外银行账户汇款：共有三个收费项：汇出汇款手续费，为汇款金额的0.1％，最低人民币100元，最高1000元；汇款通讯费…"
+    },
+    {
+     "path": "estimate-facf2fe9/data/sources.json",
+     "line": 146,
+     "text": "\"url\": \"http://www.cmbchina.com/PersonalBank/GB/Page/standfee.htm\","
+    },
+    {
+     "path": "estimate-facf2fe9/exports/costs.csv",
+     "line": 82,
+     "text": "….80,25.02,37.48,250.00,1,wire,estimated,,,https://fx.cmbchina.com/hq/ http://www.cmbchina.com/PersonalBank/GB/Page/standfee.htm"
+    }
+   ],
+   "counts": {
+    "match_files": 0,
+    "differ_files": 12,
+    "unverified_files": 0
+   }
+  }
+ ]
+}
