@@ -38,6 +38,8 @@ PRIMARY = ["M01", "M02", "M03", "M04", CASH]
 SAME_LEG = {"M11", "M12", "M13", "M14", "M10"}
 # Every row of the master table carries the four boards/tariffs its columns are built from.
 MASTER_SOURCES = ["S01", "S03", "S05", "S16"]
+SHORT = {"M01": "Bank of China", "M02": "China Merchants Bank", "M03": "HSBC China (Premier)",
+         "M04": "HSBC China (Private)", "M05": "Cash carry"}
 
 
 def esc(t) -> str:
@@ -126,15 +128,15 @@ def page_index() -> str:
                   f"{esc(META['generated'])}, and every row links to the institution that published it. "
                   "Where a bank publishes nothing, the cell is blank and flagged.")
         + '<div class="cards">'
-        + f'<a class="card hero" href="answer.html"><p class="eyebrow">THE ANSWER</p><h2>There is no conversion tax.<br>There is a spread, a fee, and a filing history.</h2><p>The “penalty” people feel is four separate things stacked: PRC tax already due on the source, the bank’s spread, the wire fee, and U.S. reporting exposure. Only the first is a tax. Only the last is avoidable by doing nothing wrong earlier.</p><span class="go">Read the seven-layer breakdown →</span></a>'
+        + f'<a class="card hero" href="answer.html"><p class="eyebrow">THE ANSWER</p><h2>There is no conversion tax.<br>There is a spread, a fee, and a filing history.</h2><p>The “penalty” people feel is seven layers stacked: PRC tax already due on the source, the bank’s spread, the wire fee, unpublished correspondent deductions, U.S. §988 exchange gain, U.S. reporting exposure, and statutory fines that apply only to prohibited routes. Two are taxes; the rest are price or filing risk.</p><span class="go">Read the seven-layer breakdown →</span></a>'
         + f'<a class="card stat" href="costs.html"><p class="eyebrow">CHEAPEST FULLY PUBLISHED ROUTE · $100,000</p><p class="big">{money(HEAD["M01"]["100000"]["total_usd"], 2)}</p><p class="sub">{pct(HEAD["M01"]["100000"]["pct"])} all-in · Bank of China board + tariff</p><p class="tiny">Widest published route at the same tier: {money(HEAD["M03"]["100000"]["total_usd"], 2)} ({pct(HEAD["M03"]["100000"]["pct"])}).</p></a>'
         + f'<a class="card stat" href="costs.html"><p class="eyebrow">COST FALLS AS THE AMOUNT RISES</p><p class="big">{pct(HEAD["M01"]["10000"]["pct"])} → {pct(HEAD["M01"]["400000"]["pct"])}</p><p class="sub">$10,000 → $400,000 on the same bank route</p><p class="tiny">The spread scales with the amount; the fee is capped, so 40 small transfers cost far more than four large ones.</p></a>'
         + f'<a class="card stat" href="taxes.html"><p class="eyebrow">U.S. §988, ILLUSTRATIVE ONLY</p><p class="big">{pct(COSTS["illustrative_988"][1]["gain_pct"])}</p><p class="sub">of the dollar proceeds could be ordinary exchange gain</p><p class="tiny">If the RMB was acquired at the IRS 2025 average of {META["irs_2025_yuan_per_usd"]} and converted at {META["ref_mid"]:.4f}. Basis is unknown — flag F11.</p></a>'
         + '</div>'
         + '<section class="panel"><h2>Five things the tables say</h2><div class="tablewrap"><table class="stack"><caption>Conclusions drawn from the published inputs · each row names its evidence</caption><thead><tr><th scope="col">Finding</th><th scope="col">Number</th><th scope="col">Evidence</th></tr></thead><tbody>'
         + f'<tr><th scope="row">The spread, not the fee, dominates above about USD 50,000</th><td>At $400,000 the fee is {money(HEAD["M01"]["400000"]["fee_usd"], 2)}, the spread is {money(HEAD["M01"]["400000"]["spread_usd"], 2)}, all-in {money(HEAD["M01"]["400000"]["total_usd"], 2)}</td><td>{srcs(["S01","S02"], True)}</td></tr>'
-        + f'<tr><th scope="row">Fees are capped, so small transfers are expensive per dollar</th><td>{pct(HEAD["M01"]["10000"]["pct"])} at $10,000 versus {pct(HEAD["M01"]["10000"]["pct"])} → {pct(HEAD["M01"]["400000"]["pct"])} at $400,000</td><td>{srcs(["S02"], True)}</td></tr>'
-        + f'<tr><th scope="row">Bank choice changes the total by more than 3×</th><td>BOC {money(HEAD["M01"]["100000"]["total_usd"], 2)} vs HSBC Premier {money(HEAD["M03"]["100000"]["total_usd"], 2)} at $100,000</td><td>{srcs(["S01","S05"], True)}</td></tr>'
+        + f'<tr><th scope="row">Fees are capped, so small transfers are expensive per dollar</th><td>{pct(HEAD["M01"]["10000"]["pct"])} at $10,000 versus {pct(HEAD["M01"]["400000"]["pct"])} at $400,000</td><td>{srcs(["S02"], True)}</td></tr>'
+        + f'<tr><th scope="row">Bank choice roughly doubles the total</th><td>BOC {money(HEAD["M01"]["100000"]["total_usd"], 2)} vs HSBC Premier {money(HEAD["M03"]["100000"]["total_usd"], 2)} at $100,000</td><td>{srcs(["S01","S05"], True)}</td></tr>'
         + f'<tr><th scope="row">The USD 50,000 figure is a quota, not a tax or a fee</th><td>Annual aggregate per person; not a price</td><td>{srcs(["S09","S07"], True)}</td></tr>'
         + f'<tr><th scope="row">The expensive mistakes are the unlawful ones</th><td>Statutory fines run up to 30% of the amount, or 30% to an equal amount if serious</td><td>{srcs(["S07"], True)}</td></tr>'
         + '</tbody></table></div></section>'
@@ -156,7 +158,7 @@ def page_answer() -> str:
         ("1", "PRC income tax on the source", "3%–45% comprehensive, 5%–35% business, 20% flat on interest, dividends and asset transfers.",
          "This is the only real tax in the stack. It was due when the income arose, not when it leaves.", ["S14"]),
         ("2", "The bank's FX spread", f"BOC {HEAD['M01']['100000']['pct']:.3f}% · CMB 0.234% · HSBC 0.473% against the reference mid.",
-         "Scales with the amount. Unregulated, unpublished as a number, and the largest cost above USD 50,000.", ["S01", "S03", "S05"]),
+         "Scales with the amount. Not capped by anything found in this pass, not published as a single number, and the largest cost above USD 50,000.", ["S01", "S03", "S05"]),
         ("3", "The wire and cable fee", "BOC CNY 50–260 + CNY 150; CMB CNY 100–1,000 + CNY 150; HSBC CNY 100–500 + CNY 120.",
          "Capped, so it is a fixed cost that shrinks as a percentage. Four wires cost four caps.", ["S02", "S04", "S06"]),
         ("4", "Correspondent and receiving-bank deductions", "Not published by any bank read this pass.",
@@ -174,7 +176,7 @@ def page_answer() -> str:
                   "fix the filing position first, document the source second, choose the cheapest published bank third, "
                   "and never take a route whose statutory fine is a percentage of the principal.")
         + '<section class="panel"><h2>The seven layers people call “the conversion penalty”</h2><div class="tablewrap">'
-        + '<table class="stack"><caption>Only layer 1 and layer 5 are taxes. Layers 2–4 are price. Layers 6–7 are risks you control.</caption>'
+        + '<table class="stack"><caption>Layers 1 and 5 are taxes. Layers 2–4 are price. Layers 6–7 are filing and conduct risk.</caption>'
         + '<thead><tr><th scope="col">Layer</th><th scope="col">What it is</th><th scope="col">Published size</th><th scope="col">Why it matters</th><th scope="col">Source</th></tr></thead><tbody>'
         + "".join(
             f'<tr><td data-label="Layer"><span class="num">{n}</span></td>'
@@ -209,24 +211,26 @@ def page_answer() -> str:
 
 
 # ---------------------------------------------------------------- costs
+ROW_INDEX = {(r["method"], r["usd"]): r for r in ROWS}
+
+
 def cost_cell(mid: str, usd: int, show_pct: bool = True) -> str:
-    h = HEAD[mid].get(str(usd))
-    if not h:
-        ceiling = METHODS_BY_ID[mid].get("cap_usd")
-        if ceiling and mid != CASH:
-            return f'<span class="muted">above USD {ceiling:,.0f} cap</span>'
+    r = ROW_INDEX.get((mid, usd))
+    if r is None:
         return '<span class="muted">—</span>'
-    txt = money(h["total_usd"], 2)
-    return f'<strong>{txt}</strong>' + (f'<span class="pc">{pct(h["pct"])}</span>' if show_pct else '')
+    if r["state"] != "priced":
+        return f'<span class="muted">ceiling USD {r.get("ceiling_usd", 0):,.0f}</span>'
+    txt = money(r["total_usd"], 2)
+    return f'<strong>{txt}</strong>' + (f'<span class="pc">{pct(r["pct"])}</span>' if show_pct else '')
 
 
 def page_costs() -> str:
+    ranked = [r for r in COSTS["ranking_100k"] if r["method"] not in SAME_LEG]
     rank_rows = "".join(
         f'<tr><td data-label="Rank">{i}</td><th scope="row" data-label="Method">{esc(METHODS_BY_ID[r["method"]]["name"])}</th>'
         f'<td data-label="All-in cost">{money(r["total_usd"], 2)}</td><td data-label="% of amount">{pct(r["pct"])}</td>'
         f'<td data-label="Source">{srcs(METHODS_BY_ID[r["method"]]["sources"][:2], True)}</td></tr>'
-        for i, r in enumerate(COSTS["ranking_100k"], 1)
-        if r["method"] not in SAME_LEG
+        for i, r in enumerate(ranked, 1)
     )
 
     master = ""
@@ -289,7 +293,7 @@ def page_costs() -> str:
         + '<p class="tiny">Cash is shown only to USD 10,000 because that is its legal ceiling (flag F13). HSBC Private Banking is shown because its published tariff is zero on both fee lines, but its eligibility is unverified (flag F08).</p>'
         + '<div class="tablewrap"><table class="stack master"><caption>All-in cost in USD, with % of the amount beneath · reference mid '
         + f'{META["ref_mid"]:.4f} CNY/USD</caption><thead><tr><th scope="col">Amount</th>'
-        + "".join(f'<th scope="col">{esc(METHODS_BY_ID[m]["name"].split("—")[-1].strip() if "—" in METHODS_BY_ID[m]["name"] else METHODS_BY_ID[m]["name"])}</th>' for m in PRIMARY)
+        + "".join(f'<th scope="col">{esc(SHORT[m])}</th>' for m in PRIMARY)
         + '<th scope="col">Source</th>'
         + '</tr></thead><tbody>' + master + '</tbody></table></div>'
         + note('The “all-in” column is a floor: it excludes the correspondent-bank deduction (F05) and the U.S. receiving-bank fee (F06), neither of which is published by the institutions read here. '
@@ -331,8 +335,8 @@ def page_methods() -> str:
         )
     body = (
         page_head("Methods", "Every route, with its price or its blank",
-                  "Twenty-four methods: four prohibited ones are listed with their statutory penalty and no instructions. "
-                  "Six are priced from published rates and tariffs; the rest are blank with the reason recorded.")
+                  f"{len(METHODS)} methods: {sum(1 for m in METHODS if m['status'] == 'unlawful')} prohibited ones are listed with their statutory penalty and no instructions. "
+                  f"{len(PRICED)} are priced from published rates and tariffs; the rest are blank with the reason recorded.")
         + '<div class="legend">' + badge("lawful") + badge("conditional") + badge("unverified") + badge("unlawful") + badge("not_applicable") + '</div>'
         + '<label class="search"><span>Filter methods</span>'
         + '<input type="search" data-filter="#method-list" placeholder="bank, cash, quota, crypto, inheritance…" autocomplete="off"></label>'
@@ -596,9 +600,9 @@ def page_audit() -> str:
         page_head("Repository review", "Line-by-line re-check of the sections already here",
                   "This repository already contains more than a dozen dashboards answering the same question. "
                   "Rather than add a fifteenth unexamined copy, this pass re-read the load-bearing official pages and re-checked the numbers that the earlier sections rely on.")
-        + note('<strong>Scope limit, stated plainly.</strong> Fourteen checks were performed. They cover the rate boards, the fee formulas, the quota wording, the prohibition instrument, the cash ceiling, the missing deductions and the rebuild behaviour of the existing dashboards. They do not constitute a full re-verification of every source in every section — see F16.', "warn")
+        + note(f'<strong>Scope limit, stated plainly.</strong> {len(AUDIT)} checks were performed. They cover the rate boards, the fee formulas, the quota wording, the prohibition instrument, the cash ceiling, the missing deductions and the rebuild behaviour of the existing dashboards. They do not constitute a full re-verification of every source in every section — see F16.', "warn")
         + '<section class="panel"><h2>The checks</h2><div class="tablewrap"><table class="stack">'
-        + '<caption>RA-01 to RA-14 · each row names what was read today</caption>'
+        + f'<caption>RA-01 to RA-{len(AUDIT):02d} · each row names what was read today</caption>'
         + '<thead><tr><th scope="col">ID</th><th scope="col">Check</th><th scope="col">Finding</th><th scope="col">Verdict / action</th><th scope="col">Class</th><th scope="col">Source</th></tr></thead>'
         + f'<tbody>{rows}</tbody></table></div></section>'
         + '<section class="panel"><h2>Checks with no external page to cite</h2>'

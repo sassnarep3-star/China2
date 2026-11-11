@@ -205,6 +205,14 @@ for mid in ("M01", "M02", "M03", "M04"):
         v = COSTS["headline"][mid][key]["total_usd"]
         check(f"${v:,.2f}" in costs, f"costs.html: missing {mid}@{key} (${v:,.2f})")
 
+# Every priced cell of a column shown in the master table must actually be printed.
+for mid in ("M01", "M02", "M03", "M04", "M05"):
+    for r in COSTS["rows"]:
+        if r["method"] != mid or r["state"] != "priced":
+            continue
+        check(f"${r['total_usd']:,.2f}" in costs,
+              f"costs.html: master/detail table is missing {mid} at ${r['usd']:,} (${r['total_usd']:,.2f})")
+
 # Every source id must be reachable somewhere in the rendered sources page.
 srcpage = (ROOT / "sources.html").read_text()
 for s in SOURCES:
