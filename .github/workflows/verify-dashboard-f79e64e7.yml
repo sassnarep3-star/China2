@@ -1,0 +1,24 @@
+name: verify-dashboard-f79e64e7
+on:
+  push:
+    branches: [main, arena/f79e64e7-china2]
+    paths: ['dashboard-f79e64e7/**', '.github/workflows/verify-dashboard-f79e64e7.yml']
+  pull_request:
+    branches: [main]
+    paths: ['dashboard-f79e64e7/**', '.github/workflows/verify-dashboard-f79e64e7.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: PYTHONDONTWRITEBYTECODE=1 python3 dashboard-f79e64e7/build.py
+      - run: git diff --exit-code -- dashboard-f79e64e7
+      - run: PYTHONDONTWRITEBYTECODE=1 python3 dashboard-f79e64e7/verify.py
+      - uses: actions/setup-node@v4
+        with: {node-version: '20'}
+      - run: node --check dashboard-f79e64e7/assets/app.js

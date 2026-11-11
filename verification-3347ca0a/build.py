@@ -424,6 +424,9 @@ def root_page():
         ("audit-86f0/costs.html", "Blank cost matrix", "22 methods · 40 tiers", "Leaves unverified values blank by design."),
         ("audit-0f0f59fe/index.html", "Root claim review", "Official text · corrections", "Checks claims previously made on this landing page."),
         ("audit-92d12752/index.html", "Structural link scan", "7,107 rows · 1,384 candidates", "Point-in-time scan for rows without a direct primary-domain URL."),
+        # Navigation-only addition by session arena/f79e64e7-china2 (2026-11-11), logged in COORDINATION.md:
+        # one archive row and one category card so its dashboard is reachable from this landing page.
+        ("dashboard-f79e64e7/index.html", "Second verification pass", "17 methods · 34 sources · 680 cost rows", "Separate pass on 11 Nov 2026: each source re-opened and its quoted sentence checked, with corrections to earlier sets."),
     ]
     archive_rows = "".join(
         f'<tr><th scope="row" data-label="Set"><a href="{href}">{esc(title)}</a></th>'
@@ -617,6 +620,8 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
     <em>Every load-bearing sentence re-fetched on {TODAY}, with what could not be re-checked stated plainly.</em></a>
   <a class="card" href="verification-3347ca0a/irregularities.html"><b>Repository audit</b><span>12 findings</span>
     <em>Duplicate sites, conflicting counts, rate bases and rows without a source.</em></a>
+  <a class="card" href="dashboard-f79e64e7/index.html"><b>Second verification pass</b><span>34 sources · quotes checked 11 Nov</span>
+    <em>A separate session’s decision dashboard: questions, routes, cost at every $10,000, and corrections to earlier sets.</em></a>
 </div>
 
 <h2 id="questions">What has to be answered before a decision</h2>

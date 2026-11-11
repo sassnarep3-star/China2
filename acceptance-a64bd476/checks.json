@@ -1,8 +1,8 @@
 {
   "session": "arena/a64bd476-china2",
-  "checks_run": 30392,
+  "checks_run": 30686,
   "failures": [],
-  "html_pages_crawled": 110,
+  "html_pages_crawled": 120,
   "findings": 10,
   "sources": 6
 }

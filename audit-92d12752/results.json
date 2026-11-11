@@ -1,7 +1,7 @@
 {
-  "pages_scanned": 111,
-  "data_rows": 8298,
-  "without_direct_primary": 1423,
+  "pages_scanned": 119,
+  "data_rows": 9192,
+  "without_direct_primary": 1447,
   "pages_with_candidates": 36,
   "pages": [
     {
@@ -145,6 +145,54 @@
     {
       "path": "briefing/sources.html",
       "rows": 41,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/costs.html",
+      "rows": 733,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/flagged.html",
+      "rows": 19,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/index.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/methods.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/questions.html",
+      "rows": 13,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/repo-review.html",
+      "rows": 18,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/sources.html",
+      "rows": 34,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/taxes.html",
+      "rows": 19,
       "without_direct_primary": 0,
       "first_example": ""
     },
@@ -294,8 +342,8 @@
     },
     {
       "path": "index.html",
-      "rows": 62,
-      "without_direct_primary": 15,
+      "rows": 63,
+      "without_direct_primary": 16,
       "first_example": "Transfer guide 23 methods · 40 sources · 920 cost rows Newest complete set (10-11 Nov 2026). Used as the canonical detail set from this page."
     },
     {
@@ -306,8 +354,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 242,
-      "without_direct_primary": 242,
+      "rows": 265,
+      "without_direct_primary": 265,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {

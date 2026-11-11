@@ -1,0 +1,446 @@
+[
+ {
+  "id": "M01",
+  "kind": "lawful",
+  "model": "one_wire",
+  "src": [
+   "S01",
+   "S06",
+   "S07",
+   "S10",
+   "S17",
+   "S18"
+  ],
+  "name": "Bank conversion and wire of documented income",
+  "fits": "A foreign passport holder whose RMB is lawful income earned in China, such as salary, and who holds the tax records for it.",
+  "limit": "No yearly cap in the rule read; the amount must match the documents.",
+  "pros": [
+   "The whole documented amount can go in one transaction.",
+   "Lowest published cost of any route: about 0.2% to 0.5%.",
+   "Leaves a clean paper trail for U.S. reporting.",
+   "Can be handled by an agent holding your documents if you are abroad (S07, Art. 4)."
+  ],
+  "cons": [
+   "Needs source papers that show the amount, including tax vouchers.",
+   "The bank checks that the papers are genuine and match the payment; branches differ in what they accept.",
+   "Pay for work in China is a listed type for the tax recordal form when one payment exceeds USD 50,000 (S10); ask the bank whether it wants the form from you."
+  ],
+  "steps": [
+   "Gather your passport, the contract or payslips that show the income, and the PRC tax payment records for the same period.",
+   "Ask the branch, in writing if you can, which source-of-funds papers it accepts and whether it wants a tax recordal form for a single payment above USD 50,000.",
+   "If the bank asks for the recordal form, file it with the local tax office and take the stamped copy back to the bank.",
+   "The bank sells you dollars at its posted selling rate (RMB 6.6911 per dollar at Bank of China when read) and wires them to your own U.S. account. Bank of China charges 0.1% (RMB 50 to 260) plus RMB 150 cable.",
+   "Keep the exchange memo, the wire receipt and the tax records.",
+   "On the U.S. side, keep filing FBAR and Form 8938 for any year the account was over the thresholds, and work out the currency gain if it is above USD 200."
+  ]
+ },
+ {
+  "id": "M02",
+  "kind": "conditional",
+  "model": "quota_wires",
+  "src": [
+   "S07",
+   "S02",
+   "S08",
+   "S17",
+   "S18"
+  ],
+  "name": "Annual USD 50,000 facilitation quota",
+  "fits": "A Chinese citizen, or a foreigner who holds a Foreign Permanent Resident ID card. Other foreigners do not get this quota.",
+  "limit": "USD 50,000 per person per calendar year.",
+  "pros": [
+   "ID only, no source papers inside the quota.",
+   "Can be done in the bank's app."
+  ],
+  "cons": [
+   "USD 400,000 would take eight calendar years.",
+   "Not open to most foreign passport holders (S02).",
+   "Using other people's quotas for your money is splitting and is prohibited (S08)."
+  ],
+  "steps": [
+   "Confirm with the bank that your ID type has the quota.",
+   "Buy up to USD 50,000 in the app or at the counter and state the true purpose.",
+   "Wire it to your own U.S. account; pay the wire fee each time.",
+   "Repeat in each later calendar year until done."
+  ]
+ },
+ {
+  "id": "M03",
+  "kind": "lawful",
+  "model": "hsbc_fee",
+  "src": [
+   "S19",
+   "S01",
+   "S07"
+  ],
+  "name": "Same bank route at HSBC China (published tariff)",
+  "fits": "An HSBC China customer who qualifies under M01 or M02.",
+  "limit": "Same rules as M01 or M02.",
+  "pros": [
+   "Published fee schedule in English, effective 31 October 2026.",
+   "The wire fee is capped at CNY 620, and is free for Private Banking individuals."
+  ],
+  "cons": [
+   "HSBC's own exchange rate was not read today, so the total is blank (flag F05).",
+   "Premier and Advance customers pay 0.1% (CNY 100 to 500) plus CNY 120 cable; only Private Banking individuals send free."
+  ],
+  "steps": [
+   "Check your account tier against the current tariff PDF.",
+   "Follow M01 (documents) or M02 (quota).",
+   "Ask for the rate and every fee in writing before confirming."
+  ]
+ },
+ {
+  "id": "M04",
+  "kind": "conditional",
+  "model": "wise",
+  "src": [
+   "S20",
+   "S17"
+  ],
+  "name": "Wise, sending from CNY",
+  "fits": "A non-mainland person who works or worked in China and has a PRC tax record from the last three years; the money goes only to an account in your own name.",
+  "limit": "CNY 300,000 per transfer from a bank app; overall limit roughly your after-tax China salary.",
+  "pros": [
+   "Done online, no branch visit.",
+   "Built for exactly the salary-with-tax-record case."
+  ],
+  "cons": [
+   "Salary only; savings from other sources do not count toward the limit.",
+   "The fee and rate appear only when you request a quote, so the cost is blank here.",
+   "USD 400,000 would need about nine transfers."
+  ],
+  "steps": [
+   "Open and verify a Wise account in your own name.",
+   "Upload your PRC tax record; Wise sets your overall sending limit from it.",
+   "Create a CNY to USD transfer to your own U.S. bank account or Wise account.",
+   "Pay from your Chinese bank account or Alipay, up to CNY 300,000 at a time.",
+   "Save each quote and receipt."
+  ]
+ },
+ {
+  "id": "M05",
+  "kind": "conditional",
+  "model": "atm",
+  "src": [
+   "S04",
+   "S17"
+  ],
+  "name": "Overseas ATM withdrawals on a mainland card",
+  "fits": "Anyone with a mainland bank card who needs a small amount abroad.",
+  "limit": "RMB 100,000 per person per calendar year across all cards; RMB 10,000 per card per day.",
+  "pros": [
+   "No documents.",
+   "Works for small amounts."
+  ],
+  "cons": [
+   "USD 400,000 would take 27 calendar years at today's rate.",
+   "Going over the yearly cap bars withdrawals for that year and the next.",
+   "Card and ATM fees and the network rate were not read today, so the cost is blank."
+  ],
+  "steps": [
+   "Check the card works abroad and ask the issuer for its fee.",
+   "Withdraw up to RMB 10,000 per card per day, and no more than RMB 100,000 in the calendar year.",
+   "Deposit the cash into your U.S. account and keep the slips."
+  ]
+ },
+ {
+  "id": "M06",
+  "kind": "conditional",
+  "model": "cash",
+  "src": [
+   "S05",
+   "S26",
+   "S06",
+   "S17"
+  ],
+  "name": "Carry dollar cash out of China",
+  "fits": "Someone who can lawfully buy the dollars first (M01 or M02) and travels anyway.",
+  "limit": "USD 5,000 per exit without a permit; up to USD 10,000 with a bank-issued permit.",
+  "pros": [
+   "No wire fee.",
+   "Simple for a few thousand dollars."
+  ],
+  "cons": [
+   "USD 400,000 would take 40 permitted trips or 80 without permits.",
+   "A second exit within 15 days is limited to USD 1,000.",
+   "Loss and theft risk; carrying against the rules can be fined up to 20% (S06, Art. 42).",
+   "More than USD 10,000 entering the U.S. must be declared (S26)."
+  ],
+  "steps": [
+   "Buy dollar cash at the bank under M01 or M02.",
+   "For more than USD 5,000, get the bank's carrying permit; it is valid 30 days for one exit.",
+   "Show the permit to Chinese customs when leaving.",
+   "If you carry more than USD 10,000 into the U.S., file FinCEN Form 105.",
+   "Deposit the cash and keep the exchange memo."
+  ]
+ },
+ {
+  "id": "M07",
+  "kind": "conditional",
+  "model": "one_wire",
+  "time": "One transaction after SAFE approval",
+  "src": [
+   "S11",
+   "S32",
+   "S17",
+   "S18"
+  ],
+  "name": "Emigrant property transfer through SAFE",
+  "fits": "A person who moved from mainland China and took foreign status, transferring assets owned before emigrating.",
+  "limit": "The amount SAFE approves; since 2014 it can go in one payment or several.",
+  "pros": [
+   "A formal route for large capital sums with no fixed ceiling in the rules read.",
+   "No longer staged: the 2014 notice removed the instalment requirement (S32).",
+   "Approved by the local SAFE branch whatever the amount."
+  ],
+  "cons": [
+   "Needs SAFE approval, proof the assets are lawful and yours, and tax certificates from where they arose.",
+   "The money must go straight to your own account in your country of residence; no cash withdrawal.",
+   "Does not apply to people who were never mainland residents."
+  ],
+  "steps": [
+   "Apply to the SAFE branch for your former household registration area with a written application, proof your registration was cancelled, proof of settlement abroad, proof of the assets and the tax certificates.",
+   "SAFE issues an approval for the amount.",
+   "The bank converts and wires the approved amount, in one payment or several, to your own account abroad.",
+   "Keep the approval, the exchange memo and the wire receipts."
+  ]
+ },
+ {
+  "id": "M08",
+  "kind": "conditional",
+  "model": "one_wire",
+  "time": "One transaction after SAFE approval",
+  "src": [
+   "S11",
+   "S12",
+   "S32",
+   "S25",
+   "S17",
+   "S18"
+  ],
+  "name": "Inheritance transfer through SAFE",
+  "fits": "A foreign citizen who inherited a mainland estate.",
+  "limit": "One application per decedent; paid in one or several transfers.",
+  "pros": [
+   "Can move the whole inheritance.",
+   "A bequest is not income to the U.S. recipient (S25)."
+  ],
+  "cons": [
+   "Needs SAFE approval, inheritance papers and tax certificates for the decedent's property.",
+   "A bequest above USD 100,000 from a foreign estate must be reported on Form 3520."
+  ],
+  "steps": [
+   "Apply to the SAFE branch where the decedent was registered, with proof of relationship and of the estate.",
+   "After approval, the bank converts and wires the money.",
+   "File Form 3520 with your U.S. return if the bequest is above USD 100,000."
+  ]
+ },
+ {
+  "id": "M09",
+  "kind": "conditional",
+  "model": "one_wire",
+  "src": [
+   "S13",
+   "S06",
+   "S17",
+   "S18"
+  ],
+  "name": "Proceeds from selling a mainland home",
+  "fits": "A foreign individual who sold a home in mainland China.",
+  "limit": "The sale proceeds, on the capital-account documents the bank requires.",
+  "pros": [
+   "A recognised capital-account route.",
+   "An agent can act for you with a notarised power of attorney."
+  ],
+  "cons": [
+   "The full document list was not read today.",
+   "PRC taxes on the sale were not researched today, so they are blank."
+  ],
+  "steps": [
+   "Ask the bank for its document list for a foreign individual's home-sale proceeds.",
+   "Provide the sale contract, tax papers for the sale and ID; add a notarised power of attorney if an agent acts.",
+   "The bank converts and wires the proceeds."
+  ]
+ },
+ {
+  "id": "M10",
+  "kind": "conditional",
+  "model": "dividend",
+  "src": [
+   "S30",
+   "S14"
+  ],
+  "name": "Company profits paid out as a dividend",
+  "fits": "Only if the money sits in a company you own rather than a personal account.",
+  "limit": "Distributable after-tax profit.",
+  "pros": [
+   "The treaty caps PRC tax on the dividend at 10% for a U.S. resident beneficial owner."
+  ],
+  "cons": [
+   "Costs 10% of the gross dividend in PRC tax.",
+   "Company-level tax and bank fees were not researched today."
+  ],
+  "steps": [
+   "Have the company declare a dividend from after-tax profit.",
+   "The company withholds PRC tax at the treaty rate and files the tax recordal.",
+   "The bank converts and wires the net dividend.",
+   "Report the dividend on your U.S. return and claim the PRC tax as a foreign tax credit."
+  ]
+ },
+ {
+  "id": "M11",
+  "kind": "conditional",
+  "model": "quota_wires",
+  "src": [
+   "S07",
+   "S09",
+   "S25",
+   "S17",
+   "S18"
+  ],
+  "name": "A relative sends their own money as a gift",
+  "fits": "The money truly belongs to a relative who is a Chinese citizen, and they choose to give it to you.",
+  "limit": "The relative's own USD 50,000 yearly quota.",
+  "pros": [
+   "A gift is not income to the U.S. recipient (S25).",
+   "ID only inside the relative's quota."
+  ],
+  "cons": [
+   "If the money is really yours, this is lending a quota and is prohibited (S08).",
+   "Five or more people remitting to one overseas person is a listed splitting feature (S09).",
+   "Gifts above USD 100,000 a year from one foreign person and related persons need Form 3520."
+  ],
+  "steps": [
+   "Confirm whose money it is; do not route your own money through relatives.",
+   "The relative buys dollars within their own quota and wires them to you.",
+   "File Form 3520 if the year's total passes USD 100,000."
+  ]
+ },
+ {
+  "id": "M12",
+  "kind": "conditional",
+  "model": "reconvert",
+  "src": [
+   "S03",
+   "S17",
+   "S18"
+  ],
+  "name": "Convert back RMB you originally brought in as foreign currency",
+  "fits": "Your RMB came from dollars you exchanged in China and you still hold the exchange memo.",
+  "limit": "The unused amount on a memo up to 24 months old; USD 500 a day on ID alone.",
+  "pros": [
+   "No income papers needed, only the original memo."
+  ],
+  "cons": [
+   "Useless if the memo is older than 24 months or lost.",
+   "USD 500 a day on ID alone is impractical for large sums."
+  ],
+  "steps": [
+   "Find the original exchange memo and check its date.",
+   "Take it and your passport to the bank and convert back the unused amount.",
+   "Wire the dollars or carry them within the cash limits."
+  ]
+ },
+ {
+  "id": "M13",
+  "kind": "none",
+  "model": "stay",
+  "src": [
+   "S22",
+   "S24"
+  ],
+  "name": "Leave the money in China and spend it there",
+  "fits": "There is no pressing need for dollars.",
+  "limit": "None.",
+  "pros": [
+   "No conversion cost and no bank paperwork."
+  ],
+  "cons": [
+   "FBAR and Form 8938 filing continues each year.",
+   "The dollar value moves with the exchange rate."
+  ],
+  "steps": [
+   "Keep filing FBAR and Form 8938 while the balance is over the thresholds.",
+   "Collect the source and tax papers now in case you convert later."
+  ]
+ },
+ {
+  "id": "M14",
+  "kind": "unlawful",
+  "model": "fine",
+  "src": [
+   "S08",
+   "S09",
+   "S06"
+  ],
+  "name": "Using other people's quotas (splitting)",
+  "fits": "Nobody.",
+  "limit": "Prohibited.",
+  "pros": [],
+  "cons": [
+   "Watch list for that year and the next two (S08).",
+   "SAFE's Hebei branch reports seven such cases, 60 people and USD 2.69 million, punished under Article 39 (S09).",
+   "Article 39 sets fines up to 30% of the amount, and 30% to 100% in serious cases (S06)."
+  ],
+  "steps": [
+   "Do not use this route."
+  ]
+ },
+ {
+  "id": "M15",
+  "kind": "unlawful",
+  "model": "fine",
+  "src": [
+   "S06"
+  ],
+  "name": "Underground bank or private matched swap",
+  "fits": "Nobody.",
+  "limit": "Prohibited.",
+  "pros": [],
+  "cons": [
+   "Private FX trading: confiscation of gains and a fine up to 30%, or 30% to 100% if serious; criminal liability is possible (S06, Art. 45).",
+   "No protection if the counterparty keeps the money."
+  ],
+  "steps": [
+   "Do not use this route."
+  ]
+ },
+ {
+  "id": "M16",
+  "kind": "unlawful",
+  "model": "fine",
+  "src": [
+   "S06"
+  ],
+  "name": "False contracts or invoices to buy FX",
+  "fits": "Nobody.",
+  "limit": "Prohibited.",
+  "pros": [],
+  "cons": [
+   "Fraudulent FX purchase: forced reversal and a fine up to 30%, or 30% to 100% if serious; criminal liability is possible (S06, Art. 40)."
+  ],
+  "steps": [
+   "Do not use this route."
+  ]
+ },
+ {
+  "id": "M17",
+  "kind": "unlawful",
+  "model": "blank",
+  "src": [
+   "S16"
+  ],
+  "name": "Crypto bridge, such as buying USDT with RMB",
+  "fits": "Nobody.",
+  "limit": "Prohibited.",
+  "pros": [],
+  "cons": [
+   "Exchanging legal tender for virtual currency in China is illegal financial activity (S16).",
+   "No fine percentage was read in the notice today, so the exposure is blank."
+  ],
+  "steps": [
+   "Do not use this route."
+  ]
+ }
+]
