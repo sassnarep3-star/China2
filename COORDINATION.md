@@ -992,3 +992,18 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **U5 — Repo review + Flags + Sources register:** `transfer-guide/audit.html` (RA-01–RA-14, 14 findings, sources, file inventory, direct/source/assumption separation), `transfer-guide/flagged.html` (FL-01–FL-18, 18 unverified/conditional items, blanks where nothing is published), `transfer-guide/sources.html` (SRC-01–SRC-40, 22 PRC official + 15 US/treaty + 3 primary commercial, 100% HTTPS fetched 2026-11-10, verbatim excerpts). New `transfer-guide/questions.html` (Q01–Q12) covers every gating private fact prompt requires: origin of balance, PRC tax withholding/tax vouchers, SAFE 境内个人 vs 境外个人 / PR-ID status, tranche acquisition dates & USD basis (§988(e) $200), FBAR/8938/3520 history, bank executable quote, capital-account docs (property/inheritance/emigrant), proxy vs in-person, urgency/ATM/POS vs lump-sum, bank tariff, gray-market pitfalls — each row with What We Know / What We DO NOT Know / How to Discover + official links + flags.
 
 **Verification (U5/U6 structural):** `PYTHONDONTWRITEBYTECODE=1 python3 transfer-guide/build.py` + `transfer-guide/verify.py` → **19,842 independent checks, 0 failures** (9 pages, 920 cost rows across $10k–$400k × 23 methods, 100% direct HTTPS official links on every <tr> with <td>, strict blank enforcement on unconfirmed FX spreads and third-party wire deductions, all local links/fragments resolved, `node --check transfer-guide/assets/app.js` green). Includes independent re-derivation of every HSBC fee tier ($10k $30.86, $50k $66.83, $400k $86.97, M06 $400k $534.66) and ATM 29-year math, plus 12-question ledger validation. These are structural and arithmetic checks; they do not certify the law.
+
+---
+
+## Session `arena/3347ca0a-china2` — final integration, independent re-verification, and clean landing dashboard (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to `arena/3347ca0a-china2` and forbids creating or switching branches; this fixed branch substitutes for the requested `session-<id>/<task>` branch. The complete board above (all prior sessions, including the still-open `needs review` flags) was read before claiming. No task below was claimed by an active session; PRs #63, #65 and #66 are open but touch only `review-820042b6/**`, `review-c35f0986/**`, their workflows, and this append-only board.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| I1 | Independent, dated re-verification of every load-bearing official source (exact quote + HTTP result recorded) | in progress | `arena/3347ca0a-china2` | `verification-3347ca0a/**` |
+| I2 | Full-repo line-by-line audit: duplicate/parallel outputs, conflicting counts and figures, broken internal links | in progress | `arena/3347ca0a-china2` | `verification-3347ca0a/**` |
+| I3 | Single clean landing dashboard at repository root, organised by category, with subpage navigation | in progress | `arena/3347ca0a-china2` | `index.html`, `verification-3347ca0a/**` |
+| I4 | PR → merge → GitHub Pages deploy confirmation, recorded here | in progress | `arena/3347ca0a-china2` | `COORDINATION.md` (append-only) |
+
+**Claim policy (unchanged from prior sessions):** no private facts inferred; every table row carries a direct official-source link; values that cannot be confirmed from an official source stay blank and are flagged; no personal tax bill or cheapest-route claim is asserted. This session acts as the **final integration session**: it changes the shared outputs (`index.html`, navigation) once, re-verifies the combined data, confirms the build and publishes. Other sessions' directories are not edited; any needed change there is logged as a request instead.
