@@ -1354,3 +1354,28 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 - **CI on the PR head:** all 14 checks passed, including the new `verify-guide-fb2f2562` and the path-filtered `verify-acceptance-a64bd476`; merge state was CLEAN.
 - **Pages:** `pages-build-deployment` run https://github.com/sassnarep3-star/China2/actions/runs/42983349325 for head `89ea1e6` completed SUCCESS (build, deploy, report-build-status). The legacy `/pages/builds` API lists the 07:58:05Z build as `built` with `error: null` but shows the previous commit `c36198d` in its `commit` field; the deployment run above is the record for the merge commit. The sandbox cannot reach `github.io`, so no live-page fetch is claimed. Entry point: https://sassnarep3-star.github.io/China2/guide-fb2f2562/
 - **Status:** G1–G7 done. Flagged items (F-01…F-18 and the 35 conflicting repo lines) remain needs review and did not block the merge.
+
+---
+
+## Session `arena/21f3ecb6-china2` — consolidated decision dashboard + fresh same-day verification (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to `arena/21f3ecb6-china2`; creating or switching
+> branches is forbidden, so this fixed branch substitutes for the requested
+> `session-<id>/<task>` branch. The whole board above was read first. Sessions whose claims are
+> marked done have published records; open PRs from other sessions are not touched. This
+> session builds into a new, unclaimed path and edits shared outputs only where this board
+> already shows a completed owner (logged below).
+
+| # | Task | Status | Owner | Files / scope | Claimed (UTC) |
+|---|------|--------|-------|---------------|---------------|
+| D1 | Fresh same-day re-read of every load-bearing official source, with exact quoted words stored in a machine-checkable ledger | in progress | `arena/21f3ecb6-china2` | `ledger-21f3ecb6/data/**` | 2026-11-11 |
+| D2 | One clean dashboard: landing, executive summary, question register (known / unknown / how to find out) | in progress | `arena/21f3ecb6-china2` | `ledger-21f3ecb6/**` | 2026-11-11 |
+| D3 | Every CNY→USD method: pros, cons, exact step-by-step, lawful/unlawful split | in progress | `arena/21f3ecb6-china2` | `ledger-21f3ecb6/**` | 2026-11-11 |
+| D4 | Cost of every priced method at each USD 10,000 step from 10,000 to 400,000, computed from the ledger only; mobile-first tables, cost first | in progress | `arena/21f3ecb6-china2` | `ledger-21f3ecb6/**` | 2026-11-11 |
+| D5 | "Conversion penalty" decomposed into layers, each with its official source | in progress | `arena/21f3ecb6-china2` | `ledger-21f3ecb6/**` | 2026-11-11 |
+| D6 | Independent verifier + CI workflow; whole-repo review of existing figures against today's text | in progress | `arena/21f3ecb6-china2` | `ledger-21f3ecb6/**`, `.github/workflows/verify-ledger-21f3ecb6.yml` | 2026-11-11 |
+| D7 | Integration: one contextual link block on the shared root landing via its existing generator, README entry line, mechanical regeneration of inventory snapshots, PR → merge → Pages confirmation | in progress | `arena/21f3ecb6-china2` | `verification-3347ca0a/build.py` (nav/card lines only), `index.html`, `README.md`, `COORDINATION.md` (append-only), `ladder/audit.html`, `audit-92d12752/**`, `acceptance-a64bd476/**` | 2026-11-11 |
+
+Baseline: existing verifiers (local replica of every workflow's steps) will be run before and
+after edits; results are recorded in the D7 completion record. No claim is taken over another
+session's in-progress scope, and no existing section's content is rewritten by this session.
