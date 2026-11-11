@@ -479,7 +479,7 @@ See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and
 <div class="notice"><strong>Read this before the numbers.</strong> Nothing here is a personal determination. The source,
 the tax history and the acquisition dates of your balance are unknown; no bank has been asked for a quote; no rate
 shown is executable. Values that could not be confirmed from an official document are left blank and flagged, not
-estimated. <a href="verification-3347ca0a/index.html">22 re-verified source checks</a> ·
+estimated. <a href="verification-3347ca0a/index.html">22 source checks · 20 confirmed</a> ·
 <a href="verification-3347ca0a/irregularities.html">12 repository findings</a>.</div>
 
 <h2 id="answer">Answer first</h2>
@@ -689,7 +689,7 @@ def verification_page():
             <div class="muted" style="margin-top:.35rem">{esc(c['doc'])} · {esc(c['locator'])} · {esc(c['authority'])}</div></td>
           <td data-label="Status">{pill}</td>
           <td data-label="Limit">{esc(c['limit'])}</td>
-          <td class="src" data-label="Source">{ref(c['url'], 'open ↗')}</td>
+          <td class="src" data-label="Source">{ref(c['url'], 'open')}</td>
         </tr>""")
 
     verified = sum(1 for c in CHECKS["checks"] if c["status"] == "VERIFIED")
@@ -778,7 +778,7 @@ def irregularities_page():
           <td data-label="Evidence">{esc(f['evidence'])}</td>
           <td data-label="What it changes for a reader">{esc(f['impact'])}</td>
           <td data-label="How it was checked">{esc(f['verification'])}</td>
-          <td class="src" data-label="Link">{ref(f['source'], 'open ↗')}</td>
+          <td class="src" data-label="Link">{ref(f['source'], 'open')}</td>
         </tr>""")
 
     counts = {}
