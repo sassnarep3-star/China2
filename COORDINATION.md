@@ -914,14 +914,23 @@ Prior sessions' substantive research and the live GitHub Pages site are complete
 
 | Task | Status | Owner | Files / scope |
 |---|---|---|---|
-| B-01 ATM cash table row: "8+ years for $400k" -> ~29 calendar years ($400,000 / ($100,000/7.129) = 28.52 yr) | in progress | arena/bb2a3876-china2 | briefing/build.py; briefing/EXECUTIVE_SUMMARY.md (generated); briefing/*.html via rebuild |
-| B-02 ladder audit prose hardcoded "Twenty sources ... of 20" (ledger: 21 sources, 17 direct) -> computed counts | in progress | arena/bb2a3876-china2 | ladder/build.py; ladder/audit.html via rebuild; root index.html via ladder/build.py (deterministic) |
-| B-03 EXECUTIVE-SUMMARY.md: http:// SAFE/GC links -> HTTPS; repealed 2021 crypto-notice citation re-pointed to PBOC Yin Fa [2026] No. 42; R01 row conditioned on domestic/PR-ID purchase-quota rule | in progress | arena/bb2a3876-china2 | EXECUTIVE-SUMMARY.md |
-| B-04 README.md hardcoded session-branch sentence (audit-ad300459 RA-13) -> genericized | in progress | arena/bb2a3876-china2 | README.md |
-| B-05 audit-92d12752 snapshot regenerated after repository changes (its verify.py requires scan()==results.json) | in progress | arena/bb2a3876-china2 | audit-92d12752/results.json; audit-92d12752/index.html |
-| B-06 Full local re-verification of all CI suites + PR, merge, Pages confirmation | in progress | arena/bb2a3876-china2 | COORDINATION.md (append-only); no other file |
+| B-01 ATM cash table row: "8+ years for $400k" -> ~29 calendar years ($400,000 / ($100,000/7.129) = 28.52 yr) | done (PR #61) | arena/bb2a3876-china2 | briefing/build.py; briefing/EXECUTIVE_SUMMARY.md (generated); briefing/*.html via rebuild |
+| B-02 ladder audit prose hardcoded "Twenty sources ... of 20" (ledger: 21 sources, 17 direct) -> computed counts | done (PR #61) | arena/bb2a3876-china2 | ladder/build.py; ladder/audit.html via rebuild; root index.html via ladder/build.py (deterministic) |
+| B-03 EXECUTIVE-SUMMARY.md: http:// SAFE/GC links -> HTTPS; repealed 2021 crypto-notice citation re-pointed to PBOC Yin Fa [2026] No. 42; R01 row conditioned on domestic/PR-ID purchase-quota rule | done (PR #61) | arena/bb2a3876-china2 | EXECUTIVE-SUMMARY.md |
+| B-04 README.md hardcoded session-branch sentence (audit-ad300459 RA-13) -> genericized | done (PR #61) | arena/bb2a3876-china2 | README.md |
+| B-05 audit-92d12752 snapshot regenerated after repository changes (its verify.py requires scan()==results.json) | done (PR #61) | arena/bb2a3876-china2 | audit-92d12752/results.json; audit-92d12752/index.html |
+| B-06 Full local re-verification of all CI suites + PR, merge, Pages confirmation | done (PR #61) | arena/bb2a3876-china2 | COORDINATION.md (append-only); no other file |
 
 Rules in force: no other session's published findings are rewritten; every edit above traces to an item already flagged as irregular by a prior published audit (study-8f529c94 RA-01/RA-02/RA-03/RA-04/RA-13, ladder AUD list, briefing N-series). Sources: SAFE Hui Fa [2017] No. 29 (RMB 100k/person/civil year ATM cap) https://www.safe.gov.cn/en/2017/1230/1397.html ; IRS 2025 yearly average 7.129 https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates ; PBOC Yin Fa [2026] No. 42 https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html ; SAFE Hui Fa [2007] No. 1 / SAFE Tianjin 2024 Case 9 (foreign-individual purchase quota limited to Foreign Permanent Resident ID holders) https://www.safe.gov.cn/tianjin/2024/0621/2529.html .
+
+### Completion log — `arena/bb2a3876-china2` — 2026-11-11 UTC
+
+- **All tasks B-01..B-06 done.** Corrections limited to items already published as flagged by prior audits; no verified research claim was rewritten. B-01..B-05 diff 094b2d3; full suite re-run green locally before push (build/validate/verify for docs, site, portal, repatriate, briefing, ladder 9,345 checks, study-8f529c94 19,686 checks, verify-d5d1f860, estimate-facf2fe9, final-f6327e23, acceptance-a64bd476 20,708 checks/0 failures, audit-86f0/0f0f59fe/ad300459/373b54a3/verify-88f5a1be, audit-92d12752).
+- **PR:** https://github.com/sassnarep3-star/China2/pull/61 (`arena/bb2a3876-china2` -> `main`). **Checks:** 12/12 passed before merge (validate, verify x10, verify-briefing, verify-briefing-and-audits, verify-ladder, verify-portal, verify-repatriate, verify-study). **Merge:** MERGED at 2026-11-11T02:29:30Z via `gh pr merge 61 --merge`; merge commit `5f89b04b130ff6cc5aee97cb20a9801701405a0d`.
+- **Main checks after merge:** 13/13 success, including `pages build and deployment` run 42946372528. Pages API `pages/builds/latest`: `status: built`, `commit 5f89b04...`, `error.message: null`. Live site re-fetched 2026-11-11: https://sassnarep3-star.github.io/China2/ serves the root hub (requirement: published GitHub Pages site remains live).
+- **Verification standard:** every changed figure traces to an official source already in the repo ledgers (SAFE Hui Fa [2017] No. 29; SAFE Hui Fa [2007] No. 1; SAFE Tianjin 2024 Case 9 / 2026-07-13 FAQ; IRS 2025 yearly average 7.129; PBOC Yin Fa [2026] No. 42; HSBC China Tariff eff. 2026-10-31). No new figures were introduced. Unconfirmed values remain blank and flagged.
+- **Irregularities / notes for review (non-blocking):** (1) frozen audit snapshots (e.g. study-8f529c94 RA-01..RA-04) still describe the fixed issues as open — intentionally not rewritten; (2) `ladder/costs.html` modeled spread bands remain assumptions, not executable quotes; (3) personal tax outcome / all-in cost remain unknown without private facts and a written bank quote; (4) generators stamp `generated` dates, so same-day rebuild is required by the `git diff --exit-code` CI gates (observed and satisfied); (5) `audit-92d12752` has no CI workflow; its snapshot was re-taken (100 pages, 7,107 rows, 1,384 candidate rows on 34 pages) and now passes its own verify.py.
+- **Handoff / out of scope left for others:** the two frozen audit directories still list these items as open (see their pages); the 60-minute-stale hub-card claim by `arena/4decd480-china2` was already taken over by `arena/facf2fe9-china2` (2026-11-10 10:46 UTC note); no other session's files were edited.
 
 ---
 
@@ -954,6 +963,10 @@ Claim recorded before work. No other active claim for `audit-92d12752/**` appear
 - Published review retrieved successfully: https://sassnarep3-star.github.io/China2/audit-92d12752/index.html . The root dashboard and other category pages are unchanged by this small follow-up; this PR only refreshed the date/count snapshot and added the verification/publication record.
 
 ---
+
+### Merge note — `arena/bb2a3876-china2` — 2026-11-11 UTC
+
+- PR #66 (documentation-only task-board record for PR #61) conflicted with PR #62 (`arena/6201ba1b-china2`, structural audit snapshot refresh). Resolved append-only: both sections above are preserved verbatim; no work from either session was discarded. The concurrent note from `arena/6201ba1b-china2` confirms the two snapshot refreshes matched (100 pages / 7,107 rows / 1,384 candidates on 34 pages).
 
 ---
 
@@ -992,3 +1005,10 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **U5 — Repo review + Flags + Sources register:** `transfer-guide/audit.html` (RA-01–RA-14, 14 findings, sources, file inventory, direct/source/assumption separation), `transfer-guide/flagged.html` (FL-01–FL-18, 18 unverified/conditional items, blanks where nothing is published), `transfer-guide/sources.html` (SRC-01–SRC-40, 22 PRC official + 15 US/treaty + 3 primary commercial, 100% HTTPS fetched 2026-11-10, verbatim excerpts). New `transfer-guide/questions.html` (Q01–Q12) covers every gating private fact prompt requires: origin of balance, PRC tax withholding/tax vouchers, SAFE 境内个人 vs 境外个人 / PR-ID status, tranche acquisition dates & USD basis (§988(e) $200), FBAR/8938/3520 history, bank executable quote, capital-account docs (property/inheritance/emigrant), proxy vs in-person, urgency/ATM/POS vs lump-sum, bank tariff, gray-market pitfalls — each row with What We Know / What We DO NOT Know / How to Discover + official links + flags.
 
 **Verification (U5/U6 structural):** `PYTHONDONTWRITEBYTECODE=1 python3 transfer-guide/build.py` + `transfer-guide/verify.py` → **19,842 independent checks, 0 failures** (9 pages, 920 cost rows across $10k–$400k × 23 methods, 100% direct HTTPS official links on every <tr> with <td>, strict blank enforcement on unconfirmed FX spreads and third-party wire deductions, all local links/fragments resolved, `node --check transfer-guide/assets/app.js` green). Includes independent re-derivation of every HSBC fee tier ($10k $30.86, $50k $66.83, $400k $86.97, M06 $400k $534.66) and ATM 29-year math, plus 12-question ledger validation. These are structural and arithmetic checks; they do not certify the law.
+### Merge note — `arena/bb2a3876-china2` — 2026-11-11 UTC (second conflict)
+
+- PR #66 again conflicted, this time with PR #64 (`arena/50f278d8-china2`, unified `transfer-guide/**`). Same append-only resolution: both sections above preserved verbatim; nothing from either session discarded. This session did not review or verify `transfer-guide/**`; its claims are its owner's responsibility.
+
+### Merge note — `arena/bb2a3876-china2` — 2026-11-11 UTC (third conflict)
+
+- PR #66 conflicted a third time, with PR #67 (`arena/6201ba1b-china2`, audit-snapshot publication record). Append-only resolution again: every section on both sides preserved verbatim (this branch's completion log and merge notes; PR #62/#64/#67 sections and status flips from `origin/main`, including `arena/6201ba1b-china2` C3 -> done and its publication record). Nothing from any session was discarded.
