@@ -97,6 +97,80 @@
   }
  },
  {
+  "id": "BANK-03",
+  "group": "Published bank rates and fees",
+  "publisher": "Bank of China (中国银行) — official e-banking fee table",
+  "title": "中国银行电子银行个人服务转账汇款费率表 (BOC e-banking personal transfer and remittance fee table)",
+  "doc_no": "Table headed 收费标准2014年11月1日起 (\"charging standard from 1 November 2014\"); note 1 says agreements, discounts and local differences override it",
+  "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "tt",
+    "locator": "表格 跨境汇款（电汇） 行",
+    "text": "跨境汇款（电汇） | 每笔汇款金额的1‰，最低收取50元/笔，最高收取260元/笔；另收电讯费,港澳台地区人民币80元/笔,非港澳台地区人民币150元/笔。",
+    "en": "Cross-border remittance (telegraphic transfer): 0.1% of the amount of each remittance, minimum RMB 50 and maximum RMB 260 per transaction; plus a cable fee of RMB 80 per transaction for Hong Kong, Macao and Taiwan and RMB 150 per transaction elsewhere."
+   },
+   {
+    "key": "header",
+    "locator": "表头",
+    "text": "收费标准2014年11月1日起（优惠活动公告请点击这里）",
+    "en": "Charging standard from 1 November 2014 (for promotions, see the linked notice)."
+   },
+   {
+    "key": "note1",
+    "locator": "备注 1",
+    "text": "另有协议约定、价格优惠、地方性收费差异的，按照协议或当地公示的内容收取相关费用。",
+    "en": "Where there is a separate agreement, a price discount or a local difference in charges, fees follow the agreement or the locally published schedule."
+   }
+  ],
+  "values": {
+   "tt_pct": 0.001,
+   "tt_min_cny": 50,
+   "tt_max_cny": 260,
+   "cable_cny": 150
+  }
+ },
+ {
+  "id": "BANK-04",
+  "group": "Published bank rates and fees",
+  "publisher": "HSBC Bank (China) Company Limited — official foreign-exchange rate board",
+  "title": "外汇汇率-中国外汇牌价 (HSBC China exchange-rate board), 最后更新时间 2026年11月10日 (last updated 10 November 2026)",
+  "doc_no": "Rate board; RMB per one unit of foreign currency; the page states the rates are for reference only and may change without notice",
+  "url": "https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "usd_row",
+    "locator": "表格 美元 (USD) 行; columns 卖出价 现钞 / 卖出价 现汇 / 买入价 现汇 / 买入价 现钞",
+    "text": "美元 (USD) | 6.7080734 | 6.7080734 | 6.6413322 | 6.6048017",
+    "en": "USD — selling rate (cash) 6.7080734, selling rate (telegraphic) 6.7080734, buying rate (telegraphic) 6.6413322, buying rate (cash) 6.6048017. RMB per USD 1."
+   },
+   {
+    "key": "updated",
+    "locator": "表头",
+    "text": "外汇汇率查询 - 请注意，汇率均为外币对人民币之汇率 | 最后更新时间： 2026年11月10日",
+    "en": "Exchange-rate enquiry — rates are foreign currency against RMB. Last updated: 10 November 2026."
+   },
+   {
+    "key": "disclaimer",
+    "locator": "表下说明",
+    "text": "请注意，以上汇率均为外币对人民币之汇率。汇率仅供参考，如有变更，恕不另行通知。",
+    "en": "The rates above are foreign currency against RMB. They are for reference only and may change without notice."
+   }
+  ],
+  "values": {
+   "usd_sell": 6.7080734,
+   "usd_buy": 6.6413322,
+   "usd_cash_sell": 6.7080734,
+   "usd_cash_buy": 6.6048017,
+   "per": 1,
+   "published": "2026-11-10"
+  }
+ },
+ {
   "id": "CN-FX-01",
   "group": "PRC foreign-exchange rules",
   "publisher": "State Council of the PRC, as published by the State Administration of Foreign Exchange (SAFE)",
@@ -166,7 +240,13 @@
     "text": "境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人，外国驻华外交人员和国际组织驻华代表除外。",
     "en": "\"Domestic individual\" means Chinese citizens and foreigners who have lived continuously in the PRC for one full year, except foreign diplomats and representatives of international organisations in China."
    }
-  ]
+  ],
+  "values": {
+   "fine_pct": 30,
+   "fine_serious_max_pct": 100,
+   "carry_fine_pct": 20,
+   "docs_fine_individual_cny": 50000
+  }
  },
  {
   "id": "CN-FX-02",
@@ -429,8 +509,26 @@
     "locator": "第八十九条 第一、二款",
     "text": "个人携带外币现钞等入境，超过等值5000美元的应向海关书面申报。……个人携带外币现钞出境，没有或超出最近一次入境申报外币现钞数据记录的，金额在等值5000美元以上至1万美元（含）的，应向银行申领《携带外汇出境许可证》。个人赴战乱、外汇管制严格、金融条件差或金融动乱的国家（地区），确有需要携带超过等值1万美元外币现钞出境的，需向存款或购汇银行所在地外汇局申领《携带外汇出境许可证》。",
     "en": "Foreign cash above USD 5,000 equivalent carried into China must be declared in writing to Customs. To carry foreign cash out with no (or beyond the) most recent inbound declaration: above USD 5,000 and up to USD 10,000 requires a \"Permit for Carrying Foreign Exchange Abroad\" from a bank; above USD 10,000 is for travel to countries at war, with strict exchange controls, poor financial conditions or financial turmoil, and requires the permit from the SAFE office."
+   },
+   {
+    "key": "art76",
+    "locator": "第七十六条（四）（五）",
+    "text": "除下列情况外，银行应将个人结售汇数据录入个人外汇业务系统（以下简称个人系统）：……（四）境外卡通过自助银行设备提取人民币现钞；（五）境内卡境外使用后购汇还款；",
+    "en": "Banks enter individual settlement and purchase data in the individual foreign-exchange system except for, among others: (4) cash withdrawals in RMB at self-service machines with overseas cards; (5) purchases of foreign exchange to repay spending abroad on a mainland card."
+   },
+   {
+    "key": "art64_1",
+    "locator": "第六十四条（一）",
+    "text": "境内个人外汇汇出境外用于经常项目支出，按下列规定在银行办理：（一）外汇账户内外汇汇出境外当日累计等值5万美元以下（含）的，凭本人有效身份证件办理；超过上述金额的，凭本人有效身份证件、有交易额的相关材料办理。境内个人办理外汇汇出业务时，应配合银行购汇用途与付汇用途一致性审核。",
+    "en": "A domestic individual's remittance abroad for current-account spending: up to USD 50,000 equivalent a day from a foreign-exchange account on the identity document; above that, identity document plus documents showing the transaction amount. The individual must cooperate with the bank's check that the purpose of the remittance matches the purpose of the purchase."
    }
-  ]
+  ],
+  "values": {
+   "quota_usd": 50000,
+   "cash_out_permit_from_usd": 5000,
+   "cash_out_permit_to_usd": 10000,
+   "cash_withdraw_day_usd": 10000
+  }
  },
  {
   "id": "CN-FX-07",
@@ -457,7 +555,11 @@
     "locator": "Item IV",
     "text": "For overseas cash withdrawals by individuals with their domestic bank cards, the ceiling for every foreign currency card per day is to be adjusted from the equivalent of USD 1,000 to the equivalent of RMB 10,000, which will be ensured by the card-issuing financial institutions through their business systems. The RMB card will continue to be subject to the ceiling of the equivalent of RMB 10,000 per card per day, which will be ensured by the domestic RMB card clearing organizations through their business systems."
    }
-  ]
+  ],
+  "values": {
+   "atm_year_cny": 100000,
+   "atm_day_card_cny": 10000
+  }
  },
  {
   "id": "CN-FX-08",
@@ -757,7 +859,11 @@
     "text": "税务机关必须按照申请人实际入库税额如实开具证明，并审查其有无欠税情况，严禁开具虚假证明。申请人编造虚假的计税依据骗取税收证明的，伪造、变造、涂改税收证明的，按照税收征管法及其实施细则的规定处理。",
     "en": "The certificate must state the tax actually paid in and the authority checks for tax arrears; false certificates are strictly forbidden. Applicants who fabricate a tax base to obtain a certificate, or forge or alter one, are dealt with under the Tax Collection and Administration Law."
    }
-  ]
+  ],
+  "values": {
+   "no_cert_below_cny": 150000,
+   "cert_days": 15
+  }
  },
  {
   "id": "CN-TAX-02",
@@ -955,7 +1061,12 @@
     "text": "纳税人、扣缴义务人、纳税担保人同税务机关在纳税上发生争议时，必须先依照税务机关的纳税决定缴纳或者解缴税款及滞纳金或者提供相应的担保，然后可以依法申请行政复议；对行政复议决定不服的，可以依法向人民法院起诉。",
     "en": "In a dispute with the tax authority over tax, the taxpayer must first pay the tax and surcharge under the authority's decision, or provide a guarantee, and may then apply for administrative review; a court action may follow if the review decision is not accepted."
    }
-  ]
+  ],
+  "values": {
+   "late_pct_per_day": 0.05,
+   "fine_min_pct": 50,
+   "fine_max_times": 5
+  }
  },
  {
   "id": "PROV-01",
@@ -1039,7 +1150,10 @@
     "text": "China | Yuan | 7.129 | 7.189 | 7.075 | 6.730 | 6.452",
     "en": "Columns are 2025, 2024, 2023, 2022, 2021."
    }
-  ]
+  ],
+  "values": {
+   "irs_avg_2025": 7.129
+  }
  },
  {
   "id": "US-FX-02",
@@ -1230,6 +1344,33 @@
     "key": "real_estate",
     "locator": "Table \"Types of foreign assets\", row \"Foreign real estate held directly\"",
     "text": "Foreign real estate held directly | No | No"
+   }
+  ]
+ },
+ {
+  "id": "US-RPT-05",
+  "group": "U.S. reporting rules",
+  "publisher": "U.S. Customs and Border Protection (CBP)",
+  "title": "Money and Other Monetary Instruments",
+  "doc_no": "CBP web page, last modified Nov 24, 2025 (FinCEN Form 105)",
+  "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "mandate",
+    "locator": "Federal Mandate to Report Currency Exceeding $10,000",
+    "text": "Federal law mandates that when entering or leaving the United States you must report amounts exceeding $10,000 to U.S. Customs and Border Protection (CBP). This requirement applies whether you are: Traveling for business, Sending money abroad, or Bringing savings back home."
+   },
+   {
+    "key": "who",
+    "locator": "Who Must File?",
+    "text": "Anyone who brings, sends, or receives currency or monetary instruments totaling more than $10,000 at one time, either into or out of the United States, must report it. … When families or groups are involved, the $10,000 threshold applies to the total amount they are carrying or sending collectively, not per individual."
+   },
+   {
+    "key": "not_file",
+    "locator": "What if I don’t file?",
+    "text": "An Individual who fails to file a report or submit false or fraudulent information, risk having their currency or monetary instruments forfeited and seized. In some instances, they may face civil or criminal penalties such as fines or imprisonment."
    }
   ]
  },
