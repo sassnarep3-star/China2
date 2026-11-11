@@ -359,86 +359,86 @@ M09,lawful-conditional,370000,2637730.00,,740 ID-only day(s) at ≤$500,,,Capped
 M09,lawful-conditional,380000,2709020.00,,760 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
 M09,lawful-conditional,390000,2780310.00,,780 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
 M09,lawful-conditional,400000,2851600.00,,800 ID-only day(s) at ≤$500,,,Capped at the original exchange amount (unknown); spread,VS03;VS02
-M10,lawful-conditional,10000,71290.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,20000,142580.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,30000,213870.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,40000,285160.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,50000,356450.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,60000,427740.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,70000,499030.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,80000,570320.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,90000,641610.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,100000,712900.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,110000,784190.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,120000,855480.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,130000,926770.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,140000,998060.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,150000,1069350.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,160000,1140640.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,170000,1211930.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,180000,1283220.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,190000,1354510.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,200000,1425800.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,210000,1497090.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,220000,1568380.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,230000,1639670.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,240000,1710960.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,250000,1782250.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,260000,1853540.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,270000,1924830.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,280000,1996120.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,290000,2067410.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,300000,2138700.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,310000,2209990.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,320000,2281280.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,330000,2352570.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,340000,2423860.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,350000,2495150.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,360000,2566440.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,370000,2637730.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,380000,2709020.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,390000,2780310.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M10,lawful-conditional,400000,2851600.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,10000,71290.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,20000,142580.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,30000,213870.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,40000,285160.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,50000,356450.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,60000,427740.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,70000,499030.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,80000,570320.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,90000,641610.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,100000,712900.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,110000,784190.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,120000,855480.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,130000,926770.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,140000,998060.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,150000,1069350.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,160000,1140640.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,170000,1211930.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,180000,1283220.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,190000,1354510.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,200000,1425800.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,210000,1497090.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,220000,1568380.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,230000,1639670.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,240000,1710960.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,250000,1782250.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,260000,1853540.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,270000,1924830.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,280000,1996120.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,290000,2067410.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,300000,2138700.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,310000,2209990.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,320000,2281280.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,330000,2352570.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,340000,2423860.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,350000,2495150.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,360000,2566440.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,370000,2637730.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,380000,2709020.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,390000,2780310.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
-M11,lawful-conditional,400000,2851600.00,,"SAFE approval; staged over up to 2 years if ≥¥200,000",,,"Approval, documentation and fees are not published",VS10;VS08
+M10,lawful-conditional,10000,71290.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,20000,142580.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,30000,213870.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,40000,285160.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,50000,356450.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,60000,427740.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,70000,499030.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,80000,570320.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,90000,641610.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,100000,712900.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,110000,784190.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,120000,855480.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,130000,926770.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,140000,998060.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,150000,1069350.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,160000,1140640.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,170000,1211930.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,180000,1283220.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,190000,1354510.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,200000,1425800.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,210000,1497090.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,220000,1568380.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,230000,1639670.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,240000,1710960.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,250000,1782250.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,260000,1853540.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,270000,1924830.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,280000,1996120.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,290000,2067410.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,300000,2138700.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,310000,2209990.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,320000,2281280.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,330000,2352570.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,340000,2423860.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,350000,2495150.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,360000,2566440.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,370000,2637730.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,380000,2709020.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,390000,2780310.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M10,lawful-conditional,400000,2851600.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,10000,71290.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,20000,142580.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,30000,213870.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,40000,285160.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,50000,356450.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,60000,427740.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,70000,499030.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,80000,570320.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,90000,641610.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,100000,712900.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,110000,784190.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,120000,855480.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,130000,926770.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,140000,998060.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,150000,1069350.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,160000,1140640.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,170000,1211930.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,180000,1283220.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,190000,1354510.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,200000,1425800.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,210000,1497090.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,220000,1568380.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,230000,1639670.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,240000,1710960.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,250000,1782250.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,260000,1853540.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,270000,1924830.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,280000,1996120.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,290000,2067410.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,300000,2138700.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,310000,2209990.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,320000,2281280.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,330000,2352570.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,340000,2423860.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,350000,2495150.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,360000,2566440.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,370000,2637730.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,380000,2709020.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,390000,2780310.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
+M11,lawful-conditional,400000,2851600.00,,SAFE approval; then one or several remittances,,,"Approval, documentation and fees are not published",VS10;VS25;VS08
 M12,lawful-conditional,10000,71290.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
 M12,lawful-conditional,20000,142580.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06
 M12,lawful-conditional,30000,213870.00,,Eligibility/quote required,,,20% IIT on gain may apply; fees not published,VS08;VS11;VS06

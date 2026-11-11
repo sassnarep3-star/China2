@@ -118,7 +118,9 @@ def cost(mid: str, usd: float) -> dict:
         )
     elif mid in {"M10", "M11"}:
         out.update(
-            constraint="SAFE approval; staged over up to 2 years if ≥¥200,000",
+            # Corrected 2026-11-11 (arena/8a85759a-china2): the 2004 instalment schedule was removed by
+            # SAFE Hui Fa [2014] No. 2 Section 6 (VS25); the old text read "staged over up to 2 years if >=RMB 200,000".
+            constraint="SAFE approval; then one or several remittances",
             unverified="Approval, documentation and fees are not published",
         )
     elif mid == "M12":
@@ -498,7 +500,7 @@ def page_costs() -> str:
 <li><strong>M07</strong>: USD 5,000 per trip without a permit, so trips = ⌈USD ÷ 5,000⌉ ({src_link("VS07", "Huifa [2003] 102")}). Published counter fee is zero; spread/travel are not published.</li>
 <li><strong>M08</strong>: CNY 20,000 per trip, so trips = ⌈CNY ÷ 20,000⌉ ({src_link("VS09", "PBC")}, explanatory Q&amp;A — instrument number flagged).</li>
 <li><strong>M09</strong>: ID-only reconversion is capped at USD 500 per day ({src_link("VS03", "SAFE 2026 FAQ 10")}), so days = ⌈USD ÷ 500⌉, and the memo route cannot exceed the original exchange amount (unknown).</li>
-<li><strong>M10/M11</strong>: SAFE-approved emigrant/inheritor transfers, staged over up to two years for amounts ≥ ¥200,000 ({src_link("VS10", "PBC 2004 rules")}); no fee schedule is published.</li>
+<li><strong>M10/M11</strong>: SAFE-approved emigrant/inheritor transfers ({src_link("VS10", "PBC 2004 rules")}). After approval the bank may remit once or in several payments; the 2004 instalment schedule was removed in 2014 ({src_link("VS25", "Hui Fa [2014] No. 2")}). No fee schedule is published. <em>Corrected 2026-11-11: this line previously said amounts ≥ ¥200,000 are staged over up to two years.</em></li>
 <li><strong>M14–M17</strong>: not prices at all — the statutory fine band (30% standard, up to 100% in serious cases) on the amount moved unlawfully ({src_link("VS06", "FX Regulations")}). Losses on crypto or underground arrangements are additional and uncapped.</li>
 </ul>
 </div>
@@ -604,7 +606,7 @@ def page_sources() -> str:
 
     body = f"""
 <h1>Sources: fetched, quoted, linked</h1>
-<p class="lede">Each row below was retrieved on {UPDATED} and the quoted text is what this dashboard relies on. "Verified" means the fetched document states the proposition; "verified · limited" means it supports a narrower claim than the one usually attributed to it, and the limitation is stated. Nothing is cited from memory.</p>
+<p class="lede">Each row below was retrieved on {UPDATED} (VS25 on 2026-11-11, added by a later correction) and the quoted text is what this dashboard relies on. "Verified" means the fetched document states the proposition; "verified · limited" means it supports a narrower claim than the one usually attributed to it, and the limitation is stated. Nothing is cited from memory.</p>
 <div class="box ok"><strong>What changed in this pass.</strong> Earlier sites in this repository disclosed that their checks were structural ("citation coverage"), not substantive. This pass re-read the primary documents themselves and records the exact sentence used, so a reviewer can compare the quote with the link without re-deriving the claim.</div>
 <div class="tablewrap"><table>
 <thead><tr><th class="first">ID</th><th>Document and quoted text</th><th>Status</th><th>What it supports</th></tr></thead>
@@ -722,7 +724,7 @@ FLAGS = [
     ("F06", "Single-wire assumption at large amounts", "The $200k/$400k rows assume one wire. Splitting multiplies per-wire floors; splitting to evade limits is separately prohibited.", "Disclosed"),
     ("F07", "Published $0.00 for cash routes is not zero cost", "Spread, travel and risk are unpublished and not zero.", "Marked †"),
     ("F08", "Wise, Western Union and card-issuer fees are not published", "Wise quotes only in-app; WU publishes no schedule; card ATM fees vary by issuer.", "Blank"),
-    ("F09", "Emigrant/inheritor transfers are staged over up to two years", "Amounts ≥ ¥200,000 are remitted in instalments under the 2004 rules — and only if you fall into those categories.", "Published constraint"),
+    ("F09", "Emigrant/inheritor transfers: the two-year instalment schedule no longer applies", "Corrected 2026-11-11. This flag previously said amounts ≥ ¥200,000 are remitted in instalments under the 2004 rules. SAFE Hui Fa [2014] No. 2 Section 6 (source VS25) removed that requirement from 10 February 2014: after approval the bank may remit once or in several payments. The routes still exist only for people who fall into those categories.", "Corrected"),
     ("F10", "Stale IRS FEIE page", "irs.gov's FEIE page still shows 2020–2023 amounts. 2026 figure ($132,900) comes from Form 2555 instructions.", "Flagged"),
     ("F11", "Statute editions are dated", "26 USC §988 is the 2024 GPO edition; eCFR is authoritative but unofficial.", "Flagged"),
     ("F12", "RMB-denominated limits move with the exchange rate", "CNY 100,000 ATM and CNY 20,000 carry limits converted at 7.129 are illustrations, not fixed USD amounts.", "Disclosed"),

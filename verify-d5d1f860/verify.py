@@ -156,14 +156,20 @@ def main() -> int:
     check(len(pairs) == 680, f"costs.html unique cells {len(pairs)} != 680")
 
     # 4. source ledger integrity
-    check(len(sources) == 24, f"expected 24 sources, got {len(sources)}")
+    # 24 documents fetched on 2026-11-10 plus VS25 (SAFE Hui Fa [2014] No. 2), added on 2026-11-11 by the
+    # correction session arena/8a85759a-china2 and marked with "added_by".
+    check(len(sources) == 25, f"expected 25 sources, got {len(sources)}")
+    check(sum(1 for s in sources.values() if not s.get("added_by")) == 24, "original source count changed")
     for sid, s in sources.items():
         check(s["url"].startswith("https://"), f"{sid}: not https")
         host = re.sub(r"^https://([^/]+).*$", r"\1", s["url"])
         check(any(host == h or host.endswith("." + h) for h in OFFICIAL_HOSTS),
               f"{sid}: host {host} not in official/provider allowlist")
         check(len(s["quote"]) > 25, f"{sid}: quote too short to be evidence")
-        check(s["retrieved"] == "2026-11-10", f"{sid}: retrieval date not this session")
+        if s.get("added_by"):
+            check(s["retrieved"] > "2026-11-10", f"{sid}: added source must post-date the original session")
+        else:
+            check(s["retrieved"] == "2026-11-10", f"{sid}: retrieval date not this session")
         check(s["status"] in {"verified", "verified-limited"}, f"{sid}: bad status")
     src_html = docs.get("sources.html", "")
     for sid, s in sources.items():

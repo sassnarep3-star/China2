@@ -116,7 +116,7 @@
       "retrieved": "2026-11-10",
       "status": "verified",
       "quote": "Emigrant asset transfer refers to encashment, exchange (at the commercial bank) and transfer overseas of assets by emigrants from Mainland China which they have obtained before they get immigration permission ... The first remittance may not exceed half of the total value of the assets applied to be transferred; less than half of the remaining value may be remitted one year after the first remittance; and the rest may be remitted outbound two years after the first remittance.",
-      "supports": "Emigrant and inheritor asset transfers are capital-account routes limited to those categories, approved by SAFE, and staged over up to two years for amounts at or above RMB 200,000; approvals at or above RMB 500,000 go to SAFE head office."
+      "supports": "Emigrant and inheritor asset transfers are capital-account routes limited to those categories and approved by SAFE. The instalment schedule quoted here is the 2004 text; it and the head-office step for RMB 500,000 or more were removed in 2014 (VS25)."
     },
     {
       "id": "VS11",
@@ -271,26 +271,102 @@
       "status": "verified",
       "quote": "If you paid or accrued foreign taxes to a foreign country ... and are subject to U.S. tax on the same income, you may be able to take either a credit or an itemized deduction ... A foreign tax credit may not be claimed for taxes on income that you exclude from U.S. gross income",
       "supports": "The US foreign tax credit is available only against US tax on the same income and cannot be claimed for taxes on excluded income."
+    },
+    {
+      "id": "VS25",
+      "title": "国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Hui Fa [2014] No. 2) — Section 6, simplifying personal asset transfers",
+      "publisher": "State Administration of Foreign Exchange",
+      "url": "https://www.safe.gov.cn/safe/2014/0124/5476.html",
+      "doc_date": "2014-01-10, in force 2014-02-10",
+      "retrieved": "2026-11-11",
+      "status": "verified",
+      "quote": "（一）移民财产转移购付汇核准，由移民原户籍所在地外汇局负责审批。继承财产转移购付汇核准，由被继承人生前户籍所在地外汇局负责审批。取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。（二）取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。（三）取消继承人从不同被继承人处继承的财产应分别申请、分别汇出的要求。… 本通知自2014年2月10日起实施，以前规定与本通知不符的，以本通知为准。",
+      "supports": "Since 10 February 2014 an approved emigrant transfer may be remitted in one payment or several: the 2004 instalment schedule (VS10) and the head-office step for RMB 500,000 or more no longer apply, and estates of different deceased persons may be applied for together. Added on 2026-11-11 by a correction; not part of the 24 documents fetched on 2026-11-10.",
+      "added_by": "arena/8a85759a-china2 (correction, 2026-11-11)"
     }
   ],
   "method_sources": {
-    "M01": ["VS01", "VS02", "VS08", "VS13", "VS14", "VS11"],
-    "M02": ["VS02", "VS04", "VS06", "VS13", "VS14"],
-    "M03": ["VS13", "VS01"],
-    "M04": ["VS21", "VS01", "VS11"],
-    "M05": ["VS22", "VS08"],
-    "M06": ["VS05", "VS06"],
-    "M07": ["VS07", "VS23", "VS13", "VS06"],
-    "M08": ["VS09", "VS06"],
-    "M09": ["VS03", "VS02"],
-    "M10": ["VS10", "VS08"],
-    "M11": ["VS10", "VS08"],
-    "M12": ["VS08", "VS11", "VS06"],
-    "M13": ["VS02", "VS08"],
-    "M14": ["VS12", "VS06"],
-    "M15": ["VS08", "VS06"],
-    "M16": ["VS06", "VS08"],
-    "M17": ["VS06", "VS08"]
+    "M01": [
+      "VS01",
+      "VS02",
+      "VS08",
+      "VS13",
+      "VS14",
+      "VS11"
+    ],
+    "M02": [
+      "VS02",
+      "VS04",
+      "VS06",
+      "VS13",
+      "VS14"
+    ],
+    "M03": [
+      "VS13",
+      "VS01"
+    ],
+    "M04": [
+      "VS21",
+      "VS01",
+      "VS11"
+    ],
+    "M05": [
+      "VS22",
+      "VS08"
+    ],
+    "M06": [
+      "VS05",
+      "VS06"
+    ],
+    "M07": [
+      "VS07",
+      "VS23",
+      "VS13",
+      "VS06"
+    ],
+    "M08": [
+      "VS09",
+      "VS06"
+    ],
+    "M09": [
+      "VS03",
+      "VS02"
+    ],
+    "M10": [
+      "VS10",
+      "VS25",
+      "VS08"
+    ],
+    "M11": [
+      "VS10",
+      "VS25",
+      "VS08"
+    ],
+    "M12": [
+      "VS08",
+      "VS11",
+      "VS06"
+    ],
+    "M13": [
+      "VS02",
+      "VS08"
+    ],
+    "M14": [
+      "VS12",
+      "VS06"
+    ],
+    "M15": [
+      "VS08",
+      "VS06"
+    ],
+    "M16": [
+      "VS06",
+      "VS08"
+    ],
+    "M17": [
+      "VS06",
+      "VS08"
+    ]
   },
   "method_notes": {
     "M01": "Core route. Published HSBC fee applies to Premier/Advance individuals; for Private Banking individual customers items 2.2.4.1 and 2.2.4.2 are published Free. The tariff excludes other banks' charges and taxes.",
@@ -302,8 +378,8 @@
     "M07": "Published HSBC counter withdrawal fee is Free, but the cash FX spread, travel cost and insurer/transport risk are not published. USD 5,000 per trip without a permit is a hard ceiling for planning.",
     "M08": "Offshore conversion cost and rate are outside the reviewed sources; the CNY 20,000 per trip ceiling (VS09, 2004) is the binding constraint. Verify current customs practice.",
     "M09": "Only for RMB previously exchanged from foreign currency, with the original memo inside 24 months (VS03) and capped at the original exchange amount, which is not known.",
-    "M10": "Only for people who emigrated from mainland China with assets obtained before immigration permission; staged over up to two years for amounts at or above RMB 200,000 (VS10).",
-    "M11": "Inheritor transfer for foreign citizens inheriting mainland assets; SAFE approval and documentation; no published fee schedule.",
+    "M10": "Only for people who emigrated from mainland China with assets obtained before immigration permission. No instalment schedule since 10 February 2014: after SAFE approval the bank may remit the approved amount in one payment or several (VS25). Corrected 2026-11-11 — this note previously gave the 2004 two-year schedule (VS10) as current.",
+    "M11": "Inheritor transfer for foreign citizens inheriting mainland assets; SAFE approval and documentation; after approval the bank may remit once or in several payments (VS25); no published fee schedule.",
     "M12": "Requires a lawful property sale and settled taxes; 20% IIT on the gain plus transaction taxes may apply; bank fees unpublished.",
     "M13": "For registered individual foreign-trade operators with genuine trade flows; not available for a plain savings balance.",
     "M14": "Rejected. Fiat-to-virtual-currency conversion in mainland China is an illegal financial activity (VS12); FX-violation penalties and uncapped losses may also apply.",
