@@ -941,7 +941,7 @@ Rules in force: no other session's published findings are rewritten; every edit 
 |---|---|---|---|
 | C1 | Independently refresh and verify the stale structural audit snapshot (same generated counts later integrated concurrently in PR #61); preserve structural-only caveats | done | `audit-92d12752/**` |
 | C2 | Independently verify the refreshed scanner, internal links, and affected repository suites; record official-source boundaries and irregularities | done | `audit-92d12752/**`, append-only `COORDINATION.md` |
-| C3 | Publish through this fixed Arena branch and record integration status | in progress | append-only `COORDINATION.md` |
+| C3 | Publish through this fixed Arena branch and record integration status | done | append-only `COORDINATION.md` |
 
 Claim recorded before work. No other active claim for `audit-92d12752/**` appeared in the task board. On 2026-11-11, the regenerated point-in-time scan covers 100 HTML pages / 7,107 table-data rows; 1,384 candidate rows on 34 pages lack a direct allowlisted primary-domain URL in their own static row. This is a structural candidate count only: it neither proves missing evidentiary support nor verifies link liveness, source support, legal accuracy, dynamic tables, or exported data. The unchanged finite allowlist and scan exclusions remain in `scan.py`.
 
@@ -953,6 +953,16 @@ Claim recorded before work. No other active claim for `audit-92d12752/**` appear
 ### Concurrent integration note
 
 - While this branch was in flight, `arena/bb2a3876-china2` published its B-05 snapshot refresh in PR #61. After fetching `origin/main`, the snapshot counts/results matched this branch (100 pages; 7,107 rows; 1,384 candidate rows / 34 pages). The combined tree keeps that compatible snapshot and this task's explicit 11 November build date. No concurrent edits were discarded. This session did not alter any of PR #61's other files.
+- A later merge of `origin/main` (PR #64, `arena/50f278d8-china2`) conflicted only in this append-only board; both this publication result and the complete transfer-guide session record were preserved. The other session's new `transfer-guide/**`, workflow, and generated inventory files were not edited by this session.
+
+### Publication result
+
+- PR [#62](https://github.com/sassnarep3-star/China2/pull/62) merged to `main` at 2026-11-11 02:32:23 UTC; merge commit `714b743c4bf7cb51efdafe348b0c50541a1eb2b2`.
+- PR checks: 11/11 passed. On the merge commit, all 14 check runs completed successfully: 11 validation/research workflows plus the Pages build, build-status report, and deploy jobs.
+- Pages build/deploy run [42946707526](https://github.com/sassnarep3-star/China2/actions/runs/42946707526) succeeded; Pages API reported `built` at the merge commit with no error.
+- Published review retrieved successfully: https://sassnarep3-star.github.io/China2/audit-92d12752/index.html . The root dashboard and other category pages are unchanged by this small follow-up; this PR only refreshed the date/count snapshot and added the verification/publication record.
+
+---
 
 ### Merge note — `arena/bb2a3876-china2` — 2026-11-11 UTC
 
@@ -995,10 +1005,10 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **U5 — Repo review + Flags + Sources register:** `transfer-guide/audit.html` (RA-01–RA-14, 14 findings, sources, file inventory, direct/source/assumption separation), `transfer-guide/flagged.html` (FL-01–FL-18, 18 unverified/conditional items, blanks where nothing is published), `transfer-guide/sources.html` (SRC-01–SRC-40, 22 PRC official + 15 US/treaty + 3 primary commercial, 100% HTTPS fetched 2026-11-10, verbatim excerpts). New `transfer-guide/questions.html` (Q01–Q12) covers every gating private fact prompt requires: origin of balance, PRC tax withholding/tax vouchers, SAFE 境内个人 vs 境外个人 / PR-ID status, tranche acquisition dates & USD basis (§988(e) $200), FBAR/8938/3520 history, bank executable quote, capital-account docs (property/inheritance/emigrant), proxy vs in-person, urgency/ATM/POS vs lump-sum, bank tariff, gray-market pitfalls — each row with What We Know / What We DO NOT Know / How to Discover + official links + flags.
 
 **Verification (U5/U6 structural):** `PYTHONDONTWRITEBYTECODE=1 python3 transfer-guide/build.py` + `transfer-guide/verify.py` → **19,842 independent checks, 0 failures** (9 pages, 920 cost rows across $10k–$400k × 23 methods, 100% direct HTTPS official links on every <tr> with <td>, strict blank enforcement on unconfirmed FX spreads and third-party wire deductions, all local links/fragments resolved, `node --check transfer-guide/assets/app.js` green). Includes independent re-derivation of every HSBC fee tier ($10k $30.86, $50k $66.83, $400k $86.97, M06 $400k $534.66) and ATM 29-year math, plus 12-question ledger validation. These are structural and arithmetic checks; they do not certify the law.
-
-
-
-
 ### Merge note — `arena/bb2a3876-china2` — 2026-11-11 UTC (second conflict)
 
 - PR #66 again conflicted, this time with PR #64 (`arena/50f278d8-china2`, unified `transfer-guide/**`). Same append-only resolution: both sections above preserved verbatim; nothing from either session discarded. This session did not review or verify `transfer-guide/**`; its claims are its owner's responsibility.
+
+### Merge note — `arena/bb2a3876-china2` — 2026-11-11 UTC (third conflict)
+
+- PR #66 conflicted a third time, with PR #67 (`arena/6201ba1b-china2`, audit-snapshot publication record). Append-only resolution again: every section on both sides preserved verbatim (this branch's completion log and merge notes; PR #62/#64/#67 sections and status flips from `origin/main`, including `arena/6201ba1b-china2` C3 -> done and its publication record). Nothing from any session was discarded.
