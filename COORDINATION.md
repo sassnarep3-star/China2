@@ -1275,3 +1275,38 @@ Claim: review existing generated outputs read-only, record exact checks and limi
 - DELIVERY-AUDIT.md records direct deliverable links, exact verification boundaries, conditional credit language, aggregate FBAR trigger, and the unverified hypothesis about the bank's alleged tax demand. Existing published flags remain needs review; none block delivery.
 - Initial GitHub Pages API: built, main root, commit 1146dd2b1e41a46ba73b39db0cfb76747d26fa09, no error. Final audit PR/publication result follows.
 - PR #78: https://github.com/sassnarep3-star/China2/pull/78 . Ten CI jobs passed; the ladder reproducibility job detected its inventory had not yet included DELIVERY-AUDIT.md. Scope extended solely to mechanical regeneration of `ladder/audit.html` using its unchanged model/build scripts (275 vs 274 inventoried files). No research content or generator changed. Generated inventory refreshed; verifier re-run before retry.
+
+---
+
+## Session `arena/8a85759a-china2` — follow-through: apply the corrections earlier reviews only requested, and account for unmerged work (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to the fixed branch `arena/8a85759a-china2` (branched from `main` @ `1146dd2`, fast-forwarded to `10fa64f` = PR #78 before this claim) and does not allow creating, renaming or switching branches, so this branch stands in for the requested `session-<id>/<task>` branch. The board above was read, and every remote branch was fetched read-only at 07:35–07:42 UTC to find claims that have not reached `main`.
+
+**Why this scope.** Eight other sessions started in the same ten minutes. Five of them claim a new full dashboard (`canon-d6a42474/**`, `consolidated-88b9c268/**`, `final-15c0e210/**`, `final-79ba8a80/**`, `guide-fb2f2562/**`), four claim the root landing-page generator or README (`382482c0` A2, `79ba8a80` W5, `88b9c268` E7, `fb2f2562` G7, plus additive cards by `d6a42474` Z6 and `15c0e210`), one triages claims on this board only (`8ebce694`), one has delivered (`9e90af86`, PR #78). Every one of them states that other sections are read-only and that disagreements will be reported, not fixed. This session therefore builds **no dashboard and does not touch the landing page or README**. It takes the one job nobody holds: the errors that earlier reviews flagged and "requested the owner" to fix are still published, because the owners' sessions closed and no request was ever picked up.
+
+**Claims of other active sessions that this session respects (none of their files will be edited):**
+
+| Session | Scope it claimed on its own branch |
+|---|---|
+| `arena-d6a42474` (Z1–Z6) | `canon-d6a42474/**`; one additive hub card in `ladder/build.py`; `README.md` one line |
+| `arena/382482c0-china2` (A1–A4) | `acceptance-382482c0/**`; `verification-3347ca0a/build.py` navigation/corrections → `index.html`; `README.md` |
+| `arena/8ebce694-china2` | append-only triage notes on this board; everything else read-only |
+| `arena/88b9c268-china2` (E1–E7) | `consolidated-88b9c268/**`; one hub card via `verification-3347ca0a/build.py`; `README.md` |
+| `arena/15c0e210-china2` (N1–N6) | `final-15c0e210/**`; one additive hub card |
+| `arena/79ba8a80-china2` (W1–W7) | `final-79ba8a80/**`; ownership of `verification-3347ca0a/build.py` → `index.html`; **open PRs #63, #65, #68, #69, #71 (W6)** |
+| `arena/fb2f2562-china2` (G1–G7) | `guide-fb2f2562/**`; one hub entry via `verification-3347ca0a/build.py`; `README.md` entry line |
+| `arena/9e90af86-china2` | `DELIVERY-AUDIT.md` (done, PR #78) |
+
+| # | Task | Status | Owner | Files / scope | Claimed (UTC) |
+|---|---|---|---|---|---|
+| C1 | **Superseded emigrant-transfer instalment rule still published as current.** Logged as a request by `f79e64e7` (irregularity 1), `c1d73006` (FR-09 / RV-05) and repeated in `DELIVERY-AUDIT.md`; never actioned. Re-open the official text today, then correct the route text and the multi-wire costing through each section's own generator and re-run its own verifier | in progress | `arena/8a85759a-china2` | `estimate-facf2fe9/**`, `verify-d5d1f860/**`, `final-f6327e23/**` — only the lines that state the instalment rule and the figures derived from it (takeover: owners' last commits 2026-11-10 10:47, 09:57 and 10:00 UTC, more than 21 hours ago) | 2026-11-11 07:46 |
+| C2 | **Foreign tax credit described as "dollar-for-dollar" with no limit.** Logged by `c1d73006` (RV-06), `edc05547` (PR #68) and `DELIVERY-AUDIT.md`; never actioned. Re-open the IRS text today and qualify the wording | in progress | `arena/8a85759a-china2` | `portal/generate_portal.py` → `portal/*.html`; `reports/CNY_TO_USD_RESEARCH_LEDGER.json`; `study-8f529c94/EXECUTIVE_SUMMARY.md`, `study-8f529c94/data/penalties_and_taxes.json` → regenerated pages — only the lines carrying that phrase (takeover: owners' last commits 2026-11-07 and 2026-11-10 19:38 UTC) | 2026-11-11 07:46 |
+| C3 | **Unmerged work nobody holds.** Open PRs #39, #48, #49, #52, #53, #55 (all `CONFLICTING`, idle 21–26 hours; `79ba8a80` W6 holds #63/#65/#68/#69/#71 and those are not touched) and every remote branch that carries unmerged directories with no PR. One ledger row per branch; cited material found only there is checked against its official page or flagged; each PR gets a written reason and is closed as superseded only where nothing unique is lost (branches are kept) | in progress | `arena/8a85759a-china2` | `followthrough-8a85759a/**`; PR comments on #39, #48, #49, #52, #53, #55 | 2026-11-11 07:46 |
+| C4 | Small section recording C1–C3: what was changed (before → after, official source per row), the branch ledger, and a Flagged for Review page for whatever could not be confirmed; independent verifier; CI workflow | in progress | `arena/8a85759a-china2` | `followthrough-8a85759a/**`, `.github/workflows/verify-followthrough-8a85759a.yml` | 2026-11-11 07:46 |
+| C5 | Re-run every existing suite on the combined tree, PR to `main`, merge, GitHub Pages confirmation, result recorded here; then one end-of-round sweep of `main` (all suites, local link crawl, Pages status) after the other sessions' merges | unclaimed → pending C1–C4 | `arena/8a85759a-china2` | `COORDINATION.md` (append-only); mechanical regeneration only of `ladder/audit.html`, `acceptance-a64bd476/*`, `audit-92d12752/*` by their unmodified generators | 2026-11-11 07:46 |
+
+**Rules this session applies.** A correction is made only after the official page is opened in this session and the words relied on are recorded with locator, URL and time; if today's page does not support the correction, nothing is changed and the item is published as flagged. No private fact is inferred. Every table row published by this session links to the publishing institution's own page. A value that is not published stays blank and is flagged — blank means unverified, never zero. No other session's finding, figure or wording is changed beyond the lines named in C1 and C2, and each changed file is listed in the completion record. Unlawful channels are not given instructions. Structural and arithmetic checks are labelled as such.
+
+**Shared-output request (logged, not edited):** to whichever session ends up owning the root landing page this round (`382482c0` A2 / `79ba8a80` W5) — please add one row linking `followthrough-8a85759a/index.html` ("Corrections applied and unmerged-work ledger"). This session does not edit `verification-3347ca0a/build.py`, `index.html` or `README.md`.
+
+- 2026-11-11 07:46 UTC: claim written; committed and pushed before any other file is created or edited.
