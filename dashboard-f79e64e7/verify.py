@@ -20,8 +20,8 @@ HERE = Path(__file__).resolve().parent
 PAGES = ["index.html", "questions.html", "methods.html", "costs.html", "taxes.html",
          "sources.html", "flagged.html", "repo-review.html"]
 OFFICIAL = ("safe.gov.cn", "gov.cn", "pbc.gov.cn", "chinatax.gov.cn", "irs.gov", "ecfr.gov", "cbp.gov",
-            "uscode.house.gov", "boc.cn", "hsbc.com.cn", "wise.com")
-HTTP_OK = {"m.safe.gov.cn"}          # one SAFE mobile page is served over http only
+            "govinfo.gov", "boc.cn", "hsbc.com.cn", "wise.com")
+HTTP_OK = {"m.safe.gov.cn"}          # SAFE's mobile host is served over http only
 checks, fails = 0, []
 
 
@@ -106,7 +106,7 @@ for name in ("methods", "layers", "questions", "flags", "review"):
 for s in sources:
     check(official(s["url"]), f"{s['id']}: not an official host: {s['url']}")
     check(len(s["quote"]) >= 20 and len(s["means"]) >= 20, f"{s['id']}: quote or meaning missing")
-    check(s["how"] in ("fetched", "extract"), f"{s['id']}: bad read method")
+    check(s["how"] in ("fetched", "partial"), f"{s['id']}: bad read method")
     check(s["id"] in used, f"{s['id']}: never cited")
 check(len({s["url"] for s in sources}) == len(sources), "duplicate source URL")
 
@@ -166,8 +166,6 @@ def expect(model, usd):
     if model == "quota_wires":
         n = math.ceil(usd / inputs["QUOTA_USD"])
         return wired([F(inputs["QUOTA_USD"])] * (n - 1) + [usd - inputs["QUOTA_USD"] * (n - 1)])
-    if model == "emigrant":
-        return wired([usd] if usd * SELL <= inputs["EMIGRANT_ONE_GO_CNY"] else [usd / 2, usd / 4, usd / 4])
     if model == "cash":
         return cents(usd * HALF / SELL), cents(usd * SELL)
     if model == "dividend":

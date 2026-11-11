@@ -1,7 +1,7 @@
 {
-  "pages_scanned": 100,
-  "data_rows": 7107,
-  "without_direct_primary": 1384,
+  "pages_scanned": 117,
+  "data_rows": 9089,
+  "without_direct_primary": 1418,
   "pages_with_candidates": 34,
   "pages": [
     {
@@ -145,6 +145,54 @@
     {
       "path": "briefing/sources.html",
       "rows": 41,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/costs.html",
+      "rows": 733,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/flagged.html",
+      "rows": 19,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/index.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/methods.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/questions.html",
+      "rows": 13,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/repo-review.html",
+      "rows": 18,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/sources.html",
+      "rows": 34,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "dashboard-f79e64e7/taxes.html",
+      "rows": 19,
       "without_direct_primary": 0,
       "first_example": ""
     },
@@ -306,8 +354,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 225,
-      "without_direct_primary": 225,
+      "rows": 259,
+      "without_direct_primary": 259,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -552,6 +600,60 @@
     },
     {
       "path": "study-8f529c94/taxes.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/audit.html",
+      "rows": 14,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/costs.html",
+      "rows": 943,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/flagged.html",
+      "rows": 18,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/index.html",
+      "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/methods.html",
+      "rows": 23,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/penalties.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/questions.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/sources.html",
+      "rows": 40,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/taxes.html",
       "rows": 12,
       "without_direct_primary": 0,
       "first_example": ""

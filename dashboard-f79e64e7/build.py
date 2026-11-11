@@ -77,22 +77,17 @@ def row_for(method, usd):
                  excluded="Intermediary and receiving bank fees; any tax")
 
     if m == "one_wire":
-        wires([usd], "One transaction")
+        wires([usd], method.get("time", "One transaction"))
     elif m == "quota_wires":
         n = ceil(usd / C.QUOTA_USD)
         amounts = [D(C.QUOTA_USD)] * (n - 1) + [usd - D(C.QUOTA_USD) * (n - 1)]
         wires(amounts, plural(n, "calendar year"))
-    elif m == "emigrant":
-        if usd * SELL <= C.EMIGRANT_ONE_GO_CNY:
-            wires([usd], "One transaction after approval")
-        else:
-            wires([usd / 2, usd / 4, usd / 4], "At least 2 years, 3 stages")
     elif m == "reconvert":
         wires([usd], "One transaction with the memo",
               count=f"1 wire, or {ceil(usd / 500):,} days at $500 a day on ID alone")
     elif m == "hsbc_fee":
         r.update(fee_usd=q2(hsbc_fee(usd) / SELL), count="1 wire", time="One transaction",
-                 basis="HSBC wire fee only, at Bank of China's rate as a stand-in",
+                 basis="HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
                  excluded="HSBC exchange spread (not read); other banks' fees; any tax")
     elif m == "wise":
         n = ceil(usd * SELL / C.WISE_PER_TRANSFER_CNY)
@@ -247,24 +242,24 @@ MILESTONES = [10000, 50000, 100000, 200000, 300000, 400000]
 
 
 def compare_rows(tiers):
-    """Amount by route: the four routes with a full published-price estimate."""
+    """Amount by route: the fully priced lawful routes beside the fine for a prohibited one."""
     out = []
     for t in tiers:
         idx = t // 10000 - 1
-        a, b, c, d = (COSTS[k][idx] for k in ("M01", "M02", "M07", "M06"))
+        a, b, d, f = (COSTS[k][idx] for k in ("M01", "M02", "M06", "M14"))
         step = "" if t % 50000 == 0 else ' class="minor"'
         out.append(
             f"<tr{step}>" + td("Amount", f"<strong>${t:,}</strong>")
             + td("One documented wire", f"{E(headline(a))}<small>{a['pct']}%</small>", "num key")
             + td("Yearly quota wires", f"{E(headline(b))}<small>{E(b['time'])}</small>", "num")
-            + td("Emigrant stages", f"{E(headline(c))}<small>{E(c['time'])}</small>", "num")
             + td("Cash, spread only", f"{E(headline(d))}<small>{E(d['count'])}</small>", "num")
+            + td("Prohibited route", f"{E(headline(f))}<small>30% of the amount</small>", "num bad")
             + td("RMB needed", E(rmb(D(t) * SELL)), "num")
-            + td("Sources", chips(["S17", "S18"])) + "</tr>")
+            + td("Sources", chips(["S17", "S18", "S06"])) + "</tr>")
     return out
 
 
-COMPARE_HEAD = ["Amount", "One documented wire", "Yearly quota wires", "Emigrant stages", "Cash, spread only", "RMB needed", "Sources"]
+COMPARE_HEAD = ["Amount", "One documented wire", "Yearly quota wires", "Cash, spread only", "Prohibited route", "RMB needed", "Sources"]
 
 
 # --------------------------------------------------------------------------- pages
@@ -282,7 +277,7 @@ def p_index():
 <li><strong>Converting is not what gets taxed.</strong> Nothing in the PRC exchange rules read today taxes the exchange itself. Banks convert a foreigner's lawful income on ID plus papers that show the amount, including tax vouchers. {chips(['S01', 'S06'])}</li>
 <li><strong>The tax, if any, is PRC income tax on how the money was earned:</strong> 3% to 45% on wages, 20% on dividends, rent and asset sales, and none at present on bank interest. If it was already withheld, converting adds no PRC tax. {chips(['S14', 'S15'])}</li>
 <li><strong>The cheapest lawful route is one documented bank wire.</strong> At Bank of China's posted rate and fees it costs about 0.2% to 0.5% of the amount, before any fees taken by other banks. {chips(['S17', 'S18'])}</li>
-<li><strong>The U.S. taxes the income when earned and credits PRC tax paid on it.</strong> Moving the money is not a new taxable event, but a currency gain above $200 is recognised, and the yuan is stronger now than in 2023 to 2025. {chips(['S28', 'S21', 'S29'])}</li>
+<li><strong>The U.S. taxes the income when earned and credits PRC tax paid on it.</strong> Moving the money is not a new taxable event, but a currency gain above $200 is recognised, and the yuan is stronger now than in 2023 to 2025. {chips(['S28', 'S34', 'S21', 'S29'])}</li>
 <li><strong>The large U.S. penalties are for missed forms, not for the transfer:</strong> FBAR, Form 8938 and Form 3520. Bring those up to date first. {chips(['S22', 'S23', 'S24', 'S25'])}</li>
 </ol>
 </section>"""
@@ -291,7 +286,7 @@ def p_index():
                      ("M04", "Same salary-and-tax-record case, done online; cost shown only in a quote."),
                      ("M02", "ID only, but only for Chinese citizens and permanent resident card holders, and slow."),
                      ("M08", "For an inheritance; needs SAFE approval."),
-                     ("M07", "For former mainland residents moving pre-emigration assets; takes two years."),
+                     ("M07", "For former mainland residents moving pre-emigration assets; needs SAFE approval."),
                      ("M06", "Small sums only; many trips for large ones.")):
         m, r = METHOD[mid], COSTS[mid][9]
         k = KIND[m["kind"]]
@@ -371,7 +366,8 @@ def p_costs():
         ("Overseas ATM cap", f"¥{C.ATM_YEAR_CNY:,} a year, ¥{C.ATM_DAY_CNY:,} a day per card", "Per person across all cards", ["S04"]),
         ("Cash per exit", f"${C.CASH_NO_PERMIT:,} without a permit, ${C.CASH_BANK_PERMIT:,} with a bank permit", "", ["S05"]),
         ("Wise per transfer", f"¥{C.WISE_PER_TRANSFER_CNY:,}", "From a Chinese bank app", ["S20"]),
-        ("Emigrant one-payment ceiling", f"¥{C.EMIGRANT_ONE_GO_CNY:,}", "Above it, three stages over two years", ["S11"]),
+        ("HSBC China wire fee", f"0.1%, at least ¥{C.HSBC_MIN}, at most ¥{C.HSBC_MAX}, plus ¥{C.HSBC_CABLE} cable", "Premier and Advance; free for Private Banking individuals", ["S19"]),
+        ("Emigrant and inheritance transfers", "One payment or several after SAFE approval", "Instalment rule removed in 2014", ["S32", "S11"]),
         ("Dividend tax cap", "10% of the gross dividend", "U.S.–China treaty, Article 9", ["S30"]),
         ("Fines for prohibited routes", "Up to 30%; 30% to 100% if serious", "Regulations, Articles 39, 40, 45", ["S06"]),
     ]
@@ -387,8 +383,8 @@ def p_costs():
             f'<summary><span class="chip {k[0]}">{k[1]}</span> <strong>{E(m["name"])}</strong>'
             f'<small>{E(r["basis"])}. Not included: {E(r["excluded"].lower())}.</small></summary>'
             + table(COST_HEAD, cost_rows(m["id"]), "wide") + "</details>")
-    body = f"""<section><h2>The four fully priced routes side by side</h2>
-<p class="note">Spread plus wire fees at Bank of China's published prices. Not included: fees taken by intermediary and receiving banks, and any tax. Scroll the table sideways for more columns.</p>
+    body = f"""<section><h2>Priced routes side by side</h2>
+<p class="note">Spread plus wire fees at Bank of China's published prices, beside the fine the Regulations allow for a prohibited route. Not included: fees taken by intermediary and receiving banks, and any tax. Scroll the table sideways for more columns.</p>
 <p class="controls"><label><input type="checkbox" id="only50"> Show every $50,000 only</label>
 <a class="btn" href="exports/costs.csv">Download all rows (CSV)</a></p>
 {table(COMPARE_HEAD, compare_rows([int(t) for t in TIERS]), 'wide')}</section>
@@ -425,9 +421,9 @@ def p_taxes():
 <ol class="answer">
 <li>Prove the PRC tax already paid rather than paying again: collect the tax records for the years the income was earned. {chips(['S01'])}</li>
 <li>Use one documented bank wire instead of many small transfers; the fee is capped per wire. {chips(['S18'])}</li>
-<li>Claim PRC income tax as a foreign tax credit on the U.S. return for the year the income was earned. {chips(['S28'])}</li>
+<li>Claim PRC income tax as a foreign tax credit on the U.S. return for the year the income was earned. {chips(['S34', 'S28'])}</li>
 <li>Record the dollar value of each deposit on its date so the currency gain is measured, not guessed. {chips(['S21', 'S29'])}</li>
-<li>File any missing FBAR, Form 8938 or Form 3520 before the money moves. {chips(['S22', 'S24', 'S25', 'S31'])}</li>
+<li>File any missing FBAR, Form 8938 or Form 3520 before the money moves; the streamlined procedures cap the cost for non-wilful cases. {chips(['S22', 'S24', 'S25', 'S31', 'S33'])}</li>
 <li>Stay away from the prohibited routes: a 30% fine is more than fifty times the lawful cost. {chips(['S06'])}</li>
 </ol></section>"""
     return page("taxes.html", "Tax and penalties",
@@ -435,14 +431,14 @@ def p_taxes():
 
 
 def p_sources():
-    how = {"fetched": "Page opened and read in full", "extract": "Official page text returned by search"}
+    how = {"fetched": "Opened; quoted passage checked", "partial": "Opened; read in part (see F18)"}
     rows = [f'<tr id="{s["id"]}">' + td("ID", f"<strong>{s['id']}</strong>")
             + td("Source", f'<a href="{E(s["url"])}" rel="noopener noreferrer">{E(s["title"])}</a><small>{E(s["issuer"])} · {E(s["date"])}</small>')
             + td("What it says", E(s["means"])) + td("Text read", f'<q>{E(s["quote"])}</q>')
             + td("How read today", E(how[s["how"]])) + "</tr>" for s in C.SOURCES]
     nf = sum(1 for s in C.SOURCES if s["how"] == "fetched")
     return page("sources.html", "Sources",
-                f"{len(C.SOURCES)} official pages read on 11 November 2026: {nf} opened in full and {len(C.SOURCES) - nf} read as official text returned by search. Follow each link to check it yourself.",
+                f"{len(C.SOURCES)} official pages opened on 11 November 2026, with the sentence each claim rests on. {len(C.SOURCES) - nf} long documents were read in part. Follow each link to check it yourself.",
                 table(["ID", "Source", "What it says", "Text read", "How read today"], rows))
 
 
@@ -475,7 +471,7 @@ def summary_md():
         "1. No tax on the act of converting RMB to dollars was found in the PRC exchange rules read. Banks convert a foreigner's lawful China income on ID plus papers showing the amount, including tax vouchers ([SAFE](" + SRC["S01"]["url"] + ")).",
         "2. The tax that matters is PRC income tax on how the money was earned: 3%–45% on wages, 20% on dividends, rent and asset sales, none at present on bank interest ([tax law](" + SRC["S14"]["url"] + ")). If it was withheld already, converting adds none.",
         f"3. Cheapest lawful route: one documented bank wire. At Bank of China's posted rate (¥{SELL} per $1, 11 Nov 2026 10:25 Beijing) and fee table it costs {money(c[0]['est_cost_usd'])} for $10,000, {money(c[9]['est_cost_usd'])} for $100,000 and {money(c[39]['est_cost_usd'])} for $400,000, before other banks' fees ([rate]({SRC['S17']['url']}), [fees]({SRC['S18']['url']})).",
-        "4. The U.S. taxes worldwide income when earned and credits PRC tax on it; currency gain above $200 on conversion is recognised ([IRS Pub. 54](" + SRC["S28"]["url"] + "), [26 U.S.C. 988(e)](" + SRC["S21"]["url"] + ")).",
+        "4. The U.S. taxes worldwide income when earned and credits PRC tax on it; currency gain above $200 on conversion is recognised ([IRS](" + SRC["S28"]["url"] + "), [foreign tax credit](" + SRC["S34"]["url"] + "), [26 U.S.C. 988(e)](" + SRC["S21"]["url"] + ")).",
         "5. The large U.S. penalties are for missed FBAR, Form 8938 and Form 3520 filings, not for the transfer.", "",
         "## Cost by amount (one documented wire, Bank of China published prices)", "",
         "| Amount | Estimated cost | Share | RMB you pay in |", "|---|---|---|---|",

@@ -36,7 +36,7 @@
   "layer": "Tax recordal for one payment above USD 50,000",
   "who": "China",
   "amount": "No charge found; a filing",
-  "note": "A form filed with the tax office for listed payment types. Whether your payment is a listed type is for the bank or tax office to confirm (flag F14).",
+  "note": "A form filed with the tax office for listed payment types, which include a foreign individual's pay for work in China, dividends and proceeds from selling real estate. Whether the bank wants it from you is for the bank to confirm (flag F14).",
   "src": [
    "S10"
   ]
@@ -66,9 +66,10 @@
   "layer": "U.S. income tax on the underlying income",
   "who": "U.S.",
   "amount": "Depends on your return",
-  "note": "A U.S. citizen owes U.S. tax on worldwide income in the year it is earned, not when it is moved. PRC income tax on the same income can be credited on Form 1116; qualifying earned income up to USD 132,900 for 2026 can be excluded instead.",
+  "note": "A U.S. citizen owes U.S. tax on worldwide income in the year it is earned, not when it is moved. PRC income tax on the same income can be credited on Form 1116; qualifying earned income up to USD 132,900 for 2026 can be excluded instead, but tax on excluded income cannot also be credited.",
   "src": [
    "S28",
+   "S34",
    "S27"
   ]
  },
@@ -128,10 +129,11 @@
   "id": "L13",
   "layer": "Catching up on missed U.S. filings",
   "who": "U.S.",
-  "amount": "5% of the highest balance if you live in the U.S.",
-  "note": "The Streamlined Domestic Offshore Procedures charge a 5% miscellaneous offshore penalty for non-wilful cases. Terms for people living abroad were not re-read today (flag F09).",
+  "amount": "5% of the highest balance if you live in the U.S.; no penalty if you qualify as living abroad",
+  "note": "For non-wilful cases only. The domestic procedure charges 5% of the highest year-end balance; the foreign procedure charges tax and interest but no penalty. Whether you qualify is a personal fact (flag F09).",
   "src": [
-   "S31"
+   "S31",
+   "S33"
   ]
  },
  {
@@ -139,9 +141,10 @@
   "layer": "PRC fines for unlawful routes",
   "who": "China",
   "amount": "Up to 30%; 30%–100% if serious",
-  "note": "Applies to evasion, fraudulent purchase and private FX trading. Unlawful carrying of cash: up to 20%.",
+  "note": "Applies to evasion, fraudulent purchase and private FX trading; SAFE has applied the evasion article to splitting cases. Unlawful carrying of cash: up to 20%.",
   "src": [
-   "S06"
+   "S06",
+   "S09"
   ]
  }
 ]

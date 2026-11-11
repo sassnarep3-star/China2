@@ -23,7 +23,7 @@
   "cons": [
    "Needs source papers that show the amount, including tax vouchers.",
    "The bank checks that the papers are genuine and match the payment; branches differ in what they accept.",
-   "A single payment above USD 50,000 in the listed categories needs a tax recordal form first (S10)."
+   "Pay for work in China is a listed type for the tax recordal form when one payment exceeds USD 50,000 (S10); ask the bank whether it wants the form from you."
   ],
   "steps": [
    "Gather your passport, the contract or payslips that show the income, and the PRC tax payment records for the same period.",
@@ -77,12 +77,12 @@
   "fits": "An HSBC China customer who qualifies under M01 or M02.",
   "limit": "Same rules as M01 or M02.",
   "pros": [
-   "Published fee schedule in English.",
-   "A same-name HSBC account abroad can make receiving simpler."
+   "Published fee schedule in English, effective 31 October 2026.",
+   "The wire fee is capped at CNY 620, and is free for Private Banking individuals."
   ],
   "cons": [
-   "HSBC's own exchange rate was not read today, so the total is blank.",
-   "Which customer tier pays which fee was not re-confirmed today (flag F05)."
+   "HSBC's own exchange rate was not read today, so the total is blank (flag F05).",
+   "Premier and Advance customers pay 0.1% (CNY 100 to 500) plus CNY 120 cable; only Private Banking individuals send free."
   ],
   "steps": [
    "Check your account tier against the current tariff PDF.",
@@ -178,38 +178,43 @@
  {
   "id": "M07",
   "kind": "conditional",
-  "model": "emigrant",
+  "model": "one_wire",
+  "time": "One transaction after SAFE approval",
   "src": [
    "S11",
+   "S32",
    "S17",
    "S18"
   ],
   "name": "Emigrant property transfer through SAFE",
   "fits": "A person who moved from mainland China and took foreign status, transferring assets owned before emigrating.",
-  "limit": "Whole amount in one application; paid out over two years in three stages unless it is RMB 200,000 or less.",
+  "limit": "The amount SAFE approves; since 2014 it can go in one payment or several.",
   "pros": [
-   "A formal route for large capital sums.",
-   "No fixed dollar ceiling in the rule read."
+   "A formal route for large capital sums with no fixed ceiling in the rules read.",
+   "No longer staged: the 2014 notice removed the instalment requirement (S32).",
+   "Approved by the local SAFE branch whatever the amount."
   ],
   "cons": [
-   "Takes at least two years above RMB 200,000.",
-   "Needs SAFE approval and proof the assets are lawful and yours.",
+   "Needs SAFE approval, proof the assets are lawful and yours, and tax certificates from where they arose.",
+   "The money must go straight to your own account in your country of residence; no cash withdrawal.",
    "Does not apply to people who were never mainland residents."
   ],
   "steps": [
-   "Apply to the SAFE branch for your former household registration area with ID, proof of emigrant status and proof of the assets.",
-   "After approval, the bank converts and wires up to half.",
-   "One year after the first payment, send up to half of what remains.",
-   "Two years after the first payment, send the rest."
+   "Apply to the SAFE branch for your former household registration area with a written application, proof your registration was cancelled, proof of settlement abroad, proof of the assets and the tax certificates.",
+   "SAFE issues an approval for the amount.",
+   "The bank converts and wires the approved amount, in one payment or several, to your own account abroad.",
+   "Keep the approval, the exchange memo and the wire receipts."
   ]
  },
  {
   "id": "M08",
   "kind": "conditional",
   "model": "one_wire",
+  "time": "One transaction after SAFE approval",
   "src": [
    "S11",
    "S12",
+   "S32",
    "S25",
    "S17",
    "S18"
@@ -222,7 +227,7 @@
    "A bequest is not income to the U.S. recipient (S25)."
   ],
   "cons": [
-   "Needs SAFE approval and inheritance papers.",
+   "Needs SAFE approval, inheritance papers and tax certificates for the decedent's property.",
    "A bequest above USD 100,000 from a foreign estate must be reported on Form 3520."
   ],
   "steps": [
@@ -375,7 +380,8 @@
   "pros": [],
   "cons": [
    "Watch list for that year and the next two (S08).",
-   "The Regulations set fines up to 30% of the amount, and 30% to 100% in serious cases (S06)."
+   "SAFE's Hebei branch reports seven such cases, 60 people and USD 2.69 million, punished under Article 39 (S09).",
+   "Article 39 sets fines up to 30% of the amount, and 30% to 100% in serious cases (S06)."
   ],
   "steps": [
    "Do not use this route."

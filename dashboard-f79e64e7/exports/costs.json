@@ -1532,7 +1532,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1551,7 +1551,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1570,7 +1570,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1589,7 +1589,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1608,7 +1608,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1627,7 +1627,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1646,7 +1646,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1665,7 +1665,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1684,7 +1684,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1703,7 +1703,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1722,7 +1722,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1741,7 +1741,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1760,7 +1760,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1779,7 +1779,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1798,7 +1798,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1817,7 +1817,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1836,7 +1836,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1855,7 +1855,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1874,7 +1874,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1893,7 +1893,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1912,7 +1912,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1931,7 +1931,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1950,7 +1950,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1969,7 +1969,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -1988,7 +1988,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2007,7 +2007,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2026,7 +2026,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2045,7 +2045,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2064,7 +2064,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2083,7 +2083,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2102,7 +2102,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2121,7 +2121,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2140,7 +2140,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2159,7 +2159,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2178,7 +2178,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2197,7 +2197,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2216,7 +2216,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2235,7 +2235,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2254,7 +2254,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -2273,7 +2273,7 @@
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
-  "basis": "HSBC wire fee only, at Bank of China's rate as a stand-in",
+  "basis": "HSBC Premier or Advance wire fee only, shown at Bank of China's rate",
   "excluded": "HSBC exchange spread (not read); other banks' fees; any tax",
   "method_name": "Same bank route at HSBC China (published tariff)",
   "status": "lawful",
@@ -4566,7 +4566,7 @@
   "pct": "0.534",
   "rmb_in": "67127.91",
   "count": "1 wire",
-  "time": "One transaction after approval",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "21.00",
   "fee_usd": "32.42",
   "tax_usd": null,
@@ -4576,7 +4576,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
@@ -4585,7 +4585,7 @@
   "pct": "0.422",
   "rmb_in": "134105.82",
   "count": "1 wire",
-  "time": "One transaction after approval",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "42.00",
   "fee_usd": "42.42",
   "tax_usd": null,
@@ -4595,18 +4595,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 30000,
-  "est_cost_usd": "160.25",
-  "pct": "0.534",
-  "rmb_in": "201383.73",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "115.41",
+  "pct": "0.385",
+  "rmb_in": "201083.73",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "62.99",
-  "fee_usd": "97.25",
+  "fee_usd": "52.42",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4614,18 +4614,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 40000,
-  "est_cost_usd": "191.25",
-  "pct": "0.478",
-  "rmb_in": "268361.64",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "145.27",
+  "pct": "0.363",
+  "rmb_in": "268054.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "83.99",
-  "fee_usd": "107.25",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4633,18 +4633,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 50000,
-  "est_cost_usd": "222.24",
-  "pct": "0.444",
-  "rmb_in": "335339.56",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "166.27",
+  "pct": "0.333",
+  "rmb_in": "334965.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "104.99",
-  "fee_usd": "117.25",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4652,18 +4652,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 60000,
-  "est_cost_usd": "253.24",
-  "pct": "0.422",
-  "rmb_in": "402317.47",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "187.26",
+  "pct": "0.312",
+  "rmb_in": "401876.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "125.99",
-  "fee_usd": "127.25",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4671,18 +4671,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 70000,
-  "est_cost_usd": "284.24",
-  "pct": "0.406",
-  "rmb_in": "469295.38",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "208.26",
+  "pct": "0.298",
+  "rmb_in": "468787.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "146.99",
-  "fee_usd": "137.25",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4690,18 +4690,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 80000,
-  "est_cost_usd": "314.10",
-  "pct": "0.393",
-  "rmb_in": "536265.64",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "229.26",
+  "pct": "0.287",
+  "rmb_in": "535698.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "167.98",
-  "fee_usd": "146.11",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4709,18 +4709,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 90000,
-  "est_cost_usd": "340.09",
-  "pct": "0.378",
-  "rmb_in": "603210.10",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "250.26",
+  "pct": "0.278",
+  "rmb_in": "602609.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "188.98",
-  "fee_usd": "151.11",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4728,18 +4728,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 100000,
-  "est_cost_usd": "366.09",
-  "pct": "0.366",
-  "rmb_in": "670154.56",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "271.26",
+  "pct": "0.271",
+  "rmb_in": "669520.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "209.98",
-  "fee_usd": "156.11",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4747,18 +4747,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 110000,
-  "est_cost_usd": "392.09",
-  "pct": "0.356",
-  "rmb_in": "737099.01",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "292.25",
+  "pct": "0.266",
+  "rmb_in": "736431.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "230.98",
-  "fee_usd": "161.11",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4766,18 +4766,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 120000,
-  "est_cost_usd": "418.09",
-  "pct": "0.348",
-  "rmb_in": "804043.47",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "313.25",
+  "pct": "0.261",
+  "rmb_in": "803342.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "251.98",
-  "fee_usd": "166.11",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4785,18 +4785,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 130000,
-  "est_cost_usd": "444.09",
-  "pct": "0.342",
-  "rmb_in": "870987.92",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "334.25",
+  "pct": "0.257",
+  "rmb_in": "870253.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "272.97",
-  "fee_usd": "171.11",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4804,18 +4804,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 140000,
-  "est_cost_usd": "470.08",
-  "pct": "0.336",
-  "rmb_in": "937932.38",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "355.25",
+  "pct": "0.254",
+  "rmb_in": "937164.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "293.97",
-  "fee_usd": "176.11",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4823,18 +4823,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 150000,
-  "est_cost_usd": "496.08",
-  "pct": "0.331",
-  "rmb_in": "1004876.83",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "376.25",
+  "pct": "0.251",
+  "rmb_in": "1004075.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "314.97",
-  "fee_usd": "181.11",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4842,18 +4842,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 160000,
-  "est_cost_usd": "519.79",
-  "pct": "0.325",
-  "rmb_in": "1071806.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "397.24",
+  "pct": "0.248",
+  "rmb_in": "1070986.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "335.97",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4861,18 +4861,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 170000,
-  "est_cost_usd": "540.79",
-  "pct": "0.318",
-  "rmb_in": "1138717.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "418.24",
+  "pct": "0.246",
+  "rmb_in": "1137897.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "356.97",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4880,18 +4880,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 180000,
-  "est_cost_usd": "561.79",
-  "pct": "0.312",
-  "rmb_in": "1205628.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "439.24",
+  "pct": "0.244",
+  "rmb_in": "1204808.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "377.96",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4899,18 +4899,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 190000,
-  "est_cost_usd": "582.79",
-  "pct": "0.307",
-  "rmb_in": "1272539.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "460.24",
+  "pct": "0.242",
+  "rmb_in": "1271719.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "398.96",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4918,18 +4918,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 200000,
-  "est_cost_usd": "603.79",
-  "pct": "0.302",
-  "rmb_in": "1339450.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "481.24",
+  "pct": "0.241",
+  "rmb_in": "1338630.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "419.96",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4937,18 +4937,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 210000,
-  "est_cost_usd": "624.79",
-  "pct": "0.298",
-  "rmb_in": "1406361.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "502.23",
+  "pct": "0.239",
+  "rmb_in": "1405541.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "440.96",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4956,18 +4956,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 220000,
-  "est_cost_usd": "645.78",
-  "pct": "0.294",
-  "rmb_in": "1473272.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "523.23",
+  "pct": "0.238",
+  "rmb_in": "1472452.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "461.96",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4975,18 +4975,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 230000,
-  "est_cost_usd": "666.78",
-  "pct": "0.290",
-  "rmb_in": "1540183.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "544.23",
+  "pct": "0.237",
+  "rmb_in": "1539363.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "482.95",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -4994,18 +4994,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 240000,
-  "est_cost_usd": "687.78",
-  "pct": "0.287",
-  "rmb_in": "1607094.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "565.23",
+  "pct": "0.236",
+  "rmb_in": "1606274.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "503.95",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5013,18 +5013,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 250000,
-  "est_cost_usd": "708.78",
-  "pct": "0.284",
-  "rmb_in": "1674005.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "586.23",
+  "pct": "0.234",
+  "rmb_in": "1673185.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "524.95",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5032,18 +5032,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 260000,
-  "est_cost_usd": "729.78",
-  "pct": "0.281",
-  "rmb_in": "1740916.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "607.22",
+  "pct": "0.234",
+  "rmb_in": "1740096.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "545.95",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5051,18 +5051,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 270000,
-  "est_cost_usd": "750.77",
-  "pct": "0.278",
-  "rmb_in": "1807827.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "628.22",
+  "pct": "0.233",
+  "rmb_in": "1807007.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "566.95",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5070,18 +5070,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 280000,
-  "est_cost_usd": "771.77",
-  "pct": "0.276",
-  "rmb_in": "1874738.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "649.22",
+  "pct": "0.232",
+  "rmb_in": "1873918.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "587.95",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5089,18 +5089,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 290000,
-  "est_cost_usd": "792.77",
-  "pct": "0.273",
-  "rmb_in": "1941649.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "670.22",
+  "pct": "0.231",
+  "rmb_in": "1940829.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "608.94",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5108,18 +5108,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 300000,
-  "est_cost_usd": "813.77",
-  "pct": "0.271",
-  "rmb_in": "2008560.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "691.22",
+  "pct": "0.230",
+  "rmb_in": "2007740.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "629.94",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5127,18 +5127,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 310000,
-  "est_cost_usd": "834.77",
-  "pct": "0.269",
-  "rmb_in": "2075471.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "712.21",
+  "pct": "0.230",
+  "rmb_in": "2074651.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "650.94",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5146,18 +5146,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 320000,
-  "est_cost_usd": "855.76",
-  "pct": "0.267",
-  "rmb_in": "2142382.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "733.21",
+  "pct": "0.229",
+  "rmb_in": "2141562.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "671.94",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5165,18 +5165,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 330000,
-  "est_cost_usd": "876.76",
-  "pct": "0.266",
-  "rmb_in": "2209293.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "754.21",
+  "pct": "0.229",
+  "rmb_in": "2208473.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "692.94",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5184,18 +5184,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 340000,
-  "est_cost_usd": "897.76",
-  "pct": "0.264",
-  "rmb_in": "2276204.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "775.21",
+  "pct": "0.228",
+  "rmb_in": "2275384.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "713.93",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5203,18 +5203,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 350000,
-  "est_cost_usd": "918.76",
-  "pct": "0.263",
-  "rmb_in": "2343115.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "796.21",
+  "pct": "0.227",
+  "rmb_in": "2342295.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "734.93",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5222,18 +5222,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 360000,
-  "est_cost_usd": "939.76",
-  "pct": "0.261",
-  "rmb_in": "2410026.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "817.20",
+  "pct": "0.227",
+  "rmb_in": "2409206.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "755.93",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5241,18 +5241,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 370000,
-  "est_cost_usd": "960.75",
-  "pct": "0.260",
-  "rmb_in": "2476937.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "838.20",
+  "pct": "0.227",
+  "rmb_in": "2476117.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "776.93",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5260,18 +5260,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 380000,
-  "est_cost_usd": "981.75",
-  "pct": "0.258",
-  "rmb_in": "2543848.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "859.20",
+  "pct": "0.226",
+  "rmb_in": "2543028.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "797.93",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5279,18 +5279,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 390000,
-  "est_cost_usd": "1002.75",
-  "pct": "0.257",
-  "rmb_in": "2610759.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "880.20",
+  "pct": "0.226",
+  "rmb_in": "2609939.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "818.92",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5298,18 +5298,18 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M07",
   "usd": 400000,
-  "est_cost_usd": "1023.75",
-  "pct": "0.256",
-  "rmb_in": "2677670.00",
-  "count": "3 wires",
-  "time": "At least 2 years, 3 stages",
+  "est_cost_usd": "901.20",
+  "pct": "0.225",
+  "rmb_in": "2676850.00",
+  "count": "1 wire",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "839.92",
-  "fee_usd": "183.83",
+  "fee_usd": "61.28",
   "tax_usd": null,
   "fine_ordinary_max_usd": null,
   "fine_serious_max_usd": null,
@@ -5317,7 +5317,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Emigrant property transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5326,7 +5326,7 @@
   "pct": "0.534",
   "rmb_in": "67127.91",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "21.00",
   "fee_usd": "32.42",
   "tax_usd": null,
@@ -5336,7 +5336,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5345,7 +5345,7 @@
   "pct": "0.422",
   "rmb_in": "134105.82",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "42.00",
   "fee_usd": "42.42",
   "tax_usd": null,
@@ -5355,7 +5355,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5364,7 +5364,7 @@
   "pct": "0.385",
   "rmb_in": "201083.73",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "62.99",
   "fee_usd": "52.42",
   "tax_usd": null,
@@ -5374,7 +5374,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5383,7 +5383,7 @@
   "pct": "0.363",
   "rmb_in": "268054.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "83.99",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5393,7 +5393,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5402,7 +5402,7 @@
   "pct": "0.333",
   "rmb_in": "334965.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "104.99",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5412,7 +5412,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5421,7 +5421,7 @@
   "pct": "0.312",
   "rmb_in": "401876.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "125.99",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5431,7 +5431,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5440,7 +5440,7 @@
   "pct": "0.298",
   "rmb_in": "468787.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "146.99",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5450,7 +5450,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5459,7 +5459,7 @@
   "pct": "0.287",
   "rmb_in": "535698.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "167.98",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5469,7 +5469,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5478,7 +5478,7 @@
   "pct": "0.278",
   "rmb_in": "602609.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "188.98",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5488,7 +5488,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5497,7 +5497,7 @@
   "pct": "0.271",
   "rmb_in": "669520.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "209.98",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5507,7 +5507,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5516,7 +5516,7 @@
   "pct": "0.266",
   "rmb_in": "736431.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "230.98",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5526,7 +5526,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5535,7 +5535,7 @@
   "pct": "0.261",
   "rmb_in": "803342.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "251.98",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5545,7 +5545,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5554,7 +5554,7 @@
   "pct": "0.257",
   "rmb_in": "870253.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "272.97",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5564,7 +5564,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5573,7 +5573,7 @@
   "pct": "0.254",
   "rmb_in": "937164.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "293.97",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5583,7 +5583,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5592,7 +5592,7 @@
   "pct": "0.251",
   "rmb_in": "1004075.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "314.97",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5602,7 +5602,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5611,7 +5611,7 @@
   "pct": "0.248",
   "rmb_in": "1070986.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "335.97",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5621,7 +5621,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5630,7 +5630,7 @@
   "pct": "0.246",
   "rmb_in": "1137897.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "356.97",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5640,7 +5640,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5649,7 +5649,7 @@
   "pct": "0.244",
   "rmb_in": "1204808.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "377.96",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5659,7 +5659,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5668,7 +5668,7 @@
   "pct": "0.242",
   "rmb_in": "1271719.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "398.96",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5678,7 +5678,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5687,7 +5687,7 @@
   "pct": "0.241",
   "rmb_in": "1338630.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "419.96",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5697,7 +5697,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5706,7 +5706,7 @@
   "pct": "0.239",
   "rmb_in": "1405541.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "440.96",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5716,7 +5716,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5725,7 +5725,7 @@
   "pct": "0.238",
   "rmb_in": "1472452.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "461.96",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5735,7 +5735,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5744,7 +5744,7 @@
   "pct": "0.237",
   "rmb_in": "1539363.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "482.95",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5754,7 +5754,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5763,7 +5763,7 @@
   "pct": "0.236",
   "rmb_in": "1606274.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "503.95",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5773,7 +5773,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5782,7 +5782,7 @@
   "pct": "0.234",
   "rmb_in": "1673185.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "524.95",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5792,7 +5792,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5801,7 +5801,7 @@
   "pct": "0.234",
   "rmb_in": "1740096.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "545.95",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5811,7 +5811,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5820,7 +5820,7 @@
   "pct": "0.233",
   "rmb_in": "1807007.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "566.95",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5830,7 +5830,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5839,7 +5839,7 @@
   "pct": "0.232",
   "rmb_in": "1873918.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "587.95",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5849,7 +5849,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5858,7 +5858,7 @@
   "pct": "0.231",
   "rmb_in": "1940829.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "608.94",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5868,7 +5868,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5877,7 +5877,7 @@
   "pct": "0.230",
   "rmb_in": "2007740.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "629.94",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5887,7 +5887,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5896,7 +5896,7 @@
   "pct": "0.230",
   "rmb_in": "2074651.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "650.94",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5906,7 +5906,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5915,7 +5915,7 @@
   "pct": "0.229",
   "rmb_in": "2141562.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "671.94",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5925,7 +5925,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5934,7 +5934,7 @@
   "pct": "0.229",
   "rmb_in": "2208473.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "692.94",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5944,7 +5944,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5953,7 +5953,7 @@
   "pct": "0.228",
   "rmb_in": "2275384.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "713.93",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5963,7 +5963,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5972,7 +5972,7 @@
   "pct": "0.227",
   "rmb_in": "2342295.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "734.93",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -5982,7 +5982,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -5991,7 +5991,7 @@
   "pct": "0.227",
   "rmb_in": "2409206.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "755.93",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -6001,7 +6001,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -6010,7 +6010,7 @@
   "pct": "0.227",
   "rmb_in": "2476117.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "776.93",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -6020,7 +6020,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -6029,7 +6029,7 @@
   "pct": "0.226",
   "rmb_in": "2543028.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "797.93",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -6039,7 +6039,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -6048,7 +6048,7 @@
   "pct": "0.226",
   "rmb_in": "2609939.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "818.92",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -6058,7 +6058,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M08",
@@ -6067,7 +6067,7 @@
   "pct": "0.225",
   "rmb_in": "2676850.00",
   "count": "1 wire",
-  "time": "One transaction",
+  "time": "One transaction after SAFE approval",
   "spread_usd": "839.92",
   "fee_usd": "61.28",
   "tax_usd": null,
@@ -6077,7 +6077,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "Inheritance transfer through SAFE",
   "status": "conditional",
-  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.gov.cn/gongbao/content/2005/content_64294.htm http://m.safe.gov.cn/safe/2004/1116/12156.html http://m.safe.gov.cn/safe/2014/0124/5476.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M09",
@@ -7616,7 +7616,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7635,7 +7635,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7654,7 +7654,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7673,7 +7673,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7692,7 +7692,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7711,7 +7711,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7730,7 +7730,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7749,7 +7749,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7768,7 +7768,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7787,7 +7787,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7806,7 +7806,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7825,7 +7825,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7844,7 +7844,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7863,7 +7863,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7882,7 +7882,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7901,7 +7901,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7920,7 +7920,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7939,7 +7939,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7958,7 +7958,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7977,7 +7977,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -7996,7 +7996,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8015,7 +8015,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8034,7 +8034,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8053,7 +8053,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8072,7 +8072,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8091,7 +8091,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8110,7 +8110,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8129,7 +8129,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8148,7 +8148,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8167,7 +8167,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8186,7 +8186,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8205,7 +8205,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8224,7 +8224,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8243,7 +8243,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8262,7 +8262,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8281,7 +8281,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8300,7 +8300,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8319,7 +8319,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8338,7 +8338,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M11",
@@ -8357,7 +8357,7 @@
   "excluded": "Intermediary and receiving bank fees; any tax",
   "method_name": "A relative sends their own money as a gift",
   "status": "conditional",
-  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
+  "source_urls": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.irs.gov/businesses/gifts-from-foreign-person https://www.boc.cn/sourcedb/whpj/enindex_1619.html https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html"
  },
  {
   "method": "M12",
@@ -9896,7 +9896,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -9915,7 +9915,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -9934,7 +9934,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -9953,7 +9953,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -9972,7 +9972,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -9991,7 +9991,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10010,7 +10010,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10029,7 +10029,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10048,7 +10048,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10067,7 +10067,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10086,7 +10086,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10105,7 +10105,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10124,7 +10124,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10143,7 +10143,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10162,7 +10162,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10181,7 +10181,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10200,7 +10200,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10219,7 +10219,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10238,7 +10238,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10257,7 +10257,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10276,7 +10276,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10295,7 +10295,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10314,7 +10314,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10333,7 +10333,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10352,7 +10352,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10371,7 +10371,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10390,7 +10390,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10409,7 +10409,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10428,7 +10428,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10447,7 +10447,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10466,7 +10466,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10485,7 +10485,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10504,7 +10504,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10523,7 +10523,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10542,7 +10542,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10561,7 +10561,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10580,7 +10580,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10599,7 +10599,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10618,7 +10618,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M14",
@@ -10637,7 +10637,7 @@
   "excluded": "Watch list, confiscation, criminal liability, counterparty loss",
   "method_name": "Using other people's quotas (splitting)",
   "status": "unlawful",
-  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/internet_app/search?q=%E7%BB%93%E5%94%AE%E6%B1%87&siteid=hebei&order=releasetime&p=11 https://www.safe.gov.cn/beijing/2018/1221/1010.html"
+  "source_urls": "https://www.safe.gov.cn/safe/2015/1231/5442.html https://www.safe.gov.cn/hebei/2016/0328/615.html https://www.safe.gov.cn/beijing/2018/1221/1010.html"
  },
  {
   "method": "M15",

@@ -85,8 +85,8 @@
   "id": "R09",
   "where": "index.html (root), briefing/, ladder/",
   "claim": "HSBC China: 0.1%, CNY 100 to 500, plus CNY 120 cable for Premier and Advance; free for Private Banking.",
-  "result": "Figures seen, tiers not re-confirmed",
-  "note": "See flag F05.",
+  "result": "Confirmed",
+  "note": "Rows 2.2.4.1 and 2.2.4.2 of the tariff effective 31 October 2026 say exactly this.",
   "src": [
    "S19"
   ]
@@ -143,27 +143,38 @@
  },
  {
   "id": "R15",
+  "where": "estimate-facf2fe9/, verify-d5d1f860/, final-f6327e23/",
+  "claim": "Emigrant transfers above RMB 200,000 leave in stages over two years: half, then half of the rest, then the remainder.",
+  "result": "Irregular",
+  "note": "That is the 2004 text. SAFE removed the instalment requirement in 2014; the approved amount can go in one payment. ladder/, briefing/, portal/ and repatriate/ already cite the 2014 notice, so the repository contradicts itself.",
+  "src": [
+   "S32",
+   "S11"
+  ]
+ },
+ {
+  "id": "R16",
   "where": "Repository root",
   "claim": "One executive summary and one starting page.",
   "result": "Irregular",
-  "note": "There are ten executive-summary files, two at the root with near-identical names, and the README marks two different pages 'start here' and a third as newest. Method counts differ between views (15 to 23). This dashboard is now the single front door; earlier views are kept and listed on the landing page.",
+  "note": "There are ten executive-summary files, two at the root with near-identical names, and the README marked two different pages 'start here' and a third as newest. Method counts differ between views (15 to 23). Corrected in this pass: this dashboard is the single front door, and earlier views are kept and listed on the landing page.",
   "src": [
    "S01"
   ]
  },
  {
-  "id": "R16",
+  "id": "R17",
   "where": "index.html (root)",
   "claim": "'Current all-in cost — / unverified'.",
   "result": "Updated",
-  "note": "An account quote is still unknown, but a published-rate estimate exists and is now shown with its timestamp.",
+  "note": "An account quote is still unknown. The landing page now shows the published-price estimate with its timestamp and says what it leaves out.",
   "src": [
    "S17",
    "S18"
   ]
  },
  {
-  "id": "R17",
+  "id": "R18",
   "where": "Open pull requests",
   "claim": "All work is merged.",
   "result": "Irregular",
