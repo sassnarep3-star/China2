@@ -1,0 +1,276 @@
+{
+  "repo_audit": [
+    {
+      "id": "RA-01",
+      "file_and_lines": "ladder/build.py L704–L707 → ladder/audit.html L38–L41",
+      "severity": "medium",
+      "finding": "Hardcoded prose 'Twenty sources are used by this model... 15 of 20 were retrieved directly' persists after PR #36 added S21 to ladder/data/sources.json (actual ledger has 21 sources, 16 directly retrieved; S21 used a different retrieval label or hardcoded denominator 20).",
+      "official_verification": "HSBC China tariff effective 2026-10-31 (S21 in ladder) is the 21st source in ladder/data/sources.json.",
+      "disposition": "Flagged read-only per parallel-session scope rules; logged for ladder owner.",
+      "source_ids": ["SRC-38"]
+    },
+    {
+      "id": "RA-02",
+      "file_and_lines": "briefing/EXECUTIVE_SUMMARY.md L34 & briefing/build.py",
+      "severity": "high",
+      "finding": "M06 ATM cash row states 'Cap CNY 100,000/person/yr (~USD 14,027); 8+ years for $400k' — arithmetic error: $400,000 ÷ $14,027.21/yr = 28.516 years (29 calendar years, not 8+ years, which is the $50k/yr quota duration).",
+      "official_verification": "SAFE Hui Fa [2017] No. 29 caps overseas ATM cash withdrawals at RMB 100,000/person/civil year; at IRS 2025 average 7.129 CNY/USD ($14,027.21/yr), $400,000 requires 29 civil years.",
+      "disposition": "Corrected to exact 29 calendar years (286 ATM days) in study-8f529c94/; logged for briefing owner.",
+      "source_ids": ["SRC-10", "SRC-25"]
+    },
+    {
+      "id": "RA-03",
+      "file_and_lines": "EXECUTIVE-SUMMARY.md L39 & L76–L80; site/conversion-routes.html (R01)",
+      "severity": "high",
+      "finding": "Ranks R01 ('Wire inside the USD 50,000 quota') as Rank #1 for a U.S. citizen and states the USD 50,000 quota covers 'purchases and sales, for domestic and foreign individuals'.",
+      "official_verification": "Hui Fa [2007] No. 1 Art. 2 applies the USD 50,000 quota to individual FX sales (结汇) and DOMESTIC individual FX purchases (境内个人购汇); SAFE Tianjin 2024 Case 9 confirms foreign individuals qualify for the annual facilitated FX purchase quota ONLY if holding a PRC Foreign Permanent Resident ID Card (外国人永久居留身份证).",
+      "disposition": "Flagged high-priority; M01 (documented current-account income) is separated from M06 (PR-ID-only quota) in study-8f529c94/.",
+      "source_ids": ["SRC-03", "SRC-07"]
+    },
+    {
+      "id": "RA-04",
+      "file_and_lines": "EXECUTIVE-SUMMARY.md L52, L93; data/sources.json L91, L192; site/*.html",
+      "severity": "medium",
+      "finding": "Cites the repealed 2021 virtual-currency notice (Yin Fa [2021] No. 237 via http://english.www.gov.cn/...) and uses insecure http:// URLs for SAFE Hui Fa [2017] No. 29.",
+      "official_verification": "PBOC & 7 Ministries Yin Fa [2026] No. 42 (effective 2026-02-06) expressly repealed Yin Fa [2021] No. 237 while expanding the ban to RMB-pegged stablecoins and unauthorized RWA tokenization; HTTPS SAFE URL resolves cleanly.",
+      "disposition": "Flagged read-only; study-8f529c94/ cites Yin Fa [2026] No. 42 over HTTPS exclusively.",
+      "source_ids": ["SRC-10", "SRC-21"]
+    },
+    {
+      "id": "RA-05",
+      "file_and_lines": "reports/EXECUTIVE_SUMMARY_85f37d08.md L14–L15; portal/methods.html (M03)",
+      "severity": "high",
+      "finding": "Describes the USD 500/day (branch) / USD 1,000 (port) ID-only rule as a general walk-in conversion allowance for any US citizen without paperwork, and states 境内个人 excludes all foreigners.",
+      "official_verification": "SAFE Hui Fa [2007] No. 1 Art. 13(2) and SAFE Tianjin 2026 FAQ 10 restrict the USD 500 / USD 1,000 ID-only threshold to reconversion of unspent previously exchanged RMB (原兑换未用完的人民币兑回); Decree 532 Art. 52(2) includes >=1-yr resident foreigners in statutory 境内个人 while SAFE Tianjin 2024 Case 9 grants PR-ID holders the $50k purchase quota.",
+      "disposition": "Flagged read-only; M08 in study-8f529c94/ states the exact unspent-reconversion restriction.",
+      "source_ids": ["SRC-01", "SRC-03", "SRC-06", "SRC-07"]
+    },
+    {
+      "id": "RA-06",
+      "file_and_lines": "reports/EXECUTIVE_SUMMARY_85f37d08.md L31 & L51",
+      "severity": "high",
+      "finding": "States individuals disposing of foreign currency in a personal transaction are exempt from IRC § 988 ordinary currency-gain rules without noting that personal exchange gains exceeding $200 ARE taxable as capital gains.",
+      "official_verification": "26 U.S.C. § 988(e)(2) excludes personal FX gain ONLY if the gain on the transaction does not exceed $200; IRS Publication 525 (2025) explicitly instructs: 'If the gain is more than $200, report it as a capital gain.'",
+      "disposition": "Directly verified in body of both 26 U.S.C. § 988(e)(2) and IRS Pub. 525 (2025) chunk 39.",
+      "source_ids": ["SRC-24", "SRC-26"]
+    },
+    {
+      "id": "RA-07",
+      "file_and_lines": "reports/EXECUTIVE_SUMMARY_85f37d08.md L49; portal/tax-compliance.html",
+      "severity": "medium",
+      "finding": "Cites STA & SAFE Announcement [2013] No. 40 alone for > USD 50,000 outbound tax recordal without Supplementary Announcement [2021] No. 19 (which repealed Arts. 1(2), 2(2), 5–8, 10 of [2013] No. 40 and introduced one-time-per-contract online recordal) or Art. 4's carve-out for foreign individuals.",
+      "official_verification": "Both Announcement [2013] No. 40 (with STA official 2021 amendment header) and Supplementary Announcement [2021] No. 19 were directly retrieved and verified in this session.",
+      "disposition": "Full [2013] No. 40 + [2021] No. 19 rules published in study-8f529c94/.",
+      "source_ids": ["SRC-17", "SRC-18"]
+    },
+    {
+      "id": "RA-08",
+      "file_and_lines": "EXECUTIVE_SUMMARY.md L22; research/sources.json (S13)",
+      "severity": "low",
+      "finding": "Links the general IRS Foreign Earned Income Exclusion webpage whose historical table stops at 2023 ($120,000) rather than the current 2026 Form 2555 Instructions ($132,900).",
+      "official_verification": "2026 Instructions for Form 2555 (i2555.pdf) confirm the 2026 maximum FEIE exclusion is $132,900.",
+      "disposition": "study-8f529c94/ cites the official 2026 Form 2555 Instructions PDF directly.",
+      "source_ids": ["SRC-29"]
+    },
+    {
+      "id": "RA-09",
+      "file_and_lines": "ladder/costs.html; ladder/data/costs.json; ladder/data/assumptions.json",
+      "severity": "medium",
+      "finding": "Publishes modeled numeric FX spread bands (e.g., 0.3%–1.5%) and modeled all-in USD totals in cost tables rather than leaving unconfirmed commercial spreads blank.",
+      "official_verification": "Neither SAFE/PBOC/IRS nor HSBC's static tariff publishes an executable customer CNY/USD spread; HSBC Tariff Note 7 also excludes correspondent/agent bank charges.",
+      "disposition": "study-8f529c94/ computes ONLY primary source-published fee components and leaves all unconfirmed FX spreads and third-party fees strictly blank + flagged.",
+      "source_ids": ["SRC-25", "SRC-38"]
+    },
+    {
+      "id": "RA-10",
+      "file_and_lines": "EXECUTIVE-SUMMARY.md F01–F02; ladder/flagged.html F06–F07; acceptance-a64bd476/flagged.html G01",
+      "severity": "low",
+      "finding": "Earlier sessions left four verifiable official rules as unretrieved/TOC-only: (1) IRS Pub. 525 >$200 FX capital-gain body text, (2) IRS Form 3520 >$100,000 foreign-bequest rule & 5%/mo penalty, (3) 31 CFR § 1010.821 FBAR $16,536/$165,353 table, and (4) SAFE non-domestic PRC property-sale FX procedure.",
+      "official_verification": "All four official documents were fetched in body over HTTPS in this session (Pub. 525 chunk 39; 2025 Form 3520 Instructions; 31 CFR § 1010.821; SAFE Real Estate Q&A Q14/Q18 & Hainan Q&A 49).",
+      "disposition": "Closed with direct verbatim quotes and links in study-8f529c94/sources.html.",
+      "source_ids": ["SRC-15", "SRC-16", "SRC-26", "SRC-31", "SRC-33"]
+    },
+    {
+      "id": "RA-11",
+      "file_and_lines": "repatriate/costs.html; briefing/costs.html; verify-d5d1f860/costs.html; HSBC Tariff PDF",
+      "severity": "medium",
+      "finding": "Existing 680-row tables price M01 only at HSBC Premier/Advance SHA ($30.86–$86.97), omitting four other explicitly published HSBC China Oct 2026 tariff tiers: Private Banking / Premier Elite ($0.00), Pay Exact OUR (+CNY 200 = +$28.05), Advance Global Transfer ($20.00), and Entity Dividend TT (0.1% min CNY 100 max CNY 1,000 + CNY 140 cable = $33.67–$159.91); also HSBC PDF cover says eff. 31 Oct 2026 while some inner Chinese headers say 2024年9月12日生效.",
+      "official_verification": "Directly verified in HSBC China Tariff Items 2.2.4.1, 2.2.4.2, and 2.2.6.1.",
+      "disposition": "All published HSBC segments/options are explicitly shown and computed in study-8f529c94/costs.html.",
+      "source_ids": ["SRC-38"]
+    },
+    {
+      "id": "RA-12",
+      "file_and_lines": "Repository-wide (EXECUTIVE_SUMMARY.md vs EXECUTIVE-SUMMARY.md; docs/, site/, portal/, ladder/, repatriate/, briefing/, verify-d5d1f860/)",
+      "severity": "low",
+      "finding": "Parallel non-overlapping sessions created two root executive summaries, different method groupings (22 / 20 / 18 / 17 / 23), and two reference FX rates (6.90 modeled in ladder/ vs. 7.129 IRS 2025 yearly average elsewhere).",
+      "official_verification": "IRS publishes 7.129 CNY/USD as the 2025 China yearly average and notes it has no official exchange rate.",
+      "disposition": "Documented transparently so readers understand why counts and reference conversions differ across directories.",
+      "source_ids": ["SRC-25"]
+    },
+    {
+      "id": "RA-13",
+      "file_and_lines": "README.md L57",
+      "severity": "low",
+      "finding": "Shared project README.md contains a hardcoded session-specific sentence ('This session uses the fixed Arena-assigned branch arena/e62a2cd8-china2').",
+      "official_verification": "Repository history shows multiple parallel Arena branches merge into main.",
+      "disposition": "Logged in audit rather than rewriting another session's prose.",
+      "source_ids": ["SRC-01"]
+    },
+    {
+      "id": "RA-14",
+      "file_and_lines": "Open GitHub PRs #39 (arena/c9cc56a6-china2) & #41 (arena/dc9b9512-china2)",
+      "severity": "low",
+      "finding": "Two older open PRs (>3 hours without commits) report mergeable=CONFLICTING against main after subsequent integrations landed.",
+      "official_verification": "Confirmed via GitHub PR metadata; their underlying requirements (23+ routes, § 988 analysis, Oct 2026 HSBC tariff, $10k–$400k cost ladder) are fully covered on main.",
+      "disposition": "Left untouched per branch-ownership rules and flagged for maintainer cleanup.",
+      "source_ids": ["SRC-38"]
+    }
+  ],
+  "flags": [
+    {
+      "id": "FL-01",
+      "severity": "high",
+      "title": "Account-holder private facts, origin of CNY, and prior tax filings are unknown",
+      "blank_fields": "Personal PRC tax owed, U.S. residual tax owed, individual route eligibility",
+      "explanation": "Whether the stuck CNY came from already-taxed salary, untaxed consulting/business receipts, apartment sale proceeds, inheritance, company retained earnings, or previously converted USD — plus your China residency days and U.S. tax/FBAR history — determines both legal eligibility and actual tax owed. Nothing is inferred.",
+      "source_ids": ["SRC-03", "SRC-05", "SRC-19", "SRC-28"]
+    },
+    {
+      "id": "FL-02",
+      "severity": "high",
+      "title": "Executable bank CNY→USD FX spread is unconfirmed in official/static sources",
+      "blank_fields": "Bank FX Spread (USD), All-In Total Cost (USD), Net USD Received",
+      "explanation": "Chinese and international banks quote CNY→USD telegraphic-transfer selling rates (现汇卖出价) dynamically throughout the trading day and do not publish a fixed basis-point spread in static regulatory or tariff documents. All FX spread and all-in net USD columns are therefore left strictly blank.",
+      "source_ids": ["SRC-25", "SRC-27", "SRC-38"]
+    },
+    {
+      "id": "FL-03",
+      "severity": "medium",
+      "title": "Correspondent / intermediary SWIFT lifting fees (under SHA) and U.S. receiving wire fees are unconfirmed",
+      "blank_fields": "Intermediary / U.S. Receiving Bank Fee (USD)",
+      "explanation": "HSBC China Tariff Important Note 7 explicitly states its charges exclude fees collected by other institutions, overseas HSBC Group members, or agent/correspondent banks. Even under Pay Exact (OUR, +CNY 200), any overseas bank shortfall remains collectible from the remitter.",
+      "source_ids": ["SRC-38"]
+    },
+    {
+      "id": "FL-04",
+      "severity": "medium",
+      "title": "Wise From-CNY percentage and fixed fee schedule is quoted only in-app",
+      "blank_fields": "Wise Published Fee (USD) for M03 & M04",
+      "explanation": "Wise's official CNY help guide confirms eligibility (<=3-year tax records, non-mainland passport, own account) and batch caps (CNY 300,000 bank app / CNY 50,000 Alipay), but directs users to set up a live transfer in-app to view exact fees.",
+      "source_ids": ["SRC-39"]
+    },
+    {
+      "id": "FL-05",
+      "severity": "medium",
+      "title": "Notarization, apostille, translation, and international courier fees for M05 proxy handling are unconfirmed",
+      "blank_fields": "Proxy / Apostille / Courier Cost (USD) for M05",
+      "explanation": "While SAFE rules authorize entrusting salary FX purchase/remittance to an agent, third-party notary, apostille, and courier charges vary by U.S. state and PRC branch requirements and are left blank.",
+      "source_ids": ["SRC-03", "SRC-09"]
+    },
+    {
+      "id": "FL-06",
+      "severity": "high",
+      "title": "Statutory vs. operational definition of 'domestic individual' (境内个人) and USD 50,000 purchase quota",
+      "blank_fields": "M06 Quota Eligibility without PRC Permanent Resident ID",
+      "explanation": "State Council Decree 532 Art. 52(2) defines 境内个人 to include foreigners continuously residing in China >=1 year, whereas PBOC Decree [2006] No. 3 Art. 37 and SAFE Tianjin 2024 Case 9 restrict facilitated annual USD 50,000 FX PURCHASE (购汇) for foreigners to holders of a PRC Foreign Permanent Resident ID Card.",
+      "source_ids": ["SRC-01", "SRC-02", "SRC-07"]
+    },
+    {
+      "id": "FL-07",
+      "severity": "medium",
+      "title": "Zero published counter banknote fee ($0.00) does NOT mean zero all-in cash cost",
+      "blank_fields": "Cash FX Spread & International Travel Cost for M08, M17, M18",
+      "explanation": "HSBC China publishes 'Free' for counter foreign-currency banknote withdrawal (2.2.2.1) and group cash exchange (2.2.2.2), but explicitly applies cash buy/sell board rates (wider than telegraphic rates) and does not include airfare, insurance, or offshore exchange spreads.",
+      "source_ids": ["SRC-11", "SRC-12", "SRC-38"]
+    },
+    {
+      "id": "FL-08",
+      "severity": "medium",
+      "title": "PRC real-estate sale taxes depend on city, holding period, original cost basis, and residential status",
+      "blank_fields": "Underlying Property-Sale Tax (USD) for M09",
+      "explanation": "PRC IIT Law Art. 3(3) sets a 20% flat rate on net property-transfer gain, while local VAT/deed/land-appreciation exemptions depend on holding years and self-use status, and U.S. gain depends on historical USD basis and IRC § 121 eligibility.",
+      "source_ids": ["SRC-15", "SRC-19", "SRC-23"]
+    },
+    {
+      "id": "FL-09",
+      "severity": "medium",
+      "title": "USD fee illustrations use IRS 2025 yearly average (7.129 CNY/USD) and HSBC China's published tariff only",
+      "blank_fields": "Other PRC Domestic Bank Tariffs (BOC / ICBC / CMB / CCB)",
+      "explanation": "If your account is at a state-owned PRC bank rather than HSBC China, its counter telegraphic-transfer commission and cable charge follow that bank's own published tariff. Moreover, 7.129 CNY/USD is a historical 2025 tax-translation average, not today's spot rate.",
+      "source_ids": ["SRC-25", "SRC-38"]
+    },
+    {
+      "id": "FL-10",
+      "severity": "low",
+      "title": "HSBC China tariff PDF contains mixed effective-date headers and segment eligibility conditions",
+      "blank_fields": "Unqualified Premier Monthly Fee / Post-Mar-2026 Advance Availability",
+      "explanation": "Cover page states effective 31 Oct 2026 while certain internal Chinese headers say 2024年9月12日生效; Qualified Premier requires CNY 500,000 TRB (or overseas Home-Country Premier), and new Advance applications were restricted on 18 Mar 2026.",
+      "source_ids": ["SRC-38"]
+    },
+    {
+      "id": "FL-11",
+      "severity": "medium",
+      "title": "Corporate EIT, statutory reserve, CPA audit fees, and U.S. CFC (Form 5471 / GILTI) impacts on M12 & M13",
+      "blank_fields": "Pre-Dividend Corporate Tax & Audit Fees; U.S. Residual Tax after FTC",
+      "explanation": "While the 10% U.S.–China Treaty Art. 9(2) dividend withholding rate and HSBC entity wire fee ($33.67–$159.91) are published, corporate pre-dividend taxes, CPA audit fees, and U.S. Subpart F/GILTI inclusions depend on entity facts.",
+      "source_ids": ["SRC-20", "SRC-23", "SRC-28", "SRC-38"]
+    },
+    {
+      "id": "FL-12",
+      "severity": "low",
+      "title": "Commercial FX settlement-account tariffs for registered individual foreign-trade operators (M14) are unpublished here",
+      "blank_fields": "M14 Bank Fee & Spread",
+      "explanation": "SAFE manages M14 settlement accounts under institutional rules; bank corporate/institutional trade settlement tariffs vary by bank and are left blank.",
+      "source_ids": ["SRC-03", "SRC-04"]
+    },
+    {
+      "id": "FL-13",
+      "severity": "medium",
+      "title": "Mainland card-issuer overseas ATM / POS fees and U.S. ATM operator surcharges are unconfirmed",
+      "blank_fields": "M15 ATM Fees & M16 Card POS Fees",
+      "explanation": "Per-withdrawal issuer commissions, UnionPay/Visa/Mastercard conversion spreads, and U.S. ATM surcharges across up to 286 withdrawals ($400k) vary by card issuer and ATM operator and are left blank.",
+      "source_ids": ["SRC-10"]
+    },
+    {
+      "id": "FL-14",
+      "severity": "low",
+      "title": "RMB 20,000 cross-border cash limit verified from official PBOC Q&A rather than original Gazette decree text",
+      "blank_fields": "Offshore CNH Cash Spread for M18",
+      "explanation": "PBOC's official English Q&A directly confirms the RMB 20,000 per person per trip limit (marked verified-limited because it is an official PBOC Q&A summary of Public Notice [2004] No. 18).",
+      "source_ids": ["SRC-12"]
+    },
+    {
+      "id": "FL-15",
+      "severity": "medium",
+      "title": "Western Union China bank-account payout unavailable and static fee/limit schedule unpublished",
+      "blank_fields": "M19 Batches, Fee & FX Spread",
+      "explanation": "Western Union China's live page states transfers to recipient bank accounts are 'temporarily unavailable' and directs customers to partner banks (BOC, CEB, SPDB, PSBC) for pricing and local regulatory limits.",
+      "source_ids": ["SRC-40"]
+    },
+    {
+      "id": "FL-16",
+      "severity": "high",
+      "title": "Closed-loop investment channels (GBA Wealth Management Connect / QDII) cannot exit to U.S. accounts and create U.S. PFIC risk",
+      "blank_fields": "USD Delivered to U.S. Bank ($0 — Closed Loop)",
+      "explanation": "PBOC enforces closed-loop fund remittance pipes (资金闭环汇划管道) on GBA Wealth Management Connect, and non-U.S. mutual funds generally trigger punitive U.S. PFIC (Form 8621) rules.",
+      "source_ids": ["SRC-22", "SRC-32"]
+    },
+    {
+      "id": "FL-17",
+      "severity": "high",
+      "title": "Statutory 30%–100% PRC fines on M21–M23 are legal penalty exposure, NOT a lawful transaction price",
+      "blank_fields": "Lawful Fee (Inapplicable — Prohibited Routes)",
+      "explanation": "State Council Decree 532 Arts. 39, 40, and 45 set administrative fines up to 30% (and 30%–100% in serious cases) plus criminal liability. Shown in cost tables strictly as statutory penalty exposure.",
+      "source_ids": ["SRC-01", "SRC-02", "SRC-21"]
+    },
+    {
+      "id": "FL-18",
+      "severity": "low",
+      "title": "U.S. Code (2024 GPO edition), eCFR (authoritative online update), State income taxes, and non-authoritative PRC English translations",
+      "blank_fields": "U.S. State Income Tax (0%–13.3%+ depending on state domicile)",
+      "explanation": "26 U.S.C. § 988 was verified from the 2024 GPO U.S. Code edition; 31 CFR § 1010.821 from eCFR (current to 2026-11-06); many U.S. states do NOT allow a Foreign Tax Credit for PRC taxes; and PRC English translations specify that Chinese text prevails.",
+      "source_ids": ["SRC-10", "SRC-24", "SRC-31"]
+    }
+  ]
+}
