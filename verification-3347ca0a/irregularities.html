@@ -127,7 +127,7 @@ footer.site a{color:#9de0c7}
 <main class="wrap">
 <span class="eyebrow">Whole-repository review · 2026-11-11</span>
 <h1>What is inconsistent in here, and what it changes.</h1>
-<p class="lede">Whole repository as checked out on the integration branch: 110 HTML pages, 20 research/site directories, 1 root landing page. Findings are published, not silently “fixed” in other sessions’ files:
+<p class="lede">Whole repository as checked out on the integration branch: 111 HTML pages, 20 research/site directories, 1 root landing page. Findings are published, not silently “fixed” in other sessions’ files:
 where a number conflicts, this page states which one it uses and why.</p>
 
 <div class="notice"><strong>Nothing here is a failed legal claim.</strong> Most findings are organisational: several
@@ -191,7 +191,7 @@ that can actually mislead money decisions are the rate base (<a href="#IR-05">IR
         <tr id="IR-06">
           <th scope="row" data-label="ID">IR-06</th>
           <td data-label="Severity"><span class="pill warn">gap</span></td>
-          <td data-label="Finding">On a point-in-time scan, 1,384 table rows across 34 pages carry no direct official-domain URL inside their own static row.</td>
+          <td data-label="Finding">On a point-in-time scan, 1,423 table rows across 36 pages carry no direct official-domain URL inside their own static row (15 of them are this site's declared navigational archive rows and 7 cite repository files).</td>
           <td data-label="Evidence">audit-92d12752/results.json, regenerated on 2026-11-11 after these pages were added: 111 pages, 8,298 table rows scanned, 1,423 candidate rows on 36 pages. Of these, 15 are this page's own archive index (declared navigational rows) and 7 are this audit page's internal-evidence rows, which cite repository files rather than an external document.</td>
           <td data-label="What it changes for a reader">Structural only: it neither proves the claim is unsupported nor checks link liveness. Every claim-bearing row on this page and on the verification page carries an inline official link; the remaining candidates are navigational or cite repository files by design.</td>
           <td data-label="How it was checked">Snapshot re-read from audit-92d12752/results.json on 2026-11-11; not re-run.</td>
@@ -201,7 +201,7 @@ that can actually mislead money decisions are the rate base (<a href="#IR-05">IR
           <th scope="row" data-label="ID">IR-07</th>
           <td data-label="Severity"><span class="pill warn">stale</span></td>
           <td data-label="Finding">Pages carry four different review dates.</td>
-          <td data-label="Evidence">docs/* pages carry '07 NOV 2026' (datetime 2026-11-07); transfer-guide carries 2026-11-10; the root page carried '10 November 2026'; this page is 2026-11-11.</td>
+          <td data-label="Evidence">docs/* pages carry '07 NOV 2026' (datetime 2026-11-07); transfer-guide carries 2026-11-10; the previous root page carried '10 November 2026'; the integration pages are 2026-11-11.</td>
           <td data-label="What it changes for a reader">A reader cannot tell whether a fee or rule shown on a page has been checked since the HSBC tariff changed on 31 October 2026 or since the last source pass.</td>
           <td data-label="How it was checked">Dates read from the page headers on 2026-11-11.</td>
           <td class="src" data-label="Link"><a class="source" href="https://github.com/sassnarep3-star/China2/tree/main/docs" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
@@ -260,8 +260,9 @@ that can actually mislead money decisions are the rate base (<a href="#IR-05">IR
   each landing page was extracted with a pattern scan, and the numbers were compared rather than eyeballed.</li>
   <li><strong>Recompute money.</strong> Fees, caps and year counts were recomputed from the tariff text in
   <code>build.py</code> and re-derived independently in <code>verify.py</code>.</li>
-  <li><strong>Check links locally.</strong> All internal <code>href</code>/<code>src</code> paths across the
-  110 HTML pages were resolved against the filesystem; none were broken on 2026-11-11.</li>
+  <li><strong>Check links locally.</strong> Every internal <code>href</code>/<code>src</code> path on the three
+  generated pages was resolved against the filesystem, and the whole tree was re-scanned for broken internal links
+  (111 HTML pages, 0 broken on 2026-11-11).</li>
   <li><strong>Read the corrections.</strong> Where a page corrects an earlier figure (the HSBC USD 7 wording), the
   occurrence list was generated so the correction itself is auditable.</li>
   <li><strong>State the boundary.</strong> A structural scan does not prove a claim is unsupported, and a retrieval does
