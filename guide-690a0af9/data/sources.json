@@ -1,0 +1,390 @@
+[
+ {
+  "id": "S01",
+  "group": "Bank rates and fees",
+  "publisher": "Bank of China",
+  "title": "中国银行外汇牌价 (BOC FX board), USD row, published 2026/11/11 20:39:19",
+  "url": "https://www.boc.cn/sourcedb/whpj/",
+  "read": "2026-11-11",
+  "locator": "Table row 美元; RMB per 100 USD",
+  "finding": "USD: 现汇买入价 (bank buys USD transfer) 665.91; 现汇卖出价 (bank sells USD transfer) 668.71; 现钞卖出价 (bank sells USD cash) 668.71; 中行折算价 671.91. The board changes during the day and is for reference; the bank's actual dealing rate governs.",
+  "figures": {
+   "usd_buy_tt_per100": 665.91,
+   "usd_sell_tt_per100": 668.71,
+   "usd_sell_cash_per100": 668.71,
+   "boc_conversion_per100": 671.91
+  }
+ },
+ {
+  "id": "S02",
+  "group": "Bank rates and fees",
+  "publisher": "HSBC Bank (China)",
+  "title": "HSBC China exchange-rate board (updated 2026-11-10)",
+  "url": "https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html",
+  "read": "2026-11-11",
+  "locator": "Row USD; RMB per 1 USD",
+  "finding": "USD: bank sells (TT and cash) 6.7030239; bank buys TT 6.6362813; bank buys cash 6.5997540. Board dated 2026-11-10.",
+  "figures": {
+   "usd_sell_tt": 6.7030239,
+   "usd_buy_tt": 6.6362813
+  }
+ },
+ {
+  "id": "S03",
+  "group": "Bank rates and fees",
+  "publisher": "Bank of China",
+  "title": "BOC e-banking fee schedule — cross-border telegraphic transfer",
+  "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+  "read": "2026-11-11",
+  "locator": "Row 跨境汇款 (from 2014-11-01)",
+  "finding": "Online cross-border remittance: 0.1% of amount, minimum CNY 50, maximum CNY 260, plus cable fee CNY 80 (to Hong Kong, Macao, Taiwan) or CNY 150 (other regions). Branches may offer local discounts.",
+  "figures": {
+   "pct": 0.001,
+   "min_cny": 50,
+   "max_cny": 260,
+   "cable_other_cny": 150
+  }
+ },
+ {
+  "id": "S04",
+  "group": "Bank rates and fees",
+  "publisher": "HSBC Bank (China)",
+  "title": "Tariff of account services for personal customers (v2)",
+  "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+  "read": "2026-11-11",
+  "locator": "Outward telegraphic transfer; Global Transfer (2.2.6.1); Premier monthly fee; header",
+  "finding": "Outward TT: 0.1%, minimum CNY 100, maximum CNY 500, plus cable CNY 120. Global Transfer to own HSBC account: Premier free, Advance USD 20. Premier service fee CNY 300/month unless total relationship balance is at least CNY 500,000. New Advance accounts restricted since 18 Mar 2026. The header shows two different dates (31 Oct 2026 and 2024年9月12日).",
+  "figures": {
+   "pct": 0.001,
+   "min_cny": 100,
+   "max_cny": 500,
+   "cable_cny": 120,
+   "gt_premier_usd": 0,
+   "gt_advance_usd": 20,
+   "premier_monthly_cny": 300,
+   "premier_waiver_cny": 500000
+  }
+ },
+ {
+  "id": "S05",
+  "group": "Bank rates and fees",
+  "publisher": "Wise (licensed provider; help centre)",
+  "title": "Guide to CNY transfers",
+  "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+  "read": "2026-11-11",
+  "locator": "Sections: who can send; limits",
+  "finding": "Sending CNY out of China is for non-mainland customers with a China tax record from the last 3 years; money goes only to the sender's own account; per-transfer limit CNY 300,000 by bank app, CNY 50,000 by Alipay; overall limit is roughly salary minus tax. No CNY→USD fee figure was read on this page.",
+  "figures": {
+   "per_transfer_bank_cny": 300000,
+   "per_transfer_alipay_cny": 50000
+  }
+ },
+ {
+  "id": "S06",
+  "group": "Reference exchange rates",
+  "publisher": "Federal Reserve Board",
+  "title": "H.10 Foreign Exchange Rates (release of 2026-11-09)",
+  "url": "https://www.federalreserve.gov/releases/h10/current/",
+  "read": "2026-11-11",
+  "locator": "Row CHINA -- YUAN, CNY per USD",
+  "finding": "Noon buying rates in New York, CNY per USD: Nov 2 6.6480; Nov 3 6.6701; Nov 4 6.6731; Nov 5 6.6680; Nov 6 6.6760.",
+  "figures": {
+   "nov6": 6.676
+  }
+ },
+ {
+  "id": "S07",
+  "group": "Reference exchange rates",
+  "publisher": "IRS",
+  "title": "Yearly average currency exchange rates",
+  "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+  "read": "2026-11-11",
+  "locator": "Table row China (yuan)",
+  "finding": "China: 2025 7.129; 2024 7.189; 2023 7.075 CNY per USD. The IRS has no official exchange rate and generally accepts any posted rate that is used consistently.",
+  "figures": {
+   "y2025": 7.129,
+   "y2024": 7.189,
+   "y2023": 7.075
+  }
+ },
+ {
+  "id": "S08",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE (国家外汇管理局)",
+  "title": "个人外汇管理办法实施细则 (汇发[2007]1号)",
+  "url": "https://www.safe.gov.cn/safe/2007/0105/5320.html",
+  "read": "2026-11-11",
+  "locator": "Arts. 2, 13, 14, 15, 20, 30",
+  "finding": "Art. 2: annual facilitation amount of USD 50,000 for settlement (结汇) and, separately, for purchase (购汇) by domestic individuals. Art. 13: foreign (境外) individuals buy FX for lawful RMB income with ID and income/tax proof. Art. 14: domestic individuals remit FX ≤ USD 50,000/day with ID. Art. 15: foreign individuals remit from FX savings with ID; cash ≤ USD 10,000/day. Art. 20: emigrant asset transfers. Art. 30: cash withdrawals over USD 10,000/day need SAFE filing."
+ },
+ {
+  "id": "S09",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE / State Council",
+  "title": "中华人民共和国外汇管理条例 (State Council Decree 532)",
+  "url": "https://www.safe.gov.cn/safe/2008/0806/5321.html",
+  "read": "2026-11-11",
+  "locator": "Arts. 5, 39, 40, 45, 52(2)",
+  "finding": "Art. 5: current international payments and transfers are not restricted. Art. 39: FX evasion (逃汇) — fine up to 30% of the amount; serious cases 30% up to 100%. Art. 40: illegal arbitrage (套汇) — same scale. Art. 45: private FX trading or disguised trading — fine up to 30% (more if serious). Art. 52(2): 境内个人 means PRC citizens and foreigners resident in China for one continuous year or more.",
+  "figures": {
+   "fine_ordinary_max": 0.3,
+   "fine_serious_max": 1.0
+  }
+ },
+ {
+  "id": "S10",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE Tianjin branch",
+  "title": "Q&A: foreigners buying FX with PRC labour income (2026-07-13)",
+  "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+  "read": "2026-11-11",
+  "locator": "Answer text, citing 汇发〔2020〕14号 Art. 59",
+  "finding": "A foreigner's lawful RMB pay from work in China can be bought as FX at a bank with ID plus supporting documents, including tax records, under 汇发〔2020〕14号 Art. 59."
+ },
+ {
+  "id": "S11",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE Tianjin branch",
+  "title": "Q&A: foreign permanent-residence card holders (2024-06-21)",
+  "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
+  "read": "2026-11-11",
+  "locator": "Answer text",
+  "finding": "Holders of a PRC foreigner permanent-residence ID card receive the annual facilitation quota like domestic individuals."
+ },
+ {
+  "id": "S12",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE",
+  "title": "汇发[2014]2号 §VI — emigrant property transfers (effective 2014-02-10)",
+  "url": "https://www.safe.gov.cn/safe/2014/0124/5476.html",
+  "read": "2026-11-11",
+  "locator": "Section 六",
+  "finding": "Emigrant property transfer is approved by the SAFE office where the applicant's original household registration was; the staged-remittance requirement is abolished (one or several remittances allowed); filing with SAFE HQ for transfers over CNY 500,000 is removed; notarisation is no longer required."
+ },
+ {
+  "id": "S13",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "PBOC (gov.cn gazette)",
+  "title": "个人财产对外转移售付汇管理暂行办法 (PBOC 2004 No.16)",
+  "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+  "read": "2026-11-11",
+  "locator": "Arts. 6, 11, 12",
+  "finding": "Original 2004 measures. Art. 6 staged remittance (later superseded by 汇发[2014]2号). Art. 11: funds go only to the applicant's own overseas account; no cash withdrawal. Art. 12: property that is restricted or whose lawful source cannot be shown is refused."
+ },
+ {
+  "id": "S14",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE Hebei branch",
+  "title": "移民财产转移 service guide (per 汇发〔2024〕12号 §6.4)",
+  "url": "https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf",
+  "read": "2026-11-11",
+  "locator": "Fee, time limits, documents",
+  "finding": "Free of charge. Acceptance 5 working days; decision 20 working days. Result: a single-use 《资本项目外汇业务核准件》. Documents: proof of hukou cancellation, foreign settlement proof, proof of source of income and title to property, tax certificate. Public officials applying for more than CNY 1 million may be referred to supervisory authorities.",
+  "figures": {
+   "fee_cny": 0,
+   "accept_days": 5,
+   "decide_days": 20
+  }
+ },
+ {
+  "id": "S15",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE",
+  "title": "汇发[2015]49号 — personal FX management, \"watch list\" (关注名单)",
+  "url": "https://www.safe.gov.cn/safe/2015/1231/5442.html",
+  "read": "2026-11-11",
+  "locator": "Section 二 (一)–(三)",
+  "finding": "Individuals may not split transactions to evade quota and genuineness checks. Lending one's own quota: warning first, watch list on repeat. Using another person's quota: watch list immediately. Watch-list period: the year of listing plus the following 2 years, with documentary proof required for every settlement or purchase.",
+  "quote": "个人在办理外汇业务时，应当遵守个人外汇管理有关规定，不得以分拆等方式规避额度及真实性管理。"
+ },
+ {
+  "id": "S16",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE (English)",
+  "title": "Circular on large-sum overseas cash withdrawals with bank cards (effective 2018-01-01)",
+  "url": "https://www.safe.gov.cn/en/2017/1230/1397.html",
+  "read": "2026-11-11",
+  "locator": "Sections I and IV",
+  "finding": "Overseas cash withdrawals with domestic cards: at most RMB 100,000 per person per calendar year; exceeding it suspends overseas withdrawals for the current and next year. Daily ceiling RMB 10,000 per card.",
+  "quote": "the sum of withdrawals using the bank cards under the name of the individual (including supplementary cards) shall not exceed the equivalent of RMB 100,000 in every civil year.",
+  "figures": {
+   "annual_cny": 100000,
+   "daily_card_cny": 10000
+  }
+ },
+ {
+  "id": "S17",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE (gov.cn gazette)",
+  "title": "携带外币现钞出入境管理暂行办法 (汇发〔2003〕102号)",
+  "url": "https://www.gov.cn/gongbao/content/2004/content_63085.htm",
+  "read": "2026-11-11",
+  "locator": "Exit thresholds; 携带证 validity",
+  "finding": "Leaving China: up to USD 5,000 equivalent — no permit; USD 5,000–10,000 — bank-issued 携带证; over USD 10,000 — SAFE-issued 携带证, special circumstances only. A 携带证 is valid 30 days. Entry: declare over USD 5,000.",
+  "figures": {
+   "free_usd": 5000,
+   "bank_permit_usd": 10000
+  }
+ },
+ {
+  "id": "S18",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "PBOC",
+  "title": "银发〔2026〕42号 — virtual-currency risk notice (2026-02-06)",
+  "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+  "read": "2026-11-11",
+  "locator": "Sections 1–3; repeal clause",
+  "finding": "Virtual-currency business activity, including stablecoins, is illegal financial activity; financial and payment institutions may not provide services for it; overseas providers may not serve users in China. Repeals 银发〔2021〕237号."
+ },
+ {
+  "id": "S19",
+  "group": "PRC tax",
+  "publisher": "State Taxation Administration / SAFE",
+  "title": "Announcement 2013 No.40 — tax filing for outward payments",
+  "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
+  "read": "2026-11-11",
+  "locator": "§1, §3(13), §4",
+  "finding": "Single outward payments over USD 50,000 for services, income and similar items need a tax filing. A domestic individual's own FX funds remitted for personal use are exempt (§3(13)). Foreign individuals follow the personal FX rules (§4)."
+ },
+ {
+  "id": "S20",
+  "group": "PRC tax",
+  "publisher": "Shanghai Tax Service (STA)",
+  "title": "个人所得税法 (IIT Law)",
+  "url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+  "read": "2026-11-11",
+  "locator": "Arts. 1, 3, 16",
+  "finding": "Art. 1: residence test of 183 days in a tax year. Art. 3: comprehensive income 3%–45% progressive; interest, dividends, property lease and transfer income 20%. Art. 16: foreign-currency income is converted into RMB at the central parity rate."
+ },
+ {
+  "id": "S21",
+  "group": "US reporting",
+  "publisher": "IRS",
+  "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+  "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+  "read": "2026-11-11",
+  "locator": "Who must file; due date",
+  "finding": "A US person must file FinCEN Form 114 when the aggregate value of foreign financial accounts exceeds USD 10,000 at any time during the calendar year. Due April 15 with automatic extension to October 15; filed electronically through BSA E-Filing.",
+  "figures": {
+   "threshold_usd": 10000
+  }
+ },
+ {
+  "id": "S22",
+  "group": "US reporting",
+  "publisher": "eCFR (National Archives)",
+  "title": "31 CFR 1010.821 — penalty adjustment table",
+  "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+  "read": "2026-11-11",
+  "locator": "Rows 31 U.S.C. 5321(a)(5)(B)(i) and (C)",
+  "finding": "FBAR civil penalty maximums after inflation adjustment: non-wilful USD 16,536; wilful USD 165,353 (the table's dollar figure). The table header (viewed as of 2026-11-09) still refers to 2025 adjustments.",
+  "figures": {
+   "nonwillful_usd": 16536,
+   "willful_usd": 165353
+  }
+ },
+ {
+  "id": "S23",
+  "group": "US reporting",
+  "publisher": "IRS",
+  "title": "Comparison of Form 8938 and FBAR requirements",
+  "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+  "read": "2026-11-11",
+  "locator": "Reporting thresholds row; penalties row",
+  "finding": "Form 8938 thresholds (last day / any time): living in US single USD 50,000 / 75,000; married filing jointly 100,000 / 150,000; living abroad single 200,000 / 300,000; joint 400,000 / 600,000. Failure-to-file penalty USD 10,000, up to USD 50,000 more after notice (USD 60,000 total).",
+  "figures": {
+   "us_single_ye": 50000,
+   "us_single_any": 75000,
+   "abroad_single_ye": 200000,
+   "abroad_single_any": 300000
+  }
+ },
+ {
+  "id": "S24",
+  "group": "US reporting",
+  "publisher": "IRS",
+  "title": "Gifts from foreign person",
+  "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+  "read": "2026-11-11",
+  "locator": "Reporting thresholds",
+  "finding": "Form 3520 is required when a US person receives more than USD 100,000 in a year from a nonresident alien individual as gifts; for gifts from foreign corporations or partnerships the 2026 threshold is USD 20,573.",
+  "figures": {
+   "nra_usd": 100000,
+   "corp_2026_usd": 20573
+  }
+ },
+ {
+  "id": "S25",
+  "group": "US tax",
+  "publisher": "IRS",
+  "title": "Instructions for Form 2555 (2025/2026 edition)",
+  "url": "https://www.irs.gov/instructions/i2555",
+  "read": "2026-11-11",
+  "locator": "What's New",
+  "finding": "Maximum foreign earned income exclusion for 2026: USD 132,900.",
+  "figures": {
+   "feie_2026": 132900
+  }
+ },
+ {
+  "id": "S26",
+  "group": "US tax",
+  "publisher": "IRS",
+  "title": "Rev. Proc. 2026-35 — 2027 inflation adjustments",
+  "url": "https://www.irs.gov/pub/irs-drop/rp-26-35.pdf",
+  "read": "2026-11-11",
+  "locator": "Sections 3.41, 3.46(1), 3.51",
+  "finding": "FEIE for tax years beginning in 2027: USD 137,300 (§3.41). Gift-tax annual exclusion 2027: USD 20,000 (§3.46(1)). Notice of large gifts from foreign persons (§6039F) threshold 2027: USD 21,240.31 (§3.51).",
+  "quote": "For taxable years beginning in 2027, the foreign earned income exclusion amount under § 911(b)(2)(D)(i) is $137,300.",
+  "figures": {
+   "feie_2027": 137300,
+   "gift_6039f_2027": 21240.31
+  }
+ },
+ {
+  "id": "S27",
+  "group": "US tax",
+  "publisher": "GovInfo (US Code)",
+  "title": "26 U.S.C. §988 — foreign currency transactions",
+  "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+  "read": "2026-11-11",
+  "locator": "§988(e)(1)–(2)",
+  "finding": "§988 applies to an individual's transactions only to the extent expenses would be deductible under §162 or §212; for personal transactions, gain from exchange-rate changes is not recognised if it does not exceed USD 200 per transaction (§988(e)(2)). Gains above USD 200 are not covered by that exclusion.",
+  "figures": {
+   "de_minimis_usd": 200
+  }
+ },
+ {
+  "id": "S28",
+  "group": "US reporting",
+  "publisher": "US Customs and Border Protection",
+  "title": "Money and other monetary instruments",
+  "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
+  "read": "2026-11-11",
+  "locator": "Reporting requirement",
+  "finding": "Travellers carrying more than USD 10,000 (or the foreign equivalent) in currency or monetary instruments into or out of the United States must report it on FinCEN Form 105.",
+  "figures": {
+   "threshold_usd": 10000
+  }
+ },
+ {
+  "id": "S29",
+  "group": "US tax",
+  "publisher": "IRS",
+  "title": "Foreign tax credit",
+  "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+  "read": "2026-11-11",
+  "locator": "Overview; who can claim",
+  "finding": "Credit is claimed on Form 1116 for income taxes paid to a foreign country; no credit for taxes on income excluded under the FEIE; only the tax actually owed (after any treaty reduction) qualifies."
+ },
+ {
+  "id": "S30",
+  "group": "US tax",
+  "publisher": "IRS",
+  "title": "Streamlined filing compliance procedures",
+  "url": "https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures",
+  "read": "2026-11-11",
+  "locator": "Eligibility",
+  "finding": "For taxpayers who certify that failure to report foreign assets and pay tax was non-wilful; not available to taxpayers under civil examination or criminal investigation."
+ }
+]

@@ -1,0 +1,27 @@
+name: verify-guide-690a0af9
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Re-derive costs from the source ledger
+        run: python3 guide-690a0af9/model.py
+      - name: Rebuild every page
+        run: python3 guide-690a0af9/build.py
+      - name: Independent verification (sources, arithmetic, blanks, links)
+        run: python3 guide-690a0af9/verify.py
+      - name: Build must be reproducible (clean tree after regeneration)
+        run: git diff --exit-code
