@@ -52,7 +52,7 @@
  },
  {
   "id": "R06",
-  "where": "briefing/, repatriate/, transfer-guide/, study-8f529c94/ (48 pages cite 7.129)",
+  "where": "briefing/, repatriate/, transfer-guide/, study-8f529c94/ (50 pages cite 7.129)",
   "claim": "Dollar figures use RMB 7.129 per dollar, the IRS 2025 average.",
   "result": "Confirmed but stale for pricing",
   "note": "The IRS figure is right. Bank of China sold dollars at 6.6911 today, so RMB fees look 6.5% cheaper in those tables than they are now: the RMB 620 HSBC cap is USD 86.97 at 7.129 and USD 92.66 at 6.6911.",
@@ -157,20 +157,21 @@
   "where": "Repository root",
   "claim": "One executive summary and one starting page.",
   "result": "Irregular",
-  "note": "There are ten executive-summary files, two at the root with near-identical names, and the README marked two different pages 'start here' and a third as newest. Method counts differ between views (15 to 23). Corrected in this pass: this dashboard is the single front door, and earlier views are kept and listed on the landing page.",
+  "note": "There are ten executive-summary files, two at the root with near-identical names, and the README marked two different pages 'start here'. Method counts differ between sets (15 to 23). During this pass the integration session rebuilt the root landing page as the one starting point; the README now points to it and this dashboard is linked from it.",
   "src": [
    "S01"
   ]
  },
  {
   "id": "R17",
-  "where": "index.html (root)",
-  "claim": "'Current all-in cost — / unverified'.",
-  "result": "Updated",
-  "note": "An account quote is still unknown. The landing page now shows the published-price estimate with its timestamp and says what it leaves out.",
+  "where": "index.html (root), verification-3347ca0a/",
+  "claim": "The FBAR penalty table and the PRC tax rates were retrieved but not read out, so they are not republished as verified.",
+  "result": "Now read",
+  "note": "This pass read both: the FBAR rows in 31 CFR 1010.821 (USD 16,536 and USD 165,353) and Article 3 of the PRC tax law (3% to 45%, 5% to 35%, 20%). The treaty's dividend article itself is still not re-read; only the letter of submittal was.",
   "src": [
-   "S17",
-   "S18"
+   "S23",
+   "S14",
+   "S30"
   ]
  },
  {
@@ -178,7 +179,7 @@
   "where": "Open pull requests",
   "claim": "All work is merged.",
   "result": "Irregular",
-  "note": "Pull requests 55, 63, 65, 66 and 68 were open when this session started; 55 has conflicted since 10 November. They belong to other sessions and were not touched.",
+  "note": "Pull requests 55, 63, 65, 66 and 68 were open when this session started; 55 has conflicted since 10 November. They belong to other sessions and were not touched. Two integration claims, this one and another session's, overlapped on the root page; the earlier claim was honoured.",
   "src": [
    "S01"
   ]

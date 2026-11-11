@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repository audit · 12 findings · China Money</title>
+<meta name="description" content="Line-by-line audit of the CNY-to-USD research repository: duplicate sites, conflicting counts, rate bases, stale dates and rows without a direct official source.">
+<meta name="theme-color" content="#101d1a">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+:root{
+  --ink:#101d1a;--ink-2:#1d2f2a;--paper:#f6f5f0;--card:#ffffff;--line:#dfe3dd;
+  --muted:#5f7268;--accent:#0c6b58;--accent-2:#0a574a;--warn:#7a4a00;
+  --warn-bg:#fff6e0;--warn-line:#e8d3a0;--ok:#0c6b58;--bad:#8d2f23;--bad-bg:#fdeeec;
+  --pill:#eef3ef;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent-2)}
+a:hover{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(.9rem,3.5vw,2rem)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;background:#fff;padding:.5rem;z-index:20}
+
+header.site{background:var(--ink);color:#f2f4f0;padding:.85rem 0}
+header.site .wrap{display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.55rem;font-weight:750;letter-spacing:-.01em;color:#fff;text-decoration:none}
+.brand .mark{display:inline-grid;place-items:center;width:2rem;height:2rem;border-radius:.55rem;
+  background:#0c6b58;color:#fff;font-size:.95rem}
+.brand small{display:block;font-size:.66rem;letter-spacing:.14em;color:#9fb5ab;font-weight:600}
+.site-meta{font-size:.78rem;color:#b9c9c0;text-align:right}
+nav.site{background:#16281f;border-bottom:1px solid #213a2f;position:sticky;top:0;z-index:10}
+nav.site .wrap{display:flex;gap:.15rem;overflow-x:auto;padding:.35rem clamp(.9rem,3.5vw,2rem)}
+nav.site a{color:#cfe0d6;text-decoration:none;font-size:.82rem;font-weight:600;
+  padding:.5rem .7rem;border-radius:.5rem;white-space:nowrap}
+nav.site a:hover{background:#20372c;color:#fff}
+
+main{padding:1.4rem 0 3rem}
+h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.12;letter-spacing:-.02em;margin:.4rem 0 .6rem}
+h2{font-size:clamp(1.2rem,3.2vw,1.55rem);letter-spacing:-.01em;margin:2.2rem 0 .5rem}
+h3{font-size:1.02rem;margin:0 0 .3rem}
+p{margin:.5rem 0}
+.eyebrow{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);font-weight:750;margin-bottom:.2rem}
+.lede{font-size:1.06rem;color:#31463d;max-width:74ch}
+.muted{color:var(--muted);font-size:.85rem}
+
+.notice{background:var(--warn-bg);border:1px solid var(--warn-line);border-left:5px solid #b17a12;
+  border-radius:.7rem;padding:.85rem 1rem;margin:1rem 0;font-size:.9rem}
+.notice strong{color:var(--warn)}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.7rem;margin:1.3rem 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:.9rem 1rem}
+.kpi .label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0}
+.kpi .value{font-size:1.5rem;font-weight:780;letter-spacing:-.02em;margin:.25rem 0 .1rem;color:var(--ink)}
+.kpi .sub{font-size:.8rem;color:var(--muted);margin:0}
+
+.answers{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.75rem;margin:1rem 0}
+.answer{background:var(--card);border:1px solid var(--line);border-radius:.85rem;padding:1rem}
+.answer h3{color:var(--accent-2)}
+.answer p{font-size:.92rem;margin:.35rem 0}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:.8rem;background:var(--card);margin:.8rem 0}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:640px}
+caption{text-align:left;font-size:.8rem;color:var(--muted);padding:.7rem .8rem .2rem}
+th,td{text-align:left;padding:.6rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:#f0f3ef;font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:#3d5348;position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:#fbfbf8}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rowhead{font-weight:700}
+.blank{color:#9aa8a0;font-style:italic}
+.pill{display:inline-block;font-size:.7rem;font-weight:750;letter-spacing:.03em;
+  padding:.12rem .45rem;border-radius:999px;background:var(--pill);color:#2c4a3e;white-space:nowrap}
+.pill.ok{background:#e4f1eb;color:#075b49}
+.pill.warn{background:#fdf1d8;color:#7a4a00}
+.pill.bad{background:#fbe8e5;color:#8d2f23}
+.src{font-size:.76rem;white-space:nowrap}
+.src a{text-decoration:none;border-bottom:1px dotted var(--accent)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.7rem;margin:1rem 0}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:.85rem;
+  padding:.95rem 1rem;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px);color:var(--ink)}
+.card b{display:block;color:var(--accent-2);font-size:.98rem;margin-bottom:.15rem}
+.card span{font-size:.82rem;color:#42584d;font-weight:650;display:block}
+.card em{font-style:normal;font-size:.82rem;color:var(--muted);display:block;margin-top:.25rem}
+
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:1rem 0}
+ol.steps li{position:relative;padding:.7rem 0 .7rem 2.5rem;border-bottom:1px dashed var(--line);font-size:.93rem}
+ol.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:.65rem;
+  width:1.7rem;height:1.7rem;border-radius:50%;background:var(--accent);color:#fff;
+  display:grid;place-items:center;font-size:.8rem;font-weight:750}
+ol.steps li:last-child{border-bottom:0}
+
+footer.site{background:var(--ink);color:#d8e3dc;padding:1.6rem 0;font-size:.84rem}
+footer.site a{color:#9de0c7}
+.smallprint{font-size:.78rem;color:#a9bdb3}
+
+@media (max-width:720px){
+  table{min-width:0}
+  thead{position:absolute;left:-9999px}
+  tbody tr{display:block;border:1px solid var(--line);border-radius:.7rem;margin:.55rem;padding:.2rem .2rem .4rem;background:#fff}
+  tbody tr:nth-child(even){background:#fff}
+  tbody td,tbody th{display:flex;justify-content:space-between;gap:1rem;border:0;padding:.32rem .7rem;font-size:.86rem;text-align:right}
+  tbody td:before,tbody th[data-label]:before{content:attr(data-label);font-weight:700;color:var(--muted);
+    font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;text-align:left}
+  tbody td.num{justify-content:space-between}
+  .tablewrap{overflow:visible;border:0;background:transparent}
+  caption{padding:.2rem .55rem}
+}
+@media print{
+  nav.site{display:none}
+  body{background:#fff}
+  .card,.kpi,.answer{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark">¥</span><span>China Money<small>REPOSITORY AUDIT</small></span></a>
+  <div class="site-meta">Reviewed 2026-11-11<br>12 findings · 5 conflict · 2 gap · 3 resolved · 1 stale · 1 structure</div>
+</div></header>
+<nav class="site" aria-label="Sections"><div class="wrap"><a href="../index.html">← Dashboard</a><a href="index.html">Verification</a><a href="irregularities.html" aria-current="page">Repository audit</a><a href="../transfer-guide/audit.html">Route audit</a></div></nav>
+<main class="wrap">
+<span class="eyebrow">Whole-repository review · 2026-11-11</span>
+<h1>What is inconsistent in here, and what it changes.</h1>
+<p class="lede">Whole repository as checked out on the integration branch: 111 HTML pages, 20 research/site directories, 1 root landing page. Findings are published, not silently “fixed” in other sessions’ files:
+where a number conflicts, this page states which one it uses and why.</p>
+
+<div class="notice"><strong>Nothing here is a failed legal claim.</strong> Most findings are organisational: several
+correct answers written at different times, with different scope rules, none of them wrong on its own terms. The two
+that can actually mislead money decisions are the rate base (<a href="#IR-05">IR-05</a>) and the quota wording
+(<a href="#IR-11">IR-11</a>).</div>
+
+<div class="tablewrap">
+<table>
+<caption>12 findings · severity · evidence · consequence for the reader · how it was checked · source. A source of github.com means the evidence is a file in this repository, not an external official document; those rows make no external factual claim.</caption>
+<thead><tr>
+  <th scope="col">ID</th><th scope="col">Severity</th><th scope="col">Finding</th><th scope="col">Evidence</th>
+  <th scope="col">What it changes for a reader</th><th scope="col">How it was checked</th><th scope="col">Source</th>
+</tr></thead>
+<tbody>
+        <tr id="IR-01">
+          <th scope="row" data-label="ID">IR-01</th>
+          <td data-label="Severity"><span class="pill warn">structure</span></td>
+          <td data-label="Finding">Twenty separate research sites exist in one repository, each with its own landing page. The root page previously presented sixteen of them as equal cards.</td>
+          <td data-label="Evidence">20 directories contain HTML: docs (9 pages), site (11), portal (7), briefing (6), ladder (10), repatriate (7), study-8f529c94 (8), estimate-facf2fe9 (7), final-f6327e23 (8), verify-d5d1f860 (7), transfer-guide (9), audit-86f0 (4), audit-ad300459 (5), audit-0f0f59fe (1), audit-92d12752 (1), acceptance-373b54a3 (1), acceptance-a64bd476 (5), audit-456e7542 (1), audit-6068a908 (1), verify-88f5a1be (1) = 110 pages.</td>
+          <td data-label="What it changes for a reader">The reader cannot tell which dashboard is current. This page now designates one canonical set and lists the rest explicitly as archive.</td>
+          <td data-label="How it was checked">Counted with a filesystem walk on 2026-11-11 (glob '**/*.html' per directory).</td>
+          <td class="src" data-label="Link"><a class="source" href="https://github.com/sassnarep3-star/China2" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-02">
+          <th scope="row" data-label="ID">IR-02</th>
+          <td data-label="Severity"><span class="pill bad">conflict</span></td>
+          <td data-label="Finding">The number of CNY-to-USD methods or routes differs between published sites: 15, 17, 22 and 23.</td>
+          <td data-label="Evidence">final-f6327e23 states 15 methods; briefing, repatriate and verify-d5d1f860 state 17; docs, portal and site state 22 routes; study-8f529c94, estimate-facf2fe9 and transfer-guide state 23.</td>
+          <td data-label="What it changes for a reader">A reader comparing two pages sees different route universes. The 23-method catalogue is the superset and is used as canonical here; the smaller counts are earlier editions.</td>
+          <td data-label="How it was checked">Text of each site's index page read on 2026-11-11.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://github.com/sassnarep3-star/China2/tree/main/transfer-guide" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-03">
+          <th scope="row" data-label="ID">IR-03</th>
+          <td data-label="Severity"><span class="pill bad">conflict</span></td>
+          <td data-label="Finding">Cost-table row counts differ between sites: 600, 680 and 920 rows for the same USD 10,000-400,000 ladder.</td>
+          <td data-label="Evidence">briefing and audit-ad300459 describe a 680-row ladder; acceptance-373b54a3 compares a 600-row and a 680-row ladder; transfer-guide and study-8f529c94 publish 920 rows (23 methods x 40 tiers).</td>
+          <td data-label="What it changes for a reader">Same problem, three different datasets. Only the 920-row export is internally consistent with a 23-method catalogue.</td>
+          <td data-label="How it was checked">Row counts recomputed from transfer-guide/exports/cost-ladder-920.csv (920 data rows) on 2026-11-11.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/exports/cost-ladder-920.csv" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-04">
+          <th scope="row" data-label="ID">IR-04</th>
+          <td data-label="Severity"><span class="pill bad">conflict</span></td>
+          <td data-label="Finding">Source-register size and open-flag counts differ between sites: 16, 24 and 40 sources; 9, 16, 18 and 31 flags.</td>
+          <td data-label="Evidence">docs states 24 sources and 9 flags; ladder/briefing 17 methods with 16 flags; estimate-facf2fe9 states 31 flags; transfer-guide registers 40 sources and 18 flags.</td>
+          <td data-label="What it changes for a reader">A reader cannot tell whether a flag is unique or a duplicate under another ID. This page links one register (transfer-guide) and one consolidated flag page.</td>
+          <td data-label="How it was checked">Registers loaded from transfer-guide/data/sources.json (40 entries) and docs/data/sources.json (24 entries) on 2026-11-11.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/data/sources.json" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-05">
+          <th scope="row" data-label="ID">IR-05</th>
+          <td data-label="Severity"><span class="pill bad">conflict</span></td>
+          <td data-label="Finding">Every dollar figure in the fee tables is converted from renminbi at 7.129 CNY/USD (the IRS 2025 yearly average) or at a 7.10 model assumption, while the live retail rate on 2026-11-11 was 6.6911 CNY/USD. Dollar equivalents of renminbi fees are therefore understated by about 6%.</td>
+          <td data-label="Evidence">IRS 2025 average 7.129 (verified, V18). Bank of China board 2026-11-11 10:25:02: sell 669.11 per 100 USD = 6.6911 (verified, V20). The same CNY 620 fee is USD 86.97 at 7.129 and USD 92.66 at 6.6911. '7.129' appears in 48 HTML files; a 7.10 assumption appears in ladder/assumptions.html and estimate-facf2fe9/repo-review.html.</td>
+          <td data-label="What it changes for a reader">Not a factual error - a tax-translation rate is legitimately 7.129 - but presenting it as the cost rate misstates the dollar cost of renminbi fees by roughly 6%. This page states both rates and labels which is which.</td>
+          <td data-label="How it was checked">Both rates re-fetched from their official pages on 2026-11-11; arithmetic recomputed.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-06">
+          <th scope="row" data-label="ID">IR-06</th>
+          <td data-label="Severity"><span class="pill warn">gap</span></td>
+          <td data-label="Finding">On a point-in-time scan, 1,423 table rows across 36 pages carry no direct official-domain URL inside their own static row (15 of them are this site's declared navigational archive rows and 7 cite repository files).</td>
+          <td data-label="Evidence">audit-92d12752/results.json, regenerated on 2026-11-11 after these pages were added: 111 pages, 8,298 table rows scanned, 1,423 candidate rows on 36 pages. Of these, 15 are this page's own archive index (declared navigational rows) and 7 are this audit page's internal-evidence rows, which cite repository files rather than an external document.</td>
+          <td data-label="What it changes for a reader">Structural only: it neither proves the claim is unsupported nor checks link liveness. Every claim-bearing row on this page and on the verification page carries an inline official link; the remaining candidates are navigational or cite repository files by design.</td>
+          <td data-label="How it was checked">Snapshot re-read from audit-92d12752/results.json on 2026-11-11; not re-run.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/results.json" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-07">
+          <th scope="row" data-label="ID">IR-07</th>
+          <td data-label="Severity"><span class="pill warn">stale</span></td>
+          <td data-label="Finding">Pages carry four different review dates.</td>
+          <td data-label="Evidence">docs/* pages carry '07 NOV 2026' (datetime 2026-11-07); transfer-guide carries 2026-11-10; the previous root page carried '10 November 2026'; the integration pages are 2026-11-11.</td>
+          <td data-label="What it changes for a reader">A reader cannot tell whether a fee or rule shown on a page has been checked since the HSBC tariff changed on 31 October 2026 or since the last source pass.</td>
+          <td data-label="How it was checked">Dates read from the page headers on 2026-11-11.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://github.com/sassnarep3-star/China2/tree/main/docs" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-08">
+          <th scope="row" data-label="ID">IR-08</th>
+          <td data-label="Severity"><span class="pill bad">conflict</span></td>
+          <td data-label="Finding">In the 920-row export the reference-rate column says 7.13 while the fee-detail text in the same row says '@ 7.129'.</td>
+          <td data-label="Evidence">cost-ladder-920.csv, first data row: reference_fx_rate=7.13; published_fee_detail='HSBC Premier/Advance SHA (CNY 220.00 @ 7.129)'.</td>
+          <td data-label="What it changes for a reader">Cosmetic, but a line-by-line reader will read it as two different rates. The arithmetic uses 7.129.</td>
+          <td data-label="How it was checked">Read directly from the CSV on 2026-11-11; 220/7.129 = 30.86 confirms the arithmetic basis.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/exports/cost-ladder-920.csv" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-09">
+          <th scope="row" data-label="ID">IR-09</th>
+          <td data-label="Severity"><span class="pill ok">resolved</span></td>
+          <td data-label="Finding">The superseded 'USD 0-7' same-name Global Transfer wording now survives only where it is being corrected or flagged, not as a published fee.</td>
+          <td data-label="Evidence">Tariff item 2.2.6.1 (Global Transfer to self) = Free / Free / USD 20 actual; item 2.2.7 (International Education Payment) = USD 7 actual. Occurrences of 'USD 0-7' are in the correction notice on the root page, audit-ad300459 and briefing/flagged.html.</td>
+          <td data-label="What it changes for a reader">No action. Recorded so the correction is auditable.</td>
+          <td data-label="How it was checked">Tariff re-read on 2026-11-11 (V12); occurrence list generated by text search over all HTML.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-10">
+          <th scope="row" data-label="ID">IR-10</th>
+          <td data-label="Severity"><span class="pill ok">resolved</span></td>
+          <td data-label="Finding">The HSBC fee arithmetic used across the repository reproduces the tariff exactly.</td>
+          <td data-label="Evidence">At 7.129: CNY 220 -&gt; USD 30.86 (10,000 tier); 0.1% of CNY 356,450 = 356.45 + 120 = 476.45 -&gt; USD 66.83 (50,000 tier); cap CNY 500 + 120 = 620 -&gt; USD 86.97 (100,000 and above). At the 2026-11-11 board rate 6.6911 the same fee is USD 32.88 and USD 92.66.</td>
+          <td data-label="What it changes for a reader">No action. This is the arithmetic this page republishes.</td>
+          <td data-label="How it was checked">Recomputed independently in verification-3347ca0a/build.py from the tariff text; see verify.py which re-derives every row.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-11">
+          <th scope="row" data-label="ID">IR-11</th>
+          <td data-label="Severity"><span class="pill warn">gap</span></td>
+          <td data-label="Finding">The USD 50,000 annual quota is described inconsistently: SAFE's rule text ties it to settlement and to a domestic individual's purchase, while bank and third-party guides describe it as a general per-person ceiling.</td>
+          <td data-label="Evidence">Hui Fa [2007] No. 1 Art. 2 (verified, V04): '对个人结汇和境内个人购汇实行年度总额管理…每人每年等值5万美元'. The earlier HSBC guide and several pages in this repository treat USD 50,000 as a blanket limit.</td>
+          <td data-label="What it changes for a reader">Material to route choice: if the balance is lawful income of an overseas individual, the documentary route (not the quota) governs. This remains unconfirmed for any specific bank in writing; carried forward as an open flag.</td>
+          <td data-label="How it was checked">SAFE text re-read 2026-11-11. Bank practice not tested and cannot be tested without the account holder.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr>
+        <tr id="IR-12">
+          <th scope="row" data-label="ID">IR-12</th>
+          <td data-label="Severity"><span class="pill ok">resolved</span></td>
+          <td data-label="Finding">Article 39 of Hui Fa [2007] No. 1 is reproduced on the official page but is expressly repealed, so its penalty amounts must not be cited.</td>
+          <td data-label="Evidence">Page footnote: '根据…（汇发〔2023〕8号）…以下内容已被废止：《个人外汇管理办法实施细则》（汇发〔2007〕1号印发）第三十九条'.</td>
+          <td data-label="What it changes for a reader">No action if pages cite Decree 532 Arts. 39/40/45 instead, as this page does.</td>
+          <td data-label="How it was checked">Repeal note read on the official page on 2026-11-11.</td>
+          <td class="src" data-label="Link"><a class="source" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer" title="open">open ↗</a></td>
+        </tr></tbody>
+</table>
+</div>
+
+<h2>How the audit was run</h2>
+<ol class="steps">
+  <li><strong>Enumerate, do not assume.</strong> Every directory with HTML was counted, every claim-count phrase on
+  each landing page was extracted with a pattern scan, and the numbers were compared rather than eyeballed.</li>
+  <li><strong>Recompute money.</strong> Fees, caps and year counts were recomputed from the tariff text in
+  <code>build.py</code> and re-derived independently in <code>verify.py</code>.</li>
+  <li><strong>Check links locally.</strong> Every internal <code>href</code>/<code>src</code> path on the three
+  generated pages was resolved against the filesystem, and the whole tree was re-scanned for broken internal links
+  (111 HTML pages, 0 broken on 2026-11-11).</li>
+  <li><strong>Read the corrections.</strong> Where a page corrects an earlier figure (the HSBC USD 7 wording), the
+  occurrence list was generated so the correction itself is auditable.</li>
+  <li><strong>State the boundary.</strong> A structural scan does not prove a claim is unsupported, and a retrieval does
+  not prove a rule applies to you.</li>
+</ol>
+
+<p class="muted">Raw data: <a href="data/irregularities.json">data/irregularities.json</a>. Related: the
+<a href="index.html">verification ledger</a>, the transfer guide’s own
+<a href="../transfer-guide/audit.html">route audit</a> and its <a href="../transfer-guide/flagged.html">flags</a>.</p>
+</main>
+<footer class="site"><div class="wrap">
+  <p><strong>Research, not advice.</strong> Findings are limited to what could be checked from files and official
+  documents in this checkout.</p>
+  <p class="smallprint"><a href="../index.html">Dashboard</a> · <a href="index.html">Verification ledger</a> ·
+  <a href="../transfer-guide/sources.html">Sources</a></p>
+</div></footer>
+</body></html>

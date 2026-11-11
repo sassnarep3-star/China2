@@ -1,8 +1,8 @@
 {
-  "pages_scanned": 117,
-  "data_rows": 9089,
-  "without_direct_primary": 1418,
-  "pages_with_candidates": 34,
+  "pages_scanned": 119,
+  "data_rows": 9192,
+  "without_direct_primary": 1447,
+  "pages_with_candidates": 36,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
@@ -342,9 +342,9 @@
     },
     {
       "path": "index.html",
-      "rows": 0,
-      "without_direct_primary": 0,
-      "first_example": ""
+      "rows": 63,
+      "without_direct_primary": 16,
+      "first_example": "Transfer guide 23 methods · 40 sources · 920 cost rows Newest complete set (10-11 Nov 2026). Used as the canonical detail set from this page."
     },
     {
       "path": "ladder/assumptions.html",
@@ -354,8 +354,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 259,
-      "without_direct_primary": 259,
+      "rows": 265,
+      "without_direct_primary": 265,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -657,6 +657,18 @@
       "rows": 12,
       "without_direct_primary": 0,
       "first_example": ""
+    },
+    {
+      "path": "verification-3347ca0a/index.html",
+      "rows": 22,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verification-3347ca0a/irregularities.html",
+      "rows": 12,
+      "without_direct_primary": 7,
+      "first_example": "IR-01 structure Twenty separate research sites exist in one repository, each with its own landing page. The root page previously presented sixteen of them as equal cards. 20 direct"
     },
     {
       "path": "verify-88f5a1be/index.html",

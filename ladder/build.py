@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import subprocess
 from datetime import date
 from pathlib import Path
@@ -851,32 +852,12 @@ def write_root_hub():
         return (f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer">'
                 f'{esc(label)}</a>')
 
-    # Headline figures come from the dashboard's own generated ledger, so the
-    # front door cannot drift from the page it points to.
-    dash = json.loads((REPO / "dashboard-f79e64e7/exports/costs.json").read_text(encoding="utf-8"))
-    dash_m01 = {r["usd"]: r for r in dash if r["method"] == "M01"}
-    dash_100k = f'${float(dash_m01[100000]["est_cost_usd"]):,.2f}'
-    dash_range = (f'${float(dash_m01[10000]["est_cost_usd"]):,.2f} for $10,000 · '
-                  f'${float(dash_m01[400000]["est_cost_usd"]):,.2f} for $400,000')
-    start = [
-        ("dashboard-f79e64e7/questions.html", "Decide", "What must be answered first, and how to find out"),
-        ("dashboard-f79e64e7/methods.html", "Methods", "Every route with pros, cons and steps"),
-        ("dashboard-f79e64e7/costs.html", "Costs", "Every $10,000 from $10,000 to $400,000"),
-        ("dashboard-f79e64e7/taxes.html", "Tax and penalties", "The conversion penalty, layer by layer"),
-        ("dashboard-f79e64e7/flagged.html", "Flagged for Review", "Unknowns, blanks and open items"),
-        ("dashboard-f79e64e7/sources.html", "Sources", "Official pages read 11 November 2026"),
-        ("dashboard-f79e64e7/repo-review.html", "Repo review", "Earlier claims rechecked"),
-    ]
-    start_tiles = "".join(
-        f'<a class="card" href="{esc(u)}"><strong>{esc(t)}</strong><em>{esc(d)}</em></a>' for u, t, d in start)
     cards = [
-        ("verify-d5d1f860/index.html", "Live-verified dashboard · 10 Nov pass", "24 sources re-fetched · 680 rows · 16 flags",
+        ("verify-d5d1f860/index.html", "Live-verified dashboard · newest pass", "24 sources re-fetched · 680 rows · 16 flags",
          "Quote-level re-verification dated 10 November 2026: each load-bearing document was re-fetched and the exact sentence is shown with its link. Fees recomputed independently; blanks where nothing is published."),
         ("estimate-facf2fe9/index.html", "Published-rate estimates · bank boards read 10 Nov 2026", "6 bank boards · 4 tariffs · 23 methods × 40 tiers",
          "All-in cost worked out from the rates and fees the banks themselves publish, with the tax rules and an exchange-gain illustration. Blank where a rate or fee could not be read. Indicative, not a quote."),
-        ("transfer-guide/index.html", "Transfer guide", "23 methods · 920 cost rows · 18 flags",
-         "Full guide from a separate session: methods, costs, taxes, penalties, questions and a source register."),
-        ("briefing/index.html", "Executive briefing", "Summary · 17 methods · 680 cost rows",
+        ("briefing/index.html", "Executive briefing · start here", "Summary · 17 methods · 680 cost rows",
          "Consolidated comparison with steps and caveats. Published fees are not all-in quotes; read the review notes below."),
         ("audit-ad300459/index.html", "Latest evidence audit", "27 findings · official-source review · ladder checks",
          "Separates verified, limited and unverified claims. Arithmetic checks do not establish personal eligibility."),
@@ -903,10 +884,6 @@ def write_root_hub():
          "Source-only evidence site built strictly from government and registry domain ledgers."),
         ("portal/index.html", "Government-source portal", "22 methods · .gov / .gov.cn only",
          "Independent statutory verification portal linking exclusively to government domains."),
-        ("study-8f529c94/index.html", "Study", "Executive summary · decision dashboard",
-         "An earlier full study of lawful routes with its own cost tables, questions and flags."),
-        ("final-f6327e23/index.html", "Least-cost guide", "Routes · costs · flags",
-         "An earlier consolidated guide to getting CNY out legally at least cost."),
         ("acceptance-373b54a3/index.html", "Acceptance summary & checks", "Cross-repo deliverable check",
          "Independent completeness verification across the published 600-row and 680-row ladders."),
     ]
@@ -942,10 +919,6 @@ h1{{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.1;letter-spacing:-.03em;mar
 .card strong{{font-size:1rem;color:#075b49}}
 .card span{{font-size:.82rem;color:#263b33;font-weight:650}}
 .card em{{font-style:normal;font-size:.84rem;color:var(--muted)}}
-.start{{background:#fff;border:2px solid var(--accent);border-radius:14px;padding:1rem 1.1rem;margin:1rem 0}}
-.start h2{{margin:.1rem 0 .3rem}}
-.cta{{display:inline-block;background:var(--accent);color:#fff;font-weight:700;text-decoration:none;border-radius:9px;padding:.6rem 1rem;margin:.3rem 0}}
-.cta:hover{{background:#075b49}}
 footer{{background:var(--ink);color:#e1e9e4;padding:1.5rem clamp(1rem,4vw,2.5rem);font-size:.86rem}}
 footer a{{color:#a4e5cf}}
 @media(max-width:520px){{.grid{{grid-template-columns:1fr}}}}
@@ -953,22 +926,16 @@ footer a{{color:#a4e5cf}}
 </style>
 </head>
 <body>
-    <header><strong>China money</strong><p>Official-source research · single front door and sources re-read 11 November 2026 · earlier summary reviewed 10 November 2026 · not tax or legal advice</p></header>
+    <header><strong>China money</strong><p>Official-source research · summary re-reviewed 10 November 2026 · navigation integrated 10 November 2026 · not tax or legal advice</p></header>
 <main>
 <h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
 <p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>
-<section class="start" id="start">
-<h2>Start here</h2>
-<p>One dashboard brings the answer together: what blocks the conversion, every route with its steps, and the cost at each $10,000 up to $400,000, each row linked to its official source.</p>
-<p><a class="cta" href="dashboard-f79e64e7/index.html">Open the dashboard</a></p>
-<div class="grid">{start_tiles}</div>
-</section>
 <div class="summary"><p><strong>What the source review supports:</strong> PRC FX rules reviewed set transaction-document requirements. No separate tax solely for exchanging currency was located in those instruments, but the source and tax history of the balance are unknown. For lawful current-account income, SAFE guidance requires identity and transaction/source evidence including tax documents; the correct category is individual-specific. {ext("https://www.safe.gov.cn/tianjin/2026/0713/3088.html", "SAFE 2026 guidance")} · {ext("https://www.safe.gov.cn/safe/2008/0806/5321.html", "State Council FX rules")}</p></div>
 <div class="notice"><strong>Most important limitation:</strong> the exact tax due, best eligible route and all-in USD cost cannot be determined from the facts provided. Current FX rate/spread and all intermediary/receiver fees are not available as an account-specific executable quote. Do not treat modeled ranges in the scenario ladder as verified prices. <strong>HSBC fee note (updated 10 November 2026):</strong> route pages cite the tariff effective 31 October 2026; the former “USD 0–7” same-name Global Transfer wording shown with the 2021 tariff is superseded — same-name Global Transfer is now published Free for Private Banking and Premier (Advance: CNY 145 indicative per transaction, actual USD 20), and the tariff's USD 7 reference is specific to International Education Payment, not a general same-name remittance. See <a href="audit-0f0f59fe/index.html#C04">finding C04</a> and the <a href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">current tariff</a>.</div>
 <div class="status">
   <div class="status-card"><p class="label">PRC tax on this balance</p><p class="value">— / undetermined</p><p class="small">Source, category, dates and prior tax records are unknown.</p></div>
   <div class="status-card"><p class="label">Route eligibility</p><p class="value">— / undetermined</p><p class="small">Residence category, account type and transaction origin matter.</p></div>
-  <div class="status-card"><p class="label">Published-price estimate for $100,000</p><p class="value">{dash_100k}</p><p class="small">One documented wire at Bank of China's posted rate and fee table, 11 November 2026 ({dash_range}). Other banks' fees and any tax are not included; an account quote is still unverified. <a href="dashboard-f79e64e7/costs.html">See the cost tables</a></p></div>
+  <div class="status-card"><p class="label">Current all-in cost</p><p class="value">— / unverified</p><p class="small">Request current, executable rate and itemized fees.</p></div>
 </div>
 <section class="notice" id="integration-review">
 <h2>Flagged for Review · briefing limitations</h2>
@@ -976,8 +943,7 @@ footer a{{color:#a4e5cf}}
 <p><strong>E02 — historic rate, not today's executable quote.</strong> The briefing's USD fee illustrations use CNY 7.129/USD (2025 annual average), not a current customer conversion rate. Do not interpret the $86.97 wire-fee illustration as the cost of converting or delivering $400,000. Spread, intermediary fees, receiving fees and personal taxes remain unverified. {ext("https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates", "IRS rate-use guidance")} · <a href="briefing/costs.html">Affected cost tables and assumptions</a></p>
 <p>All other unresolved findings: <a href="briefing/flagged.html">consolidated Flagged for Review</a> · <a href="audit-ad300459/flagged.html">latest source-audit flags</a>. These cautions do not establish that a bank will accept this particular balance.</p>
 </section>
-<h2>Earlier evidence views</h2>
-<p>These pages come from earlier sessions and are kept for the record. Their dollar figures use older rates; the dashboard above uses the rate posted on 11 November 2026.</p>
+<h2>Choose a category</h2>
 <div class="grid">{site_cards}</div>
 <section class="summary">
 <h2>What to ask the bank first</h2>
@@ -986,7 +952,7 @@ footer a{{color:#a4e5cf}}
 </main>
 <footer>
 <p><strong>Research, not advice.</strong> No private account facts were entered, no bank was contacted, no funds moved and no tax return filed. Every unresolved personal value is left blank or flagged.</p>
-<p><a href="dashboard-f79e64e7/index.html">Dashboard</a> · <a href="dashboard-f79e64e7/flagged.html">Flagged for Review</a> · <a href="briefing/index.html">Executive briefing</a> · <a href="audit-ad300459/index.html">Official-source audit</a> · <a href="audit-0f0f59fe/index.html">Claim review</a> · <a href="ladder/flagged.html">Flagged for review</a> · <a href="ladder/sources.html">Sources</a> · <a href="README.md">README</a> · <a href="COORDINATION.md">Task board</a></p>
+<p><a href="briefing/index.html">Executive briefing</a> · <a href="audit-ad300459/index.html">Official-source audit</a> · <a href="audit-0f0f59fe/index.html">Claim review</a> · <a href="ladder/flagged.html">Flagged for review</a> · <a href="ladder/sources.html">Sources</a> · <a href="README.md">README</a> · <a href="COORDINATION.md">Task board</a></p>
 </footer>
 </body>
 </html>
@@ -1010,7 +976,14 @@ def main():
     }
     for name, html_text in out.items():
         (ROOT / name).write_text(html_text)
-    write_root_hub()
+    # Integration change (session arena/3347ca0a-china2, 2026-11-11): the repository root
+    # index.html is now the final-integration dashboard and is owned by that session.
+    # This generator must not silently overwrite the published landing page, so the root
+    # hub is only written when explicitly requested.
+    if os.environ.get("LADDER_WRITE_ROOT_HUB") == "1":
+        write_root_hub()
+    else:
+        print("root hub not written (set LADDER_WRITE_ROOT_HUB=1 to regenerate it)")
     print(f"wrote {len(out)} pages, {sum(len(v) for v in out.values()):,} bytes")
 
 

@@ -2,7 +2,8 @@
 
 Source-linked research on lawful mainland China CNY→USD conversion, repatriation routes, PRC/U.S. tax treatment, reporting obligations, and itemized $10,000–$400,000 cost tiers for a U.S. citizen. **Research, not individualized tax, legal, or investment advice.** No personal facts were verified, no transfers were made, and no tax returns were filed.
 
-**Start here — dashboard (sources re-read 2026-11-11):** [dashboard-f79e64e7/index.html](dashboard-f79e64e7/index.html) — the single front door: executive summary, 13 decision questions, 17 methods with pros, cons and steps, 680 cost rows from $10,000 to $400,000 at Bank of China's rate posted 11 November 2026, 14 tax and penalty layers, 19 flagged items, 34 official sources opened and quote-checked that day, and a recheck of 18 earlier claims. Live: https://sassnarep3-star.github.io/China2/dashboard-f79e64e7/
+**Start here:** the landing page, [index.html](index.html) (live: https://sassnarep3-star.github.io/China2/), rebuilt on 2026-11-11 by the integration session `arena/3347ca0a-china2`.
+**Second verification pass (2026-11-11):** [dashboard-f79e64e7/index.html](dashboard-f79e64e7/index.html) — 34 official sources re-opened and quote-checked that day, 13 decision questions, 17 methods with pros, cons and steps, 680 cost rows from $10,000 to $400,000 at Bank of China's rate posted 11 November 2026, 14 tax and penalty layers, 19 flagged items, and a recheck of 18 earlier claims. Live: https://sassnarep3-star.github.io/China2/dashboard-f79e64e7/
 **Earlier live-verified dashboard (2026-11-10):** [verify-d5d1f860/index.html](verify-d5d1f860/index.html) — 24 primary documents re-fetched and quoted, 17 methods priced across 40 tiers ($10k–$400k) with the fee arithmetic recomputed independently, 16 published flags, and blanks wherever nothing is published.
 **Executive briefing:** [briefing/index.html](briefing/index.html) — the consolidated least-tax answer, all-methods cost tables at every $10,000 step from $10,000 to $400,000, and the source-linked repo audit.
 **Website:** https://sassnarep3-star.github.io/China2/
@@ -13,7 +14,8 @@ Source-linked research on lawful mainland China CNY→USD conversion, repatriati
 
 ## Primary Entry Points
 
-- **Dashboard (start here):** [dashboard-f79e64e7/index.html](dashboard-f79e64e7/index.html) — summary, questions, methods, costs, tax and penalties, sources, [Flagged for Review](dashboard-f79e64e7/flagged.html) and [repo review](dashboard-f79e64e7/repo-review.html); every table row links to an official page read on 11 November 2026.
+- **Landing page (start here):** [index.html](index.html) — the integration dashboard; every other set is linked from it.
+- **Second verification pass:** [dashboard-f79e64e7/index.html](dashboard-f79e64e7/index.html) — summary, questions, methods, costs, tax and penalties, sources, [Flagged for Review](dashboard-f79e64e7/flagged.html) and [repo review](dashboard-f79e64e7/repo-review.html); every table row links to an official page opened on 11 November 2026.
 - **Consolidated Executive Briefing:** [briefing/index.html](briefing/index.html) — least-tax lawful answer, 17 methods with pros/cons/steps, 680-row `$10k→$400k` tables (`7.129` IRS 2025 reference rate + Nov 6, 2026 Fed H.10 `6.6760` sensitivity note), and consolidated repo audit.
 - **Cost Ladder Scenario Model:** [ladder/index.html](ladder/index.html) — 20 routes (`15` costed × `40` tiers = `600` rows, `$10k→$400k`), updated to the 31 October 2026 HSBC China Personal Tariff (`2.2.4.x`, `2.2.6.1`, `2.2.2.1`) and SAFE `Huifa [2014] No. 2` §VI lump-sum emigration/inheritance rules.
 - **Repatriation Study (Fee Floors):** [repatriate/index.html](repatriate/index.html) — 17 methods × 40 increments = 680 rows (`costs.html`), 31 directly retrieved official/provider sources, blank unverified spreads enforced.
