@@ -1,0 +1,170 @@
+{
+  "penalty_layers": [
+    {
+      "layer": "Layer 1",
+      "component": "Standalone PRC or U.S. 'Currency Conversion Tax' / 'Exit Tax'",
+      "verified_rate_or_amount": "$0.00 (0%)",
+      "who_pays_and_when": "Neither China nor the United States imposes an excise or exit tax on the act of exchanging CNY into USD. State Council Decree 532 Art. 5 guarantees no restriction on bona fide current-account international payments.",
+      "how_to_minimize_legally": "Demand the bank's refusal or 'tax' explanation in writing so you separate a free tax-certificate requirement from an actual unpaid income tax.",
+      "source_ids": ["SRC-01", "SRC-03", "SRC-27"]
+    },
+    {
+      "layer": "Layer 2",
+      "component": "PRC Underlying Income / Gain Tax & SAFE Tax-Voucher Gatekeeper",
+      "verified_rate_or_amount": "0% extra if already taxed; otherwise 3%–45% comprehensive IIT (after RMB 60,000/yr deduction), 5%–35% business IIT, 20% statutory flat IIT (10% U.S.–China Treaty cap on dividends/interest/royalties); 25% corporate EIT",
+      "who_pays_and_when": "Owed when the PRC income arose — NOT triggered by wiring. However, SAFE (Hui Fa [2020] No. 14 Art. 59) requires STA tax vouchers (完税证明 / 纳税记录) before converting foreign-individual RMB income, and STA/SAFE Announcement [2013] No. 40 + [2021] No. 19 require a FREE online Tax Recordal Form (税务备案表) for domestic-payer outbound payments > USD 50,000.",
+      "how_to_minimize_legally": "1) If employer already withheld IIT, download 个人所得税纳税记录 from the IIT App for $0 extra tax. 2) Claim 10% U.S.–China Treaty caps (Arts. 9, 10, 11) and check Art. 13/14 183-day / Art. 19 3-yr teacher exemptions. 3) Use free Electronic Tax Bureau filing for > $50,000 Tax Recordal.",
+      "source_ids": ["SRC-05", "SRC-17", "SRC-18", "SRC-19", "SRC-20", "SRC-23"]
+    },
+    {
+      "layer": "Layer 3",
+      "component": "U.S. Worldwide Income Tax Interaction (Foreign Tax Credit vs. FEIE)",
+      "verified_rate_or_amount": "Dollar-for-dollar Foreign Tax Credit (Form 1116) OR up to $132,900 Foreign Earned Income Exclusion (2026 Form 2555)",
+      "who_pays_and_when": "U.S. citizens are taxed on worldwide income when earned (Protocol 1 Para. 2 Saving Clause), whether stuck in China or wired home. Repatriating principal is NOT a second U.S. income event.",
+      "how_to_minimize_legally": "Claim Form 1116 Foreign Tax Credit for creditable PRC income taxes paid (up to 10-year refund amendment window under IRC § 6511(d)(3)(A)!). Always claim the 10% U.S.–China Treaty rate in China when eligible, because the IRS disallows FTC for voluntary overpayment above a treaty rate! Never claim FTC on income already excluded via Form 2555.",
+      "source_ids": ["SRC-23", "SRC-28", "SRC-29"]
+    },
+    {
+      "layer": "Layer 4",
+      "component": "U.S. Foreign Currency Exchange Gain on Converting RMB→USD (26 U.S.C. § 988(e))",
+      "verified_rate_or_amount": "$0 if exchange gain <= $200 per personal transaction (or if RMB depreciated vs. USD basis); Capital Gain if personal exchange gain > $200; Ordinary Income/Loss if business/trade",
+      "who_pays_and_when": "Triggered upon disposing of RMB for USD if the USD value at conversion exceeds your historical USD functional-currency basis in that RMB by more than $200 (personal FX losses are non-deductible).",
+      "how_to_minimize_legally": "Track exact historical USD acquisition basis for each RMB deposit tranche (e.g., IRS spot/yearly-average rates: 6.452 in 2021, 6.730 in 2022, 7.075 in 2023, 7.189 in 2024, 7.129 in 2025). Tranches acquired when RMB was stronger (e.g., 2021–2022 at 6.45–6.73) have an FX loss at ~7.13, meaning $0 U.S. § 988(e) gain!",
+      "source_ids": ["SRC-24", "SRC-25", "SRC-26", "SRC-27"]
+    },
+    {
+      "layer": "Layer 5",
+      "component": "Bank CNY→USD Bid-Ask FX Spread (Hidden Commercial Friction)",
+      "verified_rate_or_amount": "— (Unverified in official/static sources; quoted live at execution)",
+      "who_pays_and_when": "Embedded in the difference between interbank mid-market CNY/USD and the bank's telegraphic-transfer selling rate (现汇卖出价) or cash selling rate (现钞卖出价) at execution.",
+      "how_to_minimize_legally": "Always convert via Telegraphic Transfer exchange rate (现汇), not Cash/Banknote rate (现钞); compare your PRC bank's live spot selling quote against Wise From-CNY (if eligible) and ask relationship managers about tier FX spread discounts on large ($100k–$400k) tickets.",
+      "source_ids": ["SRC-38", "SRC-39"]
+    },
+    {
+      "layer": "Layer 6",
+      "component": "Outward Wire Commission, SWIFT Cable, Intermediary Lifting & U.S. Receiving Fees",
+      "verified_rate_or_amount": "HSBC China published sender fee: $0.00 (Private Banking / Premier Elite individuals); 0.1% min CNY 100 max CNY 500 + CNY 120 cable = $30.86–$86.97 (Premier/Advance SHA at 7.129); +CNY 200 ($28.05) optional Pay Exact (OUR); Global Transfer to Self: $0.00 (PB/Premier) or $20.00 (Advance). Third-party correspondent/receiving fees: — (unverified).",
+      "who_pays_and_when": "Charged per wire transaction. Because HSBC's 0.1% commission caps at CNY 500 above CNY 500,000 (~$70,136), wiring in 1 documented lump sum ($86.97) costs 6x less in sender fees than splitting into 8 annual $50k wires ($534.66).",
+      "how_to_minimize_legally": "Remit in a single documented M01 lump sum rather than many small wires, or use HSBC Premier Global Transfer ($0 published transfer fee) if holding linked own-name HSBC China + HSBC U.S. accounts.",
+      "source_ids": ["SRC-38"]
+    },
+    {
+      "layer": "Layer 7",
+      "component": "Offshore Non-Reporting & Illegal FX Channel Penalties (Where Catastrophic Losses Happen)",
+      "verified_rate_or_amount": "U.S. FBAR: up to $16,536 non-willful / max($165,353, 50% of balance) willful; Form 8938: $10,000–$60,000 + 40% understatement; Form 3520 gift/bequest: 5%/mo up to 25%; FinCEN 105 cash: seizure/forfeiture. PRC illegal FX/crypto/splitting/underground bank: up to 30% fine (30%–100% if serious) + criminal liability.",
+      "who_pays_and_when": "U.S. reporting obligations attach while the RMB sits in China (even before converting a single yuan!). PRC 30%–100% fines attach when attempting quota-splitting, underground swaps, fake invoices, or crypto bridges.",
+      "how_to_minimize_legally": "File timely FBARs & Form 8938 every year; if delinquent due to non-willful mistake and not under IRS exam, evaluate IRS Streamlined Foreign Offshore (0% penalty) or Streamlined Domestic Offshore (5% penalty) with a U.S. cross-border tax attorney/CPA BEFORE wiring.",
+      "source_ids": ["SRC-01", "SRC-02", "SRC-21", "SRC-30", "SRC-31", "SRC-32", "SRC-33", "SRC-34", "SRC-35", "SRC-36", "SRC-37"]
+    }
+  ],
+  "tax_compliance_rows": [
+    {
+      "id": "TX-01",
+      "jurisdiction": "PRC Tax",
+      "item": "Comprehensive Income IIT (Resident >= 183 days: Wages, Services, Author, Royalties)",
+      "threshold_or_scope": "Annual taxable income after RMB 60,000 standard deduction + statutory special deductions",
+      "verified_rate_or_penalty": "3% to 45% progressive",
+      "action_for_us_citizen": "Download 个人所得税纳税记录 from IIT App to unlock bank conversion M01; claim U.S. Form 1116 FTC (or Form 2555 FEIE on earned wages).",
+      "source_ids": ["SRC-05", "SRC-19", "SRC-28", "SRC-29"]
+    },
+    {
+      "id": "TX-02",
+      "jurisdiction": "PRC Tax",
+      "item": "Business Operation IIT (个体工商户 / Sole Proprietorship / Operating Income)",
+      "threshold_or_scope": "Annual net taxable operating income",
+      "verified_rate_or_penalty": "5% to 35% progressive",
+      "action_for_us_citizen": "Clear operating IIT + VAT to obtain STA tax vouchers; note business FX does not get U.S. § 988(e) $200 exclusion.",
+      "source_ids": ["SRC-19", "SRC-24"]
+    },
+    {
+      "id": "TX-03",
+      "jurisdiction": "PRC Tax / Treaty",
+      "item": "Dividends, Interest & Royalties Derived from China by U.S. Resident Beneficial Owner",
+      "threshold_or_scope": "PRC statutory IIT is 20% flat; 1984 U.S.–China Tax Treaty Arts. 9(2), 10(2), 11(2) cap beneficial-owner withholding",
+      "verified_rate_or_penalty": "10% gross treaty cap (vs. 20% domestic statutory)",
+      "action_for_us_citizen": "MUST claim the 10% treaty rate in China — IRS Foreign Tax Credit rules disallow crediting voluntary excess withholding above the 10% treaty cap!",
+      "source_ids": ["SRC-19", "SRC-23", "SRC-28"]
+    },
+    {
+      "id": "TX-04",
+      "jurisdiction": "PRC Tax",
+      "item": "Property Lease & Property / Equity Transfer Gain IIT",
+      "threshold_or_scope": "Net gain on transfer of PRC real property or equity; statutory lease income",
+      "verified_rate_or_penalty": "20% flat statutory IIT (PRC may tax China real property & >=25% equity gains under Treaty Arts. 6 & 12)",
+      "action_for_us_citizen": "Obtain 房屋权属转让完税证明 + >$50k free Tax Recordal to wire sale proceeds under M09; claim PRC income tax on Form 1116.",
+      "source_ids": ["SRC-15", "SRC-17", "SRC-19", "SRC-23", "SRC-28"]
+    },
+    {
+      "id": "TX-05",
+      "jurisdiction": "PRC Tax / FX Gate",
+      "item": "STA & SAFE Outbound Payment Tax Recordal (服务贸易等项目对外支付税务备案表)",
+      "threshold_or_scope": "Single outbound payment > USD 50,000 by domestic institutions/individuals for remuneration, dividends, property/equity sale proceeds, or service trade",
+      "verified_rate_or_penalty": "$0 filing fee (instant/online via Electronic Tax Bureau; filed once per contract under [2021] No. 19)",
+      "action_for_us_citizen": "Not a tax! Administrative recordal only — obtain serial number & verification code online to hand to the remitting bank.",
+      "source_ids": ["SRC-17", "SRC-18"]
+    },
+    {
+      "id": "TX-06",
+      "jurisdiction": "U.S. Tax",
+      "item": "Foreign Tax Credit (Form 1116) vs. Foreign Earned Income Exclusion (Form 2555)",
+      "threshold_or_scope": "Worldwide income of U.S. citizens; 2026 FEIE max = $132,900 (tax home + bona fide residence or 330-day physical presence)",
+      "verified_rate_or_penalty": "Dollar-for-dollar FTC credit (10-yr refund claim period) OR up to $132,900 earned-income exclusion",
+      "action_for_us_citizen": "Because PRC marginal IIT on higher salaries (20%–45%) often equals/exceeds U.S. effective rates, Form 1116 FTC frequently reduces residual U.S. tax on China salary to $0 while generating excess FTC carryforwards (cannot combine FTC + FEIE on the same dollar).",
+      "source_ids": ["SRC-23", "SRC-28", "SRC-29"]
+    },
+    {
+      "id": "TX-07",
+      "jurisdiction": "U.S. Tax",
+      "item": "Personal Foreign Currency Exchange Gain (26 U.S.C. § 988(e)(2) & IRS Pub. 525)",
+      "threshold_or_scope": "Disposition of nonfunctional currency (CNY→USD) in a personal transaction",
+      "verified_rate_or_penalty": "$0 tax if FX gain <= $200/transaction; Capital Gain (Schedule D) if FX gain > $200 (personal FX losses non-deductible)",
+      "action_for_us_citizen": "Compute USD basis of each RMB deposit using spot/consistent posted rate when acquired vs. USD received at conversion.",
+      "source_ids": ["SRC-24", "SRC-25", "SRC-26", "SRC-27"]
+    },
+    {
+      "id": "TX-08",
+      "jurisdiction": "U.S. FinCEN (BSA)",
+      "item": "FBAR — FinCEN Form 114 (Report of Foreign Bank and Financial Accounts)",
+      "threshold_or_scope": "Aggregate value of all foreign financial accounts > $10,000 at ANY time during the calendar year (due April 15, auto-extended to Oct 15)",
+      "verified_rate_or_penalty": "Max civil penalty (assessed >= 2025-01-17): $16,536 non-willful; max($165,353, 50% of account) willful + criminal exposure",
+      "action_for_us_citizen": "Every $10,000–$400,000 tier in this study (above $10,000.00 aggregate) triggers mandatory annual e-filing via FinCEN BSA E-Filing.",
+      "source_ids": ["SRC-30", "SRC-31"]
+    },
+    {
+      "id": "TX-09",
+      "jurisdiction": "U.S. IRS (FATCA)",
+      "item": "Form 8938 — Statement of Specified Foreign Financial Assets",
+      "threshold_or_scope": "Living in U.S.: >$50k yr-end / >$75k any time (Single), >$100k / >$150k (MFJ). Living abroad: >$200k yr-end / >$300k any time (Single), >$400k / >$600k (MFJ)",
+      "verified_rate_or_penalty": "$10,000 failure-to-disclose + $10,000 per 30 days after IRS notice (up to $60,000 total) + 40% § 6662(j) understatement penalty",
+      "action_for_us_citizen": "Attach Form 8938 to Form 1040 IN ADDITION to filing FinCEN Form 114 (filing one never excuses the other).",
+      "source_ids": ["SRC-32", "SRC-33"]
+    },
+    {
+      "id": "TX-10",
+      "jurisdiction": "U.S. IRS",
+      "item": "Form 3520 — Foreign Gifts / Inheritances (IRC § 6039F) & Foreign Trusts (IRC § 6677)",
+      "threshold_or_scope": "> $100,000 aggregate gifts or bequests received in a tax year from a nonresident alien individual or foreign estate",
+      "verified_rate_or_penalty": "Foreign gift/bequest: 5% per month up to 25% of unreported gift/bequest; Foreign trust distribution: max($10,000, 35%)",
+      "action_for_us_citizen": "Crucial for M10 (Mainland inheritance > $100k) or gifts from non-U.S. Chinese relatives: bequest is tax-free, but missing Form 3520 costs up to 25%!",
+      "source_ids": ["SRC-26", "SRC-33"]
+    },
+    {
+      "id": "TX-11",
+      "jurisdiction": "U.S. CBP / FinCEN",
+      "item": "FinCEN Form 105 (CMIR) — Cross-Border Physical Currency / Monetary Instruments",
+      "threshold_or_scope": "> $10,000 total currency/monetary instruments carried into or out of the U.S. (applies collectively to families/groups traveling together)",
+      "verified_rate_or_penalty": "$0 tax/fee if declared; civil seizure & forfeiture + criminal penalties if undeclared",
+      "action_for_us_citizen": "File electronically at fincen105.cbp.dhs.gov before arrival whenever collective cash exceeds $10,000.",
+      "source_ids": ["SRC-37"]
+    },
+    {
+      "id": "TX-12",
+      "jurisdiction": "U.S. IRS Remediation",
+      "item": "Streamlined Filing Compliance Procedures (SFOP vs. SDOP)",
+      "threshold_or_scope": "Individual taxpayers whose prior failure to report foreign accounts/income was non-willful and who are NOT under IRS civil examination or CI investigation (3 yrs returns + 6 yrs FBARs)",
+      "verified_rate_or_penalty": "0% offshore penalty (Streamlined Foreign Offshore — met 330-day non-U.S.-abode test in >=1 of last 3 yrs) vs. 5% Title 26 penalty (Streamlined Domestic Offshore — U.S. residents)",
+      "action_for_us_citizen": "If the China account was previously unreported, consult qualified U.S. tax counsel to evaluate SFOP (0%) or SDOP (5%) BEFORE initiating a large wire into a U.S. bank.",
+      "source_ids": ["SRC-34", "SRC-35", "SRC-36"]
+    }
+  ]
+}

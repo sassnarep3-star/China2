@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "policy": "Every row links to an official primary source. No private fact is inferred. Unverifiable values are left blank and flagged.",
+    "retrieved_date": "2026-11-11",
+    "session": "arena/50f278d8-china2",
+    "title": "Decision Checklist: Questions, Knowns, Unknowns & How to Discover Missing Information"
+  },
+  "questions": [
+    {
+      "flag_ids": [
+        "FL-01"
+      ],
+      "how_to_discover": "Pull 5-year bank statements; list each large credit with payer, contract/invoice, and tax slip. Match to STA 个人所得税纳税记录 (Personal Income Tax App). Classify each tranche by origin before choosing a route.",
+      "id": "Q01",
+      "question": "What is the legal origin of the stuck CNY balance? (salary / labor remuneration / rent / royalties / business profit / property-sale proceeds / inheritance / pre-emigration assets / previously converted USD→RMB / untaxed receipts)",
+      "source_ids": [
+        "SRC-02",
+        "SRC-03",
+        "SRC-05",
+        "SRC-13",
+        "SRC-19"
+      ],
+      "status": "critical",
+      "what_we_dont_know": "Your actual source, dates, contracts, and whether PRC tax was withheld. The prompt says 'money stuck in a bank account with no way to convert without paying considerable taxes' — but does bank mean unpaid tax (need 税收完税证明) or bank discretion?",
+      "what_we_know": "Chinese banks classify RMB by source: every lawful origin has a documented SAFE gateway. Taxed salary, lawful rent/royalties, property-sale net proceeds, inheritances, and pre-emigration assets each have a specific Articles-based path.",
+      "why_it_matters": "Origin determines which SAFE Article applies (Hui Fa [2007] No.1 Art.13(1) for current-account income vs. Art.20 / PBOC [2004] No.16 for emigration/inheritance capital-account), which tax vouchers are required, and whether the $50k quota is even relevant."
+    },
+    {
+      "flag_ids": [
+        "FL-01",
+        "FL-08",
+        "FL-11"
+      ],
+      "how_to_discover": "Download IIT payment records from 个人所得税 App for each earning year; request 完税证明 at local tax hall. If gap found, ask licensed PRC tax adviser for voluntary settlement quote — then you unlock M01 single-wire conversion with $0 extra conversion tax.",
+      "id": "Q02",
+      "question": "Was PRC Individual Income Tax (or Enterprise Income Tax / withholding tax) already withheld/paid on the income that created the balance? Do you hold official STA tax vouchers (税收完税证明 / 个人所得税纳税记录)?",
+      "source_ids": [
+        "SRC-05",
+        "SRC-17",
+        "SRC-18",
+        "SRC-19",
+        "SRC-20",
+        "SRC-23",
+        "SRC-28",
+        "SRC-29"
+      ],
+      "status": "critical",
+      "what_we_dont_know": "Your actual withholding history, tax-residence status (183-day test), and whether employer under-withheld. No private voucher has been shown.",
+      "what_we_know": "No PRC or US tax on conversion itself (Decree 532 Art.5). PRC IIT rates: 3%–45% comprehensive, 5%–35% business, 20% flat (10% treaty cap dividends/interest/royalties). US FTC (Form 1116) credits PRC tax dollar-for-dollar within limits; FEIE up to $132,900 in 2026 is alternative.",
+      "why_it_matters": "There is $0 conversion tax, but banks enforce a tax-proof gate. If IIT was already withheld on salary (3%–45% comprehensive, 20% royalties/assets, 10% treaty dividends), conversion adds $0 PRC tax. If not paid, the 'considerable tax' is not a conversion penalty — it's the original income tax now due."
+    },
+    {
+      "flag_ids": [
+        "FL-06"
+      ],
+      "how_to_discover": "Check passport/visa/residence permit history. If PR-ID holder, confirm with bank: does bank treat you as 境内个人 for purchase quota? Get answer in writing. If not, plan for M01 documented income route (uncapped), not $50k quota staging.",
+      "id": "Q03",
+      "question": "How does SAFE classify you for FX purchase: 'domestic individual' (境内个人) vs 'non-domestic individual' (境外个人) — and do you hold a PRC Foreign Permanent Resident ID Card (外国人永久居留身份证)?",
+      "source_ids": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-04",
+        "SRC-07"
+      ],
+      "status": "critical",
+      "what_we_dont_know": "Your passport, visa type, residence duration, and whether you hold Chinese Green Card. The prompt says US citizen — likely no PR-ID, so M06 quota likely inapplicable.",
+      "what_we_know": "USD 50,000/yr per-person quota exists (SAFE 2007 Q&A; Hui Fa [2007] No.1 Art.2). Above quota, banks 'strengthen authenticity examination.' Foreign individuals on standard work visa ≠ PR-ID holders.",
+      "why_it_matters": "Classification determines whether you get the $50k/yr ID-only quota at all. Decree 532 Art.52(2) includes ≥1-yr resident foreigners as 境内个人, but SAFE Tianjin 2024 Case 9 restricts facilitated $50k purchase quota among foreigners to PR-ID holders. Non-PR-ID foreigners must use documented income route (Art.13) with tax vouchers — no $50k shortcut."
+    },
+    {
+      "flag_ids": [
+        "FL-01"
+      ],
+      "how_to_discover": "Export bank credits by date; assign each credit's USD basis using Fed H.10 or IRS yearly average consistently. Compute pro-rata gain at conversion. Keep memo for Schedule D if >$200 per tranche.",
+      "id": "Q04",
+      "question": "When was each CNY tranche acquired, and what is its USD functional-currency basis? (IRS spot / yearly average: 6.452 '21, 6.730 '22, 7.075 '23, 7.189 '24, 7.129 '25)",
+      "source_ids": [
+        "SRC-24",
+        "SRC-25",
+        "SRC-26",
+        "SRC-27"
+      ],
+      "status": "high",
+      "what_we_dont_know": "Your tranche dates, amounts, and chosen rate method. Cannot compute personal FX gain without history.",
+      "what_we_know": "Personal FX gain ≤$200 exempt; >$200 capital gain (Pub.525). Losses non-deductible personal. IRS has no official rate — accept consistently used posted rate.",
+      "why_it_matters": "U.S. 26 U.S.C. §988(e)(2) taxes personal FX gain only if >$200 per transaction. RMB acquired at 6.45–6.73 (2021–22) and converted at ~7.13 shows FX loss → $0 US gain. Recent RMB at 7.18→7.13 also small. Gain = (USD received) − (historical USD basis)."
+    },
+    {
+      "flag_ids": [
+        "FL-01"
+      ],
+      "how_to_discover": "Pull peak balances for each calendar year from Chinese bank statements. If delinquent and non-willful + no active IRS exam, consult U.S. cross-border CPA/attorney about Streamlined Foreign (0% if 330-day abroad test met) vs Domestic (5%) BEFORE wiring large sum to U.S. — timing matters.",
+      "id": "Q05",
+      "question": "What is your U.S. offshore reporting history? (FBAR FinCEN 114 >$10k aggregate any time; Form 8938 thresholds; Form 3520 >$100k foreign gift/bequest; FBAR penalties $16,536 non-willful / max($165,353,50%) willful)",
+      "source_ids": [
+        "SRC-30",
+        "SRC-31",
+        "SRC-32",
+        "SRC-33",
+        "SRC-34",
+        "SRC-35",
+        "SRC-36",
+        "SRC-37"
+      ],
+      "status": "critical",
+      "what_we_dont_know": "Have you filed FBAR/8938? Any prior IRS exam? Willfulness? Account maxima by year?",
+      "what_we_know": "FBAR $10k threshold; Form 8938 $50k/$75k in-US single or $200k/$300k abroad single; Form 3520 Part IV >$100k foreign gift/bequest 5%/mo up to 25%; FinCEN 105 >$10k cash carried.",
+      "why_it_matters": "Offshore penalties are the largest real financial exposure — larger than bank fees or PRC tax. FBAR attaches while money sits in China, before converting $1. Penalties apply per report/per year (Bittner). Streamlined Foreign (0%) vs Domestic (5%) relief has eligibility tests."
+    },
+    {
+      "flag_ids": [
+        "FL-02",
+        "FL-03",
+        "FL-09",
+        "FL-10"
+      ],
+      "how_to_discover": "Request at counter: 'Provide an all-in written quote showing: applied CNY/USD telegraphic selling rate, sender commission + cable, SHA vs OUR (Pay Exact) intermediary option, and expected correspondent/receiving deductions. Distinguish tax certificate vs tax payment.' Compare to Wise quote if <3-yr salary eligible.",
+      "id": "Q06",
+      "question": "What executable CNY→USD rate, bank commission/cable fees, intermediary lifting fees, and delivery timeline has your bank quoted in writing? (HSBC China tariff 31 Oct 2026: PB/Premier Elite $0; Premier/Advance 0.1% min100 max500 +120 cable; Pay Exact +200; Global Transfer $0 PB/Premier, $20 Advance)",
+      "source_ids": [
+        "SRC-25",
+        "SRC-38",
+        "SRC-39"
+      ],
+      "status": "high",
+      "what_we_dont_know": "Your bank (not necessarily HSBC), customer segment, whether PB/Premier, and live selling rate. No executable quote has been provided.",
+      "what_we_know": "HSBC China tariff components are published and capped ($86.97 at $10k–$400k for Premier/Advance SHA). But FX spread and correspondent fees are blank/unverified per verification rules.",
+      "why_it_matters": "No official static static spread or intermediary fee exists in any SAFE/PBOC/IRS document — the bank's live quote is the only authoritative number. Fee illustration at historic 7.129 ≠ today's spot. Published tariff excludes other banks' charges."
+    },
+    {
+      "flag_ids": [
+        "FL-01",
+        "FL-08"
+      ],
+      "how_to_discover": "If property: get housing transfer tax certificates from local tax bureau. If inheritance: get notarized succession certificate. If emigrant: get public-security hukou cancellation. Ask SAFE branch for its checklist.",
+      "id": "Q07",
+      "question": "If balance includes property-sale proceeds, inheritance, or pre-emigration assets — do you have the capital-account documents? (sale contract + tax clearance + free >$50k Tax Recordal; inheritance certificate + SAFE approval; hukou cancellation proof)",
+      "source_ids": [
+        "SRC-13",
+        "SRC-14",
+        "SRC-15",
+        "SRC-16",
+        "SRC-17",
+        "SRC-18",
+        "SRC-19"
+      ],
+      "status": "medium",
+      "what_we_dont_know": "Does your balance include such proceeds? No sale/estate/emigration facts have been provided.",
+      "what_we_know": "M09 property: need 完税证明 + free Tax Recordal >$50k. M10 inheritance: need notarized succession + SAFE approval + Form 3520 if >$100k. M11 emigrant: need hukou cancellation + pre-emigration asset proof. All lawful, lump-sum.",
+      "why_it_matters": "These capital-account routes move $400k in 1 lump sum outside $50k quota but require separate SAFE approvals and tax clearances. Property transfer tax (20% of net gain) or dividend withholding (10% treaty) may be due, but conversion itself remains $0."
+    },
+    {
+      "flag_ids": [
+        "FL-05"
+      ],
+      "how_to_discover": "Call account-holding branch: ask for its exact proxy template, whether apostilled POA required, and if video call satisfies identity check. Then execute POA via U.S. notary + apostille + courier.",
+      "id": "Q08",
+      "question": "Are you physically in China now, or back in the U.S. needing a proxy? (SAFE Henan Q&A 3 expressly permits entrusting salary conversion/wire to employer finance staff or another person)",
+      "source_ids": [
+        "SRC-03",
+        "SRC-08",
+        "SRC-09"
+      ],
+      "status": "medium",
+      "what_we_dont_know": "Your current location and whether bank allows video-verified proxy or requires original-sight at opening branch.",
+      "what_we_know": "M05 proxy is lawful with power-of-attorney + IDs + tax vouchers. No statutory time limit even on old salary (Henan Q&A 5) — so you can use proxy years later.",
+      "why_it_matters": "In-person counter review is normal, but SAFE explicitly allows proxy handling (M05) with proper authorization. Mobile app self-service often blocks foreign passports. Travel cost vs notary/apostille cost may decide route."
+    },
+    {
+      "flag_ids": [
+        "FL-13",
+        "FL-07",
+        "FL-14"
+      ],
+      "how_to_discover": "Map upcoming 12-month genuine U.S. expenses (tuition/medical/travel) that could be paid directly from China card (M16). For cash needs, quantify $10k-tier urgency and compare to M01 single-wire timeline (1–10 business days after docs ready).",
+      "id": "Q09",
+      "question": "How urgently do you need USD in a U.S. bank account (liquid cash) vs. can you spend directly from China over time? (ATM RMB 100k/yr ~$14k/yr = 29 yrs for $400k; POS spending not subject to quota/cash caps but gives $0 cash)",
+      "source_ids": [
+        "SRC-03",
+        "SRC-10",
+        "SRC-11",
+        "SRC-12"
+      ],
+      "status": "medium",
+      "what_we_dont_know": "Your time horizon and whether you have matching U.S. expenses to offset.",
+      "what_we_know": "ATM hard caps: 10k/day/card, 100k/yr/person aggregate across all cards → 29 calendar years for $400k. POS genuine consumption not quota-capped. Cash carry: RMB 20k/trip, USD 5k permit-free.",
+      "why_it_matters": "Spending channels (card POS, tuition, bills) are lawful without quota but don't yield cash. ATM/cash caps make multi-year staging extremely slow. Urgency dictates whether M01 lump-sum is required vs. gradual drawdown."
+    },
+    {
+      "flag_ids": [
+        "FL-09",
+        "FL-10"
+      ],
+      "how_to_discover": "Identify bank and segment from account opening docs. Request that bank's current tariff PDF (commission, cable, note withdrawal, Global Transfer). Substitute into cost table — the math is identical, only Cny caps change.",
+      "id": "Q10",
+      "question": "Which bank holds the CNY and what published tariff applies? (HSBC China vs BOC/ICBC/CMB/CCB domestic tariffs; PB vs Premier vs Advance segment; entity vs personal)",
+      "source_ids": [
+        "SRC-38"
+      ],
+      "status": "low",
+      "what_we_dont_know": "Your actual bank and segment. No account statement provided.",
+      "what_we_know": "HSBC China Oct 2026 tariff is verified directly; other state banks publish different tariffs. BOC/ICBC/ABC/CMB boards show ~6.65–6.68 selling rates on 10 Nov 2026, consistent with 7.129 reference.",
+      "why_it_matters": "Commission/cable varies by bank. Our cost ladder uses HSBC China 31 Oct 2026 tariff (most recently retrieved primary commercial schedule). Using wrong tariff inflates/deflates published fee estimate."
+    },
+    {
+      "flag_ids": [
+        "FL-17"
+      ],
+      "how_to_discover": "Ask anyone proposing a workaround to provide the SAFE/PBOC legal article authorizing it — none exists. Instead, get bank's refusal in writing with legal basis; it's almost always a missing-tax-voucher issue solvable via M01.",
+      "id": "Q11",
+      "question": "Have you been offered any 'quick' solution: pooling relatives' $50k quotas, crypto/USDT bridge, or underground swap at a 'better rate'?",
+      "source_ids": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-04",
+        "SRC-21"
+      ],
+      "status": "critical",
+      "what_we_dont_know": "Whether you have been approached by such providers. Prompt says no way to convert without 'considerable taxes' — we must ensure you don't misread bank's tax-document gate as a reason to seek gray market.",
+      "what_we_know": "PBOC Art.7 bans splitting to evade limits; Decree 532 Arts.39/40/42/45 impose fines; SAFE runs bank-SAFE monitoring system to detect pooled remittances. Crypto fiat exchange = illegal financial activity since 2021, expanded 2026 to ban RMB stablecoins.",
+      "why_it_matters": "These are the only routes with catastrophic statutory fines (30%–100% PRC fines per Decree 532 Arts.39–45; Yin Fa [2026] No.42 crypto ban) and unrecoverable loss. The 'considerable tax' you were told to avoid is $3%–45% lawful IIT; the underground 'fee' is 30%–100% fine plus criminal record."
+    },
+    {
+      "flag_ids": [
+        "FL-01"
+      ],
+      "how_to_discover": "Before wiring, set up digital vault: scan FX memos, MT103s, tax vouchers, contracts, POAs. Confirm with U.S. CPA: how to claim FTC carryover vs FEIE, and whether to file protective 8833 treaty disclosure for 10% dividend withholding.",
+      "id": "Q12",
+      "question": "What is your post-transfer plan for FBAR/Form 8938, Form 1116 credit carryover, and record retention? (Keep FX purchase memos, SWIFT MT103, tax records ≥5 yrs)",
+      "source_ids": [
+        "SRC-28",
+        "SRC-29",
+        "SRC-30",
+        "SRC-32",
+        "SRC-34"
+      ],
+      "status": "medium",
+      "what_we_dont_know": "Your intended record-keeping and whether you will retain advisor.",
+      "what_we_know": "FBAR/Form 8938 thresholds continue until balance < thresholds. FTC has 10-yr refund window. Streamlined needs certification of non-willfulness.",
+      "why_it_matters": "Wire is not the end — U.S. banks file Currency Transaction Reports, and IRS/FnCEN can ask for source proof years later. Missing records create rebuttable presumption of income. Good records also support FTC carryforward (excess PRC tax vs US limit) for 10 years."
+    }
+  ]
+}

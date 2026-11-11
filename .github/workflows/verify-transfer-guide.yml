@@ -1,0 +1,24 @@
+name: verify-transfer-guide
+on:
+  push:
+    branches: [main, arena/50f278d8-china2]
+    paths: ['transfer-guide/**', '.github/workflows/verify-transfer-guide.yml']
+  pull_request:
+    branches: [main]
+    paths: ['transfer-guide/**', '.github/workflows/verify-transfer-guide.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: PYTHONDONTWRITEBYTECODE=1 python3 transfer-guide/build.py
+      - run: PYTHONDONTWRITEBYTECODE=1 python3 transfer-guide/verify.py
+      - run: git diff --exit-code -- transfer-guide
+      - uses: actions/setup-node@v4
+        with: {node-version: '20'}
+      - run: node --check transfer-guide/assets/app.js
