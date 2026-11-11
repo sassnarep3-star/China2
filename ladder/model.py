@@ -905,7 +905,9 @@ def main():
     DATA.mkdir(exist_ok=True)
     rows = build_rows()
     meta = dict(
-        generated=date.today().isoformat(), retrieved=RETRIEVED,
+        # Deterministic: the date is the dataset's own retrieval date, not the wall clock,
+        # so the CI byte-identical rebuild check cannot fail merely because a day passed.
+        generated=RETRIEVED, retrieved=RETRIEVED,
         tiers=TIERS, rate=FX, source_count=len(SOURCES),
         route_count=len([r for r in ROUTES]),
         costed_route_count=len([r for r in ROUTES if r["status"] != "unlawful"]),

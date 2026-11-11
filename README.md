@@ -2,7 +2,8 @@
 
 Source-linked research on lawful mainland China CNY→USD conversion, repatriation routes, PRC/U.S. tax treatment, reporting obligations, and itemized $10,000–$400,000 cost tiers for a U.S. citizen. **Research, not individualized tax, legal, or investment advice.** No personal facts were verified, no transfers were made, and no tax returns were filed.
 
-**Newest live-verified dashboard (2026-11-10):** [verify-d5d1f860/index.html](verify-d5d1f860/index.html) — 24 primary documents re-fetched and quoted, 17 methods priced across 40 tiers ($10k–$400k) with the fee arithmetic recomputed independently, 16 published flags, and blanks wherever nothing is published.
+**Newest pass (2026-11-11):** [decision-f40147e0/index.html](decision-f40147e0/index.html) — three mainland bank boards and four tariffs re-read with retrieval times, 24 methods, 10 priced × 40 tiers ($10k–$400k), 16 flags, and 14 line-by-line re-checks of the earlier sections.
+**Previous live-verified dashboard (2026-11-10):** [verify-d5d1f860/index.html](verify-d5d1f860/index.html) — 24 primary documents re-fetched and quoted, 17 methods priced across 40 tiers ($10k–$400k) with the fee arithmetic recomputed independently, 16 published flags, and blanks wherever nothing is published.
 **Executive briefing (start here):** [briefing/index.html](briefing/index.html) — the consolidated least-tax answer, all-methods cost tables at every $10,000 step from $10,000 to $400,000, and the source-linked repo audit.
 **Website:** https://sassnarep3-star.github.io/China2/
 **Cost ladder (start here):** [ladder/index.html](ladder/index.html) — every route priced at each $10,000 step from $10,000 to $400,000, with a source link per row and unverified values left blank and flagged.

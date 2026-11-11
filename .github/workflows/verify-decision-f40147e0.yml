@@ -1,0 +1,47 @@
+name: Verify decision dashboard (f40147e0)
+
+# CI verification only. GitHub Pages for this repository uses native main:/ publishing,
+# so decision-f40147e0/ is served automatically at /China2/decision-f40147e0/.
+
+on:
+  pull_request:
+    paths:
+      - 'decision-f40147e0/**'
+      - '.github/workflows/verify-decision-f40147e0.yml'
+  push:
+    branches: ["main", "arena/f40147e0-china2"]
+    paths:
+      - 'decision-f40147e0/**'
+      - '.github/workflows/verify-decision-f40147e0.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-decision:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Recompute the cost model and the exports
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 decision-f40147e0/model.py
+      - name: Regenerate the pages
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 decision-f40147e0/build.py
+      - name: Check generated output is committed byte-identically
+        run: git diff --exit-code -- decision-f40147e0
+      - name: Independent verification (ledger, arithmetic, blank rule, row links, anchors)
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 decision-f40147e0/verify.py
+      - name: Check browser script syntax
+        run: node --check decision-f40147e0/assets/app.js

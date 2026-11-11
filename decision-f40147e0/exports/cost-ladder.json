@@ -1,0 +1,4689 @@
+{
+ "meta": {
+  "generated": "2026-11-11",
+  "ref_mid": 6.6763571,
+  "ref_mid_basis": "arithmetic mean of the three readable bank mids (BOC 6.67705, CMB 6.67747, HSBC 6.6745513); SAFE parity could not be read (F01)",
+  "irs_2025_yuan_per_usd": 7.129,
+  "formula": "total = amount x (selling rate / reference mid - 1) + clamp(0.1% x CNY amount, floor, cap) + cable / reference mid",
+  "tier_count": 40,
+  "priced_methods": [
+   "M01",
+   "M02",
+   "M03",
+   "M04",
+   "M05",
+   "M10",
+   "M11",
+   "M12",
+   "M13",
+   "M14"
+  ],
+  "unpriced_methods": [
+   "M06",
+   "M07",
+   "M08",
+   "M09",
+   "M15",
+   "M16",
+   "M17",
+   "M18",
+   "M19",
+   "M20",
+   "M21",
+   "M22",
+   "M23",
+   "M24"
+  ],
+  "row_count": 400,
+  "priced_rows": 291,
+  "ceiling_rows": 109,
+  "boards_read": {
+   "BOC": {
+    "retrieved": "2026-11-11 10:25:02 Beijing",
+    "buy": 6.663,
+    "sell": 6.6911,
+    "src": "S01"
+   },
+   "CMB": {
+    "retrieved": "2026-11-11 10:28:44 (page dated 2026-11-10)",
+    "buy": 6.66295,
+    "sell": 6.69199,
+    "src": "S03"
+   },
+   "HSBC": {
+    "retrieved": "2026-11-11 (page updated 2026-11-10)",
+    "buy": 6.6411822,
+    "sell": 6.7079204,
+    "src": "S05"
+   }
+  }
+ },
+ "headline": {
+  "M01": {
+   "10000": {
+    "total_usd": 54.55,
+    "pct": 0.5455,
+    "spread_usd": 22.08,
+    "fee_usd": 32.47
+   },
+   "50000": {
+    "total_usd": 171.82,
+    "pct": 0.3436,
+    "spread_usd": 110.41,
+    "fee_usd": 61.41
+   },
+   "100000": {
+    "total_usd": 282.23,
+    "pct": 0.2822,
+    "spread_usd": 220.82,
+    "fee_usd": 61.41
+   },
+   "200000": {
+    "total_usd": 503.06,
+    "pct": 0.2515,
+    "spread_usd": 441.65,
+    "fee_usd": 61.41
+   },
+   "400000": {
+    "total_usd": 944.7,
+    "pct": 0.2362,
+    "spread_usd": 883.29,
+    "fee_usd": 61.41
+   }
+  },
+  "M02": {
+   "10000": {
+    "total_usd": 60.86,
+    "pct": 0.6086,
+    "spread_usd": 23.42,
+    "fee_usd": 37.45
+   },
+   "50000": {
+    "total_usd": 189.54,
+    "pct": 0.3791,
+    "spread_usd": 117.08,
+    "fee_usd": 72.47
+   },
+   "100000": {
+    "total_usd": 356.62,
+    "pct": 0.3566,
+    "spread_usd": 234.15,
+    "fee_usd": 122.47
+   },
+   "200000": {
+    "total_usd": 640.56,
+    "pct": 0.3203,
+    "spread_usd": 468.31,
+    "fee_usd": 172.25
+   },
+   "400000": {
+    "total_usd": 1108.86,
+    "pct": 0.2772,
+    "spread_usd": 936.61,
+    "fee_usd": 172.25
+   }
+  },
+  "M03": {
+   "10000": {
+    "total_usd": 80.23,
+    "pct": 0.8023,
+    "spread_usd": 47.28,
+    "fee_usd": 32.95
+   },
+   "50000": {
+    "total_usd": 304.36,
+    "pct": 0.6087,
+    "spread_usd": 236.38,
+    "fee_usd": 67.97
+   },
+   "100000": {
+    "total_usd": 565.63,
+    "pct": 0.5656,
+    "spread_usd": 472.76,
+    "fee_usd": 92.87
+   },
+   "200000": {
+    "total_usd": 1038.39,
+    "pct": 0.5192,
+    "spread_usd": 945.52,
+    "fee_usd": 92.87
+   },
+   "400000": {
+    "total_usd": 1983.91,
+    "pct": 0.496,
+    "spread_usd": 1891.05,
+    "fee_usd": 92.87
+   }
+  },
+  "M04": {
+   "10000": {
+    "total_usd": 47.28,
+    "pct": 0.4728,
+    "spread_usd": 47.28,
+    "fee_usd": 0.0
+   },
+   "50000": {
+    "total_usd": 236.38,
+    "pct": 0.4728,
+    "spread_usd": 236.38,
+    "fee_usd": 0.0
+   },
+   "100000": {
+    "total_usd": 472.76,
+    "pct": 0.4728,
+    "spread_usd": 472.76,
+    "fee_usd": 0.0
+   },
+   "200000": {
+    "total_usd": 945.52,
+    "pct": 0.4728,
+    "spread_usd": 945.52,
+    "fee_usd": 0.0
+   },
+   "400000": {
+    "total_usd": 1891.05,
+    "pct": 0.4728,
+    "spread_usd": 1891.05,
+    "fee_usd": 0.0
+   }
+  },
+  "M05": {
+   "10000": {
+    "total_usd": 22.08,
+    "pct": 0.2208,
+    "spread_usd": 22.08,
+    "fee_usd": 0.0
+   },
+   "50000": null,
+   "100000": null,
+   "200000": null,
+   "400000": null
+  },
+  "M10": {
+   "10000": {
+    "total_usd": 54.55,
+    "pct": 0.5455,
+    "spread_usd": 22.08,
+    "fee_usd": 32.47
+   },
+   "50000": {
+    "total_usd": 171.82,
+    "pct": 0.3436,
+    "spread_usd": 110.41,
+    "fee_usd": 61.41
+   },
+   "100000": null,
+   "200000": null,
+   "400000": null
+  },
+  "M11": {
+   "10000": {
+    "total_usd": 54.55,
+    "pct": 0.5455,
+    "spread_usd": 22.08,
+    "fee_usd": 32.47
+   },
+   "50000": {
+    "total_usd": 171.82,
+    "pct": 0.3436,
+    "spread_usd": 110.41,
+    "fee_usd": 61.41
+   },
+   "100000": {
+    "total_usd": 282.23,
+    "pct": 0.2822,
+    "spread_usd": 220.82,
+    "fee_usd": 61.41
+   },
+   "200000": {
+    "total_usd": 503.06,
+    "pct": 0.2515,
+    "spread_usd": 441.65,
+    "fee_usd": 61.41
+   },
+   "400000": {
+    "total_usd": 944.7,
+    "pct": 0.2362,
+    "spread_usd": 883.29,
+    "fee_usd": 61.41
+   }
+  },
+  "M12": {
+   "10000": {
+    "total_usd": 54.55,
+    "pct": 0.5455,
+    "spread_usd": 22.08,
+    "fee_usd": 32.47
+   },
+   "50000": {
+    "total_usd": 171.82,
+    "pct": 0.3436,
+    "spread_usd": 110.41,
+    "fee_usd": 61.41
+   },
+   "100000": {
+    "total_usd": 282.23,
+    "pct": 0.2822,
+    "spread_usd": 220.82,
+    "fee_usd": 61.41
+   },
+   "200000": {
+    "total_usd": 503.06,
+    "pct": 0.2515,
+    "spread_usd": 441.65,
+    "fee_usd": 61.41
+   },
+   "400000": {
+    "total_usd": 944.7,
+    "pct": 0.2362,
+    "spread_usd": 883.29,
+    "fee_usd": 61.41
+   }
+  },
+  "M13": {
+   "10000": {
+    "total_usd": 54.55,
+    "pct": 0.5455,
+    "spread_usd": 22.08,
+    "fee_usd": 32.47
+   },
+   "50000": {
+    "total_usd": 171.82,
+    "pct": 0.3436,
+    "spread_usd": 110.41,
+    "fee_usd": 61.41
+   },
+   "100000": {
+    "total_usd": 282.23,
+    "pct": 0.2822,
+    "spread_usd": 220.82,
+    "fee_usd": 61.41
+   },
+   "200000": {
+    "total_usd": 503.06,
+    "pct": 0.2515,
+    "spread_usd": 441.65,
+    "fee_usd": 61.41
+   },
+   "400000": {
+    "total_usd": 944.7,
+    "pct": 0.2362,
+    "spread_usd": 883.29,
+    "fee_usd": 61.41
+   }
+  },
+  "M14": {
+   "10000": {
+    "total_usd": 54.55,
+    "pct": 0.5455,
+    "spread_usd": 22.08,
+    "fee_usd": 32.47
+   },
+   "50000": {
+    "total_usd": 171.82,
+    "pct": 0.3436,
+    "spread_usd": 110.41,
+    "fee_usd": 61.41
+   },
+   "100000": null,
+   "200000": null,
+   "400000": null
+  }
+ },
+ "ranking_100k": [
+  {
+   "method": "M01",
+   "total_usd": 282.23,
+   "pct": 0.2822
+  },
+  {
+   "method": "M11",
+   "total_usd": 282.23,
+   "pct": 0.2822
+  },
+  {
+   "method": "M12",
+   "total_usd": 282.23,
+   "pct": 0.2822
+  },
+  {
+   "method": "M13",
+   "total_usd": 282.23,
+   "pct": 0.2822
+  },
+  {
+   "method": "M02",
+   "total_usd": 356.62,
+   "pct": 0.3566
+  },
+  {
+   "method": "M04",
+   "total_usd": 472.76,
+   "pct": 0.4728
+  },
+  {
+   "method": "M03",
+   "total_usd": 565.63,
+   "pct": 0.5656
+  }
+ ],
+ "illustrative_988": [
+  {
+   "usd": 10000,
+   "basis_usd": 9365.07,
+   "gain_usd": 634.93,
+   "gain_pct": 6.3493
+  },
+  {
+   "usd": 100000,
+   "basis_usd": 93650.68,
+   "gain_usd": 6349.32,
+   "gain_pct": 6.3493
+  },
+  {
+   "usd": 400000,
+   "basis_usd": 374602.73,
+   "gain_usd": 25397.27,
+   "gain_pct": 6.3493
+  }
+ ],
+ "tiers": [
+  10000,
+  20000,
+  30000,
+  40000,
+  50000,
+  60000,
+  70000,
+  80000,
+  90000,
+  100000,
+  110000,
+  120000,
+  130000,
+  140000,
+  150000,
+  160000,
+  170000,
+  180000,
+  190000,
+  200000,
+  210000,
+  220000,
+  230000,
+  240000,
+  250000,
+  260000,
+  270000,
+  280000,
+  290000,
+  300000,
+  310000,
+  320000,
+  330000,
+  340000,
+  350000,
+  360000,
+  370000,
+  380000,
+  390000,
+  400000
+ ],
+ "rows": [
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 22.08,
+   "fee_cny": 216.76,
+   "fee_usd": 32.47,
+   "total_usd": 54.55,
+   "pct": 0.5455,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 20000,
+   "cny": 133527.14,
+   "spread_usd": 44.16,
+   "fee_cny": 283.53,
+   "fee_usd": 42.47,
+   "total_usd": 86.63,
+   "pct": 0.4332,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 30000,
+   "cny": 200290.71,
+   "spread_usd": 66.25,
+   "fee_cny": 350.29,
+   "fee_usd": 52.47,
+   "total_usd": 118.71,
+   "pct": 0.3957,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 40000,
+   "cny": 267054.28,
+   "spread_usd": 88.33,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 149.74,
+   "pct": 0.3743,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 50000,
+   "cny": 333817.85,
+   "spread_usd": 110.41,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 171.82,
+   "pct": 0.3436,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 60000,
+   "cny": 400581.43,
+   "spread_usd": 132.49,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 193.9,
+   "pct": 0.3232,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 70000,
+   "cny": 467345.0,
+   "spread_usd": 154.58,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 215.99,
+   "pct": 0.3086,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 80000,
+   "cny": 534108.57,
+   "spread_usd": 176.66,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 238.07,
+   "pct": 0.2976,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 90000,
+   "cny": 600872.14,
+   "spread_usd": 198.74,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 260.15,
+   "pct": 0.2891,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 100000,
+   "cny": 667635.71,
+   "spread_usd": 220.82,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 282.23,
+   "pct": 0.2822,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 110000,
+   "cny": 734399.28,
+   "spread_usd": 242.9,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 304.32,
+   "pct": 0.2767,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 120000,
+   "cny": 801162.85,
+   "spread_usd": 264.99,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 326.4,
+   "pct": 0.272,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 130000,
+   "cny": 867926.42,
+   "spread_usd": 287.07,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 348.48,
+   "pct": 0.2681,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 140000,
+   "cny": 934689.99,
+   "spread_usd": 309.15,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 370.56,
+   "pct": 0.2647,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 150000,
+   "cny": 1001453.56,
+   "spread_usd": 331.23,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 392.64,
+   "pct": 0.2618,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 160000,
+   "cny": 1068217.14,
+   "spread_usd": 353.32,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 414.73,
+   "pct": 0.2592,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 170000,
+   "cny": 1134980.71,
+   "spread_usd": 375.4,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 436.81,
+   "pct": 0.2569,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 180000,
+   "cny": 1201744.28,
+   "spread_usd": 397.48,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 458.89,
+   "pct": 0.2549,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 190000,
+   "cny": 1268507.85,
+   "spread_usd": 419.56,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 480.97,
+   "pct": 0.2531,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 200000,
+   "cny": 1335271.42,
+   "spread_usd": 441.65,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 503.06,
+   "pct": 0.2515,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 210000,
+   "cny": 1402034.99,
+   "spread_usd": 463.73,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 525.14,
+   "pct": 0.2501,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 220000,
+   "cny": 1468798.56,
+   "spread_usd": 485.81,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 547.22,
+   "pct": 0.2487,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 230000,
+   "cny": 1535562.13,
+   "spread_usd": 507.89,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 569.3,
+   "pct": 0.2475,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 240000,
+   "cny": 1602325.7,
+   "spread_usd": 529.97,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 591.38,
+   "pct": 0.2464,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 250000,
+   "cny": 1669089.27,
+   "spread_usd": 552.06,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 613.47,
+   "pct": 0.2454,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 260000,
+   "cny": 1735852.85,
+   "spread_usd": 574.14,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 635.55,
+   "pct": 0.2444,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 270000,
+   "cny": 1802616.42,
+   "spread_usd": 596.22,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 657.63,
+   "pct": 0.2436,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 280000,
+   "cny": 1869379.99,
+   "spread_usd": 618.3,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 679.71,
+   "pct": 0.2428,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 290000,
+   "cny": 1936143.56,
+   "spread_usd": 640.39,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 701.8,
+   "pct": 0.242,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 300000,
+   "cny": 2002907.13,
+   "spread_usd": 662.47,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 723.88,
+   "pct": 0.2413,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 310000,
+   "cny": 2069670.7,
+   "spread_usd": 684.55,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 745.96,
+   "pct": 0.2406,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 320000,
+   "cny": 2136434.27,
+   "spread_usd": 706.63,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 768.04,
+   "pct": 0.24,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 330000,
+   "cny": 2203197.84,
+   "spread_usd": 728.71,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 790.13,
+   "pct": 0.2394,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 340000,
+   "cny": 2269961.41,
+   "spread_usd": 750.8,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 812.21,
+   "pct": 0.2389,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 350000,
+   "cny": 2336724.98,
+   "spread_usd": 772.88,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 834.29,
+   "pct": 0.2384,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 360000,
+   "cny": 2403488.56,
+   "spread_usd": 794.96,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 856.37,
+   "pct": 0.2379,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 370000,
+   "cny": 2470252.13,
+   "spread_usd": 817.04,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 878.45,
+   "pct": 0.2374,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 380000,
+   "cny": 2537015.7,
+   "spread_usd": 839.13,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 900.54,
+   "pct": 0.237,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 390000,
+   "cny": 2603779.27,
+   "spread_usd": 861.21,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 922.62,
+   "pct": 0.2366,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 400000,
+   "cny": 2670542.84,
+   "spread_usd": 883.29,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 944.7,
+   "pct": 0.2362,
+   "spread_pct": 0.2208,
+   "method": "M01",
+   "state": "priced"
+  },
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 23.42,
+   "fee_cny": 250.0,
+   "fee_usd": 37.45,
+   "total_usd": 60.86,
+   "pct": 0.6086,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 20000,
+   "cny": 133527.14,
+   "spread_usd": 46.83,
+   "fee_cny": 283.53,
+   "fee_usd": 42.47,
+   "total_usd": 89.3,
+   "pct": 0.4465,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 30000,
+   "cny": 200290.71,
+   "spread_usd": 70.25,
+   "fee_cny": 350.29,
+   "fee_usd": 52.47,
+   "total_usd": 122.71,
+   "pct": 0.409,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 40000,
+   "cny": 267054.28,
+   "spread_usd": 93.66,
+   "fee_cny": 417.05,
+   "fee_usd": 62.47,
+   "total_usd": 156.13,
+   "pct": 0.3903,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 50000,
+   "cny": 333817.85,
+   "spread_usd": 117.08,
+   "fee_cny": 483.82,
+   "fee_usd": 72.47,
+   "total_usd": 189.54,
+   "pct": 0.3791,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 60000,
+   "cny": 400581.43,
+   "spread_usd": 140.49,
+   "fee_cny": 550.58,
+   "fee_usd": 82.47,
+   "total_usd": 222.96,
+   "pct": 0.3716,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 70000,
+   "cny": 467345.0,
+   "spread_usd": 163.91,
+   "fee_cny": 617.34,
+   "fee_usd": 92.47,
+   "total_usd": 256.37,
+   "pct": 0.3662,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 80000,
+   "cny": 534108.57,
+   "spread_usd": 187.32,
+   "fee_cny": 684.11,
+   "fee_usd": 102.47,
+   "total_usd": 289.79,
+   "pct": 0.3622,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 90000,
+   "cny": 600872.14,
+   "spread_usd": 210.74,
+   "fee_cny": 750.87,
+   "fee_usd": 112.47,
+   "total_usd": 323.21,
+   "pct": 0.3591,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 100000,
+   "cny": 667635.71,
+   "spread_usd": 234.15,
+   "fee_cny": 817.64,
+   "fee_usd": 122.47,
+   "total_usd": 356.62,
+   "pct": 0.3566,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 110000,
+   "cny": 734399.28,
+   "spread_usd": 257.57,
+   "fee_cny": 884.4,
+   "fee_usd": 132.47,
+   "total_usd": 390.04,
+   "pct": 0.3546,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 120000,
+   "cny": 801162.85,
+   "spread_usd": 280.98,
+   "fee_cny": 951.16,
+   "fee_usd": 142.47,
+   "total_usd": 423.45,
+   "pct": 0.3529,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 130000,
+   "cny": 867926.42,
+   "spread_usd": 304.4,
+   "fee_cny": 1017.93,
+   "fee_usd": 152.47,
+   "total_usd": 456.87,
+   "pct": 0.3514,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 140000,
+   "cny": 934689.99,
+   "spread_usd": 327.81,
+   "fee_cny": 1084.69,
+   "fee_usd": 162.47,
+   "total_usd": 490.28,
+   "pct": 0.3502,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 150000,
+   "cny": 1001453.56,
+   "spread_usd": 351.23,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 523.48,
+   "pct": 0.349,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 160000,
+   "cny": 1068217.14,
+   "spread_usd": 374.65,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 546.89,
+   "pct": 0.3418,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 170000,
+   "cny": 1134980.71,
+   "spread_usd": 398.06,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 570.31,
+   "pct": 0.3355,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 180000,
+   "cny": 1201744.28,
+   "spread_usd": 421.48,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 593.73,
+   "pct": 0.3298,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 190000,
+   "cny": 1268507.85,
+   "spread_usd": 444.89,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 617.14,
+   "pct": 0.3248,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 200000,
+   "cny": 1335271.42,
+   "spread_usd": 468.31,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 640.56,
+   "pct": 0.3203,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 210000,
+   "cny": 1402034.99,
+   "spread_usd": 491.72,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 663.97,
+   "pct": 0.3162,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 220000,
+   "cny": 1468798.56,
+   "spread_usd": 515.14,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 687.39,
+   "pct": 0.3124,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 230000,
+   "cny": 1535562.13,
+   "spread_usd": 538.55,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 710.8,
+   "pct": 0.309,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 240000,
+   "cny": 1602325.7,
+   "spread_usd": 561.97,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 734.22,
+   "pct": 0.3059,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 250000,
+   "cny": 1669089.27,
+   "spread_usd": 585.38,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 757.63,
+   "pct": 0.3031,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 260000,
+   "cny": 1735852.85,
+   "spread_usd": 608.8,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 781.05,
+   "pct": 0.3004,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 270000,
+   "cny": 1802616.42,
+   "spread_usd": 632.21,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 804.46,
+   "pct": 0.2979,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 280000,
+   "cny": 1869379.99,
+   "spread_usd": 655.63,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 827.88,
+   "pct": 0.2957,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 290000,
+   "cny": 1936143.56,
+   "spread_usd": 679.04,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 851.29,
+   "pct": 0.2935,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 300000,
+   "cny": 2002907.13,
+   "spread_usd": 702.46,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 874.71,
+   "pct": 0.2916,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 310000,
+   "cny": 2069670.7,
+   "spread_usd": 725.87,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 898.12,
+   "pct": 0.2897,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 320000,
+   "cny": 2136434.27,
+   "spread_usd": 749.29,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 921.54,
+   "pct": 0.288,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 330000,
+   "cny": 2203197.84,
+   "spread_usd": 772.71,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 944.95,
+   "pct": 0.2863,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 340000,
+   "cny": 2269961.41,
+   "spread_usd": 796.12,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 968.37,
+   "pct": 0.2848,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 350000,
+   "cny": 2336724.98,
+   "spread_usd": 819.54,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 991.79,
+   "pct": 0.2834,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 360000,
+   "cny": 2403488.56,
+   "spread_usd": 842.95,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 1015.2,
+   "pct": 0.282,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 370000,
+   "cny": 2470252.13,
+   "spread_usd": 866.37,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 1038.62,
+   "pct": 0.2807,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 380000,
+   "cny": 2537015.7,
+   "spread_usd": 889.78,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 1062.03,
+   "pct": 0.2795,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 390000,
+   "cny": 2603779.27,
+   "spread_usd": 913.2,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 1085.45,
+   "pct": 0.2783,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 400000,
+   "cny": 2670542.84,
+   "spread_usd": 936.61,
+   "fee_cny": 1150.0,
+   "fee_usd": 172.25,
+   "total_usd": 1108.86,
+   "pct": 0.2772,
+   "spread_pct": 0.2342,
+   "method": "M02",
+   "state": "priced"
+  },
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 47.28,
+   "fee_cny": 220.0,
+   "fee_usd": 32.95,
+   "total_usd": 80.23,
+   "pct": 0.8023,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 20000,
+   "cny": 133527.14,
+   "spread_usd": 94.55,
+   "fee_cny": 253.53,
+   "fee_usd": 37.97,
+   "total_usd": 132.53,
+   "pct": 0.6626,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 30000,
+   "cny": 200290.71,
+   "spread_usd": 141.83,
+   "fee_cny": 320.29,
+   "fee_usd": 47.97,
+   "total_usd": 189.8,
+   "pct": 0.6327,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 40000,
+   "cny": 267054.28,
+   "spread_usd": 189.1,
+   "fee_cny": 387.05,
+   "fee_usd": 57.97,
+   "total_usd": 247.08,
+   "pct": 0.6177,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 50000,
+   "cny": 333817.85,
+   "spread_usd": 236.38,
+   "fee_cny": 453.82,
+   "fee_usd": 67.97,
+   "total_usd": 304.36,
+   "pct": 0.6087,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 60000,
+   "cny": 400581.43,
+   "spread_usd": 283.66,
+   "fee_cny": 520.58,
+   "fee_usd": 77.97,
+   "total_usd": 361.63,
+   "pct": 0.6027,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 70000,
+   "cny": 467345.0,
+   "spread_usd": 330.93,
+   "fee_cny": 587.34,
+   "fee_usd": 87.97,
+   "total_usd": 418.91,
+   "pct": 0.5984,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 80000,
+   "cny": 534108.57,
+   "spread_usd": 378.21,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 471.07,
+   "pct": 0.5888,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 90000,
+   "cny": 600872.14,
+   "spread_usd": 425.49,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 518.35,
+   "pct": 0.5759,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 100000,
+   "cny": 667635.71,
+   "spread_usd": 472.76,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 565.63,
+   "pct": 0.5656,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 110000,
+   "cny": 734399.28,
+   "spread_usd": 520.04,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 612.9,
+   "pct": 0.5572,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 120000,
+   "cny": 801162.85,
+   "spread_usd": 567.31,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 660.18,
+   "pct": 0.5501,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 130000,
+   "cny": 867926.42,
+   "spread_usd": 614.59,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 707.46,
+   "pct": 0.5442,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 140000,
+   "cny": 934689.99,
+   "spread_usd": 661.87,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 754.73,
+   "pct": 0.5391,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 150000,
+   "cny": 1001453.56,
+   "spread_usd": 709.14,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 802.01,
+   "pct": 0.5347,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 160000,
+   "cny": 1068217.14,
+   "spread_usd": 756.42,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 849.28,
+   "pct": 0.5308,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 170000,
+   "cny": 1134980.71,
+   "spread_usd": 803.7,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 896.56,
+   "pct": 0.5274,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 180000,
+   "cny": 1201744.28,
+   "spread_usd": 850.97,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 943.84,
+   "pct": 0.5244,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 190000,
+   "cny": 1268507.85,
+   "spread_usd": 898.25,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 991.11,
+   "pct": 0.5216,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 200000,
+   "cny": 1335271.42,
+   "spread_usd": 945.52,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1038.39,
+   "pct": 0.5192,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 210000,
+   "cny": 1402034.99,
+   "spread_usd": 992.8,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1085.67,
+   "pct": 0.517,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 220000,
+   "cny": 1468798.56,
+   "spread_usd": 1040.08,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1132.94,
+   "pct": 0.515,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 230000,
+   "cny": 1535562.13,
+   "spread_usd": 1087.35,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1180.22,
+   "pct": 0.5131,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 240000,
+   "cny": 1602325.7,
+   "spread_usd": 1134.63,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1227.49,
+   "pct": 0.5115,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 250000,
+   "cny": 1669089.27,
+   "spread_usd": 1181.91,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1274.77,
+   "pct": 0.5099,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 260000,
+   "cny": 1735852.85,
+   "spread_usd": 1229.18,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1322.05,
+   "pct": 0.5085,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 270000,
+   "cny": 1802616.42,
+   "spread_usd": 1276.46,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1369.32,
+   "pct": 0.5072,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 280000,
+   "cny": 1869379.99,
+   "spread_usd": 1323.73,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1416.6,
+   "pct": 0.5059,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 290000,
+   "cny": 1936143.56,
+   "spread_usd": 1371.01,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1463.88,
+   "pct": 0.5048,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 300000,
+   "cny": 2002907.13,
+   "spread_usd": 1418.29,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1511.15,
+   "pct": 0.5037,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 310000,
+   "cny": 2069670.7,
+   "spread_usd": 1465.56,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1558.43,
+   "pct": 0.5027,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 320000,
+   "cny": 2136434.27,
+   "spread_usd": 1512.84,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1605.7,
+   "pct": 0.5018,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 330000,
+   "cny": 2203197.84,
+   "spread_usd": 1560.12,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1652.98,
+   "pct": 0.5009,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 340000,
+   "cny": 2269961.41,
+   "spread_usd": 1607.39,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1700.26,
+   "pct": 0.5001,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 350000,
+   "cny": 2336724.98,
+   "spread_usd": 1654.67,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1747.53,
+   "pct": 0.4993,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 360000,
+   "cny": 2403488.56,
+   "spread_usd": 1701.94,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1794.81,
+   "pct": 0.4986,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 370000,
+   "cny": 2470252.13,
+   "spread_usd": 1749.22,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1842.09,
+   "pct": 0.4979,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 380000,
+   "cny": 2537015.7,
+   "spread_usd": 1796.5,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1889.36,
+   "pct": 0.4972,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 390000,
+   "cny": 2603779.27,
+   "spread_usd": 1843.77,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1936.64,
+   "pct": 0.4966,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 400000,
+   "cny": 2670542.84,
+   "spread_usd": 1891.05,
+   "fee_cny": 620.0,
+   "fee_usd": 92.87,
+   "total_usd": 1983.91,
+   "pct": 0.496,
+   "spread_pct": 0.4728,
+   "method": "M03",
+   "state": "priced"
+  },
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 47.28,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 47.28,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 20000,
+   "cny": 133527.14,
+   "spread_usd": 94.55,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 94.55,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 30000,
+   "cny": 200290.71,
+   "spread_usd": 141.83,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 141.83,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 40000,
+   "cny": 267054.28,
+   "spread_usd": 189.1,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 189.1,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 50000,
+   "cny": 333817.85,
+   "spread_usd": 236.38,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 236.38,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 60000,
+   "cny": 400581.43,
+   "spread_usd": 283.66,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 283.66,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 70000,
+   "cny": 467345.0,
+   "spread_usd": 330.93,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 330.93,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 80000,
+   "cny": 534108.57,
+   "spread_usd": 378.21,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 378.21,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 90000,
+   "cny": 600872.14,
+   "spread_usd": 425.49,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 425.49,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 100000,
+   "cny": 667635.71,
+   "spread_usd": 472.76,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 472.76,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 110000,
+   "cny": 734399.28,
+   "spread_usd": 520.04,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 520.04,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 120000,
+   "cny": 801162.85,
+   "spread_usd": 567.31,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 567.31,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 130000,
+   "cny": 867926.42,
+   "spread_usd": 614.59,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 614.59,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 140000,
+   "cny": 934689.99,
+   "spread_usd": 661.87,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 661.87,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 150000,
+   "cny": 1001453.56,
+   "spread_usd": 709.14,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 709.14,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 160000,
+   "cny": 1068217.14,
+   "spread_usd": 756.42,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 756.42,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 170000,
+   "cny": 1134980.71,
+   "spread_usd": 803.7,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 803.7,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 180000,
+   "cny": 1201744.28,
+   "spread_usd": 850.97,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 850.97,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 190000,
+   "cny": 1268507.85,
+   "spread_usd": 898.25,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 898.25,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 200000,
+   "cny": 1335271.42,
+   "spread_usd": 945.52,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 945.52,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 210000,
+   "cny": 1402034.99,
+   "spread_usd": 992.8,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 992.8,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 220000,
+   "cny": 1468798.56,
+   "spread_usd": 1040.08,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1040.08,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 230000,
+   "cny": 1535562.13,
+   "spread_usd": 1087.35,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1087.35,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 240000,
+   "cny": 1602325.7,
+   "spread_usd": 1134.63,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1134.63,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 250000,
+   "cny": 1669089.27,
+   "spread_usd": 1181.91,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1181.91,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 260000,
+   "cny": 1735852.85,
+   "spread_usd": 1229.18,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1229.18,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 270000,
+   "cny": 1802616.42,
+   "spread_usd": 1276.46,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1276.46,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 280000,
+   "cny": 1869379.99,
+   "spread_usd": 1323.73,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1323.73,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 290000,
+   "cny": 1936143.56,
+   "spread_usd": 1371.01,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1371.01,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 300000,
+   "cny": 2002907.13,
+   "spread_usd": 1418.29,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1418.29,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 310000,
+   "cny": 2069670.7,
+   "spread_usd": 1465.56,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1465.56,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 320000,
+   "cny": 2136434.27,
+   "spread_usd": 1512.84,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1512.84,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 330000,
+   "cny": 2203197.84,
+   "spread_usd": 1560.12,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1560.12,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 340000,
+   "cny": 2269961.41,
+   "spread_usd": 1607.39,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1607.39,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 350000,
+   "cny": 2336724.98,
+   "spread_usd": 1654.67,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1654.67,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 360000,
+   "cny": 2403488.56,
+   "spread_usd": 1701.94,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1701.94,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 370000,
+   "cny": 2470252.13,
+   "spread_usd": 1749.22,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1749.22,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 380000,
+   "cny": 2537015.7,
+   "spread_usd": 1796.5,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1796.5,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 390000,
+   "cny": 2603779.27,
+   "spread_usd": 1843.77,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1843.77,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 400000,
+   "cny": 2670542.84,
+   "spread_usd": 1891.05,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 1891.05,
+   "pct": 0.4728,
+   "spread_pct": 0.4728,
+   "method": "M04",
+   "state": "priced"
+  },
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 22.08,
+   "fee_cny": 0.0,
+   "fee_usd": 0.0,
+   "total_usd": 22.08,
+   "pct": 0.2208,
+   "spread_pct": 0.2208,
+   "method": "M05",
+   "state": "priced"
+  },
+  {
+   "method": "M05",
+   "usd": 20000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 30000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 40000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 50000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 60000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 70000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 80000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 90000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 100000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 110000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 120000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 130000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 140000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 150000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 160000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 170000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 180000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 190000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 200000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 210000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 220000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 230000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 240000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 250000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 260000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 270000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 280000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 290000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 300000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 310000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 320000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 330000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 340000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 350000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 360000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 370000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 380000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 390000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M05",
+   "usd": 400000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 10000,
+   "note": "Published ceiling is USD 10,000; this tier is not reachable in one transaction."
+  },
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 22.08,
+   "fee_cny": 216.76,
+   "fee_usd": 32.47,
+   "total_usd": 54.55,
+   "pct": 0.5455,
+   "spread_pct": 0.2208,
+   "method": "M10",
+   "state": "priced"
+  },
+  {
+   "usd": 20000,
+   "cny": 133527.14,
+   "spread_usd": 44.16,
+   "fee_cny": 283.53,
+   "fee_usd": 42.47,
+   "total_usd": 86.63,
+   "pct": 0.4332,
+   "spread_pct": 0.2208,
+   "method": "M10",
+   "state": "priced"
+  },
+  {
+   "usd": 30000,
+   "cny": 200290.71,
+   "spread_usd": 66.25,
+   "fee_cny": 350.29,
+   "fee_usd": 52.47,
+   "total_usd": 118.71,
+   "pct": 0.3957,
+   "spread_pct": 0.2208,
+   "method": "M10",
+   "state": "priced"
+  },
+  {
+   "usd": 40000,
+   "cny": 267054.28,
+   "spread_usd": 88.33,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 149.74,
+   "pct": 0.3743,
+   "spread_pct": 0.2208,
+   "method": "M10",
+   "state": "priced"
+  },
+  {
+   "usd": 50000,
+   "cny": 333817.85,
+   "spread_usd": 110.41,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 171.82,
+   "pct": 0.3436,
+   "spread_pct": 0.2208,
+   "method": "M10",
+   "state": "priced"
+  },
+  {
+   "method": "M10",
+   "usd": 60000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 70000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 80000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 90000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 100000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 110000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 120000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 130000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 140000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 150000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 160000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 170000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 180000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 190000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 200000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 210000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 220000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 230000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 240000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 250000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 260000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 270000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 280000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 290000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 300000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 310000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 320000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 330000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 340000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 350000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 360000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 370000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 380000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 390000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M10",
+   "usd": 400000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 22.08,
+   "fee_cny": 216.76,
+   "fee_usd": 32.47,
+   "total_usd": 54.55,
+   "pct": 0.5455,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 20000,
+   "cny": 133527.14,
+   "spread_usd": 44.16,
+   "fee_cny": 283.53,
+   "fee_usd": 42.47,
+   "total_usd": 86.63,
+   "pct": 0.4332,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 30000,
+   "cny": 200290.71,
+   "spread_usd": 66.25,
+   "fee_cny": 350.29,
+   "fee_usd": 52.47,
+   "total_usd": 118.71,
+   "pct": 0.3957,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 40000,
+   "cny": 267054.28,
+   "spread_usd": 88.33,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 149.74,
+   "pct": 0.3743,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 50000,
+   "cny": 333817.85,
+   "spread_usd": 110.41,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 171.82,
+   "pct": 0.3436,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 60000,
+   "cny": 400581.43,
+   "spread_usd": 132.49,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 193.9,
+   "pct": 0.3232,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 70000,
+   "cny": 467345.0,
+   "spread_usd": 154.58,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 215.99,
+   "pct": 0.3086,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 80000,
+   "cny": 534108.57,
+   "spread_usd": 176.66,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 238.07,
+   "pct": 0.2976,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 90000,
+   "cny": 600872.14,
+   "spread_usd": 198.74,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 260.15,
+   "pct": 0.2891,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 100000,
+   "cny": 667635.71,
+   "spread_usd": 220.82,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 282.23,
+   "pct": 0.2822,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 110000,
+   "cny": 734399.28,
+   "spread_usd": 242.9,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 304.32,
+   "pct": 0.2767,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 120000,
+   "cny": 801162.85,
+   "spread_usd": 264.99,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 326.4,
+   "pct": 0.272,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 130000,
+   "cny": 867926.42,
+   "spread_usd": 287.07,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 348.48,
+   "pct": 0.2681,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 140000,
+   "cny": 934689.99,
+   "spread_usd": 309.15,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 370.56,
+   "pct": 0.2647,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 150000,
+   "cny": 1001453.56,
+   "spread_usd": 331.23,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 392.64,
+   "pct": 0.2618,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 160000,
+   "cny": 1068217.14,
+   "spread_usd": 353.32,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 414.73,
+   "pct": 0.2592,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 170000,
+   "cny": 1134980.71,
+   "spread_usd": 375.4,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 436.81,
+   "pct": 0.2569,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 180000,
+   "cny": 1201744.28,
+   "spread_usd": 397.48,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 458.89,
+   "pct": 0.2549,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 190000,
+   "cny": 1268507.85,
+   "spread_usd": 419.56,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 480.97,
+   "pct": 0.2531,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 200000,
+   "cny": 1335271.42,
+   "spread_usd": 441.65,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 503.06,
+   "pct": 0.2515,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 210000,
+   "cny": 1402034.99,
+   "spread_usd": 463.73,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 525.14,
+   "pct": 0.2501,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 220000,
+   "cny": 1468798.56,
+   "spread_usd": 485.81,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 547.22,
+   "pct": 0.2487,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 230000,
+   "cny": 1535562.13,
+   "spread_usd": 507.89,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 569.3,
+   "pct": 0.2475,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 240000,
+   "cny": 1602325.7,
+   "spread_usd": 529.97,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 591.38,
+   "pct": 0.2464,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 250000,
+   "cny": 1669089.27,
+   "spread_usd": 552.06,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 613.47,
+   "pct": 0.2454,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 260000,
+   "cny": 1735852.85,
+   "spread_usd": 574.14,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 635.55,
+   "pct": 0.2444,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 270000,
+   "cny": 1802616.42,
+   "spread_usd": 596.22,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 657.63,
+   "pct": 0.2436,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 280000,
+   "cny": 1869379.99,
+   "spread_usd": 618.3,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 679.71,
+   "pct": 0.2428,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 290000,
+   "cny": 1936143.56,
+   "spread_usd": 640.39,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 701.8,
+   "pct": 0.242,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 300000,
+   "cny": 2002907.13,
+   "spread_usd": 662.47,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 723.88,
+   "pct": 0.2413,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 310000,
+   "cny": 2069670.7,
+   "spread_usd": 684.55,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 745.96,
+   "pct": 0.2406,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 320000,
+   "cny": 2136434.27,
+   "spread_usd": 706.63,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 768.04,
+   "pct": 0.24,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 330000,
+   "cny": 2203197.84,
+   "spread_usd": 728.71,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 790.13,
+   "pct": 0.2394,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 340000,
+   "cny": 2269961.41,
+   "spread_usd": 750.8,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 812.21,
+   "pct": 0.2389,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 350000,
+   "cny": 2336724.98,
+   "spread_usd": 772.88,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 834.29,
+   "pct": 0.2384,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 360000,
+   "cny": 2403488.56,
+   "spread_usd": 794.96,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 856.37,
+   "pct": 0.2379,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 370000,
+   "cny": 2470252.13,
+   "spread_usd": 817.04,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 878.45,
+   "pct": 0.2374,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 380000,
+   "cny": 2537015.7,
+   "spread_usd": 839.13,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 900.54,
+   "pct": 0.237,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 390000,
+   "cny": 2603779.27,
+   "spread_usd": 861.21,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 922.62,
+   "pct": 0.2366,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 400000,
+   "cny": 2670542.84,
+   "spread_usd": 883.29,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 944.7,
+   "pct": 0.2362,
+   "spread_pct": 0.2208,
+   "method": "M11",
+   "state": "priced"
+  },
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 22.08,
+   "fee_cny": 216.76,
+   "fee_usd": 32.47,
+   "total_usd": 54.55,
+   "pct": 0.5455,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 20000,
+   "cny": 133527.14,
+   "spread_usd": 44.16,
+   "fee_cny": 283.53,
+   "fee_usd": 42.47,
+   "total_usd": 86.63,
+   "pct": 0.4332,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 30000,
+   "cny": 200290.71,
+   "spread_usd": 66.25,
+   "fee_cny": 350.29,
+   "fee_usd": 52.47,
+   "total_usd": 118.71,
+   "pct": 0.3957,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 40000,
+   "cny": 267054.28,
+   "spread_usd": 88.33,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 149.74,
+   "pct": 0.3743,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 50000,
+   "cny": 333817.85,
+   "spread_usd": 110.41,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 171.82,
+   "pct": 0.3436,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 60000,
+   "cny": 400581.43,
+   "spread_usd": 132.49,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 193.9,
+   "pct": 0.3232,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 70000,
+   "cny": 467345.0,
+   "spread_usd": 154.58,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 215.99,
+   "pct": 0.3086,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 80000,
+   "cny": 534108.57,
+   "spread_usd": 176.66,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 238.07,
+   "pct": 0.2976,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 90000,
+   "cny": 600872.14,
+   "spread_usd": 198.74,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 260.15,
+   "pct": 0.2891,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 100000,
+   "cny": 667635.71,
+   "spread_usd": 220.82,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 282.23,
+   "pct": 0.2822,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 110000,
+   "cny": 734399.28,
+   "spread_usd": 242.9,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 304.32,
+   "pct": 0.2767,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 120000,
+   "cny": 801162.85,
+   "spread_usd": 264.99,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 326.4,
+   "pct": 0.272,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 130000,
+   "cny": 867926.42,
+   "spread_usd": 287.07,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 348.48,
+   "pct": 0.2681,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 140000,
+   "cny": 934689.99,
+   "spread_usd": 309.15,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 370.56,
+   "pct": 0.2647,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 150000,
+   "cny": 1001453.56,
+   "spread_usd": 331.23,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 392.64,
+   "pct": 0.2618,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 160000,
+   "cny": 1068217.14,
+   "spread_usd": 353.32,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 414.73,
+   "pct": 0.2592,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 170000,
+   "cny": 1134980.71,
+   "spread_usd": 375.4,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 436.81,
+   "pct": 0.2569,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 180000,
+   "cny": 1201744.28,
+   "spread_usd": 397.48,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 458.89,
+   "pct": 0.2549,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 190000,
+   "cny": 1268507.85,
+   "spread_usd": 419.56,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 480.97,
+   "pct": 0.2531,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 200000,
+   "cny": 1335271.42,
+   "spread_usd": 441.65,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 503.06,
+   "pct": 0.2515,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 210000,
+   "cny": 1402034.99,
+   "spread_usd": 463.73,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 525.14,
+   "pct": 0.2501,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 220000,
+   "cny": 1468798.56,
+   "spread_usd": 485.81,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 547.22,
+   "pct": 0.2487,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 230000,
+   "cny": 1535562.13,
+   "spread_usd": 507.89,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 569.3,
+   "pct": 0.2475,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 240000,
+   "cny": 1602325.7,
+   "spread_usd": 529.97,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 591.38,
+   "pct": 0.2464,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 250000,
+   "cny": 1669089.27,
+   "spread_usd": 552.06,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 613.47,
+   "pct": 0.2454,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 260000,
+   "cny": 1735852.85,
+   "spread_usd": 574.14,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 635.55,
+   "pct": 0.2444,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 270000,
+   "cny": 1802616.42,
+   "spread_usd": 596.22,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 657.63,
+   "pct": 0.2436,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 280000,
+   "cny": 1869379.99,
+   "spread_usd": 618.3,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 679.71,
+   "pct": 0.2428,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 290000,
+   "cny": 1936143.56,
+   "spread_usd": 640.39,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 701.8,
+   "pct": 0.242,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 300000,
+   "cny": 2002907.13,
+   "spread_usd": 662.47,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 723.88,
+   "pct": 0.2413,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 310000,
+   "cny": 2069670.7,
+   "spread_usd": 684.55,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 745.96,
+   "pct": 0.2406,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 320000,
+   "cny": 2136434.27,
+   "spread_usd": 706.63,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 768.04,
+   "pct": 0.24,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 330000,
+   "cny": 2203197.84,
+   "spread_usd": 728.71,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 790.13,
+   "pct": 0.2394,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 340000,
+   "cny": 2269961.41,
+   "spread_usd": 750.8,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 812.21,
+   "pct": 0.2389,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 350000,
+   "cny": 2336724.98,
+   "spread_usd": 772.88,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 834.29,
+   "pct": 0.2384,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 360000,
+   "cny": 2403488.56,
+   "spread_usd": 794.96,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 856.37,
+   "pct": 0.2379,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 370000,
+   "cny": 2470252.13,
+   "spread_usd": 817.04,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 878.45,
+   "pct": 0.2374,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 380000,
+   "cny": 2537015.7,
+   "spread_usd": 839.13,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 900.54,
+   "pct": 0.237,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 390000,
+   "cny": 2603779.27,
+   "spread_usd": 861.21,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 922.62,
+   "pct": 0.2366,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 400000,
+   "cny": 2670542.84,
+   "spread_usd": 883.29,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 944.7,
+   "pct": 0.2362,
+   "spread_pct": 0.2208,
+   "method": "M12",
+   "state": "priced"
+  },
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 22.08,
+   "fee_cny": 216.76,
+   "fee_usd": 32.47,
+   "total_usd": 54.55,
+   "pct": 0.5455,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 20000,
+   "cny": 133527.14,
+   "spread_usd": 44.16,
+   "fee_cny": 283.53,
+   "fee_usd": 42.47,
+   "total_usd": 86.63,
+   "pct": 0.4332,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 30000,
+   "cny": 200290.71,
+   "spread_usd": 66.25,
+   "fee_cny": 350.29,
+   "fee_usd": 52.47,
+   "total_usd": 118.71,
+   "pct": 0.3957,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 40000,
+   "cny": 267054.28,
+   "spread_usd": 88.33,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 149.74,
+   "pct": 0.3743,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 50000,
+   "cny": 333817.85,
+   "spread_usd": 110.41,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 171.82,
+   "pct": 0.3436,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 60000,
+   "cny": 400581.43,
+   "spread_usd": 132.49,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 193.9,
+   "pct": 0.3232,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 70000,
+   "cny": 467345.0,
+   "spread_usd": 154.58,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 215.99,
+   "pct": 0.3086,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 80000,
+   "cny": 534108.57,
+   "spread_usd": 176.66,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 238.07,
+   "pct": 0.2976,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 90000,
+   "cny": 600872.14,
+   "spread_usd": 198.74,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 260.15,
+   "pct": 0.2891,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 100000,
+   "cny": 667635.71,
+   "spread_usd": 220.82,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 282.23,
+   "pct": 0.2822,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 110000,
+   "cny": 734399.28,
+   "spread_usd": 242.9,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 304.32,
+   "pct": 0.2767,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 120000,
+   "cny": 801162.85,
+   "spread_usd": 264.99,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 326.4,
+   "pct": 0.272,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 130000,
+   "cny": 867926.42,
+   "spread_usd": 287.07,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 348.48,
+   "pct": 0.2681,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 140000,
+   "cny": 934689.99,
+   "spread_usd": 309.15,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 370.56,
+   "pct": 0.2647,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 150000,
+   "cny": 1001453.56,
+   "spread_usd": 331.23,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 392.64,
+   "pct": 0.2618,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 160000,
+   "cny": 1068217.14,
+   "spread_usd": 353.32,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 414.73,
+   "pct": 0.2592,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 170000,
+   "cny": 1134980.71,
+   "spread_usd": 375.4,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 436.81,
+   "pct": 0.2569,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 180000,
+   "cny": 1201744.28,
+   "spread_usd": 397.48,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 458.89,
+   "pct": 0.2549,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 190000,
+   "cny": 1268507.85,
+   "spread_usd": 419.56,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 480.97,
+   "pct": 0.2531,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 200000,
+   "cny": 1335271.42,
+   "spread_usd": 441.65,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 503.06,
+   "pct": 0.2515,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 210000,
+   "cny": 1402034.99,
+   "spread_usd": 463.73,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 525.14,
+   "pct": 0.2501,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 220000,
+   "cny": 1468798.56,
+   "spread_usd": 485.81,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 547.22,
+   "pct": 0.2487,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 230000,
+   "cny": 1535562.13,
+   "spread_usd": 507.89,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 569.3,
+   "pct": 0.2475,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 240000,
+   "cny": 1602325.7,
+   "spread_usd": 529.97,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 591.38,
+   "pct": 0.2464,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 250000,
+   "cny": 1669089.27,
+   "spread_usd": 552.06,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 613.47,
+   "pct": 0.2454,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 260000,
+   "cny": 1735852.85,
+   "spread_usd": 574.14,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 635.55,
+   "pct": 0.2444,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 270000,
+   "cny": 1802616.42,
+   "spread_usd": 596.22,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 657.63,
+   "pct": 0.2436,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 280000,
+   "cny": 1869379.99,
+   "spread_usd": 618.3,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 679.71,
+   "pct": 0.2428,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 290000,
+   "cny": 1936143.56,
+   "spread_usd": 640.39,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 701.8,
+   "pct": 0.242,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 300000,
+   "cny": 2002907.13,
+   "spread_usd": 662.47,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 723.88,
+   "pct": 0.2413,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 310000,
+   "cny": 2069670.7,
+   "spread_usd": 684.55,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 745.96,
+   "pct": 0.2406,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 320000,
+   "cny": 2136434.27,
+   "spread_usd": 706.63,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 768.04,
+   "pct": 0.24,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 330000,
+   "cny": 2203197.84,
+   "spread_usd": 728.71,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 790.13,
+   "pct": 0.2394,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 340000,
+   "cny": 2269961.41,
+   "spread_usd": 750.8,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 812.21,
+   "pct": 0.2389,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 350000,
+   "cny": 2336724.98,
+   "spread_usd": 772.88,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 834.29,
+   "pct": 0.2384,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 360000,
+   "cny": 2403488.56,
+   "spread_usd": 794.96,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 856.37,
+   "pct": 0.2379,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 370000,
+   "cny": 2470252.13,
+   "spread_usd": 817.04,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 878.45,
+   "pct": 0.2374,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 380000,
+   "cny": 2537015.7,
+   "spread_usd": 839.13,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 900.54,
+   "pct": 0.237,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 390000,
+   "cny": 2603779.27,
+   "spread_usd": 861.21,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 922.62,
+   "pct": 0.2366,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 400000,
+   "cny": 2670542.84,
+   "spread_usd": 883.29,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 944.7,
+   "pct": 0.2362,
+   "spread_pct": 0.2208,
+   "method": "M13",
+   "state": "priced"
+  },
+  {
+   "usd": 10000,
+   "cny": 66763.57,
+   "spread_usd": 22.08,
+   "fee_cny": 216.76,
+   "fee_usd": 32.47,
+   "total_usd": 54.55,
+   "pct": 0.5455,
+   "spread_pct": 0.2208,
+   "method": "M14",
+   "state": "priced"
+  },
+  {
+   "usd": 20000,
+   "cny": 133527.14,
+   "spread_usd": 44.16,
+   "fee_cny": 283.53,
+   "fee_usd": 42.47,
+   "total_usd": 86.63,
+   "pct": 0.4332,
+   "spread_pct": 0.2208,
+   "method": "M14",
+   "state": "priced"
+  },
+  {
+   "usd": 30000,
+   "cny": 200290.71,
+   "spread_usd": 66.25,
+   "fee_cny": 350.29,
+   "fee_usd": 52.47,
+   "total_usd": 118.71,
+   "pct": 0.3957,
+   "spread_pct": 0.2208,
+   "method": "M14",
+   "state": "priced"
+  },
+  {
+   "usd": 40000,
+   "cny": 267054.28,
+   "spread_usd": 88.33,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 149.74,
+   "pct": 0.3743,
+   "spread_pct": 0.2208,
+   "method": "M14",
+   "state": "priced"
+  },
+  {
+   "usd": 50000,
+   "cny": 333817.85,
+   "spread_usd": 110.41,
+   "fee_cny": 410.0,
+   "fee_usd": 61.41,
+   "total_usd": 171.82,
+   "pct": 0.3436,
+   "spread_pct": 0.2208,
+   "method": "M14",
+   "state": "priced"
+  },
+  {
+   "method": "M14",
+   "usd": 60000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 70000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 80000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 90000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 100000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 110000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 120000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 130000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 140000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 150000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 160000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 170000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 180000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 190000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 200000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 210000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 220000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 230000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 240000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 250000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 260000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 270000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 280000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 290000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 300000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 310000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 320000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 330000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 340000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 350000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 360000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 370000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 380000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 390000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  },
+  {
+   "method": "M14",
+   "usd": 400000,
+   "state": "above-published-ceiling",
+   "ceiling_usd": 50000,
+   "note": "Published ceiling is USD 50,000; this tier is not reachable in one transaction."
+  }
+ ]
+}
