@@ -911,8 +911,12 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 
 | Task | Status | Owner | Files / scope |
 |---|---|---|---|
-| C1 | Repair `audit-92d12752`'s known stale snapshot assertion by rescanning the current checked-in tree and updating its generated audit data/pages; preserve its structural-only caveats | in progress | `audit-92d12752/**` |
-| C2 | Independently verify the refreshed scanner, internal links, and affected repository suites; record official-source boundaries and irregularities | unclaimed | `audit-92d12752/**`, append-only `COORDINATION.md` |
-| C3 | Publish through this fixed Arena branch and record integration status | unclaimed | append-only `COORDINATION.md` |
+| C1 | Repair `audit-92d12752`'s known stale snapshot assertion by rescanning the current checked-in tree and updating its generated audit data/pages; preserve its structural-only caveats | done | `audit-92d12752/**` |
+| C2 | Independently verify the refreshed scanner, internal links, and affected repository suites; record official-source boundaries and irregularities | done | `audit-92d12752/**`, append-only `COORDINATION.md` |
+| C3 | Publish through this fixed Arena branch and record integration status | in progress | append-only `COORDINATION.md` |
 
-Claim recorded before work. No other active claim for `audit-92d12752/**` appears in the task board. The audit remains a mechanical HTML-table/citation-link scan, not a legal or factual certification.
+Claim recorded before work. No other active claim for `audit-92d12752/**` appeared in the task board. On 2026-11-11, the regenerated point-in-time scan covers 100 HTML pages / 7,107 table-data rows; 1,384 candidate rows on 34 pages lack a direct allowlisted primary-domain URL in their own static row. This is a structural candidate count only: it neither proves missing evidentiary support nor verifies link liveness, source support, legal accuracy, dynamic tables, or exported data. The unchanged finite allowlist and scan exclusions remain in `scan.py`.
+
+- Refreshed by `PYTHONDONTWRITEBYTECODE=1 python3 audit-92d12752/build.py`; two consecutive builds were byte-identical. `audit-92d12752/verify.py` passes parser/domain-boundary, snapshot-parity, and local-report-link checks.
+- Regression pass on the combined checkout: all invoked checks exited successfully — audit suites (`audit-0f0f59fe`, `audit-456e7542`, `audit-86f0`, `audit-ad300459`, `audit-92d12752`), acceptance suites (`acceptance-373b54a3`, `acceptance-a64bd476`), ledger/report checks (`verify_85f37d08.py`, `study-8f529c94`, `estimate-facf2fe9`, `final-f6327e23`, `repatriate`, `briefing`, `ladder`, `verify-d5d1f860`, `verify-88f5a1be`), `scripts/build.py`, `scripts/validate.py`, `scripts/test_ui.js`, and `npm run check` (477 checks). Generated side-effect in `acceptance-a64bd476/checks.json` from its verifier was restored; only `audit-92d12752/**` is part of this task.
+- No new legal/tax conclusions were added, and no official source content was re-verified in this structural refresh. Existing flags about assumed ladder spreads and non-direct row citations remain visible; they are not resolved by the refreshed scan.
