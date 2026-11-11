@@ -1278,6 +1278,40 @@ Claim: review existing generated outputs read-only, record exact checks and limi
 
 ---
 
+---
+
+## Session `arena/382482c0-china2` — corrective final integration and acceptance (2026-11-11 UTC)
+
+Arena pins this session to the existing fixed branch; it substitutes for a session-named branch. The complete board and open PR list were read. Open PRs #39, #48, #49, #52, #53, #55, #63, #65, #68, #69 and #71 have been inactive for over 60 minutes and are conflicting; none is taken over or edited. This session does not create another duplicate research dashboard.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| A1 | Fresh official-source spot verification of the load-bearing PRC/U.S. rules and published bank inputs; document limitations | done | `acceptance-382482c0/**` |
+| A2 | Correct final-integration navigation and outdated README claims; promote the complete 40-tier guide without endorsing unresolved assumptions | done | `verification-3347ca0a/build.py` (navigation/corrections only), generated `index.html`, `README.md` |
+| A3 | Run all applicable deterministic builds/verifiers and local-link/mobile checks; publish flagged irregularities | done | `acceptance-382482c0/**`; generated snapshots only where their unmodified generators require |
+| A4 | PR to main, merge after green checks, confirm Pages deploy, record exact results | done | `COORDINATION.md` (append-only) |
+
+Policy: no private fact is inferred; blank means unverified, never zero; commercial estimates are dated illustrations, not executable quotes or tax determinations; every substantive new table row will link its primary publisher. Existing source evidence is not treated as proof of personal eligibility or current all-in cost.
+
+### A1–A3 completion record — `arena/382482c0-china2`
+
+- **Fresh primary-source checks (2026-11-11):** eight narrow findings in `acceptance-382482c0/index.html`, each linked to the publisher's text: SAFE documented-income FAQ https://www.safe.gov.cn/tianjin/2026/0713/3088.html ; SAFE permanent-resident purchase-facility FAQ https://www.safe.gov.cn/tianjin/2024/0621/2529.html ; IRS foreign tax credit https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit ; IRS FBAR https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar ; GPO 2024 §988 https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm ; IRS yearly averages/no official rate https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates ; Bank of China fee table https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html ; PRC Tax Collection Law https://12366.chinatax.gov.cn/bzds/120/120-1-4.html . Commercial bank pages are primary publisher sources, not government endorsement.
+- **Corrections:** replaced the root's categorical conversion-tax KPI and unsupported causal headline; added U.S. currency-basis/FTC qualifications; removed automatic 'unlock' wording from the question display; removed the README's unsupported generic spread band and stale generator instructions; linked the complete published-input 680-row playbook and this acceptance report. Historical datasets remain archived and are not represented as equivalent.
+- **Independent acceptance:** `acceptance-382482c0/verify.py` = 2,913 checks, 0 failures; 8 findings + 7 needs-review flags all have direct official links; every one of the 680 CSV rows was checked for method/tier completeness and HTTPS source coverage. `playbook-c1d73006/verify.py` = 24,050 checks, 0 failures. `verification-3347ca0a/verify.py` = 540 checks, 0 failures. Local HTTP smoke test: root, acceptance, costs, methods and questions all returned 200 with mobile viewport declarations. Responsive card CSS was inspected; no new real-browser screenshot is claimed.
+- **Whole-tree regression:** research build/validator/UI, evidence build/477 checks, portal/109 rows, repatriate/11,197 checks, briefing, dashboard/7,302 checks, study/19,686 checks, estimate/14,423 checks, final/997 checks, live-source/5,406 checks, targeted review, audit-86f0, audit-0f0f59fe/582 checks, audit-ad300459/624 checks, audit-456e7542, acceptance-373b54a3/43 checks, acceptance-a64bd476/35,400 checks, playbook, ladder/9,345 checks and all tracked JavaScript syntax checks passed. Generated structural snapshots were refreshed with their unmodified generators: `audit-92d12752` = 130 pages / 10,490 rows / 1,471 structural candidates on 36 pages; `acceptance-a64bd476` and `ladder/audit.html` were regenerated mechanically. These are structural/arithmetic checks, not legal certification or continuous external-link monitoring.
+- **Irregularities left needs review:** unknown origin/tax history/residence/acquisition basis/filing history; no executable rate or all-in quote; archived datasets use different methods and assumptions; this targeted pass does not certify every historical line. Seven current flags and their discovery actions are published at `acceptance-382482c0/index.html#flags`. No private data was requested or committed; no funds moved and no return was filed.
+
+### A4 publication result — `arena/382482c0-china2`
+
+- **PR:** https://github.com/sassnarep3-star/China2/pull/80 — **MERGED** 2026-11-11T07:45:31Z using `gh pr merge 80 --merge`; merge commit `c657b6c99a585e8ab732ecfe34e07d0231c73615`.
+- **CI:** all 13 checks on the final PR head passed, including the new corrective-acceptance workflow and the existing research, evidence, briefing, ladder, portal, repatriate, study, final-set and acceptance suites. Main-branch verification runs at the merge commit also completed successfully.
+- **Concurrency:** main advanced through PR #78 while PR #80 was open. The board conflict was resolved by preserving the complete concurrent delivery-audit section and this session's section; generated inventory/snapshots were refreshed. One merge-preserving rebase attempt replayed an already-merged concurrent claim and was aborted without discarding work; subsequent pushes used the intact merge history. No force push.
+- **Pages:** deployment run https://github.com/sassnarep3-star/China2/actions/runs/42981834733 completed SUCCESS (build, report and deploy). Pages build `1359546816` reports `status: built`, exact merge commit above, `error.message: null`, 34.471 seconds. Only non-failing GitHub Node 20 deprecation and Ubuntu runner-migration notices remain.
+- **Public retrieval confirmed:** https://sassnarep3-star.github.io/China2/ (new source-of-funds headline and non-categorical tax presentation); https://sassnarep3-star.github.io/China2/acceptance-382482c0/index.html (V01–V08 and F01–F07 with official links); https://sassnarep3-star.github.io/China2/playbook-c1d73006/costs.html (680 rows, 17 methods, all 40 amount options). Cache-busting query `?revision=c657b6c` was used to avoid stale content.
+- **Completion boundary:** A1–A4 done. Needs-review items stay published and do not block. No personal tax bill, route eligibility or all-in quote is asserted. This publication record is carried by a documentation-only follow-up PR because the observed merge/deploy result did not exist before PR #80 merged.
+
+---
+
 ## Session `arena/8a85759a-china2` — follow-through: apply the corrections earlier reviews only requested, and account for unmerged work (2026-11-11 UTC)
 
 > Environment note: Arena pins this session to the fixed branch `arena/8a85759a-china2` (branched from `main` @ `1146dd2`, fast-forwarded to `10fa64f` = PR #78 before this claim) and does not allow creating, renaming or switching branches, so this branch stands in for the requested `session-<id>/<task>` branch. The board above was read, and every remote branch was fetched read-only at 07:35–07:42 UTC to find claims that have not reached `main`.

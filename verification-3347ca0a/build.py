@@ -399,6 +399,11 @@ def root_page():
 
     q_rows = []
     for qid, text, know, discover, flags, urls in QUESTIONS[:8]:
+        # Final-integration correction: do not promise that settling tax automatically unlocks a transfer.
+        discover = discover.replace(
+            "then you unlock M01 single-wire conversion with $0 extra conversion tax",
+            "then ask the bank to reassess the documented-income route; eligibility and tax remain fact-specific",
+        )
         q_rows.append(f"""
         <tr>
           <th scope="row" data-label="ID">{esc(qid)}</th>
@@ -458,15 +463,15 @@ def root_page():
 {nav(ROOT_NAV)}
 <main class="wrap">
 
-<h1>The tax is rarely the problem. The evidence is.</h1>
-<p class="lede">What feels like a “conversion penalty” is usually four separate things: a tax on where the money came
-from, a bank that wants proof of it, the bank’s own exchange margin, and U.S. reporting duties. They have different
-sizes, different fixes and different sources. This desk prices what is published, quotes the exact sentence, and
-leaves blank what is not published.</p>
+<h1>Start with the source of funds and tax evidence.</h1>
+<p class="lede">A perceived “conversion penalty” can involve several different things: tax on the underlying income
+or asset, a bank’s document review, exchange-rate cost and transfer charges, possible U.S. currency gain, and U.S.
+reporting duties. They have different fixes and different sources. This desk prices what is published, identifies
+its assumptions, and leaves blank what is not published.</p>
 
 <div class="kpis">
-  <div class="kpi"><p class="label">Tax on converting CNY→USD</p><p class="value">$0</p>
-    <p class="sub">No exchange tax appears in the PRC FX regulations reviewed. What they impose is a document and source-of-funds test. [{ref('https://www.safe.gov.cn/beijing/2018/1221/1010.html','V01')} {ref('https://www.safe.gov.cn/tianjin/2024/0430/2464.html','V02')}]</p></div>
+  <div class="kpi"><p class="label">Separate CNY→USD conversion tax</p><p class="value">Not identified</p>
+    <p class="sub">The PRC FX provisions reviewed impose document and source-of-funds tests; this is not a determination that conversion or the underlying funds are tax-free. [{ref('https://www.safe.gov.cn/beijing/2018/1221/1010.html','V01')} {ref('https://www.safe.gov.cn/tianjin/2024/0430/2464.html','V02')}]</p></div>
   <div class="kpi"><p class="label">Published wire fee · $10k → $400k</p><p class="value">{usd(m01_10)} → {usd(m01_400)}</p>
     <p class="sub">HSBC China telegraphic transfer + cable, Premier/Advance. Private Banking and Premier Elite individuals: $0.00. [{ref('https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf','V11')}]</p></div>
   <div class="kpi"><p class="label">The bigger number: exchange margin</p><p class="value">≤ {pct(BOARD_GAP)}</p>
@@ -510,11 +515,11 @@ estimated. <a href="verification-3347ca0a/index.html">22 source checks · 20 con
     them: fines of up to 30% of the amount, or 30%–100% in serious cases
     [{ref('https://www.safe.gov.cn/beijing/2018/1221/1010.html','V10')}]. Four of the 23 catalogued methods are rejected
     for this reason and are kept visible so they are not re-discovered as “ideas”.</p></div>
-  <div class="answer"><h3>The U.S. side is reporting, not a transfer tax</h3>
-    <p>Moving your own principal is not U.S. income. Personal FX gain is ignored unless it exceeds $200
-    [{ref('https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm','V15')}];
-    the 2026 foreign earned income exclusion is $132,900 [{ref('https://www.irs.gov/pub/irs-pdf/i2555.pdf','V16')}].
-    The expensive mistakes are unreported accounts and unfiled forms, not the wire.</p></div>
+  <div class="answer"><h3>The U.S. review includes tax, basis and reporting</h3>
+    <p>A transfer of your own existing principal is not itself a new income category, but the underlying income and
+    currency gain still require analysis. The personal-transaction exclusion in §988(e)(2) does not apply when the
+    gain exceeds $200 [{ref('https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm','V15')}].
+    FBAR and Form 8938 are separate reporting tests; a foreign tax credit is limited and is not available for tax on excluded income.</p></div>
   <div class="answer"><h3>What still cannot be answered</h3>
     <p>The exact tax on this balance, the eligible route, the all-in USD cost and the cheapest provider all depend on
     private facts and a live quote. {FLAGS} open flags and {len([c for c in CHECKS['checks'] if c['status']!='VERIFIED'])}
@@ -609,8 +614,8 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
 <div class="cards">
   <a class="card" href="transfer-guide/methods.html"><b>Methods &amp; playbooks</b><span>23 methods · pros · cons · steps</span>
     <em>Every route with its statutory cap and numbered execution steps.</em></a>
-  <a class="card" href="transfer-guide/costs.html"><b>Cost ladder</b><span>40 tiers × 23 methods = 920 rows</span>
-    <em>$10,000 to $400,000 in $10,000 steps, filtered and searchable, blank where unpublished.</em></a>
+  <a class="card" href="playbook-c1d73006/costs.html"><b>Cost ladder · latest published-input pass</b><span>40 tiers × 17 methods = 680 rows</span>
+    <em>$10,000 to $400,000 in $10,000 steps, filtered and searchable; dated bank-board estimates and blank unpublished charges.</em></a>
   <a class="card" href="transfer-guide/penalties.html"><b>Penalties &amp; taxes</b><span>7 layers, PRC and U.S.</span>
     <em>What is a tax, what is a fee, what is a fine — and which document each one comes from.</em></a>
   <a class="card" href="transfer-guide/questions.html"><b>Open questions</b><span>{len(QUESTIONS)} gating facts</span>
@@ -623,6 +628,8 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
     <em>Every load-bearing sentence re-fetched on {TODAY}, with what could not be re-checked stated plainly.</em></a>
   <a class="card" href="verification-3347ca0a/irregularities.html"><b>Repository audit</b><span>12 findings</span>
     <em>Duplicate sites, conflicting counts, rate bases and rows without a source.</em></a>
+  <a class="card" href="acceptance-382482c0/index.html"><b>Corrective acceptance · 11 Nov</b><span>8 fresh source checks · 7 open cautions</span>
+    <em>Final-integration corrections, official links, explicit verification boundaries and remaining review items.</em></a>
   <a class="card" href="dashboard-f79e64e7/index.html"><b>Second verification pass</b><span>34 sources · quotes checked 11 Nov</span>
     <em>A separate session’s decision dashboard: questions, routes, cost at every $10,000, and corrections to earlier sets.</em></a>
   <a class="card" href="playbook-c1d73006/index.html"><b>Route-by-origin playbook</b><span>10 origins · 34 sources · read 11 Nov</span>
