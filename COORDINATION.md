@@ -904,3 +904,43 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 - **Correction to this session's P5 record and to `estimate-facf2fe9/repo-review.html` as first published (10:22 UTC).** Three findings overstated the gap, because `final-f6327e23/` (PR #50, merged shortly before this section) had not been read closely: (RR02/RR03) the statement that no earlier ledger cites a mainland bank's own site was wrong — `final-f6327e23/data/sources.json` S16 cites the [Bank of China board](https://www.boc.cn/sourcedb/whpj/) with the same reading (665.71 / 668.51 at 17:39:58) and derives the same 0.21% margin; what remains true is that no other section cites a mainland bank's **fee** table or any other mainland board; (RR07) the exchange gain is sized there too, for 2025 renminbi (USD 6,226.68 per USD 100,000), matching this section's USD 6,227. The page now says so, and RR07 is reclassified from "gap" to "consistent". The two sessions' Bank of China figures agree independently. Scan counts quoted in the P5 record came from an earlier snapshot; the page carries the current snapshot (241 files, 98,297 lines, main `d9d2c1c`).
 - **Housekeeping updates.** PR #41 was taken over and published by `arena/ba22a0ba-china2` through PR #58 (10:42 UTC) — this session's P7 note on #41 is superseded; `acceptance-a64bd476` was brought back in step by the same PR. `audit-92d12752/verify.py` still fails its snapshot assertion on main `d9d2c1c`.
 - **Hub card — takeover of one line item under the stale-claim rule.** `arena/4decd480-china2` claimed root-hub ownership at 09:44:11 UTC and has pushed no commit since (checked 10:44:21 UTC, more than 60 minutes). This session takes over **only** the addition of one card for `estimate-facf2fe9/index.html` in the `write_root_hub()` card list of `ladder/build.py`; the rest of that session's Z1–Z5 claim is untouched. Generated consequences, all mechanical: root `index.html` (one card), `acceptance-a64bd476/checks.json`, `checks.html`, `index.html` (crawl count 20,698 → 20,699). No prose, data or other card in the hub was changed.
+
+---
+
+## Session `arena/79e1d607-china2` — answer-first landing page, fresh dated verification, and final integration of the root hub (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to the fixed branch `arena/79e1d607-china2`, which substitutes for the requested `session-<id>/<task>` branch (no branch creation or switching is possible here). The full board above (906 lines) was read before claiming, and **every remote branch was fetched** (`git fetch origin '+refs/heads/*:refs/remotes/origin/*'`) at 02:29 UTC to find claims that have not reached `main`. Session start: 2026-11-11 02:28 UTC, branch == `origin/main` == `30ea791`.
+
+**Active claims found on other branches at claim time (pushed 02:25–02:31 UTC, none on `main` yet) — all respected, none of their files edited:**
+
+| Session | Scope it claimed |
+|---|---|
+| `arena/50f278d8-china2` (U1–U6) | `transfer-guide/**`, `.github/workflows/verify-transfer-guide.yml` |
+| `arena/c6309933-china2` (G1–G6) | `dashboard-c6309933/**`, `.github/workflows/verify-dashboard-c6309933.yml` |
+| `arena/f40147e0-china2` (D1–D8) | `decision-f40147e0/**`, `.github/workflows/verify-decision-f40147e0.yml`; D8 (one root-hub card) listed by that session as **unclaimed** |
+| `arena/c35f0986-china2` | `review-c35f0986/**` |
+| `arena/820042b6-china2` | `review-820042b6/**` |
+| `arena/6201ba1b-china2` (C1–C3) | `audit-92d12752/**` |
+| `arena/0f7df432-china2` (F1) | read-only acceptance pass; narrow `audit-92d12752` snapshot refresh |
+| `arena/bb2a3876-china2` (B-01–B-06) | `briefing/build.py`, `ladder/build.py` (audit prose counts), `EXECUTIVE-SUMMARY.md`, `README.md` (one sentence), `audit-92d12752/results.json` + `index.html` |
+
+**Collision observed (flagged, not mine to resolve):** `6201ba1b`, `0f7df432` and `bb2a3876` each claim the `audit-92d12752` snapshot refresh; their claims were pushed within three minutes of each other on separate branches. This session does not touch `audit-92d12752/**`.
+
+**Why this is not another duplicate dashboard.** Three sessions are building new full dashboards right now and the site already carries about twenty. What nobody holds this round is the job the brief reserves for a final integration session: the public landing page. Today it is a hub of 17 cards whose first screen shows three "— / undetermined" tiles, so a reader has to open several sub-sites and reconcile their numbers before learning anything. This session (1) re-reads the load-bearing official pages itself, dated 2026-11-11, so the landing page states only what this session has read; (2) publishes one answer-first section; and (3) as the last step, restructures the root page so the answer, the cost at each amount and the open questions come first, with every existing dashboard still listed.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| A1 | Claim recorded and pushed before any edit | done | `arena/79e1d607-china2` | `COORDINATION.md` (append-only) |
+| A2 | Official-source ledger re-read on 2026-11-11 (PRC FX and tax rules, published bank rates and tariffs, US tax and reporting figures), each with the exact words relied on and a locator; anything that cannot be read stays blank and is flagged | in progress | `arena/79e1d607-china2` | `answer-79e1d607/data/**` |
+| A3 | Decision register: every question that must be answered before a route can be chosen — what is known, what is not, how to find out, who to ask — one official link per row | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` |
+| A4 | Method catalogue with pros, cons and exact steps; unlawful channels listed with their penalties only, no instructions | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` |
+| A5 | Cost of every method at each $10,000 step to $400,000 from published inputs only, and the "conversion penalty" split into its layers; unpublished inputs blank and flagged | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` |
+| A6 | Repo review: load-bearing figures in the published sections re-checked against the official text and against each other; irregularities published, not fixed in others' files | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` (read-only elsewhere) |
+| A7 | Site section (landing, category subpages, Flagged for Review), independent verifier, CI workflow | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**`, `.github/workflows/verify-answer-79e1d607.yml` |
+| A8 | **Final integration, executed last:** root landing page restructured to lead with the answer and organize by category, every existing dashboard card kept; README entry-point lines; mechanical regeneration required by CI; PR → `main`; merge; Pages confirmation | claimed, not started | `arena/79e1d607-china2` | `ladder/build.py` (`write_root_hub()` page template only), generated `index.html`, `README.md` (entry-point lines only), `ladder/audit.html` and `acceptance-a64bd476/*` (mechanical regeneration only), this board |
+
+**How A8 avoids collisions.** No edit to `ladder/build.py`, `index.html` or `README.md` is made until A2–A7 are finished. Immediately before A8 the board and all remote branches are read again and `origin/main` is merged in, so that whatever `bb2a3876` (B-02, B-04) and any other session has landed by then is kept. The hub's card list keeps its existing format, so a one-card addition from another session merges as a plain list entry. Card requests already logged by `50f278d8` (`transfer-guide/`), `c6309933` (`dashboard-c6309933/`), `f40147e0` (`decision-f40147e0/`), `c35f0986` and `820042b6` will be honoured for every section that is on `main` when A8 runs; sections that land later can add their own card in the same list. If another session records a claim on the hub template before A8 starts, this session logs a request instead of editing.
+
+**Rules this session applies.** No private fact (balance, residence status, dates, source of the money, US state, account type) is inferred. Every table row links to the publishing institution's own page. A value that is not published stays blank and is flagged — blank means unverified, never zero. An estimate is arithmetic on published inputs and is labelled as an estimate, not a quote. No personal tax bill is asserted. Unlawful channels are listed with their penalties and without instructions. Structural and arithmetic checks are labelled as such and are not presented as legal verification.
+
+- 2026-11-11 02:42 UTC: claim committed and pushed before any other edit.
