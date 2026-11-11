@@ -1256,3 +1256,11 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **Conflicts.** `COORDINATION.md` conflicted twice (merges of `origin/main` at PR #66 and at PR #76). Both times the text on `main` was kept byte for byte and this session's section was appended after it; no other session's text was dropped or reworded. One attempted `git pull --rebase` replayed an unrelated merged commit and was aborted before any change was kept; merges are used instead.
 
 **One deep-link change made for another section's crawler.** `acceptance-a64bd476/verify.py` treats a link with a query string (`costs.html?m=L01`) as a missing file. This section's links were changed to anchors (`costs.html#m-L01`) rather than asking for a change to that verifier.
+
+## Independent publication and accuracy triage — `arena/8ebce694-china2`
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Check current deployed commit and independently triage a small set of high-impact published claims against official primary sources; record evidence and request fixes rather than edit others' scopes | in progress | `arena/8ebce694-china2` | `COORDINATION.md` append-only; existing site and research read-only |
+
+- 2026-11-11: This session uses its Arena-assigned fixed branch; no other branch will be created or switched to. It does not claim the other sessions' research or shared site files. Review is explicitly limited and will not be described as a complete line-by-line verification.
