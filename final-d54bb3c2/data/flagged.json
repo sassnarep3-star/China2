@@ -1,0 +1,141 @@
+{
+  "section": "F6",
+  "items": [
+    {
+      "id": "F-01",
+      "item": "Correspondent bank and receiving bank charges",
+      "status": "blank",
+      "reason": "The BOC and HSBC pages publish only the sending bank's fee. No official schedule for the intermediary or the US receiving bank was found.",
+      "action": "Read a real remittance advice: the difference between the amount sent and the amount credited is the true charge. Alternatively ask each bank in writing.",
+      "sources": ["S03", "S04"]
+    },
+    {
+      "id": "F-02",
+      "item": "Wise fee and FX spread for CNY to USD",
+      "status": "blank",
+      "reason": "The Wise help page read describes eligibility, per-transfer limits and the overall limit, but publishes no fee for this corridor.",
+      "action": "Open a Wise quote for a CNY transfer and record the mid-market rate, the applied rate and the fee.",
+      "sources": ["S05"]
+    },
+    {
+      "id": "F-03",
+      "item": "UnionPay card FX fee and conversion spread",
+      "status": "blank",
+      "reason": "No official UnionPay or issuing-bank page stating the card FX fee was available for this section.",
+      "action": "Ask the issuing bank for the card's overseas transaction and ATM fee schedule in writing; compare one foreign transaction against the board rate on the same day.",
+      "sources": ["S16"]
+    },
+    {
+      "id": "F-04",
+      "item": "HSBC tariff effective date",
+      "status": "assumption",
+      "reason": "The tariff PDF header carries two dates (31 Oct 2026 and 2024-09-12), so the version in force is not unambiguous from the page read.",
+      "action": "Confirm with HSBC China which version applies to an outward remittance executed today.",
+      "sources": ["S04"]
+    },
+    {
+      "id": "F-05",
+      "item": "Conversion rate actually applied to HSBC Global Transfer",
+      "status": "assumption",
+      "reason": "The tariff prices the transfer but does not state which rate converts CNY to USD. The model applies the published board spread, which is a stated assumption, not a published price for the product.",
+      "action": "Execute a small Global Transfer and read the rate on the confirmation; substitute it into model.py.",
+      "sources": ["S02", "S04"]
+    },
+    {
+      "id": "F-06",
+      "item": "HSBC Advance Global Transfer charge: CNY 145 or USD 20",
+      "status": "assumption",
+      "reason": "The tariff shows CNY 145 with the note that the actual charge is USD 20 or equivalent. The model uses USD 20.",
+      "action": "Read the debit line on a completed Advance transfer.",
+      "sources": ["S04"]
+    },
+    {
+      "id": "F-07",
+      "item": "HSBC Premier monthly fee excluded from the M03 cost rows",
+      "status": "assumption",
+      "reason": "Premier costs CNY 300 per month unless total relationship balance is at least CNY 500,000. It is a relationship fee, not a transfer fee, so it is excluded from cost-per-transfer rather than added arbitrarily to every row.",
+      "action": "If your balance stays below CNY 500,000 for the months you use this route, add CNY 300 per month to the M03 figure.",
+      "sources": ["S04"]
+    },
+    {
+      "id": "F-08",
+      "item": "RMB cash export limit (route X05)",
+      "status": "blank",
+      "reason": "No official page read states how much RMB cash an individual may carry out of China. The route is therefore left unpriced rather than estimated.",
+      "action": "Read the current 携带人民币现钞出入境 notice on the PBOC or customs site and add it to the ledger before using the route.",
+      "sources": []
+    },
+    {
+      "id": "F-09",
+      "item": "Text of 汇发〔2020〕14号 Article 59",
+      "status": "blank",
+      "reason": "The article is cited by two SAFE Tianjin pages, but the circular itself was not opened for this section, so its wording is not quoted anywhere here.",
+      "action": "Open the circular on safe.gov.cn and add its text to the ledger if the exact wording of Article 59 matters.",
+      "sources": ["S10", "S11"]
+    },
+    {
+      "id": "F-10",
+      "item": "Business income and equity proceeds conversion route",
+      "status": "blank",
+      "reason": "The service guide lists documents for business income and for capital gains, but no separate price or processing route was found for those categories.",
+      "action": "Ask the local SAFE branch which item code applies to business income from a sole proprietorship or equity sale.",
+      "sources": ["S14"]
+    },
+    {
+      "id": "F-11",
+      "item": "Form 3520 penalty amount",
+      "status": "blank",
+      "reason": "The IRS page states that penalties may apply under IRC 6039F(c) but does not state the amount on the page read.",
+      "action": "Read the Form 3520 instructions for the current penalty formula before relying on a figure.",
+      "sources": ["S24"]
+    },
+    {
+      "id": "F-12",
+      "item": "Settlement time for each bank route",
+      "status": "blank",
+      "reason": "Neither the BOC fee page nor the HSBC tariff states the credit time for an individual outward remittance.",
+      "action": "Record the send and credit timestamps on a test transfer.",
+      "sources": ["S03", "S04"]
+    },
+    {
+      "id": "F-13",
+      "item": "Tax actually payable on the section 988 gain",
+      "status": "blank",
+      "reason": "The gain is ordinary income; the tax depends on your bracket and other income, which are not known. The site publishes the gain percentage and the formula, not a tax figure.",
+      "action": "Apply your marginal rate to the computed gain, or run Form 1040 Schedule D and the section 988 worksheet.",
+      "sources": ["S07", "S27"]
+    },
+    {
+      "id": "F-14",
+      "item": "Board dates are one day apart",
+      "status": "assumption",
+      "reason": "BOC is timestamped 2026-11-11 20:39 and HSBC 2026-11-10, so the two spreads are not measured at the same instant. The ranking (BOC spread is roughly half the HSBC spread) is far larger than a one-day move.",
+      "action": "Re-run model.py with both boards read on the same day.",
+      "sources": ["S01", "S02"]
+    },
+    {
+      "id": "F-15",
+      "item": "Inheritance transfer route",
+      "status": "blank",
+      "reason": "PBOC Announcement [2004] No.16 covers both emigrant and inheritance transfers, but the provincial service guide read covers only the emigrant item, so the inheritance procedure and its approval threshold were not priced.",
+      "action": "Find the inheritance (继承财产转移) service item on a provincial SAFE site and read its conditions.",
+      "sources": ["S13", "S14"]
+    },
+    {
+      "id": "F-16",
+      "item": "Bank discretion above the annual quota",
+      "status": "blank",
+      "reason": "SAFE rules require documents but do not publish a decision time or an approval probability for documented purchases beyond the quota.",
+      "action": "Ask the branch in writing before committing to a date, and keep the reply.",
+      "sources": ["S08", "S10"]
+    },
+    {
+      "id": "F-17",
+      "item": "Card spending is not a conversion route",
+      "status": "assumption",
+      "reason": "Route M06 is included because it is commonly proposed, but it converts consumption rather than the balance, and its annual cap is about USD 15,000 at the board rate.",
+      "action": "Treat M06 as a spending channel, not a repatriation route.",
+      "sources": ["S16"]
+    }
+  ]
+}

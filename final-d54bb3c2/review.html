@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repo review · China money</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#16181d;--muted:#5c6470;--line:#e3e6ea;
+--accent:#0b5fff;--good:#0a7a45;--warn:#a85b00;--bad:#b3261e;--chip:#eef2f7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:#0e1116;color:#fff;padding:14px 16px}
+header .wrap{max-width:1080px;margin:0 auto}
+header .t{font-weight:700;font-size:17px;letter-spacing:.2px}
+header .s{color:#a9b1bd;font-size:13px;margin-top:2px}
+nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;
+overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+nav .wrap{max-width:1080px;margin:0 auto;padding:0 8px}
+nav a{display:inline-block;padding:11px 10px;color:var(--muted);font-size:14px;font-weight:600}
+nav a.on{color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent)}
+main{max-width:1080px;margin:0 auto;padding:18px 14px 60px}
+h1{font-size:23px;line-height:1.25;margin:6px 0 6px}
+h2{font-size:18px;margin:28px 0 8px}
+h3{font-size:15px;margin:18px 0 6px}
+p{margin:8px 0}
+.lede{color:var(--muted);font-size:15px;margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}
+.grid{display:grid;gap:12px}
+@media(min-width:720px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.kpi .k{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+.kpi .v{font-size:22px;font-weight:700;margin:4px 0 0}
+.kpi .n{font-size:12px;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#f0f2f5;font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted)}
+tbody tr:nth-child(even){background:#fafbfc}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:#fff}
+.chip{display:inline-block;background:var(--chip);border-radius:999px;padding:2px 9px;font-size:12px;
+color:var(--muted);font-weight:600;margin:0 4px 4px 0}
+.good{color:var(--good);font-weight:600}.warn{color:var(--warn);font-weight:600}.bad{color:var(--bad);font-weight:600}
+.src{font-size:12px}
+.src a{display:inline-block;background:#eef4ff;border:1px solid #dbe6ff;border-radius:6px;
+padding:1px 6px;margin:2px 3px 2px 0;font-weight:600}
+.blank{color:var(--muted);font-style:italic}
+ul,ol{margin:6px 0 6px 18px;padding:0}
+li{margin:3px 0}
+.steps li{margin:6px 0}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fff;margin:8px 0}
+summary{cursor:pointer;font-weight:600}
+footer{max-width:1080px;margin:0 auto;padding:0 14px 40px;color:var(--muted);font-size:12px}
+@media(max-width:640px){
+  h1{font-size:20px}
+  table.resp thead{display:none}
+  table.resp,table.resp tbody,table.resp tr,table.resp td{display:block;width:100%}
+  table.resp tr{border:1px solid var(--line);border-radius:10px;margin:8px 0;background:#fff;padding:6px 4px}
+  table.resp td{border:0;padding:4px 10px;display:flex;justify-content:space-between;gap:10px;text-align:right}
+  table.resp td::before{content:attr(data-label);color:var(--muted);font-size:12px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.3px;text-align:left}
+  table.resp td.num{text-align:right}
+}
+</style></head>
+<body>
+<header><div class="wrap"><div class="t">China money · final section d54bb3c2</div>
+<div class="s">CNY to USD, verified against primary sources, 11 November 2026</div></div></header>
+<nav><div class="wrap"><a class="" href="index.html">Overview</a><a class="" href="summary.html">Executive summary</a><a class="" href="costs.html">Cost table</a><a class="" href="methods.html">Methods</a><a class="" href="penalty.html">Penalty breakdown</a><a class="" href="questions.html">Questions</a><a class="on" href="review.html">Repo review</a><a class="" href="flagged.html">Flagged</a><a class="" href="sources.html">Sources</a></div></nav>
+<main>
+
+<h1>Repository review, line by line</h1>
+<p class="lede">Mechanical scan of every HTML, Markdown, JSON, CSV and Python file outside this folder, plus a comparison of the cost files that several sections publish for the same route. No other session&#x27;s file was modified: the findings are reported, and where a figure affects the price, this section publishes its own verified value.</p>
+
+<div class="card">
+<h2 style="margin-top:4px">Mechanical checks</h2>
+<div class="scroll"><table class="resp"><thead><tr><th>Check</th><th>Result</th><th>Detail</th></tr></thead><tbody><tr><td data-label='Check'>Files scanned (HTML, MD, JSON, CSV, PY)</td><td data-label='Result' class='num'>316</td><td data-label='Detail'>Everything in the repository except this folder and .git.</td></tr><tr><td data-label='Check'>HTML pages scanned</td><td data-label='Result' class='num'>140</td><td data-label='Detail'>Every published page in every section, including superseded ones.</td></tr><tr><td data-label='Check'>Internal links checked</td><td data-label='Result' class='num'>41,102</td><td data-label='Detail'>Every href in every HTML page resolved against the file system.</td></tr><tr><td data-label='Check'>Broken internal links</td><td data-label='Result' class='num'>0</td><td data-label='Detail'>Zero means no page links to a file that does not exist.</td></tr><tr><td data-label='Check'>Pages showing dollar figures with no external source link</td><td data-label='Result' class='num'>13</td><td data-label='Detail'>of 140 pages. Listed under irregularities where the figures are cost or tax claims.</td></tr><tr><td data-label='Check'>Content sections not linked from the landing page</td><td data-label='Result' class='num'>5</td><td data-label='Detail'>acceptance-373b54a3, acceptance-a64bd476, audit-456e7542, audit-6068a908, verify-88f5a1be</td></tr><tr><td data-label='Check'>Distinct FEIE values published across the repo</td><td data-label='Result' class='num'>5</td><td data-label='Detail'>132,900 x392, 120,000 x359, 137,300 x123, 112,000 x6, 126,500 x2</td></tr><tr><td data-label='Check'>Distinct HSBC fee-cap values published across the repo</td><td data-label='Result' class='num'>2</td><td data-label='Detail'>620 x3851, 500 x1632</td></tr><tr><td data-label='Check'>Source ids referenced by this section that exist in the ledger</td><td data-label='Result' class='num'>31 of 31</td><td data-label='Detail'>Checked by verify.py on every build.</td></tr></tbody></table></div>
+</div>
+
+<h2>Irregularities flagged</h2>
+<p class="lede">Each item is a place where the repository states or implies something that a primary source does not support, or where two sections disagree.
+None of them is silently corrected in another session's files; they are reported here and, where they affect the price, this section publishes the verified value instead.</p>
+<div class="scroll"><table class="resp"><thead><tr><th>#</th><th>Severity</th><th>File</th><th>Finding</th><th>Effect</th><th>Source</th></tr></thead><tbody><tr><td data-label='#'>I-01</td><td data-label='Severity'><span class='bad'>high</span></td><td data-label='File'><code>guide-fb2f2562/data/costs.json</code></td><td data-label='Finding'>The same BOC wire at USD 10,000 is published as $53.36 in guide-fb2f2562 and $53.37 here, and at USD 400,000 as $898.54 versus $898.75. estimate-facf2fe9 publishes $55.16 and $967.38 for the same route and amounts.</td><td data-label='Effect'>Three prices for one action, differing by up to $68.84 at USD 400,000. The cause is a different reference midpoint and a different board timestamp, not a different fee. This section states its midpoint and board timestamp on the cost page so the number can be reproduced.</td><td data-label='Sources'><span class="src"><a href="sources.html#S01" title="Bank of China foreign exchange board (中国银行外汇牌价)">S01</a><a href="sources.html#S03" title="Bank of China e-banking service charge table (cross-border remittance)">S03</a></span></td></tr><tr><td data-label='#'>I-02</td><td data-label='Severity'><span class='warn'>medium</span></td><td data-label='File'><code>guide-fb2f2562/data/sources.json</code></td><td data-label='Finding'>The guide records the BOC board as buy 666.06 / sell 668.86 and the HSBC board as sell 6.7053746. The boards read for this section on 2026-11-11 20:39 are 665.91 / 668.71 and 6.7030239.</td><td data-label='Effect'>Costs computed from the older snapshot are about 0.02% high at BOC. The ranking of routes is unchanged because the gap between the two banks&#x27; spreads is far larger than the daily move.</td><td data-label='Sources'><span class="src"><a href="sources.html#S01" title="Bank of China foreign exchange board (中国银行外汇牌价)">S01</a><a href="sources.html#S02" title="HSBC Bank (China) foreign exchange board">S02</a></span></td></tr><tr><td data-label='#'>I-03</td><td data-label='Severity'><span class='warn'>medium</span></td><td data-label='File'><code>ladder/ladder.html</code></td><td data-label='Finding'>780 dollar figures appear in this page with no external source link anywhere in the document.</td><td data-label='Effect'>A reader cannot check any of the numbers from the page itself. The ledger for that section exists elsewhere in the folder but is not linked from the table.</td><td data-label='Sources'><span class="src"><a href="sources.html#S01" title="Bank of China foreign exchange board (中国银行外汇牌价)">S01</a><a href="sources.html#S03" title="Bank of China e-banking service charge table (cross-border remittance)">S03</a></span></td></tr><tr><td data-label='#'>I-04</td><td data-label='Severity'><span class='warn'>medium</span></td><td data-label='File'><code>index.html</code></td><td data-label='Finding'>The landing page links 20 of the 25 content sections. Not linked: acceptance-373b54a3, acceptance-a64bd476, audit-456e7542, audit-6068a908, verify-88f5a1be.</td><td data-label='Effect'>Published work is unreachable from the front door, so a reader cannot tell whether it exists or has been superseded.</td><td data-label='Sources'><span class="src"></span></td></tr><tr><td data-label='#'>I-05</td><td data-label='Severity'><span class='warn'>medium</span></td><td data-label='File'><code>multiple</code></td><td data-label='Finding'>The foreign earned income exclusion appears as 132,900, 137,300, 126,500, 120,000 and 112,000 in different folders, sometimes without the tax year next to the number.</td><td data-label='Effect'>Only 137,300 is the figure for tax years beginning in 2027 [S26]; 132,900 is the 2026 figure. A number without a year cannot be verified, so this section always states the year.</td><td data-label='Sources'><span class="src"><a href="sources.html#S26" title="Rev. Proc. 2026-35 (2027 inflation adjustments)">S26</a></span></td></tr><tr><td data-label='#'>I-06</td><td data-label='Severity'><span class=''>low</span></td><td data-label='File'><code>multiple</code></td><td data-label='Finding'>The HSBC fee cap is published as CNY 500 in some folders and as CNY 620 in others.</td><td data-label='Effect'>Both can be right: 500 is the commission cap and 620 is the commission cap plus the 120 cable charge. Pages that print 620 as a &#x27;cap&#x27; without the breakdown invite double counting.</td><td data-label='Sources'><span class="src"><a href="sources.html#S04" title="HSBC China tariff of accounts services for personal customers (v2)">S04</a></span></td></tr><tr><td data-label='#'>I-07</td><td data-label='Severity'><span class=''>low</span></td><td data-label='File'><code>many sections</code></td><td data-label='Finding'>Several folders publish their own cost ladder for the same 40 amounts with slightly different formulas and reference midpoints.</td><td data-label='Effect'>Redundant arithmetic that drifts apart every time a board is re-read. This section keeps one model (model.py) and one ledger, and the review page names the other versions rather than averaging them.</td><td data-label='Sources'><span class="src"><a href="sources.html#S01" title="Bank of China foreign exchange board (中国银行外汇牌价)">S01</a><a href="sources.html#S02" title="HSBC Bank (China) foreign exchange board">S02</a></span></td></tr><tr><td data-label='#'>I-09</td><td data-label='Severity'><span class='warn'>medium</span></td><td data-label='File'><code>verification-3347ca0a/build.py</code></td><td data-label='Finding'>The integration landing page prices BOC at 669.11 (board timestamp 2026-11-11 10:25:02). The board read for this section at 20:39:19 the same day shows 668.71 for the same quote.</td><td data-label='Effect'>Two different same-day prices for the same bank and the same product, a 0.06% move within one day. Any cost built on a board rate is only valid for the timestamp printed next to it, which is why every page here states its timestamp.</td><td data-label='Sources'><span class="src"><a href="sources.html#S01" title="Bank of China foreign exchange board (中国银行外汇牌价)">S01</a></span></td></tr><tr><td data-label='#'>I-08</td><td data-label='Severity'><span class=''>low</span></td><td data-label='File'><code>multiple</code></td><td data-label='Finding'>Some pages describe conversion pricing as a &#x27;penalty&#x27; without separating it from PRC income tax that is due whether or not the money moves.</td><td data-label='Effect'>Readers over-estimate the cost of converting. The penalty page here splits nine layers so the tax on the source income is not counted as a conversion cost.</td><td data-label='Sources'><span class="src"><a href="sources.html#S20" title="中华人民共和国个人所得税法 (Individual Income Tax Law)">S20</a></span></td></tr></tbody></table></div>
+<p class="lede" style="margin-top:10px">Counts: 9 irregularities, 316 files scanned,
+41,120 mechanical checks. Generated by <code>review.py</code>; re-run to reproduce.</p>
+
+</main>
+<footer>Every figure on this site is traceable to a page in the source ledger. Blank means unverified, not zero.
+Built by session <code>arena/d54bb3c2-china2</code>. Not tax or legal advice.</footer>
+</body></html>
