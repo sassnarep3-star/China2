@@ -1,0 +1,39 @@
+name: Verify dashboard-c6309933
+
+on:
+  pull_request:
+  push:
+    branches: ["main", "arena/c6309933-china2"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-dashboard-c6309933:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Recompute the cost ladder from the transcribed tariff
+        run: PYTHONDONTWRITEBYTECODE=1 python3 dashboard-c6309933/model.py
+
+      - name: Regenerate the pages
+        run: PYTHONDONTWRITEBYTECODE=1 python3 dashboard-c6309933/build.py
+
+      - name: Check generated output is committed
+        run: git diff --exit-code -- dashboard-c6309933
+
+      - name: Verify fee arithmetic, blank enforcement, source links and local links
+        run: PYTHONDONTWRITEBYTECODE=1 python3 dashboard-c6309933/verify.py
+
+      - name: Check browser script syntax
+        run: node --check dashboard-c6309933/assets/app.js

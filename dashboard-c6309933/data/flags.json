@@ -1,0 +1,205 @@
+{
+  "note": "Every entry below was produced by a command run in this session against the checked-out tree, or by a direct HTTPS fetch. Where a claim could not be confirmed it says so and the value is left BLANK. 'needs review' means published for the requester's attention; it does not block the merge.",
+  "repoFindings": [
+    {
+      "id": "R01",
+      "severity": "medium",
+      "status": "needs review",
+      "title": "The ladder CI check is date-dependent and will fail on any day after the last regeneration",
+      "evidence": "ladder/model.py line 908 sets `generated=date.today().isoformat()`. .github/workflows/verify-ladder.yml line 28 runs `git diff --exit-code -- ladder index.html`. Reproduced in this session: running `python3 ladder/model.py && python3 ladder/build.py` on 2026-11-11 changed 12 committed files (12 insertions, 12 deletions), the only change being `\"generated\": \"2026-11-10\"` -> `\"generated\": \"2026-11-11\"` in ladder/data/meta.json and the same date echoed into 11 generated pages. Local changes were reverted with `git checkout -- ladder/`; ladder/ is owned by other sessions.",
+      "why": "The check currently passes only because PR #62 regenerated the ladder on 2026-11-11. On 2026-11-12 the identical tree will fail `verify-ladder` with no code change.",
+      "recommendation": "Derive `generated` from a value committed in the tree (e.g. `git log -1 --format=%cs -- ladder/data/meta.json`) or exclude the `generated` key from the diff check."
+    },
+    {
+      "id": "R02",
+      "severity": "low",
+      "status": "resolved - no action",
+      "title": "audit-92d12752/verify.py snapshot assertion - previously failing, now passing",
+      "evidence": "On the base commit 30ea791 this session ran `python3 audit-92d12752/verify.py` and it raised `AssertionError: snapshot differs: rerun build.py after inspecting repository changes`. After merging origin/main at 714b743 (which includes PR #61 and PR #62 refreshing that snapshot) the same command returns `PASS: parser/domain boundaries, snapshot parity, local report links.`",
+      "why": "Recorded so the correction is on the record. This is NOT an open defect on current main.",
+      "recommendation": "None."
+    },
+    {
+      "id": "R03",
+      "severity": "high",
+      "status": "needs review",
+      "title": "Twenty separate published sites in one repository, with overlapping and non-identical figures",
+      "evidence": "`find . -name index.html -not -path './.git/*' | wc -l` returns 20: acceptance-373b54a3, acceptance-a64bd476, audit-0f0f59fe, audit-456e7542, audit-6068a908, audit-86f0, audit-92d12752, audit-ad300459, briefing, docs, estimate-facf2fe9, final-f6327e23, the repository root, ladder, portal, repatriate, site, study-8f529c94, verify-88f5a1be, verify-d5d1f860. Each publishes its own cost tables. The published row counts differ by site: ladder 600 rows / 20 routes, repatriate 680 rows / 17 methods, study-8f529c94 920 rows / 23 methods, estimate-facf2fe9 920 rows / 23 methods, briefing 680 rows / 17 methods, verify-d5d1f860 680 rows / 17 methods, audit-86f0 880 rows / 22 methods.",
+      "why": "A reader landing on the site cannot tell which table to trust, and two tables for the same corridor give different totals because they make different assumptions about the FX spread. This is the single largest usability defect in the repository.",
+      "recommendation": "Retire all but one canonical dashboard and replace the rest with redirects, or clearly label each as a historical snapshot with a date and a pointer to the canonical one."
+    },
+    {
+      "id": "R04",
+      "severity": "medium",
+      "status": "needs review",
+      "title": "PRC individual income tax rates are published across the repo but were NOT verifiable from an official source in this session",
+      "evidence": "The root README.md asserts `3%-45%` comprehensive IIT, `5%-35%` business IIT and `20%` flat asset/dividend/interest IIT. This session attempted to verify them from the State Taxation Administration statute database and from www.gov.cn. The chinatax.gov.cn fetch failed and https://www.gov.cn/xinwen/2018-09/01/content_5318220.htm now redirects to the gov.cn homepage, returning no statute text. NO PRC rate is therefore published anywhere in dashboard-c6309933; every PRC tax cell is BLANK.",
+      "why": "The rates may well be correct, but they are not currently traceable to a live official page, and the brief requires an official source link per row.",
+      "recommendation": "Re-point those citations at a currently resolvable official URL (for example the STA law database at fgk.chinatax.gov.cn) and re-fetch before publishing the figure."
+    },
+    {
+      "id": "R05",
+      "severity": "medium",
+      "status": "needs review",
+      "title": "Insecure http:// links to official PRC sources across the repository",
+      "evidence": "`grep -roh 'http://...'` over tracked .md/.html/.json files returns at least 17 distinct http:// official URLs, including http://m.safe.gov.cn/safe/2021-07-02/19307.html, http://www.safe.gov.cn/en/2017/1230/1397.html, http://english.customs.gov.cn/... and http://www.customs.gov.cn/. Two are malformed placeholder strings (`http://` and `http://...`) and one has a trailing full stop (`http://m.safe.gov.cn/safe/2004-1116/5461.html.`).",
+      "why": "A citation that does not resolve is not a citation. Placeholder and trailing-punctuation URLs are unambiguously broken.",
+      "recommendation": "Convert to https://, delete the two placeholder strings, and strip the trailing full stop. Note that dashboard-c6309933 deliberately cites the https form where one resolved; S11 could only be resolved over http and is labelled accordingly."
+    },
+    {
+      "id": "R06",
+      "severity": "medium",
+      "status": "needs review",
+      "title": "Eight competing executive summaries with no single authoritative one",
+      "evidence": "`find . -iname '*EXECUTIVE*SUMMARY*'` returns 10 files: EXECUTIVE-SUMMARY.md, EXECUTIVE_SUMMARY.md, briefing/EXECUTIVE_SUMMARY.md, docs/executive-summary.md, repatriate/EXECUTIVE_SUMMARY.md, reports/EXECUTIVE_SUMMARY_85f37d08.md, research/EXECUTIVE_SUMMARY.md, research/previous-dashboard/EXECUTIVE_SUMMARY.md, site/executive-summary.html, study-8f529c94/EXECUTIVE_SUMMARY.md. The root README links only some of them.",
+      "why": "The brief asks for one executive summary. Ten files with different conclusions means none of them is the answer.",
+      "recommendation": "Designate one file as canonical, reduce the others to a single-line pointer, and update the README."
+    },
+    {
+      "id": "R07",
+      "severity": "low",
+      "status": "needs review",
+      "title": "The task board has grown to a size where it no longer prevents collisions",
+      "evidence": "COORDINATION.md is 984 lines / 179,707 bytes. It records at least three collisions the board did not prevent: COORDINATION.md add/add conflicts on three separate merges, two sessions claiming the same root hub (arena/4decd480 and arena/d5d1f860, pushed 57 seconds apart), and one session's package.json `\"type\": \"module\"` field breaking another session's CommonJS test.",
+      "why": "A 180 KB append-only log cannot be read before claiming, which is the mechanism the brief relies on.",
+      "recommendation": "Split it: keep a short machine-readable claims table (task, owner, scope, timestamp, status) at the top and move the narrative logs into per-session files."
+    },
+    {
+      "id": "R08",
+      "severity": "low",
+      "status": "needs review",
+      "title": "Six pull requests left open, all more than 24 hours old at review time",
+      "evidence": "`gh pr list --state open` on 2026-11-11 returns #39 (arena/c9cc56a6-china2, opened 2026-11-10 06:04), #48 (arena/d5d1f860-china2, 09:56), #49 (arena/29c5e201-china2, 09:56), #52 (arena/a53d707e-china2, 10:01), #53 (arena/416f3c1b-china2, 10:01), #55 (arena/6869721b-china2, 10:21). Under the brief's own 60-minute stale-claim rule all six are takeover-eligible.",
+      "why": "Open PRs holding claims on shared files (root index.html, ladder/build.py, README.md) block other sessions from editing them safely.",
+      "recommendation": "Close the superseded ones with an audit comment, as was done for #2, #12 and #17."
+    },
+    {
+      "id": "R09",
+      "severity": "info",
+      "status": "verified clean",
+      "title": "All verification suites named in the README exist and were run",
+      "evidence": "Every path referenced in the README 'Reproduce & Verify Locally' block exists (scripts/build.py, scripts/validate.py, scripts/test_ui.js, tools/build.mjs, tools/verify.mjs, portal/generate_portal.py, verify_85f37d08.py, repatriate/build.py, repatriate/verify.py, briefing/build.py, briefing/verify.py, audit-86f0/verify.py, audit-0f0f59fe/verify.py, audit-ad300459/verify.py, acceptance-373b54a3/verify.py, ladder/model.py, ladder/build.py, ladder/verify.py, scripts/seed_research.py, scripts/browser_test.cjs). This session ran 21 of them; all exited 0 on the merged tree except the ladder build, which produces the expected date-only diff described in R01.",
+      "why": "Recorded so the reader knows the suites were actually executed, not assumed.",
+      "recommendation": "None."
+    }
+  ],
+  "dataFlags": [
+    {
+      "id": "F01",
+      "severity": "high",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "PRC individual income tax rate applicable to the balance",
+      "reason": "Could not be verified from an official source in this session. The chinatax.gov.cn fetch failed and the gov.cn 2018 statute page now redirects to a homepage. Per the brief the value is left BLANK and not inferred.",
+      "discovery": "Fetch the PRC Individual Income Tax Law from a currently resolvable official URL (fgk.chinatax.gov.cn) and re-run."
+    },
+    {
+      "id": "F02",
+      "severity": "high",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "Bank FX spread on a CNY-to-USD purchase",
+      "reason": "Not published. The HSBC China tariff fetched at source S09 publishes wire and cable charges and states in note 7 that the tariff excludes charges set by other institutions, but publishes no dealing spread. Modelling one would be invention, so every spread cell is BLANK. This is very likely the largest single cost and is the top item to discover (question Q10).",
+      "discovery": "Request an indicative dealing rate in writing for the actual amount and compare it to the same-day PBOC central parity rate."
+    },
+    {
+      "id": "F03",
+      "severity": "medium",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "Correspondent bank and U.S. receiving bank deductions",
+      "reason": "S09 states expressly that HSBC's free tariff lines do not extend to receiving-bank or correspondent-bank charges in the payment path. No correspondent or U.S. receiving bank published a schedule that this session fetched.",
+      "discovery": "Ask the U.S. receiving bank for its inbound international wire fee and run one small test wire on SHA to observe the actual deduction."
+    },
+    {
+      "id": "F04",
+      "severity": "medium",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "Total all-in cost of any method",
+      "reason": "Because F01, F02 and F03 are blank, no honest total can be published. The dashboard publishes a VERIFIED BANK CHARGE column and explicitly labels it as not a total cost.",
+      "discovery": "Resolve F01-F03, then the total is arithmetic."
+    },
+    {
+      "id": "F05",
+      "severity": "medium",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "PRC customs limit on currency physically carried out of the country",
+      "reason": "Not verified from an official source in this session. Method M07 (cash withdrawal) is priced at RMB 0 because tariff 2.2.2.1 is free, but that price is meaningless without the export limit.",
+      "discovery": "Fetch the General Administration of Customs currency declaration rules from customs.gov.cn over HTTPS."
+    },
+    {
+      "id": "F06",
+      "severity": "medium",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "U.S. FinCEN Form 105 currency reporting threshold",
+      "reason": "Not re-verified from cbp.gov or fincen.gov in this session. The threshold is widely quoted as USD 10,000 but was not read from an official page here, so it is left BLANK rather than repeated.",
+      "discovery": "Fetch the FinCEN Form 105 instructions from fincen.gov or cbp.gov."
+    },
+    {
+      "id": "F07",
+      "severity": "low",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "SAFE approval timeline and document list under Huifa [2014] No. 2 Section VI",
+      "reason": "S01 establishes the right to a lump-sum transfer but does not publish a processing time or a document checklist.",
+      "discovery": "Contact the SAFE branch at the relevant registered permanent residence, or the handling bank, for the current checklist."
+    },
+    {
+      "id": "F08",
+      "severity": "low",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "Fee, if any, for the Announcement [2013] No. 40 outbound-payment tax recordal",
+      "reason": "Neither S10 nor S11 states a charge. Absence of a stated fee is not evidence that it is free, so the value is BLANK.",
+      "discovery": "Confirm with the competent tax authority."
+    },
+    {
+      "id": "F09",
+      "severity": "medium",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "Bank of China personal outward remittance tariff",
+      "reason": "A Bank of China personal tariff PDF appeared in search results (pic.bankofchina.com/bocappd/pricelist/202503/P020250331641149290400.pdf) but its body was not read in this session, so no figure from it is published. Method M11 has blank cost cells.",
+      "discovery": "Fetch the PDF directly and transcribe items 5.1.1.1 and 5.1.1.2."
+    },
+    {
+      "id": "F10",
+      "severity": "medium",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "Third-party remittance provider fees from CNY, and the PRC licence under which they operate",
+      "reason": "No provider fee schedule was fetched in this session and the PRC-side eligibility of a mainland CNY balance was not verified. Method M12 has blank cost cells.",
+      "discovery": "Fetch the provider's published CNY corridor schedule and confirm the PRC licence."
+    },
+    {
+      "id": "F11",
+      "severity": "medium",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "PRC penalty for splitting transfers across other people's quotas",
+      "reason": "S02 confirms SAFE built the monitoring system to prevent exactly this, but the penalty range was not verified from an official source in this session. The route is marked not recommended on the strength of S02 alone; no penalty figure is published.",
+      "discovery": "Fetch the current PRC foreign exchange administrative penalty rules from safe.gov.cn."
+    },
+    {
+      "id": "F12",
+      "severity": "low",
+      "status": "needs review",
+      "value": "BLANK",
+      "field": "Form 3520 foreign gift and bequest reporting threshold and the section 6039F penalty",
+      "reason": "Not verified from irs.gov in this session. Rev. Proc. 2026-35 does list section 6039F among its adjusted items, but the specific threshold was not read from the document body here, so it is BLANK.",
+      "discovery": "Fetch the current Form 3520 instructions from irs.gov."
+    },
+    {
+      "id": "F13",
+      "severity": "info",
+      "status": "needs review",
+      "value": "7.129 CNY per USD (2025 yearly average)",
+      "field": "Reference exchange rate used for every CNY figure in this dashboard",
+      "reason": "Verified at S03, but it is a U.S. tax translation rate, not a dealing rate. Every CNY amount in this dashboard is therefore an arithmetic reference figure, not a quote. The actual CNY required at a bank differs by the unpublished spread (F02).",
+      "discovery": "Use the dealing rate once F02 is resolved."
+    }
+  ]
+}

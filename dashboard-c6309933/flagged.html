@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagged for review · China Money · CNY→USD repatriation</title>
+<meta name="description" content="Source-linked research on converting CNY to USD from mainland China for a U.S. citizen. Every figure links to an official source; unverified values are left blank.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">China Money<small>CNY → USD repatriation research</small></a>
+  <nav class="jump" aria-label="Sections"><a href="index.html">Overview</a><a href="costs.html">Cost ladder</a><a href="methods.html">Methods</a><a href="penalties.html">Conversion penalty</a><a href="taxes.html">Tax &amp; reporting</a><a href="questions.html">Open questions</a><a href="repo-review.html">Repo review</a><a href="flagged.html" aria-current="page">Flagged for review</a><a href="sources.html">Sources</a></nav>
+</div></header>
+<div class="wrap"><main id="main">
+<h1>Flagged for review</h1>
+<p class="lede">Values that could not be confirmed from an official source, left blank with a discovery action. None of these blocks publication.</p>
+
+<div class="callout warn"><span class="t">These values are deliberately blank</span>
+The brief requires that a value which cannot be confirmed from an official source be left blank and flagged
+rather than inferred. Each row below is such a value. <strong>None blocks publication</strong>; each has a
+concrete discovery action so it can be filled in later.
+</div>
+<div class="tscroll"><table class="stack">
+<caption>13 values that could not be confirmed from an official source in this session</caption>
+<thead><tr><th>ID</th><th>Field</th><th>Value</th><th>Why it is blank</th><th>How to discover it</th><th>Severity</th></tr></thead>
+<tbody>
+      <tr id="F01">
+        <td class="tier" data-label="ID">F01</td>
+        <td data-label="Field">PRC individual income tax rate applicable to the balance</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">Could not be verified from an official source in this session. The chinatax.gov.cn fetch failed and the gov.cn 2018 statute page now redirects to a homepage. Per the brief the value is left BLANK and not inferred.</td>
+        <td data-label="How to discover">Fetch the PRC Individual Income Tax Law from a currently resolvable official URL (fgk.chinatax.gov.cn) and re-run.</td>
+        <td data-label="Severity"><span class="pill bad">high</span></td>
+      </tr>
+      <tr id="F02">
+        <td class="tier" data-label="ID">F02</td>
+        <td data-label="Field">Bank FX spread on a CNY-to-USD purchase</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">Not published. The HSBC China tariff fetched at source S09 publishes wire and cable charges and states in note 7 that the tariff excludes charges set by other institutions, but publishes no dealing spread. Modelling one would be invention, so every spread cell is BLANK. This is very likely the largest single cost and is the top item to discover (question Q10).</td>
+        <td data-label="How to discover">Request an indicative dealing rate in writing for the actual amount and compare it to the same-day PBOC central parity rate.</td>
+        <td data-label="Severity"><span class="pill bad">high</span></td>
+      </tr>
+      <tr id="F03">
+        <td class="tier" data-label="ID">F03</td>
+        <td data-label="Field">Correspondent bank and U.S. receiving bank deductions</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">S09 states expressly that HSBC&#x27;s free tariff lines do not extend to receiving-bank or correspondent-bank charges in the payment path. No correspondent or U.S. receiving bank published a schedule that this session fetched.</td>
+        <td data-label="How to discover">Ask the U.S. receiving bank for its inbound international wire fee and run one small test wire on SHA to observe the actual deduction.</td>
+        <td data-label="Severity"><span class="pill warn">medium</span></td>
+      </tr>
+      <tr id="F04">
+        <td class="tier" data-label="ID">F04</td>
+        <td data-label="Field">Total all-in cost of any method</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">Because F01, F02 and F03 are blank, no honest total can be published. The dashboard publishes a VERIFIED BANK CHARGE column and explicitly labels it as not a total cost.</td>
+        <td data-label="How to discover">Resolve F01-F03, then the total is arithmetic.</td>
+        <td data-label="Severity"><span class="pill warn">medium</span></td>
+      </tr>
+      <tr id="F05">
+        <td class="tier" data-label="ID">F05</td>
+        <td data-label="Field">PRC customs limit on currency physically carried out of the country</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">Not verified from an official source in this session. Method M07 (cash withdrawal) is priced at RMB 0 because tariff 2.2.2.1 is free, but that price is meaningless without the export limit.</td>
+        <td data-label="How to discover">Fetch the General Administration of Customs currency declaration rules from customs.gov.cn over HTTPS.</td>
+        <td data-label="Severity"><span class="pill warn">medium</span></td>
+      </tr>
+      <tr id="F06">
+        <td class="tier" data-label="ID">F06</td>
+        <td data-label="Field">U.S. FinCEN Form 105 currency reporting threshold</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">Not re-verified from cbp.gov or fincen.gov in this session. The threshold is widely quoted as USD 10,000 but was not read from an official page here, so it is left BLANK rather than repeated.</td>
+        <td data-label="How to discover">Fetch the FinCEN Form 105 instructions from fincen.gov or cbp.gov.</td>
+        <td data-label="Severity"><span class="pill warn">medium</span></td>
+      </tr>
+      <tr id="F07">
+        <td class="tier" data-label="ID">F07</td>
+        <td data-label="Field">SAFE approval timeline and document list under Huifa [2014] No. 2 Section VI</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">S01 establishes the right to a lump-sum transfer but does not publish a processing time or a document checklist.</td>
+        <td data-label="How to discover">Contact the SAFE branch at the relevant registered permanent residence, or the handling bank, for the current checklist.</td>
+        <td data-label="Severity"><span class="pill na">low</span></td>
+      </tr>
+      <tr id="F08">
+        <td class="tier" data-label="ID">F08</td>
+        <td data-label="Field">Fee, if any, for the Announcement [2013] No. 40 outbound-payment tax recordal</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">Neither S10 nor S11 states a charge. Absence of a stated fee is not evidence that it is free, so the value is BLANK.</td>
+        <td data-label="How to discover">Confirm with the competent tax authority.</td>
+        <td data-label="Severity"><span class="pill na">low</span></td>
+      </tr>
+      <tr id="F09">
+        <td class="tier" data-label="ID">F09</td>
+        <td data-label="Field">Bank of China personal outward remittance tariff</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">A Bank of China personal tariff PDF appeared in search results (pic.bankofchina.com/bocappd/pricelist/202503/P020250331641149290400.pdf) but its body was not read in this session, so no figure from it is published. Method M11 has blank cost cells.</td>
+        <td data-label="How to discover">Fetch the PDF directly and transcribe items 5.1.1.1 and 5.1.1.2.</td>
+        <td data-label="Severity"><span class="pill warn">medium</span></td>
+      </tr>
+      <tr id="F10">
+        <td class="tier" data-label="ID">F10</td>
+        <td data-label="Field">Third-party remittance provider fees from CNY, and the PRC licence under which they operate</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">No provider fee schedule was fetched in this session and the PRC-side eligibility of a mainland CNY balance was not verified. Method M12 has blank cost cells.</td>
+        <td data-label="How to discover">Fetch the provider&#x27;s published CNY corridor schedule and confirm the PRC licence.</td>
+        <td data-label="Severity"><span class="pill warn">medium</span></td>
+      </tr>
+      <tr id="F11">
+        <td class="tier" data-label="ID">F11</td>
+        <td data-label="Field">PRC penalty for splitting transfers across other people&#x27;s quotas</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">S02 confirms SAFE built the monitoring system to prevent exactly this, but the penalty range was not verified from an official source in this session. The route is marked not recommended on the strength of S02 alone; no penalty figure is published.</td>
+        <td data-label="How to discover">Fetch the current PRC foreign exchange administrative penalty rules from safe.gov.cn.</td>
+        <td data-label="Severity"><span class="pill warn">medium</span></td>
+      </tr>
+      <tr id="F12">
+        <td class="tier" data-label="ID">F12</td>
+        <td data-label="Field">Form 3520 foreign gift and bequest reporting threshold and the section 6039F penalty</td>
+        <td data-label="Value"><span class="blank">BLANK</span></td>
+        <td data-label="Reason">Not verified from irs.gov in this session. Rev. Proc. 2026-35 does list section 6039F among its adjusted items, but the specific threshold was not read from the document body here, so it is BLANK.</td>
+        <td data-label="How to discover">Fetch the current Form 3520 instructions from irs.gov.</td>
+        <td data-label="Severity"><span class="pill na">low</span></td>
+      </tr>
+      <tr id="F13">
+        <td class="tier" data-label="ID">F13</td>
+        <td data-label="Field">Reference exchange rate used for every CNY figure in this dashboard</td>
+        <td data-label="Value">7.129 CNY per USD (2025 yearly average)</td>
+        <td data-label="Reason">Verified at S03, but it is a U.S. tax translation rate, not a dealing rate. Every CNY amount in this dashboard is therefore an arithmetic reference figure, not a quote. The actual CNY required at a bank differs by the unpublished spread (F02).</td>
+        <td data-label="How to discover">Use the dealing rate once F02 is resolved.</td>
+        <td data-label="Severity"><span class="pill na">info</span></td>
+      </tr></tbody></table></div>
+<p class="small">Repository-level findings are on the <a href="repo-review.html">Repository review</a> page.</p>
+
+</main></div>
+<footer><div class="wrap">
+  <p><strong>Research, not advice.</strong> This is a source-linked research record, not individualised
+  tax, legal or investment advice. No transfer was made, no return was filed and no personal fact was
+  verified. Every figure was read from an official document fetched on 2026-11-11; anything that could
+  not be read from an official source is left <span class="blank">BLANK</span> rather than estimated.</p>
+  <p class="small">Session <code>arena/c6309933-china2</code> · data in <code>dashboard-c6309933/data/</code>
+  · <a href="sources.html">12 official sources</a> · <a href="flagged.html">13 flagged values</a> ·
+  <a href="../COORDINATION.md">task board</a></p>
+</div></footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

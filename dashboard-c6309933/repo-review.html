@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repository review · China Money · CNY→USD repatriation</title>
+<meta name="description" content="Source-linked research on converting CNY to USD from mainland China for a U.S. citizen. Every figure links to an official source; unverified values are left blank.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">China Money<small>CNY → USD repatriation research</small></a>
+  <nav class="jump" aria-label="Sections"><a href="index.html">Overview</a><a href="costs.html">Cost ladder</a><a href="methods.html">Methods</a><a href="penalties.html">Conversion penalty</a><a href="taxes.html">Tax &amp; reporting</a><a href="questions.html">Open questions</a><a href="repo-review.html" aria-current="page">Repo review</a><a href="flagged.html">Flagged for review</a><a href="sources.html">Sources</a></nav>
+</div></header>
+<div class="wrap"><main id="main">
+<h1>Repository review</h1>
+<p class="lede">Line-by-line findings from reviewing this repository, each with the command that produced it.</p>
+
+<div class="callout key"><span class="t">Method</span>
+Every finding below came from a command run against the checked-out tree in this session, not from reading
+prose. Where a finding was later disproved it is recorded as resolved rather than quietly dropped — see
+<code>R02</code>.
+</div>
+<h2>Findings</h2>
+
+<details >
+<summary>R01 · The ladder CI check is date-dependent and will fail on any day after the last regeneration &nbsp;
+  <span class="pill warn">medium</span>
+  <span class="pill na">needs review</span></summary>
+  <p class="small"><strong>Evidence:</strong> ladder/model.py line 908 sets `generated=date.today().isoformat()`. .github/workflows/verify-ladder.yml line 28 runs `git diff --exit-code -- ladder index.html`. Reproduced in this session: running `python3 ladder/model.py &amp;&amp; python3 ladder/build.py` on 2026-11-11 changed 12 committed files (12 insertions, 12 deletions), the only change being `&quot;generated&quot;: &quot;2026-11-10&quot;` -&gt; `&quot;generated&quot;: &quot;2026-11-11&quot;` in ladder/data/meta.json and the same date echoed into 11 generated pages. Local changes were reverted with `git checkout -- ladder/`; ladder/ is owned by other sessions.</p>
+  <p class="small"><strong>Why it matters:</strong> The check currently passes only because PR #62 regenerated the ladder on 2026-11-11. On 2026-11-12 the identical tree will fail `verify-ladder` with no code change.</p>
+  <p class="small"><strong>Recommendation:</strong> Derive `generated` from a value committed in the tree (e.g. `git log -1 --format=%cs -- ladder/data/meta.json`) or exclude the `generated` key from the diff check.</p>
+</details>
+<details >
+<summary>R02 · audit-92d12752/verify.py snapshot assertion - previously failing, now passing &nbsp;
+  <span class="pill na">low</span>
+  <span class="pill na">resolved - no action</span></summary>
+  <p class="small"><strong>Evidence:</strong> On the base commit 30ea791 this session ran `python3 audit-92d12752/verify.py` and it raised `AssertionError: snapshot differs: rerun build.py after inspecting repository changes`. After merging origin/main at 714b743 (which includes PR #61 and PR #62 refreshing that snapshot) the same command returns `PASS: parser/domain boundaries, snapshot parity, local report links.`</p>
+  <p class="small"><strong>Why it matters:</strong> Recorded so the correction is on the record. This is NOT an open defect on current main.</p>
+  <p class="small"><strong>Recommendation:</strong> None.</p>
+</details>
+<details open>
+<summary>R03 · Twenty separate published sites in one repository, with overlapping and non-identical figures &nbsp;
+  <span class="pill bad">high</span>
+  <span class="pill na">needs review</span></summary>
+  <p class="small"><strong>Evidence:</strong> `find . -name index.html -not -path &#x27;./.git/*&#x27; | wc -l` returns 20: acceptance-373b54a3, acceptance-a64bd476, audit-0f0f59fe, audit-456e7542, audit-6068a908, audit-86f0, audit-92d12752, audit-ad300459, briefing, docs, estimate-facf2fe9, final-f6327e23, the repository root, ladder, portal, repatriate, site, study-8f529c94, verify-88f5a1be, verify-d5d1f860. Each publishes its own cost tables. The published row counts differ by site: ladder 600 rows / 20 routes, repatriate 680 rows / 17 methods, study-8f529c94 920 rows / 23 methods, estimate-facf2fe9 920 rows / 23 methods, briefing 680 rows / 17 methods, verify-d5d1f860 680 rows / 17 methods, audit-86f0 880 rows / 22 methods.</p>
+  <p class="small"><strong>Why it matters:</strong> A reader landing on the site cannot tell which table to trust, and two tables for the same corridor give different totals because they make different assumptions about the FX spread. This is the single largest usability defect in the repository.</p>
+  <p class="small"><strong>Recommendation:</strong> Retire all but one canonical dashboard and replace the rest with redirects, or clearly label each as a historical snapshot with a date and a pointer to the canonical one.</p>
+</details>
+<details >
+<summary>R04 · PRC individual income tax rates are published across the repo but were NOT verifiable from an official source in this session &nbsp;
+  <span class="pill warn">medium</span>
+  <span class="pill na">needs review</span></summary>
+  <p class="small"><strong>Evidence:</strong> The root README.md asserts `3%-45%` comprehensive IIT, `5%-35%` business IIT and `20%` flat asset/dividend/interest IIT. This session attempted to verify them from the State Taxation Administration statute database and from www.gov.cn. The chinatax.gov.cn fetch failed and https://www.gov.cn/xinwen/2018-09/01/content_5318220.htm now redirects to the gov.cn homepage, returning no statute text. NO PRC rate is therefore published anywhere in dashboard-c6309933; every PRC tax cell is BLANK.</p>
+  <p class="small"><strong>Why it matters:</strong> The rates may well be correct, but they are not currently traceable to a live official page, and the brief requires an official source link per row.</p>
+  <p class="small"><strong>Recommendation:</strong> Re-point those citations at a currently resolvable official URL (for example the STA law database at fgk.chinatax.gov.cn) and re-fetch before publishing the figure.</p>
+</details>
+<details >
+<summary>R05 · Insecure http:// links to official PRC sources across the repository &nbsp;
+  <span class="pill warn">medium</span>
+  <span class="pill na">needs review</span></summary>
+  <p class="small"><strong>Evidence:</strong> `grep -roh &#x27;http://...&#x27;` over tracked .md/.html/.json files returns at least 17 distinct http:// official URLs, including http://m.safe.gov.cn/safe/2021-07-02/19307.html, http://www.safe.gov.cn/en/2017/1230/1397.html, http://english.customs.gov.cn/... and http://www.customs.gov.cn/. Two are malformed placeholder strings (`http://` and `http://...`) and one has a trailing full stop (`http://m.safe.gov.cn/safe/2004-1116/5461.html.`).</p>
+  <p class="small"><strong>Why it matters:</strong> A citation that does not resolve is not a citation. Placeholder and trailing-punctuation URLs are unambiguously broken.</p>
+  <p class="small"><strong>Recommendation:</strong> Convert to https://, delete the two placeholder strings, and strip the trailing full stop. Note that dashboard-c6309933 deliberately cites the https form where one resolved; S11 could only be resolved over http and is labelled accordingly.</p>
+</details>
+<details >
+<summary>R06 · Eight competing executive summaries with no single authoritative one &nbsp;
+  <span class="pill warn">medium</span>
+  <span class="pill na">needs review</span></summary>
+  <p class="small"><strong>Evidence:</strong> `find . -iname &#x27;*EXECUTIVE*SUMMARY*&#x27;` returns 10 files: EXECUTIVE-SUMMARY.md, EXECUTIVE_SUMMARY.md, briefing/EXECUTIVE_SUMMARY.md, docs/executive-summary.md, repatriate/EXECUTIVE_SUMMARY.md, reports/EXECUTIVE_SUMMARY_85f37d08.md, research/EXECUTIVE_SUMMARY.md, research/previous-dashboard/EXECUTIVE_SUMMARY.md, site/executive-summary.html, study-8f529c94/EXECUTIVE_SUMMARY.md. The root README links only some of them.</p>
+  <p class="small"><strong>Why it matters:</strong> The brief asks for one executive summary. Ten files with different conclusions means none of them is the answer.</p>
+  <p class="small"><strong>Recommendation:</strong> Designate one file as canonical, reduce the others to a single-line pointer, and update the README.</p>
+</details>
+<details >
+<summary>R07 · The task board has grown to a size where it no longer prevents collisions &nbsp;
+  <span class="pill na">low</span>
+  <span class="pill na">needs review</span></summary>
+  <p class="small"><strong>Evidence:</strong> COORDINATION.md is 984 lines / 179,707 bytes. It records at least three collisions the board did not prevent: COORDINATION.md add/add conflicts on three separate merges, two sessions claiming the same root hub (arena/4decd480 and arena/d5d1f860, pushed 57 seconds apart), and one session&#x27;s package.json `&quot;type&quot;: &quot;module&quot;` field breaking another session&#x27;s CommonJS test.</p>
+  <p class="small"><strong>Why it matters:</strong> A 180 KB append-only log cannot be read before claiming, which is the mechanism the brief relies on.</p>
+  <p class="small"><strong>Recommendation:</strong> Split it: keep a short machine-readable claims table (task, owner, scope, timestamp, status) at the top and move the narrative logs into per-session files.</p>
+</details>
+<details >
+<summary>R08 · Six pull requests left open, all more than 24 hours old at review time &nbsp;
+  <span class="pill na">low</span>
+  <span class="pill na">needs review</span></summary>
+  <p class="small"><strong>Evidence:</strong> `gh pr list --state open` on 2026-11-11 returns #39 (arena/c9cc56a6-china2, opened 2026-11-10 06:04), #48 (arena/d5d1f860-china2, 09:56), #49 (arena/29c5e201-china2, 09:56), #52 (arena/a53d707e-china2, 10:01), #53 (arena/416f3c1b-china2, 10:01), #55 (arena/6869721b-china2, 10:21). Under the brief&#x27;s own 60-minute stale-claim rule all six are takeover-eligible.</p>
+  <p class="small"><strong>Why it matters:</strong> Open PRs holding claims on shared files (root index.html, ladder/build.py, README.md) block other sessions from editing them safely.</p>
+  <p class="small"><strong>Recommendation:</strong> Close the superseded ones with an audit comment, as was done for #2, #12 and #17.</p>
+</details>
+<details >
+<summary>R09 · All verification suites named in the README exist and were run &nbsp;
+  <span class="pill na">info</span>
+  <span class="pill na">verified clean</span></summary>
+  <p class="small"><strong>Evidence:</strong> Every path referenced in the README &#x27;Reproduce &amp; Verify Locally&#x27; block exists (scripts/build.py, scripts/validate.py, scripts/test_ui.js, tools/build.mjs, tools/verify.mjs, portal/generate_portal.py, verify_85f37d08.py, repatriate/build.py, repatriate/verify.py, briefing/build.py, briefing/verify.py, audit-86f0/verify.py, audit-0f0f59fe/verify.py, audit-ad300459/verify.py, acceptance-373b54a3/verify.py, ladder/model.py, ladder/build.py, ladder/verify.py, scripts/seed_research.py, scripts/browser_test.cjs). This session ran 21 of them; all exited 0 on the merged tree except the ladder build, which produces the expected date-only diff described in R01.</p>
+  <p class="small"><strong>Why it matters:</strong> Recorded so the reader knows the suites were actually executed, not assumed.</p>
+  <p class="small"><strong>Recommendation:</strong> None.</p>
+</details>
+<hr class="sep">
+<div class="card"><h3>Scope of this review</h3>
+<p class="small">This session read and re-verified only its own deliverable and the repository's structure,
+CI workflows and verification suites. It did <strong>not</strong> re-verify the substantive legal claims
+inside the nineteen other published sites in this repository; those are covered by
+<a href="flagged.html">Flagged for review</a> where a value could not be confirmed from an official source.</p></div>
+
+</main></div>
+<footer><div class="wrap">
+  <p><strong>Research, not advice.</strong> This is a source-linked research record, not individualised
+  tax, legal or investment advice. No transfer was made, no return was filed and no personal fact was
+  verified. Every figure was read from an official document fetched on 2026-11-11; anything that could
+  not be read from an official source is left <span class="blank">BLANK</span> rather than estimated.</p>
+  <p class="small">Session <code>arena/c6309933-china2</code> · data in <code>dashboard-c6309933/data/</code>
+  · <a href="sources.html">12 official sources</a> · <a href="flagged.html">13 flagged values</a> ·
+  <a href="../COORDINATION.md">task board</a></p>
+</div></footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

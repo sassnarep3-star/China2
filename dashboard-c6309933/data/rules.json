@@ -1,0 +1,187 @@
+{
+  "note": "Only values read from a document fetched in this session appear here. Anything not read is null and renders BLANK.",
+  "prcRules": [
+    {
+      "id": "P01",
+      "rule": "Annual individual foreign-exchange purchase and sale quota",
+      "value": "USD 50,000 per individual per year (raised from USD 20,000)",
+      "appliesTo": "Individual FX sales, and FX purchases by domestic individuals",
+      "sourceId": "S02",
+      "quote": "The Detailed Rules specify that the annual quota for individual foreign exchange purchases be drastically raised from USD 20,000 to USD 50,000",
+      "note": "Above the quota the purchase is not prohibited; S02 says examination of the authenticity of transactions exceeding the quota is strengthened."
+    },
+    {
+      "id": "P02",
+      "rule": "Lump-sum transfer of an emigrant's PRC property",
+      "value": "Permitted in one lump sum or in batches within the SAFE-approved limit",
+      "appliesTo": "A person who has emigrated; approved by the SAFE branch at the original registered permanent residence",
+      "sourceId": "S01",
+      "quote": "The requirement that an immigrant's property can be transferred several times is cancelled ... the bank may remit the relevant funds in a lump sum or in several batches within the limit specified in the approval document.",
+      "note": "S01 also cancelled the requirement to file with SAFE where the total exceeded RMB 500,000."
+    },
+    {
+      "id": "P03",
+      "rule": "Lump-sum transfer of inherited PRC property",
+      "value": "Permitted; separate applications per decedent no longer required",
+      "appliesTo": "An heir; approved by the SAFE branch at the decedent's original registered permanent residence",
+      "sourceId": "S01",
+      "quote": "The requirement that property inherited from different decedents shall be applied and remitted separately [is cancelled]",
+      "note": null
+    },
+    {
+      "id": "P04",
+      "rule": "Outbound-payment tax recordal threshold",
+      "value": "A single outbound payment above USD 50,000 equivalent requires a tax recordal",
+      "appliesTo": "Domestic institutions and individuals paying the listed categories abroad",
+      "sourceId": "S10",
+      "quote": "境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元，下同）下列外汇资金 ... 均应向所在地主管税务机关进行税务备案",
+      "note": "Article 3(13) exempts a domestic individual's private-use FX for study, travel or visiting relatives abroad."
+    },
+    {
+      "id": "P05",
+      "rule": "Recordal frequency and channel",
+      "value": "One recordal per contract, fileable online",
+      "appliesTo": "Multiple payments under the same contract",
+      "sourceId": "S11",
+      "quote": "同一笔合同需要多次对外支付的 ... 仅需在首次付汇前办理备案 ... 备案人可自主选择线上办理，无需再到办税服务厅办理",
+      "note": "S11 confirms the USD 50,000 threshold itself was not changed."
+    },
+    {
+      "id": "P06",
+      "rule": "Tax authority review window on the recordal",
+      "value": "15 working days from receipt of the recordal form",
+      "appliesTo": "The competent tax authority",
+      "sourceId": "S10",
+      "quote": "主管税务机关应自收到《备案表》后15个工作日内，对备案人提交的《备案表》及所附资料进行审查",
+      "note": "The review expressly checks whether the outbound item has paid tax as required."
+    },
+    {
+      "id": "P07",
+      "rule": "PRC individual income tax rate applicable to the balance",
+      "value": null,
+      "appliesTo": null,
+      "sourceId": null,
+      "quote": null,
+      "note": "NOT VERIFIED in this session - see flag F01. Left BLANK, not inferred."
+    },
+    {
+      "id": "P08",
+      "rule": "PRC penalty for splitting a transfer across other people's quotas",
+      "value": null,
+      "appliesTo": null,
+      "sourceId": "S02",
+      "quote": "To prevent acts of avoiding administration, such as repeated purchases of foreign exchange and foreign exchange sales in installments ... the SAFE has established a management information system connecting banks with the SAFE",
+      "note": "The monitoring system is verified; the penalty amount is NOT - see flag F11. Left BLANK."
+    }
+  ],
+  "usRules": [
+    {
+      "id": "U01",
+      "rule": "Functional currency and translation requirement",
+      "value": "U.S. dollar; all reported amounts must be expressed in USD",
+      "appliesTo": "Every U.S. taxpayer except certain qualified business units",
+      "sourceId": "S04",
+      "quote": "You must express the amounts you report on your U.S. tax return in U.S. dollars. ... The U.S. dollar is the functional currency for all taxpayers except some qualified business units (QBUs).",
+      "note": "Payments of U.S. tax must be remitted to the IRS in U.S. dollars."
+    },
+    {
+      "id": "U02",
+      "rule": "Official U.S. exchange rate",
+      "value": "None - the IRS has no official exchange rate",
+      "appliesTo": "All translation",
+      "sourceId": "S03",
+      "quote": "The Internal Revenue Service has no official exchange rate. Generally, it accepts any posted exchange rate that is used consistently.",
+      "note": "The IRS yearly average for the Chinese yuan is 7.129 for 2025 and 7.189 for 2024."
+    },
+    {
+      "id": "U03",
+      "rule": "Tax on a personal foreign-currency gain (26 U.S.C. 988(e))",
+      "value": "No gain recognised unless the gain exceeds USD 200",
+      "appliesTo": "An individual disposing of nonfunctional currency in a personal transaction",
+      "sourceId": "S06",
+      "quote": "no gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.",
+      "note": "Section 988(e)(1) also disapplies the rest of section 988 to personal transactions. A transaction is not personal to the extent its expenses meet section 162 or 212."
+    },
+    {
+      "id": "U04",
+      "rule": "FBAR civil penalty ceiling - non-willful",
+      "value": "USD 16,536 per violation (statutory USD 10,000, inflation-adjusted)",
+      "appliesTo": "31 U.S.C. 5321(a)(5)(B)(i)",
+      "sourceId": "S05",
+      "quote": "Foreign Financial Agency Transaction - Non-Willful Violation of Transaction | 10,000 | 16,536",
+      "note": "Adjusted by 90 FR 5630, Jan. 17, 2025."
+    },
+    {
+      "id": "U05",
+      "rule": "FBAR civil penalty ceiling - willful",
+      "value": "USD 165,353 per violation (statutory USD 100,000, inflation-adjusted)",
+      "appliesTo": "31 U.S.C. 5321(a)(5)(C)(i)(I)",
+      "sourceId": "S05",
+      "quote": "Foreign Financial Agency Transaction - Willful Violation of Transaction | 100,000 | 165,353",
+      "note": "The statute also permits 50% of the account balance where that is greater."
+    },
+    {
+      "id": "U06",
+      "rule": "Foreign earned income exclusion - 2026",
+      "value": "USD 132,900",
+      "appliesTo": "Taxpayers meeting the tax home test plus the bona fide residence or physical presence test, on Form 2555",
+      "sourceId": "S07",
+      "quote": "Exclusion amount. For 2026, the maximum exclusion amount has increased to $132,900.",
+      "note": "Reaches EARNED income only. It does not exclude a gain on a property sale or an inheritance."
+    },
+    {
+      "id": "U07",
+      "rule": "Foreign earned income exclusion - 2027",
+      "value": "USD 137,300",
+      "appliesTo": "Taxable years beginning in 2027, section 911(b)(2)(D)(i)",
+      "sourceId": "S08",
+      "quote": "For taxable years beginning in 2027, the foreign earned income exclusion amount under Sec. 911(b)(2)(D)(i) is $137,300.",
+      "note": "Rev. Proc. 2026-35 section 3, item .41."
+    },
+    {
+      "id": "U08",
+      "rule": "U.S.-China treaty cap on PRC tax on dividends",
+      "value": "10% of the gross amount, where the recipient is the beneficial owner",
+      "appliesTo": "Dividends paid by a PRC-resident company to a U.S. resident",
+      "sourceId": "S12",
+      "quote": "if the recipient is the beneficial owner of the dividends the tax so charged shall not exceed 10 percent of the gross amount of the dividends",
+      "note": "Article 9(2) of the 1984 Convention. The treaty caps PRC withholding; it does not by itself remove U.S. tax on a U.S. citizen."
+    },
+    {
+      "id": "U09",
+      "rule": "U.S.-China treaty cap on PRC tax on interest",
+      "value": "10% of the gross amount, where the recipient is the beneficial owner",
+      "appliesTo": "Interest arising in one state and paid to a resident of the other",
+      "sourceId": "S12",
+      "quote": "if the recipient is the beneficial owner of the interest, the tax so charged shall not exceed 10 percent of the gross amount of the interest",
+      "note": "Article 10(2)."
+    },
+    {
+      "id": "U10",
+      "rule": "FBAR filing threshold and Form 8938 thresholds",
+      "value": null,
+      "appliesTo": null,
+      "sourceId": null,
+      "quote": null,
+      "note": "NOT re-verified from fincen.gov or irs.gov in this session. The penalty ceilings at U04 and U05 were verified; the filing thresholds were not. Left BLANK."
+    },
+    {
+      "id": "U11",
+      "rule": "FinCEN Form 105 currency reporting threshold",
+      "value": null,
+      "appliesTo": null,
+      "sourceId": null,
+      "quote": null,
+      "note": "NOT verified in this session - see flag F06. Left BLANK."
+    },
+    {
+      "id": "U12",
+      "rule": "Form 3520 foreign gift / bequest reporting threshold and section 6039F penalty",
+      "value": null,
+      "appliesTo": null,
+      "sourceId": null,
+      "quote": null,
+      "note": "NOT verified in this session - see flag F12. Left BLANK."
+    }
+  ]
+}

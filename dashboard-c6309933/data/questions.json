@@ -1,0 +1,140 @@
+{
+  "note": "The brief supplied two facts only: (1) the requester is a U.S. citizen, and (2) there is money in a bank account in mainland China that cannot be converted to USD without paying what the requester describes as a considerable amount of tax. Everything else is unknown. No unknown below has been inferred. Each entry states what is known, what is missing, why the decision turns on it, and a concrete action that would discover it.",
+  "known": [
+    { "fact": "Requester is a U.S. citizen.", "source": "brief, stated by requester", "consequence": "Worldwide income is reportable to the IRS regardless of residence (S04 confirms the U.S. dollar functional-currency rule and that U.S. tax must be remitted in USD)." },
+    { "fact": "A CNY balance exists in a bank account in mainland China.", "source": "brief, stated by requester", "consequence": "The balance is a foreign financial account for U.S. reporting purposes; the reporting thresholds are S05-adjacent and are set out on the taxes page." },
+    { "fact": "The requester believes conversion into USD carries a considerable tax cost.", "source": "brief, stated by requester", "consequence": "Unverified as a tax. Nothing fetched in this session imposes a tax on the act of converting currency. See the conversion-penalty breakdown." }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "What generated the CNY balance - salary, business profit, dividends, sale of property, sale of securities, an inheritance, or a gift?",
+      "status": "MISSING - blocking",
+      "why": "The PRC tax position is set entirely by the character of the income, and the bank's document test is set by the same character. A salary balance is a current-account item that can be purchased and wired against payslips; a property-sale balance is a capital-account item that needs SAFE approval under S01. The answer decides which of M01-M09 is even available.",
+      "discovery": "Pull the bank statements for the account for the full period the balance accumulated, plus the underlying contract, payslips, sale agreement or share-transfer documents. Then pull the matching PRC tax filings and payment receipts from the electronic tax bureau for the same years."
+    },
+    {
+      "id": "Q02",
+      "question": "Has the requester emigrated from the PRC, and do they still hold a PRC hukou (registered permanent residence)?",
+      "status": "MISSING - blocking for the lump-sum routes",
+      "why": "S01 Section VI gives a lump-sum conversion-and-remittance approval only for property transfers due to immigration, and routes the application to the SAFE branch at the immigrant's ORIGINAL registered permanent residence. Without emigration status, M08 is unavailable and the balance must move through the annual quota route instead.",
+      "discovery": "Check hukou status with the local public security registration office, and check whether a PRC exit-emigration settlement (注销户口 / 定居国外) has been completed."
+    },
+    {
+      "id": "Q03",
+      "question": "Is any part of the balance inherited?",
+      "status": "MISSING - blocking for M09",
+      "why": "S01 Section VI provides a separate inheritance route, approved by the SAFE branch at the decedent's original registered permanent residence, and S01 VI(III) removed the rule requiring separate applications per decedent.",
+      "discovery": "Obtain the notarial inheritance certificate and the decedent's former hukou location."
+    },
+    {
+      "id": "Q04",
+      "question": "What is the exact CNY balance, and is it one account or several?",
+      "status": "MISSING - blocking for tier selection",
+      "why": "The brief asks for tiers from USD 10,000 to USD 400,000 but never states the actual balance. The verified HSBC fee schedule has a RMB 100 minimum and a RMB 500 percentage cap, so the cheapest tier depends on the actual amount, and the USD 50,000-equivalent recordal trigger (S10) depends on the size of each single payment, not the total.",
+      "discovery": "Read the current balance from the statement, and decide whether the plan is one payment or several."
+    },
+    {
+      "id": "Q05",
+      "question": "Has PRC individual income tax already been paid on the income that produced the balance?",
+      "status": "MISSING - blocking",
+      "why": "This is almost certainly the real source of the 'considerable tax' the requester is describing. S10 Article 8(2) makes 'whether the outbound payment item has paid tax as required' an express subject of the tax authority's 15-working-day review. If the tax is unpaid, it becomes due before the money can leave; if it is paid, the recordal should clear and there is no further PRC tax on the transfer itself.",
+      "discovery": "Log into the provincial electronic tax bureau and download the individual income tax filing and payment records (个人所得税纳税记录) for every year the balance accumulated. Compare against the bank deposits."
+    },
+    {
+      "id": "Q06",
+      "question": "Is the requester a PRC tax resident for any year in which the balance was earned - 183 days or more, or the six-year rule applied?",
+      "status": "MISSING - blocking",
+      "why": "PRC residence status determines whether PRC tax is owed at all on the underlying income. This session could NOT verify the PRC statutory rate table or the residence rules from an official source, so no PRC rate is published anywhere in this dashboard (flag F01).",
+      "discovery": "Count days in the PRC per calendar year from passport entry/exit stamps, and obtain the PRC residence determination from the competent tax authority or a PRC-licensed tax agent."
+    },
+    {
+      "id": "Q07",
+      "question": "Has the requester filed FinCEN Form 114 (FBAR) and Form 8938 for every year the account existed?",
+      "status": "MISSING - blocking for the U.S. side",
+      "why": "S05 sets the current civil ceilings at USD 16,536 per non-willful violation and USD 165,353 per willful violation (or 50% of the account balance for a willful violation, under 31 U.S.C. 5321(a)(5)(C)). The exposure is per year the account was unreported, not per transfer, so it does not shrink by moving the money in small instalments.",
+      "discovery": "Pull the filed returns and the BSA E-Filing acknowledgements for each year. If any year is missing, the IRS Streamlined filing procedures are the route to consider before any transfer."
+    },
+    {
+      "id": "Q08",
+      "question": "Where is the requester tax resident for U.S. purposes, and do they qualify for the foreign earned income exclusion?",
+      "status": "MISSING - material to net cost",
+      "why": "The FEIE only excludes EARNED income and is worth USD 132,900 for 2026 (S07) rising to USD 137,300 for 2027 (S08). It does nothing for a balance that came from a property sale or an inheritance. Knowing the source (Q01) and residence (Q08) together decides whether any U.S. relief is available at all.",
+      "discovery": "Apply the Form 2555 tax-home test and either the bona fide residence test or the 330-day physical presence test to the actual travel record."
+    },
+    {
+      "id": "Q09",
+      "question": "Which bank holds the account, and what relationship tier does the requester have there?",
+      "status": "MISSING - blocking for the cost table",
+      "why": "The verified cost difference between tiers is the whole of the published cost spread in this dataset: RMB 0 for HSBC China Private Banking and Premier Elite versus RMB 220-620 for Premier and Advance (S09). Only HSBC China's tariff was fetched; every other bank is BLANK (flags F09, F10).",
+      "discovery": "Ask the bank for its current published 账户和服务费率 PDF and its current FX rate board, then re-run this model against them."
+    },
+    {
+      "id": "Q10",
+      "question": "What FX spread does the holding bank actually apply to a CNY-to-USD purchase at this size?",
+      "status": "MISSING - largest unknown by value",
+      "why": "This is very likely a bigger cost than any published fee. The HSBC tariff fetched in this session publishes wire charges but publishes NO spread, and S09 states the fee table excludes anything not priced by HSBC. At 0.50% the spread on USD 400,000 would be USD 2,000, which is more than thirty times the largest verified bank fee in this dataset - but 0.50% is an assumption and is therefore NOT published here (flag F02).",
+      "discovery": "Request an indicative dealing rate in writing for the actual amount, and compare it against the same-day PBOC central parity rate to compute the real margin."
+    },
+    {
+      "id": "Q11",
+      "question": "What do the correspondent bank and the U.S. receiving bank deduct?",
+      "status": "MISSING - material",
+      "why": "S09 states expressly that HSBC's 'free' covers only HSBC's own tariff lines and does NOT extend to receiving-bank or correspondent-bank charges in the payment path. Those amounts are set by institutions this session did not fetch, so they are BLANK (flag F03).",
+      "discovery": "Ask the U.S. receiving bank for its inbound international wire fee, and ask HSBC for the typical correspondent deduction on the USD corridor. Compare SHA versus OUR on a single small test wire before moving the bulk."
+    },
+    {
+      "id": "Q12",
+      "question": "Is there any urgency, and is the requester willing to stage the transfer across calendar years?",
+      "status": "MISSING - decides strategy",
+      "why": "S02 sets the individual annual purchase quota at USD 50,000, so a balance far above that either needs multiple calendar years, an above-quota authenticity review, or the S01 lump-sum approval. Staging across years costs nothing in verified bank fees above the minimum-charge floor but multiplies the fixed RMB 100 minimum and RMB 120 cable per wire.",
+      "discovery": "Decide the earliest acceptable completion date, then compare the staged cost in the cost table against the one-off cost."
+    },
+    {
+      "id": "Q13",
+      "question": "Has the requester ever been assessed a PRC or U.S. penalty relating to this balance?",
+      "status": "MISSING - risk sizing",
+      "why": "Prior non-compliance changes the sequencing: it may be necessary to regularise before transferring, because the transfer itself creates the bank and tax-authority interaction described in S10 Article 8.",
+      "discovery": "Check for any PRC tax authority notices and any IRS correspondence, and confirm whether any FBAR was filed late or not at all."
+    },
+    {
+      "id": "Q14",
+      "question": "Are there PRC exchange controls or account conditions on this specific account (frozen, pledged, restricted-purpose)?",
+      "status": "MISSING - operational",
+      "why": "An account restriction would block every route regardless of tax position.",
+      "discovery": "Ask the branch in writing whether the account is subject to any hold, pledge or purpose restriction."
+    }
+  ],
+  "answersSoFar": [
+    {
+      "id": "A01",
+      "finding": "No tax on the act of converting CNY into USD was located in any document fetched this session.",
+      "support": "S03 and S04 govern how the IRS wants foreign currency translated and state the IRS has no official exchange rate. Neither imposes a charge. S06 makes a personal foreign-currency gain non-recognised unless the gain exceeds USD 200.",
+      "confidence": "Limited to the documents fetched. This is not a conclusion that no PRC charge exists; the PRC statutory rate table was not verified (flag F01)."
+    },
+    {
+      "id": "A02",
+      "finding": "The largest verified cost component in this dataset is the bank's wire and cable charge, and it is small and capped.",
+      "support": "S09: 0.1% with a RMB 100 minimum and RMB 500 maximum, plus a RMB 120 cable. For the SHA charge-sharing options (M03, M04) the verified HSBC charge ranges from RMB 220 to RMB 620 across USD 10,000 to USD 400,000, i.e. about USD 30.86 to USD 86.97 at the S03 rate of 7.129; adding the RMB 200 OUR pre-charge (M05) raises that to RMB 420-820, about USD 58.91 to USD 115.02. It is RMB 0 for Private Banking (M01) and Premier Elite (M02), and RMB 0 for a counter cash withdrawal (M07). The 0.1% percentage component first hits its RMB 500 cap at the USD 80,000 tier.",
+      "confidence": "High for HSBC China at the tariff effective 2026-10-31. No other bank verified."
+    },
+    {
+      "id": "A03",
+      "finding": "The USD 50,000 figure that usually blocks a large transfer is a recordal threshold and a purchase quota, not a tax.",
+      "support": "S10 requires a tax recordal for a single outbound payment above USD 50,000 equivalent, with personal study/travel/visiting-relatives FX exempt under Article 3(13); S11 confirms one recordal per contract, an online channel, and an unchanged threshold. S02 separately sets the individual annual FX purchase quota at USD 50,000.",
+      "confidence": "High. Both are official documents."
+    },
+    {
+      "id": "A04",
+      "finding": "A lump-sum exit does exist and does not require year-by-year staging.",
+      "support": "S01 Section VI permits an emigrant's property to be remitted in a lump sum or in batches within the SAFE-approved limit, and cancels the old RMB 500,000 record-filing requirement.",
+      "confidence": "High for the rule. Eligibility depends on Q02, which is unanswered."
+    },
+    {
+      "id": "A05",
+      "finding": "On the U.S. side the material exposure is reporting, not the conversion.",
+      "support": "S05 sets the FBAR civil ceilings at USD 16,536 non-willful and USD 165,353 willful per violation. S07 and S08 set the FEIE at USD 132,900 for 2026 and USD 137,300 for 2027, but the FEIE reaches earned income only.",
+      "confidence": "High for the cited amounts. Application depends on Q07 and Q08."
+    }
+  ]
+}
