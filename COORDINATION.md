@@ -907,6 +907,7 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 
 ---
 
+
 ## Session `arena/bb2a3876-china2` — corrective pass on published flagged items + full-suite re-verification (2026-11-11 UTC)
 
 Prior sessions' substantive research and the live GitHub Pages site are complete and merged (see publication records above). This session does not duplicate that work. It claims only the still-open, verifiable items published as "needs review" and a full local re-verification of every CI suite on the current tree, then publishes the result as a PR.
@@ -923,6 +924,7 @@ Prior sessions' substantive research and the live GitHub Pages site are complete
 Rules in force: no other session's published findings are rewritten; every edit above traces to an item already flagged as irregular by a prior published audit (study-8f529c94 RA-01/RA-02/RA-03/RA-04/RA-13, ladder AUD list, briefing N-series). Sources: SAFE Hui Fa [2017] No. 29 (RMB 100k/person/civil year ATM cap) https://www.safe.gov.cn/en/2017/1230/1397.html ; IRS 2025 yearly average 7.129 https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates ; PBOC Yin Fa [2026] No. 42 https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html ; SAFE Hui Fa [2007] No. 1 / SAFE Tianjin 2024 Case 9 (foreign-individual purchase quota limited to Foreign Permanent Resident ID holders) https://www.safe.gov.cn/tianjin/2024/0621/2529.html .
 
 ---
+
 
 ## Session `arena/6201ba1b-china2` — refresh the stale structural audit snapshot
 
@@ -942,6 +944,7 @@ Claim recorded before work. No other active claim for `audit-92d12752/**` appear
 ### Concurrent integration note
 
 - While this branch was in flight, `arena/bb2a3876-china2` published its B-05 snapshot refresh in PR #61. After fetching `origin/main`, the snapshot counts/results matched this branch (100 pages; 7,107 rows; 1,384 candidate rows / 34 pages). The combined tree keeps that compatible snapshot and this task's explicit 11 November build date. No concurrent edits were discarded. This session did not alter any of PR #61's other files.
+- A later merge of `origin/main` (PR #64, `arena/50f278d8-china2`) conflicted only in this append-only board; both this publication result and the complete transfer-guide session record were preserved. The other session's new `transfer-guide/**`, workflow, and generated inventory files were not edited by this session.
 
 ### Publication result
 
@@ -949,3 +952,43 @@ Claim recorded before work. No other active claim for `audit-92d12752/**` appear
 - PR checks: 11/11 passed. On the merge commit, all 14 check runs completed successfully: 11 validation/research workflows plus the Pages build, build-status report, and deploy jobs.
 - Pages build/deploy run [42946707526](https://github.com/sassnarep3-star/China2/actions/runs/42946707526) succeeded; Pages API reported `built` at the merge commit with no error.
 - Published review retrieved successfully: https://sassnarep3-star.github.io/China2/audit-92d12752/index.html . The root dashboard and other category pages are unchanged by this small follow-up; this PR only refreshed the date/count snapshot and added the verification/publication record.
+
+---
+
+---
+
+## Session `arena/50f278d8-china2` — unified repatriation guide with decision checklist, penalty breakdown, 40-tier cost ladder, and line-by-line repo audit (disjoint scope)
+
+> Environment note: Arena pins this session to `arena/50f278d8-china2` (status: active) and forbids creating or switching branches; this fixed branch substitutes for a `session-<id>/<task>` branch. Full task board above and active remote claims read before claiming. All prior and concurrent sessions' scopes are preserved unedited (`docs/**`, `site/**`, `portal/**`, `ladder/**` including `ladder/build.py`/`index.html` hub, `repatriate/**`, `briefing/**`, `study-8f529c94/**`, `estimate-facf2fe9/**`, `final-f6327e23/**`, `verify-*/**`, `audit-*/**`, `acceptance-*/**`, `research/**`, `reports/**`, `data/**`, `scripts/**`, `tools/**`, `EXECUTIVE_SUMMARY*.md`, `README.md`, `index.html`). This session works strictly in its disjoint scope `transfer-guide/**`, `.github/workflows/verify-transfer-guide.yml`, append-only `COORDINATION.md`, and mechanical `ladder/audit.html` inventory regeneration if required by CI. No other session's files are edited except as logged below as a request.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| U1 | Executive summary + decision-question checklist (what we know / don't know / how to find it) with official source links | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U2 | Exhaustive CNY→USD method catalogue (lawful + flagged unlawful) with pros/cons and exact step-by-step playbooks | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U3 | 7-layer conversion-penalty breakdown (PRC tax on underlying income vs. SAFE voucher gate vs. US FX gain/FTC/FEIE vs. spread/fees vs. reporting penalties) | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U4 | $10,000→$400,000 cost estimator (40 tiers × N methods, mobile-friendly tables, source link per row, blanks where unverified, exports) | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U5 | Line-by-line repo review + Flagged-for-Review + Sources register (official primary sources, verification checks) | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U6 | Static site build + independent verifier + CI workflow, full-repo verification, PR → main, merge, Pages deploy confirmation | in progress | `arena/50f278d8-china2` | `.github/workflows/verify-transfer-guide.yml`, `transfer-guide/**`, `COORDINATION.md` (append-only), `ladder/audit.html` (inventory only if needed) |
+
+- 2026-11-11 UTC: Claim recorded and pushed before substantive edits. Policy: no private facts inferred; every table row carries a direct official-source link; unverifiable values left blank and flagged; no personal tax bill asserted; no other active session's directory edited outside logged request. Work is deterministic and rebuildable via `transfer-guide/build.py`.
+
+### Shared-output request (logged, not edited)
+
+Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b9512-china2` / `arena/facf2fe9-china2`. This session requests that the final integrator add one card linking `transfer-guide/index.html`. Mechanical consequences (`ladder/audit.html` inventory, `acceptance-a64bd476` counts) will be regenerated by the unmodified generators if CI requires it. No prose or data in the hub is modified by this session until a handoff is recorded here.
+
+
+### U1–U5 completion record — `arena/50f278d8-china2` (2026-11-11 UTC)
+
+**Status: U1–U5 done; U6 (PR → merge → Pages) in progress.** Files touched: `transfer-guide/**` (new), `.github/workflows/verify-transfer-guide.yml` (new), this section of `COORDINATION.md`. Root `index.html`, `ladder/build.py`, `README.md` and every other session's files were not edited (request logged above).
+
+**U1 — Executive summary:** `transfer-guide/index.html` (kpi-grid, decision matrix, 40-source header) + `transfer-guide/EXECUTIVE_SUMMARY.md` (markdown summary, 2026-11-11). Core diagnosis: $0 conversion excise tax; stuck money is SAFE tax-voucher gate (Hui Fa [2020] No.14 Art.59, SAFE Tianjin 2026 FAQ 08) + 3%–45%/20%/10% treaty underlying IIT. If taxed payroll, $0 extra PRC tax to convert $10k–$400k+ in one wire (M01) with no age limit (Henan Q&A 5) and proxy allowed if abroad (Henan Q&A 3). FTC Form 1116 (10-yr window) + Treaty 10% caps prevent double tax.
+
+**U2 — Methods catalogue:** 23 methods (M01–M23) in `transfer-guide/methods.html` + `transfer-guide/data/methods.json` (direct copy of verified 40-source session `study-8f529c94` ledger, 18 lawful/conditional + 1 closed-loop + 4 unlawful rejected). Each with pros, cons, statutory cap, and exact step-by-step playbook including M05 remote proxy. Every row links to official HTTPS sources (safe.gov.cn/pbc.gov.cn/chinatax.gov.cn/irs.gov/govinfo.gov/ecfr.gov/cbp.gov/hsbc.com.cn/wise.com/westernunion.com).
+
+**U3 — Conversion penalty breakdown:** 7 layers in `transfer-guide/penalties.html` + `transfer-guide/data/penalties_and_taxes.json`: (1) $0 conversion tax, (2) PRC underlying IIT + SAFE voucher gate / free >$50k Tax Recordal, (3) US FTC vs FEIE $132,900 (2026 Form 2555), (4) §988(e)(2) personal FX gain >$200 capital gain, (5) bank CNY→USD spread (blank unverified), (6) wire commission/cable/intermediary fees ($0 PB/Premier Elite; $30.86–$86.97 Premier/Advance SHA + $28.05 OUR; $0/$20 Global Transfer), (7) FBAR $16,536/max($165,353,50%) willful + Form 8938 $10k–$60k + Form 3520 5%/mo up to 25% + PRC 30%–100% fines.
+
+**U4 — $10k→$400k cost estimator:** 920 rows (23 methods × 40 tiers) in `transfer-guide/costs.html` + `transfer-guide/exports/cost-ladder-920.csv/json` at reference 7.129 CNY/USD. Published sender fee computed deterministically: HSBC Premier/Advance SHA $30.86 ($10k) → $66.83 ($50k) → capped $86.97 ($70k–$400k); PB/Premier Elite $0.00; OUR +$28.05; Global Transfer $0.00 (PB/Premier) / $20.00 (Advance); Entity TT $33.67–$159.91 + 10% Treaty WHT; ATM hard cap RMB 100k/yr ($14,027/yr) = 29 calendar years for $400k (286 withdrawals). FX spread, intermediary fees, all-in total left strictly blank (null/""/—) and flagged FL-02/FL-03. Mobile-friendly: milestone summary first ($10k/$50k/$100k/$200k/$400k), then filterable searchable $10k-increment table with most-important-info-first columns (USD Tier → CNY → Method → Status → Batches → Published Fees → Blank Spread → Sources).
+
+**U5 — Repo review + Flags + Sources register:** `transfer-guide/audit.html` (RA-01–RA-14, 14 findings, sources, file inventory, direct/source/assumption separation), `transfer-guide/flagged.html` (FL-01–FL-18, 18 unverified/conditional items, blanks where nothing is published), `transfer-guide/sources.html` (SRC-01–SRC-40, 22 PRC official + 15 US/treaty + 3 primary commercial, 100% HTTPS fetched 2026-11-10, verbatim excerpts). New `transfer-guide/questions.html` (Q01–Q12) covers every gating private fact prompt requires: origin of balance, PRC tax withholding/tax vouchers, SAFE 境内个人 vs 境外个人 / PR-ID status, tranche acquisition dates & USD basis (§988(e) $200), FBAR/8938/3520 history, bank executable quote, capital-account docs (property/inheritance/emigrant), proxy vs in-person, urgency/ATM/POS vs lump-sum, bank tariff, gray-market pitfalls — each row with What We Know / What We DO NOT Know / How to Discover + official links + flags.
+
+**Verification (U5/U6 structural):** `PYTHONDONTWRITEBYTECODE=1 python3 transfer-guide/build.py` + `transfer-guide/verify.py` → **19,842 independent checks, 0 failures** (9 pages, 920 cost rows across $10k–$400k × 23 methods, 100% direct HTTPS official links on every <tr> with <td>, strict blank enforcement on unconfirmed FX spreads and third-party wire deductions, all local links/fragments resolved, `node --check transfer-guide/assets/app.js` green). Includes independent re-derivation of every HSBC fee tier ($10k $30.86, $50k $66.83, $400k $86.97, M06 $400k $534.66) and ATM 29-year math, plus 12-question ledger validation. These are structural and arithmetic checks; they do not certify the law.
