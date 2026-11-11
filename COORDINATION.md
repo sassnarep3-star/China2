@@ -1371,3 +1371,18 @@ Arena fixes this session to the current branch; no session-named branch will be 
 - Verification: seven review rows each contain primary-publisher links and all relative review-page links exist; `guide-fb2f2562/verify.py` passed 12,865 checks; `playbook-c1d73006/verify.py` passed 24,050; `verification-3347ca0a/verify.py` passed 542; `acceptance-382482c0/verify.py` passed 2,915. `ladder/model.py`, `ladder/build.py`, and `ladder/verify.py` passed 9,345 checks; `ladder/audit.html` mechanically regenerated to include the new tracked page, with the generator unchanged. These checks do not certify legal conclusions or all historical lines.
 - Scope request to final integrator/owner of the generated root hub: link `review-732da534/index.html` from the landing page / relevant flags so readers encounter the new correction; this session has not edited another owner's navigation or guide content.
 - Focused source-review task: **done**; emigrant time/cost wording and all private facts remain **needs review**, published in `review-732da534/index.html`. PR/deploy task remains in progress.
+---
+
+## Session `arena/5e1a6d91-china2` — fresh dated verification + decision synthesis (disjoint scope, 2026-11-11 UTC)
+
+> Arena pins this session to `arena/5e1a6d91-china2`; it substitutes for `session-<id>/<task>`. Full board read before claiming. All prior scopes preserved unedited. Open/stale PRs not touched.
+
+| # | Task | Status | Owner | Files |
+|---|---|---|---|---|
+| N1 | Fresh official-source re-fetch (SAFE/PBOC/STA/IRS/eCFR/CBP/bank boards+tariffs/Wise) with quotes | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N2 | Executive summary + Q&A decision register (known/unknown/how to discover) | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N3 | All methods pros/cons/steps + penalty layers + $10k→$400k cost tables (published inputs only, blanks flagged) | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N4 | Verifier+CI, PR→merge→Pages confirm, record | in progress | arena/5e1a6d91-china2 | `.github/workflows/verify-5e1a6d91.yml`, COORDINATION.md append-only |
+
+Policy: no private fact inferred; every row links official publisher; unverified = blank+flagged; no personal tax bill asserted.
+- Concurrency: PR #86 initially could not merge because main advanced through PR #85. Merged `origin/main` into this fixed session branch. The append-only task-board conflict was resolved by retaining both sessions' sections; the ladder inventory conflict was resolved by regenerating the combined tracked-file inventory using its unchanged generator. No other work discarded or force-pushed.
