@@ -243,6 +243,22 @@ for amount in (10000, 50000, 100000, 200000, 400000):
 for mid in [f"M{i:02d}" for i in range(1, 24)]:
     check(f">{mid}<" in root, f"root: method {mid} missing")
 
+# ---------------------------------------------------------------------------
+# 9. The Markdown executive summary must not drift from the computed ladder
+# ---------------------------------------------------------------------------
+md_path = os.path.join(HERE, "EXECUTIVE_SUMMARY.md")
+check(os.path.exists(md_path), "executive summary (Markdown) missing")
+if os.path.exists(md_path):
+    md = read(md_path)
+    check("EXECUTIVE_SUMMARY.md" in root, "root: executive summary not linked")
+    for t in ladder["tiers"]:
+        fee = f"${t['fee_std']:,.2f}"
+        total = f"${t['total_std']:,.2f}"
+        check(fee in md, f"summary: sender fee {fee} for ${t['amount']:,} missing")
+        check(total in md, f"summary: indicative total {total} for ${t['amount']:,} missing")
+    check("NOT RE-CHECKED" in md, "summary: unverified items not disclosed")
+    check("not tax or legal advice" in md.lower(), "summary: missing advice disclaimer")
+
 print()
 if failures:
     print(f"FAILED {len(failures)} of {checks_run} checks:")

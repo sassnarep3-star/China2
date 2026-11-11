@@ -655,7 +655,8 @@ canonical set.</p>
   renminbi fee of CNY 620 is {usd(620 / RATE_BOC)} at the board rate and {usd(620 / RATE_IRS)} at the tax rate — the
   repository’s older tables use the second. Source-backed means the sentence exists; analysis means it was derived;
   blank means it was not published.</p>
-  <p class="smallprint"><a href="verification-3347ca0a/index.html">Verification ledger</a> ·
+  <p class="smallprint"><a href="verification-3347ca0a/EXECUTIVE_SUMMARY.md" download>Executive summary (Markdown)</a> ·
+  <a href="verification-3347ca0a/index.html">Verification ledger</a> ·
   <a href="verification-3347ca0a/irregularities.html">Repository audit</a> ·
   <a href="transfer-guide/sources.html">Sources</a> ·
   <a href="transfer-guide/flagged.html">Flags</a> ·
