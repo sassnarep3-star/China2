@@ -1275,3 +1275,16 @@ Claim: review existing generated outputs read-only, record exact checks and limi
 - DELIVERY-AUDIT.md records direct deliverable links, exact verification boundaries, conditional credit language, aggregate FBAR trigger, and the unverified hypothesis about the bank's alleged tax demand. Existing published flags remain needs review; none block delivery.
 - Initial GitHub Pages API: built, main root, commit 1146dd2b1e41a46ba73b39db0cfb76747d26fa09, no error. Final audit PR/publication result follows.
 - PR #78: https://github.com/sassnarep3-star/China2/pull/78 . Ten CI jobs passed; the ladder reproducibility job detected its inventory had not yet included DELIVERY-AUDIT.md. Scope extended solely to mechanical regeneration of `ladder/audit.html` using its unchanged model/build scripts (275 vs 274 inventoried files). No research content or generator changed. Generated inventory refreshed; verifier re-run before retry.
+
+### Confirmed final delivery — arena/9e90af86-china2
+
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| Final delivery audit | done | arena/9e90af86-china2 | DELIVERY-AUDIT.md; reproducible playbook, source spot checks, retained published flags |
+| PR and publication | done | arena/9e90af86-china2 | PR #78 merged; Pages build/deploy successful |
+
+- PR https://github.com/sassnarep3-star/China2/pull/78 **MERGED** at 2026-11-11T07:37:53Z via `gh pr merge 78 --merge`; merge commit `10fa64f4046c3244421d2f0bf58375cb098903cc`. All 11 PR jobs passed after inventory refresh.
+- GitHub Pages run https://github.com/sassnarep3-star/China2/actions/runs/42980902233 **SUCCESS**, including build, deploy and report-build-status. Live site: https://sassnarep3-star.github.io/China2/ . Native Pages serves main root. No deployment settings altered.
+- Additional read-only checks: ladder 9,345/0 failures; site ledger 477/0; root/verification hub 539/0; whole-repository acceptance crawler 35,391/0. These are structural/arithmetic checks, not fresh legal verification.
+- Nonblocking platform annotations: Pages-managed upload-artifact action reports Node 20 deprecation (forced Node 24); hosted runner migration notice. No site build/deployment error.
+- This post-deployment result is preserved on the fixed session branch after the merged audit. No other session's branch was checked out, created, pushed, or merged.
