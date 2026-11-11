@@ -22,6 +22,12 @@ Source-linked research on lawful mainland China CNY→USD conversion, repatriati
 - **Evidence-Ledger Site:** [site/index.html](site/index.html) — 18 methods, strict domain allowlist (`data/*.json`, [EXECUTIVE-SUMMARY.md](EXECUTIVE-SUMMARY.md)).
 - **Government-Source Portal:** [portal/index.html](portal/index.html) — `.gov`/`.gov.cn`-only ledger (`reports/CNY_TO_USD_RESEARCH_LEDGER.json`, [reports/EXECUTIVE_SUMMARY_85f37d08.md](reports/EXECUTIVE_SUMMARY_85f37d08.md)).
 - **Acceptance Summary & Checks:** [acceptance-373b54a3/index.html](acceptance-373b54a3/index.html) — cross-repo deliverable completeness checks.
+- **Acceptance Audit (structural):** [acceptance-a64bd476/index.html](acceptance-a64bd476/index.html) — cross-repo structural checks; 0 failures at last regeneration; not legal correctness.
+- **Consolidated Cost Dashboard (2026-11-10):** [final-f6327e23/index.html](final-f6327e23/index.html) — published-fee cost tiers and a cross-dataset reconciliation of conflicting route/fee figures.
+- **Re-verification Dashboard (2026-11-10):** [study-8f529c94/index.html](study-8f529c94/index.html) — 23 methods, 920 cost rows ($10k→$400k), 40 official sources, step-by-step playbooks.
+- **Brief-Critical Claim Re-check (2026-11-10):** [verify-88f5a1be/index.html](verify-88f5a1be/index.html) — targeted re-verification of the load-bearing claims.
+- **Published-Rate Estimates (2026-11-10):** [estimate-facf2fe9/index.html](estimate-facf2fe9/index.html) — all-in estimates from the rates/fees banks themselves publish; blanks where unpublished.
+- **Live Liveness Re-verification (2026-11-11):** [verify-abd553ec/index.html](verify-abd553ec/index.html) — load-bearing official sources re-fetched and quote-matched today; full test-suite re-run; landing-hub integration record.
 - **Task Board & Publication Record:** [COORDINATION.md](COORDINATION.md)
 
 ## Key Conclusions (Source-Backed)

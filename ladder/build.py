@@ -885,6 +885,18 @@ def write_root_hub():
          "Independent statutory verification portal linking exclusively to government domains."),
         ("acceptance-373b54a3/index.html", "Acceptance summary & checks", "Cross-repo deliverable check",
          "Independent completeness verification across the published 600-row and 680-row ladders."),
+        ("repatriate/index.html", "Repatriation study · fee floors", "17 methods × 40 increments · 680 rows",
+         "Source-linked fee floors from tariffs retrieved this project; unverified spreads and totals left blank."),
+        ("study-8f529c94/index.html", "Re-verification dashboard", "23 methods · 920 cost rows · 40 official sources",
+         "Fresh primary-source ledger, all-methods 920-row cost ladder and step-by-step playbooks; blanks stay blank."),
+        ("final-f6327e23/index.html", "Consolidated cost dashboard", "15 routes · 440 rows · cross-dataset reconciliation",
+         "Published-fee cost tiers plus a reconciliation of conflicting route and fee figures across the repo."),
+        ("verify-88f5a1be/index.html", "Brief-critical claim re-check", "9 rows re-verified against official text",
+         "Targeted re-check of the load-bearing claims; external availability and factual accuracy are not auto-certified."),
+        ("acceptance-a64bd476/index.html", "Acceptance audit", "20,000+ structural checks · 0 failures",
+         "Cross-repo structural audit: links, fragments, row counts and fee arithmetic; not legal correctness."),
+        ("verify-abd553ec/index.html", "Live verification · 11 Nov 2026", "9 official sources re-fetched · all suites green",
+         "Dated liveness re-check of load-bearing sources and a full-suite re-run on the combined tree."),
     ]
     site_cards = "".join(
         f'<a class="card" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
@@ -925,7 +937,7 @@ footer a{{color:#a4e5cf}}
 </style>
 </head>
 <body>
-    <header><strong>China money</strong><p>Official-source research · summary re-reviewed 10 November 2026 · navigation integrated 10 November 2026 · not tax or legal advice</p></header>
+    <header><strong>China money</strong><p>Official-source research · summary re-reviewed 10 November 2026 · landing cards integrated 11 November 2026 · not tax or legal advice</p></header>
 <main>
 <h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
 <p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>

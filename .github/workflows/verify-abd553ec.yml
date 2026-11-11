@@ -1,0 +1,23 @@
+name: Verify live-verification record (abd553ec)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "verify-abd553ec/**"
+      - ".github/workflows/verify-abd553ec.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "verify-abd553ec/**"
+      - ".github/workflows/verify-abd553ec.yml"
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Structural verification of the live-verification page
+        run: PYTHONDONTWRITEBYTECODE=1 python3 verify-abd553ec/verify.py

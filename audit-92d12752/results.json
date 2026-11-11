@@ -1,8 +1,8 @@
 {
-  "pages_scanned": 100,
-  "data_rows": 7107,
-  "without_direct_primary": 1384,
-  "pages_with_candidates": 34,
+  "pages_scanned": 101,
+  "data_rows": 7161,
+  "without_direct_primary": 1428,
+  "pages_with_candidates": 35,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
@@ -306,8 +306,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 225,
-      "without_direct_primary": 225,
+      "rows": 228,
+      "without_direct_primary": 228,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -561,6 +561,12 @@
       "rows": 9,
       "without_direct_primary": 0,
       "first_example": ""
+    },
+    {
+      "path": "verify-abd553ec/index.html",
+      "rows": 51,
+      "without_direct_primary": 41,
+      "first_example": "Executive summary outlining important details briefing/index.html (consolidated) · research/EXECUTIVE_SUMMARY.md · EXECUTIVE-SUMMARY.md (count-checked) · briefing/EXECUTIVE_SUMMARY"
     },
     {
       "path": "verify-d5d1f860/audit.html",
