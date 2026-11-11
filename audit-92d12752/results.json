@@ -1,7 +1,7 @@
 {
-  "pages_scanned": 139,
-  "data_rows": 11317,
-  "without_direct_primary": 1491,
+  "pages_scanned": 148,
+  "data_rows": 11976,
+  "without_direct_primary": 1506,
   "pages_with_candidates": 36,
   "pages": [
     {
@@ -402,8 +402,8 @@
     },
     {
       "path": "index.html",
-      "rows": 65,
-      "without_direct_primary": 18,
+      "rows": 66,
+      "without_direct_primary": 19,
       "first_example": "Transfer guide 23 methods · 40 sources · 920 cost rows Newest complete set (10-11 Nov 2026). Used as the canonical detail set from this page."
     },
     {
@@ -414,8 +414,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 307,
-      "without_direct_primary": 307,
+      "rows": 321,
+      "without_direct_primary": 321,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -465,6 +465,60 @@
       "rows": 18,
       "without_direct_primary": 18,
       "first_example": "Comprehensive income (salary, fees, royalties, authorship) 3% – 45% progressive S07 · chinatax.gov.cn Art. 3(1)"
+    },
+    {
+      "path": "ledger-21f3ecb6/costs.html",
+      "rows": 454,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/index.html",
+      "rows": 40,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/methods.html",
+      "rows": 15,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/penalties.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/questions.html",
+      "rows": 23,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/review.html",
+      "rows": 25,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/sources.html",
+      "rows": 27,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/summary.html",
+      "rows": 10,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/taxes.html",
+      "rows": 33,
+      "without_direct_primary": 0,
+      "first_example": ""
     },
     {
       "path": "playbook-c1d73006/costs.html",

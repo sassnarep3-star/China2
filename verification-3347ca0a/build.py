@@ -438,6 +438,9 @@ def root_page():
         # Navigation-only addition by session arena/fb2f2562-china2 (2026-11-11), logged in COORDINATION.md:
         # one archive row and one category card so its decision guide and line-level repo review are reachable.
         ("guide-fb2f2562/index.html", "Decision guide + line-level repo review", "11 methods · 30 sources · 440 tier rows", "Separate pass on 11 Nov 2026: sources re-read the same day (incl. Rev. Proc. 2026-35 FEIE $137,300), cost at every $10,000 step, US FX-gain check, and a file:line scan of every other section against the official text."),
+        # Navigation-only addition by session arena/21f3ecb6-china2 (2026-11-11), logged in COORDINATION.md:
+        # one archive row and one category card so its consolidated dashboard is reachable from this page.
+        ("ledger-21f3ecb6/index.html", "Consolidated dashboard · freshest pass", "15 methods · 27 sources · 600 cost rows", "Separate pass on 11 Nov 2026: every source re-read the same day, the conversion penalty split into 12 layers, cost at every $10,000 step from 10,000 to 400,000, 16 gating questions, and 19 flagged items with file:line review of the other sections."),
     ]
     archive_rows = "".join(
         f'<tr><th scope="row" data-label="Set"><a href="{href}">{esc(title)}</a></th>'
@@ -639,6 +642,8 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
     <em>A separate session’s playbook: pick the route by where the money came from, with the papers, the tax and the cost for each.</em></a>
   <a class="card" href="guide-fb2f2562/index.html"><b>Decision guide · line-level repo review</b><span>30 sources · read 11 Nov · 40 tiers</span>
     <em>A separate session’s guide: executive summary, decision questions, every method with steps, the penalty in layers, and each conflicting repository line by file and line.</em></a>
+  <a class="card" href="ledger-21f3ecb6/index.html"><b>Consolidated dashboard · freshest pass</b><span>27 sources · read 11 Nov · 600 rows</span>
+    <em>Latest pass: the penalty in twelve layers, every method priced at every USD 10,000 step, the sixteen questions that gate a decision, and the blank-value register.</em></a>
 </div>
 
 <h2 id="questions">What has to be answered before a decision</h2>
