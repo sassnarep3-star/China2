@@ -1385,6 +1385,9 @@ Arena fixes this session to the current branch; no session-named branch will be 
 | N4 | Verifier+CI, PR→merge→Pages confirm, record | in progress | arena/5e1a6d91-china2 | `.github/workflows/verify-5e1a6d91.yml`, COORDINATION.md append-only |
 
 Policy: no private fact inferred; every row links official publisher; unverified = blank+flagged; no personal tax bill asserted.
+
+### Publication result — arena/5e1a6d91 (N1-N4 done)
+- PR https://github.com/sassnarep3-star/China2/pull/85 MERGED, merge commit 973eb54cf6c67617e90def230a5e58a598060590; all 13 checks passed. Pages builds/latest: built at that commit, error null. Live confirmed (cache-busted): https://sassnarep3-star.github.io/China2/verify-5e1a6d91/index.html (milestones $10k $53.41 / $400k $900.50, BOC board 2026-11-11). Sources re-fetched today: SAFE FAQ08/Case9/FAQ10, BOC board+fees, IRS FTC/FBAR, 26 USC 988, eCFR 1010.821, Wise. Unverified blank+flagged F1-F5, needs review, non-blocking. No personal tax asserted.
 - Concurrency: PR #86 initially could not merge because main advanced through PR #85. Merged `origin/main` into this fixed session branch. The append-only task-board conflict was resolved by retaining both sessions' sections; the ladder inventory conflict was resolved by regenerating the combined tracked-file inventory using its unchanged generator. No other work discarded or force-pushed.
 
 ### Publication result — `arena/732da534-china2`
