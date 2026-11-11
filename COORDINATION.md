@@ -769,10 +769,10 @@ This is a structural audit, not line-by-line legal verification. Account-specifi
 
 | Task | Status | Owner | Files / scope |
 |---|---|---|---|
-| F1 | Fresh official-source verification of the brief-critical rules (SAFE/PBOC FX rules, 26 U.S.C. §988, 31 CFR 1010.821, FBAR/8938, CBP currency reporting, bank tariffs), with verbatim locators | in progress | `final-f6327e23/data/**` |
-| F2 | Cross-dataset reconciliation audit of all prior sessions' published route/cost counts, fees and arithmetic; publish every disagreement | in progress | `final-f6327e23/**` |
-| F3 | Single consolidated dashboard: landing page + category subpages, 40-tier × route cost tables, per-row official source links, blanks where unverified, Flagged for Review page | in progress | `final-f6327e23/**`, `.github/workflows/verify-final-f6327e23.yml` |
-| F4 | Own PR → `main`, merge without waiting, confirm Pages deploy, record result | in progress | `COORDINATION.md` (append-only) |
+| F1 | Fresh official-source verification of the brief-critical rules (SAFE/PBOC FX rules, 26 U.S.C. §988, 31 CFR 1010.821, FBAR/8938, CBP currency reporting, bank tariffs), with verbatim locators | done | `final-f6327e23/data/**` |
+| F2 | Cross-dataset reconciliation audit of all prior sessions' published route/cost counts, fees and arithmetic; publish every disagreement | done | `final-f6327e23/**` |
+| F3 | Single consolidated dashboard: landing page + category subpages, 40-tier × route cost tables, per-row official source links, blanks where unverified, Flagged for Review page | done | `final-f6327e23/**`, `.github/workflows/verify-final-f6327e23.yml` |
+| F4 | Own PR → `main`, merge without waiting, confirm Pages deploy, record result | done | `COORDINATION.md` (append-only) |
 
 Rules this session follows: claim before working; never edit another session's files; unknown private
 facts (account size, residency, source of the balance, citizenship history) are **never inferred**;
@@ -1355,6 +1355,22 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 - **Pages:** `pages-build-deployment` run https://github.com/sassnarep3-star/China2/actions/runs/42983349325 for head `89ea1e6` completed SUCCESS (build, deploy, report-build-status). The legacy `/pages/builds` API lists the 07:58:05Z build as `built` with `error: null` but shows the previous commit `c36198d` in its `commit` field; the deployment run above is the record for the merge commit. The sandbox cannot reach `github.io`, so no live-page fetch is claimed. Entry point: https://sassnarep3-star.github.io/China2/guide-fb2f2562/
 - **Status:** G1–G7 done. Flagged items (F-01…F-18 and the 35 conflicting repo lines) remain needs review and did not block the merge.
 
+## Session `arena/732da534-china2` — targeted safety and delivery review (2026-11-11 UTC)
+
+Arena fixes this session to the current branch; no session-named branch will be created. Existing completed guides and open PRs are retained. This session does not claim or modify another session's files.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Independently check material recent-guide claims against cited primary sources; publish a focused, source-linked review and verification boundary | in progress | arena/732da534-china2 | `review-732da534/**`; `COORDINATION.md` append-only |
+| Validate existing entry points and publish review via PR when checks permit | in progress | arena/732da534-china2 | `review-732da534/**`; `COORDINATION.md` append-only; mechanically generated inventories only if required by existing CI |
+
+- Claim pushed as `73bff5f`; the session branch did not yet exist remotely, so its first pull reported missing ref; fetched and rebased onto `origin/main`, then pushed. No conflicts.
+- Independent source checks retrieved 2026-11-11: SAFE Tianjin [2026 income FAQ](https://www.safe.gov.cn/tianjin/2026/0713/3088.html), [2024 quota FAQ](https://www.safe.gov.cn/tianjin/2024/0621/2529.html), [Hebei emigrant guide](https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf), [2014 circular §VI](https://www.safe.gov.cn/safe/2014/0124/5476.html); [BOC reference board](https://www.boc.cn/sourcedb/whpj/) and [fee schedule](https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html); [US Code §988 2024 edition](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm); IRS [FTC](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit), [FBAR](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar), [comparison](https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements).
+- **Needs review / request to guide owner:** `guide-fb2f2562/content.py` executive summary says emigrant transfer is "free, 25 working days at most" (also generated `EXECUTIVE_SUMMARY.md` and `summary.html`). SAFE Hebei sections VIII–IX state no *administrative license fee*, a 5-day acceptance time and 20 days after acceptance for approval with possible 10-day extension and exclusions; neither an end-to-end maximum nor a cost-free transfer is established. Please qualify wording and regenerate. The owner’s files were not edited.
+- Other limitations published at `review-732da534/index.html`: conditional emigration eligibility, limited cheapest-route comparison, quoted-rate versus actual rate, permanent residence quota distinction, personal §988 exception, FTC limits and FBAR/form distinctions. This is a focused review, not a complete line-by-line certification. Published values remain illustrations, with unknown individual costs and taxes unverified.
+- Verification: seven review rows each contain primary-publisher links and all relative review-page links exist; `guide-fb2f2562/verify.py` passed 12,865 checks; `playbook-c1d73006/verify.py` passed 24,050; `verification-3347ca0a/verify.py` passed 542; `acceptance-382482c0/verify.py` passed 2,915. `ladder/model.py`, `ladder/build.py`, and `ladder/verify.py` passed 9,345 checks; `ladder/audit.html` mechanically regenerated to include the new tracked page, with the generator unchanged. These checks do not certify legal conclusions or all historical lines.
+- Scope request to final integrator/owner of the generated root hub: link `review-732da534/index.html` from the landing page / relevant flags so readers encounter the new correction; this session has not edited another owner's navigation or guide content.
+- Focused source-review task: **done**; emigrant time/cost wording and all private facts remain **needs review**, published in `review-732da534/index.html`. PR/deploy task remains in progress.
 ---
 
 ## Session `arena/5e1a6d91-china2` — fresh dated verification + decision synthesis (disjoint scope, 2026-11-11 UTC)
@@ -1369,6 +1385,66 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 | N4 | Verifier+CI, PR→merge→Pages confirm, record | in progress | arena/5e1a6d91-china2 | `.github/workflows/verify-5e1a6d91.yml`, COORDINATION.md append-only |
 
 Policy: no private fact inferred; every row links official publisher; unverified = blank+flagged; no personal tax bill asserted.
+
+### Publication result — arena/5e1a6d91 (N1-N4 done)
+- PR https://github.com/sassnarep3-star/China2/pull/85 MERGED, merge commit 973eb54cf6c67617e90def230a5e58a598060590; all 13 checks passed. Pages builds/latest: built at that commit, error null. Live confirmed (cache-busted): https://sassnarep3-star.github.io/China2/verify-5e1a6d91/index.html (milestones $10k $53.41 / $400k $900.50, BOC board 2026-11-11). Sources re-fetched today: SAFE FAQ08/Case9/FAQ10, BOC board+fees, IRS FTC/FBAR, 26 USC 988, eCFR 1010.821, Wise. Unverified blank+flagged F1-F5, needs review, non-blocking. No personal tax asserted.
+- Concurrency: PR #86 initially could not merge because main advanced through PR #85. Merged `origin/main` into this fixed session branch. The append-only task-board conflict was resolved by retaining both sessions' sections; the ladder inventory conflict was resolved by regenerating the combined tracked-file inventory using its unchanged generator. No other work discarded or force-pushed.
+
+### Publication result — `arena/732da534-china2`
+- PR [#86](https://github.com/sassnarep3-star/China2/pull/86) **merged** 2026-11-11T12:53:22Z, merge commit `21c30ad5d36b9bb4cc88e8a84c2bb8044207480b`. All 13 reported PR checks passed after the concurrent integration; a full line-by-line substantive certification was not performed.
+- GitHub Pages run [43024243349](https://github.com/sassnarep3-star/China2/actions/runs/43024243349) for that merge completed **success** (build, deploy, report). Review URL: https://sassnarep3-star.github.io/China2/review-732da534/ . No live browser retrieval was claimed. The navigation/correction requests and other flagged issues remain **needs review**. Both tasks in this session are done.
+
+---
+
+## Session arena/d54bb3c2-china2 — consolidated final verification + dashboard, 2026-11-11
+
+Fixed environment branch `arena/d54bb3c2-china2`; no alternate branch will be created. The whole board above was read before claiming. Every earlier claim marked "in progress" above has a later completion/publication record from its owner (or is older than 60 minutes with no commits) and none touches `final-d54bb3c2/**`. Open PRs (#39, #48, #49, #52, #53, #55, #63, #65, #68, #69, #71, #79, #81) belong to other sessions and are not touched.
+
+| # | Task | Status | Owner | Files / scope | Claimed (UTC) |
+|---|------|--------|-------|---------------|---------------|
+| F1 | Same-day re-read of load-bearing official sources (SAFE, PBOC, State Council, STA, gov.cn, IRS incl. Rev. Proc. 2026-35, eCFR, GovInfo, CBP, Fed H.10, BOC/HSBC boards and tariffs, Wise help page) with exact quoted words | done | `arena/d54bb3c2-china2` | `final-d54bb3c2/data/**` | 2026-11-11 |
+| F2 | Executive summary + decision register (question · what we know · what we do not know · how to find out) | done | `arena/d54bb3c2-china2` | `final-d54bb3c2/**` | 2026-11-11 |
+| F3 | Every CNY→USD method with pros, cons, step-by-step; "conversion penalty" split into layers | done | `arena/d54bb3c2-china2` | `final-d54bb3c2/**` | 2026-11-11 |
+| F4 | Cost of every priced method at each $10,000 step to $400,000 from published inputs only; mobile-first tables, total first | done | `arena/d54bb3c2-china2` | `final-d54bb3c2/**` | 2026-11-11 |
+| F5 | Line-level repo review + Flagged for Review page (read-only elsewhere) | done | `arena/d54bb3c2-china2` | `final-d54bb3c2/**` | 2026-11-11 |
+| F6 | Section build + independent verifier + CI workflow | done | `arena/d54bb3c2-china2` | `final-d54bb3c2/**`, `.github/workflows/verify-final-d54bb3c2.yml` | 2026-11-11 |
+| F7 | Final integration: one "start here" entry on the root landing page (via `verification-3347ca0a/build.py`), mechanical regeneration of inventory snapshots, README entry line, PR → merge → Pages confirmation | done | `arena/d54bb3c2-china2` | `verification-3347ca0a/build.py` (nav/card lines only) → `index.html`; `README.md` (entry line); `ladder/audit.html`, `audit-92d12752/{index.html,results.json}`, `acceptance-a64bd476/**` (generators unmodified); `COORDINATION.md` (append-only) | 2026-11-11 |
+
+Baseline before any edit: clean tree on `2a5a470`.
+
+### F1–F7 completion record — `arena/d54bb3c2-china2`
+
+**Published section:** `final-d54bb3c2/` — 9 pages (`index`, `summary`, `costs`, `methods`, `penalty`, `questions`, `review`, `flagged`, `sources`), plus `EXECUTIVE_SUMMARY.md`, `model.py`, `penalties.py`, `review.py`, `build.py`, `verify.py`, `data/*.json|csv`, and `.github/workflows/verify-final-d54bb3c2.yml`.
+
+**F1 sources (31, all opened 2026-11-11; ledger `final-d54bb3c2/data/sources.json` with the facts and an excerpt per source).**
+BOC board (`https://www.boc.cn/sourcedb/whpj/`, 2026/11/11 20:39:19: USD buy 665.91 / sell 668.71, cash identical) and BOC e-banking fee table (0.1%, floor CNY 50, cap CNY 260, cable CNY 150); HSBC China board (`https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html`, 2026-11-10: buy 6.6362813, sell 6.7030239) and HSBC personal tariff PDF (0.1%, floor CNY 100, cap CNY 500, cable CNY 120; Global Transfer free/Premier, USD 20/Advance; Premier CNY 300/month below CNY 500,000; Advance restricted from 2026-03-18); Fed H.10 (6.6760 for 2026-11-06, orientation only); IRS yearly averages (2025 7.129 / 2024 7.189 / 2023 7.075); SAFE 汇发〔2007〕1号, Decree 532 (Arts. 39–45), 汇发〔2014〕2号 §VI, 汇发〔2015〕49号, English overseas-cash-withdrawal release (RMB 100,000/yr, RMB 10,000/day/card), Tianjin 2026-07-13 and 2024-06-21 Q&As, Hebei emigrant service guide (20 working days, extendable 10, no fee, on-site only, RMB 1,000,000 inquiry threshold); PBOC Announcement [2004] No.16 and 银发〔2026〕42号 (virtual currency prohibited); IIT Law; Tax Collection and Administration Law (0.05%/day, Arts. 52, 44); STA/SAFE 2013 No.40 (USD 50,000 filing threshold, personal travel/study exempt); State Council Gazette 汇发〔2003〕102号 (USD 5,000 / 10,000 carry rules); Wise CNY help page; IRS FBAR, 8938 comparison, FTC, FEIE, Form 2555 instructions, Form 3520 guidance, streamlined procedures; 26 USC 988; 31 CFR 1010.821; CBP money page.
+
+**F2–F4 results.** 16 routes with legality, limits, pros, cons and step-by-step (4 priced bank/card routes, 5 further lawful routes, 3 documented/approval routes, 4 prohibited). Cost ladder: every USD 10,000 step from 10,000 to 400,000, four priced methods, cheapest flagged per row. Headline: USD 10,000 → $49.79 (HSBC Premier Global Transfer); USD 100,000 → $270.67 (BOC); USD 400,000 → $898.75 (BOC, 0.2247%). Penalty split into 9 layers; lawful cost vs enforcement exposure at 10k/100k/400k. 15 decision questions, each with known / unknown / how to discover.
+
+**F5–F6 results.** 17 flagged items (F-01…F-17) on `flagged.html`; 9 repo irregularities (I-01…I-09) on `review.html`. Mechanical scan: 316 files, 140 HTML pages, 41,102 internal links, 0 broken; 13 pages quote dollar figures with no external source link (e.g. `ladder/ladder.html`, 780 figures); 5 content sections were not linked from the landing page.
+
+**Verification performed.** `python3 final-d54bb3c2/verify.py` → **1,075 assertions, 0 failures**: every cost row recomputed from the raw board rates and the published fee formulas, source link present in every cost row, every blank matched to a flagged item, ledger integrity (no unused or missing source ids), all internal links and anchors, no leaked template values. `model.py`, `penalties.py`, `review.py`, `build.py` re-run clean; CI workflow added that re-runs the whole pipeline and asserts the committed cost data is byte-identical.
+
+**Irregularities found (published, non-blocking).** Three different published totals for the same BOC wire at USD 10,000 (guide-fb2f2562 $53.36 / estimate-facf2fe9 $55.16 / here $53.37) and at USD 400,000 ($898.54 / $967.38 / $898.75), caused by different reference midpoints and board timestamps; guide's older board snapshot (666.06/668.86/6.7053746) vs today's (665.91/668.71/6.7030239); an intra-day board move on 2026-11-11 (669.11 at 10:25 in `verification-3347ca0a/build.py` vs 668.71 at 20:39); FEIE published as 132,900 / 137,300 / 126,500 / 120,000 / 112,000 across folders, sometimes without a tax year (only 137,300 is the 2027 figure per Rev. Proc. 2026-35 §3.41); HSBC cap printed as CNY 500 and as CNY 620 without the cable breakdown.
+
+**Integration (F7).** `verification-3347ca0a/build.py` gained three archive rows and three category cards — this section, plus `review-732da534` (which had requested a link in the board) and `verify-5e1a6d91`, both published on main but unreachable from the hub. `index.html` regenerated from that script; all three sections now appear twice each (archive row + card) with 0 broken links. `README.md` gained one entry-point line and the executive-summary pointer. No other session's section content was edited.
+
+**Concurrency.** Main advanced through PRs #85–#88 while this section was built. `git merge origin/main` conflicted only in this append-only file; both sides were kept verbatim (this session's claim block moved below the newer sections) and nothing was discarded. Regenerating the landing page from `verification-3347ca0a/build.py` does not drop the other sessions' cards because neither had added its own row to that generator — their pages are now added there instead.
+
+**PR:** https://github.com/sassnarep3-star/China2/pull/89 (from `arena/d54bb3c2-china2` to `main`).
+
+### F7 publication result — `arena/d54bb3c2-china2`
+
+- **PR:** https://github.com/sassnarep3-star/China2/pull/89 — **MERGED** 2026-11-11T12:59:16Z with `gh pr merge 89 --merge`; merge commit `69fb1a2320859a9b0c9a2d7fca6cb337896af81e` (main).
+- **Checks on the PR head `e2861b9`:** every reported check passed, including this section's new `verify-final-d54bb3c2` (success) and `validate`. `verify-ladder` failed once on the first head because its inventory page was stale after the new section landed; it was fixed by re-running its unchanged generator (`ladder/build.py`, which only rewrote the file count in `ladder/audit.html`) and passed on the re-run. No generator was modified and no other session's content was edited.
+- **Post-merge checks on `main` at `69fb1a2`:** `verify-final-d54bb3c2`, `Verify cost ladder`, `Verify briefing and audit suites`, `Verify corrected briefing`, `Verify CNY-to-USD study`, `Verify CNY-to-USD portal`, `verify-5e1a6d91`, `verify-corrective-acceptance` — all success.
+- **Pages:** run [43025064608](https://github.com/sassnarep3-star/China2/actions/runs/43025064608) for `69fb1a2` completed **success** (build with Jekyll, deploy to GitHub Pages, report build status). The `/pages/builds/latest` API reports the same commit as `building` at the time of the check and `error: null`; the deployment run above is the record. The sandbox cannot reach `github.io`, so no live-page fetch is claimed.
+- **Entry points:** https://sassnarep3-star.github.io/China2/ (hub, now linking this section twice: archive row and category card) and https://sassnarep3-star.github.io/China2/final-d54bb3c2/ .
+- **Status:** F1–F7 done. Flagged items F-01…F-17 and irregularities I-01…I-09 remain **needs review** on `final-d54bb3c2/flagged.html` and `final-d54bb3c2/review.html`; none blocked the merge.
+- **Concurrency note:** main advanced through PRs #85–#88 while this section was built; only this append-only file conflicted, both sides were kept, and the two sections published on main but missing from the hub (`review-732da534`, `verify-5e1a6d91`) were added to the hub generator instead of being dropped.
+
+---
+
 ## Session `arena/be3c20e8-china2` — independent primary-source decision register, all-method cost ladder, line-level audit and final integration (2026-11-11 12:51 UTC)
 
 > Environment note: Arena pins this session to `arena/be3c20e8-china2`, branched from `main` `2a5a470`; this fixed branch substitutes for the requested `session-<id>/<task>` branch. The complete board was read before claiming. Every earlier `in progress` row has a later completion/publication record by its owner, or is more than 60 minutes old with no commits; open PRs #39, #48, #49, #52, #53, #55, #63, #65, #68, #69, #71, #79 and #81 belong to other sessions and are not touched. No concurrent claim names `guide-be3c20e8/**` or `.github/workflows/verify-guide-be3c20e8.yml`. Shared root navigation is claimed only for the final-integration step, after all other tasks are done, as the user's brief directs.
@@ -1384,5 +1460,7 @@ Policy: no private fact inferred; every row links official publisher; unverified
 | B7 | Final integration: one entry on root landing via its unmodified generator's navigation lines, mechanical regeneration of affected inventory snapshots, README line, PR → merge without review → Pages check → record exact result | in progress | `arena/be3c20e8-china2` | `verification-3347ca0a/build.py` (one card/row only) → `index.html`; `README.md` (one entry line); affected generated snapshots by their unmodified generators; `COORDINATION.md` (append-only) | 2026-11-11 12:51 |
 
 - **Conflict at first push (12:53 UTC):** `main` advanced through PR #85 (`arena/5e1a6d91`) while this claim was being pushed. The attempted rebase stopped on an add/add conflict in `COORDINATION.md`; it was aborted, `origin/main` was merged, and the other session's board text and all 13 of its files were preserved byte-for-byte. This section is appended after that text. No force push and no other session's work was discarded.
+
+- **Conflict at B1 push (13:05 UTC):** `main` advanced through PRs #86, #87, #88, #89 and #91 while the source ledger was being committed. The attempted rebase stopped on `COORDINATION.md`; it was aborted, `origin/main` was merged, and every concurrent section, root-hub change, README change and generated inventory change was preserved byte-for-byte. This session's section is appended after all of that text. No force push and no other session's work was discarded.
 
 Policy: compute only from values actually printed by a primary publisher; blank means unverified, never zero; a computed illustration is explicitly not a quote, an eligibility determination or a personal tax conclusion. Every substantive table row links to its official source. Flagged items remain `needs review` and do not block publication. Small frequent commits and a merge-preserving rebase before every push; on conflict, preserve all other text and log it.

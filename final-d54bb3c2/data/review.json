@@ -1,0 +1,318 @@
+{
+  "section": "F6",
+  "method": "Mechanical scan of every HTML, Markdown, JSON, CSV and Python file outside this folder, plus a comparison of the cost files that several sections publish for the same route. No other session's file was modified: the findings are reported, and where a figure affects the price, this section publishes its own verified value.",
+  "totals": {
+    "files_scanned": 327,
+    "html_pages": 147,
+    "links_checked": 41276,
+    "checks_run": 41294
+  },
+  "checks": [
+    {
+      "check": "Files scanned (HTML, MD, JSON, CSV, PY)",
+      "result": "327",
+      "detail": "Everything in the repository except this folder and .git."
+    },
+    {
+      "check": "HTML pages scanned",
+      "result": "147",
+      "detail": "Every published page in every section, including superseded ones."
+    },
+    {
+      "check": "Internal links checked",
+      "result": "41,276",
+      "detail": "Every href in every HTML page resolved against the file system."
+    },
+    {
+      "check": "Broken internal links",
+      "result": "0",
+      "detail": "Zero means no page links to a file that does not exist."
+    },
+    {
+      "check": "Pages showing dollar figures with no external source link",
+      "result": "13",
+      "detail": "of 147 pages. Listed under irregularities where the figures are cost or tax claims."
+    },
+    {
+      "check": "Content sections not linked from the landing page",
+      "result": "5",
+      "detail": "acceptance-373b54a3, acceptance-a64bd476, audit-456e7542, audit-6068a908, verify-88f5a1be"
+    },
+    {
+      "check": "Distinct FEIE values published across the repo",
+      "result": "5",
+      "detail": "132,900 x393, 120,000 x361, 137,300 x125, 112,000 x7, 126,500 x3"
+    },
+    {
+      "check": "Distinct HSBC fee-cap values published across the repo",
+      "result": "2",
+      "detail": "620 x3852, 500 x1645"
+    },
+    {
+      "check": "Source ids referenced by this section that exist in the ledger",
+      "result": "31 of 31",
+      "detail": "Checked by verify.py on every build."
+    }
+  ],
+  "irregularities": [
+    {
+      "id": "I-01",
+      "severity": "high",
+      "file": "guide-fb2f2562/data/costs.json",
+      "finding": "The same BOC wire at USD 10,000 is published as $53.36 in guide-fb2f2562 and $53.37 here, and at USD 400,000 as $898.54 versus $898.75. estimate-facf2fe9 publishes $55.16 and $967.38 for the same route and amounts.",
+      "effect": "Three prices for one action, differing by up to $68.84 at USD 400,000. The cause is a different reference midpoint and a different board timestamp, not a different fee. This section states its midpoint and board timestamp on the cost page so the number can be reproduced.",
+      "sources": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "id": "I-02",
+      "severity": "medium",
+      "file": "guide-fb2f2562/data/sources.json",
+      "finding": "The guide records the BOC board as buy 666.06 / sell 668.86 and the HSBC board as sell 6.7053746. The boards read for this section on 2026-11-11 20:39 are 665.91 / 668.71 and 6.7030239.",
+      "effect": "Costs computed from the older snapshot are about 0.02% high at BOC. The ranking of routes is unchanged because the gap between the two banks' spreads is far larger than the daily move.",
+      "sources": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "I-03",
+      "severity": "medium",
+      "file": "ladder/ladder.html",
+      "finding": "780 dollar figures appear in this page with no external source link anywhere in the document.",
+      "effect": "A reader cannot check any of the numbers from the page itself. The ledger for that section exists elsewhere in the folder but is not linked from the table.",
+      "sources": [
+        "S01",
+        "S03"
+      ]
+    },
+    {
+      "id": "I-04",
+      "severity": "medium",
+      "file": "index.html",
+      "finding": "The landing page links 20 of the 27 content sections. Not linked: acceptance-373b54a3, acceptance-a64bd476, audit-456e7542, audit-6068a908, verify-88f5a1be.",
+      "effect": "Published work is unreachable from the front door, so a reader cannot tell whether it exists or has been superseded.",
+      "sources": []
+    },
+    {
+      "id": "I-05",
+      "severity": "medium",
+      "file": "multiple",
+      "finding": "The foreign earned income exclusion appears as 132,900, 137,300, 126,500, 120,000 and 112,000 in different folders, sometimes without the tax year next to the number.",
+      "effect": "Only 137,300 is the figure for tax years beginning in 2027 [S26]; 132,900 is the 2026 figure. A number without a year cannot be verified, so this section always states the year.",
+      "sources": [
+        "S26"
+      ]
+    },
+    {
+      "id": "I-06",
+      "severity": "low",
+      "file": "multiple",
+      "finding": "The HSBC fee cap is published as CNY 500 in some folders and as CNY 620 in others.",
+      "effect": "Both can be right: 500 is the commission cap and 620 is the commission cap plus the 120 cable charge. Pages that print 620 as a 'cap' without the breakdown invite double counting.",
+      "sources": [
+        "S04"
+      ]
+    },
+    {
+      "id": "I-07",
+      "severity": "low",
+      "file": "many sections",
+      "finding": "Several folders publish their own cost ladder for the same 40 amounts with slightly different formulas and reference midpoints.",
+      "effect": "Redundant arithmetic that drifts apart every time a board is re-read. This section keeps one model (model.py) and one ledger, and the review page names the other versions rather than averaging them.",
+      "sources": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "I-09",
+      "severity": "medium",
+      "file": "verification-3347ca0a/build.py",
+      "finding": "The integration landing page prices BOC at 669.11 (board timestamp 2026-11-11 10:25:02). The board read for this section at 20:39:19 the same day shows 668.71 for the same quote.",
+      "effect": "Two different same-day prices for the same bank and the same product, a 0.06% move within one day. Any cost built on a board rate is only valid for the timestamp printed next to it, which is why every page here states its timestamp.",
+      "sources": [
+        "S01"
+      ]
+    },
+    {
+      "id": "I-08",
+      "severity": "low",
+      "file": "multiple",
+      "finding": "Some pages describe conversion pricing as a 'penalty' without separating it from PRC income tax that is due whether or not the money moves.",
+      "effect": "Readers over-estimate the cost of converting. The penalty page here splits nine layers so the tax on the source income is not counted as a conversion cost.",
+      "sources": [
+        "S20"
+      ]
+    }
+  ],
+  "broken_links": [],
+  "pages_without_sources": [
+    {
+      "file": "audit-ad300459/ladder-check.html",
+      "dollar_figures": 6,
+      "external_links": 0
+    },
+    {
+      "file": "briefing/audit.html",
+      "dollar_figures": 7,
+      "external_links": 0
+    },
+    {
+      "file": "briefing/sources.html",
+      "dollar_figures": 15,
+      "external_links": 0
+    },
+    {
+      "file": "ladder/assumptions.html",
+      "dollar_figures": 5,
+      "external_links": 0
+    },
+    {
+      "file": "ladder/audit.html",
+      "dollar_figures": 6,
+      "external_links": 0
+    },
+    {
+      "file": "ladder/costs.html",
+      "dollar_figures": 94,
+      "external_links": 0
+    },
+    {
+      "file": "ladder/flagged.html",
+      "dollar_figures": 8,
+      "external_links": 0
+    },
+    {
+      "file": "ladder/ladder.html",
+      "dollar_figures": 780,
+      "external_links": 0
+    },
+    {
+      "file": "ladder/routes.html",
+      "dollar_figures": 89,
+      "external_links": 0
+    },
+    {
+      "file": "ladder/steps.html",
+      "dollar_figures": 6,
+      "external_links": 0
+    },
+    {
+      "file": "ladder/tax.html",
+      "dollar_figures": 7,
+      "external_links": 0
+    },
+    {
+      "file": "study-8f529c94/sources.html",
+      "dollar_figures": 19,
+      "external_links": 0
+    },
+    {
+      "file": "transfer-guide/sources.html",
+      "dollar_figures": 19,
+      "external_links": 0
+    }
+  ],
+  "same_route_totals": [
+    {
+      "file": "guide-fb2f2562/data/costs.json",
+      "method": "BOC wire",
+      "usd": 10000,
+      "total": 53.36
+    },
+    {
+      "file": "guide-fb2f2562/data/costs.json",
+      "method": "BOC wire",
+      "usd": 400000,
+      "total": 898.54
+    },
+    {
+      "file": "estimate-facf2fe9/data/costs.json",
+      "method": "BOC wire",
+      "usd": 10000,
+      "total": 55.16
+    },
+    {
+      "file": "estimate-facf2fe9/data/costs.json",
+      "method": "BOC wire",
+      "usd": 400000,
+      "total": 967.38
+    },
+    {
+      "file": "final-d54bb3c2/data/costs.json",
+      "method": "BOC wire",
+      "usd": 10000,
+      "total": 53.37
+    },
+    {
+      "file": "final-d54bb3c2/data/costs.json",
+      "method": "BOC wire",
+      "usd": 400000,
+      "total": 898.75
+    }
+  ],
+  "claim_counts": {
+    "BOC USD board buy (per 100)": {
+      "665.71": 14,
+      "668.51": 14,
+      "666.30": 15,
+      "669.11": 32,
+      "669.12": 16,
+      "665.91": 5,
+      "668.71": 6,
+      "666.06": 15,
+      "668.86": 21,
+      "665.05": 5,
+      "668.52": 5,
+      "665.00": 2,
+      "665.06": 8,
+      "666.67": 8,
+      "661.13": 3,
+      "660.01": 3,
+      "665.60": 6,
+      "668.40": 3,
+      "665.58": 3,
+      "668.30": 4,
+      "669.80": 3,
+      "662.35": 1,
+      "664.69": 2,
+      "666.13": 1,
+      "666.16": 1,
+      "668.00": 1,
+      "667.32": 2,
+      "665.94": 3,
+      "664.22": 1,
+      "666.31": 15,
+      "664.21": 10,
+      "669.72": 3
+    },
+    "HSBC USD sell": {
+      "6.7030239": 2,
+      "6.7053746": 1130,
+      "6.7080734": 19
+    },
+    "FEIE amount": {
+      "132,900": 393,
+      "137,300": 125,
+      "126,500": 3,
+      "120,000": 361,
+      "112,000": 7
+    },
+    "HSBC fee cap (CNY)": {
+      "500": 1645,
+      "620": 3852
+    },
+    "Willful FBAR maximum": {
+      "165,353": 123
+    },
+    "Non-willful FBAR maximum": {
+      "16,536": 374
+    },
+    "BOC fee cap (CNY)": {
+      "410": 513
+    }
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "section": "F2",
+  "note": "Every method below was checked against a primary page. Where a price or a limit was not published on the page read, the field is blank and the item is repeated on the Flagged for Review page. No value here is estimated unless it is labelled 'modelled'.",
+  "methods": [
+    {
+      "id": "M01",
+      "name": "Bank of China telegraphic transfer to your own US account",
+      "short": "BOC wire",
+      "category": "Bank wire - priced",
+      "priced": true,
+      "legality": "Lawful with documented source of funds",
+      "who": "Anyone holding a BOC mainland account. The USD purchase is either inside the USD 50,000 annual facilitation quota for a domestic individual, or a documented purchase against China-source income.",
+      "limit": "USD 50,000 per person per calendar year for the facilitation quota [S08 Art.2]; documented purchases outside the quota are decided case by case by the bank.",
+      "speed": "Not published by BOC for individual wires; the receiving bank's credit time was not read.",
+      "cost_basis": "Modelled: BOC board spread plus the published BOC fee schedule.",
+      "formula": "spread_cost = USD * (1 - mid/sell); fee_CNY = max(50, min(0.1% * CNY_amount, 260)) + 150; total = spread_cost + fee_CNY/sell",
+      "pros": [
+        "Uses only published rates and published fees [S01, S03].",
+        "The USD purchase and the wire are two steps at one counter, so one set of documents covers both.",
+        "The fee is capped at CNY 260 plus the CNY 150 cable charge, so the marginal cost falls as the amount rises [S03].",
+        "Inside the USD 50,000 annual quota no prior approval is needed [S08 Art.2]."
+      ],
+      "cons": [
+        "The spread is charged on the full amount and is the dominant cost at every size (about 0.21% at the board rate read) [S01].",
+        "Above USD 50,000 per person per year the money must be documented as a specific China-source income stream, with tax vouchers [S10, S11].",
+        "A single outward payment of USD 50,000 or more for service-trade or income items needs a tax filing with the tax authority first [S19].",
+        "Correspondent and receiving bank fees are not published by BOC, so the landed amount can be lower than the estimate [S03]."
+      ],
+      "steps": [
+        "Open or confirm a BOC mainland RMB savings account and a US account in exactly the same legal name.",
+        "Assemble the source documents for the specific money: employment contract and salary slips, or property sale contract and deed, or dividend records [S14 lists the accepted document types for property transfers].",
+        "Obtain the tax certificate or tax payment receipts that match that income [S10, S11, S14].",
+        "At the branch (or in the app where the bank allows it), buy USD from CNY at the board sell rate [S01].",
+        "Submit the outward remittance instruction to your own US account; the bank charges 0.1% capped at CNY 260 plus CNY 150 cable for the US [S03].",
+        "Keep the remittance advice and the exchange memo: the CNY cost basis and the USD proceeds are what your US return needs [S07, S27].",
+        "On the US side, report the account on the FBAR if the aggregate of all foreign accounts exceeded USD 10,000 at any point in the year [S21]."
+      ],
+      "sources": ["S01", "S03", "S08", "S10", "S11", "S14", "S19", "S21"]
+    },
+    {
+      "id": "M02",
+      "name": "HSBC China telegraphic transfer to your own US account",
+      "short": "HSBC wire",
+      "category": "Bank wire - priced",
+      "priced": true,
+      "legality": "Lawful with documented source of funds",
+      "who": "HSBC China personal customers, including Premier and Advance.",
+      "limit": "Same quota and documentation rules as M01 [S08 Art.2, S10].",
+      "speed": "Not published in the tariff.",
+      "cost_basis": "Modelled: HSBC board spread plus the published HSBC tariff.",
+      "formula": "spread_cost = USD * (1 - mid/sell); fee_CNY = max(100, min(0.1% * CNY_amount, 500)) + 120; total = spread_cost + fee_CNY/sell",
+      "pros": [
+        "Published tariff with a clear cap of CNY 500 plus CNY 120 cable [S04].",
+        "Same documentary route as M01, so the paperwork you assemble works at either bank [S08 Art.13].",
+        "If you already bank with HSBC in the US, the receiving side is inside one group."
+      ],
+      "cons": [
+        "The HSBC board spread read on 2026-11-10 is about 0.50%, roughly 2.4 times the BOC spread, and it dominates every row [S02 vs S01].",
+        "Minimum fee CNY 100 makes small transfers proportionally expensive [S04].",
+        "The published tariff carries two different dates in its header, so the effective version is not unambiguous [S04].",
+        "Correspondent and receiving bank charges are additional and not published [S04]."
+      ],
+      "steps": [
+        "Confirm the HSBC China account and the US account are in the same legal name.",
+        "Assemble source-of-funds and tax documents for the money being moved [S10, S11].",
+        "In online banking choose outward remittance in USD to your own US account.",
+        "The bank converts at its board sell rate and charges 0.1% with a CNY 100 floor and CNY 500 cap plus CNY 120 cable [S04].",
+        "Retain the exchange confirmation for the US cost basis [S27].",
+        "File the FBAR where the aggregate foreign account balance test is met [S21]."
+      ],
+      "sources": ["S02", "S04", "S08", "S10", "S11", "S21", "S27"]
+    },
+    {
+      "id": "M03",
+      "name": "HSBC Premier Global Transfer to your own HSBC US account",
+      "short": "HSBC Premier GT",
+      "category": "Linked-account transfer - priced",
+      "priced": true,
+      "legality": "Lawful with documented source of funds",
+      "who": "HSBC Premier customers who also hold an HSBC account in the US in their own name [S04 2.2.6.1].",
+      "limit": "Same quota and documentation rules as M01 [S08]. Premier relationship balance must stay at or above CNY 500,000 to avoid the monthly fee [S04].",
+      "speed": "Not stated in the tariff.",
+      "cost_basis": "Modelled: HSBC board spread only. The transfer fee is published as free for Premier.",
+      "formula": "spread_cost = USD * (1 - mid/sell); fee_CNY = 0; total = spread_cost (Premier monthly fee excluded, see flagged item)",
+      "pros": [
+        "Transfer fee is published as free for Premier to your own HSBC account abroad [S04 2.2.6.1].",
+        "Lowest published fee layer of any bank route, so the cost is almost entirely the board spread.",
+        "One group at both ends can simplify tracing and statements."
+      ],
+      "cons": [
+        "Requires Premier status, which carries a CNY 300 monthly fee unless total relationship balance is at least CNY 500,000 [S04]. That fee is excluded from the cost rows.",
+        "The HSBC board spread (about 0.50%) is more than twice the BOC spread, so M03 still loses to M01 at every amount modelled [S02 vs S01].",
+        "Whether Global Transfer converts at the published board rate is not stated in the tariff, so the spread in these rows is an assumption (flagged).",
+        "Requires an HSBC US account, which not every US citizen has."
+      ],
+      "steps": [
+        "Hold HSBC Premier in China and an HSBC account in the US in the same name [S04].",
+        "Keep total relationship balance at or above CNY 500,000 for the months you rely on this route, or accept CNY 300 per month [S04].",
+        "Assemble source-of-funds and tax documents [S10, S11].",
+        "Use Global Transfer to self; the tariff lists the fee as free [S04 2.2.6.1].",
+        "Confirm the exchange rate applied on the confirmation, because the tariff does not state the conversion pricing for this product [S04].",
+        "Keep the confirmation for the US cost basis and file the FBAR where required [S27, S21]."
+      ],
+      "sources": ["S02", "S04", "S08", "S10", "S11", "S21", "S27"]
+    },
+    {
+      "id": "M04",
+      "name": "HSBC Advance Global Transfer to your own HSBC US account",
+      "short": "HSBC Advance GT",
+      "category": "Linked-account transfer - priced",
+      "priced": true,
+      "legality": "Lawful with documented source of funds",
+      "who": "Existing HSBC Advance customers. New Advance accounts have been restricted since 18 March 2026 [S04].",
+      "limit": "Same quota and documentation rules as M01 [S08].",
+      "speed": "Not stated in the tariff.",
+      "cost_basis": "Modelled: HSBC board spread plus the published per-transaction charge of USD 20.",
+      "formula": "spread_cost = USD * (1 - mid/sell); fee_USD = 20; total = spread_cost + 20",
+      "pros": [
+        "Flat USD 20 per transfer rather than a percentage, so the marginal cost is small at large amounts [S04].",
+        "No monthly fee layer comparable to Premier's CNY 300 was found in the tariff."
+      ],
+      "cons": [
+        "New Advance accounts are restricted since 18 March 2026, so most readers cannot open this route now [S04].",
+        "The HSBC spread still applies and is about 0.50% [S02].",
+        "The tariff describes the USD 20 figure as an indication charge stated as CNY 145, so the exact debit currency is not certain [S04].",
+        "Same conversion-pricing assumption as M03 (flagged)."
+      ],
+      "steps": [
+        "Confirm you are an existing Advance customer; new accounts are restricted [S04].",
+        "Hold an HSBC US account in the same name.",
+        "Assemble source-of-funds and tax documents [S10, S11].",
+        "Send with Global Transfer to self and check the CNY 145 / USD 20 charge on the confirmation [S04].",
+        "Keep the confirmation for the US cost basis [S27]."
+      ],
+      "sources": ["S02", "S04", "S08", "S10", "S11", "S27"]
+    },
+    {
+      "id": "M05",
+      "name": "Buy USD cash at BOC and carry it out",
+      "short": "Cash carry",
+      "category": "Cash - priced per trip",
+      "priced": true,
+      "legality": "Lawful only within the carry limits and with the permit where required",
+      "who": "Travellers leaving China. Not a route for large balances.",
+      "limit": "Up to USD 5,000 equivalent needs no permit; USD 5,000 to 10,000 needs a bank-issued 携带证; more than USD 10,000 is in principle not allowed [S17]. Several permits totalling more than USD 10,000 will not be released [S17].",
+      "speed": "Same day at the counter, subject to the permit.",
+      "cost_basis": "Modelled: BOC cash sell rate spread only, no wire fee. Shown per USD 10,000 trip, not scalable to USD 400,000.",
+      "formula": "spread_cost per trip = USD_trip * (1 - mid/sell), capped at USD 10,000 per traveller per trip",
+      "pros": [
+        "No wire fee and no correspondent bank deduction [S01, S03].",
+        "BOC quotes the same rate for cash and telegraphic USD on the board read (668.71 sell for both) [S01], so the spread is no worse than a wire."
+      ],
+      "cons": [
+        "Hard cap of USD 10,000 per traveller per trip, so USD 400,000 needs at least 40 trips [S17].",
+        "Physical loss and theft risk, and no recourse if the cash is lost.",
+        "Entering the US with more than USD 10,000 requires FinCEN Form 105; failure can lead to seizure and forfeiture [S28].",
+        "Carrying currency in violation of the rules carries a warning and a fine of up to 20% of the amount under the FX regulations [S09 Art.42]."
+      ],
+      "steps": [
+        "Buy USD cash at a BOC counter at the cash sell rate [S01].",
+        "For USD 5,000 to 10,000, apply for a 携带外汇出境许可证 at the bank with passport, visa and the purchase receipts [S17].",
+        "Carry the permit; it is valid for one use within 30 days [S17].",
+        "Declare the cash to US customs on FinCEN Form 105 if the amount exceeds USD 10,000 [S28]."
+      ],
+      "sources": ["S01", "S03", "S09", "S17", "S28"]
+    },
+    {
+      "id": "M06",
+      "name": "Spend or withdraw abroad on a UnionPay card",
+      "short": "UnionPay card",
+      "category": "Card - price not published",
+      "priced": false,
+      "legality": "Lawful within the card limits",
+      "who": "Holders of a mainland-issued UnionPay debit or credit card.",
+      "limit": "Overseas cash withdrawal capped at RMB 100,000 per individual per calendar year and RMB 10,000 per day per card [S16].",
+      "speed": "Immediate at the point of use.",
+      "cost_basis": "Not published on the pages read: no card FX fee, no ATM operator fee and no conversion spread figure was available. Left blank.",
+      "formula": "",
+      "pros": [
+        "Consumes money without a bank wire or a formal outward remittance.",
+        "Cash withdrawal caps are published and generous relative to a single trip [S16]."
+      ],
+      "cons": [
+        "Not a way to move a balance: it converts consumption, not savings.",
+        "The annual RMB 100,000 withdrawal cap is about USD 15,000 at the board rate, far below USD 400,000 [S16].",
+        "Card FX fee and spread were not found on an official page, so the cost is unknown (blank, flagged).",
+        "Lending or borrowing cards to evade the cap is prohibited and can suspend the card for two years [S16]."
+      ],
+      "steps": [
+        "Use the card abroad for purchases or ATM withdrawals.",
+        "Stay under RMB 10,000 per day per card and RMB 100,000 per year per person [S16].",
+        "Record each transaction; the card statement is the only cost evidence available."
+      ],
+      "sources": ["S16"]
+    },
+    {
+      "id": "M07",
+      "name": "Wise CNY to USD transfer",
+      "short": "Wise",
+      "category": "Payment provider - price not published",
+      "priced": false,
+      "legality": "Lawful, but eligibility is narrow",
+      "who": "Non-mainland-Chinese nationals who have previously worked in China and hold tax records from the last three years [S05].",
+      "limit": "CNY 300,000 per transfer from a bank app, CNY 50,000 per transfer from Alipay; overall limit approximately salary earned in China minus tax paid in China [S05].",
+      "speed": "Not published on the page read.",
+      "cost_basis": "Not published on the page read. No CNY to USD fee figure was available. Left blank.",
+      "formula": "",
+      "pros": [
+        "The only non-bank provider with an official help page describing a CNY outbound route [S05].",
+        "Money must go to the sender's own account, which removes a common compliance objection [S05]."
+      ],
+      "cons": [
+        "Eligibility excludes mainland-Chinese nationals and requires prior China employment plus tax records within three years [S05].",
+        "Total transferable is capped at roughly salary minus tax, so it cannot clear an arbitrary balance [S05].",
+        "The fee and the FX spread are not published on the page read, so no cost row can be filled (blank, flagged)."
+      ],
+      "steps": [
+        "Check eligibility: non-mainland national, prior China employment, tax records within three years [S05].",
+        "Link the mainland bank account or Alipay and the destination US account in the same name.",
+        "Request a transfer inside the CNY 300,000 bank-app limit or CNY 50,000 Alipay limit [S05].",
+        "Fee and rate are shown by the provider at the point of transfer; they are not on the help page, so record them yourself."
+      ],
+      "sources": ["S05"]
+    },
+    {
+      "id": "M08",
+      "name": "Emigrant property transfer approval (移民财产转移)",
+      "short": "Emigrant transfer",
+      "category": "Approval route - priced at the bank layer",
+      "priced": false,
+      "legality": "Lawful, and the only route designed for a whole balance",
+      "who": "A person who has obtained foreign permanent residence, foreign citizenship, or Hong Kong/Macau/Taiwan residence, moving lawful property held before that status [S14].",
+      "limit": "No published cap. Approval is by the local SAFE branch up to RMB 500,000 and by SAFE head office above that [S13]. The staged-remittance requirement was abolished in 2014 [S12].",
+      "speed": "Acceptance within 5 working days; decision within 20 working days, extendable once by 10 [S14].",
+      "cost_basis": "SAFE charges no fee [S14]. The bank's own spread and wire fee apply at the moment of purchase and remittance; those are the M01/M02 figures. No figure is published for the approval itself.",
+      "formula": "",
+      "pros": [
+        "Designed for exactly this problem: converting and remitting a whole lawful balance, not just USD 50,000 a year [S13, S14].",
+        "No SAFE fee, and the 2014 change removed the multi-year staging [S12, S14].",
+        "Proceeds must be wired to your own overseas account, which is clean for US reporting [S13]."
+      ],
+      "cons": [
+        "Requires emigrant status plus a cancelled household registration, which most readers will not have [S14].",
+        "Only property held before emigrating qualifies; assets acquired afterwards do not [S13, S14].",
+        "Requires an original tax certificate and a full documentary chain for every asset [S14].",
+        "Applications above RMB 1,000,000 by public officials and close relatives can trigger a supervisory inquiry, and suspicious applications are referred to police or judicial authorities [S14].",
+        "On-site filing only; online filing is not supported [S14]."
+      ],
+      "steps": [
+        "Confirm eligibility: foreign PR, foreign citizenship, or HK/Macau/Taiwan residence, plus cancellation of mainland household registration [S14].",
+        "Assemble the written application, the 个人财产转移业务申请表, identity documents, income-source and property-right documents, and the tax certificate [S14].",
+        "File at the local SAFE branch, on site [S14].",
+        "SAFE decides within 20 working days, extendable by 10 [S14].",
+        "Take the approval to the bank, buy USD and remit to your own overseas account [S13].",
+        "Keep the approval, the exchange memo and the wire advice for the US return."
+      ],
+      "sources": ["S12", "S13", "S14"]
+    },
+    {
+      "id": "M09",
+      "name": "Documented purchase against China-source income (foreign individual route)",
+      "short": "Documented purchase",
+      "category": "Documented route - priced at the bank layer",
+      "priced": false,
+      "legality": "Lawful",
+      "who": "A foreign national with RMB income earned in China and still held in a mainland account [S08 Art.13, S10, S11].",
+      "limit": "No published cap for current-account income; each purchase is reviewed against the documents. Only permanent-residence holders get the annual facilitation quota [S11].",
+      "speed": "Not published.",
+      "cost_basis": "Bank spread and wire fee only, i.e. the M01 or M02 figures. No separate official charge was published.",
+      "formula": "",
+      "pros": [
+        "The stated official route for a foreign national's China salary and similar income [S08 Art.13, S10].",
+        "Not limited to USD 50,000 a year, because it is documentation-based rather than quota-based [S11]."
+      ],
+      "cons": [
+        "Requires tax vouchers and source documents for each purchase [S10, S11].",
+        "Only covers current-account income, not accumulated capital or property proceeds [S10].",
+        "Bank-level review is discretionary and no turnaround time is published."
+      ],
+      "steps": [
+        "Collect the employment or service contract and the tax payment records [S10, S11].",
+        "Take identity document plus source materials including tax vouchers to the bank [S10].",
+        "Buy USD and remit to your own overseas account.",
+        "Keep the tax receipts: they support the foreign tax credit position on the US return [S29]."
+      ],
+      "sources": ["S08", "S10", "S11", "S29"]
+    },
+    {
+      "id": "M10",
+      "name": "Leave the money in CNY and convert later",
+      "short": "Wait",
+      "category": "Do nothing - priced at zero",
+      "priced": true,
+      "legality": "Lawful",
+      "who": "Anyone not forced to convert now.",
+      "limit": "n/a",
+      "speed": "n/a",
+      "cost_basis": "Zero transaction cost today. The full spread and fee are paid whenever you do convert.",
+      "formula": "total = 0",
+      "pros": [
+        "No spread and no fee today.",
+        "Keeps the option of a documented approval route later, for example if emigrant status is obtained [S14]."
+      ],
+      "cons": [
+        "Does not solve the problem; the conversion cost is deferred, not removed.",
+        "The FBAR and Form 8938 duties continue every year the account exists [S21, S23].",
+        "Holding a large foreign balance keeps you exposed to both FX moves and reporting penalties."
+      ],
+      "steps": [
+        "Keep the account open and keep statements.",
+        "File the FBAR each year the aggregate exceeds USD 10,000 [S21].",
+        "File Form 8938 if the separate thresholds are met [S23]."
+      ],
+      "sources": ["S21", "S23"]
+    },
+    {
+      "id": "M11",
+      "name": "Receive a gift or inheritance from a relative abroad",
+      "short": "Family gift",
+      "category": "Related-party transfer - priced blank",
+      "priced": false,
+      "legality": "Lawful if the transfer itself is lawful; does not bypass FX rules",
+      "who": "Someone whose relative outside China is willing to send USD.",
+      "limit": "Gifts above USD 100,000 aggregate from a nonresident alien in a year must be reported on Form 3520 Part IV [S24].",
+      "speed": "n/a",
+      "cost_basis": "Not published: this moves money into China or replaces money in China, it does not convert CNY into USD. No cost row is computed.",
+      "formula": "",
+      "pros": [
+        "US recipients generally do not pay income tax on a genuine foreign gift [S24 describes reporting, not tax]."
+      ],
+      "cons": [
+        "It does not convert the stuck CNY; the CNY balance is still there.",
+        "Reporting is required above USD 100,000, and penalties can apply under IRC 6039F(c) without reasonable cause [S24].",
+        "Relabelling a conversion as a gift to dodge FX rules would be a disguised transfer, which is penalised under the FX regulations [S09]."
+      ],
+      "steps": [
+        "Confirm the transfer is a genuine gift and not a payment for the CNY balance.",
+        "Track the aggregate received from that person and related persons in the year [S24].",
+        "File Form 3520 Part IV if the aggregate exceeds USD 100,000 [S24]."
+      ],
+      "sources": ["S09", "S24"]
+    },
+    {
+      "id": "X01",
+      "name": "Crypto or stablecoin conversion",
+      "short": "Crypto",
+      "category": "Prohibited",
+      "priced": false,
+      "legality": "Prohibited",
+      "who": "Not available lawfully.",
+      "limit": "n/a",
+      "speed": "n/a",
+      "cost_basis": "Not applicable.",
+      "formula": "",
+      "pros": [],
+      "cons": [
+        "Virtual currency business activity is characterised as illegal financial activity and is strictly prohibited [S18].",
+        "Any on-ramp from CNY would itself be an illegal conversion, exposing the amount to a 30% fine, rising to 30%-100% in serious cases [S09 Art.41]."
+      ],
+      "steps": [],
+      "sources": ["S09", "S18"]
+    },
+    {
+      "id": "X02",
+      "name": "Underground bank or private FX swap (地下钱庄 / 对敲)",
+      "short": "Underground swap",
+      "category": "Prohibited",
+      "priced": false,
+      "legality": "Prohibited",
+      "who": "Not available lawfully.",
+      "limit": "n/a",
+      "speed": "n/a",
+      "cost_basis": "Not applicable.",
+      "formula": "",
+      "pros": [],
+      "cons": [
+        "Buying or selling foreign exchange outside designated banks carries a warning, confiscation of gains and a fine of 30% of the amount, or 30%-100% in serious cases [S09 Art.45].",
+        "Moving the money out this way is 逃汇, fined at 30% and up to 30%-100% in serious cases, with criminal liability preserved [S09 Art.39]."
+      ],
+      "steps": [],
+      "sources": ["S09"]
+    },
+    {
+      "id": "X03",
+      "name": "Splitting the quota across family and friends",
+      "short": "Quota splitting",
+      "category": "Prohibited",
+      "priced": false,
+      "legality": "Prohibited",
+      "who": "Not available lawfully.",
+      "limit": "n/a",
+      "speed": "n/a",
+      "cost_basis": "Not applicable.",
+      "formula": "",
+      "pros": [],
+      "cons": [
+        "Borrowing or lending the annual quota and splitting purchases is expressly prohibited, and individuals on the watch list face strict review for two years [S15].",
+        "The underlying transfer can still be treated as 逃汇 with a 30% to 100% fine [S09 Art.39]."
+      ],
+      "steps": [],
+      "sources": ["S09", "S15"]
+    },
+    {
+      "id": "X04",
+      "name": "Re-label the payment as service trade or consulting",
+      "short": "Mislabel",
+      "category": "Prohibited",
+      "priced": false,
+      "legality": "Prohibited if there is no real underlying service",
+      "who": "Not available lawfully.",
+      "limit": "n/a",
+      "speed": "n/a",
+      "cost_basis": "Not applicable.",
+      "formula": "",
+      "pros": [],
+      "cons": [
+        "Payments of USD 50,000 or more for service trade need a tax filing that the tax authority reviews for consistency with the real transaction [S19].",
+        "A false underlying transaction is a disguised capital transfer, penalised at 30%-100% in serious cases [S09 Art.39]."
+      ],
+      "steps": [],
+      "sources": ["S09", "S19"]
+    },
+    {
+      "id": "X05",
+      "name": "Carry RMB cash out and convert abroad",
+      "short": "RMB cash",
+      "category": "Unverified limit",
+      "priced": false,
+      "legality": "Blank - the RMB cash export limit was not confirmed for this section",
+      "who": "n/a",
+      "limit": "Blank: no official page read in this session states the RMB cash export limit.",
+      "speed": "n/a",
+      "cost_basis": "Blank.",
+      "formula": "",
+      "pros": [],
+      "cons": [
+        "The applicable limit could not be confirmed from an official page, so this route is left blank and flagged rather than estimated.",
+        "Even if a limit exists it would be small relative to USD 400,000, and the receiving bank outside China would apply its own spread."
+      ],
+      "steps": [],
+      "sources": []
+    }
+  ]
+}

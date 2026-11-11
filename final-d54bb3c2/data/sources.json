@@ -1,0 +1,447 @@
+{
+  "ledger": "final-d54bb3c2",
+  "session": "arena/d54bb3c2-china2",
+  "retrieved": "2026-11-11",
+  "note": "Every fact used in this section is stored here with the exact page it came from. Sources marked status=verified were opened and read on 2026-11-11. Sources marked status=referenced_only are cited by an official page but were not read directly; nothing in this section depends on their unread text. Quote fields are verbatim fragments where they can be matched character for character to the page; where a quote field starts with 'paraphrase:' the wording is a summary written for this site, not the page's own words.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Bank of China foreign exchange board (中国银行外汇牌价)",
+      "issuer": "Bank of China",
+      "url": "https://www.boc.cn/sourcedb/whpj/",
+      "kind": "official bank rate board",
+      "status": "verified",
+      "facts": [
+        "USD row, published 2026/11/11 20:39:19, quoted per 100 USD: 现汇买入价 665.91, 现钞买入价 665.91, 现汇卖出价 668.71, 现钞卖出价 668.71, 中行折算价 671.91.",
+        "Page disclaimer: the table is for reference only; the actual rate at the counter, online banking, mobile banking or smart counter applies."
+      ],
+      "quote": "美元 665.91 665.91 668.71 668.71 671.91 2026/11/11 20:39:19"
+    },
+    {
+      "id": "S02",
+      "title": "HSBC Bank (China) foreign exchange board",
+      "issuer": "HSBC Bank (China) Company Limited",
+      "url": "https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html",
+      "kind": "official bank rate board",
+      "status": "verified",
+      "facts": [
+        "USD, last update 2026年11月10日: 卖出价 现钞 6.7030239 and 现汇 6.7030239; 买入价 现汇 6.6362813, 现钞 6.5997540 CNY per USD.",
+        "Rates are quoted as foreign currency against RMB and are for reference only."
+      ],
+      "quote": "美元 (USD) 6.7030239 6.7030239 6.6362813 6.5997540"
+    },
+    {
+      "id": "S03",
+      "title": "Bank of China e-banking service charge table (cross-border remittance)",
+      "issuer": "Bank of China",
+      "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+      "kind": "official fee schedule",
+      "status": "verified",
+      "facts": [
+        "Cross-border wire (境外汇出汇款) commission 0.1% of the remitted amount, minimum CNY 50, maximum CNY 260.",
+        "Cable charge CNY 150 for destinations other than Hong Kong, Macau and Taiwan; CNY 80 for Hong Kong, Macau and Taiwan."
+      ],
+      "quote": "paraphrase: 0.1%, min CNY 50, max CNY 260; cable CNY 150 (other regions) / CNY 80 (HK, Macau, Taiwan)"
+    },
+    {
+      "id": "S04",
+      "title": "HSBC China tariff of accounts services for personal customers (v2)",
+      "issuer": "HSBC Bank (China) Company Limited",
+      "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+      "kind": "official fee schedule (PDF)",
+      "status": "verified",
+      "facts": [
+        "Overseas telegraphic transfer (outward remittance): 0.1% of amount, minimum CNY 100, maximum CNY 500, plus cable charge CNY 120 for Premier/Advance customers.",
+        "Global Transfer to your own HSBC account abroad: free for Premier; Advance is charged CNY 145 per transaction, described in the tariff as an indication charge with the actual charge USD 20 or equivalent.",
+        "Global Transfer to Family (other individuals' HSBC accounts): free.",
+        "Private Banking individual customers: overseas remittance free.",
+        "Premier service fee CNY 300 per month unless total relationship balance is at least CNY 500,000.",
+        "International Education Payment platform: CNY 50 per transaction, indication charge with actual charge USD 7 or equivalent.",
+        "Foreign currency demand draft to overseas terminated since 1 December 2019.",
+        "Cash withdrawal of CNY 50,000 or more requires at least one working day advance notice to the call centre or branch.",
+        "Document header carries two dates (31 Oct 2026 and 2024年9月12日), so the tariff's effective date is not stated unambiguously on the page read."
+      ],
+      "quote": "paraphrase: Overseas Remittances | 0.1% (min CNY100, max CNY500) + cable CNY120"
+    },
+    {
+      "id": "S05",
+      "title": "Wise help: guide to CNY transfers",
+      "issuer": "Wise",
+      "url": "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+      "kind": "payment provider help page",
+      "status": "verified",
+      "facts": [
+        "Sending CNY out of mainland China is available to people who are not mainland-Chinese nationals, have previously worked in China and hold tax records from the last three years.",
+        "Money can only be sent to the sender's own account.",
+        "Per-transfer limits: CNY 300,000 through a bank app, CNY 50,000 through Alipay.",
+        "The overall limit is approximately salary earned in China minus tax already paid in China.",
+        "The page read does not publish a CNY to USD transfer fee."
+      ],
+      "quote": "paraphrase: You can send up to 300,000 CNY per transfer from a bank app, or 50,000 CNY from Alipay."
+    },
+    {
+      "id": "S06",
+      "title": "Federal Reserve H.10 Foreign Exchange Rates",
+      "issuer": "Board of Governors of the Federal Reserve System",
+      "url": "https://www.federalreserve.gov/releases/h10/current/",
+      "kind": "official statistical release",
+      "status": "verified",
+      "facts": [
+        "Release dated 2026-11-09; China CNY per USD: 2026-11-02 6.6480, 11-03 6.6701, 11-04 6.6731, 11-05 6.6680, 11-06 6.6760."
+      ],
+      "quote": "China 6.6760 (2026-11-06)"
+    },
+    {
+      "id": "S07",
+      "title": "Yearly average currency exchange rates",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+      "kind": "official tax guidance",
+      "status": "verified",
+      "facts": [
+        "China, CNY per USD yearly average: 2023 7.075, 2024 7.189, 2025 7.129.",
+        "The IRS has no official rate; any posted rate consistently used may be accepted."
+      ],
+      "quote": "China 2025 7.129"
+    },
+    {
+      "id": "S08",
+      "title": "汇发〔2007〕1号 个人外汇管理办法实施细则",
+      "issuer": "State Administration of Foreign Exchange (SAFE)",
+      "url": "https://www.safe.gov.cn/safe/2007/0105/5320.html",
+      "kind": "official rule (primary)",
+      "status": "verified",
+      "facts": [
+        "Article 2: annual foreign exchange purchase/sale facilitation quota of USD 50,000 per domestic individual.",
+        "Article 13: a foreign individual's RMB current-account income in China may be purchased for foreign exchange with identity document plus source-of-funds and tax documentation.",
+        "Articles 14-15 set remittance documentation rules for individuals.",
+        "Articles 30-31 set cash deposit and withdrawal rules for individuals."
+      ],
+      "quote": "paraphrase: 境内个人办理购汇业务，年度便利化额度为每人每年等值5万美元"
+    },
+    {
+      "id": "S09",
+      "title": "中华人民共和国外汇管理条例 (State Council Decree No. 532)",
+      "issuer": "State Administration of Foreign Exchange (SAFE)",
+      "url": "https://www.safe.gov.cn/safe/2008/0806/5321.html",
+      "kind": "official regulation (primary)",
+      "status": "verified",
+      "facts": [
+        "Article 39 (逃汇, evasion of foreign exchange controls): fine of 30% of the amount involved; where circumstances are serious, 30% to 100%.",
+        "Article 40 (非法套汇, illegal arbitrage): fine of 30% of the amount; serious cases 30% to 100%.",
+        "Article 41 (illegal conversion of foreign exchange into RMB): fine 30%; serious 30% to 100%.",
+        "Article 42 (carrying currency or securities in or out of the country in violation): warning; fine of up to 20% of the amount.",
+        "Article 45 (私buying/selling foreign exchange outside designated banks, or swapping RMB with foreign currency): warning, confiscation of illegal gains, fine of 30% of the amount; serious 30% to 100%.",
+        "Criminal liability is preserved where a violation constitutes a crime."
+      ],
+      "quote": "第三十九条 有违反规定将境内外汇转移境外...处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款"
+    },
+    {
+      "id": "S10",
+      "title": "SAFE Tianjin: 境内个人购汇 / 境外个人购汇 Q&A (2026-07-13)",
+      "issuer": "SAFE Tianjin branch",
+      "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+      "kind": "official Q&A",
+      "status": "verified",
+      "facts": [
+        "A foreign individual buying foreign exchange from RMB income earned in China for labour remuneration follows 汇发〔2020〕14号 Article 59: identity document plus source-of-funds materials, including tax vouchers."
+      ],
+      "quote": "paraphrase: 境外个人...凭本人有效身份证件和有交易额的相关材料（含税务凭证）办理购汇"
+    },
+    {
+      "id": "S11",
+      "title": "SAFE Tianjin: 境外个人购汇 Q&A (2024-06-21)",
+      "issuer": "SAFE Tianjin branch",
+      "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
+      "kind": "official Q&A",
+      "status": "verified",
+      "facts": [
+        "A foreign individual's PRC current-account RMB income may be purchased with identity document and source materials including tax vouchers per 汇发〔2020〕14号 Article 59.",
+        "Only holders of permanent residence status are eligible for the annual facilitation quota."
+      ],
+      "quote": "paraphrase: 只有取得永久居留资格的境外个人才适用年度便利化额度"
+    },
+    {
+      "id": "S12",
+      "title": "汇发〔2014〕2号 关于进一步改进和调整资本项目外汇管理政策的通知",
+      "issuer": "State Administration of Foreign Exchange (SAFE)",
+      "url": "https://www.safe.gov.cn/safe/2014/0124/5476.html",
+      "kind": "official rule (primary)",
+      "status": "verified",
+      "facts": [
+        "Section VI: an emigrant's domestic property transfer requires SAFE approval; the previous staged-remittance requirement was abolished effective 2014-02-10."
+      ],
+      "quote": "paraphrase: 取消移民财产转移分阶段汇出的要求，自2014年2月10日起施行"
+    },
+    {
+      "id": "S13",
+      "title": "个人财产对外转移售付汇管理暂行办法 (PBOC Announcement [2004] No.16)",
+      "issuer": "People's Bank of China, republished in State Council Gazette",
+      "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+      "kind": "official rule (primary)",
+      "status": "verified",
+      "facts": [
+        "An emigrant transfer covers lawful domestic property held before the immigration status was obtained, converted and remitted through a designated bank.",
+        "Original staging: first remittance up to half; after one year up to half of the remainder; after two years the balance. A one-off transfer of up to RMB 200,000 was allowed without staging.",
+        "Approval: up to RMB 500,000 by the local SAFE branch; above RMB 500,000 by SAFE head office.",
+        "Proceeds must be wired directly to the applicant's own overseas account; cash withdrawal in China is not permitted for these transfers."
+      ],
+      "quote": "申请金额在人民币50万元以下的，由所在地外汇局审批；超过人民币50万元的，报国家外汇管理局审批"
+    },
+    {
+      "id": "S14",
+      "title": "移民财产转移购付汇核准 service guide (Hebei branch, item 000171111002)",
+      "issuer": "SAFE Hebei branch",
+      "url": "https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf",
+      "kind": "official administrative service guide (PDF)",
+      "status": "verified",
+      "facts": [
+        "Eligibility: applicant has foreign permanent residence, foreign citizenship, or Hong Kong/Macau/Taiwan resident status; funds are lawful property held before that status was obtained; funds are not restricted by judicial or supervisory authorities.",
+        "Applications of more than RMB 1,000,000 involving public officials and close relatives may trigger an inquiry to the supervisory authority.",
+        "Required documents include written application, identity documents, household-registration cancellation certificate, income-source and property-right documents, and an original tax certificate from the tax authority.",
+        "No fee is charged; acceptance within 5 working days; legal decision time 20 working days, extendable once by 10 working days.",
+        "Applications must be made on site; online filing is not supported."
+      ],
+      "quote": "法定审批时限：20 个工作日 ... 办理行政许可是否收费：否"
+    },
+    {
+      "id": "S15",
+      "title": "汇发〔2015〕49号 关于进一步完善个人外汇业务监测系统的通知",
+      "issuer": "State Administration of Foreign Exchange (SAFE)",
+      "url": "https://www.safe.gov.cn/safe/2015/1231/5442.html",
+      "kind": "official rule (primary)",
+      "status": "verified",
+      "facts": [
+        "Personal foreign exchange monitoring system in operation from 2016-01-01.",
+        "Borrowing or lending the annual facilitation quota, or splitting purchases to evade limits, is prohibited.",
+        "Individuals placed on the watch list (关注名单) face strict authenticity review for two years."
+      ],
+      "quote": "paraphrase: 对借用他人额度、分拆购汇等行为...列入关注名单，两年内严格审核"
+    },
+    {
+      "id": "S16",
+      "title": "SAFE English release: overseas cash withdrawals with domestic bank cards",
+      "issuer": "State Administration of Foreign Exchange (SAFE)",
+      "url": "https://www.safe.gov.cn/en/2017/1230/1397.html",
+      "kind": "official rule summary",
+      "status": "verified",
+      "facts": [
+        "Overseas cash withdrawal with a domestic bank card is capped at RMB 100,000 per individual per calendar year and RMB 10,000 per day per card.",
+        "Lending or borrowing bank cards to evade the cap is prohibited; exceeding the cap results in suspension of the card's overseas cash withdrawal function for two years."
+      ],
+      "quote": "paraphrase: RMB 100,000 per person per year, RMB 10,000 per day per card"
+    },
+    {
+      "id": "S17",
+      "title": "携带外币现钞出入境管理暂行办法 (汇发〔2003〕102号)",
+      "issuer": "SAFE and General Administration of Customs, State Council Gazette",
+      "url": "https://www.gov.cn/gongbao/content/2004/content_63085.htm",
+      "kind": "official rule (primary)",
+      "status": "verified",
+      "facts": [
+        "Carrying foreign cash out of China up to the equivalent of USD 5,000 requires no permit.",
+        "USD 5,000 to USD 10,000 requires a 携带外汇出境许可证 issued by the bank; a customs release requires the bank-stamped permit.",
+        "Carrying more than the equivalent of USD 10,000 is in principle not allowed; a SAFE-issued permit is required for listed special cases.",
+        "Where several permits together exceed USD 10,000, customs will not release the funds.",
+        "A permit is valid for one use within 30 days of issue.",
+        "Bringing in more than USD 5,000 in cash requires written customs declaration."
+      ],
+      "quote": "paraphrase: 出境人员原则上不得携带超过等值10000美元外币现钞出境"
+    },
+    {
+      "id": "S18",
+      "title": "银发〔2026〕42号 关于进一步防范和处置虚拟货币等相关风险的通知",
+      "issuer": "People's Bank of China and other authorities",
+      "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+      "kind": "official notice (primary)",
+      "status": "verified",
+      "facts": [
+        "Virtual currency related business activities are characterised as illegal financial activities and are strictly prohibited.",
+        "Virtual currency is not legal tender and has no legal status equivalent to fiat currency."
+      ],
+      "quote": "paraphrase: 虚拟货币相关业务活动属于非法金融活动，一律严格禁止"
+    },
+    {
+      "id": "S19",
+      "title": "国家税务总局 国家外汇管理局公告2013年第40号 (tax filing for outward payments)",
+      "issuer": "State Taxation Administration and SAFE",
+      "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
+      "kind": "official rule (primary)",
+      "status": "verified",
+      "facts": [
+        "A single outward payment equivalent to USD 50,000 or more for service trade, income and current transfers requires tax filing (税务备案) with the competent tax authority.",
+        "Article 3(13): personal foreign exchange use for study abroad, travel and visiting relatives is exempt from the filing requirement.",
+        "The tax authority may review whether taxes on the payment have been paid and may recover tax plus penalties."
+      ],
+      "quote": "境内机构和个人向境外单笔支付等值5万美元以上...均应向所在地主管税务机关进行税务备案"
+    },
+    {
+      "id": "S20",
+      "title": "中华人民共和国个人所得税法 (Individual Income Tax Law)",
+      "issuer": "Shanghai Municipal Tax Service, State Taxation Administration",
+      "url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+      "kind": "official law text",
+      "status": "verified",
+      "facts": [
+        "Article 1: a resident individual is one domiciled in China or resident for 183 days or more in a tax year and is taxed on worldwide income.",
+        "Article 2: income categories include wages and salaries, labour remuneration, author's remuneration, royalties, business income, interest, dividends, property lease, property transfer, and incidental income.",
+        "Article 3: comprehensive income 3%-45%; business income 5%-35%; interest, dividends, property lease, property transfer and incidental income 20%.",
+        "Article 7: a credit is allowed for foreign income tax already paid on foreign-source income."
+      ],
+      "quote": "居民个人...从中国境内和境外取得的所得，依照本法规定缴纳个人所得税"
+    },
+    {
+      "id": "S21",
+      "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      "kind": "official tax guidance",
+      "status": "verified",
+      "facts": [
+        "An FBAR is required where the aggregate value of foreign financial accounts exceeds USD 10,000 at any time during the calendar year.",
+        "Due date 15 April, with an automatic extension to 15 October."
+      ],
+      "quote": "paraphrase: aggregate value of those foreign financial accounts exceeded $10,000 at any time during the calendar year"
+    },
+    {
+      "id": "S22",
+      "title": "31 CFR 1010.821 - penalty adjustment for inflation",
+      "issuer": "Electronic Code of Federal Regulations",
+      "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+      "kind": "official regulation (primary), current as of 2026-11-09",
+      "status": "verified",
+      "facts": [
+        "For assessments on or after 2025-01-17, Table 1 of 31 CFR 1010.821 lists: 31 USC 5321(a)(1) BSA violation, minimum USD 71,545 and maximum USD 286,184.",
+        "31 USC 5321(a)(5)(B)(i) non-willful violation of a foreign financial agency transaction requirement: USD 16,536.",
+        "31 USC 5321(a)(5)(C)(i)(I) willful violation of a foreign financial agency transaction requirement: USD 165,353.",
+        "Negligent violation of a foreign financial agency transaction requirement: USD 1,430.",
+        "FBAR-specific rows under 31 USC 5322 and the 5321(a)(5)(C)(ii) foreign financial asset row were not present in the chunks read, so no figure for them is published on this site."
+      ],
+      "quote": "paraphrase: $16,536 (non-willful), $165,353 (willful)"
+    },
+    {
+      "id": "S23",
+      "title": "Comparison of Form 8938 and FBAR requirements",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements",
+      "kind": "official tax guidance",
+      "status": "verified",
+      "facts": [
+        "Form 8938 thresholds for a taxpayer living in the United States: single, USD 50,000 on the last day of the year or USD 75,000 at any time; married filing jointly, USD 100,000 or USD 150,000.",
+        "Form 8938 and FBAR are separate requirements with different thresholds and forms.",
+        "Failure to file Form 8938 carries a USD 10,000 penalty, with up to USD 50,000 more after notice."
+      ],
+      "quote": "paraphrase: penalty of $10,000 ... up to $50,000"
+    },
+    {
+      "id": "S24",
+      "title": "Gifts from foreign person (Form 3520, Part IV)",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/businesses/gifts-from-foreign-person",
+      "kind": "official tax guidance",
+      "status": "verified",
+      "facts": [
+        "A gift or bequest from a nonresident alien or foreign estate must be reported on Form 3520 Part IV if the aggregate received from that person and related persons exceeds USD 100,000 in the tax year; each gift over USD 5,000 must be identified separately.",
+        "Threshold for purported gifts from foreign corporations or foreign partnerships: USD 20,116 for 2025 and USD 20,573 for 2026.",
+        "Due 15 April for a calendar-year taxpayer, 15 June for a citizen residing abroad, extendable to 15 October.",
+        "Penalties may apply under IRC 6039F(c) where there is no reasonable cause."
+      ],
+      "quote": "paraphrase: exceeds $100,000 during the taxable year"
+    },
+    {
+      "id": "S25",
+      "title": "Instructions for Form 2555 (2026)",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/instructions/i2555",
+      "kind": "official form instructions",
+      "status": "verified",
+      "facts": [
+        "Foreign earned income exclusion requires a tax home in a foreign country and either bona fide residence for an uninterrupted period including a full tax year, or physical presence in a foreign country for at least 330 full days in 12 consecutive months."
+      ],
+      "quote": "paraphrase: physically present in a foreign country or countries for at least 330 full days"
+    },
+    {
+      "id": "S26",
+      "title": "Rev. Proc. 2026-35 (2027 inflation adjustments)",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-26-35.pdf",
+      "kind": "official revenue procedure (PDF)",
+      "status": "verified",
+      "facts": [
+        "Section 3.41: foreign earned income exclusion for tax years beginning in 2027 is USD 137,300.",
+        "Section 3.46(1): annual gift exclusion for 2027 is USD 20,000.",
+        "Section 3.51: the IRC 6039F threshold for reporting large gifts from foreign persons for 2027 is USD 21,240.31."
+      ],
+      "quote": "For taxable years beginning in 2027, the foreign earned income exclusion amount under § 911(b)(2)(D)(i) is $137,300."
+    },
+    {
+      "id": "S27",
+      "title": "26 USC 988 - Treatment of certain foreign currency transactions",
+      "issuer": "U.S. Code via GovInfo",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+      "kind": "official statute (primary)",
+      "status": "verified",
+      "facts": [
+        "Section 988(c)(1): disposing of nonfunctional currency is a section 988 transaction.",
+        "Section 988(a)(1): exchange gain or loss is computed and treated as ordinary income or loss.",
+        "Section 988(e)(2): the exclusion for personal transactions applies only to the first USD 200 of gain."
+      ],
+      "quote": "paraphrase: paragraph (2) shall apply only to the extent of the first $200 of gain"
+    },
+    {
+      "id": "S28",
+      "title": "CBP: Money and monetary instruments",
+      "issuer": "U.S. Customs and Border Protection",
+      "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
+      "kind": "official agency guidance",
+      "status": "verified",
+      "facts": [
+        "FinCEN Form 105 is required for currency or monetary instruments over USD 10,000 brought into or taken out of the United States.",
+        "Monetary instruments include coins and currency, traveller's checks, and bearer negotiable instruments.",
+        "Failure to report can lead to seizure and forfeiture and to civil and criminal penalties under 31 USC 5321, 5322 and 5317."
+      ],
+      "quote": "paraphrase: There is no limit on the amount of money ... however, if you are carrying more than $10,000 ... you must file FinCEN Form 105"
+    },
+    {
+      "id": "S29",
+      "title": "Foreign tax credit",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+      "kind": "official tax guidance",
+      "status": "verified",
+      "facts": [
+        "The foreign tax credit is available for foreign income taxes, war profits taxes and excess profits taxes paid or accrued.",
+        "No credit is allowed for taxes on income excluded under the foreign earned income exclusion."
+      ],
+      "quote": "paraphrase: You can't claim a credit for taxes on income you exclude"
+    },
+    {
+      "id": "S30",
+      "title": "Streamlined filing compliance procedures",
+      "issuer": "Internal Revenue Service",
+      "url": "https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures",
+      "kind": "official procedure",
+      "status": "verified",
+      "facts": [
+        "Available to individual taxpayers who certify that the failure to report foreign assets and pay tax was not willful.",
+        "Taxpayers under civil examination or criminal investigation are not eligible.",
+        "Certification of non-willful conduct is required; the procedures do not produce a closing agreement."
+      ],
+      "quote": "paraphrase: certifying that their failure to report foreign financial assets and pay all tax due ... did not result from willful conduct"
+    },
+    {
+      "id": "S31",
+      "title": "中华人民共和国税收征收管理法 (Tax Collection and Administration Law)",
+      "issuer": "State Taxation Administration 12366",
+      "url": "https://12366.chinatax.gov.cn/bzds/120/120-1-4.html",
+      "kind": "official law text",
+      "status": "verified",
+      "facts": [
+        "Article 32: late payment surcharge of 0.05% of the overdue tax per day from the date payment is due.",
+        "Article 52: where the taxpayer miscalculated, the tax authority may recover tax and surcharge within three years, extendable to five years in special circumstances.",
+        "Article 44: a taxpayer owing tax may be prevented from leaving China if the tax, surcharge or security is not settled."
+      ],
+      "quote": "从滞纳税款之日起，按日加收滞纳税款万分之五的滞纳金"
+    }
+  ]
+}
