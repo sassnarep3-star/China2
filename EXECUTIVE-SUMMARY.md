@@ -51,7 +51,7 @@ things, none of which is a conversion tax:
 | Detection | SAFE runs a bank-to-SAFE management information system through which banks verify the authenticity of materials individuals provide | [SAFE, 2007](https://www.safe.gov.cn/en/2007/0105/819.html) |
 | Escape valve 1 — genuine individual trade | Purchases and sales under an individual **foreign-exchange settlement account** are *not* subject to the annual quota, "regardless of the amount," against valid trading documents | [SAFE, 2007](https://www.safe.gov.cn/en/2007/0105/819.html) |
 | Escape valve 2 — emigration or inheritance | **Emigrant** and **inheritor** asset transfers are approved by SAFE outside the quota; since the 2014 circular the installment requirement was cancelled and a lump-sum remittance is permitted within the approved limit | [PBOC](https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html) · [SAFE, 2014](https://www.safe.gov.cn/en/2014/0801/741.html) |
-| Parallel cash channel | Overseas card cash withdrawals: **RMB 100,000 equivalent per individual per civil year**, **RMB 10,000 equivalent per card per day** — a separate limit that does not contradict the USD 50,000 quota | [SAFE Huifa 29 (2017)](http://www.safe.gov.cn/en/2017/1230/1397.html) |
+| Parallel cash channel | Overseas card cash withdrawals: **RMB 100,000 equivalent per individual per civil year**, **RMB 10,000 equivalent per card per day** — a separate limit that does not contradict the USD 50,000 quota | [SAFE Huifa 29 (2017)](https://www.safe.gov.cn/en/2017/1230/1397.html) |
 
 ---
 
@@ -78,7 +78,7 @@ pros, cons, limits and tax treatment is in `data/methods.json` and on the site.
 
 | Rank | Route | Why |
 |---|---|---|
-| 1 | **R01** Wire inside the USD 50,000 quota | No approval needed, no conversion tax, cleanest documentary trail. Costs only bank spread and fees. |
+| 1 | **R01** Wire inside the USD 50,000 quota | No approval needed, no conversion tax, cleanest documentary trail. **Condition:** Hui Fa [2007] No. 1 Art. 2 applies the USD 50,000 purchase quota to domestic individuals (境内个人); SAFE Tianjin 2024 Case 9 limits purchase facilitation for foreign individuals to PRC Foreign Permanent Resident ID holders. A U.S. citizen without PRC residency documents relies on documented current-account income conversion (Art. 13), not this quota — confirm bank classification first. |
 | 2 | **R03** Emigrant asset transfer | The only route that can lawfully move an arbitrarily large personal balance in one process, outside the quota. Requires foreign permanent residence or citizenship, and only covers assets obtained *before* that status. |
 | 3 | **R07** Individual FX settlement account for genuine trade | Expressly not subject to the annual quota at all — but requires real trade documents, and business use removes the $200 U.S. personal-transaction exclusion. |
 | 4 | **R02** Above-quota wire on authenticity documents | The general lawful answer for any amount, at the price of slower processing and a real possibility of refusal. |
@@ -90,7 +90,7 @@ pros, cons, limits and tax treatment is in `data/methods.json` and on the site.
 
 | Route | Official basis for rejection |
 |---|---|
-| **R13** Cryptocurrency | Exchanging legal tender for virtual currency is an illegal financial activity in China; financial institutions may not provide accounts/settlement (`Yinfa [2026] No. 42`, repealing `Yinfa [2021] No. 237`). [PBOC 2026](https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html) · [gov.cn (2021 archive)](http://english.www.gov.cn/statecouncil/ministries/202109/24/content_WS614dc30bc6d0df57f98e0c84.html) |
+| **R13** Cryptocurrency | Exchanging legal tender for virtual currency is an illegal financial activity in China; financial institutions may not provide accounts/settlement (`Yinfa [2026] No. 42`, repealing `Yinfa [2021] No. 237`). [PBOC 2026 (Yin Fa [2026] No. 42, repealing Yin Fa [2021] No. 237)](https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html) |
 | **R14** Splitting / pooling relatives' quotas | SAFE states the quota system exists partly to prevent avoiding administration, including repeated purchases and sales in installments; banks verify authenticity via the SAFE-linked system. [SAFE](https://www.safe.gov.cn/en/2007/0105/819.html) |
 | **R15** Underground banking | PBOC requires assets transferred abroad to be lawful, owned, undisputed and documented; false documents are penalized under the PRC Foreign Exchange Administration Regulations. [PBOC](https://www.pbc.gov.cn/english/130721/2025080815062856255/index.html) |
 | **R16** Fabricated trade invoicing | Business under a settlement account must be conducted with **valid** trading documents regardless of amount. [SAFE](https://www.safe.gov.cn/en/2007/0105/819.html) |

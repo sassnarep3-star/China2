@@ -705,10 +705,10 @@ edited.</p>
 </section>
 <section class="panel">
   <h2>Source re-verification</h2>
-  <p>Twenty sources are used by this model. Each is listed on <a href="sources.html">Sources</a> with the
+  <p>{len(SOURCES)} sources are used by this model. Each is listed on <a href="sources.html">Sources</a> with the
   retrieval mode: <em>direct</em> means the body of the document was retrieved in this session and the quoted
   text is from that body; <em>search</em> means the document was surfaced from the official domain with quoted
-  text but not re-fetched end to end. {sum(1 for s in SOURCES.values() if s['retrieval']=='direct')} of 20
+  text but not re-fetched end to end. {sum(1 for s in SOURCES.values() if s['retrieval']=='direct')} of {len(SOURCES)}
   were retrieved directly.</p>
 </section>
 <section class="panel">
