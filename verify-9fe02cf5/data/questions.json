@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "session": "arena/9fe02cf5-china2",
+    "purpose": "Questions that must be answered before any route or cost decision can reasonably be made. Each answer changes which rows of the cost table are even available.",
+    "rule": "Where an answer depends on private facts, nothing is assumed. The 'we do not know' column stays unknown until the holder obtains it in writing."
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "What is the lawful origin of the RMB balance?",
+      "why": "Origin selects the entire route: salary/labour income (current account), property sale, inheritance, pre-emigration assets (capital account), or business proceeds.",
+      "we_know": "PRC rules split current-account and capital-account money and require a genuine, lawful transaction basis (C01, C02).",
+      "we_do_not_know": "The origin of this balance.",
+      "how": [
+        "Obtain the bank statement history and the original credit advices.",
+        "Match each credit to its underlying contract, payroll record, sale contract or estate document.",
+        "Classify each tranche as current account or capital account before choosing a route."
+      ],
+      "source_ids": ["S01", "S02"],
+      "flags": ["F09", "F10"]
+    },
+    {
+      "id": "Q02",
+      "question": "Was PRC individual income tax withheld and paid on that income, and is there a tax certificate?",
+      "why": "For a foreign individual, the conversion requires source-of-funds materials including tax documents (C06). Unpaid PRC tax is the layer that actually costs 3%-45% or a flat 20%.",
+      "we_know": "The rule requires tax documents; the IIT rates are 3%-45% / 5%-35% / 20% (C06, C14).",
+      "we_do_not_know": "Whether tax was withheld, whether certificates exist, and whether any period remains unfiled.",
+      "how": [
+        "Request the individual income tax payment records from the competent tax authority.",
+        "Ask the former employer for withholding certificates.",
+        "If nothing was withheld, obtain advice on the filing position before approaching the bank."
+      ],
+      "source_ids": ["S02", "S03", "S09"],
+      "flags": ["F10"]
+    },
+    {
+      "id": "Q03",
+      "question": "How does SAFE classify the holder: domestic individual (境内个人) or foreign individual (境外个人), and is there a Foreign Permanent Resident ID?",
+      "why": "The USD 50,000 annual purchase quota applies to domestic individuals and only to foreign individuals holding a PR ID (C04, C07).",
+      "we_know": "The quota wording and the PR-ID condition (C04, C07).",
+      "we_do_not_know": "The holder's SAFE category and PR-ID status.",
+      "how": [
+        "Check residence days and domicile against the definition in the FX regulations.",
+        "Ask the bank, in writing, which category it will book the account under.",
+        "If a PR ID exists, confirm it is accepted for quota purposes at that branch."
+      ],
+      "source_ids": ["S01", "S02", "S04"],
+      "flags": ["F09", "F13"]
+    },
+    {
+      "id": "Q04",
+      "question": "When was each CNY tranche acquired, and what is its USD basis?",
+      "why": "US tax on any exchange gain depends on the acquisition-date rate against the conversion-date rate, and the USD 200 personal-transaction threshold (C18).",
+      "we_know": "Section 988(e) excludes personal transactions and only excludes gain of USD 200 or less; translation is at the applicable spot rate (C17, C18).",
+      "we_do_not_know": "Acquisition dates and rates, and therefore the size of any gain.",
+      "how": [
+        "Build a tranche table: date, CNY amount, spot or consistently posted rate that day, USD basis.",
+        "Keep the source for each rate used.",
+        "Do not assume a gain is zero because the money 'just sat there'."
+      ],
+      "source_ids": ["S12", "S14"],
+      "flags": ["F02", "F11"]
+    },
+    {
+      "id": "Q05",
+      "question": "What is the US reporting history for this account?",
+      "why": "An account above USD 10,000 aggregate is already an FBAR item, and Form 8938 thresholds can be crossed while the money is still in China (C20).",
+      "we_know": "FBAR threshold and 8938 thresholds and penalties (C20, C21).",
+      "we_do_not_know": "Whether prior FBAR/8938 filings exist, and whether any foreign gift or trust reporting applies.",
+      "how": [
+        "Check filed returns for FinCEN 114 and Form 8938 for each year the account existed.",
+        "If anything is missing, consider the IRS compliance procedures before moving money.",
+        "Keep a written chronology."
+      ],
+      "source_ids": ["S17", "S18", "S13"],
+      "flags": ["F01", "F11"]
+    },
+    {
+      "id": "Q06",
+      "question": "What is the bank's executable all-in quote today, itemised?",
+      "why": "The spread is the dominant cost at large amounts and it is not published; only an executable quote settles it (F12).",
+      "we_know": "The published tariff items that can be read (C23) and a dated published board benchmark (C25).",
+      "we_do_not_know": "The applied rate, the spread, and any correspondent or receiving-bank deduction for this account.",
+      "how": [
+        "Ask for a written quote stating the applied CNY/USD rate, commission, cable, intermediary and receiving charges.",
+        "Compare the quoted rate with the published board on the same timestamp.",
+        "Ask what the beneficiary will actually receive in USD."
+      ],
+      "source_ids": ["S20", "S21"],
+      "flags": ["F03", "F04", "F12"]
+    },
+    {
+      "id": "Q07",
+      "question": "If the money is capital-account money, are the title, tax-clearance and approval documents in hand?",
+      "why": "Property, inheritance and pre-emigration transfers follow a separate rulebook with approval before conversion (C02, C11).",
+      "we_know": "Such transfers are governed by separate provisional rules (C11).",
+      "we_do_not_know": "The local document list, the approval status, and whether the specific rulebook applies.",
+      "how": [
+        "Request the SAFE local-branch document list in writing.",
+        "Assemble title documents, tax clearance and identity documents.",
+        "Obtain approval before instructing conversion."
+      ],
+      "source_ids": ["S01", "S02"],
+      "flags": ["F07"]
+    },
+    {
+      "id": "Q08",
+      "question": "Is the holder physically in China, or abroad and needing a proxy?",
+      "why": "The remittance formality may be entrusted to another person with authorisation and the full document set (C09).",
+      "we_know": "Proxy is expressly permitted for beyond-quota and foreign-individual purchases (C09).",
+      "we_do_not_know": "The branch's practice on notarised authorisations and whether it will accept a company finance officer as agent.",
+      "how": [
+        "Ask the branch for its authorisation template and notarisation requirement.",
+        "Prepare the authorisation, both IDs and the full document set.",
+        "Confirm in writing that the agent can sign the conversion and wire."
+      ],
+      "source_ids": ["S02", "S06"],
+      "flags": ["F09"]
+    },
+    {
+      "id": "Q09",
+      "question": "Is the goal liquid USD in a US bank, or spending capacity?",
+      "why": "Spending capacity has different ceilings (card/POS, ATM RMB 100,000 a year) from a lump-sum conversion (C12).",
+      "we_know": "The ATM ceiling and the daily card ceiling (C12).",
+      "we_do_not_know": "The actual need and timing.",
+      "how": [
+        "Quantify how much must be liquid versus spent over time.",
+        "If liquidity is required, only the document or capital-account routes can deliver it at scale."
+      ],
+      "source_ids": ["S07"],
+      "flags": []
+    },
+    {
+      "id": "Q10",
+      "question": "Which bank holds the money, and what is its published tariff?",
+      "why": "Fees, spreads and acceptance practice are bank-specific; only one bank's tariff was read here (C23, F03).",
+      "we_know": "One bank's published outward-remittance tariff (C23) and one published rate board (C25).",
+      "we_do_not_know": "The holding bank's tariff and spread.",
+      "how": [
+        "Obtain the holding bank's current tariff PDF and its rate board.",
+        "Compare the two with the numbers here before relying on any fee figure."
+      ],
+      "source_ids": ["S20", "S21"],
+      "flags": ["F12"]
+    },
+    {
+      "id": "Q11",
+      "question": "Has any 'fast' solution been offered - pooling relatives' quotas, a crypto/USDT bridge, or an underground swap?",
+      "why": "Each of those is separately prohibited, with penalties of up to 30% or more of the amount (C16, C26).",
+      "we_know": "The prohibitions and penalties (C16, C26).",
+      "we_do_not_know": "What has been proposed to the holder.",
+      "how": [
+        "Write down the proposal and refuse it.",
+        "Record who proposed it; if money has already moved, get advice before any further step."
+      ],
+      "source_ids": ["S01", "S10"],
+      "flags": []
+    },
+    {
+      "id": "Q12",
+      "question": "What is the plan for the US side after the money arrives?",
+      "why": "A credit is only usable if the PRC tax was paid and documented, and FEIE-excluded income cannot also generate a credit (C19).",
+      "we_know": "Form 1116 mechanics, the one-year-back/ten-year-forward carry, and the FEIE/credit conflict (C19).",
+      "we_do_not_know": "Whether the holder uses FEIE, and whether any PRC tax will be creditable at the treaty rate.",
+      "how": [
+        "Decide FEIE versus credit before the year closes.",
+        "Keep PRC tax certificates and the conversion rate evidence.",
+        "Report the account on FBAR/8938 as applicable."
+      ],
+      "source_ids": ["S15", "S16"],
+      "flags": ["F05"]
+    }
+  ]
+}

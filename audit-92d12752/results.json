@@ -1,8 +1,8 @@
 {
-  "pages_scanned": 111,
-  "data_rows": 8298,
-  "without_direct_primary": 1423,
-  "pages_with_candidates": 36,
+  "pages_scanned": 120,
+  "data_rows": 8837,
+  "without_direct_primary": 1463,
+  "pages_with_candidates": 37,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
@@ -306,8 +306,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 242,
-      "without_direct_primary": 242,
+      "rows": 266,
+      "without_direct_primary": 266,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -625,6 +625,60 @@
     {
       "path": "verify-88f5a1be/index.html",
       "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/audit.html",
+      "rows": 16,
+      "without_direct_primary": 16,
+      "first_example": "HTML pages in repository 112 find . -name '*.html' -not -path './.git/*' -not -path './verify-9fe02cf5/*' | wc -l (merged tree, excluding this session's pages) file"
+    },
+    {
+      "path": "verify-9fe02cf5/costs.html",
+      "rows": 422,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/flagged.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/index.html",
+      "rows": 5,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/methods.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/questions.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/sources.html",
+      "rows": 21,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/taxes.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-9fe02cf5/verification.html",
+      "rows": 27,
       "without_direct_primary": 0,
       "first_example": ""
     },

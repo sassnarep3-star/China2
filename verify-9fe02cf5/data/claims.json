@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "session": "arena/9fe02cf5-china2",
+    "retrieved": "2026-11-11",
+    "status_legend": {
+      "VERIFIED": "The quoted text was read in the official source body by this session on 2026-11-11 and directly supports the statement as worded.",
+      "PARTIAL": "Part of the statement is supported by official text; the remaining part depends on facts or instruments not re-read here. It is not filled in.",
+      "UNVERIFIED": "Not confirmed from an official source in this session. Published as blank/flagged, never inferred."
+    }
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "topic": "PRC FX — current account",
+      "statement": "PRC FX rules do not restrict current-account international payments and transfers, but current-account FX receipts and payments must rest on a genuine, lawful transaction basis.",
+      "status": "VERIFIED",
+      "source_ids": ["S01"],
+      "locator": "Arts. 5, 12",
+      "evidence": "第五条 国家对经常性国际支付和转移不予限制。 第十二条 经常项目外汇收支应当具有真实、合法的交易基础。",
+      "implication": "The lawful path is document-based eligibility, not a tax on conversion."
+    },
+    {
+      "id": "C02",
+      "topic": "PRC FX — capital account",
+      "statement": "Capital-account FX payments require valid documents (and SAFE approval where prescribed) before purchase or payment.",
+      "status": "VERIFIED",
+      "source_ids": ["S01"],
+      "locator": "Art. 22",
+      "evidence": "第二十二条 资本项目外汇支出，应当按照国务院外汇管理部门关于付汇与购汇的管理规定，凭有效单证以自有外汇支付或者向经营结汇、售汇业务的金融机构购汇支付。国家规定应当经外汇管理机关批准的，应当在外汇支付前办理批准手续。",
+      "implication": "Property, inheritance and pre-emigration transfers follow a different, document-heavy route."
+    },
+    {
+      "id": "C03",
+      "topic": "PRC — is there a conversion tax?",
+      "statement": "No tax levied specifically on exchanging CNY for USD was found in the PRC FX instruments reviewed. This is an absence-of-evidence finding from the documents read, not proof that no other tax can apply to the underlying money.",
+      "status": "PARTIAL",
+      "source_ids": ["S01", "S02"],
+      "locator": "Whole instruments",
+      "evidence": "Reviewed instruments regulate eligibility, documents and penalties (S01 Arts. 12, 22, 39, 45; S02 Arts. 2-15) and state no separate tax on conversion.",
+      "implication": "If a bank asks for a tax document, that is a source-of-funds/voucher requirement, not proof that conversion itself is taxed."
+    },
+    {
+      "id": "C04",
+      "topic": "PRC FX — annual facilitation quota",
+      "statement": "A per-person annual quota of USD 50,000 equivalent applies to settlement of foreign exchange by all individuals and to purchases of foreign exchange by domestic individuals (境内个人) only.",
+      "status": "VERIFIED",
+      "source_ids": ["S02"],
+      "locator": "Art. 2",
+      "evidence": "第二条 对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。",
+      "implication": "A foreign individual is not automatically inside the USD 50,000 purchase quota."
+    },
+    {
+      "id": "C05",
+      "topic": "PRC FX — domestic individual above quota",
+      "statement": "A domestic individual purchasing foreign exchange above the annual quota for a non-operating current-account purpose must present valid ID plus documents showing the transaction amount.",
+      "status": "VERIFIED",
+      "source_ids": ["S02"],
+      "locator": "Art. 12",
+      "evidence": "第十二条 境内个人经常项目项下非经营性购汇超过年度总额的，凭本人有效身份证件和有交易额的相关证明材料在银行办理。",
+      "implication": "Larger lawful amounts are not capped at USD 50,000; they move to document-based review."
+    },
+    {
+      "id": "C06",
+      "topic": "PRC FX — foreign individual income",
+      "statement": "A foreign individual (境外个人) converting lawful current-account RMB income earned in China must present valid ID and transaction-amount source-of-funds materials, expressly including tax documents.",
+      "status": "VERIFIED",
+      "source_ids": ["S02", "S03"],
+      "locator": "S02 Art. 13(1); S03 answer quoting Hui Fa [2020] No. 14 Art. 59",
+      "evidence": "第十三条（一）在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。 / S03: …凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。",
+      "implication": "This is the provision that most often produces the 'pay tax first' message at a Chinese bank counter."
+    },
+    {
+      "id": "C07",
+      "topic": "PRC FX — foreign individual and the quota",
+      "statement": "A foreign individual is entitled to the annual facilitation quota for FX purchase only if holding a Foreign Permanent Resident ID card.",
+      "status": "VERIFIED",
+      "source_ids": ["S04"],
+      "locator": "Answer text",
+      "evidence": "持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。",
+      "implication": "Without a PR ID, converting requires the document route; no quota splitting is available."
+    },
+    {
+      "id": "C08",
+      "topic": "PRC FX — time limit",
+      "statement": "PRC rules set no time limit on converting a foreign individual's lawful RMB income, but the bank must be able to verify the original income evidence under due-diligence principles.",
+      "status": "VERIFIED",
+      "source_ids": ["S05"],
+      "locator": "Answer text",
+      "evidence": "答：法规并未限定境外个人境内取得的合法人民币收入购汇汇出时间，但境外个人须能够提供当时取得人民币合法收入的证明材料，由银行按照展业三原则进行真实性审核。",
+      "implication": "Old balances are not time-barred; missing contemporaneous documents are the practical obstacle."
+    },
+    {
+      "id": "C09",
+      "topic": "PRC FX — proxy",
+      "statement": "The remittance formality may be completed by an authorised other person, including company finance staff, and beyond-quota purchase/settlement and any foreign-individual purchase may be entrusted to others with the prescribed documents.",
+      "status": "VERIFIED",
+      "source_ids": ["S06", "S02"],
+      "locator": "S06 answer; S02 Arts. 4 and 38",
+      "evidence": "S06: 汇出手续也可委托公司财务人员等其他个人代为办理。 S02 Art. 4: 超过年度总额的购汇、结汇以及境外个人购汇，可以按本细则规定，凭相关证明材料委托他人办理。 S02 Art. 38: 其他情况代办的，除需提供双方有效身份证件、授权书外，还应提供本细则规定的相关证明材料。",
+      "implication": "Being physically in the U.S. is not by itself a blocker; a notarised authorisation and full document set are required."
+    },
+    {
+      "id": "C10",
+      "topic": "PRC FX — reconversion",
+      "statement": "Unspent RMB from an earlier FX conversion may be converted back with the original exchange memo within 24 months; same-day amounts up to USD 500 (or USD 1,000 at port facilities before departure) can be handled on ID alone.",
+      "status": "VERIFIED",
+      "source_ids": ["S02"],
+      "locator": "Art. 13(2)",
+      "evidence": "原兑换水单的兑回有效期为自兑换日起24个月；对于当日累计兑换不超过等值500美元（含）以及离境前在境内关外场所当日累计不超过等值1000美元（含）的兑换，可凭本人有效身份证件办理。",
+      "implication": "Only relevant to money that originally came from foreign exchange; it does not launder the source question."
+    },
+    {
+      "id": "C11",
+      "topic": "PRC FX — capital-account individual transfers",
+      "statement": "Outward transfer of assets by an individual emigrating, and by a foreign citizen inheriting a PRC estate, is governed by the separate provisional rules on sale and payment of foreign exchange for outward transfer of personal property.",
+      "status": "VERIFIED",
+      "source_ids": ["S02"],
+      "locator": "Art. 20",
+      "evidence": "第二十条 移居境外的境内个人将其取得合法移民身份前境内财产对外转移以及外国公民依法继承境内遗产的对外转移，按《个人财产对外转移售付汇管理暂行办法》等有关规定办理。",
+      "implication": "A second, quota-exempt route exists but its own rulebook was not re-read in this session (see F07)."
+    },
+    {
+      "id": "C12",
+      "topic": "PRC FX — ATM cash",
+      "statement": "Overseas ATM withdrawals on domestic bank cards are capped at RMB 100,000 equivalent per person per civil year, with a per-card daily ceiling of RMB 10,000 equivalent; exceeding the annual cap blocks overseas cash withdrawal in the current and following year.",
+      "status": "VERIFIED",
+      "source_ids": ["S07"],
+      "locator": "Arts. I, IV",
+      "evidence": "…shall not exceed the equivalent of RMB 100,000 in every civil year. … the ceiling for every foreign currency card per day is to be adjusted … to the equivalent of RMB 10,000 …",
+      "implication": "Cash is a slow route: at the cap it takes many calendar years to move USD 400,000."
+    },
+    {
+      "id": "C13",
+      "topic": "PRC tax — outbound payment recordal",
+      "statement": "For outbound payments relating to services and certain other items, a tax recordal (备案) must be completed before the first payment under a contract; repeat payments under the same contract need no new recordal.",
+      "status": "VERIFIED",
+      "source_ids": ["S08"],
+      "locator": "Items 1, 2",
+      "evidence": "一、境内机构和个人…对同一笔合同需要多次对外支付的，仅需在首次付汇前办理税务备案。",
+      "implication": "Recordal is a filing step, not an assessment; the monetary threshold sits in the 2013 announcement, which this session did not re-read (F06)."
+    },
+    {
+      "id": "C14",
+      "topic": "PRC tax — IIT rates",
+      "statement": "PRC individual income tax rates are 3%-45% progressive for comprehensive income, 5%-35% for business income, and a flat 20% for interest/dividends, asset leasing, asset transfers and incidental income.",
+      "status": "VERIFIED",
+      "source_ids": ["S09"],
+      "locator": "Art. 3",
+      "evidence": "…progressive tax rates ranging from 3 percent to 45 percent…; …from 5 percent to 35 percent…; …a flat tax rate of 20 percent shall apply.",
+      "implication": "Where the balance is untaxed PRC-source income, this is the layer that actually costs money - not the currency exchange."
+    },
+    {
+      "id": "C15",
+      "topic": "Treaty",
+      "statement": "The US-PRC treaty caps PRC tax on dividends, interest and royalties paid to a US beneficial owner at 10% of the gross amount.",
+      "status": "VERIFIED",
+      "source_ids": ["S11"],
+      "locator": "Arts. 9(2), 10(2), 11(2)",
+      "evidence": "…the tax so charged shall not exceed 10 percent of the gross amount of the dividends / interest / royalties.",
+      "implication": "Wage and business income are not covered by these caps; the treaty does not create a general exemption."
+    },
+    {
+      "id": "C16",
+      "topic": "PRC — crypto",
+      "statement": "Converting RMB to virtual currency inside China is prohibited: virtual-currency business activity is classified as illegal financial activity, and financial institutions may not provide account, transfer or settlement services for it.",
+      "status": "VERIFIED",
+      "source_ids": ["S10"],
+      "locator": "Section 一(一), (六)",
+      "evidence": "在境内开展法定货币与虚拟货币兑换业务…一律严格禁止，坚决依法取缔。…金融机构（含非银行支付机构）不得为虚拟货币相关业务活动提供账户开立、资金划转和清算结算等服务…",
+      "implication": "The USDT/stablecoin bridge is not a lawful conversion route, whatever the counterparty says."
+    },
+    {
+      "id": "C17",
+      "topic": "US — translation",
+      "statement": "US taxpayers must express foreign-currency amounts in USD, generally at the spot rate when the item is received, paid or accrued; the IRS has no official rate and generally accepts any posted rate used consistently. The 2025 yearly average for China was 7.129 CNY/USD.",
+      "status": "VERIFIED",
+      "source_ids": ["S14"],
+      "locator": "Intro; table row China",
+      "evidence": "In general, use the exchange rate prevailing (i.e., the spot rate) when you receive, pay or accrue the item. … The Internal Revenue Service has no official exchange rate. … China | Yuan | 7.129",
+      "implication": "7.129 is a historical tax-translation reference, not a conversion quote."
+    },
+    {
+      "id": "C18",
+      "topic": "US — personal FX gain",
+      "statement": "Section 988 does not apply to an individual's personal transaction; where nonfunctional currency is disposed of in a personal transaction, no gain is recognised by reason of exchange-rate changes unless the gain would exceed USD 200.",
+      "status": "VERIFIED",
+      "source_ids": ["S12"],
+      "locator": "§ 988(e)(1)-(3)",
+      "evidence": "…no gain shall be recognized … The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.",
+      "implication": "Above USD 200 the statute removes the exclusion; how that gain is characterised is not stated in this text (F02)."
+    },
+    {
+      "id": "C19",
+      "topic": "US — foreign tax credit",
+      "statement": "A US credit for PRC tax is claimed on Form 1116, is limited by the US tax on foreign-source income, may be carried back one year and forward ten, and is not available for income excluded under the foreign earned income exclusion; only tax at the treaty-capped rate qualifies.",
+      "status": "VERIFIED",
+      "source_ids": ["S15", "S16"],
+      "locator": "S15 body; S16 'Foreign Tax Credit limit'",
+      "evidence": "S16: …you may be able to carry them back to the previous tax year and forward to the next 10 tax years. S15: If you elect to exclude either foreign earned income or foreign housing costs, you cannot take a foreign tax credit for taxes on income you exclude. … only that reduced tax qualifies for the credit.",
+      "implication": "Credit mechanics prevent double tax only if the PRC tax is actually paid and documented."
+    },
+    {
+      "id": "C20",
+      "topic": "US — 8938 and FBAR",
+      "statement": "Form 8938 thresholds are USD 50,000 year-end / 75,000 any-time for an unmarried taxpayer living in the US, and USD 200,000 / 300,000 living abroad; failing to file can cost up to USD 10,000 plus 10,000 per 30 days after notice, capped at USD 60,000. An FBAR is required where foreign accounts exceed USD 10,000 in aggregate at any time in the calendar year.",
+      "status": "VERIFIED",
+      "source_ids": ["S17"],
+      "locator": "Table rows 'Reporting threshold', 'Penalties'",
+      "evidence": "…more than $50,000 on the last day of the tax year, or more than $75,000 at any time during the year… Up to $10,000 … an additional $10,000 for each 30 days … potential maximum penalty of $60,000… Aggregate value of financial accounts exceeds $10,000 at any time during the calendar year.",
+      "implication": "A stuck balance above USD 10,000 is already a reporting item while it sits in China."
+    },
+    {
+      "id": "C21",
+      "topic": "US — FBAR maxima",
+      "statement": "The current adjusted FBAR civil maxima in the eCFR table are USD 16,536 for a non-willful violation and USD 165,353 for a willful violation; the table was last amended at 90 FR 5630 (17 January 2025) and is headed as applying to penalties assessed on or after that date.",
+      "status": "VERIFIED",
+      "source_ids": ["S18"],
+      "locator": "Table 1 rows; amendment note",
+      "evidence": "Non-Willful … $10,000 → $16,536. Willful … $100,000 → $165,353. … 90 FR 5630, Jan. 17, 2025.",
+      "implication": "Quoted as currently displayed on 2026-11-11; no later amendment appears in the eCFR rendering (F13)."
+    },
+    {
+      "id": "C22",
+      "topic": "US — cash at the border",
+      "statement": "Carrying more than USD 10,000 into or out of the US must be reported to CBP on FinCEN Form 105; the threshold applies to a family or group's combined amount, and failure risks seizure and forfeiture.",
+      "status": "VERIFIED",
+      "source_ids": ["S19"],
+      "locator": "Body text",
+      "evidence": "…when entering or leaving the United States you must report amounts exceeding $10,000 … the $10,000 threshold applies to the total amount they are carrying or sending collectively, not per individual. … risk having their currency or monetary instruments forfeited and seized.",
+      "implication": "Physical carriage is a reporting regime, not a conversion route."
+    },
+    {
+      "id": "C23",
+      "topic": "Bank tariff — HSBC China",
+      "statement": "HSBC China's tariff effective 31 October 2026 publishes outward telegraphic transfer fees of: Private Banking individual customer free; Premier and Advance 0.1% of the remittance with a CNY 100 minimum and CNY 500 maximum plus a CNY 120 cable charge; Private Banking entity 0.1% with a CNY 100 minimum and CNY 1,000 maximum plus cable. A 'Pay Exact' (OUR) request costs CNY 200 and Premier Elite customers are exempt from the service fee.",
+      "status": "VERIFIED",
+      "source_ids": ["S20"],
+      "locator": "Items 2.2.4.1, 2.2.4.2, remark 1.1",
+      "evidence": "Premier: 0.1% of remittance amount Min. CNY100 … Max. CNY500 … Plus Cable Charge. Cable Charges: Premier CNY120 per cable. … Pay Exact, CNY200 / equivalent will be collected from the remitter … Premier Elite customers … will enjoy the benefit of service fee exemption.",
+      "implication": "For an ordinary personal outward wire at this bank the sender-side fee is small and capped; the spread is the larger unknown."
+    },
+    {
+      "id": "C24",
+      "topic": "Bank tariff — exclusions",
+      "statement": "The HSBC tariff expressly excludes charges collected by other institutions and any duties, levies, charges or taxes imposed by authorities.",
+      "status": "VERIFIED",
+      "source_ids": ["S20"],
+      "locator": "Important note 7",
+      "evidence": "The charges shown in this tariff do not include charges collected by other institutions … or duties, levies, charges or taxes imposed by governmental or regulatory authorities.",
+      "implication": "Correspondent, intermediary and receiving-bank deductions are not published there and are left blank (F04)."
+    },
+    {
+      "id": "C25",
+      "topic": "Published rate benchmark",
+      "statement": "Bank of China published, at 10:25:02 on 2026-11-11, a USD buying rate of 666.30 and a selling rate of 669.11 CNY per 100 USD, a difference of 0.420% between the two published prices.",
+      "status": "VERIFIED",
+      "source_ids": ["S21"],
+      "locator": "USD row, publication timestamp",
+      "evidence": "USD | 666.3 | 666.3 | 669.11 | 669.11 | 671.91 | 2026/11/11 10:25:02",
+      "implication": "Used only as a dated, published benchmark band; the holder's own bank rate is unverified (F12)."
+    },
+    {
+      "id": "C26",
+      "topic": "PRC FX penalties",
+      "statement": "Evasion of FX controls and unauthorised trading in foreign exchange attract fines of up to 30% of the amount, or 30% to an equal amount in serious cases, with criminal liability where constituted.",
+      "status": "VERIFIED",
+      "source_ids": ["S01"],
+      "locator": "Arts. 39, 40, 45",
+      "evidence": "第三十九条 …处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款… 第四十五条 …处违法金额30%以下的罚款；情节严重的，处违法金额30%以上等值以下的罚款…",
+      "implication": "Penalty exposure on an unlawful route dwarfs the spread on a lawful one."
+    },
+    {
+      "id": "C27",
+      "topic": "US — foreign trust information",
+      "statement": "Failure to file required foreign-trust information carries a penalty of the greater of USD 10,000 or 35% of the gross reportable amount (5% substituted for returns under section 6048(b)), plus USD 10,000 per 30-day period after 90 days from IRS notice, with a reasonable-cause exception.",
+      "status": "VERIFIED",
+      "source_ids": ["S13"],
+      "locator": "§ 6677(a), (b)(2), (d)",
+      "evidence": "…the greater of $10,000 or 35 percent of the gross reportable amount… (b)(2) … by substituting “5 percent” for “35 percent” … (d) … reasonable cause and not due to willful neglect.",
+      "implication": "This is the foreign-trust provision. The separate foreign-gift penalty frequently quoted as 5% per month up to 25% was not re-verifiable here (F01)."
+    }
+  ]
+}
