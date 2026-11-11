@@ -930,7 +930,7 @@ Rules in force: no other session's published findings are rewritten; every edit 
 |---|---|---|---|
 | C1 | Independently refresh and verify the stale structural audit snapshot (same generated counts later integrated concurrently in PR #61); preserve structural-only caveats | done | `audit-92d12752/**` |
 | C2 | Independently verify the refreshed scanner, internal links, and affected repository suites; record official-source boundaries and irregularities | done | `audit-92d12752/**`, append-only `COORDINATION.md` |
-| C3 | Publish through this fixed Arena branch and record integration status | in progress | append-only `COORDINATION.md` |
+| C3 | Publish through this fixed Arena branch and record integration status | done | append-only `COORDINATION.md` |
 
 Claim recorded before work. No other active claim for `audit-92d12752/**` appeared in the task board. On 2026-11-11, the regenerated point-in-time scan covers 100 HTML pages / 7,107 table-data rows; 1,384 candidate rows on 34 pages lack a direct allowlisted primary-domain URL in their own static row. This is a structural candidate count only: it neither proves missing evidentiary support nor verifies link liveness, source support, legal accuracy, dynamic tables, or exported data. The unchanged finite allowlist and scan exclusions remain in `scan.py`.
 
@@ -942,3 +942,10 @@ Claim recorded before work. No other active claim for `audit-92d12752/**` appear
 ### Concurrent integration note
 
 - While this branch was in flight, `arena/bb2a3876-china2` published its B-05 snapshot refresh in PR #61. After fetching `origin/main`, the snapshot counts/results matched this branch (100 pages; 7,107 rows; 1,384 candidate rows / 34 pages). The combined tree keeps that compatible snapshot and this task's explicit 11 November build date. No concurrent edits were discarded. This session did not alter any of PR #61's other files.
+
+### Publication result
+
+- PR [#62](https://github.com/sassnarep3-star/China2/pull/62) merged to `main` at 2026-11-11 02:32:23 UTC; merge commit `714b743c4bf7cb51efdafe348b0c50541a1eb2b2`.
+- PR checks: 11/11 passed. On the merge commit, all 14 check runs completed successfully: 11 validation/research workflows plus the Pages build, build-status report, and deploy jobs.
+- Pages build/deploy run [42946707526](https://github.com/sassnarep3-star/China2/actions/runs/42946707526) succeeded; Pages API reported `built` at the merge commit with no error.
+- Published review retrieved successfully: https://sassnarep3-star.github.io/China2/audit-92d12752/index.html . The root dashboard and other category pages are unchanged by this small follow-up; this PR only refreshed the date/count snapshot and added the verification/publication record.
