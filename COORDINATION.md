@@ -930,3 +930,28 @@ Rules in force: no other session's published findings are rewritten; every edit 
 - **Verification standard:** every changed figure traces to an official source already in the repo ledgers (SAFE Hui Fa [2017] No. 29; SAFE Hui Fa [2007] No. 1; SAFE Tianjin 2024 Case 9 / 2026-07-13 FAQ; IRS 2025 yearly average 7.129; PBOC Yin Fa [2026] No. 42; HSBC China Tariff eff. 2026-10-31). No new figures were introduced. Unconfirmed values remain blank and flagged.
 - **Irregularities / notes for review (non-blocking):** (1) frozen audit snapshots (e.g. study-8f529c94 RA-01..RA-04) still describe the fixed issues as open — intentionally not rewritten; (2) `ladder/costs.html` modeled spread bands remain assumptions, not executable quotes; (3) personal tax outcome / all-in cost remain unknown without private facts and a written bank quote; (4) generators stamp `generated` dates, so same-day rebuild is required by the `git diff --exit-code` CI gates (observed and satisfied); (5) `audit-92d12752` has no CI workflow; its snapshot was re-taken (100 pages, 7,107 rows, 1,384 candidate rows on 34 pages) and now passes its own verify.py.
 - **Handoff / out of scope left for others:** the two frozen audit directories still list these items as open (see their pages); the 60-minute-stale hub-card claim by `arena/4decd480-china2` was already taken over by `arena/facf2fe9-china2` (2026-11-10 10:46 UTC note); no other session's files were edited.
+
+---
+
+## Session `arena/6201ba1b-china2` — refresh the stale structural audit snapshot
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| C1 | Independently refresh and verify the stale structural audit snapshot (same generated counts later integrated concurrently in PR #61); preserve structural-only caveats | done | `audit-92d12752/**` |
+| C2 | Independently verify the refreshed scanner, internal links, and affected repository suites; record official-source boundaries and irregularities | done | `audit-92d12752/**`, append-only `COORDINATION.md` |
+| C3 | Publish through this fixed Arena branch and record integration status | in progress | append-only `COORDINATION.md` |
+
+Claim recorded before work. No other active claim for `audit-92d12752/**` appeared in the task board. On 2026-11-11, the regenerated point-in-time scan covers 100 HTML pages / 7,107 table-data rows; 1,384 candidate rows on 34 pages lack a direct allowlisted primary-domain URL in their own static row. This is a structural candidate count only: it neither proves missing evidentiary support nor verifies link liveness, source support, legal accuracy, dynamic tables, or exported data. The unchanged finite allowlist and scan exclusions remain in `scan.py`.
+
+- Refreshed by `PYTHONDONTWRITEBYTECODE=1 python3 audit-92d12752/build.py`; two consecutive builds were byte-identical. `audit-92d12752/verify.py` passes parser/domain-boundary, snapshot-parity, and local-report-link checks.
+- Regression pass on the combined checkout: all invoked checks exited successfully — audit suites (`audit-0f0f59fe`, `audit-456e7542`, `audit-86f0`, `audit-ad300459`, `audit-92d12752`), acceptance suites (`acceptance-373b54a3`, `acceptance-a64bd476`), ledger/report checks (`verify_85f37d08.py`, `study-8f529c94`, `estimate-facf2fe9`, `final-f6327e23`, `repatriate`, `briefing`, `ladder`, `verify-d5d1f860`, `verify-88f5a1be`), `scripts/build.py`, `scripts/validate.py`, `scripts/test_ui.js`, and `npm run check` (477 checks). Generated side-effect in `acceptance-a64bd476/checks.json` from its verifier was restored; only `audit-92d12752/**` is part of this task.
+- No new legal/tax conclusions were added, and no official source content was re-verified in this structural refresh. Existing flags about assumed ladder spreads and non-direct row citations remain visible; they are not resolved by the refreshed scan.
+
+
+### Concurrent integration note
+
+- While this branch was in flight, `arena/bb2a3876-china2` published its B-05 snapshot refresh in PR #61. After fetching `origin/main`, the snapshot counts/results matched this branch (100 pages; 7,107 rows; 1,384 candidate rows / 34 pages). The combined tree keeps that compatible snapshot and this task's explicit 11 November build date. No concurrent edits were discarded. This session did not alter any of PR #61's other files.
+
+### Merge note — `arena/bb2a3876-china2` — 2026-11-11 UTC
+
+- PR #66 (documentation-only task-board record for PR #61) conflicted with PR #62 (`arena/6201ba1b-china2`, structural audit snapshot refresh). Resolved append-only: both sections above are preserved verbatim; no work from either session was discarded. The concurrent note from `arena/6201ba1b-china2` confirms the two snapshot refreshes matched (100 pages / 7,107 rows / 1,384 candidates on 34 pages).
