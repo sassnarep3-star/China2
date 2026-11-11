@@ -1,0 +1,146 @@
+[
+  {
+    "id": "F01",
+    "title": "The reference mid is arithmetic, not an official parity",
+    "what": "SAFE's central-parity table is rendered by script and returned no rows to a text fetch (S26), so the reference mid used for every spread is the arithmetic mean of the three bank mids that could be read: BOC 6.67705, CMB 6.67747, HSBC 6.6745513, giving 6.6763571 CNY per USD.",
+    "why": "Every spread percentage in the cost tables is measured against this number. If a reader substitutes the official parity for the same day, each spread moves slightly, though the ranking of the banks does not.",
+    "resolve": "Read the SAFE parity in a browser, or take any single published mid and state it; recompute with model.py.",
+    "sources": ["S26", "S01", "S03", "S05"],
+    "severity": "medium"
+  },
+  {
+    "id": "F02",
+    "title": "China Merchants Bank's board carried the previous day's date",
+    "what": "At retrieval on 11 November 2026 the CMB page header showed 当前日期 2026年11月10日 with a quote timestamp of 10:28:44, while the BOC board showed 2026/11/11 10:25:02. The CMB quote may be a cached page rather than a live one.",
+    "why": "CMB's spread is used in the cost tables. If the page was stale, its true spread on the day may differ.",
+    "resolve": "Re-read the CMB board in a browser and confirm the date header matches the quote timestamp.",
+    "sources": ["S03", "S01"],
+    "severity": "low"
+  },
+  {
+    "id": "F03",
+    "title": "HSBC publishes an explicit sell/buy table; earlier passes inverted a feed",
+    "what": "On 11 November 2026 the HSBC China rate page showed USD selling 6.7079204 and buying 6.6411822 with an explicit 现汇/现钞 table (S05). Earlier sections of this repository derived HSBC rates by inverting a feed, producing roughly 6.63548 / 6.70222. Both readings imply a spread of about 0.5%, but they are different numbers from different methods.",
+    "why": "A reader comparing the sections will see two different HSBC quotes. Neither is fabricated; the difference is method plus time.",
+    "resolve": "Cite the explicit table (S05) going forward and treat the inverted-feed figure as superseded.",
+    "sources": ["S05"],
+    "severity": "medium"
+  },
+  {
+    "id": "F04",
+    "title": "Three large banks could not be priced at all",
+    "what": "ICBC's board returned an empty table with the note 暂无数据 (S25); ABC's and CCB's quotation boards are script-rendered and returned no rates. No fee table was read for ABC, ICBC or CCB either.",
+    "why": "Their cost rows are blank. Blank means unverified, not zero and not cheap. Any claim that one of these banks is cheaper is unsupported by this pass.",
+    "resolve": "Open each board in a browser and record the timestamped quote, then add a fee schedule from the bank's own price list.",
+    "sources": ["S25"],
+    "severity": "medium"
+  },
+  {
+    "id": "F05",
+    "title": "Correspondent and intermediary bank deductions are not published",
+    "what": "None of the three readable banks publishes the correspondent-bank deduction on a USD wire to the United States. CMB discloses that OUR pre-deducts the equivalent of USD 25 and may ask for more (S04); HSBC sells 'Pay Exact' for CNY 200 (S06).",
+    "why": "The all-in figures in this study exclude an unknown deduction that typically falls on the beneficiary. They are therefore a floor, not a quote.",
+    "resolve": "Ask the sending bank for the correspondent chain, and ask the receiving bank what it deducts on an incoming international wire.",
+    "sources": ["S04", "S06"],
+    "severity": "high"
+  },
+  {
+    "id": "F06",
+    "title": "The U.S. receiving-bank fee is not verified",
+    "what": "No U.S. bank's current incoming international wire fee could be read from an official page this pass; the Chase fee-schedule URL tried returned a 404.",
+    "why": "It is a real cost of the bank routes and is excluded from every total here.",
+    "resolve": "Read the receiving bank's own published fee schedule and add it as a fixed deduction.",
+    "sources": [],
+    "severity": "medium"
+  },
+  {
+    "id": "F07",
+    "title": "Wise does not publish a CNY fee table",
+    "what": "Wise's help page states that fees differ by delivery method and are shown when a transfer is set up (S24). No fee and no applied rate can therefore be quoted.",
+    "why": "The Wise route is described and its eligibility and caps are sourced, but it cannot be ranked against the banks on cost.",
+    "resolve": "Price a live transfer for a stated amount and record the screenshot with its timestamp.",
+    "sources": ["S24"],
+    "severity": "medium"
+  },
+  {
+    "id": "F08",
+    "title": "HSBC Private Banking zero-fee eligibility is unverified",
+    "what": "The tariff shows the transfer and cable lines as free for individual Private Banking customers (S06), but the relationship-balance threshold and the account-opening path are not in the excerpt read.",
+    "why": "A zero fee is attractive, but this study cannot say who qualifies or whether the tier is open to a new customer.",
+    "resolve": "Read the Private Banking eligibility section of the same tariff and the account-opening criteria.",
+    "sources": ["S06"],
+    "severity": "low"
+  },
+  {
+    "id": "F09",
+    "title": "The 2026 foreign earned income exclusion amount is not re-verified",
+    "what": "The IRS foreign-earned-income-exclusion page read this pass lists annual amounts only through 2023 and states that the amount is adjusted annually (S18 is a different page). The 2026 figure quoted elsewhere in this repository was not confirmed from an official page today.",
+    "why": "Any FEIE figure used in planning should be confirmed before a return is filed.",
+    "resolve": "Read the current Form 2555 instructions or the IRS inflation-adjustment release for tax year 2026.",
+    "sources": [],
+    "severity": "medium"
+  },
+  {
+    "id": "F10",
+    "title": "The 2021 supplementary tax-recordal announcement was not re-read",
+    "what": "Announcement [2013] No. 40 requires tax recordal for a single outward payment of USD 50,000 or more for listed items, but its own page states that several articles were repealed by Announcement [2021] No. 19 (S13). The 2021 instrument and the current electronic procedure were not read this pass.",
+    "why": "The direction of the rule is clear; the exact current filing step is not.",
+    "resolve": "Read Announcement [2021] No. 19 and the local tax authority's current e-filing page.",
+    "sources": ["S13"],
+    "severity": "medium"
+  },
+  {
+    "id": "F11",
+    "title": "The decisive facts about the account holder are unknown",
+    "what": "This study does not know the balance, when the RMB was acquired, the source of funds, PRC tax residence or domicile, whether a Foreign Permanent Resident ID is held, U.S. state of residence, filing history, or whether any emigration or inheritance event has occurred.",
+    "why": "Those facts choose the rulebook, the route and the tax result. Without them, every recommendation is conditional and every total is a range.",
+    "resolve": "Answer the questions register on the Questions page; each answer is mapped to the rule it changes.",
+    "sources": ["S07", "S09"],
+    "severity": "high"
+  },
+  {
+    "id": "F12",
+    "title": "The USD 50,000 quota's application to a foreign national is a classification question",
+    "what": "The quota in Huifa [2007] No. 1 Art. 2 covers an individual's FX settlement and a domestic individual's FX purchase (S09). Decree 532 Art. 52(2) treats a foreign national continuously resident for a year or more as a domestic individual (S07), while Art. 13 of the same rules gives a separate route for a non-domestic individual's China income (S09). Which one applies to this account holder is not determined here.",
+    "why": "It decides whether a USD 50,000 annual ceiling binds the plan or whether the document-based route applies instead.",
+    "resolve": "Ask the account branch to state, in writing, the classification and the rulebook it applies.",
+    "sources": ["S07", "S09", "S10"],
+    "severity": "high"
+  },
+  {
+    "id": "F13",
+    "title": "The cash route is priced per trip, not per amount",
+    "what": "The cash-carry ceiling is USD 5,000 without a permit and USD 10,000 with one; above USD 10,000 is in principle not permitted (S16). The cost table therefore shows the cash route only up to USD 10,000, and marks larger tiers as not feasible.",
+    "why": "A reader might otherwise read a low percentage on the cash row and assume it scales.",
+    "resolve": "None needed for the rule; the route simply does not scale.",
+    "sources": ["S16", "S17"],
+    "severity": "low"
+  },
+  {
+    "id": "F14",
+    "title": "Card and ATM withdrawal caps were not re-verified",
+    "what": "The card channel is listed because it is lawful and commonly used, but the annual overseas cash-withdrawal cap and the fees were not confirmed from an official page this pass.",
+    "why": "No caps or costs are stated for that row.",
+    "resolve": "Read the issuing bank's card agreement and the SAFE card-withdrawal rules.",
+    "sources": [],
+    "severity": "low"
+  },
+  {
+    "id": "F15",
+    "title": "Two routes are listed without any published price",
+    "what": "Offshore RMB (CNH) remittance and offshore borrowing against the deposit are described, but no bank read this pass publishes a fee for the first, and no official mechanism was located for the second.",
+    "why": "They are listed for completeness and explicitly not costed or recommended.",
+    "resolve": "Obtain written fee schedules from a sending and a receiving bank; for borrowing, read the cross-border guarantee rules.",
+    "sources": ["S07"],
+    "severity": "medium"
+  },
+  {
+    "id": "F16",
+    "title": "Earlier sections of this repository were not re-verified in full",
+    "what": "This pass re-read the load-bearing official pages listed on the Sources page and mechanically re-checked the generated tables of the earlier sections (see the Audit page). It did not re-read every source cited anywhere in the repository, and it did not re-check the figures that depend on PDFs it did not open.",
+    "why": "A clean audit of this section is not a warranty over the whole repository.",
+    "resolve": "Run the repository-wide verification workflows; each section's own verifier is listed in README.",
+    "sources": [],
+    "severity": "medium"
+  }
+]

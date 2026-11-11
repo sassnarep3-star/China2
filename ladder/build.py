@@ -852,7 +852,11 @@ def write_root_hub():
                 f'{esc(label)}</a>')
 
     cards = [
-        ("verify-d5d1f860/index.html", "Live-verified dashboard · newest pass", "24 sources re-fetched · 680 rows · 16 flags",
+        ("decision-f40147e0/index.html", "Dated verification pass · boards read 11 Nov 2026", "26 sources · 24 methods · 10 priced × 40 tiers · 16 flags",
+         "Newest pass: three mainland bank boards and four tariffs re-read with retrieval times, every cost cell recomputed from them, and fourteen line-by-line re-checks of the earlier sections. Blank where a bank publishes nothing."),
+        ("transfer-guide/index.html", "Unified repatriation guide · decision checklist", "Methods · 7-layer penalty · 40 tiers · repo audit",
+         "Requested card for the transfer-guide section (session arena/50f278d8), added by the final integrator. Consolidated checklist, method catalogue, penalty breakdown and cost estimator."),
+        ("verify-d5d1f860/index.html", "Live-verified dashboard · previous pass", "24 sources re-fetched · 680 rows · 16 flags",
          "Quote-level re-verification dated 10 November 2026: each load-bearing document was re-fetched and the exact sentence is shown with its link. Fees recomputed independently; blanks where nothing is published."),
         ("estimate-facf2fe9/index.html", "Published-rate estimates · bank boards read 10 Nov 2026", "6 bank boards · 4 tariffs · 23 methods × 40 tiers",
          "All-in cost worked out from the rates and fees the banks themselves publish, with the tax rules and an exchange-gain illustration. Blank where a rate or fee could not be read. Indicative, not a quote."),

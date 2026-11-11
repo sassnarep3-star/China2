@@ -1,8 +1,8 @@
 {
-  "pages_scanned": 100,
-  "data_rows": 7107,
-  "without_direct_primary": 1384,
-  "pages_with_candidates": 34,
+  "pages_scanned": 118,
+  "data_rows": 8559,
+  "without_direct_primary": 1467,
+  "pages_with_candidates": 37,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
@@ -145,6 +145,60 @@
     {
       "path": "briefing/sources.html",
       "rows": 41,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "decision-f40147e0/answer.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "decision-f40147e0/audit.html",
+      "rows": 10,
+      "without_direct_primary": 2,
+      "first_example": "RA-03 CMB board carried the previous day's date CMB showed 2026年11月10日 at 10:28:44 while BOC showed 2026/11/11 at 10:25:02, which suggests a cached page. CMB's cost row may be a da"
+    },
+    {
+      "path": "decision-f40147e0/costs.html",
+      "rows": 258,
+      "without_direct_primary": 41,
+      "first_example": "2 Bank conversion + SWIFT wire — China Merchants Bank $356.62 0.36% S03 · fx.cmbchina.com S04 · cmbchina.com"
+    },
+    {
+      "path": "decision-f40147e0/flagged.html",
+      "rows": 16,
+      "without_direct_primary": 5,
+      "first_example": "F04 Three large banks could not be priced at all ICBC's board returned an empty table with the note 暂无数据 (S25); ABC's and CCB's quotation boards are script-rendered and returned no"
+    },
+    {
+      "path": "decision-f40147e0/index.html",
+      "rows": 5,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "decision-f40147e0/methods.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "decision-f40147e0/questions.html",
+      "rows": 15,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "decision-f40147e0/sources.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "decision-f40147e0/taxes.html",
+      "rows": 23,
       "without_direct_primary": 0,
       "first_example": ""
     },
@@ -306,8 +360,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 225,
-      "without_direct_primary": 225,
+      "rows": 260,
+      "without_direct_primary": 260,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -552,6 +606,60 @@
     },
     {
       "path": "study-8f529c94/taxes.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/audit.html",
+      "rows": 14,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/costs.html",
+      "rows": 943,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/flagged.html",
+      "rows": 18,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/index.html",
+      "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/methods.html",
+      "rows": 23,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/penalties.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/questions.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/sources.html",
+      "rows": 40,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/taxes.html",
       "rows": 12,
       "without_direct_primary": 0,
       "first_example": ""
