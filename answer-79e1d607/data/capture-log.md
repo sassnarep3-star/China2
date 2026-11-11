@@ -71,11 +71,20 @@ https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Acc
 > Fund transfer to self-name HSBC accounts in other countries/ territories via HSBC Global Transfer | 2.2.6.1 | Free | Free | CNY145 * per transaction This is an indication charge. The actual charge per transaction will be USD20 or equivalent in other foreign currency.
 IRREGULARITY: inside the same PDF (chunk 7) a Chinese page caption reads “财富管理及个人银行业务账户和服务费率（2024年9月12日生效）” although the cover says effective 31 Oct 2026. Flagged as a stale caption in the publisher's document.
 
-### NOT READABLE (tables are filled by script; the returned page body held no figures) — left blank, flagged
-- ICBC FX board https://www.icbc.com.cn/column/1438058341489590354.html — returned “暂无数据”.
-- Agricultural Bank of China FX board https://ewealth.abchina.com/ForeignExchange/ListPrice/ — table body empty.
-- China Construction Bank FX board https://wealth.ccb.com/chn/forex/exchange-quotations.shtml — “loading...”, no figures in chunk 0 of 3.
-- SAFE central parity table https://www.safe.gov.cn/safe/rmbhlzjj/index.html — notes only, table body empty.
+### NR-01 ICBC, public FX board — NOT READABLE in a static read (returned “暂无数据”); the bank's feed was read instead, see BK-09
+https://www.icbc.com.cn/column/1438058341489590354.html
+
+### NR-02 Agricultural Bank of China, public FX board — NOT READABLE in a static read (table body empty); the bank's feed was read instead, see BK-08
+https://ewealth.abchina.com/ForeignExchange/ListPrice/
+
+### NR-03 China Construction Bank, public FX board — NOT READABLE in a static read (“loading...”, no figures in chunk 0 of 3). No CCB figure is published here.
+https://wealth.ccb.com/chn/forex/exchange-quotations.shtml
+
+### NR-04 SAFE, RMB central parity table — NOT READABLE in a static read (notes only, table body empty). Not used.
+https://www.safe.gov.cn/safe/rmbhlzjj/index.html
+
+### NR-05 Western Union, Send money from China — NOT READ by this session (address taken from estimate-facf2fe9/data/sources.json). No Western Union figure is published here.
+https://www.westernunion.com/cn/en/send-money.html
 
 ## Batch 2 — same bracket as batch 1 (02:29:04–02:38:33 UTC); split only for readability
 

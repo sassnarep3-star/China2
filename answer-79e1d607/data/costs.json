@@ -1,0 +1,2399 @@
+{
+ "read_date": "2026-11-11",
+ "method": "cost_usd = (amount*(sell-buy)/2 + fee_cny) / mid; fee_cny = clamp(amount*sell*pct, min, max) + cable",
+ "routes": {
+  "ABC": [
+   {
+    "amount_usd": 10000,
+    "cny_needed": "67041.19",
+    "spread_usd": "20.99",
+    "fee_cny": "146.89",
+    "fee_usd": "22.01",
+    "cost_usd": "43.00",
+    "cost_pct": "0.430"
+   },
+   {
+    "amount_usd": 20000,
+    "cny_needed": "134002.39",
+    "spread_usd": "41.99",
+    "fee_cny": "213.79",
+    "fee_usd": "32.03",
+    "cost_usd": "74.02",
+    "cost_pct": "0.370"
+   },
+   {
+    "amount_usd": 30000,
+    "cny_needed": "200962.90",
+    "spread_usd": "62.98",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "104.93",
+    "cost_pct": "0.350"
+   },
+   {
+    "amount_usd": 40000,
+    "cny_needed": "267857.20",
+    "spread_usd": "83.98",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "125.92",
+    "cost_pct": "0.315"
+   },
+   {
+    "amount_usd": 50000,
+    "cny_needed": "334751.50",
+    "spread_usd": "104.97",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "146.92",
+    "cost_pct": "0.294"
+   },
+   {
+    "amount_usd": 60000,
+    "cny_needed": "401645.80",
+    "spread_usd": "125.97",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "167.91",
+    "cost_pct": "0.280"
+   },
+   {
+    "amount_usd": 70000,
+    "cny_needed": "468540.10",
+    "spread_usd": "146.96",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "188.91",
+    "cost_pct": "0.270"
+   },
+   {
+    "amount_usd": 80000,
+    "cny_needed": "535434.40",
+    "spread_usd": "167.96",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "209.90",
+    "cost_pct": "0.262"
+   },
+   {
+    "amount_usd": 90000,
+    "cny_needed": "602328.70",
+    "spread_usd": "188.95",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "230.90",
+    "cost_pct": "0.257"
+   },
+   {
+    "amount_usd": 100000,
+    "cny_needed": "669223.00",
+    "spread_usd": "209.95",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "251.89",
+    "cost_pct": "0.252"
+   },
+   {
+    "amount_usd": 110000,
+    "cny_needed": "736117.30",
+    "spread_usd": "230.94",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "272.89",
+    "cost_pct": "0.248"
+   },
+   {
+    "amount_usd": 120000,
+    "cny_needed": "803011.60",
+    "spread_usd": "251.94",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "293.88",
+    "cost_pct": "0.245"
+   },
+   {
+    "amount_usd": 130000,
+    "cny_needed": "869905.90",
+    "spread_usd": "272.93",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "314.88",
+    "cost_pct": "0.242"
+   },
+   {
+    "amount_usd": 140000,
+    "cny_needed": "936800.20",
+    "spread_usd": "293.93",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "335.87",
+    "cost_pct": "0.240"
+   },
+   {
+    "amount_usd": 150000,
+    "cny_needed": "1003694.50",
+    "spread_usd": "314.92",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "356.87",
+    "cost_pct": "0.238"
+   },
+   {
+    "amount_usd": 160000,
+    "cny_needed": "1070588.80",
+    "spread_usd": "335.92",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "377.86",
+    "cost_pct": "0.236"
+   },
+   {
+    "amount_usd": 170000,
+    "cny_needed": "1137483.10",
+    "spread_usd": "356.91",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "398.86",
+    "cost_pct": "0.235"
+   },
+   {
+    "amount_usd": 180000,
+    "cny_needed": "1204377.40",
+    "spread_usd": "377.91",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "419.85",
+    "cost_pct": "0.233"
+   },
+   {
+    "amount_usd": 190000,
+    "cny_needed": "1271271.70",
+    "spread_usd": "398.90",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "440.85",
+    "cost_pct": "0.232"
+   },
+   {
+    "amount_usd": 200000,
+    "cny_needed": "1338166.00",
+    "spread_usd": "419.90",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "461.84",
+    "cost_pct": "0.231"
+   },
+   {
+    "amount_usd": 210000,
+    "cny_needed": "1405060.30",
+    "spread_usd": "440.89",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "482.84",
+    "cost_pct": "0.230"
+   },
+   {
+    "amount_usd": 220000,
+    "cny_needed": "1471954.60",
+    "spread_usd": "461.89",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "503.83",
+    "cost_pct": "0.229"
+   },
+   {
+    "amount_usd": 230000,
+    "cny_needed": "1538848.90",
+    "spread_usd": "482.88",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "524.83",
+    "cost_pct": "0.228"
+   },
+   {
+    "amount_usd": 240000,
+    "cny_needed": "1605743.20",
+    "spread_usd": "503.88",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "545.82",
+    "cost_pct": "0.227"
+   },
+   {
+    "amount_usd": 250000,
+    "cny_needed": "1672637.50",
+    "spread_usd": "524.87",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "566.82",
+    "cost_pct": "0.227"
+   },
+   {
+    "amount_usd": 260000,
+    "cny_needed": "1739531.80",
+    "spread_usd": "545.87",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "587.81",
+    "cost_pct": "0.226"
+   },
+   {
+    "amount_usd": 270000,
+    "cny_needed": "1806426.10",
+    "spread_usd": "566.86",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "608.81",
+    "cost_pct": "0.225"
+   },
+   {
+    "amount_usd": 280000,
+    "cny_needed": "1873320.40",
+    "spread_usd": "587.86",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "629.80",
+    "cost_pct": "0.225"
+   },
+   {
+    "amount_usd": 290000,
+    "cny_needed": "1940214.70",
+    "spread_usd": "608.85",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "650.80",
+    "cost_pct": "0.224"
+   },
+   {
+    "amount_usd": 300000,
+    "cny_needed": "2007109.00",
+    "spread_usd": "629.85",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "671.79",
+    "cost_pct": "0.224"
+   },
+   {
+    "amount_usd": 310000,
+    "cny_needed": "2074003.30",
+    "spread_usd": "650.84",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "692.79",
+    "cost_pct": "0.223"
+   },
+   {
+    "amount_usd": 320000,
+    "cny_needed": "2140897.60",
+    "spread_usd": "671.84",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "713.78",
+    "cost_pct": "0.223"
+   },
+   {
+    "amount_usd": 330000,
+    "cny_needed": "2207791.90",
+    "spread_usd": "692.83",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "734.78",
+    "cost_pct": "0.223"
+   },
+   {
+    "amount_usd": 340000,
+    "cny_needed": "2274686.20",
+    "spread_usd": "713.83",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "755.77",
+    "cost_pct": "0.222"
+   },
+   {
+    "amount_usd": 350000,
+    "cny_needed": "2341580.50",
+    "spread_usd": "734.82",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "776.77",
+    "cost_pct": "0.222"
+   },
+   {
+    "amount_usd": 360000,
+    "cny_needed": "2408474.80",
+    "spread_usd": "755.82",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "797.76",
+    "cost_pct": "0.222"
+   },
+   {
+    "amount_usd": 370000,
+    "cny_needed": "2475369.10",
+    "spread_usd": "776.81",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "818.76",
+    "cost_pct": "0.221"
+   },
+   {
+    "amount_usd": 380000,
+    "cny_needed": "2542263.40",
+    "spread_usd": "797.81",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "839.75",
+    "cost_pct": "0.221"
+   },
+   {
+    "amount_usd": 390000,
+    "cny_needed": "2609157.70",
+    "spread_usd": "818.80",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "860.75",
+    "cost_pct": "0.221"
+   },
+   {
+    "amount_usd": 400000,
+    "cny_needed": "2676052.00",
+    "spread_usd": "839.80",
+    "fee_cny": "280.00",
+    "fee_usd": "41.94",
+    "cost_usd": "881.74",
+    "cost_pct": "0.220"
+   }
+  ],
+  "BOC": [
+   {
+    "amount_usd": 10000,
+    "cny_needed": "67127.91",
+    "spread_usd": "21.04",
+    "fee_cny": "216.91",
+    "fee_usd": "32.49",
+    "cost_usd": "53.53",
+    "cost_pct": "0.535"
+   },
+   {
+    "amount_usd": 20000,
+    "cny_needed": "134105.82",
+    "spread_usd": "42.08",
+    "fee_cny": "283.82",
+    "fee_usd": "42.51",
+    "cost_usd": "84.59",
+    "cost_pct": "0.423"
+   },
+   {
+    "amount_usd": 30000,
+    "cny_needed": "201083.73",
+    "spread_usd": "63.13",
+    "fee_cny": "350.73",
+    "fee_usd": "52.53",
+    "cost_usd": "115.65",
+    "cost_pct": "0.386"
+   },
+   {
+    "amount_usd": 40000,
+    "cny_needed": "268054.00",
+    "spread_usd": "84.17",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "145.57",
+    "cost_pct": "0.364"
+   },
+   {
+    "amount_usd": 50000,
+    "cny_needed": "334965.00",
+    "spread_usd": "105.21",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "166.62",
+    "cost_pct": "0.333"
+   },
+   {
+    "amount_usd": 60000,
+    "cny_needed": "401876.00",
+    "spread_usd": "126.25",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "187.66",
+    "cost_pct": "0.313"
+   },
+   {
+    "amount_usd": 70000,
+    "cny_needed": "468787.00",
+    "spread_usd": "147.30",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "208.70",
+    "cost_pct": "0.298"
+   },
+   {
+    "amount_usd": 80000,
+    "cny_needed": "535698.00",
+    "spread_usd": "168.34",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "229.74",
+    "cost_pct": "0.287"
+   },
+   {
+    "amount_usd": 90000,
+    "cny_needed": "602609.00",
+    "spread_usd": "189.38",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "250.78",
+    "cost_pct": "0.279"
+   },
+   {
+    "amount_usd": 100000,
+    "cny_needed": "669520.00",
+    "spread_usd": "210.42",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "271.83",
+    "cost_pct": "0.272"
+   },
+   {
+    "amount_usd": 110000,
+    "cny_needed": "736431.00",
+    "spread_usd": "231.46",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "292.87",
+    "cost_pct": "0.266"
+   },
+   {
+    "amount_usd": 120000,
+    "cny_needed": "803342.00",
+    "spread_usd": "252.51",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "313.91",
+    "cost_pct": "0.262"
+   },
+   {
+    "amount_usd": 130000,
+    "cny_needed": "870253.00",
+    "spread_usd": "273.55",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "334.95",
+    "cost_pct": "0.258"
+   },
+   {
+    "amount_usd": 140000,
+    "cny_needed": "937164.00",
+    "spread_usd": "294.59",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "356.00",
+    "cost_pct": "0.254"
+   },
+   {
+    "amount_usd": 150000,
+    "cny_needed": "1004075.00",
+    "spread_usd": "315.63",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "377.04",
+    "cost_pct": "0.251"
+   },
+   {
+    "amount_usd": 160000,
+    "cny_needed": "1070986.00",
+    "spread_usd": "336.68",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "398.08",
+    "cost_pct": "0.249"
+   },
+   {
+    "amount_usd": 170000,
+    "cny_needed": "1137897.00",
+    "spread_usd": "357.72",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "419.12",
+    "cost_pct": "0.247"
+   },
+   {
+    "amount_usd": 180000,
+    "cny_needed": "1204808.00",
+    "spread_usd": "378.76",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "440.16",
+    "cost_pct": "0.245"
+   },
+   {
+    "amount_usd": 190000,
+    "cny_needed": "1271719.00",
+    "spread_usd": "399.80",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "461.21",
+    "cost_pct": "0.243"
+   },
+   {
+    "amount_usd": 200000,
+    "cny_needed": "1338630.00",
+    "spread_usd": "420.84",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "482.25",
+    "cost_pct": "0.241"
+   },
+   {
+    "amount_usd": 210000,
+    "cny_needed": "1405541.00",
+    "spread_usd": "441.89",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "503.29",
+    "cost_pct": "0.240"
+   },
+   {
+    "amount_usd": 220000,
+    "cny_needed": "1472452.00",
+    "spread_usd": "462.93",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "524.33",
+    "cost_pct": "0.238"
+   },
+   {
+    "amount_usd": 230000,
+    "cny_needed": "1539363.00",
+    "spread_usd": "483.97",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "545.38",
+    "cost_pct": "0.237"
+   },
+   {
+    "amount_usd": 240000,
+    "cny_needed": "1606274.00",
+    "spread_usd": "505.01",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "566.42",
+    "cost_pct": "0.236"
+   },
+   {
+    "amount_usd": 250000,
+    "cny_needed": "1673185.00",
+    "spread_usd": "526.06",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "587.46",
+    "cost_pct": "0.235"
+   },
+   {
+    "amount_usd": 260000,
+    "cny_needed": "1740096.00",
+    "spread_usd": "547.10",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "608.50",
+    "cost_pct": "0.234"
+   },
+   {
+    "amount_usd": 270000,
+    "cny_needed": "1807007.00",
+    "spread_usd": "568.14",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "629.54",
+    "cost_pct": "0.233"
+   },
+   {
+    "amount_usd": 280000,
+    "cny_needed": "1873918.00",
+    "spread_usd": "589.18",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "650.59",
+    "cost_pct": "0.232"
+   },
+   {
+    "amount_usd": 290000,
+    "cny_needed": "1940829.00",
+    "spread_usd": "610.22",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "671.63",
+    "cost_pct": "0.232"
+   },
+   {
+    "amount_usd": 300000,
+    "cny_needed": "2007740.00",
+    "spread_usd": "631.27",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "692.67",
+    "cost_pct": "0.231"
+   },
+   {
+    "amount_usd": 310000,
+    "cny_needed": "2074651.00",
+    "spread_usd": "652.31",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "713.71",
+    "cost_pct": "0.230"
+   },
+   {
+    "amount_usd": 320000,
+    "cny_needed": "2141562.00",
+    "spread_usd": "673.35",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "734.76",
+    "cost_pct": "0.230"
+   },
+   {
+    "amount_usd": 330000,
+    "cny_needed": "2208473.00",
+    "spread_usd": "694.39",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "755.80",
+    "cost_pct": "0.229"
+   },
+   {
+    "amount_usd": 340000,
+    "cny_needed": "2275384.00",
+    "spread_usd": "715.44",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "776.84",
+    "cost_pct": "0.228"
+   },
+   {
+    "amount_usd": 350000,
+    "cny_needed": "2342295.00",
+    "spread_usd": "736.48",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "797.88",
+    "cost_pct": "0.228"
+   },
+   {
+    "amount_usd": 360000,
+    "cny_needed": "2409206.00",
+    "spread_usd": "757.52",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "818.92",
+    "cost_pct": "0.227"
+   },
+   {
+    "amount_usd": 370000,
+    "cny_needed": "2476117.00",
+    "spread_usd": "778.56",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "839.97",
+    "cost_pct": "0.227"
+   },
+   {
+    "amount_usd": 380000,
+    "cny_needed": "2543028.00",
+    "spread_usd": "799.60",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "861.01",
+    "cost_pct": "0.227"
+   },
+   {
+    "amount_usd": 390000,
+    "cny_needed": "2609939.00",
+    "spread_usd": "820.65",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "882.05",
+    "cost_pct": "0.226"
+   },
+   {
+    "amount_usd": 400000,
+    "cny_needed": "2676850.00",
+    "spread_usd": "841.69",
+    "fee_cny": "410.00",
+    "fee_usd": "61.40",
+    "cost_usd": "903.09",
+    "cost_pct": "0.226"
+   }
+  ],
+  "CMB": [
+   {
+    "amount_usd": 10000,
+    "cny_needed": "67169.90",
+    "spread_usd": "21.74",
+    "fee_cny": "250.00",
+    "fee_usd": "37.44",
+    "cost_usd": "59.18",
+    "cost_pct": "0.592"
+   },
+   {
+    "amount_usd": 20000,
+    "cny_needed": "134123.64",
+    "spread_usd": "43.49",
+    "fee_cny": "283.84",
+    "fee_usd": "42.51",
+    "cost_usd": "86.00",
+    "cost_pct": "0.430"
+   },
+   {
+    "amount_usd": 30000,
+    "cny_needed": "201110.46",
+    "spread_usd": "65.23",
+    "fee_cny": "350.76",
+    "fee_usd": "52.53",
+    "cost_usd": "117.76",
+    "cost_pct": "0.393"
+   },
+   {
+    "amount_usd": 40000,
+    "cny_needed": "268097.28",
+    "spread_usd": "86.98",
+    "fee_cny": "417.68",
+    "fee_usd": "62.55",
+    "cost_usd": "149.53",
+    "cost_pct": "0.374"
+   },
+   {
+    "amount_usd": 50000,
+    "cny_needed": "335084.10",
+    "spread_usd": "108.72",
+    "fee_cny": "484.60",
+    "fee_usd": "72.57",
+    "cost_usd": "181.30",
+    "cost_pct": "0.363"
+   },
+   {
+    "amount_usd": 60000,
+    "cny_needed": "402070.92",
+    "spread_usd": "130.47",
+    "fee_cny": "551.52",
+    "fee_usd": "82.59",
+    "cost_usd": "213.06",
+    "cost_pct": "0.355"
+   },
+   {
+    "amount_usd": 70000,
+    "cny_needed": "469057.74",
+    "spread_usd": "152.21",
+    "fee_cny": "618.44",
+    "fee_usd": "92.62",
+    "cost_usd": "244.83",
+    "cost_pct": "0.350"
+   },
+   {
+    "amount_usd": 80000,
+    "cny_needed": "536044.56",
+    "spread_usd": "173.96",
+    "fee_cny": "685.36",
+    "fee_usd": "102.64",
+    "cost_usd": "276.60",
+    "cost_pct": "0.346"
+   },
+   {
+    "amount_usd": 90000,
+    "cny_needed": "603031.38",
+    "spread_usd": "195.70",
+    "fee_cny": "752.28",
+    "fee_usd": "112.66",
+    "cost_usd": "308.36",
+    "cost_pct": "0.343"
+   },
+   {
+    "amount_usd": 100000,
+    "cny_needed": "670018.20",
+    "spread_usd": "217.45",
+    "fee_cny": "819.20",
+    "fee_usd": "122.68",
+    "cost_usd": "340.13",
+    "cost_pct": "0.340"
+   },
+   {
+    "amount_usd": 110000,
+    "cny_needed": "737005.02",
+    "spread_usd": "239.19",
+    "fee_cny": "886.12",
+    "fee_usd": "132.70",
+    "cost_usd": "371.90",
+    "cost_pct": "0.338"
+   },
+   {
+    "amount_usd": 120000,
+    "cny_needed": "803991.84",
+    "spread_usd": "260.94",
+    "fee_cny": "953.04",
+    "fee_usd": "142.72",
+    "cost_usd": "403.66",
+    "cost_pct": "0.336"
+   },
+   {
+    "amount_usd": 130000,
+    "cny_needed": "870978.66",
+    "spread_usd": "282.68",
+    "fee_cny": "1019.96",
+    "fee_usd": "152.75",
+    "cost_usd": "435.43",
+    "cost_pct": "0.335"
+   },
+   {
+    "amount_usd": 140000,
+    "cny_needed": "937965.48",
+    "spread_usd": "304.43",
+    "fee_cny": "1086.88",
+    "fee_usd": "162.77",
+    "cost_usd": "467.19",
+    "cost_pct": "0.334"
+   },
+   {
+    "amount_usd": 150000,
+    "cny_needed": "1004948.50",
+    "spread_usd": "326.17",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "498.39",
+    "cost_pct": "0.332"
+   },
+   {
+    "amount_usd": 160000,
+    "cny_needed": "1071868.40",
+    "spread_usd": "347.92",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "520.14",
+    "cost_pct": "0.325"
+   },
+   {
+    "amount_usd": 170000,
+    "cny_needed": "1138788.30",
+    "spread_usd": "369.66",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "541.88",
+    "cost_pct": "0.319"
+   },
+   {
+    "amount_usd": 180000,
+    "cny_needed": "1205708.20",
+    "spread_usd": "391.41",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "563.63",
+    "cost_pct": "0.313"
+   },
+   {
+    "amount_usd": 190000,
+    "cny_needed": "1272628.10",
+    "spread_usd": "413.15",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "585.37",
+    "cost_pct": "0.308"
+   },
+   {
+    "amount_usd": 200000,
+    "cny_needed": "1339548.00",
+    "spread_usd": "434.90",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "607.12",
+    "cost_pct": "0.304"
+   },
+   {
+    "amount_usd": 210000,
+    "cny_needed": "1406467.90",
+    "spread_usd": "456.64",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "628.86",
+    "cost_pct": "0.299"
+   },
+   {
+    "amount_usd": 220000,
+    "cny_needed": "1473387.80",
+    "spread_usd": "478.38",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "650.61",
+    "cost_pct": "0.296"
+   },
+   {
+    "amount_usd": 230000,
+    "cny_needed": "1540307.70",
+    "spread_usd": "500.13",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "672.35",
+    "cost_pct": "0.292"
+   },
+   {
+    "amount_usd": 240000,
+    "cny_needed": "1607227.60",
+    "spread_usd": "521.87",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "694.10",
+    "cost_pct": "0.289"
+   },
+   {
+    "amount_usd": 250000,
+    "cny_needed": "1674147.50",
+    "spread_usd": "543.62",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "715.84",
+    "cost_pct": "0.286"
+   },
+   {
+    "amount_usd": 260000,
+    "cny_needed": "1741067.40",
+    "spread_usd": "565.36",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "737.58",
+    "cost_pct": "0.284"
+   },
+   {
+    "amount_usd": 270000,
+    "cny_needed": "1807987.30",
+    "spread_usd": "587.11",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "759.33",
+    "cost_pct": "0.281"
+   },
+   {
+    "amount_usd": 280000,
+    "cny_needed": "1874907.20",
+    "spread_usd": "608.85",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "781.07",
+    "cost_pct": "0.279"
+   },
+   {
+    "amount_usd": 290000,
+    "cny_needed": "1941827.10",
+    "spread_usd": "630.60",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "802.82",
+    "cost_pct": "0.277"
+   },
+   {
+    "amount_usd": 300000,
+    "cny_needed": "2008747.00",
+    "spread_usd": "652.34",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "824.56",
+    "cost_pct": "0.275"
+   },
+   {
+    "amount_usd": 310000,
+    "cny_needed": "2075666.90",
+    "spread_usd": "674.09",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "846.31",
+    "cost_pct": "0.273"
+   },
+   {
+    "amount_usd": 320000,
+    "cny_needed": "2142586.80",
+    "spread_usd": "695.83",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "868.05",
+    "cost_pct": "0.271"
+   },
+   {
+    "amount_usd": 330000,
+    "cny_needed": "2209506.70",
+    "spread_usd": "717.58",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "889.80",
+    "cost_pct": "0.270"
+   },
+   {
+    "amount_usd": 340000,
+    "cny_needed": "2276426.60",
+    "spread_usd": "739.32",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "911.54",
+    "cost_pct": "0.268"
+   },
+   {
+    "amount_usd": 350000,
+    "cny_needed": "2343346.50",
+    "spread_usd": "761.07",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "933.29",
+    "cost_pct": "0.267"
+   },
+   {
+    "amount_usd": 360000,
+    "cny_needed": "2410266.40",
+    "spread_usd": "782.81",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "955.03",
+    "cost_pct": "0.265"
+   },
+   {
+    "amount_usd": 370000,
+    "cny_needed": "2477186.30",
+    "spread_usd": "804.56",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "976.78",
+    "cost_pct": "0.264"
+   },
+   {
+    "amount_usd": 380000,
+    "cny_needed": "2544106.20",
+    "spread_usd": "826.30",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "998.52",
+    "cost_pct": "0.263"
+   },
+   {
+    "amount_usd": 390000,
+    "cny_needed": "2611026.10",
+    "spread_usd": "848.05",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "1020.27",
+    "cost_pct": "0.262"
+   },
+   {
+    "amount_usd": 400000,
+    "cny_needed": "2677946.00",
+    "spread_usd": "869.79",
+    "fee_cny": "1150.00",
+    "fee_usd": "172.22",
+    "cost_usd": "1042.01",
+    "cost_pct": "0.261"
+   }
+  ],
+  "HSBC-TT": [
+   {
+    "amount_usd": 10000,
+    "cny_needed": "67300.73",
+    "spread_usd": "50.00",
+    "fee_cny": "220.00",
+    "fee_usd": "32.96",
+    "cost_usd": "82.96",
+    "cost_pct": "0.830"
+   },
+   {
+    "amount_usd": 20000,
+    "cny_needed": "134415.63",
+    "spread_usd": "99.99",
+    "fee_cny": "254.16",
+    "fee_usd": "38.08",
+    "cost_usd": "138.07",
+    "cost_pct": "0.690"
+   },
+   {
+    "amount_usd": 30000,
+    "cny_needed": "201563.44",
+    "spread_usd": "149.99",
+    "fee_cny": "321.24",
+    "fee_usd": "48.13",
+    "cost_usd": "198.12",
+    "cost_pct": "0.660"
+   },
+   {
+    "amount_usd": 40000,
+    "cny_needed": "268711.26",
+    "spread_usd": "199.98",
+    "fee_cny": "388.32",
+    "fee_usd": "58.18",
+    "cost_usd": "258.16",
+    "cost_pct": "0.645"
+   },
+   {
+    "amount_usd": 50000,
+    "cny_needed": "335859.07",
+    "spread_usd": "249.98",
+    "fee_cny": "455.40",
+    "fee_usd": "68.23",
+    "cost_usd": "318.21",
+    "cost_pct": "0.636"
+   },
+   {
+    "amount_usd": 60000,
+    "cny_needed": "403006.89",
+    "spread_usd": "299.97",
+    "fee_cny": "522.48",
+    "fee_usd": "78.28",
+    "cost_usd": "378.25",
+    "cost_pct": "0.630"
+   },
+   {
+    "amount_usd": 70000,
+    "cny_needed": "470154.70",
+    "spread_usd": "349.97",
+    "fee_cny": "589.57",
+    "fee_usd": "88.33",
+    "cost_usd": "438.30",
+    "cost_pct": "0.626"
+   },
+   {
+    "amount_usd": 80000,
+    "cny_needed": "537265.87",
+    "spread_usd": "399.96",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "492.85",
+    "cost_pct": "0.616"
+   },
+   {
+    "amount_usd": 90000,
+    "cny_needed": "604346.60",
+    "spread_usd": "449.96",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "542.85",
+    "cost_pct": "0.603"
+   },
+   {
+    "amount_usd": 100000,
+    "cny_needed": "671427.34",
+    "spread_usd": "499.96",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "592.84",
+    "cost_pct": "0.593"
+   },
+   {
+    "amount_usd": 110000,
+    "cny_needed": "738508.07",
+    "spread_usd": "549.95",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "642.84",
+    "cost_pct": "0.584"
+   },
+   {
+    "amount_usd": 120000,
+    "cny_needed": "805588.80",
+    "spread_usd": "599.95",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "692.84",
+    "cost_pct": "0.577"
+   },
+   {
+    "amount_usd": 130000,
+    "cny_needed": "872669.54",
+    "spread_usd": "649.94",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "742.83",
+    "cost_pct": "0.571"
+   },
+   {
+    "amount_usd": 140000,
+    "cny_needed": "939750.27",
+    "spread_usd": "699.94",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "792.83",
+    "cost_pct": "0.566"
+   },
+   {
+    "amount_usd": 150000,
+    "cny_needed": "1006831.01",
+    "spread_usd": "749.93",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "842.82",
+    "cost_pct": "0.562"
+   },
+   {
+    "amount_usd": 160000,
+    "cny_needed": "1073911.74",
+    "spread_usd": "799.93",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "892.82",
+    "cost_pct": "0.558"
+   },
+   {
+    "amount_usd": 170000,
+    "cny_needed": "1140992.47",
+    "spread_usd": "849.93",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "942.81",
+    "cost_pct": "0.555"
+   },
+   {
+    "amount_usd": 180000,
+    "cny_needed": "1208073.21",
+    "spread_usd": "899.92",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "992.81",
+    "cost_pct": "0.552"
+   },
+   {
+    "amount_usd": 190000,
+    "cny_needed": "1275153.94",
+    "spread_usd": "949.92",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1042.80",
+    "cost_pct": "0.549"
+   },
+   {
+    "amount_usd": 200000,
+    "cny_needed": "1342234.67",
+    "spread_usd": "999.91",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1092.80",
+    "cost_pct": "0.546"
+   },
+   {
+    "amount_usd": 210000,
+    "cny_needed": "1409315.41",
+    "spread_usd": "1049.91",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1142.80",
+    "cost_pct": "0.544"
+   },
+   {
+    "amount_usd": 220000,
+    "cny_needed": "1476396.14",
+    "spread_usd": "1099.90",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1192.79",
+    "cost_pct": "0.542"
+   },
+   {
+    "amount_usd": 230000,
+    "cny_needed": "1543476.87",
+    "spread_usd": "1149.90",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1242.79",
+    "cost_pct": "0.540"
+   },
+   {
+    "amount_usd": 240000,
+    "cny_needed": "1610557.61",
+    "spread_usd": "1199.89",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1292.78",
+    "cost_pct": "0.539"
+   },
+   {
+    "amount_usd": 250000,
+    "cny_needed": "1677638.34",
+    "spread_usd": "1249.89",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1342.78",
+    "cost_pct": "0.537"
+   },
+   {
+    "amount_usd": 260000,
+    "cny_needed": "1744719.08",
+    "spread_usd": "1299.89",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1392.77",
+    "cost_pct": "0.536"
+   },
+   {
+    "amount_usd": 270000,
+    "cny_needed": "1811799.81",
+    "spread_usd": "1349.88",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1442.77",
+    "cost_pct": "0.534"
+   },
+   {
+    "amount_usd": 280000,
+    "cny_needed": "1878880.54",
+    "spread_usd": "1399.88",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1492.77",
+    "cost_pct": "0.533"
+   },
+   {
+    "amount_usd": 290000,
+    "cny_needed": "1945961.28",
+    "spread_usd": "1449.87",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1542.76",
+    "cost_pct": "0.532"
+   },
+   {
+    "amount_usd": 300000,
+    "cny_needed": "2013042.01",
+    "spread_usd": "1499.87",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1592.76",
+    "cost_pct": "0.531"
+   },
+   {
+    "amount_usd": 310000,
+    "cny_needed": "2080122.74",
+    "spread_usd": "1549.86",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1642.75",
+    "cost_pct": "0.530"
+   },
+   {
+    "amount_usd": 320000,
+    "cny_needed": "2147203.48",
+    "spread_usd": "1599.86",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1692.75",
+    "cost_pct": "0.529"
+   },
+   {
+    "amount_usd": 330000,
+    "cny_needed": "2214284.21",
+    "spread_usd": "1649.86",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1742.74",
+    "cost_pct": "0.528"
+   },
+   {
+    "amount_usd": 340000,
+    "cny_needed": "2281364.94",
+    "spread_usd": "1699.85",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1792.74",
+    "cost_pct": "0.527"
+   },
+   {
+    "amount_usd": 350000,
+    "cny_needed": "2348445.68",
+    "spread_usd": "1749.85",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1842.73",
+    "cost_pct": "0.526"
+   },
+   {
+    "amount_usd": 360000,
+    "cny_needed": "2415526.41",
+    "spread_usd": "1799.84",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1892.73",
+    "cost_pct": "0.526"
+   },
+   {
+    "amount_usd": 370000,
+    "cny_needed": "2482607.15",
+    "spread_usd": "1849.84",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1942.73",
+    "cost_pct": "0.525"
+   },
+   {
+    "amount_usd": 380000,
+    "cny_needed": "2549687.88",
+    "spread_usd": "1899.83",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "1992.72",
+    "cost_pct": "0.524"
+   },
+   {
+    "amount_usd": 390000,
+    "cny_needed": "2616768.61",
+    "spread_usd": "1949.83",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "2042.72",
+    "cost_pct": "0.524"
+   },
+   {
+    "amount_usd": 400000,
+    "cny_needed": "2683849.35",
+    "spread_usd": "1999.82",
+    "fee_cny": "620.00",
+    "fee_usd": "92.89",
+    "cost_usd": "2092.71",
+    "cost_pct": "0.523"
+   }
+  ],
+  "HSBC-GT": [
+   {
+    "amount_usd": 10000,
+    "cny_needed": "67080.73",
+    "spread_usd": "50.00",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "50.00",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 20000,
+    "cny_needed": "134161.47",
+    "spread_usd": "99.99",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "99.99",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 30000,
+    "cny_needed": "201242.20",
+    "spread_usd": "149.99",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "149.99",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 40000,
+    "cny_needed": "268322.93",
+    "spread_usd": "199.98",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "199.98",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 50000,
+    "cny_needed": "335403.67",
+    "spread_usd": "249.98",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "249.98",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 60000,
+    "cny_needed": "402484.40",
+    "spread_usd": "299.97",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "299.97",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 70000,
+    "cny_needed": "469565.14",
+    "spread_usd": "349.97",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "349.97",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 80000,
+    "cny_needed": "536645.87",
+    "spread_usd": "399.96",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "399.96",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 90000,
+    "cny_needed": "603726.60",
+    "spread_usd": "449.96",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "449.96",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 100000,
+    "cny_needed": "670807.34",
+    "spread_usd": "499.96",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "499.96",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 110000,
+    "cny_needed": "737888.07",
+    "spread_usd": "549.95",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "549.95",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 120000,
+    "cny_needed": "804968.80",
+    "spread_usd": "599.95",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "599.95",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 130000,
+    "cny_needed": "872049.54",
+    "spread_usd": "649.94",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "649.94",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 140000,
+    "cny_needed": "939130.27",
+    "spread_usd": "699.94",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "699.94",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 150000,
+    "cny_needed": "1006211.01",
+    "spread_usd": "749.93",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "749.93",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 160000,
+    "cny_needed": "1073291.74",
+    "spread_usd": "799.93",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "799.93",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 170000,
+    "cny_needed": "1140372.47",
+    "spread_usd": "849.93",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "849.93",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 180000,
+    "cny_needed": "1207453.21",
+    "spread_usd": "899.92",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "899.92",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 190000,
+    "cny_needed": "1274533.94",
+    "spread_usd": "949.92",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "949.92",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 200000,
+    "cny_needed": "1341614.67",
+    "spread_usd": "999.91",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "999.91",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 210000,
+    "cny_needed": "1408695.41",
+    "spread_usd": "1049.91",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1049.91",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 220000,
+    "cny_needed": "1475776.14",
+    "spread_usd": "1099.90",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1099.90",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 230000,
+    "cny_needed": "1542856.87",
+    "spread_usd": "1149.90",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1149.90",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 240000,
+    "cny_needed": "1609937.61",
+    "spread_usd": "1199.89",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1199.89",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 250000,
+    "cny_needed": "1677018.34",
+    "spread_usd": "1249.89",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1249.89",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 260000,
+    "cny_needed": "1744099.08",
+    "spread_usd": "1299.89",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1299.89",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 270000,
+    "cny_needed": "1811179.81",
+    "spread_usd": "1349.88",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1349.88",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 280000,
+    "cny_needed": "1878260.54",
+    "spread_usd": "1399.88",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1399.88",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 290000,
+    "cny_needed": "1945341.28",
+    "spread_usd": "1449.87",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1449.87",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 300000,
+    "cny_needed": "2012422.01",
+    "spread_usd": "1499.87",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1499.87",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 310000,
+    "cny_needed": "2079502.74",
+    "spread_usd": "1549.86",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1549.86",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 320000,
+    "cny_needed": "2146583.48",
+    "spread_usd": "1599.86",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1599.86",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 330000,
+    "cny_needed": "2213664.21",
+    "spread_usd": "1649.86",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1649.86",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 340000,
+    "cny_needed": "2280744.94",
+    "spread_usd": "1699.85",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1699.85",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 350000,
+    "cny_needed": "2347825.68",
+    "spread_usd": "1749.85",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1749.85",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 360000,
+    "cny_needed": "2414906.41",
+    "spread_usd": "1799.84",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1799.84",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 370000,
+    "cny_needed": "2481987.15",
+    "spread_usd": "1849.84",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1849.84",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 380000,
+    "cny_needed": "2549067.88",
+    "spread_usd": "1899.83",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1899.83",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 390000,
+    "cny_needed": "2616148.61",
+    "spread_usd": "1949.83",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1949.83",
+    "cost_pct": "0.500"
+   },
+   {
+    "amount_usd": 400000,
+    "cny_needed": "2683229.35",
+    "spread_usd": "1999.82",
+    "fee_cny": "0.00",
+    "fee_usd": "0.00",
+    "cost_usd": "1999.82",
+    "cost_pct": "0.500"
+   }
+  ]
+ },
+ "lowest": [
+  {
+   "amount_usd": 10000,
+   "route": "ABC",
+   "cost_usd": "43.00"
+  },
+  {
+   "amount_usd": 20000,
+   "route": "ABC",
+   "cost_usd": "74.02"
+  },
+  {
+   "amount_usd": 30000,
+   "route": "ABC",
+   "cost_usd": "104.93"
+  },
+  {
+   "amount_usd": 40000,
+   "route": "ABC",
+   "cost_usd": "125.92"
+  },
+  {
+   "amount_usd": 50000,
+   "route": "ABC",
+   "cost_usd": "146.92"
+  },
+  {
+   "amount_usd": 60000,
+   "route": "ABC",
+   "cost_usd": "167.91"
+  },
+  {
+   "amount_usd": 70000,
+   "route": "ABC",
+   "cost_usd": "188.91"
+  },
+  {
+   "amount_usd": 80000,
+   "route": "ABC",
+   "cost_usd": "209.90"
+  },
+  {
+   "amount_usd": 90000,
+   "route": "ABC",
+   "cost_usd": "230.90"
+  },
+  {
+   "amount_usd": 100000,
+   "route": "ABC",
+   "cost_usd": "251.89"
+  },
+  {
+   "amount_usd": 110000,
+   "route": "ABC",
+   "cost_usd": "272.89"
+  },
+  {
+   "amount_usd": 120000,
+   "route": "ABC",
+   "cost_usd": "293.88"
+  },
+  {
+   "amount_usd": 130000,
+   "route": "ABC",
+   "cost_usd": "314.88"
+  },
+  {
+   "amount_usd": 140000,
+   "route": "ABC",
+   "cost_usd": "335.87"
+  },
+  {
+   "amount_usd": 150000,
+   "route": "ABC",
+   "cost_usd": "356.87"
+  },
+  {
+   "amount_usd": 160000,
+   "route": "ABC",
+   "cost_usd": "377.86"
+  },
+  {
+   "amount_usd": 170000,
+   "route": "ABC",
+   "cost_usd": "398.86"
+  },
+  {
+   "amount_usd": 180000,
+   "route": "ABC",
+   "cost_usd": "419.85"
+  },
+  {
+   "amount_usd": 190000,
+   "route": "ABC",
+   "cost_usd": "440.85"
+  },
+  {
+   "amount_usd": 200000,
+   "route": "ABC",
+   "cost_usd": "461.84"
+  },
+  {
+   "amount_usd": 210000,
+   "route": "ABC",
+   "cost_usd": "482.84"
+  },
+  {
+   "amount_usd": 220000,
+   "route": "ABC",
+   "cost_usd": "503.83"
+  },
+  {
+   "amount_usd": 230000,
+   "route": "ABC",
+   "cost_usd": "524.83"
+  },
+  {
+   "amount_usd": 240000,
+   "route": "ABC",
+   "cost_usd": "545.82"
+  },
+  {
+   "amount_usd": 250000,
+   "route": "ABC",
+   "cost_usd": "566.82"
+  },
+  {
+   "amount_usd": 260000,
+   "route": "ABC",
+   "cost_usd": "587.81"
+  },
+  {
+   "amount_usd": 270000,
+   "route": "ABC",
+   "cost_usd": "608.81"
+  },
+  {
+   "amount_usd": 280000,
+   "route": "ABC",
+   "cost_usd": "629.80"
+  },
+  {
+   "amount_usd": 290000,
+   "route": "ABC",
+   "cost_usd": "650.80"
+  },
+  {
+   "amount_usd": 300000,
+   "route": "ABC",
+   "cost_usd": "671.79"
+  },
+  {
+   "amount_usd": 310000,
+   "route": "ABC",
+   "cost_usd": "692.79"
+  },
+  {
+   "amount_usd": 320000,
+   "route": "ABC",
+   "cost_usd": "713.78"
+  },
+  {
+   "amount_usd": 330000,
+   "route": "ABC",
+   "cost_usd": "734.78"
+  },
+  {
+   "amount_usd": 340000,
+   "route": "ABC",
+   "cost_usd": "755.77"
+  },
+  {
+   "amount_usd": 350000,
+   "route": "ABC",
+   "cost_usd": "776.77"
+  },
+  {
+   "amount_usd": 360000,
+   "route": "ABC",
+   "cost_usd": "797.76"
+  },
+  {
+   "amount_usd": 370000,
+   "route": "ABC",
+   "cost_usd": "818.76"
+  },
+  {
+   "amount_usd": 380000,
+   "route": "ABC",
+   "cost_usd": "839.75"
+  },
+  {
+   "amount_usd": 390000,
+   "route": "ABC",
+   "cost_usd": "860.75"
+  },
+  {
+   "amount_usd": 400000,
+   "route": "ABC",
+   "cost_usd": "881.74"
+  }
+ ],
+ "capped": [
+  {
+   "amount_usd": 10000,
+   "trips_10k": 1,
+   "trips_5k": 2,
+   "note_margin_usd": "21.04",
+   "card_years": 1,
+   "card_withdrawals": 7
+  },
+  {
+   "amount_usd": 20000,
+   "trips_10k": 2,
+   "trips_5k": 4,
+   "note_margin_usd": "42.08",
+   "card_years": 2,
+   "card_withdrawals": 14
+  },
+  {
+   "amount_usd": 30000,
+   "trips_10k": 3,
+   "trips_5k": 6,
+   "note_margin_usd": "63.13",
+   "card_years": 3,
+   "card_withdrawals": 21
+  },
+  {
+   "amount_usd": 40000,
+   "trips_10k": 4,
+   "trips_5k": 8,
+   "note_margin_usd": "84.17",
+   "card_years": 3,
+   "card_withdrawals": 27
+  },
+  {
+   "amount_usd": 50000,
+   "trips_10k": 5,
+   "trips_5k": 10,
+   "note_margin_usd": "105.21",
+   "card_years": 4,
+   "card_withdrawals": 34
+  },
+  {
+   "amount_usd": 60000,
+   "trips_10k": 6,
+   "trips_5k": 12,
+   "note_margin_usd": "126.25",
+   "card_years": 5,
+   "card_withdrawals": 41
+  },
+  {
+   "amount_usd": 70000,
+   "trips_10k": 7,
+   "trips_5k": 14,
+   "note_margin_usd": "147.30",
+   "card_years": 5,
+   "card_withdrawals": 47
+  },
+  {
+   "amount_usd": 80000,
+   "trips_10k": 8,
+   "trips_5k": 16,
+   "note_margin_usd": "168.34",
+   "card_years": 6,
+   "card_withdrawals": 54
+  },
+  {
+   "amount_usd": 90000,
+   "trips_10k": 9,
+   "trips_5k": 18,
+   "note_margin_usd": "189.38",
+   "card_years": 7,
+   "card_withdrawals": 61
+  },
+  {
+   "amount_usd": 100000,
+   "trips_10k": 10,
+   "trips_5k": 20,
+   "note_margin_usd": "210.42",
+   "card_years": 7,
+   "card_withdrawals": 67
+  },
+  {
+   "amount_usd": 110000,
+   "trips_10k": 11,
+   "trips_5k": 22,
+   "note_margin_usd": "231.46",
+   "card_years": 8,
+   "card_withdrawals": 74
+  },
+  {
+   "amount_usd": 120000,
+   "trips_10k": 12,
+   "trips_5k": 24,
+   "note_margin_usd": "252.51",
+   "card_years": 9,
+   "card_withdrawals": 81
+  },
+  {
+   "amount_usd": 130000,
+   "trips_10k": 13,
+   "trips_5k": 26,
+   "note_margin_usd": "273.55",
+   "card_years": 9,
+   "card_withdrawals": 87
+  },
+  {
+   "amount_usd": 140000,
+   "trips_10k": 14,
+   "trips_5k": 28,
+   "note_margin_usd": "294.59",
+   "card_years": 10,
+   "card_withdrawals": 94
+  },
+  {
+   "amount_usd": 150000,
+   "trips_10k": 15,
+   "trips_5k": 30,
+   "note_margin_usd": "315.63",
+   "card_years": 11,
+   "card_withdrawals": 101
+  },
+  {
+   "amount_usd": 160000,
+   "trips_10k": 16,
+   "trips_5k": 32,
+   "note_margin_usd": "336.68",
+   "card_years": 11,
+   "card_withdrawals": 108
+  },
+  {
+   "amount_usd": 170000,
+   "trips_10k": 17,
+   "trips_5k": 34,
+   "note_margin_usd": "357.72",
+   "card_years": 12,
+   "card_withdrawals": 114
+  },
+  {
+   "amount_usd": 180000,
+   "trips_10k": 18,
+   "trips_5k": 36,
+   "note_margin_usd": "378.76",
+   "card_years": 13,
+   "card_withdrawals": 121
+  },
+  {
+   "amount_usd": 190000,
+   "trips_10k": 19,
+   "trips_5k": 38,
+   "note_margin_usd": "399.80",
+   "card_years": 13,
+   "card_withdrawals": 128
+  },
+  {
+   "amount_usd": 200000,
+   "trips_10k": 20,
+   "trips_5k": 40,
+   "note_margin_usd": "420.84",
+   "card_years": 14,
+   "card_withdrawals": 134
+  },
+  {
+   "amount_usd": 210000,
+   "trips_10k": 21,
+   "trips_5k": 42,
+   "note_margin_usd": "441.89",
+   "card_years": 15,
+   "card_withdrawals": 141
+  },
+  {
+   "amount_usd": 220000,
+   "trips_10k": 22,
+   "trips_5k": 44,
+   "note_margin_usd": "462.93",
+   "card_years": 15,
+   "card_withdrawals": 148
+  },
+  {
+   "amount_usd": 230000,
+   "trips_10k": 23,
+   "trips_5k": 46,
+   "note_margin_usd": "483.97",
+   "card_years": 16,
+   "card_withdrawals": 154
+  },
+  {
+   "amount_usd": 240000,
+   "trips_10k": 24,
+   "trips_5k": 48,
+   "note_margin_usd": "505.01",
+   "card_years": 17,
+   "card_withdrawals": 161
+  },
+  {
+   "amount_usd": 250000,
+   "trips_10k": 25,
+   "trips_5k": 50,
+   "note_margin_usd": "526.06",
+   "card_years": 17,
+   "card_withdrawals": 168
+  },
+  {
+   "amount_usd": 260000,
+   "trips_10k": 26,
+   "trips_5k": 52,
+   "note_margin_usd": "547.10",
+   "card_years": 18,
+   "card_withdrawals": 174
+  },
+  {
+   "amount_usd": 270000,
+   "trips_10k": 27,
+   "trips_5k": 54,
+   "note_margin_usd": "568.14",
+   "card_years": 19,
+   "card_withdrawals": 181
+  },
+  {
+   "amount_usd": 280000,
+   "trips_10k": 28,
+   "trips_5k": 56,
+   "note_margin_usd": "589.18",
+   "card_years": 19,
+   "card_withdrawals": 188
+  },
+  {
+   "amount_usd": 290000,
+   "trips_10k": 29,
+   "trips_5k": 58,
+   "note_margin_usd": "610.22",
+   "card_years": 20,
+   "card_withdrawals": 195
+  },
+  {
+   "amount_usd": 300000,
+   "trips_10k": 30,
+   "trips_5k": 60,
+   "note_margin_usd": "631.27",
+   "card_years": 21,
+   "card_withdrawals": 201
+  },
+  {
+   "amount_usd": 310000,
+   "trips_10k": 31,
+   "trips_5k": 62,
+   "note_margin_usd": "652.31",
+   "card_years": 21,
+   "card_withdrawals": 208
+  },
+  {
+   "amount_usd": 320000,
+   "trips_10k": 32,
+   "trips_5k": 64,
+   "note_margin_usd": "673.35",
+   "card_years": 22,
+   "card_withdrawals": 215
+  },
+  {
+   "amount_usd": 330000,
+   "trips_10k": 33,
+   "trips_5k": 66,
+   "note_margin_usd": "694.39",
+   "card_years": 23,
+   "card_withdrawals": 221
+  },
+  {
+   "amount_usd": 340000,
+   "trips_10k": 34,
+   "trips_5k": 68,
+   "note_margin_usd": "715.44",
+   "card_years": 23,
+   "card_withdrawals": 228
+  },
+  {
+   "amount_usd": 350000,
+   "trips_10k": 35,
+   "trips_5k": 70,
+   "note_margin_usd": "736.48",
+   "card_years": 24,
+   "card_withdrawals": 235
+  },
+  {
+   "amount_usd": 360000,
+   "trips_10k": 36,
+   "trips_5k": 72,
+   "note_margin_usd": "757.52",
+   "card_years": 25,
+   "card_withdrawals": 241
+  },
+  {
+   "amount_usd": 370000,
+   "trips_10k": 37,
+   "trips_5k": 74,
+   "note_margin_usd": "778.56",
+   "card_years": 25,
+   "card_withdrawals": 248
+  },
+  {
+   "amount_usd": 380000,
+   "trips_10k": 38,
+   "trips_5k": 76,
+   "note_margin_usd": "799.60",
+   "card_years": 26,
+   "card_withdrawals": 255
+  },
+  {
+   "amount_usd": 390000,
+   "trips_10k": 39,
+   "trips_5k": 78,
+   "note_margin_usd": "820.65",
+   "card_years": 27,
+   "card_withdrawals": 261
+  },
+  {
+   "amount_usd": 400000,
+   "trips_10k": 40,
+   "trips_5k": 80,
+   "note_margin_usd": "841.69",
+   "card_years": 27,
+   "card_withdrawals": 268
+  }
+ ],
+ "currency_gain": [
+  {
+   "year": "2025",
+   "irs_rate": "7.129",
+   "basis_per_100k": "93857.48",
+   "gain_per_100k": "6142.52",
+   "gain_at_400k": "24570.07"
+  },
+  {
+   "year": "2024",
+   "irs_rate": "7.189",
+   "basis_per_100k": "93074.14",
+   "gain_per_100k": "6925.86",
+   "gain_at_400k": "27703.44"
+  },
+  {
+   "year": "2023",
+   "irs_rate": "7.075",
+   "basis_per_100k": "94573.85",
+   "gain_per_100k": "5426.15",
+   "gain_at_400k": "21704.59"
+  },
+  {
+   "year": "2022",
+   "irs_rate": "6.730",
+   "basis_per_100k": "99421.99",
+   "gain_per_100k": "578.01",
+   "gain_at_400k": "2312.04"
+  },
+  {
+   "year": "2021",
+   "irs_rate": "6.452",
+   "basis_per_100k": "103705.83",
+   "gain_per_100k": "-3705.83",
+   "gain_at_400k": "-14823.31"
+  }
+ ],
+ "late_surcharge": [
+  {
+   "days": 365,
+   "years": 1,
+   "surcharge_per_100": "18.25"
+  },
+  {
+   "days": 1095,
+   "years": 3,
+   "surcharge_per_100": "54.75"
+  },
+  {
+   "days": 1825,
+   "years": 5,
+   "surcharge_per_100": "91.25"
+  }
+ ],
+ "blank_routes": [
+  "ICBC",
+  "CCB",
+  "WISE"
+ ]
+}

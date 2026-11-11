@@ -1,0 +1,21 @@
+name: verify-answer-79e1d607
+on:
+  push:
+    branches: [main, arena/79e1d607-china2]
+    paths: ['answer-79e1d607/**', '.github/workflows/verify-answer-79e1d607.yml']
+  pull_request:
+    branches: [main]
+    paths: ['answer-79e1d607/**', '.github/workflows/verify-answer-79e1d607.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: PYTHONDONTWRITEBYTECODE=1 python3 answer-79e1d607/build.py
+      - run: PYTHONDONTWRITEBYTECODE=1 python3 answer-79e1d607/verify.py
+      - run: git diff --exit-code -- answer-79e1d607

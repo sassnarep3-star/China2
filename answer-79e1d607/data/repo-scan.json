@@ -1,0 +1,418 @@
+{
+ "meta": {
+  "commit": "ea55c83",
+  "files": 265,
+  "lines": 75200,
+  "skipped": "this section, .github/, COORDINATION.md, package-lock.json, */exports/*, images and CSV"
+ },
+ "rules": {
+  "RV01": {
+   "lines": 204,
+   "files": 91,
+   "top_files": [
+    [
+     "briefing/costs.html",
+     14
+    ],
+    [
+     "verify-d5d1f860/build.py",
+     11
+    ],
+    [
+     "briefing/build.py",
+     8
+    ],
+    [
+     "study-8f529c94/data/methods.json",
+     7
+    ],
+    [
+     "study-8f529c94/methods.html",
+     7
+    ],
+    [
+     "transfer-guide/data/methods.json",
+     7
+    ]
+   ],
+   "examples": [
+    {
+     "file": "README.md",
+     "line": 15,
+     "text": "nswer, 17 methods with pros/cons/steps, 680-row `$10k→$400k` tables (`7.129` IRS 2025 reference rate + Nov 6, 2026 Fed H.10 `6.6760` sensitivity"
+    },
+    {
+     "file": "acceptance-a64bd476/build.py",
+     "line": 115,
+     "text": "HSBC M01 fee recomputed from tariff formula at 7.129 for all 40 tiers vs repatriate CSV; $10,000 → $30.86, $400,000 → $86."
+    },
+    {
+     "file": "acceptance-a64bd476/checks.html",
+     "line": 21,
+     "text": "HSBC M01 fee recomputed from tariff formula at 7.129 for all 40 tiers vs repatriate CSV; $10,000 → $30.86, $400,000 → $86."
+    },
+    {
+     "file": "acceptance-a64bd476/findings.html",
+     "line": 19,
+     "text": "A03 IRS yearly average for China Yuan in 2025 is 7.129 CNY/USD; the IRS has no official exchange rate and generally accepts"
+    }
+   ]
+  },
+  "RV02": {
+   "lines": 27,
+   "files": 24,
+   "top_files": [
+    [
+     "ladder/routes.html",
+     2
+    ],
+    [
+     "study-8f529c94/data/audit_and_flags.json",
+     2
+    ],
+    [
+     "transfer-guide/data/audit_and_flags.json",
+     2
+    ],
+    [
+     "briefing/EXECUTIVE_SUMMARY.md",
+     1
+    ],
+    [
+     "briefing/build.py",
+     1
+    ],
+    [
+     "briefing/methods.html",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "file": "briefing/EXECUTIVE_SUMMARY.md",
+     "line": 35,
+     "text": "nk — card fees unverified | Cap CNY 100,000/person/yr (~USD 14,027); ~29 calendar years for $400k | [S07](https://www.safe.gov.cn/en/2017/1230/1397.html) · ["
+    },
+    {
+     "file": "briefing/build.py",
+     "line": 426,
+     "text": "nk — card fees unverified | Cap CNY 100,000/person/yr (~USD 14,027); ~29 calendar years for $400k |"
+    },
+    {
+     "file": "briefing/methods.html",
+     "line": 96,
+     "text": "work FX margin are not published here (F03). USD 400,000 would take ~29 calendar years - impractical (computed). Borrowing others' cards to evade is prohib"
+    },
+    {
+     "file": "ladder/costs.html",
+     "line": 67,
+     "text": "$0 – $12,000 fixed fee not published — spread only 0.00% – 3.00% 29 calendar years S03 · safe.gov.cn 13 Card spending abroad R12 $0 – $12,"
+    }
+   ]
+  },
+  "RV03": {
+   "lines": 17,
+   "files": 15,
+   "top_files": [
+    [
+     "study-8f529c94/audit.html",
+     2
+    ],
+    [
+     "transfer-guide/audit.html",
+     2
+    ],
+    [
+     "briefing/build.py",
+     1
+    ],
+    [
+     "briefing/methods.html",
+     1
+    ],
+    [
+     "estimate-facf2fe9/build.py",
+     1
+    ],
+    [
+     "estimate-facf2fe9/index.html",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "file": "briefing/build.py",
+     "line": 337,
+     "text": "If only the annual quota applies → M02 (USD 50,000/yr; 8 years for $400k)."
+    },
+    {
+     "file": "briefing/methods.html",
+     "line": 227,
+     "text": "If only the annual quota applies → M02 (USD 50,000/yr; 8 years for $400k)."
+    },
+    {
+     "file": "estimate-facf2fe9/build.py",
+     "line": 218,
+     "text": "quota is only for holders of a Chinese Foreign Permanent Resident ID (8 years)."
+    },
+    {
+     "file": "estimate-facf2fe9/index.html",
+     "line": 36,
+     "text": "quota is only for holders of a Chinese Foreign Permanent Resident ID (8 years)."
+    }
+   ]
+  },
+  "RV04": {
+   "lines": 50,
+   "files": 30,
+   "top_files": [
+    [
+     "ladder/data/costs.json",
+     7
+    ],
+    [
+     "ladder/build.py",
+     4
+    ],
+    [
+     "EXECUTIVE-SUMMARY.md",
+     2
+    ],
+    [
+     "ladder/ladder.html",
+     2
+    ],
+    [
+     "ladder/model.py",
+     2
+    ],
+    [
+     "study-8f529c94/audit.html",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "file": "EXECUTIVE-SUMMARY.md",
+     "line": 6,
+     "text": "AR maxima `$16,536`/`$165,353`, PBOC `Yinfa [2026] No. 42` repealing `237`, and `Huifa [2007] No. 1` domestic-vs-foreign purchase quota distinc"
+    },
+    {
+     "file": "docs/data/sources.json",
+     "line": 272,
+     "text": "settlement for virtual-currency business. Notice repeals Yinfa [2021] 237.\","
+    },
+    {
+     "file": "ladder/audit.html",
+     "line": 34,
+     "text": "AUD-04 Crypto prohibition cited in places to Yin Fa [2021] No. 237. Yin Fa [2026] No. 42 (6 Feb 2026) expressly repeals 237. The 2026 n"
+    },
+    {
+     "file": "ladder/build.py",
+     "line": 665,
+     "text": "(\"AUD-04\", \"Crypto prohibition cited in places to Yin Fa [2021] No. 237.\","
+    }
+   ]
+  },
+  "RV05": {
+   "lines": 70,
+   "files": 49,
+   "top_files": [
+    [
+     "study-8f529c94/data/methods.json",
+     4
+    ],
+    [
+     "study-8f529c94/methods.html",
+     4
+    ],
+    [
+     "transfer-guide/data/methods.json",
+     4
+    ],
+    [
+     "transfer-guide/methods.html",
+     4
+    ],
+    [
+     "briefing/build.py",
+     3
+    ],
+    [
+     "EXECUTIVE-SUMMARY.md",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "file": "EXECUTIVE-SUMMARY.md",
+     "line": 25,
+     "text": "in income unless it exceeds **$200**; above that it is reported as a capital gain."
+    },
+    {
+     "file": "acceptance-a64bd476/findings.html",
+     "line": 24,
+     "text": "A08 Personal foreign-currency gain over $200 is a capital gain (IRS Pub. 525). Figure carried from prior sessions (briefing layer 4"
+    },
+    {
+     "file": "acceptance-a64bd476/findings.json",
+     "line": 64,
+     "text": "\"claim\": \"Personal foreign-currency gain over $200 is a capital gain (IRS Pub. 525).\","
+    },
+    {
+     "file": "audit-86f0/build.py",
+     "line": 51,
+     "text": "qualify as credit.',irs),('Currency disposition is not automatically capital gain','portal/index.html and conversion-penalties.html CP-11','Portal sugg"
+    }
+   ]
+  },
+  "RV06": {
+   "lines": 4,
+   "files": 4,
+   "top_files": [
+    [
+     "estimate-facf2fe9/data/capture-log.md",
+     1
+    ],
+    [
+     "estimate-facf2fe9/data/sources.json",
+     1
+    ],
+    [
+     "final-f6327e23/data/sources.json",
+     1
+    ],
+    [
+     "final-f6327e23/sources.html",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "file": "estimate-facf2fe9/data/capture-log.md",
+     "line": 68,
+     "text": "外国...的自然人（以下简称移民），将其在取得移民身份之前在境内拥有的合法财产变现，通过外汇指定银行购汇和汇出境外的行为。\" ; 第六条 \"移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。全部申请"
+    },
+    {
+     "file": "estimate-facf2fe9/data/sources.json",
+     "line": 432,
+     "text": "\"第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万"
+    },
+    {
+     "file": "final-f6327e23/data/sources.json",
+     "line": 49,
+     "text": "— 移民转移 (emigration transfer) and 继承转移 (inheritance transfer). Art. 6: 移民转移 must apply once for the whole amount; first remittance ≤ half, after 1 year ≤ half of the remai"
+    },
+    {
+     "file": "final-f6327e23/sources.html",
+     "line": 46,
+     "text": "— 移民转移 (emigration transfer) and 继承转移 (inheritance transfer). Art. 6: 移民转移 must apply once for the whole amount; first remittance ≤ half, after 1 year ≤ half of the remai"
+    }
+   ]
+  },
+  "RV07": {
+   "lines": 50,
+   "files": 27,
+   "top_files": [
+    [
+     "final-f6327e23/steps.html",
+     5
+    ],
+    [
+     "estimate-facf2fe9/data/sources.json",
+     4
+    ],
+    [
+     "estimate-facf2fe9/methods.html",
+     4
+    ],
+    [
+     "site/china-rules.html",
+     4
+    ],
+    [
+     "estimate-facf2fe9/data/capture-log.md",
+     3
+    ],
+    [
+     "final-f6327e23/methods.html",
+     3
+    ]
+   ],
+   "examples": [
+    {
+     "file": "data/flags.json",
+     "line": 141,
+     "text": "\"sourceUrl\": \"http://www.safe.gov.cn/en/2017/1230/1397.html\","
+    },
+    {
+     "file": "data/sources.json",
+     "line": 91,
+     "text": "\"url\": \"http://www.safe.gov.cn/en/2017/1230/1397.html\","
+    },
+    {
+     "file": "estimate-facf2fe9/costs.html",
+     "line": 34,
+     "text": "rget=\"_blank\" rel=\"noopener noreferrer\">SAFE Q&amp;A 9</a> · <a href=\"http://m.safe.gov.cn/safe/2007/0105/5320.html\" target=\"_blank\" rel=\"noopener norefer"
+    },
+    {
+     "file": "estimate-facf2fe9/data/capture-log.md",
+     "line": 67,
+     "text": "* SAFE draft (征求意见稿, 2025-06-18) http://m.safe.gov.cn/safe/file/file/20250618/b0bfdacb3871479c90028883f5e35618.pdf it"
+    }
+   ]
+  },
+  "RV08": {
+   "lines": 17,
+   "files": 13,
+   "top_files": [
+    [
+     "reports/CNY_TO_USD_RESEARCH_LEDGER.json",
+     2
+    ],
+    [
+     "reports/REPO_LINE_BY_LINE_AUDIT.md",
+     2
+    ],
+    [
+     "study-8f529c94/data/audit_and_flags.json",
+     2
+    ],
+    [
+     "transfer-guide/data/audit_and_flags.json",
+     2
+    ],
+    [
+     "docs/data/findings.json",
+     1
+    ],
+    [
+     "portal/flagged-for-review.html",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "file": "docs/data/findings.json",
+     "line": 256,
+     "text": "\"finding\": \"Conditional comparator, not an assumed route for this U.S. citizen. SAFE Article 2 states USD50,000 annual management for individual settlement and domestic-i"
+    },
+    {
+     "file": "portal/flagged-for-review.html",
+     "line": 60,
+     "text": "arity (Critical) Existing docs/index.html & docs/methods.html list '$50,000/person/year facilitation quota' as 'Simplest small route' for a US citizen N/A (Corrected in p"
+    },
+    {
+     "file": "portal/generate_portal.py",
+     "line": 465,
+     "text": "\"Listed '$50,000/person/year facilitation quota' as 'Simplest small route' for a US citizen.\","
+    },
+    {
+     "file": "portal/repo-audit.html",
+     "line": 58,
+     "text": "E_SUMMARY.md (L5) & docs/ (PR #1/#3) Flagged Irregularity Listed '$50,000/person/year facilitation quota' as 'Simplest small route' for a US citizen. Misapplied to US cit"
+    }
+   ]
+  }
+ }
+}
