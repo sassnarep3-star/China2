@@ -1,7 +1,7 @@
 {
-  "pages_scanned": 130,
-  "data_rows": 10491,
-  "without_direct_primary": 1472,
+  "pages_scanned": 139,
+  "data_rows": 11299,
+  "without_direct_primary": 1473,
   "pages_with_candidates": 36,
   "pages": [
     {
@@ -347,9 +347,63 @@
       "first_example": ""
     },
     {
+      "path": "guide-fb2f2562/costs.html",
+      "rows": 480,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "guide-fb2f2562/flagged.html",
+      "rows": 55,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "guide-fb2f2562/index.html",
+      "rows": 6,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "guide-fb2f2562/methods.html",
+      "rows": 11,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "guide-fb2f2562/penalty.html",
+      "rows": 48,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "guide-fb2f2562/questions.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "guide-fb2f2562/review.html",
+      "rows": 158,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "guide-fb2f2562/sources.html",
+      "rows": 30,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "guide-fb2f2562/summary.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
       "path": "index.html",
-      "rows": 64,
-      "without_direct_primary": 17,
+      "rows": 65,
+      "without_direct_primary": 18,
       "first_example": "Transfer guide 23 methods · 40 sources · 920 cost rows Newest complete set (10-11 Nov 2026). Used as the canonical detail set from this page."
     },
     {

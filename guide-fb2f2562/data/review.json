@@ -1,7 +1,7 @@
 {
  "generated": "2026-11-11",
- "scanned_at_commit": "fe1f8a7",
- "scanned_files": 331,
+ "scanned_at_commit": "d5e1acd",
+ "scanned_files": 332,
  "excluded": "guide-fb2f2562/** (this section)",
  "rules": [
   {
@@ -95,7 +95,7 @@
  "totals": {
   "conflict": 35,
   "check": 1136,
-  "consistent": 1070,
+  "consistent": 1073,
   "corrected": 51,
   "quoted": 57
  },
@@ -118,7 +118,7 @@
    "RA-03": {
     "conflict": 0,
     "check": 0,
-    "consistent": 4,
+    "consistent": 6,
     "corrected": 0,
     "quoted": 0
    },
@@ -1938,7 +1938,7 @@
    "RA-03": {
     "conflict": 0,
     "check": 0,
-    "consistent": 0,
+    "consistent": 1,
     "corrected": 0,
     "quoted": 0
    },
@@ -2567,6 +2567,17 @@
    "excerpt": "",
    "verdict": "consistent",
    "why": "Crypto is mentioned with its prohibited / unlawful status."
+  },
+  {
+   "rule": "RA-03",
+   "file": "README.md",
+   "section": "(root files)",
+   "line": 18,
+   "col": 190,
+   "match": "137,300",
+   "excerpt": "",
+   "verdict": "consistent",
+   "why": "USD 137,300 matches Rev. Proc. 2026-35 §3.41."
   },
   {
    "rule": "RA-05",
@@ -7508,10 +7519,21 @@
    "why": "USD 16,536 matches 31 CFR 1010.821 (non-wilful maximum)."
   },
   {
+   "rule": "RA-03",
+   "file": "index.html",
+   "section": "(root files)",
+   "line": 702,
+   "col": 4926,
+   "match": "137,300",
+   "excerpt": "",
+   "verdict": "consistent",
+   "why": "USD 137,300 matches Rev. Proc. 2026-35 §3.41."
+  },
+  {
    "rule": "RA-05",
    "file": "index.html",
    "section": "(root files)",
-   "line": 711,
+   "line": 713,
    "col": 60,
    "match": "86.97",
    "excerpt": "rer\" title=\"V18\">V18 ↗ ]. A renminbi fee of CNY 620 is $92.66 at the board rate and $86.97 at the tax rate — the repository’s older tables use the second. Source-backed means the",
@@ -7544,7 +7566,7 @@
    "rule": "RA-07",
    "file": "index.html",
    "section": "(root files)",
-   "line": 660,
+   "line": 662,
    "col": 209,
    "match": "16,536",
    "excerpt": "",
@@ -27308,10 +27330,21 @@
    "why": "CNY 620 converted at the IRS 2025 average (7.129), not at HSBC's dealing rate; HSBC's 2026-11-10 sell rate 6.7053746 gives USD 92.46."
   },
   {
+   "rule": "RA-03",
+   "file": "verification-3347ca0a/build.py",
+   "section": "verification-3347ca0a",
+   "line": 440,
+   "col": 217,
+   "match": "137,300",
+   "excerpt": "",
+   "verdict": "consistent",
+   "why": "USD 137,300 matches Rev. Proc. 2026-35 §3.41."
+  },
+  {
    "rule": "RA-06",
    "file": "verification-3347ca0a/build.py",
    "section": "verification-3347ca0a",
-   "line": 514,
+   "line": 517,
    "col": 66,
    "match": "crypto",
    "excerpt": "",

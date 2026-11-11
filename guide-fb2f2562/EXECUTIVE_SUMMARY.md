@@ -55,4 +55,4 @@ Official sources read 2026-11-11. Site: `guide-fb2f2562/index.html`. Not tax or 
 | $390,000.00 | $877.61 | $2,033.36 | $1,940.90 |
 | $400,000.00 | $898.54 | $2,083.13 | $1,990.66 |
 
-Repo review: 35 conflicting lines, 1136 to check, across 331 files (see `review.html`).
+Repo review: 35 conflicting lines, 1136 to check, across 332 files (see `review.html`).
