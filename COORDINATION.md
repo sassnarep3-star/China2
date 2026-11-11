@@ -1354,3 +1354,18 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 - **CI on the PR head:** all 14 checks passed, including the new `verify-guide-fb2f2562` and the path-filtered `verify-acceptance-a64bd476`; merge state was CLEAN.
 - **Pages:** `pages-build-deployment` run https://github.com/sassnarep3-star/China2/actions/runs/42983349325 for head `89ea1e6` completed SUCCESS (build, deploy, report-build-status). The legacy `/pages/builds` API lists the 07:58:05Z build as `built` with `error: null` but shows the previous commit `c36198d` in its `commit` field; the deployment run above is the record for the merge commit. The sandbox cannot reach `github.io`, so no live-page fetch is claimed. Entry point: https://sassnarep3-star.github.io/China2/guide-fb2f2562/
 - **Status:** G1–G7 done. Flagged items (F-01…F-18 and the 35 conflicting repo lines) remain needs review and did not block the merge.
+
+---
+
+## Session `arena/5e1a6d91-china2` — fresh dated verification + decision synthesis (disjoint scope, 2026-11-11 UTC)
+
+> Arena pins this session to `arena/5e1a6d91-china2`; it substitutes for `session-<id>/<task>`. Full board read before claiming. All prior scopes preserved unedited. Open/stale PRs not touched.
+
+| # | Task | Status | Owner | Files |
+|---|---|---|---|---|
+| N1 | Fresh official-source re-fetch (SAFE/PBOC/STA/IRS/eCFR/CBP/bank boards+tariffs/Wise) with quotes | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N2 | Executive summary + Q&A decision register (known/unknown/how to discover) | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N3 | All methods pros/cons/steps + penalty layers + $10k→$400k cost tables (published inputs only, blanks flagged) | in progress | arena/5e1a6d91-china2 | `verify-5e1a6d91/**` |
+| N4 | Verifier+CI, PR→merge→Pages confirm, record | in progress | arena/5e1a6d91-china2 | `.github/workflows/verify-5e1a6d91.yml`, COORDINATION.md append-only |
+
+Policy: no private fact inferred; every row links official publisher; unverified = blank+flagged; no personal tax bill asserted.
