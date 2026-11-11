@@ -1354,3 +1354,13 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 - **CI on the PR head:** all 14 checks passed, including the new `verify-guide-fb2f2562` and the path-filtered `verify-acceptance-a64bd476`; merge state was CLEAN.
 - **Pages:** `pages-build-deployment` run https://github.com/sassnarep3-star/China2/actions/runs/42983349325 for head `89ea1e6` completed SUCCESS (build, deploy, report-build-status). The legacy `/pages/builds` API lists the 07:58:05Z build as `built` with `error: null` but shows the previous commit `c36198d` in its `commit` field; the deployment run above is the record for the merge commit. The sandbox cannot reach `github.io`, so no live-page fetch is claimed. Entry point: https://sassnarep3-star.github.io/China2/guide-fb2f2562/
 - **Status:** G1–G7 done. Flagged items (F-01…F-18 and the 35 conflicting repo lines) remain needs review and did not block the merge.
+
+## Session `arena/732da534-china2` — targeted safety and delivery review (2026-11-11 UTC)
+
+Arena fixes this session to the current branch; no session-named branch will be created. Existing completed guides and open PRs are retained. This session does not claim or modify another session's files.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| Independently check material recent-guide claims against cited primary sources; publish a focused, source-linked review and verification boundary | in progress | arena/732da534-china2 | `review-732da534/**`; `COORDINATION.md` append-only |
+| Validate existing entry points and publish review via PR when checks permit | in progress | arena/732da534-china2 | `review-732da534/**`; `COORDINATION.md` append-only; mechanically generated inventories only if required by existing CI |
+
