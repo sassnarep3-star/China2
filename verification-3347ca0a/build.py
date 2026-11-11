@@ -446,6 +446,9 @@ def root_page():
         ("review-732da534/index.html", "Focused safety and delivery review", "7 review rows", "Separate session's targeted review of recent-guide claims, with corrections and limitations stated on the page."),
         ("verify-5e1a6d91/index.html", "Fresh dated verification and decision synthesis", "$10k / $400k milestones · re-fetched 11 Nov", "Separate session's re-fetch of SAFE, BOC, IRS, USC 988, eCFR and Wise pages, with its own cost milestones."),
         ("final-d54bb3c2/index.html", "Final section: cost ladder and penalty layers", "16 routes · 31 sources · 40 cost rows · 17 flags", "Session arena/d54bb3c2-china2, 11 Nov 2026: boards re-read at 20:39, every cost row recomputed by one model (model.py) and checked by verify.py (1,073 assertions), nine penalty layers separated, and the same-route totals of the other sets compared."),
+        # Navigation-only addition by session arena/21f3ecb6-china2 (2026-11-11), logged in COORDINATION.md:
+        # one archive row and one category card so its consolidated dashboard is reachable from this page.
+        ("ledger-21f3ecb6/index.html", "Consolidated dashboard · freshest pass", "15 methods · 27 sources · 600 cost rows", "Separate pass on 11 Nov 2026: every source re-read the same day, the conversion penalty split into 12 layers, cost at every $10,000 step from 10,000 to 400,000, 16 gating questions, and 19 flagged items with file:line review of the other sections."),
     ]
     archive_rows = "".join(
         f'<tr><th scope="row" data-label="Set"><a href="{href}">{esc(title)}</a></th>'
@@ -653,6 +656,8 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
     <em>A separate session’s re-fetch of SAFE, BOC, IRS, USC 988, eCFR and Wise pages, with its own cost milestones.</em></a>
   <a class="card" href="final-d54bb3c2/index.html"><b>Final section · cost ladder and penalty layers</b><span>31 sources · 40 cost rows · 17 flags</span>
     <em>Boards re-read at 20:39 on 11 Nov, every row recomputed from one model and re-checked by 1,073 assertions, with the nine penalty layers and the same-route totals of the other sets side by side.</em></a>
+  <a class="card" href="ledger-21f3ecb6/index.html"><b>Consolidated dashboard · freshest pass</b><span>27 sources · read 11 Nov · 600 rows</span>
+    <em>Latest pass: the penalty in twelve layers, every method priced at every USD 10,000 step, the sixteen questions that gate a decision, and the blank-value register.</em></a>
 </div>
 
 <h2 id="questions">What has to be answered before a decision</h2>

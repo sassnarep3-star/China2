@@ -1,8 +1,8 @@
 {
-  "pages_scanned": 139,
-  "data_rows": 11317,
-  "without_direct_primary": 1491,
-  "pages_with_candidates": 36,
+  "pages_scanned": 164,
+  "data_rows": 12199,
+  "without_direct_primary": 1661,
+  "pages_with_candidates": 44,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
@@ -299,6 +299,60 @@
       "first_example": ""
     },
     {
+      "path": "final-d54bb3c2/costs.html",
+      "rows": 44,
+      "without_direct_primary": 44,
+      "first_example": "$10,000 $53.37 0.5337% $82.61 0.8261% $49.79 0.4979% $69.79 0.6979% M03 $49.79 S01 S03 S02 S04"
+    },
+    {
+      "path": "final-d54bb3c2/flagged.html",
+      "rows": 17,
+      "without_direct_primary": 17,
+      "first_example": "F-01 Correspondent bank and receiving bank charges blank The BOC and HSBC pages publish only the sending bank's fee. No official schedule for the intermediary or the US receiving b"
+    },
+    {
+      "path": "final-d54bb3c2/index.html",
+      "rows": 14,
+      "without_direct_primary": 14,
+      "first_example": "BOC board, USD buy 665.91 / sell 668.71 per 100 USD S01"
+    },
+    {
+      "path": "final-d54bb3c2/methods.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "final-d54bb3c2/penalty.html",
+      "rows": 12,
+      "without_direct_primary": 12,
+      "first_example": "P1 Bank FX spread Every conversion, lawful or not, at any bank. BOC 0.2094% of the amount converted; HSBC 0.4979% Difference between the board sell rate and the midpoint of the boa"
+    },
+    {
+      "path": "final-d54bb3c2/questions.html",
+      "rows": 4,
+      "without_direct_primary": 4,
+      "first_example": "You are a mainland individual, moving under USD 50,000 a year Bank conversion plus wire inside the annual quota S08"
+    },
+    {
+      "path": "final-d54bb3c2/review.html",
+      "rows": 18,
+      "without_direct_primary": 18,
+      "first_example": "Files scanned (HTML, MD, JSON, CSV, PY) 327 Everything in the repository except this folder and .git."
+    },
+    {
+      "path": "final-d54bb3c2/sources.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "final-d54bb3c2/summary.html",
+      "rows": 9,
+      "without_direct_primary": 9,
+      "first_example": "1 Bank FX spread, BOC 0.2094% of the amount S01"
+    },
+    {
       "path": "final-f6327e23/costs.html",
       "rows": 80,
       "without_direct_primary": 0,
@@ -402,8 +456,8 @@
     },
     {
       "path": "index.html",
-      "rows": 65,
-      "without_direct_primary": 18,
+      "rows": 69,
+      "without_direct_primary": 22,
       "first_example": "Transfer guide 23 methods · 40 sources · 920 cost rows Newest complete set (10-11 Nov 2026). Used as the canonical detail set from this page."
     },
     {
@@ -414,8 +468,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 307,
-      "without_direct_primary": 307,
+      "rows": 350,
+      "without_direct_primary": 350,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -465,6 +519,60 @@
       "rows": 18,
       "without_direct_primary": 18,
       "first_example": "Comprehensive income (salary, fees, royalties, authorship) 3% – 45% progressive S07 · chinatax.gov.cn Art. 3(1)"
+    },
+    {
+      "path": "ledger-21f3ecb6/costs.html",
+      "rows": 454,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/index.html",
+      "rows": 40,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/methods.html",
+      "rows": 15,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/penalties.html",
+      "rows": 17,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/questions.html",
+      "rows": 23,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/review.html",
+      "rows": 25,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/sources.html",
+      "rows": 27,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/summary.html",
+      "rows": 10,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "ledger-21f3ecb6/taxes.html",
+      "rows": 33,
+      "without_direct_primary": 0,
+      "first_example": ""
     },
     {
       "path": "playbook-c1d73006/costs.html",
@@ -607,6 +715,12 @@
     {
       "path": "repatriate/taxes.html",
       "rows": 14,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "review-732da534/index.html",
+      "rows": 7,
       "without_direct_primary": 0,
       "first_example": ""
     },
@@ -789,6 +903,42 @@
       "rows": 12,
       "without_direct_primary": 7,
       "first_example": "IR-01 structure Twenty separate research sites exist in one repository, each with its own landing page. The root page previously presented sixteen of them as equal cards. 20 direct"
+    },
+    {
+      "path": "verify-5e1a6d91/costs.html",
+      "rows": 40,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-5e1a6d91/flagged.html",
+      "rows": 5,
+      "without_direct_primary": 5,
+      "first_example": "F1 Your bank/branch actual rate, wire & intermediary/receiving fees Not published — blank Get written quote"
+    },
+    {
+      "path": "verify-5e1a6d91/index.html",
+      "rows": 5,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-5e1a6d91/methods.html",
+      "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-5e1a6d91/questions.html",
+      "rows": 6,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "verify-5e1a6d91/sources.html",
+      "rows": 10,
+      "without_direct_primary": 0,
+      "first_example": ""
     },
     {
       "path": "verify-88f5a1be/index.html",

@@ -1,0 +1,28 @@
+name: verify-ledger-21f3ecb6
+
+# Scope: ledger-21f3ecb6/** only (plus this file). Owned by session arena/21f3ecb6-china2.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recompute every cost row from the source ledger
+        run: python3 ledger-21f3ecb6/model.py
+      - name: Rebuild every page
+        run: python3 ledger-21f3ecb6/build.py
+      - name: Generated output is committed byte for byte
+        run: git diff --exit-code -- ledger-21f3ecb6
+      - name: Independent checks (recompute, official link on every row, blanks flagged, links, prose figures)
+        run: python3 ledger-21f3ecb6/verify.py
