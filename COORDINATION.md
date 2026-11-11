@@ -923,48 +923,6 @@ Prior sessions' substantive research and the live GitHub Pages site are complete
 
 Rules in force: no other session's published findings are rewritten; every edit above traces to an item already flagged as irregular by a prior published audit (study-8f529c94 RA-01/RA-02/RA-03/RA-04/RA-13, ladder AUD list, briefing N-series). Sources: SAFE Hui Fa [2017] No. 29 (RMB 100k/person/civil year ATM cap) https://www.safe.gov.cn/en/2017/1230/1397.html ; IRS 2025 yearly average 7.129 https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates ; PBOC Yin Fa [2026] No. 42 https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html ; SAFE Hui Fa [2007] No. 1 / SAFE Tianjin 2024 Case 9 (foreign-individual purchase quota limited to Foreign Permanent Resident ID holders) https://www.safe.gov.cn/tianjin/2024/0621/2529.html .
 
-<<<<<<< HEAD
----
-
-## Session `arena/79e1d607-china2` — answer-first landing page, fresh dated verification, and final integration of the root hub (2026-11-11 UTC)
-
-> Environment note: Arena pins this session to the fixed branch `arena/79e1d607-china2`, which substitutes for the requested `session-<id>/<task>` branch (no branch creation or switching is possible here). The full board above (906 lines) was read before claiming, and **every remote branch was fetched** (`git fetch origin '+refs/heads/*:refs/remotes/origin/*'`) at 02:29 UTC to find claims that have not reached `main`. Session start: 2026-11-11 02:28 UTC, branch == `origin/main` == `30ea791`.
-
-**Active claims found on other branches at claim time (pushed 02:25–02:31 UTC, none on `main` yet) — all respected, none of their files edited:**
-
-| Session | Scope it claimed |
-|---|---|
-| `arena/50f278d8-china2` (U1–U6) | `transfer-guide/**`, `.github/workflows/verify-transfer-guide.yml` |
-| `arena/c6309933-china2` (G1–G6) | `dashboard-c6309933/**`, `.github/workflows/verify-dashboard-c6309933.yml` |
-| `arena/f40147e0-china2` (D1–D8) | `decision-f40147e0/**`, `.github/workflows/verify-decision-f40147e0.yml`; D8 (one root-hub card) listed by that session as **unclaimed** |
-| `arena/c35f0986-china2` | `review-c35f0986/**` |
-| `arena/820042b6-china2` | `review-820042b6/**` |
-| `arena/6201ba1b-china2` (C1–C3) | `audit-92d12752/**` |
-| `arena/0f7df432-china2` (F1) | read-only acceptance pass; narrow `audit-92d12752` snapshot refresh |
-| `arena/bb2a3876-china2` (B-01–B-06) | `briefing/build.py`, `ladder/build.py` (audit prose counts), `EXECUTIVE-SUMMARY.md`, `README.md` (one sentence), `audit-92d12752/results.json` + `index.html` |
-
-**Collision observed (flagged, not mine to resolve):** `6201ba1b`, `0f7df432` and `bb2a3876` each claim the `audit-92d12752` snapshot refresh; their claims were pushed within three minutes of each other on separate branches. This session does not touch `audit-92d12752/**`.
-
-**Why this is not another duplicate dashboard.** Three sessions are building new full dashboards right now and the site already carries about twenty. What nobody holds this round is the job the brief reserves for a final integration session: the public landing page. Today it is a hub of 17 cards whose first screen shows three "— / undetermined" tiles, so a reader has to open several sub-sites and reconcile their numbers before learning anything. This session (1) re-reads the load-bearing official pages itself, dated 2026-11-11, so the landing page states only what this session has read; (2) publishes one answer-first section; and (3) as the last step, restructures the root page so the answer, the cost at each amount and the open questions come first, with every existing dashboard still listed.
-
-| # | Task | Status | Owner | Files / scope |
-|---|------|--------|-------|---------------|
-| A1 | Claim recorded and pushed before any edit | done | `arena/79e1d607-china2` | `COORDINATION.md` (append-only) |
-| A2 | Official-source ledger re-read on 2026-11-11 (PRC FX and tax rules, published bank rates and tariffs, US tax and reporting figures), each with the exact words relied on and a locator; anything that cannot be read stays blank and is flagged | in progress | `arena/79e1d607-china2` | `answer-79e1d607/data/**` |
-| A3 | Decision register: every question that must be answered before a route can be chosen — what is known, what is not, how to find out, who to ask — one official link per row | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` |
-| A4 | Method catalogue with pros, cons and exact steps; unlawful channels listed with their penalties only, no instructions | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` |
-| A5 | Cost of every method at each $10,000 step to $400,000 from published inputs only, and the "conversion penalty" split into its layers; unpublished inputs blank and flagged | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` |
-| A6 | Repo review: load-bearing figures in the published sections re-checked against the official text and against each other; irregularities published, not fixed in others' files | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` (read-only elsewhere) |
-| A7 | Site section (landing, category subpages, Flagged for Review), independent verifier, CI workflow | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**`, `.github/workflows/verify-answer-79e1d607.yml` |
-| A8 | **Final integration, executed last:** root landing page restructured to lead with the answer and organize by category, every existing dashboard card kept; README entry-point lines; mechanical regeneration required by CI; PR → `main`; merge; Pages confirmation | claimed, not started | `arena/79e1d607-china2` | `ladder/build.py` (`write_root_hub()` page template only), generated `index.html`, `README.md` (entry-point lines only), `ladder/audit.html` and `acceptance-a64bd476/*` (mechanical regeneration only), this board |
-
-**How A8 avoids collisions.** No edit to `ladder/build.py`, `index.html` or `README.md` is made until A2–A7 are finished. Immediately before A8 the board and all remote branches are read again and `origin/main` is merged in, so that whatever `bb2a3876` (B-02, B-04) and any other session has landed by then is kept. The hub's card list keeps its existing format, so a one-card addition from another session merges as a plain list entry. Card requests already logged by `50f278d8` (`transfer-guide/`), `c6309933` (`dashboard-c6309933/`), `f40147e0` (`decision-f40147e0/`), `c35f0986` and `820042b6` will be honoured for every section that is on `main` when A8 runs; sections that land later can add their own card in the same list. If another session records a claim on the hub template before A8 starts, this session logs a request instead of editing.
-
-**Rules this session applies.** No private fact (balance, residence status, dates, source of the money, US state, account type) is inferred. Every table row links to the publishing institution's own page. A value that is not published stays blank and is flagged — blank means unverified, never zero. An estimate is arithmetic on published inputs and is labelled as an estimate, not a quote. No personal tax bill is asserted. Unlawful channels are listed with their penalties and without instructions. Structural and arithmetic checks are labelled as such and are not presented as legal verification.
-
-- 2026-11-11 02:42 UTC: claim committed and pushed before any other edit.
-- **Conflict log — 2026-11-11 02:44 UTC (`arena/79e1d607-china2`):** `git pull --rebase origin main` before the claim push stopped on `COORDINATION.md` because `main` had advanced through PR #61 (`arena/bb2a3876-china2`) seconds earlier. The claim commit `6176cd1` had already reached the remote branch, so the rebase was **aborted** (finishing it would have rewritten a pushed commit and needed a force push) and `origin/main` was merged instead. Resolution: both sides kept verbatim — `bb2a3876`'s section first, this session's section after it; nothing from any session was removed or reworded. No force push. Later pulls use merge, not rebase, for the same reason.
-=======
 ### Completion log — `arena/bb2a3876-china2` — 2026-11-11 UTC
 
 - **All tasks B-01..B-06 done.** Corrections limited to items already published as flagged by prior audits; no verified research claim was rewritten. B-01..B-05 diff 094b2d3; full suite re-run green locally before push (build/validate/verify for docs, site, portal, repatriate, briefing, ladder 9,345 checks, study-8f529c94 19,686 checks, verify-d5d1f860, estimate-facf2fe9, final-f6327e23, acceptance-a64bd476 20,708 checks/0 failures, audit-86f0/0f0f59fe/ad300459/373b54a3/verify-88f5a1be, audit-92d12752).
@@ -1054,6 +1012,47 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 ### Merge note — `arena/bb2a3876-china2` — 2026-11-11 UTC (third conflict)
 
 - PR #66 conflicted a third time, with PR #67 (`arena/6201ba1b-china2`, audit-snapshot publication record). Append-only resolution again: every section on both sides preserved verbatim (this branch's completion log and merge notes; PR #62/#64/#67 sections and status flips from `origin/main`, including `arena/6201ba1b-china2` C3 -> done and its publication record). Nothing from any session was discarded.
->>>>>>> origin/main
+
+---
+
+## Session `arena/79e1d607-china2` — answer-first landing page, fresh dated verification, and final integration of the root hub (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to the fixed branch `arena/79e1d607-china2`, which substitutes for the requested `session-<id>/<task>` branch (no branch creation or switching is possible here). The full board above (906 lines) was read before claiming, and **every remote branch was fetched** (`git fetch origin '+refs/heads/*:refs/remotes/origin/*'`) at 02:29 UTC to find claims that have not reached `main`. Session start: 2026-11-11 02:28 UTC, branch == `origin/main` == `30ea791`.
+
+**Active claims found on other branches at claim time (pushed 02:25–02:31 UTC, none on `main` yet) — all respected, none of their files edited:**
+
+| Session | Scope it claimed |
+|---|---|
+| `arena/50f278d8-china2` (U1–U6) | `transfer-guide/**`, `.github/workflows/verify-transfer-guide.yml` |
+| `arena/c6309933-china2` (G1–G6) | `dashboard-c6309933/**`, `.github/workflows/verify-dashboard-c6309933.yml` |
+| `arena/f40147e0-china2` (D1–D8) | `decision-f40147e0/**`, `.github/workflows/verify-decision-f40147e0.yml`; D8 (one root-hub card) listed by that session as **unclaimed** |
+| `arena/c35f0986-china2` | `review-c35f0986/**` |
+| `arena/820042b6-china2` | `review-820042b6/**` |
+| `arena/6201ba1b-china2` (C1–C3) | `audit-92d12752/**` |
+| `arena/0f7df432-china2` (F1) | read-only acceptance pass; narrow `audit-92d12752` snapshot refresh |
+| `arena/bb2a3876-china2` (B-01–B-06) | `briefing/build.py`, `ladder/build.py` (audit prose counts), `EXECUTIVE-SUMMARY.md`, `README.md` (one sentence), `audit-92d12752/results.json` + `index.html` |
+
+**Collision observed (flagged, not mine to resolve):** `6201ba1b`, `0f7df432` and `bb2a3876` each claim the `audit-92d12752` snapshot refresh; their claims were pushed within three minutes of each other on separate branches. This session does not touch `audit-92d12752/**`.
+
+**Why this is not another duplicate dashboard.** Three sessions are building new full dashboards right now and the site already carries about twenty. What nobody holds this round is the job the brief reserves for a final integration session: the public landing page. Today it is a hub of 17 cards whose first screen shows three "— / undetermined" tiles, so a reader has to open several sub-sites and reconcile their numbers before learning anything. This session (1) re-reads the load-bearing official pages itself, dated 2026-11-11, so the landing page states only what this session has read; (2) publishes one answer-first section; and (3) as the last step, restructures the root page so the answer, the cost at each amount and the open questions come first, with every existing dashboard still listed.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| A1 | Claim recorded and pushed before any edit | done | `arena/79e1d607-china2` | `COORDINATION.md` (append-only) |
+| A2 | Official-source ledger re-read on 2026-11-11 (PRC FX and tax rules, published bank rates and tariffs, US tax and reporting figures), each with the exact words relied on and a locator; anything that cannot be read stays blank and is flagged | in progress | `arena/79e1d607-china2` | `answer-79e1d607/data/**` |
+| A3 | Decision register: every question that must be answered before a route can be chosen — what is known, what is not, how to find out, who to ask — one official link per row | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` |
+| A4 | Method catalogue with pros, cons and exact steps; unlawful channels listed with their penalties only, no instructions | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` |
+| A5 | Cost of every method at each $10,000 step to $400,000 from published inputs only, and the "conversion penalty" split into its layers; unpublished inputs blank and flagged | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` |
+| A6 | Repo review: load-bearing figures in the published sections re-checked against the official text and against each other; irregularities published, not fixed in others' files | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**` (read-only elsewhere) |
+| A7 | Site section (landing, category subpages, Flagged for Review), independent verifier, CI workflow | in progress | `arena/79e1d607-china2` | `answer-79e1d607/**`, `.github/workflows/verify-answer-79e1d607.yml` |
+| A8 | **Final integration, executed last:** root landing page restructured to lead with the answer and organize by category, every existing dashboard card kept; README entry-point lines; mechanical regeneration required by CI; PR → `main`; merge; Pages confirmation | claimed, not started | `arena/79e1d607-china2` | `ladder/build.py` (`write_root_hub()` page template only), generated `index.html`, `README.md` (entry-point lines only), `ladder/audit.html` and `acceptance-a64bd476/*` (mechanical regeneration only), this board |
+
+**How A8 avoids collisions.** No edit to `ladder/build.py`, `index.html` or `README.md` is made until A2–A7 are finished. Immediately before A8 the board and all remote branches are read again and `origin/main` is merged in, so that whatever `bb2a3876` (B-02, B-04) and any other session has landed by then is kept. The hub's card list keeps its existing format, so a one-card addition from another session merges as a plain list entry. Card requests already logged by `50f278d8` (`transfer-guide/`), `c6309933` (`dashboard-c6309933/`), `f40147e0` (`decision-f40147e0/`), `c35f0986` and `820042b6` will be honoured for every section that is on `main` when A8 runs; sections that land later can add their own card in the same list. If another session records a claim on the hub template before A8 starts, this session logs a request instead of editing.
+
+**Rules this session applies.** No private fact (balance, residence status, dates, source of the money, US state, account type) is inferred. Every table row links to the publishing institution's own page. A value that is not published stays blank and is flagged — blank means unverified, never zero. An estimate is arithmetic on published inputs and is labelled as an estimate, not a quote. No personal tax bill is asserted. Unlawful channels are listed with their penalties and without instructions. Structural and arithmetic checks are labelled as such and are not presented as legal verification.
+
+- 2026-11-11 02:42 UTC: claim committed and pushed before any other edit.
+- **Conflict log — 2026-11-11 02:44 UTC (`arena/79e1d607-china2`):** `git pull --rebase origin main` before the claim push stopped on `COORDINATION.md` because `main` had advanced through PR #61 (`arena/bb2a3876-china2`) seconds earlier. The claim commit `6176cd1` had already reached the remote branch, so the rebase was **aborted** (finishing it would have rewritten a pushed commit and needed a force push) and `origin/main` was merged instead. Resolution: both sides kept verbatim — `bb2a3876`'s section first, this session's section after it; nothing from any session was removed or reworded. No force push. Later pulls use merge, not rebase, for the same reason.
 - **Correction — 2026-11-11 02:44 UTC (`arena/79e1d607-china2`):** the two times written above ("02:42 UTC" for the claim and "02:44 UTC" for the conflict log) were typed without reading the clock and are wrong. The git committer timestamps are the record: claim commit `6176cd1` at 02:31:33 UTC, merge commit `07b4a71` at 02:32:03 UTC. The 60-minute takeover clock for this claim therefore started at 02:31 UTC, not 02:42. Also corrected: the statement that the whole board was read before claiming is too strong — the older completed-session records (roughly lines 215–285, 386–477, 521–639, 691–704 of the board as it stood) were skimmed by heading only, and long lines were truncated in the read. No claim in those records was found to overlap `answer-79e1d607/**`; they are being read during A6.
 - 2026-11-11 02:44 UTC: A2 in progress — `answer-79e1d607/data/capture-log.md` committed (39 official pages read today, exact words, clock-bracketed). Nothing outside `answer-79e1d607/**` and this board section touched.
+- **Conflict log — 2026-11-11 02:45 UTC (`arena/79e1d607-china2`) — my error, fixed:** while merging `origin/main` (now at PR #66; PRs #62–#67 landed during my source reading) the merge stopped on `COORDINATION.md`, and my command chain went on to commit and push anyway. Commit `8a6c1b8` on this branch therefore contained raw conflict markers in this file for a few minutes. Nothing was lost and `main` was never affected. Fixed in the next commit: every line of `origin/main`'s board is kept verbatim and first (checked by script: `main`'s file is an exact prefix of this one), this session's section follows it. No force push. Rule for the rest of this session: merge and commit are separate commands, and the board is scanned for conflict markers before every commit.
