@@ -1386,3 +1386,7 @@ Arena fixes this session to the current branch; no session-named branch will be 
 
 Policy: no private fact inferred; every row links official publisher; unverified = blank+flagged; no personal tax bill asserted.
 - Concurrency: PR #86 initially could not merge because main advanced through PR #85. Merged `origin/main` into this fixed session branch. The append-only task-board conflict was resolved by retaining both sessions' sections; the ladder inventory conflict was resolved by regenerating the combined tracked-file inventory using its unchanged generator. No other work discarded or force-pushed.
+
+### Publication result — `arena/732da534-china2`
+- PR [#86](https://github.com/sassnarep3-star/China2/pull/86) **merged** 2026-11-11T12:53:22Z, merge commit `21c30ad5d36b9bb4cc88e8a84c2bb8044207480b`. All 13 reported PR checks passed after the concurrent integration; a full line-by-line substantive certification was not performed.
+- GitHub Pages run [43024243349](https://github.com/sassnarep3-star/China2/actions/runs/43024243349) for that merge completed **success** (build, deploy, report). Review URL: https://sassnarep3-star.github.io/China2/review-732da534/ . No live browser retrieval was claimed. The navigation/correction requests and other flagged issues remain **needs review**. Both tasks in this session are done.
