@@ -1,0 +1,179 @@
+[
+ {
+  "id": "F01",
+  "item": "Personal facts",
+  "status": "Unknown",
+  "detail": "Source of funds, tax history, SAFE category, account owner, amount, dates and U.S. filing history are not known. No route or tax figure here is personal.",
+  "src": [
+   "S01"
+  ]
+ },
+ {
+  "id": "F02",
+  "item": "Intermediary and receiving bank fees",
+  "status": "Blank",
+  "detail": "Not published by the sending bank. Every total excludes them.",
+  "src": [
+   "S18"
+  ]
+ },
+ {
+  "id": "F03",
+  "item": "Bank of China fee table date",
+  "status": "Needs review",
+  "detail": "The table is headed 1 November 2014 and notes that local or agreed prices may differ. Confirm at the branch.",
+  "src": [
+   "S18"
+  ]
+ },
+ {
+  "id": "F04",
+  "item": "Spread measure",
+  "status": "Convention",
+  "detail": "The board's Middle Rate column (671.91) is not the midpoint of its buying and selling rates (666.30 and 669.11). The spread here is half the buy–sell gap, which is arithmetic on the posted rates, not a fee the bank itemises.",
+  "src": [
+   "S17"
+  ]
+ },
+ {
+  "id": "F05",
+  "item": "HSBC China exchange rate",
+  "status": "Blank",
+  "detail": "The tariff rows were read: Private Banking individuals free; Premier and Advance 0.1% (CNY 100 to 500) plus CNY 120 cable. HSBC's selling rate was not read, so HSBC totals are blank and its fee is shown in dollars at Bank of China's rate.",
+  "src": [
+   "S19"
+  ]
+ },
+ {
+  "id": "F06",
+  "item": "Personal transaction under 26 U.S.C. 988(e)",
+  "status": "Needs review",
+  "detail": "The section was read in the 2024 edition on govinfo; the House code site returned 'Page Not Found' for section pages today. The USD 200 rule covers personal transactions. Whether converting a savings deposit is one, or is tied to investment, depends on facts the text does not settle.",
+  "src": [
+   "S21"
+  ]
+ },
+ {
+  "id": "F07",
+  "item": "No tax on converting",
+  "status": "None found",
+  "detail": "An absence cannot be proved by a quotation. The statement rests on the Regulations and SAFE guidance read today, which impose document checks and no levy.",
+  "src": [
+   "S06"
+  ]
+ },
+ {
+  "id": "F08",
+  "item": "Wilful FBAR penalty percentage",
+  "status": "Not re-read",
+  "detail": "The regulation table gives the dollar figure USD 165,353. The statute's alternative measure based on the account balance was not re-read today.",
+  "src": [
+   "S23"
+  ]
+ },
+ {
+  "id": "F09",
+  "item": "Streamlined procedure eligibility",
+  "status": "Unknown",
+  "detail": "Both IRS pages were read. Which one applies, and whether the conduct was non-wilful, depends on residence history and past returns that are not known.",
+  "src": [
+   "S31",
+   "S33"
+  ]
+ },
+ {
+  "id": "F10",
+  "item": "Hui Fa [2009] No. 56 itself",
+  "status": "Quoted only",
+  "detail": "The splitting feature was read as quoted in SAFE Hebei's case report. The notice's own page was not located today.",
+  "src": [
+   "S09"
+  ]
+ },
+ {
+  "id": "F11",
+  "item": "Wise fee and rate",
+  "status": "Blank",
+  "detail": "Shown only in a live quote. The transfer count uses Bank of China's rate as a stand-in.",
+  "src": [
+   "S20"
+  ]
+ },
+ {
+  "id": "F12",
+  "item": "ATM and card fees",
+  "status": "Blank",
+  "detail": "Issuer fee, ATM owner fee and network rate were not read today. The year count uses Bank of China's rate as a stand-in.",
+  "src": [
+   "S04"
+  ]
+ },
+ {
+  "id": "F13",
+  "item": "Emigrant and inheritance procedure",
+  "status": "Needs review",
+  "detail": "The 2004 measures and the 2014 simplification were read. The current operating guide and document list were not; confirm them with the SAFE branch before applying.",
+  "src": [
+   "S11",
+   "S32"
+  ]
+ },
+ {
+  "id": "F14",
+  "item": "Who files the tax recordal form",
+  "status": "Needs review",
+  "detail": "The list of payment types was read and includes a foreign individual's pay for work in China. Article 4 sends foreign individuals to the personal FX rules, so whether a person wiring their own salary must file the form is for the bank or tax office to say.",
+  "src": [
+   "S10"
+  ]
+ },
+ {
+  "id": "F15",
+  "item": "Not researched today",
+  "status": "Blank",
+  "detail": "U.S. state tax, PRC taxes on a home sale, company-level tax before a dividend, and U.S. tax rates on a currency gain.",
+  "src": [
+   "S28"
+  ]
+ },
+ {
+  "id": "F16",
+  "item": "Rates move",
+  "status": "Dated",
+  "detail": "Every dollar figure uses Bank of China's board at 10:25:02 Beijing time on 11 November 2026. The currency-gain table uses IRS yearly averages as stand-ins for unknown purchase dates.",
+  "src": [
+   "S17",
+   "S29"
+  ]
+ },
+ {
+  "id": "F17",
+  "item": "Routes in earlier views not re-read today",
+  "status": "Not re-confirmed",
+  "detail": "Hong Kong routes, Western Union, card spending abroad and Wealth Management Connect appear in earlier evidence views of this repo. They are not repeated here because their sources were not re-read today.",
+  "src": [
+   "S06"
+  ]
+ },
+ {
+  "id": "F18",
+  "item": "Long documents read in part",
+  "status": "Method note",
+  "detail": "Three sources were opened but not read end to end: the PRC tax law (Articles 1 to 6 read), the HSBC tariff (important notes and rows 2.2.4.1 and 2.2.4.2 read) and the U.S.–China treaty (letter of submittal read; Articles 9 to 11 not re-opened).",
+  "src": [
+   "S14",
+   "S19",
+   "S30"
+  ]
+ },
+ {
+  "id": "F19",
+  "item": "Fine actually imposed for splitting",
+  "status": "Partly known",
+  "detail": "SAFE Hebei's report says the people involved were punished under Article 39, which allows up to 30%, or 30% to 100% if serious. The percentage imposed in those cases is not stated.",
+  "src": [
+   "S09",
+   "S06"
+  ]
+ }
+]
