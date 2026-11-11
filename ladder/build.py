@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import subprocess
 from datetime import date
 from pathlib import Path
@@ -851,7 +852,7 @@ def write_root_hub():
         return (f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer">'
                 f'{esc(label)}</a>')
 
-    archive = [
+    cards = [
         ("verify-d5d1f860/index.html", "Live-verified dashboard · newest pass", "24 sources re-fetched · 680 rows · 16 flags",
          "Quote-level re-verification dated 10 November 2026: each load-bearing document was re-fetched and the exact sentence is shown with its link. Fees recomputed independently; blanks where nothing is published."),
         ("estimate-facf2fe9/index.html", "Published-rate estimates · bank boards read 10 Nov 2026", "6 bank boards · 4 tariffs · 23 methods × 40 tiers",
@@ -886,48 +887,9 @@ def write_root_hub():
         ("acceptance-373b54a3/index.html", "Acceptance summary & checks", "Cross-repo deliverable check",
          "Independent completeness verification across the published 600-row and 680-row ladders."),
     ]
-    primary = [
-        ("transfer-guide/index.html", "Consolidated guide · start here",
-         "23 methods · 920 cost rows · Q01–Q12 checklist",
-         "The fullest single treatment in this repository: decision questions, penalty breakdown and a "
-         "$10k–$400k ladder. Read it alongside the live re-verification pass, which re-checked its "
-         "load-bearing figures on 11 November 2026."),
-        ("verify-9fe02cf5/index.html", "Live re-verification · 11 November 2026",
-         "21 sources re-fetched · 27 claims quoted · 16 flags",
-         "Every load-bearing statement re-read in the official document on 11 November 2026, with the "
-         "supporting sentence quoted and linked. Values that could not be confirmed are blank, not estimated."),
-        ("verify-9fe02cf5/costs.html", "Costs · every $10,000 to $400,000",
-         "Published fees · dated benchmark spread · blanks",
-         "40 tiers against ten methods. The sender fee is the bank's own published price; the spread is a "
-         "dated benchmark from one bank's board; the account-specific quote is blank because it is unknown."),
-        ("verify-9fe02cf5/questions.html", "Twelve questions to answer first",
-         "What we know · what we do not · how to find it",
-         "Each answer changes which routes exist, so the cost table cannot be read as a quote until these "
-         "are settled."),
-        ("verify-9fe02cf5/verification.html", "Claim-by-claim evidence",
-         "One row per statement, with the quoted sentence",
-         "The audit trail behind the numbers: what was verified verbatim, what is only partial, and what "
-         "remains unverified."),
-        ("verify-9fe02cf5/flagged.html", "Flagged for review",
-         "Unverified values · corrections · repo irregularities",
-         "Published openly rather than filled in: the unverified Form 3520 figure, the section 988 "
-         "characterisation, the spread gap, and the repository's own inconsistencies."),
-        ("transfer-guide/methods.html", "Methods, pros, cons and exact steps",
-         "Lawful · conditional · rejected",
-         "Every route found, including the ones that are prohibited and why."),
-        ("verify-9fe02cf5/audit.html", "Repository review",
-         "Line-by-line check of every dashboard",
-         "Mechanical findings across the eleven parallel dashboards, including conflicting counts and "
-         "plain-http source links."),
-    ]
-
-    def grid(items):
-        return "".join(
-            f'<a class="card" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
-            f'<em>{esc(d)}</em></a>' for u, t, sub, d in items)
-
-    primary_cards = grid(primary)
-    archive_cards = grid(archive)
+    site_cards = "".join(
+        f'<a class="card" href="{esc(u)}"><strong>{esc(t)}</strong><span>{esc(sub)}</span>'
+        f'<em>{esc(d)}</em></a>' for u, t, sub, d in cards)
     page = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -964,7 +926,7 @@ footer a{{color:#a4e5cf}}
 </style>
 </head>
 <body>
-    <header><strong>China money</strong><p>Official-source research · live re-verification 11 November 2026 · navigation integrated 11 November 2026 · not tax or legal advice</p></header>
+    <header><strong>China money</strong><p>Official-source research · summary re-reviewed 10 November 2026 · navigation integrated 10 November 2026 · not tax or legal advice</p></header>
 <main>
 <h1>Getting CNY out of China: identify the source, then compare approved routes</h1>
 <p class="lede">The bank's explanation matters. A requested tax certificate, an actual tax assessment, an FX eligibility question and a transfer fee are different things. This repository separates them; it does not assume that any private balance is taxable, already taxed, or eligible for a particular route.</p>
@@ -981,13 +943,8 @@ footer a{{color:#a4e5cf}}
 <p><strong>E02 — historic rate, not today's executable quote.</strong> The briefing's USD fee illustrations use CNY 7.129/USD (2025 annual average), not a current customer conversion rate. Do not interpret the $86.97 wire-fee illustration as the cost of converting or delivering $400,000. Spread, intermediary fees, receiving fees and personal taxes remain unverified. {ext("https://www.irs.gov/individuals/international-taxpayers/foreign-currency-and-currency-exchange-rates", "IRS rate-use guidance")} · <a href="briefing/costs.html">Affected cost tables and assumptions</a></p>
 <p>All other unresolved findings: <a href="briefing/flagged.html">consolidated Flagged for Review</a> · <a href="audit-ad300459/flagged.html">latest source-audit flags</a>. These cautions do not establish that a bank will accept this particular balance.</p>
 </section>
-<h2>Start here</h2>
-<div class="grid">{primary_cards}</div>
-<h2>Archive · earlier sessions, preserved unchanged</h2>
-<p class="lede">These dashboards answer overlapping parts of the same question with different counts and
-dates. They are kept for their evidence and for continuity; where they disagree with the two entries above,
-the re-verified pass wins.</p>
-<div class="grid">{archive_cards}</div>
+<h2>Choose a category</h2>
+<div class="grid">{site_cards}</div>
 <section class="summary">
 <h2>What to ask the bank first</h2>
 <p>Request the refusal in writing. Ask it to identify the tax type (if any), taxpayer, period, tax base, amount and legal basis; distinguish a tax payment from a tax certificate or a bank fee; list acceptable source-of-funds evidence; confirm which FX category applies; and provide a current all-in quote showing the applied CNY/USD rate, sender fee, cable, correspondent/intermediary and recipient charges. The current HSBC schedule, for example, is specific to customer segments and excludes charges of other institutions. {ext("https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf", "HSBC China tariff effective 31 October 2026")}</p>
@@ -1019,7 +976,14 @@ def main():
     }
     for name, html_text in out.items():
         (ROOT / name).write_text(html_text)
-    write_root_hub()
+    # Integration change (session arena/3347ca0a-china2, 2026-11-11): the repository root
+    # index.html is now the final-integration dashboard and is owned by that session.
+    # This generator must not silently overwrite the published landing page, so the root
+    # hub is only written when explicitly requested.
+    if os.environ.get("LADDER_WRITE_ROOT_HUB") == "1":
+        write_root_hub()
+    else:
+        print("root hub not written (set LADDER_WRITE_ROOT_HUB=1 to regenerate it)")
     print(f"wrote {len(out)} pages, {sum(len(v) for v in out.values()):,} bytes")
 
 

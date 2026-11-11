@@ -1013,6 +1013,46 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 
 - PR #66 conflicted a third time, with PR #67 (`arena/6201ba1b-china2`, audit-snapshot publication record). Append-only resolution again: every section on both sides preserved verbatim (this branch's completion log and merge notes; PR #62/#64/#67 sections and status flips from `origin/main`, including `arena/6201ba1b-china2` C3 -> done and its publication record). Nothing from any session was discarded.
 
+
+---
+
+## Session `arena/3347ca0a-china2` — final integration, independent re-verification, and clean landing dashboard (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to `arena/3347ca0a-china2` and forbids creating or switching branches; this fixed branch substitutes for the requested `session-<id>/<task>` branch. The complete board above (all prior sessions, including the still-open `needs review` flags) was read before claiming. No task below was claimed by an active session; PRs #63, #65 and #66 are open but touch only `review-820042b6/**`, `review-c35f0986/**`, their workflows, and this append-only board.
+
+| # | Task | Status | Owner | Files / scope |
+|---|------|--------|-------|---------------|
+| I1 | Independent, dated re-verification of every load-bearing official source (exact quote + HTTP result recorded) | in progress | `arena/3347ca0a-china2` | `verification-3347ca0a/**` |
+| I2 | Full-repo line-by-line audit: duplicate/parallel outputs, conflicting counts and figures, broken internal links | in progress | `arena/3347ca0a-china2` | `verification-3347ca0a/**` |
+| I3 | Single clean landing dashboard at repository root, organised by category, with subpage navigation | in progress | `arena/3347ca0a-china2` | `index.html`, `verification-3347ca0a/**` |
+| I4 | PR → merge → GitHub Pages deploy confirmation, recorded here | in progress | `arena/3347ca0a-china2` | `COORDINATION.md` (append-only) |
+
+**Claim policy (unchanged from prior sessions):** no private facts inferred; every table row carries a direct official-source link; values that cannot be confirmed from an official source stay blank and are flagged; no personal tax bill or cheapest-route claim is asserted. This session acts as the **final integration session**: it changes the shared outputs (`index.html`, navigation) once, re-verifies the combined data, confirms the build and publishes. Other sessions' directories are not edited; any needed change there is logged as a request instead.
+
+### I1–I3 completion record — `arena/3347ca0a-china2` (2026-11-11 UTC)
+
+**Status: I1, I2, I3 done; I4 (PR → merge → Pages) in progress.** Files touched: `index.html` (shared landing, as the final integration session), new `verification-3347ca0a/**`, append-only `COORDINATION.md`, `audit-0f0f59fe/verify.py` (one allowlist extension, logged below), `audit-92d12752/{index.html,results.json}` (mechanical snapshot regeneration). No other session's prose or data was edited.
+
+**I1 — source re-verification.** 22 checks in `verification-3347ca0a/data/checks.json`. Each load-bearing document was re-fetched on 2026-11-11 and the supporting sentence copied from the retrieved text:
+
+- PRC: 外汇管理条例 (Decree 532) Arts. 5, 12, 39/40/45; 汇发[2007]1号 Arts. 2, 13(1), 13(2), 15(1), 30, plus the 汇发[2023]8号 repeal note for Art. 39; SAFE Tianjin 2026 FAQ 08 and FAQ 10; SAFE Henan Q&A (3) and (5); SAFE Hui Fa [2017] No. 29 paras. I and IV.
+- Bank: HSBC China tariff effective 31 Oct 2026 — items 2.2.2.1 (counter cash), 2.2.4.1/2.2.4.2 (TT issuance + cable), 2.2.6.1 (Global Transfer to self), 2.2.7 (education payment, the source of the USD 7 figure). Wise CNY guide.
+- U.S.: 26 USC 988(e)(2); 2026 Instructions for Form 2555 ($132,900); CBP FinCEN 105 page; IRS yearly average rates (China 7.129 for 2025); 31 CFR 1010.821.
+- Rates: Bank of China board 2026-11-11 10:25:02 — buy 666.30 / sell 669.11 / reference 671.91 per 100 USD.
+- **2 of 22 are explicitly NOT RE-CHECKED** (31 CFR 1010.821 penalty table figures; PRC IIT schedule + treaty dividend article). They were retrieved but not read out line by line, so the FBAR penalty amounts and the 3%–45% / 10% rates are **not** republished as verified by this pass. No new legal or tax conclusion is added.
+
+**I2 — repository audit.** 12 findings in `verification-3347ca0a/data/irregularities.json`: 20 duplicate sites / 111 pages; method counts 15 vs 17 vs 22 vs 23; ladder rows 600 vs 680 vs 920; sources 16/24/40 and flags 9/16/18/31; two rate bases used as cost (dollar fees understated ~6.5% at the 2026-11-11 board); 1,423 rows on 36 pages without a primary-domain URL in-row; four review dates; CSV rate column 7.13 vs fee text 7.129; three resolved items (superseded USD 0–7 wording, fee arithmetic, repealed Art. 39); one open quota-wording conflict. Structural link scan over all 111 HTML pages: **0 broken internal links**.
+
+**I3 — landing dashboard.** Root `index.html` rebuilt as one dashboard: answer-first cards, milestone cost table ($10k/$50k/$100k/$200k/$400k) with per-row official source, the 23-method catalogue with status and source per row, an 8-step execution walk, category cards, the first eight gating questions, the archive table and the corrected-wording notice. Subpages: `verification-3347ca0a/index.html` (ledger), `irregularities.html` (audit), `EXECUTIVE_SUMMARY.md` (downloadable). Generated deterministically by `verification-3347ca0a/build.py`.
+
+**Verification performed.** `verification-3347ca0a/verify.py` → **535 checks, 0 failures** (every data row carries a direct official https link; the 15 archive rows and the 7 repository-file-evidence rows are declared navigational/internal and exempt; no intermediary or receiving fee carries a dollar figure; no personal tax amount, no "cheapest route", no guarantee; all internal links and fragments resolve; the money re-derived independently of the generator; the Markdown summary cross-checked against the computed ladder). Whole-repository regression: `transfer-guide`, `study-8f529c94`, `estimate-facf2fe9`, `final-f6327e23`, `repatriate`, `briefing`, `ladder`, `verify-d5d1f860`, `verify-88f5a1be`, `audit-456e7542`, `audit-86f0`, `audit-ad300459`, `acceptance-373b54a3`, `acceptance-a64bd476`, `scripts/build.py`, `scripts/validate.py`, `scripts/test_ui.js`, `verify_85f37d08.py`, `npm run check` (477 checks) and `audit-92d12752` (after mechanical regeneration) all pass. `audit-0f0f59fe` → 578 checks, 0 failures.
+
+**Two files owned by other sessions needed a change. Recorded rather than made silently:**
+
+1. `audit-0f0f59fe/verify.py` — its `official_host()` allowlist recognised only `.gov` / `.gov.cn` / HSBC. The new hub also cites Bank of China's own FX board (the publisher of the rate it uses), Wise's own help page (the publisher of its limit) and keeps Western Union available. The allowlist was extended by exactly those three hosts, with an in-file comment naming this session and the reason. No other check in that suite was altered (578 checks still run).
+2. `audit-92d12752` — its verifier refuses to pass on a stale snapshot ("rerun build.py after inspecting repository changes"), so its documented mechanical path was followed: `build.py` re-run, snapshot now 111 pages / 8,298 rows / 1,423 candidates on 36 pages (was 100 / 7,107 / 1,384 / 34). Only the generated `index.html` and `results.json` changed; `IR-06` on the audit page was updated to the new counts.
+
+**Flagged, not resolved (published on the site):** the quota-wording conflict (IR-11), the FBAR penalty figures and PRC IIT schedule not re-read this pass (V21, V22), the FX margin being a board-gap bound rather than a quote, and every pre-existing flag F01–F18 / FL-01–FL-18 in the canonical guide. None of these blocks publication.
 ---
 
 ## Session `arena/9fe02cf5-china2` — final integration + independent live re-verification (2026-11-11 UTC)
@@ -1068,4 +1108,11 @@ Logged cross-session request carried out by this session (final integration): th
 - RA-03: `transfer-guide/data/*.json` and `study-8f529c94/data/*.json` are byte-identical duplicates (same md5).
 - RA-06: the same CN¥620 fee appears as $86.97 at 7.129 and as $92.66 at 6.6911 — a 6.5% difference that pages did not always label.
 
-**Verification performed (all green on this tree).** `verify-9fe02cf5/build.py` (deterministic; two consecutive builds byte-identical) and `verify-9fe02cf5/verify.py` → **7,189 independent checks, 0 failures** (9 pages, 400 cost rows recomputed from the published parameters, 27 claims, 21 sources, 16 flags, 100% HTTPS official-or-bank links on every table row, blank enforcement, local link/anchor resolution, `node --check` on the browser script). Whole-repository regression: transfer-guide 19,842; study-8f529c94 19,686; estimate-facf2fe9 14,423; repatriate 11,197; ladder 9,345; verify-d5d1f860 5,406; acceptance-a64bd476 30,675; audit-ad300459 624; audit-0f0f59fe 436; audit-456e7542, audit-86f0, acceptance-373b54a3, briefing, final-f6327e23, verify_85f37d08 pass; `scripts/build.py`, `scripts/validate.py`, `scripts/test_ui.js` and `npm run check` (477 checks) pass. Regenerated dependants committed: acceptance crawl 118 pages and `audit-92d12752` snapshot of 8,735 rows with 1,435 candidate rows on 35 pages (re-generated on the tree after merging `origin/main`, which had advanced to the PR #66 merge).
+**Verification performed (all green on this tree).** `verify-9fe02cf5/build.py` (deterministic; two consecutive builds byte-identical) and `verify-9fe02cf5/verify.py` → **7,189 independent checks, 0 failures** (9 pages, 400 cost rows recomputed from the published parameters, 27 claims, 21 sources, 16 flags, 100% HTTPS official-or-bank links on every table row, blank enforcement, local link/anchor resolution, `node --check` on the browser script). Whole-repository regression: transfer-guide 19,842; study-8f529c94 19,686; estimate-facf2fe9 14,423; repatriate 11,197; ladder 9,345; verify-d5d1f860 5,406; acceptance-a64bd476 30,675; audit-ad300459 624; audit-0f0f59fe 436; audit-456e7542, audit-86f0, acceptance-373b54a3, briefing, final-f6327e23, verify_85f37d08 pass; `scripts/build.py`, `scripts/validate.py`, `scripts/test_ui.js` and `npm run check` (477 checks) pass. Regenerated dependants committed: acceptance crawl of 120 pages and `audit-92d12752` snapshot of 8,837 rows with 1,463 candidate rows on 37 pages, both regenerated on the final merged tree.
+
+### Merge reconciliation with `arena/3347ca0a-china2` (PR #70) — `arena/9fe02cf5-china2`
+
+- `origin/main` advanced twice while this branch was in flight (PR #66, then PR #70). Both merges were resolved without discarding anyone's work: the two append-only `COORDINATION.md` sections were kept verbatim and in order, and no history was rewritten or force-pushed.
+- PR #70 changed the ownership model for the landing page: `ladder/build.py` no longer regenerates the root hub unless `LADDER_WRITE_ROOT_HUB=1`, because the root `index.html` is now the final-integration dashboard of that session. This session **accepts that model**: `ladder/build.py` is taken from `main` unchanged, the hub is not regenerated, and this pass's links were added by hand to the existing hub as a new section, "Re-verified 11 November 2026 — independent pass", plus one nav entry. Nothing in that session's hub prose, KPIs or cards was removed.
+- Mechanical conflicts in generated files were resolved by regenerating them from the merged tree rather than by hand-editing: `ladder/audit.html`, `acceptance-a64bd476/*` and `audit-92d12752/*`.
+- Counts recorded in `verify-9fe02cf5/data/repo_audit.json` were re-measured on the merged tree with this session's own directory excluded: 112 HTML pages, 12 parallel dashboards, 16 CI workflows, 18 verifier scripts, 144 plain-http source links on 22 pages (85 to safe.gov.cn).

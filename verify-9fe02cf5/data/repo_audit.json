@@ -6,18 +6,18 @@
   },
   "inventory": {
     "HTML pages in repository": {
-      "count": "110",
-      "how": "find . -name '*.html' -not -path './.git/*' | wc -l (before this session added its pages)",
+      "count": "112",
+      "how": "find . -name '*.html' -not -path './.git/*' -not -path './verify-9fe02cf5/*' | wc -l (merged tree, excluding this session's pages)",
       "link": "https://github.com/sassnarep3-star/China2/blob/main/docs/index.html"
     },
     "Parallel dashboard directories": {
-      "count": "11",
-      "how": "docs, site, portal, ladder, briefing, repatriate, transfer-guide, study-8f529c94, estimate-facf2fe9, final-f6327e23, verify-d5d1f860",
+      "count": "12",
+      "how": "docs, site, portal, ladder, briefing, repatriate, transfer-guide, study-8f529c94, estimate-facf2fe9, final-f6327e23, verify-d5d1f860, verification-3347ca0a",
       "link": "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/index.html"
     },
     "Distinct declared source counts": {
-      "count": "5, and they disagree",
-      "how": "transfer-guide 40; study-8f529c94 40 (byte-identical file); estimate-facf2fe9 47; data/ 17; final-f6327e23 and ladder use a list format",
+      "count": "6, and they disagree",
+      "how": "transfer-guide 40; study-8f529c94 40 (byte-identical file); estimate-facf2fe9 47; verification-3347ca0a 22; data/ 17; final-f6327e23 and ladder use a list format",
       "link": "https://github.com/sassnarep3-star/China2/blob/main/transfer-guide/data/sources.json"
     },
     "Distinct declared method counts": {
@@ -31,25 +31,25 @@
       "link": "https://github.com/sassnarep3-star/China2/blob/main/estimate-facf2fe9/sources.html"
     },
     "CI workflows": {
-      "count": "15",
+      "count": "16",
       "how": ".github/workflows/*.yml",
       "link": "https://github.com/sassnarep3-star/China2/blob/main/.github/workflows/verify-ladder.yml"
     },
     "Independent verifier scripts": {
-      "count": "16",
+      "count": "18",
       "how": "*/verify.py",
       "link": "https://github.com/sassnarep3-star/China2/blob/main/audit-92d12752/verify.py"
     },
     "Python in the repository": {
-      "count": "14,113 lines",
+      "count": "15,699 lines",
       "how": "find . -name '*.py' | xargs wc -l",
       "link": "https://github.com/sassnarep3-star/China2/blob/main/ladder/build.py"
     }
   },
   "findings": [
     {
-      "finding": "Eleven dashboards answer the same question with different counts, with no statement of which is authoritative.",
-      "evidence": "Source counts published as 40, 47, 17 and 16; method counts as 12, 15, 17, 22 and 23. Each set is internally consistent, so a reader has no way to know which to trust.",
+      "finding": "Twelve dashboards answer the same question with different counts, with no statement of which is authoritative.",
+      "evidence": "Source counts published as 40, 47, 22, 17 and 16; method counts as 12, 15, 17, 22 and 23. Each set is internally consistent, so a reader has no way to know which to trust.",
       "status": "REVIEW",
       "action": "This session publishes one consolidated guide and one verification pass, and the root hub now leads with them. The older directories are labelled as an archive rather than deleted, because each contains evidence another session may need.",
       "links": [
