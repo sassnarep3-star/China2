@@ -1,0 +1,776 @@
+[
+ {
+  "id": "CN-FX-01",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "State Council of the PRC, as published by the State Administration of Foreign Exchange (SAFE)",
+  "title": "中华人民共和国外汇管理条例 (Regulations of the PRC on Foreign Exchange Administration)",
+  "doc_no": "国务院令第532号 (State Council Decree No. 532), 5 August 2008",
+  "url": "https://www.safe.gov.cn/safe/2008/0806/5321.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "art5",
+    "locator": "第五条",
+    "text": "国家对经常性国际支付和转移不予限制。",
+    "en": "The State does not restrict current international payments and transfers."
+   },
+   {
+    "key": "art12",
+    "locator": "第十二条",
+    "text": "经常项目外汇收支应当具有真实、合法的交易基础。经营结汇、售汇业务的金融机构应当按照国务院外汇管理部门的规定，对交易单证的真实性及其与外汇收支的一致性进行合理审查。",
+    "en": "Current-account foreign-exchange receipts and payments must have a genuine and lawful transaction basis. Banks that sell and settle foreign exchange must reasonably review whether the transaction documents are genuine and consistent with the receipt or payment."
+   },
+   {
+    "key": "art14",
+    "locator": "第十四条",
+    "text": "经常项目外汇支出，应当按照国务院外汇管理部门关于付汇与购汇的管理规定，凭有效单证以自有外汇支付或者向经营结汇、售汇业务的金融机构购汇支付。",
+    "en": "Current-account foreign-exchange payments are made, on the strength of valid documents, from one's own foreign exchange or by purchasing foreign exchange from a bank."
+   },
+   {
+    "key": "art22",
+    "locator": "第二十二条 第一款",
+    "text": "资本项目外汇支出，应当按照国务院外汇管理部门关于付汇与购汇的管理规定，凭有效单证以自有外汇支付或者向经营结汇、售汇业务的金融机构购汇支付。国家规定应当经外汇管理机关批准的，应当在外汇支付前办理批准手续。",
+    "en": "Capital-account foreign-exchange payments are likewise made on valid documents; where the State requires approval by the foreign-exchange authority, approval must be obtained before payment."
+   },
+   {
+    "key": "art39",
+    "locator": "第三十九条",
+    "text": "有违反规定将境内外汇转移境外，或者以欺骗手段将境内资本转移境外等逃汇行为的，由外汇管理机关责令限期调回外汇，处逃汇金额30%以下的罚款；情节严重的，处逃汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。",
+    "en": "Moving foreign exchange abroad in breach of the rules, or moving domestic capital abroad by deception (\"foreign-exchange evasion\"): ordered to bring the money back and fined up to 30% of the amount; in serious cases fined from 30% up to the full amount; criminal liability where a crime is constituted."
+   },
+   {
+    "key": "art40",
+    "locator": "第四十条",
+    "text": "有违反规定以外汇收付应当以人民币收付的款项，或者以虚假、无效的交易单证等向经营结汇、售汇业务的金融机构骗购外汇等非法套汇行为的，由外汇管理机关责令对非法套汇资金予以回兑，处非法套汇金额30%以下的罚款；情节严重的，处非法套汇金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。",
+    "en": "Obtaining foreign exchange from a bank with false or invalid transaction documents (\"illegal arbitrage\"): ordered to convert the money back and fined up to 30% of the amount; in serious cases fined from 30% up to the full amount; criminal liability where a crime is constituted."
+   },
+   {
+    "key": "art42",
+    "locator": "第四十二条",
+    "text": "违反规定携带外汇出入境的，由外汇管理机关给予警告，可以处违法金额20%以下的罚款。法律、行政法规规定由海关予以处罚的，从其规定。",
+    "en": "Carrying foreign exchange across the border in breach of the rules: warning and a possible fine of up to 20% of the amount; where a law or administrative regulation gives the penalty to Customs, that applies."
+   },
+   {
+    "key": "art45",
+    "locator": "第四十五条",
+    "text": "私自买卖外汇、变相买卖外汇、倒买倒卖外汇或者非法介绍买卖外汇数额较大的，由外汇管理机关给予警告，没收违法所得，处违法金额30%以下的罚款；情节严重的，处违法金额30%以上等值以下的罚款；构成犯罪的，依法追究刑事责任。",
+    "en": "Privately buying or selling foreign exchange, doing so in disguised form, reselling it, or illegally brokering such trades, in a relatively large amount: warning, confiscation of illegal gains and a fine of up to 30% of the amount; in serious cases a fine from 30% up to the full amount; criminal liability where a crime is constituted."
+   },
+   {
+    "key": "art48_3",
+    "locator": "第四十八条（三）",
+    "text": "有下列情形之一的，由外汇管理机关责令改正，给予警告，对机构可以处30万元以下的罚款，对个人可以处5万元以下的罚款：……（三）未按照规定提交有效单证或者提交的单证不真实的；",
+    "en": "Failing to submit valid documents as required, or submitting documents that are not genuine: ordered to correct, warning, and a possible fine of up to RMB 300,000 for an institution or RMB 50,000 for an individual."
+   },
+   {
+    "key": "art52_2",
+    "locator": "第五十二条（二）",
+    "text": "境内个人，是指中国公民和在中华人民共和国境内连续居住满1年的外国人，外国驻华外交人员和国际组织驻华代表除外。",
+    "en": "\"Domestic individual\" means Chinese citizens and foreigners who have lived continuously in the PRC for one full year, except foreign diplomats and representatives of international organisations in China."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-02",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "State Administration of Foreign Exchange (SAFE)",
+  "title": "国家外汇管理局关于印发《个人外汇管理办法实施细则》的通知 (Detailed Rules for Implementing the Measures for the Administration of Individual Foreign Exchange)",
+  "doc_no": "汇发[2007]1号 (Huifa [2007] No. 1), in force from 1 February 2007; the SAFE page title carries the marker （已修改） \"amended\"",
+  "url": "https://www.safe.gov.cn/safe/2007/0105/5320.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "art2",
+    "locator": "第二条 第一款",
+    "text": "对个人结汇和境内个人购汇实行年度总额管理。年度总额分别为每人每年等值5万美元。国家外汇管理局可根据国际收支状况，对年度总额进行调整。",
+    "en": "An annual aggregate quota applies to individuals' settlement (foreign currency into RMB) and to domestic individuals' purchases of foreign exchange. The quota is the equivalent of USD 50,000 per person per year for each. SAFE may adjust it."
+   },
+   {
+    "key": "art2b",
+    "locator": "第二条 第二款",
+    "text": "个人年度总额内的结汇和购汇，凭本人有效身份证件在银行办理；超过年度总额的，经常项目项下按本细则第十条、第十一条、第十二条办理，资本项目项下按本细则“资本项目个人外汇管理”有关规定办理。",
+    "en": "Within the annual quota, settlement and purchase are done at a bank on the person's valid identity document; above the quota, current-account items follow Articles 10, 11 and 12 and capital-account items follow the capital-account chapter."
+   },
+   {
+    "key": "art3",
+    "locator": "第三条",
+    "text": "个人所购外汇，可以汇出境外、存入本人外汇储蓄账户，或按照有关规定携带出境。",
+    "en": "Foreign exchange purchased by an individual may be remitted abroad, deposited in the person's own foreign-exchange savings account, or carried out of the country under the relevant rules."
+   },
+   {
+    "key": "art4",
+    "locator": "第四条",
+    "text": "个人年度总额内购汇、结汇，可以委托其直系亲属代为办理;超过年度总额的购汇、结汇以及境外个人购汇，可以按本细则规定，凭相关证明材料委托他人办理。",
+    "en": "Purchases and settlements within the annual quota may be handled by a direct relative on the person's behalf; purchases and settlements above the quota, and purchases by foreign individuals, may be handled by another person on the strength of the supporting documents these Rules require."
+   },
+   {
+    "key": "art12",
+    "locator": "第十二条",
+    "text": "境内个人经常项目项下非经营性购汇超过年度总额的，凭本人有效身份证件和有交易额的相关证明材料在银行办理。",
+    "en": "A domestic individual's non-business current-account purchase above the annual quota is done at a bank on a valid identity document and supporting documents showing the transaction amount."
+   },
+   {
+    "key": "art13_1",
+    "locator": "第十三条（一）",
+    "text": "境外个人经常项目合法人民币收入购汇及未用完的人民币兑回，按以下规定办理：（一）在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的相关证明材料（含税务凭证）办理购汇。",
+    "en": "A foreign individual's purchase of foreign exchange with lawful current-account RMB income, and the conversion back of unused RMB, are handled as follows: (1) lawful current-account RMB income obtained in China — purchase on the person's valid identity document and supporting documents showing the transaction amount (including tax vouchers)."
+   },
+   {
+    "key": "art13_2",
+    "locator": "第十三条（二）",
+    "text": "原兑换未用完的人民币兑回外汇，凭本人有效身份证件和原兑换水单办理，原兑换水单的兑回有效期为自兑换日起24个月；对于当日累计兑换不超过等值500美元（含）以及离境前在境内关外场所当日累计不超过等值1000美元（含）的兑换，可凭本人有效身份证件办理。",
+    "en": "(2) Unused RMB that was originally obtained by exchanging foreign currency is converted back on the person's valid identity document and the original exchange memo; the memo is valid for conversion back for 24 months from the exchange date. Conversions of no more than USD 500 equivalent in a day (and no more than USD 1,000 in a day airside before departure) need only the identity document."
+   },
+   {
+    "key": "art15_1",
+    "locator": "第十五条（一）",
+    "text": "境外个人经常项目外汇汇出境外，按以下规定在银行办理：（一）外汇储蓄账户内外汇汇出，凭本人有效身份证件办理；",
+    "en": "A foreign individual's current-account remittance abroad: (1) foreign exchange in a foreign-exchange savings account is remitted on the person's valid identity document."
+   },
+   {
+    "key": "art20",
+    "locator": "第二十条",
+    "text": "移居境外的境内个人将其取得合法移民身份前境内财产对外转移以及外国公民依法继承境内遗产的对外转移，按《个人财产对外转移售付汇管理暂行办法》等有关规定办理。",
+    "en": "The outward transfer of property a domestic individual owned in China before lawfully emigrating, and the outward transfer of an estate in China lawfully inherited by a foreign citizen, are handled under the Interim Measures for the Administration of the Sale and Payment of Foreign Exchange for the Outward Transfer of Personal Property."
+   },
+   {
+    "key": "art21",
+    "locator": "第二十一条",
+    "text": "境外个人在境内买卖商品房及通过股权转让等并购境内房地产企业所涉外汇管理，按《国家外汇管理局 建设部关于规范房地产市场外汇管理有关问题的通知》等有关规定办理。",
+    "en": "Foreign-exchange matters arising when a foreign individual buys or sells commercial housing in China follow the SAFE / Ministry of Construction notice on foreign-exchange administration of the real-estate market."
+   },
+   {
+    "key": "art30",
+    "locator": "第三十条",
+    "text": "个人提取外币现钞当日累计等值1万美元以下（含）的，可以在银行直接办理；超过上述金额的，凭本人有效身份证件、提钞用途证明等材料向银行所在地外汇局事前报备。",
+    "en": "An individual may withdraw foreign-currency cash of up to USD 10,000 equivalent in a day directly at the bank; above that, the withdrawal must be reported in advance to the local SAFE office with the identity document and proof of purpose."
+   },
+   {
+    "key": "art38",
+    "locator": "第三十八条 第一款",
+    "text": "个人委托其直系亲属代为办理年度总额内的购汇、结汇，应分别提供委托人和受托人的有效身份证件、委托人的授权书、直系亲属关系证明；其他情况代办的，除需提供双方有效身份证件、授权书外，还应提供本细则规定的相关证明材料。",
+    "en": "Where a direct relative acts within the annual quota: both identity documents, the principal's authorisation and proof of the relationship. In other cases of agency: both identity documents, the authorisation, and the supporting documents these Rules require."
+   },
+   {
+    "key": "art39_repealed",
+    "locator": "页末注 (note at the foot of the page)",
+    "text": "根据《国家外汇管理局关于废止和失效15件外汇管理规范性文件及调整14件外汇管理规范性文件条款的通知》（汇发〔2023〕8号）附件3《国家外汇管理局予以删除、修改的14件外汇管理规范性文件中部分条款》，以下内容已被废止：《个人外汇管理办法实施细则》（汇发〔2007〕1号印发）第三十九条。",
+    "en": "Article 39 of these Rules (the residual RMB 30,000 / RMB 1,000 fine) was repealed by Huifa [2023] No. 8."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-03",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "People's Bank of China, as published in the State Council Gazette (gov.cn)",
+  "title": "个人外汇管理办法 (Measures for the Administration of Individual Foreign Exchange)",
+  "doc_no": "中国人民银行令〔2006〕第3号 (PBOC Order [2006] No. 3), in force from 1 February 2007",
+  "url": "https://www.gov.cn/gongbao/content/2007/content_786257.htm",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "art7",
+    "locator": "第七条",
+    "text": "银行和个人在办理个人外汇业务时，应当遵守本办法的相关规定，不得以分拆等方式逃避限额监管，也不得使用虚假商业单据或者凭证逃避真实性管理。",
+    "en": "Banks and individuals must not evade the quota by splitting transactions or similar means, and must not use false commercial documents or vouchers to evade the genuineness review."
+   },
+   {
+    "key": "art9",
+    "locator": "第九条",
+    "text": "对个人结汇和境内个人购汇实行年度总额管理。年度总额内的，凭本人有效身份证件在银行办理；超过年度总额的，经常项目项下凭本人有效身份证件和有交易额的相关证明等材料在银行办理，资本项目项下按照第三章有关规定办理。",
+    "en": "An annual aggregate quota applies to individuals' settlement and to domestic individuals' purchases. Within the quota: identity document only. Above it: for current-account items, identity document plus supporting documents showing the transaction amount; capital-account items follow Chapter 3."
+   },
+   {
+    "key": "art13",
+    "locator": "第十三条",
+    "text": "境外个人在境内取得的经常项目项下合法人民币收入，可以凭本人有效身份证件及相关证明材料在银行办理购汇及汇出。",
+    "en": "A foreign individual may purchase foreign exchange with lawful current-account RMB income obtained in China, and remit it, at a bank on a valid identity document and the relevant supporting documents."
+   },
+   {
+    "key": "art14",
+    "locator": "第十四条",
+    "text": "境外个人未使用的境外汇入外汇，可以凭本人有效身份证件在银行办理原路汇回。",
+    "en": "Foreign exchange that a foreign individual remitted in from abroad and has not used may be sent back along the original route at a bank on a valid identity document."
+   },
+   {
+    "key": "art15",
+    "locator": "第十五条",
+    "text": "境外个人将原兑换未使用完的人民币兑回外币现钞时，小额兑换凭本人有效身份证件在银行或外币兑换机构办理；超过规定金额的，可以凭原兑换水单在银行办理。",
+    "en": "When a foreign individual converts unused RMB, originally obtained by exchange, back into foreign cash: small amounts on an identity document at a bank or exchange outlet; above the set amount, at a bank on the original exchange memo."
+   },
+   {
+    "key": "art22",
+    "locator": "第二十二条",
+    "text": "境外个人购买境内商品房，应当符合自用原则，其外汇资金的收支和汇兑应当符合相关外汇管理规定。境外个人出售境内商品房所得人民币，经外汇局核准可以购汇汇出。",
+    "en": "A foreign individual buying commercial housing in China must do so for own use. RMB obtained by a foreign individual from selling commercial housing in China may, with approval of the foreign-exchange authority, be used to purchase foreign exchange and be remitted."
+   },
+   {
+    "key": "art26",
+    "locator": "第二十六条",
+    "text": "境外个人在境内的合法财产对外转移，应当按照个人财产对外转移的有关外汇管理规定办理。",
+    "en": "The outward transfer of a foreign individual's lawful property in China follows the foreign-exchange rules on outward transfer of personal property."
+   },
+   {
+    "key": "art37_1",
+    "locator": "第三十七条（一）",
+    "text": "境内个人是指持有中华人民共和国居民身份证、军人身份证件、武装警察身份证件的中国公民。",
+    "en": "\"Domestic individual\" means a Chinese citizen holding a PRC resident identity card, military identity document or armed-police identity document."
+   },
+   {
+    "key": "art37_2",
+    "locator": "第三十七条（二）",
+    "text": "境外个人是指持护照、港澳居民来往内地通行证、台湾居民来往大陆通行证的外国公民（包括无国籍人）以及港澳台同胞。",
+    "en": "\"Foreign individual\" means a foreign citizen (including a stateless person) holding a passport, and Hong Kong, Macao and Taiwan compatriots holding their travel permits."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-04",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE Tianjin Branch (国家外汇管理局天津市分局)",
+  "title": "2026年外汇管理互联网信息——个人外汇（08）",
+  "doc_no": "Published 2026-07-13; index no. 00013319-6-2026-00119",
+  "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "qa",
+    "locator": "问答全文",
+    "text": "境外个人在境内工作期间取得的劳动报酬如何购汇汇出？答：根据《国家外汇管理局关于印发〈经常项目外汇业务指引（2020年版）〉的通知》（汇发〔2020〕14号）第五十九条规定，“境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇”。",
+    "en": "Q: How does a foreign individual purchase foreign exchange and remit the pay earned while working in China? A: Under Article 59 of the Guidelines on Current-Account Foreign-Exchange Business (2020 edition), Huifa [2020] No. 14, \"lawful current-account RMB income obtained in China by a foreign individual is converted at a bank on the person's valid identity document and source-of-funds documents showing the transaction amount (including tax vouchers)\"."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-05",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE Tianjin Branch (国家外汇管理局天津市分局)",
+  "title": "2024年经常项目外汇政策问答案例（九）",
+  "doc_no": "Published 2024-06-21; index no. 00013319-6-2024-00170",
+  "url": "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "qa",
+    "locator": "问答全文",
+    "text": "境外个人是否享受年度便利化额度购汇？根据《国家外汇管理局关于印发〈经常项目外汇业务指引（2020年版）〉的通知》（汇发〔2020〕14号）第五十九条，境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。",
+    "en": "Q: Do foreign individuals get the annual facilitation quota for purchasing foreign exchange? A: Under Article 59 of Huifa [2020] No. 14, a foreign individual's lawful current-account RMB income is converted on the identity document and source-of-funds documents showing the transaction amount (including tax vouchers). Foreign individuals who hold a Foreign Permanent Resident ID Card are eligible for the annual purchase facilitation quota."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-06",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "State Administration of Foreign Exchange (SAFE), as published in the State Council Gazette (gov.cn)",
+  "title": "外汇局关于印发《经常项目外汇业务指引（2020年版）》的通知 (Guidelines on Current-Account Foreign-Exchange Business, 2020 edition)",
+  "doc_no": "汇发〔2020〕14号 (Huifa [2020] No. 14); State Council Gazette 2020 No. 31",
+  "url": "https://www.gov.cn/gongbao/content/2020/content_5560296.htm",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "art49_4",
+    "locator": "第四十九条（四）",
+    "text": "办理单笔等值5万美元以上的服务贸易对外支付，境内机构和个人应先按照服务贸易对外支付税务备案有关规定办理备案手续，银行应核验服务贸易等项目对外支付纸质或电子税务备案表。",
+    "en": "For a single outward service-trade payment above USD 50,000 equivalent, domestic institutions and individuals must first complete the tax record-filing for outward payments, and the bank must check the paper or electronic tax record-filing form."
+   },
+   {
+    "key": "art54",
+    "locator": "第五十四条",
+    "text": "个人经常项目外汇业务应具有真实、合法的交易背景。个人结汇和境内个人购汇实行年度便利化额度管理，便利化额度分别为每人每年等值5万美元。",
+    "en": "Individual current-account foreign-exchange business must have a genuine and lawful transaction background. An annual facilitation quota applies to individuals' settlement and to domestic individuals' purchases: USD 50,000 equivalent per person per year for each."
+   },
+   {
+    "key": "art59",
+    "locator": "第五十九条",
+    "text": "境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇。持有外国人永久居留身份证的境外个人适用购汇年度便利化额度。",
+    "en": "Lawful current-account RMB income obtained in China by a foreign individual is converted at a bank on the person's valid identity document and source-of-funds documents showing the transaction amount (including tax vouchers). Foreign individuals who hold a Foreign Permanent Resident ID Card are eligible for the annual purchase facilitation quota."
+   },
+   {
+    "key": "art60",
+    "locator": "第六十条",
+    "text": "境外个人原兑换未用完的人民币兑回外汇，凭本人有效身份证件和原兑换水单办理，原兑换水单的兑回有效期为自兑换日起24个月；对于当日累计兑换不超过等值500美元（含）以及离境前在境内关外场所当日累计不超过等值1000美元（含）的兑换，可凭本人有效身份证件办理。",
+    "en": "A foreign individual converts back unused RMB that was originally obtained by exchange on the identity document and the original exchange memo; the memo is valid for conversion back for 24 months from the exchange date. Up to USD 500 equivalent a day (USD 1,000 a day airside before departure) needs only the identity document."
+   },
+   {
+    "key": "art61",
+    "locator": "第六十一条 第二款",
+    "text": "个人可委托他人（含近亲属）代为办理不占用年度便利化额度的结汇和购汇。办理时需提供委托人和受托人的有效身份证件、委托书和有交易额的相关材料等。",
+    "en": "An individual may entrust another person (including a close relative) to handle settlements and purchases that do not use the annual facilitation quota; both identity documents, the letter of authorisation and the documents showing the transaction amount are required."
+   },
+   {
+    "key": "art62",
+    "locator": "第六十二条",
+    "text": "个人不得以分拆等方式规避便利化额度管理及真实性管理。外汇局对规避管理的个人实行“关注名单”管理。……（二）外汇局对借用他人便利化额度及其他方式规避便利化额度及真实性管理的个人，列入“关注名单”管理……（三）“关注名单”内个人的关注期限为列入“关注名单”的当年及之后连续2年。在关注期限内，“关注名单”内个人办理个人结售汇业务，应凭本人有效身份证件、有交易额的相关材料在银行办理。",
+    "en": "Individuals must not evade the facilitation quota or the genuineness review by splitting transactions or similar means. SAFE places individuals who evade the rules on a \"watch list\". A person who borrows other people's quotas (or evades by other means) is watch-listed; the watch period is the year of listing plus the next two years, during which every conversion requires identity document plus transaction documents."
+   },
+   {
+    "key": "art65_1",
+    "locator": "第六十五条（一）",
+    "text": "境外个人经常项目外汇汇出境外，按下列规定在银行办理：（一）外汇账户内外汇汇出，凭本人有效身份证件办理；",
+    "en": "A foreign individual's current-account remittance abroad: (1) foreign exchange held in a foreign-exchange account is remitted on the person's valid identity document."
+   },
+   {
+    "key": "art68",
+    "locator": "第六十八条",
+    "text": "银行办理个人经常项目外汇业务，应对交易单证的真实性及其与外汇收支的一致性进行合理审核。银行可根据个人风险状况，自主决定审核凭证的种类、形式以及审核要点，确保交易真实合规。银行有权对违反外汇管理规定、真实性存疑的交易予以拒绝。对拒绝办理的业务，银行应向个人准确说明拒绝原因及申诉渠道。",
+    "en": "The bank must reasonably review that the documents are genuine and consistent with the transaction. The bank may decide for itself, by the individual's risk profile, what kinds and forms of documents to review. The bank may refuse a transaction that breaches the rules or whose genuineness is in doubt. Where it refuses, the bank must accurately explain the reason for the refusal and the channel for complaint."
+   },
+   {
+    "key": "art86",
+    "locator": "第八十六条 第一款",
+    "text": "个人提取外币现钞当日累计等值1万美元以下（含）的，凭本人有效身份证件在银行办理；个人出境赴战乱、外汇管制严格、金融条件差或金融动乱的国家（地区），确有需要提取超过等值1万美元以上外币现钞的，凭本人有效身份证件、提钞用途等材料向银行所在地外汇局事前报备。",
+    "en": "An individual may withdraw foreign cash of up to USD 10,000 equivalent a day at a bank on the identity document. Withdrawing more is for travel to countries at war, with strict exchange controls, poor financial conditions or financial turmoil, and must be reported in advance to the local SAFE office."
+   },
+   {
+    "key": "art89",
+    "locator": "第八十九条 第一、二款",
+    "text": "个人携带外币现钞等入境，超过等值5000美元的应向海关书面申报。……个人携带外币现钞出境，没有或超出最近一次入境申报外币现钞数据记录的，金额在等值5000美元以上至1万美元（含）的，应向银行申领《携带外汇出境许可证》。个人赴战乱、外汇管制严格、金融条件差或金融动乱的国家（地区），确有需要携带超过等值1万美元外币现钞出境的，需向存款或购汇银行所在地外汇局申领《携带外汇出境许可证》。",
+    "en": "Foreign cash above USD 5,000 equivalent carried into China must be declared in writing to Customs. To carry foreign cash out with no (or beyond the) most recent inbound declaration: above USD 5,000 and up to USD 10,000 requires a \"Permit for Carrying Foreign Exchange Abroad\" from a bank; above USD 10,000 is for travel to countries at war, with strict exchange controls, poor financial conditions or financial turmoil, and requires the permit from the SAFE office."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-07",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "State Administration of Foreign Exchange (SAFE) — official English translation (Chinese original prevails)",
+  "title": "Circular of the State Administration of Foreign Exchange on Regulating Large-sum Overseas Cash Withdrawals with Bank Cards",
+  "doc_no": "Dated 29 December 2017; in force from 1 January 2018",
+  "url": "https://www.safe.gov.cn/en/2017/1230/1397.html",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "annual_cap",
+    "locator": "Item I, first paragraph",
+    "text": "In overseas cash withdrawals by individuals with domestic bank cards, the sum of withdrawals using the bank cards under the name of the individual (including supplementary cards) shall not exceed the equivalent of RMB 100,000 in every civil year. In case of overseas cash withdrawals in excess of the annual quota, the individuals will not be allowed to withdraw cash overseas with the domestic bank cards in the current and second years."
+   },
+   {
+    "key": "no_borrowing",
+    "locator": "Item I, second paragraph",
+    "text": "Individuals are prohibited from borrowing others' bank cards or lending their bank cards to evade or help evade the management of overseas cash withdrawals."
+   },
+   {
+    "key": "daily_cap",
+    "locator": "Item IV",
+    "text": "For overseas cash withdrawals by individuals with their domestic bank cards, the ceiling for every foreign currency card per day is to be adjusted from the equivalent of USD 1,000 to the equivalent of RMB 10,000, which will be ensured by the card-issuing financial institutions through their business systems. The RMB card will continue to be subject to the ceiling of the equivalent of RMB 10,000 per card per day, which will be ensured by the domestic RMB card clearing organizations through their business systems."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-08",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "People's Bank of China and seven other authorities (PBOC website)",
+  "title": "关于进一步防范和处置虚拟货币等相关风险的通知 (Notice on Further Preventing and Handling Risks Related to Virtual Currencies)",
+  "doc_no": "银发〔2026〕42号 (Yinfa [2026] No. 42), 6 February 2026",
+  "url": "https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "illegal",
+    "locator": "一（一）第二段",
+    "text": "虚拟货币相关业务活动属于非法金融活动。在境内开展法定货币与虚拟货币兑换业务、虚拟货币之间的兑换业务、作为中央对手方买卖虚拟货币、为虚拟货币交易提供信息中介和定价服务、代币发行融资以及虚拟货币相关金融产品交易等虚拟货币相关业务活动，涉嫌非法发售代币票券、擅自公开发行证券、非法经营证券期货业务、非法集资等非法金融活动，一律严格禁止，坚决依法取缔。境外单位和个人不得以任何形式非法向境内主体提供虚拟货币相关服务。",
+    "en": "Business activities related to virtual currencies are illegal financial activities. Exchanging legal tender for virtual currency in China, exchanging between virtual currencies, trading as a central counterparty, providing information-intermediary and pricing services, token financing and trading virtual-currency financial products are all strictly prohibited and will be shut down. Overseas entities and individuals may not illegally provide such services to persons in China in any form."
+   },
+   {
+    "key": "banks",
+    "locator": "三（六）",
+    "text": "金融机构（含非银行支付机构）不得为虚拟货币相关业务活动提供账户开立、资金划转和清算结算等服务",
+    "en": "Financial institutions (including non-bank payment institutions) may not provide account opening, fund transfer, clearing or settlement services for virtual-currency business activities."
+   },
+   {
+    "key": "losses",
+    "locator": "六（十九）",
+    "text": "任何单位和个人投资虚拟货币、现实世界资产代币及相关金融产品，违背公序良俗的，相关民事法律行为无效，由此引发的损失由其自行承担；涉嫌破坏金融秩序、危害金融安全的，由相关部门依法查处。",
+    "en": "Where anyone's investment in virtual currencies, tokenised real-world assets or related products violates public order and good morals, the civil-law act is void and the resulting losses are borne by that person; conduct suspected of disrupting financial order is investigated and dealt with by the authorities."
+   },
+   {
+    "key": "repeal",
+    "locator": "末段",
+    "text": "本通知自发布之日起施行。中国人民银行等十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》（银发〔2021〕237号）同时废止。",
+    "en": "This Notice takes effect on issue. The ten-authority Notice Yinfa [2021] No. 237 is repealed at the same time."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-09",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "People's Bank of China, as published in the State Council Gazette (gov.cn)",
+  "title": "个人财产对外转移售付汇管理暂行办法 (Interim Measures for the Administration of the Sale and Payment of Foreign Exchange for the Outward Transfer of Personal Property)",
+  "doc_no": "中国人民银行公告〔2004〕第16号 (PBOC Announcement [2004] No. 16), in force from 1 December 2004",
+  "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "art2",
+    "locator": "第二条",
+    "text": "本办法所称个人财产对外转移包括移民财产转移（以下简称移民转移）和继承财产转移（以下简称继承转移）。移民转移是指从中国内地移居外国，或者赴香港特别行政区、澳门特别行政区定居的自然人（以下简称移民），将其在取得移民身份之前在境内拥有的合法财产变现，通过外汇指定银行购汇和汇出境外的行为。继承转移是指外国公民或香港特别行政区、澳门特别行政区居民（以下简称继承人）将依法继承的境内遗产变现，通过外汇指定银行购汇和汇出境外的行为。",
+    "en": "Outward transfer of personal property covers emigrant transfer and inheritance transfer. Emigrant transfer: a natural person who has moved from mainland China to a foreign country (or settled in Hong Kong or Macao) turns lawful property owned in China before obtaining emigrant status into cash, purchases foreign exchange through a designated bank and remits it abroad. Inheritance transfer: a foreign citizen (or Hong Kong / Macao resident) turns a lawfully inherited estate in China into cash, purchases foreign exchange through a designated bank and remits it abroad."
+   },
+   {
+    "key": "art3",
+    "locator": "第三条",
+    "text": "申请人申请对外转移的财产应是本人所有的合法财产，且不得与他人有权益的争议。",
+    "en": "The property must be the applicant's own lawful property and must not be subject to a dispute over rights with another person."
+   },
+   {
+    "key": "art5",
+    "locator": "第五条",
+    "text": "申请人办理移民转移需向移民原户籍所在地外汇管理分局、外汇管理部（以下简称所在地外汇局）申请；申请人办理继承转移需向被继承人生前户籍所在地外汇局申请。",
+    "en": "An emigrant transfer is applied for at the SAFE branch of the emigrant's former household-registration place; an inheritance transfer at the SAFE branch of the deceased's household-registration place."
+   },
+   {
+    "key": "art6",
+    "locator": "第六条",
+    "text": "移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。全部申请转移财产在等值人民币20万元以下（含20万元）的，经批准后可一次性汇出。从同一被继承人继承的全部财产变现后拟转移出境的，必须一次性申请，可1次或分次汇出。",
+    "en": "As published in 2004: an emigrant transfer is applied for once for the whole amount and remitted in stages — no more than half the first time, no more than half of the remainder one year after the first remittance, and the rest two years after it; a total of RMB 200,000 or less may go in one remittance. An inheritance from one deceased person is applied for once and may be remitted in one or several payments. (See the flag on whether later SAFE notices changed the staging.)"
+   },
+   {
+    "key": "art7",
+    "locator": "第七条",
+    "text": "申请财产对外转移，可由本人办理，也可委托他人办理。",
+    "en": "The application may be made in person or through an agent."
+   },
+   {
+    "key": "art8_docs",
+    "locator": "第八条（四）（五）（六）",
+    "text": "（四）申请人身份证明文件。移居外国的，应当提供公安机关出具的中国户籍注销证明和中国驻外使领馆出具或认证的申请人在国外定居证明。……（五）申请人财产权利证明文件。如房屋产权证复印件、房地产买卖契约或拆迁补偿安置协议书以及其他证明文件。（六）申请转移财产所在地或收入来源地主管税务机关开具的税收证明或完税凭证。",
+    "en": "Emigrant transfer documents include: identity documents — for a person who moved abroad, the public-security certificate that the Chinese household registration was cancelled and a certificate of settlement abroad issued or authenticated by a Chinese embassy or consulate; proof of title to the property (for example a copy of the property certificate, sale contract or demolition-compensation agreement); and a tax certificate or tax-payment voucher issued by the tax authority where the property is located or the income arose."
+   },
+   {
+    "key": "art9_docs",
+    "locator": "第九条（三）（四）（五）",
+    "text": "（三）申请人身份证明文件。申请人为外国公民的，应当提供中国驻外使领馆出具或认证的申请人在国外定居证明；……（四）申请人获得继承财产的证明文件。（五）被继承人财产权利证明文件和被继承人财产所在地主管税务机关开具的税收证明或完税凭证。",
+    "en": "Inheritance transfer documents include: identity documents — for a foreign citizen, a certificate of settlement abroad issued or authenticated by a Chinese embassy or consulate; proof that the applicant obtained the inheritance; and the deceased's proof of title together with a tax certificate or tax-payment voucher issued by the tax authority where the deceased's property is located."
+   },
+   {
+    "key": "art10",
+    "locator": "第十条",
+    "text": "申请财产对外转移总金额在等值人民币50万元以下（含50万元）的，由所在地外汇局审批。……超过上述金额的，由所在地外汇局初审后，报国家外汇管理局审批。",
+    "en": "As published in 2004: a total of RMB 500,000 or less is approved by the local SAFE branch; a larger total is reviewed locally and approved by SAFE head office. (See the flag on later changes.)"
+   },
+   {
+    "key": "art11",
+    "locator": "第十一条",
+    "text": "外汇指定银行办理售汇后，应直接将外汇汇往移民或继承人居住国或地区申请人本人的账户，不得在境内提取外币现钞。",
+    "en": "After selling the foreign exchange the bank must remit it directly to the applicant's own account in the country or region where the emigrant or heir lives; foreign cash may not be withdrawn in China."
+   },
+   {
+    "key": "art12",
+    "locator": "第十二条 第四款",
+    "text": "法律规定不得对外转移的财产、不能证明合法来源财产等的对外转移申请，外汇局不予受理。",
+    "en": "SAFE will not accept an application for property that the law forbids to be transferred abroad or whose lawful origin cannot be proved."
+   },
+   {
+    "key": "art13",
+    "locator": "第十三条 第一款",
+    "text": "申请人通过提供虚假材料、以同一财产重复提出申请等手段非法套取外汇或者骗购外汇对外转移财产的，外汇局按照《中华人民共和国外汇管理条例》第四十条的规定给予处罚。",
+    "en": "An applicant who uses false documents or repeated applications for the same property to obtain foreign exchange is penalised under Article 40 of the Foreign Exchange Regulations."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-10",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "SAFE Hebei Branch (国家外汇管理局河北省分局) — official service guide",
+  "title": "移民财产转移购付汇核准【000171111002】办事指南 (service guide: approval of foreign-exchange purchase and payment for emigrant property transfer)",
+  "doc_no": "Service guide file dated 2024-08-16; cites 汇发〔2024〕12号 Capital-Account Guidelines (2024 edition) §6.4, PBOC Announcement [2004] No. 16, 汇发〔2004〕118号, 国税发〔2005〕13号, 汇发〔2005〕9号",
+  "url": "https://www.safe.gov.cn/hebei/file/file/20240816/86fd609207224d71b23cfda39ebe4bbb.pdf",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "conditions",
+    "locator": "三（一）准予行政许可的条件 1–3",
+    "text": "1. 申请人取得外国永久居留权、外国公民身份或港澳台地区居民身份。2.申请汇出资金为申请人在取得外国永久居留权、外国公民身份或港澳台地区居民身份之前在境内拥有的合法财产变现。3.申请汇出资金不属于司法、监察等部门依法限制对外转移的财产变现。",
+    "en": "Conditions for approval: (1) the applicant has obtained foreign permanent residence, foreign citizenship, or Hong Kong / Macao / Taiwan resident status; (2) the money to be remitted is the cash proceeds of lawful property the applicant owned in China before obtaining that status; (3) it is not property whose outward transfer is restricted by judicial or supervisory authorities."
+   },
+   {
+    "key": "id_docs_foreign_citizen",
+    "locator": "五（一）2（2）",
+    "text": "申请人为取得外国公民身份的，应提供：①申请人居住国居民身份证或其他有效身份证明（如护照）。②中国驻外使领馆出具（或认证）的申请人在国外定居证明（根据有关公约规定豁免的除外）。③移居前户籍所在地公安机关出具的境内户籍注销证明。",
+    "en": "An applicant who has obtained foreign citizenship provides: (i) the identity card of the country of residence or other valid identity document (such as a passport); (ii) a certificate of settlement abroad issued or authenticated by a Chinese embassy or consulate (unless exempted under the relevant convention); (iii) the certificate that the household registration in China was cancelled, issued by the public-security authority of the place of registration before the move."
+   },
+   {
+    "key": "source_docs",
+    "locator": "五（一）3",
+    "text": "申请人收入来源证明以及财产权利证明文件。（1）对个人薪酬所得（包括工资和薪金所得、稿酬所得、劳务报酬等）应提交有关收入来源证明。……（3）对资本所得及变现：利息、股息、红利所得应提交存款证明，股票、债券开户及交易记录。财产租赁所得、财产转让所得、特许权使用等应提供：a.财产租赁、转让、特许权使用的合同或协议以及交易资金划转证明。b.房屋所有权证、土地使用权证书或不动产权证书。c.房地产买卖契约或拆迁补偿安置协议以及交易资金划转证明。",
+    "en": "Proof of the source of income and of title: for pay (wages, author's fees, service fees) proof of the income source; for capital income and proceeds — deposit certificates and securities account and trading records for interest and dividends; for leasing, transfers and royalties the contract and fund-transfer proof, the property or land certificate, and the sale contract or demolition-compensation agreement with fund-transfer proof."
+   },
+   {
+    "key": "tax_cert",
+    "locator": "五（一）4",
+    "text": "主管税务部门出具的税务证明原件（按规定无需提交的除外），如个人确有需求，可在原件上加注业务办理情况，原件返还个人后，留存加注后的复印件。税务备案采用电子化方式的，可在网上核验相关电子化税务凭证。",
+    "en": "The original tax certificate issued by the competent tax authority (unless the rules do not require one). Where tax record-filing is electronic, the electronic tax voucher can be verified online."
+   },
+   {
+    "key": "agent",
+    "locator": "五（一）5",
+    "text": "委托他人办理的应提供委托代理协议和代理人身份证明。委托代理协议内容应包含但不限于委托人同意代理人受托办理移民财产转移及相关购付汇业务、委托人及代理人身份证件号码以及委托代理日期等关键信息，委托代理协议需委托人和代理人双方签字（经公证生效的除外）。",
+    "en": "If an agent applies: the agency agreement and the agent's identity document. The agreement must state that the agent is authorised to handle the emigrant transfer and the related purchase and payment of foreign exchange, both identity-document numbers and the date, and be signed by both (unless it takes effect by notarisation)."
+   },
+   {
+    "key": "time_limit",
+    "locator": "八（一）（二）（四）",
+    "text": "（一）承诺受理时限：5 个工作日（二）法定审批时限：20 个工作日……（四）承诺审批时限：20 个工作日",
+    "en": "Committed time to accept the application: 5 working days. Statutory time to decide: 20 working days. Committed time to decide: 20 working days."
+   },
+   {
+    "key": "no_fee",
+    "locator": "九（一）",
+    "text": "办理行政许可是否收费：否",
+    "en": "Is a fee charged for this administrative licence: No."
+   },
+   {
+    "key": "result",
+    "locator": "十（一）（二）（九）",
+    "text": "（一）审批结果类型：批文（二）审批结果名称：《资本项目外汇业务核准件》……（九）审批结果的有效地域范围：全国",
+    "en": "Result: an approval document named \"Capital-Account Foreign-Exchange Business Approval\", valid nationwide."
+   },
+   {
+    "key": "in_person",
+    "locator": "十五（五）（七）（八）",
+    "text": "（五）是否网办：否……（七）到办事现场次数：1（八）必须现场办理原因说明：暂不支持线上办理",
+    "en": "Online handling: no. Visits to the office: 1. Reason: online handling is not yet supported."
+   },
+   {
+    "key": "legal_basis",
+    "locator": "一（四）（五）",
+    "text": "（四）设定依据《中华人民共和国外汇管理条例》第二十二条。（五）实施依据 1. 《个人财产对外转移售付汇管理暂行办法》（中国人民银行公告〔2004〕第 16 号）第四条。2. 《个人财产对外转移售付汇管理暂行办法操作指引（试行）》（汇发〔2004〕118 号文印发）。3. 《国家税务总局 国家外汇管理局关于个人财产对外转移提交税收证明或者完税凭证有关问题的通知》（国税发〔2005〕13 号）第二条。",
+    "en": "Legal basis: Article 22 of the Foreign Exchange Regulations; PBOC Announcement [2004] No. 16; the Operating Guidelines Huifa [2004] No. 118; and the STA / SAFE notice Guoshuifa [2005] No. 13 on tax certificates for outward transfer of personal property."
+   }
+  ]
+ },
+ {
+  "id": "CN-FX-11",
+  "group": "PRC foreign-exchange rules",
+  "publisher": "State Administration of Foreign Exchange (SAFE)",
+  "title": "国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Notice on Further Improving and Adjusting Capital-Account Foreign-Exchange Policies)",
+  "doc_no": "汇发[2014]2号 (Huifa [2014] No. 2), in force from 10 February 2014; the SAFE page title carries the marker （已修改） \"amended\" — the amendment noted at the foot of the page (Huifa [2023] No. 28) changes Item III only",
+  "url": "https://www.safe.gov.cn/safe/2014/0124/5476.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "vi_1",
+    "locator": "六（一）",
+    "text": "移民财产转移购付汇核准，由移民原户籍所在地外汇局负责审批。继承财产转移购付汇核准，由被继承人生前户籍所在地外汇局负责审批。取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。",
+    "en": "Emigrant transfers are approved by the SAFE office of the emigrant's former household-registration place; inheritance transfers by the SAFE office of the deceased's household-registration place. The requirement to refer totals above RMB 500,000 to SAFE head office is abolished."
+   },
+   {
+    "key": "vi_2",
+    "locator": "六（二）",
+    "text": "取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。",
+    "en": "The requirement to remit an emigrant transfer in stages is abolished. Once the SAFE office has approved it, the bank may remit the money in one payment or several, within the approved amount."
+   },
+   {
+    "key": "vi_3",
+    "locator": "六（三）",
+    "text": "取消继承人从不同被继承人处继承的财产应分别申请、分别汇出的要求。继承人从不同被继承人处继承财产，可选择其中一个被继承人生前户籍所在地外汇局合并提交申请材料，经核准后可在银行一次或分次汇出相关资金。",
+    "en": "An heir who inherits from more than one person may file one combined application at the SAFE office of any one of the deceased's registration places and, once approved, remit in one payment or several."
+   },
+   {
+    "key": "vi_4",
+    "locator": "六（四）",
+    "text": "取消对有关财产权利文件（如房屋产权证、房地产买卖契约或拆迁补偿安置协议、承包或租赁合同或协议、财产转让协议或合同、特许权使用协议或合同等）进行公证的要求；取消对委托代理协议、代理人身份证明进行公证的要求。",
+    "en": "Notarisation is no longer required for the title documents (property certificate, sale contract, demolition-compensation agreement and so on), nor for the agency agreement and the agent's identity document."
+   }
+  ]
+ },
+ {
+  "id": "CN-TAX-01",
+  "group": "PRC tax rules",
+  "publisher": "State Taxation Administration (STA) and SAFE — STA policy database",
+  "title": "国家税务总局 国家外汇管理局关于个人财产对外转移提交税收证明或者完税凭证有关问题的通知 (Notice on submitting tax certificates or tax-payment vouchers for the outward transfer of personal property)",
+  "doc_no": "国税发〔2005〕13号 (Guoshuifa [2005] No. 13), 31 January 2005; the page notes it was amended by STA Announcement 2018 No. 31",
+  "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193664/content.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "item2",
+    "locator": "二",
+    "text": "申请人拟转移的财产已取得完税凭证的，可直接向外汇管理部门提供完税凭证，不需向税务机关另外申请税收证明。申请人拟转移的财产总价值在人民币15万元以下的，可不需向税务机关申请税收证明。",
+    "en": "Where the applicant already holds tax-payment vouchers for the property to be transferred, the vouchers may be given directly to the foreign-exchange authority and no separate tax certificate is needed. Where the total value of the property to be transferred is below RMB 150,000, no tax certificate need be applied for."
+   },
+   {
+    "key": "item3_2",
+    "locator": "三（二）",
+    "text": "申请人资料齐全的，税务机关应当在15日内开具税收证明；申请人提供资料不全的，可要求其补正，待补正后开具。",
+    "en": "Where the applicant's documents are complete the tax authority shall issue the tax certificate within 15 days."
+   },
+   {
+    "key": "item3_3",
+    "locator": "三（三）",
+    "text": "申请人有未完税事项的，允许补办申报纳税后开具税收证明。",
+    "en": "Where the applicant has items on which tax has not been paid, the certificate is issued after the applicant files and pays."
+   },
+   {
+    "key": "item5",
+    "locator": "五 第三款",
+    "text": "必要时税务机关应当对以上资料进行核实；对申请人没有缴税的应税行为，应当责成纳税人缴清税款并按照税收征管法的规定处理后开具税收证明。",
+    "en": "Where necessary the tax authority verifies the documents; for taxable conduct on which the applicant has not paid tax, it orders the tax to be paid in full and the matter dealt with under the Tax Collection and Administration Law before issuing the certificate."
+   },
+   {
+    "key": "item6",
+    "locator": "六",
+    "text": "税务机关必须按照申请人实际入库税额如实开具证明，并审查其有无欠税情况，严禁开具虚假证明。申请人编造虚假的计税依据骗取税收证明的，伪造、变造、涂改税收证明的，按照税收征管法及其实施细则的规定处理。",
+    "en": "The certificate must state the tax actually paid in and the authority checks for tax arrears; false certificates are strictly forbidden. Applicants who fabricate a tax base to obtain a certificate, or forge or alter one, are dealt with under the Tax Collection and Administration Law."
+   }
+  ]
+ },
+ {
+  "id": "CN-TAX-02",
+  "group": "PRC tax rules",
+  "publisher": "State Taxation Administration (STA) and SAFE — STA policy database",
+  "title": "国家税务总局 国家外汇管理局关于服务贸易等项目对外支付税务备案有关问题的公告 (Announcement on tax record-filing for outward payments under service trade and other items)",
+  "doc_no": "国家税务总局 国家外汇管理局公告2013年第40号 (Announcement 2013 No. 40), in force from 1 September 2013; the page notes that Announcement 2021 No. 19 repealed Article 1 para. 2, Article 2 para. 2 and Articles 5–8 and 10 from 29 June 2021, and that Announcement 2018 No. 31 amended it",
+  "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194375/content.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "art1",
+    "locator": "一（二）（三）",
+    "text": "境内机构和个人向境外单笔支付等值5万美元以上（不含等值5万美元，下同）下列外汇资金，除本公告第三条规定的情形外，均应向所在地主管税务机关进行税务备案：……（二）境外个人在境内的工作报酬，境外机构或个人从境内获得的股息、红利、利润、直接债务利息、担保费以及非资本转移的捐赠、赔偿、税收、偶然性所得等收益和经常转移收入;（三）境外机构或个人从境内获得的融资租赁租金、不动产的转让收入、股权转让所得以及外国投资者其他合法所得。",
+    "en": "Domestic institutions and individuals that make a single payment abroad of more than USD 50,000 equivalent of the following must file a tax record with the competent tax authority (unless Article 3 applies): … (2) a foreign individual's pay for work in China; dividends, profits, interest on direct debt, guarantee fees, and income and current transfers such as non-capital donations, compensation, taxes and incidental income obtained from China by foreign institutions or individuals; (3) finance-lease rent, income from the transfer of immovable property, income from equity transfers and other lawful income of foreign investors obtained from China."
+   },
+   {
+    "key": "art3_13",
+    "locator": "三（十三）",
+    "text": "境内机构和个人对外支付下列外汇资金，无需办理和提交《备案表》：……（十三）境内个人境外留学、旅游、探亲等因私用汇;",
+    "en": "No record-filing form is needed for, among others: (13) a domestic individual's private use of foreign exchange for study, travel or family visits abroad."
+   },
+   {
+    "key": "art4",
+    "locator": "四",
+    "text": "境外个人办理服务贸易、收益和经常转移项下对外支付，应按照个人外汇管理的相关规定办理。",
+    "en": "Outward payments by foreign individuals under service trade, income and current transfers are handled under the rules on individual foreign-exchange administration."
+   },
+   {
+    "key": "art9",
+    "locator": "九",
+    "text": "主管税务机关审查发现对外支付项目未按规定缴纳税款的，应书面告知纳税人或扣缴义务人履行申报纳税或源泉扣缴义务，依法追缴税款，按照税收法律法规的有关规定实施处罚。",
+    "en": "Where the tax authority's review finds that tax on the outward-payment item was not paid as required, it notifies the taxpayer or withholding agent in writing to file and pay or to withhold, recovers the tax and imposes penalties under the tax laws."
+   }
+  ]
+ },
+ {
+  "id": "CN-TAX-03",
+  "group": "PRC tax rules",
+  "publisher": "National People's Congress; text as published by the Shanghai Municipal Tax Service, State Taxation Administration (status shown on the page: 全文有效, \"fully in force\")",
+  "title": "中华人民共和国个人所得税法 (Individual Income Tax Law of the PRC, as amended 31 August 2018)",
+  "doc_no": "Seventh amendment, 31 August 2018",
+  "url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+  "retrieved": "2026-11-11",
+  "lang": "zh",
+  "quotes": [
+   {
+    "key": "art1",
+    "locator": "第一条 第一、二款",
+    "text": "在中国境内有住所，或者无住所而一个纳税年度内在中国境内居住累计满一百八十三天的个人，为居民个人。居民个人从中国境内和境外取得的所得，依照本法规定缴纳个人所得税。在中国境内无住所又不居住，或者无住所而一个纳税年度内在中国境内居住累计不满一百八十三天的个人，为非居民个人。非居民个人从中国境内取得的所得，依照本法规定缴纳个人所得税。",
+    "en": "A person domiciled in China, or not domiciled but resident in China for 183 days or more in total in a tax year, is a resident individual and pays individual income tax on income from inside and outside China. A person neither domiciled nor resident in China, or not domiciled and resident for fewer than 183 days in total in a tax year, is a non-resident individual and pays individual income tax on income from inside China."
+   },
+   {
+    "key": "art2",
+    "locator": "第二条 第一款",
+    "text": "下列各项个人所得，应当缴纳个人所得税：（一）工资、薪金所得；（二）劳务报酬所得；（三）稿酬所得；（四）特许权使用费所得；（五）经营所得；（六）利息、股息、红利所得；（七）财产租赁所得；（八）财产转让所得；（九）偶然所得。",
+    "en": "The nine taxable categories: (1) wages and salaries; (2) remuneration for personal services; (3) author's remuneration; (4) royalties; (5) business income; (6) interest, dividends and bonuses; (7) income from leasing property; (8) income from transferring property; (9) incidental income. Converting currency and remitting money are not in the list."
+   },
+   {
+    "key": "art3",
+    "locator": "第三条",
+    "text": "个人所得税的税率：（一）综合所得，适用百分之三至百分之四十五的超额累进税率（税率表附后）；（二）经营所得，适用百分之五至百分之三十五的超额累进税率（税率表附后）；（三）利息、股息、红利所得，财产租赁所得，财产转让所得和偶然所得，适用比例税率，税率为百分之二十。",
+    "en": "Rates: (1) comprehensive income — progressive rates from 3% to 45%; (2) business income — progressive rates from 5% to 35%; (3) interest, dividends and bonuses, property-leasing income, property-transfer income and incidental income — a flat 20%."
+   },
+   {
+    "key": "art6_5",
+    "locator": "第六条 第一款（五）",
+    "text": "财产转让所得，以转让财产的收入额减除财产原值和合理费用后的余额，为应纳税所得额。",
+    "en": "For property-transfer income the taxable amount is the transfer proceeds less the original value of the property and reasonable expenses — the gain, not the sale price."
+   },
+   {
+    "key": "art6_6",
+    "locator": "第六条 第一款（六）",
+    "text": "利息、股息、红利所得和偶然所得，以每次收入额为应纳税所得额。",
+    "en": "For interest, dividends, bonuses and incidental income the taxable amount is the amount of each receipt."
+   },
+   {
+    "key": "art9",
+    "locator": "第九条 第一款",
+    "text": "个人所得税以所得人为纳税人，以支付所得的单位或者个人为扣缴义务人。",
+    "en": "The person who receives the income is the taxpayer; the entity or individual that pays it is the withholding agent."
+   },
+   {
+    "key": "art13_2",
+    "locator": "第十三条 第二款",
+    "text": "纳税人取得应税所得，扣缴义务人未扣缴税款的，纳税人应当在取得所得的次年六月三十日前，缴纳税款；税务机关通知限期缴纳的，纳税人应当按照期限缴纳税款。",
+    "en": "Where taxable income was received and the withholding agent did not withhold, the taxpayer must pay by 30 June of the following year, or within the time limit the tax authority notifies."
+   },
+   {
+    "key": "art15_2",
+    "locator": "第十五条 第二款",
+    "text": "个人转让不动产的，税务机关应当根据不动产登记等相关信息核验应缴的个人所得税，登记机构办理转移登记时，应当查验与该不动产转让相关的个人所得税的完税凭证。个人转让股权办理变更登记的，市场主体登记机关应当查验与该股权交易相关的个人所得税的完税凭证。",
+    "en": "Where an individual transfers immovable property, the registry must check the individual-income-tax payment voucher for that transfer when registering it; the same applies to the company registry for an equity transfer."
+   },
+   {
+    "key": "art18",
+    "locator": "第十八条",
+    "text": "对储蓄存款利息所得开征、减征、停征个人所得税及其具体办法，由国务院规定，并报全国人民代表大会常务委员会备案。",
+    "en": "Whether individual income tax is levied, reduced or suspended on interest from savings deposits, and how, is decided by the State Council."
+   },
+   {
+    "key": "table1",
+    "locator": "个人所得税税率表一（综合所得适用）",
+    "text": "1 不超过36000元的 3；2 超过36000元至144000元的部分 10；3 超过144000元至300000元的部分 20；4 超过300000元至420000元的部分 25；5 超过420000元至660000元的部分 30；6 超过660000元至960000元的部分 35；7 超过960000元的部分 45",
+    "en": "Rate table 1 (comprehensive income, annual taxable income in RMB): up to 36,000 — 3%; 36,000–144,000 — 10%; 144,000–300,000 — 20%; 300,000–420,000 — 25%; 420,000–660,000 — 30%; 660,000–960,000 — 35%; above 960,000 — 45%."
+   },
+   {
+    "key": "table2",
+    "locator": "个人所得税税率表二（经营所得适用）",
+    "text": "1 不超过30000元的 5；2 超过30000元至90000元的部分 10；3 超过90000元至300000元的部分 20；4 超过300000元至500000元的部分 30；5 超过500000元的部分 35",
+    "en": "Rate table 2 (business income, annual taxable income in RMB): up to 30,000 — 5%; 30,000–90,000 — 10%; 90,000–300,000 — 20%; 300,000–500,000 — 30%; above 500,000 — 35%."
+   }
+  ]
+ },
+ {
+  "id": "US-FX-01",
+  "group": "U.S. tax rules",
+  "publisher": "Internal Revenue Service (IRS)",
+  "title": "Yearly average currency exchange rates",
+  "doc_no": "IRS web page",
+  "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+  "retrieved": "2026-11-11",
+  "lang": "en",
+  "quotes": [
+   {
+    "key": "spot_rule",
+    "locator": "Translating foreign currency into U.S. dollars",
+    "text": "You must express the amounts you report on your U.S. tax return in U.S. dollars. Therefore, you must translate foreign currency into U.S. dollars if you receive income or pay expenses in a foreign currency. In general, use the exchange rate prevailing (i.e., the spot rate) when you receive, pay or accrue the item."
+   },
+   {
+    "key": "sec988_pointer",
+    "locator": "Translating foreign currency into U.S. dollars",
+    "text": "A taxpayer may also need to recognize foreign currency gain or loss on certain foreign currency transactions. See section 988 of the Internal Revenue Code and the regulations thereunder."
+   },
+   {
+    "key": "no_official_rate",
+    "locator": "Currency exchange rates",
+    "text": "The Internal Revenue Service has no official exchange rate. Generally, it accepts any posted exchange rate that is used consistently."
+   },
+   {
+    "key": "china_row",
+    "locator": "Table \"Yearly average exchange rates for converting foreign currencies into U.S. dollars\", row China / Yuan",
+    "text": "China | Yuan | 7.129 | 7.189 | 7.075 | 6.730 | 6.452",
+    "en": "Columns are 2025, 2024, 2023, 2022, 2021."
+   }
+  ]
+ }
+]
