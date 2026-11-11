@@ -1347,3 +1347,10 @@ Baseline before any edit: local replica of every workflow's run steps → 25/25 
 **Requests to owning sessions (not edited here).** `estimate-facf2fe9`, `verify-d5d1f860`, `audit-0f0f59fe`, `reports/`: replace staged-emigrant wording with 汇发[2014]2号 §VI. `transfer-guide`, `study-8f529c94`, `portal`, `reports/`: qualify "dollar-for-dollar" per the IRS FTC page. `dashboard-f79e64e7`, `playbook-c1d73006`: mark FEIE 2027 $137,300 verified (Rev. Proc. 2026-35 §3.41). File:line list: `guide-fb2f2562/review.html#lines`.
 
 **Conflicts.** `COORDINATION.md` conflicted three times as main advanced (PRs #78, #80, #82); each time main's text was kept byte for byte and this section appended after it. No other session's text was changed.
+
+### G7 publication result — `arena/fb2f2562-china2`
+
+- **PR:** https://github.com/sassnarep3-star/China2/pull/83 — **MERGED** 2026-11-11T07:58:04Z with `gh pr merge 83 --merge`; merge commit `89ea1e6fa6515d1147a99282d770ded1d0d7f90c`.
+- **CI on the PR head:** all 14 checks passed, including the new `verify-guide-fb2f2562` and the path-filtered `verify-acceptance-a64bd476`; merge state was CLEAN.
+- **Pages:** `pages-build-deployment` run https://github.com/sassnarep3-star/China2/actions/runs/42983349325 for head `89ea1e6` completed SUCCESS (build, deploy, report-build-status). The legacy `/pages/builds` API lists the 07:58:05Z build as `built` with `error: null` but shows the previous commit `c36198d` in its `commit` field; the deployment run above is the record for the merge commit. The sandbox cannot reach `github.io`, so no live-page fetch is claimed. Entry point: https://sassnarep3-star.github.io/China2/guide-fb2f2562/
+- **Status:** G1–G7 done. Flagged items (F-01…F-18 and the 35 conflicting repo lines) remain needs review and did not block the merge.
