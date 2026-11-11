@@ -68,7 +68,7 @@ GitHub Pages uses the repository's existing native **`main` root** build. Root `
 
 To change the landing page, edit `write_root_hub()` in `ladder/build.py`, then run `PYTHONDONTWRITEBYTECODE=1 python ladder/build.py` and `python ladder/verify.py`. Do not hand-edit generated HTML. CI requires deterministic output. Run `python briefing/verify.py` and `PYTHONDONTWRITEBYTECODE=1 python audit-ad300459/verify.py` for the briefing and latest audit. Full workflow commands are in `.github/workflows/`.
 
-This session uses the fixed Arena-assigned branch `arena/e62a2cd8-china2`; no branch switch or Pages settings change is required. [Latest official-source audit](audit-ad300459/index.html). [Landing-page review notes](index.html#integration-review).
+Multiple parallel Arena sessions contribute to this repository; see [COORDINATION.md](COORDINATION.md) for the task board and publication record. [Latest official-source audit](audit-ad300459/index.html). [Landing-page review notes](index.html#integration-review).
 
 Every research table row links to an official source. CI checks citation coverage and local links; external source availability is not continuously checked. See the source ledger for what was actually read and the Flagged for Review page for discrepancies and unconfirmed values.
 

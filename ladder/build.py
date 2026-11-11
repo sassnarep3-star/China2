@@ -705,10 +705,10 @@ edited.</p>
 </section>
 <section class="panel">
   <h2>Source re-verification</h2>
-  <p>Twenty sources are used by this model. Each is listed on <a href="sources.html">Sources</a> with the
+  <p>{len(SOURCES)} sources are used by this model. Each is listed on <a href="sources.html">Sources</a> with the
   retrieval mode: <em>direct</em> means the body of the document was retrieved in this session and the quoted
   text is from that body; <em>search</em> means the document was surfaced from the official domain with quoted
-  text but not re-fetched end to end. {sum(1 for s in SOURCES.values() if s['retrieval']=='direct')} of 20
+  text but not re-fetched end to end. {sum(1 for s in SOURCES.values() if s['retrieval']=='direct')} of {len(SOURCES)}
   were retrieved directly.</p>
 </section>
 <section class="panel">
@@ -854,6 +854,8 @@ def write_root_hub():
     cards = [
         ("decision-f40147e0/index.html", "Dated verification pass · boards read 11 Nov 2026", "26 sources · 24 methods · 10 priced × 40 tiers · 16 flags",
          "Newest pass: three mainland bank boards and four tariffs re-read with retrieval times, every cost cell recomputed from them, and fourteen line-by-line re-checks of the earlier sections. Blank where a bank publishes nothing."),
+        ("transfer-guide/index.html", "Unified repatriation guide · decision checklist", "Methods · 7-layer penalty · 40 tiers · repo audit",
+         "Requested card for the transfer-guide section (session arena/50f278d8), added by the final integrator. Consolidated checklist, method catalogue, penalty breakdown and cost estimator."),
         ("verify-d5d1f860/index.html", "Live-verified dashboard · previous pass", "24 sources re-fetched · 680 rows · 16 flags",
          "Quote-level re-verification dated 10 November 2026: each load-bearing document was re-fetched and the exact sentence is shown with its link. Fees recomputed independently; blanks where nothing is published."),
         ("estimate-facf2fe9/index.html", "Published-rate estimates · bank boards read 10 Nov 2026", "6 bank boards · 4 tariffs · 23 methods × 40 tiers",

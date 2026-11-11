@@ -1,7 +1,7 @@
 {
-  "pages_scanned": 109,
-  "data_rows": 7463,
-  "without_direct_primary": 1449,
+  "pages_scanned": 118,
+  "data_rows": 8559,
+  "without_direct_primary": 1467,
   "pages_with_candidates": 37,
   "pages": [
     {
@@ -360,8 +360,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 242,
-      "without_direct_primary": 242,
+      "rows": 260,
+      "without_direct_primary": 260,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {
@@ -606,6 +606,60 @@
     },
     {
       "path": "study-8f529c94/taxes.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/audit.html",
+      "rows": 14,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/costs.html",
+      "rows": 943,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/flagged.html",
+      "rows": 18,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/index.html",
+      "rows": 9,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/methods.html",
+      "rows": 23,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/penalties.html",
+      "rows": 7,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/questions.html",
+      "rows": 12,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/sources.html",
+      "rows": 40,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "transfer-guide/taxes.html",
       "rows": 12,
       "without_direct_primary": 0,
       "first_example": ""
