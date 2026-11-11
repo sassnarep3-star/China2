@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repo audit · CNY to USD · verify-ace15295</title>
+<meta name="description" content="Line-by-line check of prior published figures. Source-linked, mobile-first research. Unpublished values are left blank and flagged.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<style>
+:root{--ink:#11211d;--muted:#5a6f66;--paper:#f6f6f1;--line:#dde3dd;--accent:#0b6b59;
+--warn:#7a4a00;--warnbg:#fff4d9;--bad:#8d2222;--badbg:#fdeceb;--ok:#0b6b59;--okbg:#e8f5f0;
+--card:#fff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:#075b4a}
+header.top{background:var(--ink);color:#f4f5f0;padding:.85rem clamp(.9rem,3vw,2rem)}
+header.top .bar{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:baseline;max-width:1100px;margin:0 auto}
+header.top strong{font-size:1.02rem;letter-spacing:.01em}
+header.top .sub{font-size:.78rem;color:#b9ccc4}
+nav{background:#0d2a24;border-bottom:1px solid #1d3d35}
+nav .inner{max-width:1100px;margin:0 auto;display:flex;gap:.15rem;overflow-x:auto;
+-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding:0 .5rem}
+nav a{flex:0 0 auto;color:#cfe0d9;text-decoration:none;font-size:.86rem;font-weight:600;
+padding:.7rem .7rem;border-bottom:3px solid transparent;white-space:nowrap}
+nav a:hover{color:#fff;background:#12352d}
+nav a[aria-current=page]{color:#fff;border-bottom-color:#3fd0a8;background:#12352d}
+main{max-width:1100px;margin:0 auto;padding:clamp(1rem,3vw,2.2rem) clamp(.9rem,3vw,2rem) 3rem}
+h1{font-size:clamp(1.55rem,4.4vw,2.35rem);line-height:1.15;letter-spacing:-.02em;margin:.2rem 0 .6rem}
+h2{font-size:clamp(1.15rem,2.7vw,1.45rem);margin:2rem 0 .6rem;letter-spacing:-.01em}
+h3{font-size:1.04rem;margin:1.3rem 0 .4rem}
+p{margin:.55rem 0}
+.lede{font-size:1.03rem;color:#2c433a;max-width:78ch}
+.crumb{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 .3rem}
+.hero{border-left:5px solid var(--accent);background:var(--card);border:1px solid var(--line);
+border-left-width:5px;border-radius:12px;padding:1rem 1.1rem;margin:1rem 0}
+.big{font-size:clamp(1.6rem,6vw,2.5rem);font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:.2rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:.75rem;margin:1rem 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem}
+.card .k{font-size:.74rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:0}
+.card .v{font-size:1.3rem;font-weight:750;margin:.15rem 0;letter-spacing:-.02em}
+.card .s{font-size:.8rem;color:var(--muted);margin:0}
+.nav-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:.7rem;margin:1rem 0}
+a.nav-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:.9rem 1rem;text-decoration:none;color:var(--ink)}
+a.nav-card:hover{border-color:var(--accent);box-shadow:0 1px 0 var(--accent)}
+a.nav-card b{color:#075b4a;display:block;font-size:.98rem}
+a.nav-card span{font-size:.83rem;color:#33473f;display:block;margin-top:.15rem}
+a.nav-card em{font-style:normal;font-size:.78rem;color:var(--muted);display:block;margin-top:.35rem}
+.note{background:var(--warnbg);border:1px solid #e6d3a5;border-left:5px solid #a06a12;
+border-radius:10px;padding:.85rem 1rem;margin:1rem 0;font-size:.93rem}
+.crit{background:var(--badbg);border:1px solid #f0c9c5;border-left:5px solid var(--bad);
+border-radius:10px;padding:.85rem 1rem;margin:1rem 0;font-size:.93rem}
+.good{background:var(--okbg);border:1px solid #c6e6d9;border-left:5px solid var(--ok);
+border-radius:10px;padding:.85rem 1rem;margin:1rem 0;font-size:.93rem}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:11px;
+background:var(--card);margin:.7rem 0}
+table{border-collapse:collapse;width:100%;font-size:.85rem;min-width:520px}
+table.wide{min-width:760px}
+th,td{padding:.5rem .6rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:#eef2ee;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;
+color:#3c5148;position:sticky;top:0;z-index:1}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:#fbfcfa}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.blank{color:#9a9a92;text-align:right}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;padding:.1rem .4rem;border-radius:5px;
+letter-spacing:.03em;text-transform:uppercase}
+.t-ok{background:var(--okbg);color:#075b4a}
+.t-warn{background:var(--warnbg);color:var(--warn)}
+.t-bad{background:var(--badbg);color:var(--bad)}
+.t-neu{background:#eceee9;color:#49584f}
+.src{font-size:.72rem;white-space:nowrap}
+ul,ol{margin:.4rem 0 .7rem;padding-left:1.25rem}
+li{margin:.22rem 0}
+.pros,.cons{margin:0;padding-left:1.1rem}
+.pros li::marker{color:#0b6b59}
+.cons li::marker{color:#8d2222}
+details{background:var(--card);border:1px solid var(--line);border-radius:11px;margin:.55rem 0;
+padding:.15rem .95rem}
+details summary{cursor:pointer;font-weight:650;padding:.6rem 0;font-size:.95rem}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:.5rem}
+.q-meta{font-size:.82rem;color:var(--muted)}
+footer{background:var(--ink);color:#dbe6e0;padding:1.4rem clamp(.9rem,3vw,2rem);font-size:.83rem}
+footer .inner{max-width:1100px;margin:0 auto}
+footer a{color:#8fe3c9}
+.skip{position:absolute;left:-9999px}
+@media(max-width:560px){
+ table{font-size:.8rem;min-width:460px}
+ th,td{padding:.42rem .45rem}
+ th{white-space:normal}
+ main{padding-bottom:2rem}
+}
+@media print{nav{display:none}.tw{overflow:visible}header.top,footer{print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="bar"><strong>CNY → USD</strong>
+<span class="sub">verify-ace15295 · sources captured 11 Nov 2026 · research, not tax or legal advice</span></div></header>
+<nav aria-label="Sections"><div class="inner"><a href="index.html">Overview</a><a href="costs.html">Costs</a><a href="methods.html">Methods</a><a href="penalties.html">Penalties</a><a href="taxes.html">Tax &amp; reporting</a><a href="questions.html">Questions</a><a href="audit.html" aria-current="page">Repo audit</a><a href="flagged.html">Flagged for review</a><a href="sources.html">Sources</a></div></nav>
+<main id="main">
+
+<p class="crumb">Repo audit</p>
+<h1>Line-by-line check of what this repository already published</h1>
+<p class="lede">The brief asked for the existing repository to be reviewed against official sources, with irregularities
+flagged. Twenty-four prior session directories are present. This page checks the load-bearing claims — the ones that change
+an answer — against the documents themselves. Nine findings. The most consequential is that a “conversion tax” appears
+throughout the corpus that no reviewed instrument imposes, and a penalty article that was repealed in 2023 is still cited
+as live law.</p>
+
+
+<div class="grid">
+  <div class="card"><p class="k">Findings</p><p class="v">9</p><p class="s">4 material · 1 procedural · 3 minor</p></div>
+  <div class="card"><p class="k">Prior dashboards at the root</p><p class="v">16</p><p class="s">With overlapping scopes and, in places, different answers to the same question.</p></div>
+  <div class="card"><p class="k">Session branches on the remote</p><p class="v">65</p><p class="s">14 CI workflows. One job was already failing before this session started.</p></div>
+  <div class="card"><p class="k">Prior claim found unsupported</p><p class="v">“conversion tax”</p><p class="s">No reviewed instrument taxes the exchange. See AK-02.</p></div>
+</div>
+
+<div class="note"><strong>How findings about other sessions' files are handled.</strong> Each is recorded here and on the Flagged
+for Review page, not edited in place. Another session's file is that session's scope; the brief's protocol is to log a
+cross-scope request rather than to rewrite it. What this section does instead is state the correct answer once, with the
+source, so the two can be compared.</div>
+
+<h2>Findings</h2>
+
+<details id="AK-01"><summary>AK-01 · China route eligibility &nbsp;<span class="tag t-bad">material</span></summary>
+<div class="tw"><table>
+<tbody>
+<tr><th style="width:26%">Claim as published</th><td>Prior sections treat the USD 50,000 annual facilitation quota as a limiting cap on how much can lawfully leave China, and several present &#x27;quota + wire&#x27; as a route for a PRC ID holder.</td></tr>
+<tr><th>What the official text says</th><td>SAFE&#x27;s own client guidance says the opposite: &#x27;目前,我国对于真实、合法的经常项目和已开放的资本项目下结汇和购汇都没有金额限制。等值5万美元是年度便利化额度,不是个人每年结汇、购汇的限额&#x27; — there is no amount limit on genuine lawful current-account settlement/purchase; USD 50,000 is a facilitation quota, not an annual cap. And PBOC Decree [2006] No.3 Art. 37(1) defines 境内个人 as a Chinese citizen holding a PRC ID/serviceman/police certificate, so the quota rule is written for PRC citizens.</td></tr>
+<tr><th>Verdict</th><td><strong>The quota is a convenience tier, not a ceiling. Presenting it as the limit misdirects the whole plan: it implies a 8-year staging plan for USD 400,000 that the law does not require for documented income.</strong></td></tr>
+<tr><th>Where it appears</th><td>Mixed. Some sections already label it &#x27;facilitation quota&#x27; and note the PR-ID condition; others still frame it as a cap.</td></tr>
+<tr><th>Action taken here</th><td>Read the route question as: does the balance have a documented lawful source? If yes, the ceiling is documentation, not USD 50,000. If no, no quota is available at all.</td></tr>
+<tr><th>Official source</th><td><a class="src" href="https://www.safe.gov.cn/xiamen/file/file/20211022/f4794075e84e40dd9394be523a52731b.pdf" target="_blank" rel="noopener noreferrer">S05</a> <a class="src" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer">S02</a> <a class="src" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer">S03</a></td></tr>
+</tbody></table></div>
+</details>
+<details id="AK-02"><summary>AK-02 · Tax framing &nbsp;<span class="tag t-bad">material</span></summary>
+<div class="tw"><table>
+<tbody>
+<tr><th style="width:26%">Claim as published</th><td>Prior sections repeatedly describe a &#x27;conversion tax&#x27; in China and quantify it (including &#x27;0% conversion tax&#x27;), and some state a &#x27;0.5% issuer fee&#x27; or a &#x27;conversion penalty&#x27;.</td></tr>
+<tr><th>What the official text says</th><td>None of the instruments reviewed impose a tax on the act of exchanging CNY for USD. What the rules impose is (a) the bank&#x27;s own buy/sell spread and fees, (b) a tax RECORDAL obligation (备案) for single outward payments above USD 50,000 under Announcement 2013 No. 40 Art. 1, which Art. 6 says the tax authority need not examine on the spot, and (c) ordinary PRC income tax on the underlying income under the IIT Law Art. 3 (3%-45% comprehensive, 20% on interest/dividends/rent/property transfer).</td></tr>
+<tr><th>Verdict</th><td><strong>&#x27;Conversion tax&#x27; is a mislabel. There is no such tax in the reviewed texts. There is a spread, a fee schedule, a filing step, and separate income tax on the income itself. Conflating them is the single biggest error in the published corpus because it makes a ~0.2% cost look like a ~20-45% one.</strong></td></tr>
+<tr><th>Where it appears</th><td>Repeated across briefing/, ladder/, study-8f529c94/, estimate-facf2fe9/.</td></tr>
+<tr><th>Action taken here</th><td>Use the 7-layer breakdown on the Penalties page. Ask the bank in writing which layer it means when it says &#x27;tax&#x27;.</td></tr>
+<tr><th>Official source</th><td><a class="src" href="https://zhejiang.chinatax.gov.cn/art/2013/7/9/art_8409_15933.html" target="_blank" rel="noopener noreferrer">S09</a> <a class="src" href="https://fgk.chinatax.gov.cn/zcfgk/c100015/c5210805/content.html" target="_blank" rel="noopener noreferrer">S10</a> <a class="src" href="https://fgk.chinatax.gov.cn/zcfgk/c100009/c5193028/content.html" target="_blank" rel="noopener noreferrer">S31</a> <a class="src" href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer">S24</a> <a class="src" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">S28</a></td></tr>
+</tbody></table></div>
+</details>
+<details id="AK-03"><summary>AK-03 · Cost model &nbsp;<span class="tag t-bad">material</span></summary>
+<div class="tw"><table>
+<tbody>
+<tr><th style="width:26%">Claim as published</th><td>Six prior cost tables use the IRS 2025 annual average rate of CNY 7.129/USD as the price of a conversion.</td></tr>
+<tr><th>What the official text says</th><td>The IRS itself describes these as annual averages for translating amounts on a return, and states it has no official exchange rate and generally accepts any posted rate used consistently. A bank&#x27;s executable price on 2026-11-11 was BOC 6.6911 CNY per USD (sell) — a difference of 6.1%.</td></tr>
+<tr><th>Verdict</th><td><strong>Using 7.129 to price a transfer overstates the CNY needed by about 6.1% at today&#x27;s rate. It is acceptable for a tax-return translation and wrong for a cost estimate.</strong></td></tr>
+<tr><th>Where it appears</th><td>Widespread; also flagged in earlier sessions&#x27; own review pages.</td></tr>
+<tr><th>Action taken here</th><td>All cost figures on this section&#x27;s pages use captured bank sell rates, with the capture timestamp shown. The IRS average is used ONLY for the section 988 illustration and is labelled as such.</td></tr>
+<tr><th>Official source</th><td><a class="src" href="https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates" target="_blank" rel="noopener noreferrer">S21</a> <a class="src" href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer">S24</a></td></tr>
+</tbody></table></div>
+</details>
+<details id="AK-04"><summary>AK-04 · Fee comparison &nbsp;<span class="tag t-bad">material</span></summary>
+<div class="tw"><table>
+<tbody>
+<tr><th style="width:26%">Claim as published</th><td>Prior sections compare routes mainly on the published wire fee, and some imply HSBC is the cheapest or free option (&#x27;Private Banking $0&#x27;).</td></tr>
+<tr><th>What the official text says</th><td>On the same day, BOC published a USD buy/sell spread of 666.30/669.11 (0.2104% of mid) and HSBC China published 6.6411822/6.7079204 (0.49995% of mid). HSBC&#x27;s tariff does make Private Banking telegraphic-transfer issuance and cable free, and Global Transfer free — but note 7 of that tariff states the charges exclude charges of other institutions and of authorities.</td></tr>
+<tr><th>Verdict</th><td><strong>A zero wire fee is not a zero cost. At USD 400,000 the published spread costs 1,989.83 at HSBC against 839.92 at BOC — a difference of 1,149.91, which is 18.8x the entire BOC wire charge of 61.28 and larger than every fee in HSBC&#x27;s own tariff table. Ranking routes by fee alone therefore inverts the answer above about USD 11,820.</strong></td></tr>
+<tr><th>Where it appears</th><td>No prior section combines a bank&#x27;s own published spread with that bank&#x27;s own fee schedule in one all-in number.</td></tr>
+<tr><th>Action taken here</th><td>This section&#x27;s cost tables add the bank&#x27;s own half-spread to its own fees. Both boards are reference rates, so every total is a lower bound.</td></tr>
+<tr><th>Official source</th><td><a class="src" href="https://www.boc.cn/sourcedb/whpj/" target="_blank" rel="noopener noreferrer">S24</a> <a class="src" href="https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html" target="_blank" rel="noopener noreferrer">S27</a> <a class="src" href="https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf" target="_blank" rel="noopener noreferrer">S28</a> <a class="src" href="https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html" target="_blank" rel="noopener noreferrer">S25</a></td></tr>
+</tbody></table></div>
+</details>
+<details id="AK-05"><summary>AK-05 · Currency of law &nbsp;<span class="tag t-warn">procedural</span></summary>
+<div class="tw"><table>
+<tbody>
+<tr><th style="width:26%">Claim as published</th><td>Tables cite 汇发[2007]1号 Art. 39 (a CNY 30,000 fine on banks / CNY 1,000 on individuals) as the penalty for violating the individual FX rules.</td></tr>
+<tr><th>What the official text says</th><td>The SAFE republication of that instrument carries a printed amendment note: &#x27;根据《国家外汇管理局关于废止和失效15件外汇管理规范性文件及调整14件外汇管理规范性文件条款的通知》（汇发〔2023〕8号）附件3...以下内容已被废止：《个人外汇管理办法实施细则》（汇发〔2007〕1号印发）第三十九条。&#x27; SAFE&#x27;s current-rules catalogue repeats the deletion in footnote 1.</td></tr>
+<tr><th>Verdict</th><td><strong>Article 39 is repealed. The real exposure sits in the State Council FX Regulations: Art. 39 (evasion, up to 30%, or 30% to the full amount if serious), Art. 40 (illegal arbitrage with false documents, up to 30%, or 30%-100%), Art. 42 (unlawful cash carriage, up to 20%), Art. 45 (private FX dealing, up to 30%, or 30%-100%), Art. 48 (invalid documents, up to CNY 50,000 for an individual).</strong></td></tr>
+<tr><th>Where it appears</th><td>One earlier audit (audit-ad300459) already records the repeal; other tables still cite the deleted article.</td></tr>
+<tr><th>Action taken here</th><td>Quote Art. 39/40/42/45/48 of the Regulations (国务院令第532号), which are in force, and never the repealed Art. 39 of 汇发[2007]1号.</td></tr>
+<tr><th>Official source</th><td><a class="src" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer">S03</a> <a class="src" href="https://www.safe.gov.cn/safe/file/file/20260805/d2d0d6ce1441436eadc8bc600eb79c43.pdf" target="_blank" rel="noopener noreferrer">S04</a> <a class="src" href="https://www.gov.cn/gongbao/content/2008/content_1071846.htm" target="_blank" rel="noopener noreferrer">S01</a></td></tr>
+</tbody></table></div>
+</details>
+<details id="AK-06"><summary>AK-06 · Documentation &nbsp;<span class="tag t-bad">material</span></summary>
+<div class="tw"><table>
+<tbody>
+<tr><th style="width:26%">Claim as published</th><td>Prior sections describe the required &#x27;tax proof&#x27; loosely as tax vouchers, and some imply a Chinese tax must be PAID before funds can move.</td></tr>
+<tr><th>What the official text says</th><td>SAFE&#x27;s 2026 Q&amp;A for a non-domestic individual working in China quotes 汇发[2020]14号 Art. 59: conversion is made on valid ID and &#x27;有交易额的购汇资金来源材料（含税务凭证）&#x27; — source-of-funds materials evidencing the transaction amount, including tax documents. Separate from that, Announcement 2013 No. 40 Art. 1 requires tax RECORDAL for a single outward payment above USD 50,000, and Art. 6 says the authority need not conduct a tax examination at that point.</td></tr>
+<tr><th>Verdict</th><td><strong>Two different things are being conflated: evidence of source (which may include a tax record) and a tax payment (which depends on whether the income itself was taxed). The reviewed texts do not create a new tax payable merely because value crosses the border.</strong></td></tr>
+<tr><th>Where it appears</th><td>Partly correct in places, but not separated cleanly, and the 2013/2021 recordal mechanics were missing.</td></tr>
+<tr><th>Action taken here</th><td>Ask the bank to identify in writing which document it wants: a 完税证明 / 纳税记录 (tax record), a 备案表 number from the e-tax bureau, or something else.</td></tr>
+<tr><th>Official source</th><td><a class="src" href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer">S06</a> <a class="src" href="https://zhejiang.chinatax.gov.cn/art/2013/7/9/art_8409_15933.html" target="_blank" rel="noopener noreferrer">S09</a> <a class="src" href="https://fgk.chinatax.gov.cn/zcfgk/c100015/c5210805/content.html" target="_blank" rel="noopener noreferrer">S10</a> <a class="src" href="https://www.gov.cn/zhengce/zhengceku/2021-04/02/content_5597577.htm" target="_blank" rel="noopener noreferrer">S12</a></td></tr>
+</tbody></table></div>
+</details>
+<details id="AK-07"><summary>AK-07 · Fragment integrity &nbsp;<span class="tag t-neu">minor</span></summary>
+<div class="tw"><table>
+<tbody>
+<tr><th style="width:26%">Claim as published</th><td>Root landing page and coach pages cite fragment targets such as &#x27;audit-0f0f59fe/index.html#C04&#x27;.</td></tr>
+<tr><th>What the official text says</th><td>Not applicable — this is an internal-consistency check, not a legal question.</td></tr>
+<tr><th>Verdict</th><td><strong>This session&#x27;s link checker resolves every internal href and fragment in the pages it builds; it does not certify other sections&#x27; fragments. Prior CI jobs cover their own scopes.</strong></td></tr>
+<tr><th>Where it appears</th><td>One CI job was already failing before this session started.</td></tr>
+<tr><th>Action taken here</th><td>Tracked as FL-08 below; not repaired here because the file belongs to another session&#x27;s scope.</td></tr>
+<tr><th>Official source</th><td><span class="src">internal check</span></td></tr>
+</tbody></table></div>
+</details>
+<details id="AK-08"><summary>AK-08 · Route completeness &nbsp;<span class="tag t-bad">material</span></summary>
+<div class="tw"><table>
+<tbody>
+<tr><th style="width:26%">Claim as published</th><td>Prior sections list 15-23 &#x27;methods&#x27;, counting bank variants, card spending and transfers as separate methods.</td></tr>
+<tr><th>What the official text says</th><td>The instruments reviewed support a much smaller set of distinct LEGAL ROUTES: (1) documented current-account income conversion for a non-domestic individual (S06/S03 Art. 13); (2) the same for a domestic individual (S05 Q9); (3) the annual facilitation quota where a PRC permanent-residence card exists (S07); (4) re-conversion of unused RMB within 24 months on the original memo (S08); (5) emigrant property transfer after cancelling PRC household registration (S11); (6) inheritance transfer (S11); (7) an individual trade operator&#x27;s FX settlement account; (8) cross-border cash within S13/S14 limits; (9) card/mobile spending abroad; and the unlawful ones (splitting, private dealing).</td></tr>
+<tr><th>Verdict</th><td><strong>Bank choice and fee level are parameters on a route, not additional routes. Counting them as separate methods inflates the list and hides that most of them are unavailable to a U.S. passport holder without a PRC permanent-residence card.</strong></td></tr>
+<tr><th>Where it appears</th><td>Method counts of 15-23, with variants counted separately.</td></tr>
+<tr><th>Action taken here</th><td>Methods page lists 10 route types and marks eligibility per route; the cost tables then apply bank parameters to the one route that fits a documented balance.</td></tr>
+<tr><th>Official source</th><td><a class="src" href="https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html" target="_blank" rel="noopener noreferrer">S02</a> <a class="src" href="https://www.safe.gov.cn/tianjin/2024/0430/2464.html" target="_blank" rel="noopener noreferrer">S03</a> <a class="src" href="https://www.safe.gov.cn/xiamen/file/file/20211022/f4794075e84e40dd9394be523a52731b.pdf" target="_blank" rel="noopener noreferrer">S05</a> <a class="src" href="https://www.safe.gov.cn/tianjin/2026/0713/3088.html" target="_blank" rel="noopener noreferrer">S06</a> <a class="src" href="https://www.safe.gov.cn/tianjin/2025/1113/2926.html" target="_blank" rel="noopener noreferrer">S07</a> <a class="src" href="https://www.safe.gov.cn/tianjin/2026/0917/3134.html" target="_blank" rel="noopener noreferrer">S08</a> <a class="src" href="https://www.gov.cn/gongbao/content/2005/content_64294.htm" target="_blank" rel="noopener noreferrer">S11</a> <a class="src" href="https://m.mofcom.gov.cn/article/zcfb/zczh/200311/20031100144140.shtml" target="_blank" rel="noopener noreferrer">S13</a></td></tr>
+</tbody></table></div>
+</details>
+<details id="AK-09"><summary>AK-09 · Corpus governance &nbsp;<span class="tag t-neu">minor</span></summary>
+<div class="tw"><table>
+<tbody>
+<tr><th style="width:26%">Claim as published</th><td>The repository root presents 16 competing dashboards, 25 top-level directories, 65 remote session branches and 14 CI workflows, several with overlapping scopes.</td></tr>
+<tr><th>What the official text says</th><td>Not applicable — repository-internal.</td></tr>
+<tr><th>Verdict</th><td><strong>Not an error in any single dashboard, but it makes the site hard to use and impossible to audit end to end: two sections can state different answers to the same question with no single answer marked current.</strong></td></tr>
+<tr><th>Where it appears</th><td>Grew across sessions; documented in COORDINATION.md.</td></tr>
+<tr><th>Action taken here</th><td>This section builds one dashboard with a single answer per question, a per-question &#x27;what is still unknown&#x27; column, and a defects list. Consolidation of the other 15 is logged as FL-09.</td></tr>
+<tr><th>Official source</th><td><span class="src">internal check</span></td></tr>
+</tbody></table></div>
+</details>
+
+<h2>Structural observations about the repository</h2>
+<div class="tw"><table class="wide">
+<thead><tr><th>Observation</th><th>Evidence</th><th>Assessment</th><th>Logged as</th></tr></thead>
+<tbody>
+<tr><td>The root landing page offers 16 category cards into 16 separate dashboards</td>
+<td>Root <code>index.html</code>, generated by <code>ladder/build.py</code></td>
+<td>Every card is internally consistent; collectively they are not a single answer. A reader has no way to know which is current.</td><td>FL-09</td></tr>
+<tr><td>Method counts differ between sections: 13, 15, 17, 18, 22, 23</td><td>Section indexes across the corpus</td>
+<td>Driven by counting banks and card products as separate methods. See AK-08.</td><td>FL-10</td></tr>
+<tr><td><code>audit-92d12752/verify.py</code> fails its own snapshot assertion</td>
+<td>Run in this session: <code>AssertionError: snapshot differs: rerun build.py after inspecting repository changes</code></td>
+<td>A pre-existing failure in a section this session does not own. It does not affect the site's published pages, but it means that section's CI is red.</td><td>FL-08</td></tr>
+<tr><td>Two pull requests (#53, #55) are stale duplicates of work already merged</td>
+<td>Last updated 10 Nov 2026, no commits since; content superseded by merged PRs #54/#57/#58</td>
+<td>Not taken over here — this section needs none of their files.</td><td>FL-11</td></tr>
+<tr><td>The IRS 2025 annual average (7.129) is used as a transaction price in several cost tables</td>
+<td>See AK-03; difference from the 11 Nov 2026 board is about 6.1%</td>
+<td>The IRS describes these as averages for translating return amounts.</td><td>AK-03</td></tr>
+</tbody></table></div>
+
+</main>
+<footer><div class="inner">
+<p><strong>What this is.</strong> A document review. No bank was contacted, no account accessed, no funds moved, no return filed.
+No personal tax figure is asserted: basis, residency, filing status and the source of the balance are unknown.
+Every computed figure is arithmetic on a rate or fee the publisher printed, and every published rate board says it is not the executable price — so all totals are lower bounds.</p>
+<p>Pages: <a href="index.html">Overview</a> · <a href="costs.html">Costs</a> · <a href="methods.html">Methods</a> · <a href="penalties.html">Penalties</a> · <a href="taxes.html">Tax &amp; reporting</a> · <a href="questions.html">Questions</a> · <a href="audit.html">Repo audit</a> · <a href="flagged.html">Flagged for review</a> · <a href="sources.html">Sources</a></p>
+<p><a href="../COORDINATION.md">Task board</a> · <a href="../README.md">Repository README</a></p>
+</div></footer>
+</body>
+</html>

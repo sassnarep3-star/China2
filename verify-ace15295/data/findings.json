@@ -1,0 +1,154 @@
+{
+ "meta": {
+  "project": "verify-ace15295",
+  "captured": "2026-11-11",
+  "count": 9,
+  "method": "Each finding names the published claim, the official wording that contradicts or qualifies it, the verdict, and the source ids used. Findings about other sessions' files are recorded, not edited."
+ },
+ "findings": [
+  {
+   "id": "AK-01",
+   "severity": "material",
+   "area": "China route eligibility",
+   "claim": "Prior sections treat the USD 50,000 annual facilitation quota as a limiting cap on how much can lawfully leave China, and several present 'quota + wire' as a route for a PRC ID holder.",
+   "what_official_says": "SAFE's own client guidance says the opposite: '目前,我国对于真实、合法的经常项目和已开放的资本项目下结汇和购汇都没有金额限制。等值5万美元是年度便利化额度,不是个人每年结汇、购汇的限额' — there is no amount limit on genuine lawful current-account settlement/purchase; USD 50,000 is a facilitation quota, not an annual cap. And PBOC Decree [2006] No.3 Art. 37(1) defines 境内个人 as a Chinese citizen holding a PRC ID/serviceman/police certificate, so the quota rule is written for PRC citizens.",
+   "verdict": "The quota is a convenience tier, not a ceiling. Presenting it as the limit misdirects the whole plan: it implies a 8-year staging plan for USD 400,000 that the law does not require for documented income.",
+   "prior_state": "Mixed. Some sections already label it 'facilitation quota' and note the PR-ID condition; others still frame it as a cap.",
+   "sources": [
+    "S05",
+    "S02",
+    "S03"
+   ],
+   "action": "Read the route question as: does the balance have a documented lawful source? If yes, the ceiling is documentation, not USD 50,000. If no, no quota is available at all.",
+   "status": "needs review"
+  },
+  {
+   "id": "AK-02",
+   "severity": "material",
+   "area": "Tax framing",
+   "claim": "Prior sections repeatedly describe a 'conversion tax' in China and quantify it (including '0% conversion tax'), and some state a '0.5% issuer fee' or a 'conversion penalty'.",
+   "what_official_says": "None of the instruments reviewed impose a tax on the act of exchanging CNY for USD. What the rules impose is (a) the bank's own buy/sell spread and fees, (b) a tax RECORDAL obligation (备案) for single outward payments above USD 50,000 under Announcement 2013 No. 40 Art. 1, which Art. 6 says the tax authority need not examine on the spot, and (c) ordinary PRC income tax on the underlying income under the IIT Law Art. 3 (3%-45% comprehensive, 20% on interest/dividends/rent/property transfer).",
+   "verdict": "'Conversion tax' is a mislabel. There is no such tax in the reviewed texts. There is a spread, a fee schedule, a filing step, and separate income tax on the income itself. Conflating them is the single biggest error in the published corpus because it makes a ~0.2% cost look like a ~20-45% one.",
+   "prior_state": "Repeated across briefing/, ladder/, study-8f529c94/, estimate-facf2fe9/.",
+   "sources": [
+    "S09",
+    "S10",
+    "S31",
+    "S24",
+    "S28"
+   ],
+   "action": "Use the 7-layer breakdown on the Penalties page. Ask the bank in writing which layer it means when it says 'tax'.",
+   "status": "needs review"
+  },
+  {
+   "id": "AK-03",
+   "severity": "material",
+   "area": "Cost model",
+   "claim": "Six prior cost tables use the IRS 2025 annual average rate of CNY 7.129/USD as the price of a conversion.",
+   "what_official_says": "The IRS itself describes these as annual averages for translating amounts on a return, and states it has no official exchange rate and generally accepts any posted rate used consistently. A bank's executable price on 2026-11-11 was BOC 6.6911 CNY per USD (sell) — a difference of 6.1%.",
+   "verdict": "Using 7.129 to price a transfer overstates the CNY needed by about 6.1% at today's rate. It is acceptable for a tax-return translation and wrong for a cost estimate.",
+   "prior_state": "Widespread; also flagged in earlier sessions' own review pages.",
+   "sources": [
+    "S21",
+    "S24"
+   ],
+   "action": "All cost figures on this section's pages use captured bank sell rates, with the capture timestamp shown. The IRS average is used ONLY for the section 988 illustration and is labelled as such.",
+   "status": "needs review"
+  },
+  {
+   "id": "AK-04",
+   "severity": "material",
+   "area": "Fee comparison",
+   "claim": "Prior sections compare routes mainly on the published wire fee, and some imply HSBC is the cheapest or free option ('Private Banking $0').",
+   "what_official_says": "On the same day, BOC published a USD buy/sell spread of 666.30/669.11 (0.2104% of mid) and HSBC China published 6.6411822/6.7079204 (0.49995% of mid). HSBC's tariff does make Private Banking telegraphic-transfer issuance and cable free, and Global Transfer free — but note 7 of that tariff states the charges exclude charges of other institutions and of authorities.",
+   "verdict": "A zero wire fee is not a zero cost. At USD 400,000 the published spread costs 1,989.83 at HSBC against 839.92 at BOC — a difference of 1,149.91, which is 18.8x the entire BOC wire charge of 61.28 and larger than every fee in HSBC's own tariff table. Ranking routes by fee alone therefore inverts the answer above about USD 11,820.",
+   "prior_state": "No prior section combines a bank's own published spread with that bank's own fee schedule in one all-in number.",
+   "sources": [
+    "S24",
+    "S27",
+    "S28",
+    "S25"
+   ],
+   "action": "This section's cost tables add the bank's own half-spread to its own fees. Both boards are reference rates, so every total is a lower bound.",
+   "status": "needs review"
+  },
+  {
+   "id": "AK-05",
+   "severity": "procedural",
+   "area": "Currency of law",
+   "claim": "Tables cite 汇发[2007]1号 Art. 39 (a CNY 30,000 fine on banks / CNY 1,000 on individuals) as the penalty for violating the individual FX rules.",
+   "what_official_says": "The SAFE republication of that instrument carries a printed amendment note: '根据《国家外汇管理局关于废止和失效15件外汇管理规范性文件及调整14件外汇管理规范性文件条款的通知》（汇发〔2023〕8号）附件3...以下内容已被废止：《个人外汇管理办法实施细则》（汇发〔2007〕1号印发）第三十九条。' SAFE's current-rules catalogue repeats the deletion in footnote 1.",
+   "verdict": "Article 39 is repealed. The real exposure sits in the State Council FX Regulations: Art. 39 (evasion, up to 30%, or 30% to the full amount if serious), Art. 40 (illegal arbitrage with false documents, up to 30%, or 30%-100%), Art. 42 (unlawful cash carriage, up to 20%), Art. 45 (private FX dealing, up to 30%, or 30%-100%), Art. 48 (invalid documents, up to CNY 50,000 for an individual).",
+   "prior_state": "One earlier audit (audit-ad300459) already records the repeal; other tables still cite the deleted article.",
+   "sources": [
+    "S03",
+    "S04",
+    "S01"
+   ],
+   "action": "Quote Art. 39/40/42/45/48 of the Regulations (国务院令第532号), which are in force, and never the repealed Art. 39 of 汇发[2007]1号.",
+   "status": "needs review"
+  },
+  {
+   "id": "AK-06",
+   "severity": "material",
+   "area": "Documentation",
+   "claim": "Prior sections describe the required 'tax proof' loosely as tax vouchers, and some imply a Chinese tax must be PAID before funds can move.",
+   "what_official_says": "SAFE's 2026 Q&A for a non-domestic individual working in China quotes 汇发[2020]14号 Art. 59: conversion is made on valid ID and '有交易额的购汇资金来源材料（含税务凭证）' — source-of-funds materials evidencing the transaction amount, including tax documents. Separate from that, Announcement 2013 No. 40 Art. 1 requires tax RECORDAL for a single outward payment above USD 50,000, and Art. 6 says the authority need not conduct a tax examination at that point.",
+   "verdict": "Two different things are being conflated: evidence of source (which may include a tax record) and a tax payment (which depends on whether the income itself was taxed). The reviewed texts do not create a new tax payable merely because value crosses the border.",
+   "prior_state": "Partly correct in places, but not separated cleanly, and the 2013/2021 recordal mechanics were missing.",
+   "sources": [
+    "S06",
+    "S09",
+    "S10",
+    "S12"
+   ],
+   "action": "Ask the bank to identify in writing which document it wants: a 完税证明 / 纳税记录 (tax record), a 备案表 number from the e-tax bureau, or something else.",
+   "status": "needs review"
+  },
+  {
+   "id": "AK-07",
+   "severity": "minor",
+   "area": "Fragment integrity",
+   "claim": "Root landing page and coach pages cite fragment targets such as 'audit-0f0f59fe/index.html#C04'.",
+   "what_official_says": "Not applicable — this is an internal-consistency check, not a legal question.",
+   "verdict": "This session's link checker resolves every internal href and fragment in the pages it builds; it does not certify other sections' fragments. Prior CI jobs cover their own scopes.",
+   "prior_state": "One CI job was already failing before this session started.",
+   "sources": [],
+   "action": "Tracked as FL-08 below; not repaired here because the file belongs to another session's scope.",
+   "status": "needs review"
+  },
+  {
+   "id": "AK-08",
+   "severity": "material",
+   "area": "Route completeness",
+   "claim": "Prior sections list 15-23 'methods', counting bank variants, card spending and transfers as separate methods.",
+   "what_official_says": "The instruments reviewed support a much smaller set of distinct LEGAL ROUTES: (1) documented current-account income conversion for a non-domestic individual (S06/S03 Art. 13); (2) the same for a domestic individual (S05 Q9); (3) the annual facilitation quota where a PRC permanent-residence card exists (S07); (4) re-conversion of unused RMB within 24 months on the original memo (S08); (5) emigrant property transfer after cancelling PRC household registration (S11); (6) inheritance transfer (S11); (7) an individual trade operator's FX settlement account; (8) cross-border cash within S13/S14 limits; (9) card/mobile spending abroad; and the unlawful ones (splitting, private dealing).",
+   "verdict": "Bank choice and fee level are parameters on a route, not additional routes. Counting them as separate methods inflates the list and hides that most of them are unavailable to a U.S. passport holder without a PRC permanent-residence card.",
+   "prior_state": "Method counts of 15-23, with variants counted separately.",
+   "sources": [
+    "S02",
+    "S03",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S11",
+    "S13"
+   ],
+   "action": "Methods page lists 10 route types and marks eligibility per route; the cost tables then apply bank parameters to the one route that fits a documented balance.",
+   "status": "needs review"
+  },
+  {
+   "id": "AK-09",
+   "severity": "minor",
+   "area": "Corpus governance",
+   "claim": "The repository root presents 16 competing dashboards, 25 top-level directories, 65 remote session branches and 14 CI workflows, several with overlapping scopes.",
+   "what_official_says": "Not applicable — repository-internal.",
+   "verdict": "Not an error in any single dashboard, but it makes the site hard to use and impossible to audit end to end: two sections can state different answers to the same question with no single answer marked current.",
+   "prior_state": "Grew across sessions; documented in COORDINATION.md.",
+   "sources": [],
+   "action": "This section builds one dashboard with a single answer per question, a per-question 'what is still unknown' column, and a defects list. Consolidation of the other 15 is logged as FL-09.",
+   "status": "needs review"
+  }
+ ]
+}

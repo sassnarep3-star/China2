@@ -1,0 +1,494 @@
+{
+ "meta": {
+  "project": "verify-ace15295",
+  "captured": "2026-11-11",
+  "count": 30,
+  "rule": "A source is listed only if this session retrieved it. Values used in any calculation must appear in relied_on with the publisher's own wording."
+ },
+ "sources": [
+  {
+   "id": "S01",
+   "pub": "State Council (PRC) / gov.cn",
+   "title": "中华人民共和国外汇管理条例 (国务院令第532号), 2008",
+   "url": "https://www.gov.cn/gongbao/content/2008/content_1071846.htm",
+   "type": "statute",
+   "read": "full text of the gazette page",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Art. 12: current-account FX receipts/payments must have a real, lawful transaction basis; banks must reasonably review authenticity of documents and consistency with the FX receipts/payments",
+    "Art. 39: evading FX (逃汇) — fine up to 30% of the amount; if serious, 30%-up to the equivalent amount",
+    "Art. 40: illegal arbitrage (非法套汇) incl. obtaining FX from a bank with false/invalid documents — fine up to 30%; serious 30%-100%",
+    "Art. 42: unlawful carrying of FX across the border — warning, fine up to 20% of the amount",
+    "Art. 45: private/unlawful buying and selling of FX, or illegally introducing FX trading — warning, confiscation of gains, fine up to 30%; serious 30%-100%; criminal liability",
+    "Art. 48: failure to submit valid documents, or submitting inauthentic documents — for an individual, fine up to CNY 50,000",
+    "Art. 52(2): 境内个人 (domestic individual) = 中国公民 and foreigners who have continuously resided in the PRC for a full year, excluding foreign diplomatic personnel and representatives of international organisations"
+   ],
+   "note": "Article 52(2) is why the 'domestic vs non-domestic individual' question matters: a PRC-citizenship test does not answer it alone."
+  },
+  {
+   "id": "S02",
+   "pub": "People's Bank of China (English site)",
+   "title": "Administrative Rules on Individual's Foreign Exchange — PBOC Decree [2006] No.3",
+   "url": "https://www.pbc.gov.cn/english/130733/2025080815071447034/index.html",
+   "type": "regulation",
+   "read": "full English text (Articles 1-42)",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Art. 7: banks and individuals must not evade limit administration by splitting a large amount into small batches",
+    "Art. 13: a non-domestic individual may convert legitimate RMB income obtained in China under the current account and remit it abroad, on valid ID and relevant documents",
+    "Art. 37(1): a domestic individual (境内个人) means a Chinese citizen holding a PRC identity certificate, serviceman identity certificate or police identity certificate",
+    "Art. 37(2): a non-domestic individual (境外个人) means a foreign citizen holding a non-Chinese passport, and Hong Kong/Macao/Taiwan compatriots holding the relevant travel permit, and stateless persons",
+    "Art. 28: domestic fund transfers between a domestic individual's and a non-domestic individual's FX accounts are managed as cross-border transactions"
+   ],
+   "note": "Art. 37(1) is a PRC-citizenship test. A U.S. passport holder is therefore 境外个人 under this rule, which routes them to the documented-commercial-income rule rather than the annual facilitation quota."
+  },
+  {
+   "id": "S03",
+   "pub": "SAFE Tianjin branch (republication of 汇发[2007]1号, as amended)",
+   "title": "（已修改）国家外汇管理局关于印发《个人外汇管理办法实施细则》的通知",
+   "url": "https://www.safe.gov.cn/tianjin/2024/0430/2464.html",
+   "type": "regulation",
+   "read": "full text incl. the publisher's amendment note",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Art. 2: annual aggregate management applies to individuals' FX settlement and to domestic individuals' FX purchases; the annual totals are the equivalent of USD 50,000 per person per year",
+    "Art. 10: for a domestic individual, non-operating current-account settlement above the annual total requires ID plus specific transaction evidence (donations, family support, inheritance, insurance, royalties, services, employee remuneration, overseas investment returns, other)",
+    "Art. 12: domestic individual purchasing FX above the annual total requires ID and materials evidencing the transaction amount",
+    "Art. 13(1): FX purchase against legitimate current-account RMB income obtained in China is made on valid ID and transaction-amount materials (including tax documents) — this is the non-domestic individual rule",
+    "Art. 13(2): re-conversion of unused RMB from an original exchange is made on ID and the original exchange memo; the memo is valid for 24 months; same-day totals of up to USD 500 (and up to USD 1,000 within the port area before departure) need only ID",
+    "Art. 14: remitting FX abroad from an FX savings account up to the equivalent of USD 50,000/day on ID; above that, documentary evidence of the transaction",
+    "Art. 30: cash withdrawal of FX up to the equivalent of USD 10,000/day at the bank; above that, prior filing with the local SAFE office",
+    "Publisher's note: Art. 39 of these Rules (the CNY 30,000 / CNY 1,000 fine provision) has been REPEALED by 汇发[2023]8号"
+   ],
+   "note": "The repeal note is printed on the publisher's own page. Any table citing a CNY 30,000 penalty under this instrument is citing a deleted article."
+  },
+  {
+   "id": "S04",
+   "pub": "SAFE (State Administration of Foreign Exchange)",
+   "title": "现行有效外汇管理主要法规目录（截至2026年6月30日）",
+   "url": "https://www.safe.gov.cn/safe/file/file/20260805/d2d0d6ce1441436eadc8bc600eb79c43.pdf",
+   "type": "regulatory-catalogue",
+   "read": "catalogue body incl. footnotes",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Item 3 (汇发[2007]1号) footnote 1: amended by 汇发[2016]13号 and Art. 39 deleted by 汇发[2023]8号",
+    "Item 18: 携带外币现钞出入境管理暂行办法 汇发[2003]102号 is in force",
+    "Item 30: 经常项目外汇业务指引（2020年版）汇发[2020]14号 is in force (as amended)",
+    "Item 35/36: 对外支付税务备案 rules — 公告2013年第40号 and supplementary 公告2021年第19号 are in force",
+    "Item 37: 汇发[2021]13号 个人经常项目外汇业务便利化 is in force",
+    "Item 97: 个人财产对外转移售付汇管理暂行办法 (PBOC 公告2004年第16号) is in force and is classified under 个人资本项目外汇管理"
+   ],
+   "note": "This is the single best currency check: a document listed here is current as at 2026-06-30; one absent from it is not."
+  },
+  {
+   "id": "S05",
+   "pub": "SAFE Xiamen branch",
+   "title": "国家外汇管理局厦门市分局个人外汇业务服务小贴士 (PDF)",
+   "url": "https://www.safe.gov.cn/xiamen/file/file/20211022/f4794075e84e40dd9394be523a52731b.pdf",
+   "type": "official-guidance",
+   "read": "full PDF text",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "§1 Q1: 境内个人 means a Chinese citizen holding a PRC resident identity card, serviceman identity card or armed-police identity card",
+    "§1 Q8: 'At present China imposes NO amount limit on FX settlement and purchase under genuine, lawful current-account items and already-opened capital-account items. The USD 50,000 equivalent is an ANNUAL FACILITATION QUOTA, not an individual's annual ceiling on settlement or purchase.'",
+    "§1 Q9: a domestic individual above/outside the quota settles or purchases on ID plus source-of-funds or purpose materials directly at the bank",
+    "§1 Q13: generally there is no amount or frequency limit on an individual's outward remittance, BUT an individual must not use splitting to evade regulation",
+    "§2 Q1: 境外个人 (non-domestic individuals) do NOT complete the 个人购汇申请书 (FX purchase application form)",
+    "§3 Q4: 近亲属 (close relatives) = spouse, parents, children, siblings, grandparents, grandchildren",
+    "§4: cash deposit/withdrawal thresholds of USD 10,000/day; over that, customs declaration form or original bank cash-withdrawal document",
+    "§4 Q4/Q5: carrying FX cash out up to USD 5,000 needs no 携带外汇出境许可证; USD 5,000-10,000 needs the certificate from the bank"
+   ],
+   "note": "Q8 is the clearest official statement that the widely repeated 'USD 50,000 per year limit' is a description of the fast-track quota, not a legal cap."
+  },
+  {
+   "id": "S06",
+   "pub": "SAFE Tianjin branch",
+   "title": "2026年外汇管理互联网信息——个人外汇（08）: 境外个人在境内工作期间取得的劳动报酬如何购汇汇出？",
+   "url": "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+   "type": "official-Q&A",
+   "read": "full page",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Answer, quoting 汇发[2020]14号 Art. 59: '境外个人在境内取得的经常项目合法人民币收入，凭本人有效身份证件和有交易额的购汇资金来源材料（含税务凭证）在银行办理购汇' — a non-domestic individual's legitimate current-account RMB income in China is purchased into FX at the bank on valid ID and source-of-funds materials evidencing the transaction amount, INCLUDING TAX DOCUMENTS"
+   ],
+   "note": "This is the operative rule for a U.S.-passport holder converting documented China-source income. It requires SOURCE-OF-FUNDS and TAX DOCUMENTS; it does not impose a tax on the conversion itself."
+  },
+  {
+   "id": "S07",
+   "pub": "SAFE Tianjin branch",
+   "title": "2025年外汇管理互联网信息——个人外汇（十六）: 持有《外国人永久居留身份证》的境外个人是否适用5万美元便利化额度？",
+   "url": "https://www.safe.gov.cn/tianjin/2025/1113/2926.html",
+   "type": "official-Q&A",
+   "read": "full page",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Answer quoting 汇发[2020]14号 Arts. 54 and 59: individuals' FX settlement and DOMESTIC individuals' FX purchase are under annual facilitation quota management, USD 50,000 equivalent per person per year; a non-domestic individual holding a Foreigner's Permanent Residence ID may use the annual FX-purchase facilitation quota"
+   ],
+   "note": "Confirms the quota follows the PRC permanent-residence card, not the passport alone."
+  },
+  {
+   "id": "S08",
+   "pub": "SAFE Tianjin branch",
+   "title": "2026年外汇管理互联网信息——个人外汇（10）: 境外个人可以将原兑换未用完的人民币兑回外汇吗？",
+   "url": "https://www.safe.gov.cn/tianjin/2026/0917/3134.html",
+   "type": "official-Q&A",
+   "read": "full page",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Answer quoting 汇发[2020]14号 Art. 60: re-conversion of a non-domestic individual's unused RMB is made on valid ID and the original exchange memo, which is valid for 24 months from the exchange date; same-day amounts up to USD 500 (and up to USD 1,000 at port-area outlets before departure) need only ID"
+   ],
+   "note": "Sets a 24-month window for reversing an exchange — relevant to anyone who already converted RMB into FX and now wants to re-source it."
+  },
+  {
+   "id": "S09",
+   "pub": "State Taxation Administration + SAFE",
+   "title": "关于服务贸易等项目对外支付税务备案有关问题的公告 (公告2013年第40号)",
+   "url": "https://zhejiang.chinatax.gov.cn/art/2013/7/9/art_8409_15933.html",
+   "type": "regulation (tax + FX joint)",
+   "read": "full text as republished by a provincial tax bureau",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Art. 1: where a domestic entity or individual pays a single outward payment of the equivalent of more than USD 50,000 for listed service-trade / income / current-transfer items, tax recordal (税务备案) with the local tax authority is required unless Art. 3 applies",
+    "Art. 1(2): includes a non-domestic individual's WORK REMUNERATION in China, and dividends, profit, direct-debt interest, guarantee fees and non-capital donations/compensation received from China",
+    "Art. 3(13): an individual's PRIVATE-purpose FX use abroad (overseas study, travel, visiting relatives) does NOT require recordal",
+    "Art. 4: a non-domestic individual's outward payment under service trade, income and current transfer is handled under the individual FX rules",
+    "Art. 6: if the documents are complete and the form is filled in, the tax authority need not conduct a tax examination on the spot; it assigns a serial number and stamps the form",
+    "Art. 12: effective 1 September 2013"
+   ],
+   "note": "Art. 6 is decisive: recordal is a filing step, not an assessment. It is the step most often mistaken by payers for 'a tax'."
+  },
+  {
+   "id": "S10",
+   "pub": "State Taxation Administration (policy database)",
+   "title": "《关于服务贸易等项目对外支付税务备案有关问题的补充公告》的解读 (公告2021年第19号 official interpretation)",
+   "url": "https://fgk.chinatax.gov.cn/zcfgk/c100015/c5210805/content.html",
+   "type": "official-interpretation",
+   "read": "full page",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "§二: one recordal per contract — for multiple payments under the same contract, recordal is done only before the FIRST outward payment",
+    "§四: the USD 50,000 threshold is unchanged; a single outward payment of no more than the equivalent of USD 50,000 needs no recordal",
+    "§六: recordal may be completed online through the provincial e-tax bureau; the filer records the system-generated form number and verification code and then goes to the bank"
+   ],
+   "note": "Together with S09 Art. 6, this supports the conclusion that the recordal step is free, online and once-per-contract — it is not a tax charge."
+  },
+  {
+   "id": "S11",
+   "pub": "People's Bank of China / State Council Gazette",
+   "title": "个人财产对外转移售付汇管理暂行办法 (中国人民银行公告〔2004〕第16号)",
+   "url": "https://www.gov.cn/gongbao/content/2005/content_64294.htm",
+   "type": "regulation",
+   "read": "full text in the State Council Gazette",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Art. 2: covers 移民财产转移 (emigrant property transfer) — a natural person who has moved from the mainland to a foreign country or to Hong Kong/Macao converting and remitting LAWFUL PROPERTY OWNED BEFORE ACQUIRING EMIGRANT STATUS — and 继承财产转移 (inheritance transfer) by a foreign citizen or HK/Macao resident",
+    "Art. 5: the application goes to the SAFE branch where the emigrant's original household registration was, or where the deceased was registered",
+    "Art. 6: the emigrant must apply ONCE for the whole amount and remit in stages — first remittance no more than half; after one year from the first remittance, no more than half of the remainder; after two years, the rest; a total of the equivalent of CNY 200,000 or less may be remitted in one go after approval",
+    "Art. 8(4): for emigration abroad, requires the public-security cancellation-of-household-registration certificate AND a certificate of overseas residence issued or authenticated by a Chinese embassy/consulate",
+    "Art. 9(5): for inheritance, requires the tax certificate or tax-payment receipt issued by the competent tax authority where the inherited property is located",
+    "Art. 10: total up to the equivalent of CNY 500,000 is approved by the local SAFE branch; ABOVE that it is first reviewed locally and then approved by SAFE headquarters",
+    "Art. 11: after selling FX, the bank must remit directly to the applicant's own account in the country of residence and must not hand out FX cash inside China"
+   ],
+   "note": "This is a capital-account route. It requires the applicant to have given up PRC household registration (or to be a foreign heir), and it is staged over two years. It is not a way around documentation."
+  },
+  {
+   "id": "S12",
+   "pub": "SAFE / gov.cn",
+   "title": "国家外汇管理局关于进一步推进个人经常项目外汇业务便利化的通知 (汇发〔2021〕13号)",
+   "url": "https://www.gov.cn/zhengce/zhengceku/2021-04/02/content_5597577.htm",
+   "type": "regulation",
+   "read": "full text",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Art. 5: for a non-domestic individual working in China, when converting lawful salary income at the same bank again during the labour-contract term, the bank may waive re-review of duplicated materials based on the first handling, and marks the FX-purchase remark '便利化薪酬购汇'",
+    "Art. 4: the mirror provision for a domestic individual working abroad converting salary",
+    "Art. 6: banks must maintain a special-handling system for individual current-account FX business and apply a substance-over-form review standard"
+   ],
+   "note": "Art. 5 is the practical unlock for repeated salary conversions: after the first documented conversion, repeat conversions at the same bank are streamlined."
+  },
+  {
+   "id": "S13",
+   "pub": "SAFE + General Administration of Customs (via MOFCOM)",
+   "title": "携带外币现钞出入境管理暂行办法 (汇发〔2003〕102号)",
+   "url": "https://m.mofcom.gov.cn/article/zcfb/zczh/200311/20031100144140.shtml",
+   "type": "regulation",
+   "read": "full text incl. Arts. 3-12",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Art. 3: on entry, carrying FX cash above the equivalent of USD 5,000 must be declared in writing to customs",
+    "Art. 5(1): on exit, up to the equivalent of USD 5,000 needs no 携带外汇出境许可证 and customs releases it",
+    "Art. 5(2): USD 5,000-10,000 requires the certificate from a designated FX bank",
+    "Art. 5(3): above USD 10,000 requires the certificate from the local SAFE branch",
+    "Art. 7: in principle a departing person may not carry more than the equivalent of USD 10,000 in FX cash out"
+   ],
+   "note": "The certificate is a permit, not a fee-based service; the rule is a control on cash, and cash is the least efficient route at the amounts in question."
+  },
+  {
+   "id": "S14",
+   "pub": "Guangzhou Customs (quoting PBOC Announcement [2004] No.18)",
+   "title": "行邮监管: 出境、入境可以携带多少现金？",
+   "url": "http://guangzhou.customs.gov.cn/guangzhou_customs/381679/3795484/3800229/index.html",
+   "type": "customs guidance",
+   "read": "page text",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Per the Measures on the Administration of the Entry and Exit of National Currency and PBOC Announcement [2004] No.18, Chinese citizens and foreigners entering or leaving may carry no more than CNY 20,000 in RMB cash per person per trip"
+   ],
+   "note": "Cited from customs rather than a news site because it states the operative limit on the border authority's own domain."
+  },
+  {
+   "id": "S15",
+   "pub": "U.S. Customs and Border Protection",
+   "title": "Money and Other Monetary Instruments",
+   "url": "https://www.cbp.gov/travel/international-visitors/money-monetary-instruments",
+   "type": "U.S. government guidance",
+   "read": "full page",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Federal law mandates reporting to CBP of amounts exceeding USD 10,000 when entering or leaving the United States, whether travelling, sending money abroad or bringing savings home",
+    "The threshold applies to the total a family or group carries or sends collectively, not per individual",
+    "Failure to file, or false/fraudulent information, risks forfeiture and seizure and civil or criminal penalties under 31 U.S.C. 5321 / 5322 / 5317 and 31 CFR 1010.820 / 1010.840 / 1010.830"
+   ],
+   "note": "Applies to bringing value IN as well — the receiving end of a repatriation plan."
+  },
+  {
+   "id": "S16",
+   "pub": "Internal Revenue Service",
+   "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+   "type": "U.S. government guidance",
+   "read": "full page",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "A U.S. person must file an FBAR on FinCEN Form 114 to report financial interest in, or signature authority over, at least one foreign financial account if the aggregate value of those accounts exceeded USD 10,000 at any time during the calendar year",
+    "Whether the account produced taxable income has no effect on whether it is a foreign financial account for FBAR purposes",
+    "Due 15 April following the calendar year, with an automatic extension to 15 October",
+    "Civil penalty maximums in Title 31 are adjusted annually for inflation (S17)"
+   ],
+   "note": "A CNY account in a Chinese bank is a foreign financial account for a U.S. person. This is a filing duty, independent of whether anything is converted."
+  },
+  {
+   "id": "S17",
+   "pub": "National Archives / eCFR (FinCEN)",
+   "title": "31 CFR § 1010.821 — Penalty adjustment and table",
+   "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+   "type": "regulation (U.S.)",
+   "read": "Table 1, as up to date 2026-11-09",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "31 U.S.C. 5321(a)(5)(B)(i) Foreign Financial Agency Transaction — NON-WILLFUL violation: maximum USD 16,536 per violation for penalties assessed on or after 17 January 2025",
+    "31 U.S.C. 5321(a)(5)(C)(i)(I) — WILLFUL violation: maximum USD 165,353 per violation on the same basis"
+   ],
+   "note": "These are statutory maxima, not a prediction. They are listed because they dwarf every fee in this project."
+  },
+  {
+   "id": "S18",
+   "pub": "Internal Revenue Service",
+   "title": "Do I need to file Form 8938, Statement of Specified Foreign Financial Assets?",
+   "url": "https://www.irs.gov/businesses/corporations/do-i-need-to-file-form-8938-statement-of-specified-foreign-financial-assets",
+   "type": "U.S. government guidance",
+   "read": "full page",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Specified individuals holding specified foreign financial assets above the applicable threshold must file Form 8938 with the annual return",
+    "Unmarried taxpayer living in the U.S.: more than USD 50,000 on the last day of the year OR more than USD 75,000 at any time during the year",
+    "Married filing jointly, living in the U.S.: more than USD 100,000 on the last day OR more than USD 150,000 at any time",
+    "Taxpayer living abroad, non-joint return: more than USD 200,000 on the last day OR more than USD 300,000 at any time",
+    "Taxpayer living abroad, joint return: more than USD 400,000 on the last day OR more than USD 600,000 at any time"
+   ],
+   "note": "The married-filing-jointly threshold of USD 100,000 last-day / USD 150,000 any-time is the one most likely to be tripped by a balance in this range."
+  },
+  {
+   "id": "S19",
+   "pub": "Internal Revenue Service",
+   "title": "Publication 525 (2025), Taxable and Nontaxable Income — 'Foreign currency transactions'",
+   "url": "https://www.irs.gov/publications/p525",
+   "type": "IRS publication",
+   "read": "section body retrieved from the IRS host",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "'If you have a gain on a personal foreign currency transaction because of changes in exchange rates, you don't have to include that gain in your income unless it's more than $200. If the gain is more than $200, report it as a capital gain.'"
+   ],
+   "note": "Matches 26 U.S.C. § 988(e)(2) (S20)."
+  },
+  {
+   "id": "S20",
+   "pub": "U.S. Code (Legal Information Institute, Cornell Law School)",
+   "title": "26 U.S.C. § 988 — Treatment of certain foreign currency transactions",
+   "url": "https://www.law.cornell.edu/uscode/text/26/988",
+   "type": "statute (U.S.)",
+   "read": "subsections (a)-(e)",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "(a)(1)(A): any foreign currency gain or loss attributable to a section 988 transaction is computed separately and treated as ORDINARY income or loss",
+    "(c)(1)(C)(i): a disposition of nonfunctional currency is treated as a section 988 transaction and the gain or loss is foreign currency gain or loss",
+    "(e)(2): for an individual's personal transaction, no gain is recognised by reason of exchange-rate changes between acquisition and disposition — 'The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.'",
+    "(e)(3): 'personal transaction' excludes transactions whose allocable expenses meet section 162 or 212 requirements"
+   ],
+   "note": "Ordinary treatment under (a)(1)(A) versus the $200 de-minimis personal-transaction exclusion in (e)(2) is the difference between a capital-gain line and nothing; it turns on whether the transaction is a personal transaction and on the size of the gain."
+  },
+  {
+   "id": "S21",
+   "pub": "Internal Revenue Service",
+   "title": "Yearly average currency exchange rates",
+   "url": "https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates",
+   "type": "IRS data table",
+   "read": "table body",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "China, Yuan, yearly average: 2025 = 7.129; 2024 = 7.189; 2023 = 7.075; 2022 = 6.730; 2021 = 6.452",
+    "'The Internal Revenue Service has no official exchange rate. Generally, it accepts any posted exchange rate that is used consistently.'",
+    "'In general, use the exchange rate prevailing (i.e., the spot rate) when you receive, pay or accrue the item.'"
+   ],
+   "note": "These are annual averages for reporting foreign-currency amounts on a return. They are NOT a transaction rate and must not be used as the price of a conversion (see the flagged item on the six prior cost tables that do exactly that)."
+  },
+  {
+   "id": "S22",
+   "pub": "Internal Revenue Service (Rev. Proc. 2025-32)",
+   "title": "2026 inflation-adjusted items — tax rate tables, standard deduction, maximum capital gains rate",
+   "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+   "type": "IRS revenue procedure",
+   "read": "sections 2 and 4.01/4.03/4.14",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "§2.01: the seven rates 10%, 12%, 22%, 24%, 32%, 35%, 37% remain in effect for individuals",
+    "§4.01 Table 3 — Unmarried Individuals 2026: 10% to USD 12,400; 12% to USD 50,400; 22% to USD 105,700; 24% to USD 201,775; 32% to USD 256,225; 35% to USD 640,600; 37% above",
+    "§4.01 Table 1 — Married Filing Jointly 2026: 10% to USD 24,800; 12% to USD 100,800; 22% to USD 211,400; 24% to USD 403,550; 32% to USD 512,450; 35% to USD 768,700; 37% above",
+    "§4.03: 2026 maximum zero-rate amount USD 49,450 (all other individuals) and maximum 15% rate amount USD 545,500",
+    "§4.14: 2026 standard deduction — single USD 16,100; MFJ USD 32,200; head of household USD 24,150"
+   ],
+   "note": "Used only for the illustrative U.S. layer. No personal liability is asserted: the user's other income, filing status and basis are unknown."
+  },
+  {
+   "id": "S23",
+   "pub": "Internal Revenue Service",
+   "title": "Instructions for Form 3520 (12/2025)",
+   "url": "https://www.irs.gov/instructions/i3520",
+   "type": "IRS instructions",
+   "read": "instructions index and filing rules",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Form 3520 is used to report certain transactions with foreign trusts and the receipt of certain large gifts or bequests from foreign persons"
+   ],
+   "note": "Relevant only if the source of the balance is a gift or inheritance from a foreign person. I did NOT read the full penalty text in this session, so no penalty figure is quoted here — see the flagged list."
+  },
+  {
+   "id": "S24",
+   "pub": "Bank of China",
+   "title": "中国银行外汇牌价 (BOC FX rate board)",
+   "url": "https://www.boc.cn/sourcedb/whpj/",
+   "type": "bank rate board (primary)",
+   "read": "USD row of the live board",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "USD row, publication date 2026/11/11, time 10:25:02: 现汇买入价 (spot buying) 666.30; 现钞买入价 (cash buying) 666.30; 现汇卖出价 (spot selling) 669.11; 现钞卖出价 (cash selling) 669.11; 中行折算价 (BOC conversion) 671.91 — all per 100 foreign-currency units",
+    "Board disclaimer: the table is for reference; the actual transaction rate at BOC online banking, mobile banking, smart counters or the counter prevails"
+   ],
+   "note": "Buying 666.30 / selling 669.11 gives a mid of 667.705 CNY per USD and a half-spread of 1.405, i.e. 0.2104% of mid. The bank's own disclaimer says this board is not the executable rate."
+  },
+  {
+   "id": "S25",
+   "pub": "Bank of China",
+   "title": "中国银行电子银行个人服务转账汇款费率表 (BOC personal transfer tariff)",
+   "url": "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+   "type": "bank tariff (primary)",
+   "read": "full fee table and notes",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Cross-border remittance (telegraphic transfer): 1‰ of the remittance amount per transaction, minimum CNY 50, maximum CNY 260; plus a cable charge of CNY 80 per transaction for Hong Kong/Macao/Taiwan and CNY 150 per transaction for non-HK/Macao/Taiwan destinations",
+    "Rates effective 1 November 2014 per the table heading",
+    "Note 1: where there is an agreement, a price concession or a local variation, the agreed or locally posted charge applies"
+   ],
+   "note": "Note 1 is why even this number is indicative: a branch may post something different."
+  },
+  {
+   "id": "S26",
+   "pub": "China Merchants Bank",
+   "title": "招商银行外汇实时汇率 (CMB live FX rates)",
+   "url": "https://fx.cmbchina.com/hq/",
+   "type": "bank rate board (primary)",
+   "read": "USD row",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "USD row, rate time 10:28:44 (page date 2026-11-10, per the page banner): 现汇卖出价 669.199; 现钞卖出价 669.199; 现汇买入价 666.295; 现钞买入价 666.295 — per 100 foreign-currency units",
+    "Page note: the data are for reference; the real-time rate at the time of the transaction prevails"
+   ],
+   "note": "Mid 667.747, half-spread 1.452 = 0.2175%. CMB's outward-remittance fee schedule was NOT captured in this session, so the CMB row shows the conversion spread only and leaves the fee blank."
+  },
+  {
+   "id": "S27",
+   "pub": "HSBC Bank (China)",
+   "title": "汇丰银行（中国）外汇汇率 (HSBC China FX rates)",
+   "url": "https://www.services.cn-banking.hsbc.com.cn/PublicContent/common/rate/zh/exchange-rates.html",
+   "type": "bank rate board (primary)",
+   "read": "USD row",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "USD row, page last updated 2026-11-10: 卖出价 (selling) 现钞 6.7079204 / 现汇 6.7079204; 买入价 (buying) 现汇 6.6411822; 现钞 6.6046534 — CNY per 1 USD",
+    "Page note: rates are for reference and may change without notice"
+   ],
+   "note": "Mid of spot buying and selling = 6.6745513, half-spread 0.0333691 = 0.49996% of mid — roughly 2.4x BOC's published spread on the same day, on the same kind of board. The board is a reference rate, not a quote."
+  },
+  {
+   "id": "S28",
+   "pub": "HSBC Bank (China)",
+   "title": "Tariff of Accounts and Services for Wealth and Personal Banking Business (effective 31 Oct 2026)",
+   "url": "https://www.hsbc.com.cn/content/dam/hsbc/cn/docs/document-download/tariff-of-Accounts-services-for-personal-customers-v2.pdf",
+   "type": "bank tariff (primary)",
+   "read": "items 2.2.4.1-2.2.4.4, 2.2.6.1, 2.2.6.2, 2.2.7 and the important notes",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "2.2.4.1 Telegraphic Transfer Issuance: Private Banking individual Free; Premier 0.1% of remittance amount, min CNY 100, max CNY 500, plus cable charge; Advance the same 0.1% / CNY 100 / CNY 500 plus cable",
+    "2.2.4.2 Cable Charges: Private Banking individual Free; Premier CNY 120 per cable; Advance CNY 120 per cable",
+    "2.2.6.1 Global Transfer to self-name HSBC accounts overseas: Private Banking Free; Premier Free; Advance CNY 145 per transaction as an indication — 'The actual charge per transaction will be USD20 or equivalent'",
+    "2.2.7 HSBC International Education Payment: Private Banking Free; Premier Free; Advance CNY 50 indication, actual USD 7 — this is the item the 'USD 7' figure belongs to, NOT general remittances",
+    "Note 7: the charges shown do not include charges collected by other institutions or duties, levies or taxes imposed by governmental or regulatory authorities",
+    "Pay Exact: CNY 200 to cover overseas bank charges where the remitter wants the beneficiary to receive the full USD amount"
+   ],
+   "note": "Note 7 is the reason every bank total in this project is labelled a lower bound: the receiving/correspondent side is not in this document."
+  },
+  {
+   "id": "S29",
+   "pub": "SAFE",
+   "title": "人民币汇率中间价 (RMB central parity) — statistics page",
+   "url": "https://www.safe.gov.cn/safe/rmbhlzjj/index.html",
+   "type": "official statistics",
+   "read": "page retrieved; the rate table is populated dynamically and returned no values to this session",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Page exists and is the SAFE central-parity publication; no USD value could be read from the returned document"
+   ],
+   "note": "NOT USED for any figure. Recorded so that the gap is visible rather than filled in by assumption. The central parity is in any case a reference rate fixed for the trading day, not a retail price."
+  },
+  {
+   "id": "S30",
+   "pub": "Industrial and Commercial Bank of China",
+   "title": "中国工商银行人民币即期外汇牌价 (ICBC spot FX board)",
+   "url": "https://www.icbc.com.cn/column/1438058341489590354.html",
+   "type": "bank rate board (primary)",
+   "read": "page shell retrieved; the quote table rendered '暂无数据' (no data) — the feed is script-populated",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "No USD value could be read from the returned document; nothing is quoted from this source"
+   ],
+   "note": "Recorded as a capture failure. ICBC fees and rates are BLANK in every table in this project rather than copied from a prior session's snapshot."
+  },
+  {
+   "id": "S31",
+   "pub": "State Taxation Administration (policy database)",
+   "title": "中华人民共和国个人所得税法 (PRC Individual Income Tax Law)",
+   "url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5193028/content.html",
+   "type": "statute (PRC)",
+   "read": "Article 2 and Article 3 with rate table 1",
+   "retrieved": "2026-11-11",
+   "relied_on": [
+    "Art. 2: the nine categories of individual income (wages/salaries; remuneration for labour services; author's remuneration; royalties; business income; interest, dividends and bonuses; income from lease of property; income from transfer of property; incidental income)",
+    "Art. 3(1): comprehensive income is taxed at progressive rates from 3% to 45%",
+    "Art. 3(2): business income at progressive rates from 5% to 35%",
+    "Art. 3(3): interest, dividends and bonuses, income from lease of property, income from transfer of property and incidental income are taxed at a flat rate of 20%",
+    "Rate table 1 (comprehensive income, annual taxable income): up to CNY 36,000 at 3%; 36,000-144,000 at 10%; 144,000-300,000 at 20%; 300,000-420,000 at 25%"
+   ],
+   "note": "This is a tax on the INCOME, assessed when the income arises. It does not attach to the act of exchanging CNY for USD. Any figure in this project labelled 'PRC tax before conversion' refers to this tax, not to a conversion charge."
+  }
+ ]
+}

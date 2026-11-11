@@ -945,3 +945,70 @@ findings in this session's own scope.
   sessions: no private fact inferred; every published figure carries a link to the publishing
   institution's own page; anything not published stays blank and is flagged; an "estimate" is
   arithmetic on published inputs and is labelled as such; no personal tax bill is asserted.
+
+### A1–A5 completion record — `arena/ace15295-china2` (2026-11-11 UTC)
+
+**Status: A1–A5 done; A6 (PR → merge → Pages) in progress.** Files touched: `verify-ace15295/**` and
+`.github/workflows/verify-ace15295.yml` (both new); plus, for hub integration only, one card line in
+`ladder/build.py` and the mechanically regenerated `index.html` and `ladder/audit.html`. No other
+session's prose, data or finding was edited or deleted.
+
+**A1 — sources.** 31 documents, every one retrieved by this session on 2026-11-11, each recorded in
+`verify-ace15295/data/sources.json` with the publisher, URL, retrieval date, what was read, and the exact
+proposition relied on. Two entries are deliberate **capture failures**: ICBC's board returned "暂无数据"
+(script-populated) and the SAFE central-parity page returned no table body, so neither is used for any
+number — both are listed precisely so the gap is visible. No figure in this section is carried over from
+another session's snapshot.
+
+**A2 — cost engine.** `model.py` computes 200 rows (5 method/segment combinations × 40 tiers) from inputs
+that are quoted with their source id. A cell is blank when the publisher prints nothing (CMB's remittance
+tariff, ICBC entirely, the receiving bank's inward fee, the user's dollar basis).
+
+**A6-relevant result and two corrections it forced.** Cheapest published all-in cost at USD 400,000 is
+**$901.20 (0.225%)** on Bank of China's board plus its posted tariff; HSBC's free-wire route is
+**$2,082.26 (0.521%)** because HSBC's published spread is 0.5000% against BOC's 0.2104% — a $1,181.06
+difference, 18.8× BOC's entire $61.28 wire charge. My own verifier then caught two overstatements in my
+first draft and both were corrected rather than published: (1) "BOC is cheapest at every tier" is false
+below ~$11,820, where BOC's CNY 50 minimum plus CNY 150 cable outweighs the spread difference and HSBC
+Private Banking is marginally cheaper — the page now states the crossover and the verifier recomputes it;
+(2) the §988 illustration table had reused the $50,000 row for the $6,226.68 figure, showing $2,495.83
+where the correct 10%-band figure is $622.67.
+
+**A3 — repo audit, 9 findings (AK-01…AK-09) published, not edited in place.** The material ones:
+- **AK-02** A "conversion tax" is asserted throughout the corpus in amounts; **no reviewed instrument
+  imposes one**. The four things the word is used for are the bank spread, a capped wire fee, a free tax
+  *recordal* (公告2013年第40号 Art. 6: the authority need not examine the tax position on the spot), and
+  PRC income tax on the income itself (IIT Law Art. 3).
+- **AK-05** 汇发〔2007〕1号 Art. 39 (the CNY 30,000/1,000 fine) is still cited as live law. It was
+  **repealed by 汇发〔2023〕8号**; the SAFE republication prints the deletion and the current-rules
+  catalogue repeats it in footnote 1. The live penalties are Regulation 532 Arts. 39/40/42/45/48.
+- **AK-01** The USD 50,000 figure is an annual **facilitation quota**, not a ceiling: SAFE states that
+  genuine lawful current-account settlement and purchase have **no amount limit**. It is written for
+  境内个人 (PRC citizens, PBOC Decree Art. 37(1)) and reaches a 境外个人 only via a PRC Foreign Permanent
+  Resident ID — while Regulation 532 Art. 52(2) uses a *different* test (citizen **or** one year's
+  continuous residence). Two definitions, two outcomes; logged as Q01/FL-01 and NOT resolved by inference.
+- **AK-03** Prior cost tables price transfers at the IRS 2025 annual average of 7.129 CNY/USD, which the
+  IRS describes as an average for translating return amounts; against the 11 Nov 2026 board that is a
+  6.1% difference. Used here only to size the §988 illustration.
+- **AK-04** Ranking routes by wire fee inverts the answer, because the spread is 2.4× larger than the
+  fee range at every tier above the crossover.
+
+**A4 — questions register.** 14 decision gates (Q01–Q14) in `data/questions.json`, each with what is
+known, why the gap blocks a decision, and the specific step that closes it. Q01 (domestic vs non-domestic
+individual), Q02 (documented source of the balance) and Q03 (whether PRC tax was assessed on the income)
+block everything else.
+
+**A5 — site and verifier.** 9 pages, mobile-first, no external script or CDN, every table wrapped for
+horizontal scroll. `verify.py` runs **4,156 checks, 0 failures**: recomputes every fee, spread, total and
+percentage from the ledger; asserts every source URL is on an official or primary-publisher host;
+asserts every blank is a blank rather than a number; resolves every internal href and fragment; enforces
+that no page references an external asset host.
+
+**Other scopes left green (checked before push):** `ladder` 9,345 · `study-8f529c94` 19,686 ·
+`final-f6327e23` 997 · `estimate-facf2fe9` 14,423 · `acceptance-a64bd476` 20,921 · `audit-ad300459` 624 ·
+`repatriate` 11,197 · `verify-d5d1f860` 5,406 — all 0 failures, including the repo-wide link crawler in
+`acceptance-a64bd476`, which is why the favicon is a real `favicon.svg` file rather than a `data:` URI.
+
+**Known failure NOT mine (FL-08):** `audit-92d12752/verify.py` fails its own snapshot assertion
+(`AssertionError: snapshot differs: rerun build.py after inspecting repository changes`) on `main`
+`30ea791` before any file was touched by this session. Reproduced, logged, not repaired — different scope.

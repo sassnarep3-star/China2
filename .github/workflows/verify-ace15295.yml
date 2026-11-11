@@ -1,0 +1,38 @@
+name: verify-ace15295
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'verify-ace15295/**'
+      - '.github/workflows/verify-ace15295.yml'
+  push:
+    branches: [ main ]
+    paths:
+      - 'verify-ace15295/**'
+      - '.github/workflows/verify-ace15295.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Recompute the cost model from the captured inputs
+        run: PYTHONDONTWRITEBYTECODE=1 python3 verify-ace15295/model.py
+
+      - name: Regenerate the pages
+        run: PYTHONDONTWRITEBYTECODE=1 python3 verify-ace15295/build.py
+
+      - name: Check generated output is committed
+        run: git diff --exit-code -- verify-ace15295
+
+      - name: Verify citations, arithmetic, blanks and local links
+        run: PYTHONDONTWRITEBYTECODE=1 python3 verify-ace15295/verify.py

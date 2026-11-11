@@ -852,7 +852,9 @@ def write_root_hub():
                 f'{esc(label)}</a>')
 
     cards = [
-        ("verify-d5d1f860/index.html", "Live-verified dashboard · newest pass", "24 sources re-fetched · 680 rows · 16 flags",
+        ("verify-ace15295/index.html", "Verified cost engine · newest pass", "31 sources · 40 tiers × 5 methods · 14 open questions",
+         "Every figure recomputed from a published rate or tariff captured 11 November 2026, with the arithmetic shown. Cheapest published all-in cost at USD 400,000 is $901.20 (BOC, 0.225%); HSBC's free-wire route costs $2,082.26 because its spread is 2.4x wider. Blank where the publisher prints nothing."),
+        ("verify-d5d1f860/index.html", "Live-verified dashboard · 10 Nov pass", "24 sources re-fetched · 680 rows · 16 flags",
          "Quote-level re-verification dated 10 November 2026: each load-bearing document was re-fetched and the exact sentence is shown with its link. Fees recomputed independently; blanks where nothing is published."),
         ("estimate-facf2fe9/index.html", "Published-rate estimates · bank boards read 10 Nov 2026", "6 bank boards · 4 tariffs · 23 methods × 40 tiers",
          "All-in cost worked out from the rates and fees the banks themselves publish, with the tax rules and an exchange-gain illustration. Blank where a rate or fee could not be read. Indicative, not a quote."),
