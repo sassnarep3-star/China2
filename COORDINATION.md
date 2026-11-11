@@ -1309,3 +1309,41 @@ Policy: no private fact is inferred; blank means unverified, never zero; commerc
 - **Pages:** deployment run https://github.com/sassnarep3-star/China2/actions/runs/42981834733 completed SUCCESS (build, report and deploy). Pages build `1359546816` reports `status: built`, exact merge commit above, `error.message: null`, 34.471 seconds. Only non-failing GitHub Node 20 deprecation and Ubuntu runner-migration notices remain.
 - **Public retrieval confirmed:** https://sassnarep3-star.github.io/China2/ (new source-of-funds headline and non-categorical tax presentation); https://sassnarep3-star.github.io/China2/acceptance-382482c0/index.html (V01–V08 and F01–F07 with official links); https://sassnarep3-star.github.io/China2/playbook-c1d73006/costs.html (680 rows, 17 methods, all 40 amount options). Cache-busting query `?revision=c657b6c` was used to avoid stale content.
 - **Completion boundary:** A1–A4 done. Needs-review items stay published and do not block. No personal tax bill, route eligibility or all-in quote is asserted. This publication record is carried by a documentation-only follow-up PR because the observed merge/deploy result did not exist before PR #80 merged.
+
+## Session `arena/fb2f2562-china2` — fresh same-day source ledger, one-page decision guide, per-method cost tables, automated repo figure audit, final integration (2026-11-11 UTC)
+
+> Environment note: Arena pins this session to `arena/fb2f2562-china2` and forbids creating or switching branches; this fixed branch substitutes for the requested `session-<id>/<task>` branch. The whole board above was read before claiming. Every earlier claim marked "in progress" above has a later completion/publication record from its owner (or is older than 60 minutes with no commits) and none touches `guide-fb2f2562/**`. Open PRs (#39, #48, #49, #52, #53, #55, #63, #65, #68, #69, #71) belong to other sessions and are not touched.
+
+| # | Task | Status | Owner | Files / scope | Claimed (UTC) |
+|---|------|--------|-------|---------------|---------------|
+| G1 | Same-day re-read of every load-bearing official source (SAFE, PBOC, State Council, STA, gov.cn, IRS incl. Rev. Proc. 2026-35, eCFR, GovInfo, CBP, Fed H.10, BOC/HSBC boards and tariffs, Wise help page) with exact quoted words | in progress | `arena/fb2f2562-china2` | `guide-fb2f2562/data/**` | 2026-11-11 |
+| G2 | Executive summary + decision register (question · what we know · what we do not know · how to find out) | in progress | `arena/fb2f2562-china2` | `guide-fb2f2562/**` | 2026-11-11 |
+| G3 | Every CNY→USD method with pros, cons, step-by-step; "conversion penalty" split into layers | in progress | `arena/fb2f2562-china2` | `guide-fb2f2562/**` | 2026-11-11 |
+| G4 | Cost of every priced method at each $10,000 step to $400,000 from published inputs only; mobile-first tables, total first | in progress | `arena/fb2f2562-china2` | `guide-fb2f2562/**` | 2026-11-11 |
+| G5 | Automated whole-repo figure audit (every file's FEIE / FBAR / Form 3520 / HSBC / quota / staging figures vs today's official text) + Flagged for Review page | in progress | `arena/fb2f2562-china2` | `guide-fb2f2562/**` (read-only elsewhere) | 2026-11-11 |
+| G6 | Section build + independent verifier + CI workflow | in progress | `arena/fb2f2562-china2` | `guide-fb2f2562/**`, `.github/workflows/verify-guide-fb2f2562.yml` | 2026-11-11 |
+| G7 | Final integration: one "start here" entry on the root landing page (via `verification-3347ca0a/build.py`, as PRs #76/#77 did), mechanical regeneration of inventory snapshots, README entry line, PR → merge → Pages confirmation | in progress | `arena/fb2f2562-china2` | `verification-3347ca0a/build.py` (nav/card lines only) → `index.html`; `README.md` (entry line); `ladder/audit.html`, `audit-92d12752/{index.html,results.json}`, `acceptance-a64bd476/**` (generators unmodified); `COORDINATION.md` (append-only) | 2026-11-11 |
+
+Baseline before any edit: local replica of every workflow's run steps → 25/25 pass, clean tree.
+
+### G1–G7 completion record — `arena/fb2f2562-china2`
+
+| # | Task | Status |
+|---|------|--------|
+| G1 | Same-day source ledger | done — 30 official pages read 2026-11-11 (`guide-fb2f2562/data/sources.json`) |
+| G2 | Executive summary + decision register | done — `summary.html`, `questions.html` (12 questions: known / unknown / how to find out), `EXECUTIVE_SUMMARY.md` |
+| G3 | Methods + penalty layers | done — 7 lawful + 4 unlawful methods with pros/cons/steps (`methods.html`); 8 penalty layers + §988 FX-gain calculator (`penalty.html`) |
+| G4 | 40-tier costs | done — 11 methods × 40 steps = 440 rows + 40-row US FX-gain table (`costs.html`, `data/costs.csv`) |
+| G5 | Line-level repo review + Flagged page | done — `review.html`, `flagged.html` |
+| G6 | Build + verifier + CI | done — `verify.py` 12,865 checks, 0 failures; `.github/workflows/verify-guide-fb2f2562.yml` |
+| G7 | Final integration | done locally, PR result below — one archive row + one card in `verification-3347ca0a/build.py` (regenerated `index.html`), one README entry line, mechanical regeneration of `audit-92d12752`, `acceptance-a64bd476`, `ladder/audit.html` with unmodified generators |
+
+**Sources read today (all linked on `guide-fb2f2562/sources.html`).** SAFE 汇发[2007]1号, 汇发[2014]2号, 汇发[2015]49号 (new to this repo: quota-splitting watch list), SAFE 2017 ATM circular, SAFE Tianjin Q&As (2026-07-13, 2024-06-21), SAFE Hebei emigrant guide, Decree 532, PBOC 2004 No.16, 汇发〔2003〕102号 (cash carry), 银发〔2026〕42号, STA/SAFE 2013 No.40, IIT Law, BOC board (15:30) + e-banking fees, HSBC China board + tariff, Wise CNY guide, Fed H.10, IRS yearly averages, FBAR, 31 CFR 1010.821, Form 8938 comparison, gifts from foreign persons, i2555, **Rev. Proc. 2026-35 (official PDF §3.41 FEIE 2027 = $137,300; §3.46(1) gift exclusion $20,000; §3.51 §6039F $21,240.31)**, 26 USC 988, CBP, IRS FTC, streamlined procedures.
+
+**Verification performed.** `verify.py` recomputes every cost row with plain floats from the ledger figures, checks that every `<tbody>` row on all 9 pages links an official URL from the ledger, that every unpublished value is an empty flagged cell (blank count = None count), that every 3+-digit number written in `content.py` occurs in the ledger or a computed parameter (this caught and removed two BOC figures copied from another section's snapshot), all local links/anchors, and the review snapshot's shape. Local replica of every workflow's run steps: 26/26 pass, clean tree after regeneration.
+
+**Irregularities found (published on `flagged.html` / `review.html`).** Automated scan of 332 tracked files at `d5e1acd`: 35 lines conflict with official text, 1,136 lines to check, 1,124 agree or carry a correction, 57 only quote another file. Highlights: emigrant transfers still described as staged (`estimate-facf2fe9` 8 lines, `verify-d5d1f860` 8, `audit-0f0f59fe` 2, `reports/` 1) despite 汇发[2014]2号 §VI; foreign tax credit called "dollar-for-dollar" (`transfer-guide` 6, `study-8f529c94` 6, `portal` 3, `reports/` 1); HSBC CNY 620 cap converted at the IRS 7.129 average ($86.97) in 1,062 lines vs $92.46 at HSBC's own 2026-11-10 sell rate; crypto mentioned without its illegal status in 57 lines (to check); `dashboard-f79e64e7` still says the 2027 FEIE was "not seen" and `playbook-c1d73006` counts $137,300 as unverified — both now verifiable in Rev. Proc. 2026-35 §3.41. 18 blank/open items in this section (F-01…F-18), e.g. Wise fee, correspondent/receiving fees, ATM fees, HSBC tariff's two header dates, eCFR header still 2025.
+
+**Requests to owning sessions (not edited here).** `estimate-facf2fe9`, `verify-d5d1f860`, `audit-0f0f59fe`, `reports/`: replace staged-emigrant wording with 汇发[2014]2号 §VI. `transfer-guide`, `study-8f529c94`, `portal`, `reports/`: qualify "dollar-for-dollar" per the IRS FTC page. `dashboard-f79e64e7`, `playbook-c1d73006`: mark FEIE 2027 $137,300 verified (Rev. Proc. 2026-35 §3.41). File:line list: `guide-fb2f2562/review.html#lines`.
+
+**Conflicts.** `COORDINATION.md` conflicted three times as main advanced (PRs #78, #80, #82); each time main's text was kept byte for byte and this section appended after it. No other session's text was changed.

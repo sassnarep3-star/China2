@@ -1,0 +1,35 @@
+name: verify-guide-fb2f2562
+# Scope: arena/fb2f2562-china2. Runs only when this section or this file changes, so it never
+# blocks another session's pull request. The repository review snapshot (data/review.json) is a
+# point-in-time scan read as stored; it is refreshed by running guide-fb2f2562/audit.py by hand.
+on:
+  push:
+    branches: [main, arena/fb2f2562-china2]
+    paths: ['guide-fb2f2562/**', '.github/workflows/verify-guide-fb2f2562.yml']
+  pull_request:
+    branches: [main]
+    paths: ['guide-fb2f2562/**', '.github/workflows/verify-guide-fb2f2562.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '20'}
+      - name: Recompute every cost row from the source ledger
+        run: python3 guide-fb2f2562/model.py
+      - name: Rebuild every page
+        run: python3 guide-fb2f2562/build.py
+      - name: Generated output is committed byte for byte
+        run: git diff --exit-code -- guide-fb2f2562
+      - name: Independent checks (official link on every row, blanks flagged, ledger-only numbers, arithmetic, links)
+        run: python3 guide-fb2f2562/verify.py
+      - name: Browser script parses
+        run: node --check guide-fb2f2562/assets/app.js
