@@ -255,6 +255,7 @@
       "quote": "六、简化个人财产转移售付汇管理\n（一）移民财产转移购付汇核准，由移民原户籍所在地外汇局负责审批。继承财产转移购付汇核准，由被继承人生前户籍所在地外汇局负责审批。取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。\n（二）取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。\n（三）取消继承人从不同被继承人处继承的财产应分别申请、分别汇出的要求。\n（四）取消对有关财产权利文件 ... 进行公证的要求；取消对委托代理协议、代理人身份证明进行公证的要求。\n本通知自2014年2月10日起实施，以前规定与本通知不符的，以本通知为准。",
       "reading": "The original-hukou SAFE office approves emigrant transfers; the deceased's hukou office approves inheritance transfers. HQ filing above CNY 500,000, the compulsory staged-emigrant-remittance requirement, separate applications for multiple inheritances and notarisation of listed documents were abolished. Banks may remit once or in instalments within the approved amount.",
       "figures": {
+        "notice_year": 2014,
         "hq_filing_threshold_cny": 500000,
         "effective_date": "2014-02-10"
       },
@@ -273,6 +274,8 @@
       "quote": "第二条 本办法所称个人财产对外转移包括移民财产转移（以下简称移民转移）和继承财产转移（以下简称继承转移）。\n第六条 移民转移必须一次性申请拟转移出境的全部财产金额，分步汇出。首次可汇出金额不得超过全部申请转移财产的一半；自首次汇出满1年后，可汇出不超过剩余财产的一半；自首次汇出满2年后，可汇出全部剩余财产。\n第八条 ... 移居外国的，应当提供公安机关出具的中国户籍注销证明 ... （六）申请转移财产所在地或收入来源地主管税务机关开具的税收证明或完税凭证。\n第九条 ... 申请人获得继承财产的证明文件 ... 被继承人财产所在地主管税务机关开具的税收证明或完税凭证。\n第十条 申请财产对外转移总金额在等值人民币50万元以下（含50万元）的，由所在地外汇局审批。... 超过上述金额的，由所在地外汇局初审后，报国家外汇管理局审批。\n第十一条 外汇指定银行办理售汇后，应直接将外汇汇往移民或继承人居住国或地区申请人本人的账户，不得在境内提取外币现钞。\n第十二条 ... 法律规定不得对外转移的财产、不能证明合法来源财产等的对外转移申请，外汇局不予受理。",
       "reading": "Defines emigrant and inheritance property transfers. Requires ID, hukou cancellation/settlement evidence, source/title documents and tax certificate; the bank must remit to the applicant's own overseas account and may not pay domestic FX cash. Article 6's staged schedule and Article 10's HQ-approval clause have been superseded by B12 §VI and are not used as current instructions.",
       "figures": {
+        "notice_year": 2004,
+        "article": 6,
         "old_hq_threshold_cny": 500000,
         "old_one_off_cny": 200000,
         "old_first_half": 0.5,
@@ -460,7 +463,8 @@
         "willful_usd": 165353,
         "display_date": "2026-11-09",
         "last_amended": "2026-11-06",
-        "latest_fr": "90 FR 5630"
+        "latest_fr": "90 FR 5630",
+        "latest_fr_year": 2025
       },
       "limits": "The eCFR says its content is authoritative but unofficial. No 2026 inflation adjustment is listed in the quoted amendment history; amounts may be stale; see F-17.",
       "retrieved": "2026-11-11",
@@ -477,6 +481,7 @@
       "quote": "Specified individuals living in the US: - Unmarried individual (or married filing separately): Total value of assets was more than $50,000 on the last day of the tax year, or more than $75,000 at any time during the year.\nSpecified individuals living outside the US: - Unmarried individual (or married filing separately): Total value of assets was more than $200,000 on the last day of the tax year, or more than $300,000 at any time during the year.\nAggregate value of financial accounts exceeds $10,000 at any time during the calendar year.\nUp to $10,000 for failure to disclose and an additional $10,000 for each 30 days of non-filing after IRS notice of a failure to disclose, for a potential maximum penalty of $60,000",
       "reading": "Form 8938 thresholds depend on residence and filing status; for an unmarried individual in the U.S. they are >USD 50,000 at year end or >USD 75,000 during the year, and abroad >USD 200,000 at year end or >USD 300,000 during the year. FBAR uses >USD 10,000 aggregate accounts. Form 8938 failure-to-disclose penalties can reach USD 60,000. Both forms may be required.",
       "figures": {
+        "form": 8938,
         "form8938_us_single_end_usd": 50000,
         "form8938_us_single_any_usd": 75000,
         "form8938_abroad_single_end_usd": 200000,
@@ -521,6 +526,7 @@
       "quote": "For 2026, the maximum exclusion amount has increased to $132,900.\nYou may qualify for the foreign earned income exclusion and the housing exclusion or deduction if both of the following apply. - You meet the tax home test ... - You meet either the bona fide residence test or the physical presence test\nYou aren’t considered to have a tax home in a foreign country for any period during which your abode is in the United States",
       "reading": "The 2026 foreign earned income exclusion cap is USD 132,900, but eligibility requires a foreign tax home and either bona fide residence or physical presence; an abode in the United States generally defeats the tax-home test.",
       "figures": {
+        "form": 2555,
         "feie_2026_usd": 132900
       },
       "limits": "Eligibility is fact-specific and unverified; this is earned-income treatment, not a conversion or principal-tax rule.",
@@ -538,6 +544,8 @@
       "quote": ".41 Foreign Earned Income Exclusion. For taxable years beginning in 2027, the foreign earned income exclusion amount under § 911(b)(2)(D)(i) is $137,300.\n(1) For calendar year 2027, the first $20,000 of gifts to any person ... are not included in the total amount of taxable gifts under § 2503\n.51 Notice of Large Gifts Received from Foreign Persons. For taxable years beginning in 2027, § 6039F authorizes the Secretary ... to require recipients of gifts from certain foreign persons to report these gifts if the aggregate value of gifts received in the taxable year exceeds $21,240.31.",
       "reading": "For 2027, the FEIE is USD 137,300; the annual gift exclusion is USD 20,000; the §6039F large-foreign-gift notice threshold is USD 21,240.31. These are 2027 amounts, not 2026 transfer figures.",
       "figures": {
+        "tax_year": 2027,
+        "section": 6039,
         "feie_2027_usd": 137300,
         "gift_exclusion_2027_usd": 20000,
         "foreign_gift_notice_2027_usd": 21240.31
@@ -557,6 +565,7 @@
       "quote": "any foreign currency gain or loss attributable to a section 988 transaction shall be computed separately and treated as ordinary income or loss (as the case may be).\nIn the case of a disposition of any nonfunctional currency— (I) such disposition shall be treated as a section 988 transaction, and (II) any gain or loss from such transaction shall be treated as foreign currency gain or loss\nThe preceding provisions of this section shall not apply to any section 988 transaction entered into by an individual which is a personal transaction.\nno gain shall be recognized for purposes of this subtitle by reason of changes in exchange rates after such currency was acquired by such individual and before such disposition. The preceding sentence shall not apply if the gain which would otherwise be recognized on the transaction exceeds $200.",
       "reading": "Disposition of nonfunctional currency is a §988 transaction; an individual's personal-transaction FX gain is not recognized only when the otherwise recognized gain does not exceed USD 200. Larger personal gains and non-personal transactions are ordinary income/loss, taxed at rates determined elsewhere.",
       "figures": {
+        "section": 988,
         "personal_de_minimis_usd": 200
       },
       "limits": "Acquisition date/rate, whether the transaction is personal, and the applicable U.S. ordinary rate are unknown; no tax amount is inferred.",
