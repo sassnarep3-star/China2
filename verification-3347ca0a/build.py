@@ -430,6 +430,10 @@ def root_page():
         # Navigation-only addition by session arena/c1d73006-china2 (2026-11-11), logged in COORDINATION.md:
         # one archive row and one category card so its playbook is reachable from this landing page.
         ("playbook-c1d73006/index.html", "Route-by-origin playbook", "10 origins of the money · 17 methods · 680 cost rows", "Separate pass on 11 Nov 2026: the route, papers and tax for each origin of the money; what overdue PRC tax grows into; a text review of the other sets."),
+        # Navigation-only addition by session arena/88b9c268-china2 (2026-11-11), logged in COORDINATION.md:
+        # one archive row and one category card so its consolidated dashboard is reachable from this landing page.
+        ("consolidated-88b9c268/index.html", "Consolidated dashboard — least tax answer", "17 methods · 34 sources · 680 cost rows · 23 questions", "Final consolidation: executive summary answering the least-tax question for a U.S. citizen, Q&A checklist, penalty breakdown, 12-layer conversion cost, and $10k→$400k cost ladder at published bank rates."),
+
     ]
     archive_rows = "".join(
         f'<tr><th scope="row" data-label="Set"><a href="{href}">{esc(title)}</a></th>'
@@ -627,6 +631,8 @@ row links to the full pros, cons, statutory cap and numbered playbook.</p>
     <em>A separate session’s decision dashboard: questions, routes, cost at every $10,000, and corrections to earlier sets.</em></a>
   <a class="card" href="playbook-c1d73006/index.html"><b>Route-by-origin playbook</b><span>10 origins · 34 sources · read 11 Nov</span>
     <em>A separate session’s playbook: pick the route by where the money came from, with the papers, the tax and the cost for each.</em></a>
+  <a class="card" href="consolidated-88b9c268/index.html"><b>Consolidated · least tax answer</b><span>Executive summary · 23 questions · 17 methods · 680 cost rows</span>
+    <em>Final synthesis: the best lawful route with the lowest tax penalties for a U.S. citizen, every conversion way with pros/cons/steps, the 12-layer penalty behind “considerable taxes”, and every $10k step from $10k to $400k at published rates.</em></a>
 </div>
 
 <h2 id="questions">What has to be answered before a decision</h2>

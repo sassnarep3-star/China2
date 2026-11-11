@@ -1,0 +1,28 @@
+name: verify-consolidated-88b9c268
+on:
+  push:
+    paths:
+      - "consolidated-88b9c268/**"
+      - ".github/workflows/verify-consolidated-88b9c268.yml"
+  pull_request:
+    paths:
+      - "consolidated-88b9c268/**"
+      - ".github/workflows/verify-consolidated-88b9c268.yml"
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build site
+        run: PYTHONDONTWRITEBYTECODE=1 python3 consolidated-88b9c268/build.py
+      - name: Verify build is committed
+        run: git diff --exit-code -- consolidated-88b9c268
+      - name: Check JS syntax
+        run: node --check consolidated-88b9c268/assets/app.js
+      - name: Run verifier
+        run: PYTHONDONTWRITEBYTECODE=1 python3 consolidated-88b9c268/verify.py
+      - name: Run playbook review snippet
+        run: PYTHONDONTWRITEBYTECODE=1 python3 consolidated-88b9c268/review.py 2026-11-11 --check-only 2>&1 | head -50
