@@ -1,0 +1,520 @@
+{
+ "sources": [
+  [
+   "S1",
+   "SAFE Tianjin FAQ 08 (2026-07-13)",
+   "https://www.safe.gov.cn/tianjin/2026/0713/3088.html",
+   "Foreign individual lawful current-account CNY income: ID + source docs incl. tax vouchers (Hui Fa[2020]14 Art.59)"
+  ],
+  [
+   "S2",
+   "SAFE Tianjin Case 9 (2024-06-21)",
+   "https://www.safe.gov.cn/tianjin/2024/0621/2529.html",
+   "Annual purchase facility only for Foreign Permanent Resident ID holders"
+  ],
+  [
+   "S3",
+   "SAFE Tianjin FAQ 10 (2026-09-17)",
+   "https://www.safe.gov.cn/tianjin/2026/0917/3134.html",
+   "Reconversion of unused RMB: original slip, 24 months; \u2264$500/day, \u2264$1,000 departure ID-only"
+  ],
+  [
+   "S4",
+   "Bank of China FX board 2026-11-11 20:39",
+   "https://www.boc.cn/sourcedb/whpj/",
+   "USD buy 665.91 / sell 668.71 per 100 USD; board is reference only, counter rate governs"
+  ],
+  [
+   "S5",
+   "Bank of China e-banking fee table (from 2014-11-01)",
+   "https://www.boc.cn/ebanking/service/cs1/200905/t20090506_990712.html",
+   "Cross-border wire 1\u2030 min CNY50 max CNY260 + cable CNY150 non-HK/Macau/Taiwan"
+  ],
+  [
+   "S6",
+   "IRS Foreign Tax Credit",
+   "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+   "Credit only vs US tax on same income; none on FEIE-excluded income; treaty-reduced amount only; 10-yr refund window"
+  ],
+  [
+   "S7",
+   "IRS FBAR (FinCEN 114)",
+   "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+   "File if aggregate foreign accounts >$10,000 any time in year; Apr15/auto Oct15; penalties per 31 USC adjusted annually"
+  ],
+  [
+   "S8",
+   "26 USC 988 (2024 GPO ed.)",
+   "https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartJ-sec988.htm",
+   "Disposition of nonfunctional currency is a \u00a7988 transaction; gain/loss = FX movement booking\u2192payment"
+  ],
+  [
+   "S9",
+   "31 CFR 1010.821 eCFR (current to 2026-11-06)",
+   "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-H/section-1010.821",
+   "Authoritative but unofficial; FBAR penalty table \u2014 figures not republished here, read table directly"
+  ],
+  [
+   "S10",
+   "Wise Guide to CNY transfers",
+   "https://wise.com/help/articles/2955298/guide-to-cny-transfers",
+   "From-CNY: non-mainland, worked in China, tax record \u22643yrs, own account only, \u2264CNY300k/bank-app transfer, fees in-app only"
+  ]
+ ],
+ "methods": [
+  [
+   "M01",
+   "Documented bank wire (lawful current-account income)",
+   "Lawful if documented",
+   "Assemble ID, employment/income proof, tax vouchers; bank purchases FX under S1; wire to own US account; keep slips",
+   "No $50k quota needed for documented income (S1); PR-ID holders may use facility (S2)",
+   "Quota myth; bank may reject incomplete docs; intermediary/receiving fees unpublished \u2014 blank",
+   "S1"
+  ],
+  [
+   "M02",
+   "Reconversion of previously exchanged unused RMB",
+   "Lawful, narrow",
+   "Show original exchange slip within 24 months; \u2264$500/day or \u2264$1,000 at departure ID-only",
+   "Only for RMB originally bought with FX",
+   "Not a general $500/day purchase right",
+   "S3"
+  ],
+  [
+   "M03",
+   "Wise from-CNY",
+   "Conditional",
+   "Verify (1-2d), upload \u22643yr tax record, own-account only, \u2264CNY300k/transfer",
+   "Fee/limit set in-app \u2014 unpublished here, blank",
+   "Eligibility excludes mainland nationals; limit = after-tax salary",
+   "S10"
+  ],
+  [
+   "M04",
+   "Carry cash / ATM abroad",
+   "Limited",
+   "Declare >$10,000 (FinCEN 105 via CBP); PRC cash-carry & ATM caps apply \u2014 verify current cap at SAFE before use",
+   "Slow for large sums; card fees unpublished \u2014 blank",
+   "Not costed here; see flagged F4",
+   "S7"
+  ],
+  [
+   "M05",
+   "Splitting quota across people / underground FX / crypto",
+   "Unlawful \u2014 do not use",
+   "No steps provided. Listed only with penalties: Decree 532 fine bands & Yin Fa[2026]42 crypto illegality are in prior sections of this repo",
+   "\u2014",
+   "30-100% fines, criminal exposure",
+   "S1"
+  ]
+ ],
+ "questions": [
+  [
+   "Q1",
+   "What is the source of the CNY (salary, property, inheritance, gift, business)?",
+   "Unknown \u2014 not provided",
+   "Determines SAFE document set & PRC tax",
+   "Request bank/SAFE document checklist in writing",
+   "S1"
+  ],
+  [
+   "Q2",
+   "Was PRC tax withheld/paid, with vouchers?",
+   "Unknown",
+   "SAFE gate requires tax vouchers",
+   "Get tax payment certificate from employer/STA",
+   "S1"
+  ],
+  [
+   "Q3",
+   "Do you hold a Foreign Permanent Resident ID?",
+   "Unknown",
+   "Only PR-ID holders get annual purchase facility",
+   "Check card type",
+   "S2"
+  ],
+  [
+   "Q4",
+   "When was CNY acquired & USD basis (\u00a7988)?",
+   "Unknown",
+   "FX gain taxed; >$200 personal threshold in statute/prior sections",
+   "Reconstruct acquisition dates/rates",
+   "S8"
+  ],
+  [
+   "Q5",
+   "US filing history: FBAR/8938 filed?",
+   "Unknown",
+   "Aggregate >$10k triggers FBAR",
+   "Review prior returns with CPA",
+   "S7"
+  ],
+  [
+   "Q6",
+   "Written executable quote from your bank (rate+all fees)?",
+   "None obtained",
+   "Board rate is not executable (S4)",
+   "Ask bank for written all-in quote",
+   "S4"
+  ]
+ ],
+ "flags": [
+  [
+   "F1",
+   "Your bank/branch actual rate, wire & intermediary/receiving fees",
+   "Not published \u2014 blank",
+   "Get written quote"
+  ],
+  [
+   "F2",
+   "Personal PRC/US tax amount",
+   "Not determined \u2014 facts Q1-Q5 unknown",
+   "CPA with documents"
+  ],
+  [
+   "F3",
+   "HSBC/other bank tariff today",
+   "Not re-fetched this session \u2014 blank",
+   "Fetch tariff PDF dated today"
+  ],
+  [
+   "F4",
+   "ATM/cash caps & card fees",
+   "Not re-read this session \u2014 blank",
+   "SAFE Hui Fa[2017]29 + card issuer"
+  ],
+  [
+   "F5",
+   "FBAR penalty $ figures",
+   "eCFR authoritative-but-unofficial; read table, not republished",
+   "S9 link"
+  ]
+ ],
+ "costs": [
+  {
+   "usd": 10000,
+   "cny": 66871.0,
+   "spread_usd": 20.98,
+   "fee_usd": 32.43,
+   "total_usd": 53.41,
+   "pct": 0.534
+  },
+  {
+   "usd": 20000,
+   "cny": 133742.0,
+   "spread_usd": 41.96,
+   "fee_usd": 42.43,
+   "total_usd": 84.39,
+   "pct": 0.422
+  },
+  {
+   "usd": 30000,
+   "cny": 200613.0,
+   "spread_usd": 62.94,
+   "fee_usd": 52.43,
+   "total_usd": 115.37,
+   "pct": 0.385
+  },
+  {
+   "usd": 40000,
+   "cny": 267484.0,
+   "spread_usd": 83.92,
+   "fee_usd": 61.31,
+   "total_usd": 145.23,
+   "pct": 0.363
+  },
+  {
+   "usd": 50000,
+   "cny": 334355.0,
+   "spread_usd": 104.9,
+   "fee_usd": 61.31,
+   "total_usd": 166.21,
+   "pct": 0.332
+  },
+  {
+   "usd": 60000,
+   "cny": 401226.0,
+   "spread_usd": 125.88,
+   "fee_usd": 61.31,
+   "total_usd": 187.19,
+   "pct": 0.312
+  },
+  {
+   "usd": 70000,
+   "cny": 468097.0,
+   "spread_usd": 146.86,
+   "fee_usd": 61.31,
+   "total_usd": 208.17,
+   "pct": 0.297
+  },
+  {
+   "usd": 80000,
+   "cny": 534968.0,
+   "spread_usd": 167.84,
+   "fee_usd": 61.31,
+   "total_usd": 229.15,
+   "pct": 0.286
+  },
+  {
+   "usd": 90000,
+   "cny": 601839.0,
+   "spread_usd": 188.82,
+   "fee_usd": 61.31,
+   "total_usd": 250.13,
+   "pct": 0.278
+  },
+  {
+   "usd": 100000,
+   "cny": 668710.0,
+   "spread_usd": 209.8,
+   "fee_usd": 61.31,
+   "total_usd": 271.11,
+   "pct": 0.271
+  },
+  {
+   "usd": 110000,
+   "cny": 735581.0,
+   "spread_usd": 230.78,
+   "fee_usd": 61.31,
+   "total_usd": 292.09,
+   "pct": 0.266
+  },
+  {
+   "usd": 120000,
+   "cny": 802452.0,
+   "spread_usd": 251.76,
+   "fee_usd": 61.31,
+   "total_usd": 313.07,
+   "pct": 0.261
+  },
+  {
+   "usd": 130000,
+   "cny": 869323.0,
+   "spread_usd": 272.74,
+   "fee_usd": 61.31,
+   "total_usd": 334.05,
+   "pct": 0.257
+  },
+  {
+   "usd": 140000,
+   "cny": 936194.0,
+   "spread_usd": 293.72,
+   "fee_usd": 61.31,
+   "total_usd": 355.03,
+   "pct": 0.254
+  },
+  {
+   "usd": 150000,
+   "cny": 1003065.0,
+   "spread_usd": 314.7,
+   "fee_usd": 61.31,
+   "total_usd": 376.01,
+   "pct": 0.251
+  },
+  {
+   "usd": 160000,
+   "cny": 1069936.0,
+   "spread_usd": 335.68,
+   "fee_usd": 61.31,
+   "total_usd": 396.99,
+   "pct": 0.248
+  },
+  {
+   "usd": 170000,
+   "cny": 1136807.0,
+   "spread_usd": 356.66,
+   "fee_usd": 61.31,
+   "total_usd": 417.97,
+   "pct": 0.246
+  },
+  {
+   "usd": 180000,
+   "cny": 1203678.0,
+   "spread_usd": 377.64,
+   "fee_usd": 61.31,
+   "total_usd": 438.95,
+   "pct": 0.244
+  },
+  {
+   "usd": 190000,
+   "cny": 1270549.0,
+   "spread_usd": 398.62,
+   "fee_usd": 61.31,
+   "total_usd": 459.93,
+   "pct": 0.242
+  },
+  {
+   "usd": 200000,
+   "cny": 1337420.0,
+   "spread_usd": 419.6,
+   "fee_usd": 61.31,
+   "total_usd": 480.91,
+   "pct": 0.24
+  },
+  {
+   "usd": 210000,
+   "cny": 1404291.0,
+   "spread_usd": 440.57,
+   "fee_usd": 61.31,
+   "total_usd": 501.89,
+   "pct": 0.239
+  },
+  {
+   "usd": 220000,
+   "cny": 1471162.0,
+   "spread_usd": 461.55,
+   "fee_usd": 61.31,
+   "total_usd": 522.87,
+   "pct": 0.238
+  },
+  {
+   "usd": 230000,
+   "cny": 1538033.0,
+   "spread_usd": 482.53,
+   "fee_usd": 61.31,
+   "total_usd": 543.85,
+   "pct": 0.236
+  },
+  {
+   "usd": 240000,
+   "cny": 1604904.0,
+   "spread_usd": 503.51,
+   "fee_usd": 61.31,
+   "total_usd": 564.83,
+   "pct": 0.235
+  },
+  {
+   "usd": 250000,
+   "cny": 1671775.0,
+   "spread_usd": 524.49,
+   "fee_usd": 61.31,
+   "total_usd": 585.81,
+   "pct": 0.234
+  },
+  {
+   "usd": 260000,
+   "cny": 1738646.0,
+   "spread_usd": 545.47,
+   "fee_usd": 61.31,
+   "total_usd": 606.79,
+   "pct": 0.233
+  },
+  {
+   "usd": 270000,
+   "cny": 1805517.0,
+   "spread_usd": 566.45,
+   "fee_usd": 61.31,
+   "total_usd": 627.77,
+   "pct": 0.233
+  },
+  {
+   "usd": 280000,
+   "cny": 1872388.0,
+   "spread_usd": 587.43,
+   "fee_usd": 61.31,
+   "total_usd": 648.75,
+   "pct": 0.232
+  },
+  {
+   "usd": 290000,
+   "cny": 1939259.0,
+   "spread_usd": 608.41,
+   "fee_usd": 61.31,
+   "total_usd": 669.72,
+   "pct": 0.231
+  },
+  {
+   "usd": 300000,
+   "cny": 2006130.0,
+   "spread_usd": 629.39,
+   "fee_usd": 61.31,
+   "total_usd": 690.7,
+   "pct": 0.23
+  },
+  {
+   "usd": 310000,
+   "cny": 2073001.0,
+   "spread_usd": 650.37,
+   "fee_usd": 61.31,
+   "total_usd": 711.68,
+   "pct": 0.23
+  },
+  {
+   "usd": 320000,
+   "cny": 2139872.0,
+   "spread_usd": 671.35,
+   "fee_usd": 61.31,
+   "total_usd": 732.66,
+   "pct": 0.229
+  },
+  {
+   "usd": 330000,
+   "cny": 2206743.0,
+   "spread_usd": 692.33,
+   "fee_usd": 61.31,
+   "total_usd": 753.64,
+   "pct": 0.228
+  },
+  {
+   "usd": 340000,
+   "cny": 2273614.0,
+   "spread_usd": 713.31,
+   "fee_usd": 61.31,
+   "total_usd": 774.62,
+   "pct": 0.228
+  },
+  {
+   "usd": 350000,
+   "cny": 2340485.0,
+   "spread_usd": 734.29,
+   "fee_usd": 61.31,
+   "total_usd": 795.6,
+   "pct": 0.227
+  },
+  {
+   "usd": 360000,
+   "cny": 2407356.0,
+   "spread_usd": 755.27,
+   "fee_usd": 61.31,
+   "total_usd": 816.58,
+   "pct": 0.227
+  },
+  {
+   "usd": 370000,
+   "cny": 2474227.0,
+   "spread_usd": 776.25,
+   "fee_usd": 61.31,
+   "total_usd": 837.56,
+   "pct": 0.226
+  },
+  {
+   "usd": 380000,
+   "cny": 2541098.0,
+   "spread_usd": 797.23,
+   "fee_usd": 61.31,
+   "total_usd": 858.54,
+   "pct": 0.226
+  },
+  {
+   "usd": 390000,
+   "cny": 2607969.0,
+   "spread_usd": 818.21,
+   "fee_usd": 61.31,
+   "total_usd": 879.52,
+   "pct": 0.226
+  },
+  {
+   "usd": 400000,
+   "cny": 2674840.0,
+   "spread_usd": 839.19,
+   "fee_usd": 61.31,
+   "total_usd": 900.5,
+   "pct": 0.225
+  }
+ ],
+ "inputs": {
+  "sell": 6.6871,
+  "buy": 6.6591,
+  "mid": 6.6731
+ }
+}
