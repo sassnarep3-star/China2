@@ -49,7 +49,7 @@
     "quote": "Art. 2: two categories only — 移民转移 (emigration transfer) and 继承转移 (inheritance transfer). Art. 6: 移民转移 must apply once for the whole amount; first remittance ≤ half, after 1 year ≤ half of the remainder, after 2 years the balance; total ≤ RMB 200,000 may be remitted in one go after approval. Art. 8: requires 中国户籍注销证明 and proof of settling abroad certified by a Chinese embassy/consulate, plus 税收证明或完税凭证. Art. 10: ≤ RMB 500,000 approved by the local SAFE branch; above that by SAFE headquarters. Art. 11: the bank must remit directly to the applicant's own account in the country of residence and may not pay out cash inside China.",
     "verified_at": "2026-11-10",
     "fetched": true,
-    "used_for": "The capital-account route: only emigration and inheritance transfers qualify; staging, documentation and approval thresholds."
+    "used_for": "The capital-account route: only emigration and inheritance transfers qualify; the documents each needs. Its Art. 6 instalment schedule and Art. 10 head-office threshold are quoted as published in 2004 and were removed in 2014 — see S17."
   },
   {
     "id": "S05",
@@ -206,5 +206,19 @@
     "verified_at": "2026-11-10",
     "fetched": true,
     "used_for": "A dated, published bid/ask snapshot used to measure the observable retail FX markup. Rates move continuously; this is a snapshot, not a quote for any transaction."
+  },
+  {
+    "id": "S17",
+    "jur": "PRC",
+    "authority": "State Administration of Foreign Exchange (SAFE)",
+    "title": "国家外汇管理局关于进一步改进和调整资本项目外汇管理政策的通知 (Notice on Further Improving and Adjusting Capital-Account Foreign Exchange Administration Policies), 汇发[2014]2号, dated 2014-01-10, in force 2014-02-10",
+    "url": "https://www.safe.gov.cn/safe/2014/0124/5476.html",
+    "lang": "ZH",
+    "locator": "Section 六 (一)–(四); closing paragraph (in force 2014-02-10, earlier inconsistent rules yield); footnote on 汇发〔2023〕28号 (amends Section 三 only)",
+    "quote": "六、简化个人财产转移售付汇管理 （一）移民财产转移购付汇核准，由移民原户籍所在地外汇局负责审批。继承财产转移购付汇核准，由被继承人生前户籍所在地外汇局负责审批。取消财产转移总金额超过等值人民币50万元报国家外汇管理局备案的要求。（二）取消移民财产转移分次汇出的要求。申请人向原户籍所在地外汇局办理移民财产转移核准手续后，银行可在核准件审批额度内一次或分次汇出相关资金。（三）取消继承人从不同被继承人处继承的财产应分别申请、分别汇出的要求。继承人从不同被继承人处继承财产，可选择其中一个被继承人生前户籍所在地外汇局合并提交申请材料，经核准后可在银行一次或分次汇出相关资金。… 本通知自2014年2月10日起实施，以前规定与本通知不符的，以本通知为准。",
+    "verified_at": "2026-11-11",
+    "fetched": true,
+    "used_for": "Removes the 2004 instalment schedule for emigration transfers, the RMB 500,000 head-office step, and the rule that estates of different deceased persons be applied for separately. Routes R06 and R07.",
+    "added_by": "arena/8a85759a-china2 (correction, 2026-11-11; not part of the original 2026-11-10 fetch)"
   }
 ]

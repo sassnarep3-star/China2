@@ -13,6 +13,12 @@ DATA = os.path.join(HERE, "data")
 costs = json.load(open(os.path.join(DATA, "costs.json")))
 routes = json.load(open(os.path.join(DATA, "routes.json")))
 sources = {s["id"]: s for s in json.load(open(os.path.join(DATA, "sources.json")))}
+# Sources added after the original 2026-11-10 session carry an "added_by" field (correction by
+# arena/8a85759a-china2, 2026-11-11: SAFE Huifa [2014] No. 2 for routes R06/R07). They are counted and
+# labelled separately so the page never claims they were fetched in the original session.
+ADDED_SOURCES = [s for s in sources.values() if s.get("added_by")]
+ORIGINAL_SOURCES = len(sources) - len(ADDED_SOURCES)
+ADDED_NOTE = "".join(f"; {s['id']} added in a correction on {s['verified_at']}" for s in ADDED_SOURCES)
 meta = json.load(open(os.path.join(DATA, "meta.json")))
 ROUTE_BY_ID = {r["id"]: r for r in routes}
 
@@ -94,7 +100,7 @@ Values that could not be confirmed are blank, and listed on the
 <a href="review.html">Flagged for review</a> page. No account-specific facts were assumed.</p>
 <p class="small">Built {meta['generated']} · {meta['route_count']} methods ·
 {meta['tiers']} cost tiers ({meta['row_count']} model rows) ·
-{meta['source_count']} primary sources, all re-fetched in this session ·
+{meta['source_count']} primary sources ({ORIGINAL_SOURCES} re-fetched in the original session on {meta['generated']}{ADDED_NOTE}) ·
 rate basis {meta['rate']} CNY/USD (S16, 2026-11-10 17:39:58).</p>
 </div></footer>
 <script src="assets/app.js"></script>
@@ -232,6 +238,8 @@ def page_methods():
         steps = "".join(f"<li>{esc(s)}</li>" for s in r["steps"]) or "<li>—</li>"
         unp = "".join(f"<li>{esc(u)}</li>" for u in r["unverified"]) or "<li>Nothing recorded</li>"
         src = cite(*r["sources"]) if r["sources"] else '<span class="blank">no official source verified</span>'
+        corr = (f'\n  <p class="small correction"><strong>Correction.</strong> {esc(r["correction"])} {cite("S17")}</p>'
+                if r.get("correction") else "")
         cards += f"""
 <article class="method" id="{r['id'].lower()}" data-cat="{esc(r['category'])}">
   <header class="method-head">
@@ -250,7 +258,7 @@ def page_methods():
   </div>
   <details><summary>Documents required</summary><ul>{reqs}</ul></details>
   <details><summary>Exact steps</summary><ol>{steps}</ol></details>
-  <p class="small"><strong>Not verified:</strong></p><ul class="small unverified">{unp}</ul>
+  <p class="small"><strong>Not verified:</strong></p><ul class="small unverified">{unp}</ul>{corr}
 </article>"""
     return header("Methods: 15 ways to move CNY out of mainland China",
                   "Every method I could find, with its legal basis, its published caps, its real pros and "
@@ -517,13 +525,18 @@ ID under Art. 65(1), with no amount cap stated {cite('S01')}. Cost drops to the 
 receiving fee — about {money(next(r for r in costs['rows'] if r['route']=='R02' and r['amount']==400000)['all_in_usd'])}
 at $400,000 in the model.</p></details>
 <details><summary><strong>If you emigrated and cancelled PRC household registration</strong></summary>
-<p>One application for the whole amount, then staged remittances: up to half, then up to half the
-remainder after a year, then the balance after two years; amounts up to RMB 200,000 can go in one
-approved transfer. Approval is by the local SAFE branch up to RMB 500,000 and by SAFE headquarters
-above that {cite('S04')}.</p></details>
+<p>One application for the whole amount to the SAFE branch of your original household registration
+{cite('S04')}. Once it is approved, the bank may send the approved amount in one remittance or in
+several: the instalment schedule in the 2004 measure (half, half of the remainder after a year, the
+balance after two years) and the head-office step above RMB 500,000 were both removed with effect from
+10 February 2014 {cite('S17')}. <em>Corrected 11 November 2026: this paragraph previously gave the 2004
+schedule as current.</em></p></details>
 <details><summary><strong>If the money is an inheritance</strong></summary>
 <p>Same measure, different documents: proof of inheritance, the deceased's property documents and the
-tax certificate, with one application per deceased person {cite('S04')}.</p></details>
+tax certificate {cite('S04')}. Since 2014, property inherited from different deceased persons may be
+combined in one application, and the bank may remit once or in several payments after approval
+{cite('S17')}. <em>Corrected 11 November 2026: this paragraph previously required one application per
+deceased person.</em></p></details>
 <details><summary><strong>If the amount is small and you want cash</strong></summary>
 <p>Legal ceilings are low: up to USD 5,000 without a permit, USD 5,000–10,000 with a bank 携带证, and in
 principle not more than USD 10,000 at all {cite('S05')}. The US requires a FinCEN 105 declaration over
@@ -554,8 +567,10 @@ def page_sources():
 <td data-label="Quoted text" class="quote">{esc(s['quote'])}</td>
 <td data-label="Checked">{esc(s['verified_at'])}</td></tr>"""
     return header(f"{len(sources)} primary sources, quoted and dated",
-                  "Every source on this site was fetched in this session and quoted here with its "
-                  "locator. If a page did not load or a figure was not in the text, it is not on this site.",
+                  "Every source on this site was fetched and quoted here with its locator: "
+                  + str(ORIGINAL_SOURCES) + " in the original session on " + meta["generated"]
+                  + "".join(f", and {s['id']} on {s['verified_at']} by a later correction" for s in ADDED_SOURCES)
+                  + ". If a page did not load or a figure was not in the text, it is not on this site.",
                   "sources.html") + f"""
 <div class="notice"><strong>What "verified" means here:</strong> I opened the document, found the
 passage, and copied it. It does not mean the document is still current law tomorrow, and it does not

@@ -158,6 +158,20 @@ for r in routes:
        f"{r['id']}: unknown category {r['category']}")
     ok(bool(r["verdict"]), f"{r['id']}: missing verdict")
 
+# ----------------------------------------------- 7b superseded-rule regression guard
+# SAFE Huifa [2014] No. 2 Section 6 removed the 2004 instalment schedule, the RMB 500,000
+# head-office step and the one-application-per-deceased rule (correction of 2026-11-11).
+_r6 = next(r for r in routes if r["id"] == "R06")
+_r7 = next(r for r in routes if r["id"] == "R07")
+for _r in (_r6, _r7):
+    ok("S17" in _r["sources"], f"{_r['id']}: must cite S17 (Huifa [2014] No. 2)")
+    ok(bool(_r.get("correction")), f"{_r['id']}: correction note missing")
+    for _bad in ("Two-year staging", "SAFE HQ approval above", "cannot be combined", "Repeat within the staged limits"):
+        ok(not any(_bad in x for x in _r["cons"] + _r["steps"]), f"{_r['id']}: superseded text {_bad!r} is back")
+ok("No instalment schedule since 10 February 2014" in _r6["caps"], "R06 caps must state the 2014 change")
+ok("staged remittances: up to half" not in html["steps.html"], "steps.html: superseded staging text is back")
+ok("with one application per deceased person" not in html["steps.html"], "steps.html: superseded per-deceased text is back")
+
 # ------------------------------------------------------------- 8 source usage
 used = set()
 for p in PAGES:
@@ -167,7 +181,12 @@ ok(SIDS <= used, f"ledger contains sources never used: {sorted(SIDS - used)}")
 for s in sources:
     ok(bool(s["url"]) and s["url"].startswith("http"), f"{s['id']}: bad url")
     ok(bool(s["quote"]) and len(s["quote"]) > 30, f"{s['id']}: quote too short")
-    ok(s["verified_at"] == "2026-11-10", f"{s['id']}: not dated to this session")
+    # A source added by a later correction session carries "added_by" and its own date
+    # (arena/8a85759a-china2, 2026-11-11: S17). Every other source must be dated to the original session.
+    if s.get("added_by"):
+        ok(s["verified_at"] > "2026-11-10", f"{s['id']}: added source must post-date the original session")
+    else:
+        ok(s["verified_at"] == "2026-11-10", f"{s['id']}: not dated to this session")
     ok(bool(s["locator"]), f"{s['id']}: missing locator")
 
 # ------------------------------------------------------------- 9 leakage

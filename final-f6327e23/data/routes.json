@@ -214,38 +214,39 @@
   "cost_model": "documented_wire",
   "capability": "conditional",
   "who": "A person who emigrated from the mainland (or settled in HK/Macau) and is moving assets owned BEFORE acquiring emigrant status",
-  "legal_basis": "Provisional Measures on Individuals' Outward Asset Transfers (个人财产对外转移售付汇管理暂行办法) Arts. 2, 6, 8, 10, 11",
+  "legal_basis": "Provisional Measures on Individuals' Outward Asset Transfers (个人财产对外转移售付汇管理暂行办法) Arts. 2, 8, 11, as changed by SAFE Huifa [2014] No. 2 Section 6",
   "requirements": [
    "Cancelled PRC household registration certificate (户籍注销证明) from the police",
    "Proof of settling abroad issued or authenticated by a Chinese embassy/consulate",
    "Property-rights documents and the tax certificate / 完税凭证 from the tax authority",
    "One application for the entire amount"
   ],
-  "caps": "Staged by rule: first remittance ≤ half; after one year ≤ half of the remainder; after two years the balance. Total ≤ RMB 200,000 may go in one approved remittance. Approval level: ≤ RMB 500,000 local SAFE; above that SAFE headquarters.",
+  "caps": "No instalment schedule since 10 February 2014: once the SAFE branch of your original household registration approves, the bank may send the approved amount in one remittance or several. The same notice removed the head-office step for totals above RMB 500,000. The 2004 text (half, then half of the remainder after a year, then the balance after two years) no longer applies.",
   "pros": [
    "Designed exactly for moving a whole lawful estate abroad",
    "Explicit legal pathway with defined documents"
   ],
   "cons": [
    "Requires having given up PRC household registration — a one-way step",
-   "Two-year staging for large amounts",
-   "SAFE HQ approval above RMB 500,000",
+   "Needs an approval document (核准件) from the SAFE branch of your original household registration before the bank will act",
    "Bank must remit to your own account abroad; no cash payout in China"
   ],
   "steps": [
    "Confirm you hold the 户籍注销证明 and embassy-authenticated settlement proof.",
    "Obtain the tax certificate for the assets from the competent tax authority.",
    "File one application with the SAFE branch where your household was registered.",
-   "After approval, take the 核准件 to the designated bank for the first tranche.",
-   "Repeat within the staged limits (≤ half, then ≤ half of the remainder after a year, then the balance)."
+   "After approval, take the 核准件 to the designated bank.",
+   "Have the bank remit the approved amount to your own account abroad, in one transfer or several — your choice within the approved total."
   ],
   "sources": [
    "S04",
+   "S17",
    "S01"
   ],
   "unverified": [
    "Eligibility depends on private facts (whether you ever held PRC hukou)"
-  ]
+  ],
+  "correction": "Corrected 11 November 2026. This card previously gave the 2004 instalment schedule (half, half of the remainder after one year, the balance after two) and SAFE head-office approval above RMB 500,000 as current rules. SAFE Huifa [2014] No. 2 Section 6 removed both with effect from 10 February 2014."
  },
  {
   "id": "R07",
@@ -256,22 +257,21 @@
   "cost_model": "documented_wire",
   "capability": "conditional",
   "who": "A foreign citizen (or HK/Macau resident) who has lawfully inherited a mainland estate",
-  "legal_basis": "Provisional Measures on Individuals' Outward Asset Transfers Arts. 2, 9, 10, 11",
+  "legal_basis": "Provisional Measures on Individuals' Outward Asset Transfers Arts. 2, 9, 11, as changed by SAFE Huifa [2014] No. 2 Section 6",
   "requirements": [
    "Proof of inheritance (will/probate/bank records), notarised if not already",
    "Deceased's property-rights documents and the tax certificate from the tax authority where the estate is",
    "Proof of settling abroad authenticated by a Chinese embassy/consulate",
    "One application for all property inherited from the same person"
   ],
-  "caps": "Same approval thresholds as R06 (≤ RMB 500,000 local SAFE; above, SAFE HQ). Separate applications for different deceased persons.",
+  "caps": "Approved by the SAFE branch where the deceased was registered; the head-office step for totals above RMB 500,000 was removed in 2014. Property inherited from different deceased persons may be put in one combined application. After approval the bank may remit once or in several payments.",
   "pros": [
    "Clear statutory route for inherited funds",
    "Can be remitted in one or several tranches"
   ],
   "cons": [
    "Only applies to inherited property, not your own savings",
-   "Notarisation and tax certificates take time",
-   "Different deceased persons cannot be combined"
+   "Notarisation and tax certificates take time"
   ],
   "steps": [
    "Collect the inheritance documents and the deceased's property documents.",
@@ -280,11 +280,13 @@
    "Remit through the designated bank to your own account abroad."
   ],
   "sources": [
-   "S04"
+   "S04",
+   "S17"
   ],
   "unverified": [
    "Eligibility depends on private facts"
-  ]
+  ],
+  "correction": "Corrected 11 November 2026. This card previously said approval above RMB 500,000 goes to SAFE headquarters and that estates of different deceased persons cannot be combined. SAFE Huifa [2014] No. 2 Section 6 removed both requirements with effect from 10 February 2014."
  },
  {
   "id": "R08",
