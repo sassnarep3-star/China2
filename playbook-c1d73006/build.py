@@ -320,7 +320,7 @@ def methods_page():
             det.append(tr([td("Part", "<strong>Steps</strong>"), td("Detail", "<ol>%s</ol>" % "".join("<li>%s</li>" % e(x) for x in m["steps"])), src_cell(m["src"])]))
         else:
             det.append(tr([td("Part", "<strong>Steps</strong>"), td("Detail", "None given. This route is unlawful."), src_cell(m["src"])]))
-        det.append(tr([td("Part", "<strong>Cost</strong>"), td("Detail", "%s <a href=\"costs.html?m=%s\">All 40 steps</a>%s" % (
+        det.append(tr([td("Part", "<strong>Cost</strong>"), td("Detail", "%s <a href=\"costs.html#m-%s\">All 40 steps</a>%s" % (
             e(C.COST_NOTE[m["id"]]), m["id"], "".join(" " + flag_link(f) for f in m["flags"]))), src_cell(C.COST_SRC.get(m["id"], C.COST_SRC["bank"]), True)]))
         body += '<section class="method" id="%s"><h3>%s · %s %s</h3><p>%s</p>%s</section>\n' % (
             m["id"], m["id"], e(m["name"]), badge(m["status"]), e(m["who"]), table(["Part", "Detail", "Source"], det, "cards"))
@@ -419,7 +419,7 @@ def costs_page():
     amts = "".join('<option value="%d">%s</option>' % (a, usd(a, 0)) for a in INP["tiers"])
     body = """<p>Every figure is arithmetic on a published rate board or fee table, dated in the inputs below. It is an estimate, not a quote: the bank’s rate on the day governs. Costs that no official page publishes are left blank and linked to the flag that explains why.</p>
 <h2>Every method at every $10,000 step</h2>
-<form class="filter" id="f" onsubmit="return false">
+%s<form class="filter" id="f" onsubmit="return false">
 <label>Method <select id="fm"><option value="">All %d methods</option>%s</select></label>
 <label>Amount <select id="fa"><option value="">All 40 steps</option>%s</select></label>
 <span id="fc" class="count" aria-live="polite"></span>
@@ -439,7 +439,7 @@ def costs_page():
 <li>Capped routes are counted, not priced, where the fee is not published: years at the yearly cap, transfers at the per-transfer cap, trips at the cash limit.</li>
 <li>Unlawful routes show the fine the regulation allows, which is not a fee and does not include confiscation or criminal liability.</li>
 </ol>
-""" % (len(C.METHODS), opts, amts,
+""" % ("".join('<span id="m-%s"></span>' % m["id"] for m in C.METHODS), len(C.METHODS), opts, amts,
        table(["Amount", "Published cost, Bank of China inputs", "HSBC China inputs", "How many", "Method", "Not included", "Source"], mrows, "cards dense", "ct"),
        table(["Amount", "Bank", "Published cost", "Rate margin", "Commission", "Cable", "RMB needed", "Other banks’ charges", "Source"], brows, "cards dense"),
        table(["Input", "Value", "Note", "Source"], irows, "cards"),
@@ -607,12 +607,15 @@ var t=document.getElementById('ct');if(!t){return;}
 var fm=document.getElementById('fm'),fa=document.getElementById('fa'),fc=document.getElementById('fc');
 var rows=Array.prototype.slice.call(t.tBodies[0].rows);
 var q=new URLSearchParams(location.search);
-if(q.get('m')){fm.value=q.get('m');}else{fm.value='L01';}
+var h=/^#m-(\\w+)$/.exec(location.hash);
+if(h){fm.value=h[1];}else if(q.get('m')){fm.value=q.get('m');}else{fm.value='L01';}
+if(fm.value===''&&!h&&!q.get('m')){fm.value='L01';}
 if(q.get('a')){fa.value=q.get('a');}
 function go(){var m=fm.value,a=fa.value,k=0;
 rows.forEach(function(r){var ok=(!m||r.getAttribute('data-m')===m)&&(!a||r.getAttribute('data-amt')===a);r.hidden=!ok;if(ok){k++;}});
 fc.textContent=k+' of '+rows.length+' rows shown';}
-fm.addEventListener('change',go);fa.addEventListener('change',go);go();
+fm.addEventListener('change',go);fa.addEventListener('change',go);
+window.addEventListener('hashchange',function(){var x=/^#m-(\\w+)$/.exec(location.hash);if(x){fm.value=x[1];go();}});go();
 })();
 """
 

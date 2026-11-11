@@ -5,10 +5,13 @@ var t=document.getElementById('ct');if(!t){return;}
 var fm=document.getElementById('fm'),fa=document.getElementById('fa'),fc=document.getElementById('fc');
 var rows=Array.prototype.slice.call(t.tBodies[0].rows);
 var q=new URLSearchParams(location.search);
-if(q.get('m')){fm.value=q.get('m');}else{fm.value='L01';}
+var h=/^#m-(\w+)$/.exec(location.hash);
+if(h){fm.value=h[1];}else if(q.get('m')){fm.value=q.get('m');}else{fm.value='L01';}
+if(fm.value===''&&!h&&!q.get('m')){fm.value='L01';}
 if(q.get('a')){fa.value=q.get('a');}
 function go(){var m=fm.value,a=fa.value,k=0;
 rows.forEach(function(r){var ok=(!m||r.getAttribute('data-m')===m)&&(!a||r.getAttribute('data-amt')===a);r.hidden=!ok;if(ok){k++;}});
 fc.textContent=k+' of '+rows.length+' rows shown';}
-fm.addEventListener('change',go);fa.addEventListener('change',go);go();
+fm.addEventListener('change',go);fa.addEventListener('change',go);
+window.addEventListener('hashchange',function(){var x=/^#m-(\w+)$/.exec(location.hash);if(x){fm.value=x[1];go();}});go();
 })();
