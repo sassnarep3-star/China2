@@ -1,12 +1,18 @@
 {
-  "pages_scanned": 137,
-  "data_rows": 10962,
-  "without_direct_primary": 1940,
+  "pages_scanned": 138,
+  "data_rows": 10983,
+  "without_direct_primary": 1946,
   "pages_with_candidates": 43,
   "pages": [
     {
       "path": "acceptance-373b54a3/index.html",
       "rows": 0,
+      "without_direct_primary": 0,
+      "first_example": ""
+    },
+    {
+      "path": "acceptance-382482c0/index.html",
+      "rows": 15,
       "without_direct_primary": 0,
       "first_example": ""
     },
@@ -152,7 +158,7 @@
       "path": "canon-d6a42474/audit.html",
       "rows": 14,
       "without_direct_primary": 14,
-      "first_example": "86.97 HSBC CNY 620 converted at the IRS 2025 average (7.129) 74 COORDINATION.md, index.html, acceptance-a64bd476/build.py S09 S13"
+      "first_example": "86.97 HSBC CNY 620 converted at the IRS 2025 average (7.129) 74 COORDINATION.md, acceptance-a64bd476/build.py, acceptance-a64bd476/checks.html S09 S13"
     },
     {
       "path": "canon-d6a42474/costs.html",
@@ -402,8 +408,8 @@
     },
     {
       "path": "ladder/audit.html",
-      "rows": 296,
-      "without_direct_primary": 296,
+      "rows": 302,
+      "without_direct_primary": 302,
       "first_example": "AUD-01 Three parallel dashboards publish overlapping but different route counts (22 routes in docs/, 13 lawful / 5 unlawful in site/, 22 in portal/, 20 here with 15 costed). No pri"
     },
     {

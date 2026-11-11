@@ -1,8 +1,9 @@
 {
-  "files_scanned": 309,
-  "html_pages": 130,
+  "files_scanned": 314,
+  "html_pages": 131,
   "sections_with_index": [
     "acceptance-373b54a3",
+    "acceptance-382482c0",
     "acceptance-a64bd476",
     "audit-0f0f59fe",
     "audit-456e7542",
@@ -131,14 +132,14 @@
       "sources": [
         "S14"
       ],
-      "file_count": 77,
+      "file_count": 74,
       "examples": [
         "COORDINATION.md",
         "EXECUTIVE-SUMMARY.md",
-        "README.md",
         "audit-ad300459/exports/findings.csv",
         "audit-ad300459/findings.html",
-        "audit-ad300459/findings.json"
+        "audit-ad300459/findings.json",
+        "audit-ad300459/flagged.html"
       ]
     },
     {
@@ -147,14 +148,14 @@
       "sources": [
         "S14"
       ],
-      "file_count": 19,
+      "file_count": 18,
       "examples": [
         "COORDINATION.md",
         "EXECUTIVE-SUMMARY.md",
-        "README.md",
         "briefing/AUDIT.md",
         "briefing/EXECUTIVE_SUMMARY.md",
-        "briefing/audit.html"
+        "briefing/audit.html",
+        "briefing/build.py"
       ]
     },
     {
