@@ -907,18 +907,36 @@ personal tax figure is asserted. Cross-scope requests are logged, not edited.
 
 ---
 
+
+## Session `arena/bb2a3876-china2` — corrective pass on published flagged items + full-suite re-verification (2026-11-11 UTC)
+
+Prior sessions' substantive research and the live GitHub Pages site are complete and merged (see publication records above). This session does not duplicate that work. It claims only the still-open, verifiable items published as "needs review" and a full local re-verification of every CI suite on the current tree, then publishes the result as a PR.
+
+| Task | Status | Owner | Files / scope |
+|---|---|---|---|
+| B-01 ATM cash table row: "8+ years for $400k" -> ~29 calendar years ($400,000 / ($100,000/7.129) = 28.52 yr) | in progress | arena/bb2a3876-china2 | briefing/build.py; briefing/EXECUTIVE_SUMMARY.md (generated); briefing/*.html via rebuild |
+| B-02 ladder audit prose hardcoded "Twenty sources ... of 20" (ledger: 21 sources, 17 direct) -> computed counts | in progress | arena/bb2a3876-china2 | ladder/build.py; ladder/audit.html via rebuild; root index.html via ladder/build.py (deterministic) |
+| B-03 EXECUTIVE-SUMMARY.md: http:// SAFE/GC links -> HTTPS; repealed 2021 crypto-notice citation re-pointed to PBOC Yin Fa [2026] No. 42; R01 row conditioned on domestic/PR-ID purchase-quota rule | in progress | arena/bb2a3876-china2 | EXECUTIVE-SUMMARY.md |
+| B-04 README.md hardcoded session-branch sentence (audit-ad300459 RA-13) -> genericized | in progress | arena/bb2a3876-china2 | README.md |
+| B-05 audit-92d12752 snapshot regenerated after repository changes (its verify.py requires scan()==results.json) | in progress | arena/bb2a3876-china2 | audit-92d12752/results.json; audit-92d12752/index.html |
+| B-06 Full local re-verification of all CI suites + PR, merge, Pages confirmation | in progress | arena/bb2a3876-china2 | COORDINATION.md (append-only); no other file |
+
+Rules in force: no other session's published findings are rewritten; every edit above traces to an item already flagged as irregular by a prior published audit (study-8f529c94 RA-01/RA-02/RA-03/RA-04/RA-13, ladder AUD list, briefing N-series). Sources: SAFE Hui Fa [2017] No. 29 (RMB 100k/person/civil year ATM cap) https://www.safe.gov.cn/en/2017/1230/1397.html ; IRS 2025 yearly average 7.129 https://www.irs.gov/individuals/international-taxpayers/yearly-average-currency-exchange-rates ; PBOC Yin Fa [2026] No. 42 https://www.pbc.gov.cn/tiaofasi/144941/3581332/2026020619591971323/index.html ; SAFE Hui Fa [2007] No. 1 / SAFE Tianjin 2024 Case 9 (foreign-individual purchase quota limited to Foreign Permanent Resident ID holders) https://www.safe.gov.cn/tianjin/2024/0621/2529.html .
+
+---
+
 ## Session `arena/50f278d8-china2` — unified repatriation guide with decision checklist, penalty breakdown, 40-tier cost ladder, and line-by-line repo audit (disjoint scope)
 
 > Environment note: Arena pins this session to `arena/50f278d8-china2` (status: active) and forbids creating or switching branches; this fixed branch substitutes for a `session-<id>/<task>` branch. Full task board above and active remote claims read before claiming. All prior and concurrent sessions' scopes are preserved unedited (`docs/**`, `site/**`, `portal/**`, `ladder/**` including `ladder/build.py`/`index.html` hub, `repatriate/**`, `briefing/**`, `study-8f529c94/**`, `estimate-facf2fe9/**`, `final-f6327e23/**`, `verify-*/**`, `audit-*/**`, `acceptance-*/**`, `research/**`, `reports/**`, `data/**`, `scripts/**`, `tools/**`, `EXECUTIVE_SUMMARY*.md`, `README.md`, `index.html`). This session works strictly in its disjoint scope `transfer-guide/**`, `.github/workflows/verify-transfer-guide.yml`, append-only `COORDINATION.md`, and mechanical `ladder/audit.html` inventory regeneration if required by CI. No other session's files are edited except as logged below as a request.
 
 | # | Task | Status | Owner | Files / scope |
 |---|------|--------|-------|---------------|
-| U1 | Executive summary + decision-question checklist (what we know / don't know / how to find it) with official source links | in progress | `arena/50f278d8-china2` | `transfer-guide/**` |
-| U2 | Exhaustive CNY→USD method catalogue (lawful + flagged unlawful) with pros/cons and exact step-by-step playbooks | in progress | `arena/50f278d8-china2` | `transfer-guide/**` |
-| U3 | 7-layer conversion-penalty breakdown (PRC tax on underlying income vs. SAFE voucher gate vs. US FX gain/FTC/FEIE vs. spread/fees vs. reporting penalties) | in progress | `arena/50f278d8-china2` | `transfer-guide/**` |
-| U4 | $10,000→$400,000 cost estimator (40 tiers × N methods, mobile-friendly tables, source link per row, blanks where unverified, exports) | in progress | `arena/50f278d8-china2` | `transfer-guide/**` |
-| U5 | Line-by-line repo review + Flagged-for-Review + Sources register (official primary sources, verification checks) | in progress | `arena/50f278d8-china2` | `transfer-guide/**` |
-| U6 | Static site build + independent verifier + CI workflow, full-repo verification, PR → main, merge, Pages deploy confirmation | unclaimed | `arena/50f278d8-china2` | `.github/workflows/verify-transfer-guide.yml`, `transfer-guide/**`, `COORDINATION.md` (append-only), `ladder/audit.html` (inventory only if needed) |
+| U1 | Executive summary + decision-question checklist (what we know / don't know / how to find it) with official source links | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U2 | Exhaustive CNY→USD method catalogue (lawful + flagged unlawful) with pros/cons and exact step-by-step playbooks | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U3 | 7-layer conversion-penalty breakdown (PRC tax on underlying income vs. SAFE voucher gate vs. US FX gain/FTC/FEIE vs. spread/fees vs. reporting penalties) | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U4 | $10,000→$400,000 cost estimator (40 tiers × N methods, mobile-friendly tables, source link per row, blanks where unverified, exports) | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U5 | Line-by-line repo review + Flagged-for-Review + Sources register (official primary sources, verification checks) | done | `arena/50f278d8-china2` | `transfer-guide/**` |
+| U6 | Static site build + independent verifier + CI workflow, full-repo verification, PR → main, merge, Pages deploy confirmation | in progress | `arena/50f278d8-china2` | `.github/workflows/verify-transfer-guide.yml`, `transfer-guide/**`, `COORDINATION.md` (append-only), `ladder/audit.html` (inventory only if needed) |
 
 - 2026-11-11 UTC: Claim recorded and pushed before substantive edits. Policy: no private facts inferred; every table row carries a direct official-source link; unverifiable values left blank and flagged; no personal tax bill asserted; no other active session's directory edited outside logged request. Work is deterministic and rebuildable via `transfer-guide/build.py`.
 
@@ -942,4 +960,5 @@ Root `index.html` and `ladder/build.py` hub template remain owned by `arena/dc9b
 **U5 — Repo review + Flags + Sources register:** `transfer-guide/audit.html` (RA-01–RA-14, 14 findings, sources, file inventory, direct/source/assumption separation), `transfer-guide/flagged.html` (FL-01–FL-18, 18 unverified/conditional items, blanks where nothing is published), `transfer-guide/sources.html` (SRC-01–SRC-40, 22 PRC official + 15 US/treaty + 3 primary commercial, 100% HTTPS fetched 2026-11-10, verbatim excerpts). New `transfer-guide/questions.html` (Q01–Q12) covers every gating private fact prompt requires: origin of balance, PRC tax withholding/tax vouchers, SAFE 境内个人 vs 境外个人 / PR-ID status, tranche acquisition dates & USD basis (§988(e) $200), FBAR/8938/3520 history, bank executable quote, capital-account docs (property/inheritance/emigrant), proxy vs in-person, urgency/ATM/POS vs lump-sum, bank tariff, gray-market pitfalls — each row with What We Know / What We DO NOT Know / How to Discover + official links + flags.
 
 **Verification (U5/U6 structural):** `PYTHONDONTWRITEBYTECODE=1 python3 transfer-guide/build.py` + `transfer-guide/verify.py` → **19,842 independent checks, 0 failures** (9 pages, 920 cost rows across $10k–$400k × 23 methods, 100% direct HTTPS official links on every <tr> with <td>, strict blank enforcement on unconfirmed FX spreads and third-party wire deductions, all local links/fragments resolved, `node --check transfer-guide/assets/app.js` green). Includes independent re-derivation of every HSBC fee tier ($10k $30.86, $50k $66.83, $400k $86.97, M06 $400k $534.66) and ATM 29-year math, plus 12-question ledger validation. These are structural and arithmetic checks; they do not certify the law.
+
 
